@@ -33,9 +33,6 @@
 		+ El resultado debe pasar por todos las pruebas unitarios.
 			- Verifique y modifique las pruebas unitarias fallidas.
 
-## 1.2 CCS3: selectores, reglas
-
-
 ## Referencias 
 
 * Guía completa markdown y su integración con R. (2022). Retrieved 19 April 2022, from https://rstudio-pubs-static.s3.amazonaws.com/330387_5a40ca72c3b14824acedceb7d34618d1.html
