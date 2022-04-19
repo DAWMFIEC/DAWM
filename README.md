@@ -22,9 +22,9 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 
 ### Ejercicios
 
-| Capítulo                       | Ejercicios           | Temas    |
-| :----------------------------: | :------------------: | -------: |
-| [Capítulo 01](Capítulo%2001)   | Ejercicio 01         |          |
+| Capítulo      | Ejercicios                                        | Temas    |
+| :-----------: | :-----------------------------------------------: | -------: |
+| Capítulo 01   | [Ejercicio 01](Capítulo%2001/ejercicio01)         |          |
 
 
 ## Referencias 
