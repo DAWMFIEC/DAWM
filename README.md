@@ -33,7 +33,7 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 ## Pruebas Unitarias
 
 Para comprobar si las modificaciones del/de los archivo(s) solicitado, acceda desde otra la línea de comandos para:
-* Ejecutar: `mocha --exit`
+* Ejecutar: `npm test`
 	+ Los resultados posibles a las pruebas unitarias pueden ser: 
 		- Todos fueron exitosas.
 
@@ -54,3 +54,4 @@ Para comprobar si las modificaciones del/de los archivo(s) solicitado, acceda de
 ## Referencias 
 
 * Guía completa markdown y su integración con R. (2022). Retrieved 19 April 2022, from https://rstudio-pubs-static.s3.amazonaws.com/330387_5a40ca72c3b14824acedceb7d34618d1.html
+* Unit Testing Express : Unit Test Express Route. (2018). Retrieved 19 April 2022, from https://codehandbook.org/unit-test-express-route/

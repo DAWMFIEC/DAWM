@@ -10,5 +10,4 @@
 
 ## Referencias 
 
-* Guía completa markdown y su integración con R. (2022). Retrieved 19 April 2022, from https://rstudio-pubs-static.s3.amazonaws.com/330387_5a40ca72c3b14824acedceb7d34618d1.html
-* Unit Testing Express : Unit Test Express Route. (2018). Retrieved 19 April 2022, from https://codehandbook.org/unit-test-express-route/
+* Freeman, J. (2022). Chapter 3 HTML Fundamentals | Client-Side Web Development. Retrieved 19 April 2022, from https://info340.github.io/html-fundamentals.html
