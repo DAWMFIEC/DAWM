@@ -1,6 +1,6 @@
 # Ejercicio 01
 
-<center>![Ejercicio 01](images/ejercicio01.png)</center>
+<center>![Ejercicio 01](./images/ejercicio01.png)</center>
 
 ### Instrucciones
 
