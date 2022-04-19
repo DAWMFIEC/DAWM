@@ -34,7 +34,8 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 
 | Capítulo      | Ejercicios                                        | Temas    |
 | :-----------: | :-----------------------------------------------: | -------: |
-| Capítulo 01   | [Ejercicio 01](Capítulo%2001/ejercicio01)         |          |
+| Capítulo 01   | [Ejercicio 01](Capítulo%2001/ejercicio01)         | Títulos  |
+| 			    | [Ejercicio 01](Capítulo%2001/ejercicio01)         | Títulos  |
 
 
 ## Referencias 
