@@ -1,5 +1,7 @@
 # Ejercicio 01
 
+<center>![Ejercicio 01](images/ejercicio01.png)</center>
+
 ### Instrucciones
 
 * Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
