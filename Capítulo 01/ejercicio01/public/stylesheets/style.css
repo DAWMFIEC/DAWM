@@ -1,5 +1,10 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
   padding: 50px;
+  padding-top: 0px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
@@ -7,15 +12,15 @@ a {
   color: #00B7FF;
 }
 
+.titulo {
+  font-weight: bold;
+  font-size: 2.1rem;
+  text-align: center;
+}
 
 .instrucciones {
   background-color: #e1f7e1;
   padding: 1rem;
-}
-
-.titulo {
-  font-weight: bold;
-  font-size: 1.1rem;
 }
 
 .etiqueta {
@@ -35,4 +40,5 @@ a {
 .respuesta {
   min-height: 5rem;
   border: 0.5pt solid black;
+  padding: 1%;
 }
