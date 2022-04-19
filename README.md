@@ -18,6 +18,16 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 ### ¿Dónde comienzo?
 
 * Clone el repositorio con: `git clone https://github.com/aavendan/CDW01.git`
+* Instale el proyecto
+	* Desde la línea de comandos
+		+ Ingrese a la carpeta, por ejemplo **ejercicio01**, con: `cd ejercicio01`
+		+ Instale los paquetes necesitados, con: `npm install`
+		+ Levante el servidor con cualquiera de las opciones:
+			- En modo de producción, con: `npm start`
+			- En modo de depuración para Windows, con: `npm run debugw`
+			- En modo de depuración para MacOs, con: `npm run debugm`
+		+ Utilice su navegador preferido para abrir la vista inicial del ejercicio, con el URL: `http://localhost:3000/`
+2. Utilice su editor de texto preferido para abrir el archivo que se encuentra en la ruta `ejercicios01\views\index.ejs`  
 
 
 ### Ejercicios
