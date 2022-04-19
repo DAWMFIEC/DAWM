@@ -1,6 +1,10 @@
 # CDW01 
 ## HTML, CSS y JavaScript
 
+### Prácticas
+
+Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los conceptos revisados durante la certificación. Cada ejercicio contiene un conjunto de pruebas para validar los conocimentos.
+
 ### Prerequisitos
 
 * node
@@ -11,16 +15,16 @@
 	- Descargue el [paquete](https://www.npmjs.com/package/express) de manera global, con: `npm install -g express` 
 
 
-### Instrucciones
+### ¿Dónde comienzo?
 
-* Descargue el repositorio completo, con: `git clone https://github.com/aavendan/CDW01.git`
+* Clone el repositorio con: `git clone https://github.com/aavendan/CDW01.git`
 
 
-### Capítulos 
+### Ejercicios
 
-* [Capítulo 01](Capítulo%2001): 
-	+ 1.1 HTML5: estructura semántica,tablas, imágenes y formularios
-	+ 1.2 CCS3: selectores, reglas
+| Capítulo                       | Ejercicios           | Temas    |
+| :----------------------------: | :------------------: | -------: |
+| [Capítulo 01](Capítulo%2001)   | Ejercicio 01         |          |
 
 
 ## Referencias 
