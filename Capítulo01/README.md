@@ -5,13 +5,13 @@
 
 1. Instale el proyecto
 	* Desde la línea de comandos
-		+ Ingrese a la carpeta **ejercicio01**, con: `cd ejercicio01`
+		+ Ingrese a la carpeta, por ejemplo **ejercicio01**, con: `cd ejercicio01`
 		+ Instale los paquetes necesitados, con: `npm install`
 		+ Levante el servidor con cualquiera de las opciones:
 			- En modo de producción, con: `npm start`
 			- En modo de depuración para Windows, con: `npm run debugw`
 			- En modo de depuración para MacOs, con: `npm run debugm`
-		+ Utilice su navegador preferido para abrir la vista inicial del proyecto `http://localhost:3000/`
+		+ Utilice su navegador preferido para abrir la vista inicial del ejercicio, con el URL: `http://localhost:3000/`
 2. Utilice su editor de texto preferido para abrir el archivo que se encuentra en la ruta `ejercicios01\views\index.ejs`  
 3. Realice los cambios solicitados	
 	* Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
