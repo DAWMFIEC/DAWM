@@ -12,4 +12,4 @@ CDW01 HTML, CSS y JavaScript
 
 ### Instrucciones
 
-* Descargue el proyecto, con: `git clone https://github.com/aavendan/CDW01.git`
+* Descargue el repositorio completo, con: `git clone https://github.com/aavendan/CDW01.git`
