@@ -27,10 +27,11 @@
 		+ Agrega las modificaciones solicitadas dentro de cada uno de los comentarios marcados, con:  
 		`<!-- Inicio -->` y `<!-- Fin -->`
 	* Desde el navegador, verifique si los cambios cumplen con las instrucciones solicitadas.
-3. Ejecute los test
+3. Ejecute las pruebas
 	* Desde otra la línea de comandos
 		+ Ejecute: `mocha --exit`
-		+ El resultado debe pasar por todos los test unitarios.
+		+ El resultado debe pasar por todos las pruebas unitarios.
+			- Verifique y modifique las pruebas unitarias fallidas.
 
 ## 1.2 CCS3: selectores, reglas
 
