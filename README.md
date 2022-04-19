@@ -31,13 +31,13 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 * Verifique los resultados al actualizar en el navegador
 
 ## Pruebas Unitarias
+
 Desde otra la línea de comandos
 * Ejecute: `mocha --exit`
 	+ Los resultados posibles a las pruebas unitarias pueden ser: 
 		- Todos fueron exitosas.
 		- Existen pruebas unitarias fallidas.
 * En caso de ser necesario, modifique el/los archivo y vuelva a ejecutar las pruebas unitarias.  
-
 
 ### Ejercicios
 

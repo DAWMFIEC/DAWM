@@ -3,20 +3,15 @@
 
 ### Instrucciones
 
-Realice los cambios solicitados	
-	* Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
-	* Desde el editor de texto, modifica el archivo `index.ejs`, 
-		+ Agrega las modificaciones solicitadas dentro de cada uno de los comentarios marcados, con:  
-		`<!-- Inicio -->` y `<!-- Fin -->`
-	* Desde el navegador, verifique si los cambios cumplen con las instrucciones solicitadas.
+* Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
+* Desde el editor de texto, modifica el archivo `views/index.ejs`, 
+	+ Agrega las etiquetas solicitadas dentro de cada uno de los comentarios marcados, con:  
+	`<!-- Inicio -->` y `<!-- Fin -->`
+* Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 
-### Pruebas Unitarias
-Desde otra la línea de comandos
-	* Ejecute: `mocha --exit`
-		+ Los resultados posibles: 
-			- Todos las pruebas unitarias fueron exitosas.
-			- Existen pruebas unitarias fallidas.
-	* En caso de ser necesario, modifique el archivo original y vuelva a ejecutar las pruebas unitarias.
+## Entrega
+
+Ejecute las pruebas unitarias. 
 
 ## Referencias 
 
