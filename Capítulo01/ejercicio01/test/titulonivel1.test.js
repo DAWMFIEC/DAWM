@@ -17,7 +17,8 @@ describe('Test unitarios para la ruta `/`', function() {
       return request(app)
         .get('/')
         .then((response) => {
-            chai.expect(response.text).to.contain('<h1>Hola, mundo</h1>');
+            chai.expect(response.text).to.contain('<h1>El título más importante</h1>');
+            chai.expect(response.text).to.contain('<h2>Título secundario</h2>');
         })
     });
 
