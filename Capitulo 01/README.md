@@ -15,7 +15,7 @@
 	* Desde la línea de comandos
 		+ Ingrese a la carpeta **ejercicio01**, con: `cd ejercicio01`
 		+ Instale los paquetes necesitados, con: `npm install`
-		+ Levante el servidor para cualquiera de las opciones:
+		+ Levante el servidor con cualquiera de las opciones:
 			- En modo de producción, con: `npm start`
 			- En modo de depuración para Windows, con: `npm run debugw`
 			- En modo de depuración para MacOs, con: `npm run debugm`
@@ -28,6 +28,9 @@
 		`<!-- Inicio -->` y `<!-- Fin -->`
 	* Desde el navegador, verifique si los cambios cumplen con las instrucciones solicitadas.
 3. Ejecute los test
+	* Desde otra la línea de comandos
+		+ Ejecute: `mocha --exit`
+		+ El resultado debe pasar por todos los test unitarios.
 
 ## 1.2 CCS3: selectores, reglas
 
@@ -35,3 +38,4 @@
 ## Referencias 
 
 * Guía completa markdown y su integración con R. (2022). Retrieved 19 April 2022, from https://rstudio-pubs-static.s3.amazonaws.com/330387_5a40ca72c3b14824acedceb7d34618d1.html
+* Unit Testing Express : Unit Test Express Route. (2018). Retrieved 19 April 2022, from https://codehandbook.org/unit-test-express-route/
