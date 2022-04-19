@@ -14,3 +14,10 @@
 ### Instrucciones
 
 * Descargue el repositorio completo, con: `git clone https://github.com/aavendan/CDW01.git`
+
+
+### Capítulos 
+
+* Capítulo 01: 
+	+ 1.1 HTML5: estructura semántica,tablas, imágenes y formularios
+	+ 1.2 CCS3: selectores, reglas
