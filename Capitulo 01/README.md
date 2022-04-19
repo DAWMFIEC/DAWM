@@ -11,11 +11,23 @@
 
 ### Instrucciones
 
-1. Clone el proyecto 
-	+ git clone https://github.com/aavendan/CDW01.git
-2. Levante el servidor
+1. Instale el proyecto
+	* Desde la línea de comandos
+		+ Ingrese a la carpeta **ejercicio01**, con: `cd ejercicio01`
+		+ Instale los paquetes necesitados, con: `npm install`
+		+ Levante el servidor para cualquiera de las opciones:
+			- En modo de producción, con: `npm start`
+			- En modo de depuración para Windows, con: `npm run debugw`
+			- En modo de depuración para MacOs, con: `npm run debugm`
+		+ Utilice su navegador preferido para abrir la vista inicial del proyecto `http://localhost:3000/`
+2. Utilice su editor de texto preferido para abrir el archivo que se encuentra en la ruta `ejercicios01\views\index.ejs`  
+3. Realice los cambios solicitados	
+	* Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
+	* Desde el editor de texto, modifica el archivo `index.ejs`, 
+		+ Agrega las modificaciones solicitadas dentro de cada uno de los comentarios marcados, con:  
+		`<!-- Inicio -->` y `<!-- Fin -->`
+	* Desde el navegador, verifique si los cambios cumplen con las instrucciones solicitadas.
 3. Ejecute los test
-4. Envíe los resultados del test 
 
 ## 1.2 CCS3: selectores, reglas
 

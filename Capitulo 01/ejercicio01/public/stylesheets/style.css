@@ -1,0 +1,33 @@
+body {
+  padding: 50px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+
+.instrucciones {
+  background-color: #e1f7e1;
+  padding: 1rem;
+}
+
+.titulo {
+  font-weight: bold;
+  font-size: 1.1rem;
+}
+
+.etiqueta {
+  color: #905;
+}
+
+.simbolo {
+  color: #999;
+}
+
+.texto {
+  background-color: #e0d5d5;
+  padding: 0.4rem;
+  margin-left: 0.2rem;
+}
