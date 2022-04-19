@@ -9,10 +9,6 @@
 	`<!-- Inicio -->` y `<!-- Fin -->`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 
-## Entrega
-
-Ejecute las pruebas unitarias. 
-
 ## Referencias 
 
 * Guía completa markdown y su integración con R. (2022). Retrieved 19 April 2022, from https://rstudio-pubs-static.s3.amazonaws.com/330387_5a40ca72c3b14824acedceb7d34618d1.html
