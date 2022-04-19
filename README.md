@@ -20,24 +20,26 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 * Clone el repositorio con: `git clone https://github.com/aavendan/CDW01.git`
 * Por cada ejercicio, desde la línea de comandos
 	+ Ingrese a la carpeta del capítulo y del ejercicio
-	+ Instale los paquetes necesitados, con: `npm install`
+	+ Instale los paquetes necesarios, con: `npm install`
 	+ Levante el servidor con cualquiera de las siguientes opciones:
-		- En modo de producción, con: `npm start`
+		- En modo predeterminado, con: `npm start`
 		- En modo de depuración 
 			+ En Windows, con: `npm run debugw`
 			+ En MacOs, con: `npm run debugm`
 	+ Utilice su navegador preferido para abrir la vista inicial del ejercicio, con el URL: `http://localhost:3000/`
-* Utilice su editor de texto preferido para abrir y modificar el/los archivos
+* Utilice su editor de texto preferido para abrir y modificar el/los archivo(s) solicitados.
 * Verifique los resultados al actualizar en el navegador
 
 ## Pruebas Unitarias
 
-Desde otra la línea de comandos
-* Ejecute: `mocha --exit`
+Para comprobar si las modificaciones del/de los archivo(s) solicitado, acceda desde otra la línea de comandos para:
+* Ejecutar: `mocha --exit`
 	+ Los resultados posibles a las pruebas unitarias pueden ser: 
 		- Todos fueron exitosas.
+
 		- Existen pruebas unitarias fallidas.
-* En caso de ser necesario, modifique el/los archivo y vuelva a ejecutar las pruebas unitarias.  
+
+* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.  
 
 ### Ejercicios
 
