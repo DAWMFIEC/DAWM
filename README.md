@@ -4,6 +4,7 @@
 ### Prerequisitos
 
 * node
+	- Instale node, dese el [sitio oficial](https://nodejs.org/es/download/).
 * npm -v
 	- Descargue el [paquete](https://www.npmjs.com/package/download) de manera global, con: `npm install -g npm` 
 * express
