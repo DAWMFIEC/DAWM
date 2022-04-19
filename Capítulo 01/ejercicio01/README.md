@@ -1,5 +1,4 @@
-# Capítulo 01: Fundamentos
-## 1.1 HTML5: estructura semántica,tablas, imágenes y formularios
+# Ejercicio 01
 
 ### Instrucciones
 

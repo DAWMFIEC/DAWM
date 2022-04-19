@@ -46,7 +46,9 @@ Para comprobar si las modificaciones del/de los archivo(s) solicitado, acceda de
 | Capítulo      | Ejercicios                                        | Temas    |
 | :-----------: | :-----------------------------------------------: | -------: |
 | Capítulo 01   | [Ejercicio 01](Capítulo%2001/ejercicio01)         | Títulos  |
-| 			    | [Ejercicio 01](Capítulo%2001/ejercicio01)         | Títulos  |
+| 			    | [Ejercicio 02](Capítulo%2001/ejercicio02)         | Tablas   |
+| 			    | [Ejercicio 03](Capítulo%2001/ejercicio03)         | Imágenes |
+| 			    | [Ejercicio 04](Capítulo%2001/ejercicio04)         | Formularios |
 
 
 ## Referencias 
