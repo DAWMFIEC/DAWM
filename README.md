@@ -36,9 +36,12 @@ Para comprobar si las modificaciones del/de los archivo(s) solicitado, acceda de
 * Ejecutar: `npm test`
 	+ Los resultados posibles a las pruebas unitarias pueden ser: 
 		- Todos fueron exitosas.
+		
 		![image info](images/exito.png)
+		
 		- Existen pruebas unitarias fallidas.
-		![image info](images/exito.png)
+		
+		![image info](images/fallo.png)
 
 * En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.  
 
