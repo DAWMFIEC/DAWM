@@ -32,18 +32,7 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 
 ## Pruebas Unitarias
 
-Para comprobar si las modificaciones del/de los archivo(s) solicitado, acceda desde otra la línea de comandos para:
-* Ejecutar: `npm test`
-	+ Los resultados posibles a las pruebas unitarias pueden ser: 
-		- Todos fueron exitosas.
-		
-		![image info](images/exito.png)
-		
-		- Existen pruebas unitarias fallidas.
-		
-		![image info](images/fallo.png)
-
-* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.  
+Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permiten comprobar si la respuesta a los ejercicios cumplen con los requisitos solicitados. 
 
 ### Ejercicios
 
