@@ -40,7 +40,37 @@ describe('Test unitarios para la ruta `/` con tablas', function() {
             chai.expect(responseclean).to.contain(table1clean);
 
 
-            
+            let table2 = `
+              <table>
+                <caption>Datos de descarga por Sistema Operativo y por Mes</caption>
+                <tr>
+                  <th>Mes</th>
+                  <th>Enero</th>
+                  <th>Febrero</th>
+                  <th>Marzo</th>
+                </tr>
+                <tr>
+                  <th>Windows</th>
+                  <td>100</td>
+                  <td>25</td>
+                  <td>200</td>
+                </tr>
+                <tr>
+                  <th>MacOS</th>
+                  <td>30</td>
+                  <td>72</td>
+                  <td>0</td>
+                </tr>
+                <tr>
+                  <th>Linux</th>
+                  <td>15</td>
+                  <td>20</td>
+                  <td>15</td>
+                </tr>
+              </table>
+            `
+            let table2clean = table2.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'');
+            chai.expect(responseclean).to.contain(table2clean);
             
         })
     });
