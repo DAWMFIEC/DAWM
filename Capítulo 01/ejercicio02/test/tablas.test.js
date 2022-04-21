@@ -41,7 +41,7 @@ describe('Test unitarios para la ruta `/` con tablas', function() {
 
 
             let table2 = `
-              <table>
+              <table border="1">
                 <caption>Datos de descarga por Sistema Operativo y por Mes</caption>
                 <tr>
                   <th>Mes</th>
