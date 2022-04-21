@@ -17,8 +17,9 @@ describe('Test unitarios para la ruta `/`', function() {
       return request(app)
         .get('/')
         .then((response) => {
-            //chai.expect(response.text).to.contain('<h1>El título más importante</h1>');
-            
+            chai.expect(response.text).to.contain('<img src="https://picsum.photos/200/300">');
+            chai.expect(response.text).to.contain('<img src="images/tablet.jpg" width="250">');
+            chai.expect(response.text).to.contain('<img src="images/tablet2.jpg" alt="Imagen de tablet 2">');
         })
     });
 

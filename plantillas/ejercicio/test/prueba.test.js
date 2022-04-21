@@ -17,6 +17,7 @@ describe('Test unitarios para la ruta `/`', function() {
       return request(app)
         .get('/')
         .then((response) => {
+          let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
             //chai.expect(response.text).to.contain('<h1>El título más importante</h1>');
             
         })
