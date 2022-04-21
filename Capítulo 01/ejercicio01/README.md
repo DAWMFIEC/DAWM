@@ -21,7 +21,7 @@
 		
 		![image info](images/fallo.png)
 
-* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
+	+ En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
 
 ## Referencias 
 

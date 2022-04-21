@@ -9,6 +9,10 @@
 	+ Agrega las etiquetas solicitadas dentro de cada uno de los comentarios marcados, con:  
 	`<!-- Inicio -->` y `<!-- Fin -->`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
+* Pruebas unitarias
+
+	+ Ejecutar: `npm test`
+	+ En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.
 
 ## Referencias 
 
