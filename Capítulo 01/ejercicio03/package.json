@@ -1,10 +1,10 @@
 {
-  "name": "ejercicio02",
+  "name": "ejercicio03",
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "debugm": "DEBUG=ejercicio02:* npm start",
-    "debugw": "set DEBUG=ejercicio02:* & npm start",
+    "debugm": "DEBUG=ejercicio03:* npm start",
+    "debugw": "set DEBUG=ejercicio03:* & npm start",
     "start": "node ./bin/www",
     "test": "mocha --exit"
   },
