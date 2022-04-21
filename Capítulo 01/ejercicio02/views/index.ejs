@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <p class="titulo"><%= ejercicio %></p>
+
+    <p class="instrucciones">Agregue una lista no numerada 
+      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>ul<span class="simbolo">></span></span>)
+      con los elementos: <span class="texto">Manta, Guayaquil, Otavalo, Gualaceo, Quito, Machala y Cuenca</span>
+    </p>
+    
+    <div class="respuesta">
+      <!-- Inicio -->
+         <ul>
+          <li>Manta</li>
+          <li>Guayaquil</li>
+          <li>Otavalo</li>
+          <li>Gualaceo</li>
+          <li>Quito</li>
+          <li>Machala</li>
+          <li>Cuenca</li>
+        </ul>
+      <!-- Fin -->
+    </div>
+
+
+    <p class="instrucciones">Agregue una lista numerada 
+      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>ol<span class="simbolo">></span></span>)
+      con los elementos: <span class="texto">Julio, Carmen, Elena e Ignacio</span>
+    </p>
+    
+    <div class="respuesta">
+      <!-- Inicio -->
+      <ol>
+        <li>Julio</li>
+        <li>Carmen</li>
+        <li>Elena</li>
+        <li>Ignacio</li>
+      </ol>
+      <!-- Fin -->
+    </div>
+
+
+    <p class="instrucciones">Agregue una lista numerada 
+      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>ol<span class="simbolo">></span></span>) con estilo romanos en mayúsculas (atributo <span class="etiqueta">type</span> con valor <span class="etiqueta">I</span>), con los elementos: <span class="texto">Capítulo 1, Capítulo 2, Capítulo 3, Conclusiones y Recomendaciones</span>
+    </p>
+    
+    <div class="respuesta">
+      <!-- Inicio -->
+      <ol type="I">
+        <li>Capítulo 1</li>
+        <li>Capítulo 2</li>
+        <li>Capítulo 3</li>
+        <li>Conclusiones</li>
+        <li>Recomendaciones</li>
+      </ol>
+      <!-- Fin -->
+    </div>
+
+
+    <p class="instrucciones">Agregue una lista no numerada  
+      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>ul<span class="simbolo">></span></span>) anidada, con los elementos: <span class="texto">Colombia, Perú y Chile</span>. Para cada elemento no numerado, debe colocar una lista numerada para Colombia: <span class="texto">Bogotá, Cali y Cartagena</span>, una lista numerada para Perú: <span class="texto">Chiclayo y Piura</span>, y una lista numerada para Chile: <span class="texto">Iquique, Valparaíso y Antofagasta</span> 
+    </p>
+    
+    <div class="respuesta">
+      <!-- Inicio -->
+      <ul>
+        <li>Colombia</li>
+          <ol>
+            <li>Bogotá</li>
+            <li>Cali</li>
+            <li>Cartagena</li>
+          </ol>
+        <li>Perú</li>
+          <ol>
+            <li>Chiclayo</li>
+            <li>Piura</li>
+          </ol>
+        <li>Chile</li>
+          <ol>
+            <li>Iquique</li>
+            <li>Valparaíso</li>
+            <li>Antofagasta</li>
+          </ol>
+      </ul>
+      <!-- Fin -->
+    </div>
+
+
+    <p class="instrucciones">Agregue una tabla 
+      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>table<span class="simbolo">></span></span>) con los elementos: cabecera de fila <span class="texto">Windows</span>, valor <span class="texto">325</span>; cabecera de fila <span class="texto">MacOS</span>, valor <span class="texto">102</span>; y cabecera de fila <span class="texto">Linux</span>, valor <span class="texto">50</span>. El subtítulo de la tabla es <span class="texto">Datos de descarga por Sistema Operativo</span>.
+    </p>
+    
+    <div class="respuesta">
+      <!-- Inicio -->
+      <table>
+        <caption>Datos de descarga por Sistema Operativo</caption>
+        <tr>
+          <th>Windows</th>
+          <td>325</td>
+        </tr>
+        <tr>
+          <th>MacOS</th>
+          <td>102</td>
+        </tr>
+        <tr>
+          <th>Linux</th>
+          <td>50</td>
+        </tr>
+      </table>
+      <!-- Fin -->
+    </div>
+
+  </body>
+</html>

@@ -21,6 +21,7 @@ a {
 .instrucciones {
   background-color: #e1f7e1;
   padding: 1rem;
+  line-height: 2rem;
 }
 
 .etiqueta {
