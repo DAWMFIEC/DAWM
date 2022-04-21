@@ -13,4 +13,5 @@
 ## Referencias 
 
 * Freeman, J. (2022). Chapter 3 HTML Fundamentals | Client-Side Web Development. Retrieved 19 April 2022, from https://info340.github.io/html-fundamentals.html
+* Listas HTML. (2021). Retrieved 21 April 2022, from https://www.manualweb.net/html/listas-html/
 * Atributos para tablas HTML. (2022). Retrieved 21 April 2022, from https://desarrolloweb.com/articulos/629.php
