@@ -1,6 +1,6 @@
-# Ejercicio YY
+# Ejercicio 03
 
-![image info](images/ejercicioYY.png)
+![image info](images/ejercicio03.png)
 
 ### Instrucciones
 
