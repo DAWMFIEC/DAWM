@@ -7,15 +7,19 @@
   <body>
     <p class="titulo"><%= ejercicio %></p>
 
-    <p class="instrucciones">Agregue una imagen
-      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>img<span class="simbolo">></span></span>) con la ruta absoluta (atributo <span class="etiqueta">src</span> con valor <span class="etiqueta">https://picsum.photos/200/300</span>).
-    </p>
-    
-    <div class="respuesta">
-      <!-- Inicio -->
-      <img src="https://picsum.photos/200/300">
-      <!-- Fin -->
-    </div>
+    <section id="literal01">
+
+      <p class="instrucciones">Agregue una imagen
+        (etiqueta <span class="etiqueta"><span class="simbolo"><</span>img<span class="simbolo">></span></span>) con la ruta absoluta (atributo <span class="etiqueta">src</span> con valor <span class="etiqueta">https://picsum.photos/200/300</span>).
+      </p>
+      
+      <div class="respuesta">
+        <!-- Inicio -->
+        <img src="https://picsum.photos/200/300">
+        <!-- Fin -->
+      </div>
+      
+    </section>
 
 
     <p class="instrucciones">Agregue una imagen
@@ -41,12 +45,50 @@
 
 
     <p class="instrucciones">Agregue un enlace
-      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>a<span class="simbolo">></span></span>) con la referencia (atributo <span class="etiqueta">href</span> a <span class="etiqueta">https://developer.mozilla.org/es/</span>) y con el texto <span class="texto">MDN - Mozilla Developer Network</span>.
+      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>a<span class="simbolo">></span></span>) con la referencia (atributo <span class="etiqueta">href</span> a <span class="etiqueta">https://developer.mozilla.org/es/</span>) y con el texto <span class="texto">MDN - Mozilla Developer Network</span>. El enlace se abre en una nueva pestaña (atributo <span class="etiqueta">target</span> con valor <span class="etiqueta">_blank</span>).
     </p>
     
     <div class="respuesta">
       <!-- Inicio -->
-      <a href="https://developer.mozilla.org/es/">MDN - Mozilla Developer Network</a>
+      <a href="https://developer.mozilla.org/es/" target="_blank">MDN - Mozilla Developer Network</a>
+      <!-- Fin -->
+    </div>
+
+
+    <p class="instrucciones">Agregue un enlace
+      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>a<span class="simbolo">></span></span>) con la referencia a una sección interna (atributo <span class="etiqueta">href</span> con el valor <span class="etiqueta">#literal01</span>)  y con el texto <span class="texto">Ir a la sección literal 01</span>.
+    </p>
+    
+    <div class="respuesta">
+      <!-- Inicio -->
+      <a href="#literal01">Ir a la sección literal 01</a>
+      <!-- Fin -->
+    </div>
+
+
+    <p class="instrucciones">Agregue un párrafo
+      (etiqueta <span class="etiqueta"><span class="simbolo"><</span>p<span class="simbolo">></span></span>). Use el segundo párrafo generado por <a href="https://www.lipsum.com/" target="_blank">Lorem Ipsum</a> como texto: <span class="texto">Suspendisse potenti. Ut ... consequat eget nunc.</span>
+    </p>
+    
+    <div class="respuesta">
+      <!-- Inicio -->
+      <p>
+        Suspendisse potenti. Ut pulvinar placerat pharetra. Curabitur ligula tortor, condimentum nec libero sed, facilisis scelerisque purus. Cras convallis erat nec mauris ullamcorper consectetur. Nullam dictum suscipit velit, quis lobortis leo placerat eu. Maecenas tempor maximus ipsum at lobortis. Aenean interdum velit eu dapibus rutrum. Etiam et ligula egestas, aliquam est nec, pharetra sapien. Sed lacinia, nisi nec feugiat sagittis, ante tortor volutpat sapien, quis auctor ipsum urna non nisl. Aliquam finibus maximus blandit. Sed placerat nisi odio. Sed quis tellus non metus vehicula elementum id et tortor. Nunc commodo felis at nulla condimentum consectetur. Donec elit purus, mattis vel cursus eleifend, consequat eget nunc.
+      </p>
+      <!-- Fin -->
+    </div>
+
+
+    <p class="instrucciones">Agregue cuatro textos
+      (cuatro etiquetas <span class="etiqueta"><span class="simbolo"><</span>span<span class="simbolo">></span></span> diferentes). El primer y el tercer texto tiene como clase (atributo <span class="etiqueta">class</span> con el valor <span class="etiqueta">fraseimpar</span>). El segundo y el cuarto texto tiene como clase (atributo <span class="etiqueta">class</span> con el valor <span class="etiqueta">frasepar</span>). El primer texto tiene como contenido: <span class="texto">Etiam et mauris sit amet ipsum accumsan mattis.</span>, el segundo texto tiene como contenido: <span class="texto">Morbi orci est, pellentesque at sodales in, pretium vel eros.</span>, el tercer texto tiene como contenido: <span class="texto">Suspendisse potenti.</span>, y el cuarto texto tiene como contenido: <span class="texto">Pellentesque tempus massa at leo tempor sollicitudin.</span>
+    </p>
+    
+    <div class="respuesta">
+      <!-- Inicio -->
+      <span class="fraseimpar">Etiam et mauris sit amet ipsum accumsan mattis.</span>
+      <span class="frasepar">Morbi orci est, pellentesque at sodales in, pretium vel eros.</span>
+      <span class="fraseimpar">Suspendisse potenti.</span>
+      <span class="frasepar">Pellentesque tempus massa at leo tempor sollicitudin.</span>
       <!-- Fin -->
     </div>
 

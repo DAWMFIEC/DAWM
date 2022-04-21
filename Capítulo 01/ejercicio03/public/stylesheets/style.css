@@ -43,3 +43,11 @@ a {
   border: 0.5pt solid black;
   padding: 1%;
 }
+
+.frasepar {
+  background-color: #e1e1f7;
+}
+
+.fraseimpar {
+  background-color: #f7eae1;
+}
