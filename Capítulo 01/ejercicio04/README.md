@@ -17,3 +17,4 @@
 ## Referencias 
 
 * Freeman, J. (2022). Chapter 3 HTML Fundamentals | Client-Side Web Development. Retrieved 19 April 2022, from https://info340.github.io/html-fundamentals.html
+* Mi primer formulario HTML - Aprende sobre desarrollo web | MDN. (2022). Retrieved 22 April 2022, from https://developer.mozilla.org/es/docs/Learn/Forms/Your_first_form
