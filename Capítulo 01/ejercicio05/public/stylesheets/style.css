@@ -51,3 +51,10 @@ article {
   border-radius: 10px;
   margin: 5px;
 }
+
+img {
+  display: block;
+  width: 273px;
+  margin: 0 auto;
+  aspect-ratio: auto 300/250;
+}
