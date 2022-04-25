@@ -18,7 +18,13 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
           let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
-            //chai.expect(response.text).to.contain('<h1>El título más importante</h1>');
+          let objects = `
+            <object data="images/contact-calling-phone-svgrepo-com.svg" width="80"> </object>
+            <object data="images/man-talking-avatar-svgrepo-com.svg" width="60"> </object>
+          `
+
+          let objectsclean = objects.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+          chai.expect(responseclean).to.contain(objectsclean);
             
         })
     });
