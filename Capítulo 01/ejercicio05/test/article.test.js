@@ -24,7 +24,7 @@ describe('Test unitarios para la ruta `/`', function() {
               <img
                 src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
                 alt="GeeksforGeeks"
-              />
+              >
               <h2>GeeksforGeeks</h2>
               <p>
                 Sandeep Jain(FOUNDER) An IIT Roorkee alumnus and 
