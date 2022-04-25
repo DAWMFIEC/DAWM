@@ -1,6 +1,6 @@
-# Ejercicio YY
+# Ejercicio 06
 
-![image info](images/ejercicioYY.png)
+![image info](images/ejercicio06.png)
 
 ### Instrucciones
 
@@ -17,5 +17,7 @@
 ## Referencias 
 
 * Freeman, J. (2022). Chapter 3 HTML Fundamentals | Client-Side Web Development. Retrieved 19 April 2022, from https://info340.github.io/html-fundamentals.html
+* HTML Multimedia. (2022). Retrieved 25 April 2022, from https://www.w3schools.com/html/html_media.asp
 * How to Use SVG Images in CSS and HTML – A Tutorial for Beginners. (2020). Retrieved 25 April 2022, from https://www.freecodecamp.org/news/use-svg-images-in-css-html/#:~:text=SVG%20images%20can%20be%20written,element%20in%20your%20HTML%20document.&text=body%3E-,If%20you%20did%20everything%20correctly%2C%20your%20webpage%20should,exactly%20like%20the%20demo%20below.
 * Contact Us Line Vectors SVG Vectors and Icons - SVG Repo. (2022). Retrieved 25 April 2022, from https://www.svgrepo.com/collection/contact-us-line-vectors/
+* (2022). Retrieved 25 April 2022, from https://www.brandominus.com/manuales/manual_html5.pdf
