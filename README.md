@@ -2,7 +2,7 @@
 
 Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los conceptos revisados durante la certificación. Cada ejercicio contiene un conjunto de pruebas para validar los conocimentos.
 
-### Prerequisitos
+## Prerequisitos
 
 * Editor de texto 
 	- [Sublime](https://www.sublimetext.com/3),
@@ -17,7 +17,7 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 	- Descargue el [paquete](https://www.npmjs.com/package/express) de manera global, con: `npm install -g express` 
 
 
-### ¿Dónde comienzo?
+## ¿Dónde comienzo?
 
 * Clone el repositorio con: `git clone https://github.com/aavendan/CDW01.git`
 * Por cada ejercicio, desde la línea de comandos
@@ -44,7 +44,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 
 ![image info](images/fallo.png) 
 
-### Ejercicios
+## Ejercicios
 
 | Capítulo      | Ejercicios                                        | Temas    |
 | :-----------: | :-----------------------------------------------: | -------: |
