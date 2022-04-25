@@ -1,5 +1,12 @@
-# CDW01 
-## HTML, CSS y JavaScript
+# CDW01: HTML, CSS y JavaScript
+
+### Prerrequisitos
+
+Para utilizar este recurso será necesario instalar los siguientes programas:
+
+* Editor de texto o [Visual Studio Code](https://code.visualstudio.com/download)
+* [Git](https://git-scm.com/downloads)
+* [Nodejs](https://nodejs.org/es/download/)
 
 ### Prácticas
 

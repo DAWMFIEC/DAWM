@@ -16,4 +16,4 @@
 
 ## Referencias 
 
-* Freeman, J. (2022). Chapter 3 HTML Fundamentals | Client-Side Web Development. Retrieved 19 April 2022, from https://info340.github.io/html-fundamentals.html
+* CSS | MDN. (2021). Retrieved 25 April 2022, from https://developer.mozilla.org/es/docs/Web/CSS
