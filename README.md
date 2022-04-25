@@ -47,7 +47,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 ## Ejercicios
 
 | Capítulo      | Ejercicios                                        | Temas    |
-| :-----------: | :-----------------------------------------------: | -------: |
+| :-----------: | :-----------------------------------------------: | :------- |
 | Capítulo 01   | [Ejercicio 01](Capítulo%2001/ejercicio01)         | Títulos  |
 | 			    | [Ejercicio 02](Capítulo%2001/ejercicio02)         | Listas (no) numeradas, tablas, atributos   |
 | 			    | [Ejercicio 03](Capítulo%2001/ejercicio03)         | Imágenes, enlaces, etiquetas contenedores (p-span), atributo (clase) |
