@@ -51,6 +51,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 			    | [Ejercicio 03](Capítulo%2001/ejercicio03)         | Imágenes, enlaces, etiquetas contenedores (p-span), atributo (clase) |
 | 			    | [Ejercicio 04](Capítulo%2001/ejercicio04)         | Formularios, atributo (identificador) |
 | 			    | [Ejercicio 05](Capítulo%2001/ejercicio05)         | Semántico |
+| 			    | [Ejercicio 06](Capítulo%2001/ejercicio06)         | Media |
 
 
 ## Referencias 
