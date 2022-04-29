@@ -3,7 +3,7 @@
     --color-1
     --color-2
 
-  Referencia: https://developer.mozilla.org/es/docs/Web/CSS/var
+  Referencia: https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties  
 */
 
 :root {
@@ -13,9 +13,8 @@
 
 
 /*
-  Utilice el selector universal para
-  aplicar a todos los elementos,
-  la propiedad: 
+  Utilice el selector universal 
+  para aplicar a todos los elementos, la propiedad: 
     Fuente: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 */
 
@@ -30,6 +29,8 @@
   reglas y propiedades: 
     Color de fondo: variable --color-1
     Color de la fuente:  blanco
+
+  Referencia: https://developer.mozilla.org/es/docs/Web/CSS/var
 */
 
 #section-one {
@@ -40,19 +41,24 @@
 /*
  identificador:  section-two
  reglas y propiedades:
-    Fondo: gradiente lineal 
+    Fondo: gradiente lineal
+        Ángulo:  170 grados
+        Color1:  --color-1 a 0%
+        Color2:  --color-1 a 50%
+        Color3:  --color-2 a 50%
+        Color4:  --color-2 a 100%
 
  Referencia:  https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient 
 */
 
-  {
-  background: black;
+#section-two  {
   background: linear-gradient(170deg, var(--color-1) 0%, var(--color-1) 50%, var(--color-2) 50%, var(--color-2) 100%);
 }
 
 /*
   identificador:  section-three
   reglas y propiedades:
+     Color de fondo: variable --color-2
 */
 
 
@@ -61,22 +67,11 @@
 }
 
 
-/*:root {
-  --color-1: #07363f;
-  --color-2: #ff9901;
-}
-
-* {
-  box-sizing: border-box;
-}
-
-body {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  margin: 0;
-  padding: 0;
-  color: var(--color-1);
-  line-height: 1.6;
-}
+/*
+  Utilice el selector por elemento para
+  aplicar a los elementos li, la propiedad:
+    list-style-type: none;
+*/
 
 h1 {
   font-size: 2rem;
@@ -90,27 +85,28 @@ h2 {
   margin: 0.3em 0 0.1em 0;
 }
 
-p {
-  max-width: 900px;
-}
-
 section {
   padding: 30px;
 }
 
-#section-one {
-  background-color: var(--color-1);
-  color: white;
+
+/*
+
+* {
+  box-sizing: border-box;
 }
 
-#section-two {
-  background: black;
-  background: linear-gradient(180deg, var(--color-1) 0%, var(--color-1) 50%, var(--color-2) 50%, var(--color-2) 100%);
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  color: var(--color-1);
+  line-height: 1.6;
 }
 
-#section-tree {
-  background-color: var(--color-2);
-}
+
+
+
 
 .container {
   width: 90%;
