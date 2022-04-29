@@ -1,3 +1,146 @@
-* {
-	font-family: Arial;
+/* 
+  Variables globales 
+    --color-1
+    --color-2
+
+  Referencia: https://developer.mozilla.org/es/docs/Web/CSS/var
+*/
+
+:root {
+  --color-1: #07363f;
+  --color-2: #ff9901;
 }
+
+
+/*
+  Utilice el selector universal para
+  aplicar a todos los elementos,
+  la propiedad: 
+    Fuente: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+*/
+
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+/*
+  Utilice el selector por
+  
+  identificador:  section-one
+  reglas y propiedades: 
+    Color de fondo: variable --color-1
+    Color de la fuente:  blanco
+*/
+
+#section-one {
+  background-color: var(--color-1);
+  color: white;
+}
+
+/*
+ identificador:  section-two
+ reglas y propiedades:
+    Fondo: gradiente lineal 
+
+ Referencia:  https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient 
+*/
+
+  {
+  background: black;
+  background: linear-gradient(170deg, var(--color-1) 0%, var(--color-1) 50%, var(--color-2) 50%, var(--color-2) 100%);
+}
+
+/*
+  identificador:  section-three
+  reglas y propiedades:
+*/
+
+
+#section-three {
+  background-color: var(--color-2);
+}
+
+
+/*:root {
+  --color-1: #07363f;
+  --color-2: #ff9901;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  margin: 0;
+  padding: 0;
+  color: var(--color-1);
+  line-height: 1.6;
+}
+
+h1 {
+  font-size: 2rem;
+  font-size: clamp(2rem, 1.2rem + 2.66vw, 4rem);
+  margin: 0.3em 0 0.1em 0;
+}
+
+h2 {
+  font-size: 1.5rem;
+  font-size: clamp(1.5rem, 1.1rem + 1.33vw, 2.5rem);
+  margin: 0.3em 0 0.1em 0;
+}
+
+p {
+  max-width: 900px;
+}
+
+section {
+  padding: 30px;
+}
+
+#section-one {
+  background-color: var(--color-1);
+  color: white;
+}
+
+#section-two {
+  background: black;
+  background: linear-gradient(180deg, var(--color-1) 0%, var(--color-1) 50%, var(--color-2) 50%, var(--color-2) 100%);
+}
+
+#section-tree {
+  background-color: var(--color-2);
+}
+
+.container {
+  width: 90%;
+  max-width: 1440px;
+  margin: auto;
+}
+
+.card-wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 30px;
+}
+
+.card {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0px 30px 50px -25px #ad3500;
+  position: relative;
+  transition: all 0.3s ease;
+  top: 0;
+}
+.card p {
+  opacity: 0.6;
+  transition: all 0.3s ease;
+}
+.card:hover {
+  box-shadow: 0px 50px 75px -25px #ad3500;
+  top: -20px;
+}
+.card:hover p {
+  opacity: 1;
+}*/
