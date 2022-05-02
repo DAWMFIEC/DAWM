@@ -108,8 +108,96 @@ describe('Test unitarios para la ruta `/`', function() {
 
           chai.expect(response.text).to.have.rule('section')
             .and.decl('padding', '30px')
-
           
         })
     });
+
+    it('Modifique el archivo public/stylesheets/ejercicio.css selector por clase 1', function() {
+
+      return request(app)
+        .get('/stylesheets/ejercicio.css')
+        .then((response) => {
+
+          chai.expect(response.text).to.have.rule('.container')
+            .and.decl('width', '90%')
+            .and.decl('max-width', '1440px')
+            .and.decl('margin', 'auto')
+        })
+    });
+
+    it('Modifique el archivo public/stylesheets/ejercicio.css selector por clase 2', function() {
+
+      return request(app)
+        .get('/stylesheets/ejercicio.css')
+        .then((response) => {
+
+          chai.expect(response.text).to.have.rule('.card-wrapper')
+            .and.decl('display', 'grid')
+            .and.decl('grid-template-columns', 'repeat(auto-fit, minmax(200px, 1fr))')
+            .and.decl('gap', '30px')
+        })
+    });
+
+
+    it('Modifique el archivo public/stylesheets/ejercicio.css selector por descendiente', function() {
+
+      return request(app)
+        .get('/stylesheets/ejercicio.css')
+        .then((response) => {
+
+          chai.expect(response.text).to.have.rule('div.container div.card')
+            .and.decl('background', 'white')
+            .and.decl('padding', '20px')
+            .and.decl('border-radius', '10px')
+            .and.decl('box-shadow', '0px 30px 50px -25px #ad3500')
+        })
+    });
+
+    it('Modifique el archivo public/stylesheets/ejercicio.css selector de elementos hijos', function() {
+
+      return request(app)
+        .get('/stylesheets/ejercicio.css')
+        .then((response) => {
+
+          chai.expect(response.text).to.have.rule('.card > p')
+            .and.decl('opacity', '0.4')
+            .and.decl('transition', 'all 0.3s ease')
+        })
+    })
+
+
+    it('Modifique el archivo public/stylesheets/ejercicio.css selector de elementos adyacente', function() {
+
+      return request(app)
+        .get('/stylesheets/ejercicio.css')
+        .then((response) => {
+
+          chai.expect(response.text).to.have.rule('h2 + p')
+            .and.decl('text-align', 'justify')
+        })
+    })
+
+    it('Modifique el archivo public/stylesheets/ejercicio.css selector de elementos hermano', function() {
+
+      return request(app)
+        .get('/stylesheets/ejercicio.css')
+        .then((response) => {
+
+          chai.expect(response.text).to.have.rule('h1 ~ p')
+            .and.decl('text-align', 'center')
+        })
+    })
+
+    it('Modifique el archivo public/stylesheets/ejercicio.css selector de pseudoclase', function() {
+
+      return request(app)
+        .get('/stylesheets/ejercicio.css')
+        .then((response) => {
+
+          chai.expect(response.text).to.have.rule('.card:hover')
+            .and.decl('box-shadow', '0px 50px 75px -25px #ad3500')
+            .and.decl('top', '-20px')
+        })
+    })
+
 });
