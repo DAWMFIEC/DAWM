@@ -4,7 +4,6 @@
 
 ### Instrucciones
 
-* Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
 * Desde el editor de texto, modifica el archivo `public/stylesheets/ejercicio.css`, 
 	+ Agrega las etiquetas solicitadas dentro de cada uno de los comentarios marcados, con:  
 	`/* Inicio */` y `/* Fin */`
