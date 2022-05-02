@@ -13,9 +13,12 @@
 
 
 /*
-  Utilice el selector universal 
-  para aplicar a todos los elementos, la propiedad: 
-    Fuente: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  Utilice el selector 
+    universal 
+  con  la propiedad: 
+    Familia tipográfica
+  y el valor:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 */
 
 * {
@@ -23,11 +26,10 @@
 }
 
 /*
-  Utilice el selector por
-  
-  identificador:  section-one
-  reglas y propiedades: 
-    Color de fondo: variable --color-1
+  Utilice el selector por identificador:  
+    section-one
+  y las reglas con propiedades: 
+    Color de fondo: var(--color-1)
     Color de la fuente:  blanco
 
   Referencia: https://developer.mozilla.org/es/docs/Web/CSS/var
@@ -39,14 +41,12 @@
 }
 
 /*
- identificador:  section-two
- reglas y propiedades:
-    Fondo: gradiente lineal
-        Ángulo:  170 grados
-        Color1:  --color-1 a 0%
-        Color2:  --color-1 a 50%
-        Color3:  --color-2 a 50%
-        Color4:  --color-2 a 100%
+ Utilice el selector por identificador: 
+    section-two
+ y la regla:
+    Fondo
+ con el valor:
+    linear-gradient(170deg, var(--color-1) 0%, var(--color-1) 50%, var(--color-2) 50%, var(--color-2) 100%);
 
  Referencia:  https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient 
 */
@@ -56,9 +56,12 @@
 }
 
 /*
-  identificador:  section-three
-  reglas y propiedades:
-     Color de fondo: variable --color-2
+  Utilice el selector por identificador:  
+    section-three
+  y la regla:
+     Color de fondo
+  con el valor: 
+      var(--color-2)
 */
 
 
@@ -68,9 +71,16 @@
 
 
 /*
-  Utilice el selector por elemento para
-  aplicar a los elementos li, la propiedad:
-    list-style-type: none;
+  Utilice el selector por elemento para la etiqueta: 
+    h1
+  y las reglas con propiedades: 
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.2rem + 2.66vw, 4rem);
+    margin: 0.3em 0 0.1em 0;
+
+  Referencia:  
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 */
 
 h1 {
@@ -79,11 +89,31 @@ h1 {
   margin: 0.3em 0 0.1em 0;
 }
 
+/*
+  Utilice el selector por elemento para la etiqueta: 
+    h2
+  y las reglas con propiedades: 
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.1rem + 1.33vw, 2.5rem);
+    margin: 0.3em 0 0.1em 0;
+
+  Referencia:  
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+*/
+
 h2 {
   font-size: 1.5rem;
   font-size: clamp(1.5rem, 1.1rem + 1.33vw, 2.5rem);
   margin: 0.3em 0 0.1em 0;
 }
+
+/*
+  Utilice el selector por elemento para la etiqueta: 
+    section
+  y la regla con la propiedad: 
+    padding: 30px;
+*/
 
 section {
   padding: 30px;
@@ -103,10 +133,6 @@ body {
   color: var(--color-1);
   line-height: 1.6;
 }
-
-
-
-
 
 .container {
   width: 90%;

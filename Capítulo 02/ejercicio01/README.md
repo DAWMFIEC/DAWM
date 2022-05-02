@@ -17,8 +17,10 @@
 ## Referencias 
 
 * CSS | MDN. (2021). Retrieved 25 April 2022, from https://developer.mozilla.org/es/docs/Web/CSS
+* chai-css. (2016). Retrieved 2 May 2022, from https://www.npmjs.com/package/chai-css/v/0.0.3
 * Gradient instead of negative margin https://codepen.io/dPlugins/pen/vYpQGEK a través de @CodePen 
 * Uso de propiedades personalizadas (variables) en CSS - CSS | MDN. (2022). Retrieved 29 April 2022, from https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties
 * :root - CSS | MDN. (2022). Retrieved 29 April 2022, from https://developer.mozilla.org/es/docs/Web/CSS/:root
 * var() - CSS | MDN. (2022). Retrieved 29 April 2022, from https://developer.mozilla.org/es/docs/Web/CSS/var
 * linear-gradient() - CSS: Cascading Style Sheets | MDN. (2022). Retrieved 29 April 2022, from https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient
+* clamp() - CSS: Cascading Style Sheets | MDN. (2022). Retrieved 2 May 2022, from https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
