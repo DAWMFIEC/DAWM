@@ -23,6 +23,10 @@
 
 /* Inicio */
 
+* {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
 /* Fin */
 
 /*
@@ -139,7 +143,7 @@
 
 /*
   Utilice el selector para aplicar a la etiqueta div con clase card, 
-  la cual se encuentra dentro de la etiqueta div con clase container
+  la cual SE ENCUENTRA DENTRO de la etiqueta div con clase container
 
   con las reglas con valores:
     background: white;
@@ -158,7 +162,7 @@
 
 /*
   Utilice el selector para aplicar a la etiqueta del elemento p, 
-  la cual es hija de la etiqueta con clase card
+  la cual es HIJA de la etiqueta con clase card
 
   con las reglas con valores:
     opacity: 0.4;
