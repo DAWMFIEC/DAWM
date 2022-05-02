@@ -21,9 +21,9 @@
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 */
 
-* {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-}
+/* Inicio */
+
+/* Fin */
 
 /*
   Utilice el selector por identificador:  
@@ -35,10 +35,9 @@
   Referencia: https://developer.mozilla.org/es/docs/Web/CSS/var
 */
 
-#section-one {
-  background-color: var(--color-1);
-  color: white;
-}
+/* Inicio */
+
+/* Fin */
 
 /*
  Utilice el selector por identificador: 
@@ -51,9 +50,9 @@
  Referencia:  https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient 
 */
 
-#section-two  {
-  background: linear-gradient(170deg, var(--color-1) 0%, var(--color-1) 50%, var(--color-2) 50%, var(--color-2) 100%);
-}
+/* Inicio */
+
+/* Fin */
 
 /*
   Utilice el selector por identificador:  
@@ -65,9 +64,9 @@
 */
 
 
-#section-three {
-  background-color: var(--color-2);
-}
+/* Inicio */
+
+/* Fin */
 
 
 /*
@@ -83,11 +82,9 @@
   https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
 */
 
-h1 {
-  font-size: 2rem;
-  font-size: clamp(2rem, 1.2rem + 2.66vw, 4rem);
-  margin: 0.3em 0 0.1em 0;
-}
+/* Inicio */
+
+/* Fin */
 
 /*
   Utilice el selector por elemento para la etiqueta: 
@@ -98,11 +95,9 @@ h1 {
     margin: 0.3em 0 0.1em 0;
 */
 
-h2 {
-  font-size: 1.5rem;
-  font-size: clamp(1.5rem, 1.1rem + 1.33vw, 2.5rem);
-  margin: 0.3em 0 0.1em 0;
-}
+/* Inicio */
+
+/* Fin */
 
 /*
   Utilice el selector por elemento para la etiqueta: 
@@ -111,9 +106,9 @@ h2 {
     padding: 30px;
 */
 
-section {
-  padding: 30px;
-}
+/* Inicio */
+
+/* Fin */
 
 
 /*
@@ -125,11 +120,9 @@ section {
     margin: auto;
 */
 
-.container {
-  width: 90%;
-  max-width: 1440px;
-  margin: auto;
-}
+/* Inicio */
+
+/* Fin */
 
 /*
   Utilice el selector por clase para
@@ -140,11 +133,9 @@ section {
     gap: 30px;
 */
 
-.card-wrapper {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-  gap: 30px;
-}
+/* Inicio */
+
+/* Fin */
 
 /*
   Utilice el selector para aplicar a la etiqueta div con clase card, 
@@ -160,15 +151,9 @@ section {
     top: 0;
 */
 
-div.container div.card {
-  background: white;
-  padding: 20px;
-  border-radius: 10px;
-  box-shadow: 0px 30px 50px -25px #ad3500;
-  position: relative;
-  transition: all 0.3s ease;
-  top: 0;
-}
+/* Inicio */
+
+/* Fin */
 
 
 /*
@@ -180,10 +165,9 @@ div.container div.card {
     transition: all 0.3s ease;
 */
 
-.card > p {
-  opacity: 0.4;
-  transition: all 0.3s ease;
-}
+/* Inicio */
+
+/* Fin */
 
 /*
   Utilice el selector para aplicar a la etiqueta del elemento p 
@@ -193,9 +177,9 @@ div.container div.card {
     text-align: justify;
 */
 
-h2 + p {
-  text-align: justify;
-}
+/* Inicio */
+
+/* Fin */
 
 /*
   Utilice el selector para aplicar a la etiqueta del elemento p 
@@ -205,9 +189,9 @@ h2 + p {
     text-align: center;
 */
 
-h1 ~ p {
-  text-align: center;
-}
+/* Inicio */
+
+/* Fin */
 
 /*
   Utilice el selector para aplicar a la etiqueta con clase card 
@@ -218,7 +202,6 @@ h1 ~ p {
     top: -20px !important;
 */
 
-.card:hover {
-  top: -20px !important;
-  box-shadow: 0px 50px 75px -25px #ad3500 !important;
-}
+/* Inicio */
+
+/* Fin */
