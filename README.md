@@ -55,6 +55,9 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 			    | [Ejercicio 05](Capítulo%2001/ejercicio05)         | Semántico |
 | 			    | [Ejercicio 06](Capítulo%2001/ejercicio06)         | Media |
 | Capítulo 02   | [Ejercicio 01](Capítulo%2002/ejercicio01)         | Reglas y Selectores  |
+| 			    | [Ejercicio 02](Capítulo%2002/ejercicio02)         | Modelo de cajas  |
+| 			    | [Ejercicio 03](Capítulo%2002/ejercicio03)         | Colocación  |
+| 			    | [Ejercicio 04](Capítulo%2002/ejercicio04)         | Posicionamiento  |
 
 ## Referencias 
 
