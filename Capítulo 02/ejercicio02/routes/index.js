@@ -2,8 +2,8 @@ var express = require('express');
 var router = express.Router();
 
 let modulo = 'CDW01'
-let capitulo = 'Capítulo XX'
-let ejercicio = 'Ejercicio YY'
+let capitulo = 'Capítulo 02'
+let ejercicio = 'Ejercicio 02'
 
 /* GET home page. */
 router.get('/', function(req, res, next) {

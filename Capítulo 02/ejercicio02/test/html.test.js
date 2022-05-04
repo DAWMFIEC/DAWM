@@ -18,7 +18,14 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
           let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
-            //chai.expect(response.text).to.contain('<h1>El título más importante</h1>');
+          let answerclean = `
+            <p>
+              <span>Estudia no para saber una cosa más, sino para saberla mejor.</span>
+              <sub>Séneca.</sub>
+            </p>
+          `.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+          
+          chai.expect(responseclean).to.contain(answerclean);
             
         })
     });

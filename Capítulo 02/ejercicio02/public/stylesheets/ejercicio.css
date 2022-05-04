@@ -1,0 +1,71 @@
+/*
+	Agregue el selector para DESCENDIENTES para
+
+		La etiqueta p, que se encuentra dentro de la etiqueta con clase respuesta
+
+	Con las propiedades para centrar respecto con 
+	el exterior: 
+
+		Margen izquierdo:  25%
+		Margen derecho: 25%;
+
+	Con la propiedad para centrar respecto con 
+	el contenido: 
+
+		Alineación del texto:  centrado
+
+	Referencias: 
+		https://www.w3schools.com/cssref/pr_margin-left.asp
+		https://www.w3schools.com/cssref/pr_margin-right.asp
+		https://www.w3schools.com/cssref/pr_text_text-align.ASP
+*/
+
+/* Inicio */
+
+
+/* Fin */
+
+/*
+	Agregue el selector para DESCENDIENTES para
+
+		La etiqueta span, que se encuentra dentro de la etiqueta p, que se encuentra dentro de la etiqueta con clase respuesta
+
+	Con la propiedad y valor: 
+		text-shadow: 2px 2px 4px #a59f9f;
+*/
+
+/* Inicio */
+
+
+/* Fin */
+
+/*
+	Agregue el selector para DESCENDIENTES para
+
+		La etiqueta sub, que se encuentra dentro de la etiqueta p, que se encuentra dentro de la etiqueta con clase respuesta
+
+	Con la propiedad y valor: 
+		text-transform: uppercase;
+*/
+
+/* Inicio */
+
+
+/* Fin */
+
+/*
+	Agregue el selector para ELEMENTOS HIJAS para
+
+		La etiqueta p, que se encuentra dentro de la etiqueta con clase respuesta
+
+	Con las propiedades: 
+
+		Borde:  1punto sólido negro
+		Relleno: 3rem (arriba y abajo) 1rem (izquierda y derecha)
+		Borde redondeado: 0.5rem (arriba-izquierda y abajo-derecha) y 1.4rem (arriba-derecha y abajo-izquierda)  
+*/
+
+/* Inicio */
+
+
+/* Fin */
