@@ -1,0 +1,47 @@
+/*
+  Agregue las propiedades al selector #bloque1
+  para: 
+
+    - Use flexbox
+    - Muestre los elementos en fila en sentido reverso
+    - El contenido debe estar justificado donde los elementos se distribuyan 
+      de modo que el espacio entre dos elementos cualesquiera (y el espacio hasta los bordes) sea igual.
+    
+  Referencias: 
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+#bloque1 {
+
+}
+
+/*
+  Agregue las propiedades al selector #bloque1 img:nth-child(4)
+  para: 
+
+    - Coloque la imagen al final
+    
+  Referencias: 
+    https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+*/
+
+#bloque1 img:nth-child(4) {
+
+}
+
+
+/*
+  Agregue las propiedades al selector #bloque2
+  para: 
+
+    - Use gridbox
+    - Muestre los elementos en dos columnas. La plantilla es 1fr 1fr
+    - Justifique los ítems al centro
+    
+  Referencias: 
+    https://css-tricks.com/snippets/css/complete-guide-grid/
+*/
+
+#bloque2 {
+
+}
