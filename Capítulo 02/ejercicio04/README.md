@@ -16,3 +16,5 @@
 ## Referencias 
 
 * Freeman, J. (2022). Chapter 3 HTML Fundamentals | Client-Side Web Development. Retrieved 19 April 2022, from https://info340.github.io/html-fundamentals.html
+* Z-index and stacking contexts. (2022). Retrieved 9 May 2022, from https://web.dev/learn/css/z-index/
+* position | CSS-Tricks. (2012). Retrieved 9 May 2022, from https://css-tricks.com/almanac/properties/p/position/
