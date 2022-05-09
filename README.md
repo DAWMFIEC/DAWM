@@ -58,8 +58,12 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 			    | [Ejercicio 02](Capítulo%2002/ejercicio02)         | Modelo de cajas  |
 | 			    | [Ejercicio 03](Capítulo%2002/ejercicio03)         | Colocación  |
 | 			    | [Ejercicio 04](Capítulo%2002/ejercicio04)         | Posicionamiento  |
+| Capítulo 03   | [Ejercicio 01](Capítulo%2003/ejercicio01)         | Diseño responsivo  |
 
 ## Referencias 
 
 * Guía completa markdown y su integración con R. (2022). Retrieved 19 April 2022, from https://rstudio-pubs-static.s3.amazonaws.com/330387_5a40ca72c3b14824acedceb7d34618d1.html
 * Unit Testing Express : Unit Test Express Route. (2018). Retrieved 19 April 2022, from https://codehandbook.org/unit-test-express-route/
+* Freeman, J. (2022). Client-Side Web Development. Retrieved 9 May 2022, from https://info340.github.io/
+* Learn. (2022). Retrieved 9 May 2022, from https://web.dev/learn/
+* Tecnología para desarrolladores web | MDN. (2021). Retrieved 9 May 2022, from https://developer.mozilla.org/es/docs/Web
