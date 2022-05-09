@@ -4,7 +4,7 @@
 
 ### Instrucciones
 
-* Desde el editor de texto, modifica el archivo `public/stylesheets/ejercicio.css`, 
+* Desde el editor de texto, modifica el archivo `public/stylesheets/fixed.css`, `public/stylesheets/sticky.css` y `public/stylesheets/relative.css`
 	+ Agrega las etiquetas solicitadas dentro de cada uno de los comentarios marcados, con:  
 	`/* Inicio */` - `/* Fin */`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
