@@ -43,3 +43,11 @@ a {
   border: 0.5pt solid black;
   padding: 1%;
 }
+
+.respuesta p {
+  text-align: justify;
+}
+
+.referencia {
+  border: 0.15rem solid red;
+}

@@ -3,16 +3,53 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/fixed.css' />
+    <link rel='stylesheet' href='/stylesheets/sticky.css' />
+    <link rel='stylesheet' href='/stylesheets/relative.css' />
   </head>
   <body>
     <p class="titulo"><%= ejercicio %></p>
 
-    <p class="instrucciones">Agregue las reglas de estilo de acuerdo con las instrucciones que se encuentran en el archivo <span class="etiqueta">public/stylesheets/ejercicio.css</span>
+    <p class="instrucciones">Agregue las reglas de estilo de acuerdo con las instrucciones que se encuentran en los archivos <span class="etiqueta">public/stylesheets/fixed.css</span>, <span class="etiqueta">public/stylesheets/sticky.css</span> y <span class="etiqueta">public/stylesheets/relative.css</span>. Agregue un marco
+      (atributo <span class="etiqueta">class</span> con valor <span class="etiqueta">referencia</span>) para identificar la etiqueta que desee modificar.
     </p>
-    
+
     <div class="respuesta">
       <!-- Inicio -->
-      
+      <div id="whatsapp">Whatsapp</div>
+
+      <nav id="navegacion">
+        <ul>
+          <li><a href="#parrafo1" title="">Opción 1</a></li>
+          <li><a href="#parrafo2" title="">Opción 2</a></li>
+          <li><a href="#parrafo3" title="">Opción 3</a></li>
+          <li><a href="#parrafo4" title="">Opción 4</a></li>
+          <li><a href="#parrafo5" title="">Opción 5</a></li>
+          <li><a href="#parrafo6" title="">Opción 6</a></li>
+          <li><a href="#parrafo7" title="">Opción 7</a></li>
+        </ul>
+      </nav>
+
+
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed tempor massa. Sed ac lacus non arcu vulputate cursus. Donec et efficitur mauris. Phasellus et metus id dolor egestas auctor ac ac ex. Sed faucibus dapibus erat, fermentum imperdiet erat volutpat ut. Nunc fermentum lacus ut finibus placerat. Vestibulum vitae metus diam. Fusce semper, urna at consectetur lacinia, ex ipsum convallis arcu, et porta metus eros sit amet neque. Fusce vel vestibulum turpis. Duis mauris nibh, ullamcorper quis tellus eget, finibus porta eros. Nam elementum sapien sit amet cursus porttitor. Cras vel arcu tempor, tristique lorem vel, porttitor tellus. Nunc eget sapien et neque elementum elementum ultricies faucibus ex.</p>
+
+      <p>Aenean id est in lorem eleifend ultricies. Aenean facilisis diam nec viverra egestas. Nam euismod odio non odio ultrices condimentum. Duis sed metus justo. Sed tempus sit amet diam nec commodo. Sed quis condimentum metus. Morbi eu ligula diam. Etiam at lobortis leo, eget interdum magna. Vivamus malesuada, risus sed pharetra hendrerit, magna magna ornare tellus, in mollis libero dui nec urna. Mauris odio dolor, aliquam ut ex vel, fermentum posuere ligula. Suspendisse dignissim sagittis lectus, vel dignissim erat luctus feugiat. Sed et massa sapien. Cras gravida nisi velit, ac porta quam fermentum ac. Sed faucibus sagittis egestas. Aliquam auctor id diam a fringilla. Praesent sit amet ultricies massa, vitae imperdiet tellus.</p>
+
+      <p>Pellentesque tristique aliquam ex, sed elementum eros egestas id. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse nunc sapien, finibus et varius ac, interdum id odio. Phasellus tincidunt lacus et nisl eleifend sollicitudin. Nullam sed odio nec dui tempus interdum in a nisl. Mauris pellentesque vel leo et luctus. Vivamus ac blandit elit. Nulla faucibus vestibulum sapien, ac dapibus mi sagittis et. Duis odio odio, pellentesque dapibus eros sed, luctus convallis ex. Integer congue urna sit amet fringilla vestibulum. Nam nibh sapien, ullamcorper sed magna non, vehicula dictum velit. Suspendisse ut risus vitae lorem lobortis gravida aliquet eu eros. Praesent finibus interdum orci, nec pretium lacus venenatis quis. Vivamus sodales elementum varius.</p>
+
+      <p id="parrafo1">Maecenas venenatis commodo est, ut posuere quam mattis ac. Donec non metus non magna vulputate egestas. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut eros massa, molestie in justo id, gravida ullamcorper libero. In varius fermentum sapien at fringilla. Cras sollicitudin, leo sed eleifend congue, nunc leo cursus sapien, quis porta tortor diam nec ante. Duis euismod viverra purus. Vestibulum metus odio, vulputate sed neque consequat, imperdiet bibendum sem. Fusce vel eleifend augue. Integer mattis magna a commodo elementum. Sed dictum arcu ultricies ipsum rutrum, consectetur venenatis sem volutpat. Donec ac nisl tincidunt, facilisis odio ac, hendrerit ex.</p>
+
+      <p id="parrafo2">Nunc fermentum lectus non eros posuere, sit amet ultricies diam interdum. Proin rutrum nulla quis urna dictum varius. Donec pellentesque ex vitae finibus tristique. Aliquam lacinia consectetur nunc, vitae dictum mauris suscipit varius. Maecenas quis aliquet odio. Donec porta nec magna eu egestas. Donec auctor mattis nunc ut condimentum. Quisque eros ex, viverra et commodo eget, bibendum ut est. Sed vel auctor arcu. Sed imperdiet nibh sapien, lobortis varius sapien consequat a. Aliquam tincidunt neque sed lacinia commodo.</p>
+
+      <p id="parrafo3">Pellentesque ut tincidunt nulla. Nullam cursus ex eget mi ornare, at rhoncus dui dignissim. Morbi tincidunt rutrum consequat. Cras eleifend erat id felis iaculis cursus ac non augue. Fusce in eros eu urna blandit venenatis. Sed varius eget erat in molestie. In et risus mauris. Phasellus vitae euismod orci, pharetra rhoncus dui. Nunc sed risus erat. Cras rutrum gravida tortor, quis varius velit fringilla feugiat. Ut et massa volutpat, lacinia ligula sed, fringilla urna. In sit amet fermentum ipsum.</p>
+
+      <p id="parrafo4">Mauris tempus ultricies nunc, quis elementum odio semper id. Donec interdum dolor sem, sed varius sem rhoncus vitae. Morbi ullamcorper euismod mauris eu maximus. Pellentesque in porta risus. Nam mattis sem eu risus vulputate dignissim. Aenean fermentum ullamcorper libero in consectetur. Integer aliquet a mi et sodales. Duis non hendrerit arcu. Aenean justo purus, tincidunt at suscipit et, faucibus in diam. Phasellus lacinia est egestas, aliquet felis a, consectetur quam. Mauris eleifend neque erat, vel fermentum lacus luctus quis.</p>
+
+      <p id="parrafo5">Sed in diam semper purus eleifend gravida vitae sed mauris. Vivamus at lacus sollicitudin, bibendum dui et, tincidunt nisi. Mauris lacinia molestie felis, varius ultricies arcu egestas ut. Proin lobortis purus eu massa tempor euismod. Sed accumsan efficitur placerat. Proin quis dictum justo. Aenean consequat elit sit amet est maximus volutpat.</p>
+
+      <p id="parrafo6">Phasellus dignissim iaculis mauris, sit amet bibendum magna vulputate vitae. Sed tempus mollis sem a efficitur. Duis vel elementum leo, ultricies lobortis arcu. Maecenas eget commodo dui. Proin turpis libero, pretium ornare diam a, bibendum lobortis ante. Maecenas suscipit nisi at ligula feugiat volutpat. Ut venenatis, augue et condimentum pellentesque, risus nunc lobortis mi, non gravida arcu arcu non leo. Praesent finibus pellentesque ante, ut facilisis metus posuere ut. Quisque sodales tristique hendrerit. Morbi lacinia elementum velit, ac consectetur orci vulputate eu.</p>
+
+      <p id="parrafo7">Suspendisse ut est hendrerit, imperdiet sem nec, facilisis massa. Praesent rhoncus risus nec commodo vehicula. Ut turpis nisi, cursus ut velit tristique, sollicitudin dignissim magna. Maecenas posuere nisi a ipsum gravida lacinia. Nulla facilisi. Suspendisse at finibus orci. Mauris tempus dui enim, in porttitor sem accumsan a. Sed quis enim orci. In ac massa ut nunc venenatis sollicitudin quis eu nunc. Suspendisse egestas nisl ac turpis facilisis, eget maximus ex venenatis. Nulla tristique tortor sit amet vulputate varius. Integer enim tellus, fermentum vel ligula quis, luctus pulvinar massa. Nunc non mattis ex. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Fusce fermentum odio nisl, eget ultrices ipsum semper vel. Sed fermentum odio ligula, at luctus mauris elementum in.</p>
       <!-- Fin -->
     </div>
 

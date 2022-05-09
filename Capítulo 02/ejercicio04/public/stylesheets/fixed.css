@@ -1,0 +1,58 @@
+/*
+  Agregue la propiedad: 
+    color
+  con el valor: 
+    transparente
+*/
+
+/* Inicio */
+div#whatsapp {
+  color: transparent;
+}
+/* Fin */
+
+/*
+  Agregue las propiedades y los valores: 
+    display:  block
+    ancho y alto:  5rem
+*/
+
+/* Inicio */
+div#whatsapp {
+ display:  block;
+ width: 5rem;
+ height: 5rem;
+}
+/* Fin */
+
+
+/*
+  Agregue las propiedades y los valores: 
+    Imagen de fondo: url("../images/whatsapp-logo.png")
+    Tamaño de la imagen de fondo:  cover
+    Repetición de la imagen de fondo:  no-repeat
+
+*/
+
+/* Inicio */
+div#whatsapp {
+  background-image: url("../images/whatsapp-logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+/* Fin */
+
+/*
+  Agregue las propiedades y los valores: 
+    Posición: fixed
+    derecha y abajo:  1rem
+
+*/
+
+/* Inicio */
+div#whatsapp {
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+/* Fin */

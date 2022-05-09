@@ -1,0 +1,40 @@
+ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+
+li {
+  list-style-type: none;
+}
+
+/*
+  Agregue las propiedades y los valores: 
+    Color de fondo:  blanco
+    Relleno arriba y abajo: 1%
+    z-index: 999
+*/
+
+/* Inicio */
+nav {
+ background-color: white;
+ padding-top: 1%;
+ padding-bottom: 1%;
+ z-index: 999;
+}
+/* Fin */
+
+
+/*
+  Agregue las propiedades y los valores: 
+    Posición: fijado
+    Arriba: 0px
+
+*/
+
+/* Inicio */
+nav {
+ position: sticky;
+ top: 0px;
+}
+/* Inicio */
