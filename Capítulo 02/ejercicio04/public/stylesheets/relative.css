@@ -9,9 +9,7 @@
 
 /* Inicio */
 picture img {
-  max-width:50%;
-  display: block;
-  margin: 0 auto;
+
 }
 /* Fin */
 
@@ -22,7 +20,7 @@ picture img {
 
 /* Inicio */
 picture img {
-  border-radius: 0.4rem;
+
 }
 /* Fin */
 
@@ -37,9 +35,7 @@ picture img {
 
 /* Inicio */
 picture span {
-  max-width: 30%; 
-  display: block;
-  margin: 0 auto;
+
 }
 /* Fin */
 
@@ -54,8 +50,7 @@ picture span {
 
 /* Inicio */
 picture span {
-  background: white;
-  padding: 1.4rem 2rem; 
+
 }
 /* Fin */
 
@@ -65,19 +60,14 @@ picture span {
     - Estilo de la fuente:  itálica
     - Borde
         color: #1F516B
-        ancho: 1.2pt, excepto el de la derecha que tiene valor 0
+        ancho: 1.2pt, excepto el valor del borde derecho que es 0
         estilo: sólido 
 
 */
 
 /* Inicio */
 picture span {
-  font-size: 1.5vw;
-  font-style: italic;
 
-  border-color: #1F516B;
-  border-width: 1.2pt 0pt 1.2pt 1.2pt;
-  border-style: solid;
 }
 /* Fin */
 
@@ -91,9 +81,7 @@ picture span {
 
 /* Inicio */
 picture span {
-  position: relative;
-  top: -5.7rem;
-  left:  8.7rem;
+
 }
 /* Fin */
 

@@ -7,7 +7,7 @@
 
 /* Inicio */
 div#whatsapp {
-  color: transparent;
+
 }
 /* Fin */
 
@@ -19,9 +19,7 @@ div#whatsapp {
 
 /* Inicio */
 div#whatsapp {
- display:  block;
- width: 5rem;
- height: 5rem;
+
 }
 /* Fin */
 
@@ -36,9 +34,7 @@ div#whatsapp {
 
 /* Inicio */
 div#whatsapp {
-  background-image: url("../images/whatsapp-logo.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+
 }
 /* Fin */
 
@@ -51,8 +47,6 @@ div#whatsapp {
 
 /* Inicio */
 div#whatsapp {
-  position: fixed;
-  bottom: 1rem;
-  right: 1rem;
+
 }
 /* Fin */

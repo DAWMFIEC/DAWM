@@ -17,10 +17,7 @@ li {
 
 /* Inicio */
 nav {
- background-color: white;
- padding-top: 1%;
- padding-bottom: 1%;
- z-index: 999;
+
 }
 /* Fin */
 
@@ -34,7 +31,6 @@ nav {
 
 /* Inicio */
 nav {
- position: sticky;
- top: 0px;
+
 }
 /* Inicio */
