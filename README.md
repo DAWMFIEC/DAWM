@@ -1,6 +1,6 @@
 # Desarrollo de Aplicaciones Web y Móviles - SOFG1006
 
-Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los conceptos revisados durante la certificación. Cada ejercicio contiene un conjunto de pruebas para validar los conocimentos.
+Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los conceptos revisados durante la clase. Cada ejercicio contiene un conjunto de pruebas para validar tu respuesta.
 
 ## Prerequisitos
 
@@ -13,8 +13,6 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 	- Instale node, dese el [sitio oficial](https://nodejs.org/es/download/).
 * npm
 	- Descargue el [paquete](https://www.npmjs.com/package/download) de manera global, con: `npm install -g npm` 
-* express
-	- Descargue el [paquete](https://www.npmjs.com/package/express) de manera global, con: `npm install -g express` 
 
 
 ## ¿Dónde comienzo?
@@ -22,14 +20,7 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 * Clone el repositorio con: `git clone https://github.com/aavendan/CDW01.git`
 * Por cada ejercicio, desde la línea de comandos
 	+ Ingrese a la carpeta del capítulo y del ejercicio
-	+ Instale los paquetes necesarios, con: `npm install`
-	+ Levante el servidor con cualquiera de las siguientes opciones:
-		- En modo predeterminado, con: `npm start`
-		- En modo de depuración 
-			+ En Windows, con: `npm run debugw`
-			+ En MacOs, con: `npm run debugm`
-	+ Utilice su navegador preferido para abrir la vista inicial del ejercicio, con el URL: `http://localhost:3000/`
-* Utilice su editor de texto preferido para abrir y modificar el/los archivo(s) solicitados.
+* Siga las instrucciones que aparecen en el README.md de cada ejercicio.
 * Verifique los resultados al actualizar en el navegador
 
 ## Pruebas Unitarias
