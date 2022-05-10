@@ -21,7 +21,7 @@
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 * Pruebas unitarias
 
-	+ Ejecutar: `npm test`
+	+ Desde la línea de comandos ejecute: `npm test`
 	- Los resultados posibles a las pruebas unitarias pueden ser: 
 		* Todos fueron exitosas.
 		
