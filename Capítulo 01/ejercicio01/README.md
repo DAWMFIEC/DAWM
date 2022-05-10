@@ -2,7 +2,7 @@
 
 ![image info](images/ejercicio01.png)
 
-### Instrucciones
+## Instrucciones
 
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
@@ -19,19 +19,14 @@
 	+ Agrega las etiquetas solicitadas dentro de cada uno de los comentarios marcados, con:  
 	`<!-- Inicio -->` y `<!-- Fin -->`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
-* Pruebas unitarias
 
-	+ Desde la línea de comandos ejecute: `npm test`
-	- Los resultados posibles a las pruebas unitarias pueden ser: 
-		* Todos fueron exitosas.
-		
-		![image info](images/exito.png)
-		
-		* Existen pruebas unitarias fallidas.
-		
-		![image info](images/fallo.png)
+## Pruebas unitarias
 
-	+ En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
+* Desde la línea de comandos ejecute: `npm test`
+* Los resultados posibles a las pruebas unitarias pueden ser: 
+	+ Todos fueron exitosas, o
+	+ Existen pruebas unitarias fallidas.
+* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
 
 ## Referencias 
 
