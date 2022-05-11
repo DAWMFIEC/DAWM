@@ -58,3 +58,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 * Freeman, J. (2022). Client-Side Web Development. Retrieved 9 May 2022, from https://info340.github.io/
 * Learn. (2022). Retrieved 9 May 2022, from https://web.dev/learn/
 * Tecnología para desarrolladores web | MDN. (2021). Retrieved 9 May 2022, from https://developer.mozilla.org/es/docs/Web
+* Hello, World! - Learn HTML - Free Interactive HTML Tutorial. (2022). Retrieved 11 May 2022, from https://www.learn-html.org/en/Hello%2C_World%21
+* HTML Tutorial. (2022). Retrieved 11 May 2022, from https://www.w3schools.com/html/default.asp
+* CSS Tutorial. (2022). Retrieved 11 May 2022, from https://www.w3schools.com/css/default.asp
+* Introduction to Chai Assertions. (2022). Retrieved 11 May 2022, from https://testautomationu.applitools.com/chai-test-assertions/
