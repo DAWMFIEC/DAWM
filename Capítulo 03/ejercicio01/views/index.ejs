@@ -3,11 +3,11 @@
   <head>
     <title><%= title %></title>
     <link rel='stylesheet' href='/stylesheets/style.css' />
+    <link rel='stylesheet' href='/stylesheets/ejercicio.css' />
   </head>
   <body>
     <p class="titulo"><%= ejercicio %></p>
-
-    <p class="instrucciones">Agregue un título de nivel 1 
+    <p class="instrucciones">Agregue un título de nivel 1
       (etiqueta <span class="etiqueta"><span class="simbolo"><</span>h1<span class="simbolo">></span></span>)
       con el texto <span class="texto">El título más importante</span>
     </p>
@@ -16,137 +16,131 @@
       <!-- Inicio -->
       <header class="header">
         <div class="logo">
-            <p class="iniciales">DAWM</p>
-            <h1>Desarrollo de Aplicaciones Web y Móviles</h1>
+          <p class="iniciales">DAWM</p>
+          <h1>Desarrollo de Aplicaciones Web y Móviles</h1>
         </div>
-
         <nav class="menu">
-            <div >
-                <a href="#">Inicio</a>
-                <a href="#">Acerca de</a>
-                <a href="#">Artículos</a>
-                <a href="#">Contacto</a>
-            </div>
+          <div >
+            <a href="#">Inicio</a>
+            <a href="#">Acerca de</a>
+            <a href="#">Artículos</a>
+            <a href="#">Contacto</a>
+          </div>
         </nav>
         
-    </header>
-
-    <div class="articulo-primero">
+      </header>
+      <div class="articulo-primero">
         <div>
-            <div class="destacado">
-                <div class="">
-                    <h2 class="titulo">Responsive Web Design</h2>
-                    <p class="fecha">
-                        <time>Octubre 11, 2021</time>
-                    </p> 
+          <div class="destacado">
+            <div class="">
+              <h2 class="titulo">Responsive Web Design</h2>
+              <p class="fecha">
+                <time>Octubre 11, 2021</time>
+              </p>
+            </div>
+            <p class="extracto">
+              Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt illo possimus atque fuga harum consequuntur reprehenderit, asperiores aperiam commodi, repellat deserunt odio repellendus iste recusandae vitae officiis rem eaque esse!
+            </p>
+            <a href="#" class="btn-link">Leer más</a>
+          </div>
+          <div class="imagen">
+            <img src="images/img-01.jpg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="main">
+        <div>
+          <div class="articulos">
+            <article class="articulo">
+              <div>
+                <a href="#"><img src="images/img-02.jpg" alt="" /></a>
+              </div>
+              <div class="contenedor-texto">
+                <div>
+                  <h2 class="titulo">
+                  <a href="#">Título del artículo más destacado</a>
+                  </h2>
+                  <p class="fecha">
+                    <time>Noviembre 13, 2019</time>
+                  </p>
                 </div>
                 <p class="extracto">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt illo possimus atque fuga harum consequuntur reprehenderit, asperiores aperiam commodi, repellat deserunt odio repellendus iste recusandae vitae officiis rem eaque esse!
+                  Lorem ipsum, dolor sit amet coknsectetur
+                  adipisicing elit. Cupiditate, autem animi.
                 </p>
                 <a href="#" class="btn-link">Leer más</a>
-            </div>
-            <div class="imagen">
-                <img src="./img/img-01.jpg" alt="" />
-            </div>
-        </div>
-    </div>
-
-    <div class="main">
-        <div>
-            <div class="articulos">
-                <article class="articulo">
-                    <div>
-                        <a href="#"><img src="./img/img-02.jpg" alt="" /></a>
-                    </div>
-                    <div class="contenedor-texto">
-                        <div>
-                            <h2 class="titulo">
-                                <a href="#">Título del artículo más destacado</a>
-                            </h2>
-                            <p class="fecha">
-                                <time>Noviembre 13, 2019</time>
-                            </p>
-                        </div>
-                        <p class="extracto">
-                            Lorem ipsum, dolor sit amet coknsectetur
-                            adipisicing elit. Cupiditate, autem animi.
-                        </p>
-                        <a href="#" class="btn-link">Leer más</a>
-                    </div>
-                </article>
-        
-                <article class="articulo">
-                    <div >
-                        <a href="#"><img src="./img/img-03.jpg" alt="" /></a>
-                    </div>
-                    <div class="contenedor-texto">
-                        <div>
-                            <h2 class="titulo">
-                                <a href="#">Título del artículo más destacado</a>
-                            </h2>
-                            <p class="fecha">
-                                <time>Noviembre 13, 2019</time>
-                            </p>
-                        </div>
-                        <p class="extracto">
-                            Lorem ipsum, dolor sit amet coknsectetur
-                            adipisicing elit. Cupiditate, autem animi.
-                        </p>
-                        <a href="#" class="btn-link">Leer más</a>
-                    </div>
-                </article>
-        
-                <article class="articulo">
-                    <div >
-                        <a href="#"><img src="./img/img-04.jpg" alt="" /></a>
-                    </div>
-                    <div class="contenedor-texto">
-                        <div>
-                            <h2 class="titulo">
-                                <a href="#">Título del artículo más destacado</a>
-                            </h2>
-                            <p class="fecha">
-                                <time>Noviembre 13, 2019</time>
-                            </p>
-                        </div>
-                        <p class="extracto">
-                            Lorem ipsum, dolor sit amet coknsectetur
-                            adipisicing elit. Cupiditate, autem animi.
-                        </p>
-                        <a href="#" class="btn-link">Leer más</a>
-                    </div>
-                </article>
-            </div>
-    
-            <div class="sidebar">
-                <div class="acerca-de">
-                    <img src="./img/foto.jpg" class="img-perfil" alt="" />
-    
-                    <div class="bio">
-                        <p class="titulo">¡Hola!</p>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-                            Impedit quae tenetur veritatis esse aperiam?
-                        </p>
-                    </div>
+              </div>
+            </article>
+            
+            <article class="articulo">
+              <div >
+                <a href="#"><img src="images/img-03.jpg" alt="" /></a>
+              </div>
+              <div class="contenedor-texto">
+                <div>
+                  <h2 class="titulo">
+                  <a href="#">Título del artículo más destacado</a>
+                  </h2>
+                  <p class="fecha">
+                    <time>Noviembre 13, 2019</time>
+                  </p>
                 </div>
-                <div >
-                    <nav class="menu-side">
-                        <a  href="#">Acerca de</a>
-                        <a  href="#">Portafolio</a>
-                        <a  href="#">Contacto</a>
-                    </nav>
+                <p class="extracto">
+                  Lorem ipsum, dolor sit amet coknsectetur
+                  adipisicing elit. Cupiditate, autem animi.
+                </p>
+                <a href="#" class="btn-link">Leer más</a>
+              </div>
+            </article>
+            
+            <article class="articulo">
+              <div >
+                <a href="#"><img src="images/img-04.jpg" alt="" /></a>
+              </div>
+              <div class="contenedor-texto">
+                <div>
+                  <h2 class="titulo">
+                  <a href="#">Título del artículo más destacado</a>
+                  </h2>
+                  <p class="fecha">
+                    <time>Noviembre 13, 2019</time>
+                  </p>
                 </div>
-                
+                <p class="extracto">
+                  Lorem ipsum, dolor sit amet coknsectetur
+                  adipisicing elit. Cupiditate, autem animi.
+                </p>
+                <a href="#" class="btn-link">Leer más</a>
+              </div>
+            </article>
+          </div>
+          
+          <div class="sidebar">
+            <div class="acerca-de">
+              <img src="images/foto.jpg" class="img-perfil" alt="" />
+              
+              <div class="bio">
+                <p class="titulo">¡Hola!</p>
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                  Impedit quae tenetur veritatis esse aperiam?
+                </p>
+              </div>
             </div>
+            <div >
+              <nav class="menu-side">
+                <a  href="#">Acerca de</a>
+                <a  href="#">Portafolio</a>
+                <a  href="#">Contacto</a>
+              </nav>
+            </div>
+            
+          </div>
         </div>
         
         
-
-    </div>
+      </div>
       <!-- Fin -->
     </div>
-
-
   </body>
 </html>

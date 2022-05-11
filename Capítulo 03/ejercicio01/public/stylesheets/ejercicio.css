@@ -1,0 +1,254 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto Condensed', sans-serif;
+	font-weight: 300;
+	background-image: repeating-linear-gradient(90deg, #fff, #fff 20px, #fbfbfb 20px, #fbfbfb 40px);
+}
+
+img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+a {
+	text-decoration: none;
+}
+
+/* ---------- HEADER ----------*/
+.header{
+    padding: 20px;
+	background: #fff;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+.header .logo {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+	text-align: center;
+	letter-spacing: 3px;
+}
+
+.logo h1 {
+	font-size: 30px;
+}
+
+.logo .iniciales-logo {
+	padding: 5px;
+	border: 2px solid #000;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+.menu {  
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;  
+}
+
+
+
+.menu a {  
+	padding: 10px;
+	color:black;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 400;
+	text-align: center;
+	transition: 0.2s ease all;
+	font-size: 16px;  
+}
+
+.menu a:hover {
+	background: #000;
+	color: #fff;
+}
+
+/* ------Articulos------- */
+/* ---------- Articulos ----------*/
+.articulo {
+	background: #fff;
+	box-shadow: 0px 0px 70px rgba(102, 102, 102, 0.2);
+}
+
+.articulo .contenedor-texto {
+	padding: 20px;
+	width: 100%;
+}
+
+.articulo .contenedor-thumbnail {
+	width: 50%;
+}
+
+.articulo .titulo {
+	margin-bottom: 10px;
+	font-size: 25px;
+}
+
+.articulo .titulo a {
+	font-weight: 400;
+	color: #000;
+}
+
+.articulo .fecha {
+	font-size: 16px;
+	color: #868b8d;
+	margin-bottom: 10px;
+}
+
+.articulo .extracto {
+	font-size: 20px; 
+	line-height: 25px; 
+	font-weight: 300;
+	margin-bottom: 20px; 
+	color: #868b8d;
+}
+
+.sidebar{
+    width: auto;
+    background-color: #000;
+}
+
+.articulo-primero{
+    margin-top:20px;
+    margin-bottom: 20px;
+}
+
+.sidebar{
+    color: #fff;
+    position: sticky;
+}
+
+.sidebar img{
+    margin-top: 30px;
+    border-radius: 30px;
+
+}
+
+.acerca-de{
+    position: sticky;
+}
+
+article img{
+    width: 100%;
+    height: 300px;
+}
+
+.menu-side a{
+    color: #fff;
+}
+
+/*Practica Responsive Briggitte Lopez*/
+.menu >div{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.articulo-primero{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10%;
+
+}
+
+.destacado .fecha{
+  margin: 10px 0;
+}
+
+.destacado .extracto{
+  margin: 10px 0;
+}
+
+.destacado a{
+  text-decoration: underline;
+  color:skyblue;
+}
+
+.main{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 10%;
+}
+
+.articulos{
+  display: grid;
+  grid-template-rows: 1fr;
+  gap: 0;
+
+}
+
+.articulo{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  gap: 0;
+}
+
+.articulo img{
+  width: 100%;
+  height: 100%;
+}
+
+.articulo a{
+  color: skyblue;
+  text-decoration: underline;
+}
+
+.sidebar{
+  padding: 10px;
+}
+
+.sidebar .titulo{
+  margin-bottom: 20px;
+}
+
+.menu-side{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 10px;
+}
+
+.menu-side a{
+  text-decoration: underline;
+  margin: 10px;
+}
+@media (min-width: 760px )
+{ 
+  .menu >div{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+  }
+
+  .articulo-primero > div{
+    display: grid;
+    grid-template-columns: 65% 33%;
+  }
+
+  .main > div{
+    display: grid;
+    grid-template-columns: 60% 40%;
+  }
+
+  .menu-side{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+  }
+  
+}
+
+
+
+
+
+
+
+

@@ -30,4 +30,6 @@
 
 ## Referencias 
 
-* Freeman, J. (2022). Chapter 3 HTML Fundamentals | Client-Side Web Development. Retrieved 19 April 2022, from https://info340.github.io/html-fundamentals.html
+* Freeman, J. (2022). Chapter 8 Responsive CSS | Client-Side Web Development. Retrieved 11 May 2022, from https://info340.github.io/responsive-css.html
+* Learn Responsive Design. (2022). Retrieved 11 May 2022, from https://web.dev/learn/design/
+* Diseño receptivo - Aprende sobre desarrollo web | MDN. (2021). Retrieved 11 May 2022, from https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Responsive_Design
