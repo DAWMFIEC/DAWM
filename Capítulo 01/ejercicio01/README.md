@@ -31,3 +31,5 @@
 ## Referencias 
 
 * Freeman, J. (2022). Chapter 3 HTML Fundamentals | Client-Side Web Development. Retrieved 19 April 2022, from https://info340.github.io/html-fundamentals.html
+* Elementos títulos - HTML: Lenguaje de etiquetas de hipertexto | MDN. (2022). Retrieved 16 May 2022, from https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements
+* Tutorial HTML - Títulos y encabezados. (2022). Retrieved 16 May 2022, from https://tutorialehtml.com/es/tutoriales-html-titulos/
