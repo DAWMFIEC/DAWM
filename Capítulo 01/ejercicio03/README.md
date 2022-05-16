@@ -31,4 +31,5 @@
 ## Referencias 
 
 * Freeman, J. (2022). Chapter 3 HTML Fundamentals | Client-Side Web Development. Retrieved 19 April 2022, from https://info340.github.io/html-fundamentals.html
-* MDN Web Docs. (2022). Retrieved 21 April 2022, from https://developer.mozilla.org/es/
+* Imágenes en HTML - Aprende sobre desarrollo web | MDN. (2020). Retrieved 16 May 2022, from https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Images_in_HTML
+* HTML Links Hyperlinks. (2022). Retrieved 16 May 2022, from https://www.w3schools.com/html/html_links.asp
