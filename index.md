@@ -3,3 +3,4 @@
 * Clase 01
 	+ HTML: estructura básica (cabecera y cuerpo), títulos por niveles y listas.
 	+ Términos: HTML, Internet vs red
+	+ Otras cosas
