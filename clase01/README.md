@@ -1,7 +1,6 @@
 ---
 title: Clase 01
-layout: template
-filename: clase01.md
+filename: README.md
 --- 
 
 # Clase 01
