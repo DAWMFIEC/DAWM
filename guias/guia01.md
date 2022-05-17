@@ -31,4 +31,4 @@ theme: jekyll-theme-leap-day
 * HTML
 * Semántico
 
-[Regresar](/)
+[Regresar](/DAWM-2022/)
