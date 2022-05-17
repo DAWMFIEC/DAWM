@@ -1,4 +1,4 @@
-# DAWM-2022
+# Desarrollo de Aplicaciones Web y Móviles - SOFG1006
 
 ## Referencias 
 
