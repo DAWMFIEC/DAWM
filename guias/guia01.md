@@ -37,5 +37,6 @@ theme: jekyll-theme-leap-day
 ### Términos
 
 * HTML
+* Etiquetas
 * Semántico
 
