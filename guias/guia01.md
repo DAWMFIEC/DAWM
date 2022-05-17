@@ -25,6 +25,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
+* Cree la estructura global de una página html en un proyecto de [Repl.it](https://replit.com/).
 * Identifique las secciones que tendrá su sitio web. Utilice las etiquetas de título por nivel.
 * Determine la sección en la que 
 	+ Listará ítems. Utilice las etiquetas de listas.
