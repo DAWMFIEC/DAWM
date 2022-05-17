@@ -4,6 +4,8 @@ theme: jekyll-theme-leap-day
 
 ## Guía 01
 
+[Regresar](/DAWM-2022/)
+
 ### Contenidos
 
 * Revisión de ejercicios previos: dudas y comentarios.
@@ -31,4 +33,3 @@ theme: jekyll-theme-leap-day
 * HTML
 * Semántico
 
-[Regresar](/DAWM-2022/)
