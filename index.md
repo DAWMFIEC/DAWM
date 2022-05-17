@@ -1,4 +1,4 @@
-## Welcome to GitHub Pages
+## Desarrollo de Aplicaciones Web y Móviles - SOFG1006
 
 You can use the [editor on GitHub](https://github.com/DAWFIEC/DAWM-2022/edit/gh-pages/index.md) to maintain and preview the content for your website in Markdown files.
 
