@@ -1,3 +1,5 @@
 ## Desarrollo de Aplicaciones Web y Móviles - SOFG1006
 
-[clase01](clase01/README.md) 
+* Clase 01
+	+ HTML: estructura básica (cabecera y cuerpo), títulos por niveles y listas.
+	+ Términos: HTML, Internet vs red
