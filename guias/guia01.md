@@ -27,8 +27,9 @@ theme: jekyll-theme-leap-day
 
 * Crea un proyecto en [Repl.it](https://replit.com/) a partir de la plantilla `HTML, CSS, JS`.
 * Identifica la estructura global dentro del **index.html**.
-* Identifique las secciones que tendrá su sitio web. Utilice las etiquetas de título por nivel.
-* Determine la sección en la que 
+* Identifique las secciones que tendrá su sitio web. Usa las etiquetas semánticas para agrupar las secciones.
+* De todas las secciones, determine en cual 
+	+ Título o subtítulo. Utilice los títulos por nivel.
 	+ Listará ítems. Utilice las etiquetas de listas.
 	+ Colocará datos a tabular. Utilice la etiqueta de tabla.
 	+ Usará imágenes. Utilice la etiqueta de imagen con sus atributos.
