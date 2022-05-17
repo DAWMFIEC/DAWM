@@ -25,8 +25,13 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Identifique las secciones que tendrá su sitio web.
-* Identifique la sección en la que listará ítems.
+* Identifique las secciones que tendrá su sitio web. Utilice las etiquetas de título por nivel.
+* Determine la sección en la que 
+	+ Listará ítems. Utilice las etiquetas de listas.
+	+ Colocará datos a tabular. Utilice la etiqueta de tabla.
+	+ Usará imágenes. Utilice la etiqueta de imagen con sus atributos.
+	+ Colocará enlaces a otros sitios u otras secciones dentro de la página. Utilice la etiqueta de enlace con sus atributos.
+	+ Utilice contenedores de bloque (p) o en línea (span).
 
 ### Términos
 
