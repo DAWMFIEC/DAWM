@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
 	+ Head
 		- [Elementos](https://developer.mozilla.org/es/docs/Web/HTML/Element/head)
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-* Cheat Sheet
+* [Cheat Sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
 	![Etiquetas](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
 
 ### Actividades
@@ -30,3 +30,5 @@ theme: jekyll-theme-leap-day
 
 * HTML
 * Semántico
+
+[Regresar](/)
