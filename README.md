@@ -2,6 +2,10 @@
 
 Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los conceptos revisados durante la clase. Cada ejercicio contiene un conjunto de pruebas para validar tu respuesta.
 
+## Sitio web
+
+Enlace al [sitio web](https://dawfiec.github.io/DAWM-2022/).
+
 ## Prerequisitos
 
 * Editor de texto 
