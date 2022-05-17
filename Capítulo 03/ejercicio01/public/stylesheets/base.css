@@ -1,0 +1,60 @@
+/* {
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  height: 100vh;
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 0;
+  position: relative;
+}
+
+
+h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+p#author {
+  margin: 0 0 1rem;
+}
+
+.editorial-image-left {
+  float: left;
+}
+
+.editorial-image-right {
+  float: right;
+}*/
+
+div.respuesta {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+div.respuesta p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+div.respuesta p#author {
+  margin: 0 0 1rem;
+}
+
+div.respuesta h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 30%;
+}
+
+img.hero-image {
+  max-width: 90%;
+  margin: 0 auto;
+}

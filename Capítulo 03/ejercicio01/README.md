@@ -33,3 +33,7 @@
 * Freeman, J. (2022). Chapter 8 Responsive CSS | Client-Side Web Development. Retrieved 11 May 2022, from https://info340.github.io/responsive-css.html
 * Learn Responsive Design. (2022). Retrieved 11 May 2022, from https://web.dev/learn/design/
 * Diseño receptivo - Aprende sobre desarrollo web | MDN. (2021). Retrieved 11 May 2022, from https://developer.mozilla.org/es/docs/Learn/CSS/CSS_layout/Responsive_Design
+* Article Details (2022). Retrieved 13 May 2022, from https://codepen.io/saheeranas/pen/LYQPQoj
+* Juviler, J. (2022). How to Hide the Scrollbar in CSS. Retrieved 16 May 2022, from https://blog.hubspot.com/website/hide-scrollbar-css
+* A Complete Guide to Flexbox | CSS-Tricks. (2013). Retrieved 16 May 2022, from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* A Complete Guide to Grid | CSS-Tricks. (2021). Retrieved 16 May 2022, from https://css-tricks.com/snippets/css/complete-guide-grid/
