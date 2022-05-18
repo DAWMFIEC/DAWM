@@ -20,7 +20,14 @@ theme: jekyll-theme-leap-day
 	    - ¿Por qué comprender y seguir el estándar de la W3C?
 	    - ¿Cuál es la diferencia entre `HTML` y `XML`?
 		- [Living Standard](https://html.spec.whatwg.org/multipage/) y [HTML5Test](https://html5test.com/)
-* [Estructura global](http://www.edu4java.com/es/web/html5-estructura-global.html)
+* [Esctructura de global de una página HTML](http://www.edu4java.com/es/web/html5-estructura-global.html). Elementos globales, etiquetas visibles e invisibles para el navegador y etiquetas de optimización de las páginas web.
+     + ¿Cuáles son los `elementos globales` componen una página HTML y cómo se `visualizan` en el navegador?
+     + ¿Cuál es el uso de la etiqueta `meta`? 
+     + ¿Qué tipo de valores contienen los atributos `name` y `content` en etiqueta `meta`?
+     + ¿Cómo se visualiza la etiqueta `title`? 
+     + ¿Cuál es el uso de la etiqueta `link`? 
+     + ¿Qué tipo de archivos pueden incorporarse con la etiqueta `link`?
+     + ¿Para qué sirven los atributos `rel` y `href` en la etiqueta `link`?
 * HTML Semántico
 	+ Body
 		- [Definicion](https://www.shenansherwell.com/es/desarrollo-web/semantica-html5/)
@@ -35,6 +42,8 @@ theme: jekyll-theme-leap-day
 		    * ¿Para qué sirve la etiqueta `li`?
 		    * ¿Cuál es la etiqueta para referenciar otros documentos u otras secciones dentro de la misma página html? 
 		    * ¿Cómo usar la etiqueta para referenciar otros documentos u otras secciones dentro de la misma página html?
+		- [Lista de etiquetas HTML](https://acercadehtml.com/etiquetas-html.html). En esta página encontrarás una lista de etiquetas. Para mayor información, revisa los cheatsheet  de `HTML`: [HTML5](contenidos/cheatsheets/HTML5-cheat-sheet.pdf) y [Interactive HTML5](https://htmlcheatsheet.com/).
+    - ¿Cuáles son las `etiquetas incorporadas` por HTML5?
 
 		- [Etiquetas semánticas](https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html)
 	+ Head
