@@ -12,7 +12,8 @@ theme: jekyll-theme-leap-day
 * [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 	+ [Conceptos básicos](https://developer.mozilla.org/es/docs/Web/HTML). Conceptos básicos del estándar HTML.
 	+ [W3C: Estándar HTML](https://www.w3.org/TR/html52/) W3C y estándares de la web.
-	+[Living Standard](https://html.spec.whatwg.org/multipage/) y [HTML5Test](https://html5test.com/)
+	+ [Living Standard](https://html.spec.whatwg.org/multipage/) y [HTML5Test](https://html5test.com/)
+	+ Verificación del cumplimiento del standard por navegador, con [HTML5Test](https://html5test.com/)
 * [Esctructura de global de una página HTML](http://www.edu4java.com/es/web/html5-estructura-global.html). Elementos globales, etiquetas visibles e invisibles para el navegador y etiquetas de optimización de las páginas web.     
 * HTML Semántico
 	+ Body
@@ -22,7 +23,6 @@ theme: jekyll-theme-leap-day
     	- [Etiquetas semánticas](https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html)
 	+ Head
 		- [Elementos](https://developer.mozilla.org/es/docs/Web/HTML/Element/head)
-* Verificación del cumplimiento del standard por navegador, con [HTML5Test](https://html5test.com/)
 
 
 ### Actividades
