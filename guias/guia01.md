@@ -10,8 +10,8 @@ theme: jekyll-theme-leap-day
 
 * Revisión de ejercicios previos: dudas y comentarios.
 * [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
-  	+ [Conceptos básicos](https://developer.mozilla.org/es/docs/Web/HTML). Conceptos básicos del estándar HTML.
-	    - ¿Qué significan las siglas de `HTML`?
+	+ [Conceptos básicos](https://developer.mozilla.org/es/docs/Web/HTML). Conceptos básicos del estándar HTML.
+		- ¿Qué significan las siglas de `HTML`?
 	    - ¿Qué significa `Hipertexto`?
 	    - ¿Cuál es la diferencia entre `Internet` y `World Wide Web`?
 	+ [W3C: Estándar HTML](https://www.w3.org/TR/html52/) W3C y estándares de la web.
@@ -19,8 +19,7 @@ theme: jekyll-theme-leap-day
 	    - ¿Qué es un `estándar`? 
 	    - ¿Por qué comprender y seguir el estándar de la W3C?
 	    - ¿Cuál es la diferencia entre `HTML` y `XML`?
-		- [Living Standard](https://html.spec.whatwg.org/multipage/)
-		- [HTML5Test](https://html5test.com/)
+		- [Living Standard](https://html.spec.whatwg.org/multipage/) y [HTML5Test](https://html5test.com/)
 * [Estructura global](http://www.edu4java.com/es/web/html5-estructura-global.html)
 * HTML Semántico
 	+ Body

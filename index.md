@@ -11,7 +11,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 01](guias/guia01.md)
 
 
-## Enlaces interesantes
+## Fuentes
 
 Existen algunos sitios especializados, como [A List Apart](https://alistapart.com/), [Mozilla Developer Network](https://developer.mozilla.org/es/), [CSS-Tricks](https://css-tricks.com/), [HTML5Doctor](http://html5doctor.com/), [HTML.com](https://html.com/), [W3Schools](https://www.w3schools.com/tags/default.asp), [Codepen](https://codepen.io/) y [Google Developers](https://developers.google.com/web/?hl=es) dado que tienen publicaciones interesantes, relacionadas con el desarrollo de aplicaciones web. 
 
