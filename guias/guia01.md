@@ -9,8 +9,7 @@ theme: jekyll-theme-leap-day
 ### Contenidos
 
 * Revisión de ejercicios previos: dudas y comentarios.
-* [x] [**HTML**](https://developer.mozilla.org/es/docs/Web/HTML)
-
+* [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
   	+ [Conceptos básicos](https://developer.mozilla.org/es/docs/Web/HTML). Conceptos básicos del estándar HTML.
 	    - ¿Qué significan las siglas de `HTML`?
 	    - ¿Qué significa `Hipertexto`?
