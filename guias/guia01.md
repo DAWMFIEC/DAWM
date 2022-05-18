@@ -22,6 +22,7 @@ theme: jekyll-theme-leap-day
     	- [Etiquetas semánticas](https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html)
 	+ Head
 		- [Elementos](https://developer.mozilla.org/es/docs/Web/HTML/Element/head)
+* Verificación del cumplimiento del standard por navegador, con [HTML5Test](https://html5test.com/)
 
 
 ### Actividades
