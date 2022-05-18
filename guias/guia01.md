@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Crea un proyecto en [Repl.it](https://replit.com/) a partir de la plantilla `HTML, CSS, JS` o utiliza el editor de texto de tu preferencia.
+* Crea un proyecto en [Repl.it](https://replit.com/) a partir de la plantilla **HTML, CSS, JS** o utiliza el editor de texto de tu preferencia.
 * Identifica/crea la estructura global dentro del **index.html**.
 * Identifique las secciones que tendrá su sitio web. Usa las etiquetas semánticas para agrupar las secciones.
 * De todas las secciones, determine en cual 
