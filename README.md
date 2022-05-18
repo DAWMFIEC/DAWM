@@ -55,6 +55,9 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 			    | [Ejercicio 04](Capítulo%2002/ejercicio04)         | Posicionamiento  |
 | Capítulo 03   | [Ejercicio 01](Capítulo%2003/ejercicio01)         | Diseño responsivo  |
 | Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Fundamentos  |
+| 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | DOM  |
+| 				| [Ejercicio 03](Capítulo%2004/ejercicio03)         | Fetch  |
+| 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | RSS  |
 
 ## Referencias 
 
