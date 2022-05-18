@@ -6,11 +6,14 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Repositorio](https://github.com/DAWFIEC/DAWM-2022)
 * [Diapositivas](https://espolec-my.sharepoint.com/:f:/g/personal/aavendan_espol_edu_ec/ErXieD191LpMimWk129PcmcBcjKXdMxXe3ECZ2PedWPKJA?e=RGgzOc)
+* [Fundamental](fundamental.md)
 
 ## Guías
 
 * [Guía 01](guias/guia01.md)
 * [Guía 02](guias/guia02.md)
+* [Guía 03](guias/guia03.md)
+* [Guía 04](guias/guia04.md)
 
 
 ## Indicaciones Generales
