@@ -29,6 +29,6 @@ Mientras diseñas tu sitio web, puedes utilizar los inspectores de [Mozilla](htt
 
 Cuando tengas listo tu sitio web estático o tu aplicación web dinámica será necesario utilizar un servidor web. Mediante la extensión [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) para Google Chrome es posible lanzar un servidor local para sitios web estáticos. Si requieres de un PAAS para poner en producción tu aplicación web, existen opciones como [Firebase](https://firebase.google.com/docs/hosting/quickstart?authuser=1) o [Heroku](https://www.heroku.com/).
 
-### Formato básico para la sintaxis de un README en github
+### Markdown
 
 Basic writing and formatting syntax - User Documentation. (2018). Help.github.com. Retrieved 25 September 2018, from Basic writing and formatting syntax
