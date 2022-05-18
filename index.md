@@ -28,3 +28,7 @@ En cuanto a librerías y frameworks del lado del cliente, podemos encontrar a [W
 Mientras diseñas tu sitio web, puedes utilizar los inspectores de [Mozilla](https://developer.mozilla.org/es/docs/Tools/Page_Inspector) o [Chrome](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2018Q2) para verificar la estructura semántica de las páginas. Y algunos cheatsheets de HTML/CSS/GIT en la carpeta <a href="/cheatsheets">Recursos</a>, [Google Web Fonts](https://devhints.io/google-webfonts) y [Bootstrap](https://hackerthemes.com/bootstrap-cheatsheet/).
 
 Cuando tengas listo tu sitio web estático o tu aplicación web dinámica será necesario utilizar un servidor web. Mediante la extensión [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) para Google Chrome es posible lanzar un servidor local para sitios web estáticos. Si requieres de un PAAS para poner en producción tu aplicación web, existen opciones como [Firebase](https://firebase.google.com/docs/hosting/quickstart?authuser=1) o [Heroku](https://www.heroku.com/).
+
+### Formato básico para la sintaxis de un README en github
+
+Basic writing and formatting syntax - User Documentation. (2018). Help.github.com. Retrieved 25 September 2018, from Basic writing and formatting syntax

@@ -11,61 +11,23 @@ theme: jekyll-theme-leap-day
 * Revisión de ejercicios previos: dudas y comentarios.
 * [HTML](https://developer.mozilla.org/es/docs/Web/HTML)
 	+ [Conceptos básicos](https://developer.mozilla.org/es/docs/Web/HTML). Conceptos básicos del estándar HTML.
-		- ¿Qué significan las siglas de `HTML`?
-	    - ¿Qué significa `Hipertexto`?
-	    - ¿Cuál es la diferencia entre `Internet` y `World Wide Web`?
 	+ [W3C: Estándar HTML](https://www.w3.org/TR/html52/) W3C y estándares de la web.
-	    - ¿Qué es la `W3C`? 
-	    - ¿Qué es un `estándar`? 
-	    - ¿Por qué comprender y seguir el estándar de la W3C?
-	    - ¿Cuál es la diferencia entre `HTML` y `XML`?
-		- [Living Standard](https://html.spec.whatwg.org/multipage/) y [HTML5Test](https://html5test.com/)
-* [Esctructura de global de una página HTML](http://www.edu4java.com/es/web/html5-estructura-global.html). Elementos globales, etiquetas visibles e invisibles para el navegador y etiquetas de optimización de las páginas web.
-     + ¿Cuáles son los `elementos globales` componen una página HTML y cómo se `visualizan` en el navegador?
-     + ¿Cuál es el uso de la etiqueta `meta`? 
-     + ¿Qué tipo de valores contienen los atributos `name` y `content` en etiqueta `meta`?
-     + ¿Cómo se visualiza la etiqueta `title`? 
-     + ¿Cuál es el uso de la etiqueta `link`? 
-     + ¿Qué tipo de archivos pueden incorporarse con la etiqueta `link`?
-     + ¿Para qué sirven los atributos `rel` y `href` en la etiqueta `link`?
+	+[Living Standard](https://html.spec.whatwg.org/multipage/) y [HTML5Test](https://html5test.com/)
+* [Esctructura de global de una página HTML](http://www.edu4java.com/es/web/html5-estructura-global.html). Elementos globales, etiquetas visibles e invisibles para el navegador y etiquetas de optimización de las páginas web.     
 * HTML Semántico
 	+ Body
 		- [Definicion](https://www.shenansherwell.com/es/desarrollo-web/semantica-html5/)
-		- [Estructura de las etiquetas (anatomía, anidamiento y etiquetas básicas)](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics). Aquí se revisan los conceptos como el significado de lenguaje de marcado, anatomía de un elemento HTML, atributos, anidación, elementos vacíos, anatomía general de un documento HTML y etiquetas (imágenes, encabezados, párrafos, listas y vínculos).
-		    * ¿Por qué HTML `no es un lenguaje de programación`?
-		    * ¿Qué `tipo de contenido` tiene una etiqueta?
-		    * ¿Qué significa `anidar` etiquetas?
-		    * ¿Cuáles son las `etiquetas vacías`?
-		    * ¿Para qué sirve la etiqueta `<!DOCTYPE html>`? ¿Qué otro tipo de `Declaración del tipo de documento` existen?
-		    * ¿Para qué sirven las etiquetas de encabezado de `h1` hasta `h6`?
-		    * ¿Cuál es la diferencia entre `ul` y `ol`? 
-		    * ¿Para qué sirve la etiqueta `li`?
-		    * ¿Cuál es la etiqueta para referenciar otros documentos u otras secciones dentro de la misma página html? 
-		    * ¿Cómo usar la etiqueta para referenciar otros documentos u otras secciones dentro de la misma página html?
-		- [Lista de etiquetas HTML](https://acercadehtml.com/etiquetas-html.html). En esta página encontrarás una lista de etiquetas. Para mayor información, revisa los cheatsheet  de `HTML`: [HTML5](contenidos/cheatsheets/HTML5-cheat-sheet.pdf) y [Interactive HTML5](https://htmlcheatsheet.com/).
-    	- ¿Cuáles son las `etiquetas incorporadas` por HTML5?
-		- [Etiquetas semánticas](https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html)
+		- [Estructura de las etiquetas (anatomía, anidamiento y etiquetas básicas)](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics). Significado de lenguaje de marcado, anatomía de un elemento HTML, atributos, anidación, elementos vacíos, anatomía general de un documento HTML y etiquetas (imágenes, encabezados, párrafos, listas y vínculos).
+		- [Lista de etiquetas HTML](https://acercadehtml.com/etiquetas-html.html), [HTML5](cheatsheets/HTML5-cheat-sheet.pdf) y [Interactive HTML5](https://htmlcheatsheet.com/).
+    	- [Etiquetas semánticas](https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html)
 	+ Head
 		- [Elementos](https://developer.mozilla.org/es/docs/Web/HTML/Element/head)
-* [Estructura de las etiquetas (anatomía, anidamiento y etiquetas básicas)](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics). Aquí se revisan los conceptos como el significado de lenguaje de marcado, anatomía de un elemento HTML, atributos, anidación, elementos vacíos, anatomía general de un documento HTML y etiquetas (imágenes, encabezados, párrafos, listas y vínculos).
-    + ¿Por qué HTML `no es un lenguaje de programación`?
-    + ¿Qué `tipo de contenido` tiene una etiqueta?
-    + ¿Qué significa `anidar` etiquetas?
-    + ¿Cuáles son las `etiquetas vacías`?
-    + ¿Para qué sirve la etiqueta `<!DOCTYPE html>`? ¿Qué otro tipo de `Declaración del tipo de documento` existen?
-    + ¿Para qué sirven las etiquetas de encabezado de `h1` hasta `h6`?
-    + ¿Cuál es la diferencia entre `ul` y `ol`? 
-    + ¿Para qué sirve la etiqueta `li`?
-    + ¿Cuál es la etiqueta para referenciar otros documentos u otras secciones dentro de la misma página html? 
-    + ¿Cómo usar la etiqueta para referenciar otros documentos u otras secciones dentro de la misma página html?
-* [Lista de etiquetas HTML](https://acercadehtml.com/etiquetas-html.html). En esta página encontrarás una lista de etiquetas. Para mayor información, revisa los cheatsheet  de `HTML`: [HTML5](contenidos/cheatsheets/HTML5-cheat-sheet.pdf) y [Interactive HTML5](https://htmlcheatsheet.com/).
-    - ¿Cuáles son las `etiquetas incorporadas` por HTML5?
 
 
 ### Actividades
 
-* Crea un proyecto en [Repl.it](https://replit.com/) a partir de la plantilla `HTML, CSS, JS`.
-* Identifica la estructura global dentro del **index.html**.
+* Crea un proyecto en [Repl.it](https://replit.com/) a partir de la plantilla `HTML, CSS, JS` o utiliza el editor de texto de tu preferencia.
+* Identifica/crea la estructura global dentro del **index.html**.
 * Identifique las secciones que tendrá su sitio web. Usa las etiquetas semánticas para agrupar las secciones.
 * De todas las secciones, determine en cual 
 	+ Título o subtítulo. Utilice los títulos por nivel.
@@ -82,16 +44,14 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-* HTML
-* Etiquetas
-* Semántico
+`HTML`, `Hipertexto`, Etiquetas, `W3C`, Standard, meta, title, link, `Semántico`
 
 
 ### Referencias
 
-* HTML: Lenguaje de etiquetas de hipertexto | MDN. (2021). Retrieved 18 May 2022, from https://developer.mozilla.org/es/docs/Web/HTML
+* HTML: Lenguaje de etiquetas de hipertexto MDN. (2021). Retrieved 18 May 2022, from https://developer.mozilla.org/es/docs/Web/HTML
 * HTML Standard. (2022). Retrieved 18 May 2022, from https://html.spec.whatwg.org/multipage/
 * HTML5. Ejemplo de estructura global para página web con HTML5. (2022). Retrieved 18 May 2022, from http://www.edu4java.com/es/web/html5-estructura-global.html
-* Conceptos básicos de HTML - Aprende sobre desarrollo web | MDN. (2020). Retrieved 18 May 2022, from https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics
+* Conceptos básicos de HTML - Aprende sobre desarrollo web MDN. (2020). Retrieved 18 May 2022, from https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics
 * Todos los ELEMENTOS SEMÁNTICOS de HTML. (2022). Retrieved 18 May 2022, from https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html
 * HTML, E. (2022). Etiquetas HTML - Acerca de HTML. Retrieved 18 May 2022, from https://acercadehtml.com/etiquetas-html.html
