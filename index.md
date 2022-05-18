@@ -10,6 +10,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 ## Guías
 
 * [Guía 01](guias/guia01.md)
+* [Guía 02](guias/guia02.md)
 
 
 ## Indicaciones Generales
