@@ -61,9 +61,7 @@ theme: jekyll-theme-leap-day
     + ¿Cómo usar la etiqueta para referenciar otros documentos u otras secciones dentro de la misma página html?
 * [Lista de etiquetas HTML](https://acercadehtml.com/etiquetas-html.html). En esta página encontrarás una lista de etiquetas. Para mayor información, revisa los cheatsheet  de `HTML`: [HTML5](contenidos/cheatsheets/HTML5-cheat-sheet.pdf) y [Interactive HTML5](https://htmlcheatsheet.com/).
     - ¿Cuáles son las `etiquetas incorporadas` por HTML5?
-* [MDN](https://developer.mozilla.org/en-US/docs/Web/HTML/Element)
-* [Cheat Sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
-	![Etiquetas](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
+
 
 ### Actividades
 
@@ -78,9 +76,17 @@ theme: jekyll-theme-leap-day
 	+ Colocará enlaces a otros sitios u otras secciones dentro de la página. Utilice la etiqueta de enlace con sus atributos.
 	+ Utilice contenedores de bloque (p) o en línea (span).
 
+### [Cheat Sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
+	
+![Etiquetas](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
+
+
 ### Términos
 
 * HTML
 * Etiquetas
 * Semántico
+
+
+### Referencias
 
