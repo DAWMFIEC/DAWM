@@ -5,6 +5,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 ## Enlaces
 
 * [Repositorio](https://github.com/DAWFIEC/DAWM-2022)
+* [Diapositivas](https://espolec-my.sharepoint.com/:f:/g/personal/aavendan_espol_edu_ec/ErXieD191LpMimWk129PcmcBcjKXdMxXe3ECZ2PedWPKJA?e=RGgzOc)
 
 ## Guías
 
