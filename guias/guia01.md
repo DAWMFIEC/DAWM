@@ -24,6 +24,18 @@ theme: jekyll-theme-leap-day
 * HTML Semántico
 	+ Body
 		- [Definicion](https://www.shenansherwell.com/es/desarrollo-web/semantica-html5/)
+		- [Estructura de las etiquetas (anatomía, anidamiento y etiquetas básicas)](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics). Aquí se revisan los conceptos como el significado de lenguaje de marcado, anatomía de un elemento HTML, atributos, anidación, elementos vacíos, anatomía general de un documento HTML y etiquetas (imágenes, encabezados, párrafos, listas y vínculos).
+		    * ¿Por qué HTML `no es un lenguaje de programación`?
+		    * ¿Qué `tipo de contenido` tiene una etiqueta?
+		    * ¿Qué significa `anidar` etiquetas?
+		    * ¿Cuáles son las `etiquetas vacías`?
+		    * ¿Para qué sirve la etiqueta `<!DOCTYPE html>`? ¿Qué otro tipo de `Declaración del tipo de documento` existen?
+		    * ¿Para qué sirven las etiquetas de encabezado de `h1` hasta `h6`?
+		    * ¿Cuál es la diferencia entre `ul` y `ol`? 
+		    * ¿Para qué sirve la etiqueta `li`?
+		    * ¿Cuál es la etiqueta para referenciar otros documentos u otras secciones dentro de la misma página html? 
+		    * ¿Cómo usar la etiqueta para referenciar otros documentos u otras secciones dentro de la misma página html?
+
 		- [Etiquetas semánticas](https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html)
 	+ Head
 		- [Elementos](https://developer.mozilla.org/es/docs/Web/HTML/Element/head)
