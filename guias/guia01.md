@@ -90,3 +90,9 @@ theme: jekyll-theme-leap-day
 
 ### Referencias
 
+* HTML: Lenguaje de etiquetas de hipertexto | MDN. (2021). Retrieved 18 May 2022, from https://developer.mozilla.org/es/docs/Web/HTML
+* HTML Standard. (2022). Retrieved 18 May 2022, from https://html.spec.whatwg.org/multipage/
+* HTML5. Ejemplo de estructura global para página web con HTML5. (2022). Retrieved 18 May 2022, from http://www.edu4java.com/es/web/html5-estructura-global.html
+* Conceptos básicos de HTML - Aprende sobre desarrollo web | MDN. (2020). Retrieved 18 May 2022, from https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics
+* Todos los ELEMENTOS SEMÁNTICOS de HTML. (2022). Retrieved 18 May 2022, from https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html
+* HTML, E. (2022). Etiquetas HTML - Acerca de HTML. Retrieved 18 May 2022, from https://acercadehtml.com/etiquetas-html.html
