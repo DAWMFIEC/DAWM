@@ -17,7 +17,7 @@ describe('Test unitarios para la ruta `/` con listas', function() {
       return request(app)
         .get('/')
         .then((response) => {
-            let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+            let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '')
 
             let list1 = `
               <ul>
@@ -30,7 +30,7 @@ describe('Test unitarios para la ruta `/` con listas', function() {
                 <li>Cuenca</li>
               </ul>
             `
-            let list1clean = list1.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'');
+            let list1clean = list1.replace(/(\r\n|\n|\r)/gm, '')
             chai.expect(responseclean).to.contain(list1clean);
 
 
@@ -42,7 +42,7 @@ describe('Test unitarios para la ruta `/` con listas', function() {
                 <li>Ignacio</li>
               </ol>
             `
-            let list2clean = list2.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'');
+            let list2clean = list2.replace(/(\r\n|\n|\r)/gm, '')
             chai.expect(responseclean).to.contain(list2clean);
 
 
@@ -55,7 +55,7 @@ describe('Test unitarios para la ruta `/` con listas', function() {
                 <li>Recomendaciones</li>
               </ol>
             `
-            let list3clean = list3.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'');
+            let list3clean = list3.replace(/(\r\n|\n|\r)/gm, '')
             chai.expect(responseclean).to.contain(list3clean);
 
 
@@ -80,7 +80,7 @@ describe('Test unitarios para la ruta `/` con listas', function() {
                   </ol>
               </ul>
             `
-            let list4clean = list4.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'');
+            let list4clean = list4.replace(/(\r\n|\n|\r)/gm, '')
             chai.expect(responseclean).to.contain(list4clean);
             
         })

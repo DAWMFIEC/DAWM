@@ -17,7 +17,7 @@ describe('Test unitarios para la ruta `/`', function() {
       return request(app)
         .get('/')
         .then((response) => {
-          let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+          let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '')
           
           chai.expect(responseclean).to.contain('<form id="formulario"');
           chai.expect(responseclean).to.contain('type="text"');

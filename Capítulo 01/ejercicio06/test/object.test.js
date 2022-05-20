@@ -17,7 +17,7 @@ describe('Test unitarios para la ruta `/`', function() {
       return request(app)
         .get('/')
         .then((response) => {
-          let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+          let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '')
           let objects = `
             <object data="images/contact-calling-phone-svgrepo-com.svg" width="80"> </object>
             <object data="images/man-talking-avatar-svgrepo-com.svg" width="60"> </object>

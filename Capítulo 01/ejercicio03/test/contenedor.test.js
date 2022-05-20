@@ -18,7 +18,7 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-            let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+            let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '')
 
             let paragraph = `
               <p>

@@ -1,7 +1,13 @@
+/*
+*/
+
 article {
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 1fr 3fr;
 }
+
+/*
+*/
 
 /* Inicio */
 
@@ -16,41 +22,8 @@ article {
 
 /* Fin */
 
-div.right {
-  display: grid;
-  grid-template-rows: 1fr ;
-}
-
-section.editorial-image-right {
-  display: flex;
-}
-
-section.editorial-image-left {
-  display: flex;
-  flex-direction:  row-reverse;
-}
-
-@media screen and (min-width: 640px) {
-  .right {
-    height: 100vh;
-    overflow-y: auto;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
-  }
-  .right::-webkit-scrollbar {
-    display: none;
-    width: 0;
-    height: 0;
-  }
-}
-
-section.editorial-image-right > p {
-  margin-right: 1rem;
-}
-
-section.editorial-image-left > p {
-  margin-left: 1rem;
-}
+/*
+*/
 
 /* Inicio */
 
@@ -64,7 +37,3 @@ section.editorial-image-left > p {
 
 /* Fin */
 
-
-blockquote.pullquote {
-  font-style: italic;
-}
