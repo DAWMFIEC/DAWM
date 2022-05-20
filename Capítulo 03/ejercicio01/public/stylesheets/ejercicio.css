@@ -1,21 +1,32 @@
 /*
+  Agregue las propiedades al selector article
+  para: 
+    - Se muestre en rejilla
+    - La plantilla de columnas es 25% y 75%
 */
 
+/* Inicio */
+
 article {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+
 }
 
+/* Fin */
+
+
 /*
+  Agregue las propiedades al selector div.respuesta article 
+  para: 
+    - Se muestre en rejilla
+    - La plantilla de columnas es 100%
 */
 
 /* Inicio */
 
 @media screen and (max-width: 640px) {
 
-  article {
-    display: grid;
-    grid-template-columns: 1fr;
+  div.respuesta article {
+
   }
 
 }
@@ -23,6 +34,9 @@ article {
 /* Fin */
 
 /*
+  Agregue las propiedades al selector div.right img 
+  para: 
+    - no se muestran las imágenes
 */
 
 /* Inicio */
@@ -30,7 +44,7 @@ article {
 @media screen and (max-width: 640px) {
 
   div.right img {
-    display: none;
+    
   }
 
 }
