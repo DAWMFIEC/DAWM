@@ -1,10 +1,10 @@
 # Ejercicio 01
 
-#### Tamaño Dispositivo Fijo
+#### Dispositivo Fijo
 
 ![image info](images/ejercicio01-1.png)
 
-#### Tamaño Dispositivo Móvil
+#### Dispositivo Móvil
 
 ![image info](images/ejercicio01-2.png)
 
