@@ -19,10 +19,10 @@ describe('Test unitarios para la ruta `/`', function() {
         .then((response) => {
           let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '')
           let media = `
-            <video width="320" height="240" controls>
+            <video width="320" height="240" controls="yes">
               <source src="media/video.mp4" type="video/mp4">
             </video>
-            <audio controls>
+            <audio controls="yes">
               <source src="media/audio.mp3" type="audio/mpeg">
             </audio>
           `
