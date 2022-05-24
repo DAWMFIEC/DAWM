@@ -34,6 +34,10 @@ Mientras diseñas tu sitio web, puedes utilizar los inspectores de [Mozilla](htt
 
 Cuando tengas listo tu sitio web estático o tu aplicación web dinámica será necesario utilizar un servidor web. Mediante la extensión [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) para Google Chrome es posible lanzar un servidor local para sitios web estáticos. Si requieres de un PAAS para poner en producción tu aplicación web, existen opciones como [Firebase](https://firebase.google.com/docs/hosting/quickstart?authuser=1) o [Heroku](https://www.heroku.com/).
 
+### Otras versiones
+
+* Versión anterior [Sitio Web](https://dawfiec.github.io/DAWM/) y [Repo](https://github.com/DAWFIEC/DAWM).
+
 ### Markdown
 
 Basic Syntax | Markdown Guide. (2022). Retrieved 20 May 2022, from https://www.markdownguide.org/basic-syntax/#images-1
