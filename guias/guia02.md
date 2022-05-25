@@ -28,7 +28,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`HTTP`, `URI`, `formulario`, mapa, video, audio, validación, `W3C`
+`HTTP`, `métodos HTTP`, `estado HTTP` ,`URI`, `formulario`, mapa, video, audio, validación, `W3C`
 
 ### Referencias
 
