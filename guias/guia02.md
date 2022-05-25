@@ -35,9 +35,9 @@ theme: jekyll-theme-leap-day
 * Creación de formas fabulosas con HTML5 - HTML5 Rocks. (2011). Retrieved 25 May 2022, from https://www.html5rocks.com/es/tutorials/forms/html5forms/
 * A Guide to the New HTML5 Form Input Types - WebFX. (2022). Retrieved 25 May 2022, from https://www.webfx.com/blog/web-design/new-html5-form-input-types/
 * Morales, A., & Morales, A. (2012). Cómo insertar un mapa de Google Maps en tu web - MappingGIS. Retrieved 25 May 2022, from https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/
-* Contenido de audio y video - Aprende sobre desarrollo web | MDN. (2022). Retrieved 25 May 2022, from https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content
+* Contenido de audio y video - Aprende sobre desarrollo web  MDN. (2022). Retrieved 25 May 2022, from https://developer.mozilla.org/es/docs/Learn/HTML/Multimedia_and_embedding/Video_and_audio_content
 * How to Embed MP3 Audio Files In Web Pages with the help of Google Drive - Digital Inspiration. (2022). Retrieved 25 May 2022, from https://www.labnol.org/internet/google-drive-mp3-embed/2232/
 * 🐯 ¿Cómo insertar vídeos de YouTube en nuestra web (HTML)?. (2022). Retrieved 25 May 2022, from https://www.desarrollolibre.net/blog/html/como-insertar-videos-de-youtube-en-nuestra-web-html#.XtccmDr0k2w
 * The W3C Markup Validation Service. (2022). Retrieved 24 May 2022, from https://validator.w3.org/
-* ¿Cuáles son las herramientas de desarrollo del navegador? - Aprende sobre desarrollo web | MDN. (2020). Retrieved 25 May 2022, from https://developer.mozilla.org/es/docs/Learn/Common_questions/What_are_browser_developer_tools
+* ¿Cuáles son las herramientas de desarrollo del navegador? - Aprende sobre desarrollo web  MDN. (2020). Retrieved 25 May 2022, from https://developer.mozilla.org/es/docs/Learn/Common_questions/What_are_browser_developer_tools
 
