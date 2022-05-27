@@ -31,6 +31,7 @@
 ## Referencias 
 
 * CSS | MDN. (2021). Retrieved 25 April 2022, from https://developer.mozilla.org/es/docs/Web/CSS
+* Selectores CSS - CSS | MDN. (2022). Retrieved 27 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS/CSS_Selectors
 * Freeman, J. (2022). Chapter 6 CSS Options | Client-Side Web Development. Retrieved 3 May 2022, from https://info340.github.io/css-options.html
 * chai-css. (2016). Retrieved 2 May 2022, from https://www.npmjs.com/package/chai-css/v/0.0.3
 * Gradient instead of negative margin https://codepen.io/dPlugins/pen/vYpQGEK a través de @CodePen 
