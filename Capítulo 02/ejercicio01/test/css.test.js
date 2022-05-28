@@ -35,8 +35,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .then((response) => {
 
           chai.expect(response.text).to.have.rule('#section-one')
-            .and.decl('color','white')
             .and.decl('background-color', 'var(--color-1)')
+            .and.decl('color','white')
 
           
         })
