@@ -32,7 +32,7 @@ theme: jekyll-theme-leap-day
 
 
 
-### [Cheat Sheet](/cheatsheets/css3-cheat-sheet.pdf)
+### [Cheat Sheet](../cheatsheets/css3-cheat-sheet.pdf)
 	
 ![Etiquetas](https://image.slidesharecdn.com/css-cheat-sheet-v2-100521091648-phpapp01/95/css-cheatsheetv2-1-1024.jpg)
 

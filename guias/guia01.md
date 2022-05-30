@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 	+ Body
 		- [Definicion](https://www.shenansherwell.com/es/desarrollo-web/semantica-html5/)
 		- [Estructura de las etiquetas (anatomía, anidamiento y etiquetas básicas)](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics). Significado de lenguaje de marcado, anatomía de un elemento HTML, atributos, anidación, elementos vacíos, anatomía general de un documento HTML y etiquetas (imágenes, encabezados, párrafos, listas y vínculos).
-		- [Lista de etiquetas HTML](https://acercadehtml.com/etiquetas-html.html), [HTML5](/cheatsheets/HTML5-cheat-sheet.pdf) y [Interactive HTML5](https://htmlcheatsheet.com/).
+		- [Lista de etiquetas HTML](https://acercadehtml.com/etiquetas-html.html), [HTML5](../cheatsheets/HTML5-cheat-sheet.pdf) y [Interactive HTML5](https://htmlcheatsheet.com/).
     	- [Etiquetas semánticas](https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html)
 	+ Head
 		- [Elementos](https://developer.mozilla.org/es/docs/Web/HTML/Element/head)
