@@ -9,7 +9,7 @@ theme: jekyll-theme-leap-day
 ### Contenidos
 
 * Revisión de ejercicios previos: dudas y comentarios.
-* Standard W3C y documentación en la [MDN](https://developer.mozilla.org/es/docs/Web/CSS). 
+* Standard [W3C](https://www.w3.org/Style/CSS/) y documentación en la [MDN](https://developer.mozilla.org/es/docs/Web/CSS). 
 * Ejemplo de aplicación de reglas CSS en [W3School](https://www.w3schools.com/css/demo_default.htm).
 * CSS
 	- [Básico](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics). En este apartado podrás encontrar la utilidad de las hojas de estilo CSS, anatomía de una regla, tipos de selectores y propiedades más comunes (color de fondo, efectos, fuentes y texto). Además, encontrarás una introducción al `modelo de cajas` que usa el navegador para ubicar los elementos visualmente.
@@ -19,7 +19,9 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* 
+* Cree una carpeta con los estilos dentro de la carpeta del proyecto
+* Agregue una archivo con extensión CSS.
+* Agregue la referencia al archivo CSS dentro del documento HTML.
 
 ### [Cheat Sheet](cheatsheets/css3-cheat-sheet.pdf)
 	
@@ -27,7 +29,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`CSS`, hoja de estilos
+`CSS`, hoja de estilos, selectores, reglas
 
 ### Referencias
 
