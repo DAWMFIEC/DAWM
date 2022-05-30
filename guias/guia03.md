@@ -13,13 +13,17 @@ theme: jekyll-theme-leap-day
 * Ejemplo de aplicación de reglas CSS en [W3School](https://www.w3schools.com/css/demo_default.htm).
 * CSS
 	- [Básico](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/CSS_basics). En este apartado podrás encontrar la utilidad de las hojas de estilo CSS, anatomía de una regla, tipos de selectores y propiedades más comunes (color de fondo, efectos, fuentes y texto). Además, encontrarás una introducción al `modelo de cajas` que usa el navegador para ubicar los elementos visualmente.
-	- [Selectores](https://www.csssolid.com/css-selectors.html). Los selectores permiten acceder a cada elemento dentro de la página HTML a través de nombre predefinidos, como: nombres de elementos, identificadores, clases, pseudo elementos y pseudo selectores. El [MDN - CSS].
+	- [Selectores](https://www.csssolid.com/css-selectors.html). Los selectores permiten acceder a cada elemento dentro de la página HTML a través de nombre predefinidos, como: nombres de elementos, identificadores, clases, pseudo elementos y pseudo selectores. 
 	- [Modelo de cajas](https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/El_modelo_de_caja). ¡Todo es una caja! Aquí se revisa en qué consiste el modelo de cajas, los tipos de caja: inline y block, y las partes de una caja.
 
 
 ### Actividades
 
 * 
+
+### [Cheat Sheet](cheatsheets/css3-cheat-sheet.pdf)
+	
+![Etiquetas](https://image.slidesharecdn.com/css-cheat-sheet-v2-100521091648-phpapp01/95/css-cheatsheetv2-1-1024.jpg)
 
 ### Términos
 
