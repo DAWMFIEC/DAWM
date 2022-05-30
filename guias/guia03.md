@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Cree una carpeta con los estilos dentro de la carpeta del proyecto
+* Cree una carpeta con los estilos dentro de la carpeta del proyecto.
 * Agregue una archivo con extensión CSS.
 * Agregue la referencia al archivo CSS dentro del documento HTML.
 
@@ -29,7 +29,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`CSS`, hoja de estilos, selectores, reglas
+`CSS`, hoja de estilos, selectores, declaraciones
 
 ### Referencias
 
