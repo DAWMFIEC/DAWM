@@ -38,7 +38,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`CSS`, tecnología, hoja de estilos, selectores, declaraciones
+`CSS`, `ruta relativa`, tecnología, hoja de estilos, selectores, declaraciones
 
 ### Referencias
 
