@@ -43,6 +43,7 @@ theme: jekyll-theme-leap-day
 			- Identifique el número máximo de columnas de la cuadrícula con __grid-template-columns: repeat(3, 1fr);__ y verifique los resultados
 		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de: 
 			- Una columna, coloque las propiedades __grid-column-start: 1;__, __grid-column-end: 4;__, __grid-row-start: 1;__ y __grid-row-end: 3;__
+			- Dos columna, coloque las propiedades __grid-column-start: 1;__, __grid-column-end: 4;__, __grid-row-start: 1;__ y __grid-row-end: 3;__
 
 ### Playgrounds
 

@@ -42,6 +42,6 @@ Cuando tengas listo tu sitio web estático o tu aplicación web dinámica será 
 
 ### Markdown
 
-Basic Syntax Markdown Guide. (2022). Retrieved 20 May 2022, from https://www.markdownguide.org/basic-syntax/#images-1
+Basic Syntax Markdown Guide. (2022). Retrieved 20 May 2022, from https://www.markdownguide.org/basic-syntax/
 
 Sintaxis de escritura y formato básicos - GitHub Docs. (2022). Retrieved 20 May 2022, from https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
