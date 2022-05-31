@@ -31,6 +31,7 @@ theme: jekyll-theme-leap-day
 			- Cambie el modo de colocar los elementos internos con la propiedad _display: flex;_ y verifique los resultados
 			- Justifique los elementos internos con la propiedad _justify-content: space-between;_ y verifique los resultados
 			- Permita que los ítems decidan el espacio que ocuparán del contenedor global con la propiedad _flex-wrap: wrap;_ y verifique los resultados
+			- Agregue la separación entre filas (_row-gap: 1rem;_) y columnas (_column-gap: 1rem;_); y verifique los resultados
 		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de: 
 			- Una columna, coloque la propiedad _width: 100%;_
 			- Dos columnas, coloque la propiedad _width: 49%;_
