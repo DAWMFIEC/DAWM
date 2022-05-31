@@ -17,8 +17,7 @@ img {
 
 #bloque1 {
   /* Inicio */
-
-
+  
   /* Fin */
 }
 
@@ -26,7 +25,7 @@ img {
   Agregue las propiedades al selector #bloque1 img:nth-child(4)
   para: 
 
-    - Coloque la imagen al final
+    - Coloque la imagen al final, utilice la regla order con valor -1
     
   Referencias: 
     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
@@ -34,7 +33,6 @@ img {
 
 #bloque1 img:nth-child(4) {
   /* Inicio */
-
 
   /* Fin */
 }
@@ -47,6 +45,7 @@ img {
     - Use gridbox
     - Muestre los elementos en dos columnas. La plantilla es 1fr 1fr
     - Justifique los ítems al centro
+    - Separación entre filas de 10px
     
   Referencias: 
     https://css-tricks.com/snippets/css/complete-guide-grid/
@@ -54,7 +53,6 @@ img {
 
 #bloque2 {
   /* Inicio */
-
 
   /* Fin */
 }
