@@ -23,9 +23,11 @@ theme: jekyll-theme-leap-day
 		+ Por identificador, por clase y/o por etiqueta
 	- Selector por descendientes, hijos, adyacentes y hermanos; y las propiedades a aplicar
 	- Pseudo-selectores  con las propiedades a aplicar
-		+ [Pseudo-clases](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes) como `:hover` o `:focus`, por ejemplo: cambiar el [comportamiento por defecto de los enlaces](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-clases).
-		+ [Pseudo-elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements) como `::before` o `::after`, por ejemplo: el efecto de [agregar contenido](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos) desde css sin modificar el html.
+		+ [Pseudo-clases](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes) como _:hover_ o _:focus_, por ejemplo: cambiar el [comportamiento por defecto de los enlaces](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-clases).
+		+ [Pseudo-elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements) como _::before_ o _::after_, por ejemplo: el efecto de [agregar contenido](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos) desde css sin modificar el html.
 * Utilice el diseño de su sitio web como referencia para (re)colocar las secciones de la página HTML.
+	- **Flex**
+		+ Escoja la etiqueta que funcionará contenedor global y aplique la propiedad _display: flex_
 
 ### Términos
 
