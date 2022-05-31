@@ -23,7 +23,7 @@ describe('Test unitarios para la ruta `/`', function() {
             <object data="images/man-talking-avatar-svgrepo-com.svg" width="60"></object>
           `
 
-          let objectsclean = objects.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+          let objectsclean = objects.replace(/(\r\n|\n|\r)/gm, '')
           chai.expect(responseclean).to.contain(objectsclean);
             
         })

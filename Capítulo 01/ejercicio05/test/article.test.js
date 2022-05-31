@@ -34,7 +34,7 @@ describe('Test unitarios para la ruta `/`', function() {
               </p>
             </article>
           `
-          let articleclean = article.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+          let articleclean = article.replace(/(\r\n|\n|\r)/gm, '')
           chai.expect(responseclean).to.contain(articleclean);
             
         })

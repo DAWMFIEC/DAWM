@@ -27,7 +27,7 @@ describe('Test unitarios para la ruta `/`', function() {
             </audio>
           `
 
-          let mediaclean = media.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+          let mediaclean = media.replace(/(\r\n|\n|\r)/gm, '')
           chai.expect(responseclean).to.contain(mediaclean);
             
         })

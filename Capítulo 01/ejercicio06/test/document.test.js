@@ -22,7 +22,7 @@ describe('Test unitarios para la ruta `/`', function() {
             <object width="100%" height="500px" data="documentos/manual.pdf"></object>
           `
 
-          let objectsclean = objects.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
+          let objectsclean = objects.replace(/(\r\n|\n|\r)/gm, '')
           chai.expect(responseclean).to.contain(objectsclean);
             
         })
