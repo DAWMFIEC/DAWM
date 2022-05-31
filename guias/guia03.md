@@ -44,6 +44,6 @@ theme: jekyll-theme-leap-day
 ### Referencias
 
 * Cascading Style Sheets. (2022). Retrieved 31 May 2022, from https://www.w3.org/Style/CSS/
-* CSS | MDN. (2021). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS
-* Serif Vs. Sans: the Final Battle | Webdesigner Depot. (2013). Retrieved 31 May 2022, from https://www.webdesignerdepot.com/2013/03/serif-vs-sans-the-final-battle/
+* CSS  MDN. (2021). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS
+* Serif Vs. Sans: the Final Battle  Webdesigner Depot. (2013). Retrieved 31 May 2022, from https://www.webdesignerdepot.com/2013/03/serif-vs-sans-the-final-battle/
 * Google Fonts. (2022). Retrieved 31 May 2022, from https://fonts.google.com/
