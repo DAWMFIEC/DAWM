@@ -25,10 +25,17 @@ theme: jekyll-theme-leap-day
 	- Pseudo-selectores  con las propiedades a aplicar
 		+ [Pseudo-clases](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes) como _:hover_ o _:focus_, por ejemplo: cambiar el [comportamiento por defecto de los enlaces](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-clases).
 		+ [Pseudo-elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements) como _::before_ o _::after_, por ejemplo: el efecto de [agregar contenido](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos) desde css sin modificar el html.
-* Utilice el diseño de su sitio web como referencia para (re)colocar las secciones de la página HTML.
-	- **Flex**
-		+ Escoja la etiqueta que funcionará contenedor global y aplique la propiedad _display: flex_
-		+ Justifique
+* Utilice el diseño de su sitio web como referencia para [(re)colocar las secciones de la página HTML](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout).
+	- **Flex**, según [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
+		+ Escoja la etiqueta que funcionará **contenedor global** 
+			- Cambie el modo de colocar los elementos internos con la propiedad _display: flex;_ y verifique los resultados
+			- Justifique los elementos internos con la propiedad _justify-content: space-between;_ y verifique los resultados
+			- Permita que los ítems decidan el espacio que ocuparán del contenedor global con la propiedad _flex-wrap: wrap;_ y verifique los resultados
+		+ Identifique las etiquetas **ítems** por filas
+			- Si en una fila desea que tenga una columna, coloque la propiedad _width: 100%;_
+			- Si en una fila desea que tenga dos columnas, coloque la propiedad _width: 49%;_
+			- Si en una fila desea que tenga tres columnas, coloque la propiedad _width: 32%;_
+		+ Repita este proceso de afuera hacia adentro dentro del html.
 
 ### Términos
 
@@ -41,3 +48,6 @@ Colocación de cajas, `flexbox`, `grid`
 * Pseudoelementos - CSS MDN. (2022). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
 * 3.4. Pseudo-clases (CSS avanzado). (2022). Retrieved 31 May 2022, from https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-clases
 * 3.5. Pseudo-elementos (CSS avanzado). (2022). Retrieved 31 May 2022, from https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos
+* Relación de Grid Layout con otros métodos de diseño y posicionamiento - CSS - CSS | MDN. (2021). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout
+* Don't Overthink It (Flexbox) Grids  CSS-Tricks. (2016). Retrieved 31 May 2022, from https://css-tricks.com/dont-overthink-flexbox-grids/
+* A Complete Guide to Flexbox  CSS-Tricks. (2013). Retrieved 31 May 2022, from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
