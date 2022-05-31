@@ -28,7 +28,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-
+Colocación de cajas
 
 ### Referencias
 
