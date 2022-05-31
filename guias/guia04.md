@@ -31,16 +31,20 @@ theme: jekyll-theme-leap-day
 			- Cambie el modo de colocar los elementos internos con la propiedad _display: flex;_ y verifique los resultados
 			- Justifique los elementos internos con la propiedad _justify-content: space-between;_ y verifique los resultados
 			- Permita que los ítems decidan el espacio que ocuparán del contenedor global con la propiedad _flex-wrap: wrap;_ y verifique los resultados
-			- Agregue la separación entre filas (_row-gap: 1rem;_) y columnas (_column-gap: 1rem;_); y verifique los resultados
+			- Agregue la separación entre filas (_row-gap: 1rem;_) y/o columnas (_column-gap: 1rem;_); y verifique los resultados
 		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de: 
 			- Una columna, coloque la propiedad _width: 100%;_
 			- Dos columnas, coloque la propiedad _width: 49%;_
 			- Tres columnas, coloque la propiedad _width: 32%;_
 		+ Repita este proceso de afuera hacia adentro dentro del html.
+	- **Grid**, según (Don’t Overthink It Grids)[https://css-tricks.com/dont-overthink-it-grids/]
+		+ Escoja la etiqueta que funcionará **contenedor global** 
+			- Cambie el modo de colocar los elementos internos con la propiedad _display: grid;_ y verifique los resultados
+			- 
 
 ### Playgrounds
 
-* Un buen _playground_ para flexbox se encuentra en [flexbox.netlify](https://flexbox.netlify.app/).
+* Un buen _playground_ para flexbox se encuentra en [flexbox.netlify](https://flexbox.netlify.app/); mientras que [grid.layoutit](https://grid.layoutit.com/) ofrece un buen espacio para comprender grid.
 
 ### Términos
 
@@ -53,7 +57,12 @@ Colocación de cajas, `flexbox`, `grid`
 * Pseudoelementos - CSS MDN. (2022). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
 * 3.4. Pseudo-clases (CSS avanzado). (2022). Retrieved 31 May 2022, from https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-clases
 * 3.5. Pseudo-elementos (CSS avanzado). (2022). Retrieved 31 May 2022, from https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos
+
 * Relación de Grid Layout con otros métodos de diseño y posicionamiento - CSS - CSS MDN. (2021). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout
 * Don't Overthink It (Flexbox) Grids  CSS-Tricks. (2016). Retrieved 31 May 2022, from https://css-tricks.com/dont-overthink-flexbox-grids/
 * flexbox-playground. (2022). Retrieved 31 May 2022, from https://flexbox.netlify.app/
 * A Complete Guide to Flexbox  CSS-Tricks. (2013). Retrieved 31 May 2022, from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+
+
+
+* A Complete Guide to Grid | CSS-Tricks. (2021). Retrieved 31 May 2022, from https://css-tricks.com/snippets/css/complete-guide-grid/
