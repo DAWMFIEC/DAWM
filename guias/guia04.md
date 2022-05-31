@@ -28,10 +28,11 @@ theme: jekyll-theme-leap-day
 * Utilice el diseño de su sitio web como referencia para (re)colocar las secciones de la página HTML.
 	- **Flex**
 		+ Escoja la etiqueta que funcionará contenedor global y aplique la propiedad _display: flex_
+		+ Justifique
 
 ### Términos
 
-Colocación de cajas
+Colocación de cajas, `flexbox`, `grid`
 
 ### Referencias
 
