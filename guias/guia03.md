@@ -23,12 +23,12 @@ theme: jekyll-theme-leap-day
 * Cree una carpeta que contendrá los archivos de estilo del proyecto.
 * Agregue una archivo con extensión CSS.
 * Agregue la referencia al archivo CSS dentro del documento HTML.
-* Identifique la o lass etiquetas HTML para utilizar:
+* Identifique la o las etiquetas HTML para utilizar:
 	- Selector universal y las propiedades a aplicar
 	- Selector por identificador y las propiedades a aplicar
 	- Selector por elemento y las propiedades a aplicar
 	- Selector por clase y las propiedades a aplicar
-	- Selectores agrupados con propiedades a aplicar
+	- Selectores agrupados con las propiedades a aplicar
 	- Selector por descendientes, hijos, adyacentes y hermanos; y las propiedades a aplicar
 
 
