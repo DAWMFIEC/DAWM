@@ -37,7 +37,7 @@ theme: jekyll-theme-leap-day
 			- Dos columnas, coloque la propiedad _width: 49%;_
 			- Tres columnas, coloque la propiedad _width: 32%;_
 		+ Repita este proceso de afuera hacia adentro dentro del html.
-	- **Grid**, según (Don’t Overthink It Grids)[https://css-tricks.com/dont-overthink-it-grids/]
+	- **Grid**, según [Don’t Overthink It Grids](https://css-tricks.com/dont-overthink-it-grids/)
 		+ Escoja la etiqueta que funcionará **contenedor global** 
 			- Cambie el modo de colocar los elementos internos con la propiedad _display: grid;_ y verifique los resultados
 			- 
