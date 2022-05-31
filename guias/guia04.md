@@ -65,4 +65,4 @@ Colocación de cajas, `flexbox`, `grid`
 
 
 
-* A Complete Guide to Grid | CSS-Tricks. (2021). Retrieved 31 May 2022, from https://css-tricks.com/snippets/css/complete-guide-grid/
+* A Complete Guide to Grid CSS-Tricks. (2021). Retrieved 31 May 2022, from https://css-tricks.com/snippets/css/complete-guide-grid/
