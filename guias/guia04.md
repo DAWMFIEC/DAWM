@@ -31,8 +31,8 @@ theme: jekyll-theme-leap-day
 			- Cambie el modo de colocar los elementos internos con la propiedad _display: flex;_ y verifique los resultados
 			- Justifique los elementos internos con la propiedad _justify-content: space-between;_ y verifique los resultados
 			- Permita que los ítems decidan el espacio que ocuparán del contenedor global con la propiedad _flex-wrap: wrap;_ y verifique los resultados
-			- Agregue la separación entre filas (_row-gap: 1rem;_) y/o columnas (_column-gap: 1rem;_); y verifique los resultados
-		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de: 
+			- Agregue la separación entre filas (_row-gap: 1rem;_) y verifique los resultados
+		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
 			- Una columna, coloque la propiedad _width: 100%;_
 			- Dos columnas, coloque la propiedad _width: 49%;_
 			- Tres columnas, coloque la propiedad _width: 32%;_
@@ -40,7 +40,9 @@ theme: jekyll-theme-leap-day
 	- **Grid**, según 
 		+ Escoja la etiqueta que funcionará **contenedor global** 
 			- Cambie el modo de colocar los elementos internos con la propiedad _display: grid;_ y verifique los resultados
-			- 
+			- Identifique el número máximo de columnas de la cuadrícula con _grid-template-columns: repeat(3, 1fr);_ y verifique los resultados
+		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de: 
+			- Una columna, coloque las propiedades _grid-column-start: 1;_, _grid-column-end: 4;_, _grid-row-start: 1;_ y _grid-row-end: 3;_
 
 ### Playgrounds
 
