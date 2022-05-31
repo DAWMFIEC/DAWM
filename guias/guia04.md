@@ -38,6 +38,10 @@ theme: jekyll-theme-leap-day
 			- Tres columnas, coloque la propiedad _width: 32%;_
 		+ Repita este proceso de afuera hacia adentro dentro del html.
 
+### Playgrounds
+
+* Un buen _playground_ para flexbox se encuentra en [flexbox.netlify](https://flexbox.netlify.app/).
+
 ### Términos
 
 Colocación de cajas, `flexbox`, `grid`
@@ -51,4 +55,5 @@ Colocación de cajas, `flexbox`, `grid`
 * 3.5. Pseudo-elementos (CSS avanzado). (2022). Retrieved 31 May 2022, from https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos
 * Relación de Grid Layout con otros métodos de diseño y posicionamiento - CSS - CSS | MDN. (2021). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout
 * Don't Overthink It (Flexbox) Grids  CSS-Tricks. (2016). Retrieved 31 May 2022, from https://css-tricks.com/dont-overthink-flexbox-grids/
+* flexbox-playground. (2022). Retrieved 31 May 2022, from https://flexbox.netlify.app/
 * A Complete Guide to Flexbox  CSS-Tricks. (2013). Retrieved 31 May 2022, from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
