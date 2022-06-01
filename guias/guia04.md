@@ -27,8 +27,7 @@ theme: jekyll-theme-leap-day
 		+ [Pseudo-elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements) como __::before__ o __::after__, por ejemplo: el efecto de [agregar contenido](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos) desde css sin modificar el html.
 * Utilice el diseño de su sitio web como referencia para [(re)colocar las secciones de la página HTML](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout).
 
-	+ `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
-	
+	> #### `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
 	> * Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
 	>
 	> 	__display: flex;__ <mark>Cambia el modo de colocar los elementos internos a flex</mark><br>
@@ -45,13 +44,15 @@ theme: jekyll-theme-leap-day
 	>
 	> * Repita este proceso de afuera hacia adentro dentro del html.
 
-	- `Guía de diseño Grid`, según [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) y [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/)
-		+ Escoja la etiqueta que funcionará **contenedor global** 
-			- Cambie el modo de colocar los elementos internos con la propiedad __display: grid;__ y verifique los resultados
-			- Identifique el número máximo de columnas de la cuadrícula con __grid-template-columns: repeat(3, 1fr);__ y verifique los resultados
-		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de: 
-			- Una columna, coloque las propiedades __grid-column-start: 1;__, __grid-column-end: 4;__, __grid-row-start: 1;__ y __grid-row-end: 3;__
-			- Dos columna, coloque las propiedades __grid-column-start: 1;__, __grid-column-end: 4;__, __grid-row-start: 1;__ y __grid-row-end: 3;__
+	> ####  `Guía de diseño Grid`, según [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) y [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/)
+	> * Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
+	>
+	> 	__display: grid;__ <mark>Cambia el modo de colocar los elementos internos a grid</mark><br>
+	>
+	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de:
+	> * Repita este proceso de afuera hacia adentro dentro del html. 	
+
+
 
 ### Playgrounds
 
