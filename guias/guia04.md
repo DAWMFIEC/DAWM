@@ -33,8 +33,8 @@ theme: jekyll-theme-leap-day
 	> 	__display: flex;__ <mark>Cambia el modo de colocar los elementos internos a flex</mark><br>
 	> 	__justify-content: space-between;__ <mark>Los elementos internos se distribuyen por igual</mark><br>
 	> 	__flex-wrap: wrap;__ <mark>Los ítems ocupan el espacio de acuerdo a su tamaño</mark><br>
-	> 	__row-gap: 1rem;__ <mark>Separación entre filas</mark><br>
-	> 	__column-gap: 1rem;__ <mark>y/o columnas</mark>
+	> 	__row-gap: 0.5rem;__ <mark>Separación entre filas</mark><br>
+	> 	__column-gap: 0.5rem;__ <mark>y/o columnas</mark>
 	>
 	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
 	>
@@ -48,8 +48,8 @@ theme: jekyll-theme-leap-day
 	> * Escoja la etiqueta que funcionará **contenedor global** y aplique la propiedad
 	>
 	> 	__display: grid;__ <mark>Cambia el modo de colocar los elementos internos a grid</mark><br>
-	> 	__row-gap: 1rem;__ <mark>Separación entre filas</mark><br>
-	> 	__column-gap: 1rem;__ <mark>y/o columnas</mark>
+	> 	__row-gap: 0.5rem;__ <mark>Separación entre filas</mark><br>
+	> 	__column-gap: 0.5rem;__ <mark>y/o columnas</mark>
 	>
 	>   + Identifique la plantilla de columnas y aplique la propiedad:
 	>
