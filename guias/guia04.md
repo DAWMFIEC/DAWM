@@ -30,10 +30,10 @@ theme: jekyll-theme-leap-day
 	> #### `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
 	> * Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
 	>
-	> 	__display: flex;__ <mark>Cambie el modo de colocar los elementos internos a flex</mark><br>
-	> 	__justify-content: space-between;__ <mark>Justifique los elementos internos</mark><br>
-	> 	__flex-wrap: wrap;__ <mark>Para que los ítems decidan el espacio que ocuparán del contenedor global</mark><br>
-	> 	__row-gap: 1rem;__ <mark>Agregue la separación entre filas</mark><br>
+	> 	__display: flex;__ <mark>Cambia el modo de colocar los elementos internos a flex</mark><br>
+	> 	__justify-content: space-between;__ <mark>Los elementos internos se distribuyen por igual</mark><br>
+	> 	__flex-wrap: wrap;__ <mark>Los ítems ocupan el espacio de acuerdo a su tamaño</mark><br>
+	> 	__row-gap: 1rem;__ <mark>Separación entre filas</mark><br>
 	> 	__column-gap: 1rem;__ <mark>y/o columnas</mark>
 	>
 	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
