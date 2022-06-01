@@ -54,12 +54,14 @@ theme: jekyll-theme-leap-day
 	>   + Identifique la plantilla de columnas y aplique la propiedad:
 	>
 	>	  **OPCIÓN 1:** __grid-template-columns: repeat(6, 1fr);__ <mark>Número de columnas donde acomodar los elementos</mark>, o<br>
-	>	  **OPCIÓN 2:** grid-template-areas: "fila1 fila1 fila1 fila1" "fila2 fila2 fila3 fila3";__ <mark>Nombres de las áreas</mark>, o<br>
+	>	  **OPCIÓN 2:** __grid-template-areas: "fila1 fila1 fila1 fila1" "fila2 fila2 fila3 fila3";__ <mark>Nombres de las áreas</mark>, o<br>
 	>
 	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de:
 	>
-	>	  **OPCIÓN 1:** __grid-template-columns: repeat(6, 1fr);__ <mark>Número de columnas donde acomodar los elementos</mark>, o<br>
-	>	  **OPCIÓN 2:** grid-template-areas: "fila1 fila1 fila1 fila1" "fila2 fila2 fila3 fila3";__ <mark>Nombres de las áreas</mark>, o<br>
+	>	  **OPCIÓN 1:** __grid-column: 4 / 7;__ <mark>Columnas que ocupará en la rejilla</mark>, y<br>
+	>	  				__grid-row: 1 / 2;__ <mark>Filas que ocupará en la rejilla</mark>, o<br>
+	>
+	>	  **OPCIÓN 2:** __grid-area: fila3;__ <mark>Nombre que ocupará en el área</mark><br>
 	>
 	> * Repita este proceso de afuera hacia adentro dentro del html. 	
 
