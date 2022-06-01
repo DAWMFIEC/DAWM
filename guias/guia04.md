@@ -71,6 +71,8 @@ theme: jekyll-theme-leap-day
 
 * Un buen __playground__ para flexbox se encuentra en [flexbox.netlify](https://flexbox.netlify.app/); mientras que [grid.layoutit](https://grid.layoutit.com/) ofrece un buen espacio para comprender grid.
 
+* [Ejercicio de colocación](../ejercicios/colocacion.rar)
+
 ### Términos
 
 Colocación de cajas, `flexbox`, `grid`
