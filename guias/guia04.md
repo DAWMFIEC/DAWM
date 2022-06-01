@@ -58,10 +58,10 @@ theme: jekyll-theme-leap-day
 	>
 	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de:
 	>
-	>	  **OPCIÓN 1:** __grid-column: 4 / 7;__ <mark>Columnas que ocupará en la rejilla</mark>, y<br>
+	>	**OPCIÓN 1:** __grid-column: 4 / 7;__ <mark>Columnas que ocupará en la rejilla</mark>, y<br>
 	>	  				__grid-row: 1 / 2;__ <mark>Filas que ocupará en la rejilla</mark>, o<br>
 	>
-	>	  **OPCIÓN 2:** __grid-area: fila3;__ <mark>Nombre que ocupará en el área</mark><br>
+	>	**OPCIÓN 2:** __grid-area: fila3;__ <mark>Nombre que ocupará en el área</mark><br>
 	>
 	> * Repita este proceso de afuera hacia adentro dentro del html. 	
 
