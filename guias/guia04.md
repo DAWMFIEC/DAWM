@@ -75,7 +75,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-Colocación de cajas, `flexbox`, `grid`
+Colocación de cajas, `flexbox`, `grid`, servidor http, localhost, puerto, IP
 
 ### Referencias
 
