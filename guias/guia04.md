@@ -30,7 +30,7 @@ theme: jekyll-theme-leap-day
 	- `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
 		+ Escoja la etiqueta que funcionará **contenedor global** 
 			- Cambie el modo de colocar los elementos internos a flex
-				> __display: flex;__
+				> __display: flex;__ ==Cambie el modo de colocar los elementos internos a flex==
 			- Justifique los elementos internos
 				> __justify-content: space-between;__
 			- Permita que los ítems decidan el espacio que ocuparán del contenedor global 
