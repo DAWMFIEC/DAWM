@@ -31,7 +31,7 @@ theme: jekyll-theme-leap-day
 	> * Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
 	> 	+ __display: flex;__ <mark>Cambie el modo de colocar los elementos internos a flex</mark>
 	> 	+ __justify-content: space-between;__ <mark>Justifique los elementos internos</mark>
-	> 	+__flex-wrap: wrap;__ <mark>Permita que los ítems decidan el espacio que ocuparán del contenedor global</mark>
+	> 	+ __flex-wrap: wrap;__ <mark>Permita que los ítems decidan el espacio que ocuparán del contenedor global</mark>
 	> 	+ __row-gap: 1rem;__ <mark>Agregue la separación entre filas</mark>
 	> 	+ __column-gap: 1rem;__ <mark>y/o columnas</mark>
 		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
