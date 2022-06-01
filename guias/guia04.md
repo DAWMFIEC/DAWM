@@ -45,11 +45,19 @@ theme: jekyll-theme-leap-day
 	> * Repita este proceso de afuera hacia adentro dentro del html.
 
 	> ####  `Guía de diseño Grid`, según [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) y [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/)
-	> * Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
+	> * Escoja la etiqueta que funcionará **contenedor global** y aplique la propiedad
 	>
 	> 	__display: grid;__ <mark>Cambia el modo de colocar los elementos internos a grid</mark><br>
+	> 	__row-gap: 1rem;__ <mark>Separación entre filas</mark><br>
+	> 	__column-gap: 1rem;__ <mark>y/o columnas</mark>
+	>
+	>   + Identifique la plantilla de columnas y aplique la propiedad:
+	>
+	>	  **OPCIÓN 1: ** __grid-template-columns: repeat(6, 1fr);__ <mark>Número de columnas donde acomodar los elementos</mark>, o<br>
+	>	  **OPCIÓN 2: ** grid-template-areas: "fila1 fila1 fila1 fila1" "fila2 fila2 fila3 fila3";__ <mark>Nombres de las áreas</mark>, o<br>
 	>
 	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de:
+	>
 	> * Repita este proceso de afuera hacia adentro dentro del html. 	
 
 
