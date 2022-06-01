@@ -38,8 +38,8 @@ theme: jekyll-theme-leap-day
 	>
 	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
 	>
-	>	__width: 100%;__ <mark>Una columna</mark>, o
-	>	__width: 49%;__ <mark>Dos columna</mark>, o
+	>	__width: 100%;__ <mark>Una columna</mark>, o<br>
+	>	__width: 49%;__ <mark>Dos columna</mark>, o<br>
 	>	__width: 32%;__ <mark>Tres columna</mark>
 	>
 	> * Repita este proceso de afuera hacia adentro dentro del html.
