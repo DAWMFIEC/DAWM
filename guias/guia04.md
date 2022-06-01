@@ -28,16 +28,21 @@ theme: jekyll-theme-leap-day
 * Utilice el diseño de su sitio web como referencia para [(re)colocar las secciones de la página HTML](https://developer.mozilla.org/es/docs/Web/CSS/CSS__Grid__Layout/Relationship__of__Grid__Layout).
 	- `Flexbox`, según [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
 		+ Escoja la etiqueta que funcionará **contenedor global** 
-			- Cambie el modo de colocar los elementos internos con la propiedad __display: flex;__ y verifique los resultados
-			- Justifique los elementos internos con la propiedad __justify-content: space-between;__ y verifique los resultados
-			- Permita que los ítems decidan el espacio que ocuparán del contenedor global con la propiedad __flex-wrap: wrap;__ y verifique los resultados
-			- Agregue la separación entre filas (__row-gap: 1rem;__) y verifique los resultados
+			- Cambie el modo de colocar los elementos internos a flex
+				> __display: flex;__
+			- Justifique los elementos internos
+				> __justify-content: space-between;__
+			- Permita que los ítems decidan el espacio que ocuparán del contenedor global 
+				> __flex-wrap: wrap;__
+			- Agregue la separación entre filas y/o columnas
+				> __row-gap: 1rem;__
+				> __column-gap: 1rem;__
 		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
 			- Una columna, coloque la propiedad __width: 100%;__
 			- Dos columnas, coloque la propiedad __width: 49%;__
 			- Tres columnas, coloque la propiedad __width: 32%;__
 		+ Repita este proceso de afuera hacia adentro dentro del html.
-	- `Grid`, según 
+	- `Grid`, según [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/)
 		+ Escoja la etiqueta que funcionará **contenedor global** 
 			- Cambie el modo de colocar los elementos internos con la propiedad __display: grid;__ y verifique los resultados
 			- Identifique el número máximo de columnas de la cuadrícula con __grid-template-columns: repeat(3, 1fr);__ y verifique los resultados
