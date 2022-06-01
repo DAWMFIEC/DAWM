@@ -71,7 +71,7 @@ theme: jekyll-theme-leap-day
 
 * Un buen __playground__ para flexbox se encuentra en [flexbox.netlify](https://flexbox.netlify.app/); mientras que [grid.layoutit](https://grid.layoutit.com/) ofrece un buen espacio para comprender grid.
 
-* Utilice el [ejercicio de colocación](../ejercicios/colocacion.zip) para practicar el uso de flexbox y grid. Levante el servidor incorporado en Python, de acuerdo con [hackerearth](https://www.hackerearth.com/practice/notes/simple-http-server-in-python/) o el [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb).
+* Utilice el [ejercicio de colocación](../ejercicios/colocacion.zip) para practicar el uso de flexbox y grid. Levante el servidor incorporado en Python, de acuerdo con [hackerearth](https://www.hackerearth.com/practice/notes/simple-http-server-in-python/), el [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) o algún otro mecanismo para levantar un servidor http.
 
 ### Términos
 
