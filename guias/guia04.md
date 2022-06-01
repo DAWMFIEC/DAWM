@@ -28,9 +28,9 @@ theme: jekyll-theme-leap-day
 * Utilice el diseño de su sitio web como referencia para [(re)colocar las secciones de la página HTML](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout).
 
 	- `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
-		+ Escoja la etiqueta que funcionará **contenedor global** 
-			- Cambie el modo de colocar los elementos internos a flex ==Cambie el modo de colocar los elementos internos a flex== <mark>very important words</mark>
-				> __display: flex;__ 
+		+ Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
+			- Cambie el modo de colocar los elementos internos a flex 
+				> __display: flex;__ <mark>Cambie el modo de colocar los elementos internos a flex</mark>
 			- Justifique los elementos internos
 				> __justify-content: space-between;__
 			- Permita que los ítems decidan el espacio que ocuparán del contenedor global 
