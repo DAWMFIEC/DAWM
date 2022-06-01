@@ -27,17 +27,13 @@ theme: jekyll-theme-leap-day
 		+ [Pseudo-elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements) como __::before__ o __::after__, por ejemplo: el efecto de [agregar contenido](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos) desde css sin modificar el html.
 * Utilice el diseño de su sitio web como referencia para [(re)colocar las secciones de la página HTML](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout).
 
-	- `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
-		+ Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
-			> __display: flex;__ <mark>Cambie el modo de colocar los elementos internos a flex</mark>
-			>
-			> __justify-content: space-between;__ <mark>Justifique los elementos internos</mark>
-			>
-			> __flex-wrap: wrap;__ <mark>Permita que los ítems decidan el espacio que ocuparán del contenedor global</mark>
-			>
-			> __row-gap: 1rem;__ <mark>Agregue la separación entre filas</mark>
-			>
-			> __column-gap: 1rem;__ <mark>y/o columnas</mark>
+	> #### `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
+	> * Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
+	> 	__display: flex;__ <mark>Cambie el modo de colocar los elementos internos a flex</mark>
+	> 	__justify-content: space-between;__ <mark>Justifique los elementos internos</mark>
+	> 	__flex-wrap: wrap;__ <mark>Permita que los ítems decidan el espacio que ocuparán del contenedor global</mark>
+	> 	__row-gap: 1rem;__ <mark>Agregue la separación entre filas</mark>
+	> 	__column-gap: 1rem;__ <mark>y/o columnas</mark>
 		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
 			- Una columna, coloque la propiedad __width: 100%;__
 			- Dos columnas, coloque la propiedad __width: 49%;__
