@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 		+ [Pseudo-clases](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes) como __:hover__ o __:focus__, por ejemplo: cambiar el [comportamiento por defecto de los enlaces](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-clases).
 		+ [Pseudo-elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements) como __::before__ o __::after__, por ejemplo: el efecto de [agregar contenido](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos) desde css sin modificar el html.
 * Utilice el diseño de su sitio web como referencia para [(re)colocar las secciones de la página HTML](https://developer.mozilla.org/es/docs/Web/CSS/CSS__Grid__Layout/Relationship__of__Grid__Layout).
-	- `Flexbox`, según [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
+	- `Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
 		+ Escoja la etiqueta que funcionará **contenedor global** 
 			- Cambie el modo de colocar los elementos internos a flex
 				> __display: flex;__
