@@ -31,14 +31,14 @@ theme: jekyll-theme-leap-day
 	> * Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
 	> 	+ __display: flex;__ <mark>Cambie el modo de colocar los elementos internos a flex</mark>
 	> 	+ __justify-content: space-between;__ <mark>Justifique los elementos internos</mark>
-	> 	+ __flex-wrap: wrap;__ <mark>Permita que los ítems decidan el espacio que ocuparán del contenedor global</mark>
+	> 	+ __flex-wrap: wrap;__ <mark>Para que los ítems decidan el espacio que ocuparán del contenedor global</mark>
 	> 	+ __row-gap: 1rem;__ <mark>Agregue la separación entre filas</mark>
 	> 	+ __column-gap: 1rem;__ <mark>y/o columnas</mark>
-		+ Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
-			- Una columna, coloque la propiedad __width: 100%;__
-			- Dos columnas, coloque la propiedad __width: 49%;__
-			- Tres columnas, coloque la propiedad __width: 32%;__
-		+ Repita este proceso de afuera hacia adentro dentro del html.
+	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
+	>	+ Una columna, coloque la propiedad __width: 100%;__
+	>	+ Dos columnas, coloque la propiedad __width: 49%;__
+	>	+ Tres columnas, coloque la propiedad __width: 32%;__
+	> * Repita este proceso de afuera hacia adentro dentro del html.
 
 	- `Guía de diseño Grid`, según [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) y [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/)
 		+ Escoja la etiqueta que funcionará **contenedor global** 
