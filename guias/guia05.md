@@ -48,13 +48,20 @@ theme: jekyll-theme-leap-day
     > `}`
 	>
 
+	- [Tipografía](https://www.browserstack.com/guide/how-to-create-responsive-website#toc6)
+
+	>
+	> `@media (min-width: 640px) { body {font-size:1rem;} }`
+	> `@media (min-width:960px) { body {font-size:1.2rem;} }`
+	> `@media (min-width:1100px) { body {font-size:1.5rem;} }`
+	>
 
 
 
 
 ### Términos
 
-
+`Responsive`
 
 ### Referencias
 
