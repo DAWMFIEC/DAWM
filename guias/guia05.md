@@ -69,7 +69,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`Responsive`
+`Responsive`, renderizar
 
 ### Referencias
 

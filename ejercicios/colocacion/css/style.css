@@ -1,0 +1,14 @@
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+section, article {
+  border: 1px solid grey;
+  border-radius: 1%;
+  text-align: center
+}
+
+section {
+  background: limegreen;
+}
