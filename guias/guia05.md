@@ -21,64 +21,55 @@ theme: jekyll-theme-leap-day
 
 * Aplique los componentes básicos para el diseño responsivo y verifique los resultados
 	
-	- [Viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
+	- [Viewport](https://www.w3schools.com/css/css_rwd_viewport.asp), agrega el meta en la etiqueta head 
 
-		+ En el head 
+	>
+	> `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">`
+	>
 
-		>
-		> `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">`
-		>
+	- [Rejillas fluídas y box-sizing](https://www.w3schools.com/css/css_rwd_grid.asp), agrega en la hoja de estilos general la colocación de elementos con CSS Grid y/o Flexbox
 
-	- [Rejillas fluídas y box-sizing](https://www.w3schools.com/css/css_rwd_grid.asp)
-
-		+ En la hoja de estilos general
-
-		> Uso de CSS Grid y/o Flexbox
-
-		>
-		> \* , \*:before, \*:after {<br>
-	    >     -webkit-box-sizing: border-box;<br>
-	    >     -moz-box-sizing: border-box;<br>
-	    >     box-sizing: border-box;<br>
-	    > }<br>
-		>
+	>
+	> \* , \*:before, \*:after {<br>
+    >     -webkit-box-sizing: border-box;<br>
+    >     -moz-box-sizing: border-box;<br>
+    >     box-sizing: border-box;<br>
+    > }<br>
+	>
 
 
+	- [Media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp), [Media types](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries) y [Breakpoints](https://ui.dev/rwd/develop/browser-feature-support/media-queries-for-common-device-breakpoints). Agrega las reglas CSS dentro del media query, incluso la nueva colocación de los elementos para dispositivos móviles.
 
-	- [Media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp), [Media types](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries) y [Breakpoints](https://ui.dev/rwd/develop/browser-feature-support/media-queries-for-common-device-breakpoints)
+	>
+	> /\* Smartphones (portrait and landscape) ----------- \*/<br>
+	> @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { <br>
+  	> 	/\* Styles \*/ <br>
+	> }<br>
+	>
 
-		>
-		> /\* Smartphones (portrait and landscape) ----------- \*/<br>
-		> @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { <br>
-	  	> 	/\* Styles \*/ <br>
-		> }<br>
-		>
+	- [Imágenes](https://www.w3schools.com/css/css_rwd_images.asp) y [videos](https://www.w3schools.com/css/css_rwd_videos.asp). Agrega la regla CSS en la hoja de estilos general.
 
-	- [Imágenes](https://www.w3schools.com/css/css_rwd_images.asp) y [videos](https://www.w3schools.com/css/css_rwd_videos.asp)
-
-		+ En la hoja de estilos general
-
-		>
-		> img, video { <br>
-	  	>   width: 100%; <br>
-	    >   height: auto; <br>
-	    > } <br>
-		>
+	>
+	> img, video { <br>
+  	>   width: 100%; <br>
+    >   height: auto; <br>
+    > } <br>
+	>
 
 	- [Tipografía](https://www.browserstack.com/guide/how-to-create-responsive-website#toc6)
 
-		>
-		> @media (min-width: 640px) { body {font-size:1rem;} }<br>
-		> @media (min-width:960px) { body {font-size:1.2rem;} }<br>
-		> @media (min-width:1100px) { body {font-size:1.5rem;} }<br>
-		>
+	>
+	> @media (min-width: 640px) { body {font-size:1rem;} }<br>
+	> @media (min-width:960px) { body {font-size:1.2rem;} }<br>
+	> @media (min-width:1100px) { body {font-size:1.5rem;} }<br>
+	>
 
 	- Uso de frameworks y plantillas, como [Bootstrap](https://getbootstrap.com/)
 
 
 ### Términos
 
-`Responsive`, renderizar
+`Responsive`, renderizar, `media query`
 
 ### Referencias
 
