@@ -19,6 +19,37 @@ theme: jekyll-theme-leap-day
 * Utilice el diseño de su sitio web para dispositivo móvil para comparar con el sitio web que está desarrollando.
 	- Use el Chrome Developer Tool, [Responsinator](http://www.responsinator.com/), [Website planet](https://www.websiteplanet.com/es/webtools/responsive-checker/), [Browserstack](https://www.browserstack.com/responsive) u otra herramienta.
 
+* Aplique los componentes básicos para el diseño responsivo y verifique los resultados
+	
+	- [Viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
+
+	>
+	> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	>
+
+	- [Rejillas fluías y box-sizing](https://www.w3schools.com/css/css_rwd_grid.asp)
+
+	>
+	> `*, *:before, *:after {`
+    > `    -webkit-box-sizing: border-box;`
+    > `    -moz-box-sizing: border-box;`
+    > `    box-sizing: border-box;`
+    > `}`
+	>
+
+	- [Media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp), [Media types](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries) y [Breakpoints](https://ui.dev/rwd/develop/browser-feature-support/media-queries-for-common-device-breakpoints)
+
+	- [Imágenes](https://www.w3schools.com/css/css_rwd_images.asp) y [videos](https://www.w3schools.com/css/css_rwd_videos.asp)
+
+	>
+	> `img, video {`
+  	> `  width: 100%;`
+    > `  height: auto;`
+    > `}`
+	>
+
+
+
 
 
 ### Términos
