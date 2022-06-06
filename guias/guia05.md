@@ -30,7 +30,7 @@ theme: jekyll-theme-leap-day
 	- [Rejillas fluías y box-sizing](https://www.w3schools.com/css/css_rwd_grid.asp)
 
 	>
-	> * , * :before, * :after {
+	> \* , \*:before, \*:after {
     >     -webkit-box-sizing: border-box;
     >     -moz-box-sizing: border-box;
     >     box-sizing: border-box;
@@ -41,9 +41,9 @@ theme: jekyll-theme-leap-day
 	- [Media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp), [Media types](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries) y [Breakpoints](https://ui.dev/rwd/develop/browser-feature-support/media-queries-for-common-device-breakpoints)
 
 	>
-	> / * Smartphones (portrait and landscape) ----------- * /
+	> /\* Smartphones (portrait and landscape) ----------- \*/
 	> @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
-  	> / * Styles * /
+  	> /\* Styles \*/
 	> }
 	>
 
