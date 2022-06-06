@@ -24,7 +24,7 @@ theme: jekyll-theme-leap-day
 	- [Viewport](https://www.w3schools.com/css/css_rwd_viewport.asp)
 
 	>
-	> <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	> `<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">`
 	>
 
 	- [Rejillas fluías y box-sizing](https://www.w3schools.com/css/css_rwd_grid.asp)
