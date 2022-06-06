@@ -27,6 +27,6 @@ theme: jekyll-theme-leap-day
 
 ### Referencias
 
-* The building blocks of responsive design - Progressive web apps (PWAs) | MDN. (2022). Retrieved 6 June 2022, from https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/responsive_design_building_blocks
-* Mejora Progresiva - Glosario | MDN. (2020). Retrieved 6 June 2022, from https://developer.mozilla.org/es/docs/Glossary/Progressive_Enhancement
+* The building blocks of responsive design - Progressive web apps (PWAs)  MDN. (2022). Retrieved 6 June 2022, from https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Responsive/responsive_design_building_blocks
+* Mejora Progresiva - Glosario MDN. (2020). Retrieved 6 June 2022, from https://developer.mozilla.org/es/docs/Glossary/Progressive_Enhancement
 * @tamapugsley, @. (2022). Responsinator . Retrieved 6 June 2022, from http://www.responsinator.com/
