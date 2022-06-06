@@ -40,6 +40,13 @@ theme: jekyll-theme-leap-day
 
 	- [Media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp), [Media types](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries) y [Breakpoints](https://ui.dev/rwd/develop/browser-feature-support/media-queries-for-common-device-breakpoints)
 
+	>
+	> / * Smartphones (portrait and landscape) ----------- * /
+	> @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  	> / * Styles * /
+	> }
+	>
+
 	- [Imágenes](https://www.w3schools.com/css/css_rwd_images.asp) y [videos](https://www.w3schools.com/css/css_rwd_videos.asp)
 
 	>
