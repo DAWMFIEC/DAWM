@@ -30,30 +30,31 @@ theme: jekyll-theme-leap-day
 	- [Rejillas fluías y box-sizing](https://www.w3schools.com/css/css_rwd_grid.asp)
 
 	>
-	> `*, *:before, *:after {`
-    > `    -webkit-box-sizing: border-box;`
-    > `    -moz-box-sizing: border-box;`
-    > `    box-sizing: border-box;`
-    > `}`
+	> * , * :before, * :after {
+    >     -webkit-box-sizing: border-box;
+    >     -moz-box-sizing: border-box;
+    >     box-sizing: border-box;
+    > }
 	>
+
 
 	- [Media queries](https://www.w3schools.com/css/css_rwd_mediaqueries.asp), [Media types](https://developer.mozilla.org/es/docs/Web/CSS/Media_Queries/Using_media_queries) y [Breakpoints](https://ui.dev/rwd/develop/browser-feature-support/media-queries-for-common-device-breakpoints)
 
 	- [Imágenes](https://www.w3schools.com/css/css_rwd_images.asp) y [videos](https://www.w3schools.com/css/css_rwd_videos.asp)
 
 	>
-	> `img, video {`
-  	> `  width: 100%;`
-    > `  height: auto;`
-    > `}`
+	> img, video {
+  	>   width: 100%;
+    >   height: auto;
+    > }
 	>
 
 	- [Tipografía](https://www.browserstack.com/guide/how-to-create-responsive-website#toc6)
 
 	>
-	> `@media (min-width: 640px) { body {font-size:1rem;} }`
-	> `@media (min-width:960px) { body {font-size:1.2rem;} }`
-	> `@media (min-width:1100px) { body {font-size:1.5rem;} }`
+	> @media (min-width: 640px) { body {font-size:1rem;} }
+	> @media (min-width:960px) { body {font-size:1.2rem;} }
+	> @media (min-width:1100px) { body {font-size:1.5rem;} }
 	>
 
 	- Uso de frameworks y plantillas, como [Bootstrap](https://getbootstrap.com/)
