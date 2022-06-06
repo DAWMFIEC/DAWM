@@ -56,7 +56,7 @@ theme: jekyll-theme-leap-day
 	> `@media (min-width:1100px) { body {font-size:1.5rem;} }`
 	>
 
-
+	- Uso de frameworks y plantillas, como [Bootstrap](https://getbootstrap.com/)
 
 
 ### Términos
