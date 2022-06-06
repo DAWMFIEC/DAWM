@@ -43,7 +43,7 @@ theme: jekyll-theme-leap-day
 	>
 	> /\* Smartphones (portrait and landscape) ----------- \*/<br>
 	> @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { <br>
-  	> 	/\* Styles \*/ <br>
+	> 	/\* Styles \*/ <br>
 	> }<br>
 	>
 
@@ -51,7 +51,7 @@ theme: jekyll-theme-leap-day
 
 	>
 	> img, video { <br>
-  	>   width: 100%; <br>
+	>   width: 100%; <br>
     >   height: auto; <br>
     > } <br>
 	>
