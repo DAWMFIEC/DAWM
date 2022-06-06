@@ -42,18 +42,18 @@ theme: jekyll-theme-leap-day
 
 	>
 	> /\* Smartphones (portrait and landscape) ----------- \*/<br>
-	> @media only screen and (min-device-width: 320px) and (max-device-width: 480px) {<br>
-  	> /\* Styles \*/<br>
+	> @media only screen and (min-device-width: 320px) and (max-device-width: 480px) { <br>
+  	> 	/\* Styles \*/< br>
 	> }<br>
 	>
 
 	- [Imágenes](https://www.w3schools.com/css/css_rwd_images.asp) y [videos](https://www.w3schools.com/css/css_rwd_videos.asp)
 
 	>
-	> img, video {<br>
-  	>   width: 100%;<br>
-    >   height: auto;<br>
-    > }<br>
+	> img, video { <br>
+  	>   width: 100%; <br>
+    >   height: auto; <br>
+    > } <br>
 	>
 
 	- [Tipografía](https://www.browserstack.com/guide/how-to-create-responsive-website#toc6)
