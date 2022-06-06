@@ -15,6 +15,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 02](guias/guia02.md)
 * [Guía 03](guias/guia03.md)
 * [Guía 04](guias/guia04.md)
+* [Guía 05](guias/guia05.md)
 
 
 ## Indicaciones Generales
@@ -42,5 +43,5 @@ Cuando tengas listo tu sitio web estático o tu aplicación web dinámica será 
 ### Markdown
 
 * Basic Syntax Markdown Guide. (2022). Retrieved 20 May 2022, from https://www.markdownguide.org/basic-syntax/
-* Extended Syntax | Markdown Guide. (2022). Retrieved 1 June 2022, from https://www.markdownguide.org/extended-syntax/#fenced-code-blocks
+* Extended Syntax Markdown Guide. (2022). Retrieved 1 June 2022, from https://www.markdownguide.org/extended-syntax/#fenced-code-blocks
 * Sintaxis de escritura y formato básicos - GitHub Docs. (2022). Retrieved 20 May 2022, from https://docs.github.com/es/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
