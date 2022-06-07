@@ -1,0 +1,32 @@
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+}
+
+section, article {
+  border: 1px solid grey;
+  border-radius: 1%;
+  text-align: center
+}
+
+
+section {
+  background: limegreen;
+}
+
+body {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+* , *:before, *:after {
+-webkit-box-sizing: border-box;
+-moz-box-sizing: border-box;
+box-sizing: border-box;
+}
+
+img, video {
+width: 100%;
+height: auto;
+}
