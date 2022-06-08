@@ -10,13 +10,14 @@ theme: jekyll-theme-leap-day
 
 * Revisión de ejercicios previos: dudas y comentarios.
 * [Bootstrap](https://getbootstrap.com/) es un kit de herramientas para front-end potente, ampliable y repleto de funciones. Con el cual puedes crear y personalizar con Sass, utilizar el sistema de grillas y los componentes prediseñados.
-	- Algunas características distintivas de la versión 5 se encuentran en [Web3canvas](https://web3canvas.com/convert-bootstrap-4-to-5-migration-guide/).
+	- Algunas características distintivas de la versión 5 se encuentran en la [documentación oficial](https://getbootstrap.com/docs/5.0/migration/) y en [Web3canvas](https://web3canvas.com/convert-bootstrap-4-to-5-migration-guide/).
 
 
 ### Actividades
 
 * Revisar la documentación de [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 * [¿Cómo crear un sitio web con bootsrap?](https://azmind.com/convert-website-bootstrap-4/)
+	- 
 
 ### Términos
 
