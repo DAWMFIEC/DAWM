@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 ### Actividades
 
 * Revisar la documentación de [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
-* [¿Cómo crear un sitio web con bootsrap?](https://azmind.com/convert-website-bootstrap-4/) explica el proceso de creación de una plantilla con Bootstrap; sin embargo, llevaremos a cabo el proceso desde cero, con:
+* [¿Cómo crear un sitio web con bootstrap?](https://azmind.com/convert-website-bootstrap-4/) explica el proceso de creación de una plantilla con Bootstrap; sin embargo, llevaremos a cabo el proceso desde cero, con:
 	
 	- Descargue y descomprima el archivo [bootstrap_partes.zip](../ejercicios/bootstrap_partes.zip)
 	- Cree un archivo con extension `html`. 
@@ -46,7 +46,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`Front-end`, `toolkit`, componentes
+`Front-end`, `CDN` ,`toolkit`, componentes
 
 ### Referencias
 
