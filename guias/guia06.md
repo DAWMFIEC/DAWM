@@ -28,23 +28,27 @@ theme: jekyll-theme-leap-day
 		+ Agregue un `<div>` con la clase `container-fluid`
 			> <div class="container-fluid">
 
-	- [Componentes](https://getbootstrap.com/docs/5.2/components/). Bootstrap ofrece un conjunto de componentes (estructura - HTML, estilo - CSS y comportamiento - Javascript). 
+	- [Componentes](https://getbootstrap.com/docs/5.2/components/). Bootstrap ofrece un conjunto de componentes (estructura - HTML, estilo - CSS y comportamiento - Javascript). Utilizaremos un `NAVBAR` de acuerdo con la [documentación](https://getbootstrap.com/docs/5.2/components/navbar/).
 
-		+ `NAVBAR` Agregue la etiqueta `<navbar>` y modifique de acuerdo con la [documentación](https://getbootstrap.com/docs/5.2/components/navbar/).
+		+ Utilice la barra de navegación que ofrece Bootstrap que se encuentra en `navbar.txt`. 
+		+ Coloque las etiquetas dentro del `<div>` con la clase `container-fluid`.
+		+ Verifique en el navegador. 
 
-			+ Utilice la barra de navegación que ofrece Bootstrap que se encuentra en `navbar.txt`. 
-			+ Coloque las etiquetas dentro del `<div>` con la clase `container-fluid`.
-			+ Verifique en el navegador. 
+	- [Sistema de rejillas](https://getbootstrap.com/docs/5.2/layout/grid/). Bootstrap utiliza una cuadrícula flexbox para dispositivos móviles para crear diseños de todas las formas y tamaños gracias a un sistema de doce columnas, seis niveles de respuesta predeterminados, variables Sass y mixins, y docenas de clases predefinidas.
 
-			
+		+ Agregue un `<div>` con la clase `row` debajo de la fila del `navbar`
+			> <div class="row">
+		+ Utilice la sección de cards que ofrece Bootstrap que se encuentra en `cards.txt`. 
+		+ Coloque las etiquetas dentro del `<div>`
+		+ Verifique en el navegador. 	
 
 
 
 ### Términos
 
-`Front-end`, `toolkit`
+`Front-end`, `toolkit`, componentes
 
 ### Referencias
 
 * Mark Otto, a. (2022). Bootstrap. Retrieved 8 June 2022, from https://getbootstrap.com/
-* How To Convert a Website to Bootstrap 4 (Case Study) | AZMIND. (2018). Retrieved 8 June 2022, from https://azmind.com/convert-website-bootstrap-4/
+* How To Convert a Website to Bootstrap 4 (Case Study) AZMIND. (2018). Retrieved 8 June 2022, from https://azmind.com/convert-website-bootstrap-4/
