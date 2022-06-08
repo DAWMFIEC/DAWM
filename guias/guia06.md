@@ -17,52 +17,26 @@ theme: jekyll-theme-leap-day
 
 * Revisar la documentación de [Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/)
 * [¿Cómo crear un sitio web con bootsrap?](https://azmind.com/convert-website-bootstrap-4/) explica el proceso de creación de una plantilla con Bootstrap; sin embargo, llevaremos a cabo el proceso desde cero, con:
-	- Utiliza la plantilla base que ofrece Bootstrap
+	
+	- Descargue y descomprima el archivo [bootstrap_partes.zip](ejercicios/bootstrap_partes.zip)
+	- Cree un archivo con extension `html`. 
+		+ Utilice la plantilla base que ofrece Bootstrap que se encuentra en `plantilla_base.txt`. 
+		+ Verifique en el navegador. 
 
-	> <!doctype html><br>
-	> <html lang="en"><br>
-	>   <head><br>
-	>     <meta charset="utf-8"><br>
-	>     <meta name="viewport" content="width=device-width, initial-scale=1"><br>
-	>     <title>Mi sitio</title><br>
-	>     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous"><br>
-	>   </head><br>
-	>   <body><br>
-	>     <h1>Hello, world!</h1><br>
-	>     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity=" sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script><br>
-	>   </body><br>
-	> </html><br>
+	- [Contenedor](https://getbootstrap.com/docs/5.2/layout/containers/) son un bloque de construcción fundamental de Bootstrap que contienen, rellenan y alinean su contenido dentro de un dispositivo o ventana gráfica determinada.
+		+ Elimine la etiqueta `<h1>` de la etiqueta `<body>`.
+		+ Agregue un `<div>` con la clase `container-fluid`
+			> <div class="container-fluid">
 
 	- [Componentes](https://getbootstrap.com/docs/5.2/components/). Bootstrap ofrece un conjunto de componentes (estructura - HTML, estilo - CSS y comportamiento - Javascript). 
 
-		+ Elimine la etiqueta `<h1>` de la etiqueta `<body>`
-		+ Agregue la etiqueta `<navbar>` y modifique de acuerdo con la documentación
+		+ `NAVBAR` Agregue la etiqueta `<navbar>` y modifique de acuerdo con la [documentación](https://getbootstrap.com/docs/5.2/components/navbar/).
 
-			> <!-- Top menu --><br>
-		    > <nav class="navbar navbar-dark bg-dark fixed-top navbar-expand-lg"><br>
-		    >   <div class="container-fluid"><br>
-		    >     <a class="navbar-brand" href="#">Mi sitio</a><br>
-		    >     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"><br>
-		    >       <span class="navbar-toggler-icon"></span><br>
-		    >     </button><br>
-		    >     <div class="collapse navbar-collapse" id="navbarNav"><br>
-		    >       <ul class="navbar-nav"><br>
-		    >         <li class="nav-item"><br>
-		    >           <a class="nav-link active" aria-current="page" href="#">Inicio</a><br>
-		    >         </li><br>
-		    >         <li class="nav-item"><br>
-		    >           <a class="nav-link" href="#">Servicios</a><br>
-		    >         </li><br>
-		    >         <li class="nav-item"><br>
-		    >           <a class="nav-link" href="#">Trabajos</a><br>
-		    >         </li><br>
-		    >         <li class="nav-item"><br>
-		    >           <a class="nav-link disabled">Admin</a><br>
-		    >         </li><br>
-		    >       </ul><br>
-		    >     </div><br>
-		    >   </div><br>
-		    > </nav><br>
+			+ Utilice la barra de navegación que ofrece Bootstrap que se encuentra en `navbar.txt`. 
+			+ Coloque las etiquetas dentro del `<div>` con la clase `container-fluid`.
+			+ Verifique en el navegador. 
+
+			
 
 
 
