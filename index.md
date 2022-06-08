@@ -16,6 +16,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 03](guias/guia03.md)
 * [Guía 04](guias/guia04.md)
 * [Guía 05](guias/guia05.md)
+* [Guía 06](guias/guia06.md)
+
 
 
 ## Indicaciones Generales
