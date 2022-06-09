@@ -29,7 +29,7 @@ describe('Test unitarios para la ruta `/`', function() {
             let script = `<script src="/scripts/ejercicio.js"></script>`
             chai.expect(responseclean).to.contain(script)
           } catch (error) {
-            chai.expect.fail('Utilice la etiqueta script con el atributo src y la ruta al archivo');
+            chai.expect.fail('Utilice la etiqueta script con el atributo src y la ruta "/scripts/ejercicio.js"');
             return;
           }
 
