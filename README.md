@@ -54,10 +54,11 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 			    | [Ejercicio 03](Capítulo%2002/ejercicio03)         | Colocación  |
 | 			    | [Ejercicio 04](Capítulo%2002/ejercicio04)         | Posicionamiento  |
 | ~Capítulo 03~   | ~[Ejercicio 01](Capítulo%2003/ejercicio01)~         | ~Diseño responsivo~  |
-| Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Fundamentos  |
-| 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | DOM  |
-| 				| [Ejercicio 03](Capítulo%2004/ejercicio03)         | Fetch  |
-| 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | RSS  |
+| Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Etiqueta script  |
+| 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Fundamentos  |
+|               | [Ejercicio 03](Capítulo%2004/ejercicio03)         | DOM  |
+| 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | Fetch  |
+| 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | RSS  |
 
 ## Referencias 
 
