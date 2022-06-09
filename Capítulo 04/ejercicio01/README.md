@@ -14,10 +14,10 @@
 			+ En MacOs, con: `npm run debugm`
 	+ Utilice su navegador preferido para abrir la vista inicial del ejercicio, con el URL: `http://localhost:3000/`
 * Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
-* Desde el editor de texto, modifica el archivo `views\index.ejs` y el archivo `public/scripts/ejercicio.js`, 
+* Desde el editor de texto, modifica el archivo `views\index.ejs`, 
 	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
 	+ Agrega los cambiossolicitadas dentro de las secciones marcadas, con:  
-	`<!-- Inicio -->` - `<!-- Fin -->`, y `/* Inicio */` - `/* Fin */`
+	`<!-- Inicio -->` - `<!-- Fin -->`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 
 ## Pruebas unitarias
