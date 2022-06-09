@@ -12,12 +12,24 @@ describe('Test unitarios para la ruta `/`', function() {
 
     it('Respuesta del servidor', function() {
       return request(app)
-        .get('/')
+        .get('/scripts/ejercicio.js')
         .then((response) => {
             assert.equal(response.status, 200)
 
         })
     });
+
+    it('Respuesta del servidor', function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
+            let script = requireFromString(response.text)
+            console.log(response.text)
+            console.log(script.myfunc())
+            console.log(script.myfunc2())
+        })
+    });
+    
 
     it('Etiqueta script', function() {
       return request(app)
@@ -29,14 +41,13 @@ describe('Test unitarios para la ruta `/`', function() {
             let script = `<script src="/scripts/ejercicio.js"></script>`
             chai.expect(responseclean).to.contain(script)
           } catch (error) {
-            chai.expect.fail('Utilice la etiqueta script con el atributo src y la ruta al archivo');
+            chai.expect.fail('Should have thrown');
             return;
           }
 
             
         })
     });
-    
    
 
 });

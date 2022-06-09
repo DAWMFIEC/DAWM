@@ -70,3 +70,4 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 * HTML Tutorial. (2022). Retrieved 11 May 2022, from https://www.w3schools.com/html/default.asp
 * CSS Tutorial. (2022). Retrieved 11 May 2022, from https://www.w3schools.com/css/default.asp
 * Introduction to Chai Assertions. (2022). Retrieved 11 May 2022, from https://testautomationu.applitools.com/chai-test-assertions/
+* message, M., d, t., & 0, G. (2020). Mocha/Chai: testing thrown Errors with error message. Retrieved 9 June 2022, from https://stackoverflow.com/questions/62717058/mocha-chai-testing-thrown-errors-with-error-message

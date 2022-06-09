@@ -1,15 +1,12 @@
-/**/
-function myfunc() {
-    return 1;
+
+/* Función: insertarTexto */
+
+function insertarTexto() {
+    document.getElementsByClassName('respuesta')[0].innerHTML = `<h2>Etiqueta script agregada y ejecutando</h2>`
 }
 
-function myfunc2() {
-    return 2;
-}
-
-exports.myfunc = myfunc
+insertarTexto()
 
 module.exports = {
-    myfunc: myfunc,
-    myfunc2: myfunc2
+    insertarTexto: insertarTexto
 };
