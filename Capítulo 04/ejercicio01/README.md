@@ -17,7 +17,7 @@
 * Desde el editor de texto, modifica el archivo `views\index.ejs` y el archivo `public/scripts/ejercicio.js`, 
 	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
 	+ Agrega los cambiossolicitadas dentro de las secciones marcadas, con:  
-	`/* Inicio */` - `/* Fin */`
+	`<!-- Inicio -->` - `<!-- Fin -->`, y `/* Inicio */` - `/* Fin */`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 
 ## Pruebas unitarias
