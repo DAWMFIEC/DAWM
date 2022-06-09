@@ -2,7 +2,7 @@
 /* Función: insertarTexto */
 
 function insertarTexto() {
-    agregarPorClase(0,`<h2>Etiqueta script agregada y ejecutando</h2>`)
+    document.getElementsByClassName('respuesta')[0].innerHTML = `<h2>Etiqueta script agregada y ejecutando</h2>`
 }
 
 insertarTexto()
