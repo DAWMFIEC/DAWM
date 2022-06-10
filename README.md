@@ -56,9 +56,9 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | ~Capítulo 03~   | ~[Ejercicio 01](Capítulo%2003/ejercicio01)~         | ~Diseño responsivo~  |
 | Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Etiqueta script  |
 | 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Fundamentos  |
-|               | [Ejercicio 03](Capítulo%2004/ejercicio03)         | DOM  |
-| 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | Fetch  |
-| 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | RSS  |
+|               | [Ejercicio 03](Capítulo%2004/ejercicio03)         | Control de flujo y Funciones  |
+| 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | DOM  |
+| 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Promesas y Async/Await  |
 
 ## Referencias 
 
