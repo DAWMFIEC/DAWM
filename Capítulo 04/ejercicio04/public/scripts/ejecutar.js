@@ -1,0 +1,5 @@
+function ejecutarFunciones() {
+    byId()
+}
+
+ejecutarFunciones()
