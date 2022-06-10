@@ -12,6 +12,8 @@ theme: jekyll-theme-leap-day
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">JavaScript Loops Quick Guide ✨ <a href="https://t.co/vUyc3zaXL2">pic.twitter.com/vUyc3zaXL2</a></p>&mdash; Adarsh Gupta ⚡ (@adarsh____gupta) <a href="https://twitter.com/adarsh____gupta/status/1535147585148981248?ref_src=twsrc%5Etfw">June 10, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Useful CSS Grid Use Cases<br><br>🧵 Small Thread 👇 <a href="https://t.co/NCZc5WNUoh">pic.twitter.com/NCZc5WNUoh</a></p>&mdash; George Moller (@_georgemoller) <a href="https://twitter.com/_georgemoller/status/1535281913358843905?ref_src=twsrc%5Etfw">June 10, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ## Videos
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6qko7Nbe8YA" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
