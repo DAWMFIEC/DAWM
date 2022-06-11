@@ -44,8 +44,85 @@ describe('Test unitarios para la ruta `/`', function() {
 
             
         })
-          
-    });  
+    }); 
+
+
+    it('getElementsByClassName', function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
+
+         let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
+         let scriptTexto, scriptEjecutable
+
+         
+         /* Revisión textual */
+         try {
+            scriptTexto = [` arreglo = document.getElementsByClassName('profile-card-loc__txt')`,`elemento = arreglo[0]`, `elemento.textContent = 'Istanbul, Turkey'`]
+            for(let elemento of scriptTexto) {
+              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
+            }
+            
+          } catch (error) {
+            chai.expect.fail('Revise la petición por clase y la modificación del contenido del elemento');
+            return;
+          }
+
+            
+        })
+    }); 
+
+
+    it('getElementsByTagName', function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
+
+         let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
+         let scriptTexto, scriptEjecutable
+
+         
+         /* Revisión textual */
+         try {
+            scriptTexto = [`arreglo = document.getElementsByTagName('img')`,`elemento = arreglo[0]`, `elemento.setAttribute('src','https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg')`]
+            for(let elemento of scriptTexto) {
+              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
+            }
+            
+          } catch (error) {
+            chai.expect.fail('Revise la petición por clase y la modificación del contenido del elemento');
+            return;
+          }
+
+            
+        })
+    }); 
+
+
+    it('querySelector', function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
+
+         let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
+         let scriptTexto, scriptEjecutable
+
+         
+         /* Revisión textual */
+         try {
+            scriptTexto = [`elemento = document.querySelector('div.profile-card-inf')`,` elemento.innerHTML = textoHTML`]
+            for(let elemento of scriptTexto) {
+              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
+            }
+            
+          } catch (error) {
+            chai.expect.fail('Revise la petición por clase y la modificación del contenido del elemento');
+            return;
+          }
+
+            
+        })
+    }); 
 
 
     
