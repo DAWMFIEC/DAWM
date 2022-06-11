@@ -9,7 +9,7 @@ function byId() {
 
     let elemento;
     /*
-        Obtenga el elemento por identificador y asigne el resultado a la variable elemento
+        Obtenga el elemento por el identificador "nombre" y asigne el resultado a la variable elemento
         Asigne el contenido (textContent) del elemento con el valor 'Muhammed Erdem'
     */
 
