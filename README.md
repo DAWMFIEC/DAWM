@@ -58,7 +58,8 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Fundamentos  |
 |               | [Ejercicio 03](Capítulo%2004/ejercicio03)         | Control de flujo y Funciones  |
 | 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | DOM  |
-| 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Promesas y Async/Await  |
+| 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Eventos |
+| 				| [Ejercicio 06](Capítulo%2004/ejercicio06)         | Promesas y Async/Await  |
 
 ## Referencias 
 
