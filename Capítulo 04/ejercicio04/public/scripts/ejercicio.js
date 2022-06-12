@@ -32,7 +32,7 @@ function byClass() {
 
     /*
         Obtenga los elementos por la clase 'profile-card-loc__txt' y asigne el resultado a la variable arreglo
-        Asgine el primer valor del arreglo a la variable elemento
+        Asigne el primer valor del arreglo a la variable elemento
         Coloque el contenido (textContent) del elemento con el valor 'Istanbul, Turkey'
     */
 
@@ -57,7 +57,7 @@ function byTagName() {
 
     /*
         Obtenga los elementos por la etiqueta 'img' y asigne el resultado a la variable arreglo
-        Asgine el primer valor del arreglo a la variable elemento
+        Asigne el primer valor del arreglo a la variable elemento
         Coloque el atributo (setAttribute) 'src' del elemento con el valor 'https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg'
     */
 
