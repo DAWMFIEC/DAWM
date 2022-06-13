@@ -31,6 +31,9 @@ theme: jekyll-theme-leap-day
 		```
 	+ Llame a la función `ejecutarCodigo`
 	+ Guarde los cambios y revise el resultado en el navegador
+		- Puede revisar más métodos y atributos del objeto [Window](https://developer.mozilla.org/es/docs/Web/API/Window) del navegador en la referencia del MDN.
+
+	+ Comente el código innecesario y agregue 
 
 
 ### Términos
