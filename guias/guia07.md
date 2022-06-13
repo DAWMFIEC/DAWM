@@ -21,7 +21,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* 
+* Descargue y descomprima el archivo [album](../ejercicios/album.zip).
 
 ### Términos
 
