@@ -22,9 +22,14 @@ theme: jekyll-theme-leap-day
 ### Actividades
 
 * Descargue y descomprima el archivo [album.zip](../ejercicios/album.zip).
-* Agregue la etiqueta `script` al final de la etiqueta `body`, con referencia al archivo `scripts/ejercicio.js`.
+* Agregue la etiqueta _script_ al final de la etiqueta _body_, con referencia al archivo `scripts/ejercicio.js`.
 * Dentro del archivo `scripts/ejercicio.js`
-	+ Agregue la función 
+	+ Agregue la función flecha `ejecutarCodigo`
+	+ Dentro de la función flecha agregue la instrucción
+		```
+			alert('Hola, mundo!')
+		```
+	+ Llame a la función `ejecutarCodigo`
 
 
 ### Términos
