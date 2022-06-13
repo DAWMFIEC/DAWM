@@ -53,6 +53,20 @@ theme: jekyll-theme-leap-day
 
 		- Seleccione los elementos con la etiqueta `p`. Cambie el valor del atributo `class` del segundo elemento en el arreglo, por *d-none*.
 
+* Reto
+	+ Reemplace todos los elementos `svg` por `img`. Utilice como referencia el sitio [How to Replace a DOM Element in Place Using JavaScript?](https://javascript.plainenglish.io/how-to-replace-a-dom-element-in-place-using-javascript-e6aba3f8177f)
+	+ Use el siguiente arreglo con las URLs a las imagenes. 
+
+	>
+	> [
+	>	{ url: 'https://images.unsplash.com/photo-1653942786759-f3caff948222?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMDl8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60', alt: 'camino'},
+	>   { url: 'https://images.unsplash.com/photo-1653988235129-842891001e10?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzMDN8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60', alt: 'energia'},
+	>   { url: 'https://images.unsplash.com/photo-1648737963540-306235c8170e?ixlib=rb-1.2.1&ixid=MnwxMjA3fDF8MHxlZGl0b3JpYWwtZmVlZHwzMDF8fHxlbnwwfHx8fA%3D%3D&auto=format&fit=crop&w=500&q=60', alt: 'papá'}
+	> ]
+	>
+
+	+ Complete el resto de las fotos a partir del snippet de [Codepen - Taj Uddin](https://codepen.io/taj1uddin/pen/eYVrLKy).
+
 
 ### Términos
 
