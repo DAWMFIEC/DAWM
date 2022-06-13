@@ -26,9 +26,11 @@ theme: jekyll-theme-leap-day
 * Dentro del archivo `scripts/ejercicio.js`
 	+ Agregue la función flecha `ejecutarCodigo`
 	+ Dentro de la función flecha agregue la instrucción
-		```
-			alert('Hola, mundo!')
-		```
+	  
+	  >
+	  > alert('Hola, mundo!')
+	  >
+	   
 	+ Llame a la función `ejecutarCodigo`
 	+ Guarde los cambios y revise el resultado en el navegador
 		- Puede revisar más métodos y atributos del objeto [Window](https://developer.mozilla.org/es/docs/Web/API/Window) del navegador en la referencia del MDN.
