@@ -46,11 +46,12 @@ theme: jekyll-theme-leap-day
 		- Seleccione los elementos con la clase `text-muted`. Cambie el contenido HTML del segundo elemento (índice con valor 1) en el arreglo, por: 
 
 		  >
-		  > <span> En este sitio encontrarás un album de fotos
+		  > ````<span> En este sitio encontrarás un album de fotos
 		  > inspirado en el snippet de <a href="https://codepen.io/taj1uddin/pen/eYVrLKy">Codepen - Taj Uddin</a>.</span>
+		  > ````
 		  >
 
-		- Seleccione
+		- Seleccione los elementos con la etiqueta `p`. Cambie el valor del atributo `class` del segundo elemento en el arreglo, por *d-none*.
 
 
 ### Términos
