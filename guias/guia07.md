@@ -65,7 +65,7 @@ theme: jekyll-theme-leap-day
 	> ]
 	>
 
-	+ Complete el resto de las fotos a partir del snippet de [Codepen - Taj Uddin](https://codepen.io/taj1uddin/pen/eYVrLKy).
+	+ Complete el arreglo con el resto de las fotos que se encuentran en el snippet de [Codepen - Taj Uddin](https://codepen.io/taj1uddin/pen/eYVrLKy).
 
 
 ### Términos
