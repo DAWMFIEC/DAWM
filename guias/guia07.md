@@ -21,7 +21,9 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Descargue y descomprima el archivo [album](../ejercicios/album.zip).
+* Descargue y descomprima el archivo [album.zip](../ejercicios/album.zip).
+* Agregue la etiqueta `script` al final de la etiqueta `body`, con referencia al archivo `script/ejercicio.js`.
+
 
 ### Términos
 
