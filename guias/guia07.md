@@ -70,7 +70,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`Javascript`
+`Javascript`, polyfills, `API`, interfaz
 
 ### Referencias
 
