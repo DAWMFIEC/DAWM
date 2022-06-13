@@ -51,7 +51,7 @@ theme: jekyll-theme-leap-day
 		  > ````
 		  >
 
-		- Seleccione los elementos con la etiqueta `p`. Cambie el valor del atributo `class` del segundo elemento en el arreglo, por *d-none*.
+		- Seleccione los elementos con la etiqueta `p`. Cambie el valor del atributo `class` del tercer elemento (índice con valor 2) en el arreglo, por *d-none*.
 
 * Reto
 	+ Reemplace todos los elementos `svg` por `img`. Utilice como referencia el sitio [How to Replace a DOM Element in Place Using JavaScript?](https://javascript.plainenglish.io/how-to-replace-a-dom-element-in-place-using-javascript-e6aba3f8177f)
