@@ -24,18 +24,34 @@ theme: jekyll-theme-leap-day
 * Descargue y descomprima el archivo [album.zip](../ejercicios/album.zip).
 * Agregue la etiqueta _script_ al final de la etiqueta _body_, con referencia al archivo `scripts/ejercicio.js`.
 * Dentro del archivo `scripts/ejercicio.js`
-	+ Agregue la función flecha `ejecutarCodigo`
+	+ Agregue la función flecha *ejecutarCodigo*
 	+ Dentro de la función flecha agregue la instrucción
 	  
 	  >
 	  > alert('Hola, mundo!')
 	  >
-	   
-	+ Llame a la función `ejecutarCodigo`
-	+ Guarde los cambios y revise el resultado en el navegador
-		- Puede revisar más métodos y atributos del objeto [Window](https://developer.mozilla.org/es/docs/Web/API/Window) del navegador en la referencia del MDN.
 
-	+ Comente el código innecesario y agregue 
+	+ Llame a la función *ejecutarCodigo*
+	+ Guarde los cambios y revise el resultado en el navegador
+		- Puede revisar más métodos y atributos del objeto [BOM](https://www.arkaitzgarro.com/javascript/capitulo-14.html) del navegador en la referencia del [MDN](https://developer.mozilla.org/es/docs/Web/API/Window).
+
+	+ Comente el código anterior 
+	+ Agregue el código en Javascript para:
+		- Seleccione el elemento con el identificador `titulo1`. Cambie el texto por:
+		  
+		  >
+		  >	Título principal
+		  >
+
+		- Seleccione los elementos con la clase `text-muted`. Cambie el contenido HTMl por: 
+
+		  >
+		  > `<p>`
+		  >   Este es un párrafo introductorio de varias líneas.
+		  > `</p>`
+		  >
+
+		- Seleccione
 
 
 ### Términos
