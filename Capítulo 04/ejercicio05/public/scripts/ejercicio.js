@@ -62,9 +62,7 @@ function cargarDocumento() {
     */
 
     /* Inicio */
-    arreglo = document.getElementsByClassName('respuesta')
-    elemento = arreglo[0]
-    elemento.innerHTML = snippet
+    
     /* Fin */
 
 }
@@ -72,21 +70,92 @@ function cargarDocumento() {
 
 /*
     Revisar
-        https://www.w3schools.com/jsref/met_document_queryselectorall.asp
-        https://www.w3schools.com/jsref/jsref_foreach.asp
+        
     
 */
 
 function mouseClick() {
 
-    
+    let audio, arreglo, elemento;
 
+    // Lista de tracks
+    let tracks = [{
+                "trackNumber": 1,
+                "name": "All This Is - Joe L.'s Studio",
+                "duration": "2:46",
+                "file": "JLS_ATI"
+            }, {
+                "trackNumber": 2,
+                "name": "The Forsaken - Broadwing Studio (Final Mix)",
+                "duration": "8:30",
+                "file": "BS_TF"
+            }, {
+                "trackNumber": 3,
+                "name": "All The King's Men - Broadwing Studio (Final Mix)",
+                "duration": "5:01",
+                "file": "BS_ATKM"
+            }, {
+                "trackNumber": 4,
+                "name": "The Forsaken - Broadwing Studio (First Mix)",
+                "duration": "8:31",
+                "file": "BSFM_TF"
+            }, {
+                "trackNumber": 5,
+                "name": "All The King's Men - Broadwing Studio (First Mix)",
+                "duration": "5:05",
+                "file": "BSFM_ATKM"
+            }]
+
+    // Etiqueta UL contenedora
+    let ul = document.getElementById('plList');
+
+    // Recorremos la lista de tracks para inyectar en la etiqueta UL
+    for(let track of tracks) {
+
+        // Numeración de las etiquetas
+        let trackNumber = track.trackNumber
+        if (track.trackNumber.toString().length === 1) {
+            trackNumber = '0' + trackNumber;
+        }
+
+        // Plantilla de items
+        let liTemplate = `
+          <li>                     
+            <div class="plItem" id="${track.trackNumber}" name="${track.file}">
+              <span class="plNum">${trackNumber}. </span>
+              <span class="plTitle">${track.name}</span> 
+              <span class="plLength">${track.duration}</span> 
+            </div>
+          </li>
+        `
+        ul.innerHTML += liTemplate
+    }
+
+    /*
+        Obtenga la referencia a la etiqueta con el identificador 'audio1' y asigne el resultado en la variable audio
+        Obtenga los elementos con la clase 'plItem' y asigne el resultado en la variable arreglo
+
+        Recorra la variable arreglo
+        Del elemento, obtenga el valor del atributo id y reste 1 al valor. Asigne el valor a una variable con el nombre id
+        Del elemento, obtenga el valor atributo name. Asigne el valor a una variable con el nombre name
+
+        Agregue un addEventListener para el evento 'click' mediante una función flecha
+        Para el elemento audio, coloque el atributo 'src' con el valor "https://archive.org/download/mythium/"+name+".mp3"
+        Para el elemento audio, invoque el método play
+    */
+
+
+    /*Inicio*/
     
+    /*Fin*/
 
 }
 
 
 
+
+
 module.exports = {
-    cargarDocumento: cargarDocumento
+    cargarDocumento: cargarDocumento,
+    mouseClick: mouseClick
 };
