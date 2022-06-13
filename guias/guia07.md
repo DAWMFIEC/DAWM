@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 02
+## Guía 07
 
 [Regresar](/DAWM-2022/)
 
