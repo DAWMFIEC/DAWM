@@ -30,6 +30,7 @@ theme: jekyll-theme-leap-day
 			alert('Hola, mundo!')
 		```
 	+ Llame a la función `ejecutarCodigo`
+	+ Guarde los cambios y revise el resultado en el navegador
 
 
 ### Términos
