@@ -9,7 +9,7 @@
     Agregue un listener (use el método addEventListener) para el evento DOMContentLoaded
     Utilice una función flecha en la que invoque a los métodos 
         - cargarDocumento
-
+        - mouseClick
 */
 
 /* Inicio */
