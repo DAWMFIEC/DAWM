@@ -135,12 +135,12 @@ function mouseClick() {
         Obtenga los elementos con la clase 'plItem' y asigne el resultado en la variable arreglo
 
         Recorra la variable arreglo
-        Del elemento, obtenga el valor del atributo id y reste 1 al valor. Asigne el valor a una variable con el nombre id
-        Del elemento, obtenga el valor atributo name. Asigne el valor a una variable con el nombre name
+            Del elemento, obtenga el valor del atributo id y reste 1 al valor. Asigne el valor a una variable con el nombre id
+            Del elemento, obtenga el valor atributo name. Asigne el valor a una variable con el nombre name
 
-        Agregue un addEventListener para el evento 'click' mediante una función flecha
-        Para el elemento audio, coloque el atributo 'src' con el valor "https://archive.org/download/mythium/"+name+".mp3"
-        Para el elemento audio, invoque el método play
+            Al elemento, agregue un listener (use el método addEventListener) para el evento 'click' mediante una función flecha
+            Para el elemento audio, coloque el atributo 'src' con el valor "https://archive.org/download/mythium/"+name+".mp3"
+            Para el elemento audio, invoque el método play
     */
 
 
