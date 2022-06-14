@@ -14,8 +14,7 @@
 
 /* Inicio */
 document.addEventListener('DOMContentLoaded', () => {
-    cargarDocumento()
-    mouseClick()
+    
 });
 /* Fin */
 
