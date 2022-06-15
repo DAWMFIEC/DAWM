@@ -6,20 +6,17 @@ let cargarDatos = () => {
         const xml = parser.parseFromString(data, "application/xml");
         
         let escritores = xml.getElementsByTagName('escritor')
-        let select = document.querySelector('div.input-group > select')
 
-        for (let escritor of escritores) {
-            
+        for(let escritor of escritores) {
             let id = escritor.getElementsByTagName('id')[0].textContent
             let nombre = escritor.getElementsByTagName('nombre')[0].textContent
 
-            let option = `<option value=${id}>${nombre}</option>`
+            let plantilla = `<option value="${id}">${nombre}</option>`
 
-            select.innerHTML += option
-
+            document.querySelector('div.input-group > select').innerHTML += plantilla
         }
 
-        
+         
 
       })
       .catch(console.error);
