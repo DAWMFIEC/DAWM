@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* 
+* Descargue y descomprima el archivo [rappo.zip](../ejercicios/rappo.zip).
 
 ### Términos
 
