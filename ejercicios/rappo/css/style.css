@@ -1960,14 +1960,16 @@ CONTACT PAGE
 
 
 @media (min-width: 768px) {
-  .section {
+  #section-testimonial {
     padding-top: 2vh;
+    padding-bottom: 2vh;
+    min-height: 66vh;
     
   }
-}
 
-
-#footer {
-    padding: 4vh 0px;
+  #footer {
+    min-height: 16vh;
+    padding: 2vh;
+  }
 }
 
