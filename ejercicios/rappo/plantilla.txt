@@ -1,0 +1,11 @@
+<div class="col-lg-3">
+    <div class="test-inner ">
+        <div class="test-author-thumb d-flex">
+            <div class="test-author-info">
+                <h4>Will Barrow</h4>                                            
+            </div>
+        </div>
+        Quas ut distinctio tenetur animi nihil rem, amet dolorum totam. Ab repudiandae tempore qui fugiat amet ipsa id omnis ipsam, laudantium! Dolorem.
+        <i class="fa fa-quote-right"></i>
+    </div>
+</div>

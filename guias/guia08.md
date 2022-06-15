@@ -20,12 +20,21 @@ theme: jekyll-theme-leap-day
 
 * Descargue y descomprima el archivo [rappo.zip](../ejercicios/rappo.zip).
 * Agregue el archivo `js/ejercicio.js` y la referencia en el `index.html`.
-* Evento _DOMContentLoaded_
+* Evento [_DOMContentLoaded_](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event)
 	+ Agregue el *listener* al evento *DOMContentLoaded* del document.
 	+ Agregue la funcion flecha `cargarDatos` y un mensaje de alerta.
 	+ Dentro del listener del document, agregue la llamada a la función `cargarDatos`.
-* 
-
+* Dentro de la función flecha `cargarDatos`
+	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdaw.herokuapp.com/escritores/xml">Escritores</a>
+	+ Procese la respuesta de texto como un objeto [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/) 
+		- Por cada etiqueta `<escritor>` cree un elemento `<option>`
+		- Use el texto de la etiqueta `<nombre>` como valor de la etiqueta `<option>`
+		- Use el texto de la etiqueta `<id>`  como valor del atributo `value`
+		- Agregue la etiqueta `<option>` dentro de la etiqueta `<select>`
+		- Compruebe los resultados en el navegador.
+* Evento [_Change_](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
+	+ Agregue el *listener* al evento *change* de la etiqueta `<select>`
+	+ 
 
 ### Términos
 
