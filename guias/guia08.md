@@ -27,7 +27,8 @@ theme: jekyll-theme-leap-day
 
 * Dentro de la función flecha *cargarDatos*
 	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdaw.herokuapp.com/escritores/xml">Escritores</a>
-	+ Procese la respuesta de texto como un objeto [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/) 
+	+ Procese la respuesta de texto como un objeto [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/). 
+		- Recorra la [colección de elementos html](https://www.geeksforgeeks.org/htmlcollection-for-loop/) 
 		- Por cada etiqueta `<escritor>` cree un elemento `<option>`
 		- Use el texto de la etiqueta `<nombre>` como valor de la etiqueta `<option>`
 		- Use el texto de la etiqueta `<id>`  como valor del atributo *value*
@@ -44,7 +45,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`eventos`, listener, `AJAX`, `asincrónico`
+`eventos`, listener, XML, JSON, `AJAX`, `asincrónico`
 
 ### Referencias
 
