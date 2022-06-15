@@ -39,7 +39,7 @@ theme: jekyll-theme-leap-day
 	+ Agregue el *listener* al evento *change* de la etiqueta `<select>`
 	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdaw.herokuapp.com/escritores/frases">Frases</a>
 	+ Procese la respuesta de texto como un objeto [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/)
-		- Recorra el [arreglo json](https://www.microverse.org/blog/how-to-loop-through-the-array-of-json-objects-in-javascript)
+		- Recorra el [arreglo json](https://www.sitepoint.com/loop-through-json-response-javascript/)
 		- Utilice el valor del atributo *value* para filtrar el arreglo de respuesta
 		- Use las etiquetas dentro _plantilla.txt_ para mostrar las frases correspondientes al escritor
 		- Agregue las frases dentro de la etiqueta con el identificador *frases*
