@@ -22,6 +22,7 @@ theme: jekyll-theme-leap-day
 	+ Descargar e instalar [heroku cli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) en tu máquina local.
 
 * Git + Github
+
 	+ En la línea de comandos, desde la ruta donde se encuentra la plantilla de un sitio básico:
 
 		- Inicializa el repositorio localmente, con: ```git init .``` 
@@ -32,25 +33,56 @@ theme: jekyll-theme-leap-day
 		- Envía los cambios locales al repositorio remoto, en la rama main, con: ```git push -u origin main```
 
 * Heroku
+
 	+ Heroku permite manejar las aplicaciones desde la línea de comando o desde la interfaz web.
+
 		- Obtén una cuentan en [Heroku](https://signup.heroku.com/login).
 		- Descargar e instalar el [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
 		- Desde la línea de comandos en la ruta del sitio web, accede a Heroku, con: ```heroku login```
 
 		Se le pedirá que presione cualquier tecla para ir a su navegador web y completar el inicio de sesión.
-		![logindone.jpg](../imagenes/logindone.jpg)
+		![logindone.jpg](imagenes/logindone.jpg)
 
 		- Cree un proyecto, con: ```heroku create```
 
-		![created-1](../imagenes/created-1.jpg)
+		![created-1](imagenes/created-1.jpg)
 
 		- Liste las rutas remotas. Verifique si aparece la ruta remota con heroku, use: ```git remote -v```
 
-		![remoteurls](../imagenes/remoteurls.jpg)
+		![remoteurls](imagenes/remoteurls.jpg)
+
+		- **Opcional:** En caso que no aparezca la ruta remota para heroku. Agregue manualmente tu ruta con: ```git remote add heroku https://git.heroku.com/heroku-ruta.git```
+
+
 
 * Buildpack
-	+ Ahora, vamos a decirle a Heroku el ambiente de ejecución ([buildpacks](https://devcenter.heroku.com/articles/buildpacks)) de la aplicación. Heroku soporta ambientes de ejecución para Ruby, Python, Java, Clojure, Node.js, Scala, Go y PHP. En este caso, el ambiente de ejecución será PHP. En el directorio del proyecto:
 
+	+ Ahora, vamos a decirle a Heroku el ambiente de ejecución ([buildpacks](https://devcenter.heroku.com/articles/buildpacks)) de la aplicación. Heroku soporta ambientes de ejecución para Ruby, Python, Java, Clojure, Node.js, Scala, Go y PHP. 
+
+		- Crea el archivo componer.json. Agregue como contenido al composer.json:
+
+		```
+		{}
+		```
+
+		- En este caso, el ambiente de ejecución será [PHP](https://devcenter.heroku.com/articles/buildpacks). Puede cambiar el paquete de compilación utilizado por una aplicación configurando el valor del paquete de compilación. La próxima vez que se envíe la aplicación, se usará el nuevo paquete de compilación.
+
+		```heroku buildpacks:set heroku/php```
+
+* Despliegue
+	
+	+ Desde la línea de comandos 
+
+		- Agregue los cambios a la rama `main` y `heroku` con las instrucciones de *git*.
+
+		```
+		  git add .
+		  git commit -m "composer.json"
+		  git push origin main
+		  git push heroku main
+		```
+
+		- Abra la aplicación, con: ```heroku open```
 
 
 ### Términos
