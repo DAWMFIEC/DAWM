@@ -43,7 +43,7 @@ theme: jekyll-theme-leap-day
 		Se le pedirá que presione cualquier tecla para ir a su navegador web y completar el inicio de sesión.
 		![logindone.jpg](./imagenes/logindone.JPG)
 
-		- Cree un proyecto, con: ```heroku create```
+		- Cree un proyecto, con: ```heroku create nombre-de-la-aplicación```
 
 		![created-1](./imagenes/created-1.JPG)
 
