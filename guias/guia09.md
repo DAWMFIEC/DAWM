@@ -73,7 +73,7 @@ theme: jekyll-theme-leap-day
 	
 	+ Desde la línea de comandos en la ruta del proyecto:
 
-		- Agregue los cambios a la rama `main` y `heroku` con las instrucciones de *git*.
+		- Agregue los cambios en `origin` y `heroku` con las instrucciones de *git*.
 
 		```
 		  git add .
