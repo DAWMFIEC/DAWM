@@ -59,7 +59,7 @@ theme: jekyll-theme-leap-day
 
 	+ Ahora, vamos a decirle a Heroku el ambiente de ejecución ([buildpacks](https://devcenter.heroku.com/articles/buildpacks)) de la aplicación. Heroku soporta ambientes de ejecución para Ruby, Python, Java, Clojure, Node.js, Scala, Go y PHP. 
 
-		- Crea el archivo componer.json. Agregue como contenido al composer.json:
+		- Crea el archivo composer.json. Agregue como contenido al composer.json:
 
 		```
 		{}
