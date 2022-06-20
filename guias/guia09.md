@@ -41,15 +41,15 @@ theme: jekyll-theme-leap-day
 		- Desde la línea de comandos en la ruta del sitio web, accede a Heroku, con: ```heroku login```
 
 		Se le pedirá que presione cualquier tecla para ir a su navegador web y completar el inicio de sesión.
-		![logindone.jpg](imagenes/logindone.jpg)
+		![logindone.jpg](./imagenes/logindone.JPG)
 
 		- Cree un proyecto, con: ```heroku create```
 
-		![created-1](imagenes/created-1.jpg)
+		![created-1](./imagenes/created-1.JPG)
 
 		- Liste las rutas remotas. Verifique si aparece la ruta remota con heroku, use: ```git remote -v```
 
-		![remoteurls](imagenes/remoteurls.jpg)
+		![remoteurls](./imagenes/remoteurls.JPG)
 
 		- **Opcional:** En caso que no aparezca la ruta remota para heroku. Agregue manualmente tu ruta con: ```git remote add heroku https://git.heroku.com/heroku-ruta.git```
 
@@ -71,7 +71,7 @@ theme: jekyll-theme-leap-day
 
 * Despliegue
 	
-	+ Desde la línea de comandos 
+	+ Desde la línea de comandos en la ruta del proyecto:
 
 		- Agregue los cambios a la rama `main` y `heroku` con las instrucciones de *git*.
 
