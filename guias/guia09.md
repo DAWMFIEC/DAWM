@@ -24,15 +24,26 @@ theme: jekyll-theme-leap-day
 * Git + Github
 	+ En la línea de comandos, desde la ruta donde se encuentra la plantilla de un sitio básico:
 
-		- Inicializa el repositorio localmente, con: ```git init ```. 
+		- Inicializa el repositorio localmente, con: ```git init .``` 
 		- Agrega el URL de tu repositorio remoto, con:  ```git remote add origin [https://github.com/repositorio-remoto.git](https://github.com/repositorio-remoto.git)```
 		- Agrega todos los archivos al repositorio local, con: ```git add .```
 		- Versiona todos los archivos con un comentario: ```git commit -m "mi primer comentario"```
 		- Agrega la rama main a tu repositorio, con: ```git branch -M main```
 		- Envía los cambios locales al repositorio remoto, en la rama main, con: ```git push -u origin main```
 
+* Heroku
+	+ Heroku permite manejar las aplicaciones desde la línea de comando o desde la interfaz web.
+		- Obtén una cuentan en [Heroku](https://signup.heroku.com/login).
+		- Descargar e instalar el [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
+		- Desde la línea de comandos en la ruta del sitio web, accede a Heroku, con: ```heroku login```
+
+		Se le pedirá que presione cualquier tecla para ir a su navegador web y completar el inicio de sesión.
+		![logindone.jpg](../imagenes/logindone.jpg)
+
 * Buildpack
 	+ Ahora, vamos a decirle a Heroku el ambiente de ejecución ([buildpacks](https://devcenter.heroku.com/articles/buildpacks)) de la aplicación. Heroku soporta ambientes de ejecución para Ruby, Python, Java, Clojure, Node.js, Scala, Go y PHP. En este caso, el ambiente de ejecución será PHP. En el directorio del proyecto:
+
+
 
 ### Términos
 
