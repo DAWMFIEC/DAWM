@@ -40,6 +40,14 @@ theme: jekyll-theme-leap-day
 		Se le pedirá que presione cualquier tecla para ir a su navegador web y completar el inicio de sesión.
 		![logindone.jpg](../imagenes/logindone.jpg)
 
+		- Cree un proyecto, con: ```heroku create```
+
+		![created-1](../imagenes/created-1.jpg)
+
+		- Liste las rutas remotas. Verifique si aparece la ruta remota con heroku, use: ```git remote -v```
+
+		![remoteurls](../imagenes/remoteurls.jpg)
+
 * Buildpack
 	+ Ahora, vamos a decirle a Heroku el ambiente de ejecución ([buildpacks](https://devcenter.heroku.com/articles/buildpacks)) de la aplicación. Heroku soporta ambientes de ejecución para Ruby, Python, Java, Clojure, Node.js, Scala, Go y PHP. En este caso, el ambiente de ejecución será PHP. En el directorio del proyecto:
 
