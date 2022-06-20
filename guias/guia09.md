@@ -59,5 +59,8 @@ theme: jekyll-theme-leap-day
 
 ### Referencias
 
-* 
+* Basic Git commands  Bitbucket Data Center and Server 7.18  Atlassian Documentation. (2021). Retrieved 14 November 2021, from https://confluence.atlassian.com/bitbucketserver/basic-git-commands-776639767.html 
+* Git - Downloads. (2021). Retrieved 14 November 2021, from https://git-scm.com/downloads 
+* Deploying PHP Apps on Heroku  Heroku Dev Center. (2021). Retrieved 14 November 2021, from https://devcenter.heroku.com/articles/deploying-php 
+* Buildpacks |Heroku Dev Center. (2021). Retrieved 14 November 2021, from https://devcenter.heroku.com/articles/buildpacks
 
