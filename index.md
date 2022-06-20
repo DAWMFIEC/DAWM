@@ -19,6 +19,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 06](guias/guia06.md)
 * [Guía 07](guias/guia07.md)
 * [Guía 08](guias/guia08.md)
+* [Guía 09](guias/guia09.md)
 
 
 
