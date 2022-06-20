@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 	+ En la línea de comandos, desde la ruta donde se encuentra la plantilla de un sitio básico:
 
 		- Inicializa el repositorio localmente, con: ```git init .``` 
-		- Agrega el URL de tu repositorio remoto, con:  ```git remote add origin https://github.com/repositorio-remoto.git```
+		- Agrega el URL de tu repositorio remoto, con:  ```git remote add origin https://github.com/```repositorio-remoto```.git```
 		- Agrega todos los archivos al repositorio local, con: ```git add .```
 		- Versiona todos los archivos con un comentario: ```git commit -m "mi primer comentario"```
 		- Agrega la rama main a tu repositorio, con: ```git branch -M main```
@@ -51,7 +51,7 @@ theme: jekyll-theme-leap-day
 
 		![remoteurls](./imagenes/remoteurls.JPG)
 
-		- **Opcional:** En caso que no aparezca la ruta remota para heroku. Agregue manualmente tu ruta con: ```git remote add heroku https://git.heroku.com/heroku-ruta.git```
+		- **Opcional:** En caso que no aparezca la ruta remota para heroku. Agregue manualmente tu ruta con: ```git remote add heroku https://git.heroku.com/```heroku-ruta```.git```
 
 
 
