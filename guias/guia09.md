@@ -14,6 +14,12 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
+* Previo a esta actividad, será necesario:
+	+ Poseer una cuenta y un repositorio vacío/público en [Github](https://github.com/),
+	+ Descargar e instalar [git](https://git-scm.com/downloads) en tu máquina local.
+	+ Completar las actividades de la [guía 07](https://dawfiec.github.io/DAWM-2022/guias/guia07.html)  y [guía 08](https://dawfiec.github.io/DAWM-2022/guias/guia08.html).
+	+ Tener una cuenta en [Heroku](https://www.heroku.com/).
+	+ Descargar e instalar [heroku cli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) en tu máquina local.
 * 
 
 ### Términos
