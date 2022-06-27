@@ -45,6 +45,7 @@ theme: jekyll-theme-leap-day
 
 	+ Solución: 
 		- Implementar la [carga lenta](https://javascript.info/fetch-progress) bajo el esquema
+		
 	```
 		// en lugar de convertir directamente response.json() u otros métodos
 		const reader = response.body.getReader();
