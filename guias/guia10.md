@@ -24,6 +24,7 @@ theme: jekyll-theme-leap-day
 	python -m http.server 8080
 	``` 
 * Manejo de errores y CORS
+	+ Modifique el archivo *fetch/cors/scripts/application.js*
 	+ Agregue un callback para el evento *click* del botón con identificador **cargar1**
 	+ Dentro del callback, realice una petición asincrónica al URL `https://random-d.uk/api/random` cuya respuesta es un [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/).
 	+ En cualquier caso, sea error o éxito, muestre la respuesta en la etiqueta con el identificador **respuesta1**. 
@@ -39,6 +40,7 @@ theme: jekyll-theme-leap-day
 
 * Demora en la respuesta
 
+	+ Modifique el archivo *fetch/restricciones/cliente/scripts/application.js*
 	+ Problema: Gran tamaño del archivo, restraso en la red
 
 	![Stream](./imagenes/fuentes.jpg)
