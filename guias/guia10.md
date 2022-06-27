@@ -23,6 +23,8 @@ theme: jekyll-theme-leap-day
 	```
 	python -m http.server 8080
 	``` 
+* Abra en su navegador el URL `http://localhost:8080/`
+* Deshabilite el uso de caché
 * Manejo de errores y CORS
 	+ Modifique el archivo *fetch/cors/scripts/application.js*
 	+ Agregue un callback para el evento *click* del botón con identificador **cargar1**
@@ -39,13 +41,19 @@ theme: jekyll-theme-leap-day
 		- Recargue la página en el navegador y verifique el resultado.
 
 * Demora en la respuesta
+	
+	+ Modifique el archivo *fetch/demora/scripts/application.js*
+	+ Dentro de la función *peticion*, agregue una llamada a la función *esperar* 
+	```
+	await esperar(5000);
+	```
 
-	+ Modifique el archivo *fetch/restricciones/cliente/scripts/application.js*
 	+ Problema: Gran tamaño del archivo, restraso en la red
 
 	![Stream](./imagenes/fuentes.jpg)
 
-	+ Solución: 
+	+ Solución:
+
 		- Implementar la [carga lenta](https://javascript.info/fetch-progress) bajo el esquema
 		
 	```
@@ -68,49 +76,54 @@ theme: jekyll-theme-leap-day
 		}
 	```
 
-
 	- Cambie la función **petición**
 
 
 	```
- 	  let respuesta = await fetch(URL);
+	 let respuesta = await fetch(URL);
 
-	  const reader = respuesta.body.getReader();
+	 const reader = respuesta.body.getReader();
 
-	  // Paso 2: obtener el total de la respuesta
-	  const contentLength = +respuesta.headers.get('Content-Length');
+	 document.getElementById('estado2').innerHTML = 'Empezando la transmisión'
 
-	  // Paso 3: leer la data
-	  let receivedLength = 0; // bytes recibidos en este momento
-	  let chunks = []; // arreglo de fragmentos binarios recibidos (conforman el cuerpo) 
-	  while(true) {
-	    const {done, value} = await reader.read();
+	 // Paso 2: obtener el total de la respuesta
+	 const contentLength = +respuesta.headers.get('Content-Length');
 
-	    if (done) {
-	      break;
-	    }
+	 // Paso 3: leer la data
+	 let receivedLength = 0; // bytes recibidos en este momento
+	 let chunks = []; // arreglo de fragmentos binarios recibidos (conforman el cuerpo) 
+	 while(true) {
+		 const {done, value} = await reader.read();
 
-	    chunks.push(value);
-	    receivedLength += value.length;
+		 if (done) {
+		   break;
+		 }
 
-	    await esperar(10)
-	    
-	  }
+		 chunks.push(value);
+		 receivedLength += value.length;
 
-	  // Paso 4: concatenar los framgento en un único Uint8Array
-	  let chunksAll = new Uint8Array(receivedLength); // (4.1)
-	  let position = 0;
-	  for(let chunk of chunks) {
-	    chunksAll.set(chunk, position); // (4.2)
-	    position += chunk.length;
-	  }
+		 await esperar(3000);
 
-	  // Paso 5: decodificar en una cadena
-	  let result = new TextDecoder("utf-8").decode(chunksAll);
+		 document.getElementById('estado2').innerHTML += '.'
 
-	  // Listo!
-	  let data = JSON.parse(result);
-	  document.getElementById("respuesta2").innerHTML = data.length + ' registros';
+	 }
+
+	 // Paso 4: concatenar los framgento en un único Uint8Array
+	 let chunksAll = new Uint8Array(receivedLength); // (4.1)
+	 let position = 0;
+	 for(let chunk of chunks) {
+		 chunksAll.set(chunk, position); // (4.2)
+		 position += chunk.length;
+	 }
+
+	 // Paso 5: decodificar en una cadena
+	 let result = new TextDecoder("utf-8").decode(chunksAll);
+
+	 // Listo!
+	 let data = JSON.parse(result);
+	 document.getElementById("respuesta2").innerHTML = data.length + ' registros';
+
+	 document.getElementById('estado2').innerHTML = 'Listo!'
 	``` 
 
 
@@ -119,19 +132,21 @@ theme: jekyll-theme-leap-day
 	+ Modifique el archivo *fetch/restricciones/cliente/scripts/application.js*
 	+ Modifique la función **sobrecargar**
 		- Agregue la llamada a la función *peticion*
+	+ De click en el botón **Cargar (500 veces)**
 	+ Problema: Límite de peticiones
 	+ Solución: Carga local
-		- Abra otra línea de comandos en la ruta del *restricciones/servidor*
-		- Levante otro servidor en el puerto 8081
+		- Descargue una copia `https://api.github.com/repos/javascript-tutorial/en.javascript.info/commits?per_page=100` 
+		- Guarde el archivo en la carpeta *fetch/restricciones/servidor*, con el nombre **commits_ilya.json**.
+		- Verifique que funciona el recurso `http://localhost:8080/restricciones/servidor/commits_ilya.json`
+		- En *restricciones/cliente/scripts/application.js* modifique la constante **URL** para que apunte a 
 		```
-		python -m http.server 8081
+				http://localhost:8080/restricciones/servidor/commits_ilya.json
 		```
-		- En *restricciones/cliente/scripts/application.js* modifique la constante **URL** para que apunte el recurso **commits_ilya.json**
 	
 
 ### Términos
 
-`CORS`, reverse proxy
+dominio, `CORS`, proxy, reverse proxy
 
 ### Referencias
 
