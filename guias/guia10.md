@@ -41,7 +41,7 @@ theme: jekyll-theme-leap-day
 
 	+ Problema: Gran tamaño del archivo, restraso en la red
 
-	![Stream](./imagenes/fuentes.JPG)
+	![Stream](./imagenes/fuentes.jpg)
 
 	+ Solución: 
 		- Implementar la [carga lenta](https://javascript.info/fetch-progress) bajo el esquema
