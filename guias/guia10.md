@@ -116,6 +116,7 @@ theme: jekyll-theme-leap-day
 
 * Restricciones en el servidor
 
+	+ Modifique el archivo *fetch/restricciones/cliente/scripts/application.js*
 	+ Modifique la función **sobrecargar**
 		- Agregue la llamada a la función *peticion*
 	+ Problema: Límite de peticiones
@@ -130,6 +131,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
+`CORS`, reverse proxy
 
 ### Referencias
 

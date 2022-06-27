@@ -11,7 +11,17 @@ window.onload = function () {
 
 	/* Inicio */
 
-  
+  document.getElementById('cargar1').addEventListener('click', () => {
+    fetch("https://random-d.uk/api/random")
+      .then(response => response.json())
+      .then(data => {
+        document.getElementById('respuesta1').innerHTML = JSON.stringify(data)
+      })
+      .catch((error) => {
+        document.getElementById('respuesta1').innerHTML = error
+        console.log(error)
+      });
+  })
 
   /* Fin */
 
