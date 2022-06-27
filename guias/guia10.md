@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Descargue y descomprima el archivo [fetch](ejercicios/fetch.zip)
+* Descargue y descomprima el archivo [fetch](../ejercicios/fetch.zip)
 * Servidor HTTP
 	+ Abra una línea de comando en la carpeta **fetch**
 	+ Levante un servidor HTTP
