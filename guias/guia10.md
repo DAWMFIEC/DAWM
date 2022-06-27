@@ -135,7 +135,7 @@ theme: jekyll-theme-leap-day
 	+ De click en el botón **Cargar (500 veces)**
 	+ Problema: Límite de peticiones
 	+ Solución: Carga local
-		- Descargue una copia [commits_ilya.json](../ejercicios/fetch/restricciones/servidor/commits_ilya.json)
+		- Descargue una copia [commits_ilya.json](./archivos/commits_ilya.json)
 		- Guarde el archivo en la carpeta *fetch/restricciones/servidor*, con el nombre **commits_ilya.json**.
 		- Verifique que funciona el recurso `http://localhost:8080/restricciones/servidor/commits_ilya.json`
 		- En *restricciones/cliente/scripts/application.js* modifique la constante **URL** para que apunte a 
