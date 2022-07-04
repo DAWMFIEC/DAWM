@@ -49,18 +49,20 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 			    | [Ejercicio 04](Capítulo%2001/ejercicio04)         | Formularios, atributo (identificador) |
 | 			    | [Ejercicio 05](Capítulo%2001/ejercicio05)         | Semántico |
 | 			    | [Ejercicio 06](Capítulo%2001/ejercicio06)         | Media |
-| Capítulo 02   | [Ejercicio 01](Capítulo%2002/ejercicio01)         | Reglas y Selectores  |
-| 			    | [Ejercicio 02](Capítulo%2002/ejercicio02)         | Modelo de cajas  |
-| 			    | [Ejercicio 03](Capítulo%2002/ejercicio03)         | Colocación  |
-| 			    | [Ejercicio 04](Capítulo%2002/ejercicio04)         | Posicionamiento  |
-| ~Capítulo 03~   | ~[Ejercicio 01](Capítulo%2003/ejercicio01)~         | ~Diseño responsivo~  |
+| 			    | [Ejercicio 01](Capítulo%2001/ejercicio07)         | Reglas y Selectores  |
+| 			    | [Ejercicio 02](Capítulo%2001/ejercicio08)         | Modelo de cajas  |
+| 			    | [Ejercicio 03](Capítulo%2001/ejercicio09)         | Colocación  |
+| 			    | [Ejercicio 04](Capítulo%2001/ejercicio10)         | Posicionamiento  |
+| ~Capítulo 02~   | ~[Ejercicio 01](Capítulo%2002/ejercicio01)~         | ~Diseño responsivo~  |
+| Capítulo 03   | [Ejercicio 01](Capítulo%2003/ejercicio01)         | Etiqueta script  |
+| 				| [Ejercicio 02](Capítulo%2003/ejercicio02)         | Fundamentos  |
+|               | [Ejercicio 03](Capítulo%2003/ejercicio03)         | Control de flujo y Funciones  |
+| 				| [Ejercicio 04](Capítulo%2003/ejercicio04)         | DOM  |
+| 				| [Ejercicio 05](Capítulo%2003/ejercicio05)         | Eventos |
+| 				| [Ejercicio 06](Capítulo%2003/ejercicio06)         | Promesas y Async/Await  |
+| 				| [Ejercicio 07](Capítulo%2003/ejercicio07)         | WebSocket  |
+| 				| [Ejercicio 08](Capítulo%2003/ejercicio08)         | Servidor y Cliente  |
 | Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Etiqueta script  |
-| 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Fundamentos  |
-|               | [Ejercicio 03](Capítulo%2004/ejercicio03)         | Control de flujo y Funciones  |
-| 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | DOM  |
-| 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Eventos |
-| 				| [Ejercicio 06](Capítulo%2004/ejercicio06)         | Promesas y Async/Await  |
-| 				| [Ejercicio 06](Capítulo%2004/ejercicio07)         | WebSocket  |
 
 ## Referencias 
 
