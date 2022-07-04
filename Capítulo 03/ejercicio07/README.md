@@ -15,7 +15,7 @@
 
 ### Servidor HTTP
 
-* Desde otra la línea de comandos, crea una carpeta, con: `mkdir servidorHTTP`.
+* Desde la línea de comandos, crea una carpeta, con: `mkdir servidorHTTP`.
 * Acceda a la carpeta, con: `cd servidorHTTP`
 * Cree el archivo `servidor.js`
 * Agregue las instrucciones 
@@ -51,7 +51,7 @@ servidor.listen(puerto, host, () => {
 
 ```
 
-* Desde la línea de comandos, con: `node servidor.js`
+* Desde la línea de comandos, levante el servidor con: `node servidor.js`
 	- En la línea de comandos debe ver el mensaje `Servidor corriendo en http://localhost:8000`
 
 * Cliente(s) 
