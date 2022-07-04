@@ -1,53 +1,45 @@
-/*
-  Agregue las propiedades al selector article
-  para: 
-    - Se muestre en rejilla
-    - La plantilla de columnas es 25% y 75%
-*/
-
-/* Inicio */
-
-article {
-
+* {
+  box-sizing: border-box;
 }
 
-/* Fin */
-
-
-/*
-  Agregue las propiedades al selector div.respuesta article 
-  para: 
-    - Se muestre en rejilla
-    - La plantilla de columnas es 100%
-*/
-
-/* Inicio */
-
-@media screen and (max-width: 640px) {
-
-  div.respuesta article {
-
-  }
-
+body {
+  padding: 50px;
+  padding-top: 0px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
-/* Fin */
-
-/*
-  Agregue las propiedades al selector div.right img 
-  para: 
-    - no se muestran las imágenes
-*/
-
-/* Inicio */
-
-@media screen and (max-width: 640px) {
-
-  div.right img {
-    
-  }
-
+a {
+  color: #00B7FF;
 }
 
-/* Fin */
+.titulo {
+  font-weight: bold;
+  font-size: 2.1rem;
+  text-align: center;
+}
 
+.instrucciones {
+  background-color: #e1f7e1;
+  padding: 1rem;
+  line-height: 2rem;
+}
+
+.etiqueta {
+  color: #905;
+}
+
+.simbolo {
+  color: #999;
+}
+
+.texto {
+  background-color: #e0d5d5;
+  padding: 0.4rem;
+  margin-left: 0.2rem;
+}
+
+.respuesta {
+  min-height: 5rem;
+  border: 0.5pt solid black;
+  padding: 1%;
+}

@@ -1,0 +1,207 @@
+/* 
+  Variables globales 
+    --color-1
+    --color-2
+
+  Referencia: https://developer.mozilla.org/es/docs/Web/CSS/Using_CSS_custom_properties  
+*/
+
+:root {
+  --color-1: #07363f;
+  --color-2: #ff9901;
+}
+
+
+/*
+  Utilice el selector 
+    universal 
+  con la regla: 
+    Familia tipográfica
+  y el valor:
+    -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+  Utilice el selector por identificador:  
+    section-one
+  con las reglas con valores: 
+    Color de fondo: var(--color-1)
+    Color de la fuente:  blanco
+
+  Referencia: https://developer.mozilla.org/es/docs/Web/CSS/var
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+ Utilice el selector por identificador: 
+    section-two
+ con la regla:
+    Fondo
+ con el valor:
+    linear-gradient(170deg, var(--color-1) 0%, var(--color-1) 50%, var(--color-2) 50%, var(--color-2) 100%);
+
+ Referencia:  https://developer.mozilla.org/en-US/docs/Web/CSS/gradient/linear-gradient 
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+  Utilice el selector por identificador:  
+    section-three
+  con la regla:
+     Color de fondo
+  con el valor: 
+      var(--color-2)
+*/
+
+
+/* Inicio */
+
+/* Fin */
+
+
+/*
+  Utilice el selector por elemento para la etiqueta: 
+    h1
+  con las reglas con valores: 
+    font-size: 2rem;
+    font-size: clamp(2rem, 1.2rem + 2.66vw, 4rem);
+    margin: 0.3em 0 0.1em 0;
+
+  Referencia:  
+
+  https://developer.mozilla.org/en-US/docs/Web/CSS/clamp
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+  Utilice el selector por elemento para la etiqueta: 
+    h2
+  con las reglas con valores: 
+    font-size: 1.5rem;
+    font-size: clamp(1.5rem, 1.1rem + 1.33vw, 2.5rem);
+    margin: 0.3em 0 0.1em 0;
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+  Utilice el selector por elemento para la etiqueta: 
+    section
+  con la regla con valores: 
+    padding: 30px;
+*/
+
+/* Inicio */
+
+/* Fin */
+
+
+/*
+  Utilice el selector por clase para
+    container
+  con las reglas con valores:
+    width: 90%;
+    max-width: 1440px;
+    margin: auto;
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+  Utilice el selector por clase para
+    card-wrapper
+  con las reglas con valores:
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+  Utilice el selector para aplicar a la etiqueta div con clase card, 
+  la cual SE ENCUENTRA DENTRO de la etiqueta div con clase container
+
+  con las reglas con valores:
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 30px 50px -25px #ad3500;
+    position: relative;
+    transition: all 0.3s ease;
+    top: 0;
+*/
+
+/* Inicio */
+
+/* Fin */
+
+
+/*
+  Utilice el selector para aplicar a la etiqueta del elemento p, 
+  la cual es HIJA de la etiqueta con clase card
+
+  con las reglas con valores:
+    opacity: 0.4;
+    transition: all 0.3s ease;
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+  Utilice el selector para aplicar a la etiqueta del elemento p 
+  que es ADYACENTE de la etiqueta h2
+
+  con las reglas con valores:
+    text-align: justify;
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+  Utilice el selector para aplicar a la etiqueta del elemento p 
+  que es HERMANO de la etiqueta h1
+
+  con las reglas con valores:
+    text-align: center;
+*/
+
+/* Inicio */
+
+/* Fin */
+
+/*
+  Utilice el selector para aplicar a la etiqueta con clase card 
+  que AL PASAR EL MOUSE POR ENCIMA
+
+  con las reglas con valores:
+    box-shadow: 0px 50px 75px -25px #ad3500 !important;
+    top: -20px !important;
+*/
+
+/* Inicio */
+
+/* Fin */

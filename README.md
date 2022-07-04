@@ -62,7 +62,8 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 06](Capítulo%2003/ejercicio06)         | Promesas y Async/Await  |
 | 				| [Ejercicio 07](Capítulo%2003/ejercicio07)         | WebSocket  |
 | 				| [Ejercicio 08](Capítulo%2003/ejercicio08)         | Servidor y Cliente  |
-| Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Etiqueta script  |
+| Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Typescript  |
+| 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Angular - bases  |
 
 ## Referencias 
 
