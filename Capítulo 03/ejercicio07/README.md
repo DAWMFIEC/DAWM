@@ -9,9 +9,13 @@
 
 ## Instrucciones
 
+* Desde la línea de comandos
+	+ Ingrese a la carpeta con el ejercicio
+	+ Instale los paquetes necesarios, con: `npm install`
+
 ### Servidor HTTP
 
-* Mediante la línea de comandos, crea una carpeta, con: `mkdir servidorHTTP`.
+* Desde otra la línea de comandos, crea una carpeta, con: `mkdir servidorHTTP`.
 * Acceda a la carpeta, con: `cd servidorHTTP`
 * Cree el archivo `servidor.js`
 * Agregue las instrucciones 
