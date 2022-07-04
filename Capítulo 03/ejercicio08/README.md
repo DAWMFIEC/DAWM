@@ -1,10 +1,11 @@
 # Ejercicio 08
 
+## Respuesta a la ruta "/json"
 ![Respuesta a la ruta "/json"](images/imagen1.png)
-Respuesta a la ruta "/json"
 
+## Respuesta a la ruta "/libros"
 ![Respuesta a la ruta "/libros"](images/imagen2.png)
-Respuesta a la ruta "/libros"
+
 
 ## Requisitos
 
