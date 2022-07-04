@@ -1,10 +1,13 @@
 # Ejercicio 08
 
-## Respuesta a la ruta "/json"
-![Respuesta a la ruta "/json"](images/imagen1.png)
+## Respuesta a la ruta "/texto"
+![Respuesta a la ruta "/texto"](images/imagen1.png)
 
-## Respuesta a la ruta "/libros"
-![Respuesta a la ruta "/libros"](images/imagen2.png)
+## Respuesta a la ruta "/json"
+![Respuesta a la ruta "/json"](images/imagen2.png)
+
+## Respuesta a la ruta "/html"
+![Respuesta a la ruta "/html"](images/imagen3.png)
 
 
 ## Requisitos
@@ -38,5 +41,6 @@
 
 * Cómo crear un servidor web en Node.js con el módulo HTTP DigitalOcean. (2022). Retrieved 4 July 2022, from https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module-es#paso-1-crear-un-servidor-http-basico
 * HTTP headers - HTTP MDN. (2022). Retrieved 4 July 2022, from https://developer.mozilla.org/es/docs/Web/HTTP/Headers
+* Tipos MIME - HTTP MDN. (2020). Retrieved 4 July 2022, from https://developer.mozilla.org/es/docs/Web/HTTP/Basics_of_HTTP/MIME_types
 * Spring - REST JSON Response - GeeksforGeeks. (2022). Retrieved 4 July 2022, from https://www.geeksforgeeks.org/spring-rest-json-response/
 * ¿Qué es una URL? - Aprende sobre desarrollo web MDN. (2021). Retrieved 4 July 2022, from https://developer.mozilla.org/es/docs/Learn/Common_questions/What_is_a_URL
