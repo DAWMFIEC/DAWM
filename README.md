@@ -60,6 +60,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | DOM  |
 | 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Eventos |
 | 				| [Ejercicio 06](Capítulo%2004/ejercicio06)         | Promesas y Async/Await  |
+| 				| [Ejercicio 06](Capítulo%2004/ejercicio07)         | WebSocket  |
 
 ## Referencias 
 
