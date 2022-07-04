@@ -4,13 +4,17 @@
 
 ## Requisitos
 
-* [Nodejs](https://nodejs.org/es/) 
+* Instale Nodejs, dese el [sitio oficial](https://nodejs.org/es/download/).
+	- Mediante la línea de comandos, verifique la versión de Nodejs, con: `node -v`
 
 ## Instrucciones
 
 ### Servidor HTTP
 
-* Mediante la línea de comandos, crea una carpeta con `mkdir servidor`.
+* Mediante la línea de comandos, crea una carpeta con `mkdir servidorHTTP`.
+* Acceda a la carpeta con `cd servidorHTTP`
+* Cree el archivo `servidor.js`
+* Agregue las instrucciones 
 
 ## Pruebas unitarias
 
