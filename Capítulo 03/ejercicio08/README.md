@@ -1,6 +1,7 @@
 # Ejercicio 08
 
-![cliente](images/both.png)
+![Respuesta a la ruta "/json"](images/imagen1.png)
+![Respuesta a la ruta "/libros"](images/imagen2.png)
 
 ## Requisitos
 
@@ -12,10 +13,13 @@
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
-
-### Servidor HTTP
-
-* 
+* Desde el editor de texto, modifica el archivo el archivo `servidorHTTP/servidor.js`,
+	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
+	+ Agrega los cambiossolicitadas dentro de las secciones marcadas, con:  
+	`/* Inicio */` - `/* Fin */`
+* Por cada bloque de instrucciones:
+	+ Desde la línea de comandos, reinicie el servidor con: `node servidorHTTP/servidor.js`
+	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8000`.
 
 
 ## Pruebas unitarias
@@ -29,3 +33,6 @@
 ## Referencias 
 
 * Cómo crear un servidor web en Node.js con el módulo HTTP DigitalOcean. (2022). Retrieved 4 July 2022, from https://www.digitalocean.com/community/tutorials/how-to-create-a-web-server-in-node-js-with-the-http-module-es#paso-1-crear-un-servidor-http-basico
+* HTTP headers - HTTP MDN. (2022). Retrieved 4 July 2022, from https://developer.mozilla.org/es/docs/Web/HTTP/Headers
+* Spring - REST JSON Response - GeeksforGeeks. (2022). Retrieved 4 July 2022, from https://www.geeksforgeeks.org/spring-rest-json-response/
+* ¿Qué es una URL? - Aprende sobre desarrollo web MDN. (2021). Retrieved 4 July 2022, from https://developer.mozilla.org/es/docs/Learn/Common_questions/What_is_a_URL
