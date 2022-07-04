@@ -1,6 +1,6 @@
 # Ejercicio 07
 
-![cliente](images/servidor.png)
+![cliente](images/both.png)
 
 ## Requisitos
 
@@ -42,7 +42,7 @@ const manejadorPeticiones = (req, res) => {
 
 const servidor = http.createServer(manejadorPeticiones);
 servidor.listen(puerto, host, () => {
-    console.log(`Servidor corriendo en http://${host}:${port}`);
+    console.log(`Servidor corriendo en http://${host}:${puerto}`);
 });
 
 ```
@@ -53,6 +53,7 @@ servidor.listen(puerto, host, () => {
 * Cliente(s) 
 	- Abra una pestaña en el navegador para el URL `http://localhost:8000`
 	- Desde otra línea de comandos, haga una petición con `curl http://localhost:8000`
+	- Verifique los resultados en ambos clientes.
 
 
 ## Pruebas unitarias
