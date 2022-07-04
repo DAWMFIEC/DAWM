@@ -60,8 +60,8 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 04](Capítulo%2003/ejercicio04)         | DOM  |
 | 				| [Ejercicio 05](Capítulo%2003/ejercicio05)         | Eventos |
 | 				| [Ejercicio 06](Capítulo%2003/ejercicio06)         | Promesas y Async/Await  |
-| 				| [Ejercicio 07](Capítulo%2003/ejercicio07)         | Servidor HTTP I  |
-| 				| [Ejercicio 08](Capítulo%2003/ejercicio08)         | Servidor HTTP II  |
+| 				| [Ejercicio 07](Capítulo%2003/ejercicio07)         | Servidor HTTP  |
+| 				| [Ejercicio 08](Capítulo%2003/ejercicio08)         | Servidor HTTP - Cliente  |
 | 				| [Ejercicio 09](Capítulo%2003/ejercicio09)         | WebSocket  |
 | Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Typescript  |
 | 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Angular - bases  |

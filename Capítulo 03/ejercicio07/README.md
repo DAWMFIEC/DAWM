@@ -1,12 +1,16 @@
 # Ejercicio 07
 
-![cliente](images/both.png)
+![cliente](images/servidor.png)
+
+## Requisitos
+
+* [Nodejs](https://nodejs.org/es/) 
 
 ## Instrucciones
 
-### Servidor
+### Servidor HTTP
 
-### Cliente
+* Mediante la línea de comandos, crea una carpeta con `mkdir servidor`.
 
 ## Pruebas unitarias
 
