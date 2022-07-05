@@ -30,7 +30,7 @@
 	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
 	+ Agrega los cambios solicitadas dentro de las secciones marcadas, con:  
 	`/* Inicio */` - `/* Fin */`
-	+ Desde la línea de comandos, reinicie el servidor HTTP con: `node servidorHTTP/servidor.js`
+	+ Desde la línea de comandos, reinicie el servidor HTTP con: `node servidor.js`
 	+ Desde el navegador, actualice la pestaña en el navegador para el URL `http://localhost:8001`
 
 
