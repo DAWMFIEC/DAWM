@@ -1,7 +1,7 @@
 # Ejercicio 10
 
-## Respuesta a la ruta "http://localhost:8000/json"
-![Respuesta a la ruta "http://localhost:8000/json"](images/servidorHTTP.png)
+## Respuesta a la ruta "http://localhost:8000/"
+![Respuesta a la ruta "http://localhost:8000/"](images/servidorHTTP.png)
 
 ## Respuesta a la ruta "http://localhost:8001/"
 ![Respuesta a la ruta "http://localhost:8001/"](images/clienteHTTP.png)
