@@ -19,10 +19,12 @@
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
 * Servidor
-	+ Desde la línea de comandos, inicie el servidor HTTP con: `node servidorHTTP/servidor.js`
+	+ Desde la línea de comandos en la carpeta del proyecto `servidorHTTP`
+	+ Inicie el servidor HTTP, con: `node servidor.js`
 	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8000/json`
 * Cliente
-	+ Desde la línea de comandos, dentro de la carpeta del proyecto, inicie el cliente HTTP con: `python -m http.server 8001`
+	+ Desde la línea de comandos en la carpeta del proyecto `clienteHTTP`
+	+ Inicie el cliente HTTP, con: `python -m http.server 8001`
 	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001`
 * Desde el editor de texto, modifica el archivo el archivo `servidorHTTP/servidor.js`,
 	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
