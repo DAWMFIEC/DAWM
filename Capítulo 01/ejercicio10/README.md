@@ -1,6 +1,6 @@
 # Ejercicio 10
 
-![image info](images/ejercicio04.png)
+![image info](images/ejercicio10.png)
 
 ## Instrucciones
 
