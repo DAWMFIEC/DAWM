@@ -25,7 +25,8 @@
 	+ Agrega los cambios solicitadas dentro de las secciones marcadas, con:  
 	`/* Inicio */` - `/* Fin */`
 * Por cada bloque de instrucciones:
-	+ Desde la línea de comandos, reinicie el servidor con: `node servidorHTTP/servidor.js`
+	+ Desde la línea de comandos desde la carpeta del proyecto `servidorHTTP`
+	+ Reinicie el servidor con: `node servidor.js`
 	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8000`.
 
 
