@@ -1,13 +1,11 @@
 # Ejercicio 08
 
-## Respuesta a la ruta "/texto"
-![Respuesta a la ruta "/texto"](images/imagen1.png)
+## Respuesta a la ruta "http://localhost:8000/json"
+![Respuesta a la ruta "http://localhost:8000/json"](images/servidorHTTP.png)
 
-## Respuesta a la ruta "/json"
-![Respuesta a la ruta "/json"](images/imagen2.png)
+## Respuesta a la ruta "http://localhost:8001/"
+![Respuesta a la ruta "http://localhost:8001/"](images/clienteHTTP.png)
 
-## Respuesta a la ruta "/html"
-![Respuesta a la ruta "/html"](images/imagen3.png)
 
 
 ## Requisitos
@@ -20,13 +18,18 @@
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
+* Servidor
+	+ Desde la línea de comandos, inicie el servidor HTTP con: `node servidorHTTP/servidor.js`
+	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8000/json`
+* Cliente
+	+ Desde la línea de comandos, inicie el cliente HTTP con: `python -m http.server 8001`
+	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001`
 * Desde el editor de texto, modifica el archivo el archivo `servidorHTTP/servidor.js`,
 	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
 	+ Agrega los cambios solicitadas dentro de las secciones marcadas, con:  
 	`/* Inicio */` - `/* Fin */`
-* Por cada bloque de instrucciones:
-	+ Desde la línea de comandos, reinicie el servidor con: `node servidorHTTP/servidor.js`
-	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8000`.
+	+ Desde la línea de comandos, reinicie el servidor HTTP con: `node servidorHTTP/servidor.js`
+	+ Desde el navegador, actualice la pestaña en el navegador para el URL `http://localhost:8001`
 
 
 ## Pruebas unitarias

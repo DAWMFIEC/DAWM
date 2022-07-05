@@ -16,7 +16,7 @@
 * Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
 * Desde el editor de texto, modifica el archivo el archivo `public/scripts/ejercicio.js`, 
 	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
-	+ Agrega los cambiossolicitadas dentro de las secciones marcadas, con:  
+	+ Agrega los cambios solicitadas dentro de las secciones marcadas, con:  
 	`/* Inicio */` - `/* Fin */`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 
