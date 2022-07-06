@@ -29,3 +29,4 @@
 
 * TypeScript (2022). Retrieved 6 July 2022, from https://www.typescriptlang.org/
 * The TypeScript Handbook (2022). Retrieved 6 July 2022, from https://www.typescriptlang.org/docs/handbook/intro.html
+* TypeScript for JavaScript Programmers (2022). Retrieved 6 July 2022, from https://www.typescriptlang.org/docs/handbook/typescript-in-5-minutes.html
