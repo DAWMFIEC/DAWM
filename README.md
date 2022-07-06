@@ -8,8 +8,8 @@ Enlace al [sitio web](https://dawfiec.github.io/DAWM-2022/).
 
 ## Libros
 
-*  [HTML5NotesForProfessionals](books/HTML5NotesForProfessionals)
-*  [HTML5CanvasNotesForProfessionals](books/HTML5CanvasNotesForProfessionals)
+*  [HTML5NotesForProfessionals](books/HTML5NotesForProfessionals.pdf)
+*  [HTML5CanvasNotesForProfessionals](books/HTML5CanvasNotesForProfessionals.pdf)
 
 ## Prerequisitos
 
