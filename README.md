@@ -70,7 +70,9 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 09](Capítulo%2003/ejercicio09)         | Servidor HTTP - Cliente HTTP  |
 | 				| [Ejercicio 10](Capítulo%2003/ejercicio10)         | WebSockets  |
 | Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Typescript - Transpilar TypeScript en JavaScript |
-| 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Angular - bases  |
+| 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Typescript - Tipos simples, tipo especial, arrays, objetos |
+| 				| [Ejercicio 03](Capítulo%2004/ejercicio03)         | Typescript - Interfaces y clases |
+| 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | Typescript - Funciones |
 
 ## Referencias 
 
