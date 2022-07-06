@@ -44,9 +44,14 @@
 
 * Desde la línea de comandos
 	+ Transpile los archivos Typescript a Javascript, con: `npx tsc`
-	+ Se creará una carpeta `build` con el archivo en Javascript `main.js` 
+	+ Revise los errores que aparecen en la consola.
+
+* En el archivo **src/main.ts**
+	+ Corrija el error que se muestra en la consola.
 
 * Desde la línea de comandos
+	+ Transpile los archivos Typescript a Javascript, con: `npx tsc`
+	+ Se creará una carpeta `build` con el archivo en Javascript `main.js` 
 	+ Ejecute el archivo transpilado, con: `node build/main.js`
 
 ## Referencias 
