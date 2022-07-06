@@ -11,7 +11,13 @@
 
 ## Instrucciones
 
-* ABC
+* Desde la línea de comandos
+	+ Ingrese a la carpeta con el ejercicio
+	+ Instale los paquetes necesarios, con: `npm install`
+* Desde su editor de texto
+	+ Revise cada uno de los archivos escritos en Typescript en la carpeta `src/<archivo>.ts`
+	+ Transpile los archivos Typescript a Javascript, con: `npx tsc`
+	+ Ejecute cada archivo Javascript, con: `node build/<archivo>.js`
 
 ## Pruebas unitarias
 
@@ -23,4 +29,6 @@
 
 ## Referencias 
 
-* TypeScript Compiling with Visual Studio Code. (2022). Retrieved 6 July 2022, from https://code.visualstudio.com/docs/typescript/typescript-compiling
+* TypeScript Types. (2022). Retrieved 6 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-types/
+* Number.prototype.toString() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
+* parseInt() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt
