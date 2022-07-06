@@ -10,7 +10,7 @@
 
 ## Requisitos
 
-* Instale Nodejs, dese el [sitio oficial](https://nodejs.org/es/download/).
+* Instale Nodejs, desde el [sitio oficial](https://nodejs.org/es/download/).
 	- Mediante la línea de comandos, verifique la versión de Nodejs, con: `node -v`
 
 ## Instrucciones
