@@ -15,7 +15,8 @@
 	+ Ingrese a la carpeta con el ejercicio
 	+ Cree el archivo tsconfig.json, con `npx tsc --init`
 
-* Revise el archivo `src/main.ts` escrito en Typescript
+* Desde su editor de texto
+	+ Revise el archivo `src/main.ts` escrito en Typescript
 
 * En el archivo **tsconfig.json**
 	+ Agregue el punto de transpilación con la clave _include_ con valor `"src/**/*"`
