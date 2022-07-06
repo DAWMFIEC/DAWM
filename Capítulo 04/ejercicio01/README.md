@@ -1,11 +1,6 @@
 # Ejercicio 01
 
-## Respuesta a la ruta "http://localhost:8000/json"
 ![Respuesta a la ruta "http://localhost:8000/json"](images/servidorHTTP.png)
-
-## Respuesta a la ruta "http://localhost:8001/"
-![Respuesta a la ruta "http://localhost:8001/"](images/clienteHTTP.png)
-
 
 
 ## Requisitos
