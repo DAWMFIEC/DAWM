@@ -6,6 +6,11 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 
 Enlace al [sitio web](https://dawfiec.github.io/DAWM-2022/).
 
+## Libros
+
+*  [HTML5NotesForProfessionals](books/HTML5NotesForProfessionals)
+*  [HTML5CanvasNotesForProfessionals](books/HTML5CanvasNotesForProfessionals)
+
 ## Prerequisitos
 
 * Editor de texto 
