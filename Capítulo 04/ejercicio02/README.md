@@ -1,6 +1,6 @@
 # Ejercicio 02
 
-![Ejecución del archivo build/main.js](images/buildmainjs.png)
+![Ejecución del archivo build/tipo.js](images/buildtipojs.png)
 
 
 ## Requisitos
@@ -16,6 +16,7 @@
 	+ Instale los paquetes necesarios, con: `npm install`
 * Desde su editor de texto
 	+ Revise cada uno de los archivos escritos en Typescript en la carpeta `src/<archivo>.ts`
+	+ Corrija el error que se muestra en la consola en el archivo **src/<archivo>.ts**
 	+ Transpile los archivos Typescript a Javascript, con: `npx tsc`
 	+ Ejecute cada archivo Javascript, con: `node build/<archivo>.js`
 
