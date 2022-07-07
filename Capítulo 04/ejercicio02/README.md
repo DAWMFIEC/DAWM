@@ -14,8 +14,8 @@
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
-* Para transpilar:
-	+  Un archivo Typescript a Javascript
+* Para transpilar de Typescript a Javascript:
+	+  Un archivo:
 	```
   	npx tsc src/tipo.ts --outDir build
   	```
@@ -23,8 +23,8 @@
 	```
   	npx tsc 
   	```
-* Para ejecutar:
-	+ Un archivo de Javascript 
+* Para ejecutar código de Javascript:
+	+ Un archivo: 
   	```
   	node build/tipo.js
   	``` 
