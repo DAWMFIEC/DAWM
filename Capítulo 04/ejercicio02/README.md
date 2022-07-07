@@ -21,18 +21,18 @@
 	  	npx tsc src/tipo.ts --outDir build
 	  	```
 		- Ejecute cada archivo Javascript, por ejemplo: 
-		  ```
-		  node build/tipo.js
-		  ```
+	  	```
+	  	node build/tipo.js
+	  	```
 	+ Para todos los archivos
 		- Transpile y corrija los archivos Typescript a Javascript, por ejemplo: 
 		```
 	  	npx tsc 
 	  	```
 		- Ejecute cada archivo Javascript, por ejemplo: 
-		  ```
-		  node build/tipo.js
-		  ``` 
+	    ```
+	    node build/tipo.js
+	    ``` 
 
 
 ## Pruebas unitarias
