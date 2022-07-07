@@ -14,15 +14,26 @@
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
-* Desde su editor de texto, por cada uno de los archivos escritos en Typescript 
-	+ Transpile y corrija los archivos Typescript a Javascript, por ejemplo: 
-	  ```
-	  npx tsc src/tipo.ts --outDir build
-	  ```
-	+ Ejecute cada archivo Javascript, por ejemplo: 
-	  ```
-	  node build/tipo.js
-	  ```
+* Para validar y transpilar los archivos Typescript tiene dos opciones:
+	+ Por cada uno de los archivos escritos en Typescript 
+		- Transpile y corrija los archivos Typescript a Javascript, por ejemplo: 
+		```
+	  	npx tsc src/tipo.ts --outDir build
+	  	```
+		- Ejecute cada archivo Javascript, por ejemplo: 
+		  ```
+		  node build/tipo.js
+		  ```
+	+ Para todos los archivos
+		- Transpile y corrija los archivos Typescript a Javascript, por ejemplo: 
+		```
+	  	npx tsc 
+	  	```
+		- Ejecute cada archivo Javascript, por ejemplo: 
+		  ```
+		  node build/tipo.js
+		  ``` 
+
 
 ## Pruebas unitarias
 
