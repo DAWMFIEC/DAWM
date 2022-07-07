@@ -8,7 +8,7 @@ describe("Tipos de datos",()=>{
         expect(comparandoCadenas()).to.equal(true)
     })
 
-    it('Comparando cadenas',()=>{
+    it('Comparando enteros',()=>{
         expect(comparandoEnteros()).to.equal(false)
     })
 

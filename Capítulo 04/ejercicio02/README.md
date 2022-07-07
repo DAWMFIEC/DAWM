@@ -15,13 +15,13 @@
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
 * Para transpilar de Typescript a Javascript:
-	+  Un archivo:
+	+  Un archivo, en modo estricto y especificando el directorio de salida:
 	```
-  	npx tsc src/tipo.ts --outDir build
+  	npx tsc src/tipo.ts --strict --outDir build 
   	```
-	+ Todos los archivos:
+	+ Todos los archivos, en modo estricto:
 	```
-  	npx tsc 
+  	npx tsc --strict
   	```
 * Para ejecutar código de Javascript:
 	+ Un archivo: 
@@ -41,5 +41,6 @@
 ## Referencias 
 
 * TypeScript Types. (2022). Retrieved 6 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-types/
+* An Essential Guide To Type Annotations in TypeScript. (2022). Retrieved 7 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-type-annotations/
 * Number.prototype.toString() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
 * parseInt() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt
