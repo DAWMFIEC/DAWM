@@ -1,6 +1,6 @@
 # Ejercicio 03
 
-![Ejecución del archivo build/main.js](images/buildmainjs.png)
+![Ejecución del archivo build/clase.js](images/buildclasejs.png)
 
 
 ## Requisitos
@@ -11,7 +11,24 @@
 
 ## Instrucciones
 
-* ABC
+* Desde la línea de comandos
+	+ Ingrese a la carpeta con el ejercicio
+	+ Instale los paquetes necesarios, con: `npm install`
+* Para transpilar de Typescript a Javascript:
+	+  Un archivo, en modo estricto y especificando el directorio de salida:
+	```
+  	npx tsc src/clase.ts --strict --outDir build 
+  	```
+	+ Todos los archivos, en modo estricto:
+	```
+  	npx tsc --strict
+  	```
+* Para ejecutar código de Javascript:
+	+ Un archivo: 
+  	```
+  	node build/clase.js
+  	``` 
+
 
 ## Pruebas unitarias
 
@@ -23,4 +40,7 @@
 
 ## Referencias 
 
-* TypeScript Compiling with Visual Studio Code. (2022). Retrieved 6 July 2022, from https://code.visualstudio.com/docs/typescript/typescript-compiling
+* TypeScript Types. (2022). Retrieved 6 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-types/
+* An Essential Guide To Type Annotations in TypeScript. (2022). Retrieved 7 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-type-annotations/
+* Number.prototype.toString() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
+* parseInt() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt
