@@ -41,6 +41,11 @@
 ## Referencias 
 
 * TypeScript Types. (2022). Retrieved 6 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-types/
+* An Essential Guide To Type Annotations in TypeScript. (2022). Retrieved 8 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-type-annotations/
+* TypeScript Number. (2022). Retrieved 8 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-number/
+* TypeScript String. (2022). Retrieved 8 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-string/
+* TypeScript Array Type. (2022). Retrieved 8 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-array-type/
 * An Essential Guide To Type Annotations in TypeScript. (2022). Retrieved 7 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-type-annotations/
 * Number.prototype.toString() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
 * parseInt() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+* expected, c., Mehta, M., & Grinko, D. (2013). chai test array equality doesn't work as expected. Retrieved 8 July 2022, from https://stackoverflow.com/questions/17526805/chai-test-array-equality-doesnt-work-as-expected
