@@ -2,11 +2,12 @@
 theme: jekyll-theme-leap-day
 ---
 
+[Regresar](/DAWM-2022/)
 
 Angular - Bootstrap
 ===================
 
-![angular bootstrap](https://ng-bootstrap.github.io/img/logo-stack.png)
+![angular bootstrap](https://miro.medium.com/max/1838/1*L88Qxx696onBfTS-FXNM5w.png)
 
 Bootstrap sirve como herramienta para construir la interfaz visual para de nuestras páginas html.
 
@@ -66,6 +67,6 @@ Referencias
 
 * * *
 
-#### bootstrap. (2021). Retrieved 13 July 2021, from https://www.npmjs.com/package/bootstrap#quick-start
-
-#### How to add Bootstrap 5 to your Angular 11 project. (2019). Retrieved 13 July 2021, from https://dev.to/myolisi/how-to-add-bootstrap-5-to-your-angular-11-project-1am2
+* bootstrap. (2021). Retrieved 13 July 2021, from https://www.npmjs.com/package/bootstrap#quick-start
+* How to add Bootstrap 5 to your Angular 11 project. (2019). Retrieved 13 July 2021, from https://dev.to/myolisi/how-to-add-bootstrap-5-to-your-angular-11-project-1am2
+* Angular & Bootstrap 3. (2020). Retrieved 9 July 2022, from https://medium.com/@d.bengati/angular-bootstrap-3-d383ee300ba1
