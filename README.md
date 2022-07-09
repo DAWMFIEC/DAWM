@@ -8,8 +8,7 @@ Enlace al [sitio web](https://dawfiec.github.io/DAWM-2022/).
 
 ## Libros
 
-*  [HTML5NotesForProfessionals](books/HTML5NotesForProfessionals.pdf)
-*  [HTML5CanvasNotesForProfessionals](books/HTML5CanvasNotesForProfessionals.pdf)
+*  [Programming-Notes-for-Professionals-books](https://github.com/bao-vn/Programming-Notes-for-Professionals-books/tree/master/GoalKicker)
 
 ## Prerequisitos
 
