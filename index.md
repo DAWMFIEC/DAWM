@@ -25,6 +25,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 ## Tutoriales
 
 * [Angular Local](paginas/tutoriales/angular_local.md)
+* [Angular Bootstrap](paginas/tutoriales/angular_bootstrap.md)
 
 ## Indicaciones Generales
 
