@@ -22,7 +22,9 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 09](guias/guia09.md)
 * [Guía 10](guias/guia10.md)
 
+## Tutoriales
 
+* [Angular Local](paginas/tutoriales/angular_local.md)
 
 ## Indicaciones Generales
 
