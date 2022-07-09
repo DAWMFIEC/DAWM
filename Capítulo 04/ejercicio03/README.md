@@ -1,6 +1,6 @@
 # Ejercicio 03
 
-![Ejecución del archivo build/interfaz.js](images/buildinterfazjs.png)
+![Ejecución del archivo build/buildclassjs.js](images/buildclassjs.png)
 
 
 ## Requisitos
