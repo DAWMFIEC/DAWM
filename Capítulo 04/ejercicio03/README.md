@@ -1,6 +1,6 @@
 # Ejercicio 03
 
-![Ejecución del archivo build/clase.js](images/buildclasejs.png)
+![Ejecución del archivo build/interfaz.js](images/buildinterfazjs.png)
 
 
 ## Requisitos
@@ -17,7 +17,7 @@
 * Para transpilar de Typescript a Javascript:
 	+  Un archivo, en modo estricto y especificando el directorio de salida:
 	```
-  	npx tsc src/clase.ts --strict --outDir build 
+  	npx tsc src/interfaz.ts --strict --outDir build 
   	```
 	+ Todos los archivos, en modo estricto:
 	```
@@ -26,7 +26,7 @@
 * Para ejecutar código de Javascript:
 	+ Un archivo: 
   	```
-  	node build/clase.js
+  	node build/interfaz.js
   	``` 
 
 
@@ -40,7 +40,5 @@
 
 ## Referencias 
 
-* TypeScript Types. (2022). Retrieved 6 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-types/
-* An Essential Guide To Type Annotations in TypeScript. (2022). Retrieved 7 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-type-annotations/
-* Number.prototype.toString() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
-* parseInt() - JavaScript MDN. (2021). Retrieved 6 July 2022, from https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt
+* TypeScript Interface. (2022). Retrieved 9 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-interface/
+* TypeScript Class. (2022). Retrieved 9 July 2022, from https://www.typescripttutorial.net/typescript-tutorial/typescript-class/

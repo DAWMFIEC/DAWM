@@ -1,29 +1,17 @@
-import {anotacionEntero,anotacionCadena,anotacionFuncion,anotacionObjeto,anotacionFuncionR} from '../src/anotaciones'
+import {claseInstanciacion} from '../src/clase'
 import {expect} from 'chai'
 
 
-describe("Anotación de tipo de datos",()=>{
+describe("Clase",()=>{
 
-    it('Tipo entero',()=>{
-        expect(anotacionEntero()).to.equal(237)
-    })
-
-    it('Tipo cadena de caracteres',()=>{
-        expect(anotacionCadena()).to.equal('Mensaje de texto')
-    })
-
-    it('Tipo arreglos',()=>{
-        expect(anotacionFuncion(['spray', 'elite', 'exuberant', 'destruction', 'present', 'limit'], 1)).to.equal('elite')
-    })
-
-    it('Tipo de objeto',()=>{
-        let person = { name: 'Jayme', age: 30 }
-        expect(JSON.stringify(anotacionObjeto())).to.equal(JSON.stringify(person))
+    it('Propiedades de la clase',()=>{
+        let person = claseInstanciacion()
+        expect(person).to.have.property('ssn')
+        expect(person.ssn).to.be.a('number');
+        expect(person).to.have.property('lastName')
+        expect(person.lastName).to.be.a('string');
     })
 
 
-    it('Tipo de retorno',()=>{
-        expect(anotacionFuncionR('Bye! Bye!')).to.equal('Bye! Bye!')
-    })
-
+    
 })
