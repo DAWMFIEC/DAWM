@@ -7,6 +7,10 @@ let anotacionFuncionParametros = (palabras, indice) => {
 	return palabras.filter(palabra => palabra.length > 3)[indice];
 }
 
+
+
+
+
 //Tomado de https://www.typescripttutorial.net/typescript-tutorial/typescript-type-annotations/
 let anotacionFuncionRetorno : (texto: string) => string;
 
@@ -22,6 +26,7 @@ anotacionFuncionRetorno = () => {
     
 };
 /* Fin */
+
 
 console.log(anotacionFuncionParametros(['spray', 'limit', 'elite', 'exuberant', 'destruction', 'present'], 1))
 console.log(anotacionFuncionRetorno('Adiós!'))
