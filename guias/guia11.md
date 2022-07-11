@@ -8,6 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Contenidos
 
+* Revisión de ejercicios previos: dudas y comentarios.
 * **Web Sockets** es una tecnología avanzada que hace posible abrir una sesión de comunicación bidireccional entre el navegador del usuario y un servidor. Con esta [API](https://developer.mozilla.org/es/docs/Web/API/WebSockets_API), puede enviar mensajes a un servidor y  recibir respuestas controladas por eventos sin tener que consultar al servidor para una respuesta. En [Levelup](https://levelup.gitconnected.com/getting-started-with-node-js-and-websockets-f22dd0452105) se ilustra la arquitectura de conexión entre un cliente y un servidor mediante sockets de comunicación para un marco de trabajo de la web.
 
 
@@ -25,9 +26,14 @@ theme: jekyll-theme-leap-day
 
 
 
+
 ### Actividades
 
 * Diseñe el protocolo de comunicación entre el cliente y el servidor para una aplicación asíncrona meidnate sockets de comunicación. 
+	
+	- El protocolo de comunicación para el ejercicio de datos de stream, es:
+
+	![Datos por stream](imagenes/datosporstream.png)
 
 ### Términos
 
