@@ -31,7 +31,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`sockets`
+protocolo de comunicación, baja latencia, `sockets`
 
 ### Referencias
 
