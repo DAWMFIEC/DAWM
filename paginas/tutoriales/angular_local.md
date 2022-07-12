@@ -21,7 +21,10 @@ Instalar Angular CLI
 Instale Angular-CLI en su máquina local, siguiendo las instrucciones en lasección [Installing Angular CLI](https://angular.io/cli#installing-angular-cli), con:  
   
 
-*   Desde la línea de comandos: **npm install -g @angular/cli**
+*   Desde la línea de comandos: 
+    ```
+    npm install -g @angular/cli
+    ```
 
 Sitio base
 ==========
@@ -30,14 +33,26 @@ Sitio base
 
 Desde la línea de comandos, en la ruta donde desea crear el proyecto:
 
-* Cree un nuevo sitio con: **ng new sitioAngular**
+* Cree un nuevo sitio con: 
+  ```
+  ng new sitioAngular
+  ```
+
     + Acepte el manejador de rutas por defecto
         - (Would you like to add Angular routing?) **\[y\]**
     + Acepte **CSS** como formato de hoja de estilos 
         - (Which stylesheet format would you like to use?) > CSS
 * En cuanto termine la configuración del sitio
-    + Ingrese a la carpeta creada: **cd sitioAngular**
-    + Inicie el servidor con: **ng serve -o**
+    + Ingrese a la carpeta creada: 
+      ```
+      cd sitioAngular
+      ```
+
+    + Inicie el servidor con: 
+      ```
+      ng serve -o
+      ```
+      
     + El resultado se encuentra en [http://localhost:4200/](http://localhost:4200/)
 
 ![default angular site](https://i.stack.imgur.com/2DZqQ.png)

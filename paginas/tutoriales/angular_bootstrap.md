@@ -20,7 +20,11 @@ Instalación de Bootstrap (y dependencias)
 Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
 
 * De ser necesario, detenga el servidor de Angular.
-* Instale bootstrap, con: **npm install bootstrap**
+* Instale bootstrap, con: 
+  ```
+  npm install bootstrap
+  ```
+
     + En el archivo _package.json_ se agrega automáticamente módulo **bootstrap** (última versión).
     + En el archivo _angular.json_, en la clave **architect > build > options > styles** agregue la referencia a la _hoja de estilo_ de Bootstrap.
 
@@ -39,7 +43,11 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
           ]
       ```
 
-* Instale popperjs, con: **npm install @popperjs/core**
+* Instale popperjs, con: 
+  ```
+  npm install @popperjs/core
+  ```
+
     + En el archivo _package.json_ se agrega automáticamente módulo **@popperjs/core** (última versión).
     + En el archivo _angular.json_,en la clave **architect > build > options > styles** con la referencia a _javascript_ de Popperjs/core.
 
@@ -50,7 +58,11 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
         ]
       ```
 
-*   (Re)Inicie el servidor de Angular: **ng serve**
+*   (Re)Inicie el servidor de Angular: 
+    ```
+    ng serve
+    ```
+    
 *   Notarás que el estilo por defecto del sitio ha cambiado.
 
 
