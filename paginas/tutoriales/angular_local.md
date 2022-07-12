@@ -18,7 +18,7 @@ Instalar Angular CLI
 
 * * *
 
-Instale Angular-CLI en su máquina local, siguiendo las instrucciones en lasección [Installing Angular CLI](https://angular.io/cli#installing-angular-cli), con:  
+Instale Angular-CLI en su máquina local, siguiendo las instrucciones en la sección [Installing Angular CLI](https://angular.io/cli#installing-angular-cli), con:  
   
 
 *   Desde la línea de comandos: 
