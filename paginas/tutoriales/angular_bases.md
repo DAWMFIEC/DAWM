@@ -33,7 +33,7 @@ Componentes
 
 * * *
 
-Los componentes son los componentes básicos de una interfaz de usuario en una aplicación Angular. Estos componentes están asociados con una plantilla y son un subconjunto de directivas.
+Los componentes son las unidades básicas de una interfaz de usuario en una aplicación Angular. Estos componentes están asociados con una plantilla y un subconjunto de directivas.
 
 ![Componentes](https://www.simplilearn.com/ice9/free_resources_article_thumb/Components_Heirarchy-Angular_Components.PNG)
 
@@ -43,7 +43,7 @@ Los componentes son los componentes básicos de una interfaz de usuario en una a
       ```
       ng g c <nombre del componente>
       ```
-    + Se creará una carpeta con el nombre del componente, con los componentes: **.html**, **.css** y **.ts** (luego, Angular se encargará de convertir a **.js**).
+    + Se creará una carpeta con el nombre del componente, con los elemento: **.html**, **.css** y **.ts** (luego, Angular se encargará de convertir a **.js**).
     
     ![componente](imagenes/angular_bases_componente.png)
     
@@ -57,7 +57,7 @@ Los componentes son los componentes básicos de una interfaz de usuario en una a
 
 * Para usar (renderizar) un componente:
     
-    + Identifique el selector del componente hijo en el decorador de la clase:
+    + Identifique el `selector` del componente hijo en el decorador de la clase:
       ```
       @Component({
           selector: 'app-cabecera',
@@ -65,7 +65,8 @@ Los componentes son los componentes básicos de una interfaz de usuario en una a
           styleUrls: ['./cabecera.component.css']
       })
       ```
-    + Use el selector en el **.html** de cualquier otro componente
+
+    + Use el `selector` en el **.html** de cualquier otro componente
       ```
       <app-cabecera></app-cabecera>
       ``` 
