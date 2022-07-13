@@ -32,9 +32,7 @@ theme: jekyll-theme-leap-day
 
 ### Errores
 
-Para el error:
-
-* `Can't resolve '../assets/img/bg-masthead.jpg'` 
+* Para `Can't resolve '../assets/img/bg-masthead.jpg'` 
 	+ Cambie la referencia por `'assets/img/bg-masthead.jpg'` 
 
 
