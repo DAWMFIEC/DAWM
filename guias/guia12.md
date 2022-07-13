@@ -29,6 +29,7 @@ theme: jekyll-theme-leap-day
 		- **Proyecto de Angular:** En el `src/styles.css`, pegue las reglas css.
 
 * Actualice el navegador o (re)inicie el servidor
+* Revise la página de [errores](https://dawfiec.github.io/DAWM-2022/paginas/errores.html) de ser necesario.
 
 
 ### Términos
