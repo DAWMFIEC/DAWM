@@ -79,7 +79,21 @@ Comunicación de una via (one-way binding)
 
 * * *
 
-* 
+* En el **.ts** del componente
+
+  + Agregue el atributo `mensaje` dentro de la clase
+
+    ```
+    mensaje:string = "Este es un mensaje"
+    ```
+* En el **.html** del componente
+  
+  + Agregue las etiquetas necesarias y coloque como texto el atributo `mensaje`
+  
+    ```
+    <div>{{mensaje}}</div>
+    ```   
+* Actualice el navegador o (re)inicie el servidor
     
 
 Directivas

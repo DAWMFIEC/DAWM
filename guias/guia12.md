@@ -29,4 +29,6 @@ theme: jekyll-theme-leap-day
 
 ### Referencias
 
-* 
+* Angular. (2021). Retrieved 1 December 2021, from [https://angular.io/](https://angular.io/)
+* Introduction to Angular Components and How to Implement It? (20202) https://www.simplilearn.com/tutorials/angular-tutorial/angular-components
+* Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
