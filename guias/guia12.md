@@ -29,6 +29,7 @@ theme: jekyll-theme-leap-day
 		- **Proyecto de Angular:** En el `src/app.component.css`, pegue las reglas css.
 
 * Actualice el navegador o (re)inicie el servidor
+* Para los 
 
 
 ### Términos
