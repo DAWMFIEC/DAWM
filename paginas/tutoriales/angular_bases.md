@@ -7,7 +7,10 @@ theme: jekyll-theme-leap-day
 Angular - Bases
 ====================
 
-![Angular Logo](https://cms-assets.tutsplus.com/uploads/users/34/posts/22391/preview_image/angular-js-firebase.png)
+
+<p align="center">
+  <img width="400" height="277" src="https://cms-assets.tutsplus.com/uploads/users/34/posts/22391/preview_image/angular-js-firebase.png">
+</p>
 
 Es un framework, en JavaScript, para crear aplicaciones web con html, css y typescript. Incorpora la combinación de plantillas, la inyección de dependencias, programación reactiva, directivas y más; mediante la aplicación buenas prácticas de programación. Las aplicaciones desarrolladas con Angular para la web, móvil o para escritorio.
 

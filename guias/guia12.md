@@ -36,7 +36,6 @@ theme: jekyll-theme-leap-day
 	+ Cambie la referencia por `'assets/img/bg-masthead.jpg'` 
 
 
-
 ### Términos
 
 Librería, marco de trabajo, bootstrapping
