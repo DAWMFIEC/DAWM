@@ -29,8 +29,13 @@ theme: jekyll-theme-leap-day
 		- **Proyecto de Angular:** En el `src/app.component.css`, pegue las reglas css.
 
 * Actualice el navegador o (re)inicie el servidor
-* Error
-	+ En caso de `Can't resolve '../assets/img/bg-masthead.jpg'`, elimine la referencia `../` 
+
+### Errores
+
+Para el error:
+
+* `Can't resolve '../assets/img/bg-masthead.jpg'` 
+	+ Cambie la referencia por `'assets/img/bg-masthead.jpg'` 
 
 
 
