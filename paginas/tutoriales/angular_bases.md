@@ -14,23 +14,6 @@ Angular - Bases
 
 Es un framework, en JavaScript, para crear aplicaciones web con html, css y typescript. Incorpora la combinación de plantillas, la inyección de dependencias, programación reactiva, directivas y más; mediante la aplicación buenas prácticas de programación. Las aplicaciones desarrolladas con Angular para la web, móvil o para escritorio.
 
-Introducción
-============
-
-* * *
-
-En el proyecto Angular tiene la siguiente estructura de archivos con su descripción:
-
-*   **angular.json** con la descripción del proyecto
-*   **package.json** con los paquetes instalados
-*   **styles.css** estilo global de la app
-*   **index.html** página de inicio
-*   **src/app** para componentes y servicios
-*   **src/assets** para los archivos estáticos como imágenes
-*   **app.module.ts** punto inicial de la aplicación
-*   **Componentes**: ts, .html y .css; o todo embebido en un .ts  
-    
-
 Componentes
 ===========
 
@@ -109,5 +92,3 @@ Referencias
 * Angular. (2021). Retrieved 1 December 2021, from [https://angular.io/](https://angular.io/)
 * Introduction to Angular Components and How to Implement It? (20202) https://www.simplilearn.com/tutorials/angular-tutorial/angular-components
 * Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
-* Angular. (2021). Retrieved 1 December 2021, from [https://angular.io/tutorial](https://angular.io/tutorial)
-* 19 Things You Need to Learn to Become an Effective Angular Developer. (2021). Retrieved 1 December 2021, from https://www.dottedsquirrel.com/things-to-learn-angular/
