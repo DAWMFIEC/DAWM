@@ -49,7 +49,7 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
   ```
 
     + En el archivo _package.json_ se agrega automáticamente módulo **@popperjs/core** (última versión).
-    + En el archivo _angular.json_,en la clave **architect > build > options > styles** con la referencia a _javascript_ de Popperjs/core.
+    + En el archivo _angular.json_,en la clave **architect > build > options > scripts** con la referencia a _javascript_ de Popperjs/core.
 
       ```
         "scripts": [
