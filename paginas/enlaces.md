@@ -2,6 +2,8 @@
 theme: jekyll-theme-leap-day
 ---
 
+[Regresar](/DAWM-2022/)
+
 ## Tweets
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Avoid these 8 common UX/UI mistakes<br><br>Small thread <a href="https://t.co/BgGutQ2oGP">pic.twitter.com/BgGutQ2oGP</a></p>&mdash; George Moller (@_georgemoller) <a href="https://twitter.com/_georgemoller/status/1531295126785605632?ref_src=twsrc%5Etfw">May 30, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
