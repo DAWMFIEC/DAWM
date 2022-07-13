@@ -30,11 +30,6 @@ theme: jekyll-theme-leap-day
 
 * Actualice el navegador o (re)inicie el servidor
 
-### Errores
-
-* Para `Can't resolve '../assets/img/bg-masthead.jpg'` 
-	+ Cambie la referencia por `'assets/img/bg-masthead.jpg'` 
-
 
 ### Términos
 
