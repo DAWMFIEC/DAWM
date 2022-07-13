@@ -16,19 +16,21 @@ theme: jekyll-theme-leap-day
 
 * Cree una aplicación de Angular de acuerdo con [Angular Local](https://dawfiec.github.io/DAWM-2022/paginas/tutoriales/angular_local.html) e incorpore bootstrap al proyecto con [Angular Bootstrap](https://dawfiec.github.io/DAWM-2022/paginas/tutoriales/angular_bootstrap.html)
 * Use la plantilla [Creative](https://startbootstrap.com/theme/creative) para el sitio.
-	+ Copie el contenido de la etiqueta `body` de la plantilla original
-	+ Pegue las etiquetas html en el archivo `src/app.component.html`
-	+ Coloque los assets del proyecto en la ruta `src/assets`
-* Identifique las secciones del html para reemplazar por componentes.
-	+ Cree componentes por cada una de las secciones, de acuerdo con [Angular Bases](https://dawfiec.github.io/DAWM-2022/paginas/tutoriales/angular_bases.html)
-	+ Use las secciones del html como vistas de los componentes creados
-* Identifique el texto de las vistas para reemplazar por atributos de los componentes.
-	+ Cree los atributos para cada uno de los texto, de acuerdo con [Angular Bases](https://dawfiec.github.io/DAWM-2022/paginas/tutoriales/angular_bases.html)
-	+ Muestre los atributos del componente en la vista.
+	+ HTML
+		- **Plantilla Original:** Del archivo `index.html`, copie el **contenido** de la etiqueta `<body>` . No copie las etiquetas `<script>`. 
+		- **Proyecto de Angular:** En el `src/app.component.html`, pegue las etiquetas html. 
+	+ ASSETS
+		- **Plantilla Original:** De la carpeta `assets`, copie el **contenido**. 
+		- **Proyecto de Angular:** En la ruta `src/assets`, coloque los archivos.
+	+ CSS:
+		- **Plantilla Original:** Del archivo `css/styles.css`, copie el **contenido**.
+		- **Proyecto de Angular:** En el `src/app.component.css`, pegue las reglas css.
+* Actualice el navegador o (re)inicie el servidor
+
 
 ### Términos
 
-
+Librería, marco de trabajo, bootstrapping
 
 ### Referencias
 
