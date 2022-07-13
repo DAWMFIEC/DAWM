@@ -75,7 +75,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 
 
 
-Comunicación de una via (one-way binding) 
+Comunicación de una vía (one-way binding) 
 =========================================
 
 * * *
