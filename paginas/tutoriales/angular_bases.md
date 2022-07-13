@@ -93,6 +93,7 @@ Comunicación de una via (one-way binding)
     ```
     <div>{{mensaje}}</div>
     ```   
+    
 * Actualice el navegador o (re)inicie el servidor
     
 

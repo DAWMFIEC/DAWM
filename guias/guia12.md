@@ -22,6 +22,9 @@ theme: jekyll-theme-leap-day
 * Identifique las secciones del html para reemplazar por componentes.
 	+ Cree componentes por cada una de las secciones, de acuerdo con [Angular Bases](https://dawfiec.github.io/DAWM-2022/paginas/tutoriales/angular_bases.html)
 	+ Use las secciones del html como vistas de los componentes creados
+* Identifique el texto de las vistas para reemplazar por atributos de los componentes.
+	+ Cree los atributos para cada uno de los texto, de acuerdo con [Angular Bases](https://dawfiec.github.io/DAWM-2022/paginas/tutoriales/angular_bases.html)
+	+ Muestre los atributos del componente en la vista.
 
 ### Términos
 
