@@ -90,9 +90,9 @@ Comunicación de una via (one-way binding)
   
   + Agregue las etiquetas necesarias y coloque como texto el atributo `mensaje`
   
-    
-    `<div>{{mensaje}}</div>`
-       
+    {% raw %}
+    <div> {{mensaje}} </div>
+    {% endraw %}
 
 * Actualice el navegador o (re)inicie el servidor
     
