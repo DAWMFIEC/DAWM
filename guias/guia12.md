@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 		- **Proyecto de Angular:** En la ruta `src/assets`, coloque los archivos.
 	+ CSS:
 		- **Plantilla Original:** Del archivo `css/styles.css`, copie el **contenido**.
-		- **Proyecto de Angular:** En el `src/app.component.css`, pegue las reglas css.
+		- **Proyecto de Angular:** En el `src/styles.css`, pegue las reglas css.
 
 * Actualice el navegador o (re)inicie el servidor
 
