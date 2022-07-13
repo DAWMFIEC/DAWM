@@ -46,6 +46,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
       ```
       ng g c <nombre del componente>
       ```
+
     + Se creará una carpeta con el nombre del componente, con los elementos: **.html**, **.css** y **.ts** (luego, Angular se encargará de convertir a **.js**).
     
     ![componente](imagenes/angular_bases_componente.PNG)
