@@ -4,15 +4,9 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM-2022/)
 
-Angular - Bases (Componentes y comunicación de una vía)
+Angular - Componentes y comunicación de una vía
 =======================================================
 
-
-<p align="center">
-  <img width="400" height="277" src="https://cms-assets.tutsplus.com/uploads/users/34/posts/22391/preview_image/angular-js-firebase.png">
-</p>
-
-Es un framework, en JavaScript, para crear aplicaciones web con html, css y typescript. Incorpora la combinación de plantillas, la inyección de dependencias, programación reactiva, directivas y más; mediante la aplicación buenas prácticas de programación. Las aplicaciones desarrolladas con Angular para la web, móvil o para escritorio.
 
 Componentes
 ===========
@@ -27,16 +21,22 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 
     + Desde la línea de comandos, en la ruta raíz del proyecto de Angular:
       ```
-      ng g c <nombre del componente>
+      ng g c <nombre-del-componente>
       ```
-
-    + Se creará una carpeta con el nombre del componente, con los elementos: **.html**, **.css** y **.ts** (luego, Angular se encargará de convertir a **.js**).
+    + El mensaje de `update` indica que el componente creado está incluido en el arreglo de declaraciones del componente principal (`src/app.module.ts`).
 
     <p align="center">
-      <img width="331" height="142" src="imagenes/angular_bases_componente.png">
+      <img width="790" height="125" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Component_Message.PNG">
     </p>
+
+    + Se creará una carpeta con el nombre del componente, con los elementos: **.html**, **.css**, **.ts** (luego, Angular se encargará de transpilar a **.js**) y **.spec.ts** (pruebas unitarias sobre el componente).
+
+    <p align="center">
+      <img width="331" height="142" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Create_component.PNG">
+    </p>
+
     
-    + El mensaje de `update` indica que el componente creado está incluido en el arreglo de declaraciones del componente principal (`src/app.module.ts`).
+    
 
 * Para modificar (la vista) un componente:
 
@@ -48,12 +48,14 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
     
     + Identifique el `selector` del componente hijo en el decorador de la clase:
       ```
+        ...
       @Component({
           selector: 'app-cabecera',
           templateUrl: './cabecera.component.html',
           styleUrls: ['./cabecera.component.css']
       })
       export class CabeceraComponent {
+        ...
       ```
 
     + Use el `selector` en el **.html** de cualquier otro componente
