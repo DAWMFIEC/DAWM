@@ -4,8 +4,8 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM-2022/)
 
-Angular - Bases
-====================
+Angular - Bases (Componentes y comunicación de una vía)
+=======================================================
 
 
 <p align="center">
@@ -31,18 +31,20 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
       ```
 
     + Se creará una carpeta con el nombre del componente, con los elementos: **.html**, **.css** y **.ts** (luego, Angular se encargará de convertir a **.js**).
-    
-    ![componente](imagenes/angular_bases_componente.png)
+
+    <p align="center">
+      <img width="331" height="142" src="imagenes/angular_bases_componente.png">
+    </p>
     
     + El mensaje de `update` indica que el componente creado está incluido en el arreglo de declaraciones del componente principal (`src/app.module.ts`).
 
 * Para modificar (la vista) un componente:
 
-    + Agregue/modifique las etiquetas html, en el archivo **.html** del componente.
-    + Agregue/modifique el estilo de las etiquetas html con los selectores y propiedades css, en el archivo **.css** del componente.
+    + Modifique las etiquetas html, en el archivo **.html** del componente.
+    + Modifique el estilo de las etiquetas html con los selectores y propiedades css, en el archivo **.css** del componente.
     + Actualice el navegador o (re)inicie el servidor
 
-* Para usar (renderizar) un componente:
+* Para usar (renderizar) un componente dentro de otro componente:
     
     + Identifique el `selector` del componente hijo en el decorador de la clase:
       ```
@@ -51,6 +53,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
           templateUrl: './cabecera.component.html',
           styleUrls: ['./cabecera.component.css']
       })
+      export class CabeceraComponent {
       ```
 
     + Use el `selector` en el **.html** de cualquier otro componente
@@ -69,14 +72,14 @@ Comunicación de una vía (one-way binding)
 
 * En el **.ts** del componente
 
-  + Agregue el atributo `mensaje` dentro de la clase
+  + Agregue el atributo y su tipo dentro de la clase
 
     ```
     mensaje:string = "Este es un mensaje"
     ```
 * En el **.html** del componente
   
-  + Agregue las etiquetas necesarias y coloque como texto el atributo `mensaje`
+  + Agregue las etiquetas HTML que sean necesarias y coloque como texto el atributo `mensaje` dentro de llaves dobles.
   
     `<div>` {% raw %} {{mensaje}} {% endraw %} `</div>`
 
