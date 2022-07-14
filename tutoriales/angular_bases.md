@@ -26,7 +26,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
     + El mensaje de `update` indica que el componente creado está incluido en el arreglo de declaraciones del componente principal (`src/app.module.ts`).
 
     <p align="center">
-      <img width="790" height="125" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Component_Message.PNG">
+      <img width="790" height="100" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Component_Message.PNG">
     </p>
 
     + Se creará una carpeta con el nombre del componente, con los elementos: **.html**, **.css**, **.ts** (luego, Angular se encargará de transpilar a **.js**) y **.spec.ts** (pruebas unitarias sobre el componente).
