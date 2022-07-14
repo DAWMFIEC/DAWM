@@ -41,7 +41,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 * Para modificar (la vista) un componente:
 
     + Modifique las etiquetas html, en el archivo **.html** del componente.
-    + Modifique el estilo de las etiquetas html con los selectores y propiedades css, en el archivo **.css** del componente.
+    + Modifique los selectores y propiedades css de las etiquetas html del componente, en el archivo **.css** del componente.
     + Actualice el navegador o (re)inicie el servidor
 
 * Para usar (renderizar) un componente dentro de otro componente:
@@ -77,13 +77,17 @@ Comunicación de una vía (one-way binding)
   + Agregue el atributo y su tipo dentro de la clase
 
     ```
-    mensaje:string = "Este es un mensaje"
+      ...
+    export class CabeceraComponent {
+        mensaje:string = "Este es un mensaje"
+    }
+      ...
     ```
 * En el **.html** del componente
   
   + Agregue las etiquetas HTML que sean necesarias y coloque como texto el atributo `mensaje` dentro de llaves dobles.
   
-    `<div>` {% raw %} {{mensaje}} {% endraw %} `</div>`
+    &lt;div&gt; {% raw %} {{mensaje}} {% endraw %} &lt;/div&gt;
 
 * Actualice el navegador o (re)inicie el servidor
     
