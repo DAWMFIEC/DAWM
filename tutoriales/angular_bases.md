@@ -111,6 +111,11 @@ Directivas
 
 Las directivas sirven para extender la vista y usar lógica que será ejecutada en el DOM (Document Object Model). Existen [tres tipos de directivas](https://ngchallenges.gitbook.io/project/directivas): directivas de atributo, directivas estructurales y componentes.
 
+<p align="center">
+  <img width="328" height="200" src="https://javadesde0.com/wp-content/uploads/directives-angular2.jpg">
+</p>
+
+
 Directivas estructurales - (\*ngFor)
 ------------------------------------
 
@@ -178,3 +183,4 @@ Referencias
 * Introduction to Angular Components and How to Implement It? (20202) https://www.simplilearn.com/tutorials/angular-tutorial/angular-components
 * Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
 * 🧑‍🎨Directivas🧑‍🎨 - Aprendiendo Angular. (2022). Retrieved 15 July 2022, from https://ngchallenges.gitbook.io/project/directivas
+* Introducción a las directivas y tipos de directivas en Angular - Java desde 0. (2020). Retrieved 15 July 2022, from https://javadesde0.com/introduccion-a-las-directivas-y-tipos-de-directivas-en-angular/
