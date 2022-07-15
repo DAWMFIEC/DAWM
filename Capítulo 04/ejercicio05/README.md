@@ -109,13 +109,11 @@
 
 ## Pruebas unitarias
 
-* Reemplace los archivos **.spec.ts** que se encuentran en la carpeta `specs` con los archivos correspondientes que se encuentran en los componentes.
+* Reemplace los archivos **.spec.ts** (que se encuentran en la carpeta `specs`) por los archivos correspondientes a los componentes.
+	+ `specs/app.component.spec.ts` por `src/app/app.component.spec.ts`
+	+ `specs/cabecera.component.spec.ts` por `src/app/cabecera/cabecera.component.spec.ts`
+	+ `specs/redes.component.spec.ts` por `src/app/redes/redes.component.spec.ts`
 * Desde la línea de comandos ejecute: `npm test`
-
-	+ Un ejemplo de la salida para los tests es el siguiente:
-
-![karma](imagenes/karma.png)
-
 * Los resultados posibles a las pruebas unitarias pueden ser: 
 	+ Todos fueron exitosas, o
 	+ Existen pruebas unitarias fallidas.
