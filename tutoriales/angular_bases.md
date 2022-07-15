@@ -123,10 +123,51 @@ Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
     ```
       ...
     export class CabeceraComponent {
-        mensaje:string = "Este es un mensaje"
-    }
+        terminos:any[] = [
+          {
+          "palabra":"fork",
+          "significado":"Copia de un proyecto en una dirección distinta en el repositorio",
+          "enlace":"https://es.wikipedia.org/wiki/Bifurcación_(desarrollo_de_software)",
+          "autor":"Autor 1"
+          },
+          {
+          "palabra":"saas",
+          "significado":"'Software as a Service', mediante un navegador web se accede a un software el cual se enceuntra alojado en servidores del proveedor",
+          "enlace":" http://www.portalsaas.com/que-es-saas-software-as-a-service.php",
+          "autor":"Autor 2"
+          },
+        ]
       ...
     ```
+
+* En el **.html** del componente
+  
+  + Agregue la plantilla de etiquetas HTML
+
+    ```html
+    <div class="card-columns">
+      <div class="card" *ngFor="let termino of terminos">
+        <div class="card-body">
+           <!-- Enlace -->
+           <a href="#" class="card-link"  href="{{termino.enlace}}" target="_blank">
+            <h5 class="card-title">
+              <!-- Palabra -->
+              {{termino.palabra}}
+            </h5>
+          </a>
+          <p class="card-text">    
+            <!-- Significado -->
+            {{termino.significado}}
+          </p>
+          <h6 class="card-subtitle mb-2 text-muted text-right">  
+            <!-- Autor -->
+             {{termino.autor}}
+          </h6>
+        </div>
+      </div>
+    </div>
+    ```
+* Actualice el navegador o (re)inicie el servidor
 
 Referencias 
 ===========
