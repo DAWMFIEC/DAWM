@@ -4,8 +4,8 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM-2022/)
 
-Angular - Componentes y comunicación de una vía
-=======================================================
+Angular - Componentes, Comunicación y Directivas 
+================================================
 
 
 Componentes
@@ -67,10 +67,15 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 
 
 
-Comunicación de una vía (one-way binding) 
-=========================================
+Comunicación 
+============
+
+De una vía (one-way binding) 
+----------------------------
 
 * * *
+
+Hay [más de un mecanismo de comunicación](https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/) entre el **.html** y el **.ts** . 
 
 * En el **.ts** del componente
 
@@ -95,6 +100,11 @@ Comunicación de una vía (one-way binding)
 
 * Actualice el navegador o (re)inicie el servidor
     
+Directivas 
+==========
+
+Repetición (\*ngFor)
+--------------------
 
 
 Referencias 

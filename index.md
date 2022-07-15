@@ -30,8 +30,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Angular - Local](tutoriales/angular_local.md)
 * [Angular - Bootstrap](tutoriales/angular_bootstrap.md)
-* [Angular - Componentes y One-way binding](tutoriales/angular_bases.md)
-* [Angular - Directivas y Servicios](tutoriales/angular_interaccion.md)
+* [Angular - Componentes, Comunicación y Directivas](tutoriales/angular_bases.md)
+* [Angular - Servicios](tutoriales/angular_interaccion.md)
 
 ## Indicaciones Generales
 
