@@ -137,7 +137,8 @@ Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
           },
           {
           "palabra":"saas",
-          "significado":"'Software as a Service', mediante un navegador web se accede a un software el cual se enceuntra alojado en servidores del proveedor",
+          "significado":"'Software as a Service', mediante un navegador web se accede a 
+                    un software el cual se enceuntra alojado en servidores del proveedor",
           "enlace":" http://www.portalsaas.com/que-es-saas-software-as-a-service.php",
           "autor":"Autor 2"
           },
