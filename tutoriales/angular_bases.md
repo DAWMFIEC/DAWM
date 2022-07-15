@@ -87,7 +87,7 @@ Comunicación de una vía (one-way binding)
   
   + Agregue las etiquetas HTML que sean necesarias y coloque como texto el atributo `mensaje` dentro de llaves dobles.
   
-    ```html
+    ```text
       <div>
       {{mensaje}}
       </div>
