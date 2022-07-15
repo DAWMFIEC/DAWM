@@ -128,6 +128,7 @@ Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
     ```
       ...
     export class CabeceraComponent {
+        ...
         terminos:any[] = [
           {
           "palabra":"fork",
