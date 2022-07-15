@@ -7,16 +7,8 @@ theme: jekyll-theme-leap-day
 Angular - Interacción (Directivas y Servicios)
 ==============================================
 
-<p align="center">
-  <img width="400" height="277" src="https://cms-assets.tutsplus.com/uploads/users/34/posts/22391/preview_image/angular-js-firebase.png">
-</p>
-
-Las Directivas extienden la funcionalidad del HTML usando para ello una nueva sintaxis. Con ella podemos usar lógica que será ejecutada en el DOM (Document Object Model).
-
 Directivas
 ==========
-
-
 
 Servicios 
 =========
