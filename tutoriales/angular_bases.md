@@ -70,12 +70,13 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 Comunicación 
 ============
 
-De una vía (one-way binding) 
-----------------------------
-
 * * *
 
-Hay [más de un mecanismo de comunicación](https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/) entre el **.html** y el **.ts** . 
+Hay [más de un mecanismo de comunicación](https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/) entre el **.html** y el **.ts**.
+
+
+De una vía (one-way binding) 
+----------------------------
 
 * En el **.ts** del componente
 
