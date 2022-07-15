@@ -1,6 +1,6 @@
 # Ejercicio 05
 
-![Karma.js](images/karma05.png)
+![ejercicio05](images/ejercicio05.png)
 
 
 ## Requisitos
