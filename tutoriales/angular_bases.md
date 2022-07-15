@@ -149,7 +149,7 @@ Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
   
   + Agregue la plantilla de etiquetas HTML
 
-    ```html
+    ```
     <div class="card-columns">
       <div class="card" *ngFor="let termino of terminos">
         <div class="card-body">
