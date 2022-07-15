@@ -90,6 +90,7 @@ Comunicación de una vía (one-way binding)
     &lt;div&gt; {% raw %} {{mensaje}} {% endraw %} &lt;/div&gt;
     ```
       <div>
+      \{\{mensaje}}
       {{mensaje}}
       </div>
     ```
