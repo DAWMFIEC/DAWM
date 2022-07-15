@@ -107,10 +107,22 @@ De una vía (one-way binding) - string interpolation
 Directivas 
 ==========
 
-Repetición (\*ngFor)
---------------------
+Las directivas sirven para extender la vista y usar lógica que será ejecutada en el DOM (Document Object Model). Existen tres tipos de directivas: directivas de atributo, directivas estructurales y componentes.
 
+Directivas estructurales - (\*ngFor)
+------------------------------------
 
+* En el **.ts** del componente
+
+  + Agregue el atributo y su tipo dentro de la clase
+
+    ```
+      ...
+    export class CabeceraComponent {
+        mensaje:string = "Este es un mensaje"
+    }
+      ...
+    ```
 
 Referencias 
 ===========
@@ -120,3 +132,4 @@ Referencias
 * Angular. (2021). Retrieved 1 December 2021, from [https://angular.io/](https://angular.io/)
 * Introduction to Angular Components and How to Implement It? (20202) https://www.simplilearn.com/tutorials/angular-tutorial/angular-components
 * Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
+* 🧑‍🎨Directivas🧑‍🎨 - Aprendiendo Angular. (2022). Retrieved 15 July 2022, from https://ngchallenges.gitbook.io/project/directivas
