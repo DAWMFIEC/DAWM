@@ -81,6 +81,8 @@ Hay [más de un mecanismo de comunicación](https://www.acontracorrientech.com/g
 De una vía (one-way binding) - string interpolation
 ---------------------------------------------------
 
+La interpolación se refiere a incrustar expresiones en texto marcado. De forma predeterminada, la interpolación utiliza llaves dobles {{ y }} como delimitadores.
+
 * En el **.ts** del componente
 
   + Agregue el atributo y su tipo dentro de la clase
@@ -107,10 +109,12 @@ De una vía (one-way binding) - string interpolation
 Directivas 
 ==========
 
-Las directivas sirven para extender la vista y usar lógica que será ejecutada en el DOM (Document Object Model). Existen tres tipos de directivas: directivas de atributo, directivas estructurales y componentes.
+Las directivas sirven para extender la vista y usar lógica que será ejecutada en el DOM (Document Object Model). Existen [tres tipos de directivas](https://ngchallenges.gitbook.io/project/directivas): directivas de atributo, directivas estructurales y componentes.
 
 Directivas estructurales - (\*ngFor)
 ------------------------------------
+
+Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
 
 * En el **.ts** del componente
 
