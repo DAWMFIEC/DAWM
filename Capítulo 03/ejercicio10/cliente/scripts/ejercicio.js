@@ -34,7 +34,7 @@ socket.on('new', (data) => {
 
 
 
-        //Complete la plantilla con las variables inicio.data, fin.data y fin.data
+        //Complete la plantilla con las variables inicio.value, fin.value y fin.value
         /* Inicio */
         plantillaRow += `
             <tr>
