@@ -59,7 +59,7 @@
 		</ul>
 		```
 * En **app.component.html**
-	+ Identifique las secciones de etiquetas html que serán reemplazadas con el selector del componente, por ejemplo:
+	+ Reemplace las etiquetas html `h1.fw-light` y `p.lead.text-muted`:
 
 	```html
 	<main>
@@ -74,7 +74,7 @@
 	  </section>
 	</main>
 	```
-	por
+	por el selector del componente **Cabecera**
 
 	```html
     <main>
@@ -89,7 +89,7 @@
 	</main>
 	```
 
-	y agregue la referencia al selector `<app-redes>`
+	y agregue el selector del componente **Redes**
 
 	```html
     <main>
