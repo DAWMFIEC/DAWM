@@ -74,6 +74,9 @@ Comunicación
 
 Hay [más de un mecanismo de comunicación](https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/) entre el **.html** y el **.ts**.
 
+<p align="center">
+  <img width="500" height="241" src="https://www.sneppets.com/wp-content/uploads/2020/08/data_binding_angular_9.png">
+</p>
 
 De una vía (one-way binding) 
 ----------------------------
