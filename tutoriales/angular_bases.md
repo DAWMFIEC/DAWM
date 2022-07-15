@@ -119,7 +119,7 @@ Las directivas sirven para extender la vista y usar lógica que será ejecutada 
 Directivas estructurales - (\*ngFor)
 ------------------------------------
 
-Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
+Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) podemos repetir n veces un bloque de etiquetas.
 
 * En el **.ts** del componente
 
@@ -153,14 +153,14 @@ Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
 
     ```
     <div class="card-columns">
+
       <!-- *ngFor -->
       <div class="card" *ngFor="let termino of terminos">
         <div class="card-body">
            <!-- Enlace -->
            <a href="#" class="card-link"  href="{% raw %} {{termino.enlace}} {% endraw %}" target="_blank">
             <h5 class="card-title">
-              <!-- Palabra -->
-              {% raw %} {{termino.palabra}} {% endraw %}
+              <!-- Palabra --> {% raw %} {{termino.palabra}} {% endraw %}
             </h5>
           </a>
           <p class="card-text">    
@@ -168,11 +168,11 @@ Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
              {% raw %} {{termino.significado}} {% endraw %}
           </p>
           <h6 class="card-subtitle mb-2 text-muted text-right">  
-            <!-- Autor -->
-             {% raw %} {{termino.autor}} {% endraw %}
+            <!-- Autor -->  {% raw %} {{termino.autor}} {% endraw %}
           </h6>
         </div>
       </div>
+
     </div>
     ```
 * Actualice el navegador o (re)inicie el servidor
