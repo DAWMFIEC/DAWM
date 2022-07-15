@@ -155,19 +155,19 @@ Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
       <div class="card" *ngFor="let termino of terminos">
         <div class="card-body">
            <!-- Enlace -->
-           <a href="#" class="card-link"  href="{{termino.enlace}}" target="_blank">
+           <a href="#" class="card-link"  href="{% raw %} {{termino.enlace}} {% endraw %}" target="_blank">
             <h5 class="card-title">
               <!-- Palabra -->
-              {{termino.palabra}}
+              {% raw %} {{termino.palabra}} {% endraw %}
             </h5>
           </a>
           <p class="card-text">    
             <!-- Significado -->
-            {{termino.significado}}
+             {% raw %} {{termino.significado}} {% endraw %}
           </p>
           <h6 class="card-subtitle mb-2 text-muted text-right">  
             <!-- Autor -->
-             {{termino.autor}}
+             {% raw %} {{termino.autor}} {% endraw %}
           </h6>
         </div>
       </div>
