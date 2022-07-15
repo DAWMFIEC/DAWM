@@ -85,7 +85,7 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
 
 * En el **.ts** del componente
 
-  + Agregue el atributo y su tipo dentro de la clase
+  + Agregue el atributo *mensaje*, con su tipo, dentro de la clase
 
     ```
       ...
@@ -123,7 +123,7 @@ Con esta directiva estructural podemos repetir n veces un bloque de etiquetas.
 
 * En el **.ts** del componente
 
-  + Agregue el atributo y su tipo dentro de la clase
+  + Agregue el atributo *terminos*, con su tipo, dentro de la clase
 
     ```
       ...
