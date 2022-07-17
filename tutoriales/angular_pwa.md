@@ -129,6 +129,20 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
     <img width="399" height="500" src="imagenes/angular_bases.png">
   </p>
 
+Instalación de la aplicación
+============================
+
+* * *
+
+Con PWA/Angular es más fácil hacer que nuestra aplicación web sea descargable e instalable, al igual que una aplicación móvil nativa.
+
+* En la barra de navegación de **Chrome** encontrarás las opción de instalar la aplicación en tu máquina local.
+
+![installable](imagenes/installable.JPG)
+
+* En el escritorio encontrarás el ícono de la aplicación con la que podrás acceder en cualquier momento.
+
+![icono](imagenes/icon.JPG)
 
 
 Referencias 
