@@ -118,6 +118,7 @@
 	+ `specs/redes.component.spec.ts` por `src/app/redes/redes.component.spec.ts`
 * En la ruta de su proyecto en Angular, desde la línea de comandos ejecute: `npm test`
 * Los resultados posibles a las pruebas unitarias pueden ser: 
+
 	+ Todos fueron exitosas, o
 	+ Existen pruebas unitarias fallidas.
 * En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
