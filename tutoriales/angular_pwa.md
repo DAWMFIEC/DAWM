@@ -13,6 +13,8 @@ Angular - PWA
 
 Angular nos permite implementar el modelo **Progressive Web Application (PWA)** en nuestra aplicación para hacerla parecerse a una **app nativa** para teléfonos móviles y tabletas. 
 
+Las PWA deben ser detectables, instalables, enlazables, independientes de la red, progresivas, reconectables, responsivas y seguras. 
+
 Proyecto en Angular
 ===================
 
@@ -48,6 +50,30 @@ Proyecto en producción
   <p align="center">
     <img width="399" height="500" src="imagenes/angular_bases.png">
   </p>
+
+
+Proyecto offline
+================
+
+* * *
+
+Comprueba la vista del sitio en modo fuera de línea (sin conexión al internet)
+
+* En Chrome 
+  + Inspecciona el sitio
+  + Habilita la opción `Offline`, que se encuentra en **Application > Service Workers**
+
+  <p align="center">
+    <img src="imagenes/chrome_offline.JPG">
+  </p>
+* En Mozilla firefox 
+  + Presiona `Alt`
+  + Habilita la opción `Trabajar sin conexión`, que se encuentra en el menu **Archivo**
+
+  <p align="center">
+    <img src="imagenes/firefox_offline.png">
+  </p>
+
 
 
 Referencias 
