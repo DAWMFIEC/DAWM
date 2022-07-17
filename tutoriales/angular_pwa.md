@@ -38,9 +38,10 @@ Proyecto en producción
     <img width="609" height="153" src="imagenes/buildPath.JPG">
   </p>
 * Levante un servidor HTTP con Python o con Nodejs
-  + Con Python: `python -m http.server --directory dist/<nombre-del-proyecto> 8081`
+  + Con Python: 
+    - Levante el servidor, con: `python -m http.server --directory dist/<nombre-del-proyecto> 8081`
   + Con Nodejs: 
-  	- Instale el módulo globalmente, con: `npm install -g http-server`
+  	- Instale (solo una vez) el módulo globalmente, con: `npm install -g http-server`
   	- Levante el servidor, con: `http-server -p 8082 -c-1 dist/<nombre-del-proyecto>`
 
   <p align="center">
@@ -57,9 +58,12 @@ Proyecto offline
 
 * * *
 
-Comprueba la vista del sitio en modo fuera de línea (sin conexión al internet) del **sitio en producción**
+Comprueba la vista del sitio en modo fuera de línea (sin conexión al internet) del **sitio en producción**. Esto es posible de dos posibles formas: deteniendo el servidor o simulando la conexión fuera de línea desde el navegador.
 
-* Desde el navegador 
+* Desde la línea de comandos
+  + Detenga el proceso del servidor. 
+
+* o, Desde el navegador 
   + En Chrome 
     - Inspecciona el sitio
     - Habilita la opción `Offline`, que se encuentra en **Application > Service Workers**
@@ -74,15 +78,57 @@ Comprueba la vista del sitio en modo fuera de línea (sin conexión al internet)
     <p align="center">
       <img src="imagenes/firefox_offline.png">
     </p>
-* Desde el servidor
-  + Detenga el proceso. 
 
-* Recarga el sitio. Es la vista por defecto que ofrece el navegador a un sitio sin conexión a internet.
+* Recarga el sitio en el navegador. Cada navegador ofrece una la vista por defecto para un sitio sin conexión a internet.
 
   <p align="center">
     <img src="imagenes/firefox_offline_output.png">
     <img src="imagenes/chrome_offline_output.png">
   </p>
+
+PWA
+===
+
+* * *
+
+Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
+
+* Agregue el esquema de PWA, con: **ng add @angular/pwa**
+  <p align="center">
+      <img src="imagenes/config_pwa.png">
+  </p>
+* Acepte la configuración por defecto.
+* Automáticamente se añadirán una serie de archivos nuevos y otros parámetros de configuración a nuestro proyecto con Angular.
+  + En el archivo **angular.json**:
+    - En la clave de **assets** se añadió la ruta al manifest: _src/manifest.webmanifest_
+    - Se añadió la bandera: _serviceWorker: true_
+    - En la clave **ngswConfigPath** se añadió la ruta al archivo de configuración para el service worker: _ngsw-config.json_
+  + En el archivo **package.json** se añadió dependencia a _@angular/service-worker_
+  + El archivo **ngsw-config.json** contiene la configuración y estrategias de cacheo para el service worker que crea angular.
+  + En el archivo **src/index.html:**
+    - Se añadió la etiqueta `<link>` al _manifest.webmanifest_
+    - Se añadió la etiqueta `<meta>` con el atributo _theme-color_ y un valor hexadecimal en el atributo _content_. Estos valores son leídos cuando se "instale" la aplicación en algún dispositivo.
+    - Se añadió la etiqueta `<noscript>` html tag. Esta etiqueta se muestra cuando está deshabilitada la ejecución de javascript en el navegador.
+  + Se creó el archivo **src/manifest.webmanifest** con configuración de la aplicación para cuando se "instale" en el dispositivo
+  + Se modificó el archivo **src/app/app.module.ts** con el registro del service worker _ngsw-worker.js_ (auto generado por angular basado en _ngsw-config.json_)
+  + Se creó la carpeta **src/assets/icons** con los íconos en diferentes tamaños para usarse como ícono de aplicación cuando se instale en algún dispositivo
+
+
+Comprobar PWA
+=============
+
+* * *
+
+Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
+
+* Compila el proyecto, con: `ng build`
+* Levanta un servidor HTTP con Python o con Nodejs
+* Verifica cómo funciona el sitio en modo offline (simulando desde el navegador o deteniendo el servidor)
+  - El sitio debe lucir como si continuara online
+  <p align="center">
+    <img width="399" height="500" src="imagenes/angular_bases.png">
+  </p>
+
 
 
 Referencias 
