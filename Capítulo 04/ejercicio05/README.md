@@ -116,7 +116,7 @@
 	+ `specs/app.component.spec.ts` por `src/app/app.component.spec.ts`
 	+ `specs/cabecera.component.spec.ts` por `src/app/cabecera/cabecera.component.spec.ts`
 	+ `specs/redes.component.spec.ts` por `src/app/redes/redes.component.spec.ts`
-* Desde la línea de comandos ejecute: `npm test`
+* En la ruta de su proyecto en Angular, desde la línea de comandos ejecute: `npm test`
 * Los resultados posibles a las pruebas unitarias pueden ser: 
 	+ Todos fueron exitosas, o
 	+ Existen pruebas unitarias fallidas.
