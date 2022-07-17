@@ -82,8 +82,8 @@ Comprueba la vista del sitio en modo fuera de línea (sin conexión al internet)
 * Recarga el sitio en el navegador. Cada navegador ofrece una la vista por defecto para un sitio sin conexión a internet.
 
   <p align="center">
-    <img src="imagenes/firefox_offline_output.png">
-    <img src="imagenes/chrome_offline_output.png">
+    <img src="imagenes/firefox_offline_output.png" style="float: left; width: 50%">
+    <img src="imagenes/chrome_offline_output.png" style="width: 50%">
   </p>
 
 PWA
