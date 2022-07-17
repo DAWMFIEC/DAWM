@@ -57,23 +57,32 @@ Proyecto offline
 
 * * *
 
-Comprueba la vista del sitio en modo fuera de línea (sin conexión al internet)
+Comprueba la vista del sitio en modo fuera de línea (sin conexión al internet) del **sitio en producción**
 
-* En Chrome 
-  + Inspecciona el sitio
-  + Habilita la opción `Offline`, que se encuentra en **Application > Service Workers**
+* Desde el navegador 
+  + En Chrome 
+    - Inspecciona el sitio
+    - Habilita la opción `Offline`, que se encuentra en **Application > Service Workers**
+
+    <p align="center">
+      <img src="imagenes/chrome_offline.JPG">
+    </p>
+  + En Mozilla firefox 
+    - Presiona `Alt`
+    - Habilita la opción `Trabajar sin conexión`, que se encuentra en el menu **Archivo**
+
+    <p align="center">
+      <img src="imagenes/firefox_offline.png">
+    </p>
+* Desde el servidor
+  + Detenga el proceso. 
+
+* Recarga el sitio. Es la vista por defecto que ofrece el navegador a un sitio sin conexión a internet.
 
   <p align="center">
-    <img src="imagenes/chrome_offline.JPG">
+    <img src="imagenes/firefox_offline_output.png">
+    <img src="imagenes/chrome_offline_output.png">
   </p>
-* En Mozilla firefox 
-  + Presiona `Alt`
-  + Habilita la opción `Trabajar sin conexión`, que se encuentra en el menu **Archivo**
-
-  <p align="center">
-    <img src="imagenes/firefox_offline.png">
-  </p>
-
 
 
 Referencias 
