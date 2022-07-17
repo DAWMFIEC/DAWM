@@ -137,12 +137,15 @@ Instalación de la aplicación
 Con PWA/Angular es más fácil hacer que nuestra aplicación web sea descargable e instalable, al igual que una aplicación móvil nativa.
 
 * En la barra de navegación de **Chrome** encontrarás las opción de instalar la aplicación en tu máquina local.
-
-![installable](imagenes/installable.JPG)
+  <p align="center">
+    <img width="396" height="250" src="imagenes/installable.JPG">
+  </p>
 
 * En el escritorio encontrarás el ícono de la aplicación con la que podrás acceder en cualquier momento.
 
-![icono](imagenes/icon.JPG)
+  <p align="center">
+    <img width="79" height="75" src="imagenes/icon.JPG">
+  </p>
 
 
 Referencias 
