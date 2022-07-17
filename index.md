@@ -31,6 +31,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Angular - Local](tutoriales/angular_local.md)
 * [Angular - Bootstrap](tutoriales/angular_bootstrap.md)
 * [Angular - Componentes, Comunicación y Directivas](tutoriales/angular_bases.md)
+* [Angular - PWA](tutoriales/pwa.md)
 
 ## Indicaciones Generales
 
