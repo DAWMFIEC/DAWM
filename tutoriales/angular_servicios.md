@@ -39,7 +39,7 @@ Desde la raíz del proyecto con Angular
 	  ...
 	  constructor() { }
 
-	  <b>obtenerDatos() {
+	  <b style="background-color: yellow; color:red">obtenerDatos() {
 	    let objeto = { mensaje: 'Este es un mensaje desde el servicio' }
 	    return objeto
 	  }</b>
