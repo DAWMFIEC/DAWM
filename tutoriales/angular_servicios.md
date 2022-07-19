@@ -129,7 +129,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 * La cabecera del sitio debe mostrar el mensaje `Album fotográfico`. El resultado en el navegador debe  lucir así.
 
 <p align="center">
-  <img width="60%" src="imagenes/angular_servicios_output.png">
+  <img src="imagenes/angular_servicios_output.png">
 </p>
 
 
