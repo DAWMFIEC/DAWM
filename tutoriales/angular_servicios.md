@@ -140,7 +140,7 @@ Las aplicaciones en el front-end necesitan comunicarse con un servidor a través
 
 * En **app.module.ts**,
 	+ Importe el módulo `HttpClientModule`
-	+ Registre el servicio en la lista de módulos de la clave **import**
+	+ Registre el servicio en la lista de módulos de la clave **import** para que todos los componentes puedan acceder a este servicio.
 
 	<pre><code>
 		...
@@ -164,7 +164,7 @@ Las aplicaciones en el front-end necesitan comunicarse con un servidor a través
 		    ...
 		})
 		export class AppModule { }
-		
+
 	</code></pre>
 
 * En **servicios/titular.component.ts**, 
