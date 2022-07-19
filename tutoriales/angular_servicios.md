@@ -135,7 +135,7 @@ Las aplicaciones en el front-end necesitan comunicarse con un servidor a través
 	@Injectable({
 	  providedIn: 'root'
 	})
-	export class FotosService {
+	export class TitularService {
 
 	  <b style="color:red">constructor(private http: HttpClient) { }</b>
 
