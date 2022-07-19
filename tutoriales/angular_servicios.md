@@ -15,6 +15,16 @@ Los componentes NO deben obtener o guardar datos directamente y no deben present
 
 Un servicio es un proveedor de datos, que mantiene lógica de acceso a ellos. Los servicios serán consumidos por los componentes, que delegarán en ellos la responsabilidad de acceder a la información y la realización de operaciones con los datos.
 
+Proyecto en Angular
+===================
+
+* * *
+
+Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html), [Angular - Boostrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html), [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html) y [Angular - PWA](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_pwa.html)
+
+* Instala las dependencias, con: `npm install`
+* Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
+
 Servicio
 ========
 
