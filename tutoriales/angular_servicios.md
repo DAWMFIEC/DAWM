@@ -138,8 +138,37 @@ Peticiones HTTP
 
 Las aplicaciones en el front-end necesitan comunicarse con un servidor a través del protocolo HTTP, para descargar o cargar datos y acceder a otros servicios back-end. Angular proporciona una API HTTP de cliente para aplicaciones Angular, la clase de servicio `HttpClient` en `@angular/common/http`.
 
+* En **app.module.ts**,
+	+ Importe el módulo `HttpClientModule`
+	+ Registre el servicio en la lista de módulos de la clave **import**
+
+	<pre><code>
+		...
+		import { CabeceraComponent } from './cabecera/cabecera.component';
+		import { RedesComponent } from './redes/redes.component';
+		...
+		<b style="color:red">import { HttpClientModule } from '@angular/common/http';</b>
+
+		@NgModule({
+		  declarations: [
+		    AppComponent,
+		    CabeceraComponent,
+		    RedesComponent
+		  ],
+		  imports: [
+		    BrowserModule,
+		    AppRoutingModule,
+		    
+		    <b style="color:red">HttpClientModule,</b>
+
+		    ...
+		})
+		export class AppModule { }
+		
+	</code></pre>
+
 * En **servicios/titular.component.ts**, 
-	+ Importe el módulo `HttpClient`
+  + Importe el módulo `HttpClient`
 	+ Agregue el servicio `HttpClient` como inyección de dependencia en el método constructor.
 	
 	<pre><code>
