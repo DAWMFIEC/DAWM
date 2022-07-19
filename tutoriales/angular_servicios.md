@@ -90,7 +90,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	}
   </code></pre>
 
-* Interpole el atributo `title` en el **html** para ver los resultados
+* A manera de prueba, interpole el atributo `title` en el **html** para ver los resultados
 
   ```
     <div>
@@ -99,6 +99,11 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
   ```
 
 * Actualice el navegador o (re)inicie el servidor
+* El resultado en el navegador debería lucir algo similar
+
+<p align="center">
+  <img src="imagenes/angular_servicios_output.png">
+</p>
 
 Peticiones HTTP
 ===============
