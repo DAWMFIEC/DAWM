@@ -21,9 +21,9 @@ Servicio
 Desde la raíz del proyecto con Angular
 
 * Acceda desde la línea de comandos
-* Cree el servicio **fotos**, con: `ng generate service servicios/fotos`
+* Cree el servicio **titular**, con: `ng generate service servicios/titular`
   + Se creará carpeta *servicios*, y 
-  + Se crearán los archivos `fotos.service.ts` y `fotos.service.spec.ts`
+  + Se crearán los archivos `titular.service.ts` y `titular.service.spec.ts`
   	
   <pre><code>
     import { Injectable } from '@angular/core';
@@ -31,21 +31,21 @@ Desde la raíz del proyecto con Angular
 	@Injectable({
 	  providedIn: 'root'
 	})
-	export class FotosService {
+	export class TitularService {
 
 	  constructor() { }
 	}
   </code></pre>
 
-  + Agregue la función `obtenerDatos` que retorna un objeto JSON.
+  + Agregue la función `obtenerNombreSitio` que retorna un objeto JSON.
 
 	<pre><code>
 	  ...
 	  constructor() { }
 
-	  <b style="color:red">obtenerDatos() {
-	    let objeto = { mensaje: 'Este es un mensaje desde el servicio' }
-	    return objeto
+	  <b style="color:red">obtenerNombreSitio() {
+	    let objeto = { cabecera: 'Album fotográfico' }
+      return objeto
 	  }</b>
 	}
   </code></pre>
@@ -61,11 +61,11 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 * En **app.component.ts**
 	+ Agregue el _import_ al servicio
 	+ Agregue el método _constructor_ de la clase
-	+ Inyecte la dependencia como argumento del método constructor
+	+ Inyecte la dependencia como argumento en el constructor
 
   <pre><code>
     import { Component } from '@angular/core';
-	<b>import { FotosService } from './servicios/fotos.service';</b>
+	<b>import { TitularService } from './servicios/titular.service';</b>
 
 	@Component({
 	  selector: 'app-root',
@@ -75,7 +75,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	export class AppComponent {
 	  title  = 'testAngular';
 
-	  <b style="color:red">constructor(private fotosService: FotosService) {}</b>
+	  <b style="color:red">constructor(private titularService: TitularService) {}</b>
 	}
   </code></pre>
 
@@ -83,9 +83,9 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 
   <pre><code>
   	...
-	  <b style="color:red">constructor(private fotosService: FotosService) {
-	      let objeto = fotosService.obtenerDatos()
-	      this.title = objeto.mensaje
+	  <b style="color:red">constructor(private titularService: TitularService) {
+	      let objeto = titularService.obtenerNombreSitio()
+	      this.title = objeto.cabecera
 	  }</b>
 	}
   </code></pre>
