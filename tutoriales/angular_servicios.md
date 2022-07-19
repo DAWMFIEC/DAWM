@@ -7,7 +7,9 @@ theme: jekyll-theme-leap-day
 Angular - Servicios
 ===================
 
-![injector-injects](imagenes/injector-injects.png)
+<p align="center">
+  <img width="330" height="150" src="imagenes/injector-injects.png">
+</p>
 
 Los componentes NO deben obtener o guardar datos directamente y no deben presentar datos falsos. Los componentes deben centrarse en presentar datos y delegar el acceso a los datos a un servicio.
 
@@ -87,7 +89,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	}
   </code></pre>
 
-* Interpole la variable en el **html** para ver los resultados
+* Interpole el atributo `title` en el **html** para ver los resultados
 
   ```
     <div>
