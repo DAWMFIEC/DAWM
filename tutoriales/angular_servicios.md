@@ -47,13 +47,13 @@ Desde la raíz del proyecto con Angular
 	}
   </code></pre>
 
-  + Agregue la función `obtenerNombreSitio` que retorna un objeto JSON.
+  + Agregue la función `obtenerDatosSitio` que retorna un objeto JSON.
 
 	<pre><code>
 	  ...
 	  constructor() { }
 
-	  <b style="color:red">obtenerNombreSitio() {
+	  <b style="color:red">obtenerDatosSitio() {
 	    let objeto = { cabecera: 'Album fotográfico' }
        return objeto
 	  }</b>
@@ -94,7 +94,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
   <pre><code>
   	...
 	  constructor(private titularService: TitularService) {
-	      <b style="color:red">let objeto = titularService.obtenerNombreSitio()
+	      <b style="color:red">let objeto = titularService.obtenerDatosSitio()
 	      this.title = objeto.cabecera</b>
 	  }
 	}
@@ -137,6 +137,8 @@ Peticiones HTTP
 ===============
 
 Las aplicaciones en el front-end necesitan comunicarse con un servidor a través del protocolo HTTP, para descargar o cargar datos y acceder a otros servicios back-end. Angular proporciona una API HTTP de cliente para aplicaciones Angular, la clase de servicio `HttpClient` en `@angular/common/http`.
+
+Para este caso, Angular usa los `observables` en lugar de promesas para entregar valores de [forma asíncrona](https://docs.angular.lat/guide/comparing-observables).
 
 * En **app.module.ts**,
 	+ Importe el módulo `HttpClientModule`
@@ -187,16 +189,29 @@ Las aplicaciones en el front-end necesitan comunicarse con un servidor a través
 	}
 	</code></pre>
 
-	+ Modifique la función *obtenerNombreSitio* para que haga una petición `get` mediante el objeto `http` 
+	+ Modifique la función *obtenerDatosSitio* para que mediante el objeto `http` haga una petición `get`  al URL <a href="https://dataserverdawm.herokuapp.com/album">Album</a>
 
 	<pre><code>
 		...
-		obtenerNombreSitio() {
-    	<b style="color:red">let objeto = this.http.get('https://dataserverdawm.herokuapp.com/album')</b>
-    	return objeto
+		obtenerDatosSitio() {
+    	<b style="color:red">return this.http.get('https://dataserverdawm.herokuapp.com/album')</b>
 	  }
 	  ...
 	</code></pre>
+* En **app.component.ts** 
+	+ Modifique el constructor para suscribirse a la respuesta del servicio
+
+  <pre><code>
+  	...
+	  constructor(private titularService: TitularService) {
+	      <b style="color:red">
+	      titularService.obtenerDatosSitio().subscribe(objeto => {
+		      let data = objeto as any
+		      this.title = data.cabecera
+		    })</b>
+	  }
+	}
+  </code></pre>
 
 * Actualice el navegador o (re)inicie el servidor
 * La cabecera del sitio debe mostrar el mensaje `Album fotográfico`. El resultado en el navegador debe  lucir así.
@@ -215,3 +230,4 @@ Referencias
 * Angular. (2022). Retrieved 19 July 2022, from https://angular.io/guide/dependency-injection
 * Inyección de dependencias. (2022). Retrieved 19 July 2022, from https://desarrolloweb.com/articulos/patron-diseno-contenedor-dependencias.html
 * Angular. (2022). Retrieved 19 July 2022, from https://angular.io/guide/http
+* Angular. (2022). Retrieved 19 July 2022, from https://docs.angular.lat/guide/comparing-observables
