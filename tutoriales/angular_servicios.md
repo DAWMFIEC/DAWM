@@ -55,7 +55,7 @@ Desde la raíz del proyecto con Angular
 
 	  <b style="color:red">obtenerNombreSitio() {
 	    let objeto = { cabecera: 'Album fotográfico' }
-      return objeto
+       return objeto
 	  }</b>
 	}
   </code></pre>
@@ -75,7 +75,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 
   <pre><code>
     import { Component } from '@angular/core';
-	<b>import { TitularService } from './servicios/titular.service';</b>
+	<b style="color:red">import { TitularService } from './servicios/titular.service';</b>
 
 	@Component({
 	  selector: 'app-root',
@@ -93,10 +93,10 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 
   <pre><code>
   	...
-	  <b style="color:red">constructor(private titularService: TitularService) {
-	      let objeto = titularService.obtenerNombreSitio()
-	      this.title = objeto.cabecera
-	  }</b>
+	  constructor(private titularService: TitularService) {
+	      <b style="color:red">let objeto = titularService.obtenerNombreSitio()
+	      this.title = objeto.cabecera</b>
+	  }
 	}
   </code></pre>
 
@@ -108,7 +108,11 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	    <div class="container">
 	      <a href="#" class="navbar-brand d-flex align-items-center">
 	        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-	        <strong>{% raw %} {{title}} {% endraw %} </strong>
+	        <strong>
+
+	        {% raw %}     {{title}}    {% endraw %} 
+	        
+	        </strong>
 	      </a>
 	      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
 	        <span class="navbar-toggler-icon"></span>
@@ -122,12 +126,12 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
   ```
 
 * Actualice el navegador o (re)inicie el servidor
-* El resultado en el navegador debería lucir algo similar
+* La cabecera del sitio debe mostrar el mensaje `Album fotográfico`. El resultado en el navegador debe  lucir así.
 
 <p align="center">
-  <img width="60%" src="imagenes/angular_servicios_output1.png">
-  <img width="40%" src="imagenes/angular_servicios_output2.png">
+  <img width="60%" src="imagenes/angular_servicios_output.png">
 </p>
+
 
 Peticiones HTTP
 ===============
