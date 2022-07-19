@@ -33,16 +33,10 @@ Desde la raíz del proyecto con Angular
 	}
   </code></pre>
 
-* Agregue el método `obtenerDatos` que retorna un objeto JSON.
+* Agregue la función `obtenerDatos` que retorna un objeto JSON.
 
 	<pre><code>
-	import { Injectable } from '@angular/core';
-
-	@Injectable({
-	  providedIn: 'root'
-	})
-	export class FotosService {
-
+	  ...
 	  constructor() { }
 
 	  <b>obtenerDatos() {
@@ -50,7 +44,6 @@ Desde la raíz del proyecto con Angular
 	    return objeto
 	  }</b>
 	}
-
   </code></pre>
 
 Inyección de dependencias
@@ -75,14 +68,30 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	  styleUrls: ['./app.component.css']
 	})
 	export class AppComponent {
-	  data  = 'testAngular';
+	  title  = 'testAngular';
 
+	  <b>constructor(private fotosService: FotosService) {}</b>
+	}
+  </code></pre>
+
+  + Modifique el constructor para invocar la función `obtenerDatos()` del servicio
+
+  <pre><code>
+  	...
 	  <b>constructor(private fotosService: FotosService) {
-	  	let objeto = fotosService.obtenerDatos()
-          this.data = objeto.mensaje
+	      let objeto = fotosService.obtenerDatos()
+	      this.title = objeto.mensaje
 	  }</b>
 	}
   </code></pre>
+
+* Interpole la variable en el **html** para ver los resultados
+
+  ```
+    <div>
+    {% raw %} {{title}} {% endraw %} 
+    </div>
+  ```
 
 * Actualice el navegador o (re)inicie el servidor
 
