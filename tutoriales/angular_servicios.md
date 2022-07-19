@@ -7,6 +7,8 @@ theme: jekyll-theme-leap-day
 Angular - Servicios
 ===================
 
+![injector-injects](imagenes/injector-injects.png)
+
 Los componentes NO deben obtener o guardar datos directamente y no deben presentar datos falsos. Los componentes deben centrarse en presentar datos y delegar el acceso a los datos a un servicio.
 
 Un servicio es un proveedor de datos, que mantiene lógica de acceso a ellos. Los servicios serán consumidos por los componentes, que delegarán en ellos la responsabilidad de acceder a la información y la realización de operaciones con los datos.
@@ -39,7 +41,7 @@ Desde la raíz del proyecto con Angular
 	  ...
 	  constructor() { }
 
-	  <b style="background-color: yellow; color:red">obtenerDatos() {
+	  <b style="color:red">obtenerDatos() {
 	    let objeto = { mensaje: 'Este es un mensaje desde el servicio' }
 	    return objeto
 	  }</b>
@@ -70,7 +72,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	export class AppComponent {
 	  title  = 'testAngular';
 
-	  <b>constructor(private fotosService: FotosService) {}</b>
+	  <b style="color:red">constructor(private fotosService: FotosService) {}</b>
 	}
   </code></pre>
 
@@ -78,7 +80,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 
   <pre><code>
   	...
-	  <b>constructor(private fotosService: FotosService) {
+	  <b style="color:red">constructor(private fotosService: FotosService) {
 	      let objeto = fotosService.obtenerDatos()
 	      this.title = objeto.mensaje
 	  }</b>
@@ -102,7 +104,7 @@ Peticiones HTTP
 	
 	<pre><code>
 	import { Injectable } from '@angular/core';
-	<b>import { HttpClient } from '@angular/common/http';</b>
+	<b style="color:red">import { HttpClient } from '@angular/common/http';</b>
 	
   	
 	@Injectable({
@@ -110,7 +112,7 @@ Peticiones HTTP
 	})
 	export class FotosService {
 
-	  <b>constructor(private http: HttpClient) { }</b>
+	  <b style="color:red">constructor(private http: HttpClient) { }</b>
 	}
 	</code></pre>
 
