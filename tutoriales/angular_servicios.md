@@ -187,7 +187,23 @@ Las aplicaciones en el front-end necesitan comunicarse con un servidor a través
 	}
 	</code></pre>
 
+	+ Modifique la función *obtenerNombreSitio* para que haga una petición `get` mediante el objeto `http` 
 
+	<pre><code>
+		...
+		obtenerNombreSitio() {
+    	<b style="color:red">let objeto = this.http.get('https://dataserverdawm.herokuapp.com/album')</b>
+    	return objeto
+	  }
+	  ...
+	</code></pre>
+
+* Actualice el navegador o (re)inicie el servidor
+* La cabecera del sitio debe mostrar el mensaje `Album fotográfico`. El resultado en el navegador debe  lucir así.
+
+<p align="center">
+  <img src="imagenes/angular_servicios_output.png">
+</p>
 
 Referencias 
 ===========
