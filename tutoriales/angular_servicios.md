@@ -115,7 +115,8 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 * El resultado en el navegador debería lucir algo similar
 
 <p align="center">
-  <img src="imagenes/angular_servicios_output.png">
+  <img width="60%" src="imagenes/angular_servicios_output1.png">
+  <img width="40%" src="imagenes/angular_servicios_output2.png">
 </p>
 
 Peticiones HTTP
