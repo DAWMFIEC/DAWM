@@ -106,7 +106,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	    </div>
 	  </div>
 	</header>
-	
+
 	<main>
 	...
   ```
@@ -123,7 +123,7 @@ Peticiones HTTP
 
 Las aplicaciones en el front-end necesitan comunicarse con un servidor a través del protocolo HTTP, para descargar o cargar datos y acceder a otros servicios back-end. Angular proporciona una API HTTP de cliente para aplicaciones Angular, la clase de servicio `HttpClient` en `@angular/common/http`.
 
-* En **servicios/fotos.component.ts**, 
+* En **servicios/titular.component.ts**, 
 	+ Importe el módulo `HttpClient`
 	+ Agregue el servicio `HttpClient` como inyección de dependencia en el método constructor.
 	
