@@ -58,6 +58,7 @@ Rutas
   </code></pre>
 
 * Modifique el archivo **app.component.html**
+  + La etiqueta `<router-outlet>` le dice al enrutador dónde mostrar las vistas enrutadas.
   + Reemplace TODO el contenido por
     
     ```html
@@ -81,6 +82,17 @@ Rutas
   <p align="center">
     <img src="imagenes/angular_rutas_principal.png">
   </p>
+
+
+* Para evitar el refrescamiento completo de la página, utilice la **directiva** `routerLink`
+  
+  ```html
+    <nav>
+      <a routerLink="/splash">Splash</a> |
+      <a routerLink="/principal">Principal</a>
+    </nav>   
+    <router-outlet></router-outlet>
+    ```
 
 Referencias 
 ===========
