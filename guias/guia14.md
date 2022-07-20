@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Realice el tutorial [Angular Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html)
+* Realice los tutoriales [Angular - Rutas](tutoriales/angular_rutas.md) y [Angular Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html)
 
 ### Términos
 
