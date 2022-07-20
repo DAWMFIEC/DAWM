@@ -4,186 +4,181 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM-2022/)
 
-Angular - Componentes, Comunicación y Directivas 
-================================================
+Angular - Material 
+==================
 
+[Angular Material](https://material.angular.io/) es una librería de componente de UI. Los componentes de Angular Material ayudan a construir páginas web y aplicaciones web atractivas, consistentes y funcionales mientras se adhieren a los principios del diseño web moderno como la portabilidad del navegador, la independencia del dispositivo y la degradación elegante. Ayuda a crear sitios web más rápidos, hermosos y receptivos. Está inspirado en el diseño de materiales de Google.
 
-Componentes
-===========
-
-* * *
-
-Los componentes son las unidades básicas de una interfaz de usuario en una aplicación Angular. Estos componentes están asociados con una plantilla y un subconjunto de directivas.
-
-![Componentes](https://www.simplilearn.com/ice9/free_resources_article_thumb/Components_Heirarchy-Angular_Components.PNG)
-
-* Para crear un componente:
-
-    + Desde la línea de comandos, en la ruta raíz del proyecto de Angular:
-      ```
-      ng g c <nombre-del-componente>
-      ```
-    + El mensaje de `update` indica que el componente creado está incluido en el arreglo de declaraciones del componente principal (`src/app.module.ts`).
-
-    <p align="center">
-      <img width="790" height="100" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Component_Message.PNG">
-    </p>
-
-    + Se creará una carpeta con el nombre del componente, con los elementos: **.html**, **.css**, **.ts** (luego, Angular se encargará de transpilar a **.js**) y **.spec.ts** (pruebas unitarias sobre el componente).
-
-    <p align="center">
-      <img width="331" height="142" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Create_component.PNG">
-    </p>
-
-    
-    
-
-* Para modificar (la vista) un componente:
-
-    + Modifique las etiquetas html, en el archivo **.html** del componente.
-    + Modifique los selectores y propiedades css de las etiquetas html del componente, en el archivo **.css** del componente.
-    + Actualice el navegador o (re)inicie el servidor
-
-* Para usar (renderizar) un componente dentro de otro componente:
-    
-    + Identifique el `selector` del componente hijo en el decorador de la clase:
-      ```
-        ...
-      @Component({
-          selector: 'app-cabecera',
-          templateUrl: './cabecera.component.html',
-          styleUrls: ['./cabecera.component.css']
-      })
-      export class CabeceraComponent {
-        ...
-      ```
-
-    + Use el `selector` en el **.html** de cualquier otro componente
-      ```
-      <app-cabecera></app-cabecera>
-      ``` 
-
-    + Actualice el navegador o (re)inicie el servidor
-
-
-
-Comunicación 
-============
+Proyecto en Angular
+===================
 
 * * *
 
-Hay [más de un mecanismo de comunicación](https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/) entre el **.html** y el **.ts**: string interpolation, property binding, event binding y two way databinding.
+Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html).
+
+* Instala las dependencias, con: `npm install`
+* Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
+
+
+Angular Material
+================
+
+* * *
+
+Desde la línea de comando, del proyecto de Angular:
+
+* Instale Angular Material, con: `ng add @angular/material`
+  + Seleccione el tema prediseñado
+  + Acepte el estilo de tipografía
+  + Acepte las animaciones para el navegador (browser animations)
+* Note los cambios en los archivos en
 
 <p align="center">
-  <img width="500" height="241" src="https://www.sneppets.com/wp-content/uploads/2020/08/data_binding_angular_9.png">
+  <img src="imagenes/angular_material_instalacion.png">
 </p>
 
-De una vía (one-way binding) - string interpolation
----------------------------------------------------
+* Actualice el navegador o (re)inicie el servidor
 
-La interpolación se refiere a incrustar expresiones en texto marcado. De forma predeterminada, la interpolación utiliza llaves dobles {{ y }} como delimitadores.
+Interfaz
+========
 
-* En el **.ts** del componente
+* * *
 
-  + Agregue el atributo *mensaje*, con su tipo, dentro de la clase
+Para el diseño de la interfaz, vamos a colocar algunos componentes, como: toolbar, button, card, etc.
 
-    ```
-      ...
-    export class CabeceraComponent {
-        mensaje:string = "Este es un mensaje"
-    }
-      ...
-    ```
-* En el **.html** del componente
-  
-  + Agregue las etiquetas HTML que sean necesarias y coloque como texto el atributo `mensaje` dentro de llaves dobles.
-  
-    ```
-      <div>
-      {% raw %} {{mensaje}} {% endraw %} 
-      </div>
-    ```
+**Componente de Angular Material:** Toolbar
+-------------------------------------------
+
+* En **src/app/app.module.ts**
+  + Agregue la referencia al [API del componente Toolbar](https://material.angular.io/components/toolbar/api) 
+  + Agregue el módulo **MatToolbarModule** en el arreglo `import`.
+ 
+  <pre><code>
+  ...  
+  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';  
+  <b style="color: red">import { MatToolbarModule } from '@angular/material/toolbar';</b>
+  ...  
+  imports: [  
+    BrowserModule,  
+    AppRoutingModule,  
+    BrowserAnimationsModule,  
+    <b style="color: red">MatToolbarModule,</b>
+  ],  
+  ...
+  </code></pre>
+
+* En **src/app/app.component.html**
+
+  ```
+    <mat-toolbar color="primary">
+      <span>Mi aplicación</span>
+    </mat-toolbar>
+  ```  
 
 * Actualice el navegador o (re)inicie el servidor
-    
-Directivas 
-==========
 
-Las directivas sirven para extender la vista y usar lógica que será ejecutada en el DOM (Document Object Model). Existen [tres tipos de directivas](https://ngchallenges.gitbook.io/project/directivas): directivas de atributo, directivas estructurales y componentes.
+**Componente de Angular Material:** Button + Icon
+-------------------------------------------------
 
-<p align="center">
-  <img width="328" height="200" src="https://javadesde0.com/wp-content/uploads/directives-angular2.jpg">
-</p>
+* En **src/app/app.module.ts**
+  + Agregue la referencia al [API del componente Button](https://material.angular.io/components/button/overview) y [API del componente Icon](https://material.angular.io/components/icon/api)
+  + Agregue los módulos **MatIconModule** y **MatButtonModule** en el arreglo `import`.
 
 
-Directivas estructurales - (\*ngFor)
-------------------------------------
+  <pre><code>
+  import { MatToolbarModule } from '@angular/material/toolbar';  
+  <b style="color: red">import {MatIconModule} from '@angular/material/icon';  
+  import {MatButtonModule} from '@angular/material/button';</b>
 
-Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) podemos repetir n veces un bloque de etiquetas.
+  ...  
+  imports: [  
+    BrowserModule,  
+    AppRoutingModule,  
+    BrowserAnimationsModule,  
+    MatToolbarModule,  
+    <b style="color: red">MatIconModule,  
+    MatButtonModule</b>
+  ],  
+  ...
+  </code></pre>
 
-* En el **.ts** del componente
+* En **src/app/app.component.html**
 
-  + Agregue el atributo *terminos*, con su tipo, dentro de la clase
+  ```
+    <mat-toolbar color="primary">  
+      <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">  
+         <mat-icon>menu</mat-icon>  
+      </button>  
+      <span>Mi aplicación</span>  
+    </mat-toolbar>
+  ```
 
-    ```
-      ...
-    export class CabeceraComponent {
-        ...
-        terminos:any[] = [
-          {
-          "palabra":"fork",
-          "significado":"Copia de un proyecto en una dirección distinta en el repositorio",
-          "enlace":"https://es.wikipedia.org/wiki/Bifurcación_(desarrollo_de_software)",
-          "autor":"Autor 1"
-          },
-          {
-          "palabra":"saas",
-          "significado":"'Software as a Service', mediante un navegador web se accede a 
-                    un software el cual se enceuntra alojado en servidores del proveedor",
-          "enlace":" http://www.portalsaas.com/que-es-saas-software-as-a-service.php",
-          "autor":"Autor 2"
-          },
-        ]
-      ...
-    ```
-
-* En el **.html** del componente
-  
-  + Agregue la plantilla de etiquetas HTML
-
-    ```
-    <div class="card-columns">
-
-      <!-- *ngFor -->
-      <div class="card" *ngFor="let termino of terminos">
-        <div class="card-body">
-           <!-- Enlace -->
-           <a href="#" class="card-link"  href="{% raw %} {{termino.enlace}} {% endraw %}" target="_blank">
-            <h5 class="card-title">
-              <!-- Palabra --> {% raw %} {{termino.palabra}} {% endraw %}
-            </h5>
-          </a>
-          <p class="card-text">    
-            <!-- Significado -->
-             {% raw %} {{termino.significado}} {% endraw %}
-          </p>
-          <h6 class="card-subtitle mb-2 text-muted text-right">  
-            <!-- Autor -->  {% raw %} {{termino.autor}} {% endraw %}
-          </h6>
-        </div>
-      </div>
-
-    </div>
-    ```
 * Actualice el navegador o (re)inicie el servidor
+
+
+**Componente de Angular Material:** Card
+-------------------------------------------------
+
+* En **src/app/app.module.ts**
+  + Agregue la referencia al [API del componente Card](https://material.angular.io/components/card/api)
+  + Agregue el módulo **MatCardModule** en el arreglo `import`.
+
+
+  <pre><code>
+  import { MatToolbarModule } from '@angular/material/toolbar';
+  import {MatIconModule} from '@angular/material/icon';  
+  import {MatButtonModule} from '@angular/material/button';
+  <b style="color: red">import {MatCardModule} from '@angular/material/card';</b>
+
+  ...  
+  imports: [  
+    BrowserModule,  
+    AppRoutingModule,  
+    BrowserAnimationsModule,  
+    MatToolbarModule,
+    MatIconModule,  
+    MatButtonModule,  
+    <b style="color: red">MatCardModule</b>
+  ],  
+  ...
+  </code></pre>
+
+* En **src/app/app.component.html**
+
+  ```
+    <mat-toolbar color="primary">  
+      <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">  
+         <mat-icon>menu</mat-icon>  
+      </button>  
+      <span>Mi aplicación</span>  
+    </mat-toolbar>
+    <mat-card class="example-card">
+      <mat-card-header>
+        <div mat-card-avatar class="example-header-image"></div>
+        <mat-card-title>Shiba Inu</mat-card-title>
+        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+      </mat-card-header>
+      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+      <mat-card-content>
+        <p>
+          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+          bred for hunting.
+        </p>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-button>LIKE</button>
+        <button mat-button>SHARE</button>
+      </mat-card-actions>
+    </mat-card>
+  ```
+
+* Actualice el navegador o (re)inicie el servidor
+
 
 Referencias 
 ===========
 
 * * *
 
-* Angular. (2021). Retrieved 1 December 2021, from [https://angular.io/](https://angular.io/)
-* Introduction to Angular Components and How to Implement It? (20202) https://www.simplilearn.com/tutorials/angular-tutorial/angular-components
-* Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
-* 🧑‍🎨Directivas🧑‍🎨 - Aprendiendo Angular. (2022). Retrieved 15 July 2022, from https://ngchallenges.gitbook.io/project/directivas
-* Introducción a las directivas y tipos de directivas en Angular - Java desde 0. (2020). Retrieved 15 July 2022, from https://javadesde0.com/introduccion-a-las-directivas-y-tipos-de-directivas-en-angular/
+* Angular Material Tutorial. (2022). Retrieved 20 July 2022, from https://www.tutorialspoint.com/angular_material/index.htm
