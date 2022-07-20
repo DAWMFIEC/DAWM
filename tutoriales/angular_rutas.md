@@ -61,17 +61,22 @@ Rutas
   + Reemplace TODO el contenido por
     
     ```html
+    <nav>
+      <a href="/splash">Splash</a> |
+      <a href="/principal">Principal</a>
+    </nav>   
     <router-outlet></router-outlet>
     ```
 
 * Inicie el servidor, con: `ng serve -o`
-  + Por defecto, la aplicación se redirige a la ruta **http://localhost:4200/splash**
+  + Por defecto, la aplicación se redirige a la ruta **http://localhost:4200/splash** en cualquier caso
+  + Acceda al enlace **Splash** con la ruta **http://localhost:4200/splash**
 
   <p align="center">
     <img src="imagenes/angular_rutas_splash.png">
   </p>
 
-  + Acceda a la ruta **http://localhost:4200/principal**
+  + Acceda al enlace **Principal** con la ruta **http://localhost:4200/principal**
 
   <p align="center">
     <img src="imagenes/angular_rutas_principal.png">
