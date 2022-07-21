@@ -39,7 +39,13 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
       SET DEBUG=misitio:\* & npm start
   </code></pre>
     
-* Acceda a los rutas por defecto del sitio.
+* Acceda al URL `http://localhost:3000/` 
+
+
+  <p align="center" style="border: solid 1pt black;">
+    <img width="538" height="250" src="imagenes/express_sitio_base.png">
+  </p>
+
 
 
 Referencias 
