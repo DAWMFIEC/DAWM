@@ -6,10 +6,10 @@ theme: jekyll-theme-leap-day
 
 ## NPM
 
-### Proxy
+### Descarga de módulos
 
 * Al ejecutar desde la línea de comandos `npm install @angular/cli`
-	+ **Problema:** no continúa la descarga de módulos
+	+ **Problema:** no descarga o descarga detenida de módulos vía npm 
 	  ![comandos](imagenes/comandos.png)
 	+ **Solución:**
 		- Agregue un proxy para la petición de módulos
@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
 		npm config set https-proxy <URL-PROXY>
 		```
 
-### Comandos executables
+### ng (Comando executable)
 * Al ejecutar desde la línea de comandos `ng`
 	+ **Problema:** no se reconoce el comando ng luego de instalar `npm install @angular/cli`
 	![ng not found](imagenes/ngnotfound.png)
@@ -32,6 +32,8 @@ theme: jekyll-theme-leap-day
 
 ## Angular
 
+### No resuelve la ruta de archivos estáticos
+
 * Al ejecutar desde la línea de comandos `ng serve`
 	+ **Problema:**   
 		```
@@ -41,5 +43,18 @@ theme: jekyll-theme-leap-day
 		- Mueva la estructura de archivos con la imagen a la ruta `src/assets`
 		- Cambie la referencia por `'assets/yyy/zzz/image.jpg'` en el archivo
 
-### Angular CLI
 
+### Error de dependencias
+
+* Por línea de comandos, al instalar: `ng add @angular/pwa`
+	+ **Problema:** error al resolver las dependencias de ciertos módulos
+	![dependencias](imagenes/dependencias.jpg)
+	+ **Solución:** 
+
+	```
+	npm uninstall -g angular-cli
+	npm cache clean
+	npm install -g angular-cli@latest
+	```
+
+	Referencias: [How to upgrade Angular CLI project?](https://stackoverflow.com/questions/41403810/how-to-upgrade-angular-cli-project)
