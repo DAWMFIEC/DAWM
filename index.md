@@ -42,6 +42,7 @@ Angular
 Express
 -------
 
+* [Express - Bases](tutoriales/express_bases.md)
 
 REST
 ----
