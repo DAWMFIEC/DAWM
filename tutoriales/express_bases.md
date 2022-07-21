@@ -32,27 +32,26 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 
 * El generador producirá la siguiente estructura de archivos:
 
-  ```
+  <pre><code>
     .
-    ├── app.js
-    ├── package.json
+    ├── app.js           <b style="background-color: #FFCC00;"># La aplicación que se ejecutará en el servidor</b>
+    ├── package.json     <b style="background-color: #FFCC00;"># Módulos de la aplicación</b>
     ├── package-lock.json
     ├── bin
-    │   └── www
-    ├── package.json
-    ├── public
+    │   └── www          <b style="background-color: #FFCC00;"># Punto de arranque de la aplicación</b>
+    ├── public           <b style="background-color: #FFCC00;"># Directorio de archivos estáticos</b>
     │   ├── images
     │   ├── javascripts
     │   └── stylesheets
     │       └── style.css
-    ├── routes
+    ├── routes           <b style="background-color: #FFCC00;"># Rutas de la aplicación en módulos separados</b>
     │   ├── index.js
     │   └── users.js
-    └── views
+    └── views            <b style="background-color: #FFCC00;"># Vistas de la aplicación por renderizar</b>
         ├── error.ejs
         └── index.ejs
 
-  ```
+  </code></pre>
 
 
 * Compruebe el funcionamiento del servidor, con:  
@@ -66,7 +65,7 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 * Acceda al URL `http://localhost:3000/` 
 
 
-  <p align="center" style="border: 2pt solid black;">
+  <p align="center" style="border: 0.5pt solid black;">
     <img width="538" height="250" src="imagenes/express_sitio_base.png">
   </p>
 
