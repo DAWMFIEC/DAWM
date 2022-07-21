@@ -30,6 +30,30 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
     <img width="427" height="495" src="imagenes/express_sitio_prueba.JPG">
   </p>
 
+* El generador producirá la siguiente estructura de archivos:
+
+  ```
+    .
+    ├── app.js
+    ├── package.json
+    ├── package-lock.json
+    ├── bin
+    │   └── www
+    ├── package.json
+    ├── public
+    │   ├── images
+    │   ├── javascripts
+    │   └── stylesheets
+    │       └── style.css
+    ├── routes
+    │   ├── index.js
+    │   └── users.js
+    └── views
+        ├── error.ejs
+        └── index.ejs
+
+  ```
+
 
 * Compruebe el funcionamiento del servidor, con:  
   
@@ -42,7 +66,7 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 * Acceda al URL `http://localhost:3000/` 
 
 
-  <p align="center" style="border: solid 1pt black;">
+  <p align="center" style="border: 2pt solid black;">
     <img width="538" height="250" src="imagenes/express_sitio_base.png">
   </p>
 
