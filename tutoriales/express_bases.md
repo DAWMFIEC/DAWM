@@ -34,20 +34,20 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 
   <pre><code>
     .
-    ├── app.js           <b style="background-color: #FFCC00;"># La aplicación que se ejecutará en el servidor</b>
-    ├── package.json     <b style="background-color: #FFCC00;"># Módulos de la aplicación</b>
+    ├── app.js           <b style="background-color: #9b47d3;"># La aplicación que se ejecutará en el servidor</b>
+    ├── package.json     <b style="background-color: #9b47d3;"># Módulos de la aplicación</b>
     ├── package-lock.json
     ├── bin
-    │   └── www          <b style="background-color: #FFCC00;"># Punto de arranque de la aplicación</b>
-    ├── public           <b style="background-color: #FFCC00;"># Directorio de archivos estáticos</b>
+    │   └── www          <b style="background-color: #9b47d3;"># Punto de arranque de la aplicación</b>
+    ├── public           <b style="background-color: #9b47d3;"># Directorio de archivos estáticos</b>
     │   ├── images
     │   ├── javascripts
     │   └── stylesheets
     │       └── style.css
-    ├── routes           <b style="background-color: #FFCC00;"># Rutas de la aplicación en módulos separados</b>
+    ├── routes           <b style="background-color: #9b47d3;"># Rutas de la aplicación en módulos separados</b>
     │   ├── index.js
     │   └── users.js
-    └── views            <b style="background-color: #FFCC00;"># Vistas de la aplicación por renderizar</b>
+    └── views            <b style="background-color: #9b47d3;"># Vistas de la aplicación por renderizar</b>
         ├── error.ejs
         └── index.ejs
   </code></pre>
