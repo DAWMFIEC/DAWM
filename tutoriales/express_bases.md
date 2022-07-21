@@ -7,7 +7,9 @@ theme: jekyll-theme-leap-day
 Express - Bases
 ===============
 
-
+<p align="center">
+  <img width="300" height="150" src="imagenes/node_express.png">
+</p>
 
 
 Node.js® es un entorno de ejecución para JavaScript construido con el [motor de JavaScript V8 de Chrome (Enlaces a un sitio externo.)](https://v8.dev/ "https://v8.dev/"). Mientras que Express permite crear una infraestructura web rápida, minimalista y flexible para Node.js
@@ -24,7 +26,9 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 
 * Cree un sitio de prueba llamado **misitio**, con: `express --view=ejs misitio`
   
-  
+  <p align="center">
+    <img width="427" height="495" src="imagenes/express_sitio_prueba.JPG">
+  </p>
 
 * El generador producirá la siguiente estructura de archivos:
 
@@ -60,7 +64,9 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 * Acceda al URL `http://localhost:3000/` 
 
 
-  
+  <p align="center" style="border: 0.5pt solid black;">
+    <img width="538" height="250" src="imagenes/express_sitio_base.png">
+  </p>
 
 
 
