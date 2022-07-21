@@ -40,3 +40,6 @@ theme: jekyll-theme-leap-day
 	+ **Solución:**
 		- Mueva la estructura de archivos con la imagen a la ruta `src/assets`
 		- Cambie la referencia por `'assets/yyy/zzz/image.jpg'` en el archivo
+
+### Angular CLI
+
