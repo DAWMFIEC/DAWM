@@ -68,6 +68,13 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
     <img width="538" height="250" src="imagenes/express_sitio_base.png">
   </p>
 
+* El servidor en Express tiene las siguientes características
+
+  <pre><code>
+    
+
+    
+  </code></pre>
 
 
 Referencias 
