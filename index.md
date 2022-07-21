@@ -28,8 +28,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ## Tutoriales
 
-Angular
--------
+#### Angular
+
 
 * [Angular - Local](tutoriales/angular_local.md)
 * [Angular - Bootstrap](tutoriales/angular_bootstrap.md)
@@ -39,14 +39,13 @@ Angular
 * [Angular - Material](tutoriales/angular_material.md)
 * [Angular - Servicios](tutoriales/angular_servicios.md)
 
-Express
--------
+#### Express
+
 
 * [Express - Bases](tutoriales/express_bases.md)
 * [Express - Bootstrap](tutoriales/express_bootstrap.md)
 
-REST
-----
+#### REST
 
 ## Indicaciones Generales
 
