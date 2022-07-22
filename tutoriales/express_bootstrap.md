@@ -99,7 +99,7 @@ Bootstrap - Dashboard example
 * Acceda al URL `http://localhost:3000/` 
 
 <p align="center" style="border: 0.5pt solid black;">
-  <img width="306" height="250" src="imagenes/express_bootstrap.png">
+  <img src="imagenes/express_bootstrap.png">
 </p>
 
 Referencias 
