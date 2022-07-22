@@ -68,7 +68,7 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
     <img width="538" height="250" src="imagenes/express_sitio_base.png">
   </p>
 
-* La aplicación que se ejecutará en el servidor, en el archivo `app.js`, tiene las siguientes partes
+* La aplicación que se ejecutará en el servidor, en el archivo `app.js`, con las siguientes partes
   + Módulos para la aplicación web
 
   <pre><code>
@@ -82,8 +82,8 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
   + Ruteadores 
 
   <pre><code>
-    var indexRouter = require('./routes/index'); <b style="background-color: #9b47d3;"># Manejador de subrutas para la ruta raíz / </b>
-    var usersRouter = require('./routes/users'); <b style="background-color: #9b47d3;"># Manejador de subrutas para la ruta raíz /users </b>
+    var indexRouter = require('./routes/index'); <b style="background-color: #9b47d3;"># Carga del manejador de subrutas para la ruta raíz</b>
+    var usersRouter = require('./routes/users'); <b style="background-color: #9b47d3;"># Carga del manejador de subrutas para la ruta users </b>
   </code></pre>  
 
   + Instanciación de la aplicación
@@ -103,7 +103,7 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
   + Configuración de la aplicación
 
   <pre><code>
-    app.use(logger('dev'));                             <b style="background-color: #9b47d3;"># Instanciación del registrador (logger) de acciones </b>
+    app.use(logger('dev'));                             <b style="background-color: #9b47d3;"># Instanciación del registrador (logger) de acciones para el MODO DE DESARROLLO</b>
     app.use(express.json());                            <b style="background-color: #9b47d3;"># Este método se usa para analizar las solicitudes entrantes con cargas JSON y se basa en el analizador de cuerpo de mensajes HTTP.</b>
     app.use(express.urlencoded({ extended: false }));   <b style="background-color: #9b47d3;"># Analiza las requests entrantes con cargas codificadas y se basa en body-parser. </b>
     app.use(cookieParser());                            <b style="background-color: #9b47d3;"># Manejo de cookies entre el cliente y el servidor </b>
@@ -113,7 +113,31 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 
   + Rutas
 
-  <pre><code></code></pre>
+  <pre><code>
+    app.use('/', indexRouter);              <b style="background-color: #9b47d3;"># Pareo entre la ruta raíz y el manejador de subrutas</b>
+    app.use('/users', usersRouter);         <b style="background-color: #9b47d3;"># Pareo entre la ruta users y el manejador de subrutas</b>
+  </code></pre>
+
+
+  + Middleware para errores
+
+  <pre><code>
+    // catch 404 and forward to error handler
+    app.use(function(req, res, next) {
+      next(createError(404));               <b style="background-color: #9b47d3;"># En caso de cualquier error, lanzar un error404 </b>
+    });
+  
+    // error handler
+    app.use(function(err, req, res, next) {
+      // set locals, only providing error in development
+      res.locals.message = err.message;
+      res.locals.error = req.app.get('env') === 'development' ? err : {}; <b style="background-color: #9b47d3;"># Los errores se mostrarán en el MODO DE DESARROLLO </b>
+
+      // render the error page
+      res.status(err.status || 500);
+      res.render('error');
+    });
+  </code></pre>
 
 
 Referencias 
