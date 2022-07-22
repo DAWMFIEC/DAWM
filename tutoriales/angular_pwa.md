@@ -93,6 +93,9 @@ PWA
 
 Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
 
+* Actualice las dependencias del proyecto, con los siguientes 2 comandos:
+  + `npm update`
+  + `ng update`
 * Agregue el esquema de PWA, con: **ng add @angular/pwa**
   <p align="center">
       <img src="imagenes/config_pwa.png">
