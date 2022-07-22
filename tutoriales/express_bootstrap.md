@@ -8,7 +8,7 @@ Express - Bootstrap
 ===============
 
 
-Proyecto en Angular
+Proyecto en Express
 ===================
 
 * * *
