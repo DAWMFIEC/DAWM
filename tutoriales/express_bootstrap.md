@@ -107,5 +107,5 @@ Referencias
 
 * * *
 
-* Express Tutorial Part 2: Creating a skeleton website - Learn web development | MDN. (2022). Retrieved 22 July 2022, from https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website#enable_server_restart_on_file_changes
+* Express Tutorial Part 2: Creating a skeleton website - Learn web development MDN. (2022). Retrieved 22 July 2022, from https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/skeleton_website#enable_server_restart_on_file_changes
 * Mark Otto, a. (2022). Bootstrap. Retrieved 22 July 2022, from https://getbootstrap.com/
