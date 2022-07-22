@@ -34,11 +34,11 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 
   <pre><code>
     .
-    ├── app.js           <b style="background-color: #9b47d3;"># La aplicación que se ejecutará en el servidor</b>
+    ├── app.js           <b style="background-color: #9b47d3;"># Configuración para la aplicación que se ejecutará en el servidor</b>
     ├── package.json     <b style="background-color: #9b47d3;"># Módulos de la aplicación</b>
     ├── package-lock.json
     ├── bin
-    │   └── www          <b style="background-color: #9b47d3;"># Punto de arranque de la aplicación</b>
+    │   └── www          <b style="background-color: #9b47d3;"># Punto de arranque de la aplicación - Lee el archivo app.js</b>
     ├── public           <b style="background-color: #9b47d3;"># Directorio de archivos estáticos</b>
     │   ├── images
     │   ├── javascripts
@@ -68,7 +68,7 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
     <img width="538" height="250" src="imagenes/express_sitio_base.png">
   </p>
 
-* La aplicación que se ejecutará en el servidor, en el archivo `app.js`, con las siguientes partes
+* El archivo `app.js` contiene la configuración para la aplicación web, con las siguientes partes
   + Módulos para la aplicación web
 
   <pre><code>
