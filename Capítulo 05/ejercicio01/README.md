@@ -1,12 +1,11 @@
-# Ejercicio 06
+# Ejercicio 01
 
-![ejercicio06](imagenes/ejercicio06.png)
+![ejercicio01](imagenes/ejercicio01.png)
 
 
 ## Requisitos
 
-* Completar las actividades de [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) y [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html)
-* Tome como referencia las instrucciones en [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html)
+* Tome como referencia las instrucciones en [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) y [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html).
 
 ## Instrucciones
 
