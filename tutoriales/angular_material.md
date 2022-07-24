@@ -180,6 +180,14 @@ Para el diseño de la interfaz, vamos a colocar algunos componentes, como: toolb
 
 * Actualice el navegador o (re)inicie el servidor
 
+* Cambie la vista al tamaño de un dispositivo móvil. 
+  + El resultados debe lucir similar a
+
+  <p align="center">
+    <img src="imagenes/angular_material_resultado.png">
+  </p>
+
+
 
 Referencias 
 ===========
