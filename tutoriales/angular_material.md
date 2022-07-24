@@ -72,7 +72,7 @@ Para el diseño de la interfaz, vamos a colocar algunos componentes, como: toolb
   ...
   </code></pre>
 
-* En **src/app/app.component.html**
+* En **src/app/app.component.html** reemplace el contenido anterior por:
 
   ```
     <mat-toolbar color="primary">
@@ -107,7 +107,7 @@ Para el diseño de la interfaz, vamos a colocar algunos componentes, como: toolb
   ...
   </code></pre>
 
-* En **src/app/app.component.html**
+* Modifique **src/app/app.component.html**
 
   ```
     <mat-toolbar color="primary">  
@@ -148,7 +148,7 @@ Para el diseño de la interfaz, vamos a colocar algunos componentes, como: toolb
   ...
   </code></pre>
 
-* En **src/app/app.component.html**
+* Modifique **src/app/app.component.html**
 
   ```
     <mat-toolbar color="primary">  
