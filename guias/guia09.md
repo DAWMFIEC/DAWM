@@ -11,6 +11,9 @@ theme: jekyll-theme-leap-day
 * Revisión de ejercicios previos: dudas y comentarios.
 * Heroku es un [PaaS](https://www.ambit-bst.com/blog/definici%C3%B3n-de-iaas-paas-y-saas-en-qu%C3%A9-se-diferencian) enfocado en resolver el despliegue de una aplicación, permite manejar los servidores y sus configuraciones, escalamiento y la administración. Con Heroku solo deben indicar el lenguaje de backend estás utilizando o qué base de datos vas a utilizar, y solo debes ocuparte del desarrollo de tu aplicación.
 
+### Ruta de la aplicación web
+
+* En adelante, se usará el término **ruta de la aplicación web** como la ubicación en su máquina local donde se encuentre el archivo `index.html` y los archivos necesario para la aplicación web (hojas de estilo, scripts, imágenes, svg, etc).
 
 ### Actividades
 
@@ -23,7 +26,7 @@ theme: jekyll-theme-leap-day
 
 * Git + Github
 
-	+ En la línea de comandos, desde la ruta donde se encuentra la plantilla de un sitio básico:
+	+ En la línea de comandos, desde la **ruta de la aplicación web**:
 
 		- Inicializa el repositorio localmente, con: ```git init .``` 
 		- Agrega el URL de tu repositorio remoto, con:  
@@ -43,7 +46,7 @@ theme: jekyll-theme-leap-day
 
 		- Obtén una cuentan en [Heroku](https://signup.heroku.com/login).
 		- Descargar e instalar el [heroku-cli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install).
-		- Desde la línea de comandos en la ruta del sitio web, accede a Heroku, con: ```heroku login```
+		- Desde la línea de comandos en la **ruta de la aplicación web**, accede a Heroku, con: ```heroku login```
 
 		Se le pedirá que presione cualquier tecla para ir a su navegador web y completar el inicio de sesión.
 		![logindone.jpg](./imagenes/logindone.JPG)
@@ -68,6 +71,7 @@ theme: jekyll-theme-leap-day
 
 	+ Ahora, vamos a decirle a Heroku el ambiente de ejecución ([buildpacks](https://devcenter.heroku.com/articles/buildpacks)) de la aplicación. Heroku soporta ambientes de ejecución para Ruby, Python, Java, Clojure, Node.js, Scala, Go y PHP. 
 
+		- En la **ruta de la aplicación web**. 
 		- Crea el archivo composer.json. Agregue como contenido al composer.json:
 
 		```
@@ -80,14 +84,14 @@ theme: jekyll-theme-leap-day
 
 * Despliegue
 	
-	+ Desde la línea de comandos en la ruta del proyecto:
+	+ Desde la línea de comandos en la **ruta de la aplicación web**:
 
 		- Agregue los cambios en `origin` y `heroku` con las instrucciones de *git*.
 
 		```
 		  git add .
 		  git commit -m "composer.json"
-		  git push origin main
+		  git push origin main  <b style="color: red"># Este push es solo necesario cuando desea enviar la versión local a la versión remota</b>
 		  git push heroku main
 		```
 
