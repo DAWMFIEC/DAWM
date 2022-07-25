@@ -7,6 +7,10 @@ theme: jekyll-theme-leap-day
 Heroku
 ======
 
+  <p align="center">
+    <img width="317" height="120" src="imagenes/heroku.webp">
+  </p>
+
 Heroku permite manejar las aplicaciones desde la línea de comando o desde la interfaz web.
 
 Ruta de la aplicación web
