@@ -25,8 +25,8 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](ht
 * Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
 
 
-Angular Material
-================
+Instalación de Angular Material
+===============================
 
 * * *
 
