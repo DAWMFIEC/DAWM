@@ -57,7 +57,7 @@ Rutas
   export class AppRoutingModule { }
   </code></pre>
 
-* Modifique el archivo **app.component.html**
+* Modifique el archivo **src/app/app.component.html**
   + La etiqueta `<router-outlet>` le dice al enrutador dónde mostrar las vistas enrutadas.
   + Reemplace TODO el contenido por
     
