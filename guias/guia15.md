@@ -24,8 +24,8 @@ theme: jekyll-theme-leap-day
 * Descargue y descomprima los componentes
 * Copie y guarde las carpetas **splash**, **principal** y **album** dentro de la carpeta `src/app`
 * Copie y guarde la carpeta **imagenes** dentro de la carpeta `src/assets`
-* Registre los componentes en `src/app/app.module.ts`
-  + Agregue la referencia a los componentes **splash**, **principal** y **album**.
+* Para utilizar los componentes copiados, registre los componentes en `src/app/app.module.ts`
+  + Agregue la referencia a los componentes nuevos **splash**, **principal** y **album**.
 
     <pre><code>
   	...
@@ -41,7 +41,7 @@ theme: jekyll-theme-leap-day
   	...
     </code></pre>
 
-  + Agregue los módulos en el arreglo *declarations*
+  + Agregue los componentes nuevos en el arreglo *declarations*
 
     <pre><code>
   	...
@@ -58,7 +58,45 @@ theme: jekyll-theme-leap-day
   	...
     </code></pre>
 
-* Modifique el archivo **src/app/app-routing.module.ts**
+    + Agregue la referencia a los módulos de Angular Material: `MatGridListModule`, `MatIconModule` y `MatButtonModule`
+
+	<pre><code>
+	...
+	import { PrincipalComponent } from './principal/principal.component';
+	import { AlbumComponent } from './album/album.component';
+	...
+	<b style="color: red">
+	import {MatGridListModule} from '@angular/material/grid-list';
+	import {MatIconModule} from '@angular/material/icon';
+	import {MatButtonModule} from '@angular/material/button';
+	</b>
+	...
+	@NgModule({
+	  declarations: [
+	    AppComponent,
+	...
+	</code></pre>
+
+	+ Agregue los módulos de Angular Material en el arreglo *imports*
+
+    <pre><code>
+  	...
+  	imports: [
+	    BrowserModule,
+	    AppRoutingModule,
+	    BrowserAnimationsModule,
+	    <b style="color: red">
+	    MatGridListModule,
+	    MatIconModule,  
+	    MatButtonModule
+	    </b>
+	  ],
+	providers: [],
+	bootstrap: [AppComponent]
+  	...
+    </code></pre>
+
+* Para manejar las rutas en el URL, modifique el archivo **src/app/app-routing.module.ts**
   + Agregue la referencia a los componentes **splash**, **principal** y **album**.
   
     <pre><code>
@@ -91,6 +129,8 @@ theme: jekyll-theme-leap-day
   	...  
   	</code></pre>
 
+
+
 * Modifique la vista (**src/app/app.component.html**) del AppComponent
   + La etiqueta `<router-outlet>` le dice al enrutador dónde mostrar las vistas enrutadas.
   + Reemplace TODO el contenido por
@@ -102,8 +142,14 @@ theme: jekyll-theme-leap-day
 * Cambie la vista al tamaño de un dispositivo móvil. 
   + Para la ruta `http://localhost:4200/splash` debe lucir similar a
 
-	<p align="center">
+	<p align="center" width="30%">
 	  <img src="imagenes/angular_material_splash.png">
+	</p>
+	<p align="center" width="30%">
+	  <img src="imagenes/angular_material_principal.png">
+	</p>
+	<p align="center" width="30%">
+	  <img src="imagenes/angular_material_album.png">
 	</p>
 
 
