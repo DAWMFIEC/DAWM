@@ -93,7 +93,7 @@ PWA
 
 Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
 
-* Agregue el esquema de PWA, con: **ng add @angular/pwa**
+* Agregue el esquema de PWA, con: `ng add @angular/pwa`
   <p align="center">
       <img src="imagenes/config_pwa.png">
   </p>

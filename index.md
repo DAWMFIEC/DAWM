@@ -28,8 +28,11 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ## Tutoriales
 
-#### Angular
+#### Heroku
 
+* [Heroku - Despliegue](tutoriales/heroku_deploy.md)
+
+#### Angular
 
 * [Angular - Local](tutoriales/angular_local.md)
 * [Angular - Bootstrap](tutoriales/angular_bootstrap.md)
@@ -40,7 +43,6 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Angular - Servicios](tutoriales/angular_servicios.md)
 
 #### Express
-
 
 * [Express - Bases](tutoriales/express_bases.md)
 * [Express - Bootstrap](tutoriales/express_bootstrap.md)
