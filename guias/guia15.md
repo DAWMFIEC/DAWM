@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
   + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice el ejemplo de la creación de **Rutas** de los **Componentes**.
 
 * Descargue y descomprima los [componentes y assets](archivos/guia15_recursos.zip)
-* Copie y guarde las carpetas **splash**, **principal** y **album** dentro de la carpeta `src/app` del proyecto en Angular. 
+* Copie y reemplace las carpetas **splash**, **principal** y **album** dentro de la carpeta `src/app` del proyecto en Angular. 
 * Copie y guarde la carpeta **imagenes** dentro de la carpeta `src/assets` del proyecto en Angular
 
 #### Componentes
