@@ -139,7 +139,7 @@ theme: jekyll-theme-leap-day
   	...  
   	</code></pre>
 
-#### Salida de las rutas (Router-outlet)
+#### Salida de las rutas (<router-outlet>)
 
 * Modifique la vista (**src/app/app.component.html**) del AppComponent
   + La etiqueta `<router-outlet>` le dice al enrutador dónde mostrar las vistas enrutadas.
@@ -158,6 +158,39 @@ theme: jekyll-theme-leap-day
 	  <img width="30%" src="imagenes/angular_material_album.png">
 	</p>
 
+#### Navegación entre rutas (routerlink)
+
+* Modifique la vista (**src/app/splash.component.html**) del SplashComponent
+  + Al dar clic sobre el nombre o la imagen debe redirigir a la ruta `/principal`
+
+  <pre><code>
+  ... 
+  <img src="assets/imagenes/pngwing.com.png" class="img-fluid"  routerLink="/principal"  alt="imagen">
+  ...
+  <h1 class="titulo" routerLink="/principal">Album</h1>
+  ...
+  </code></pre>
+
+* Agregue la navegación entre el componente **PrincipalComponent** y **AlbumComponent**
+  + Al dar clic en el **button** con el nombre `Ver`.
+
+  <pre><code>
+  ...
+  <button type="button" class="btn btn-success mx-2">Ver</button> 
+  ...
+  </code></pre>
+
+* Agregue la navegación entre el componente **AlbumComponent** y **PrincipalComponent**
+  + Al dar clic en el **button** con el ícono `arrow_back`.
+
+  <pre><code>
+  ...
+  <button mat-icon-button color="basic" aria-label="back">  
+	  <mat-icon>arrow_back</mat-icon> 
+  </button>  
+  ...
+  </code></pre>
+
 
 ### Términos
 
@@ -166,4 +199,5 @@ Despliegue, material design
 ### Referencias
 
 * Angular Material Tutorial. (2022). Retrieved 20 July 2022, from https://www.tutorialspoint.com/angular_material/index.htm
+* Angular. (2022). Retrieved 26 July 2022, from https://angular.io/tutorial/toh-pt5
 * Angular. (2022). Retrieved 26 July 2022, from https://angular.io/tutorial/toh-pt5
