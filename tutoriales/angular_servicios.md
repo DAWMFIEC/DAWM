@@ -34,14 +34,18 @@ Desde la raíz del proyecto con Angular
 * Cree el servicio **recurso**, con: `ng generate service servicios/recurso`
   + Se creará carpeta *servicios*, y 
   + Se crearán los archivos `recurso.service.ts` y `recurso.service.spec.ts`
-  + Agregue la interfaz **AlbumInterface**
+
+* En **src/app/servicios/recurso.service.ts**
+  + Agregue la interfaz **AlbumInterface** 
   	
     <pre><code>
     import { Injectable } from '@angular/core';
 
-    <b style="color:red">export interface AlbumInterface {
+    <b style="color:red">
+    export interface AlbumInterface {
 	     cabecera: string;
-	  }</b>
+	  }
+	  </b>
 
 	  @Injectable({
 	     providedIn: 'root'
@@ -56,12 +60,15 @@ Desde la raíz del proyecto con Angular
 
 	  <pre><code>
 	  ...
-	  constructor() { }
+	   constructor() { }
 
-	   <b style="color:red">obtenerDatosSitio() {
-	      let objeto:AlbumInterface = { cabecera: 'Album fotográfico' }
-        return objeto
-	    }</b>
+	   <b style="color:red">
+	   obtenerDatosSitio() {
+	     let objeto:AlbumInterface = { cabecera: 'Album fotográfico' }
+         return objeto
+	   }
+	 	 </b>
+
 	  }
     </code></pre>
 
