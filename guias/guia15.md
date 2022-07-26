@@ -142,14 +142,10 @@ theme: jekyll-theme-leap-day
 * Cambie la vista al tamaño de un dispositivo móvil. 
   + Para la ruta `http://localhost:4200/splash` debe lucir similar a
 
-	<p align="center" width="30%">
-	  <img src="imagenes/angular_material_splash.png">
-	</p>
-	<p align="center" width="30%">
-	  <img src="imagenes/angular_material_principal.png">
-	</p>
-	<p align="center" width="30%">
-	  <img src="imagenes/angular_material_album.png">
+	<p align="center">
+	  <img width="30%" src="imagenes/angular_material_splash.png">
+	  <img width="30%" src="imagenes/angular_material_principal.png">
+	  <img width="30%" src="imagenes/angular_material_album.png">
 	</p>
 
 
