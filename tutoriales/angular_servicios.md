@@ -196,11 +196,11 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 * En **src/app/app.component.html** 
 	+ Renderice el atributo en la plantilla con 
 
-	<pre><code>
-		...
+	```
+		...	
 		{{title}}
 		...
-	</code></pre>
+	```
 
 * Actualice el navegador o (re)inicie el servidor
 
