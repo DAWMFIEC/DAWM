@@ -240,4 +240,4 @@ Despliegue, material design
 
 * Angular Material Tutorial. (2022). Retrieved 20 July 2022, from https://www.tutorialspoint.com/angular_material/index.htm
 * Angular. (2022). Retrieved 26 July 2022, from https://angular.io/tutorial/toh-pt5
-* Angular. (2022). Retrieved 26 July 2022, from https://angular.io/tutorial/toh-pt5
+* Khan, R. (2022). La función setTimeout() en Angular. Retrieved 26 July 2022, from https://www.delftstack.com/es/howto/angular/settimeout-function-in-angular/
