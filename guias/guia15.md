@@ -163,7 +163,7 @@ theme: jekyll-theme-leap-day
 * Modifique la vista (**src/app/splash.component.html**) del SplashComponent
   + Al dar clic sobre el nombre o la imagen debe redirigir a la ruta `/principal`
 
-  <pre><code>
+  <pre><code class="language-html">
   ... 
   <img src="assets/imagenes/pngwing.com.png" class="img-fluid"  routerLink="/principal"  alt="imagen">
   ...
@@ -174,7 +174,7 @@ theme: jekyll-theme-leap-day
 * Agregue la navegación entre el componente **PrincipalComponent** y **AlbumComponent**
   + Al dar clic en el **button** con el nombre `Ver`.
 
-  <pre><code>
+  <pre><code class="language-html">
   ...
   <button type="button" class="btn btn-success mx-2">Ver</button> 
   ...
@@ -183,7 +183,7 @@ theme: jekyll-theme-leap-day
 * Agregue la navegación entre el componente **AlbumComponent** y **PrincipalComponent**
   + Al dar clic en el **button** con el ícono `arrow_back`.
 
-  <pre><code>
+  <pre><code class="language-html">
   ...
   <button mat-icon-button color="basic" aria-label="back">  
 	  <mat-icon>arrow_back</mat-icon> 
