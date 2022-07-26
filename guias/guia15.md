@@ -20,15 +20,15 @@ theme: jekyll-theme-leap-day
   + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
   + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
   + De [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html) realice la **Instalación de Angular Material**
-  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) considere el ejemplo de la creación de **Rutas** de los **Componentes**.
+  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice el ejemplo de la creación de **Rutas** de los **Componentes**.
 
-* Descargue y descomprima los componentes
+* Descargue y descomprima los [componentes y assets](archivos/guia15_recursos.zip)
 * Copie y guarde las carpetas **splash**, **principal** y **album** dentro de la carpeta `src/app` del proyecto en Angular. 
 * Copie y guarde la carpeta **imagenes** dentro de la carpeta `src/assets` del proyecto en Angular
 
 #### Componentes
 
-* Para utilizar los componentes copiados, registre los componentes en `src/app/app.module.ts`
+* Registre los componentes en la aplicación en `src/app/app.module.ts`
   + Agregue la referencia a los componentes nuevos **splash**, **principal** y **album**.
 
     <pre><code>
@@ -61,6 +61,10 @@ theme: jekyll-theme-leap-day
 	  imports: [
   	...
     </code></pre>
+
+#### Angular Material (Módulos GridList, Icon y Button)
+
+* Registre los módulos en la aplicación en `src/app/app.module.ts`
 
     + Agregue la referencia a los módulos de Angular Material: `MatGridListModule`, `MatIconModule` y `MatButtonModule`
 
@@ -100,6 +104,8 @@ theme: jekyll-theme-leap-day
   	...
     </code></pre>
 
+#### Rutas
+
 * Para manejar las rutas en el URL, modifique el archivo **src/app/app-routing.module.ts**
   + Agregue la referencia a los componentes **splash**, **principal** y **album**.
   
@@ -133,7 +139,7 @@ theme: jekyll-theme-leap-day
   	...  
   	</code></pre>
 
-
+#### Salida de las rutas (Router-outlet)
 
 * Modifique la vista (**src/app/app.component.html**) del AppComponent
   + La etiqueta `<router-outlet>` le dice al enrutador dónde mostrar las vistas enrutadas.
@@ -151,7 +157,6 @@ theme: jekyll-theme-leap-day
 	  <img width="30%" src="imagenes/angular_material_principal.png">
 	  <img width="30%" src="imagenes/angular_material_album.png">
 	</p>
-
 
 
 ### Términos
