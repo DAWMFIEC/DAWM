@@ -59,7 +59,7 @@ Desde la raíz del proyecto con Angular
 	  constructor() { }
 
 	   <b style="color:red">obtenerDatosSitio() {
-	      let objeto = { cabecera: 'Album fotográfico' }
+	      let objeto:AlbumInterface = { cabecera: 'Album fotográfico' }
         return objeto
 	    }</b>
 	  }
@@ -80,7 +80,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 
   <pre><code>
     import { Component } from '@angular/core';
-	<b style="color:red">import { TitularService } from './servicios/titular.service';</b>
+	<b style="color:red">import { RecursoService } from './servicios/recurso.service';</b>
 
 	@Component({
 	  selector: 'app-root',
@@ -90,16 +90,16 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	export class AppComponent {
 	  title  = 'testAngular';
 
-	  <b style="color:red">constructor(private titularService: TitularService) {}</b>
+	  <b style="color:red">constructor(private recursoService: RecursoService) {}</b>
 	}
   </code></pre>
 
-  + Modifique el constructor para invocar la función `obtenerDatos()` del servicio
+  + Modifique el constructor para invocar la función `obtenerDatosSitio()` del servicio
 
   <pre><code>
   	...
-	  constructor(private titularService: TitularService) {
-	      <b style="color:red">let objeto = titularService.obtenerDatosSitio()
+	  constructor(private recursoService: RecursoService) {
+	      <b style="color:red">let objeto = recursoService.obtenerDatosSitio()
 	      this.title = objeto.cabecera</b>
 	  }
 	}
@@ -174,7 +174,7 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 
 	</code></pre>
 
-* En **servicios/titular.component.ts**, 
+* En **servicios/recurso.component.ts**, 
   + Importe el módulo `HttpClient`
 	+ Agregue el servicio `HttpClient` como inyección de dependencia en el método constructor.
 	
@@ -186,7 +186,7 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 	@Injectable({
 	  providedIn: 'root'
 	})
-	export class TitularService {
+	export class RecursoService {
 
 	  <b style="color:red">constructor(private http: HttpClient) { }</b>
 
@@ -208,9 +208,9 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 
   <pre><code>
   	...
-	  constructor(private titularService: TitularService) {
+	  constructor(private recursoService: RecursoService) {
 	      <b style="color:red">
-	      titularService.obtenerDatosSitio().subscribe(objeto => {
+	      recursoService.obtenerDatosSitio().subscribe(objeto => {
 		      let data = objeto as any
 		      this.title = data.cabecera
 		    })</b>
