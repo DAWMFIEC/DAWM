@@ -31,17 +31,22 @@ Servicio
 Desde la raíz del proyecto con Angular
 
 * Acceda desde la línea de comandos
-* Cree el servicio **titular**, con: `ng generate service servicios/titular`
+* Cree el servicio **recurso**, con: `ng generate service servicios/recurso`
   + Se creará carpeta *servicios*, y 
-  + Se crearán los archivos `titular.service.ts` y `titular.service.spec.ts`
+  + Se crearán los archivos `recurso.service.ts` y `recurso.service.spec.ts`
+  + Agregue la interfaz **AlbumInterface**
   	
   <pre><code>
     import { Injectable } from '@angular/core';
 
+  <b style="color:red">export interface AlbumInterface {
+	  cabecera: string;
+	}</b>
+
 	@Injectable({
 	  providedIn: 'root'
 	})
-	export class TitularService {
+	export class RecursoService {
 
 	  constructor() { }
 	}
