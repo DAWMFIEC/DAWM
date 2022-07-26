@@ -198,7 +198,9 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 
 	```html
 		...	
+		{% raw %}
 		{{title}}
+		{% endraw %}
 		...
 	```
 
