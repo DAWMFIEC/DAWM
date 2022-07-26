@@ -14,7 +14,12 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Realice los tutoriales [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) y [Angular Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html)
+* Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
+  
+  + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
+  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
+  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) considere el ejemplo de la creación de **Rutas** de los **Componentes**.
+  + De [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html) realice la **Instalación de Angular Material**
 
 ### Términos
 
