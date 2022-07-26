@@ -201,7 +201,6 @@ theme: jekyll-theme-leap-day
 	<b style="color: red">
   import { Router } from '@angular/router';
   </b>
-
   @Component({
 	...
 	</code></pre>
@@ -211,11 +210,9 @@ theme: jekyll-theme-leap-day
 	<pre><code>
 	...
 	export class SplashComponent implements OnInit {
-
 	<b style="color: red">
     constructor(private router: Router) { }
   </b>
-
     ngOnInit(): void {
 	...
 	</code></pre>
@@ -225,13 +222,11 @@ theme: jekyll-theme-leap-day
 	<pre><code>
 	...
 	ngOnInit(): void {
-
 	<b style="color: red">
     setTimeout(() => {
       this.router.navigate(['principal']);
     }, 2000);
   </b>
-  
   }
   ...
 	</code></pre>
