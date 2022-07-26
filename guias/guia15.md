@@ -20,10 +20,14 @@ theme: jekyll-theme-leap-day
   + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
   + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
   + De [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html) realice la **Instalación de Angular Material**
+  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) considere el ejemplo de la creación de **Rutas** de los **Componentes**.
 
 * Descargue y descomprima los componentes
-* Copie y guarde las carpetas **splash**, **principal** y **album** dentro de la carpeta `src/app`
-* Copie y guarde la carpeta **imagenes** dentro de la carpeta `src/assets`
+* Copie y guarde las carpetas **splash**, **principal** y **album** dentro de la carpeta `src/app` del proyecto en Angular. 
+* Copie y guarde la carpeta **imagenes** dentro de la carpeta `src/assets` del proyecto en Angular
+
+#### Componentes
+
 * Para utilizar los componentes copiados, registre los componentes en `src/app/app.module.ts`
   + Agregue la referencia a los componentes nuevos **splash**, **principal** y **album**.
 
@@ -140,7 +144,7 @@ theme: jekyll-theme-leap-day
     ```
 * Actualice el navegador o (re)inicie el servidor
 * Cambie la vista al tamaño de un dispositivo móvil. 
-  + Para la ruta `http://localhost:4200/splash` debe lucir similar a
+  + Las rutas `http://localhost:4200/splash`, `http://localhost:4200/principal` y `http://localhost:4200/album` deben lucir similares a:
 
 	<p align="center">
 	  <img width="30%" src="imagenes/angular_material_splash.png">
@@ -157,3 +161,4 @@ Despliegue, material design
 ### Referencias
 
 * Angular Material Tutorial. (2022). Retrieved 20 July 2022, from https://www.tutorialspoint.com/angular_material/index.htm
+* Angular. (2022). Retrieved 26 July 2022, from https://angular.io/tutorial/toh-pt5

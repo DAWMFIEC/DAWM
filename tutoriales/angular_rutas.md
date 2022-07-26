@@ -7,6 +7,10 @@ theme: jekyll-theme-leap-day
 Angular - Rutas 
 ===============
 
+<p align="center">
+  <img src="imagenes/angular_rutas.png">
+</p>
+
 En Angular, la mejor práctica es cargar y configurar el enrutador en un módulo separado de nivel superior. El enrutador está dedicado al enrutamiento e importado por el AppModule. Por convención, el nombre de la clase del módulo es AppRoutingModule y pertenece a `app-routing.module.ts` en el directorio **src/app**.
 
 Proyecto en Angular
@@ -101,3 +105,4 @@ Referencias
 
 * Navegar entre rutas de Angular utilizando routerLink. (2020). Retrieved 20 July 2022, from https://dev.to/facurodriguez/navegar-entre-rutas-de-angular-utilizando-routerlink-3gon
 * Angular. (2022). Retrieved 20 July 2022, from https://angular.io/tutorial/toh-pt5
+* Enrutamiento en Angular. (2017). Retrieved 26 July 2022, from https://aristotekean.medium.com/enrutamiento-en-angular-996f14e89293
