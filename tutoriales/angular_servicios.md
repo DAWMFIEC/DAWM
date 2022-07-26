@@ -25,6 +25,26 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](ht
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
 
+
+Interfaz
+========
+
+Para consultar datos mediante servicios, es recomendable el uso de interfaces para reconocer su estructura.
+Desde la raíz del proyecto con Angular
+
+* Cree la interfaz **Album**, con: `ng generate interface interfaz/album`
+
+* Identifique la estructura de la respuesta del servicio a consultar para definir los atributos de la interfaz de respuesta. Según el recurso [Album](https://dataserverdawm.herokuapp.com/album) la estructura es:
+
+	<pre><code>
+	export interface Album {
+     cabecera: string;
+     principal: string;
+     fotos: any;
+  }
+	</code></pre>
+
+
 Servicio
 ========
 
@@ -35,43 +55,6 @@ Desde la raíz del proyecto con Angular
   + Se creará carpeta *servicios*, y 
   + Se crearán los archivos `recurso.service.ts` y `recurso.service.spec.ts`
 
-* En **src/app/servicios/recurso.service.ts**
-  + Agregue la interfaz **AlbumInterface** 
-  	
-    <pre><code>
-    import { Injectable } from '@angular/core';
-
-    <b style="color:red">
-    export interface AlbumInterface {
-	     cabecera: string;
-	  }
-	  </b>
-
-	  @Injectable({
-	     providedIn: 'root'
-	  })
-	  export class RecursoService {
-
-	    constructor() { }
-	  }
-    </code></pre>
-
-  + Agregue la función `obtenerDatosSitio` que retorna un objeto JSON.
-
-	  <pre><code>
-	  ...
-	   constructor() { }
-
-	   <b style="color:red">
-	   obtenerDatosSitio() {
-	     let objeto:AlbumInterface = { cabecera: 'Album fotográfico' }
-         return objeto
-	   }
-	 	 </b>
-
-	  }
-    </code></pre>
-
 
 Inyección de dependencias
 =========================
@@ -80,69 +63,30 @@ Las dependencias son servicios u objetos que una clase necesita para realizar su
 
 Para inyectar una dependencia en un componente solo debes agregar un argumento (con el tipo de la dependencia) en el método constructor de la clase.
 
-* En **app.component.ts**
+* En **src/app/app.component.ts** 
 	+ Agregue el _import_ al servicio
-	+ Agregue el método _constructor_ de la clase
-	+ Inyecte la dependencia como argumento en el constructor
-
-  <pre><code>
+	
+	<pre><code>
     import { Component } from '@angular/core';
 	<b style="color:red">import { RecursoService } from './servicios/recurso.service';</b>
 
 	@Component({
 	  selector: 'app-root',
 	  templateUrl: './app.component.html',
-	  styleUrls: ['./app.component.css']
-	})
+	...  
+  </code></pre>
+
+	+ Agregue el constructor de la clase con la inyección de dependencia (argumento del constructor) al servicio `RecursoService`.
+
+  <pre><code>
+    ...
 	export class AppComponent {
 	  title  = 'testAngular';
 
 	  <b style="color:red">constructor(private recursoService: RecursoService) {}</b>
 	}
-  </code></pre>
-
-  + Modifique el constructor para invocar la función `obtenerDatosSitio()` del servicio
-
-  <pre><code>
-  	...
-	  constructor(private recursoService: RecursoService) {
-	      <b style="color:red">let objeto = recursoService.obtenerDatosSitio()
-	      this.title = objeto.cabecera</b>
-	  }
-	}
-  </code></pre>
-
-* Interpole el atributo `title` en el **app.component.html** para ver los resultados
-
-  ```
-    ...
-	    <div class="navbar navbar-dark bg-dark shadow-sm">
-	    <div class="container">
-	      <a href="#" class="navbar-brand d-flex align-items-center">
-	        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" aria-hidden="true" class="me-2" viewBox="0 0 24 24"><path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/></svg>
-	        <strong>
-
-	        {% raw %}     {{title}}    {% endraw %} 
-	        
-	        </strong>
-	      </a>
-	      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-	        <span class="navbar-toggler-icon"></span>
-	      </button>
-	    </div>
-	  </div>
-	</header>
-
-	<main>
 	...
-  ```
-
-* Actualice el navegador o (re)inicie el servidor
-* La cabecera del sitio debe mostrar el mensaje `Album fotográfico`. El resultado en el navegador debe  lucir así.
-
-<p align="center">
-  <img src="imagenes/angular_servicios_output.png">
-</p>
+  </code></pre>
 
 
 Peticiones HTTP
@@ -152,9 +96,8 @@ Las aplicaciones en el front-end necesitan comunicarse con un servidor a través
 
 Para este caso, Angular usa los `observables` en lugar de promesas para entregar valores de [forma asíncrona](https://docs.angular.lat/guide/comparing-observables).
 
-* En **app.module.ts**,
+* En **src/app/app.module.ts**,
 	+ Importe el módulo `HttpClientModule`
-	+ Registre el servicio en la lista de módulos de la clave **import**, para que todos los componentes puedan acceder a este servicio.
 
 	<pre><code>
 		...
@@ -162,71 +105,106 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 		import { RedesComponent } from './redes/redes.component';
 		...
 		<b style="color:red">import { HttpClientModule } from '@angular/common/http';</b>
+		...
 
 		@NgModule({
 		  declarations: [
 		    AppComponent,
-		    CabeceraComponent,
-		    RedesComponent
-		  ],
+		...
+	</code></pre>
+
+	+ Registre el servicio en la lista de módulos de la clave **import**, para que todos los componentes puedan acceder a este servicio.
+
+	<pre><code>
+		...
 		  imports: [
 		    BrowserModule,
 		    AppRoutingModule,
-		    
-		    <b style="color:red">HttpClientModule,</b>
-
 		    ...
-		})
-		export class AppModule { }
-
+		    <b style="color:red">HttpClientModule,</b>
+		...
 	</code></pre>
 
-* En **servicios/recurso.component.ts**, 
+* En **src/app/servicios/recurso.service.ts**, 
   + Importe el módulo `HttpClient`
-	+ Agregue el servicio `HttpClient` como inyección de dependencia en el método constructor.
-	
-	<pre><code>
+
+  <pre><code>
 	import { Injectable } from '@angular/core';
 	<b style="color:red">import { HttpClient } from '@angular/common/http';</b>
 	
   	
 	@Injectable({
 	  providedIn: 'root'
-	})
+	...
+	</code></pre>
+
+	+ Agregue el servicio `HttpClient` como inyección de dependencia en el método constructor.
+	
+	<pre><code>
+	...
 	export class RecursoService {
-
 	  <b style="color:red">constructor(private http: HttpClient) { }</b>
-
 	  ...
 	}
 	</code></pre>
 
-	+ Modifique la función *obtenerDatosSitio* para que mediante el objeto `http` haga una petición `get`  al URL <a href="https://dataserverdawm.herokuapp.com/album">Album</a>
+	+ Agregue la función *obtenerDatos* para hacer una petición `http` para obtener `get` una respuesta del URL <a href="https://dataserverdawm.herokuapp.com/album">Album</a>
 
 	<pre><code>
-		...
-		obtenerDatosSitio() {
-    	<b style="color:red">return this.http.get('https://dataserverdawm.herokuapp.com/album')</b>
-	  }
-	  ...
+	...
+	obtenerDatos() {
+      <b style="color:red">return this.http.get('https://dataserverdawm.herokuapp.com/album')</b>
+	}
+	...
 	</code></pre>
-* En **app.component.ts** 
+
+
+* En **src/app/app.component.ts** 
+	+ Agregue la referencia a la interfaz **Album** 
+    
+    <pre><code>
+    import { Component } from '@angular/core';
+    <b style="color:red">
+    import { Album } from './interfaz/album';
+    </b>
+
+    @Component({
+  		selector: 'app-root',
+  		templateUrl: './app.component.html',
+    ...
+    </code></pre>
+
 	+ Modifique el constructor para suscribirse a la respuesta del servicio
 
   <pre><code>
-  	...
+  ...
+  export class AppComponent {
+	  title = 'Angular';
+
 	  constructor(private recursoService: RecursoService) {
-	      <b style="color:red">
-	      recursoService.obtenerDatosSitio().subscribe(objeto => {
-		      let data = objeto as any
-		      this.title = data.cabecera
-		    })</b>
+	  	<b style="color:red">
+	    recursoService.obtenerDatos().subscribe(respuesta => {
+	      let album = respuesta as Album
+	      this.title = album.cabecera
+	    })
+	    </b>
 	  }
 	}
+  ...
   </code></pre>
 
+* En **src/app/app.component.html** 
+	+ Renderice el atributo en la plantilla con 
+
+	<pre><code>
+		...
+		{{title}}
+		...
+	</code></pre>
+
 * Actualice el navegador o (re)inicie el servidor
-* La cabecera del sitio debe mostrar el mensaje `Album fotográfico`. El resultado en el navegador debe  lucir así.
+
+* En el navegador debe mostrar el mensaje `Album fotográfico`.
 
 <p align="center">
   <img src="imagenes/angular_servicios_output.png">
@@ -243,3 +221,4 @@ Referencias
 * Inyección de dependencias. (2022). Retrieved 19 July 2022, from https://desarrolloweb.com/articulos/patron-diseno-contenedor-dependencias.html
 * Angular. (2022). Retrieved 19 July 2022, from https://angular.io/guide/http
 * Angular. (2022). Retrieved 19 July 2022, from https://docs.angular.lat/guide/comparing-observables
+* Usar clases e Interfaces en los servicios Angular. (2022). Retrieved 26 July 2022, from https://desarrolloweb.com/articulos/clases-interfaces-servicios-angular.html
