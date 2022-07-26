@@ -172,7 +172,7 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
-* Agregue la navegación entre el componente **PrincipalComponent** y **AlbumComponent**
+* Agregue la navegación entre del componente **PrincipalComponent** al componente **AlbumComponent**
   + Al dar clic en el **button** con el nombre `Ver`.
 
   ```
@@ -181,7 +181,7 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
-* Agregue la navegación entre el componente **AlbumComponent** y **PrincipalComponent**
+* Agregue la navegación entre del componente **AlbumComponent** al componente **PrincipalComponent**
   + Al dar clic en el **button** con el ícono `arrow_back`.
 
   ```
