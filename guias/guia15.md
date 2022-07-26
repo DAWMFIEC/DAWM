@@ -163,33 +163,78 @@ theme: jekyll-theme-leap-day
 * Modifique la vista (**src/app/splash.component.html**) del SplashComponent
   + Al dar clic sobre el nombre o la imagen debe redirigir a la ruta `/principal`
 
-  <pre><code class="language-html">
+  ```
   ... 
   <img src="assets/imagenes/pngwing.com.png" class="img-fluid"  routerLink="/principal"  alt="imagen">
   ...
   <h1 class="titulo" routerLink="/principal">Album</h1>
   ...
-  </code></pre>
+  ```
 
 * Agregue la navegación entre el componente **PrincipalComponent** y **AlbumComponent**
   + Al dar clic en el **button** con el nombre `Ver`.
 
-  <pre><code class="language-html">
+  ```
   ...
   <button type="button" class="btn btn-success mx-2">Ver</button> 
   ...
-  </code></pre>
+  ```
 
 * Agregue la navegación entre el componente **AlbumComponent** y **PrincipalComponent**
   + Al dar clic en el **button** con el ícono `arrow_back`.
 
-  <pre><code class="language-html">
+  ```
   ...
   <button mat-icon-button color="basic" aria-label="back">  
 	  <mat-icon>arrow_back</mat-icon> 
   </button>  
   ...
-  </code></pre>
+  ```
+
+#### Redirección automática (router)
+
+* Modifique el controlador (**src/app/splash.component.ts**) del SplashComponent
+  + Agregue la referencia al módulo `Router`
+
+	<pre><code>
+	import { Component, OnInit } from '@angular/core';
+	<b style="color: red">
+  import { Router } from '@angular/router';
+  </b>
+
+  @Component({
+	...
+	</code></pre>
+
+	+ Agregue la inyección de dependencia al módulo `Router`
+
+	<pre><code>
+	...
+	export class SplashComponent implements OnInit {
+
+	<b style="color: red">
+    constructor(private router: Router) { }
+  </b>
+
+    ngOnInit(): void {
+	...
+	</code></pre>
+
+	+ Luego de la inicialización del componente, agregue el código para activar navegación a la ruta `/principal`
+
+	<pre><code>
+	...
+	ngOnInit(): void {
+
+	<b style="color: red">
+    setTimeout(() => {
+      this.router.navigate(['principal']);
+    }, 2000);
+  </b>
+  
+  }
+  ...
+	</code></pre>
 
 
 ### Términos
