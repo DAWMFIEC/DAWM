@@ -20,7 +20,7 @@ theme: jekyll-theme-leap-day
   + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
   + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) realice la sección **Instalación de Bootstrap (y dependencias)**
   + De [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html) realice la sección **Instalación de Angular Material**
-  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html) realice la sección **Componentes** para los componentes **splash** y **principal**.
+  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html) realice la sección **Componentes** para los componentes **splash**, **principal** y **album**.
   + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice la sección **Rutas**.
 
 * Descargue y descomprima los [componentes y assets](archivos/guia15_recursos.zip)
@@ -30,7 +30,7 @@ theme: jekyll-theme-leap-day
 #### Componentes
 
 * Registre los componentes en la aplicación en `src/app/app.module.ts`
-  + Agregue la referencia a los componentes nuevos **splash**, **principal** y **album**.
+  + Compruebe que exista la referencia a los componentes nuevos **splash**, **principal** y **album**.
 
     <pre><code>
   	...
@@ -46,7 +46,7 @@ theme: jekyll-theme-leap-day
   	...
     </code></pre>
 
-  + Agregue los componentes nuevos en el arreglo *declarations*
+  + Compruebe que los componentes se encuentren en el arreglo *declarations*
 
     <pre><code>
   	...
