@@ -36,8 +36,8 @@ theme: jekyll-theme-leap-day
   	import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
   	<b style="color: red">
   	import { SplashComponent } from './splash/splash.component';
-	import { PrincipalComponent } from './principal/principal.component';
-	import { AlbumComponent } from './album/album.component';
+	 import { PrincipalComponent } from './principal/principal.component';
+	 import { AlbumComponent } from './album/album.component';
 	</b>
 
 	@NgModule({
