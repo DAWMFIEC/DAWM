@@ -36,34 +36,34 @@ Desde la raíz del proyecto con Angular
   + Se crearán los archivos `recurso.service.ts` y `recurso.service.spec.ts`
   + Agregue la interfaz **AlbumInterface**
   	
-  <pre><code>
+    <pre><code>
     import { Injectable } from '@angular/core';
 
-  <b style="color:red">export interface AlbumInterface {
-	  cabecera: string;
-	}</b>
+    <b style="color:red">export interface AlbumInterface {
+	     cabecera: string;
+	  }</b>
 
-	@Injectable({
-	  providedIn: 'root'
-	})
-	export class RecursoService {
+	  @Injectable({
+	     providedIn: 'root'
+	  })
+	  export class RecursoService {
 
-	  constructor() { }
-	}
-  </code></pre>
+	    constructor() { }
+	  }
+    </code></pre>
 
   + Agregue la función `obtenerDatosSitio` que retorna un objeto JSON.
 
-	<pre><code>
+	  <pre><code>
 	  ...
 	  constructor() { }
 
-	  <b style="color:red">obtenerDatosSitio() {
-	    let objeto = { cabecera: 'Album fotográfico' }
-       return objeto
-	  }</b>
-	}
-  </code></pre>
+	   <b style="color:red">obtenerDatosSitio() {
+	      let objeto = { cabecera: 'Album fotográfico' }
+        return objeto
+	    }</b>
+	  }
+    </code></pre>
 
 
 Inyección de dependencias
