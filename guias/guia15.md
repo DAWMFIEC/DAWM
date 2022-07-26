@@ -223,9 +223,9 @@ theme: jekyll-theme-leap-day
 	...
 	ngOnInit(): void {
 	<b style="color: red">
-    setTimeout(() => {
-      this.router.navigate(['principal']);
-    }, 2000);
+	    setTimeout(() => {
+	      this.router.navigate(['principal']);
+	    }, 2000);
   </b>
   }
   ...
