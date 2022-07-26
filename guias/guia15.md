@@ -20,7 +20,7 @@ theme: jekyll-theme-leap-day
   + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
   + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
   + De [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html) realice la **Instalación de Angular Material**
-  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice el ejemplo de la creación de **Rutas** de los **Componentes**.
+  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice el ejemplo de la creación de **Componentes** y la incorporación de **Rutas**.
 
 * Descargue y descomprima los [componentes y assets](archivos/guia15_recursos.zip)
 * Copie y reemplace las carpetas **splash**, **principal** y **album** dentro de la carpeta `src/app` del proyecto en Angular. 
