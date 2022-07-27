@@ -68,7 +68,7 @@ Bootstrap - Dashboard example
 
 * Descargue y descomprima los [ejemplos de Bootstrap](https://getbootstrap.com/docs/5.0/examples/)
 * Utilice la plantilla **Dashboard**.
-  + Del archivo **dashboard/index.html**, copie las etiquetas <header> y <div.container-fluid>
+  + Del archivo **dashboard/index.html**, copie las etiquetas `<header>` y `<div.container-fluid>`
   + En el archivo **views/index.ejs**
   	- Reemplace la etiqueta `<h1>` por las etiquetas copiadas.
   + Copie el archivo **dashboard/dashboard.css** en la carpeta **public/stylesheets**
