@@ -11,7 +11,6 @@
 ## Instrucciones
 
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
-* Cree el componente: **foto**
 * Dentro de la carpeta **interfaz**, cree la interfaz: **fotoInterfaz**
 	+ La interfaz **fotoInterfaz** tiene los atributos
 		```
@@ -21,7 +20,8 @@
 		``` 
 * Dentro de la carpeta **servicios**, cree el servicio: **foto**.
 	+ Cree el método **obtenerFotos**
-	+ Dentro del método **obtenerFotos** realice una petición al URL: [`https://dataserverdawm.herokuapp.com/album`](https://dataserverdawm.herokuapp.com/album)
+	+ Dentro del método **obtenerFotos** 
+		- Retorne el resultado de la petición al URL: [`https://dataserverdawm.herokuapp.com/album`](https://dataserverdawm.herokuapp.com/album)
 
 * En **app.component.html**
 
