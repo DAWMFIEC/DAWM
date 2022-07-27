@@ -13,8 +13,27 @@
 
 ## Pruebas unitarias
 
-* En su proyecto de Express instale las dependencias **Jest**, **SuperTest** y **cross-env**
-  + Desde la línea de comandos ejecute:: `npm install --save-dev jest supertest cross-env`
+* En su proyecto de Express 
+  + Instale las dependencias **Jest**, **SuperTest** y **cross-env**, desde la línea de comandos ejecute:: `npm install --save-dev jest supertest cross-env`
+  + Copie la carpeta **tests** 
+
+* En **package.json**
+  + Agregue el par clave-valor
+
+  <pre><code>
+  "jest": {
+    "testEnvironment": "node",
+    "coveragePathIgnorePatterns": [
+      "/node_modules/"
+    ]
+  }
+  </code></pre> 
+
+* En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm test`
+* Los resultados posibles a las pruebas unitarias pueden ser: jest
+  + Todos fueron exitosas, o
+  + Existen pruebas unitarias fallidas.
+* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.
 
 ## Referencias 
 
