@@ -75,10 +75,10 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Angular - Bases |
 | 				| ~[Ejercicio 06](Capítulo%2004/ejercicio06)~         | ~Angular - Servicios~ |
 | Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01)         | Express - Bases |
-|               | [Ejercicio 02](Capítulo%2005/ejercicio02)         | Forms y Partials |
+|               | [Ejercicio 02](Capítulo%2005/ejercicio02)         | Forms |
 |               | [Ejercicio 03](Capítulo%2005/ejercicio03)         | ORM - Básico e Intermedio |
-|               | [Ejercicio 04](Capítulo%2005/ejercicio04)         | Manejo de estado |
-|               | [Ejercicio 05](Capítulo%2005/ejercicio05)         | ODM - Básico |
+|               | [Ejercicio 04](Capítulo%2005/ejercicio04)         | ODM - Básico |
+|               | [Ejercicio 05](Capítulo%2005/ejercicio05)         | Manejo de estado |
 | Capítulo 06   | [Ejercicio 01](Capítulo%2006/ejercicio01)         | REST - Servidor |
 |               | [Ejercicio 02](Capítulo%2006/ejercicio02)         | REST - Cliente |
 
