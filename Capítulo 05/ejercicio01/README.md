@@ -5,7 +5,7 @@
 
 ## Requisitos
 
-* Tome como referencia las instrucciones en [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) y [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html).
+* Realice las instrucciones en los tutoriales [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) y [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html).
 
 ## Pruebas unitarias
 
