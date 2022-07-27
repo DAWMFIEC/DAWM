@@ -13,7 +13,7 @@
   + Instale las dependencias **Jest**, **SuperTest** y **cross-env**
     - Desde la línea de comandos ejecute: `npm install --save-dev jest supertest cross-env`
   
-  + Copie la carpeta **tests** 
+  + Agregue la carpeta **tests** de este repositorio a su proyecto 
   + Modifique el archivo **package.json**
     - Agregue el par clave-valor
 
