@@ -21,8 +21,9 @@
     ...
         "nodemon": "^2.0.19",
         "supertest": "^6.2.4"
-      },
+      }
       <b style="color:red">
+      ,
       "jest": {
         "testEnvironment": "node",
         "coveragePathIgnorePatterns": [
