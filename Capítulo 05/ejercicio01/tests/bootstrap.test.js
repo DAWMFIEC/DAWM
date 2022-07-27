@@ -9,6 +9,8 @@ describe('Express Endpoints', () => {
       const res = await requestWithSupertest.get('/');
       expect(res.text).toContain('Dashboard');
       expect(res.text).toContain('Last quarter');
+      expect(res.text).toContain('illustrative');
+      expect(res.text).toContain('tabular');
   });
 
 });
