@@ -6,7 +6,7 @@
 ## Requisitos
 
 * Completar las actividades de [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) y [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html).
-* Tome como referencia las instrucciones en 
+* Tome como referencia las instrucciones en [Angular - Servicios](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_servicios.html)
 
 ## Instrucciones
 
