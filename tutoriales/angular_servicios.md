@@ -216,6 +216,8 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
   <img src="imagenes/angular_servicios_output.png">
 </p>
 
+* Despliegue la aplicación en [Heroku](https://dawfiec.github.io/DAWM-2022/tutoriales/heroku_deploy.html)
+
 Referencias 
 ===========
 
