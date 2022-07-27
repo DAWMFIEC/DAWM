@@ -13,7 +13,7 @@
 
 ## Pruebas unitarias
 
-* Instale las dependencias `Jest`, `SuperTest ` y `cross-env`, con: `npm install --save-dev jest supertest cross-env`
+* Instale las dependencias **Jest**, **SuperTest** y **cross-env**, con: `npm install --save-dev jest supertest cross-env`
 
 ## Referencias 
 
