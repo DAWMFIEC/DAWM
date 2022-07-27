@@ -72,7 +72,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Typescript - Anotación de tipos básicos, arreglos y objetos |
 | 				| [Ejercicio 03](Capítulo%2004/ejercicio03)         | Typescript - Interfaces y clases |
 | 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | Typescript - Funciones |
-| 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Angular - Bases |
+| 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
 | 				| ~[Ejercicio 06](Capítulo%2004/ejercicio06)~         | ~Angular - Servicios~ |
 | Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01)         | Express - Bases y Bootstrap |
 |               | [Ejercicio 02](Capítulo%2005/ejercicio02)         | Forms |
