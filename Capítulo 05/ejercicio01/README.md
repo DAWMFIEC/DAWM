@@ -13,17 +13,24 @@
   + Instale las dependencias **Jest**, **SuperTest** y **cross-env**
     - Desde la línea de comandos ejecute: `npm install --save-dev jest supertest cross-env`
   
-  + Copie la carpeta **tests** a la carpeta de su proyecto de Express
+  + Copie la carpeta **tests** 
   + Modifique el archivo **package.json**
     - Agregue el par clave-valor
 
     <pre><code>
+    ...
+      "nodemon": "^2.0.19",
+      "supertest": "^6.2.4"
+    },
+    <b style="color:red">
     "jest": {
       "testEnvironment": "node",
       "coveragePathIgnorePatterns": [
         "/node_modules/"
       ]
     }
+    </b>
+    ...
     </code></pre> 
 
 * En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm test`
