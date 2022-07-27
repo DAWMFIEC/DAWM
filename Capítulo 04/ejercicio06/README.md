@@ -11,8 +11,15 @@
 ## Instrucciones
 
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
+* Cree la interfaz: **interfaz/Foto**
+	+ La interfaz **Foto** tiene los atributos
+		```
+		descripcion:string;
+		tiempo:string;
+		url:string;
+		``` 
 * Cree el servicio: **servicios/fotos**.
-
+	+ Realice una petición
 
 * En **app.component.html**
 
