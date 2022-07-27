@@ -1,8 +1,6 @@
 # Ejercicio 01
 
-<p align="center">
-  <img src="imagenes/ejercicio01.png">
-</p>
+![ejercicio01](imagenes/ejercicio01.png)
 
 
 ## Requisitos
@@ -13,22 +11,28 @@
 
 * En su proyecto de Express 
   + Instale las dependencias **Jest**, **SuperTest** y **cross-env**, desde la línea de comandos ejecute:: `npm install --save-dev jest supertest cross-env`
-  + Copie la carpeta **tests** a la carpeta del proyecto de Express
+  + Copie la carpeta **tests** a la carpeta de su proyecto de Express
 
-* En **package.json**
-  + Agregue el par clave-valor
+* En su proyecto de Express 
+  + En **package.json**
+    - Agregue el par clave-valor
 
-  <pre><code>
-  "jest": {
-    "testEnvironment": "node",
-    "coveragePathIgnorePatterns": [
-      "/node_modules/"
-    ]
-  }
-  </code></pre> 
+    <pre><code>
+    "jest": {
+      "testEnvironment": "node",
+      "coveragePathIgnorePatterns": [
+        "/node_modules/"
+      ]
+    }
+    </code></pre> 
 
 * En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm test`
 * Los resultados posibles a las pruebas unitarias pueden ser: jest
+  
+  <p align="center">
+    <img src="imagenes/jest.png">
+  </p>
+
   + Todos fueron exitosas, o
   + Existen pruebas unitarias fallidas.
 * En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.
