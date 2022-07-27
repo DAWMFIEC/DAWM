@@ -19,18 +19,18 @@
 
     <pre><code>
     ...
-      "nodemon": "^2.0.19",
-      "supertest": "^6.2.4"
-    },
-    <b style="color:red">
-    "jest": {
-      "testEnvironment": "node",
-      "coveragePathIgnorePatterns": [
-        "/node_modules/"
-      ]
+        "nodemon": "^2.0.19",
+        "supertest": "^6.2.4"
+      },
+      <b style="color:red">
+      "jest": {
+        "testEnvironment": "node",
+        "coveragePathIgnorePatterns": [
+          "/node_modules/"
+        ]
+      }
+      </b>
     }
-    </b>
-    ...
     </code></pre> 
 
 * En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm test`
