@@ -11,15 +11,15 @@
 ## Instrucciones
 
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
-* Cree la interfaz: **interfaz/Foto**
+* Dentro de la carpeta **interfaz**, cree la interfaz: **Foto**
 	+ La interfaz **Foto** tiene los atributos
 		```
 		descripcion:string;
 		tiempo:string;
 		url:string;
 		``` 
-* Cree el servicio: **servicios/fotos**.
-	+ Realice una petición
+* Dentro de la carpeta **servicios**, cree el servicio: **fotos**.
+	+ Realice una petición al URL: [`https://dataserverdawm.herokuapp.com/album`](https://dataserverdawm.herokuapp.com/album)
 
 * En **app.component.html**
 
