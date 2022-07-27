@@ -11,8 +11,10 @@
 ## Instrucciones
 
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
-* Cree el servicio: **fotos**.
+* Cree el servicio: **servicios/fotos**.
 
+
+* En **app.component.html**
 
 
 ## Pruebas unitarias
