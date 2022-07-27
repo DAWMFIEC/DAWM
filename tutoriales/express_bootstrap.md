@@ -37,12 +37,12 @@ Desde la línea de comandos del proyecto:
 
 * En el `package.json`, dentro de la clave **scripts**, agregue la clave **devstart**:
 
-	```
+	<pre><code>
 	"scripts": {  
 	  "start": "node ./bin/www",  
-	  **"devstart": "nodemon ./bin/www"**  
+	  <b style="color:red">"devstart": "nodemon ./bin/www"<b>
 	}  
-	```
+	</code></pre>
 
 * En adelante, levante el servidor, con: **npm run devstart**
   + Con este script, ya no será necesario reiniciar el servidor para ver los cambios en el navegador.
