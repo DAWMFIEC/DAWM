@@ -1,6 +1,8 @@
 # Ejercicio 01
 
-![ejercicio01](imagenes/ejercicio01.png)
+<p align="center">
+  <img src="imagenes/ejercicio01.png">
+</p>
 
 
 ## Requisitos
