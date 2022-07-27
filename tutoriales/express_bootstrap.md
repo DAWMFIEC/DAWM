@@ -7,6 +7,9 @@ theme: jekyll-theme-leap-day
 Express - Bootstrap
 ===============
 
+<p align="center">
+  <img src="imagenes/node_express_bootstrap.webp">
+</p>
 
 Proyecto en Express
 ===================
