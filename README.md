@@ -73,7 +73,8 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 03](Capítulo%2004/ejercicio03)         | Typescript - Interfaces y clases |
 | 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | Typescript - Funciones |
 | 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Angular - Bases |
-| Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01)         |  |
+| 				| [Ejercicio 06](Capítulo%2004/ejercicio06)         | Angular - Servicios |
+| Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01)         | Express - Bases |
 |               | [Ejercicio 02](Capítulo%2005/ejercicio02)         | Forms y Partials |
 |               | [Ejercicio 03](Capítulo%2005/ejercicio03)         | ORM - Básico e Intermedio |
 |               | [Ejercicio 04](Capítulo%2005/ejercicio04)         | Manejo de estado |
