@@ -158,6 +158,10 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 	...
 	</code></pre>
 
+Usando el servicio en el componente
+===================================
+
+Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ver cómo usaríamos el servicio **RecursoService** en el componente **AppComponent**.
 
 * En **src/app/app.component.ts** 
 	+ Agregue la referencia a la interfaz **Album** 
@@ -224,3 +228,4 @@ Referencias
 * Angular. (2022). Retrieved 19 July 2022, from https://angular.io/guide/http
 * Angular. (2022). Retrieved 19 July 2022, from https://docs.angular.lat/guide/comparing-observables
 * Usar clases e Interfaces en los servicios Angular. (2022). Retrieved 26 July 2022, from https://desarrolloweb.com/articulos/clases-interfaces-servicios-angular.html
+* Servicios en Angular. (2022). Retrieved 27 July 2022, from https://desarrolloweb.com/articulos/servicios-angular.html
