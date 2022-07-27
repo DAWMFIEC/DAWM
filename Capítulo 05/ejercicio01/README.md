@@ -7,15 +7,11 @@
 
 * Tome como referencia las instrucciones en [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) y [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html).
 
-## Instrucciones
-
-* 
-
 ## Pruebas unitarias
 
 * En su proyecto de Express 
   + Instale las dependencias **Jest**, **SuperTest** y **cross-env**, desde la línea de comandos ejecute:: `npm install --save-dev jest supertest cross-env`
-  + Copie la carpeta **tests** 
+  + Copie la carpeta **tests** a la carpeta del proyecto de Express
 
 * En **package.json**
   + Agregue el par clave-valor
