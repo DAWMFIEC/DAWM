@@ -10,11 +10,11 @@
 ## Pruebas unitarias
 
 * En su proyecto de Express 
-  + Instale las dependencias **Jest**, **SuperTest** y **cross-env**, desde la línea de comandos ejecute:: `npm install --save-dev jest supertest cross-env`
+  + Instale las dependencias **Jest**, **SuperTest** y **cross-env**
+    - Desde la línea de comandos ejecute:: `npm install --save-dev jest supertest cross-env`
+  
   + Copie la carpeta **tests** a la carpeta de su proyecto de Express
-
-* En su proyecto de Express 
-  + En **package.json**
+  + Modifique el archivo **package.json**
     - Agregue el par clave-valor
 
     <pre><code>
