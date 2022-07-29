@@ -43,9 +43,9 @@ Requerimientos de instalación
 
 * * *
 
-Instale:
+De los siguientes enlaces, descargue e instale:
 
-* [**Android Studio SDK - Command line tools only**](https://developer.android.com/studio#command-tools) 
+* **Android Studio SDK - Command line tools only** del [sitio oficial](https://developer.android.com/studio#command-tools) 
   + Acepte las condiciones y descargue el archivo
   + Descomprima el archivo
   + Copie el contenido de la carpeta `commandlinetools-win-8512546_latest` 
@@ -222,14 +222,14 @@ APK
 
 Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
 
-* Instale los paquetes, con: **npm install**
-* Compile el proyecto, con: **ng build --configuration=production --aot**
-* Genere el archivo de instalación, con: **cordova build android**
+* Instale los paquetes, con: **`npm install`**
+* Compile el proyecto, con: **`ng build --configuration=production --aot`**
+* Genere el archivo de instalación, con: **`cordova build android`**
     *   **Nota:** De producirse un error al generar el apk, ejecute las siguientes instrucciones  
           
-        **cordova platform remove android**  
-        **cordova platform add android**  
-        **cordova build android**  
+        **`cordova platform remove android`**  
+        **`cordova platform add android`**  
+        **`cordova build android`**  
 * En caso de éxito, se generará el archivo el **app-debug.apk** dentro de la ruta `platforms/android/app/build/outputs/apk/debug`     
 
 <p align="center">
