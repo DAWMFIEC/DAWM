@@ -217,7 +217,7 @@ APK
 
 * * *
 
-### Generar el APK
+**Generar el APK**
 
 
 Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
@@ -241,7 +241,7 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
 </p> 
 
 
-### Instalar el APK
+**Instalar el APK**
 
 * Asegúrese de colocar su dispositivo en **[modo desarrollador](https://es.digitaltrends.com/celular/opciones-de-desarrollador-en-android/)**.
 * Instale el archivo **app-debug.apk** en su dispositivo
@@ -277,7 +277,7 @@ Desde OTRA la línea de comandos:
   <img src="imagenes/adb.png">
 </p>
 
-### La aplicación desde el emulador 
+**La aplicación desde el emulador** 
 
 * Desde el extremo inferior del emulador, deslice hacia arriba para ver las aplicaciones instaladas. 
 * De doble clic sobre la aplicación para ejecutar.
