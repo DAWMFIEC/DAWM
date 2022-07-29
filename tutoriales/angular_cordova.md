@@ -66,9 +66,7 @@ Instale:
   </p>
 
 
-Variables de entorno
-=============================
-
+## Variables de entorno
 * * *
 
 Cree/verifique las variables de entorno para:
@@ -98,9 +96,7 @@ Agregue todas las variables de entorno anteriores al **PATH**.
     <img width="350" src="imagenes/env_vars_reveal.png">
   </p>
 
-Paquetes del Android SDK
-========================
-
+## Paquetes del Android SDK
 * * *
 
 Desde la línea de comandos, en la ruta **`C:\Android\cmdline-tools`**:
@@ -218,10 +214,13 @@ Para terminar la configuración del proyecto con Angular:
     *   **angular.json**, del proyecto de Angular, modifique la clave "outputPath" con el valor **"www"**.
     *   **src/index.html**, del proyecto en Angular, modifique `<base href="/">` por **`<base href="./">`**
 
-Generar el APK
-==============
+APK
+===
 
 * * *
+
+## Generar el APK
+
 
 Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
 
@@ -244,10 +243,7 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
 </p> 
 
 
-Instalar el APK
-===============
-
-* * *
+## Instalar el APK
 
 * Asegúrese de colocar su dispositivo en **[modo desarrollador](https://es.digitaltrends.com/celular/opciones-de-desarrollador-en-android/)**.
 * Instale el archivo **app-debug.apk** en su dispositivo
