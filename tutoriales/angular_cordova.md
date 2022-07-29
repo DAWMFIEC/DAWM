@@ -67,7 +67,6 @@ Instale:
 
 
 ## Variables de entorno
-* * *
 
 Cree/verifique las variables de entorno para:
 
@@ -97,7 +96,6 @@ Agregue todas las variables de entorno anteriores al **PATH**.
   </p>
 
 ## Paquetes del Android SDK
-* * *
 
 Desde la línea de comandos, en la ruta **`C:\Android\cmdline-tools`**:
 
