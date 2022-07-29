@@ -12,12 +12,19 @@
 * En su proyecto de Express 
   + Instale las dependencias **Jest**, **SuperTest** y **cross-env**
     - Desde la línea de comandos ejecute: `npm install --save-dev jest supertest cross-env`
-  
   + Agregue la carpeta **tests** de este repositorio a su proyecto 
   + Modifique el archivo **package.json**
-    - Agregue el par clave-valor
+    - Agregue los pares clave-valor
 
     <pre><code>
+    ...
+      "scripts":{
+        ...
+        <b style="color:red">
+        ,
+        "test": "jest"
+        </b>
+      }
     ...
         "nodemon": "^2.0.19",
         "supertest": "^6.2.4"
