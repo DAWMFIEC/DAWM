@@ -272,7 +272,7 @@ Desde OTRA la línea de comandos:
   <img src="imagenes/adb.png">
 </p>
 
-## La aplicación desde el emulador 
+La aplicación desde el emulador 
 
 * Desde el extremo inferior del emulador, deslice hacia arriba para ver las aplicaciones instaladas. 
 * De doble clic sobre la aplicación para ejecutar.
