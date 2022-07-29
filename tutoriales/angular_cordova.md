@@ -217,9 +217,6 @@ APK
 
 * * *
 
-## Generar el APK
-
-
 Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
 
 * Instale los paquetes, con: **npm install**
@@ -240,8 +237,6 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
   <img src="imagenes/cordova_build2.png">
 </p> 
 
-
-## Instalar el APK
 
 * Asegúrese de colocar su dispositivo en **[modo desarrollador](https://es.digitaltrends.com/celular/opciones-de-desarrollador-en-android/)**.
 * Instale el archivo **app-debug.apk** en su dispositivo
