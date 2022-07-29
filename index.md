@@ -40,6 +40,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Angular - PWA](tutoriales/angular_pwa.md)
 * [Angular - Rutas](tutoriales/angular_rutas.md)
 * [Angular - Material](tutoriales/angular_material.md)
+* [Angular - Cordova](tutoriales/angular_cordova.md)
 * [Angular - Servicios](tutoriales/angular_servicios.md)
 
 #### Express
