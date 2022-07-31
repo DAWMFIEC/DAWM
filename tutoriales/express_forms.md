@@ -29,7 +29,7 @@ Página de ingreso
 
 * * *
 
-Para crear la página de ingreso, o login, utilizaremos los archivos del recurso [login.rar](archivos/login.rar). La plantilla del login es [HTML Snippets for Twitter Boostrap framework](https://bootsnipp.com/snippets/dldxB).
+Para crear la página de ingreso, o login, utilizaremos los archivos del recurso [login.zip](archivos/login.zip). La plantilla del login es [HTML Snippets for Twitter Boostrap framework](https://bootsnipp.com/snippets/dldxB).
 
 * Copie los archivos de descomprimidos a las rutas dentro del proyecto en Express:
   + Copia el archivo **login.js** dentro de la carpeta **routes**.
@@ -90,6 +90,46 @@ Realiza las siguientes modificaciones para enviar los datos desde el formulario 
   + Agregue el atributo **action** con el valor **`/login/validate`**
   + Agregue el atributo **method** con el valor **`post`**
 
+* En el archivo **routes/login.js**, agregue el manejador para procesar requerimientos POST:
+    
+  <pre><code>
+  var express = require('express');
+  var router = express.Router();
+
+  <b style="color:red">
+  let bd = {  
+    'usuario': 'abc',  
+    'contrasenia': '123'  
+  }
+  </b>
+    
+  ...  
+  router.get('/', ...  
+  ...
+
+  <b style="color:red"> 
+  router.post('/validate', function(req, res, next) {  
+    let usuario = req.body.user;  
+    let contrasenia = req.body.password;  
+    
+    console.log("usuario: ", usuario)  
+    console.log("contraseña: ", contrasenia)  
+    
+    //Validación  
+    if(usuario == bd['usuario'] && contrasenia == bd['contrasenia']) {  
+      res.redirect('/');  
+    } else {  
+      res.redirect('/login')  
+    }  
+    
+  });
+  </b>
+  ...
+  module.exports = router;
+  </code></pre>
+
+* Verifica los resultados en el navegador. Comprueba los resultados al acceder a la ruta raíz **`/login`**,
+  + Ingrese los datos **`abc`** y contraseña **`123`**
 
 Referencias 
 ===========
