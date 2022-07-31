@@ -4,8 +4,8 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM-2022/)
 
-Express - Forms
-===============
+Express - Formularios
+=====================
 
 El usuario, mediante el navegador, hace peticiones para traer información desde el servidor. Estas peticiones predeterminadas son etiquetadas con el verbo GET. Mientras que para enviar datos nuevos del cliente al servidor, se recomienda el uso de peticiones etiquetadas con el verbo POST mediante el uso de formularios.
 

@@ -47,7 +47,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Express - Bases](tutoriales/express_bases.md)
 * [Express - Bootstrap](tutoriales/express_bootstrap.md)
-* [Express - Forms](tutoriales/express_forms.md)
+* [Express - Formularios](tutoriales/express_forms.md)
 * [Express - Partials](tutoriales/express_partials.md)
 * [Express - Parámetros y Rutas](tutoriales/express_parametrosyrutas.md)
 
