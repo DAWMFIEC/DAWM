@@ -86,7 +86,7 @@ Envío de datos con POST
 
 Realiza las siguientes modificaciones para enviar los datos desde el formulario del cliente al servidor.
 
-* En el archivo **views/login.ejs**, en la etiqueta <form>
+* En el archivo **views/login.ejs**, en la etiqueta **`<form>`**
   + Agregue el atributo **action** con el valor **`/login/validate`**
   + Agregue el atributo **method** con el valor **`post`**
 
@@ -130,6 +130,7 @@ Realiza las siguientes modificaciones para enviar los datos desde el formulario 
 
 * Verifica los resultados en el navegador. Comprueba los resultados al acceder a la ruta raíz **`/login`**,
   + Ingrese los datos **`abc`** y contraseña **`123`**
+
 
 Referencias 
 ===========
