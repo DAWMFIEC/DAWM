@@ -75,7 +75,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
 | 				| ~[Ejercicio 06](Capítulo%2004/ejercicio06)~         | ~Angular - Servicios~ |
 | Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01)         | Express - Bases y Bootstrap |
-|               | [Ejercicio 02](Capítulo%2005/ejercicio02)         | Express - Rutas y parámetros |
+|               | [Ejercicio 02](Capítulo%2005/ejercicio02)         | Express - Formularios, Rutas y parámetros |
 |               | [Ejercicio 03](Capítulo%2005/ejercicio03)         | Express - ORM - Básico e Intermedio |
 |               | [Ejercicio 04](Capítulo%2005/ejercicio04)         | Express - ODM - Básico |
 |               | [Ejercicio 05](Capítulo%2005/ejercicio05)         | Express - Manejo de estado |
