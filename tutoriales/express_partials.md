@@ -83,6 +83,20 @@ Para crear la página de productos, utilizaremos los archivos del recurso [produ
   <img src="imagenes/productos.png">
 </p>
 
+* En el **`views/partials/nav.ejs`**
+  + Modifica el enlace a productos
+
+  ```
+  ...
+  <li class="nav-item">
+  <a class="nav-link" href="/productos">
+     <span data-feather="shopping-cart"></span>
+     Products
+  </a>
+  </li>
+  ... 
+  ```
+
 Referencias 
 ===========
 
