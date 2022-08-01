@@ -13,11 +13,17 @@ theme: jekyll-theme-leap-day
 * [Express](https://expressjs.com/es/) es una infraestructura de aplicaciones web Node.js mínima y flexible que proporciona un conjunto sólido de características para las aplicaciones web y móviles
 * [Backend](https://descubrecomunicacion.com/que-es-backend-y-frontend/) es el interior de las aplicaciones que viven en el servidor y al que a menudo se le denomina "el lado del servidor". El backend consiste en un servidor, una aplicación y una base de datos. Se toman los datos, se procesa la información y se envía al usuario. Un desarrollador Backend debe tener amplios conocimientos de los siguientes lenguajes: frameworks y los tipos de base de datos. No siendo necesario conocer todos los lenguajes pero sí entender y saber trabajar con algunos de ellos.
 * [HTTP](https://developer.mozilla.org/es/docs/Web/HTTP). Este protocolo de la capa de aplicación nos comunicar navegadores y servidors mediante documentos HTML.
+* El [comportamiento por defecto](https://javascript.info/default-browser-action#:~:text=There%20are%20many%20default%20browser,submits%20the%20form%20after%20it.) 
 
 
 ### Actividades
 
-* 
+* Genere una aplicación en Expres, siguiendo las instrucciones pertinentes de los tutoriales:
+  + De [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
+  + De [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
+
+* Realice el tutorial completo de [Express - Formularios](https://dawfiec.github.io/DAWM-2022/tutoriales/express_forms.html).
+
 
 ### Términos
 
