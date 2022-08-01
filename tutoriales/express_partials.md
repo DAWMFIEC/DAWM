@@ -7,7 +7,7 @@ theme: jekyll-theme-leap-day
 Express - Layouts y Partials
 ============================
 
-Para ahorrar líneas de código y reutilizar componentes, Express ofrece el uso de partials como porciones de etiquetas de HTML.
+Para ahorrar líneas de código y reutilizar componentes, Express ofrece el uso de partials como porciones reutilizables de etiquetas de HTML.
 
 <p align="center">
   <img width="250" src="imagenes/express_layout.webp">
@@ -46,7 +46,7 @@ Para el sitio de ejemplo será necesario separar las secciones que pueden reutil
 </p>
 
 Productos: layout y partial
-==========================
+===========================
 
 * * *
 
