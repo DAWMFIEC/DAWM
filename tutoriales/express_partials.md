@@ -45,6 +45,20 @@ Para el sitio de ejemplo será necesario separar las secciones que pueden reutil
   <img src="imagenes/partial_main.png">
 </p>
 
+Partial: `<header>` y `<nav>`
+=============================
+
+* * *
+
+Del **`views/index.ejs`**, repite el proceso anterior para las etiquetas `<header>` y `<nav>`.
+
+* Coloca la etiqueta **`<header>`** en el partial  **`views/partials/header.ejs`**
+* Coloca la etiqueta **`<nav>`** en el partial  **`views/partials/nav.ejs`**
+
+<p align="center" style="border: 0.5pt solid black;">
+  <img src="imagenes/partials.png">
+</p>
+
 Productos: layout y partial
 ===========================
 

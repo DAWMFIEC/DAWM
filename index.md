@@ -49,7 +49,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - Bootstrap](tutoriales/express_bootstrap.md)
 * [Express - Formularios](tutoriales/express_forms.md)
 * [Express - Layout y Partials](tutoriales/express_partials.md)
-* [Express - Rutas, Parameters y Query Strings](tutoriales/express_rpqs.md)
+* [Express - Parámetros y Cadena de consultas](tutoriales/express_rpqs.md)
 
 #### REST
 

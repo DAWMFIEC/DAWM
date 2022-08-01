@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
 * Realice el tutorial completo de [Express - Formularios](https://dawfiec.github.io/DAWM-2022/tutoriales/express_forms.html).
 
 
-![Formularios](formularios.png)
+![Formularios](imagenes/formularios.png)
 
 
 

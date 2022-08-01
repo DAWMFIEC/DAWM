@@ -4,8 +4,8 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM-2022/)
 
-Express - Rutas, Parameters y Query Strings
-===========================================
+Express - Parámetros y Cadena de consultas
+==========================================
 
 
 
