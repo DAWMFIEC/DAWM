@@ -84,7 +84,7 @@ Para crear la página de productos, utilizaremos los archivos del recurso [produ
 </p>
 
 * En el **`views/partials/nav.ejs`**
-  + Modifica el enlace a productos
+  + Modifica el enlace a `/productos`
 
   ```
   ...
@@ -93,6 +93,19 @@ Para crear la página de productos, utilizaremos los archivos del recurso [produ
      <span data-feather="shopping-cart"></span>
      Products
   </a>
+  </li>
+  ... 
+  ```
+
+  + Modifica el enlace a `/`
+
+  ```
+  ...
+  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="/">
+      <span data-feather="home" class="align-text-bottom"></span>
+      Dashboard
+    </a>
   </li>
   ... 
   ```
