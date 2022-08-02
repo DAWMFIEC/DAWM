@@ -4,10 +4,10 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM-2022/)
 
-Express - Parámetros y Cadena de consultas
+Express - ORM (Básico)
 ==========================================
 
-Express.js ofrece dos mecanismos para proveer de datos al servidor para el filtrado de datos: parámetros y cadena de consultas
+Sequelize es un [ORM](https://www2.deloitte.com/es/es/pages/technology/articles/que-es-orm.html) para Nodejs que te permite agilizar bastante tus desarrollos que incluyan bases de datos relacionales como Postgres, MySQL, MariaDB, SQLite y SQL Server.
 
 
 Proyecto en Express
@@ -15,27 +15,11 @@ Proyecto en Express
 
 * * *
 
-Utiliza el proyecto que desarrollaste con el tutorial de [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html), [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html) y [Express - Formularios](https://dawfiec.github.io/DAWM-2022/tutoriales/express_forms.html).
+Utiliza el proyecto que desarrollaste con el tutorial de [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html), [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html), [Express - Formularios](https://dawfiec.github.io/DAWM-2022/tutoriales/express_forms.html) y [Express - Layout y Partials](https://dawfiec.github.io/DAWM-2022/tutoriales/express_partials.html).
 
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
 
-Cadena de consultas (Query String)
-==================================
-* * *
-
-Una cadena de consulta es parte de una URL después del signo de interrogación (?). Sirve para enviar datos al servidor, que se utilizarán como filtros para la respuesta.
-
-* **Current month**
-
-
-Parámetros
-==========
-* * *
-
-Otra forma para pasar datos al servidor, es colocar información dentro de la ruta URL real. A este mecanismo se denomina parámetros de ruta en Express. 
-
-* **Last quarter**
 
 
 
@@ -44,6 +28,9 @@ Referencias
 
 * * *
 
-* ᐉ Obtener cadenas de consulta y parámetros en Express.js Pharos. (2021). Retrieved 1 August 2022, from https://pharos.sh/obtener-cadenas-de-consulta-y-parametros-en-express-js/
-* Query vs. URL Parameters in Express.js. (2020). Retrieved 1 August 2022, from https://javascript.plainenglish.io/query-strings-url-parameters-d1a35b9a694f
-* Get Query Strings and Parameters in Express.js. (2017). Retrieved 1 August 2022, from https://stackabuse.com/get-query-strings-and-parameters-in-express-js/
+* ¿Qué es un ORM?. (2021). Retrieved 3 August 2021, from https://www2.deloitte.com/es/es/pages/technology/articles/que-es-orm.html 
+* Manual Sequelize. (2021). Retrieved 4 August 2021, from https://sequelize.org/master/index.html 
+* Node JS, Express y MySQL con Sequelize. (2021). Retrieved 3 August 2021, from https://tomasmalio.medium.com/node-js-express-y-mysql-con-sequelize-ec0a7c0ae292 
+* Creating Sequelize Associations with the Sequelize CLI tool. (2020). Retrieved 3 August 2021, from https://levelup.gitconnected.com/creating-sequelize-associations-with-the-sequelize-cli-tool-d83caa902233 
+* Creating Sequelize Associations with the Sequelize CLI tool. (2020). Retrieved 3 August 2021, from https://levelup.gitconnected.com/creating-sequelize-associations-with-the-sequelize-cli-tool-d83caa902233 
+* GitHub - japsolo/curso-sequelize-migrations-seeders: Creando modelos, migraciones y seeders con Sequelize en Node + Express. (2021). Retrieved 3 August 2021, from https://github.com/japsolo/curso-sequelize-migrations-seeders

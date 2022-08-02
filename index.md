@@ -52,6 +52,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - ORM Básico](tutoriales/express_ormbasico.md)
 * [Express - ORM Intermedio](tutoriales/express_ormbasico.md)
 * [Express - Parámetros y Cadena de consultas](tutoriales/express_rpqs.md)
+* [Express - ODM Básico](tutoriales/express_odmbasico.md)
 
 #### REST
 
