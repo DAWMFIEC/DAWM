@@ -44,7 +44,7 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
   + La carpeta `seeders` contendrá los scripts para generar datos para las entidades de la base datos.
 
 <p align="center">
-  <img src="imagenes/sequelizeinit.jpg">
+  <img src="imagenes/sequelizeinit.JPG">
 </p>
 
 * Modifique el archivo `config/config.json` con los datos para la conexión con el motor de bases de datos. En este caso, el ambiente a utilizar es **development**.
