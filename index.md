@@ -50,8 +50,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - Formularios](tutoriales/express_forms.md)
 * [Express - Layout y Partials](tutoriales/express_partials.md)
 * [Express - ORM Básico](tutoriales/express_ormbasico.md)
-* [Express - Parámetros y Cadena de consultas](tutoriales/express_rpqs.md)
-* [Express - ODM Básico](tutoriales/express_odmbasico.md)
+
 
 #### REST
 
