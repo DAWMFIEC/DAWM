@@ -94,7 +94,7 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * Ejecute TODAS las migraciones, con: **`sequelize db:migrate`**
   <p align="center">
-	<img src="imagenes/producto_migrate.jpg">
+	<img src="imagenes/producto_migrate.JPG">
   </p>
 
   + Se creó la tabla vacía **productos**. El nombre de las tablas son creadas en inglés mediante el nombre del modelo en plural, como: **orden** \-> **ordens**. 
