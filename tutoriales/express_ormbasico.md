@@ -29,11 +29,11 @@ Utiliza el proyecto que desarrollaste con el tutorial de [Express - Bases](https
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
 
-Sequelize
-=========
+ORM: Sequelize
+==============
 * * *
 
-Desde la línea de comandos del proyecto:
+Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * Instale Sequelize CLI de forma global, con: **`npm install -g sequelize-cli`**
 * Instale Sequelize y el conector para MySQL para el proyecto, con: **`npm install --save sequelize mysql2`**
@@ -67,13 +67,13 @@ MySQL
 
 * Cree la base de datos (schema) con el nombre requerido, por ejemplo: **misitio**.
 
-Modelos
-=======
+Modelo
+======
 * * *
 
 El modelo es una representación abstracta, mediante clases (atributos y métodos), de las entidades de la base de datos relacional. 
 
-Mediante la línea de comandos en la raíz de la carpeta del proyecto.
+Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * Crea el modelo: producto, con: **`sequelize model:create --name producto --attributes nombre:string,cantidad:integer`**
   + En la carpeta `models` se agregó la clase **producto.js**, con la configuración predeterminada y los atributos especificados.
@@ -90,7 +90,7 @@ Migraciones
 
 Las migraciones contienen un registro histórico de los cambios realizados en los modelos y/o entidades. 
 
-Mediante la línea de comandos en la raíz de la carpeta del proyecto.
+Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * Ejecute TODAS las migraciones, con: **`sequelize db:migrate`**
   <p align="center">
@@ -112,13 +112,13 @@ Mediante la línea de comandos en la raíz de la carpeta del proyecto.
   + Todas las anteriores: **sequelize db:migrate:undo:all**
   + O, alguna migración específica, según como aparezca dentro de la carpeta **migrations**: **`sequelize db:migrate:undo --to XXXXXXXXXXXXXX-create-TABLE.js`**
 
-Seeders (Generadores)
+Generadores (Seeders)
 =====================
 * * *
 
 A veces, es necesario generar datos de manera automática. 
 
-Mediante la línea de comandos en la raíz de la carpeta del proyecto.
+Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * De no existir, cree el generador con: **`sequelize seed:generate --name productos`**
 * Dentro del archivo `seeders/YYYYMMDDHHMMSS-productos.js`, en la función **async up**, agregue:
@@ -160,8 +160,104 @@ async down (queryInterface, Sequelize) {
 	<img width="30%" src="imagenes/mysql_productos2.png">
   </p>
 
+Controlador
+===========
+* * *
 
+Para solicitar los datos desde la base de datos, será necesario:
 
+* Agregue al **routes/index.js** la referencia al módulo **Sequelize** y el modelo **Producto**
+
+<pre><code>
+var express = require('express');  
+var router = express.Router();  
+  
+<b style="color:red">
+const Sequelize = require('sequelize');
+const Producto = require('../models').producto;  
+</b>  
+  
+/* GET home page. */  
+router.get('/', function(req, res, next) {
+</code></pre>
+
+* El controlador de la ruta **`"/productos"`** solicitará todos los productos (findAll) y envía los datos como argumento de la plantilla.
+
+<pre><code>
+router.get('/productos', function(req, res, next) {  
+  
+  	<b style="color:red">
+    Producto.findAll({  
+        attributes: { exclude: ["updatedAt"] }  
+    })  
+    .then(productos => {  
+        res.render('productos', { title: 'My Dashboard :: Productos', arrProductos: productos });  
+    })  
+    .catch(error => res.status(400).send(error)) 
+	</b>
+
+});
+</code></pre>
+
+Vista
+=====
+* * *
+
+* En la vista de productos, del archivo **views/productos.ejs**, envíe como parámetro el arreglo de productos.
+
+```
+...  
+<div class="container-fluid">  
+     <div class="row">  
+         <% include partials/nav %>  
+         
+         
+         <% include partials/productos_tabla arrProductos=arrProductos %>
+         
+
+     </div>  
+</div>  
+...
+
+```
+
+* En la vista, en el partial **views/partials/productos_tabla.ejs**, al reemplazar el contenido de la etiqueta <table>:
+
+```
+...  
+  
+<table class="table table-striped table-hover">  
+   <thead>  
+     <tr>  
+       <th>#</th>  
+       <th>Nombre</th>  
+       <th>Cantidad</th>  
+       <th>Creado</th>  
+       <th>Action</th>  
+     </tr>  
+   </thead>  
+   <tbody>  
+        <% arrProductos.forEach(function(producto){ %>  
+          <tr>  
+            <td><%= producto.id %></td>  
+            <td><%= producto.nombre %></td>   
+            <td><%= producto.cantidad %></td>  
+            <td><%= producto.createdAt.toLocaleDateString('en-US') %></td>  
+            <td>  
+                <a href="#" class="settings" title="Settings" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>  
+                <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>  
+            </td>  
+          </tr>  
+        <% }); %>  
+    </tbody>  
+</table>  
+  
+...
+
+```
+
+* Compruebe el funcionamiento del servidor, con: **npm run devstart**
+* Acceda al URL `http://localhost:3000/productos` 
 
 
 Referencias 
