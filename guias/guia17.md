@@ -9,7 +9,12 @@ theme: jekyll-theme-leap-day
 ### Contenidos
 
 * Revisión de ejercicios previos: dudas y comentarios.
-* 
+
+* [Partials y layout](https://dev.weebly.com/pf_themes_partials.html) son mecanismos de reutilización de porciones de HTML. Con el fin de renderización alguna de las variables o renderizar otras plantillas. 
+  + Nodejs utiliza [includes](https://github.com/tj/ejs#includes) para incluir porciones parciales en la plantilla original. 
+
+* [ORM](https://www2.deloitte.com/es/es/pages/technology/articles/que-es-orm.html) es un modelo de programación que permite mapear las estructuras de una base de datos relacional (SQL Server, Oracle, MySQL, etc.), en adelante RDBMS (Relational Database Management System), sobre una estructura lógica de entidades con el objeto de simplificar y acelerar el desarrollo de nuestras aplicaciones.
+  + [Sequelize](https://sequelize.org/) es un ORM moderno de TypeScript y Node.js para Postgres, MySQL, MariaDB, SQLite y SQL Server, y más. Con un sólido soporte de transacciones, relaciones, carga ansiosa y diferida, replicación de lectura y más. En este [sitio](https://gist.github.com/vapurrmaid/a111bf3fc0224751cb2f76532aac2465) puedes encontrar la documentación que explica la estructura de **Sequelize**.
 
 
 ### Actividades
