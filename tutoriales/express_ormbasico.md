@@ -259,6 +259,9 @@ Vista
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/productos` 
 
+<p align="center">
+  <img src="imagenes/orm_productos.png">
+</p>
 
 Referencias 
 ===========
