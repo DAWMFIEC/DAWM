@@ -69,15 +69,26 @@ Para crear la página de productos, utilizaremos los archivos del recurso [produ
 * Copia el archivo **`productos.ejs`** dentro de la carpeta **`views`**.
 * Copia el archivo **`productos_tabla.ejs`** dentro de la carpeta **`views/partials`**.
   + Agregue la referencia al partial **`productos_tabla.ejs`**
-* Copia el archivo **`table.css`** dentro de la carpeta **`public/stylesheets`**. 
-* En el **`routes/index.js`**
-  + Enlaza la ruta **`"/productos"`** con la vista **`productos.ejs`**.
-* Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/productos` 
 
 <p align="center">
   <img src="imagenes/partial_productos.png">
 </p>
+
+* Copia el archivo **`table.css`** dentro de la carpeta **`public/stylesheets`**. 
+* En el **`routes/index.js`**
+  + Enlaza la ruta **`"/productos"`** con la vista **`productos.ejs`**.
+
+<pre><code>
+  ...
+router.get('/productos', function(req, res, next) {
+  res.render('productos', { title: 'Productos' });
+})
+...
+</code></pre>  
+
+
+* Compruebe el funcionamiento del servidor, con: **npm run devstart**
+* Acceda al URL `http://localhost:3000/productos` 
 
 <p align="center">
   <img src="imagenes/productos.png">
