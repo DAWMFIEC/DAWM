@@ -102,6 +102,18 @@ Photo.findAll()
 ...
 ```
 
+* Agregue el controlador para el método `GET` con la subruta `/album/:id`. Además, agregue un _query_ para traer la **photo** con _id_ enviado como parámetro.
+
+```
+...
+Photo.findOne({ where: { id: req.params.id } })  
+  .then(photos => {  
+      res.json(photos)
+  })  
+  .catch(error => res.status(400).send(error))
+...
+```
+
 
 ## Pruebas unitarias
 
@@ -154,3 +166,4 @@ Photo.findAll()
 * DAWM-2022. (2022). Retrieved 4 August 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html
 * Testing your Express.js Backend Server. (2021). Retrieved 27 July 2022, from https://dev.to/lukekyl/testing-your-express-js-backend-server-3ae6
 * Expect · Jest. (2022). Retrieved 27 July 2022, from https://jestjs.io/docs/expect
+* Concepts, C., & Finders, M. (2022). Model Querying - Finders Sequelize. Retrieved 4 August 2022, from https://sequelize.org/docs/v6/core-concepts/model-querying-finders/
