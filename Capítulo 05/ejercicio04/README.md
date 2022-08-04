@@ -11,6 +11,8 @@
 
 * En su motor de base de datos, cree la base: **album**
 
+* Modifique el archivo `config/config.json` para los ambientes "development" y "test" con los datos de conexión: **database**, **username** y **password**
+
 * Desde la línea de comandos de su proyecto.
   + Cree el modelo photo, con: `sequelize model:create --name photo --attributes descripcion:string,tiempo:string,url:string`
   + Migre los cambios, con: `sequelize db:migrate`
