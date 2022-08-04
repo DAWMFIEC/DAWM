@@ -5,21 +5,22 @@
 
 ## Instrucciones
 
-* Cree un proyecto nuevo llamado **album**, de acuerdo con las actividades:
+* De acuerdo con las instrucciones de:
+
   + [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html),
   + [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html).
 
-* En su motor de base de datos, cree la base: **album**
+* Cree un proyecto nuevo llamado **album**
 
-* Modifique el archivo `config/config.json` para los ambientes "development" y "test" con los datos de conexión: **database**, **username** y **password**
+* Base de datos: **album**
+
+* Modifique el archivo `config/config.json` para los ambientes "development" y "test" para los datos de conexión: **database**, **username** y **password**
 
 * Desde la línea de comandos de su proyecto.
-  + Cree el modelo photo, con: `sequelize model:create --name photo --attributes descripcion:string,tiempo:string,url:string`
-  + Migre los cambios, con: `sequelize db:migrate`
-  + Cree el _seeder_, de ser necesario, con: `sequelize seed:generate --name photos`
-
-* En el archivo **seeders/YYYYMMDDHHMMSS-photos.js**, agregue el siguiente código:
-  + A la función **up**:
+  + Cree el modelo **`photo`**, con atributos de tipo _string_: **`descripcion`**, **`tiempo`** y **`url`**
+  
+* Modifique el seeder de **`photo`**:
+  + En la función **up**:
   ```
   let arreglo = [
       {
@@ -66,13 +67,13 @@
     }
   ```
 
-  + A la función **down**:
+  + En la función **down**:
 
   ```
   await queryInterface.bulkDelete('Photos', null, {});
   ```
 
-* Ejecute los seeders, con: `sequelize db:seed:all`
+* Ejecute los seeders
 
 <p align="center">
   <img src="imagenes/mysql.png">
@@ -81,17 +82,7 @@
 * En el app.js
   + Registre la ruta "/photo" para que enrute las peticiones a "routes/photo.js" 
 
-  ```
-  ...
-  var photoRouter = require('./routes/photo');
-  ...
-
-  ...
-  app.use('/photo', photoRouter);
-  ...
-  ```
-* Cree el archivo ruteador "routes/photo.js"
-* Agregue al  "routes/photo.js" la referencia al módulo **Sequelize** y el modelo **Photo**
+* En el router "routes/photo.js" la referencia al módulo **Sequelize** y el modelo **Photo**
 
 ```
 ...
