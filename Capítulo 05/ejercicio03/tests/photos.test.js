@@ -16,4 +16,9 @@ describe('Express Endpoints', () => {
       expect(res.body.length).toEqual(6);
   });
 
+  it('GET /photo/album/1', async () => {
+      const res = await requestWithSupertest.get('/photo/album/1');
+      expect(res.body['tiempo']).toEqual('19 mins');
+  });
+
 });
