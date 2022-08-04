@@ -89,7 +89,7 @@ Otra forma para pasar datos al servidor consiste en colocar información dentro 
 
   <pre><code>
   	...
-  	let cantidad = parseInt(req.params.cantidad);
+    let cantidad = parseInt(req.params.cantidad);
     let nombre = req.params.nombre;
   	...
   </code></pre>
@@ -131,4 +131,4 @@ Referencias
 * Query vs. URL Parameters in Express.js. (2020). Retrieved 1 August 2022, from https://javascript.plainenglish.io/query-strings-url-parameters-d1a35b9a694f
 * Get Query Strings and Parameters in Express.js. (2017). Retrieved 1 August 2022, from https://stackabuse.com/get-query-strings-and-parameters-in-express-js/
 * Concepts, C., & Finders, M. (2022). Model Querying - Finders Sequelize. Retrieved 3 August 2022, from https://sequelize.org/docs/v6/core-concepts/model-querying-finders/
-* Concepts, C., & Basics, M. (2022). Model Querying - Basics | Sequelize. Retrieved 4 August 2022, from https://sequelize.org/docs/v6/core-concepts/model-querying-basics/
+* Concepts, C., & Basics, M. (2022). Model Querying - Basics Sequelize. Retrieved 4 August 2022, from https://sequelize.org/docs/v6/core-concepts/model-querying-basics/
