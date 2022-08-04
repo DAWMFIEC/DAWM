@@ -100,7 +100,7 @@ const Photo = require('../models').photo;
 ...
 ```
 
-* Agregue el controlador para el método GET con la subruta /album
+* Agregue el controlador para el método `GET` con la subruta `/album`
 
 ```
 ...
