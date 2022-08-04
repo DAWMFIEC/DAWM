@@ -16,7 +16,7 @@
 * Desde la línea de comandos de su proyecto.
   + Cree el modelo photo, con: `sequelize model:create --name photo --attributes descripcion:string,tiempo:string,url:string`
   + Migre los cambios, con: `sequelize db:migrate`
-  + Cree el _seeder_, con: `sequelize seed:generate --name photos`
+  + Cree el _seeder_, de ser necesario, con: `sequelize seed:generate --name photos`
 
 * En el archivo **seeders/YYYYMMDDHHMMSS-photos.js**, agregue el siguiente código:
   + A la función **up**:
