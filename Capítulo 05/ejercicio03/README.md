@@ -16,8 +16,7 @@
 
 * Modifique el archivo `config/config.json` para los ambientes "development" y "test" para los datos de conexión: **database**, **username** y **password**
 
-* Desde la línea de comandos de su proyecto.
-  + Cree el modelo **`photo`**, con atributos de tipo _string_: **`descripcion`**, **`tiempo`** y **`url`**
+* Cree el modelo **`photo`**, con atributos de tipo _string_: **`descripcion`**, **`tiempo`** y **`url`**
   
 * Modifique el seeder de **`photo`**:
   + En la función **up**:
