@@ -74,6 +74,10 @@
 
 * Ejecute los seeders, con: `sequelize db:seed:all`
 
+<p align="center">
+  <img src="imagenes/mysql.png">
+</p>
+
 
 ## Pruebas unitarias
 
