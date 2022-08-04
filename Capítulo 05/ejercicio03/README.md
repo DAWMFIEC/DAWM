@@ -5,10 +5,11 @@
 
 ## Instrucciones
 
-* De acuerdo con las instrucciones de:
+* Tome como referencia las instrucciones de:
 
   + [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html),
-  + [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html).
+  + [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html),
+  + [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM-2022/tutoriales/express_pcpr.html)
 
 * Cree un proyecto nuevo llamado **album**
 
