@@ -6,8 +6,8 @@
 ## Instrucciones
 
 * Cree un proyecto nuevo llamado **album**, de acuerdo con las actividades:
-  - [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html),
-  - [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html).
+  + [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html),
+  + [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html).
 
 * En su motor de base de datos, cree la base: **album**
 
@@ -77,6 +77,40 @@
 <p align="center">
   <img src="imagenes/mysql.png">
 </p>
+
+* En el app.js
+  + Registre la ruta "/photo" para que enrute las peticiones a "routes/photo.js" 
+
+  ```
+  ...
+  var photoRouter = require('./routes/photo');
+  ...
+
+  ...
+  app.use('/photo', photoRouter);
+  ...
+  ```
+* Cree el archivo ruteador "routes/photo.js"
+* Agregue al  "routes/photo.js" la referencia al módulo **Sequelize** y el modelo **Photo**
+
+```
+...
+const { Sequelize, Op } = require('sequelize');
+const Photo = require('../models').photo;  
+...
+```
+
+* Agregue el controlador para el método GET con la subruta /album
+
+```
+...
+Photo.findAll()  
+  .then(photos => {  
+      res.json(photos)
+  })  
+  .catch(error => res.status(400).send(error))
+...
+```
 
 
 ## Pruebas unitarias
