@@ -81,7 +81,7 @@
 * En el app.js
   + Registre la ruta "/photo" para que enrute las peticiones a "routes/photo.js" 
 
-* En el router "routes/photo.js" la referencia al módulo **Sequelize** y el modelo **Photo**
+* En el router "routes/photo.js" agregue la referencia a los módulos **Sequelize** y **Op**. Además, al modelo **Photo**.
 
 ```
 ...
@@ -90,7 +90,7 @@ const Photo = require('../models').photo;
 ...
 ```
 
-* Agregue el controlador para el método `GET` con la subruta `/album`
+* Agregue el controlador para el método `GET` con la subruta `/album`. Además, agregue un _query_ para traer todos los datos de la entidad **photo**.
 
 ```
 ...
