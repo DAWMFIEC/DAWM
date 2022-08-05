@@ -19,7 +19,8 @@ theme: jekyll-theme-leap-day
 ### Actividades
 
 * Crear el proyecto en Express para la BD relacional
-  + Controlador para GET
+  + Controlador para GET /
+  + Controlador para GET /:id
 * Componentes para proyecto en angular 
   + Servicio
 
