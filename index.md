@@ -54,7 +54,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 
 
-#### REST
+#### Scripts
+
+* [Mock data](tutoriales/mock_data.md)
+
 
 ## Indicaciones Generales
 
