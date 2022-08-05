@@ -40,7 +40,6 @@ Desde la raíz del proyecto con Angular
 	export interface Album {
      cabecera: string;
      principal: string;
-     fotos: any;
   }
 	</code></pre>
 
