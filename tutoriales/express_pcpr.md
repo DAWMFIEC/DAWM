@@ -20,14 +20,14 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
 
-Parámetros de consulta (Query String)
-=====================================
+Cláusula WHERE
+===============
 * * *
 
-Los parámetros de consulta forman parte de una URL después del signo de interrogación (?). Sirve para enviar datos al servidor, que se utilizarán como filtros para la respuesta.
+La cláusula where se utiliza para filtrar la consulta. Hay muchos operadores para usar en la cláusula where, disponibles con el símbolos de **`Op`**: `Op.between`, `Op.and`, `Op.or`, etc.
 
 * En el ruteador **`routes/index.js`**
-  + Cambie el import para usar el operador **Op**, .
+ + Cambie el import para usar el operador **Op**, .
 
   <pre><code>
   const Sequelize = require('sequelize');
@@ -39,6 +39,14 @@ Los parámetros de consulta forman parte de una URL después del signo de interr
   <b style="color:red">const { Sequelize, Op } = require('sequelize');</b>
   </code></pre>
 
+
+Parámetros de consulta (Query String)
+=====================================
+* * *
+
+Los parámetros de consulta forman parte de una URL después del signo de interrogación (?). Sirve para enviar datos al servidor, que se utilizarán como filtros para la respuesta.
+
+* En el ruteador **`routes/index.js`**
   + Agregue el controlador para el método **`GET`** con la subruta **`/productosc`**
   + Obtenga los parámetros de consulta **`cantidadmenor`** y **`cantidadmayor`**, con:
 
