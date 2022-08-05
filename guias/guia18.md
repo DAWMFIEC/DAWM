@@ -9,7 +9,11 @@ theme: jekyll-theme-leap-day
 ### Contenidos
 
 * Revisión de ejercicios previos: dudas y comentarios.
-* 
+* sequelize
+  + modelos / orm
+  + migrations
+  + seeders
+	
 
 
 ### Actividades

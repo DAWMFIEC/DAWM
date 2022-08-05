@@ -9,12 +9,15 @@ theme: jekyll-theme-leap-day
 ### Contenidos
 
 * Revisión de ejercicios previos: dudas y comentarios.
-* 
+* mongoose
+  + modelos / odm
+
 
 
 ### Actividades
 
-* 
+* generar dataset para mongodb
+* odm
 
 ### Términos
 
