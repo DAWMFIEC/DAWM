@@ -53,21 +53,8 @@ theme: jekyll-theme-leap-day
 
   + El método **GET** de la subruta **`/productos/:id`** que retorna un _json_ con el producto con el _id_ en la ruta.
 
-  En lugar de renderizar la respuesta en la vista
-
-  ```
-  .then(resultado => {  
-        res.render('vista', { arrResultado: resultado });  
-    })  
-  ```
-
-  Renderice el json:
-
-  ```
-  then(resultado => {  
-      res.json(resultado)
-  })
-  ```
+  En lugar de renderizar la respuesta en la vista, renderice el json.
+  
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/api/productos` 
 
