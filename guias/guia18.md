@@ -54,18 +54,18 @@ theme: jekyll-theme-leap-day
   + El método **GET** de la subruta **`/productos/:id`** que retorna un _json_ con el producto con el _id_ en la ruta.
 
   En lugar de renderizar la respuesta en la vista, renderice el json.
-  
+
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/api/productos` 
 
 <p align="center">
-  <img src="imagenes/restapi.png">
+  <img src="imagenes/restapiget.png">
 </p>
 
 * Acceda al URL `http://localhost:3000/api/productos/3` 
 
 <p align="center">
-  <img src="imagenes/restapiid.png">
+  <img src="imagenes/restapigetid.png">
 </p>
 
 * Componentes para proyecto en angular 
