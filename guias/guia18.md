@@ -24,14 +24,14 @@ theme: jekyll-theme-leap-day
 * Genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
   + De [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
   + De [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
-  + Todo de [Express - Layouts y Partials](https://dawfiec.github.io/DAWM-2022/tutoriales/express_partials.html).
-  + Todo [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html).
+  + De [Express - Layouts y Partials](https://dawfiec.github.io/DAWM-2022/tutoriales/express_partials.html) hasta **Productos: layout y partial**.
+  + De [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html) hasta la **Vista** de Productos.
 
 * Cree el router **routes/api.js**
 * Agregue la referencia del router  **routes/api.js** en el `app.js`
 * El router **routes/api.js** agregue: 
-  + El método **GET** de la subruta **`/`**
-  + El método **GET** de la subruta **`/:id`**
+  + El método **GET** de la subruta **`/`** que retorna un _json_ con todos los productos.
+  + El método **GET** de la subruta **`/:id`** que retorna un _json_ con el producto con el _id_ en la ruta.
 * Componentes para proyecto en angular 
   + Servicio
 
