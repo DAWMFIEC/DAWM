@@ -27,10 +27,12 @@ theme: jekyll-theme-leap-day
   + De [Express - Layouts y Partials](https://dawfiec.github.io/DAWM-2022/tutoriales/express_partials.html) hasta **Productos: layout y partial**.
   + De [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html) hasta la **Vista** de Productos.
 
-* Cree el router **routes/api.js**
-* Agregue la referencia del router  **routes/api.js** en el `app.js`
-* El router **routes/api.js** agregue: 
-  + El método **GET** de la subruta **`/`** que retorna un _json_ con todos los productos.
+* Cree el ruteador **routes/api.js**
+* Agregue la referencia del ruteador **routes/api.js** en el `app.js`
+  + Use la ruta `/api` para el ruteador **routes/api.js**
+
+* El ruteador **routes/api.js** agregue: 
+  + El método **GET** de la subruta **`/productos`** que retorna un _json_ con todos los productos.
 
   En lugar de renderizar la respuesta en la vista
 
@@ -49,7 +51,7 @@ theme: jekyll-theme-leap-day
   ``` 
 
 
-  + El método **GET** de la subruta **`/:id`** que retorna un _json_ con el producto con el _id_ en la ruta.
+  + El método **GET** de la subruta **`/productos/:id`** que retorna un _json_ con el producto con el _id_ en la ruta.
 
   En lugar de renderizar la respuesta en la vista
 
@@ -66,7 +68,18 @@ theme: jekyll-theme-leap-day
       res.json(resultado)
   })
   ```
+* Compruebe el funcionamiento del servidor, con: **npm run devstart**
+* Acceda al URL `http://localhost:3000/api/productos` 
 
+<p align="center">
+  <img src="imagenes/restapi.png">
+</p>
+
+* Acceda al URL `http://localhost:3000/api/productos/3` 
+
+<p align="center">
+  <img src="imagenes/restapiid.png">
+</p>
 
 * Componentes para proyecto en angular 
   + Servicio
