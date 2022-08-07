@@ -21,9 +21,17 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Crear el proyecto en Express para la BD relacional
-  + Controlador para GET /
-  + Controlador para GET /:id
+* Genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
+  + De [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
+  + De [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
+  + Todo de [Express - Layouts y Partials](https://dawfiec.github.io/DAWM-2022/tutoriales/express_partials.html).
+  + Todo [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html).
+
+* Cree el router **routes/api.js**
+* Agregue la referencia del router  **routes/api.js** en el `app.js`
+* El router **routes/api.js** agregue: 
+  + El método **GET** de la subruta **`/`**
+  + El método **GET** de la subruta **`/:id`**
 * Componentes para proyecto en angular 
   + Servicio
 
