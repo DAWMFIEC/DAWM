@@ -31,7 +31,43 @@ theme: jekyll-theme-leap-day
 * Agregue la referencia del router  **routes/api.js** en el `app.js`
 * El router **routes/api.js** agregue: 
   + El método **GET** de la subruta **`/`** que retorna un _json_ con todos los productos.
+
+  En lugar de renderizar la respuesta en la vista
+
+  ```
+  .then(resultado => {  
+        res.render('vista', { arrResultado: resultado });  
+    })  
+  ```
+
+  Renderice el json:
+
+  ```
+  then(resultado => {  
+      res.json(resultado)
+  })
+  ``` 
+
+
   + El método **GET** de la subruta **`/:id`** que retorna un _json_ con el producto con el _id_ en la ruta.
+
+  En lugar de renderizar la respuesta en la vista
+
+  ```
+  .then(resultado => {  
+        res.render('vista', { arrResultado: resultado });  
+    })  
+  ```
+
+  Renderice el json:
+
+  ```
+  then(resultado => {  
+      res.json(resultado)
+  })
+  ```
+
+
 * Componentes para proyecto en angular 
   + Servicio
 
