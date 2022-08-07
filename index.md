@@ -23,7 +23,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 | [Guía 07](guias/guia07.md) | [Guía 17](guias/guia17.md) |
 | [Guía 08](guias/guia08.md) | [Guía 18](guias/guia18.md) |
 | [Guía 09](guias/guia09.md) | [Guía 19](guias/guia19.md) |
-| [Guía 10](guias/guia10.md) | |
+| [Guía 10](guias/guia10.md) | [Guía 20](guias/guia20.md) |
 
 
 ## Tutoriales
