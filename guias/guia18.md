@@ -135,8 +135,8 @@ theme: jekyll-theme-leap-day
 
 * La aplicación debe lucir así
 
-<p align="center" style="border: 1pt solid black; width: 30%;">
-  <img src="imagenes/angular_productos.png">
+<p align="center" style="border: 1pt solid black;">
+  <img src="imagenes/angular_productos.png" width="50">
 </p>
 
 * A partir del tutorial [Angular - Servicios](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_servicios.html):
