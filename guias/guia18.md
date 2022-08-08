@@ -87,13 +87,14 @@ theme: jekyll-theme-leap-day
   + De [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html) agregue angular material.
   + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html). 
     - Cree el componente **lista**.
+    
   + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice las rutas:
     - De la ruta `/lista` al componente **lista**.
     - De la ruta `**` al componente **lista**.
 
 * Descargue y descomprima los [componentes y assets](archivos/guia18_recursos.zip)
 
-* Copie y reemplace las carpetas **lista** dentro de la carpeta `src/app` del proyecto en Angular. 
+* Copie y reemplace la carpeta **lista** dentro de la carpeta `src/app` del proyecto en Angular. 
 
 * Agregue el módulo **MatTableModule** al `app.module.ts`
   + Importe el módulo
