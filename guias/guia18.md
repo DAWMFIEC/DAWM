@@ -47,7 +47,7 @@ theme: jekyll-theme-leap-day
   <b style="color:red">
   app.use(cors())
   </b>
-  
+
   app.use(logger('dev'));
   ...
   </code></pre>
@@ -140,7 +140,7 @@ theme: jekyll-theme-leap-day
 </p>
 
 * A partir del tutorial [Angular - Servicios](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_servicios.html):
-  + Cree la interfaz **interfaz/producto** con los atributos `id: integer`, `nombre: string`, `cantidad: integer`, `createdAt: string` y `updatedAt: string`
+  + Cree la interfaz **interfaz/producto** con los atributos `id: number`, `nombre: string`, `cantidad: number`, `createdAt: string` y `updatedAt: string`
   + Cree el servicio **servicio/producto**
   + Inyecte la dependencia del servicio **servicio/producto** al componente **lista**
  
@@ -154,6 +154,35 @@ theme: jekyll-theme-leap-day
     }
     ```
 
+* Para consumir el servicio en el componente **lista**. En **lista.component.ts** agregue
+
+  + Importe el servicio 
+
+  ```
+  ...
+  import { ProductoService } from '../servicios/producto.service';
+  ...
+  ```
+
+  + Inyecte la dependencia en el constructor
+
+  ```
+  ...
+  constructor(private productoService: ProductoService) { }
+  ...
+  ```
+
+  + Realice la petición en el método **ngOnInit**
+
+  ```
+  ...
+  ngOnInit(): void {
+    this.productoService.obtenerProductos().subscribe(respuesta => {
+      this.dataSource = respuesta as any
+    })
+  }
+  ...
+  ```
 
 
 
