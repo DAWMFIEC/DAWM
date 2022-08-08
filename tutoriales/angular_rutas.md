@@ -98,6 +98,36 @@ Rutas
     <router-outlet></router-outlet>
     ```
 
+Rutas en despliegue
+-------------------
+
+Al desplegar una aplicación con Angular en un servidor, cuando se quiere ir a un URL desde la barra de navegación, puede resultar en un error. Para resolver este particular, debe:
+
+* En **app.module.ts**, agregue los módulos `HashLocationStrategy` y `LocationStrategy`, con:
+
+<pre><code>
+  ...
+  import { AppComponent } from './app.component';
+  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+  ...
+  <b style="color:red">
+  import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
+  </b>
+  ...
+</code></pre>
+
+* Agregue los módulos en el arreglo de con la clave **providers**
+
+<pre><code>
+  ...
+  providers: [
+    <b style="color:red">
+    {provide : LocationStrategy , useClass: HashLocationStrategy}
+    </b>
+  ],
+  ...
+</code></pre>
+
 Referencias 
 ===========
 
@@ -106,3 +136,4 @@ Referencias
 * Navegar entre rutas de Angular utilizando routerLink. (2020). Retrieved 20 July 2022, from https://dev.to/facurodriguez/navegar-entre-rutas-de-angular-utilizando-routerlink-3gon
 * Angular. (2022). Retrieved 20 July 2022, from https://angular.io/tutorial/toh-pt5
 * Enrutamiento en Angular. (2017). Retrieved 26 July 2022, from https://aristotekean.medium.com/enrutamiento-en-angular-996f14e89293
+* Angular 6 : 404 error during refresh after deployment. (2019). Retrieved 8 August 2022, from https://medium.com/tinywave/angular-6-404-error-during-refresh-after-deployed-8cec7140b584
