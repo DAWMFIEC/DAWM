@@ -76,15 +76,34 @@ theme: jekyll-theme-leap-day
   + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción del sitio.
   + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) agregue bootstrap.
   + De [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html) agregue angular material.
-  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html) cree los componentes **lista** y **producto**.
+  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html). 
+    - Cree los componentes **lista** y **producto**.
   + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice las rutas:
-    - `/lista` al componente **lista**.
-    - `/producto` al componente **producto**.
-    - `**` al componente **lista**.
+    - De la ruta `/lista` al componente **lista**.
+    - De la ruta `/producto` al componente **producto**.
+    - De la ruta `**` al componente **lista**.
 
 * Descargue y descomprima los [componentes y assets](archivos/guia18_recursos.zip)
 
 * Copie y reemplace las carpetas **lista** y **producto** dentro de la carpeta `src/app` del proyecto en Angular. 
+
+* Agregue el módulo **MatTableModule** al `app.module.ts`
+  + Importe el módulo
+    ```
+    ...
+    import {MatTableModule} from '@angular/material/table';
+    ...
+    ```
+  + Y agregue la clave **imports**
+
+  ```
+  ...
+  imports: [
+    ...
+    MatTableModule
+  ],
+  ...
+  ```
 
 
 ### Términos
