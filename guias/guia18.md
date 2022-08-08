@@ -135,7 +135,7 @@ theme: jekyll-theme-leap-day
 
 * La aplicación debe lucir así
 
-<p align="center">
+<p align="center" style="border: 1pt solid black;">
   <img src="imagenes/angular_productos.png">
 </p>
 
