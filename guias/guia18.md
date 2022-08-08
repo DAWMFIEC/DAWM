@@ -73,6 +73,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
+Parámetros de consulta, Parámetros de ruta
 
 ### Referencias
 
