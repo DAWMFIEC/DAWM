@@ -29,6 +29,23 @@ theme: jekyll-theme-leap-day
   + De [Express - Layouts y Partials](https://dawfiec.github.io/DAWM-2022/tutoriales/express_partials.html) hasta **Productos: layout y partial**.
   + De [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html) hasta la **Vista** de Productos.
 
+* Desde la línea de comandos del proyecto, agregue el módulo **cors**, con: `npm install cors`
+
+* Agregue la referencia al módulo **cors** el **app.js**
+
+  ```
+  ...
+  var logger = require('morgan');
+  var cors = require('cors')
+  ...
+
+  app.set('view engine', 'ejs');
+
+  app.use(cors())
+  app.use(logger('dev'));
+  ...
+  ```
+
 * Cree el ruteador **routes/api.js**
 * Agregue la referencia del ruteador **routes/api.js** en el `app.js`
   + Use la ruta `/api` para el ruteador **routes/api.js**
@@ -110,7 +127,7 @@ theme: jekyll-theme-leap-day
   <router-outlet></router-outlet>
   ```
 
-
+* La aplicación debe lucir así
 
 <p align="center">
   <img src="imagenes/angular_productos.png">
