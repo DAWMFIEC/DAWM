@@ -105,13 +105,33 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
+* Modifique el **app.component.html** con 
+  ```
+  <router-outlet></router-outlet>
+  ```
+
+
+
+<p align="center">
+  <img src="imagenes/angular_productos.png">
+</p>
+
 * A partir del tutorial [Angular - Servicios](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_servicios.html):
   + Cree la interfaz **interfaz/producto** con los atributos `id: integer`, `nombre: string`, `cantidad: integer`, `createdAt: string` y `updatedAt: string`
   + Cree el servicio **servicio/producto**
   + Inyecte la dependencia del servicio **servicio/producto** al componente **lista**
-  + Agregue las peticiones HTTP
+ 
+  + Peticiones HTTP
     - Registre el módulo **HttpClientModule** en el **app.module.ts**
     - Agregue el módulo **HttpClient** en el servicio **servicio/producto**
+    - Agregue el método **obtenerProductos** al servicio **servicio/producto** 
+    ```
+    obtenerProductos() {
+      return this.http.get('http://localhost:3000/api/productos')
+    }
+    ```
+
+
 
 
 ### Términos
