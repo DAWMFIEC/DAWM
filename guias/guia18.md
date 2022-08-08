@@ -21,6 +21,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
+#### Servidor
+
 * Genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
   + De [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
   + De [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
@@ -68,8 +70,20 @@ theme: jekyll-theme-leap-day
   <img src="imagenes/restapigetid.png">
 </p>
 
-* Componentes para proyecto en angular 
-  + Servicio
+#### Cliente
+
+* Proyecto **Productos** en Angular
+  + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción del sitio.
+  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) agregue bootstrap.
+  + De [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html) agregue angular material.
+  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html) cree los componentes **lista** y **producto**.
+  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice las rutas:
+    - `/lista` al componente **lista**.
+    - `/producto` al componente **producto**.
+
+* Descargue y descomprima los [componentes y assets](archivos/guia18_recursos.zip)
+
+* Copie y reemplace las carpetas **lista** y **producto** dentro de la carpeta `src/app` del proyecto en Angular. 
 
 ### Términos
 
