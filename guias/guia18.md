@@ -36,27 +36,23 @@ theme: jekyll-theme-leap-day
   <pre><code>
   ...
   var logger = require('morgan');
-
   <b style="color:red">
   var cors = require('cors')
   </b>
   ...
 
   app.set('view engine', 'ejs');
-
   <b style="color:red">
   app.use(cors())
   </b>
-
   app.use(logger('dev'));
   ...
   </code></pre>
 
 * Cree el ruteador **routes/api.js**
-* Agregue la referencia del ruteador **routes/api.js** en el `app.js`
-  + Use la ruta `/api` para el ruteador **routes/api.js**
+* Agregue la referencia del ruteador **routes/api.js** en el `app.js` a la ruta `/api`
 
-* El ruteador **routes/api.js** agregue: 
+* En el ruteador **routes/api.js** agregue: 
   + El método **GET** de la subruta **`/productos`** que retorna un _json_ con todos los productos.
 
   En lugar de renderizar la respuesta en la vista
@@ -75,11 +71,6 @@ theme: jekyll-theme-leap-day
   })
   ``` 
 
-
-  + El método **GET** de la subruta **`/productos/:id`** que retorna un _json_ con el producto con el _id_ en la ruta.
-
-  En lugar de renderizar la respuesta en la vista, renderice el json.
-
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/api/productos` 
 
@@ -87,11 +78,6 @@ theme: jekyll-theme-leap-day
   <img src="imagenes/restapiget.png">
 </p>
 
-* Acceda al URL `http://localhost:3000/api/productos/3` 
-
-<p align="center">
-  <img src="imagenes/restapigetid.png">
-</p>
 
 #### Cliente
 
@@ -100,15 +86,14 @@ theme: jekyll-theme-leap-day
   + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) agregue bootstrap.
   + De [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html) agregue angular material.
   + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html). 
-    - Cree los componentes **lista** y **producto**.
+    - Cree el componente **lista**.
   + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice las rutas:
     - De la ruta `/lista` al componente **lista**.
-    - De la ruta `/producto` al componente **producto**.
     - De la ruta `**` al componente **lista**.
 
 * Descargue y descomprima los [componentes y assets](archivos/guia18_recursos.zip)
 
-* Copie y reemplace las carpetas **lista** y **producto** dentro de la carpeta `src/app` del proyecto en Angular. 
+* Copie y reemplace las carpetas **lista** dentro de la carpeta `src/app` del proyecto en Angular. 
 
 * Agregue el módulo **MatTableModule** al `app.module.ts`
   + Importe el módulo
@@ -136,7 +121,7 @@ theme: jekyll-theme-leap-day
 * La aplicación debe lucir así
 
 <p align="center" style="border: 1pt solid black;">
-  <img src="imagenes/angular_productos.png" width="50">
+  <img src="imagenes/angular_productos.png">
 </p>
 
 * A partir del tutorial [Angular - Servicios](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_servicios.html):
