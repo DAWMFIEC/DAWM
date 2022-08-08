@@ -67,7 +67,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	
 	<pre><code>
     import { Component } from '@angular/core';
-	<b style="color:red">import { RecursoService } from './servicios/recurso.service';</b>
+	<b style="color:red">import { RecursoService } from '../servicios/recurso.service';</b>
 
 	@Component({
 	  selector: 'app-root',

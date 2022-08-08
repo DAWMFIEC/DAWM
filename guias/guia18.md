@@ -105,6 +105,14 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
+* A partir del tutorial [Angular - Servicios](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_servicios.html):
+  + Cree la interfaz **interfaz/producto** con los atributos `id: integer`, `nombre: string`, `cantidad: integer`, `createdAt: string` y `updatedAt: string`
+  + Cree el servicio **servicio/producto**
+  + Inyecte la dependencia del servicio **servicio/producto** al componente **lista**
+  + Agregue las peticiones HTTP
+    - Registre el módulo **HttpClientModule** en el **app.module.ts**
+    - Agregue el módulo **HttpClient** en el servicio **servicio/producto**
+
 
 ### Términos
 
