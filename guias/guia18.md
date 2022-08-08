@@ -33,18 +33,24 @@ theme: jekyll-theme-leap-day
 
 * Agregue la referencia al módulo **cors** el **app.js**
 
-  ```
+  <pre><code>
   ...
   var logger = require('morgan');
+
+  <b style="color:red">
   var cors = require('cors')
+  </b>
   ...
 
   app.set('view engine', 'ejs');
 
+  <b style="color:red">
   app.use(cors())
+  </b>
+  
   app.use(logger('dev'));
   ...
-  ```
+  </code></pre>
 
 * Cree el ruteador **routes/api.js**
 * Agregue la referencia del ruteador **routes/api.js** en el `app.js`
