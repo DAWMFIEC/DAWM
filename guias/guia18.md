@@ -175,6 +175,10 @@ theme: jekyll-theme-leap-day
   <img src="imagenes/cliente_servidor.png">
 </p>
 
+<p align="center">
+  <img src="imagenes/cliente_servidor_tiempo.png">
+</p>
+
 
 ### Términos
 
