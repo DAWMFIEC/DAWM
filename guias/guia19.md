@@ -108,7 +108,8 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
   ...
   ngOnInit(): void {
     this.productoService.obtenerProductoPorId(3).subscribe(respuesta => {
-      this.dataSource = respuesta as any
+      let arreglo = respuesta as Producto[]
+      this.producto = arreglo[0] as Producto
     })
   }
   ...
