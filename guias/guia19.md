@@ -134,13 +134,23 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
   ```
   ...
     <mat-card-title>{{item.nombre}}</mat-card-title>
+    <mat-card-subtitle>{{item.id}}</mat-card-subtitle>
   ...
-    <p>Fecha de creación: {{item.createdAt | date:'MMM d, y h:mm'}}</p>
+    <mat-card-content>
+      <p>Fecha de creación: {{item.createdAt | date:'MMM d, y h:mm'}}</p>
+      <p>Fecha de actualización: {{item.updatedAt | date:'MMM d, y h:mm'}}</p>
+    </mat-card-content>
   ...
   ``` 
 
+* Compruebe el funcionamiento del servidor, con: **npm start**
+* Acceda al URL `http://localhost:4200/producto/2` 
 
+<p align="center">
+  <img style="border: 1pt solid black;" width="150" src="imagenes/angular_producto_id2.png">
+</p>
 
+angular_producto_id2
 
 ### Términos
 
@@ -149,4 +159,4 @@ API REST
 ### Referencias
 
 * ¿Qué es REST? Conoce su potencia. (2018). Retrieved 9 August 2022, from https://openwebinars.net/blog/que-es-rest-conoce-su-potencia/
-
+* Using Default values with Interfaces in TypeScript. (2022) Retrieved 9 August 2022, from https://bobbyhadz.com/blog/typescript-interface-default-values
