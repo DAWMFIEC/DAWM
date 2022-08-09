@@ -155,6 +155,74 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
 </p>
 
 
+
+Para recibir el parámetro del URL al componente **Producto**
+
+* Modifique el **producto.component.ts**
+
+  + Importe el **ActivatedRoute** 
+
+  ```
+  ...
+  import { ActivatedRoute } from '@angular/router';
+  ...
+  ```
+
+  + Inyecte la dependencia al **ActivatedRoute** en el contructor
+
+  ```
+  ...
+  constructor(private productoService: ProductoService, private activatedRoute: ActivatedRoute) {}
+  ...
+  ```
+
+  + Extraiga el parámetro de la ruta y realice la petición en el método **ngOnInit**
+
+  ```
+  ...
+  ngOnInit(): void {
+
+    let params = this.activatedRoute.snapshot.params;
+    let id = params["id"]
+
+    this.productoService.obtenerProductoPorId(id).subscribe(respuesta => {
+      ...
+    })
+  }
+  ...
+  ```
+
+Para enviar el parámetro del URL al componente **List**
+
+* Modifique el **lista.component.html**
+  
+  Cambie la etiqueta
+
+  ```
+  ...
+  <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+  ...
+  ```
+
+  por un enlace
+
+  ```
+  ...
+  <td mat-cell *matCellDef="let element"> 
+    <a [routerLink]="['/producto', element.id]" title="">{{element.nombre}}</a>
+  </td>
+  ...
+  ```
+
+* Compruebe el funcionamiento del servidor, con: **npm start**
+* Acceda al URL `http://localhost:4200/` y seleccione cualquier elemento de la tabla 
+
+<p align="center">
+  <img style="border: 1pt solid black;" width="50%" src="imagenes/angular_producto_lista.png">
+  <img style="border: 1pt solid black;" width="50%" src="imagenes/angular_producto_id3.png">
+</p>
+
+
 ### Términos
 
 API REST
@@ -163,3 +231,5 @@ API REST
 
 * ¿Qué es REST? Conoce su potencia. (2018). Retrieved 9 August 2022, from https://openwebinars.net/blog/que-es-rest-conoce-su-potencia/
 * Using Default values with Interfaces in TypeScript. (2022) Retrieved 9 August 2022, from https://bobbyhadz.com/blog/typescript-interface-default-values
+* What is the activated route?. (2022). Retrieved 9 August 2022, from https://blog.briebug.com/blog/what-is-the-activated-route
+* Singhal, G., & AcitivatedRouteSnapshot, A. (2022). Accessing Route Parameters with ActivatedRoute vs. AcitivatedRouteSnapshot | Pluralsight. Retrieved 9 August 2022, from https://www.pluralsight.com/guides/accessing-route-parameters-with-activatedroute-vs.-acitivatedroutesnapshot
