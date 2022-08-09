@@ -66,7 +66,7 @@ El modelo de [article](https://github.com/Cambalab/fake-data-generator/blob/mast
 fake-data-generator modelo.json 100 datos.json
 ```
 
-Un ejemplo de la salida es:
+Un ejemplo del archivo resultante **datos.json** es:
 ```
 [
 	{
