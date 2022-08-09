@@ -218,8 +218,8 @@ Para enviar el parámetro del URL al componente **List**
 * Acceda al URL `http://localhost:4200/` y seleccione cualquier elemento de la tabla 
 
 <p align="center">
-  <img style="border: 1pt solid black;" width="50%" src="imagenes/angular_producto_lista.png">
-  <img style="border: 1pt solid black;" width="50%" src="imagenes/angular_producto_id3.png">
+  <img style="border: 1pt solid black;" width="49%" src="imagenes/angular_producto_lista.png">
+  <img style="border: 1pt solid black;" width="49%" src="imagenes/angular_producto_id3.png">
 </p>
 
 
