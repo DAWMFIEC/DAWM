@@ -133,8 +133,10 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
 
   ```
   ...
+    {% raw %}
     <mat-card-title>{{item.nombre}}</mat-card-title>
     <mat-card-subtitle>{{item.id}}</mat-card-subtitle>
+    {% endraw %}
   ...
     {% raw %}
     <mat-card-content>
