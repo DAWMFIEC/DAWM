@@ -136,10 +136,12 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
     <mat-card-title>{{item.nombre}}</mat-card-title>
     <mat-card-subtitle>{{item.id}}</mat-card-subtitle>
   ...
+    {% raw %}
     <mat-card-content>
       <p>Fecha de creación: {{item.createdAt | date:'MMM d, y h:mm'}}</p>
       <p>Fecha de actualización: {{item.updatedAt | date:'MMM d, y h:mm'}}</p>
     </mat-card-content>
+    {% endraw %}
   ...
   ``` 
 
