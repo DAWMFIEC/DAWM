@@ -98,10 +98,10 @@ Rutas
     <router-outlet></router-outlet>
     ```
 
-Rutas en despliegue
--------------------
+Rutas (desde la barra de navegación)
+------------------------------------
 
-Al desplegar una aplicación con Angular en un servidor, cuando se quiere ir a un URL desde la barra de navegación, puede resultar en un error. Para resolver este particular, debe:
+Cuando se quiere ir a una URL a otra, desde la barra de navegación, puede resultar un error debido a que el sistema asume que es una ubicación física. [Para resolver este particular](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html), debes:
 
 * En **app.module.ts**, agregue los módulos `HashLocationStrategy` y `LocationStrategy`, con:
 
@@ -116,7 +116,7 @@ Al desplegar una aplicación con Angular en un servidor, cuando se quiere ir a u
   ...
 </code></pre>
 
-* Agregue los módulos en el arreglo de con la clave **providers**
+* Agregue los módulos en el arreglo con la clave **providers**
 
 <pre><code>
   ...
