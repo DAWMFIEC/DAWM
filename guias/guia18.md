@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 
 #### Servidor
 
-* Genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
+* Utilice la aplicacion web en backend o genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
   + De [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
   + De [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
   + De [Express - Layouts y Partials](https://dawfiec.github.io/DAWM-2022/tutoriales/express_partials.html) hasta **Productos: layout y partial**.
@@ -89,7 +89,7 @@ theme: jekyll-theme-leap-day
     - Cree el componente **lista**.
 
   + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice las rutas:
-    - De la ruta `/lista` al componente **lista**.
+    - De la ruta `lista` al componente **lista**.
     - De la ruta `**` al componente **lista**.
 
 * Descargue y descomprima los [componentes y assets](archivos/guia18_recursos.zip)
