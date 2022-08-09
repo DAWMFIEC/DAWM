@@ -47,13 +47,24 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
   + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html). 
     - Cree el componente **producto**.
 
-    + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice la ruta:
+    + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) agregue la ruta:
     - De la ruta `producto/:id` al componente **producto**.
 
 * Descargue y descomprima los [componentes y assets](archivos/guia19_recursos.zip)
 
+* Copie y reemplace la carpeta **producto** dentro de la carpeta `src/app` del proyecto en Angular. 
+
+* Agregue el módulo **MatCardModule** y **MatButtonModule** al `app.module.ts`
+
+* La aplicación debe lucir así
+
+<p align="center">
+  <img style="border: 1pt solid black;" width="150" src="imagenes/angular_producto_id.png">
+</p>
+
 ### Términos
 
+API REST
 
 ### Referencias
 

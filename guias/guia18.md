@@ -88,7 +88,7 @@ theme: jekyll-theme-leap-day
   + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html). 
     - Cree el componente **lista**.
 
-  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) realice las rutas:
+  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) agregue las rutas:
     - De la ruta `lista` al componente **lista**.
     - De la ruta `**` al componente **lista**.
 
