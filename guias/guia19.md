@@ -94,6 +94,20 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
   ...
   ```
 
+  + Agregue la propiedad **item** de la interfaz **Producto** con los valores predeterminados
+
+  ```
+  ...
+  item : Producto = {
+    id: -1,
+    nombre: "",
+    cantidad: 0,
+    createdAt: "",
+    updatedAt: ""
+  };
+  ...
+  ```
+
   + Inyecte la dependencia en el constructor
 
   ```
@@ -109,11 +123,23 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
   ngOnInit(): void {
     this.productoService.obtenerProductoPorId(3).subscribe(respuesta => {
       let arreglo = respuesta as Producto[]
-      this.producto = arreglo[0] as Producto
+      this.item = arreglo[0] as Producto
     })
   }
   ...
   ```
+
+* Modifique la vista **producto.component.html** con los valores del producto
+
+  ```
+  ...
+    <mat-card-title>{{item.nombre}}</mat-card-title>
+  ...
+    <p>Fecha de creación: {{item.createdAt | date:'MMM d, y h:mm'}}</p>
+  ...
+  ``` 
+
+
 
 
 ### Términos
