@@ -154,7 +154,6 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
   <img style="border: 1pt solid black;" width="150" src="imagenes/angular_producto_id2.png">
 </p>
 
-angular_producto_id2
 
 ### Términos
 
