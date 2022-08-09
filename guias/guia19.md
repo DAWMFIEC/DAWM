@@ -62,6 +62,59 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
   <img style="border: 1pt solid black;" width="150" src="imagenes/angular_producto_id.png">
 </p>
 
+* A partir del tutorial [Angular - Servicios](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_servicios.html):
+  
+  + Inyecte la dependencia del servicio **servicio/producto** al componente **producto**
+ 
+  + Peticiones HTTP
+    - Agregue el método **obtenerProductos** al servicio **servicio/producto** 
+    ```
+    obtenerProductoPorId(id: number) {
+      return this.http.get('http://localhost:3000/api/productos/'+id.toString())
+    }
+    ```
+
+  + Cree la interfaz **interfaz/producto** con los atributos `id: number`, `nombre: string`, `cantidad: number`, `createdAt: string` y `updatedAt: string`
+
+* Para consumir el servicio en el componente **producto**. En **producto.component.ts** agregue
+
+  + Importe el servicio 
+
+  ```
+  ...
+  import { ProductoService } from '../servicios/producto.service';
+  ...
+  ```
+
+  + Importe la interfaz 
+
+  ```
+  ...
+  import { Producto } from '../interfaz/producto';
+  ...
+  ```
+
+  + Inyecte la dependencia en el constructor
+
+  ```
+  ...
+  constructor(private productoService: ProductoService) { }
+  ...
+  ```
+
+  + Realice la petición en el método **ngOnInit**
+
+  ```
+  ...
+  ngOnInit(): void {
+    this.productoService.obtenerProductoPorId(3).subscribe(respuesta => {
+      this.dataSource = respuesta as any
+    })
+  }
+  ...
+  ```
+
+
 ### Términos
 
 API REST
