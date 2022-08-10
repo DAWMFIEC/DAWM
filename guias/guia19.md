@@ -30,6 +30,7 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
 
 * En el ruteador **routes/api.js** agregue: 
   + El método **GET** de la subruta **`/productos/:id`** que retorna un _json_ del producto dado el **id**.
+    - Para obtener el **id**, revise **Parámetros de ruta** revise el tutorial [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM-2022/tutoriales/express_pcpr.html)
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/api/productos/3` 
