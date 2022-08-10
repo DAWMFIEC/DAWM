@@ -30,8 +30,8 @@ Cliente
   + Complete y ejecute el **generador** para llenar la tabla
 
 * Use el ruteador **routes/api**
-  + Cree el método GET de la subruta /cliente que retorna un json con todos los clientes.
-  + Cree el método GET de la subruta /cliente/:id que retorna un json del cliente dado el id.
+  + Cree el método GET de la subruta **`/cliente`** que retorna un json con todos los clientes.
+  + Cree el método GET de la subruta **`/cliente/:id`** que retorna un json del cliente dado el id.
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/api/clientes` y `http://localhost:3000/api/clientes/8` 
