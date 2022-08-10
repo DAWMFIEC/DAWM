@@ -30,7 +30,9 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
 
 * En el ruteador **routes/api.js** agregue: 
   + El método **GET** de la subruta **`/productos/:id`** que retorna un _json_ del producto dado el **id**.
-    - Para obtener el **id**, revise **Parámetros de ruta** revise el tutorial [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM-2022/tutoriales/express_pcpr.html)
+
+    - Para obtener un elemento mediante Sequelize revise el método [findOne](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findone)
+    - Para obtener el **id**, revise **Parámetros de ruta** del tutorial [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM-2022/tutoriales/express_pcpr.html)
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/api/productos/3` 
@@ -123,8 +125,7 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
   ...
   ngOnInit(): void {
     this.productoService.obtenerProductoPorId(3).subscribe(respuesta => {
-      let arreglo = respuesta as Producto[]
-      this.item = arreglo[0] as Producto
+      this.item = respuesta as Producto
     })
   }
   ...
