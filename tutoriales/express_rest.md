@@ -37,8 +37,8 @@ Cliente
 * Acceda al URL `http://localhost:3000/api/clientes` y `http://localhost:3000/api/clientes/8` 
 
 <p align="center">
-  <img style="border: 1pt solid black;" width="49%" src="imagenes/rest_api_clientes.png">
-  <img style="border: 1pt solid black;" width="49%" src="imagenes/rest_api_clientes_8.png">
+  <img style="border: 1pt solid black;" width="49%" src="imagenes/rest_api_clientes1.png">
+  <img style="border: 1pt solid black;" width="49%" src="imagenes/rest_api_clientes_1.png">
 </p>
 
 
