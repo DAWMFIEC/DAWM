@@ -101,13 +101,16 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
 
   ```
   ...
-  item : Producto = {
-    id: -1,
-    nombre: "",
-    cantidad: 0,
-    createdAt: "",
-    updatedAt: ""
-  };
+  export class ProductoComponent implements OnInit {
+      item : Producto = {
+        id: -1,
+        nombre: "",
+        cantidad: 0,
+        createdAt: "",
+        updatedAt: ""
+      };
+
+      constructor( ... 
   ...
   ```
 
@@ -150,7 +153,7 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
   ``` 
 
 * Compruebe el funcionamiento del servidor, con: **npm start**
-* Acceda al URL `http://localhost:4200/producto/2` 
+* Acceda al URL `http://localhost:4200/producto/3` 
 
 <p align="center">
   <img style="border: 1pt solid black;" width="150" src="imagenes/angular_producto_id2.png">
@@ -178,7 +181,7 @@ Para recibir el parámetro del URL al componente **Producto**
   ...
   ```
 
-  + Extraiga el parámetro de la ruta y realice la petición en el método **ngOnInit**
+  + Extraiga el parámetro de la ruta y modifique la petición **obtenerProductoPorId** con el _id_
 
   ```
   ...
