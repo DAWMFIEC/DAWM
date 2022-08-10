@@ -202,7 +202,9 @@ Para enviar el parámetro del URL al componente **List**
 
   ```
   ...
+  {% raw %}
   <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+  {% endraw %}
   ...
   ```
 
@@ -210,9 +212,11 @@ Para enviar el parámetro del URL al componente **List**
 
   ```
   ...
+  {% raw %}
   <td mat-cell *matCellDef="let element"> 
     <a [routerLink]="['/producto', element.id]" title="">{{element.nombre}}</a>
   </td>
+  {% endraw %}
   ...
   ```
 
