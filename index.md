@@ -51,8 +51,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - Layout y Partials](tutoriales/express_partials.md)
 * [Express - ORM Básico](tutoriales/express_ormbasico.md)
 * [Express - Parámetros de consulta y Parámetros de ruta](tutoriales/express_pcpr.md)
-
-
+* [Express - RESTI](tutoriales/express_restTEMP.md)
 
 #### Scripts
 
