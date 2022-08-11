@@ -138,3 +138,4 @@ Referencias
 * * *
 
 * Add-ons - Heroku Elements. (2022). Retrieved 11 August 2022, from https://elements.heroku.com/addons
+* Deploying/Hosting Node.js app on Heroku with MySQL database - BezKoder. (2019). Retrieved 11 August 2022, from https://www.bezkoder.com/deploy-node-js-app-heroku-cleardb-mysql/
