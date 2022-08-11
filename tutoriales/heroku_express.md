@@ -8,10 +8,8 @@ Heroku - Express
 ================
 
   <p align="center">
-    <img width="317" height="120" src="imagenes/heroku.webp">
+    <img width="317" height="120" src="imagenes/heroku_express.webp">
   </p>
-
-Heroku permite manejar las aplicaciones desde la línea de comando o desde la interfaz web.
 
 Ruta de la aplicación web
 =========================
@@ -87,12 +85,12 @@ Despliegue
 
   + Agregue los cambios en `origin` y `heroku` con las instrucciones de *git*.
 
-    ```html
+    <pre><code>
       git add .
       git commit -m "composer.json"
       git push origin main  <b style="color: red"># Este push es solo necesario cuando desea enviar la versión local a la versión remota</b>
       git push heroku main
-    ```
+    </code></pre>
 
     - Abra la aplicación, con: ```heroku open```
 
