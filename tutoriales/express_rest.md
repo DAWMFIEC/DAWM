@@ -48,26 +48,54 @@ GET-All
 =======
 * * *
 
-Para obtener todos los datos de una entidad en una base de datos relacional, en el controlador se utiliza el método **GET** del _router_ y el método **findAll** de la clase.
+Para obtener TODOS los registros de una entidad en una base de datos relacional, en el controlador se utiliza el método **GET** del _router_ y el método **findAll** de la clase.
 
 * Use el ruteador **routes/api**
   + Cree el método GET de la subruta **`/cliente`** que retorna un json con todos los clientes.
-  + Cree el método GET de la subruta **`/cliente/:id`** que retorna un json del cliente dado el id.
+
+```
+router.get('/clientes', function(req, res, next) {
+  Cliente.findAll({})  
+  .then(cliente => {  
+      res.json(cliente);  
+  })  
+  .catch(error => res.status(400).send(error))
+});
+```
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
   + Realice una petición GET al URL `http://localhost:3000/api/clientes`
 
   `curl http://localhost:3000/api/clientes | json` 
 
+  <p align="center">
+    <img src="imagenes/curl2.png">
+  </p>
+
 GET-id
 =======
 * * *
 
-Para obtener todos los datos de una entidad en una base de datos relacional, en el controlador se utiliza el método **GET** del _router_ y el método **findOne** de la clase.
+Para obtener UN registro de una entidad en una base de datos relacional, en el controlador se utiliza el método **GET** del _router_ y el método **findOne** de la clase.
 
-  <p align="center">
-    <img src="imagenes/curl2.png">
-  </p>
+* Use el ruteador **routes/api**
+  + Cree el método GET de la subruta **`/cliente/:id`** que retorna un json del cliente dado el id.
+
+```
+router.get('/clientes/:id', function(req, res, next) {
+  Cliente.findOne({
+    where: { 
+      id: parseInt(req.params.id)
+    }
+  })
+  .then(cliente => {  
+      res.json( cliente );  
+  })  
+  .catch(error => res.status(400).send(error))
+});
+```
+
+* Compruebe el funcionamiento del servidor, con: **npm run devstart**
 
   + Realice una petición GET al URL `http://localhost:3000/api/clientes/3` 
 
