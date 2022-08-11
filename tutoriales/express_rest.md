@@ -53,15 +53,19 @@ GET-All y GET-Id
   + Cree el método GET de la subruta **`/cliente/:id`** que retorna un json del cliente dado el id.
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-  + Acceda al URL `http://localhost:3000/api/clientes` 
+  + Realice una petición GET al URL `http://localhost:3000/api/clientes`
+
+  `curl http://localhost:3000/api/clientes | json` 
 
   <p align="center">
     <img src="imagenes/curl2.png">
   </p>
 
-  + Acceda al URL `http://localhost:3000/api/clientes/3` 
+  + Realice una petición GET al URL `http://localhost:3000/api/clientes/3` 
 
-   <p align="center">
+  `curl http://localhost:3000/api/clientes/3 | json`
+
+  <p align="center">
     <img src="imagenes/curl3.png">
   </p>
 
@@ -73,12 +77,43 @@ POST
 * Use el ruteador **routes/api**
   + Cree el método POST de la subruta **`/cliente`** que recibe los datos de un cliente y guarda los datos en la base de datos relacional.
 
+  ```
+  router.post('/clientes', (req, res, next) => {
+    Cliente.create({
+      nombres: req.body.nombres,
+      apellidos: req.body.apellidos,
+      rating: req.body.rating,
+      fechanacimiento: req.body.fechanacimiento,  
+      createdAt: new Date(),  
+      updatedAt: new Date()  
+    })
+    .then(producto => {
+      res.send(producto);
+    })
+    .catch(error => res.status(400).send(error))
+  })
+  ```
+
+  * Compruebe el funcionamiento del servidor, con: **npm run devstart**
+    + Realice una petición POST al URL `http://localhost:3000/api/clientes` con los siguientes parámetros en el **body**:
+    `curl -X POST -d "nombres=Juan&apellidos=Perez&rating=5&fechanacimiento=04/08/1998" http://localhost:3000/api/clientes | json`
+
+    <p align="center">
+      <img src="imagenes/curl4.png">
+    </p>
+
+
+
 PUT
 ===
 * * *
 
 * Use el ruteador **routes/api**
   + Cree el método PUT de la subruta **`/cliente`** que recibe los datos de un cliente y guarda los datos en la base de datos relacional.
+
+  ```
+
+  ```
 
 
 DELETE
