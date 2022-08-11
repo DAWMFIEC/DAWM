@@ -25,7 +25,7 @@ Curl + Jsontool
 * * *
 
 * Instale el módulo `jsontool`, con: `npm i -g jsontool`
-* Realice una petición con **cURL**, con: 
+* Desde la línea de comandos, realice una petición con **cURL**, con: 
 
 `curl https://dataserverdawm.herokuapp.com/anuncios/json | json`
 
