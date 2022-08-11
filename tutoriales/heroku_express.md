@@ -51,14 +51,14 @@ Add-ons
 
 * * *
 
-Heroku tiene ciertas [herramientas y servicios](https://elements.heroku.com/addons) para desarrollar, ampliar y operar su aplicación.
+Heroku tiene ciertas [herramientas y servicios](https://elements.heroku.com/addons) para desarrollar, ampliar y operar las aplicaciones.
 
 * En la **ruta de la aplicación web**. 
   
   + Agregue [ClearDB](https://elements.heroku.com/addons/cleardb) como add-on base de datos relacional, con:
 
     ```
-    heroku addons:create cleardb:ignite -a backend-dawm
+    heroku addons:create cleardb:ignite
     ```
     
     En el sitio web de la administración de Heroku, el add-on se ve así
