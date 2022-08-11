@@ -25,7 +25,11 @@ Curl + Jsontool
 * * *
 
 * Instale el módulo `jsontool`, con: `npm i -g jsontool`
-* Realice una petición con **cURL**, con: `curl https://dataserverdawm.herokuapp.com/anuncios/json | json`
+* Realice una petición con **cURL**, con: 
+
+`curl https://dataserverdawm.herokuapp.com/anuncios/json | json`
+
+Que resulta en:
 
 <p align="center">
   <img src="imagenes/curl1.png">
@@ -49,8 +53,17 @@ Get-All y Get-Id
   + Cree el método GET de la subruta **`/cliente/:id`** que retorna un json del cliente dado el id.
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/api/clientes` y `http://localhost:3000/api/clientes/8` 
+  + Acceda al URL `http://localhost:3000/api/clientes` 
 
+  <p align="center">
+    <img src="imagenes/curl2.png">
+  </p>
+
+  + Acceda al URL `http://localhost:3000/api/clientes/8` 
+
+   <p align="center">
+    <img src="imagenes/curl3.png">
+  </p>
 
 
 Referencias 
