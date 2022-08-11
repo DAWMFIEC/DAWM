@@ -8,7 +8,7 @@ Heroku - Express
 ================
 
   <p align="center">
-    <img width="317" height="120" src="imagenes/heroku_express.webp">
+    <img width="257" height="150" src="imagenes/heroku_express.webp">
   </p>
 
 Ruta de la aplicación web
@@ -16,7 +16,7 @@ Ruta de la aplicación web
 
 * * *
 
-En adelante, se usará el término **ruta de la aplicación web** como la raíz del proyecto en Express.
+En adelante, se usará el término **ruta de la aplicación web** como la ruta del proyecto en Express.
 
 
 Pasos iniciales
@@ -46,24 +46,22 @@ Pasos iniciales
     ```
 
 
-Buildpack
-=========
+Add-ons
+======
 
 * * *
 
-Ahora, vamos a decirle a Heroku el ambiente de ejecución ([buildpacks](https://devcenter.heroku.com/articles/buildpacks)) de la aplicación. Heroku soporta ambientes de ejecución para Ruby, Python, Java, Clojure, Node.js, Scala, Go y PHP. 
+Heroku tiene ciertas [herramientas y servicios](https://elements.heroku.com/addons) para desarrollar, ampliar y operar su aplicación.
 
 * En la **ruta de la aplicación web**. 
   
-  + Crea el archivo composer.json. Agregue como contenido al composer.json:
+  + Agregue [ClearDB](https://elements.heroku.com/addons/cleardb) como add-on base de datos relacional, con:
 
     ```
-    {}
+    heroku addons:create cleardb:ignite -a backend-dawm
     ```
-  
-  + En este caso, el ambiente de ejecución será [PHP](https://devcenter.heroku.com/articles/buildpacks). Puede cambiar el paquete de compilación utilizado por una aplicación configurando el valor del paquete de compilación. La próxima vez que se envíe la aplicación, se usará el nuevo paquete de compilación.
+    
 
-    ```heroku buildpacks:set heroku/php```
 
 
 Despliegue 
@@ -90,5 +88,4 @@ Referencias
 
 * * *
 
-* Deploying PHP Apps on Heroku  Heroku Dev Center. (2021). Retrieved 14 November 2021, from https://devcenter.heroku.com/articles/deploying-php 
-* Buildpacks Heroku Dev Center. (2021). Retrieved 14 November 2021, from https://devcenter.heroku.com/articles/buildpacks
+* Add-ons - Heroku Elements. (2022). Retrieved 11 August 2022, from https://elements.heroku.com/addons
