@@ -64,13 +64,20 @@ router.get('/clientes', function(req, res, next) {
 ```
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-  + Realice una petición GET al URL `http://localhost:3000/api/clientes`
+  + En el cliente, realice una petición GET al URL `http://localhost:3000/api/clientes`
 
   `curl http://localhost:3000/api/clientes | json` 
 
   <p align="center">
     <img src="imagenes/curl2.png">
   </p>
+
+  + En el servidor, la petición luce así:
+
+  <p align="center">
+    <img src="imagenes/response2.png">
+  </p>
+
 
 GET-id
 =======
@@ -97,12 +104,18 @@ router.get('/clientes/:id', function(req, res, next) {
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 
-  + Realice una petición GET al URL `http://localhost:3000/api/clientes/3` 
+  + En el cliente, realice una petición GET al URL `http://localhost:3000/api/clientes/3` 
 
   `curl http://localhost:3000/api/clientes/3 | json`
 
   <p align="center">
     <img src="imagenes/curl3.png">
+  </p>
+
+  + En el servidor, la petición luce así:
+
+  <p align="center">
+    <img src="imagenes/response3.png">
   </p>
 
 
@@ -131,14 +144,18 @@ POST
   ```
 
   * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-    + Realice una petición POST al URL `http://localhost:3000/api/clientes` con los siguientes parámetros en el **body**:
+    + En el cliente, realice una petición POST al URL `http://localhost:3000/api/clientes` con los siguientes parámetros en el **body**:
     `curl -X POST -d "nombres=Juan&apellidos=Perez&rating=5&fechanacimiento=04/08/1998" http://localhost:3000/api/clientes | json`
 
     <p align="center">
       <img src="imagenes/curl4.png">
     </p>
 
+    + En el servidor, la petición luce así:
 
+    <p align="center">
+      <img src="imagenes/response4.png">
+    </p>
 
 PUT 
 ===
@@ -170,11 +187,17 @@ PUT
   ```
 
   * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-    + Realice una petición PUT al URL `http://localhost:3000/api/clientes` con los siguientes parámetros en el **body**:
+    + En el cliente, realice una petición PUT al URL `http://localhost:3000/api/clientes` con los siguientes parámetros en el **body**:
     `curl -X PUT -d "id=11&nombres=Marina&apellidos=Rosales&rating=9&fechanacimiento=04/22/2018" http://localhost:3000/api/clientes | json`
 
     <p align="center">
-      <img src="imagenes/curl4.png">
+      <img src="imagenes/curl5.png">
+    </p>
+
+    + En el servidor, la petición luce así:
+
+    <p align="center">
+      <img src="imagenes/response5.png">
     </p>
 
 DELETE
