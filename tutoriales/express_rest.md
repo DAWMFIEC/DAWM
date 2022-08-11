@@ -29,6 +29,10 @@ Cliente
   + Ejecute las **migraciones**
   + Complete y ejecute el **generador** para llenar la tabla
 
+Get-All 
+=======
+* * *
+
 * Use el ruteador **routes/api**
   + Cree el método GET de la subruta **`/cliente`** que retorna un json con todos los clientes.
   + Cree el método GET de la subruta **`/cliente/:id`** que retorna un json del cliente dado el id.
