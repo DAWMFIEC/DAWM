@@ -18,7 +18,7 @@ Antes de transpilar
 
 * * *
 
-En los **servicios**, cambie las rutas locales: `'http://localhost:3000...'` por las rutas remotas: `'https://backendXYZ.herokuapp.com/...'`
+En los **servicios** de la aplicación, cambie las rutas locales: `'http://localhost:3000...'` por las rutas remotas: `'https://backendXYZ.herokuapp.com/...'`
 
 
 Ruta de la aplicación web
