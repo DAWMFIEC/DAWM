@@ -61,7 +61,11 @@ Heroku tiene ciertas [herramientas y servicios](https://elements.heroku.com/addo
     heroku addons:create cleardb:ignite -a backend-dawm
     ```
     
+    En el sitio web de la administración de Heroku, el add-on se ve así
 
+    <p align="center">
+      <img src="imagenes/cleardb.png">
+    </p>
 
 
 Despliegue 
@@ -70,6 +74,16 @@ Despliegue
 * * *
 
 * Desde la línea de comandos en la **ruta de la aplicación web**:
+
+  + Muestre la cadena de conexión a la base de datos remota, con:
+    
+  ```
+  heroku config 
+  ```
+
+  <p align="center">
+    <img src="imagenes/cleardb_cadena_conexion.png">
+  </p>
 
   + Agregue los cambios en `origin` y `heroku` con las instrucciones de *git*.
 
