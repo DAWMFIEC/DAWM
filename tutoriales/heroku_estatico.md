@@ -25,6 +25,12 @@ Esta ruta puede resultar de:
 * Sitio web estático
 * La transpilación de un proyecto en Angular, con: `ng build` 
 
+```html
+<b style="color: red">
+  Recomendación: Para evitar conflictos con el versionamiento del proyecto original de Angular, mueva la carpeta dentro del dist a otra ubicación (por ejemplo a 'Mi Escritorio') y continúe con los pasos.  
+</b>
+```
+
 Pasos iniciales
 ===============
 
@@ -81,7 +87,7 @@ Despliegue
 
   + Agregue los cambios en `origin` y `heroku` con las instrucciones de *git*.
 
-    ```
+    ```html
       git add .
       git commit -m "composer.json"
       git push origin main  <b style="color: red"># Este push es solo necesario cuando desea enviar la versión local a la versión remota</b>
