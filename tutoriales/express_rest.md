@@ -44,7 +44,7 @@ Entidad: Cliente
   + Ejecute las **migraciones**
   + Complete y ejecute el **generador** para llenar la tabla
 
-Get-All y Get-Id
+GET-All y GET-Id
 ================
 * * *
 
@@ -70,13 +70,23 @@ POST
 ====
 * * *
 
-PATCH
-=====
+* Use el ruteador **routes/api**
+  + Cree el método POST de la subruta **`/cliente`** que recibe los datos de un cliente y guarda los datos en la base de datos relacional.
+
+PUT
+===
 * * *
+
+* Use el ruteador **routes/api**
+  + Cree el método PUT de la subruta **`/cliente`** que recibe los datos de un cliente y guarda los datos en la base de datos relacional.
+
 
 DELETE
 ======
 * * *
+
+* Use el ruteador **routes/api**
+  + Cree el método DELETE de la subruta **`/cliente`** que recibe los datos de un cliente y guarda los datos en la base de datos relacional.
 
 
 Referencias 
