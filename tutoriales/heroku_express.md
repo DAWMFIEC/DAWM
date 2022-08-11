@@ -4,8 +4,8 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM-2022/)
 
-Heroku - Sitio Estático
-=======================
+Heroku - Express
+================
 
   <p align="center">
     <img width="317" height="120" src="imagenes/heroku.webp">

@@ -31,6 +31,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 #### Heroku
 
 * [Heroku - Sitio Estático](tutoriales/heroku_estatico.md)
+* [Heroku - Express](tutoriales/heroku_express.md)
 
 #### Angular
 
