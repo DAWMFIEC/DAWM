@@ -16,18 +16,8 @@ Ruta de la aplicación web
 
 * * *
 
-En adelante, se usará el término **ruta de la aplicación web** como la ubicación en su máquina local donde se encuentre el archivo `index.html` y los archivos necesario para la aplicación web (hojas de estilo, scripts, imágenes, svg, etc).
+En adelante, se usará el término **ruta de la aplicación web** como la raíz del proyecto en Express.
 
-Esta ruta puede resultar de:
-
-* Sitio web estático
-* La transpilación de un proyecto en Angular, con: `ng build` 
-
-```html
-<b style="color: red">
-  Recomendación: Para evitar conflictos con el versionamiento del proyecto original de Angular, mueva la carpeta dentro del dist a otra ubicación (por ejemplo a 'Mi Escritorio') y continúe con los pasos.  
-</b>
-```
 
 Pasos iniciales
 ===============
