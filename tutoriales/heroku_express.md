@@ -81,11 +81,7 @@ Despliegue
   heroku config 
   ```
 
-  Con resultado:
-
-  ```
-  CLEARDB_DATABASE_URL: mysql://b04e3e1fcXXXXX:eecYYYYY@us-cdbr-east-06.cleardb.net/heroku_4ec5e3cba9ZZZZZ?reconnect=true
-  ```
+  Con resultado: `CLEARDB_DATABASE_URL: mysql://b04e3e1fcXXXXX:eecYYYYY@us-cdbr-east-06.cleardb.net/heroku_4ec5e3cba9ZZZZZ?reconnect=true`
 
   Donde los datos de conexión, son:
 
