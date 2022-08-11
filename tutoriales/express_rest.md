@@ -59,7 +59,7 @@ Get-All y Get-Id
     <img src="imagenes/curl2.png">
   </p>
 
-  + Acceda al URL `http://localhost:3000/api/clientes/8` 
+  + Acceda al URL `http://localhost:3000/api/clientes/3` 
 
    <p align="center">
     <img src="imagenes/curl3.png">
