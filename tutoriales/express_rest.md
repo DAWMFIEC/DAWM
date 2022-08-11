@@ -44,9 +44,11 @@ Entidad: Cliente
   + Ejecute las **migraciones**
   + Complete y ejecute el **generador** para llenar la tabla
 
-GET-All y GET-Id
-================
+GET-All
+=======
 * * *
+
+Para obtener todos los datos de una entidad en una base de datos relacional, en el controlador se utiliza el método **GET** del _router_ y el método **findAll** de la clase.
 
 * Use el ruteador **routes/api**
   + Cree el método GET de la subruta **`/cliente`** que retorna un json con todos los clientes.
@@ -56,6 +58,12 @@ GET-All y GET-Id
   + Realice una petición GET al URL `http://localhost:3000/api/clientes`
 
   `curl http://localhost:3000/api/clientes | json` 
+
+GET-id
+=======
+* * *
+
+Para obtener todos los datos de una entidad en una base de datos relacional, en el controlador se utiliza el método **GET** del _router_ y el método **findOne** de la clase.
 
   <p align="center">
     <img src="imagenes/curl2.png">
@@ -87,8 +95,8 @@ POST
       createdAt: new Date(),  
       updatedAt: new Date()  
     })
-    .then(producto => {
-      res.send(producto);
+    .then(cliente => {
+      res.send(cliente);
     })
     .catch(error => res.status(400).send(error))
   })
@@ -104,7 +112,7 @@ POST
 
 
 
-PUT
+PUT 
 ===
 * * *
 
@@ -112,9 +120,34 @@ PUT
   + Cree el método PUT de la subruta **`/cliente`** que recibe los datos de un cliente y guarda los datos en la base de datos relacional.
 
   ```
-
+  router.put('/clientes', (req, res, next) => {
+    Cliente.update({
+      nombres: req.body.nombres,
+      apellidos: req.body.apellidos,
+      rating: req.body.rating,
+      fechanacimiento: req.body.fechanacimiento,  
+      createdAt: new Date(),  
+      updatedAt: new Date()  
+    },
+    {
+      where: {
+        id: req.body.id
+      }
+    })
+    .then(cliente => {
+      res.send(cliente);
+    })
+    .catch(error => res.status(400).send(error))
+  })
   ```
 
+  * Compruebe el funcionamiento del servidor, con: **npm run devstart**
+    + Realice una petición PUT al URL `http://localhost:3000/api/clientes` con los siguientes parámetros en el **body**:
+    `curl -X PUT -d "id=11&nombres=Marina&apellidos=Rosales&rating=9&fechanacimiento=04/22/2018" http://localhost:3000/api/clientes | json`
+
+    <p align="center">
+      <img src="imagenes/curl4.png">
+    </p>
 
 DELETE
 ======
