@@ -19,7 +19,7 @@ Al construir soluciones de software a veces es necesario generar cierta cantidad
 npm install -g fake-data-generator
 ```
 
-2. Cree un archivo con el modelo (**`modelo.js`**) de acuerdo con las características de la [documentación](https://github.com/Cambalab/fake-data-generator). 
+2. Cree un archivo con el modelo (**`modelo.json`**) de acuerdo con las características de la [documentación](https://github.com/Cambalab/fake-data-generator). 
 
 Un ejemplo del modelo es:
 
