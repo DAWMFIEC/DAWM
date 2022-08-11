@@ -29,8 +29,8 @@ Cliente
   + Ejecute las **migraciones**
   + Complete y ejecute el **generador** para llenar la tabla
 
-Get-All 
-=======
+Get-All y Get-Id
+================
 * * *
 
 * Use el ruteador **routes/api**
