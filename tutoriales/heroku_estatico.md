@@ -89,9 +89,9 @@ Despliegue
 
     <pre><code>
       git add .
-      git commit -m "composer.json"
-      git push origin main  <b style="color: red"># Este push es solo necesario cuando desea enviar la versión local a la versión remota</b>
-      git push heroku main
+      git commit -m "deploy"
+      git push origin main <b style="color: red">Solo si versiona en un repositorio remoto etiquetado como origin</b>
+      git push heroku main <b style="color: red">Antes de hacer push, verifique la rama que están utilizando</b>
     </code></pre>
 
     - Abra la aplicación, con: ```heroku open```

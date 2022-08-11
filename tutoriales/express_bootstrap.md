@@ -42,11 +42,11 @@ Desde la línea de comandos del proyecto:
 
 	<pre><code>
 	"scripts": {  
-	  "start": "node ./bin/www"
+	  ...
 	  <b style="color:red">
-	  ,  
 	  "devstart": "nodemon ./bin/www"
 		</b>
+		...
 	}  
 	</code></pre>
 

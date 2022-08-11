@@ -78,20 +78,51 @@ Despliegue
   + Muestre la cadena de conexión a la base de datos remota, con:
     
   ```
-  heroku config 
+  > heroku config 
+
+  CLEARDB_DATABASE_URL: mysql://b04e3e1fcXXXXX:eecYYYYY@us-cdbr-east-06.cleardb.net/heroku_4ec5e3cba9ZZZZZ?reconnect=true
   ```
 
-  <p align="center">
-    <img src="imagenes/cleardb_cadena_conexion.png">
-  </p>
+  Donde los datos de conexión, son:
+
+  - username: b04e3e1fcXXXXX
+  - password: eecYYYYY
+  - host: us-cdbr-east-06.cleardb.net
+  - database: heroku_4ec5e3cba9ZZZZZ
+
+  + Modifique el archivo `config/config.json` con los datos para la conexión con el motor de bases de datos. En este caso, el ambiente a utilizar es **development**.
+
+  <pre><code>
+    ...
+    {
+      "production": {
+        "username": "b04e3e1fcXXXXX",
+        "password": "eecYYYYY",
+        "database": "heroku_4ec5e3cba9ZZZZZ",
+        "host": "us-cdbr-east-06.cleardb.net",
+        "dialect": "mysql"
+    },
+  }
+  </code></pre>
+
+  * En el `package.json`, dentro de la clave **scripts**, agregue la clave **build**:
+
+  <pre><code>
+  "scripts": {  
+    ...
+    <b style="color:red">
+    "build": "npm exec sequelize-cli db:migrate & npm exec sequelize-cli db:seed:all", 
+    </b>
+    ...
+  }  
+  </code></pre>  
 
   + Agregue los cambios en `origin` y `heroku` con las instrucciones de *git*.
 
     <pre><code>
       git add .
-      git commit -m "composer.json"
-      git push origin main  <b style="color: red"># Este push es solo necesario cuando desea enviar la versión local a la versión remota</b>
-      git push heroku main
+      git commit -m "deploy"
+      git push heroku main <b style="color: red">Antes de hacer push, verifique la rama que están utilizando</b>
     </code></pre>
 
     - Abra la aplicación, con: ```heroku open```
