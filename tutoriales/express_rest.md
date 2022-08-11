@@ -20,8 +20,19 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
 
-Cliente 
-=======
+Curl + Jsontool
+==============
+* * *
+
+* Instale el módulo `jsontool`, con: `npm i -g jsontool`
+* Realice una petición con **cURL**, con: `curl https://dataserverdawm.herokuapp.com/anuncios/json | json`
+
+<p align="center">
+  <img src="imagenes/curl1.png">
+</p>
+
+Entidad: Cliente 
+================
 * * *
 
 * La entidad **Cliente** tiene los atributos `nombres:string`,`apellidos:string`,`fechanacimiento:date` y `rating:integer`
@@ -40,10 +51,6 @@ Get-All y Get-Id
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/api/clientes` y `http://localhost:3000/api/clientes/8` 
 
-<p align="center">
-  <img style="border: 1pt solid black;" width="49%" src="imagenes/rest_api_clientes.png">
-  <img style="border: 1pt solid black;" width="49%" src="imagenes/rest_api_clientes_8.png">
-</p>
 
 
 Referencias 
@@ -51,4 +58,5 @@ Referencias
 
 * * *
 
+* Terminal, F. (2011). Formatting cURL Output in the Windows Terminal. Retrieved 11 August 2022, from https://superuser.com/questions/275229/formatting-curl-output-in-the-windows-terminal
 * Wieruch, R. (2020). How to create a REST API with Express.js in Node.js. Retrieved 10 August 2022, from https://www.robinwieruch.de/node-express-server-rest-api/
