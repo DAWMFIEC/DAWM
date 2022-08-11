@@ -48,7 +48,7 @@ GET-All
 =======
 * * *
 
-Para obtener TODOS los registros de una entidad en una base de datos relacional, en el controlador se utiliza el método **GET** del _router_ y el método **findAll** de la clase.
+Para obtener TODOS los registros de una entidad en una base de datos relacional, el router implementa el verbo **GET** y el método **findAll** de la clase.
 
 * Use el ruteador **routes/api**
   + Cree el método GET de la subruta **`/cliente`** que retorna un json con todos los clientes.
@@ -76,7 +76,7 @@ GET-id
 =======
 * * *
 
-Para obtener UN registro de una entidad en una base de datos relacional, en el controlador se utiliza el método **GET** del _router_ y el método **findOne** de la clase.
+Para obtener UN registro de una entidad en una base de datos relacional, el router implementa el verbo **GET** y el método **findOne** de la clase.
 
 * Use el ruteador **routes/api**
   + Cree el método GET de la subruta **`/cliente/:id`** que retorna un json del cliente dado el id.
