@@ -13,6 +13,14 @@ Heroku - Sitio Estático
 
 Heroku permite manejar las aplicaciones desde la línea de comando o desde la interfaz web.
 
+Antes de transpilar
+===================
+
+* * *
+
+En los **servicios**, cambie las rutas locales: `'http://localhost:3000...'` por las rutas remotas: `'https://backendXYZ.herokuapp.com/...'`
+
+
 Ruta de la aplicación web
 =========================
 
@@ -25,11 +33,13 @@ Esta ruta puede resultar de:
 * Sitio web estático
 * La transpilación de un proyecto en Angular, con: `ng build` 
 
-<pre><code>
-  <b style="color: red">
-    Recomendación: Para evitar conflictos con el versionamiento del proyecto original de Angular, mueva la carpeta dentro del dist a otra ubicación (por ejemplo a 'Mi Escritorio') y continúe con los pasos.  
-  </b>
-</code></pre>
+Antes de desplegar en Heroku
+============================
+
+* * *
+
+Para evitar conflictos de versionamiento del proyecto original de Angular: **mueva la carpeta dentro del dist a otra ubicación (por ejemplo a 'Mi Escritorio')**
+
 
 Pasos iniciales
 ===============
