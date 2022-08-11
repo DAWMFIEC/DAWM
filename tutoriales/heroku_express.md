@@ -78,8 +78,12 @@ Despliegue
   + Muestre la cadena de conexión a la base de datos remota, con:
     
   ```
-  > heroku config 
+  heroku config 
+  ```
 
+  Con resultado:
+
+  ```
   CLEARDB_DATABASE_URL: mysql://b04e3e1fcXXXXX:eecYYYYY@us-cdbr-east-06.cleardb.net/heroku_4ec5e3cba9ZZZZZ?reconnect=true
   ```
 
@@ -90,7 +94,7 @@ Despliegue
   - host: us-cdbr-east-06.cleardb.net
   - database: heroku_4ec5e3cba9ZZZZZ
 
-  + Modifique el archivo `config/config.json` con los datos para la conexión con el motor de bases de datos. En este caso, el ambiente a utilizar es **development**.
+  + Modifique el archivo `config/config.json` con los datos para la conexión con el motor de bases de datos remota. En este caso, el ambiente a utilizar es **development**.
 
   <pre><code>
     ...
