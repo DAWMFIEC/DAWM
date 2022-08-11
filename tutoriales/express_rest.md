@@ -66,6 +66,19 @@ Get-All y Get-Id
   </p>
 
 
+POST
+====
+* * *
+
+PATCH
+=====
+* * *
+
+DELETE
+======
+* * *
+
+
 Referencias 
 ===========
 
