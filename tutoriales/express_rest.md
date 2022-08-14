@@ -173,8 +173,8 @@ Para actualizar UN registro de una entidad en una base de datos relacional, impl
     Cliente.update({
       nombres: req.body.nombres,
       apellidos: req.body.apellidos,
-      rating: req.body.rating,
-      fechanacimiento: req.body.fechanacimiento,  
+      rating: parseInt(req.body.rating),
+      fechanacimiento: new Date(req.body.fechanacimiento),  
       createdAt: new Date(),  
       updatedAt: new Date()  
     },
@@ -183,8 +183,8 @@ Para actualizar UN registro de una entidad en una base de datos relacional, impl
         id: req.body.id
       }
     })
-    .then(cliente => {
-      res.send(cliente);
+    .then(respuesta => {
+      res.send(respuesta);
     })
     .catch(error => res.status(400).send(error))
   })
