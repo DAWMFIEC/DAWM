@@ -9,8 +9,9 @@ theme: jekyll-theme-leap-day
 ### Contenidos
 
 * Revisión de ejercicios previos: dudas y comentarios.
-* 
-
+* [Firebase](https://firebase.google.com/?hl=es) es una plataforma para el desarrollo de aplicaciones web y aplicaciones móviles lanzada en 2011 y adquirida por Google en 2014.
+  + [Realtime database](https://firebase.google.com/products/realtime-database) es una base de datos NoSQL alojada en la nube que te permite almacenar y sincronizar datos entre tus usuarios en tiempo real.
+  
 
 ### Actividades
 
