@@ -153,7 +153,7 @@ Para guardar UN registro de una entidad en una base de datos relacional, impleme
   <img src="imagenes/curl4.png">
 </p>
 
-    + En la línea de comandos del servidor del proyecto de Express aparece la petición:
+  + En la línea de comandos del servidor del proyecto de Express aparece la petición:
 
 <p align="center">
   <img src="imagenes/response4.png">
@@ -199,7 +199,7 @@ Para actualizar UN registro de una entidad en una base de datos relacional, impl
   <img src="imagenes/curl5.png">
 </p>
 
-    + En la línea de comandos del servidor del proyecto de Express aparece la petición:
+  + En la línea de comandos del servidor del proyecto de Express aparece la petición:
 
 <p align="center">
   <img src="imagenes/response5.png">
@@ -237,7 +237,7 @@ Para eliminar UN registro de una entidad en una base de datos relacional, implem
   <img src="imagenes/curl6.png">
 </p>
 
-    + En la línea de comandos del servidor del proyecto de Express aparece la petición:
+  + En la línea de comandos del servidor del proyecto de Express aparece la petición:
 
 <p align="center">
   <img src="imagenes/response6.png">
