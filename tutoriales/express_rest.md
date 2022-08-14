@@ -53,15 +53,15 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 * Use el ruteador **routes/api**
   + Cree el método GET de la subruta **`/clientes`** que retorna un json con todos los clientes.
 
-```
-router.get('/clientes', function(req, res, next) {
-  Cliente.findAll({})  
-  .then(clientes => {  
-      res.json(clientes);  
-  })  
-  .catch(error => res.status(400).send(error))
-});
-```
+  ```
+  router.get('/clientes', function(req, res, next) {
+    Cliente.findAll({})  
+    .then(clientes => {  
+        res.json(clientes);  
+    })  
+    .catch(error => res.status(400).send(error))
+  });
+  ```
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
   + En la línea de comandos del cliente, realice una petición GET al URL `http://localhost:3000/api/clientes`
@@ -88,19 +88,19 @@ Para obtener UN registro de una entidad en una base de datos relacional, impleme
 * Use el ruteador **routes/api**
   + Cree el método GET de la subruta **`/clientes/:id`** que retorna un json del cliente dado el id.
 
-```
-router.get('/clientes/:id', function(req, res, next) {
-  Cliente.findOne({
-    where: { 
-      id: parseInt(req.params.id)
-    }
-  })
-  .then(cliente => {  
-      res.json( cliente );  
-  })  
-  .catch(error => res.status(400).send(error))
-});
-```
+  ```
+  router.get('/clientes/:id', function(req, res, next) {
+    Cliente.findOne({
+      where: { 
+        id: parseInt(req.params.id)
+      }
+    })
+    .then(cliente => {  
+        res.json( cliente );  
+    })  
+    .catch(error => res.status(400).send(error))
+  });
+  ```
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
   + En la línea de comandos del cliente, realice una petición GET al URL `http://localhost:3000/api/clientes/3` 
@@ -133,7 +133,7 @@ Para guardar UN registro de una entidad en una base de datos relacional, impleme
       nombres: req.body.nombres,
       apellidos: req.body.apellidos,
       rating: parseInt(req.body.rating),
-      fechanacimiento: req.body.fechanacimiento,  
+      fechanacimiento: new Date(req.body.fechanacimiento),  
       createdAt: new Date(),  
       updatedAt: new Date()  
     })
