@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 21
+## Guía 20
 
 [Regresar](/DAWM-2022/)
 
@@ -18,7 +18,6 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-`API REST`, curl
 
 ### Referencias
 

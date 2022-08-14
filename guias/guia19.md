@@ -231,6 +231,12 @@ Para enviar el parámetro del URL al componente **List**
   <img style="border: 1pt solid black;" width="49%" src="imagenes/angular_producto_id3.png">
 </p>
 
+#### DELETE
+
+#### UPDATE
+
+#### POST
+
 
 ### Términos
 
