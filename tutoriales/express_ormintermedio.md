@@ -40,10 +40,6 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 * Instale Sequelize auto de forma global, con: **`npm install -g sequelize-auto`**
 * Instale Sequelize y el conector para MySQL para el proyecto, con: **`npm install --save sequelize mysql2`**
 * Genere los archivos de configuración de Sequelize, con: **`sequelize init`**  
-  + El archivo `config/config.json` contiene la configuración para la conexión con la base de datos.
-  + La carpeta `models` contendrá las clases correspondientes a las entidades de la base de datos.
-  + La carpeta `migrations` contendrá los scripts a ejecutar en la base de datos y en la aplicación. Estos scripts actúan como registros históricos de los cambios.
-  + La carpeta `seeders` contendrá los scripts para generar datos para las entidades de la base datos.
 
 <p align="center">
   <img src="imagenes/sequelizeinit.JPG">
@@ -64,8 +60,8 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 </code></pre>
 
 
-Modelo
-======
+Modelos
+=======
 * * *
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
