@@ -68,15 +68,15 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 
   `curl -X GET http://localhost:3000/api/clientes | json` 
 
-  <p align="center">
-    <img src="imagenes/curl2.png">
-  </p>
+<p align="center">
+  <img src="imagenes/curl2.png">
+</p>
 
   + En la línea de comandos del servidor del proyecto de Express aparece la petición:
 
-  <p align="center">
-    <img src="imagenes/response2.png">
-  </p>
+<p align="center">
+  <img src="imagenes/response2.png">
+</p>
 
 
 GET-id
@@ -107,15 +107,15 @@ Para obtener UN registro de una entidad en una base de datos relacional, impleme
 
   `curl -X GET http://localhost:3000/api/clientes/3 | json`
 
-  <p align="center">
-    <img src="imagenes/curl3.png">
-  </p>
+<p align="center">
+  <img src="imagenes/curl3.png">
+</p>
 
   + En la línea de comandos del servidor del proyecto de Express aparece la petición:
 
-  <p align="center">
-    <img src="imagenes/response3.png">
-  </p>
+<p align="center">
+  <img src="imagenes/response3.png">
+</p>
 
 
 POST
@@ -149,15 +149,15 @@ Para guardar UN registro de una entidad en una base de datos relacional, impleme
 
     `curl -X POST -d "nombres=Juan&apellidos=Perez&rating=5&fechanacimiento=08/22/1998" http://localhost:3000/api/clientes | json`
 
-    <p align="center">
-      <img src="imagenes/curl4.png">
-    </p>
+<p align="center">
+  <img src="imagenes/curl4.png">
+</p>
 
     + En la línea de comandos del servidor del proyecto de Express aparece la petición:
 
-    <p align="center">
-      <img src="imagenes/response4.png">
-    </p>
+<p align="center">
+  <img src="imagenes/response4.png">
+</p>
 
 PUT 
 ===
@@ -195,15 +195,15 @@ Para actualizar UN registro de una entidad en una base de datos relacional, impl
 
     `curl -X PUT -d "id=11&nombres=Marina&apellidos=Rosales&rating=9&fechanacimiento=04/22/2018" http://localhost:3000/api/clientes | json`
 
-    <p align="center">
-      <img src="imagenes/curl5.png">
-    </p>
+<p align="center">
+  <img src="imagenes/curl5.png">
+</p>
 
     + En la línea de comandos del servidor del proyecto de Express aparece la petición:
 
-    <p align="center">
-      <img src="imagenes/response5.png">
-    </p>
+<p align="center">
+  <img src="imagenes/response5.png">
+</p>
 
 DELETE
 ======
@@ -233,15 +233,15 @@ Para eliminar UN registro de una entidad en una base de datos relacional, implem
 
     `curl -X DELETE http://localhost:3000/api/clientes/3 | json`
 
-    <p align="center">
-      <img src="imagenes/curl6.png">
-    </p>
+<p align="center">
+  <img src="imagenes/curl6.png">
+</p>
 
     + En la línea de comandos del servidor del proyecto de Express aparece la petición:
 
-    <p align="center">
-      <img src="imagenes/response6.png">
-    </p>
+<p align="center">
+  <img src="imagenes/response6.png">
+</p>
 
 
 Referencias 
