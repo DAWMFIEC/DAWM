@@ -11,7 +11,7 @@ theme: jekyll-theme-leap-day
 * Revisión de ejercicios previos: dudas y comentarios.
 * [Firebase](https://firebase.google.com/?hl=es) es una plataforma para el desarrollo de aplicaciones web y aplicaciones móviles lanzada en 2011 y adquirida por Google en 2014.
   + [Realtime database](https://firebase.google.com/products/realtime-database) es una base de datos NoSQL alojada en la nube que te permite almacenar y sincronizar datos entre tus usuarios en tiempo real.
-  
+
 
 ### Actividades
 
@@ -29,10 +29,9 @@ theme: jekyll-theme-leap-day
   <img width="550" src ="imagenes/firebase_step3.png">
 </p>
 
-* Cree una **Realtime Database** a través de la opción **`Build > Realtime Database`** 
+* Cree una **Realtime Database** a través de la opción **`Build > Realtime Database`**. De clic en **Create database**
 
 <p align="center">
-  <img width="550" src ="imagenes/firebase_proyecto.png">
   <img width="550" src ="imagenes/firebase_realtime_init.png">
 </p>
 
@@ -78,6 +77,7 @@ theme: jekyll-theme-leap-day
   <img width="550" src ="imagenes/firebase_collection_rules.png">
 </p>
 
+*
 
 
 
