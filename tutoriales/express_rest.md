@@ -66,7 +66,7 @@ router.get('/clientes', function(req, res, next) {
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
   + En la línea de comandos del cliente, realice una petición GET al URL `http://localhost:3000/api/clientes`
 
-  `curl http://localhost:3000/api/clientes | json` 
+  `curl -X GET http://localhost:3000/api/clientes | json` 
 
   <p align="center">
     <img src="imagenes/curl2.png">
@@ -105,7 +105,7 @@ router.get('/clientes/:id', function(req, res, next) {
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
   + En la línea de comandos del cliente, realice una petición GET al URL `http://localhost:3000/api/clientes/3` 
 
-  `curl http://localhost:3000/api/clientes/3 | json`
+  `curl -X GET http://localhost:3000/api/clientes/3 | json`
 
   <p align="center">
     <img src="imagenes/curl3.png">
@@ -132,7 +132,7 @@ Para guardar UN registro de una entidad en una base de datos relacional, impleme
     Cliente.create({
       nombres: req.body.nombres,
       apellidos: req.body.apellidos,
-      rating: req.body.rating,
+      rating: parseInt(req.body.rating),
       fechanacimiento: req.body.fechanacimiento,  
       createdAt: new Date(),  
       updatedAt: new Date()  
@@ -147,7 +147,7 @@ Para guardar UN registro de una entidad en una base de datos relacional, impleme
   * Compruebe el funcionamiento del servidor, con: **npm run devstart**
     + En la línea de comandos del cliente, realice una petición POST al URL `http://localhost:3000/api/clientes` con los siguientes parámetros en el **body**:
 
-    `curl -X POST -d "nombres=Juan&apellidos=Perez&rating=5&fechanacimiento=04/08/1998" http://localhost:3000/api/clientes | json`
+    `curl -X POST -d "nombres=Juan&apellidos=Perez&rating=5&fechanacimiento=08/22/1998" http://localhost:3000/api/clientes | json`
 
     <p align="center">
       <img src="imagenes/curl4.png">
