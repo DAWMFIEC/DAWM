@@ -21,7 +21,7 @@ theme: jekyll-theme-leap-day
   <img width="550" src ="imagenes/firebase_index.png">
 </p>
 
-* Cree un proyecto 
+* Cree un proyecto para Firebase
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_step1.png">
@@ -29,7 +29,7 @@ theme: jekyll-theme-leap-day
   <img width="550" src ="imagenes/firebase_step3.png">
 </p>
 
-* Cree una **Realtime Database** a través de la opción **`Build > Realtime Database`**. De clic en **Create database**
+* Acceda a la opción **Realtime Database** a través de la opción **`Build > Realtime Database`** para **Create Database**
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_realtime_init.png">
@@ -77,13 +77,14 @@ theme: jekyll-theme-leap-day
   <img width="550" src ="imagenes/firebase_collection_rules.png">
 </p>
 
-* Para realizar peticiones a la base de datos relacional, utilice la url que aparece en la interfaz. Por ejemplo:
+* Para realizar peticiones a la base de datos relacional, 
+
+  + Instale el módulo `jsontool` de manera global, con: `npm i -g jsontool`
+  + Utilice la url que aparece en la interfaz. Por ejemplo:
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_url.png">
 </p>
-
-  + Instale el módulo `jsontool` de manera global, con: `npm i -g jsontool`
 
   + Realice una petición GET-All con cURL, con:
 
