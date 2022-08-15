@@ -77,9 +77,21 @@ theme: jekyll-theme-leap-day
   <img width="550" src ="imagenes/firebase_collection_rules.png">
 </p>
 
-*
+* Para realizar peticiones a la base de datos relacional, utilice la url que aparece en la interfaza
 
+`https://APLICACION-IDAPP-default-rtdb.firebaseio.com/`
 
+<p align="center">
+  <img width="550" src ="imagenes/firebase_url.png">
+</p>
+
+  + Realice una petición GET-All con cURL, con `https://APLICACION-IDAPP-default-rtdb.firebaseio.com/collection.json`
+
+  `curl -X GET https://productos-375bf-default-rtdb.firebaseio.com/collection.json | json`
+
+  + Realice una petición GET-One con cURL a `https://APLICACION-IDAPP-default-rtdb.firebaseio.com/collection/ID-OBJ.json`
+
+  `curl -X GET https://productos-375bf-default-rtdb.firebaseio.com/collection.json | json`
 
 ### Términos
 
