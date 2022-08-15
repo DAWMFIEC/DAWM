@@ -94,6 +94,21 @@ theme: jekyll-theme-leap-day
 
   `curl -X GET https://productos-375bf-default-rtdb.firebaseio.com/collection/3.json | json`
 
+* Para filtrar los datos desde el URL:
+  + Modifique las reglas de acceso para indexar las claves. Para esto, debe indicar la ruta dentro de los objetos (`collection`) y los campos a indexar (`["productoNombre"]`)
+
+<p align="center">
+  <img width="550" src ="imagenes/firebase_collection_rules_filter.png">
+</p>
+
+  + Realice una petición GET-One desde el navegador, a: 
+
+  `https://productos-375bf-default-rtdb.firebaseio.com/collection.json?orderBy="productoNombre"&equalTo="Producto 5"`
+
+<p align="center">
+  <img width="550" src ="imagenes/firebase_filtered.png">
+</p>
+
 ### Reporte
 
 Realice un reporte de compras con las siguientes características:
@@ -117,4 +132,4 @@ reporte, `base de datos no relacional`, firebase, `rest api`
 
 * Angular: Sending a POST Request with Firebase. (2020). Retrieved 14 August 2022, from https://medium.com/@monalisorathiya8/angular-sending-a-post-request-with-firebase-820f4046c89
 * Firebase, I., Williams, R., & singh, s. (2018). Iterate with ngFor on objects obtained from Firebase. Retrieved 14 August 2022, from https://stackoverflow.com/questions/48243273/iterate-with-ngfor-on-objects-obtained-from-firebase
-
+* Recupera datos Firebase Realtime Database. (2022). Retrieved 15 August 2022, from https://firebase.google.com/docs/database/rest/retrieve-data?hl=es
