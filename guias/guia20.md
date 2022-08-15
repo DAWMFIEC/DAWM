@@ -94,6 +94,21 @@ theme: jekyll-theme-leap-day
 
   `curl -X GET https://productos-375bf-default-rtdb.firebaseio.com/collection/3.json | json`
 
+### Reporte
+
+Realice un reporte de compras con las siguientes características:
+
+* Debe aparecer en el dashboard en la ruta `/reporte`
+* La lista desplegable contiene los **nombres de los productos** de la **base de datos relacional**.
+* La tabla contiene la **colección de productos** de la **base de datos no relacional**.
+* Al seleccionar un elemento de la lista desplegable, se actualiza el contenido de la tabla de acuerdo con el valor seleccionado.
+
+La imagen de abajo es solo un ejemplo.
+
+<p align="center">
+  <img src ="imagenes/reporte.png">
+</p>
+
 ### Términos
 
 
