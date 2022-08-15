@@ -111,6 +111,7 @@ La imagen de abajo es solo un ejemplo del reporte.
 
 ### Términos
 
+reporte, `base de datos no relacional`, firebase, `rest api`
 
 ### Referencias
 
