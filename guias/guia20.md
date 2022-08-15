@@ -98,7 +98,7 @@ theme: jekyll-theme-leap-day
   + Modifique las reglas de acceso para indexar las claves. Para esto, debe indicar la ruta dentro de los objetos (`collection`) y los campos a indexar (`["productoNombre"]`)
 
 <p align="center">
-  <img width="550" src ="imagenes/firebase_collection_rules_filter.png">
+  <img width="300" src ="imagenes/firebase_collection_rules_filter.png">
 </p>
 
   + Realice una petición GET-One desde el navegador, a: 
