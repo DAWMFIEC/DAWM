@@ -61,7 +61,7 @@ theme: jekyll-theme-leap-day
   <img width="550" src ="imagenes/firebase_collection_init.png">
 </p> 
    
-  + Importe los datos en formato `.json`
+  + Importe los [datos](archivos/datos.json) en formato `.json`
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_collection_import.png">
