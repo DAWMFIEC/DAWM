@@ -83,13 +83,15 @@ theme: jekyll-theme-leap-day
   <img width="550" src ="imagenes/firebase_url.png">
 </p>
 
+  + Instale el módulo `jsontool` de manera global, con: `npm i -g jsontool`
+
   + Realice una petición GET-All con cURL, con:
 
   `curl -X GET https://productos-375bf-default-rtdb.firebaseio.com/collection.json | json`
 
   + Realice una petición GET-One con cURL, con:
 
-  `curl -X GET https://productos-375bf-default-rtdb.firebaseio.com/collection.json | json`
+  `curl -X GET https://productos-375bf-default-rtdb.firebaseio.com/collection/3.json | json`
 
 ### Términos
 
