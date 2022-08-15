@@ -101,7 +101,11 @@ theme: jekyll-theme-leap-day
   <img width="300" src ="imagenes/firebase_collection_rules_filter.png">
 </p>
 
-  + Realice una petición GET-One desde el navegador, a: 
+  + Realice una petición GET-One con cURL, con:
+
+  `curl -X GET "https://productos-375bf-default-rtdb.firebaseio.com/collection.json?orderBy=%22productoNombre%22&equalTo=%22Producto%205%22"`
+
+  + O, desde el navegador, con: 
 
   `https://productos-375bf-default-rtdb.firebaseio.com/collection.json?orderBy="productoNombre"&equalTo="Producto 5"`
 
