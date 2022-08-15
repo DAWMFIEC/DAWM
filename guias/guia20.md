@@ -77,7 +77,7 @@ theme: jekyll-theme-leap-day
   <img width="550" src ="imagenes/firebase_collection_rules.png">
 </p>
 
-* Para realizar peticiones a la base de datos relacional, 
+* Para realizar peticiones a la base de datos no relacional, 
 
   + Instale el módulo `jsontool` de manera global, con: `npm i -g jsontool`
   + Utilice la url que aparece en la interfaz. Por ejemplo:
