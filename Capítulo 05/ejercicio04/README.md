@@ -42,8 +42,7 @@
 ## Pruebas unitarias
 
 * En cada requerimiento, en la sección **Tests**
-  + Para 
-
+  + Para _**GET-all**_ 
 ```
 pm.test("Response is ok", ()=>{
     pm.response.to.have.status(200)
@@ -55,6 +54,27 @@ pm.test('Number of mvoies returned = ' + data.length, ()=>{
     pm.expect(data.length).to.equal(579);
 })
 ```
+
+  + Para _**GET-one**_ 
+```
+pm.test("Response is ok", ()=>{
+    pm.response.to.have.status(200)
+})
+
+const jsonData = pm.response.json();
+
+pm.test('Has data: mpaa_rating', function() {
+  pm.expect(jsonData).to.have.property('mpaa_rating');
+});
+
+pm.test('Has total_gross value: "12349549"', function() {
+  pm.expect(jsonData["total_gross"]).to.equal("12349549");
+});
+```
+
+
+* Los resultados posibles a las pruebas unitarias pueden ser:
+
 
 ## Referencias 
 
