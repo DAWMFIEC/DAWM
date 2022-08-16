@@ -31,6 +31,7 @@
 <p align="center">  
   <img src="imagenes/GET-all.png">
 </p>
+
     - _**GET-one**_: De tipo **GET** para obtener el elemento **150** de la colección. Haga clic en el botón **Send** para enviar el requerimiento.
 <p align="center">  
   <img src="imagenes/GET-one.png">
