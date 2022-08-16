@@ -19,16 +19,13 @@
 * Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/) en su máquina.
   + Obtenga una cuenta
   + Cree una colección, por ejemplo **Movies**, y agregue los requerimientos
-    - De tipo **GET** para obtener todos (_GET All_) la colección.
-
 <p align="center">  
   <img src="imagenes/collection.png">
 </p>
 <p align="center"> 
   <img src="imagenes/request.png">
 </p>
-    
-
+    - De tipo **GET** para obtener todos (_GET All_) la colección.
 <p align="center">  
   <img src="imagenes/GET-all.png">
 </p>
