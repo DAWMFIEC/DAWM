@@ -90,6 +90,19 @@ pm.test('Has total_gross value: "12349549"', function() {
 });
 ```
 
+  + Para _**POST**_ 
+```
+pm.test("Response is ok", ()=>{
+    pm.response.to.have.status(200)
+})
+
+const jsonData = pm.response.json();
+
+pm.test('Has data: name', function() {
+  pm.expect(jsonData).to.have.property('name');
+});
+```
+
 
 * Los resultados posibles a las pruebas unitarias pueden ser:
   <p align="center">  
