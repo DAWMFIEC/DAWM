@@ -27,9 +27,13 @@
 </p>
 
   + Requerimientos:
-    - De tipo **GET** para obtener todos (_GET All_) la colección.
+    - De tipo **GET** para obtener todos (_GET all_) la colección.
 <p align="center">  
   <img src="imagenes/GET-all.png">
+</p>
+    - De tipo **GET** para obtener un (_GET one_) elemento la colección.
+<p align="center">  
+  <img src="imagenes/GET-one.png">
 </p>
 
     
