@@ -22,6 +22,7 @@
 <p align="center">  
   <img src="imagenes/collection.png">
 </p>
+
   + Dentro de la colección, agregue los requerimientos 
     - De tipo **GET** para obtener todos (_GET All_) la colección.
 
