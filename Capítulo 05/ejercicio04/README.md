@@ -28,7 +28,7 @@
     <p align="center"> 
       <img src="imagenes/request.png">
     </p>
-    
+
     - _**GET-all**_: De tipo **GET** para obtener todos la colección. Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
         <img src="imagenes/GET-all.png">
@@ -77,6 +77,12 @@ pm.test('Has total_gross value: "12349549"', function() {
 
 
 * Los resultados posibles a las pruebas unitarias pueden ser:
+  <p align="center">  
+    <img src="imagenes/GET-all-TEST.png">
+  </p>
+
+
+
 
 
 ## Referencias 
