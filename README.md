@@ -77,8 +77,6 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01)         | Express - Bases y Bootstrap |
 |               | ~[Ejercicio 02](Capítulo%2005/ejercicio02)~       | ~Express - Formularios~ |
 |               | [Ejercicio 03](Capítulo%2005/ejercicio03)         | Express - Rutas, parámetros y ORM (Básico) |
-|               | [Ejercicio 04](Capítulo%2005/ejercicio04)         | Express - ODM (Básico) |
-|               | [Ejercicio 05](Capítulo%2005/ejercicio05)         | Express - Manejo de estado |
 | Capítulo 06   | [Ejercicio 01](Capítulo%2006/ejercicio01)         | Express - REST - Servidor |
 |               | [Ejercicio 02](Capítulo%2006/ejercicio02)         | Express - REST - Cliente |
 
