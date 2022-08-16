@@ -39,7 +39,20 @@
         <img src="imagenes/GET-one.png">
       </p>
 
-    
+    - _**POST**_: De tipo **POST** para enviar datos a la colección. Haga clic en el botón **Send** para enviar el requerimiento.
+      ```
+      {
+          "genre": "Adventure",
+          "inflation_adjusted_gross": "",
+          "movie_title": "Red",
+          "mpaa_rating": "PG-13",
+          "release_date": "2022-03-11",
+          "total_gross": "19501533"
+      }
+      ```
+      <p align="center">  
+        <img src="imagenes/POST.png">
+      </p>
 
 
 ## Pruebas unitarias
