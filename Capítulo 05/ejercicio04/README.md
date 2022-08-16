@@ -24,16 +24,14 @@
 </p>
 
   + Dentro de la colección, agregue los requerimientos 
-  <p align="center">  
-    <img src="imagenes/request.png">
-  </p>
+<p align="center">  
+  <img src="imagenes/request.png">
+</p>
 
-  
     - De tipo **GET** para obtener todos (_GET All_) la colección.
-
-    <p align="center">  
-      <img src="imagenes/GET-all.png">
-    </p>
+<p align="center">  
+  <img src="imagenes/GET-all.png">
+</p>
 
     
 
