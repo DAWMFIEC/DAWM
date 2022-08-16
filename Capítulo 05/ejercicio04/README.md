@@ -39,7 +39,7 @@
         <img src="imagenes/GET-one.png">
       </p>
 
-    - _**POST**_: De tipo **POST** para enviar datos a la colección. Haga clic en el botón **Send** para enviar el requerimiento.
+    - _**POST**_: De tipo **POST** para enviar datos a la colecció. Modifique el **Body** del requerimiento de tipo **raw**. 
       ```
       {
           "genre": "Adventure",
@@ -50,6 +50,8 @@
           "total_gross": "19501533"
       }
       ```
+
+      Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
         <img src="imagenes/POST.png">
       </p>
@@ -104,3 +106,4 @@ pm.test('Has total_gross value: "12349549"', function() {
 * Receiving responses Postman Learning Center. (2022). Retrieved 16 August 2022, from https://learning.postman.com/docs/sending-requests/responses/
 * Grouping requests in collections Postman Learning Center. (2022). Retrieved 16 August 2022, from https://learning.postman.com/docs/sending-requests/intro-to-collections/
 * Using variables Postman Learning Center. (2022). Retrieved 16 August 2022, from https://learning.postman.com/docs/sending-requests/variables/
+* Firebase Database REST API. (2022). Retrieved 16 August 2022, from https://firebase.google.com/docs/reference/rest/database
