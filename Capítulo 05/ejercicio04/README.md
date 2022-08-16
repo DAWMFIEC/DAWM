@@ -83,6 +83,18 @@
         <img src="imagenes/firebase_PUT.png">
       </p>
 
+    - _**DELETE**_: De tipo **DELETE** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. 
+
+      Haga clic en el botón **Send** para enviar el requerimiento.
+      <p align="center">  
+        <img src="imagenes/DELETE.png">
+      </p>
+
+      La colección en firebase después del DELETE
+      <p align="center">  
+        <img src="imagenes/firebase_DELETE.png">
+      </p>
+
 
 ## Pruebas unitarias
 
@@ -127,6 +139,23 @@ const jsonData = pm.response.json();
 
 pm.test('Has data: name', function() {
   pm.expect(jsonData).to.have.property('name');
+});
+```
+
+  + Para _**PUT**_ 
+```
+pm.test("Response is ok", ()=>{
+    pm.response.to.have.status(200)
+})
+
+const jsonData = pm.response.json();
+
+pm.test('Has data: total_gross', function() {
+  pm.expect(jsonData).to.have.property('total_gross');
+});
+
+pm.test('Has data: inflation_adjusted_gross', function() {
+  pm.expect(jsonData).to.have.property('inflation_adjusted_gross');
 });
 ```
 
