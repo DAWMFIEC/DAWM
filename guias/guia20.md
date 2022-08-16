@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 ### Actividades
 
 * Realice completamente el tutorial:
-  + [Realtime Database](https://dawfiec.github.io/DAWM-2022/tutoriales/realtime_database.html)
+  + [Realtime Database](https://dawfiec.github.io/DAWM-2022/tutoriales/firebase_realtime_database.html)
 
 * Realice un reporte de compras con las siguientes características:
 
