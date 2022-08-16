@@ -175,7 +175,7 @@
 
 * Los resultados posibles a las pruebas unitarias pueden ser:
   <p align="center">  
-    <img src="imagenes/GET-all-TEST.png">
+    <img src="imagenes/tests.png">
   </p>
 
 
