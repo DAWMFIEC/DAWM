@@ -18,15 +18,17 @@
   + Edite las reglas de acceso a los datos para permitir acceso completo.
 * Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/) en su máquina.
   + Obtenga una cuenta
-  + Cree una nueva colección, por ejemplo **Movies**, y agregue los requerimientos.
-<p align="center">  
-  <img src="imagenes/collection.png">
-</p>
-<p align="center"> 
-  <img src="imagenes/request.png">
-</p>
+  + Cree una nueva colección, por ejemplo **Movies**,
+    <p align="center">  
+      <img src="imagenes/collection.png">
+    </p>
 
-  + Requerimientos:
+
+  + Y agregue los requerimientos:
+    <p align="center"> 
+      <img src="imagenes/request.png">
+    </p>
+    
     - _**GET-all**_: De tipo **GET** para obtener todos la colección. Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
         <img src="imagenes/GET-all.png">
