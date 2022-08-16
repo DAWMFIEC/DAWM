@@ -11,10 +11,11 @@
 
 * Descargue el _dataset_ de [Kaggle - Disney Movies](https://www.kaggle.com/datasets/prateekmaj21/disney-movies).
 * Instale globalmente el módulo [csv2json](https://www.npmjs.com/package/csv2json).
-  + Convierta el dataset de **.csv** a **.json**, con: `csv2json disney_movies.csv disney_movies.json`
+  + Convierta el dataset de **.csv** a **.json**, con: **`csv2json disney_movies.csv disney_movies.json`**
 * Cree un proyecto en **Firebase** de acuerdo con el tutorial [Firebase - Realtime database](https://dawfiec.github.io/DAWM-2022/tutoriales/firebase_realtime_database.html).
   + Cree la colección: `movies`
   + Cargue el archivo **disney_movies.json** dentro de la colección **movies**
+  + Edite las reglas de acceso a los datos para que tenga acceso completo.
 * Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/) localmente.
 
 ## Pruebas unitarias
