@@ -25,7 +25,9 @@
 <p align="center"> 
   <img src="imagenes/request.png">
 </p>
-    - De tipo **GET** para obtener todos (_GET All_) la colección.
+
+  + De tipo **GET** para obtener todos (_GET All_) la colección.
+    - safd
 <p align="center">  
   <img src="imagenes/GET-all.png">
 </p>
