@@ -24,7 +24,7 @@
   <img src="imagenes/collection.png">
 </p>
 
-  + Agregue un requerimiento 
+  + Agregue los requerimientos 
 
   <p align="center">  
     <img src="imagenes/request.png">
