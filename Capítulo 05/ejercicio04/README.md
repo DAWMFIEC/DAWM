@@ -16,7 +16,28 @@
   + Cree la colección: `movies`
   + Cargue el archivo **disney_movies.json** dentro de la colección **movies**
   + Edite las reglas de acceso a los datos para permitir acceso completo.
-* Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/) localmente.
+* Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/) en su máquina.
+  + Obtenga una cuenta
+  + Cree una colección, por ejemplo **Movies**
+
+<p align="center">  
+  <img src="imagenes/collection.png">
+</p>
+
+  + Agregue un requerimiento 
+
+  <p align="center">  
+    <img src="imagenes/request.png">
+  </p>
+
+    - De tipo **GET** para obtener todos (_GET All_) la colección.
+
+    <p align="center">  
+      <img src="imagenes/GET-all.png">
+    </p>
+
+    
+
 
 ## Pruebas unitarias
 
