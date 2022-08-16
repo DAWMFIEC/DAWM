@@ -34,12 +34,12 @@
         <img src="imagenes/GET-all.png">
       </p>
 
-    - _**GET-one**_: De tipo **GET** para obtener el elemento **150** de la colección. Haga clic en el botón **Send** para enviar el requerimiento.
+    - _**GET-one**_: De tipo **GET** para del elemento **150** de la colección, con: `https://{{myapp}}-default-rtdb.firebaseio.com/movies/150.json`. Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
         <img src="imagenes/GET-one.png">
       </p>
 
-    - _**POST**_: De tipo **POST** para enviar datos a la colecció. Modifique el **Body** del requerimiento de tipo **raw**. 
+    - _**POST**_: De tipo **POST** para enviar datos a la colección. Modifique el **Body** del requerimiento de tipo **raw**. 
       ```
       {
           "genre": "Adventure",
@@ -54,6 +54,23 @@
       Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
         <img src="imagenes/POST.png">
+      </p>
+
+    - _**PUT**_: De tipo **PUT** para enviar datos a la colección, con `https://{{myapp}}-default-rtdb.firebaseio.com/movies/{{lastName}}.json`.  Modifique el **Body** del requerimiento de tipo **raw**. 
+      ```
+      {
+          "genre": "Adventure",
+          "inflation_adjusted_gross": "1800103",
+          "movie_title": "Red",
+          "mpaa_rating": "PG",
+          "release_date": "2022-03-11",
+          "total_gross": "19501533"
+      }
+      ```
+
+      Haga clic en el botón **Send** para enviar el requerimiento.
+      <p align="center">  
+        <img src="imagenes/PUT.png">
       </p>
 
 
