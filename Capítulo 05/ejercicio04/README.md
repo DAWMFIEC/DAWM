@@ -29,25 +29,25 @@
       <img src="imagenes/request.png">
     </p>
 
-    - _**GET-all**_: De tipo **GET** para obtener todos la colección. Haga clic en el botón **Send** para enviar el requerimiento.
+    - _**GET-all**_: De tipo **GET** para obtener todos la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies.json`. Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
         <img src="imagenes/GET-all.png">
       </p>
 
-    - _**GET-one**_: De tipo **GET** para del elemento **150** de la colección, con: `https://{{myapp}}-default-rtdb.firebaseio.com/movies/150.json`. Haga clic en el botón **Send** para enviar el requerimiento.
+    - _**GET-one**_: De tipo **GET** para del elemento **150** de la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies/150.json`. Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
         <img src="imagenes/GET-one.png">
       </p>
 
-    - _**POST**_: De tipo **POST** para enviar datos a la colección. Modifique el **Body** del requerimiento de tipo **raw**. 
+    - _**POST**_: De tipo **POST** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. Modifique el **Body** del requerimiento de tipo **raw**. 
       ```
       {
           "genre": "Adventure",
           "inflation_adjusted_gross": "",
           "movie_title": "Red",
           "mpaa_rating": "PG-13",
-          "release_date": "2022-03-11",
-          "total_gross": "19501533"
+          "release_date": "",
+          "total_gross": ""
       }
       ```
 
@@ -56,7 +56,12 @@
         <img src="imagenes/POST.png">
       </p>
 
-    - _**PUT**_: De tipo **PUT** para enviar datos a la colección, con `https://{{myapp}}-default-rtdb.firebaseio.com/movies/{{lastName}}.json`.  Modifique el **Body** del requerimiento de tipo **raw**. 
+      La colección en firebase después del POST
+      <p align="center">  
+        <img src="imagenes/firebase_POST.png">
+      </p>
+
+    - _**PUT**_: De tipo **PUT** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`.  Modifique el **Body** del requerimiento de tipo **raw**. 
       ```
       {
           "genre": "Adventure",
@@ -71,6 +76,11 @@
       Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
         <img src="imagenes/PUT.png">
+      </p>
+
+      La colección en firebase después del PUT
+      <p align="center">  
+        <img src="imagenes/firebase_PUT.png">
       </p>
 
 
