@@ -27,11 +27,11 @@
 </p>
 
   + Requerimientos:
-    - De tipo **GET** para obtener todos (_GET all_) la colección.
+    - _**GET-all**_: De tipo **GET** para obtener todos la colección.
 <p align="center">  
   <img src="imagenes/GET-all.png">
 </p>
-    - De tipo **GET** para obtener un (_GET one_) elemento la colección.
+    - _**GET-one**_: De tipo **GET** para obtener el elemento **150** de la colección.
 <p align="center">  
   <img src="imagenes/GET-one.png">
 </p>
@@ -41,7 +41,20 @@
 
 ## Pruebas unitarias
 
-* 
+* En cada requerimiento, en la sección **Tests**
+  + Para 
+
+```
+pm.test("Response is ok", ()=>{
+    pm.response.to.have.status(200)
+})
+
+var data = pm.response.json();
+
+pm.test('Number of mvoies returned = ' + data.length, ()=>{
+    pm.expect(data.length).to.equal(579);
+})
+```
 
 ## Referencias 
 
