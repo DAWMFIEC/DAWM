@@ -15,7 +15,7 @@
 * Cree un proyecto en **Firebase** de acuerdo con el tutorial [Firebase - Realtime database](https://dawfiec.github.io/DAWM-2022/tutoriales/firebase_realtime_database.html).
   + Cree la colección: `movies`
   + Cargue el archivo **disney_movies.json** dentro de la colección **movies**
-  + Edite las reglas de acceso a los datos para que tenga acceso completo.
+  + Edite las reglas de acceso a los datos para permitir acceso completo.
 * Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/) localmente.
 
 ## Pruebas unitarias
