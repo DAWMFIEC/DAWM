@@ -27,11 +27,11 @@
 </p>
 
   + Requerimientos:
-    - _**GET-all**_: De tipo **GET** para obtener todos la colección.
+    - _**GET-all**_: De tipo **GET** para obtener todos la colección. Haga clic en el botón **Send** para enviar el requerimiento.
 <p align="center">  
   <img src="imagenes/GET-all.png">
 </p>
-    - _**GET-one**_: De tipo **GET** para obtener el elemento **150** de la colección.
+    - _**GET-one**_: De tipo **GET** para obtener el elemento **150** de la colección. Haga clic en el botón **Send** para enviar el requerimiento.
 <p align="center">  
   <img src="imagenes/GET-one.png">
 </p>
