@@ -159,6 +159,19 @@ pm.test('Has data: inflation_adjusted_gross', function() {
 });
 ```
 
+  + Para _**DELETE**_ 
+```
+pm.test("Response is ok", ()=>{
+    pm.response.to.have.status(200)
+})
+
+const jsonData = pm.response.json();
+
+pm.test('Response is null', function() {
+  pm.expect(jsonData).to.eql(null)
+});
+```
+
 
 * Los resultados posibles a las pruebas unitarias pueden ser:
   <p align="center">  
