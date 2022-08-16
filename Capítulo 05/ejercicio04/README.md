@@ -100,77 +100,77 @@
 
 * En cada requerimiento, en la sección **Tests**
   + Para _**GET-all**_ 
-```
-pm.test("Response is ok", ()=>{
-    pm.response.to.have.status(200)
-})
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
 
-var data = pm.response.json();
+  var data = pm.response.json();
 
-pm.test('Number of mvoies returned = ' + data.length, ()=>{
-    pm.expect(data.length).to.equal(579);
-})
-```
+  pm.test('Number of mvoies returned = ' + data.length, ()=>{
+      pm.expect(data.length).to.equal(579);
+  })
+  ```
 
   + Para _**GET-one**_ 
-```
-pm.test("Response is ok", ()=>{
-    pm.response.to.have.status(200)
-})
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
 
-const jsonData = pm.response.json();
+  const jsonData = pm.response.json();
 
-pm.test('Has data: mpaa_rating', function() {
-  pm.expect(jsonData).to.have.property('mpaa_rating');
-});
+  pm.test('Has data: mpaa_rating', function() {
+    pm.expect(jsonData).to.have.property('mpaa_rating');
+  });
 
-pm.test('Has total_gross value: "12349549"', function() {
-  pm.expect(jsonData["total_gross"]).to.equal("12349549");
-});
-```
+  pm.test('Has total_gross value: "12349549"', function() {
+    pm.expect(jsonData["total_gross"]).to.equal("12349549");
+  });
+  ```
 
   + Para _**POST**_ 
-```
-pm.test("Response is ok", ()=>{
-    pm.response.to.have.status(200)
-})
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
 
-const jsonData = pm.response.json();
+  const jsonData = pm.response.json();
 
-pm.test('Has data: name', function() {
-  pm.expect(jsonData).to.have.property('name');
-});
-```
+  pm.test('Has data: name', function() {
+    pm.expect(jsonData).to.have.property('name');
+  });
+  ```
 
   + Para _**PUT**_ 
-```
-pm.test("Response is ok", ()=>{
-    pm.response.to.have.status(200)
-})
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
 
-const jsonData = pm.response.json();
+  const jsonData = pm.response.json();
 
-pm.test('Has data: total_gross', function() {
-  pm.expect(jsonData).to.have.property('total_gross');
-});
+  pm.test('Has data: total_gross', function() {
+    pm.expect(jsonData).to.have.property('total_gross');
+  });
 
-pm.test('Has data: inflation_adjusted_gross', function() {
-  pm.expect(jsonData).to.have.property('inflation_adjusted_gross');
-});
-```
+  pm.test('Has data: inflation_adjusted_gross', function() {
+    pm.expect(jsonData).to.have.property('inflation_adjusted_gross');
+  });
+  ```
 
   + Para _**DELETE**_ 
-```
-pm.test("Response is ok", ()=>{
-    pm.response.to.have.status(200)
-})
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
 
-const jsonData = pm.response.json();
+  const jsonData = pm.response.json();
 
-pm.test('Response is null', function() {
-  pm.expect(jsonData).to.eql(null)
-});
-```
+  pm.test('Response is null', function() {
+    pm.expect(jsonData).to.eql(null)
+  });
+  ```
 
 
 * Los resultados posibles a las pruebas unitarias pueden ser:
