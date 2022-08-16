@@ -22,11 +22,11 @@
 <p align="center">  
   <img src="imagenes/collection.png">
 </p>
+
+  + Agregue los requerimientos:
 <p align="center"> 
   <img src="imagenes/request.png">
 </p>
-
-  + Agregue los requerimientos:
     - De tipo **GET** para obtener todos (_GET All_) la colección.
 <p align="center">  
   <img src="imagenes/GET-all.png">
