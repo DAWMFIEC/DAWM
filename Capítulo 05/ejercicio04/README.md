@@ -54,7 +54,7 @@
       Haga clic en el botón **Send** para enviar el requerimiento y la colección en firebase después del POST.
       <p align="center">  
         <img width="47%" src="imagenes/POST.png">
-        <img width="47%" style="max-width: 100%;border-left: solid 1pt black;padding: 2%;" src="imagenes/firebase_POST.png">
+        <img width="47%" src="imagenes/firebase_POST.png">
       </p>
 
     - _**PUT**_: De tipo **PUT** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`.  Modifique el **Body** del requerimiento de tipo **raw**. 
@@ -69,26 +69,18 @@
       }
       ```
 
-      Haga clic en el botón **Send** para enviar el requerimiento.
+      Haga clic en el botón **Send** para enviar el requerimiento y la colección en firebase después del PUT.
       <p align="center">  
-        <img src="imagenes/PUT.png">
-      </p>
-
-      La colección en firebase después del PUT
-      <p align="center">  
-        <img src="imagenes/firebase_PUT.png">
+        <img width="47%" src="imagenes/PUT.png">
+        <img width="47%" src="imagenes/firebase_PUT.png">
       </p>
 
     - _**DELETE**_: De tipo **DELETE** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. 
 
-      Haga clic en el botón **Send** para enviar el requerimiento.
+      Haga clic en el botón **Send** para enviar el requerimiento y la colección en firebase después del DELETE.
       <p align="center">  
-        <img src="imagenes/DELETE.png">
-      </p>
-
-      La colección en firebase después del DELETE
-      <p align="center">  
-        <img src="imagenes/firebase_DELETE.png">
+        <img width="47%" src="imagenes/DELETE.png">
+        <img width="47%" src="imagenes/firebase_DELETE.png">
       </p>
 
 
