@@ -16,22 +16,21 @@
 * Instale el módulo **axios**, con: `npm i axios`
 * En el app.js
   + Registre la ruta "/movies" para que enrute las peticiones a "routes/movies.js"
-  + Agregue la funcionalidad a los _callbacks_ para **GET one**, **POST**, **PUT** y **DELETE**.
+  + Agregue la funcionalidad para **GET all** con axios.
 
   ```
   var express = require('express');
+  const axios = require('axios')
   var router = express.Router();
 
-  const axios = require('axios')
-
-  const app_firebase = 'disney-1f1fc'
+  const myapp = ''
 
   /* GET all. */
   router.get('/', (req, res, next) => {
 
     axios({
       method: 'get',
-      url: `https://${app_firebase}-default-rtdb.firebaseio.com/movies.json`,
+      url: `https://${myapp}-default-rtdb.firebaseio.com/movies.json`,
       responseType: 'json'
     })
     .then( resAxios => {
@@ -40,8 +39,17 @@
     .catch(err => console.log(err))
 
   });
+  ```
 
+  Con el resultado en el navegador
 
+  <p align="center">  
+    <img width="40%" src="imagenes/GET-all.png">
+  </p>
+
+  + Agregue la funcionalidad a los _callbacks_ para **GET one**, **POST**, **PUT** y **DELETE**.
+
+  ```
   /* GET one. */
   router.get('/:id', (req, res, next) => {
 
