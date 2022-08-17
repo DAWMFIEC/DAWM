@@ -30,6 +30,8 @@
     </p>
 
     - _**GET-all**_: De tipo **GET** para obtener todos la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies.json`. 
+    
+      Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-all.png">
@@ -37,12 +39,13 @@
 
     - _**GET-one**_: De tipo **GET** para del elemento **150** de la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies/150.json`. 
 
+      Así luce respuesta del requerimiento en _Postman_.
+
       <p align="center">  
         <img width="40%" src="imagenes/GET-one.png">
       </p>
 
     - _**POST**_: De tipo **POST** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. Modifique el **Body** del requerimiento de tipo **raw**. 
-    
       ```
       {
           "genre": "Adventure",
@@ -54,7 +57,8 @@
       }
       ```
 
-      Haga clic en el botón **Send** para enviar el requerimiento y la colección en firebase después del POST.
+      Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del POST.
+
       <p align="center">  
         <img width="47%" src="imagenes/POST.png">
         <img width="47%" src="imagenes/firebase_POST.png">
@@ -72,7 +76,8 @@
       }
       ```
 
-      Haga clic en el botón **Send** para enviar el requerimiento y la colección en firebase después del PUT.
+      Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del PUT.
+
       <p align="center">  
         <img width="47%" src="imagenes/PUT.png">
         <img width="47%" src="imagenes/firebase_PUT.png">
@@ -80,7 +85,8 @@
 
     - _**DELETE**_: De tipo **DELETE** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. 
 
-      Haga clic en el botón **Send** para enviar el requerimiento y la colección en firebase después del DELETE.
+      Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del DELETE.
+      
       <p align="center">  
         <img width="47%" src="imagenes/DELETE.png">
         <img width="47%" src="imagenes/firebase_DELETE.png">
