@@ -51,14 +51,10 @@
       }
       ```
 
-      Haga clic en el botón **Send** para enviar el requerimiento.
+      Haga clic en el botón **Send** para enviar el requerimiento y la colección en firebase después del POST.
       <p align="center">  
-        <img src="imagenes/POST.png">
-      </p>
-
-      La colección en firebase después del POST
-      <p align="center">  
-        <img src="imagenes/firebase_POST.png">
+        <img width="49%" src="imagenes/POST.png">
+        <img width="49%" src="imagenes/firebase_POST.png">
       </p>
 
     - _**PUT**_: De tipo **PUT** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`.  Modifique el **Body** del requerimiento de tipo **raw**. 
