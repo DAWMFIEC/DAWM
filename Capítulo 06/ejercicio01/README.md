@@ -47,7 +47,7 @@
     <img src="imagenes/GET-all.png">
   </p>
 
-  + Agregue la funcionalidad a los _callbacks_ para **GET one**, **POST**, **PUT** y **DELETE**.
+  + Agregue la funcionalidad a los _callbacks_ para **GET one**, **POST**, **PUT** y **DELETE**. De acuerdo con la documentación en [AXIOS - API](https://axios-http.com/docs/api_intro) y [Axios Tutorial: Get/Post/Put/Delete request example](https://www.bezkoder.com/axios-request/)
 
   ```
   /* GET one. */
@@ -124,5 +124,5 @@
 * DAWM-2022. (2022). Retrieved 17 August 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/express_forms.html
 * DAWM-2022. (2022). Retrieved 17 August 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/express_pcpr.html
 * DAWM-2022. (2022). Retrieved 17 August 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/firebase_realtime_database.html
-* Axios API | Axios Docs. (2022). Retrieved 17 August 2022, from https://axios-http.com/docs/api_intro
-* How to make HTTP requests in Node.js ? - GeeksforGeeks. (2021). Retrieved 17 August 2022, from https://www.geeksforgeeks.org/how-to-make-http-requests-in-node-js/
+* Axios API Axios Docs. (2022). Retrieved 17 August 2022, from https://axios-http.com/docs/api_intro
+* HAxios Tutorial: Get/Post/Put/Delete request example - BezKoder. (2021). Retrieved 17 August 2022, from https://www.bezkoder.com/axios-request/
