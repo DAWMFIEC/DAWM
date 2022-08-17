@@ -79,8 +79,6 @@
   module.exports = router;
   ``` 
 
-* Ejecute su aplicación, con: `npm run devstart`
-
 ## Pruebas unitarias
 
 * En su proyecto de Express 

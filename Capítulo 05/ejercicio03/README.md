@@ -115,8 +115,6 @@ Photo.findOne({ where: { id: req.params.id } })
 ...
 ```
 
-* Ejecute su aplicación, con: `npm run devstart`
-
 ## Pruebas unitarias
 
 * En su proyecto de Express 
@@ -152,7 +150,7 @@ Photo.findOne({ where: { id: req.params.id } })
     </code></pre> 
 
 * En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm test`
-* Los resultados posibles a las pruebas unitarias pueden ser: jest
+* Los resultados posibles a las pruebas unitarias pueden ser:
   
   <p align="center">
     <img src="imagenes/jest.png">
