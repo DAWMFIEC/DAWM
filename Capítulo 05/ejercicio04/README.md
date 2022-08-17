@@ -86,7 +86,7 @@
     - _**DELETE**_: De tipo **DELETE** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. 
 
       Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del DELETE.
-      
+
       <p align="center">  
         <img width="47%" src="imagenes/DELETE.png">
         <img width="47%" src="imagenes/firebase_DELETE.png">
@@ -169,6 +169,12 @@
   });
   ```
 
+* Programe un _runner_ de pruebas, con:
+
+  <p align="center">  
+    <img width="47%" src="imagenes/run_collection.png">
+    <img width="47%" src="imagenes/runner.png">
+  </p>
 
 * Los resultados posibles a las pruebas unitarias pueden ser:
   <p align="center">  
