@@ -15,7 +15,54 @@
 * Cree un proyecto nuevo llamado **movies**
 * Instale el módulo **axios**, con: `npm i axios`
 * En el app.js
-  + Registre la ruta "/movies" para que enrute las peticiones a "routes/movies.js" 
+  + Registre la ruta "/movies" para que enrute las peticiones a "routes/movies.js"
+  + Agregue los métodos **GET one**, **POST**, **PUT** y **DELETE**.
+
+  ```
+  var express = require('express');
+  var router = express.Router();
+
+  const axios = require('axios')
+
+  const app_firebase = 'disney-1f1fc'
+
+  /* GET all. */
+  router.get('/', (req, res, next) => {
+
+    axios({
+      method: 'get',
+      url: `https://${app_firebase}-default-rtdb.firebaseio.com/movies.json`,
+      responseType: 'json'
+    })
+    .then( resAxios => {
+        res.json(resAxios.data)
+    })
+    .catch(err => console.log(err))
+
+  });
+
+
+  /* GET one. */
+  router.get('/:id', (req, res, next) => {
+
+  });
+
+  /* POST. */
+  router.post('/', (req, res, next) => {
+
+  });
+
+  /* PUT. */
+  router.put('/:id', (req, res, next) => {
+
+  });
+
+  /* DELETE. */
+  router.delete('/:id', (req, res, next) => {
+
+  });
+  module.exports = router;
+  ``` 
 
 
 ## Pruebas unitarias
