@@ -30,8 +30,6 @@
     </p>
 
     - _**GET-all**_: De tipo **GET** para obtener todos la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies.json`. 
-    
-    Haga clic en el botón **Send** para enviar el requerimiento.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-all.png">
@@ -39,13 +37,12 @@
 
     - _**GET-one**_: De tipo **GET** para del elemento **150** de la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies/150.json`. 
 
-    Haga clic en el botón **Send** para enviar el requerimiento.
-    
       <p align="center">  
         <img width="40%" src="imagenes/GET-one.png">
       </p>
 
     - _**POST**_: De tipo **POST** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. Modifique el **Body** del requerimiento de tipo **raw**. 
+    
       ```
       {
           "genre": "Adventure",
