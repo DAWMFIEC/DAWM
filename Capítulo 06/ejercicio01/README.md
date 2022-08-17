@@ -44,7 +44,7 @@
   Con el resultado en el navegador
 
   <p align="center">  
-    <img width="40%" src="imagenes/GET-all.png">
+    <img src="imagenes/GET-all.png">
   </p>
 
   + Agregue la funcionalidad a los _callbacks_ para **GET one**, **POST**, **PUT** y **DELETE**.
