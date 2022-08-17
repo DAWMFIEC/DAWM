@@ -3,7 +3,7 @@
 ![ejercicio01](imagenes/ejercicio01.png)
 
 
-## Requisitos
+## Instrucciones
 
 * Completar las actividades de [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) y [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html).
 
