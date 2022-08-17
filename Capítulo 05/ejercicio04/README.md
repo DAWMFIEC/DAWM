@@ -20,23 +20,23 @@
   + Obtenga una cuenta
   + Cree una nueva colección, por ejemplo **Movies**,
     <p align="center">  
-      <img src="imagenes/collection.png">
+      <img width="20%" src="imagenes/collection.png">
     </p>
 
 
   + Y agregue los requerimientos:
     <p align="center"> 
-      <img src="imagenes/request.png">
+      <img width="20%" src="imagenes/request.png">
     </p>
 
     - _**GET-all**_: De tipo **GET** para obtener todos la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies.json`. Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
-        <img src="imagenes/GET-all.png">
+        <img width="20%" src="imagenes/GET-all.png">
       </p>
 
     - _**GET-one**_: De tipo **GET** para del elemento **150** de la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies/150.json`. Haga clic en el botón **Send** para enviar el requerimiento.
       <p align="center">  
-        <img src="imagenes/GET-one.png">
+        <img width="20%" src="imagenes/GET-one.png">
       </p>
 
     - _**POST**_: De tipo **POST** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. Modifique el **Body** del requerimiento de tipo **raw**. 
