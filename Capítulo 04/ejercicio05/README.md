@@ -107,7 +107,7 @@
 	  </section>
 	</main>
 	```
-
+* Ejecute su aplicación, con: `ng serve`
 
 
 ## Pruebas unitarias

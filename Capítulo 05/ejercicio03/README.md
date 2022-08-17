@@ -115,6 +115,7 @@ Photo.findOne({ where: { id: req.params.id } })
 ...
 ```
 
+* Ejecute su aplicación, con: `npm run devstart`
 
 ## Pruebas unitarias
 

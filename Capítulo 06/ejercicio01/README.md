@@ -72,6 +72,7 @@
   module.exports = router;
   ``` 
 
+* Ejecute su aplicación, con: `npm run devstart`
 
 ## Pruebas unitarias
 
