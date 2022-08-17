@@ -169,7 +169,7 @@
   });
   ```
 
-* Programe un _runner_ de pruebas, con:
+* Programe la ejecución de la colección, con:
 
   <p align="center">  
     <img width="47%" src="imagenes/run_collection.png">
