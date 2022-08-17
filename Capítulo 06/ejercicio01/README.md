@@ -16,7 +16,7 @@
 * Instale el módulo **axios**, con: `npm i axios`
 * En el app.js
   + Registre la ruta "/movies" para que enrute las peticiones a "routes/movies.js"
-  + Agregue los métodos **GET one**, **POST**, **PUT** y **DELETE**.
+  + Agregue los métodos **GET one**, **POST**, **PUT** y **DELETE** con sus respectivas respuestas para **`axios`**.
 
   ```
   var express = require('express');
