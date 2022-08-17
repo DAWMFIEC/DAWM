@@ -1,7 +1,8 @@
 # Ejercicio 04
 
-![ejercicio04](imagenes/ejercicio04.png)
-
+<p align="center">  
+  <img width="40%" src="imagenes/ejercicio04.png">
+</p>
 
 ## Instrucciones
 
