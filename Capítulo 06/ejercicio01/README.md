@@ -16,7 +16,10 @@
 * Instale el módulo **axios**, con: `npm i axios`
 * En el app.js
   + Registre la ruta "/movies" para que enrute las peticiones a "routes/movies.js"
-  + Agregue la funcionalidad para **GET all** con axios.
+
+* En el ruteador "routes/movies.js" 
+
+  + Agregue las referencias a los módulos **express** y **axios**. Además, agregue el nombre de su aplicación. 
 
   ```
   var express = require('express');
@@ -24,7 +27,11 @@
   var router = express.Router();
 
   const myapp = ''
+  ```  
+  
+  + Agregue controlador con la subruta `/` para la funcionalidad para _GET all_ mediante un requerimiento http con **axios**. 
 
+  ```
   /* GET all. */
   router.get('/', (req, res, next) => {
 
