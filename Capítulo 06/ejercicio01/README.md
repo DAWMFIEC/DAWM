@@ -1,6 +1,8 @@
 # Ejercicio 01
 
-![ejercicio01](imagenes/ejercicio01.png)
+<p align="center">  
+  <img width="40%" src="imagenes/ejercicio01.png">
+</p>
 
 
 ## Instrucciones
@@ -56,8 +58,8 @@
   /* GET one. */
   router.get('/:id', (req, res, next) => {
 
-    
-    
+
+
   });
 
   /* POST. */
