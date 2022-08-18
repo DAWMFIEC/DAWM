@@ -19,7 +19,7 @@
 
 * En el ruteador "routes/movies.js" 
 
-  + Agregue las referencias a los módulos **express** y **axios**. Además, agregue el nombre de su aplicación. 
+  + Agregue las referencias a los módulos **express** y **axios**. Además, agregue el nombre de su aplicación en **myapp**. 
 
   ```
   var express = require('express');
