@@ -35,11 +35,7 @@
   /* GET all. */
   router.get('/', (req, res, next) => {
 
-    axios({
-      method: 'get',
-      url: `https://${myapp}-default-rtdb.firebaseio.com/movies.json`,
-      responseType: 'json'
-    })
+    axios.get(`https://${myapp}-default-rtdb.firebaseio.com/movies.json`)
     .then( resAxios => {
         res.json(resAxios.data)
     })
@@ -63,7 +59,7 @@
   });
 
   /* POST. */
-  router.post('/', (req, res, next) => {
+  router.post('/:id', (req, res, next) => {
 
   });
 
