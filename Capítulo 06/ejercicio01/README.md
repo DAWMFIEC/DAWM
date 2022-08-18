@@ -48,7 +48,7 @@
   });
   ```
 
-  Levante el servidor, con: `npm run devstart`. Con el resultado en el navegador
+  Levante el servidor, con: `npm run devstart`. Consulte el resultado en el navegador a la URL: `http://localhost:3000/movies`
 
   <p align="center">  
     <img src="imagenes/GET-all.png">
