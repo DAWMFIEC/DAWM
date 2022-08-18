@@ -56,20 +56,46 @@
   /* GET one. */
   router.get('/:id', (req, res, next) => {
 
+    
+    
   });
 
   /* POST. */
   router.post('/:id', (req, res, next) => {
+
+    let obj = {
+      "genre": req.body.genre,
+      "inflation_adjusted_gross": req.body.inflation_adjusted_gross,
+      "movie_title": req.body.movie_title,
+      "mpaa_rating": req.body.mpaa_rating,
+      "release_date": req.body.release_date,
+      "total_gross": req.body.total_gross
+    }
+
+
 
   });
 
   /* PUT. */
   router.put('/:id', (req, res, next) => {
 
+    let obj = {
+      "genre": req.body.genre,
+      "inflation_adjusted_gross": req.body.inflation_adjusted_gross,
+      "movie_title": req.body.movie_title,
+      "mpaa_rating": req.body.mpaa_rating,
+      "release_date": req.body.release_date,
+      "total_gross": req.body.total_gross
+    }
+
+
+
   });
 
   /* DELETE. */
   router.delete('/:id', (req, res, next) => {
+
+
 
   });
   module.exports = router;
