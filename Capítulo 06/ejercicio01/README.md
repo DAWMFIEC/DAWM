@@ -50,7 +50,7 @@
     <img src="imagenes/GET-all.png">
   </p>
 
-  + Agregue la funcionalidad para **GET one**, **POST**, **PUT** y **DELETE**. De acuerdo con la documentación en [AXIOS - API](https://axios-http.com/docs/api_intro) y [Axios Tutorial: Get/Post/Put/Delete request example](https://www.bezkoder.com/axios-request/)
+  + Agregue la funcionalidad para **GET one**, **POST**, **PUT** y **DELETE**. De acuerdo con [Axios Tutorial: Get/Post/Put/Delete request example](https://www.bezkoder.com/axios-request/)
 
   ```
   /* GET one. */
