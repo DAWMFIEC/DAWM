@@ -90,7 +90,7 @@
         ...
         <b style="color:red">
         ,
-        "test": "jest --detectOpenHandles"
+        "test": "jest"
         </b>
       }
     ...
