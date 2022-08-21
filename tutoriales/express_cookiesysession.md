@@ -55,7 +55,7 @@ Autorización
     app.use(session({
         secret: '2C44-4D44-WppQ38S',
         resave: true,
-        saveUninitialized: true
+        saveUninitialized: false
     }));
     </b>
     // view engine setup
@@ -134,7 +134,34 @@ Autenticación
 
 * * *
 
+* Modifique `routes/login.js`:
+  + Agregue la instanciación de la sesión, con:
 
+    <pre><code>
+    ...
+    if(usuario == bd['usuario'] && contrasenia == bd['contrasenia']) {
+      <b style="color:red">
+      req.session.user = bd['usuario'];
+      req.session.admin = true;  
+      </b>
+      res.redirect('/');  
+    } else {  
+    ...
+    </code></pre>
+
+* Acceda a la ruta `/login`
+  + Revise las **cookies de sesión** en el inspector del navegador
+
+<p align="center">
+  <img src="imagenes/nosession.png">
+</p>
+
+  + Ingrese las credenciales de usuario `abc` y contraseña `123`
+  + Luego de la redirección, revise las **cookies de sesión**
+
+<p align="center">
+  <img src="imagenes/session.png">
+</p>
 
 Referencias 
 ===========
