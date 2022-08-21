@@ -55,7 +55,8 @@ Autorización
     app.use(session({
         secret: '2C44-4D44-WppQ38S',
         resave: true,
-        saveUninitialized: false
+        saveUninitialized: false,
+        cookie: { maxAge: 30000 }
     }));
     </b>
     // view engine setup
