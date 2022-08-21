@@ -63,7 +63,7 @@ Autorización
         secret: '2C44-4D44-WppQ38S',
         resave: true,
         saveUninitialized: false,
-        cookie: { maxAge: 30000 }
+        cookie: { maxAge: 60000 }
     }));
     </b>
     // view engine setup
@@ -276,7 +276,7 @@ Rastreo
   } else {
   </code></pre>
 
-* Después de hacer realizar una serie de rutas dentro de la aplicación, verifique el valor de la cookie **tracing**
+* Después dar clicks en varios enlaces en la aplicación, verifique el valor de la cookie **tracing**
   
   + Cierre y abra la sesión para comprobar el redireccionamiento.
 
