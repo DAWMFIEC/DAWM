@@ -270,9 +270,9 @@ Rastreo
     let tracing = req.cookies.tracing  || ''
     if(tracing.length > 0)
       res.redirect(tracing)   
+    else
+      res.redirect('/');
     </b> 
-
-    res.redirect('/');  
   } else {
   </code></pre>
 
