@@ -163,6 +163,29 @@ Autenticación
   <img src="imagenes/session.png">
 </p>
 
+* Cerrar sesión
+  + Modifique el partial `views/partials/header.ejs`. Agregue la referencia a `/logout`
+
+    ```
+    ...
+    <a class="nav-link px-3" href="/logout">Sign out</a>
+    ...
+    ```
+
+  + Modifique el ruteador `routes/login.js`. Agregue el controlador para el método **GET** de la subruta `/out`
+
+    <pre><code>
+    ...
+    router.get('/out', function(req, res, next) { 
+      req.session.destroy();
+      res.redirect('/login')
+    });
+    ...
+    </code></pre> 
+
+  + De clic en la opción **`Sign out`** de la esquina superior a la derecha.
+
+
 Referencias 
 ===========
 

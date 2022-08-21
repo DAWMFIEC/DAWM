@@ -20,6 +20,9 @@ theme: jekyll-theme-leap-day
   + De [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html) hasta la **Vista** de Productos.
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
+* Complete el tutorial:
+
+  + [Express - Cookies y Sesión](https://dawfiec.github.io/DAWM-2022/tutoriales/express_cookiesysession.html)
 
 ### Términos
 
