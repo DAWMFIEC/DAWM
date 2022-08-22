@@ -172,11 +172,11 @@ Autenticación
 </p>
 
 * Cerrar sesión
-  + Modifique el partial `views/partials/header.ejs`. Agregue la referencia a `/logout`
+  + Modifique el partial `views/partials/header.ejs`. Agregue la referencia a `/login/out`
 
     ```
     ...
-    <a class="nav-link px-3" href="/logout">Sign out</a>
+    <a class="nav-link px-3" href="/login/out">Sign out</a>
     ...
     ```
 
