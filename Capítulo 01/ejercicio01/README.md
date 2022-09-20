@@ -28,20 +28,20 @@
 	+ Todas las pruebas unitarias fueron exitosas, o
 
 	<p align="center">
-	  <img src="imagenes/exito.png">
+	  <img src="images/exito.png">
 	</p>
 
 	+ Existen pruebas unitarias fallidas.
 
 	<p align="center">
-	  <img src="imagenes/fallo.png">
+	  <img src="images/fallo.png">
 	</p>
 
 * En caso de aparecer pruebas unitarias fallidas, revise los valores esperados, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
 
 
 <p align="center">
-  <img src="imagenes/esperado.png">
+  <img src="images/esperado.png">
 </p>
 
 
