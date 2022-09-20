@@ -121,7 +121,7 @@ Photo.findOne({ where: { id: req.params.id } })
 
 * En su proyecto de Express 
   + Instale las dependencias **Jest**, **SuperTest** y **cross-env**
-    - Desde la línea de comandos ejecute: `npm install --save-dev jest supertest cross-env`
+    - Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev jest supertest cross-env`
   + Agregue la carpeta **tests** de este repositorio a su proyecto 
   + Modifique el archivo **package.json**
     - Agregue los pares clave-valor

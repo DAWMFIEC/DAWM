@@ -22,7 +22,7 @@
 
 ## Pruebas unitarias
 
-* Desde la línea de comandos ejecute: `npm test`
+* Desde otra instancia de la línea de comandos, ejecute: `npm test`
 * Los resultados posibles a las pruebas unitarias pueden ser: 
 	+ Todos fueron exitosas, o
 	+ Existen pruebas unitarias fallidas.
