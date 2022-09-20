@@ -13,11 +13,11 @@ describe('Test unitarios para la ruta `/` con listas', function() {
         })
     });
 
-    it('Modifique el archivo views/index.ejs', function() {
+    it('Etiqueta <ul> en views/index.ejs', function() {
       return request(app)
         .get('/')
         .then((response) => {
-            let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '')
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
 
             let list1 = `
               <ul>
@@ -30,9 +30,17 @@ describe('Test unitarios para la ruta `/` con listas', function() {
                 <li>Cuenca</li>
               </ul>
             `
-            let list1clean = list1.replace(/(\r\n|\n|\r)/gm, '')
+            let list1clean = list1.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
             chai.expect(responseclean).to.contain(list1clean);
+          
+        })
+    });
 
+    it('Etiqueta <ol> en views/index.ejs', function() {
+      return request(app)
+        .get('/')
+        .then((response) => {
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
 
             let list2 = `
               <ol>
@@ -42,9 +50,17 @@ describe('Test unitarios para la ruta `/` con listas', function() {
                 <li>Ignacio</li>
               </ol>
             `
-            let list2clean = list2.replace(/(\r\n|\n|\r)/gm, '')
+            let list2clean = list2.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
             chai.expect(responseclean).to.contain(list2clean);
+            
+        })
+    });
 
+    it("Etiqueta <ol> con type='I' en views/index.ejs", function() {
+      return request(app)
+        .get('/')
+        .then((response) => {
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
 
             let list3 = `
               <ol type="I">
@@ -55,9 +71,17 @@ describe('Test unitarios para la ruta `/` con listas', function() {
                 <li>Recomendaciones</li>
               </ol>
             `
-            let list3clean = list3.replace(/(\r\n|\n|\r)/gm, '')
+            let list3clean = list3.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
             chai.expect(responseclean).to.contain(list3clean);
+            
+        })
+    });
 
+    it('Etiqueta <ul> con <ol> anidados en views/index.ejs', function() {
+      return request(app)
+        .get('/')
+        .then((response) => {
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
 
             let list4 = `
               <ul>
@@ -80,7 +104,7 @@ describe('Test unitarios para la ruta `/` con listas', function() {
                   </ol>
               </ul>
             `
-            let list4clean = list4.replace(/(\r\n|\n|\r)/gm, '')
+            let list4clean = list4.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
             chai.expect(responseclean).to.contain(list4clean);
             
         })

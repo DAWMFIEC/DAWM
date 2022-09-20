@@ -13,7 +13,7 @@ describe('Test unitarios para la ruta `/` con tablas', function() {
         })
     });
 
-    it('Modifique el archivo views/index.ejs', function() {
+    it('Etiqueta <table> en views/index.ejs', function() {
       return request(app)
         .get('/')
         .then((response) => {
@@ -38,7 +38,15 @@ describe('Test unitarios para la ruta `/` con tablas', function() {
             `
             let table1clean = table1.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'');
             chai.expect(responseclean).to.contain(table1clean);
+            
+        })
+    });
 
+    it('Etiqueta <table> border="1" align="center" en views/index.ejs', function() {
+      return request(app)
+        .get('/')
+        .then((response) => {
+            let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
 
             let table2 = `
               <table border="1" align="center">

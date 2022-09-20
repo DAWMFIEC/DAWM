@@ -13,7 +13,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Etiqueta <h1> views/index.ejs', function() {
+    it('Etiqueta <h1> en views/index.ejs', function() {
       return request(app)
         .get('/')
         .then((response) => {
@@ -21,7 +21,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Etiqueta <h2> views/index.ejs', function() {
+    it('Etiqueta <h2> en views/index.ejs', function() {
       return request(app)
         .get('/')
         .then((response) => {
@@ -29,7 +29,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Etiqueta <h6> views/index.ejs', function() {
+    it('Etiqueta <h6> en views/index.ejs', function() {
       return request(app)
         .get('/')
         .then((response) => {
