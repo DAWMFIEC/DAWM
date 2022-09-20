@@ -26,14 +26,24 @@
 * Los resultados posibles a las pruebas unitarias pueden ser: 
 
 	+ Todas las pruebas unitarias fueron exitosas, o
-	![image info](images/exito.png)
+
+	<p align="center">
+	  <img src="imagenes/exito.png">
+	</p>
 
 	+ Existen pruebas unitarias fallidas.
-	![image info](images/fallo.png)
+
+	<p align="center">
+	  <img src="imagenes/fallo.png">
+	</p>
 
 * En caso de aparecer pruebas unitarias fallidas, revise los valores esperados, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
 
-![image info](images/esperado.png)
+
+<p align="center">
+  <img src="imagenes/esperado.png">
+</p>
+
 
 ## Referencias 
 
