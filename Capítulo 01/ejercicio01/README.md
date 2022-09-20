@@ -37,12 +37,14 @@
 	  <img src="images/fallo.png">
 	</p>
 
-* En caso de aparecer pruebas unitarias fallidas, revise los valores esperados, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
+* En caso de aparecer pruebas unitarias fallidas:
+	+ Revise los valores esperados, 
+	+ Modifique el/los archivo(s), y 
+	+ Vuelva a ejecutar las pruebas unitarias. 
 
-
-<p align="center">
-  <img src="images/esperado.png">
-</p>
+	<p align="center">
+	  <img src="images/esperado.png">
+	</p>
 
 
 ## Referencias 
