@@ -4,7 +4,7 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 
 ## Sitio web
 
-Enlace al [sitio web](https://dawfiec.github.io/DAWM-2022/).
+Enlace al [sitio web](https://dawfiec.github.io/DAWM/).
 
 ## Recursos
 
