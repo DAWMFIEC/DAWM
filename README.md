@@ -6,9 +6,10 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 
 Enlace al [sitio web](https://dawfiec.github.io/DAWM-2022/).
 
-## Libros
+## Recursos
 
 *  [Programming-Notes-for-Professionals-books](https://github.com/bao-vn/Programming-Notes-for-Professionals-books/tree/master/GoalKicker)
+*  [Sobrecodigo](https://www.instagram.com/sobrecodigo/)
 
 ## Prerequisitos
 
