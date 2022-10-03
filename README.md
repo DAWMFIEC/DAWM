@@ -26,7 +26,7 @@ Enlace al [sitio web](https://dawfiec.github.io/DAWM/).
 
 ## ¿Dónde comienzo?
 
-* Clone el repositorio con: `git clone https://github.com/DAWFIEC/DAWM-2022.git`
+* Clone el repositorio con: `git clone https://github.com/DAWFIEC/DAWM.git`
 * Por cada ejercicio, desde la línea de comandos
 	+ Ingrese a la carpeta del capítulo y del ejercicio
 * Siga las instrucciones que aparecen en el README.md de cada ejercicio.
