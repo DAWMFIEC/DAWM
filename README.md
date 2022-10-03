@@ -4,11 +4,12 @@ Cada capítulo contiene un conjunto de ejercicios donde podrás experimentar los
 
 ## Sitio web
 
-Enlace al [sitio web](https://dawfiec.github.io/DAWM-2022/).
+Enlace al [sitio web](https://dawfiec.github.io/DAWM/).
 
-## Libros
+## Recursos
 
 *  [Programming-Notes-for-Professionals-books](https://github.com/bao-vn/Programming-Notes-for-Professionals-books/tree/master/GoalKicker)
+*  [Sobrecodigo](https://www.instagram.com/sobrecodigo/)
 
 ## Prerequisitos
 
@@ -25,7 +26,7 @@ Enlace al [sitio web](https://dawfiec.github.io/DAWM-2022/).
 
 ## ¿Dónde comienzo?
 
-* Clone el repositorio con: `git clone https://github.com/DAWFIEC/DAWM-2022.git`
+* Clone el repositorio con: `git clone https://github.com/DAWFIEC/DAWM.git`
 * Por cada ejercicio, desde la línea de comandos
 	+ Ingrese a la carpeta del capítulo y del ejercicio
 * Siga las instrucciones que aparecen en el README.md de cada ejercicio.
