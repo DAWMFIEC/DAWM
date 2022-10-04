@@ -3,7 +3,7 @@ const chai = require('chai');
 const request = require('supertest');
 const app = require('../app')
 
-describe('Test unitarios para la ruta `/`', function() {
+describe('Test unitarios para la ruta `/` de contenedores', function() {
 
     it('Respuesta del servidor', function() {
       return request(app)
