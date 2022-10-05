@@ -4,11 +4,16 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ## Enlaces
 
-* [Repositorio](https://github.com/DAWFIEC/DAWM-2022)
+* [Repositorio](https://github.com/DAWFIEC/DAWM)
 * [Diapositivas](https://espolec-my.sharepoint.com/:f:/g/personal/aavendan_espol_edu_ec/ErXieD191LpMimWk129PcmcBcjKXdMxXe3ECZ2PedWPKJA?e=RGgzOc)
 * [Fundamental](paginas/fundamental.md)
 * [Enlaces](paginas/enlaces.md)
 * [Errores](paginas/errores.md)
+
+## Recursos
+
+* [Programming-Notes-for-Professionals-books](https://github.com/bao-vn/Programming-Notes-for-Professionals-books/tree/master/GoalKicker)
+* [Sobrecodigo](https://www.instagram.com/sobrecodigo/)
 
 ## Guías
 
@@ -85,7 +90,7 @@ Cuando tengas listo tu sitio web estático o tu aplicación web dinámica será 
 
 ### Otras versiones
 
-* Versión anterior [Sitio Web](https://dawfiec.github.io/DAWM/) y [Repo](https://github.com/DAWFIEC/DAWM).
+* Versión anterior [Sitio Web](https://dawfiec.github.io/DAWM-old/) y [Repo](https://github.com/DAWFIEC/DAWM-old).
 
 ### Markdown
 
