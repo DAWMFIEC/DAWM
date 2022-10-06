@@ -52,6 +52,10 @@ article {
   margin: 5px;
 }
 
+figure {
+  margin: 0 auto;
+}
+
 img {
   display: block;
   width: 273px;
