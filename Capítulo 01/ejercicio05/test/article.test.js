@@ -15,10 +15,6 @@ describe('Test unitarios para la ruta `/`', function() {
     
     let article = `
       <article>
-        <!-- <img
-          src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png"
-          alt="GeeksforGeeks"
-        > -->
         <figure>
           <img src="https://media.geeksforgeeks.org/wp-content/cdn-uploads/20190710102234/download3.png" alt="GeeksforGeeks">
           <figcaption>Geeks for Geeks</figcaption>
