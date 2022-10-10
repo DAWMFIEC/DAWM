@@ -19,7 +19,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 |      Primer Parcial        |      Segundo Parcial       | 
 | :------------------------: | :------------------------: | 
-| [Guía 01](guias/guia01.md) | [Guía 12](guias/guia12.md) |
+| [Guía 01: Esctructura de global de una página HTML](guias/guia01.md) | [Guía 12](guias/guia12.md) |
 | [Guía 02](guias/guia02.md) | [Guía 13](guias/guia13.md) |
 | [Guía 03](guias/guia03.md) | [Guía 14](guias/guia14.md) |
 | [Guía 04](guias/guia04.md) | [Guía 15](guias/guia15.md) |
