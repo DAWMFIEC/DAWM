@@ -14,6 +14,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Programming-Notes-for-Professionals-books](https://github.com/bao-vn/Programming-Notes-for-Professionals-books/tree/master/GoalKicker)
 * [Sobrecodigo](https://www.instagram.com/sobrecodigo/)
+* [Web.dev](https://web.dev/)
 
 ## Guías
 
