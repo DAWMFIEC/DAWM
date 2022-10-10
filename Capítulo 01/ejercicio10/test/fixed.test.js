@@ -16,53 +16,98 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Modifique el archivo public/stylesheets/fixed.css Whatsapp color de texto', function() {
+    let divwhatsapp = 'div#whatsapp'
+    let colorname = 'color', colorvalue = 'transparent'
+    let displayname = 'display', displayvalue = 'block'
+    let widthname = 'width', widthvalue = '5rem'
+    let heightname = 'height', heightvalue = '5rem'
+    let backgroundimagename = 'background-image', backgroundimagevalue = 'url("../images/whatsapp-logo.png")'
+    let backgroundsizename = 'background-size', backgroundsizevalue = 'cover'
+    let backgroundrepeatname = 'background-repeat', backgroundrepeatvalue = 'no-repeat'
+    let positionname = 'position', positionvalue = 'fixed'
+    let bottomname = 'bottom', bottomvalue = '1rem'
+    let rightname = 'right', rightvalue = '1rem'
 
+
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${divwhatsapp} {
+          ${colorname}: ${colorvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/fixed.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('div#whatsapp')
-           .and.decl('color','transparent')
+          
+          chai.expect(response.text).to.have.rule(divwhatsapp)
+            .and.decl( colorname, colorvalue )
+            
         })
     });
 
-    it('Modifique el archivo public/stylesheets/fixed.css Whatsapp caja contenedora', function() {
-
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${divwhatsapp} {
+          ${displayname}: ${displayvalue};
+          ${widthname}: ${widthvalue};
+          ${heightname}: ${heightvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/fixed.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('div#whatsapp')
-           .and.decl('display','block')
-           .and.decl('width','5rem')
-           .and.decl('height','5rem')
+          
+          chai.expect(response.text).to.have.rule(divwhatsapp)
+            .and.decl( displayname, displayvalue )
+            .and.decl( widthname, widthvalue )
+            .and.decl( heightname, heightvalue )
         })
     });
 
-    it('Modifique el archivo public/stylesheets/fixed.css Whatsapp imagen de fondo', function() {
-
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${divwhatsapp} {
+          ${backgroundimagename}: ${backgroundimagevalue};
+          ${backgroundsizename}: ${backgroundsizevalue};
+          ${backgroundrepeatname}: ${backgroundrepeatvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/fixed.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('div#whatsapp')
-           .and.decl('background-image','url("../images/whatsapp-logo.png")')
-           .and.decl('background-size','cover')
-           .and.decl('background-repeat','no-repeat')
+          
+          chai.expect(response.text).to.have.rule(divwhatsapp)
+            .and.decl( backgroundimagename, backgroundimagevalue )
+            .and.decl( backgroundsizename, backgroundsizevalue )
+            .and.decl( backgroundrepeatname, backgroundrepeatvalue )
         })
     });
 
-    it('Modifique el archivo public/stylesheets/fixed.css Whatsapp ubicación de la caja', function() {
-
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${divwhatsapp} {
+          ${backgroundimagename}: ${backgroundimagevalue};
+          ${backgroundsizename}: ${backgroundsizevalue};
+          ${backgroundrepeatname}: ${backgroundrepeatvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/fixed.css')
         .then((response) => {
+          
+          chai.expect(response.text).to.have.rule(divwhatsapp)
+            .and.decl( backgroundimagename, backgroundimagevalue )
+            .and.decl( backgroundsizename, backgroundsizevalue )
+            .and.decl( backgroundrepeatname, backgroundrepeatvalue )
+        })
+    });
 
-          chai.expect(response.text).to.have.rule('div#whatsapp')
-           .and.decl('position','fixed')
-           .and.decl('bottom','1rem')
-           .and.decl('right','1rem')
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${divwhatsapp} {
+          ${positionname}: ${positionvalue};
+          ${bottomname}: ${bottomvalue};
+          ${rightname}: ${rightvalue};
+        }`, function() {
+      return request(app)
+        .get('/stylesheets/fixed.css')
+        .then((response) => {
+          
+          chai.expect(response.text).to.have.rule(divwhatsapp)
+            .and.decl( positionname, positionvalue )
+            .and.decl( bottomname, bottomvalue )
+            .and.decl( rightname, rightvalue )
         })
     });
    

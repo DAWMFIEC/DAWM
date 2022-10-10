@@ -16,75 +16,119 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Modifique el archivo public/stylesheets/sticky.css Centrando la imagen', function() {
+    let selector1 = 'picture img'
+    let maxwidthname = 'max-width', maxwidthvalue = '50%'
+    let displayname = 'display', displayvalue = 'block'
+    let marginname = 'margin', marginvalue = '0 auto'
+    let borderradiusname = 'border-radius', borderradiusvalue = '0.4rem'
 
+    let selector2 = 'picture span'
+    let maxwidthname2 = 'max-width', maxwidthvalue2 = '50%'
+    let displayname2 = 'display', displayvalue2 = 'block'
+    let marginname2 = 'margin', marginvalue2 = '0 auto'
+    
+    let backgroundname = 'background', backgroundvalue = 'white'
+    let paddingname = 'padding', paddingvalue = '1.4rem 2rem'
+    let marginname3 = 'margin', marginvalue3 = '0 auto'
+    let fontsizename = 'font-size', fontsizevalue = '1.5vw'
+    let fontstylename = 'font-style', fontstylevalue = 'italic'           
+    let bordercolorname = 'border-color', bordercolorvalue = '#1F516B'
+    let borderwidthname = 'border-width', borderwidthvalue = '1.2pt 0pt 1.2pt 1.2pt'
+    let borderstylename = 'border-style', borderstylevalue = 'solid'
+    
+    let positionname = 'position', positionvalue = 'relative'
+    let topname = 'top', topvalue = '-5.7rem'
+    let leftname = 'left', leftvalue = '8.7rem'
+
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector1} {
+          ${maxwidthname}: ${maxwidthvalue};
+          ${displayname}: ${displayvalue};
+          ${marginname}: ${marginvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/relative.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('picture img')
-           .and.decl('max-width','50%')
-           .and.decl('display','block')
-           .and.decl('margin','0 auto')
+          
+          chai.expect(response.text).to.have.rule(selector1)
+            .and.decl( maxwidthname, maxwidthvalue )
+            .and.decl( displayname, displayvalue )
+            .and.decl( marginname, marginvalue )
         })
     });
 
-    it('Modifique el archivo public/stylesheets/sticky.css Estilo de la imagen', function() {
-
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector1} {
+          ${borderradiusname}: ${borderradiusvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/relative.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('picture img')
-           .and.decl('border-radius','0.4rem')
+          
+          chai.expect(response.text).to.have.rule(selector1)
+            .and.decl( borderradiusname, borderradiusvalue )
         })
     });
 
-    it('Modifique el archivo public/stylesheets/sticky.css Centrando el texto', function() {
-
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector2} {
+          ${maxwidthname2}: ${maxwidthvalue2};
+          ${displayname2}: ${displayvalue2};
+          ${marginname2}: ${marginvalue2};
+        }`, function() {
       return request(app)
         .get('/stylesheets/relative.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('picture span')
-           .and.decl('max-width','30%')
-           .and.decl('display','block')
-           .and.decl('margin','0 auto')
+          
+          chai.expect(response.text).to.have.rule(selector2)
+            .and.decl( maxwidthname2, maxwidthvalue2 )
+            .and.decl( displayname2, displayvalue2 )
+            .and.decl( marginname2, marginvalue2 )
         })
     });
-
-    it('Modifique el archivo public/stylesheets/sticky.css Estilo del texto', function() {
-
+    
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector2} {
+          ${backgroundname}: ${backgroundvalue};
+          ${paddingname}: ${paddingvalue};
+          ${marginname3}: ${marginvalue3};
+          ${fontsizename}: ${fontsizevalue};
+          ${fontstylename}: ${fontstylevalue};
+          ${bordercolorname}: ${bordercolorvalue};
+          ${borderwidthname}: ${borderwidthvalue};
+          ${borderstylename}: ${borderstylevalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/relative.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('picture span')
-           .and.decl('background','white')
-           .and.decl('padding','1.4rem 2rem')
-           .and.decl('margin','0 auto')
-
-           .and.decl('font-size','1.5vw')
-           .and.decl('font-style','italic')
-           
-           .and.decl('border-color','#1F516B')
-           .and.decl('border-width','1.2pt 0pt 1.2pt 1.2pt')
-           .and.decl('border-style','solid')
+          
+          chai.expect(response.text).to.have.rule(selector2)
+            .and.decl( backgroundname, backgroundvalue )
+            .and.decl( paddingname, paddingvalue )
+            .and.decl( marginname3, marginvalue3 )
+            .and.decl( fontsizename, fontsizevalue )
+            .and.decl( fontstylename, fontstylevalue )
+            .and.decl( bordercolorname, bordercolorvalue )
+            .and.decl( borderwidthname, borderwidthvalue )
+            .and.decl( borderstylename, borderstylevalue )
         })
     });
 
-    it('Modifique el archivo public/stylesheets/sticky.css Reposicionando el texto', function() {
-
+    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector2} {
+          ${positionname}: ${positionvalue};
+          ${topname}: ${topvalue};
+          ${leftname}: ${leftvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/relative.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('picture span')
-           .and.decl('position','relative')
-           .and.decl('top','-5.7rem')
-           .and.decl('left','8.7rem')
+          
+          chai.expect(response.text).to.have.rule(selector2)
+            .and.decl( positionname, positionvalue )
+            .and.decl( topname, topvalue )
+            .and.decl( leftname, leftvalue )
         })
     });
-   
 
 });
