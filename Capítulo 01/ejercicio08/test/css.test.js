@@ -16,63 +16,84 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Modifique el archivo public/stylesheets/ejercicio.css centrar respecto con el exterior', function() {
+    let selector1 = '.respuesta p'
+    let marginleftname = 'margin-left', marginleftvalue = '25%'
+    let marginrightname = 'margin-right', marginrightvalue = '25%'
+    let textalignname = 'text-align', textalignvalue = 'center'
 
+    let selector2 = '.respuesta p span'
+    let textshadowname = 'text-shadow', textshadowvalue = '2px 2px 4px #a59f9f'
+
+    let selector3 = '.respuesta p sub'
+    let texttransformname = 'text-transform', texttransformvalue = 'uppercase'
+
+    let selector4 = '.respuesta > p'
+    let bordername = 'border', bordervalue = '1pt solid black'
+    let paddingname = 'padding', paddingvalue = '3rem 1rem'
+    let borderradiusname = 'border-radius',borderradiusvalue = '0.5rem 1.4rem'
+
+
+    it(`En public/stylesheets/ejercicio.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector1} {
+          ${marginleftname}: ${marginleftvalue};
+          ${marginrightname}: ${marginrightvalue};
+          ${textalignname}: ${textalignvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/ejercicio.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('.respuesta p')
-           .and.decl('margin-left','25%')
-           .and.decl('margin-right','25%')
+          
+          chai.expect(response.text).to.have.rule(selector1)
+            .and.decl( marginleftname, marginleftvalue )
+            .and.decl( marginrightname, marginrightvalue)
+            .and.decl( textalignname, textalignvalue )
+            
         })
     });
 
-    it('Modifique el archivo public/stylesheets/ejercicio.css centrar el texto respecto con el contenido', function() {
-
+    it(`En public/stylesheets/ejercicio.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector2} {
+          ${textshadowname}: ${textshadowvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/ejercicio.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('.respuesta p')
-           .and.decl('text-align','center')
+          
+          chai.expect(response.text).to.have.rule(selector2)
+            .and.decl( textshadowname, textshadowvalue )
+            
         })
     });
 
-    it('Modifique el archivo public/stylesheets/ejercicio.css sombra en el texto', function() {
-
+    it(`En public/stylesheets/ejercicio.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector3} {
+          ${texttransformname}: ${texttransformvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/ejercicio.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('.respuesta p span')
-           .and.decl('text-shadow','2px 2px 4px #a59f9f')
+          
+          chai.expect(response.text).to.have.rule(selector3)
+            .and.decl( texttransformname, texttransformvalue )
+            
         })
     });
 
-
-    it('Modifique el archivo public/stylesheets/ejercicio.css transformar el texto', function() {
-
+    it(`En public/stylesheets/ejercicio.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector4} {
+          ${bordername}: ${bordervalue};
+          ${paddingname}: ${paddingvalue};
+          ${borderradiusname}: ${borderradiusvalue};
+        }`, function() {
       return request(app)
         .get('/stylesheets/ejercicio.css')
         .then((response) => {
-
-          chai.expect(response.text).to.have.rule('.respuesta p sub')
-           .and.decl('text-transform','uppercase')
-        })
-    });
-
-
-    it('Modifique el archivo public/stylesheets/ejercicio.css modificar las propiedades de la caja', function() {
-
-      return request(app)
-        .get('/stylesheets/ejercicio.css')
-        .then((response) => {
-
-          chai.expect(response.text).to.have.rule('.respuesta > p')
-           .and.decl('border','1pt solid black')
-           .and.decl('padding','3rem 1rem')
-           .and.decl('border-radius','0.5rem 1.4rem')
+          
+          chai.expect(response.text).to.have.rule(selector4)
+            .and.decl( bordername, bordervalue )
+            .and.decl( paddingname, paddingvalue)
+            .and.decl( borderradiusname, borderradiusvalue )
+            
         })
     });
 
