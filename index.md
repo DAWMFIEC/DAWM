@@ -18,10 +18,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ## Guías
 
-* [Guía 01: Esctructura de global de una página HTML](guias/guia01.md)     
-* [Guía 02: Etiqueta semánticas, formulario y et. medios](guias/guia02.md) 
-* [Guía 03](guias/guia03.md)  
-* [Guía 04](guias/guia04.md)  
+* [Guía 01: HTML > Esctructura de global de una página HTML](guias/guia01.md)     
+* [Guía 02: HTML > Etiqueta semánticas, formulario y et. medios](guias/guia02.md) 
+* [Guía 03: CSS > selectores y propiedades ](guias/guia03.md)  
+* [Guía 04: CSS > flexbox vs grid](guias/guia04.md)  
 * [Guía 05](guias/guia05.md)  
 * [Guía 06](guias/guia06.md)  
 * [Guía 07](guias/guia07.md)  
