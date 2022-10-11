@@ -18,8 +18,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ## Guías
 
-|      Primer Parcial                                                      | 
-| :----------------------------------------------------------------------: | 
+|      Guías                                                               | 
+| :----------------------------------------------------------------------- | 
 | [Guía 01: Esctructura de global de una página HTML](guias/guia01.md)     |
 | [Guía 02: Etiqueta semánticas, formulario y et. medios](guias/guia02.md) |
 | [Guía 03](guias/guia03.md) | 
