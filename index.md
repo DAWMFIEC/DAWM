@@ -19,7 +19,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 ## Guías
 
 * [Guía 01: HTML > Esctructura de global de una página HTML](guias/guia01.md)     
-* [Guía 02: HTML > Etiqueta semánticas, formulario y et. medios](guias/guia02.md) 
+* [Guía 02: HTML > Etiqueta semánticas, formulario y medios](guias/guia02.md) 
 * [Guía 03: CSS > selectores y propiedades ](guias/guia03.md)  
 * [Guía 04: CSS > flexbox vs grid](guias/guia04.md)  
 * [Guía 05](guias/guia05.md)  
@@ -42,6 +42,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 
 ## Tutoriales
+
+#### Servidor HTTP
+
+* [Python](tutoriales/python.md)
 
 #### Heroku
 

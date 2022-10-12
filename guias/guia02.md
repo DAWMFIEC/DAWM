@@ -25,6 +25,7 @@ theme: jekyll-theme-leap-day
 	+ Utilizará un formulario y los campos que contendrá.
 	+ Incluirá un mapa embebido y qué ubicación mostrará ahí.
 	+ Agregará un video y/o un audio dentro de la página. Puede utilizar un recurso externo o uno local. 
+* Levante un servidor HTTP, según las instrucciones en [Python](../tutoriales/python.md)
 
 ### Términos
 
