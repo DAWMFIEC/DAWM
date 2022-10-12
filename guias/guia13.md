@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 13
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 ### Contenidos
 
@@ -16,11 +16,11 @@ theme: jekyll-theme-leap-day
 
 * Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
   
-  + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
-  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
-  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html)  considere el ejemplo de la creación de **Componentes**, de la **Comunicación de una vía (string interpolation)** y el uso de la **Directiva estructural (\*ngFor)**.
+  + De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
+  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
+  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html)  considere el ejemplo de la creación de **Componentes**, de la **Comunicación de una vía (string interpolation)** y el uso de la **Directiva estructural (\*ngFor)**.
 
-* Sigue las instrucciones pertinentes de [Angular - PWA](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_pwa.html) para incorporar PWA.
+* Sigue las instrucciones pertinentes de [Angular - PWA](https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html) para incorporar PWA.
 
 
 ### Términos

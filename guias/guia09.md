@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 09
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 ### Contenidos
 
@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
 * Previo a esta actividad, será necesario:
 	+ Poseer una cuenta y un repositorio vacío/público en [Github](https://github.com/),
 	+ Descargar e instalar [git](https://git-scm.com/downloads) en tu máquina local.
-	+ Completar las actividades de la [guía 07](https://dawfiec.github.io/DAWM-2022/guias/guia07.html)  y [guía 08](https://dawfiec.github.io/DAWM-2022/guias/guia08.html).
+	+ Completar las actividades de la [guía 07](https://dawfiec.github.io/DAWM/guias/guia07.html)  y [guía 08](https://dawfiec.github.io/DAWM/guias/guia08.html).
 	+ Tener una cuenta en [Heroku](https://www.heroku.com/).
 	+ Descargar e instalar [heroku cli](https://devcenter.heroku.com/articles/heroku-cli#download-and-install) en tu máquina local.
 
@@ -37,7 +37,7 @@ theme: jekyll-theme-leap-day
 		- Agrega la rama main a tu repositorio, con: ```git branch -M main```
 		- Envía los cambios locales al repositorio remoto, en la rama main, con: ```git push -u origin main```
 
-* Siga las instrucciones para [desplegar un sitio en Heroku](https://dawfiec.github.io/DAWM-2022/tutoriales/heroku_deploy.html)
+* Siga las instrucciones para [desplegar un sitio en Heroku](https://dawfiec.github.io/DAWM/tutoriales/heroku_deploy.html)
 
 
 ### Términos

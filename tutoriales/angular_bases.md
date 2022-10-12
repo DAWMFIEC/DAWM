@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 Angular - Componentes, Comunicación y Directivas 
 ================================================
@@ -12,7 +12,7 @@ Proyecto en Angular
 
 * * *
 
-Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html).
+Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
 
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `ng serve -o`

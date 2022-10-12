@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 Angular - Bootstrap
 ===================
@@ -16,7 +16,7 @@ Proyecto en Angular
 
 * * *
 
-Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html).
+Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html).
 
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `ng serve -o`

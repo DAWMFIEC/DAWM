@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 Angular - Rutas 
 ===============
@@ -18,7 +18,7 @@ Proyecto en Angular
 
 * * *
 
-Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html).
+Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
 
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
@@ -28,7 +28,7 @@ Componentes
 -----------
 
 * En la raíz del proyecto en Angular
-* Desde la línea de comandos, cree los componentes **splash** y **principal**. De acuerdo con las instrucciones en [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html).
+* Desde la línea de comandos, cree los componentes **splash** y **principal**. De acuerdo con las instrucciones en [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html).
 
 Rutas 
 -----
@@ -101,7 +101,7 @@ Rutas
 Rutas (desde la barra de navegación)
 ------------------------------------
 
-Cuando se quiere ir a una URL a otra, desde la barra de navegación, puede resultar un error debido a que el sistema asume que es una ubicación física. [Para resolver este particular](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html), debes:
+Cuando se quiere ir a una URL a otra, desde la barra de navegación, puede resultar un error debido a que el sistema asume que es una ubicación física. [Para resolver este particular](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html), debes:
 
 * En **app.module.ts**, agregue los módulos `HashLocationStrategy` y `LocationStrategy`, con:
 

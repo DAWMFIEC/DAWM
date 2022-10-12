@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 14 
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 ### Contenidos
 
@@ -16,11 +16,11 @@ theme: jekyll-theme-leap-day
 
 * Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
   
-  + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
-  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
-  + De [Angular - Rutas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_rutas.html) considere el ejemplo de la creación de **Rutas** de los **Componentes**.
+  + De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
+  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
+  + De [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html) considere el ejemplo de la creación de **Rutas** de los **Componentes**.
 
-* Realice el tutorial completo de [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html), incluyendo la modificación de la **Interfaz**. 
+* Realice el tutorial completo de [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html), incluyendo la modificación de la **Interfaz**. 
 
 ### Términos
 

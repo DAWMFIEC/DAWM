@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 Angular - Cordova
 =================
@@ -30,9 +30,9 @@ Proyecto en Angular
 
 * * *
 
-Genera un proyecto básico con [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) y [Angular - Material](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_material.html).
+Genera un proyecto básico con [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) y [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html).
 
-O, a partir de una aplicación en Angular que incorpore Angular Material, por ejemplo la actividad de la [Guía 15](https://dawfiec.github.io/DAWM-2022/guias/guia15.html).
+O, a partir de una aplicación en Angular que incorpore Angular Material, por ejemplo la actividad de la [Guía 15](https://dawfiec.github.io/DAWM/guias/guia15.html).
 
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `ng serve -o`

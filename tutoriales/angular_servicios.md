@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 Angular - Servicios
 ===================
@@ -20,7 +20,7 @@ Proyecto en Angular
 
 * * *
 
-Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html), [Angular - Boostrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html), [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html) y [Angular - PWA](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_pwa.html)
+Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html), [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html) y [Angular - PWA](https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html)
 
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
@@ -215,7 +215,7 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
   <img src="imagenes/angular_servicios_output.png">
 </p>
 
-* Despliegue la aplicación en [Heroku](https://dawfiec.github.io/DAWM-2022/tutoriales/heroku_deploy.html)
+* Despliegue la aplicación en [Heroku](https://dawfiec.github.io/DAWM/tutoriales/heroku_deploy.html)
 
 Referencias 
 ===========

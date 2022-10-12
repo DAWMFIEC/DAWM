@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 12
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 ### Contenidos
 
@@ -16,8 +16,8 @@ theme: jekyll-theme-leap-day
 
 * Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
   
-  + De [Angular - Local](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
-  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
+  + De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
+  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
 
 * Use la plantilla [Creative](https://startbootstrap.com/theme/creative) para el sitio.
 
@@ -32,7 +32,7 @@ theme: jekyll-theme-leap-day
 		- **Proyecto de Angular:** En el `src/styles.css`, pegue las reglas css.
 
 * Actualice el navegador o (re)inicie el servidor
-* Revise la página de [errores](https://dawfiec.github.io/DAWM-2022/paginas/errores.html) de ser necesario.
+* Revise la página de [errores](https://dawfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
 
 
 ### Términos

@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 16
 
-[Regresar](/DAWM-2022/)
+[Regresar](/DAWM/)
 
 ### Contenidos
 
@@ -19,10 +19,10 @@ theme: jekyll-theme-leap-day
 ### Actividades
 
 * Genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
-  + De [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
-  + De [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
+  + De [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
+  + De [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
 
-* Realice el tutorial completo de [Express - Formularios](https://dawfiec.github.io/DAWM-2022/tutoriales/express_forms.html).
+* Realice el tutorial completo de [Express - Formularios](https://dawfiec.github.io/DAWM/tutoriales/express_forms.html).
 
 
 ![Formularios](imagenes/formularios.png)

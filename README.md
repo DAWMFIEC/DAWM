@@ -2,7 +2,7 @@
 
 ## Sitio web
 
-Enlace al [sitio web](https://dawfiec.github.io/DAWM-2022/).
+Enlace al [sitio web](https://dawfiec.github.io/DAWM/).
 
 ## Referencias 
 
