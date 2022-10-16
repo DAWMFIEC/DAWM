@@ -4,7 +4,7 @@
 
 ![image info](images/ejercicio01-1.png)
 
-#### Dispositivo Móvil
+#### Dispositivo Móvil (Ancho máximo: 640px)
 
 ![image info](images/ejercicio01-2.png)
 
