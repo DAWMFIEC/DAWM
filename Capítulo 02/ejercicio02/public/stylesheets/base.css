@@ -1,0 +1,70 @@
+div.respuesta {
+  font-family: "Roboto Condensed", sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.5;
+}
+
+div.respuesta p {
+  line-height: 1.5;
+  text-align: justify;
+}
+
+div.respuesta p#author {
+  margin: 0 0 1rem;
+}
+
+div.respuesta h1 {
+  font-size: 1.8rem;
+  margin-bottom: 0;
+}
+
+img {
+  max-width: 30%;
+}
+
+img.hero-image {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+
+div.right {
+  display: grid;
+  grid-template-rows: 1fr ;
+}
+
+section.editorial-image-right {
+  display: flex;
+}
+
+section.editorial-image-left {
+  display: flex;
+  flex-direction:  row-reverse;
+}
+
+@media screen and (min-width: 640px) {
+  .right {
+    height: 100vh;
+    overflow-y: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+  .right::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    height: 0;
+  }
+}
+
+section.editorial-image-right > p {
+  margin-right: 1rem;
+}
+
+section.editorial-image-left > p {
+  margin-left: 1rem;
+}
+
+
+blockquote.pullquote {
+  font-style: italic;
+}

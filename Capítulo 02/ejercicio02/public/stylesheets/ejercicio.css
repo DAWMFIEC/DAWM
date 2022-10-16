@@ -1,0 +1,97 @@
+/*
+  Agregue las propiedades al selector article
+  para: 
+    - Se muestre flexible
+    - Ancho al 100%
+    - Separación entre columnas de 2%
+*/
+
+/* Inicio */
+
+article {
+  
+}
+
+/*
+  Agregue las propiedades al selector article > img
+  - flex-grow: 1; 
+  - flex-shrink: 1; 
+  - flex-basis: 0%;.
+*/
+
+article > img {
+
+}
+
+/*
+  Agregue las propiedades al selector article > div.right
+  - flex-grow: 2; 
+  - flex-shrink: 1; 
+  - flex-basis: 0%;.
+*/
+
+article > div.right {
+  
+}
+
+
+/*
+
+  Agregue las propiedades al selectro img.hero-image
+  - max-width: 30%;
+  - height: 10%;
+*/
+
+img.hero-image {
+  
+}
+
+/* Fin */
+
+
+/*
+  Agregue las propiedades al selector div.respuesta article 
+  para: 
+    - Se muestre flexible
+    - Ancho al 100%
+    - Dirección del flujo en columna
+*/
+
+/* Inicio */
+
+@media screen and (max-width: 640px) {
+
+  div.respuesta article {
+   
+  }
+
+}
+
+/* Fin */
+
+/*
+  Agregue las propiedades al selector div.right img 
+  para: 
+    - no se muestran las imágenes
+
+  Agregue las propiedades al selector div.respuesta article img.hero-image
+    max-width: 100%;
+    height: auto;
+*/
+
+/* Inicio */
+
+@media screen and (max-width: 640px) {
+
+  div.right img {
+   
+  }
+
+  div.respuesta article img.hero-image {
+   
+  }
+
+}
+
+/* Fin */
+
