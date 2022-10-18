@@ -26,11 +26,11 @@ describe('Test unitarios para la ruta `/`', function() {
     let positionname = 'position', positionvalue =  'sticky'
     let topname = 'top', topvalue = '0px'
 
-    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+    it(`En public/stylesheets/sticky.css utilice el/los selectores con la(s) propiedades y valor(es):
         ${selector} {
           ${backgroundcolorname}: ${backgroundcolorvalue};
           ${paddingtopname}: ${paddingtopvalue};
-          ${paddingbottomname}: ${paddingbottomname};
+          ${paddingbottomname}: ${paddingbottomvalue};
           ${zindezname}: ${zindezvalue};
         }`, function() {
       return request(app)
@@ -40,12 +40,12 @@ describe('Test unitarios para la ruta `/`', function() {
           chai.expect(response.text).to.have.rule(selector)
             .and.decl( backgroundcolorname, backgroundcolorvalue )
             .and.decl( paddingtopname, paddingtopvalue )
-            .and.decl( paddingbottomname, paddingbottomname )
+            .and.decl( paddingbottomname, paddingbottomvalue )
             .and.decl( zindezname, zindezvalue )
         })
     });
 
-    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+    it(`En public/stylesheets/sticky.css utilice el/los selectores con la(s) propiedades y valor(es):
         ${selector} {
           ${positionname}: ${positionvalue};
           ${topname}: ${topvalue};

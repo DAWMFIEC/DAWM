@@ -23,11 +23,11 @@ describe('Test unitarios para la ruta `/`', function() {
     let borderradiusname = 'border-radius', borderradiusvalue = '0.4rem'
 
     let selector2 = 'picture span'
-    let maxwidthname2 = 'max-width', maxwidthvalue2 = '50%'
+    let maxwidthname2 = 'max-width', maxwidthvalue2 = '30%'
     let displayname2 = 'display', displayvalue2 = 'block'
     let marginname2 = 'margin', marginvalue2 = '0 auto'
     
-    let backgroundname = 'background', backgroundvalue = 'white'
+    let backgroundname = 'background-color', backgroundvalue = 'white'
     let paddingname = 'padding', paddingvalue = '1.4rem 2rem'
     let marginname3 = 'margin', marginvalue3 = '0 auto'
     let fontsizename = 'font-size', fontsizevalue = '1.5vw'
@@ -40,7 +40,7 @@ describe('Test unitarios para la ruta `/`', function() {
     let topname = 'top', topvalue = '-5.7rem'
     let leftname = 'left', leftvalue = '8.7rem'
 
-    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+    it(`En public/stylesheets/relative.css utilice el/los selectores con la(s) propiedades y valor(es):
         ${selector1} {
           ${maxwidthname}: ${maxwidthvalue};
           ${displayname}: ${displayvalue};
@@ -57,7 +57,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+    it(`En public/stylesheets/relative.css utilice el/los selectores con la(s) propiedades y valor(es):
         ${selector1} {
           ${borderradiusname}: ${borderradiusvalue};
         }`, function() {
@@ -70,7 +70,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+    it(`En public/stylesheets/relative.css utilice el/los selectores con la(s) propiedades y valor(es):
         ${selector2} {
           ${maxwidthname2}: ${maxwidthvalue2};
           ${displayname2}: ${displayvalue2};
@@ -87,7 +87,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
     
-    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+    it(`En public/stylesheets/relative.css utilice el/los selectores con la(s) propiedades y valor(es):
         ${selector2} {
           ${backgroundname}: ${backgroundvalue};
           ${paddingname}: ${paddingvalue};
@@ -114,7 +114,7 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it(`En public/stylesheets/fixed.css utilice el/los selectores con la(s) propiedades y valor(es):
+    it(`En public/stylesheets/relative.css utilice el/los selectores con la(s) propiedades y valor(es):
         ${selector2} {
           ${positionname}: ${positionvalue};
           ${topname}: ${topvalue};
