@@ -27,46 +27,46 @@ theme: jekyll-theme-leap-day
 		+ [Pseudo-elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements) como __::before__ o __::after__, por ejemplo: el efecto de [agregar contenido](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos) desde css sin modificar el html.
 
 * Utilice el [ejercicio de colocación](../ejercicios/colocacion.zip) para practicar el uso de flexbox y grid. Levante el servidor incorporado en [Python](tutoriales/python.md), el [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) o algún otro mecanismo para levantar un servidor http.
-	- Utilice el diseño de su sitio web como referencia para [(re)colocar las secciones de la página HTML](https://developer.mozilla.org/es/docs/Web/CSS/CSS_Grid_Layout/Relationship_of_Grid_Layout).
+	
 
-		> #### `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
-		> * Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
-		>
-		> 	__display: flex;__ <mark>Cambia el modo de colocar los elementos internos a flex</mark><br>
-		> 	__justify-content: space-between;__ <mark>Los elementos internos se distribuyen por igual</mark><br>
-		> 	__flex-wrap: wrap;__ <mark>Los ítems ocupan el espacio de acuerdo a su tamaño</mark><br>
-		> 	__row-gap: 0.5rem;__ <mark>Separación entre filas</mark><br>
-		> 	__column-gap: 0.5rem;__ <mark>y/o columnas</mark>
-		>
-		> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
-		>
-		>	__width: 100%;__ <mark>Una columna</mark>, o<br>
-		>	__width: 49%;__ <mark>Dos columna</mark>, o<br>
-		>	__width: 32%;__ <mark>Tres columna</mark>
-		>
-		> * Repita este proceso de afuera hacia adentro dentro del html.
+	> #### `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
+	> * Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades
+	>
+	> 	__display: flex;__ <mark>Cambia el modo de colocar los elementos internos a flex</mark><br>
+	> 	__justify-content: space-between;__ <mark>Los elementos internos se distribuyen por igual</mark><br>
+	> 	__flex-wrap: wrap;__ <mark>Los ítems ocupan el espacio de acuerdo a su tamaño</mark><br>
+	> 	__row-gap: 0.5rem;__ <mark>Separación entre filas</mark><br>
+	> 	__column-gap: 0.5rem;__ <mark>y/o columnas</mark>
+	>
+	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila con: 
+	>
+	>	__width: 100%;__ <mark>Una columna</mark>, o<br>
+	>	__width: 49%;__ <mark>Dos columna</mark>, o<br>
+	>	__width: 32%;__ <mark>Tres columna</mark>
+	>
+	> * Repita este proceso de afuera hacia adentro dentro del html.
 
 
-		> ####  `Guía de diseño Grid`, según [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) y [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/)
-		> * Escoja la etiqueta que funcionará **contenedor global** y aplique la propiedad
-		>
-		> 	__display: grid;__ <mark>Cambia el modo de colocar los elementos internos a grid</mark><br>
-		> 	__row-gap: 0.5rem;__ <mark>Separación entre filas</mark><br>
-		> 	__column-gap: 0.5rem;__ <mark>y/o columnas</mark>
-		>
-		>   + Identifique la plantilla de columnas y aplique la propiedad:
-		>
-		>	  **OPCIÓN 1:** __grid-template-columns: repeat(6, 1fr);__ <mark>Número de columnas donde acomodar los elementos</mark>, o<br>
-		>	  **OPCIÓN 2:** __grid-template-areas: "fila1 fila1 fila1 fila1" "fila2 fila2 fila3 fila3";__ <mark>Nombres de las áreas</mark>, o<br>
-		>
-		> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de:
-		>
-		>	**OPCIÓN 1:** __grid-column: 4 / 7;__ <mark>Columnas que ocupará en la rejilla</mark>, y<br>
-		>	  				__grid-row: 1 / 2;__ <mark>Filas que ocupará en la rejilla</mark>, o<br>
-		>
-		>	**OPCIÓN 2:** __grid-area: fila3;__ <mark>Nombre que ocupará en el área</mark><br>
-		>
-		> * Repita este proceso de afuera hacia adentro dentro del html. 	
+	> ####  `Guía de diseño Grid`, según [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) y [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/)
+	> * Escoja la etiqueta que funcionará **contenedor global** y aplique la propiedad
+	>
+	> 	__display: grid;__ <mark>Cambia el modo de colocar los elementos internos a grid</mark><br>
+	> 	__row-gap: 0.5rem;__ <mark>Separación entre filas</mark><br>
+	> 	__column-gap: 0.5rem;__ <mark>y/o columnas</mark>
+	>
+	>   + Identifique la plantilla de columnas y aplique la propiedad:
+	>
+	>	  **OPCIÓN 1:** __grid-template-columns: repeat(6, 1fr);__ <mark>Número de columnas donde acomodar los elementos</mark>, o<br>
+	>	  **OPCIÓN 2:** __grid-template-areas: "fila1 fila1 fila1 fila1" "fila2 fila2 fila3 fila3";__ <mark>Nombres de las áreas</mark>, o<br>
+	>
+	> * Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de:
+	>
+	>	**OPCIÓN 1:** __grid-column: 4 / 7;__ <mark>Columnas que ocupará en la rejilla</mark>, y<br>
+	>	  				__grid-row: 1 / 2;__ <mark>Filas que ocupará en la rejilla</mark>, o<br>
+	>
+	>	**OPCIÓN 2:** __grid-area: fila3;__ <mark>Nombre que ocupará en el área</mark><br>
+	>
+	> * Repita este proceso de afuera hacia adentro dentro del html. 	
 
 
 
