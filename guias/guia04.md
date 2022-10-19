@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 		+ [Pseudo-clases](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes) como __:hover__ o __:focus__, por ejemplo: cambiar el [comportamiento por defecto de los enlaces](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-clases).
 		+ [Pseudo-elementos](https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements) como __::before__ o __::after__, por ejemplo: el efecto de [agregar contenido](https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos) desde css sin modificar el html.
 
-* Utilice el [ejercicio de colocación](../ejercicios/colocacion.zip) para practicar el uso de flexbox y grid. Levante el servidor incorporado en [Python](tutoriales/python.md), el [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) o algún otro mecanismo para levantar un servidor http.
+* Utilice el [ejercicio de colocación](../ejercicios/colocacion.zip) para practicar el uso de flexbox y grid. Levante el servidor incorporado en [Python](../tutoriales/python.md), el [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb) o algún otro mecanismo para levantar un servidor http.
 	
 
 	> #### `Guía de diseño Flexbox`, según [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
@@ -68,7 +68,7 @@ theme: jekyll-theme-leap-day
 	>
 	> * Repita este proceso de afuera hacia adentro dentro del html. 	
 
-
+* El resultado de esta actividad está disponible en [colocacion_resultado](../ejercicios/colocacion_resultado.zip).
 
 ### Playground
 
