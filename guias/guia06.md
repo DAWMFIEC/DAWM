@@ -32,16 +32,21 @@ theme: jekyll-theme-leap-day
 		+ Verifique en el navegador. 
 
 	- [Contenedor](https://getbootstrap.com/docs/5.2/layout/containers/) son un bloque de construcción fundamental de Bootstrap que contienen, rellenan y alinean su contenido dentro de un dispositivo o ventana gráfica determinada.
-		+ Agregue un `<main>` con la clase `container-fluid`
+		+ Luego de la etiqueta `<nav>`, agregue una etiqueta `<main>` con la clase `container-fluid`
 			> <main class="container-fluid">
 		+ Verifique en el navegador. 
 
 	- [Sistema de rejillas](https://getbootstrap.com/docs/5.2/layout/grid/). Bootstrap utiliza una cuadrícula flexbox para dispositivos móviles para crear diseños de todas las formas y tamaños gracias a un sistema de doce columnas, seis niveles de respuesta predeterminados, variables Sass y mixins, y docenas de clases predefinidas.
-		+ Utilice la sección de cards que ofrece Bootstrap que se encuentra en `cards.txt`. 
+		+ Utilice el carousel que ofrece Bootstrap que se encuentra en `carousel.txt`. 
 		+ Coloque las etiquetas dentro del `<main>`
-		+ Verifique en el navegador. 	
+		+ Verifique en el navegador. 
 
-	- Cambie las clases para experimentar diferentes diseños y estilos. 
+		+ Utilice el layout de tarjetas que ofrece Bootstrap que se encuentra en `cards.txt`. 
+		+ Coloque las etiquetas dentro del `<main>`
+		+ Verifique en el navegador. 
+
+
+	- Utilice la [documentación de Bootstrap](https://getbootstrap.com/docs/5.2/getting-started/introduction/) como referencia para cambiar las clases en las etiquetas y experimentar los diferentes diseños y estilos. 
 
 ### Términos
 
