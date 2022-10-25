@@ -24,6 +24,7 @@ Firebase - Hosting / Sitio Estático
 
 * Desde la línea de comandos, 
 
+  + Instale el `CLI` de Firebase, con: `npm install -g firebase-tools`
   + Inicie la sesión con su cuenta, con el comando: `firebase login`
 
 <p align="center">
