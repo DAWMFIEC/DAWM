@@ -10,7 +10,7 @@ Diseño de sitio web de noticias con Flexbox.
 
 * * *
 
-En este tutorial revisaremos el diseño de un sitio web de noticias con flexbox.
+En este tutorial revisaremos el diseño de un sitio web de noticias con flexbox inspirado en [How to Build a News Website Layout with Flexbox](https://webdesign.tutsplus.com/tutorials/how-to-build-a-news-website-layout-with-flexbox--cms-26611) y las de acuerdo con [4 Quick Steps to Make a Website Responsive.](https://webdesign.tutsplus.com/tutorials/quick-steps-to-make-a-website-responsive--cms-37330). En el mismo sitio encontrarás otros tutoriales como: [Solving Problems With CSS Grid and Flexbox: The Card UI](https://webdesign.tutsplus.com/tutorials/solving-problems-with-css-grid-and-flexbox-the-card-ui--cms-27468), [Exercises in Flexbox: Simple Web Components](https://webdesign.tutsplus.com/tutorials/exercises-in-flexbox-simple-web-components--cms-28049) y [2 Ways to Build a Scrolling Card UI (Flexbox and CSS Grid)](https://webdesign.tutsplus.com/tutorials/horizontal-scrolling-card-ui-flexbox-and-css-grid--cms-41922).
 
 
 Instrucciones
@@ -216,5 +216,6 @@ Referencias
 
 * How to Build a News Website Layout with Flexbox. (2022). Retrieved 25 October 2022, from https://webdesign.tutsplus.com/tutorials/how-to-build-a-news-website-layout-with-flexbox--cms-26611
 * 4 Quick Steps to Make a Website Responsive. (2022). Retrieved 26 October 2022, from https://webdesign.tutsplus.com/tutorials/quick-steps-to-make-a-website-responsive--cms-37330
+* 2 Ways to Build a Scrolling Card UI (Flexbox and CSS Grid). (2022). Retrieved 26 October 2022, from https://webdesign.tutsplus.com/tutorials/horizontal-scrolling-card-ui-flexbox-and-css-grid--cms-41922
 * Solving Problems With CSS Grid and Flexbox: The Card UI. (2022). Retrieved 26 October 2022, from https://webdesign.tutsplus.com/tutorials/solving-problems-with-css-grid-and-flexbox-the-card-ui--cms-27468
 * Exercises in Flexbox: Simple Web Components. (2022). Retrieved 26 October 2022, from https://webdesign.tutsplus.com/tutorials/exercises-in-flexbox-simple-web-components--cms-28049
