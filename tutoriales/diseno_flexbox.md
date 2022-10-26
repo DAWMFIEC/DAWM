@@ -24,32 +24,32 @@ Instrucciones
 
 * En el `index.html`, agregue las siguientes etiquetas dentro de la etiqueta `<body>`
 
-  ```
-  <main class="main columns">
-    <section class="column main-column">
-       2/3 column
-    </section>
-    <section class="column">
-      1/3 column
-    </section>
-  </main>
-  ```
+```
+<main class="main columns">
+  <section class="column main-column">
+     2/3 column
+  </section>
+  <section class="column">
+    1/3 column
+  </section>
+</main>
+```
 
 * En el `public/stylesheets/layout.css` agregue las propiedades
 
-  ```
-  .columns {
-    display: flex; /*Contenedor de columnas*/
-  }
+```
+.columns {
+  display: flex; /*Contenedor de columnas*/
+}
 
-  .column {
-    flex: 1; /*Tamaño predeterminado de todas las columnas*/
-  }
+.column {
+  flex: 1; /*Tamaño predeterminado de todas las columnas*/
+}
 
-  .main-column {
-    flex: 2; /*Columna principal*/
-  }
-  ```
+.main-column {
+  flex: 2; /*Columna principal*/
+}
+```
 
 * Compruebe los resultados en el navegador
 
@@ -59,26 +59,26 @@ Instrucciones
 * En el `index.html`, agregue:
   + Dos etiquetas `<article>` dentro la primera etiqueta `<section>`, y tres etiquetas `<article>` dentro la segunda etiqueta `<section>`
 
-  ```
-  <article class="article">
-    Hello World
-  </article>
-  ```
+```
+<article class="article">
+  Hello World
+</article>
+```
 
 
 * En el `public/stylesheets/layout.css` modifique/agregue las siguientes propiedades
 
-  ```
-  .column {
-    ...
-    display: flex;
-    flex-direction: column; /* Cada artículo se ubica verticalmente */
-  }
-   
-  .article {
-    flex: 1; /* Ajusta el artículo para que rellene el espacio sobrante */
-  }
-  ```
+```
+.column {
+  ...
+  display: flex;
+  flex-direction: column; /* Cada artículo se ubica verticalmente */
+}
+ 
+.article {
+  flex: 1; /* Ajusta el artículo para que rellene el espacio sobrante */
+}
+```
 
 * Compruebe los resultados en el navegador
 
@@ -89,25 +89,25 @@ Instrucciones
   + Reemplace cada una de las dos primeras etiquetas `<article>` por:
 
 
-      ```
-      <article class="article">
-          <figure class="article-image">
-            <img src="" alt="">
-          </figure>
-          <div class="article-body">
-            <h2 class="article-title">
-            Hello World
-            </h2>
-            <p class="article-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            </p>
-            <footer class="article-info">
-              <span>By Joe Smith</span>
-              <span>42 comments</span>
-            </footer>
-          </div>
-      </article>
-      ```
+```
+<article class="article">
+    <figure class="article-image">
+      <img src="" alt="">
+    </figure>
+    <div class="article-body">
+      <h2 class="article-title">
+      Hello World
+      </h2>
+      <p class="article-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+      </p>
+      <footer class="article-info">
+        <span>By Joe Smith</span>
+        <span>42 comments</span>
+      </footer>
+    </div>
+</article>
+```
 
     - Para las imágenes, utilice los URLs 
     `https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-01.png` y 
@@ -115,22 +115,22 @@ Instrucciones
 
   + Reemplace cada una de las tres últimas etiquetas `<article>` por:
 
-      ```
-      <article class="article">
-          <div class="article-body">
-            <h2 class="article-title">
-            Hello World
-            </h2>
-            <p class="article-content">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas sed tempus urna et. Lectus mauris ultrices eros in cursus turpis. Laoreet suspendisse interdum consectetur libero id faucibus nisl. Enim tortor at auctor urna. Tortor pretium viverra suspendisse potenti. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Aliquet nibh praesent tristique magna sit amet. Orci dapibus ultrices in iaculis. 
-            </p>
-            <footer class="article-info">
-              <span>By Joe Smith</span>
-              <span>42 comments</span>
-            </footer>
-          </div>
-      </article>
-      ```   
+```
+<article class="article">
+    <div class="article-body">
+      <h2 class="article-title">
+      Hello World
+      </h2>
+      <p class="article-content">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ac turpis egestas sed tempus urna et. Lectus mauris ultrices eros in cursus turpis. Laoreet suspendisse interdum consectetur libero id faucibus nisl. Enim tortor at auctor urna. Tortor pretium viverra suspendisse potenti. Nisl pretium fusce id velit ut tortor pretium viverra suspendisse. Aliquet nibh praesent tristique magna sit amet. Orci dapibus ultrices in iaculis. 
+      </p>
+      <footer class="article-info">
+        <span>By Joe Smith</span>
+        <span>42 comments</span>
+      </footer>
+    </div>
+</article>
+```   
 
 * En el `public/stylesheets/layout.css` agregue las propiedades
 
@@ -164,24 +164,24 @@ Instrucciones
 
 * En el `index.html`, agregue la etiqueta `<meta>` dentro de la etiqueta `<head>`
 
-  ```
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  ```
+```
+<meta name="viewport" content="width=device-width, initial-scale=1">
+```
 
 * En el `public/stylesheets/layout.css` agregue las propiedades
 
-  ```
-  @media screen and (max-width: 800px) {
-    .columns,
-    .column {
-      display: flex;
-    }
-
-    .columns {
-      flex-direction: column;
-    }
+```
+@media screen and (max-width: 800px) {
+  .columns,
+  .column {
+    display: flex;
   }
-  ```
+
+  .columns {
+    flex-direction: column;
+  }
+}
+```
 
 * Compruebe los resultados en el navegador y para un dispositivo con un ancho máximo 800px
 
@@ -189,24 +189,24 @@ Instrucciones
 
 * En el `index.html`, comente la referencia a la hoja de estilo `guides.css`
 
-  ```
-  <link rel="stylesheet" href="public/stylesheets/guides.css">
-  ```
+```
+<link rel="stylesheet" href="public/stylesheets/guides.css">
+```
 
 
 * En el `public/stylesheets/style.css` agregue las propiedades
 
-  ```
-  .article:hover,
-  .article:focus {
-    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-    color: #444;
-  }
+```
+.article:hover,
+.article:focus {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  color: #444;
+}
 
-  .article {
-    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
-  }
-  ```
+.article {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+```
 
 
 Referencias 
