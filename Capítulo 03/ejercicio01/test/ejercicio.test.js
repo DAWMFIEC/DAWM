@@ -19,24 +19,16 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Etiqueta script', function() {
+    let script = `<script src="scripts/ejercicio.js"></script>`
+    
+    it(`En views/index.ejs use la etiqueta: ${script}`, function() {
       return request(app)
         .get('/')
         .then((response) => {
-
-          try {
-            let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '')
-            let script = `<script src="/scripts/ejercicio.js"></script>`
-            chai.expect(responseclean).to.contain(script)
-          } catch (error) {
-            chai.expect.fail('Utilice la etiqueta script con el atributo src y la ruta "/scripts/ejercicio.js"');
-            return;
-          }
-
-            
+          
+          chai.expect(response.text).to.contain(script)
         })
     });
-    
    
 
 });
