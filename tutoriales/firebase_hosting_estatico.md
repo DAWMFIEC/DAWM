@@ -22,7 +22,7 @@ Firebase - Hosting / Sitio Estático
   <img width="550" src ="imagenes/firebase_estatico.png">
 </p>
 
-* Desde la línea de comandos, 
+* Desde la línea de comandos, en la carpeta del proyecto estático
 
   + Instale el `CLI` de Firebase, con: `npm install -g firebase-tools`
   + Inicie la sesión con su cuenta, con el comando: `firebase login`
@@ -38,7 +38,7 @@ Firebase - Hosting / Sitio Estático
   <img width="49%" src ="imagenes/firebase_logged.png">
 </p> 
 
-* Desde la línea de comandos, 
+* Desde la línea de comandos, en la carpeta del proyecto estático
 
   + Cree un proyecto nuevo, con el comando: `firebase projects:create`. Utilice un **Project ID** y un **Project name** únicos.
 
@@ -53,7 +53,7 @@ Firebase - Hosting / Sitio Estático
   <img width="550" src ="imagenes/firebase_projectscreate2.png">
 </p>
 
-* Desde la línea de comandos, 
+* Desde la línea de comandos, en la carpeta del proyecto estático
 
   + Inicialice el proyecto, con el comando: `firebase init`
 
@@ -61,7 +61,11 @@ Firebase - Hosting / Sitio Estático
   <img width="550" src ="imagenes/firebase_init1.png">
 </p>
 
-  + Escoja la opción de hosting: _>(*) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys._
+  + Escoja la opción de hosting: 
+
+```
+  >(*) Hosting: Configure files for Firebase Hosting and (optionally) set up GitHub Action deploys.
+```
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_init2.png">
@@ -76,9 +80,9 @@ Firebase - Hosting / Sitio Estático
 
   + Para la configuración del host, escoja:
 
-    - El directorio actual como punto de despliegue, con: `.`
-    - El archivo principal es el _index.html_, con: `Yes`
-    - No existe despliegue automático desde Github, con: `No`
+    - El directorio actual como punto de despliegue, con: **`.`**
+    - El archivo principal es el _index.html_, con: **`Yes`**
+    - No existe despliegue automático desde Github, con: **`No`**
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_init5.png">
@@ -87,8 +91,8 @@ Firebase - Hosting / Sitio Estático
 
   + Despliegue la aplicación, con: `firebase deploy`
 
-    - Acceda a la URL de consola del proyecto que aparece en: `Project Console: https://console.firebase.google.com/project/sitiobase5934/overview`
-    - Acceda a la URL del sitio del proyecto que aparece en: `Hosting URL: https://sitiobase5934.web.app`
+    - Acceda a la URL de consola del proyecto que aparece en: `Project Console: https://console.firebase.google.com/project/<nombre_proyecto>/overview`
+    - Acceda a la URL del sitio del proyecto que aparece en: `Hosting URL: https://<nombre_proyecto>.web.app`
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_deploy.png">
