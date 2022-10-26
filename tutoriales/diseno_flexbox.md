@@ -109,7 +109,7 @@ Instrucciones
 </article>
 ```
 
-    - Para las imágenes, utilice los URLs 
+  - Para las imágenes, utilice los URLs 
     `https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-01.png` y 
     `https://s3.amazonaws.com/cms-assets.tutsplus.com/uploads/users/1366/posts/26611/attachment/image-02.png`
 
@@ -158,9 +158,9 @@ Instrucciones
 }
 ```
 
-* Compruebe los resultados en el navegador.
+* Compruebe los resultados en el navegador y para un dispositivo con un ancho máximo 800px. Notará que aún no es responsivo.
 
-#### 4. Hacer que el diseño sea responsive
+#### 4. Hacer que el diseño sea responsivo
 
 * En el `index.html`, agregue la etiqueta `<meta>` dentro de la etiqueta `<head>`
 
@@ -183,7 +183,7 @@ Instrucciones
 }
 ```
 
-* Compruebe los resultados en el navegador y para un dispositivo con un ancho máximo 800px
+* Compruebe los resultados en el navegador y para un dispositivo con un ancho máximo 800px.
 
 #### 5. Los toques finales
 
