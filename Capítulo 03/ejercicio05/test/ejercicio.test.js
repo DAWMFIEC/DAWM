@@ -19,43 +19,8 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('cargarDocumento', function() {
-      return request(app)
-        .get('/scripts/ejercicio.js')
-        .then((response) => {
-
-         let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
-         let scriptTexto, scriptEjecutable
-
-         /* Revisión textual */
-         try {
-            scriptTexto = [`arreglo = document.getElementsByClassName('respuesta')`,`elemento = arreglo[0]`,`elemento.innerHTML = snippet`]
-            for(let elemento of scriptTexto) {
-              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
-            }
-            
-          } catch (error) {
-            chai.expect.fail('Revise las instrucciones de la función cargarDocumento');
-            return;
-          }
-
-            
-        })
-          
-    });  
-
-    
-    it('mouseClick', function() {
-      return request(app)
-        .get('/scripts/ejercicio.js')
-        .then((response) => {
-
-         let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
-         let scriptTexto, scriptEjecutable
-
-         /* Revisión textual */
-         try {
-            scriptTexto = [
+    let script1 = [`arreglo = document.getElementsByClassName('respuesta')`,`elemento = arreglo[0]`,`elemento.innerHTML = snippet`]
+    let script2 = [
             `audio = document.getElementById('audio1')`,
             `arreglo = document.getElementsByClassName('plItem')`,
             `let id = elemento.getAttribute("id")-1`,
@@ -65,19 +30,66 @@ describe('Test unitarios para la ruta `/`', function() {
             `audio.setAttribute("src","https://archive.org/download/mythium/"+name+".mp3")`,
             `audio.play()`
             ]
-            for(let elemento of scriptTexto) {
-              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
+
+    it(`En public/scripts/ejercicio.js con el código:
+
+      ${script1.join('\n')}
+      
+      `, function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
+
+          try {
+
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+            
+            for(let elemento of script1) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
             }
             
           } catch (error) {
-            chai.expect.fail('Revise las instrucciones de la función mouseClick');
+            chai.expect.fail(`Código esperado: 
+              
+              ${script1.join('\n')}
+              
+              `);
             return;
           }
-
-            
+        
         })
-          
     });
+
+
+    it(`En public/scripts/ejercicio.js con el código:
+
+      ${script2.join('\n')}
+      
+      `, function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
+
+          try {
+
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+            
+            for(let elemento of script2) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
+            }
+            
+          } catch (error) {
+            chai.expect.fail(`Código esperado: 
+              
+              ${script2.join('\n')}
+              
+              `);
+            return;
+          }
+        
+        })
+    });
+    
     
  
 

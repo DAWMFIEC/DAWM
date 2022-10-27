@@ -14,7 +14,8 @@
 
 /* Inicio */
 document.addEventListener('DOMContentLoaded', () => {
-    
+    cargarDocumento()
+    mouseClick()
 });
 /* Fin */
 
@@ -135,6 +136,7 @@ function mouseClick() {
         Obtenga los elementos con la clase 'plItem' y asigne el resultado en la variable arreglo
 
         Recorra la variable arreglo
+            Asigne cada HTMLElement del arreglo a la variable elemento
             Del elemento, obtenga el valor del atributo id y reste 1 al valor. Asigne el valor a una variable con el nombre id
             Del elemento, obtenga el valor atributo name. Asigne el valor a una variable con el nombre name
 
