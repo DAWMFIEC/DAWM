@@ -10,9 +10,9 @@ function condicionales() {
     let mensaje1;
 
     /*
-        Utiliza if para validar el valor de la variable edad y estado. 
-        En caso que edad sea mayor o igual que 18 y estado igual a 'CA', asigne a mensaje el valor 'Puede manejar'
-        Caso contrario, asigne a mensaje el valor de 'No puede manejar'
+        Utilice if para validar el valor de la variable edad y estado. 
+        En caso que edad sea mayor o igual que 18 y estado igual a 'CA', asigne a mensaje1 el valor 'Puede manejar'
+        Caso contrario, asigne a mensaje1 el valor de 'No puede manejar'
     */
 
     /* Inicio */
@@ -89,13 +89,13 @@ function funciones() {
     /* 
         Asigne a la variable funcionAnonima una función anónima
         Dentro de la función asigne el valor 'Función anónima' a la variable resultado1
-
-        Llame a la función funcionAnonima
     */
 
     /*Inicio*/
     
     /*Fin*/
+
+    funcionAnonima()
 
     let resultado2;
     let funcionFlecha;
@@ -103,13 +103,13 @@ function funciones() {
     /* 
         Asigne a la variable funcionFlecha una función flecha
         Dentro de la función asigne el valor 'Función flecha' a la variable resultado2
-
-        Llame a la función funcionFlecha
     */
 
     /*Inicio*/
     
     /*Fin*/
+
+    funcionFlecha()
 
 
     return resultado1 + ' - ' + resultado2

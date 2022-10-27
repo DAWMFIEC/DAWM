@@ -19,143 +19,142 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('Condicionales', function() {
+    let script1 = [`if( edad >= 18 && estado == 'CA') {`,`mensaje1 = 'Puede manejar'`,`} else {`, `mensaje1 = 'No puede manejar'}`]
+    let script2 = `mensaje2 = velocidad >= 120 ? 'Muy rápido' : 'OK';`
+    
+    let script3 = [`for (i = 1; i < 5; i++) {`,`elementos1.push(i)`,`}`]
+    let script4 = [`for(clave in objeto) {`,`elementos2.push(objeto[clave])`,`}`]
+    
+    let script5 = [`funcionAnonima = function() {`,`resultado1 = 'Función anónima';`,`}`]
+    let script6 = [`funcionFlecha = () => {`,`resultado2 = 'Función flecha'`,`}`]
+
+    let respuesta1 = "No puede manejar OK"
+    let respuesta2 = "34 13"
+    let respuesta3 = "Función anónima - Función flecha"
+
+    it(`En public/scripts/ejercicio.js con el código:
+
+      ${script1.join(' ')}
+      ${script2}
+      
+      y valor de retorno: '${respuesta1}'
+      `, function() {
       return request(app)
         .get('/scripts/ejercicio.js')
         .then((response) => {
 
-         let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
-         let scriptTexto, scriptEjecutable
 
-         /* Revisión textual */
-         try {
-            scriptTexto = [`if( edad >= 18 && estado == 'CA') {`,`mensaje1 = 'Puede manejar'`,`} else {`, `mensaje1 = 'No puede manejar'}`]
-            for(let elemento of scriptTexto) {
-              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
-            }
-            
-          } catch (error) {
-            chai.expect.fail('Revise la estructura del if en la función condicionales');
-            return;
-          }
 
           try {
-            scriptTexto = `mensaje2 = velocidad >= 120 ? 'Muy rápido' : 'OK';`.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
-            chai.expect(responseClean).to.contain(scriptTexto)
+
+            let scriptExec = requireFromString(response.text)
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+            
+            for(let elemento of script1) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
+            }
+
+            let script2clean = script2.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+
+            chai.expect(responseclean).to.contain(script2clean);
+            chai.expect(scriptExec.condicionales()).to.equal(respuesta1)
+
           } catch (error) {
-            chai.expect.fail('Revise la estructura del operador ternario ? en la función condicionales');
+            chai.expect.fail(`Código esperado: 
+              
+              ${script1.join(' ')}
+              ${script2}
+      
+              y valor de retorno: '${respuesta1}'`);
             return;
           }
-
-          /* Revisión con ejecución */
-           try {
-             scriptEjecutable = requireFromString(response.text)
-             let respuesta = "No puede manejar OK"
-             chai.expect(scriptEjecutable.condicionales()).to.equal(respuesta)
-           } catch (error)
-           {
-             chai.expect.fail('La función debe retornar el valor "No puede manejar OK"');
-             return;
-           }
-            
+        
         })
-          
-    });  
-
-    it('Repetición', function() {
-      return request(app)
-        .get('/scripts/ejercicio.js')
-        .then((response) => {
-
-         let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
-         let scriptTexto, scriptEjecutable
-
-         /* Revisión textual */
-         try {
-            scriptTexto = [`for (i = 1; i < 5; i++) {`,`elementos1.push(i)`,`}`]
-            for(let elemento of scriptTexto) {
-              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
-            }
-            
-          } catch (error) {
-            chai.expect.fail('Revise la estructura del for en la función repeticion');
-            return;
-          }
-
-          try {
-            scriptTexto = [`for(clave in objeto) {`,`elementos2.push(objeto[clave])`,`}`]
-            for(let elemento of scriptTexto) {
-              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
-            }
-            
-          } catch (error) {
-            chai.expect.fail('Revise la estructura del for en la función repeticion');
-            return;
-          }
-
-          /* Revisión con ejecución */
-           try {
-             scriptEjecutable = requireFromString(response.text)
-             let respuesta = "34 13"
-             chai.expect(scriptEjecutable.repeticion()).to.equal(respuesta)
-           } catch (error)
-           {
-             chai.expect.fail('La función debe retornar el valor "34 13"');
-             return;
-           }
-
-            
-        })
-          
-    });  
-
-    it('Funciones anónimas y flecha', function() {
-      return request(app)
-        .get('/scripts/ejercicio.js')
-        .then((response) => {
-
-         let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
-         let scriptTexto, scriptEjecutable
-
-         /* Revisión textual */
-         try {
-            scriptTexto = [`funcionAnonima = function() {`,`resultado1 = 'Función anónima';`,`}`]
-            for(let elemento of scriptTexto) {
-              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
-            }
-            
-          } catch (error) {
-            chai.expect.fail('Revise la estructura de la función anónima');
-            return;
-          }
-
-          try {
-            scriptTexto = [`funcionFlecha = () => {`,`resultado2 = 'Función flecha'`,`}`]
-            for(let elemento of scriptTexto) {
-              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
-            }
-            
-          } catch (error) {
-            chai.expect.fail('Revise la estructura de la función flecha');
-            return;
-          }
-
-          /* Revisión con ejecución */
-           try {
-             scriptEjecutable = requireFromString(response.text)
-             let respuesta = "Función anónima - Función flecha"
-             chai.expect(scriptEjecutable.funciones()).to.equal(respuesta)
-           } catch (error)
-           {
-             chai.expect.fail('La función debe retornar el valor "Función anónima - Función flecha"');
-             return;
-           }
-
-            
-        })
-          
     });
 
+
+    it(`En public/scripts/ejercicio.js con el código:
+
+      ${script3.join(' ')}
+      ${script4.join(' ')}
+      
+      y valor de retorno: '${respuesta2}'
+      `, function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
+
+
+
+          try {
+
+            let scriptExec = requireFromString(response.text)
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+            
+            for(let elemento of script3) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
+            }
+
+            for(let elemento of script4) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
+            }
+            
+            chai.expect(scriptExec.repeticion()).to.equal(respuesta2)
+
+          } catch (error) {
+            chai.expect.fail(`Código esperado: 
+              
+               ${script3.join(' ')}
+               ${script4.join(' ')}
+      
+              y valor de retorno: '${respuesta2}'`);
+            return;
+          }
+        
+        })
+    });
+
+    
+     it(`En public/scripts/ejercicio.js con el código:
+
+      ${script5.join(' ')}
+      ${script6.join(' ')}
+      
+      y valor de retorno: '${respuesta3}'
+      `, function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
+
+
+
+          try {
+
+            let scriptExec = requireFromString(response.text)
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+            
+            for(let elemento of script5) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
+            }
+
+            for(let elemento of script6) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
+            }
+            
+            chai.expect(scriptExec.funciones()).to.equal(respuesta3)
+
+          } catch (error) {
+            chai.expect.fail(`Código esperado: 
+              
+               ${script5.join(' ')}
+               ${script6.join(' ')}
+      
+              y valor de retorno: '${respuesta3}'`);
+            return;
+          }
+        
+        })
+    });
     
  
 
