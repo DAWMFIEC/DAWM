@@ -115,7 +115,7 @@ describe('Test unitarios para la ruta `/`', function() {
     });
 
     
-     it(`En public/scripts/ejercicio.js con el código:
+    it(`En public/scripts/ejercicio.js con el código:
 
       ${script5.join(' ')}
       ${script6.join(' ')}
