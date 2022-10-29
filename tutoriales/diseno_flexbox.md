@@ -56,7 +56,7 @@ Instrucciones
 #### 2. Convierta cada columna en un contenedor Flexbox
 
 
-* En el `index.html`, agregue:
+* En el `index.html`, reemplace el contenido anterior por:
   + Dos etiquetas `<article>` dentro la primera etiqueta `<section>`, y tres etiquetas `<article>` dentro la segunda etiqueta `<section>`
 
 ```
