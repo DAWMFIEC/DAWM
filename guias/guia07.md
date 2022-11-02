@@ -35,8 +35,8 @@ theme: jekyll-theme-leap-day
 	+ Guarde los cambios y revise el resultado en el navegador
 		- Puede revisar más métodos y atributos del objeto [BOM](https://www.arkaitzgarro.com/javascript/capitulo-14.html) del navegador en la referencia del [MDN](https://developer.mozilla.org/es/docs/Web/API/Window).
 
-	+ Comente el código anterior 
-	+ Agregue el código en Javascript para:
+	+ Comente el código que se encuentra dentro de la función *ejecutarCodigo*
+	+ Agregue el código en Javascript para que:
 		- Seleccione el elemento con el identificador `titulo1`. Cambie el texto por:
 		  
 		  >
