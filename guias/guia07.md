@@ -43,7 +43,7 @@ theme: jekyll-theme-leap-day
 		  >	Album de fotos
 		  >
 
-		- Seleccione los elementos con la clase `text-muted`. Cambie el contenido HTML del elemento con la descripción del sitio, por: 
+		- Seleccione los elementos con la clase `text-muted`. Cambie el contenido HTML del elemento en la posición 1 con la descripción del sitio, por: 
 
 		  >
 		  > ````<span> En este sitio encontrarás un album de fotos
