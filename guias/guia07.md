@@ -43,7 +43,7 @@ theme: jekyll-theme-leap-day
 		  >	Album de fotos
 		  >
 
-		- Seleccione los elementos con la clase `text-muted`. Cambie el contenido HTML del elemento en la posición 1 con la descripción del sitio, por: 
+		- Seleccione los elementos con la clase `text-muted`. Para el elemento en la posición 1, cambie el contenido HTML el texto: 
 
 		  >
 		  > ````<span> En este sitio encontrarás un album de fotos
@@ -51,7 +51,7 @@ theme: jekyll-theme-leap-day
 		  > ````
 		  >
 
-		- Seleccione los elementos con la etiqueta `p`. Cambie el valor del atributo `class` del elemento que contiene los botones, por *d-none*.
+		- Seleccione los elementos con la etiqueta `p`. Para el elemento en la posición 2, agregue la clase *d-none*.
 
 * Reto
 	+ Reemplace todos los elementos `svg` por `img`. Utilice como referencia el sitio [How to Replace a DOM Element in Place Using JavaScript?](https://javascript.plainenglish.io/how-to-replace-a-dom-element-in-place-using-javascript-e6aba3f8177f)
