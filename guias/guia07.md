@@ -55,7 +55,9 @@ theme: jekyll-theme-leap-day
 
 * Reto
 
-	+ Reemplace todos los elementos `svg` por `img`. Utilice como referencia el sitio [How to Replace a DOM Element in Place Using JavaScript?](https://javascript.plainenglish.io/how-to-replace-a-dom-element-in-place-using-javascript-e6aba3f8177f)
+	+ Reemplace todos los elementos `svg` por `img`. Utilice las referencias:
+		- [Reemplazar una etiqueta por otra ](https://javascript.plainenglish.io/how-to-replace-a-dom-element-in-place-using-javascript-e6aba3f8177f)
+		- [Recorrer un arreglo de objetos](https://www.microverse.org/blog/how-to-loop-through-the-array-of-json-objects-in-javascript)
 	+ Utilice los datos que se encuentra en el arreglo. 
 
 	<pre><code>
