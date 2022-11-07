@@ -67,7 +67,7 @@ theme: jekyll-theme-leap-day
 
 	+ Procesamiento de la constante **xml**:
 		- Obtenga la referencia a la etiqueta `<select>` del html. Puede usar el método [`getElementsByClassName`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName).
-	  	- Obtenga la referencia a las etiquetas `<escritor>` de la constante xml. Puede usar el método [`getElementsByTagName`](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName).
+		- Obtenga la referencia a las etiquetas `<escritor>` de la constante xml. Puede usar el método [`getElementsByTagName`](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName).
 	  	- Recorra la respuesta anterior con la colección de etiquetas `<escritor>` con un [Array.from()](https://www.geeksforgeeks.org/htmlcollection-for-loop/) 
 			2. Por cada etiqueta `<escritor>` cree un elementoHTML `<option>`. Utilice el método [createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) del objeto document.
 			3. Extraiga el valor de la etiqueta `<nombre>` y colóquelo como valor de la etiqueta `<option>`.
