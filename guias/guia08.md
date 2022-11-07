@@ -20,29 +20,74 @@ theme: jekyll-theme-leap-day
 
 * Descargue y descomprima el archivo [rappo.zip](../ejercicios/rappo.zip).
 * Agregue el archivo `js/ejercicio.js` y la referencia en el `index.html`.
+* Levante un servidor HTTP en la carpeta del ejercicio.
+* Agregue las siguientes funciones al archivo `js/ejercicio.js` 
 * Evento [_DOMContentLoaded_](https://developer.mozilla.org/en-US/docs/Web/API/Window/DOMContentLoaded_event)
-	+ Agregue el *listener* al evento *DOMContentLoaded* del document.
-	+ Agregue la funcion flecha *cargarDatos* y un mensaje de alerta.
-	+ Dentro del listener del document, agregue la llamada a la función *cargarDatos*.
+	+ Agregue el *listener* al evento *DOMContentLoaded* de la ventana (objeto window).
+
+	<pre><code>
+		window.addEventListener(\'DOMContentLoaded\', (event) => {
+		});
+	</code></pre>
+
+	+ Agregue la funcion flecha *cargarDatos* con el mensaje por consola.
+	<pre><code>
+		console.log(\'DOM cargado y analizado\');
+	</code></pre>
+	+ Dentro del listener de la ventana, agregue la llamada a la función *cargarDatos*.
+	+ Recargue la página en el navegador y revise los resultados en la consola del navegador.
 
 * Dentro de la función flecha *cargarDatos*
 	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdawm.herokuapp.com/escritores/xml">Escritores</a>
-	+ Procese la respuesta de texto como un objeto [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/). 
-		- Recorra la [colección de elementos html](https://www.geeksforgeeks.org/htmlcollection-for-loop/) 
-		- Por cada etiqueta `<escritor>` cree un elemento `<option>`
-		- Use el texto de la etiqueta `<nombre>` como valor de la etiqueta `<option>`
-		- Use el texto de la etiqueta `<id>`  como valor del atributo *value*
-		- Agregue la etiqueta `<option>` dentro de la etiqueta `<select>` del html
-		- Compruebe los resultados en el navegador.
 
-* Evento [_Change_](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
-	+ Agregue el *listener* al evento *change* de la etiqueta `<select>`
-	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdawm.herokuapp.com/escritores/frases">Frases</a>
-	+ Procese la respuesta de texto como un objeto [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/)
-		- Recorra el [arreglo json](https://www.sitepoint.com/loop-through-json-response-javascript/)
-		- Utilice el valor del atributo *value* para filtrar el arreglo de respuesta
-		- Use las etiquetas dentro _plantilla.txt_ para mostrar las frases correspondientes al escritor
-		- Agregue las frases dentro de la etiqueta con el identificador *frases*
+	<pre><code>
+		let url = \'https://dataserverdawm.herokuapp.com/escritores/xml\'
+		fetch(url)
+		    .then(response => {
+		        // handle the response
+		    })
+		    .catch(error => {
+		        // handle the error
+		    });
+	</code></pre>
+
+	+ Haga los cambios necesarios para procesar la respuesta de texto como un objeto [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
+
+	  <pre><code>
+	  	let url = \'https://dataserverdawm.herokuapp.com/escritores/xml\'
+	  	fetch(url)
+		  .then(response => response.text())
+		  .then(data => {
+		    const parser = new DOMParser();
+		    const xml = parser.parseFromString(data, \"application/xml\");
+		    // Procesamiento de la constante xml
+		  })
+		  .catch(console.error);
+	  </code></pre>
+
+	+ Procesamiento de la constante **xml**:
+		- Obtenga la referencia a la etiqueta `<select>` del html. Puede usar el método [`getElementsByClassName`](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByClassName).
+	  	- Obtenga la referencia a las etiquetas `<escritor>` de la constante xml. Puede usar el método [`getElementsByTagName`](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName).
+	  	- Recorra la respuesta anterior con la colección de etiquetas `<escritor>` con un [Array.from()](https://www.geeksforgeeks.org/htmlcollection-for-loop/) 
+			2. Por cada etiqueta `<escritor>` cree un elementoHTML `<option>`. Utilice el método [createElement](https://developer.mozilla.org/en-US/docs/Web/API/Document/createElement) del objeto document.
+			3. Extraiga el valor de la etiqueta `<nombre>` y colóquelo como valor de la etiqueta `<option>`.
+			4. Extraiga el valor de la etiqueta `<id>` y colóquelo como valor del atributo *value* de la etiqueta `<option>`.
+			5. Agregue la etiqueta `<option>` como hija de la etiqueta `<select>` del html. Puede usar el método [`appendChild`](https://developer.mozilla.org/es/docs/Web/API/Node/appendChild).
+	+ Compruebe los resultados en el navegador.
+
+
+* Reto
+	+ Cree la función *mostrarFrases*
+	+ Dentro del listener de la ventana, agregue la llamada a la función *mostrarFrases*.
+	+ Dentro de la función mostrarFrases: agregue el *listener* al evento [*change*](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event) de la etiqueta `<select>` del html.
+		- Guarde el valor del parámetro del callback: `event.target.value`
+	+ Dentro del listener: realice una petición asincrónica con el objeto [fetch](https://codetogo.io/how-to-fetch-json-in-javascript/) al url <a href="https://dataserverdawm.herokuapp.com/escritores/frases">Frases</a>
+	  - Procese la respuesta **data** como un objeto JSON
+	  	1. Obtenga el arreglo de objetos a partir de la clave `"frases"`
+	  	2. Filtre el arreglo de objetos con [Array.prototype.filter()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/filter), compare el valor del atributo **id_author** y el valor del parámetro del callback.
+		3. Itere sobre el arreglo filtrado con [for...of](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Statements/for...of).
+		4. Por cada elemento del arreglo filtrado: use las etiquetas dentro del archivo _etiquetasfrases.txt_ como [plantillas literales](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals), inyecte como marcador el valor de la clave `texto` de cada objeto y agregue la cadena resultante a la referencia de la etiqueta con el id **frases** del html.
+	+ Compruebe los resultados en el navegador.
 
 ### Términos
 
