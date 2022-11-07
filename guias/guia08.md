@@ -59,7 +59,7 @@ theme: jekyll-theme-leap-day
 			  .then(response => response.text())
 			  .then(data => {
 			    const parser = new DOMParser();
-			    const xml = parser.parseFromString(data, \"application/xml\");
+			    const xml = parser.parseFromString(data, "application/xml");
 			    // Procesamiento de la constante xml
 			  })
 			  .catch(console.error);
