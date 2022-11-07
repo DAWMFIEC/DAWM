@@ -54,15 +54,15 @@ theme: jekyll-theme-leap-day
 	+ Haga los cambios necesarios para procesar la respuesta de texto como un objeto [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 
 	  <pre><code>
-	  	let url = 'https://dataserverdawm.herokuapp.com/escritores/xml'
-	  	fetch(url)
-		  .then(response => response.text())
-		  .then(data => {
-		    const parser = new DOMParser();
-		    const xml = parser.parseFromString(data, \"application/xml\");
-		    // Procesamiento de la constante xml
-		  })
-		  .catch(console.error);
+	  let url = 'https://dataserverdawm.herokuapp.com/escritores/xml'
+	  fetch(url)
+			  .then(response => response.text())
+			  .then(data => {
+			    const parser = new DOMParser();
+			    const xml = parser.parseFromString(data, \"application/xml\");
+			    // Procesamiento de la constante xml
+			  })
+			  .catch(console.error);
 	  </code></pre>
 
 	+ Procesamiento de la constante **xml**:
