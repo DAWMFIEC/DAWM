@@ -26,13 +26,13 @@ theme: jekyll-theme-leap-day
 	+ Agregue el *listener* al evento *DOMContentLoaded* de la ventana (objeto window).
 
 	<pre><code>
-		window.addEventListener(\'DOMContentLoaded\', (event) => {
+		window.addEventListener('DOMContentLoaded', (event) => {
 		});
 	</code></pre>
 
 	+ Agregue la funcion flecha *cargarDatos* con el mensaje por consola.
 	<pre><code>
-		console.log(\'DOM cargado y analizado\');
+		console.log('DOM cargado y analizado');
 	</code></pre>
 	+ Dentro del listener de la ventana, agregue la llamada a la función *cargarDatos*.
 	+ Recargue la página en el navegador y revise los resultados en la consola del navegador.
@@ -41,7 +41,7 @@ theme: jekyll-theme-leap-day
 	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdawm.herokuapp.com/escritores/xml">Escritores</a>
 
 	<pre><code>
-		let url = \'https://dataserverdawm.herokuapp.com/escritores/xml\'
+		let url = 'https://dataserverdawm.herokuapp.com/escritores/xml'
 		fetch(url)
 		    .then(response => {
 		        // handle the response
@@ -54,7 +54,7 @@ theme: jekyll-theme-leap-day
 	+ Haga los cambios necesarios para procesar la respuesta de texto como un objeto [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 
 	  <pre><code>
-	  	let url = \'https://dataserverdawm.herokuapp.com/escritores/xml\'
+	  	let url = 'https://dataserverdawm.herokuapp.com/escritores/xml'
 	  	fetch(url)
 		  .then(response => response.text())
 		  .then(data => {
