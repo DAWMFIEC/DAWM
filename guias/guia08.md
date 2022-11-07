@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 	+ Dentro del listener del document, agregue la llamada a la función *cargarDatos*.
 
 * Dentro de la función flecha *cargarDatos*
-	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdaw.herokuapp.com/escritores/xml">Escritores</a>
+	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdawm.herokuapp.com/escritores/xml">Escritores</a>
 	+ Procese la respuesta de texto como un objeto [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/). 
 		- Recorra la [colección de elementos html](https://www.geeksforgeeks.org/htmlcollection-for-loop/) 
 		- Por cada etiqueta `<escritor>` cree un elemento `<option>`
@@ -37,7 +37,7 @@ theme: jekyll-theme-leap-day
 
 * Evento [_Change_](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/change_event)
 	+ Agregue el *listener* al evento *change* de la etiqueta `<select>`
-	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdaw.herokuapp.com/escritores/frases">Frases</a>
+	+ Realice una petición asincrónica con el objeto [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) al url <a href="https://dataserverdawm.herokuapp.com/escritores/frases">Frases</a>
 	+ Procese la respuesta de texto como un objeto [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/)
 		- Recorra el [arreglo json](https://www.sitepoint.com/loop-through-json-response-javascript/)
 		- Utilice el valor del atributo *value* para filtrar el arreglo de respuesta
