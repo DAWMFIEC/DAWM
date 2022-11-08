@@ -89,6 +89,8 @@ theme: jekyll-theme-leap-day
 		4. Por cada elemento del arreglo filtrado: use las etiquetas dentro del archivo _etiquetasfrases.txt_ como [plantillas literales](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Template_literals), inyecte como marcador el valor de la clave `texto` de cada objeto y agregue la cadena resultante a la referencia de la etiqueta con el id **frases** del html.
 	+ Compruebe los resultados en el navegador.
 
+* Revise el resultado en [rappo_resultado.zip](../ejercicios/rappo_resultado.zip).
+
 ### Términos
 
 `eventos`, listener, XML, JSON, `AJAX`, `asincrónico`
