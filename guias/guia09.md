@@ -12,6 +12,7 @@ theme: jekyll-theme-leap-day
 * Troubleshooting
 	+ [CORS](https://javascript.info/fetch-crossorigin)
 	+ Manejo de respuesta y de errores del API
+	+ [Slow internet connection](https://www.rd.com/list/hidden-reasons-your-internet-is-so-slow/)
 
 ### Actividades
 
@@ -114,7 +115,7 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
         }
 	```
 
-#### Slow response
+#### Slow internet connection
 
 * En el navegador, acceda al URL `http://localhost:8056/slow/`
 * Verifique el resultado de la petición
