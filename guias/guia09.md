@@ -37,11 +37,10 @@ theme: jekyll-theme-leap-day
 	
   	+ En la página web, haga clic en el botón **Petición a Random-d.uk/api/random**.  Revise que la salida en la consola del navegador sea: `Solicitud desde otro origen bloqueada: la política de mismo origen impide leer el recurso remoto en https://random-d.uk/api/random (razón: falta la cabecera CORS 'Access-Control-Allow-Origin'). Código de estado: 200.`. 
 
-		- En Chrome y en Mozilla, respectivamente:
+		- El resultado en Chrome:
 
 	<p align="center">
 	  <img src="imagenes/ts_cors2.png">
-	  <img src="imagenes/ts_cors3.png">
 	</p>
 
 		
@@ -66,11 +65,10 @@ La solicitud fue bloqueada debido a la violación de las reglas de seguridad de 
 * Verifique el resultado de la petición
 	+ En la página web, deje el número `2` que aparece en **ID anime** y haga clic en el botón **Petición a https://api.jikan.moe/v4/anime/{id}/full**.
 
-		- El resultado en los navegadores(en Chrome y en Mozilla, respectivamente). Y, el resultado de la petición en la consola del navegador.
+		- El resultado en Chrome y en la consola del inspector.
 		
 	<p align="center">
 	  <img src="imagenes/ts_status1.png">
-	  <img src="imagenes/ts_status2.png">
 	  <img src="imagenes/ts_status3.png">
 	</p>
 
