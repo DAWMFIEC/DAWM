@@ -93,6 +93,7 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
   <img src="imagenes/ts_status5.png">
 </p>
 
+* Abra el archivo `scripts/application.js`
 * Agregue la verificación del estado de la respuesta
 	+ En caso que el **obj** tenga la propiedad **`status`** y que su valor sea **404**
 		- Mostrará un mensaje de error
@@ -117,19 +118,49 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 
 * En el navegador, acceda al URL `http://localhost:8056/slow/`
 * Verifique el resultado de la petición
-	+ En la página web, haga clic en el botón **Petición a commits?per_page=100**.
-		- En la consola del inspector, verifique el tiempo de ejecución del código `Tiempo de ejecución del fetch`
-	+ En la pesata
+	+ Petición bajo condiciones normales
+	  - En la pestaña **RED** del inspector, verifique de los siguientes valores
+<p align="center">
+  <img src="imagenes/ts_slow1.png">
+</p>
+		- En la página web, haga clic en el botón **Petición a commits?per_page=100**.
+		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
+<p align="center">
+  <img src="imagenes/ts_slow11.png">
+</p>
+	+ Petición sin caché del navegador
+		- En la pestaña **RED** del inspector, verifique de los siguientes valores
+<p align="center">
+  <img src="imagenes/ts_slow2.png">
+</p>
+		- En la página web, haga clic en el botón **Petición a commits?per_page=100**.
+		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
+<p align="center">
+  <img src="imagenes/ts_slow21.png">
+</p>
+	+ Petición sin caché del navegador + limitación GPRS
+		- En la pestaña **RED** del inspector, verifique de los siguientes valores
+<p align="center">
+  <img src="imagenes/ts_slow3.png">
+</p>
+		- En la página web, haga clic en el botón **Petición a commits?per_page=100**.
+		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
+<p align="center">
+  <img src="imagenes/ts_slow31.png">
+</p>
 
 ##### Problema
 
-##### Solución
-
-#### Local Storage y Session Storage
-
-##### Problema
+Las condiciones de la red pueden generar la sensación de _carga infinita_ al usuario. Los navegadores modernos permiten emular diferentes escenarios para monitorear el comportamiento de las aplicaciones. La opción [Throttling](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/throttling/index.html) ofrece diferente varios tipos de redes con condiciones para descarga, subida y latencia en la transmisión de datos.
 
 ##### Solución
+
+Provea de un mecanismo visual para el [monitoreo del progreso de un requerimiento asincrónico](https://dev.to/tqbit/how-to-monitor-the-progress-of-a-javascript-fetch-request-and-cancel-it-on-demand-107f). 
+
+* Abra el archivo `scripts/application.js`
+* Comente el contenido del **Bloque de petición**
+* Coloque el contenido de `scripts/guiavisual.txt` en el **Bloque de petición**
+
 
 #### Restricciones en el servidor
 
@@ -149,3 +180,4 @@ dominio, `CORS`, proxy, reverse proxy, `API`
 * Jikan - Unofficial MyAnimeList API. (2022). Retrieved 9 November 2022, from https://jikan.moe/
 * Throttling — Firefox Source Docs documentation. (2022). Retrieved 9 November 2022, from https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/throttling/index.html
 * console.time() - Web APIs | MDN. (2022). Retrieved 9 November 2022, from https://developer.mozilla.org/en-US/docs/Web/API/console/time
+* How to monitor the progress of a Javascript fetch - request and cancel it on demand. (2021). Retrieved 9 November 2022, from https://dev.to/tqbit/how-to-monitor-the-progress-of-a-javascript-fetch-request-and-cancel-it-on-demand-107f
