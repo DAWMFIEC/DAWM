@@ -192,11 +192,12 @@ Los diferentes tipos de solicitudes de API a GitHub.com están sujetos a diferen
 
 ##### Solución
 
-Guarde una versión local del archivo. Puede encontrar el archivo en `fetch/restrictions/servidor/commits_ilya.json`
+* Espere hasta que levanten el bloqueo de las peticiones.
+* Cree un ambiente de pruebas al guarde una versión local del archivo. Para este ejercicio, puede encontrar el archivo en `fetch/restrictions/servidor/commits_ilya.json`
 	
-* Abra el archivo `fetch/cliente/scripts/application.js`
-	+ Cambie el URL anterior por `http://localhost:8056/restrictions/servidor/commits_ilya.json`
-* Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
+	+ Abra el archivo `fetch/cliente/scripts/application.js`
+		- Cambie el URL anterior por `http://localhost:8056/restrictions/servidor/commits_ilya.json`
+	+ Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
 
 
 ### Términos
