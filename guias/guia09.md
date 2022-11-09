@@ -28,13 +28,13 @@ theme: jekyll-theme-leap-day
 
 * En el navegador, acceda al URL `http://localhost:8056/cors/`
 * Verifique el resultado de la petición
-	+ En el navegador, abra el enlace al <a href="https://random-d.uk/api/random" title="API" target="_blank">API</a> del <a href="https://random-d.uk/" title="Abrir el sitio original" target="_blank">Random-d.uk</a>. Con la salida:
+	+ En el navegador, abra otra pestaña al URL del <a href="https://random-d.uk/api/random" title="API" target="_blank">API</a> del <a href="https://random-d.uk/" title="Abrir el sitio original" target="_blank">Random-d.uk</a>. Con la salida:
 
 	<p align="center">
 	  <img src="imagenes/ts_cors1.png">
 	</p>
 	
-	+ En la página web, haga clic en el botón **Petición a Random-d.uk/api/random**.  Revise que la salida en la consola del navegador sea: `Solicitud desde otro origen bloqueada: la política de mismo origen impide leer el recurso remoto en https://random-d.uk/api/random (razón: falta la cabecera CORS 'Access-Control-Allow-Origin'). Código de estado: 200.`. 
+  	+ En la página web, haga clic en el botón **Petición a Random-d.uk/api/random**.  Revise que la salida en la consola del navegador sea: `Solicitud desde otro origen bloqueada: la política de mismo origen impide leer el recurso remoto en https://random-d.uk/api/random (razón: falta la cabecera CORS 'Access-Control-Allow-Origin'). Código de estado: 200.`. 
 
 		- En Chrome y en Mozilla, respectivamente:
 
@@ -53,15 +53,39 @@ La solicitud fue bloqueada debido a la violación de las reglas de seguridad de 
 
 * Cambios en el backend (servidor).
 * Uso de un [reverse proxy](https://httptoolkit.tech/blog/cors-proxies/) en la petición desde el frontend (en el código de javascript).
+	- Abra el archivo `scripts/application.js`
 	- Cambie el URL anterior por **`https://damp-beach-17296.herokuapp.com/https://random-d.uk/api/random`** para realizar la petición asincrónica. 
 	- Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
 
 
 #### Manejo de respuesta y de errores
 
+* En el navegador, acceda al URL `http://localhost:8056/status/`
+* Verifique el resultado de la petición
+	+ En la página web, deje el número `2` que aparece en **ID anime** y haga clic en el botón **Petición a https://api.jikan.moe/v4/anime/{id}/full**.
+
+		- En la consola del explorador
+
+	<p align="center">
+	  <img src="imagenes/ts_status3.png">
+	</p>	
+
+		- En Chrome y en Mozilla, respectivamente:
+
+	<p align="center">
+	  <img src="imagenes/ts_status1.png">
+	  <img src="imagenes/ts_status2.png">
+	</p>
+
+
+
 ##### Problema
 
+En el archivo `scripts/application.js`, el valor de la variable `data` es procesado sin analizar el resultado de la respuesta.
+
 ##### Solución
+
+Revisar la [documentación](https://docs.api.jikan.moe/) del [Jikan API](https://jikan.moe/), específicamente para el endpoint [`getAnimeFullById`](https://docs.api.jikan.moe/#tag/anime/operation/getAnimeFullById)
 
 #### Local Storage y Session Storage
 
