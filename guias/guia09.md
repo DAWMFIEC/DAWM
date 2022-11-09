@@ -167,7 +167,7 @@ Provea de un mecanismo visual para el [monitoreo del progreso de un requerimient
 
 #### Restricciones en el servidor
 
-* En el navegador, acceda al URL `http://localhost:8056/restricciones/cliente/`
+* En el navegador, acceda al URL `http://localhost:8056/restrictions/cliente/`
 * Verifique el resultado de la petición
 	+ En la página web, luego de varios clics en el botón **Petición a commits?per_page=100 (500 veces)**.
 
@@ -185,10 +185,10 @@ Los diferentes tipos de solicitudes de API a GitHub.com están sujetos a diferen
 
 ##### Solución
 
-* Guarde una versión local del archivo 
-	+ Puede encontrar el archivo en `fetch/restricciones/servidor/commits_ilya.json`
+* Guarde una versión local del archivo
+	+ Puede encontrar el archivo en `fetch/restrictions/servidor/commits_ilya.json`
 * Abra el archivo `fetch/cliente/scripts/application.js`
-	+ Cambie el URL anterior por `http://localhost:8056/restricciones/servidor/commits_ilya.json`
+	+ Cambie el URL anterior por `http://localhost:8056/restrictions/servidor/commits_ilya.json`
 * Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
 
 
