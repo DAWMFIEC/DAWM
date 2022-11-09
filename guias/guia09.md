@@ -52,7 +52,8 @@ La solicitud fue bloqueada debido a la violación de las reglas de seguridad de 
 
 ##### Solución
 
-* Cambios en el backend (servidor).
+* Cambios en la aplicación del servidor 
+* Cambios en el código del backend.
 * Uso de un [reverse proxy](https://httptoolkit.tech/blog/cors-proxies/) en la petición desde el frontend (en el código de javascript).
 	- Abra el archivo `scripts/application.js`
 	- Cambie el URL anterior por **`https://damp-beach-17296.herokuapp.com/https://random-d.uk/api/random`** para realizar la petición asincrónica. 
