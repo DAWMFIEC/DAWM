@@ -100,6 +100,7 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 		- Mostrará un mensaje de error
 		- Borrará el contenido de la caja de texto y llevará el foco a la caja de texto
 	+ Caso contrario, reubique la sección de procesamiento.
+	+ Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
 
 	```
 		if(obj.hasOwnProperty('status') && obj["status"] == 404) {
@@ -161,14 +162,34 @@ Provea de un mecanismo visual para el [monitoreo del progreso de un requerimient
 * Abra el archivo `scripts/application.js`
 * Comente el contenido del **Bloque de petición**
 * Coloque el contenido de `scripts/guiavisual.txt` en el **Bloque de petición**
+* Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
 
 
 #### Restricciones en el servidor
 
+* En el navegador, acceda al URL `http://localhost:8056/restricciones/cliente/`
+* Verifique el resultado de la petición
+	+ En la página web, luego de varios clics en el botón **Petición a commits?per_page=100 (500 veces)**.
+
+<p align="center">
+  <img src="imagenes/ts_manyrequests1.png">
+</p>
+
 ##### Problema
+
+Los diferentes tipos de solicitudes de API a GitHub.com están sujetos a diferentes [límite de velocidad](https://docs.github.com/es/rest/overview/resources-in-the-rest-api#rate-limiting) para controlar el tráfico de la red. Las respuestas del servidor son:
+
+* [403 Forbidden](https://developer.mozilla.org/es/docs/Web/HTTP/Status/403): el servidor ha recibido y ha entendido la petición, pero rechaza enviar una respuesta, y
+* [429 Too Many Requests](https://developer.mozilla.org/en-US/docs/Web/HTTP/Status/429): el usuario ha enviado demasiadas solicitudes en un período de tiempo determinado ("límite de velocidad").
+
 
 ##### Solución
 
+* Guarde una versión local del archivo 
+	+ Puede encontrar el archivo en `fetch/restricciones/servidor/commits_ilya.json`
+* Abra el archivo `fetch/cliente/scripts/application.js`
+	+ Cambie el URL anterior por `http://localhost:8056/restricciones/servidor/commits_ilya.json`
+* Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
 
 
 ### Términos
