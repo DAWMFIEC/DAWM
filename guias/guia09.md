@@ -179,5 +179,5 @@ dominio, `CORS`, proxy, reverse proxy, `API`
 * Random-d.uk. (2022). Retrieved 8 November 2022, from https://random-d.uk/
 * Jikan - Unofficial MyAnimeList API. (2022). Retrieved 9 November 2022, from https://jikan.moe/
 * Throttling — Firefox Source Docs documentation. (2022). Retrieved 9 November 2022, from https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/throttling/index.html
-* console.time() - Web APIs | MDN. (2022). Retrieved 9 November 2022, from https://developer.mozilla.org/en-US/docs/Web/API/console/time
+* console.time() - Web APIs MDN. (2022). Retrieved 9 November 2022, from https://developer.mozilla.org/en-US/docs/Web/API/console/time
 * How to monitor the progress of a Javascript fetch - request and cancel it on demand. (2021). Retrieved 9 November 2022, from https://dev.to/tqbit/how-to-monitor-the-progress-of-a-javascript-fetch-request-and-cancel-it-on-demand-107f
