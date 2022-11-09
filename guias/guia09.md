@@ -64,24 +64,18 @@ La solicitud fue bloqueada debido a la violación de las reglas de seguridad de 
 * Verifique el resultado de la petición
 	+ En la página web, deje el número `2` que aparece en **ID anime** y haga clic en el botón **Petición a https://api.jikan.moe/v4/anime/{id}/full**.
 
-		- En la consola del explorador
-
-	<p align="center">
-	  <img src="imagenes/ts_status3.png">
-	</p>	
-
-		- En Chrome y en Mozilla, respectivamente:
-
+		- El resultado en los navegadores(en Chrome y en Mozilla, respectivamente). Y, el resultado de la petición en la consola del navegador.
+		
 	<p align="center">
 	  <img src="imagenes/ts_status1.png">
 	  <img src="imagenes/ts_status2.png">
+	  <img src="imagenes/ts_status3.png">
 	</p>
-
 
 
 ##### Problema
 
-En el archivo `scripts/application.js`, el valor de la variable `data` es procesado sin analizar el resultado de la respuesta.
+En el archivo `scripts/application.js`, el resultado de la petición es directamente asignado a la variable `data` sin analizar si la petición fue exitosa o no.
 
 ##### Solución
 
