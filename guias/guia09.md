@@ -72,6 +72,12 @@ La solicitud fue bloqueada debido a la violación de las reglas de seguridad de 
 	  <img src="imagenes/ts_status3.png">
 	</p>
 
+	+ En la página web, modifique el valor que aparece en **ID anime** por `1` y haga clic en el botón **Petición a https://api.jikan.moe/v4/anime/{id}/full**.
+
+	<p align="center">
+	  <img src="imagenes/ts_status4.png">
+	</p>
+
 
 ##### Problema
 
@@ -80,6 +86,35 @@ En el archivo `scripts/application.js`, el resultado de la petición es directam
 ##### Solución
 
 Revisar la [documentación](https://docs.api.jikan.moe/) del [Jikan API](https://jikan.moe/), específicamente para el endpoint [`getAnimeFullById`](https://docs.api.jikan.moe/#tag/anime/operation/getAnimeFullById)
+
+En caso de no existir un anime con el ID, el API devuelve un JSON como el que aparece a continuación:
+
+<p align="center">
+  <img src="imagenes/ts_status5.png">
+</p>
+
+* Agregue la verificación del estado de la respuesta
+	+ En caso que el **obj** tenga la propiedad **`status`** y que su valor sea **404**
+		- Mostrará un mensaje de error
+		- Borrará el contenido de la caja de texto y llevará el foco a la caja de texto
+	+ Caso contrario, procesará el resultado normalmente.
+
+	```
+		if(obj.hasOwnProperty('status') && obj["status"] == 404) {
+
+          document.getElementById('respuesta').innerHTML = `No existe un anime con el ID ${id}`
+          document.getElementById("id_anime").value = ''
+          document.getElementById("id_anime").focus()
+        
+        } else {
+          let data = obj['data']
+          
+          document.getElementById('respuesta').innerHTML = `
+            ...
+            </div>
+          `
+        }
+	```
 
 #### Local Storage y Session Storage
 
