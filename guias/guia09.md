@@ -37,10 +37,10 @@ theme: jekyll-theme-leap-day
 	
   	+ En la página web, haga clic en el botón **Petición a Random-d.uk/api/random**.  Revise que la salida en la consola del navegador sea: `Solicitud desde otro origen bloqueada: la política de mismo origen impide leer el recurso remoto en https://random-d.uk/api/random (razón: falta la cabecera CORS 'Access-Control-Allow-Origin'). Código de estado: 200.`. 
 
-		- El resultado en Chrome:
+		- El resultado en Mozilla:
 
 	<p align="center">
-	  <img src="imagenes/ts_cors2.png">
+	  <img src="imagenes/ts_cors3.png">
 	</p>
 
 		
@@ -65,10 +65,10 @@ La solicitud fue bloqueada debido a la violación de las reglas de seguridad de 
 * Verifique el resultado de la petición
 	+ En la página web, deje el número `2` que aparece en **ID anime** y haga clic en el botón **Petición a https://api.jikan.moe/v4/anime/{id}/full**.
 
-		- El resultado en Chrome y en la consola del inspector.
+		- El resultado en Mozilla y en la consola del inspector.
 		
 	<p align="center">
-	  <img src="imagenes/ts_status1.png">
+	  <img src="imagenes/ts_status2.png">
 	  <img src="imagenes/ts_status3.png">
 	</p>
 
@@ -115,6 +115,12 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 
 #### Slow response
 
+* En el navegador, acceda al URL `http://localhost:8056/slow/`
+* Verifique el resultado de la petición
+	+ En la página web, haga clic en el botón **Petición a commits?per_page=100**.
+		- En la consola del inspector, verifique el tiempo de ejecución del código `Tiempo de ejecución del fetch`
+	+ En la pesata
+
 ##### Problema
 
 ##### Solución
@@ -141,3 +147,5 @@ dominio, `CORS`, proxy, reverse proxy, `API`
 
 * Random-d.uk. (2022). Retrieved 8 November 2022, from https://random-d.uk/
 * Jikan - Unofficial MyAnimeList API. (2022). Retrieved 9 November 2022, from https://jikan.moe/
+* Throttling — Firefox Source Docs documentation. (2022). Retrieved 9 November 2022, from https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/throttling/index.html
+* console.time() - Web APIs | MDN. (2022). Retrieved 9 November 2022, from https://developer.mozilla.org/en-US/docs/Web/API/console/time
