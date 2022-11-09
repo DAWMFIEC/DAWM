@@ -13,6 +13,7 @@ theme: jekyll-theme-leap-day
 	+ [CORS](https://javascript.info/fetch-crossorigin)
 	+ Manejo de respuesta y de errores del API
 	+ [Slow internet connection](https://www.rd.com/list/hidden-reasons-your-internet-is-so-slow/)
+	+ [Rate limiting - Github](https://docs.github.com/es/rest/overview/resources-in-the-rest-api#rate-limiting)
 
 ### Actividades
 
