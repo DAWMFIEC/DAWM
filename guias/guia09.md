@@ -11,6 +11,7 @@ theme: jekyll-theme-leap-day
 * Revisión de ejercicios previos: dudas y comentarios.
 * Troubleshooting
 	+ [CORS](https://javascript.info/fetch-crossorigin)
+	+ Manejo de respuesta y de errores del API
 
 ### Actividades
 
@@ -58,7 +59,7 @@ La solicitud fue bloqueada debido a la violación de las reglas de seguridad de 
 	- Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
 
 
-#### Manejo de respuesta y de errores
+#### Manejo de respuesta y de errores del API
 
 * En el navegador, acceda al URL `http://localhost:8056/status/`
 * Verifique el resultado de la petición
@@ -116,13 +117,13 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
         }
 	```
 
-#### Local Storage y Session Storage
+#### Slow response
 
 ##### Problema
 
 ##### Solución
 
-#### Slow response
+#### Local Storage y Session Storage
 
 ##### Problema
 
@@ -138,8 +139,9 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 
 ### Términos
 
-dominio, `CORS`, proxy, reverse proxy
+dominio, `CORS`, proxy, reverse proxy, `API`
 
 ### Referencias
 
 * Random-d.uk. (2022). Retrieved 8 November 2022, from https://random-d.uk/
+* Jikan - Unofficial MyAnimeList API. (2022). Retrieved 9 November 2022, from https://jikan.moe/
