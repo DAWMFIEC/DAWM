@@ -127,7 +127,7 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 	  <img src="imagenes/ts_slow1.png">
 	</p>
 
-		- En la página web, haga clic en el botón **Petición a commits?per_page=100**.
+		- En la página web, haga clic en el botón **Petición a news?category=science**.
 		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
 
 	<p align="center">
@@ -141,7 +141,7 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 	  <img src="imagenes/ts_slow2.png">
 	</p>
 
-		- En la página web, haga clic en el botón **Petición a commits?per_page=100**.
+		- En la página web, haga clic en el botón **Petición a news?category=science**.
 		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
 
 	<p align="center">
@@ -155,7 +155,7 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 	  <img src="imagenes/ts_slow3.png">
 	</p>
 	
-		- En la página web, haga clic en el botón **Petición a commits?per_page=100**.
+		- En la página web, haga clic en el botón **Petición a news?category=science**.
 		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
 	
 	<p align="center">
