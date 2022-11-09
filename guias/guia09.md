@@ -99,7 +99,7 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 	+ En caso que el **obj** tenga la propiedad **`status`** y que su valor sea **404**
 		- Mostrará un mensaje de error
 		- Borrará el contenido de la caja de texto y llevará el foco a la caja de texto
-	+ Caso contrario, procesará el resultado normalmente.
+	+ Caso contrario, reubique la sección de procesamiento.
 
 	```
 		if(obj.hasOwnProperty('status') && obj["status"] == 404) {
@@ -109,12 +109,9 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
           document.getElementById("id_anime").focus()
         
         } else {
-          let data = obj['data']
-          
-          document.getElementById('respuesta').innerHTML = `
-            ...
-            </div>
-          `
+          // Inicio del procesamiento
+					... 
+          // Fin del procesamiento
         }
 	```
 
