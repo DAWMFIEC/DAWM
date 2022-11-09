@@ -37,14 +37,13 @@ theme: jekyll-theme-leap-day
 	  <img src="imagenes/ts_cors1.png">
 	</p>
 	
-  	+ En la página web, haga clic en el botón **Petición a Random-d.uk/api/random**.  Revise que la salida en la consola del navegador sea: `Solicitud desde otro origen bloqueada: la política de mismo origen impide leer el recurso remoto en https://random-d.uk/api/random (razón: falta la cabecera CORS 'Access-Control-Allow-Origin'). Código de estado: 200.`. 
+  + En la página web, haga clic en el botón **Petición a Random-d.uk/api/random**.  Revise que la salida en la consola del navegador sea: `Solicitud desde otro origen bloqueada: la política de mismo origen impide leer el recurso remoto en https://random-d.uk/api/random (razón: falta la cabecera CORS 'Access-Control-Allow-Origin'). Código de estado: 200.`.
+  	- El resultado en Mozilla:
 
-		- El resultado en Mozilla:
 
 	<p align="center">
 	  <img src="imagenes/ts_cors3.png">
 	</p>
-
 		
 
 ##### Problema
@@ -123,34 +122,45 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 * Verifique el resultado de la petición
 	+ Petición bajo condiciones normales
 	  - En la pestaña **RED** del inspector, verifique de los siguientes valores
-<p align="center">
-  <img src="imagenes/ts_slow1.png">
-</p>
+
+	<p align="center">
+	  <img src="imagenes/ts_slow1.png">
+	</p>
+
 		- En la página web, haga clic en el botón **Petición a commits?per_page=100**.
 		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
-<p align="center">
-  <img src="imagenes/ts_slow11.png">
-</p>
+
+	<p align="center">
+	  <img src="imagenes/ts_slow11.png">
+	</p>
+
 	+ Petición sin caché del navegador
 		- En la pestaña **RED** del inspector, verifique de los siguientes valores
-<p align="center">
-  <img src="imagenes/ts_slow2.png">
-</p>
+
+	<p align="center">
+	  <img src="imagenes/ts_slow2.png">
+	</p>
+
 		- En la página web, haga clic en el botón **Petición a commits?per_page=100**.
 		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
-<p align="center">
-  <img src="imagenes/ts_slow21.png">
-</p>
+
+	<p align="center">
+	  <img src="imagenes/ts_slow21.png">
+	</p>
+
 	+ Petición sin caché del navegador + limitación GPRS
 		- En la pestaña **RED** del inspector, verifique de los siguientes valores
-<p align="center">
-  <img src="imagenes/ts_slow3.png">
-</p>
+	
+	<p align="center">
+	  <img src="imagenes/ts_slow3.png">
+	</p>
+	
 		- En la página web, haga clic en el botón **Petición a commits?per_page=100**.
 		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
-<p align="center">
-  <img src="imagenes/ts_slow31.png">
-</p>
+	
+	<p align="center">
+	  <img src="imagenes/ts_slow31.png">
+	</p>
 
 ##### Problema
 
@@ -172,9 +182,9 @@ Provea de un mecanismo visual para el [monitoreo del progreso de un requerimient
 * Verifique el resultado de la petición
 	+ En la página web, luego de varios clics en el botón **Petición a commits?per_page=100 (500 veces)**.
 
-<p align="center">
-  <img src="imagenes/ts_manyrequests1.png">
-</p>
+	<p align="center">
+	  <img src="imagenes/ts_manyrequests1.png">
+	</p>
 
 ##### Problema
 
@@ -186,10 +196,11 @@ Los diferentes tipos de solicitudes de API a GitHub.com están sujetos a diferen
 
 ##### Solución
 
-* Guarde una versión local del archivo. Puede encontrar el archivo en `fetch/restrictions/servidor/commits_ilya.json`
-	+ Abra el archivo `fetch/cliente/scripts/application.js`
-		- Cambie el URL anterior por `http://localhost:8056/restrictions/servidor/commits_ilya.json`
-	+ Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
+Guarde una versión local del archivo. Puede encontrar el archivo en `fetch/restrictions/servidor/commits_ilya.json`
+	
+* Abra el archivo `fetch/cliente/scripts/application.js`
+	+ Cambie el URL anterior por `http://localhost:8056/restrictions/servidor/commits_ilya.json`
+* Recargue la página en el navegador, realice la petición desde el botón y verifique el resultado.
 
 
 ### Términos
