@@ -88,18 +88,27 @@ let cargarLibros = () => {
       let title = ''
       let isbn = ''
       let shortDescription = ''
-
+      
 
       plantilla = `
-                <div class="card h-100">
+                <div class="card">
                   <div class="card__image-holder">
-                    <img class="card__image" src="${thumbnailUrl}" alt="${title}" />
+                    <img class="card__image" src="${thumbnailUrl}" alt="${isbn}" />
                   </div>
                   <div class="card-title">
+                    <a href="#" class="toggle-info btn">
+                      <span class="left"></span>
+                      <span class="right"></span>
+                    </a>
                     <h2>
                     ${title}
                     <small>${isbn}</small>
                     </h2>
+                  </div>
+                  <div class="card-flap flap1">
+                    <div class="card-description">
+                      ${shortDescription}
+                    </div>
                   </div>
                 </div>
             `
@@ -107,6 +116,10 @@ let cargarLibros = () => {
       document.getElementsByClassName('cards')[0].innerHTML += plantilla
 
     })
+
+    document.querySelectorAll("div.card").forEach(carta => {
+        animarCartas(carta)
+    }) 
     
 }
 
