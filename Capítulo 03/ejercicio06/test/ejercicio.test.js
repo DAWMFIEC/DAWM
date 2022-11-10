@@ -20,40 +20,107 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    it('cargarLibros', function() {
+    let script1 = [
+      `let cargarLibros = async () => {`,
+      `let resultado = await fetch("https://dataserverdawm.herokuapp.com/libros/xml")`,
+      `let data = await resultado.text()`
+    ]
+
+    let script2 = [
+      `let books = xml.querySelectorAll('libros > libro')`
+    ]
+
+    let script3 = [
+      `let title = book.querySelector('title')?book.querySelector('title').textContent:''`,
+      `let isbn = book.querySelector('isbn')?book.querySelector('isbn').textContent:''`,
+      `let shortDescription = book.querySelector('shortDescription')?book.querySelector('shortDescription').textContent:''`
+    ]
+
+    it(`En public/scripts/ejercicio.js con el código:
+
+      ${script1.join('\n')}
+      
+      `, function() {
       return request(app)
         .get('/scripts/ejercicio.js')
         .then((response) => {
 
-         let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,'')
-         let scriptTexto, scriptEjecutable
+          try {
 
-         
-         /* Revisión textual */
-         try {
-            scriptTexto = [`fetch("https://dataserverdaw.herokuapp.com/libros/xml")`, `.then(response => response.text())`, `then(data => {`, `= new DOMParser();`, `.parseFromString(`, `"application/xml");`,
-            `.querySelectorAll('bookstore > book')`, `querySelector('div.cards')`, `.querySelector('title').textContent`, `.querySelector('isbn').textContent`, `.querySelector('shortDescription')`,`.innerHTML += `,
-            `document.querySelectorAll("div.card").forEach(carta => {
-                animarCartas(carta)
-            }) `]
-            for(let elemento of scriptTexto) {
-              chai.expect(responseClean).to.contain(elemento.replace(/(\r\n|\n|\r)/gm, '').replace(/ /gm,''))
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+            
+            for(let elemento of script1) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
             }
             
           } catch (error) {
-            chai.expect.fail('Revise las instrucciones de la función cargarLibros');
+            chai.expect.fail(`Código esperado: 
+              
+              ${script1.join('\n')}
+              
+              `);
             return;
           }
-
-            
+        
         })
-    }); 
+    });
 
+    it(`En public/scripts/ejercicio.js con el código:
 
-    
+      ${script2.join('\n')}
+      
+      `, function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
 
+          try {
 
-    
- 
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+            
+            for(let elemento of script2) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
+            }
+            
+          } catch (error) {
+            chai.expect.fail(`Código esperado: 
+              
+              ${script2.join('\n')}
+              
+              `);
+            return;
+          }
+        
+        })
+    });
+
+    it(`En public/scripts/ejercicio.js con el código:
+
+      ${script3.join('\n')}
+      
+      `, function() {
+      return request(app)
+        .get('/scripts/ejercicio.js')
+        .then((response) => {
+
+          try {
+
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+            
+            for(let elemento of script3) {
+              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
+            }
+            
+          } catch (error) {
+            chai.expect.fail(`Código esperado: 
+              
+              ${script3.join('\n')}
+              
+              `);
+            return;
+          }
+        
+        })
+    });
 
 });

@@ -55,62 +55,62 @@ let animarCartas = (carta) => {
         https://codetogo.io/how-to-fetch-xml-in-javascript/
         
 */
+
+/*Inicio*/
+
+// Petición async/await
+// Convierta la función flecha como async
+
 let cargarLibros = () => {
 
     let plantilla, arreglo, contenedor;
 
-    /*
-        Realice una petición asincrónica fetch al URL "https://dataserverdaw.herokuapp.com/libros/xml"
-        Asigne a la variable arreglo la colección de elementos HTML (HTMLCollection) de las etiquetas 'book' que se encuentren en el XML de respuesta, utilice querySelectorAll con 'bookstore > book'
-        Asigne a la variable contenedor la referencia al div con la clase "cards", use querySelector con 'div.cards'
+    
+   
+    // Petición async/await
+    // Anteponga await a la petición fetch   
+    let resultado = fetch("https://dataserverdawm.herokuapp.com/libros/xml")
 
-        Itere sobre el arreglo de libros y por cada libro, extraiga:
+    // Anteponga await a la conversión de la variable resultado a texto
+    let data = resultado.text()
 
-            title,isbn, thumbnailUrl y shortDescription de cada libro, se recomienda utilizar querySelector
-            Para el caso de shortDescription, no todos los libros tienen texto. Utilice un texto vacío de manera predeterminada.
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(data, "application/xml");
+  
+    // Utilice el selector 'libros > libro'
+    let books = xml.querySelectorAll('')
 
-        Al terminar de iterar y dentro de la función, agrega este código para animar las cartas
-            //animación de las cartas
-            document.querySelectorAll("div.card").forEach(carta => {
-                animarCartas(carta)
-            }) 
-    */
+    books.forEach( book => {
 
-    plantilla = `
-                <div class="card">
+      // Extraiga el contenido del texto para las etiquetas: title, isbn y shortDescription.
+      // Utilice el operador condicional ternario para validar la existencia de las etiquetas previo a extraer el contenido del texto
+      let thumbnailUrl = book.querySelector('thumbnailUrl')?book.querySelector('thumbnailUrl').textContent:''
+      let title = ''
+      let isbn = ''
+      let shortDescription = ''
+
+
+      plantilla = `
+                <div class="card h-100">
                   <div class="card__image-holder">
-                    <img class="card__image" src="${thumbnailUrl}" alt="wave" />
+                    <img class="card__image" src="${thumbnailUrl}" alt="${title}" />
                   </div>
                   <div class="card-title">
-                    <a href="#" class="toggle-info btn">
-                      <span class="left"></span>
-                      <span class="right"></span>
-                    </a>
                     <h2>
                     ${title}
                     <small>${isbn}</small>
                     </h2>
                   </div>
-                  <div class="card-flap flap1">
-                    <div class="card-description">
-                      ${shortDescription}
-                    </div>
-                    <div class="card-flap flap2">
-                      <div class="card-actions">
-                        <a href="#" class="btn">Read more</a>
-                      </div>
-                    </div>
-                  </div>
                 </div>
             `
 
-    /*Inicio*/
-    
-    /*Fin*/
+      document.getElementsByClassName('cards')[0].innerHTML += plantilla
 
-
+    })
     
 }
+
+/*Fin*/
 
 document.addEventListener("DOMContentLoaded", () => {
     cargarLibros()   
