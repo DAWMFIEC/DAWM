@@ -122,42 +122,32 @@ En caso de no existir un anime con el ID, el API devuelve un JSON como el que ap
 * Verifique el resultado de la petición
 	+ **Petición bajo condiciones normales**
 	  - En la pestaña **RED** del inspector, verifique de los siguientes valores
-	<p align="center">
-	  <img src="imagenes/ts_slow1.png">
-	</p>
-
 		- En la página web, haga clic en el botón **Petición a news?category=science**.
 		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
-	<p align="center">
-	  <img src="imagenes/ts_slow11.png">
-	</p>
-
-
+		<p align="center">
+		  <img src="imagenes/ts_slow1.png">
+			<img src="imagenes/ts_slow11.png">
+		</p>
 
 	+ **Petición sin caché del navegador**
 		- En la pestaña **RED** del inspector, verifique de los siguientes valores
-	<p align="center">
-	  <img src="imagenes/ts_slow2.png">
-	</p>
-
 		- En la página web, haga clic en el botón **Petición a news?category=science**.
 		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`
-	<p align="center">
-	  <img src="imagenes/ts_slow21.png">
-	</p>
+		<p align="center">
+		  <img src="imagenes/ts_slow2.png">
+		  <img src="imagenes/ts_slow21.png">
+		</p>
 
-	+ Petición sin caché del navegador + limitación GPRS
+
+	+ **Petición sin caché del navegador + limitación GPRS**
 		- En la pestaña **RED** del inspector, verifique de los siguientes valores
-	<p align="center">
-	  <img src="imagenes/ts_slow3.png">
-	</p>
-	
 		- En la página web, haga clic en el botón **Petición a news?category=science**.
 		- En la consola del inspector, verifique el `Tiempo de ejecución del fetch`	
-	<p align="center">
-	  <img src="imagenes/ts_slow31.png">
-	</p>
-
+		<p align="center">
+		  <img src="imagenes/ts_slow3.png">
+		  <img src="imagenes/ts_slow31.png">
+		</p>
+	
 ##### Problema
 
 Las condiciones de la red pueden generar la sensación de _carga infinita_ al usuario. Los navegadores modernos permiten emular diferentes escenarios para monitorear el comportamiento de las aplicaciones. La opción [Throttling](https://firefox-source-docs.mozilla.org/devtools-user/network_monitor/throttling/index.html) ofrece diferente varios tipos de redes con condiciones para descarga, subida y latencia en la transmisión de datos.
