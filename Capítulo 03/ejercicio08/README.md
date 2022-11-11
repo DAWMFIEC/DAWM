@@ -9,6 +9,8 @@
 ## Respuesta a la ruta "/html"
 ![Respuesta a la ruta "/html"](images/imagen3.png)
 
+## Respuesta a la ruta "/error404"
+![Respuesta a la ruta "/error404"](images/imagen4.png)
 
 ## Requisitos
 
