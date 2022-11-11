@@ -55,4 +55,21 @@ describe('Test unitarios a las rutas del servidor ' + URL, function() {
         })
     });
 
+
+    it('Respuesta del mensaje del servidor de la ruta `/error404`', function() {
+      return request(URL)
+        .get('/error404')
+        .then((response) => {
+            try {
+              let responseClean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /, '')
+              let responseCorrect = `<html><body><h1>Error 404</h1></body></html>`.replace(/ /, '')
+              chai.expect(responseClean).to.contain(responseCorrect)
+            } catch (error) {
+              chai.expect.fail('El mensaje de respuesta debe ser `<html><body><h1>Error 404</h1></body></html>`');
+              return;
+            }
+
+        })
+    });
+
 });

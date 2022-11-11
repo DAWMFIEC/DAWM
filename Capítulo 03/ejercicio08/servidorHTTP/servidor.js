@@ -16,35 +16,54 @@ const manejadorPeticiones = (req, res) => {
         case "/texto":
             /* Inicio */
             //Agregue el encabezado a la respuesta con res.setHeader con el nombre "Content-Type" y el valor "text/plain"
-        
+            
             //Agregue el codigo de estado con res.writeHead con el valor 200
-        
+            
             //Escriba la respuesta con res.end con el texto `Esto es un texto`
-        
-            //Agregue un break;
-        
+            
+            break;
             /* Fin */
 
 
         /* Bloque de instrucciones 2 */
 
-        /* Inicio */
-        //Agregue una opción del switch para la ruta '/json'
+        case "/json":
+            /* Inicio */
+
             //Agregue las cabeceras "Content-Type" para JSON ("application/json") y con estado 200
             //Convierta el objeto libros como string y coloque el string en la respuesta. Utilice la función JSON.stringify
-        
-        /* Fin */
+                 
+
+                
+            /* Fin */
+            break;
 
 
         /* Bloque de instrucciones 3 */
-        /* Inicio */
-        //Agregue una opción del switch para la ruta '/html'
+
+        case "/html":
+            /* Inicio */
+
             //Agregue las cabeceras "Content-Type" para HTML y con estado 200
-            //Escriba la respuesta con res.end con el texto  `<html><body><h1>Esta es una cabecera de nivel 1</h1></body></html>
-        
+            //Escriba la respuesta con res.end con el texto  `<html><body><h1>Esta es una cabecera de nivel 1</h1></body></html>`
+                 
+
+                
+            /* Fin */
+            break;
 
 
-        /* Fin */
+        /* Bloque de instrucciones 4 */
+        case "/error404":
+            /* Inicio */
+
+            //Agregue las cabeceras "Content-Type" para HTML y con estado 404
+            //Escriba la respuesta con res.end con el texto  `<html><body><h1>Error 404</h1></body></html>`
+
+                
+
+            /* Fin */
+            break;
 
     }
 
