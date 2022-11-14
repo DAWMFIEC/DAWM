@@ -27,7 +27,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 07: Javascript > intro](guias/guia07.md)  
 * [Guía 08: Javascript > eventos, DOM y AJAX](guias/guia08.md) 
 * [Guía 09: Javascript > Fetch - Troubleshooting](guias/guia09.md)  
-* [Guía 10: Javascript > Servidores](guias/guia10.md)  
+* [Guía 10: Javascript > Modelo Cliente-Servidor](guias/guia10.md)  
 * [Guía 11: Javascript > Web Sockets](guias/guia11.md) 
 * [Guía 12: Angular > intro](guias/guia12.md) 
 * [Guía 13: Angular > PWA](guias/guia13.md) 
