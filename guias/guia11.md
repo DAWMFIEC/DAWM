@@ -29,16 +29,13 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Diseñe el protocolo de comunicación entre el cliente y el servidor para una aplicación asíncrona meidnate sockets de comunicación. 
+* Diseñe el protocolo de comunicación entre el cliente y el servidor para una aplicación asíncrona mediante sockets de comunicación. 
 
 	- El protocolo de comunicación para el ejercicio de datos de stream, es:
 
-	![Datos por stream](imagenes/datosporstream.png)
+	![Datos por stream](imagenes/3-websocket.png)
 	
-	- Una propuesta del protocolo de comunicación es esta:
-
-	![Datos por stream](imagenes/votaciones.png)
-
+	
 ### Términos
 
 protocolo de comunicación, baja latencia, `sockets`
