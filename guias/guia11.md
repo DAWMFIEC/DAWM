@@ -26,15 +26,13 @@ theme: jekyll-theme-leap-day
 
 
 
-
 ### Actividades
 
-* Diseñe el protocolo de comunicación entre el cliente y el servidor para una aplicación asíncrona mediante sockets de comunicación. 
-
-	- El protocolo de comunicación para el ejercicio de datos de stream, es:
+* El protocolo de comunicación para el ejercicio de datos de stream, es:
 
 	![Datos por stream](imagenes/3-websocket.png)
 	
+* Diseñe el protocolo de comunicación entre el cliente y el servidor para una aplicación asíncrona mediante sockets de comunicación. 
 	
 ### Términos
 
