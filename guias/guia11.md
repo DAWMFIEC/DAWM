@@ -28,11 +28,29 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* El protocolo de comunicación para el ejercicio de datos de stream, es:
+* **Caso de uso:** Visualización de datos en tiempo real
+
+	+ Descargue y descomprima el archivo [visualizacion.zip](../ejercicios/visualizacion.zip).
+		- Servidor
+			1. Desde la línea de comandos en la carpeta del proyecto `servidor`
+			2. Instale los paquetes necesarios, con: `npm install`
+			3. Inicie el servidor HTTP, con: `npm start`
+		- Cliente
+			1. Desde la línea de comandos en la carpeta del proyecto `cliente`
+			2. Inicie el cliente HTTP, con: `python -m http.server 8001`
+			3. Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001`	
+	+ El protocolo de comunicación es:
 
 	![Datos por stream](imagenes/3-websocket.png)
 	
-* Diseñe el protocolo de comunicación entre el cliente y el servidor para una aplicación asíncrona mediante sockets de comunicación. 
+* **Caso de uso:** Votaciones
+	
+	+ Escenario: 
+	+ Solución:
+		- 
+		- 
+		- 
+
 	
 ### Términos
 
