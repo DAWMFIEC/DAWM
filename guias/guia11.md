@@ -28,7 +28,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* **Caso de uso:** Visualización de datos en tiempo real
+* **Escenario:** Visualización de datos en tiempo real
 
 	+ Descargue y descomprima el archivo [visualizacion.zip](../ejercicios/visualizacion.zip).
 		- Servidor
@@ -43,14 +43,13 @@ theme: jekyll-theme-leap-day
 
 	![Datos por stream](imagenes/3-websocket.png)
 	
-* **Caso de uso:** Votación
+* **Escenario:** Sistema de votación en tiempo real para elegir al mejor jugador de la FIFA de entre los 12 mejores.
 	
-	+ Escenario: Se necesita un sistema de votación en tiempo real para escoger al mejor jugador de la FIFA.
 	+ Descargue y descomprima el archivo [votacion.zip](../ejercicios/votacion.zip).
 		- Desde la línea de comandos en al carpeta del proyecto `votacion`
 		- Inicie el cliente HTTP, con: `python -m http.server 8001`
 		- Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001/cliente`	
-	+ Diseñe el protocolo de comunicación cliente-servidor en tiempo real
+	+ Diseñe el protocolo de comunicación cliente-servidor para la comunicación en tiempo real
 	+ Implemente la solución.
 
 	
