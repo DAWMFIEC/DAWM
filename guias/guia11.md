@@ -31,17 +31,22 @@ theme: jekyll-theme-leap-day
 * **Escenario:** Visualización de datos en tiempo real
 
 	+ Descargue y descomprima el archivo [visualizacion.zip](../ejercicios/visualizacion.zip).
-		- Servidor
-			1. Desde la línea de comandos en la carpeta del proyecto `servidor`
+		- ServidorWS
+			1. Desde la línea de comandos en la carpeta del proyecto `servidorWS`
 			2. Instale los paquetes necesarios, con: `npm install`
 			3. Inicie el servidor HTTP, con: `npm start`
-		- Cliente
-			1. Desde la línea de comandos en la carpeta del proyecto `cliente`
+		- ServidoHTTP
+			1. Desde la línea de comandos en la carpeta del proyecto `servidorHTTP`
 			2. Inicie el cliente HTTP, con: `python -m http.server 8001`
-			3. Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001`	
+	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001`	
 	+ El protocolo de comunicación es:
 
 	![Datos por stream](imagenes/3-websocket.png)
+
+* **Solución** 
+	- ServidorWS
+		1. Levante los servicios
+	- ServidorHTTP
 	
 * **Escenario:** Sistema de votación en tiempo real para elegir al mejor jugador de la FIFA de entre los 12 mejores.
 	
@@ -51,6 +56,29 @@ theme: jekyll-theme-leap-day
 		- Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001/cliente`	
 	+ Diseñe el protocolo de comunicación cliente-servidor para la comunicación en tiempo real
 	+ Implemente la solución.
+
+* **Solución** 
+
+	+ Descargue y descomprima el archivo [votacion-solucion.zip](../ejercicios/votacion-solucion.zip).
+		- ServidorHTTP1
+			1. Desde la línea de comandos en la carpeta del proyecto `servidorHTTP1`
+			2. Inicie el cliente HTTP, con: `python -m http.server 8001`
+			3. Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001/jugadores.json`	
+		- ServidorWS
+			1. Desde la línea de comandos en la carpeta del proyecto `servidorWS`
+			2. Instale los paquetes necesarios, con: `npm install`
+			3. Inicie el servidor HTTP, con: `npm start`
+		- ServidorHTTP2
+			1. Desde la línea de comandos en la carpeta del proyecto `servidorHTTP2`
+			2. Inicie el cliente HTTP, con: `python -m http.server 8080`
+
+	+ Proxy
+		- Levante un servidor proxy (Local CORS Proxy)[https://dawfiec.github.io/DAWM/tutoriales/proxy.html]
+		- En el archivo `servidorHTTP2/public/javascripts/application.js`
+			1. Reemplace el URL de la peticion `http://localhost:8001/jugadores.json` por el URL del proxy `'http://localhost:8010/proxy/jugadores.json'`
+	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8080`	
+
+
 
 	
 ### Términos

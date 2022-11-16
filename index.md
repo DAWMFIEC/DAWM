@@ -47,9 +47,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Flexbox - Sitio Web](tutoriales/diseno_flexbox.md)
 
-#### Servidor HTTP
+#### Servidor
 
-* [Python](tutoriales/python.md)
+* [HTTP - Python](tutoriales/python.md)
+* [Local CORS Proxy](tutoriales/lcp.md)
 
 #### Heroku
 
