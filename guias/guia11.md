@@ -75,7 +75,7 @@ theme: jekyll-theme-leap-day
 	+ Proxy
 		- Levante un servidor proxy [Local CORS Proxy](https://dawfiec.github.io/DAWM/tutoriales/proxy.html)
 		- En el archivo `servidorHTTP2/public/javascripts/application.js`
-			1. Reemplace el URL de la peticion `http://localhost:8001/jugadores.json` por el URL del proxy `'http://localhost:8010/proxy/jugadores.json'`
+			1. Reemplace el URL de la peticion `http://localhost:8001/jugadores.json` por el URL del proxy `http://localhost:8010/proxy/jugadores.json`
 	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8080`	
 
 
