@@ -35,7 +35,7 @@ theme: jekyll-theme-leap-day
 			1. Desde la línea de comandos en la carpeta del proyecto `servidorWS`
 			2. Instale los paquetes necesarios, con: `npm install`
 			3. Inicie el servidor HTTP, con: `npm start`
-		- ServidoHTTP
+		- ServidorHTTP
 			1. Desde la línea de comandos en la carpeta del proyecto `servidorHTTP`
 			2. Inicie el cliente HTTP, con: `python -m http.server 8001`
 	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001`	
@@ -44,9 +44,16 @@ theme: jekyll-theme-leap-day
 	![Datos por stream](imagenes/3-websocket.png)
 
 * **Solución** 
-	- ServidorWS
-		1. Levante los servicios
-	- ServidorHTTP
+
+	+ Descargue y descomprima el archivo [visualizacion.zip](../ejercicios/visualizacion.zip)
+		- ServidorWS
+			1. Desde la línea de comandos en la carpeta del proyecto `servidorWS`
+			2. Instale los paquetes necesarios, con: `npm install`
+			3. Inicie el servidor HTTP, con: `npm start`
+		- ServidorHTTP
+			1. Desde la línea de comandos en la carpeta del proyecto `servidorHTTP`
+			2. Inicie el cliente HTTP, con: `python -m http.server 8001`
+	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8001`
 	
 * **Escenario:** Sistema de votación en tiempo real para elegir al mejor jugador de la FIFA de entre los 12 mejores.
 	
