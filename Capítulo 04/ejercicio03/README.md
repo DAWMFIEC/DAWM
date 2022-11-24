@@ -16,15 +16,7 @@
 	+ Instale los paquetes necesarios, con: `npm install`
 * Transpile en modo estricto los archivos de Typescript a Javascript
 * Corrija los errores mostrados por consola y transpile el código.
-* Ejecute el código de Javascript:
-	+ De cada archivo: 
-  	```
-  	node build/interfaz.js
-  	``` 
-
-  	```
-  	node build/clase.js
-  	``` 
+* Ejecute el código de Javascript de cada archivo en la carpeta `build`
 
 
 ## Pruebas unitarias
