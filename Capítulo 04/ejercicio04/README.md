@@ -14,20 +14,9 @@
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
-* Para transpilar de Typescript a Javascript:
-	+  Un archivo, en modo estricto y especificando el directorio de salida:
-	```
-  	npx tsc src/funcion.ts --strict --outDir build 
-  	```
-	+ Todos los archivos, en modo estricto:
-	```
-  	npx tsc --strict
-  	```
-* Para ejecutar código de Javascript:
-	+ Un archivo: 
-  	```
-  	node build/funcion.js
-  	``` 
+* Transpile en modo estricto los archivos de Typescript a Javascript
+* Corrija los errores mostrados por consola y transpile el código.
+* Ejecute el código de Javascript de cada archivo en la carpeta `build`
 
 
 ## Pruebas unitarias
