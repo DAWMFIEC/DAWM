@@ -22,6 +22,10 @@
   	node build/interfaz.js
   	``` 
 
+  	```
+  	node build/clase.js
+  	``` 
+
 
 ## Pruebas unitarias
 
