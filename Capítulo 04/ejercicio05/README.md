@@ -9,7 +9,8 @@
 
 ## Instrucciones
 
-* Tome como referencia las instrucciones de [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html)
+Considere las instrucciones de [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html) para completar esta actividad.
+
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
 * Cree los componentes: **cabecera** y **redes**.
 * Para el componente **cabecera**:
