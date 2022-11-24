@@ -35,7 +35,7 @@ Desde la línea de comandos, en la ruta donde desea crear el proyecto:
 
 * Cree un nuevo sitio con: 
   ```
-  ng new sitioAngular
+  ng new clienteAngular
   ```
 
     + Acepte el manejador de rutas por defecto
@@ -45,7 +45,7 @@ Desde la línea de comandos, en la ruta donde desea crear el proyecto:
 * En cuanto termine la configuración del sitio
     + Ingrese a la carpeta creada: 
       ```
-      cd sitioAngular
+      cd clienteAngular
       ```
 
     + Inicie el servidor con: 
