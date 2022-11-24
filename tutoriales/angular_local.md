@@ -68,17 +68,23 @@ En el proyecto Angular tiene la siguiente estructura de archivos, con su descrip
 * Archivos de configuración
     + **./angular.json** contiene la descripción de los archivos del proyecto
     + **./package.json** contiene la lista de los paquetes instalados
-    + **./tsconfig.json**con los parámetros de compilación del código en TypeScript  
+    + **./tsconfig.json**c on los parámetros de transpilación del código en TypeScript  
           
 * Código fuente
     + **src/styles.css** estilo global de la app
     + **src/index.html** página de inicio
-    + **src/assets** para los archivos estáticos, como imágenes
+    + **src/assets** para los archivos estáticos, p.e. imágenes
     + **src/app** para componentes y servicios
     + **src/app/app.module.ts** punto inicial de la aplicación
     + **src/app/app-routing.module.ts** contiene las rutas que manejará la aplicación
-* Componentes: Cada componente tiene un ts, .html, .spec y .css; o todo embebido en un .ts  
-    + **src/app/app.component:** Componente principal 
+* Componentes:
+    + **src/app** ruta donde se guardarán los componentes
+    + **src/app/app.component** componente _app_ con los archivos con extensión:
+        -  **src/app/app.component.ts** controlador del componente,  
+        -  **src/app/app.component.html** vista del componente,
+        -  **src/app/app.component.css** estilo del componente, y 
+        -  **src/app/app.component.spec** test del componente
+
 
     ![Estructura de un componente de Angular](https://contraslash.github.io/todo-list-tutorial-spanish/Angular%20Component.001.jpeg)
 
