@@ -30,6 +30,10 @@
   	node build/tipo.js
   	``` 
 
+  	```
+  	node build/anotacion.js
+  	``` 
+
 
 ## Pruebas unitarias
 
