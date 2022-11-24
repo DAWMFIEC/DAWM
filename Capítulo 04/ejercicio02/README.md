@@ -14,7 +14,7 @@
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
-* Transpile en modo estricto de Typescript a Javascript:
+* Transpile en modo estricto los archivos de Typescript a Javascript:
 	+  Ya sea cada archivo y especificando el directorio de salida:
 	```
   	npx tsc src/tipo.ts --strict --outDir build 
