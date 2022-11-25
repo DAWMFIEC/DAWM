@@ -111,7 +111,7 @@
 
 ## Pruebas unitarias
 
-* Copie cada archivo de la carpeta **.spec.ts** por el archivo **.spec.ts** en su proyecto de Angular.
+* Reemplace cada archivo de la carpeta **.spec.ts** por el archivo correspondiente **.spec.ts** en su proyecto de Angular.
 	+ `specs/app.component.spec.ts` por `src/app/app.component.spec.ts`
 	+ `specs/cabecera.component.spec.ts` por `src/app/cabecera/cabecera.component.spec.ts`
 	+ `specs/redes.component.spec.ts` por `src/app/redes/redes.component.spec.ts`
