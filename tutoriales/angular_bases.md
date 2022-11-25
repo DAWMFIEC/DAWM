@@ -71,9 +71,9 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
     ```
     por el selector **`<app-contacto>`**
     ```
-    <div class="col-sm-4 offset-md-1 py-4">
-      <app-contacto></app-contacto>
-    </div>
+      <div class="col-sm-4 offset-md-1 py-4">
+        <app-contacto></app-contacto>
+      </div>
     ``` 
 
     + Actualice el navegador o (re)inicie el servidor
@@ -87,12 +87,12 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 
     + Reemplace el contenido por
     ```
-    <h4 class="text-white">Aquí irá el título</h4>
-    <ul class="list-unstyled">
-      <li><a href="#" class="text-white">Medio 1</a></li>
-      <li><a href="#" class="text-white">Medio 2</a></li>
-      <li><a href="#" class="text-white">Medio 3</a></li>
-    </ul>
+      <h4 class="text-white">Aquí irá el título</h4>
+      <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Medio 1</a></li>
+        <li><a href="#" class="text-white">Medio 2</a></li>
+        <li><a href="#" class="text-white">Medio 3</a></li>
+      </ul>
     ```
 
     + Actualice el navegador o (re)inicie el servidor
@@ -131,13 +131,13 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
   
     + Reemplace el contenido por
     ```
-    <h4 class="text-white">Contáctame</h4>
+      <h4 class="text-white">Contáctame</h4>
     ```
     por
     ```
-    <div>
-    {% raw %} {{titulo}} {% endraw %} 
-    </div>
+      <div>
+      {% raw %} {{titulo}} {% endraw %} 
+      </div>
     ```
 
 * Actualice el navegador o (re)inicie el servidor
@@ -179,21 +179,21 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
   
     + Reemplace el contenido por
     ```
-    <ul class="list-unstyled">
-      <li><a href="#" class="text-white">Medio 1</a></li>
-      <li><a href="#" class="text-white">Medio 2</a></li>
-      <li><a href="#" class="text-white">Medio 3</a></li>
-    </ul>
+      <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Medio 1</a></li>
+        <li><a href="#" class="text-white">Medio 2</a></li>
+        <li><a href="#" class="text-white">Medio 3</a></li>
+      </ul>
     ```
     por
     ```
-    <ul class="list-unstyled">
-      <li *ngFor="let medio of medios">
-        <a href="#" class="text-white">
-          {% raw %} {{medio.texto}} {% endraw %}
-        </a>
-      </li>
-    </ul>
+      <ul class="list-unstyled">
+        <li *ngFor="let medio of medios">
+          <a href="#" class="text-white">
+            {% raw %} {{medio.texto}} {% endraw %}
+          </a>
+        </li>
+      </ul>
     ```
 
 * Actualice el navegador o (re)inicie el servidor
