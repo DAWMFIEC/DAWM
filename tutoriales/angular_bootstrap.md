@@ -18,8 +18,14 @@ Proyecto en Angular
 
 Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html).
 
-* Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
+* Desde tu repositorio personal
+* O, desde el repositorio del curso
+  + Clona el proyecto en la rama **app** en la carpeta **aplicaciones**, con: `git clone -b app --single-branch https://github.com/DAWFIEC/DAWM.git aplicaciones`
+  + Ingresa a la carpeta **aplicaciones**, con: `cd aplicaciones`
+  + Cambia el repositorio al _checkout_ correspondiente, con: `git checkout ab38d8c`
+  + Ingresa a la carpeta **album/clienteAngular**, con: `cd album/clienteAngular`
+  + Instala las dependencias, con: `npm install`
+  + Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
 
 
 Instalación de Bootstrap (y dependencias)
@@ -109,3 +115,4 @@ Referencias
 * bootstrap. (2021). Retrieved 13 July 2021, from https://www.npmjs.com/package/bootstrap#quick-start
 * How to add Bootstrap 5 to your Angular 11 project. (2019). Retrieved 13 July 2021, from https://dev.to/myolisi/how-to-add-bootstrap-5-to-your-angular-11-project-1am2
 * Angular & Bootstrap 3. (2020). Retrieved 9 July 2022, from https://medium.com/@d.bengati/angular-bootstrap-3-d383ee300ba1
+* How To Checkout/Clone From A Specific Git Commit Id (SHA). (2021). Retrieved 25 November 2022, from https://devopscube.com/checkout-clone-specific-git-commit-id-sha/
