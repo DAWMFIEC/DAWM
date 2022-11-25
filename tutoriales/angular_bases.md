@@ -47,7 +47,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 * Renderice el componente **contacto** dentro del componente **app**:
     
     + Identifique el `selector` del componente hijo en el decorador de la clase:
-      ```
+      ```javascript
       ...
       @Component({
         selector: 'app-contacto',
@@ -59,8 +59,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
       ```
 
     + En el _html_ (la vista) del componente **app**, reemplace el contenido 
-
-      ```
+      ```html
       <div class="col-sm-4 offset-md-1 py-4">
         <h4 class="text-white">Contact</h4>
         <ul class="list-unstyled">
@@ -72,7 +71,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
       ```
       
       por el selector **`<app-contacto>`** 
-      ```
+      ```html
       <div class="col-sm-4 offset-md-1 py-4">
         <app-contacto></app-contacto>
       </div>
@@ -88,8 +87,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 * Modifique el _html_ (la vista) del componente **contacto**:
 
     + Reemplace el contenido por 
-    
-    ```
+    ```html
     <h4 class="text-white">Aquí irá el título</h4>
     <ul class="list-unstyled">
       <li><a href="#" class="text-white">Medio 1</a></li>
@@ -122,7 +120,7 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
 * En el _.ts_ (el controlador) del componente **contacto**
 
     + Agregue el atributo *titulo*, con su tipo, dentro de la clase
-    ```
+    ```javascript
       ...
     export class ContactoComponent {
         titulo:string = "Contáctame"
@@ -133,12 +131,12 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
 * En el _html_ (la vista) del componente **contacto**
   
     + Reemplace el contenido por  
-    ```
+    ```html
     <h4 class="text-white">Contáctame</h4>
     ```
 
     + Por
-    ```
+    ```html
       <div>
       {% raw %} {{titulo}} {% endraw %} 
       </div>
@@ -167,8 +165,7 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
 * En el _.ts_ (el controlador) del componente **contacto**
 
     + Agregue el atributo *mecanismos*, dentro de la clase
-
-    ```
+    ```javascript
       ...
     export class ContactoComponent {
         ...
@@ -183,7 +180,7 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
 * En el _html_ (la vista) del componente **contacto**
   
     + Reemplace el contenido por  
-    ```
+    ```html
     <ul class="list-unstyled">
       <li><a href="#" class="text-white">Medio 1</a></li>
       <li><a href="#" class="text-white">Medio 2</a></li>
@@ -192,7 +189,7 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
     ```
 
     + Por
-    ```
+    ```html
     <ul class="list-unstyled">
       <li *ngFor="let medio of medios">
         <a href="#" class="text-white">
