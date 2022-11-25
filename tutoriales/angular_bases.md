@@ -205,6 +205,9 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
 Directivas estructurales - (\*ngIf)
 ------------------------------------
 
+Con esta directiva estructural [\*ngIf](https://angular.io/api/common/NgIf) podemos controlar la visibilidad de un elemento HTML de acuerdo con una condición.
+
+
 
 Referencias 
 ===========
