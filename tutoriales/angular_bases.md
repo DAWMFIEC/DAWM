@@ -59,23 +59,22 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
     ```
 
     + En el _html_ (la vista) del componente **app**, reemplace el contenido
-    ```html
-    <div class="col-sm-4 offset-md-1 py-4">
-      <h4 class="text-white">Contact</h4>
-      <ul class="list-unstyled">
-        <li><a href="#" class="text-white">Follow on Twitter</a></li>
-        <li><a href="#" class="text-white">Like on Facebook</a></li>
-        <li><a href="#" class="text-white">Email me</a></li>
-      </ul>
-    </div>
     ```
-      
-      por el selector **`<app-contacto>`**
-        ```html
-        <div class="col-sm-4 offset-md-1 py-4">
-          <app-contacto></app-contacto>
-        </div>
-        ``` 
+      <div class="col-sm-4 offset-md-1 py-4">
+        <h4 class="text-white">Contact</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Follow on Twitter</a></li>
+          <li><a href="#" class="text-white">Like on Facebook</a></li>
+          <li><a href="#" class="text-white">Email me</a></li>
+        </ul>
+      </div>
+    ```
+    por el selector **`<app-contacto>`**
+    ```
+    <div class="col-sm-4 offset-md-1 py-4">
+      <app-contacto></app-contacto>
+    </div>
+    ``` 
 
     + Actualice el navegador o (re)inicie el servidor
     + Notará que al abrir la barra superior aparece la vista predeterminada del componente, con el texto: `contacto works!`.
@@ -87,7 +86,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 * Modifique el _html_ (la vista) del componente **contacto**:
 
     + Reemplace el contenido por
-    ```html
+    ```
     <h4 class="text-white">Aquí irá el título</h4>
     <ul class="list-unstyled">
       <li><a href="#" class="text-white">Medio 1</a></li>
@@ -131,12 +130,11 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
 * En el _html_ (la vista) del componente **contacto**
   
     + Reemplace el contenido por
-    ```html
+    ```
     <h4 class="text-white">Contáctame</h4>
     ```
-
-    + Por
-    ```html
+    por
+    ```
     <div>
     {% raw %} {{titulo}} {% endraw %} 
     </div>
@@ -180,16 +178,15 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
 * En el _html_ (la vista) del componente **contacto**
   
     + Reemplace el contenido por
-    ```html
+    ```
     <ul class="list-unstyled">
       <li><a href="#" class="text-white">Medio 1</a></li>
       <li><a href="#" class="text-white">Medio 2</a></li>
       <li><a href="#" class="text-white">Medio 3</a></li>
     </ul>
     ```
-
-    + Por
-    ```html
+    por
+    ```
     <ul class="list-unstyled">
       <li *ngFor="let medio of medios">
         <a href="#" class="text-white">
