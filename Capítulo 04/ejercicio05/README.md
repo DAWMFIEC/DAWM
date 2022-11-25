@@ -113,7 +113,7 @@ Considere las instrucciones de [Angular - Componentes, Comunicación y Directiva
 
 ## Pruebas unitarias
 
-* En su proyecto de Angular, reemplace los archivos **.spec.ts** con los archivos **.spec.ts** (que se encuentran en la carpeta `specs`) de este repositorio.
+* Copie cada archivo de la carpeta **.spec.ts** por el archivo **.spec.ts** en su proyecto de Angular.
 	+ `specs/app.component.spec.ts` por `src/app/app.component.spec.ts`
 	+ `specs/cabecera.component.spec.ts` por `src/app/cabecera/cabecera.component.spec.ts`
 	+ `specs/redes.component.spec.ts` por `src/app/redes/redes.component.spec.ts`
