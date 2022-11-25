@@ -135,9 +135,7 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
     ```
     por
     ```
-      <div>
-      {% raw %} {{titulo}} {% endraw %} 
-      </div>
+      <h4 class="text-white"> {% raw %} {{titulo}} {% endraw %} </h4>
     ```
 
 * Actualice el navegador o (re)inicie el servidor
