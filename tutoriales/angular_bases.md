@@ -14,8 +14,16 @@ Proyecto en Angular
 
 Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
 
-* Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
+* Desde tu repositorio personal
+* O, desde el repositorio del curso, con:
+  ```
+  git clone -b app --single-branch https://github.com/DAWFIEC/DAWM.git aplicaciones
+  cd aplicaciones
+  git checkout 4fdc65a
+  cd album/clienteAngular
+  npm install
+  ng serve -o
+  ```
 
 
 Componentes
@@ -27,55 +35,73 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 
 ![Componentes](https://www.simplilearn.com/ice9/free_resources_article_thumb/Components_Heirarchy-Angular_Components.PNG)
 
-* Para crear un componente:
+* Desde la línea de comandos, en la ruta raíz del proyecto de Angular, cree el componente **contacto**: `ng g c contacto`
+    + El mensaje de `update` indica que el componente creado está incluido en el arreglo de declaraciones del componente principal (`src/app/app.module.ts`).
 
-    + Desde la línea de comandos, en la ruta raíz del proyecto de Angular:
-      ```
-      ng g c <nombre-del-componente>
-      ```
-    + El mensaje de `update` indica que el componente creado está incluido en el arreglo de declaraciones del componente principal (`src/app.module.ts`).
-
-    <p align="center">
-      <img width="790" height="100" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Component_Message.PNG">
-    </p>
+    ![angular componente contacto](imagenes/angular_componente_contacto.png)
 
     + Se creará una carpeta con el nombre del componente, con los elementos: **.html**, **.css**, **.ts** (luego, Angular se encargará de transpilar a **.js**) y **.spec.ts** (pruebas unitarias sobre el componente).
 
-    <p align="center">
-      <img width="331" height="142" src="https://www.simplilearn.com/ice9/free_resources_article_thumb/Create_component.PNG">
-    </p>
+    ![angular componente contacto archivos](imagenes/angular_componente_contacto_archivos.png)
 
-    
-    
-
-* Para modificar (la vista) un componente:
-
-    + Modifique las etiquetas html, en el archivo **.html** del componente.
-    + Modifique los selectores y propiedades css de las etiquetas html del componente, en el archivo **.css** del componente.
-    + Actualice el navegador o (re)inicie el servidor
-
-* Para usar (renderizar) un componente dentro de otro componente:
+* Renderice el componente **contacto** dentro del componente **app**:
     
     + Identifique el `selector` del componente hijo en el decorador de la clase:
       ```
-        ...
+      ...
       @Component({
-          selector: 'app-cabecera',
-          templateUrl: './cabecera.component.html',
-          styleUrls: ['./cabecera.component.css']
+        selector: 'app-contacto',
+        templateUrl: './contacto.component.html',
+        styleUrls: ['./contacto.component.css']
       })
-      export class CabeceraComponent {
-        ...
+      export class ContactoComponent {
+      ...
       ```
 
-    + Use el `selector` en el **.html** de cualquier otro componente
+    + En el _html_ (la vista) del componente **app**, reemplace el contenido 
+
       ```
-      <app-cabecera></app-cabecera>
+      <div class="col-sm-4 offset-md-1 py-4">
+        <h4 class="text-white">Contact</h4>
+        <ul class="list-unstyled">
+          <li><a href="#" class="text-white">Follow on Twitter</a></li>
+          <li><a href="#" class="text-white">Like on Facebook</a></li>
+          <li><a href="#" class="text-white">Email me</a></li>
+        </ul>
+      </div>
+      ```
+      
+      por el selector **`<app-contacto>`** 
+      ```
+      <div class="col-sm-4 offset-md-1 py-4">
+        <app-contacto></app-contacto>
+      </div>
       ``` 
 
     + Actualice el navegador o (re)inicie el servidor
+    + Notará que al abrir la barra superior aparece la vista predeterminada del componente, con el texto: `contacto works!`.
 
+    ![angular componente contacto salida](imagenes/angular_componente_contacto_salida.png)
+    
 
+  
+* Modifique el _html_ (la vista) del componente **contacto**:
+
+    + Reemplace el contenido por 
+    
+    ```
+    <h4 class="text-white">Aquí irá el título</h4>
+    <ul class="list-unstyled">
+      <li><a href="#" class="text-white">En Twitter</a></li>
+      <li><a href="#" class="text-white">En Facebook</a></li>
+      <li><a href="#" class="text-white">Por correo electrónico</a></li>
+    </ul>
+    ```
+
+    + Actualice el navegador o (re)inicie el servidor
+    + Notará que al abrir la barra superior aparece la vista modificada.
+
+    ![angular componente contacto salida2](imagenes/angular_componente_contacto_salida2.png)
 
 Comunicación 
 ============
@@ -93,28 +119,35 @@ De una vía (one-way binding) - string interpolation
 
 La interpolación se refiere a incrustar expresiones en texto marcado. De forma predeterminada, la interpolación utiliza llaves dobles {{ y }} como delimitadores.
 
-* En el **.ts** del componente
+* En el _.ts_ (el controlador) del componente **contacto**
 
-  + Agregue el atributo *mensaje*, con su tipo, dentro de la clase
-
+    + Agregue el atributo *titulo*, con su tipo, dentro de la clase
     ```
       ...
-    export class CabeceraComponent {
-        mensaje:string = "Este es un mensaje"
+    export class ContactoComponent {
+        titulo:string = "Contáctame"
     }
       ...
     ```
-* En el **.html** del componente
+
+* En el _html_ (la vista) del componente **contacto**
   
-  + Agregue las etiquetas HTML que sean necesarias y coloque como texto el atributo `mensaje` dentro de llaves dobles.
-  
+    + Reemplace el contenido por  
+    ```
+    <h4 class="text-white">Contáctame</h4>
+    ```
+
+    + Por
     ```
       <div>
-      {% raw %} {{mensaje}} {% endraw %} 
+      {% raw %} {{titulo}} {% endraw %} 
       </div>
     ```
 
 * Actualice el navegador o (re)inicie el servidor
+* Notará que al abrir la barra superior aparece la vista modificada.
+
+    ![angular componente contacto salida3](imagenes/angular_componente_contacto_salida3.png)
     
 Directivas 
 ==========
