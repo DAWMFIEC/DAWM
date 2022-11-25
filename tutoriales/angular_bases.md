@@ -121,11 +121,11 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
 
     + Agregue el atributo *titulo*, con su tipo, dentro de la clase
     ```javascript
-      ...
+    ...
     export class ContactoComponent {
         titulo:string = "Contáctame"
     }
-      ...
+    ...
     ```
 
 * En el _html_ (la vista) del componente **contacto**
@@ -137,9 +137,9 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
 
     + Por
     ```html
-      <div>
-      {% raw %} {{titulo}} {% endraw %} 
-      </div>
+    <div>
+    {% raw %} {{titulo}} {% endraw %} 
+    </div>
     ```
 
 * Actualice el navegador o (re)inicie el servidor
@@ -166,7 +166,7 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
 
     + Agregue el atributo *mecanismos*, dentro de la clase
     ```javascript
-      ...
+    ...
     export class ContactoComponent {
         ...
         medios:any[] = [
@@ -174,7 +174,7 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
           {"texto":"En Facebook"},
           {"texto":"Por correo electrónico"}
         ]
-      ...
+    ...
     ```
 
 * En el _html_ (la vista) del componente **contacto**
