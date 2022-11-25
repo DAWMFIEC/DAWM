@@ -204,6 +204,11 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
 
     ![angular componente contacto salida4](imagenes/angular_componente_contacto_salida4.png)
 
+
+Directivas estructurales - (\*ngIf)
+------------------------------------
+
+
 Referencias 
 ===========
 
