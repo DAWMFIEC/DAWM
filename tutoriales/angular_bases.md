@@ -47,35 +47,35 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 * Renderice el componente **contacto** dentro del componente **app**:
     
     + Identifique el `selector` del componente hijo en el decorador de la clase:
-      ```javascript
-      ...
-      @Component({
-        selector: 'app-contacto',
-        templateUrl: './contacto.component.html',
-        styleUrls: ['./contacto.component.css']
-      })
-      export class ContactoComponent {
-      ...
-      ```
+    ```javascript
+    ...
+    @Component({
+      selector: 'app-contacto',
+      templateUrl: './contacto.component.html',
+      styleUrls: ['./contacto.component.css']
+    })
+    export class ContactoComponent {
+    ...
+    ```
 
-    + En el _html_ (la vista) del componente **app**, reemplace el contenido 
-      ```html
-      <div class="col-sm-4 offset-md-1 py-4">
-        <h4 class="text-white">Contact</h4>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white">Follow on Twitter</a></li>
-          <li><a href="#" class="text-white">Like on Facebook</a></li>
-          <li><a href="#" class="text-white">Email me</a></li>
-        </ul>
-      </div>
-      ```
+    + En el _html_ (la vista) del componente **app**, reemplace el contenido
+    ```html
+    <div class="col-sm-4 offset-md-1 py-4">
+      <h4 class="text-white">Contact</h4>
+      <ul class="list-unstyled">
+        <li><a href="#" class="text-white">Follow on Twitter</a></li>
+        <li><a href="#" class="text-white">Like on Facebook</a></li>
+        <li><a href="#" class="text-white">Email me</a></li>
+      </ul>
+    </div>
+    ```
       
-      por el selector **`<app-contacto>`** 
-      ```html
-      <div class="col-sm-4 offset-md-1 py-4">
-        <app-contacto></app-contacto>
-      </div>
-      ``` 
+      por el selector **`<app-contacto>`**
+        ```html
+        <div class="col-sm-4 offset-md-1 py-4">
+          <app-contacto></app-contacto>
+        </div>
+        ``` 
 
     + Actualice el navegador o (re)inicie el servidor
     + Notará que al abrir la barra superior aparece la vista predeterminada del componente, con el texto: `contacto works!`.
@@ -86,7 +86,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
   
 * Modifique el _html_ (la vista) del componente **contacto**:
 
-    + Reemplace el contenido por 
+    + Reemplace el contenido por
     ```html
     <h4 class="text-white">Aquí irá el título</h4>
     <ul class="list-unstyled">
@@ -130,7 +130,7 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
 
 * En el _html_ (la vista) del componente **contacto**
   
-    + Reemplace el contenido por  
+    + Reemplace el contenido por
     ```html
     <h4 class="text-white">Contáctame</h4>
     ```
@@ -179,7 +179,7 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
 
 * En el _html_ (la vista) del componente **contacto**
   
-    + Reemplace el contenido por  
+    + Reemplace el contenido por
     ```html
     <ul class="list-unstyled">
       <li><a href="#" class="text-white">Medio 1</a></li>
