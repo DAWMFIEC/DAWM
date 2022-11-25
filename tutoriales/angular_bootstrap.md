@@ -101,7 +101,7 @@ Ahora es momento de incorporar una plantilla de Bootstrap dentro de tu proyecto 
 
 * Del archivo **"bootstrap-x.y.z-examples\\album\\index.html"**, copie las etiquetas _header_, _main_ y _footer_.
 * En el proyecto de Angular, **reemplace TODO** el contenido del archivo "**src/app/app.component.html"** por las etiquetas copiadas (_header_, _main_ y _footer_).
-* Identifique si el servidor de Angular se encuentra ejecutándose o no. De ser necesario inicia el servidor:**ng serve**.
+* Identifique si el servidor de Angular se encuentra ejecutándose o no. De ser necesario inicia el servidor, con: `ng serve`.
 * El sitio de Angular luce así en el navegador.
 
 ![angular bootstrap plantilla final](imagenes/angular_bootstrap_final.png)
