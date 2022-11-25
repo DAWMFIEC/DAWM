@@ -76,7 +76,7 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
 
 *   (Re)Inicie el servidor de Angular: 
     ```
-    ng serve
+    ng serve -o
     ```
     
 *   Notarás que el estilo por defecto del sitio ha cambiado.
@@ -92,16 +92,16 @@ Plantilla de Bootstrap
 
 Ahora es momento de incorporar una plantilla de Bootstrap dentro de tu proyecto de Angular:
 
-* Descarga los ejemplos de [Bootstrap](https://getbootstrap.com/docs/5.2/examples/).
-* Descomprime el archivo que descargaste y selecciona un ejemplo.
-* En este caso, utilizaremos el ejemplo **album**: **"bootstrap-5.2.0-beta1-examples\\album"**.
-    + Abre el archivo **"bootstrap-5.2.0-beta1-examples\\album\\index.html"** en el navegador. El archivo luce así en el navegador.
+* Descargue los ejemplos de [Bootstrap](https://getbootstrap.com/docs/5.2/examples/).
+* Descomprima el archivo que descargaste y selecciona un ejemplo.
+* En este caso, utilizaremos el ejemplo **album**: **"bootstrap-x.y.z-examples\\album"**.
+    + Abra el archivo **"bootstrap-x.y.z-examples\\album\\index.html"** en el navegador. El archivo luce así en el navegador.
 
 ![angular bootstrap plantilla](imagenes/angular_bootstrap_plantilla.png)
 
-* Del archivo **"bootstrap-5.2.0-beta1-examples\\album\\index.html"**, copia las etiquetas _header_, _main_ y _footer_.
-* En el proyecto de Angular, **reemplaza TODO** el contenido del archivo "**src/app/app.component.html"** por las etiquetas copiadas (_header_, _main_ y _footer_).
-* Identifica si el servidor de Angular se encuentra ejecutándose o no. De ser necesario inicia el servidor:**ng serve**.
+* Del archivo **"bootstrap-x.y.z-examples\\album\\index.html"**, copie las etiquetas _header_, _main_ y _footer_.
+* En el proyecto de Angular, **reemplace TODO** el contenido del archivo "**src/app/app.component.html"** por las etiquetas copiadas (_header_, _main_ y _footer_).
+* Identifique si el servidor de Angular se encuentra ejecutándose o no. De ser necesario inicia el servidor:**ng serve**.
 * El sitio de Angular luce así en el navegador.
 
 ![angular bootstrap plantilla final](imagenes/angular_bootstrap_final.png)
