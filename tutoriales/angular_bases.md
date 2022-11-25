@@ -81,7 +81,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
     + Actualice el navegador o (re)inicie el servidor
     + Notará que al abrir la barra superior aparece la vista predeterminada del componente, con el texto: `contacto works!`.
 
-    ![angular componente contacto salida](imagenes/angular_componente_contacto_salida.png)
+    ![angular componente contacto salida1](imagenes/angular_componente_contacto_salida1.png)
     
 
   
@@ -92,9 +92,9 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
     ```
     <h4 class="text-white">Aquí irá el título</h4>
     <ul class="list-unstyled">
-      <li><a href="#" class="text-white">En Twitter</a></li>
-      <li><a href="#" class="text-white">En Facebook</a></li>
-      <li><a href="#" class="text-white">Por correo electrónico</a></li>
+      <li><a href="#" class="text-white">Medio 1</a></li>
+      <li><a href="#" class="text-white">Medio 2</a></li>
+      <li><a href="#" class="text-white">Medio 3</a></li>
     </ul>
     ```
 
@@ -164,61 +164,48 @@ Directivas estructurales - (\*ngFor)
 
 Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) podemos repetir n veces un bloque de etiquetas.
 
-* En el **.ts** del componente
+* En el _.ts_ (el controlador) del componente **contacto**
 
-  + Agregue el atributo *terminos*, con su tipo, dentro de la clase
+    + Agregue el atributo *mecanismos*, dentro de la clase
 
     ```
       ...
-    export class CabeceraComponent {
+    export class ContactoComponent {
         ...
-        terminos:any[] = [
-          {
-          "palabra":"fork",
-          "significado":"Copia de un proyecto en una dirección distinta en el repositorio",
-          "enlace":"https://es.wikipedia.org/wiki/Bifurcación_(desarrollo_de_software)",
-          "autor":"Autor 1"
-          },
-          {
-          "palabra":"saas",
-          "significado":"'Software as a Service', mediante un navegador web se accede a 
-                    un software el cual se enceuntra alojado en servidores del proveedor",
-          "enlace":" http://www.portalsaas.com/que-es-saas-software-as-a-service.php",
-          "autor":"Autor 2"
-          },
+        medios:any[] = [
+          { "texto":"En Twitter"},
+          {"texto":"En Facebook"},
+          {"texto":"Por correo electrónico"}
         ]
       ...
     ```
 
-* En el **.html** del componente
+* En el _html_ (la vista) del componente **contacto**
   
-  + Agregue la plantilla de etiquetas HTML
-
+    + Reemplace el contenido por  
     ```
-    <div class="card-columns">
-
-      <!-- *ngFor -->
-      <div class="card" *ngFor="let termino of terminos">
-        <div class="card-body">
-           <!-- Enlace -->
-           <a href="#" class="card-link"  href="{% raw %} {{termino.enlace}} {% endraw %}" target="_blank">
-            <h5 class="card-title">
-              <!-- Palabra --> {% raw %} {{termino.palabra}} {% endraw %}
-            </h5>
-          </a>
-          <p class="card-text">    
-            <!-- Significado -->
-             {% raw %} {{termino.significado}} {% endraw %}
-          </p>
-          <h6 class="card-subtitle mb-2 text-muted text-right">  
-            <!-- Autor -->  {% raw %} {{termino.autor}} {% endraw %}
-          </h6>
-        </div>
-      </div>
-
-    </div>
+    <ul class="list-unstyled">
+      <li><a href="#" class="text-white">Medio 1</a></li>
+      <li><a href="#" class="text-white">Medio 2</a></li>
+      <li><a href="#" class="text-white">Medio 3</a></li>
+    </ul>
     ```
+
+    + Por
+    ```
+    <ul class="list-unstyled">
+      <li *ngFor="let medio of medios">
+        <a href="#" class="text-white">
+          {% raw %} {{medio.texto}} {% endraw %}
+        </a>
+      </li>
+    </ul>
+    ```
+
 * Actualice el navegador o (re)inicie el servidor
+* Notará que al abrir la barra superior aparece la vista modificada.
+
+    ![angular componente contacto salida4](imagenes/angular_componente_contacto_salida4.png)
 
 Referencias 
 ===========
