@@ -85,7 +85,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
   
 * Modifique el _html_ (la vista) del componente **contacto**:
 
-    + Reemplace el contenido por
+    + Reemplace TODO el contenido por
     ```
       <h4 class="text-white">Aquí irá el título</h4>
       <ul class="list-unstyled">
