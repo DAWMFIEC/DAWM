@@ -5,11 +5,9 @@
 
 ## Requisitos
 
-* Complete las actividades de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html)
+* Complete las actividades de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) y [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html)
 
 ## Instrucciones
-
-Considere las instrucciones de [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html) para completar esta actividad.
 
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
 * Cree los componentes: **cabecera** y **redes**.
