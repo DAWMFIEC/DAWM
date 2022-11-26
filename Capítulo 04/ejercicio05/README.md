@@ -140,6 +140,7 @@
 
 * DAWM-2022. (2022). Retrieved 15 July 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html
 * Angular. (2022). Retrieved 26 November 2022, from https://angular.io/api/core/ng-container
+* Maluenda, R. (2018). Angular Templates: las directivas ng-template, ng-container y ngTemplateOutlet. Retrieved 26 November 2022, from https://profile.es/blog/angular-templates-las-directivas-ng-template-ng-container-y-ngtemplateoutlet/
 * Angular. (2022). Retrieved 26 November 2022, from https://angular.io/api/common/NgIf
 * element, A., P, A., & Kern, K. (2017). Angular 2 Karma Test 'component-name' is not a known element. Retrieved 26 November 2022, from https://stackoverflow.com/questions/44504468/angular-2-karma-test-component-name-is-not-a-known-element
 * error, *., Z&#246;chbauer, G., perera, i., & Rajcok, M. (2016). *ngIf and *ngFor on same element causing error. Retrieved 26 November 2022, from https://stackoverflow.com/questions/34657821/ngif-and-ngfor-on-same-element-causing-error
