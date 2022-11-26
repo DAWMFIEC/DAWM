@@ -22,8 +22,16 @@ Proyecto en Angular
 
 Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) y [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html).
 
-* Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
+* Desde tu repositorio personal
+* O, desde el repositorio del curso, con:
+  ```
+  git clone -b app --single-branch https://github.com/DAWFIEC/DAWM.git aplicaciones
+  cd aplicaciones
+  git checkout b28de6c
+  cd album/clienteAngular
+  npm install
+  ng serve -o
+  ```
 
 
 Proyecto en producción
@@ -38,16 +46,13 @@ Proyecto en producción
     <img width="609" height="153" src="imagenes/buildPath.JPG">
   </p>
 * Levante un servidor HTTP con Python o con Nodejs
-  + Con Python: 
+  + Con [Python](https://dawfiec.github.io/DAWM/tutoriales/python.html) especificando la ruta del punto de inicio: 
     - Levante el servidor, con: `python -m http.server --directory dist/<nombre-del-proyecto> 8081`
-  + Con Nodejs: 
+  + o, Con [Nodejs](https://dawfiec.github.io/DAWM/tutoriales/nodejs.html) especificando la ruta del punto de inicio: 
   	- Instale (solo una vez) el módulo globalmente, con: `npm install -g http-server`
   	- Levante el servidor, con: `http-server -p 8082 -c-1 dist/<nombre-del-proyecto>`
 
-  <p align="center">
-    <img src="imagenes/angular_pwa_build.png">
-  </p>
-* Desde el navegador acceda a alguna de las URLs disponibles
+* Desde el navegador acceda a la URL para el **localhost**
   <p align="center">
     <img width="399" height="500" src="imagenes/angular_bases.png">
   </p>
@@ -129,8 +134,8 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
     <img width="399" height="500" src="imagenes/angular_bases.png">
   </p>
 
-Instalación de la aplicación
-============================
+Instalación de la aplicación (solo para Chromium)
+================================================
 
 * * *
 
@@ -155,4 +160,5 @@ Referencias
 
 * Aplicaciones Web Progresivas MDN. (2022). Retrieved 17 July 2022, from https://developer.mozilla.org/es/docs/Web/Progressive_web_apps
 * PWA: guía del manifest file. (2020). Retrieved 17 July 2022, from https://medium.com/samsung-internet-dev/pwa-gu%C3%ADa-del-manifest-file-92c7cdac25ad
+* Create Progressive Web Apps with Angular and other free tools!. (2019). Retrieved 26 November 2022, from https://dev.to/paco_ita/create-progressive-web-apps-with-angular-workbox-pwa-builder-step-4-27d#angular
 * Angular CLI - ng build Command. (2022). Retrieved 17 July 2022, from https://www.tutorialspoint.com/angular_cli/angular_cli_ng_build.htm
