@@ -34,8 +34,8 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](ht
   ```
 
 
-Proyecto en producción
-======================
+Proyecto en modo de producción
+==============================
 
 * * *
 
