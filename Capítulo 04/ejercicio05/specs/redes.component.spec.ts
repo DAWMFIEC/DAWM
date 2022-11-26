@@ -21,7 +21,7 @@ describe('RedesComponent', () => {
     expect(component).toBeTruthy();
   });
 
-   it("should has attribute redes",()=>{
+  it("should has attribute redes",()=>{
     let redesTmp: any[] = [
       {
         'href': 'https://twitter.com/home',
