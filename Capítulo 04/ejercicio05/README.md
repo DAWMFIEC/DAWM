@@ -63,7 +63,7 @@
 			
 			<!-- Utilice la directiva *ngFor para iterar el arreglo redes -->
 			<ng-container >
-				<!-- Utilice la directiva *ngIf para obtener el atributo show del elemento -->
+				<!-- Utilice la directiva *ngIf para evaluar el atributo show del elemento -->
 				<li class="list-group-item border-0" >
 					<a href=" <!-- Renderice el href del elemento --> " class="text-primary">
 						<img width="25" src=" <!-- Renderice el src del elemento --> " alt=" <!-- Renderice el alt del elemento --> ">
