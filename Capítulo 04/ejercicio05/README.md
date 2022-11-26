@@ -29,21 +29,30 @@
 		- Agregue el atributo _redes_
 		```
 		redes:any[] = [
-		  {
-	        'href': 'https://twitter.com/home',
-	        'alt': 'Sígueme en Twitter',
-	        'src': 'https://cdn-icons-png.flaticon.com/512/733/733579.png'
-	      },
-	      {
-	        'href': 'https://www.facebook.com/',
-	        'alt': 'Likes en Facebook',
-	        'src': 'https://cdn-icons-png.flaticon.com/512/174/174848.png'
-	      },
-	      {
-	        'href': 'mailto:correo@gmail.com',
-	        'alt': 'Envíame un correo',
-	        'src': 'https://cdn-icons-png.flaticon.com/512/2111/2111463.png'
-	      }
+		   {
+		     'href': 'https://twitter.com/home',
+		     'alt': 'Sígueme en Twitter',
+		     'src': 'https://cdn-icons-png.flaticon.com/512/733/733579.png',
+		     'show': true
+		   },
+		   {
+		     'href': 'https://www.facebook.com/',
+		     'alt': 'Likes en Facebook',
+		     'src': 'https://cdn-icons-png.flaticon.com/512/174/174848.png',
+		     'show': true
+		   },
+		   {
+		     'href': 'mailto:correo@gmail.com',
+		     'alt': 'Envíame un correo',
+		     'src': 'https://cdn-icons-png.flaticon.com/512/542/542638.png',
+		     'show': false
+		   },
+		   {
+		     'href': 'https://www.instagram.com/',
+		     'alt': 'Likes en Instagram',
+		     'src': 'https://cdn-icons-png.flaticon.com/512/2111/2111463.png',
+		     'show': true
+		   }
 		]
 		```
 	+ En **redes.component.html**
@@ -51,12 +60,16 @@
 		```html
 		<ul class="list-group list-group-horizontal justify-content-center mb-5">
 			
+			
 			<!-- Utilice la directiva *ngFor para iterar el arreglo redes -->
-			<li class="list-group-item border-0" >
-				<a href=" <!-- Renderice el href del elemento --> " class="text-primary">
-					<img width="25" src=" <!-- Renderice el src del elemento --> " alt=" <!-- Renderice el alt del elemento --> ">
-				</a>
-			</li>
+			<ng-container >
+				<!-- Utilice la directiva *ngIf para obtener el atributo show del elemento -->
+				<li class="list-group-item border-0" >
+					<a href=" <!-- Renderice el href del elemento --> " class="text-primary">
+						<img width="25" src=" <!-- Renderice el src del elemento --> " alt=" <!-- Renderice el alt del elemento --> ">
+					</a>
+				</li>
+			</ng-container>
 
 		</ul>
 		```
@@ -126,4 +139,7 @@
 ## Referencias 
 
 * DAWM-2022. (2022). Retrieved 15 July 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html
+* Angular. (2022). Retrieved 26 November 2022, from https://angular.io/api/core/ng-container
+* Angular. (2022). Retrieved 26 November 2022, from https://angular.io/api/common/NgIf
 * element, A., P, A., & Kern, K. (2017). Angular 2 Karma Test 'component-name' is not a known element. Retrieved 26 November 2022, from https://stackoverflow.com/questions/44504468/angular-2-karma-test-component-name-is-not-a-known-element
+* error, *., Z&#246;chbauer, G., perera, i., & Rajcok, M. (2016). *ngIf and *ngFor on same element causing error. Retrieved 26 November 2022, from https://stackoverflow.com/questions/34657821/ngif-and-ngfor-on-same-element-causing-error
