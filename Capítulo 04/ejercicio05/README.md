@@ -125,3 +125,4 @@
 ## Referencias 
 
 * DAWM-2022. (2022). Retrieved 15 July 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html
+* element, A., P, A., & Kern, K. (2017). Angular 2 Karma Test 'component-name' is not a known element. Retrieved 26 November 2022, from https://stackoverflow.com/questions/44504468/angular-2-karma-test-component-name-is-not-a-known-element
