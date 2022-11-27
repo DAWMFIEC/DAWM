@@ -37,7 +37,7 @@ theme: jekyll-theme-leap-day
 * Revise la página de [errores](https://dawfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
 
 * Componentes
-	+ Cree los componentes: **common/navbar** y **common/footer** de acuerdo con las instrucciones en [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html).
+	+ Cree los componentes: **`common/navbar`** y **`common/footer`** de acuerdo con las instrucciones en [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html).
 	+ De `src/app/app.component.html` mueva:
 		- La etiqueta _\<nav\>_ a la vista del componente **common/navbar**
 		- La etiqueta _\<footer\>_ a la vista del componente **common/footer**
