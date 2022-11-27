@@ -43,6 +43,12 @@ theme: jekyll-theme-leap-day
 		- La etiqueta _\<footer\>_ a la vista del componente **common/footer**
 	+ Agregue las etiquetas _\<app-navbar\>_ y _\<app-footer\>_ en el lugar correspondiente en `src/app/app.component.html`.
 
+* Actualice el navegador o (re)inicie el servidor
+* Revise la página de [errores](https://dawfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
+
+
+![guia 13](imagenes/guia13.png)
+
 
 ### Términos
 
