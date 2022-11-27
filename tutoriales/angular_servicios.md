@@ -234,14 +234,14 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 	```
 	
 	Por el arreglo **fotos** renderizado con la directiva \*ngFor
-	```html
+	```
 	<div class="album py-5 bg-light">
      <div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col" *ngFor="let foto of fotos">
           <div class="card shadow-sm">
-            <img src="\{\{foto.url\}\}" alt="{{foto.id}}">
+            <img src="{{foto.url}}" alt="{{foto.id}}">
 
             <div class="card-body">
               <p class="card-text">{{foto.descripcion}}</p>
