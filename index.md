@@ -29,18 +29,17 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 09: Javascript > Fetch - Troubleshooting](guias/guia09.md)  
 * [Guía 10: Javascript > Modelo Cliente-Servidor](guias/guia10.md)  
 * [Guía 11: Javascript > Web Sockets](guias/guia11.md) 
-<!--- 
-* [Guía 12: Angular > intro](guias/guia12.md) 
-* [Guía 13: Angular > PWA](guias/guia13.md) 
-* [Guía 14: Angular > Material Design](guias/guia14.md) 
-* [Guía 15: Angular > Componentes](guias/guia15.md) 
-* [Guía 16: Express > Formularios](guias/guia16.md) 
-* [Guía 17: Express > Partials y layouts](guias/guia17.md) 
-* [Guía 18: Express > MVC](guias/guia18.md) 
-* [Guía 19: Express > REST (Cliente/Servidor)](guias/guia19.md) 
-* [Guía 20: Express > noDBRMS](guias/guia20.md) 
-* [Guía 21: Express > Estado](guias/guia21.md) 
---->
+<!--- * [Guía 12: Angular > intro](guias/guia12.md) --->
+<!--- * [Guía 13: Angular > PWA](guias/guia13.md) --->
+<!--- * [Guía 14: Angular > Material Design](guias/guia14.md) --->
+<!--- * [Guía 15: Angular > Componentes](guias/guia15.md) --->
+<!--- * [Guía 16: Express > Formularios](guias/guia16.md) --->
+<!--- * [Guía 17: Express > Partials y layouts](guias/guia17.md) --->
+<!--- * [Guía 18: Express > MVC](guias/guia18.md) --->
+<!--- * [Guía 19: Express > REST (Cliente/Servidor)](guias/guia19.md) --->
+<!--- * [Guía 20: Express > noDBRMS](guias/guia20.md) --->
+<!--- * [Guía 21: Express > Estado](guias/guia21.md) --->
+
 
 ## Tutoriales
 
