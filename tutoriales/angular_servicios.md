@@ -160,10 +160,13 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 	+ Agregue la función *obtenerDatos* para hacer una petición `http` para obtener `get` una respuesta del URL <a href="https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json">Fotos</a>
 
 	<pre><code>
+	constructor(private http: HttpClient) { }
 	...
+	<b style="color:red">
 	obtenerDatos() {
-      <b style="color:red">return this.http.get('https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json')</b>
+      return this.http.get('https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json')
 	}
+	</b>
 	...
 	</code></pre>
 
