@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 
 	+ HTML
 		- **Plantilla Original:** Del archivo `index.html`, copie el **contenido** de la etiqueta `<body>` . No copie las etiquetas `<script>`. 
-		- **Proyecto de Angular:** En el `src/app.component.html`, pegue las etiquetas html. 
+		- **Proyecto de Angular:** En el `src/app/app.component.html`, pegue las etiquetas html. 
 	+ ASSETS
 		- **Plantilla Original:** De la carpeta `assets`, copie el **contenido**. 
 		- **Proyecto de Angular:** En la ruta `src/assets`, coloque los archivos.
@@ -33,6 +33,13 @@ theme: jekyll-theme-leap-day
 
 * Actualice el navegador o (re)inicie el servidor
 * Revise la página de [errores](https://dawfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
+
+* Componentes
+	+ Cree los componentes: **common/navbar** y **common/footer** de acuerdo con las instrucciones en [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html).
+	+ De `src/app/app.component.html` mueva:
+		- La etiqueta _<nav>_ a la vista del componente **common/navbar**
+		- La etiqueta _<footer>_ a la vista del componente **common/footer**
+	+ Agregue las etiquetas _<app-navbar>_ y _<app-footer>_ en el lugar correspondiente en `src/app/app.component.html`.
 
 
 ### Términos
