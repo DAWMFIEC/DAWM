@@ -30,7 +30,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 10: Javascript > Modelo Cliente-Servidor](guias/guia10.md)  
 * [Guía 11: Javascript > Web Sockets](guias/guia11.md) 
 * [Guía 12: Typescript](guias/guia12.md)
-<!--- * [Guía 12: Angular > intro](guias/guia12.md) --->
+* [Guía 13: Angular > Introducción](guias/guia13.md)
+
 <!--- * [Guía 13: Angular > PWA](guias/guia13.md) --->
 <!--- * [Guía 14: Angular > Material Design](guias/guia14.md) --->
 <!--- * [Guía 15: Angular > Componentes](guias/guia15.md) --->
