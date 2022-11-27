@@ -241,10 +241,10 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col" *ngFor="let foto of fotos">
           <div class="card shadow-sm">
-            <img src="\{\{foto.url\}\}" alt="">
+            <img src="\{\{foto.url\}\}" alt="{{foto.id}}">
 
             <div class="card-body">
-              <p class="card-text">{{foto.descripcion}}-{{foto.id}}</p>
+              <p class="card-text">{{foto.descripcion}}</p>
               <div class="d-flex justify-content-between align-items-center">
                 <div class="btn-group">
                   <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
