@@ -242,7 +242,9 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
         <div class="col" *ngFor="let foto of fotos">
           <div class="card shadow-sm">
             <img src="&lcub;&lcub;foto.url&rcub;&rcub;" alt="{{foto.id}}">
-
+            &lcub; &lbrace;
+&#x0007B;
+&#123;
             <div class="card-body">
               <p class="card-text">{{foto.descripcion}}</p>
               <div class="d-flex justify-content-between align-items-center">
