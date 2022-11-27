@@ -10,7 +10,6 @@
 ## Instrucciones
 
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
-* Cree el servicio: ****.
 * Ejecute su aplicación, con: `ng serve`
 
 
