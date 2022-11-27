@@ -16,8 +16,8 @@ theme: jekyll-theme-leap-day
 
 * Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
   
-  + De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
-  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) realice la **Instalación de Bootstrap (y dependencias)**
+  + Cree la aplicación **clienteAngular** de acuerdo con las instrucciones en [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html). 
+  + Incluya bootstrap y sus dependencias de acuerdo con las instrucciones en [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html)
 
 * Incorpore la plantilla [Creative](https://startbootstrap.com/theme/creative) a la aplicación en Angular.
 
