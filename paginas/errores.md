@@ -40,8 +40,7 @@ theme: jekyll-theme-leap-day
 		Can't resolve '../yyy/zzz/image.jpg' in file ...
 		``` 
 	+ **Solución:**
-		- Mueva la estructura de archivos con la imagen a la ruta `src/assets`
-		- Cambie la referencia por `'assets/yyy/zzz/image.jpg'` en el archivo
+		- Cambie la ruta inicial (`'../assets/yyy/zzz/image.jpg'`) por la ruta dentro del proyecto (`'assets/yyy/zzz/image.jpg'`)
 
 
 ### Error de dependencias
