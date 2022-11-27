@@ -224,7 +224,7 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
   ...
   </code></pre>
 
-* En **src/app/app.component.html**, 
+* En **src/app/app.component.html**, reemplace el contenido de:
 	```html
 	<div class="album py-5 bg-light">
      <div class="container">
@@ -256,6 +256,7 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
           </div>
         </div>
       </div>
+      
     </div>
   </div>
 	```
