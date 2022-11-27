@@ -20,10 +20,19 @@ Proyecto en Angular
 
 * * *
 
+
 Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html), [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html) y [Angular - PWA](https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html)
 
-* Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
+* Desde tu repositorio personal
+* O, desde el repositorio del curso, con:
+  ```
+  git clone -b app --single-branch https://github.com/DAWFIEC/DAWM.git aplicaciones
+  cd aplicaciones
+  git checkout 5ad2bf8
+  cd album/clienteAngular
+  npm install
+  ng serve -o
+  ```
 
 
 Interfaz
@@ -32,14 +41,15 @@ Interfaz
 Para consultar datos mediante servicios, es recomendable el uso de interfaces para reconocer su estructura.
 Desde la raíz del proyecto con Angular
 
-* Cree la interfaz **Album**, con: `ng generate interface interfaz/album`
+* Cree la interfaz **Foto**, con: `ng generate interface interfaz/foto`
 
-* Identifique la estructura de la respuesta del servicio a consultar para definir los atributos de la interfaz de respuesta. Según el recurso [Album](https://dataserverdawm.herokuapp.com/album) la estructura es:
+* Identifique la estructura de la respuesta del servicio a consultar para definir los atributos de la interfaz de respuesta. Según el recurso [Foto](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json) la estructura es:
 
 	<pre><code>
-	export interface Album {
-     cabecera: string;
-     principal: string;
+	export interface Foto {
+     descripcion: string;
+     id: string;
+     url: string;
   }
 	</code></pre>
 
@@ -50,9 +60,9 @@ Servicio
 Desde la raíz del proyecto con Angular
 
 * Acceda desde la línea de comandos
-* Cree el servicio **recurso**, con: `ng generate service servicios/recurso`
+* Cree el servicio **recursos**, con: `ng generate service servicios/recursos`
   + Se creará carpeta *servicios*, y 
-  + Se crearán los archivos `recurso.service.ts` y `recurso.service.spec.ts`
+  + Se crearán los archivos `recursos.service.ts` y `recursos.service.spec.ts`
 
 
 Inyección de dependencias
@@ -67,7 +77,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	
 	<pre><code>
     import { Component } from '@angular/core';
-	<b style="color:red">import { RecursoService } from './servicios/recurso.service';</b>
+	<b style="color:red">import { RecursosService } from './servicios/recursos.service';</b>
 
 	@Component({
 	  selector: 'app-root',
@@ -75,14 +85,14 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	...  
   </code></pre>
 
-	+ Agregue el constructor de la clase con la inyección de dependencia (argumento del constructor) al servicio `RecursoService`.
+	+ Agregue el constructor de la clase con la inyección de dependencia (argumento del constructor) al servicio `RecursosService`.
 
   <pre><code>
     ...
 	export class AppComponent {
 	  title  = 'testAngular';
 
-	  <b style="color:red">constructor(private recursoService: RecursoService) {}</b>
+	  <b style="color:red">constructor(private recursosService: RecursosService) {}</b>
 	}
 	...
   </code></pre>
@@ -124,7 +134,7 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 		...
 	</code></pre>
 
-* En **src/app/servicios/recurso.service.ts**, 
+* En **src/app/servicios/recursos.service.ts**, 
   + Importe el módulo `HttpClient`
 
   <pre><code>
@@ -141,34 +151,35 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 	
 	<pre><code>
 	...
-	export class RecursoService {
+	export class RecursosService {
 	  <b style="color:red">constructor(private http: HttpClient) { }</b>
 	  ...
 	}
 	</code></pre>
 
-	+ Agregue la función *obtenerDatos* para hacer una petición `http` para obtener `get` una respuesta del URL <a href="https://dataserverdawm.herokuapp.com/album">Album</a>
+	+ Agregue la función *obtenerDatos* para hacer una petición `http` para obtener `get` una respuesta del URL <a href="https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json">Fotos</a>
 
 	<pre><code>
 	...
 	obtenerDatos() {
-      <b style="color:red">return this.http.get('https://dataserverdawm.herokuapp.com/album')</b>
+      <b style="color:red">return this.http.get('https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json')</b>
 	}
 	...
 	</code></pre>
 
+
 Usando el servicio en el componente
 ===================================
 
-Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ver cómo usaríamos el servicio **RecursoService** en el componente **AppComponent**.
+Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ver cómo usaríamos el servicio **RecursosService** en el componente **AppComponent**.
 
 * En **src/app/app.component.ts** 
-	+ Agregue la referencia a la interfaz **Album** 
+	+ Agregue la referencia a la interfaz **Foto** 
     
     <pre><code>
     import { Component } from '@angular/core';
     <b style="color:red">
-    import { Album } from './interfaz/album';
+    import { Foto } from './interfaz/foto';
     </b>
 
     @Component({
@@ -177,18 +188,35 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
     ...
     </code></pre>
 
+	+ Cree el atributo **fotos**
+
+  <pre><code>
+  ...
+  export class AppComponent {
+	  title = 'Angular';
+	  <b style="color:red">
+	  fotos: Foto[] = [];  
+	  </b>
+
+	  constructor(private recursosService: RecursosService) {
+	  	
+	  }
+	}
+  ...
+  </code></pre>
+
 	+ Modifique el constructor para suscribirse a la respuesta del servicio
 
   <pre><code>
   ...
   export class AppComponent {
 	  title = 'Angular';
+	  fotos: Foto[] = [];
 
-	  constructor(private recursoService: RecursoService) {
+	  constructor(private recursosService: RecursosService) {
 	  	<b style="color:red">
-	    recursoService.obtenerDatos().subscribe(respuesta => {
-	      let album = respuesta as Album
-	      this.title = album.cabecera
+	    recursosService.obtenerDatos().subscribe(respuesta => {
+	      this.fotos = respuesta as Array&lt;Foto&gt;
 	    })
 	    </b>
 	  }
@@ -196,26 +224,47 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
   ...
   </code></pre>
 
-* En **src/app/app.component.html** 
-	+ Renderice el atributo en la plantilla con 
-
+* En **src/app/app.component.html**, 
 	```html
-		...	
-		{% raw %}
-		{{title}}
-		{% endraw %}
-		...
+	<div class="album py-5 bg-light">
+     <div class="container">
+     ...
+  	 </div>
+  </div>
+	```
+	
+	Por el arreglo **fotos** renderizado con la directiva \*ngFor
+	```html
+	<div class="album py-5 bg-light">
+     <div class="container">
+
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        <div class="col" *ngFor="let foto of fotos">
+          <div class="card shadow-sm">
+            <img src="{{foto.url}}" alt="">
+
+            <div class="card-body">
+              <p class="card-text">{{foto.descripcion}}-{{foto.id}}</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <div class="btn-group">
+                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                </div>
+                <small class="text-muted">9 mins</small>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 	```
 
 * Actualice el navegador o (re)inicie el servidor
 
-* En el navegador debe mostrar el mensaje `Album fotográfico`.
-
 <p align="center">
-  <img src="imagenes/angular_servicios_output.png">
+  <img width="330" src="imagenes/angular_servicios_output.png">
 </p>
-
-* Despliegue la aplicación en [Heroku](https://dawfiec.github.io/DAWM/tutoriales/heroku_deploy.html)
 
 Referencias 
 ===========
