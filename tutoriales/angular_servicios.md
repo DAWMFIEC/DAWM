@@ -245,6 +245,7 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
             &lcub; &lbrace;
 &#x0007B;
 &#123;
+{{foto.url}}
             <div class="card-body">
               <p class="card-text">{{foto.descripcion}}</p>
               <div class="d-flex justify-content-between align-items-center">
