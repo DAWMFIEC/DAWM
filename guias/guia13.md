@@ -10,13 +10,15 @@ theme: jekyll-theme-leap-day
 
 * Revisión de ejercicios previos: dudas y comentarios.
 * [Angular](https://angular.io/) es un framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página. Su objetivo es aumentar las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador (MVC), en un esfuerzo para hacer que el desarrollo y las pruebas sean más fáciles.
+* [**SPA**](https://www.programaenlinea.net/una-spa-angular/) son las siglas de Single Page Application, donde todas las pantallas las muestra en la misma página, sin recargar el navegador.
 
 
 ### Actividades
 
 * Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
-  
-  + Cree la aplicación **clienteAngular** de acuerdo con las instrucciones en [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html). 
+
+	+ Cree la carpeta **spa**].
+  + Dentro de **spa**, cree la aplicación **clienteAngular** de acuerdo con las instrucciones en [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html). 
   + Incluya bootstrap y sus dependencias de acuerdo con las instrucciones en [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html)
 
 * Incorpore la plantilla [Creative](https://startbootstrap.com/theme/creative) a la aplicación en Angular.
@@ -44,7 +46,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-Librería, marco de trabajo, bootstrapping
+Librería, marco de trabajo, bootstrapping, spa
 
 ### Referencias
 
