@@ -16,11 +16,16 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* 
+* Obtenga una cuenta en [Stackblitz](https://stackblitz.com/)
+* Acceda a la colección [Typescript](https://stackblitz.com/@aavendan/collections/typescript) en Stackblitz.
+* Para cada ejercicio, para cada proyecto obtenga una copia personal con **fork**.
+	+ Analice los archivos de Typescript (extensión **.ts**)
+	+ Resuelva las actividades identificadas con el texto _Actividades_
+	+ Revise los enlaces relacionados que se encuentran identificados con el texto _Referencia_.
 	
 ### Términos
 
-Typescript, superset, `transpilación`
+Typescript, superset, `transpilación`, Stackblitz
 
 ### Referencias
 
