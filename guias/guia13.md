@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 * Revisión de ejercicios previos: dudas y comentarios.
 * [Angular](https://angular.io/) es un framework para aplicaciones web desarrollado en TypeScript, de código abierto, mantenido por Google, que se utiliza para crear y mantener aplicaciones web de una sola página. Su objetivo es aumentar las aplicaciones basadas en navegador con capacidad de Modelo Vista Controlador (MVC), en un esfuerzo para hacer que el desarrollo y las pruebas sean más fáciles.
-* [**SPA**](https://www.programaenlinea.net/una-spa-angular/) son las siglas de Single Page Application, donde todas las pantallas las muestra en la misma página, sin recargar el navegador.
+* [**SPA**](https://davidjguru.medium.com/single-page-application-un-viaje-a-las-spa-a-trav%C3%A9s-de-angular-y-javascript-337a2d18532) son las siglas de Single Page Application, donde todas las pantallas las muestra en la misma página, sin recargar el navegador.
 
 
 ### Actividades
