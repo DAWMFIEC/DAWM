@@ -227,16 +227,16 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 * En **src/app/app.component.html**, reemplace el contenido de:
 	```html
 	<div class="album py-5 bg-light">
-     <div class="container">
-     ...
-  	 </div>
-  </div>
+		<div class="container">
+		...
+		</div>
+	</div>
 	```
 	
 	Por el arreglo **fotos** renderizado con la directiva \*ngFor
-	```
+	```html
 	<div class="album py-5 bg-light">
-     <div class="container">
+		<div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         <div class="col" *ngFor="let foto of fotos">
