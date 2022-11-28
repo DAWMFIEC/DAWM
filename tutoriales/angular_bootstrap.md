@@ -19,8 +19,8 @@ Proyecto en Angular
 Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html).
 
 * Desde tu repositorio personal
-* Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM/tree/app) para la aplicación **album/clienteAngular**
-    - Para el hito: `git checkout ab38d8c`
+* Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/clienteAngular**
+    - Para el hito: **`hito1-album`**
 
 
 Instalación de Bootstrap (y dependencias)
