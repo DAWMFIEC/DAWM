@@ -30,8 +30,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 10: Javascript > Modelo Cliente-Servidor](guias/guia10.md)  
 * [Guía 11: Javascript > Web Sockets](guias/guia11.md) 
 * [Guía 12: Typescript > Bases](guias/guia12.md)
-* [Guía 13: Angular > Introducción](guias/guia13.md)
-* [Guía 14: Angular > PWA](guias/guia14.md)
+<!---* [Guía 13: Angular > Introducción](guias/guia13.md)--->
+<!---* [Guía 14: Angular > PWA](guias/guia14.md) --->
 
 <!---  --->
 <!--- * [Guía 14: Angular > Material Design](guias/guia14.md) --->
@@ -64,13 +64,13 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 #### Angular
 
 * [Angular - Local](tutoriales/angular_local.md)
-* [Angular - Bootstrap](tutoriales/angular_bootstrap.md)
-* [Angular - Componentes, Comunicación y Directivas](tutoriales/angular_bases.md)
-* [Angular - PWA](tutoriales/angular_pwa.md)
-* [Angular - Servicios](tutoriales/angular_servicios.md)
-* [Angular - Rutas](tutoriales/angular_rutas.md)
-* [Angular - Material](tutoriales/angular_material.md)
-* [Angular - Cordova](tutoriales/angular_cordova.md)
+<!---* [Angular - Bootstrap](tutoriales/angular_bootstrap.md) --->
+<!---* [Angular - Componentes, Comunicación y Directivas](tutoriales/angular_bases.md) --->
+<!---* [Angular - PWA](tutoriales/angular_pwa.md) --->
+<!---* [Angular - Servicios](tutoriales/angular_servicios.md) --->
+<!---* [Angular - Rutas](tutoriales/angular_rutas.md) --->
+<!---* [Angular - Material](tutoriales/angular_material.md) --->
+<!---* [Angular - Cordova](tutoriales/angular_cordova.md)--->
 
 
 #### Express
