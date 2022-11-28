@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
 
 * Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
 
-	+ Cree la carpeta **spa**.
+  + Cree la carpeta **spa**.
   + Dentro de **spa**, cree la aplicación **clienteAngular** de acuerdo con las instrucciones en [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html). 
   + Incluya bootstrap y sus dependencias de acuerdo con las instrucciones en [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html)
 
