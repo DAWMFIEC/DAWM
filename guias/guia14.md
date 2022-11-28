@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 
 * Genere una aplicación en Angular, siguiendo las instrucciones:
   
-  + La [Guía 13](https://dawfiec.github.io/DAWM/guias/guia13.html), o 
+  + En la [Guía 13](https://dawfiec.github.io/DAWM/guias/guia13.html), o 
   + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM/tree/app) para la aplicación **spa/clienteAngular**
     - Para el hito: `git checkout 4bfc3b7`
 
