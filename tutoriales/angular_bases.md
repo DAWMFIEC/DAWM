@@ -15,15 +15,8 @@ Proyecto en Angular
 Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
 
 * Desde tu repositorio personal
-* O, desde el repositorio del curso, con:
-  ```
-  git clone -b app --single-branch https://github.com/DAWFIEC/DAWM.git aplicaciones
-  cd aplicaciones
-  git checkout 4fdc65a
-  cd album/clienteAngular
-  npm install
-  ng serve -o
-  ```
+* Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM/tree/app) para la aplicación **album/clienteAngular**
+    - Para el hito: `git checkout 4fdc65a`
 
 
 Componentes
