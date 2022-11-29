@@ -42,6 +42,24 @@ theme: jekyll-theme-leap-day
 	+ **Solución:**
 		- Cambie la ruta inicial (`'../assets/yyy/zzz/image.jpg'`) por la ruta dentro del proyecto (`'assets/yyy/zzz/image.jpg'`)
 
+### Property has no initializer and is not definitely assigned in the constructor
+
+* Al ejecutar desde la línea de comandos `ng serve`
+	+ **Problema:**  
+
+		```
+		"Property has no initializer and is not definitely assigned in the constructor"
+		```
+
+	+ **Solución:**
+
+		- Asignar un valor por defecto a la propiedad
+		- O, use una aserción no nula
+
+		```
+		navbar!: Navbar;
+		```
+
 
 ### Error de dependencias
 
@@ -56,4 +74,7 @@ theme: jekyll-theme-leap-day
 	npm install -g angular-cli@latest
 	```
 
-	Referencias: [How to upgrade Angular CLI project?](https://stackoverflow.com/questions/41403810/how-to-upgrade-angular-cli-project)
+# Referencias: 
+
+* project?, H., Dagger, T., B, J., & Dagger, T. (2016). How to upgrade Angular CLI project?. Retrieved 29 November 2022, from https://stackoverflow.com/questions/41403810/how-to-upgrade-angular-cli-project
+* Property has no initializer and is not definitely assigned in the constructor. Retrieved 29 November 2022, from https://bobbyhadz.com/blog/typescript-property-has-no-initializer
