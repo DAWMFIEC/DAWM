@@ -127,6 +127,17 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
     <img width="399" height="500" src="imagenes/angular_bases.png">
   </p>
 
+
+Lighthouse
+==========
+
+* Agregue la extensión [Lighthouse](https://chrome.google.com/webstore/detail/lighthouse/blipmdconlkpinefehnmjammfjpmpbjk?hl=es) para Chrome.
+* Audite la página para identificar si cumple o no con las validaciones necesarias para ser PWA.
+
+<p align="center">
+  <img src="imagenes/angular_lighthouse.png">
+</p>
+
 Instalación de la aplicación (solo para Chromium)
 ================================================
 
@@ -155,3 +166,4 @@ Referencias
 * PWA: guía del manifest file. (2020). Retrieved 17 July 2022, from https://medium.com/samsung-internet-dev/pwa-gu%C3%ADa-del-manifest-file-92c7cdac25ad
 * Create Progressive Web Apps with Angular and other free tools!. (2019). Retrieved 26 November 2022, from https://dev.to/paco_ita/create-progressive-web-apps-with-angular-workbox-pwa-builder-step-4-27d#angular
 * Angular CLI - ng build Command. (2022). Retrieved 17 July 2022, from https://www.tutorialspoint.com/angular_cli/angular_cli_ng_build.htm
+* Convierte tu aplicación Angular en una PWA. (2022). Retrieved 29 November 2022, from https://pwaexperts.io/tutoriales/convierte-aplicacion-angular-en-pwa
