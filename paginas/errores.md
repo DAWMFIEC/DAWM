@@ -53,8 +53,8 @@ theme: jekyll-theme-leap-day
 
 	+ **Solución:**
 
-		- Asignar un valor por defecto a la propiedad
-		- O, use una aserción no nula
+		- Asigne un valor por defecto a la propiedad
+		- O, use una aserción no nula: Al final del identificador agregue el operador **`!`**
 
 		```
 		navbar!: Navbar;
