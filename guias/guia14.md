@@ -22,8 +22,9 @@ theme: jekyll-theme-leap-day
     - Para el hito: **`hito1-spa`**
 
 * Convierta la aplicación a **PWA** y compruebe el funcionamiento offline, de acuerdo con las instrucciones de [Angular - PWA](https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html).
-* Cree el servicio **recursos/recursosNavbar**, de acuerdo con las instrucciones de [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html), para realizar peticiones al URL [Navbar - Firebase](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
-* Cree y utilice la interfaz **interfaces/Navbar** de acuerdo con la estructura de la respuesta
+* Cree el servicio **servicios/navbar**, de acuerdo con las instrucciones de [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html)
+  + Realice peticiones al URL [Navbar](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
+* Cree y utilice la interfaz **interfaz/Navbar** de acuerdo con la estructura de la respuesta
 * Modifique el componente **NavbarComponent**
   + Inyecte la dependencia al servicio
   + Cree los atributos necesarios y renderícelos donde considere conveniente en la vista del componente. 
