@@ -23,7 +23,16 @@
 	![karma](imagenes/karma.png)
 	+ Todos fueron exitosas, o
 	+ Existen pruebas unitarias fallidas.
-* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
+* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.
+
+
+## Prueba PWA
+
+* Genere el proyecto en modo de producción
+* Levante un servidor HTTP local
+* En Chrome o Firefox, verifique el registro del service worker
+
+![serviceworkers](imagenes/serviceworkers.png)
 
 ## Referencias 
 
