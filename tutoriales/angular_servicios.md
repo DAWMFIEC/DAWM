@@ -262,7 +262,7 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
   <img width="330" src="imagenes/angular_servicios_output.png">
 </p>
 
-Extra: Cacheo de servicios y respuestas 
+Cacheo de servicios y respuestas 
 ================================
 
 * Modifique el archivo `ngsw-config.json`
