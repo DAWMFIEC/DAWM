@@ -29,7 +29,7 @@
 ## Prueba PWA
 
 * Genere el proyecto en modo de producción
-* Levante un servidor HTTP local
+* Levante un servidor HTTP local que apunte a la ruta del proyecto en modo de producción: `dist/cliente-angular`
 * En Chrome o Firefox, verifique el registro del service worker
 
 ![serviceworkers](imagenes/serviceworkers.png)
