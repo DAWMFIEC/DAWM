@@ -36,4 +36,8 @@
 
 ## Referencias 
 
-* DAWM-2022. (2022). Retrieved 15 July 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_local.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html
