@@ -122,7 +122,7 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
 
 * En el _html_ (la vista) del componente **contacto**
   
-    + Reemplace el contenido por
+    + Reemplace el contenido
     ```
       <h4 class="text-white">Contáctame</h4>
     ```
@@ -168,7 +168,7 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
 
 * En el _html_ (la vista) del componente **contacto**
   
-    + Reemplace el contenido por
+    + Reemplace el contenido
     ```
       <ul class="list-unstyled">
         <li><a href="#" class="text-white">Medio 1</a></li>
