@@ -49,7 +49,7 @@ Interfaz
 
 * * *
 
-Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Toolbar](https://material.angular.io/components/toolbar/api), [Button](https://material.angular.io/components/button/overview) + [Icon](https://material.angular.io/components/icon/api) y card.
+Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Toolbar](https://material.angular.io/components/toolbar/api), [Button](https://material.angular.io/components/button/overview) + [Icon](https://material.angular.io/components/icon/api) y [Card](https://material.angular.io/components/card/api).
 
 
 Componentes
@@ -60,7 +60,7 @@ Componentes
 
 * En el **src/app/app.module.ts**
   + Importe el módulo **MatToolbarModule** (`'@angular/material/toolbar'`), y 
-  + Agregue el módulo en la lista de moódulos compartidos de la aplicación.
+  + Agregue el módulo en la lista de módulos compartidos de la aplicación.
  
   <pre><code>
   ...  
@@ -91,7 +91,7 @@ Componentes
 
 * En el **src/app/app.module.ts**
   + Importe el módulo **MatIconModule** y **MatButtonModule** (`'@angular/material/icon'` y `'@angular/material/button'`), y 
-  + Agregue el módulo en la lista de moódulos compartidos de la aplicación.
+  + Agregue el módulo en la lista de módulos compartidos de la aplicación.
 
   <pre><code>
   import { MatToolbarModule } from '@angular/material/toolbar';  
@@ -114,7 +114,7 @@ Componentes
 
   ```
     <mat-toolbar color="primary">  
-      <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">  
+      <button mat-icon-button color="accent" aria-label="menu">  
          <mat-icon>menu</mat-icon>  
       </button>  
       <span>Album fotográfico</span>  
@@ -127,10 +127,9 @@ Componentes
 **Componente de Angular Material:** Card
 -------------------------------------------------
 
-* En **src/app/app.module.ts**
-  + Agregue la referencia al [API del componente Card](https://material.angular.io/components/card/api)
-  + Agregue el módulo **MatCardModule** en el arreglo `import`.
-
+* En el **src/app/app.module.ts**
+  + Importe el módulo **MatCardModule** (`'@angular/material/card'`), y 
+  + Agregue el módulo en la lista de módulos compartidos de la aplicación.
 
   <pre><code>
   import { MatToolbarModule } from '@angular/material/toolbar';
@@ -154,31 +153,31 @@ Componentes
 * Modifique **src/app/app.component.html**
 
   ```
-    <mat-toolbar color="primary">  
-      <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">  
-         <mat-icon>menu</mat-icon>  
-      </button>  
-      <span>Mi aplicación</span>  
-    </mat-toolbar>
-    <mat-card class="example-card">
-      <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
-        <mat-card-title>Shiba Inu</mat-card-title>
-        <mat-card-subtitle>Dog Breed</mat-card-subtitle>
-      </mat-card-header>
-      <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
-      <mat-card-content>
-        <p>
-          The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
-          A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
-          bred for hunting.
-        </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <button mat-button>LIKE</button>
-        <button mat-button>SHARE</button>
-      </mat-card-actions>
-    </mat-card>
+  <mat-toolbar color="primary">
+    <button mat-icon-button color="accent" aria-label="menu">  
+       <mat-icon>menu</mat-icon>  
+    </button>  
+    <span>Album fotográfico</span>
+  </mat-toolbar>
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
   ```
 
 * Actualice el navegador o (re)inicie el servidor
