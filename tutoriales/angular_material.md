@@ -212,7 +212,7 @@ Componentes
   + Agregue el módulo en la lista de módulos compartidos de la aplicación.
 
 * En el **src/app/app.component.html**
-  + Extraiga etiquetas iniciales
+  + Extraiga etiquetas iniciales `<mat-toolbar>` y `<mat-card>`
 
   ```
   <mat-toolbar color="primary">
@@ -223,7 +223,7 @@ Componentes
   </mat-card>
   ```
 
-  + Coloque las nuevas etiquetas del componente **Sidenav** 
+  + Coloque las etiquetas del componente **Sidenav** 
 
   ```
   <mat-drawer-container class="example-container" autosize>
@@ -237,7 +237,7 @@ Componentes
   </mat-drawer-container>
   ```
 
-  + Coloque las etiquetas iniciales en lugar del texto  `<!-- Coloque aquí las etiquetas previas -->`
+  + Reemplace las etiquetas iniciales (`<mat-toolbar>` y `<mat-card>`) en lugar del texto  `<!-- Coloque aquí las etiquetas previas -->`
 
 
 * En el **src/app/app.component.css**
@@ -275,6 +275,13 @@ En las etiquetas del **Sidenav** se encuentra la [variable de plantilla](https:/
     </button>  
   ...
   ```
+
+* Actualice el navegador o (re)inicie el servidor
+  + El resultado debe lucir similar a
+
+  <p align="center">
+    <img src="imagenes/angular_material_resultado2.png">
+  </p>
 
 Referencias 
 ===========

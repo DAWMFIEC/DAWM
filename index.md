@@ -33,8 +33,6 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 12: Typescript > Bases](guias/guia12.md)
 * [Guía 13: Angular > Introducción](guias/guia13.md)
 * [Guía 14: Angular > PWA + Servicios](guias/guia14.md)
-
-<!---  --->
 <!--- * [Guía 14: Angular > Material Design](guias/guia14.md) --->
 <!--- * [Guía 15: Angular > Componentes](guias/guia15.md) --->
 <!--- * [Guía 16: Express > Formularios](guias/guia16.md) --->
