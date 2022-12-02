@@ -212,24 +212,39 @@ Componentes
   + Agregue el módulo en la lista de módulos compartidos de la aplicación.
 
 * En el **src/app/app.component.html**
-  + Coloque el código previo dentro de las etiquetas
+  + Extraiga etiquetas iniciales
 
   ```
-  <mat-drawer-container class="example-container" fullscreen>
+  <mat-toolbar color="primary">
+  ...
+  </mat-toolbar>
+  <mat-card class="example-card">
+  ...
+  </mat-card>
+  ```
+
+  + Coloque las nuevas etiquetas del componente **Sidenav** 
+
+  ```
+  <mat-drawer-container class="example-container" autosize>
 
     <mat-drawer #enlaces class="example-sidenav" mode="over">
       <p> Enlaces </p>
     </mat-drawer>
 
-    <!-- Coloque aquí el código previo -->
+    <!-- Coloque aquí las etiquetas previas -->
     
   </mat-drawer-container>
   ```
+
+  + Coloque las etiquetas iniciales en lugar del texto  `<!-- Coloque aquí las etiquetas previas -->`
+
+  
   
 Variable en la plantilla y Eventos
 ==================================
 
-De las etiquetas del **Sidenav**, la [variable de plantilla](https://angular.io/guide/template-reference-variables) `#enlaces` sirve como referencia dentro del código.
+En las etiquetas del **Sidenav** se encuentra la [variable de plantilla](https://angular.io/guide/template-reference-variables) `#enlaces`. Esta variable sirve como referencia aparecer/desaparecer de acuerdo al evento __click__ del botón.
 
   + Modifique el código existente
 
