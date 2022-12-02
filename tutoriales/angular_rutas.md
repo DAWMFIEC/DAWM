@@ -27,8 +27,8 @@ Crea un nuevo proyecto, según [Angular - Local](https://dawfiec.github.io/DAWM/
 Componentes 
 -----------
 
-* En la raíz del proyecto en Angular
-* Desde la línea de comandos, cree los componentes **splash** y **principal**. De acuerdo con las instrucciones en [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html).
+* En la raíz del proyecto de Angular
+* Desde la línea de comandos, cree los componentes **splash**, **album** y **foto**. 
 
 Rutas 
 -----
