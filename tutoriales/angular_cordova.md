@@ -30,12 +30,10 @@ Proyecto en Angular
 
 * * *
 
-Genera un proyecto básico con [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) y [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html).
+Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html), [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html) y [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html). 
 
-O, a partir de una aplicación en Angular que incorpore Angular Material, por ejemplo la actividad de la [Guía 15](https://dawfiec.github.io/DAWM/guias/guia15.html).
-
-* Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `ng serve -o`
+* Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **hibrida/clienteAngular**
+    - Para el hito: **`hito2-hibrida`**
 
 
 Requerimientos de instalación
