@@ -49,7 +49,7 @@ Interfaz
 
 * * *
 
-Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Toolbar](https://material.angular.io/components/toolbar/api), button + icon y card.
+Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Toolbar](https://material.angular.io/components/toolbar/api), [Button](https://material.angular.io/components/button/overview) + [Icon](https://material.angular.io/components/icon/api) y card.
 
 
 Componentes
@@ -58,8 +58,9 @@ Componentes
 **Componente de Angular Material:** Toolbar
 -------------------------------------------
 
-* En **src/app/app.module.ts**
-  + Importe el módulo **MatToolbarModule** (`'@angular/material/toolbar'`) y agregue el módulo en la lista de importanciones de la aplicaciones.
+* En el **src/app/app.module.ts**
+  + Importe el módulo **MatToolbarModule** (`'@angular/material/toolbar'`), y 
+  + Agregue el módulo en la lista de moódulos compartidos de la aplicación.
  
   <pre><code>
   ...  
@@ -79,7 +80,7 @@ Componentes
 
   ```
     <mat-toolbar color="primary">
-      <span>Mi aplicación</span>
+      <span>Album fotográfico</span>
     </mat-toolbar>
   ```  
 
@@ -88,10 +89,9 @@ Componentes
 **Componente de Angular Material:** Button + Icon
 -------------------------------------------------
 
-* En **src/app/app.module.ts**
-  + Agregue la referencia al [API del componente Button](https://material.angular.io/components/button/overview) y [API del componente Icon](https://material.angular.io/components/icon/api)
-  + Agregue los módulos **MatIconModule** y **MatButtonModule** en el arreglo `import`.
-
+* En el **src/app/app.module.ts**
+  + Importe el módulo **MatIconModule** y **MatButtonModule** (`'@angular/material/icon'` y `'@angular/material/button'`), y 
+  + Agregue el módulo en la lista de moódulos compartidos de la aplicación.
 
   <pre><code>
   import { MatToolbarModule } from '@angular/material/toolbar';  
