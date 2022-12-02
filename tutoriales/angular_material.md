@@ -51,9 +51,14 @@ Interfaz
 
 Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Toolbar](https://material.angular.io/components/toolbar/api), [Button](https://material.angular.io/components/button/overview) + [Icon](https://material.angular.io/components/icon/api) y [Card](https://material.angular.io/components/card/api).
 
+<p align="center">
+  <img src="imagenes/angular_material_prototipo.png">
+</p>
 
 Componentes
 ===========
+
+En adelante, utilice la vista para **dispositivo móvil** en Chrome.
 
 **Componente de Angular Material:** Toolbar
 -------------------------------------------
@@ -194,8 +199,6 @@ Componentes
   ```
 
 * Actualice el navegador o (re)inicie el servidor
-
-* Cambie la vista al tamaño de un dispositivo móvil. 
   + El resultado debe lucir similar a
 
   <p align="center">
