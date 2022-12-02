@@ -43,6 +43,7 @@ Desde la línea de comando, del proyecto de Angular:
 </p>
 
 * Actualice el navegador o (re)inicie el servidor
+* **Nota:** En adelante, utilice la vista para **dispositivo móvil** en Chrome.
 
 Interfaz
 ========
@@ -57,8 +58,6 @@ Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Tool
 
 Componentes
 ===========
-
-En adelante, utilice la vista para **dispositivo móvil** en Chrome.
 
 **Componente de Angular Material:** Toolbar
 -------------------------------------------
