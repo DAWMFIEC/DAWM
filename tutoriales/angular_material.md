@@ -52,7 +52,7 @@ Interfaz
 Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Toolbar](https://material.angular.io/components/toolbar/api), [Button](https://material.angular.io/components/button/overview) + [Icon](https://material.angular.io/components/icon/api) y [Card](https://material.angular.io/components/card/api).
 
 <p align="center">
-  <img src="imagenes/angular_material_prototipo.png">
+  <img width="35%" src="imagenes/angular_material_prototipo.png">
 </p>
 
 Componentes
