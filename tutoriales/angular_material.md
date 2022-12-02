@@ -180,6 +180,19 @@ Componentes
   </mat-card>
   ```
 
+* Modifique **src/app/app.component.css**
+  ```
+  .example-card {
+    max-width: 95%;
+    margin: 5% auto;
+  }
+
+  .example-header-image {
+    background-image: url('https://material.angular.io/assets/img/examples/shiba1.jpg');
+    background-size: cover;
+  }
+  ```
+
 * Actualice el navegador o (re)inicie el servidor
 
 * Cambie la vista al tamaño de un dispositivo móvil. 
