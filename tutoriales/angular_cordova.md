@@ -33,7 +33,7 @@ Proyecto en Angular
 Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html), [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html) y [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html). 
 
 * Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **hibrida/clienteAngular**
-    - Para el hito: **`hito2-hibrida`**
+    - Para el hito: **`hito3-hibrida`**
 
 
 Requerimientos de instalación

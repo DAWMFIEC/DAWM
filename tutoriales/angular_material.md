@@ -36,7 +36,7 @@ Desde la línea de comando, del proyecto de Angular:
   + Acepte el estilo de tipografía: `Set up global Angular Material typography styles? (y/N) y`
   + Acepte las animaciones para el navegador (browser animations): `Include and enable animations`
 
-* Note los cambios en los archivos en
+* Identifique los cambios en los archivos en
 
 <p align="center">
   <img src="imagenes/angular_material_instalacion.png">
