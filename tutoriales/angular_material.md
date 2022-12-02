@@ -50,7 +50,7 @@ Interfaz
 
 * * *
 
-Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Toolbar](https://material.angular.io/components/toolbar/api), [Button](https://material.angular.io/components/button/overview) + [Icon](https://material.angular.io/components/icon/api) y [Card](https://material.angular.io/components/card/api).
+Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Toolbar](https://material.angular.io/components/toolbar/api), [Button](https://material.angular.io/components/button/overview) + [Icon](https://material.angular.io/components/icon/api), [Card](https://material.angular.io/components/card/api) y [Sidenav](https://material.angular.io/components/sidenav/overview).
 
 <p align="center">
   <img width="35%" src="imagenes/angular_material_prototipo.png">
@@ -59,7 +59,7 @@ Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Tool
 Componentes
 ===========
 
-**Componente de Angular Material:** Toolbar
+**Toolbar** 
 -------------------------------------------
 
 * En el **src/app/app.module.ts**
@@ -90,7 +90,7 @@ Componentes
 
 * Actualice el navegador o (re)inicie el servidor
 
-**Componente de Angular Material:** Button + Icon
+**Button + Icon** 
 -------------------------------------------------
 
 * En el **src/app/app.module.ts**
@@ -128,7 +128,7 @@ Componentes
 * Actualice el navegador o (re)inicie el servidor
 
 
-**Componente de Angular Material:** Card
+**Card** 
 -------------------------------------------------
 
 * En el **src/app/app.module.ts**
@@ -204,7 +204,52 @@ Componentes
     <img src="imagenes/angular_material_resultado.png">
   </p>
 
+**Sidenav** 
+-------------------------------------------------
 
+* En el **src/app/app.module.ts**
+  + Importe el módulo **MatSidenavModule** (`'@angular/material/sidenav'`), y 
+  + Agregue el módulo en la lista de módulos compartidos de la aplicación.
+
+* En el **src/app/app.component.html**
+  + Coloque el código previo dentro de las etiquetas
+
+  ```
+  <mat-drawer-container class="example-container" fullscreen>
+
+    <mat-drawer #enlaces class="example-sidenav" mode="over">
+      <p> Enlaces </p>
+    </mat-drawer>
+
+    <!-- Coloque aquí el código previo -->
+    
+  </mat-drawer-container>
+  ```
+  
+Variable en la plantilla y Eventos
+==================================
+
+De las etiquetas del **Sidenav**, la [variable de plantilla](https://angular.io/guide/template-reference-variables) `#enlaces` sirve como referencia dentro del código.
+
+  + Modifique el código existente
+
+  ```
+  ...
+    <button mat-icon-button color="accent" aria-label="menu">  
+       <mat-icon>menu</mat-icon>  
+    </button>  
+  ...
+  ```
+
+  por 
+
+  ```
+  ...
+    <button mat-icon-button color="accent" aria-label="menu" (click)="enlaces.toggle()">  
+       <mat-icon>menu</mat-icon>  
+    </button>  
+  ...
+  ```
 
 Referencias 
 ===========
@@ -212,3 +257,5 @@ Referencias
 * * *
 
 * Angular Material Tutorial. (2022). Retrieved 20 July 2022, from https://www.tutorialspoint.com/angular_material/index.htm
+* Team, A. (2022). Angular Material. Retrieved 2 December 2022, from https://material.angular.io/
+* Angular. (2022). Retrieved 2 December 2022, from https://angular.io/guide/template-reference-variables

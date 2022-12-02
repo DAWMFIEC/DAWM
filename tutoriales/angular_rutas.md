@@ -28,13 +28,74 @@ Componentes
 -----------
 
 * En la raíz del proyecto de Angular
-* Desde la línea de comandos, cree los componentes **splash**, **album** y **foto**. 
+* Desde la línea de comandos, cree los componentes **album** y **foto**. 
+
+Componente: Foto 
+----------------
+
+* En `src/app/app.component.html`
+  + Reemplace el contenido
+
+  ```
+  <mat-toolbar color="primary">
+    <button mat-icon-button color="accent" aria-label="menu">  
+       <mat-icon>menu</mat-icon>  
+    </button>  
+    <span>Album fotográfico</span>
+  </mat-toolbar>
+  <mat-card class="example-card">
+    ...
+  </mat-card>
+  ```
+
+  por 
+
+  ```
+  <mat-toolbar color="primary">
+    <button mat-icon-button color="accent" aria-label="menu">  
+       <mat-icon>menu</mat-icon>  
+    </button>  
+    <span>Album fotográfico</span>
+  </mat-toolbar>
+  <app-foto></app-foto>
+  ```
+
+* En `src/app/foto/foto.component.html`
+  + Reemplace el contenido
+
+  ```
+  <p>foto works!</p>
+  ```
+
+  por
+
+  ```
+  <mat-card class="example-card">
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>Shiba Inu</mat-card-title>
+      <mat-card-subtitle>Dog Breed</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="https://material.angular.io/assets/img/examples/shiba2.jpg" alt="Photo of a Shiba Inu">
+    <mat-card-content>
+      <p>
+        The Shiba Inu is the smallest of the six original and distinct spitz breeds of dog from Japan.
+        A small, agile dog that copes very well with mountainous terrain, the Shiba Inu was originally
+        bred for hunting.
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  ```
 
 Rutas 
 -----
 
 * Modifique el archivo **app/app-routing.module.ts**
-  + Agregue la referencia a los componentes **splash** y **principal**.
+  + Agregue la referencia a los componentes **foto** y **album**.
   + Agregue las rutas a sus correspondientes componentes.
   
   <pre><code>
@@ -42,15 +103,15 @@ Rutas
   import { RouterModule, Routes } from '@angular/router';
 
   <b style="color: red">
-  import { SplashComponent } from './splash/splash.component';
-  import { PrincipalComponent } from './principal/principal.component';
+  import { FotoComponent } from './foto/foto.component';
+  import { AlbumComponent } from './album/album.component';
   </b>
 
   <b style="color: red">
   const routes: Routes = [
-      { path: "splash", component: SplashComponent },
-      { path: "principal", component: PrincipalComponent },
-      { path: "**", redirectTo: "splash" }
+      { path: "foto", component: FotoComponent },
+      { path: "album", component: AlbumComponent },
+      { path: "**", redirectTo: "album" }
     ];
   </b>
     
@@ -66,25 +127,27 @@ Rutas
   + Reemplace TODO el contenido por
     
     ```html
-    <nav>
-      <a href="/splash">Splash</a> |
-      <a href="/principal">Principal</a>
-    </nav>   
+    <mat-toolbar color="primary">
+      <button mat-icon-button color="accent" aria-label="menu">  
+         <mat-icon>menu</mat-icon>  
+      </button>  
+      <span>Album fotográfico</span>
+    </mat-toolbar>
     <router-outlet></router-outlet>
     ```
 
 * Inicie el servidor, con: `ng serve -o`
-  + Por defecto, la aplicación se redirige a la ruta **http://localhost:4200/splash** en cualquier caso
-  + Acceda al enlace **Splash** con la ruta **http://localhost:4200/splash**
+  + De manera predeterminada, al acceder a la ruta **http://localhost:4200/** se redirige a la ruta **http://localhost:4200/album** 
+  + Acceda al enlace **Album** con la ruta **http://localhost:4200/album**
 
   <p align="center">
-    <img src="imagenes/angular_rutas_splash.png">
+    <img src="imagenes/angular_rutas_album.png">
   </p>
 
-  + Acceda al enlace **Principal** con la ruta **http://localhost:4200/principal**
+  + Acceda al enlace **Foto** con la ruta **http://localhost:4200/foto**
 
   <p align="center">
-    <img src="imagenes/angular_rutas_principal.png">
+    <img src="imagenes/angular_rutas_foto.png">
   </p>
 
 
@@ -92,41 +155,12 @@ Rutas
   
   ```html
     <nav>
-      <a routerLink="/splash">Splash</a> |
+      <a ping="
+     "  ="/splash">Splash</a> |
       <a routerLink="/principal">Principal</a>
     </nav>   
     <router-outlet></router-outlet>
     ```
-
-Rutas (desde la barra de navegación)
-------------------------------------
-
-Cuando se quiere ir a una URL a otra, desde la barra de navegación, puede resultar un error debido a que el sistema asume que es una ubicación física. [Para resolver este particular](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html), debes:
-
-* En **app.module.ts**, agregue los módulos `HashLocationStrategy` y `LocationStrategy`, con:
-
-<pre><code>
-  ...
-  import { AppComponent } from './app.component';
-  import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-  ...
-  <b style="color:red">
-  import { HashLocationStrategy, LocationStrategy  } from '@angular/common';
-  </b>
-  ...
-</code></pre>
-
-* Agregue los módulos en el arreglo con la clave **providers**
-
-<pre><code>
-  ...
-  providers: [
-    <b style="color:red">
-    {provide : LocationStrategy , useClass: HashLocationStrategy}
-    </b>
-  ],
-  ...
-</code></pre>
 
 Referencias 
 ===========
