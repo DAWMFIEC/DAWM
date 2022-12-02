@@ -117,7 +117,7 @@ Componentes
       <button mat-icon-button color="accent" aria-label="Example icon button with a menu icon">  
          <mat-icon>menu</mat-icon>  
       </button>  
-      <span>Mi aplicación</span>  
+      <span>Album fotográfico</span>  
     </mat-toolbar>
   ```
 
