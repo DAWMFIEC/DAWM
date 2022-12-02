@@ -239,6 +239,16 @@ Componentes
 
   + Coloque las etiquetas iniciales en lugar del texto  `<!-- Coloque aquí las etiquetas previas -->`
 
+
+* En el **src/app/app.component.css**
+
+  + Agregue la propiedad CSS
+  ```
+  .example-container {
+    height: 100vh;
+  }
+  ```
+
   
   
 Variable en la plantilla y Eventos
