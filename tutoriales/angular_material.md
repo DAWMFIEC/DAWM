@@ -32,9 +32,10 @@ Instalación de Angular Material
 Desde la línea de comando, del proyecto de Angular:
 
 * Instale Angular Material, con: `ng add @angular/material`
-  + Seleccione el tema prediseñado
-  + Acepte el estilo de tipografía
-  + Acepte las animaciones para el navegador (browser animations)
+  + Seleccione el tema prediseñado: `Indigo/Pink        [ Preview: https://material.angular.io?theme=indigo-pink ]`
+  + Acepte el estilo de tipografía: `Set up global Angular Material typography styles? (y/N) y`
+  + Acepte las animaciones para el navegador (browser animations): `Include and enable animations`
+  
 * Note los cambios en los archivos en
 
 <p align="center">
