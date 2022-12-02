@@ -35,7 +35,7 @@ Desde la línea de comando, del proyecto de Angular:
   + Seleccione el tema prediseñado: `Indigo/Pink        [ Preview: https://material.angular.io?theme=indigo-pink ]`
   + Acepte el estilo de tipografía: `Set up global Angular Material typography styles? (y/N) y`
   + Acepte las animaciones para el navegador (browser animations): `Include and enable animations`
-  
+
 * Note los cambios en los archivos en
 
 <p align="center">
@@ -49,14 +49,17 @@ Interfaz
 
 * * *
 
-Para el diseño de la interfaz, vamos a colocar algunos componentes, como: toolbar, button, card, etc.
+Para el diseño de la interfaz, vamos a colocar algunos componentes, como: [Toolbar](https://material.angular.io/components/toolbar/api), button + icon y card.
+
+
+Componentes
+===========
 
 **Componente de Angular Material:** Toolbar
 -------------------------------------------
 
 * En **src/app/app.module.ts**
-  + Agregue la referencia al [API del componente Toolbar](https://material.angular.io/components/toolbar/api) 
-  + Agregue el módulo **MatToolbarModule** en el arreglo `import`.
+  + Importe el módulo **MatToolbarModule** (`'@angular/material/toolbar'`) y agregue el módulo en la lista de importanciones de la aplicaciones.
  
   <pre><code>
   ...  
