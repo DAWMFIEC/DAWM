@@ -212,7 +212,7 @@ Componentes
   + Agregue el módulo en la lista de módulos compartidos de la aplicación.
 
 * En el **src/app/app.component.html**
-  + Extraiga etiquetas iniciales `<mat-toolbar>` y `<mat-card>`
+  + Extraiga las etiquetas `<mat-toolbar>` y `<mat-card>`
 
   ```
   <mat-toolbar color="primary">
@@ -223,7 +223,7 @@ Componentes
   </mat-card>
   ```
 
-  + Coloque las etiquetas del componente **Sidenav** 
+  + Coloque las siguientes etiquetas (del componente **Sidenav**) 
 
   ```
   <mat-drawer-container class="example-container" autosize>
@@ -237,7 +237,7 @@ Componentes
   </mat-drawer-container>
   ```
 
-  + Reemplace las etiquetas iniciales (`<mat-toolbar>` y `<mat-card>`) en lugar del texto  `<!-- Coloque aquí las etiquetas previas -->`
+  + Coloque las etiquetas iniciales (`<mat-toolbar>` y `<mat-card>`) en lugar del texto  `<!-- Coloque aquí las etiquetas previas -->`
 
 
 * En el **src/app/app.component.css**
