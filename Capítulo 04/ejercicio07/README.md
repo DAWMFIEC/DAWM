@@ -25,19 +25,7 @@
 	+ Existen pruebas unitarias fallidas.
 * En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.
 
-
-## Prueba PWA
-
-* Genere el proyecto en modo de producción
-* Levante un servidor HTTP local que apunte a la ruta del proyecto en modo de producción: `dist/cliente-angular`
-* En Chrome o Firefox, verifique el registro del service worker
-
-![serviceworkers](imagenes/serviceworkers.png)
-
 ## Referencias 
 
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_local.html
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_material.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html
