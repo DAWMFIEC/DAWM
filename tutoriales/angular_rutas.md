@@ -34,30 +34,16 @@ Componente: Foto
 ----------------
 
 * En `src/app/app.component.html`
-  + Reemplace el contenido
-
+  + Extraiga la etiqueta `<mat-card>`, con todas sus estructura interna
   ```
-  <mat-toolbar color="primary">
-    <button mat-icon-button color="accent" aria-label="menu">  
-       <mat-icon>menu</mat-icon>  
-    </button>  
-    <span>Album fotográfico</span>
-  </mat-toolbar>
-  <mat-card class="example-card">
     ...
-  </mat-card>
-  ```
+    </mat-toolbar>
+    
+    <mat-card class="example-card">
+      ...
+    </mat-card>
 
-  por 
-
-  ```
-  <mat-toolbar color="primary">
-    <button mat-icon-button color="accent" aria-label="menu">  
-       <mat-icon>menu</mat-icon>  
-    </button>  
-    <span>Album fotográfico</span>
-  </mat-toolbar>
-  <app-foto></app-foto>
+  </mat-drawer-container>
   ```
 
 * En `src/app/foto/foto.component.html`
@@ -67,7 +53,7 @@ Componente: Foto
   <p>foto works!</p>
   ```
 
-  por
+  por la etiqueta `<mat-card>`
 
   ```
   <mat-card class="example-card">
@@ -101,12 +87,10 @@ Rutas
   <pre><code>
   import { NgModule } from '@angular/core';
   import { RouterModule, Routes } from '@angular/router';
-
   <b style="color: red">
   import { FotoComponent } from './foto/foto.component';
   import { AlbumComponent } from './album/album.component';
   </b>
-
   <b style="color: red">
   const routes: Routes = [
       { path: "foto", component: FotoComponent },
@@ -123,21 +107,20 @@ Rutas
   </code></pre>
 
 * Modifique el archivo **src/app/app.component.html**
-  + La etiqueta `<router-outlet>` le dice al enrutador dónde mostrar las vistas enrutadas.
-  + Reemplace TODO el contenido por
+  + Coloque la etiqueta `<router-outlet>` en el lugar donde se encontraba la etiqueta `<mat-card>`.
     
     ```html
-    <mat-toolbar color="primary">
-      <button mat-icon-button color="accent" aria-label="menu">  
-         <mat-icon>menu</mat-icon>  
-      </button>  
-      <span>Album fotográfico</span>
-    </mat-toolbar>
-    <router-outlet></router-outlet>
+      <mat-toolbar color="primary">
+        ...
+      </mat-toolbar>
+
+      <router-outlet></router-outlet>
+
+    </mat-drawer-container>
     ```
 
 * Inicie el servidor, con: `ng serve -o`
-  + De manera predeterminada, al acceder a la ruta **http://localhost:4200/** se redirige a la ruta **http://localhost:4200/album** 
+  + De manera predeterminada, al acceder a la ruta **http://localhost:4200/** la aplicación redirigirá a la ruta **http://localhost:4200/album** 
   + Acceda al enlace **Album** con la ruta **http://localhost:4200/album**
 
   <p align="center">
@@ -151,16 +134,7 @@ Rutas
   </p>
 
 
-* Para evitar el refrescamiento completo de la página, utilice la **directiva** `routerLink`
-  
-  ```html
-    <nav>
-      <a ping="
-     "  ="/splash">Splash</a> |
-      <a routerLink="/principal">Principal</a>
-    </nav>   
-    <router-outlet></router-outlet>
-    ```
+
 
 Referencias 
 ===========
