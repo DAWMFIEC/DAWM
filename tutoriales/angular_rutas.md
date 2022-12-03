@@ -80,6 +80,8 @@ Componente: Foto
 Rutas 
 -----
 
+La etiqueta  `<router-outlet>` actúa como un marcador de posición para que Angular llene dinámicamente según el estado actual del enrutador (De acuerdo con la URL que llega del navegador).
+
 * Modifique el archivo **app/app-routing.module.ts**
   + Agregue la referencia a los componentes **foto** y **album**.
   + Agregue las rutas a sus correspondientes componentes.
@@ -124,13 +126,13 @@ Rutas
   + Acceda al enlace **Album** con la ruta **http://localhost:4200/album**
 
   <p align="center">
-    <img src="imagenes/angular_rutas_album.png">
+    <img style="width: 35%; border: solid 0.25pt black;" src="imagenes/angular_rutas_album.png">
   </p>
 
   + Acceda al enlace **Foto** con la ruta **http://localhost:4200/foto**
 
   <p align="center">
-    <img src="imagenes/angular_rutas_foto.png">
+    <img style="width: 35%; border: solid 0.25pt black;" src="imagenes/angular_rutas_foto.png">
   </p>
 
 
