@@ -10,7 +10,6 @@
 ## Instrucciones
 
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
-* Cree el servicio **fotos** y consuma el recurso en la URL ``.
 * Ejecute su aplicación, con: `ng serve`
 
 
