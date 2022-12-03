@@ -32,9 +32,9 @@ Instalación de Angular Material
 Desde la línea de comando, del proyecto de Angular:
 
 * Instale Angular Material, con: `ng add @angular/material`
-  + Seleccione el tema prediseñado: `Indigo/Pink        [ Preview: https://material.angular.io?theme=indigo-pink ]`
-  + Acepte el estilo de tipografía: `Set up global Angular Material typography styles? (y/N) y`
-  + Acepte las animaciones para el navegador (browser animations): `Include and enable animations`
+  + Seleccione el tema prediseñado: `Indigo/Pink `
+  + Acepte el estilo de tipografía.
+  + Acepte que se incluya el módulo de animación para acciones en el navegador (browser animations).
 
 * Identifique los cambios en los archivos en
 
@@ -45,8 +45,8 @@ Desde la línea de comando, del proyecto de Angular:
 * Actualice el navegador o (re)inicie el servidor
 * **Nota:** En adelante, utilice la vista para **dispositivo móvil** en Chrome.
 
-Interfaz
-========
+Diseño de la interfaz
+=====================
 
 * * *
 
@@ -94,8 +94,8 @@ Componentes
 -------------------------------------------------
 
 * En el **src/app/app.module.ts**
-  + Importe el módulo **MatIconModule** y **MatButtonModule** (`'@angular/material/icon'` y `'@angular/material/button'`), y 
-  + Agregue el módulo en la lista de módulos compartidos de la aplicación.
+  + Importe los módulos **MatIconModule** y **MatButtonModule** (`'@angular/material/icon'` y `'@angular/material/button'`), y 
+  + Agregue los módulos en la lista de módulos compartidos de la aplicación.
 
   <pre><code>
   import { MatToolbarModule } from '@angular/material/toolbar';  
@@ -212,7 +212,21 @@ Componentes
   + Agregue el módulo en la lista de módulos compartidos de la aplicación.
 
 * En el **src/app/app.component.html**
-  + Extraiga las etiquetas `<mat-toolbar>` y `<mat-card>`, con toda sus etiquetas internas
+  
+  + Agregue las etiquetas del componente **Sidenav** 
+
+  ```
+  <mat-drawer-container class="example-container" autosize>
+
+    <mat-drawer #enlaces class="example-sidenav" mode="over">
+      <p> Enlaces </p>
+    </mat-drawer>
+
+    <!-- Coloque aquí las etiquetas <mat-toolbar> y <mat-card> -->
+    
+  </mat-drawer-container>
+  ```
+  + Mueva las etiquetas `<mat-toolbar>` y `<mat-card>` (con toda sus etiquetas internas) en lugar del texto  `<!-- Coloque aquí las etiquetas <mat-toolbar> y <mat-card> -->`
 
   ```
   <mat-toolbar color="primary">
@@ -222,23 +236,6 @@ Componentes
   ...
   </mat-card>
   ```
-
-  + Coloque las etiquetas del componente **Sidenav** 
-
-  ```
-  <mat-drawer-container class="example-container" autosize>
-
-    <mat-drawer #enlaces class="example-sidenav" mode="over">
-      <p> Enlaces </p>
-    </mat-drawer>
-
-    <!-- Coloque aquí las etiquetas previas -->
-    
-  </mat-drawer-container>
-  ```
-
-  + Coloque las etiquetas iniciales (`<mat-toolbar>` y `<mat-card>`) en lugar del texto  `<!-- Coloque aquí las etiquetas previas -->`
-
 
 * En el **src/app/app.component.css**
 
@@ -251,12 +248,20 @@ Componentes
 
   
   
-Variable en la plantilla y Eventos
+Variables de plantilla y Eventos
 ==================================
 
-En las etiquetas del **Sidenav** se encuentra la [variable de plantilla](https://angular.io/guide/template-reference-variables) `#enlaces`. Esta variable sirve como referencia aparecer/desaparecer de acuerdo al evento __click__ del botón.
+En las etiquetas del **Sidenav** se encuentra la [variable de plantilla](https://angular.io/guide/template-reference-variables) `#enlaces`. Esta variable sirve como referencia [reaccionar al evento](https://angular.io/guide/event-binding) __click__ del botón.
 
-  + Modifique el código existente
+  + Agregue el callback `menu` en el `src/app/app.component.ts`
+
+  ```
+  menu(enlaces: any) {
+    enlaces.toggle()
+  }
+  ```
+
+  + Identifique la etiqueta `<button>` en la barra superior
 
   ```
   ...
@@ -266,11 +271,11 @@ En las etiquetas del **Sidenav** se encuentra la [variable de plantilla](https:/
   ...
   ```
 
-  por 
+  + Agregue la referencia al callback `menu`
 
   ```
   ...
-    <button mat-icon-button color="accent" aria-label="menu" (click)="enlaces.toggle()">  
+    <button mat-icon-button color="accent" aria-label="menu" (click)="menu(enlaces)">  
        <mat-icon>menu</mat-icon>  
     </button>  
   ...
