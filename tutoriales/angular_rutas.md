@@ -34,7 +34,8 @@ Componente: Foto
 ----------------
 
 * En `src/app/app.component.html`
-  + Extraiga la etiqueta `<mat-card>`, con todas sus estructura interna
+  + Extraiga la etiqueta `<mat-card>`, con toda sus etiquetas internas
+  
   ```
     ...
     </mat-toolbar>
