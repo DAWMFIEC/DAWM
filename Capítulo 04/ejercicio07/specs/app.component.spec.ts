@@ -2,24 +2,25 @@ import { TestBed } from '@angular/core/testing';
 import { RouterTestingModule } from '@angular/router/testing';
 import { AppComponent } from './app.component';
 
-import { ContactoComponent } from './contacto/contacto.component';
-import { CabeceraComponent } from './cabecera/cabecera.component';
-import { RedesComponent } from './redes/redes.component';
-
-import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';  
+import {MatButtonModule} from '@angular/material/button';
+import {MatSidenavModule} from '@angular/material/sidenav';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
     await TestBed.configureTestingModule({
       imports: [
         RouterTestingModule,
-        HttpClientModule,
+        BrowserAnimationsModule,
+        MatToolbarModule,
+        MatIconModule,  
+        MatButtonModule,
+        MatSidenavModule
       ],
       declarations: [
-        AppComponent,
-        ContactoComponent,
-        CabeceraComponent,
-        RedesComponent
+        AppComponent
       ],
     }).compileComponents();
   });
@@ -30,25 +31,5 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it('should have the Contacto component', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('app-contacto')).not.toBe(null);
-  });
 
-  it('should have the Cabecera component', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('app-cabecera')).not.toBe(null);
-  });
-
-  it('should have the Redes component', () => {
-    const fixture = TestBed.createComponent(AppComponent);
-    fixture.detectChanges();
-    const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('app-redes')).not.toBe(null);
-  });
-  
 });
