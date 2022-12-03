@@ -27,36 +27,37 @@ Crea un nuevo proyecto, según [Angular - Local](https://dawfiec.github.io/DAWM/
 Componentes 
 -----------
 
-* En la raíz del proyecto de Angular
-* Desde la línea de comandos, cree los componentes **album** y **foto**. 
+Cree los componentes **album** y **foto**. 
 
 Componente: Foto 
 ----------------
 
 * En `src/app/app.component.html`
-  + Extraiga la etiqueta `<mat-card>`, con toda sus etiquetas internas
+  + Extraiga la etiqueta `<mat-card>` (con todas sus etiquetas internas)
   
-  ```
-    ...
-    </mat-toolbar>
-    
-    <mat-card class="example-card">
+  ```html
+    <mat-drawer-container>  
       ...
-    </mat-card>
-
-  </mat-drawer-container>
+      </mat-toolbar>
+      
+      <mat-card class="example-card">
+        ...
+      </mat-card>
+      
+    </mat-drawer-container>
   ```
 
 * En `src/app/foto/foto.component.html`
+
   + Reemplace el contenido
 
-  ```
+  ```html
   <p>foto works!</p>
   ```
 
   por la etiqueta `<mat-card>`
 
-  ```
+  ```html
   <mat-card class="example-card">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
@@ -113,6 +114,8 @@ La etiqueta  `<router-outlet>` actúa como un marcador de posición para que Ang
   + Coloque la etiqueta `<router-outlet>` en el lugar donde se encontraba la etiqueta `<mat-card>`.
     
     ```html
+    <mat-drawer-container>  
+      ...
       <mat-toolbar color="primary">
         ...
       </mat-toolbar>
@@ -147,25 +150,29 @@ Para ir de un URL a otro mediante la aplicación se utiliza el enrutamiento medi
 * En `src/app/app.component.html`
   + Reemplace el contenido
 
-  ```
-  <mat-drawer #enlaces class="example-sidenav" mode="over">
-    <p> Enlaces </p>
-  </mat-drawer>
+  ```html
+  ...
+    <mat-drawer #enlaces class="example-sidenav" mode="over">
+      <p> Enlaces </p>
+    </mat-drawer>
+  ...
   ```
   
   por
 
-  ```
-  <mat-drawer #enlaces class="example-sidenav" mode="over">
-    <ul>
-      <li><a routerLink="/album">Album</a></li>
-      <li><a routerLink="/foto">Foto</a></li>
-    </ul>
-  </mat-drawer>
+  ```html
+  ...
+    <mat-drawer #enlaces class="example-sidenav" mode="over">
+      <ul>
+        <li><a routerLink="/album">Album</a></li>
+        <li><a routerLink="/foto">Foto</a></li>
+      </ul>
+    </mat-drawer>
+  ...
   ```
 
 * Actualice el navegador o (re)inicie el servidor
-  + Acceda desde el panel desplegable de la izquierda
+  + Desde el panel desplegable de la izquierda, acceda a los enlaces: `Foto` y `Album`
 
 Referencias 
 ===========
