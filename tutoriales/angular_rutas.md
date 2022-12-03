@@ -122,22 +122,50 @@ La etiqueta  `<router-outlet>` actúa como un marcador de posición para que Ang
     </mat-drawer-container>
     ```
 
-* Inicie el servidor, con: `ng serve -o`
+* Actualice el navegador o (re)inicie el servidor
+  
   + De manera predeterminada, al acceder a la ruta **http://localhost:4200/** la aplicación redirigirá a la ruta **http://localhost:4200/album** 
-  + Acceda al enlace **Album** con la ruta **http://localhost:4200/album**
+  + Acceda a la ruta **http://localhost:4200/album** y el resultado debe lucir similar a
 
   <p align="center">
     <img style="width: 35%; border: solid 0.25pt black;" src="imagenes/angular_rutas_album.png">
   </p>
 
-  + Acceda al enlace **Foto** con la ruta **http://localhost:4200/foto**
+  + Acceda a la ruta **http://localhost:4200/foto** y el resultado debe lucir similar a
 
   <p align="center">
     <img style="width: 35%; border: solid 0.25pt black;" src="imagenes/angular_rutas_foto.png">
   </p>
 
 
+Enrutamiento 
+============
 
+Para ir de un URL a otro mediante la aplicación se utiliza el enrutamiento mediante el atributo `routerLink`.
+
+
+* En `src/app/app.component.html`
+  + Reemplace el contenido
+
+  ```
+  <mat-drawer #enlaces class="example-sidenav" mode="over">
+    <p> Enlaces </p>
+  </mat-drawer>
+  ```
+  
+  por
+
+  ```
+  <mat-drawer #enlaces class="example-sidenav" mode="over">
+    <ul>
+      <li><a routerLink="/album">Album</a></li>
+      <li><a routerLink="/foto">Foto</a></li>
+    </ul>
+  </mat-drawer>
+  ```
+
+* Actualice el navegador o (re)inicie el servidor
+  + Acceda desde el panel desplegable de la izquierda
 
 Referencias 
 ===========
