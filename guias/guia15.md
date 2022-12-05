@@ -25,47 +25,12 @@ theme: jekyll-theme-leap-day
   + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **hibrida/clienteAngular**
     - Para el hito: **`hito4-hibrida`**
 
-#### Componentes
 
-* Registre los componentes en la aplicación en `src/app/app.module.ts`
-  + Compruebe que exista la referencia a los componentes nuevos **splash**, **principal** y **album**.
-
-    <pre><code>
-  	...
-  	import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-  	<b style="color: red">
-  	import { SplashComponent } from './splash/splash.component';
-	  import { PrincipalComponent } from './principal/principal.component';
-	  import { AlbumComponent } from './album/album.component';
-	  </b>
-
-	  @NgModule({
-  	  	declarations: [
-  	...
-    </code></pre>
-
-  + Compruebe que los componentes se encuentren en el arreglo *declarations*
-
-    <pre><code>
-  	...
-  	@NgModule({
-	  declarations: [
-	    AppComponent,
-	    <b style="color: red">
-	    SplashComponent,
-	    PrincipalComponent,
-	    AlbumComponent
-	    </b>
-	  ],
-	  imports: [
-  	...
-    </code></pre>
-
-#### Angular Material (Módulos GridList, Icon y Button)
+### Angular Material (Módulos GridList)
 
 * Registre los módulos en la aplicación en `src/app/app.module.ts`
 
-    + Agregue la referencia a los módulos de Angular Material: `MatGridListModule`, `MatIconModule` y `MatButtonModule`
+    + Agregue la referencia a los módulos de Angular Material: `MatGridListModule`
 
 	<pre><code>
 	...
@@ -103,92 +68,6 @@ theme: jekyll-theme-leap-day
   	...
     </code></pre>
 
-#### Rutas
-
-* Para manejar las rutas en el URL, modifique el archivo **src/app/app-routing.module.ts**
-  + Agregue la referencia a los componentes **splash**, **principal** y **album**.
-  
-    <pre><code>
-  	import { NgModule } from '@angular/core';
-  	import { RouterModule, Routes } from '@angular/router';
-
-  	<b style="color: red">
-  	import { SplashComponent } from './splash/splash.component';
-  	import { PrincipalComponent } from './principal/principal.component';
-  	import { AlbumComponent } from './album/album.component';
-  	</b>
-  	...
-  	</code></pre>
-
-  + Agregue las rutas a sus correspondientes componentes.
-  
-  	<pre><code>
-  	...
-  	<b style="color: red">
-  	const routes: Routes = [
-       { path: "splash", component: SplashComponent },
-       { path: "principal", component: PrincipalComponent },
-   	   { path: "album", component: AlbumComponent },
-   	   { path: "**", redirectTo: "splash" }
-    ];
-  	</b>
-    
-  	@NgModule({
-  	  imports: [RouterModule.forRoot(routes)],
-  	...  
-  	</code></pre>
-
-#### Salida de las rutas (<router-outlet>)
-
-* Modifique la vista (**src/app/app.component.html**) del AppComponent
-  + La etiqueta `<router-outlet>` le dice al enrutador dónde mostrar las vistas enrutadas.
-  + Reemplace TODO el contenido por
-    
-    ```html
-    <router-outlet></router-outlet>
-    ```
-* Actualice el navegador o (re)inicie el servidor
-* Cambie la vista al tamaño de un dispositivo móvil. 
-  + Las rutas `http://localhost:4200/splash`, `http://localhost:4200/principal` y `http://localhost:4200/album` deben lucir similares a:
-
-	<p align="center">
-	  <img width="30%" src="imagenes/angular_material_splash.png">
-	  <img width="30%" src="imagenes/angular_material_principal.png">
-	  <img width="30%" src="imagenes/angular_material_album.png">
-	</p>
-
-#### Navegación entre rutas (routerlink)
-
-* Modifique la vista (**src/app/splash.component.html**) del SplashComponent
-  + Al dar clic sobre el nombre o la imagen debe redirigir a la ruta `/principal`
-
-  ```
-  ... 
-  <img src="assets/imagenes/pngwing.com.png" class="img-fluid"  routerLink="/principal"  alt="imagen">
-  ...
-  <h1 class="titulo" routerLink="/principal">Album</h1>
-  ...
-  ```
-
-* Agregue la navegación entre del componente **PrincipalComponent** al componente **AlbumComponent**
-  + Al dar clic en el **button** con el nombre `Ver`.
-
-  ```
-  ...
-  <button type="button" class="btn btn-success mx-2">Ver</button> 
-  ...
-  ```
-
-* Agregue la navegación entre del componente **AlbumComponent** al componente **PrincipalComponent**
-  + Al dar clic en el **button** con el ícono `arrow_back`.
-
-  ```
-  ...
-  <button mat-icon-button color="basic" aria-label="back">  
-	  <mat-icon>arrow_back</mat-icon> 
-  </button>  
-  ...
-  ```
 
 #### Redirección automática (router)
 
