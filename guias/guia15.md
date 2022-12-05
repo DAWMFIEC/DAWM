@@ -13,7 +13,7 @@ theme: jekyll-theme-leap-day
 	- [Material design](https://material.io/design) es una guía de diseño enfocado en la visualización del sistema operativo Android, además en la web y en cualquier plataforma. Fue desarrollado por Google y anunciado en la conferencia Google I/O del 2014.
 
 
-### Actividades
+### Prerrequisito
 
 * Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
   
@@ -25,90 +25,10 @@ theme: jekyll-theme-leap-day
   + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **hibrida/clienteAngular**
     - Para el hito: **`hito4-hibrida`**
 
+### Actividades
 
-### Angular Material (Módulo GridList)
-
-* Registre los módulos en la aplicación en `src/app/app.module.ts`
-
-    + Agregue la referencia a los módulos de Angular Material: `MatGridListModule`
-
-	<pre><code>
-	...
-	import { PrincipalComponent } from './principal/principal.component';
-	import { AlbumComponent } from './album/album.component';
-	...
-	<b style="color: red">
-	import {MatGridListModule} from '@angular/material/grid-list';
-	import {MatIconModule} from '@angular/material/icon';
-	import {MatButtonModule} from '@angular/material/button';
-	</b>
-	...
-	@NgModule({
-	  declarations: [
-	    AppComponent,
-	...
-	</code></pre>
-
-	+ Agregue los módulos de Angular Material en el arreglo *imports*
-
-    <pre><code>
-  	...
-  	imports: [
-	    BrowserModule,
-	    AppRoutingModule,
-	    BrowserAnimationsModule,
-	    <b style="color: red">
-	    MatGridListModule,
-	    MatIconModule,  
-	    MatButtonModule
-	    </b>
-	  ],
-	providers: [],
-	bootstrap: [AppComponent]
-  	...
-    </code></pre>
-
-
-#### Redirección automática (router)
-
-* Modifique el controlador (**src/app/splash.component.ts**) del SplashComponent
-  + Agregue la referencia al módulo `Router`
-
-	<pre><code>
-	import { Component, OnInit } from '@angular/core';
-	<b style="color: red">
-  import { Router } from '@angular/router';
-  </b>
-  @Component({
-	...
-	</code></pre>
-
-	+ Agregue la inyección de dependencia al módulo `Router`
-
-	<pre><code>
-	...
-	export class SplashComponent implements OnInit {
-	<b style="color: red">
-    constructor(private router: Router) { }
-  </b>
-    ngOnInit(): void {
-	...
-	</code></pre>
-
-	+ Luego de la inicialización del componente, agregue el código para activar navegación a la ruta `/principal`
-
-	<pre><code>
-	...
-	ngOnInit(): void {
-	<b style="color: red">
-	    setTimeout(() => {
-	      this.router.navigate(['principal']);
-	    }, 2000);
-  </b>
-  }
-  ...
-	</code></pre>
-
+* Incluya el módulo [`MatTableModule`](https://material.angular.io/components/table/api) en el `src/app/app.module.ts`
+* Cree un servicio para consumir los datos del URL [`Photos`](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json)
 
 ### Términos
 

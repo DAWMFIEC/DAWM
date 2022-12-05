@@ -13,13 +13,15 @@ theme: jekyll-theme-leap-day
 * [Servicios](https://desarrolloweb.com/articulos/servicios-angular.html) son proveedores de datos que serán consumidos por los componentes.
 
 
-### Actividades
+### Prerrequisito
 
 * Genere una aplicación en Angular, siguiendo las instrucciones:
   
   + De la [Guía 13](https://dawfiec.github.io/DAWM/guias/guia13.html), o 
   + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **spa/clienteAngular**
     - Para el hito: **`hito1-spa`**
+
+### Actividades
 
 * Convierta la aplicación a **PWA** y compruebe el funcionamiento offline, de acuerdo con las instrucciones de [Angular - PWA](https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html).
 * Cree y consuma el servicio **servicios/navbar**, de acuerdo con las instrucciones de [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html)
