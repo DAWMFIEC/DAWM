@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
     - Para el hito: **`hito4-hibrida`**
 
 
-### Angular Material (Módulos GridList)
+### Angular Material (Módulo GridList)
 
 * Registre los módulos en la aplicación en `src/app/app.module.ts`
 
