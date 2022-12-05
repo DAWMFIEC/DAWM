@@ -22,13 +22,16 @@ theme: jekyll-theme-leap-day
   	- De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) realice la sección **Instalación de Bootstrap (y dependencias)**
   	- De [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html) realice la sección **Instalación de Angular Material**
   	- De [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html) realice la sección **Rutas**.
-  + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **hibrida/clienteAngular**
+  + O, clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **hibrida/clienteAngular**
     - Para el hito: **`hito4-hibrida`**
 
 ### Actividades
 
+* Cree y consuma el servicio **servicios/album**, de acuerdo con las instrucciones de [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html)
+	+ Realice peticiones al URL [Album](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json)
+	+ Cree y utilice la interfaz **interfaz/album** de acuerdo con la estructura de la respuesta de [Album](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
+
 * Incluya el módulo [`MatTableModule`](https://material.angular.io/components/table/api) en el `src/app/app.module.ts`
-* Cree un servicio para consumir los datos del URL [`Photos`](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json)
 
 ### Términos
 
