@@ -31,7 +31,10 @@ theme: jekyll-theme-leap-day
 	+ Realice peticiones al [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json)
 	+ Cree y utilice las interfaces **interfaz/album** y **interfaz/foto** de acuerdo con la estructura del [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
 
-* Incluya el módulo [`MatTableModule`](https://material.angular.io/components/table/api) en el `src/app/app.module.ts`
+* [`MatTableModule`](https://material.angular.io/components/table/api) 
+	+ Incluya el módulo en el `src/app/app.module.ts`
+	
+	
 
 ### Términos
 

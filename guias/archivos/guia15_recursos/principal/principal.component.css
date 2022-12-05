@@ -1,0 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;700&display=swap');
+
+* {
+	font-size: 0.8rem;
+	font-family: 'Ubuntu', sans-serif;
+}
+
+.container {
+	background-image: url("https://randomwordgenerator.com/img/picture-generator/55e8d2454a50a814f1dc8460962e33791c3ad6e04e50774977267cdd9244c6_640.jpg");
+	background-size:     cover;                    
+    background-repeat:   no-repeat;
+    background-position: center center;
+	height: 100vh;
+	width: 100vw;
+}
+
+.half {
+	min-height: 50vh !important;
+} 
+
+h2 {	
+	font-weight: bold;
+}
+
+
+.mt-n1 {
+  margin-top: -0.25rem !important;
+}
