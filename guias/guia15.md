@@ -17,15 +17,13 @@ theme: jekyll-theme-leap-day
 
 * Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
   
-  + De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
-  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) realice la sección **Instalación de Bootstrap (y dependencias)**
-  + De [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html) realice la sección **Instalación de Angular Material**
-  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html) realice la sección **Componentes** para los componentes **splash**, **principal** y **album**.
-  + De [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html) realice la sección **Rutas**.
-
-* Descargue y descomprima los [componentes y assets](archivos/guia15_recursos.zip)
-* Copie y reemplace las carpetas **splash**, **principal** y **album** dentro de la carpeta `src/app` del proyecto en Angular. 
-* Copie y guarde la carpeta **imagenes** dentro de la carpeta `src/assets` del proyecto en Angular
+  + De los tutoriales:
+  	- De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
+  	- De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) realice la sección **Instalación de Bootstrap (y dependencias)**
+  	- De [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html) realice la sección **Instalación de Angular Material**
+  	- De [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html) realice la sección **Rutas**.
+  + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **hibrida/clienteAngular**
+    - Para el hito: **`hito4-hibrida`**
 
 #### Componentes
 
