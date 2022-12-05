@@ -31,24 +31,6 @@ theme: jekyll-theme-leap-day
 	+ Realice peticiones al [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json)
 	+ Cree y utilice las interfaces **interfaz/album** y **interfaz/foto** de acuerdo con la estructura del [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
 
-* [`MatListModule`](https://material.angular.io/components/list/api) 
-	+ Incluya el módulo en el `src/app/app.module.ts`
-	+ En `app.component.html`
-		Reemplace la lista de enlaces
-		```
-		<ul>
-      <li><a routerLink="/album">Album</a></li>
-      <li><a routerLink="/foto">Foto</a></li>
-    </ul>
-		```
-		por
-		```
-		<mat-list role="list">
-		  <mat-list-item role="listitem" routerLink="/album">Album</mat-list-item>
-		  <mat-list-item role="listitem" routerLink="/foto">Foto</mat-list-item>
-		</mat-list>
-		```
-
 * [`MatTableModule`](https://material.angular.io/components/table/api) 
 	+ Incluya el módulo en el `src/app/app.module.ts`
 
