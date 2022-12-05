@@ -78,7 +78,10 @@ Componente: Foto
     </mat-card-actions>
   </mat-card>
   ```
-
+* De `src/app/app.component.css`
+  + Recorte las reglas css `.example-card ` y `example-header-image`
+  + Pegue las reglas css en `src/app/foto/foto.component.css`
+  
 Rutas 
 -----
 
