@@ -34,20 +34,43 @@ theme: jekyll-theme-leap-day
 
 #### Interfaces
 
-* Cree la interfaz **interfaz/album** de acuerdo con la estructura del [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
+* Cree la interfaz **interfaz/foto** con los atributos: 
 
-#### Componente: Album
+	```
+	descripcion: string;
+	id: string;
+	url: string;
+	```
+
+#### Componente: Album (`album.component.ts`)
 
 * Importe la referencia a las interfaces y al servicio.
-* Cree el atributo `album` de tipo de la interfaz **Album**.
+	
+	```
+	import { Foto } from '../interfaz/foto';
+	import { AlbumService } from '../servicios/album.service';
+	```
+
+* Cree el atributo `album` como arreglo de la interfaz **Foto**.
+	
+	```
+	album!: Foto[];
+	```
+
 * Inyecte la dependencia al servicio.
+
+	```
+	constructor(private albumService: AlbumService) {}
+	```
+
 * En el constructor, realice la petición al método `obtenerAlbum` y almacene el resultado en el atributo `album`.
+
 
 #### Angular Material - Componente: MatTableModule 
 
 * Incluya el módulo [MatTableModule](https://material.angular.io/components/table/api) en el `src/app/app.module.ts` de acuerdo con las instrucciones en [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html)
 
-
+#### Componente: Album (`album.component.html`)
 
 ### Términos
 
