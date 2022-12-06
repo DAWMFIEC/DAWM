@@ -104,7 +104,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-Despliegue, material design
+material design, componentes, servicios, it's a wrap
 
 ### Referencias
 
