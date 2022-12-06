@@ -27,13 +27,15 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Cree y consuma el servicio **servicios/album**, de acuerdo con las instrucciones de [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html)
-	+ Realice peticiones al [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json)
-	+ Cree y utilice las interfaces **interfaz/album** y **interfaz/foto** de acuerdo con la estructura del [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
+#### Servicio
 
-* [`MatTableModule`](https://material.angular.io/components/table/api) 
-	+ Incluya el módulo en el `src/app/app.module.ts`
+* Cree y consuma el servicio **servicios/album**, de acuerdo con las instrucciones en [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html)
+	+ Agregue un método que realice peticiones al [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json)
+* Cree las interfaces **interfaz/album** y **interfaz/foto** de acuerdo con la estructura del [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
 
+#### MatTableModule 
+
+* Incluya el módulo [`MatTableModule`](https://material.angular.io/components/table/api) en el `src/app/app.module.ts` de acuerdo con las instrucciones en [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html)
 
 
 ### Términos
