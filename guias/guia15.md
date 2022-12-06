@@ -40,10 +40,11 @@ theme: jekyll-theme-leap-day
 
 * Importe la referencia a las interfaces y al servicio.
 * Inyecte la dependencia al servicio.
+* En el constructor, realice la petición al método `obtenerAlbum` y almacene en atributo de la clase.
 
 #### Angular Material - Componente: MatTableModule 
 
-* Incluya el módulo [`MatTableModule`](https://material.angular.io/components/table/api) en el `src/app/app.module.ts` de acuerdo con las instrucciones en [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html)
+* Incluya el módulo [MatTableModule](https://material.angular.io/components/table/api) en el `src/app/app.module.ts` de acuerdo con las instrucciones en [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html)
 
 
 
