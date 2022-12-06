@@ -72,6 +72,36 @@ theme: jekyll-theme-leap-day
 
 #### Componente: Album (`album.component.html`)
 
+* Reemplace el contenido, por:
+
+	```
+	<table mat-table [dataSource]="album">
+
+
+	  <!-- Columna descripcion -->
+	  <ng-container matColumnDef="descripcion">
+	    <th mat-header-cell *matHeaderCellDef> Descripcion </th>
+	    <td mat-cell *matCellDef="let element"> {{element.descripcion}} </td>
+	  </ng-container>
+
+	  <!-- Columna url -->
+	  <ng-container matColumnDef="url">
+	    <th mat-header-cell *matHeaderCellDef> Enlace </th>
+	    <td mat-cell *matCellDef="let element"> <a routerLink="/foto/{{element.url}}">Abrir</a> </td>
+	  </ng-container>
+
+
+
+	  <tr mat-header-row *matHeaderRowDef="columnas"></tr>
+	  <tr mat-row *matRowDef="let row; columns: columnas;"></tr>
+	</table>
+	```
+* Actualice el navegador o (re)inicie el servidor
+
+<p align="center">
+  <img src="imagenes/angular_material_output.png">
+</p>
+
 ### Términos
 
 Despliegue, material design
