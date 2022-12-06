@@ -39,8 +39,9 @@ theme: jekyll-theme-leap-day
 #### Componente: Album
 
 * Importe la referencia a las interfaces y al servicio.
+* Cree el atributo `album` de tipo de la interfaz **Album**.
 * Inyecte la dependencia al servicio.
-* En el constructor, realice la petición al método `obtenerAlbum` y almacene en atributo de la clase.
+* En el constructor, realice la petición al método `obtenerAlbum` y almacene el resultado en el atributo `album`.
 
 #### Angular Material - Componente: MatTableModule 
 
