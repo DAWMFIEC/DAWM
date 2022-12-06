@@ -99,7 +99,7 @@ theme: jekyll-theme-leap-day
 * Actualice el navegador o (re)inicie el servidor
 
 <p align="center">
-  <img src="imagenes/angular_material_output.png">
+  <img src="imagenes/angular_material_output1.png">
 </p>
 
 ### Términos
