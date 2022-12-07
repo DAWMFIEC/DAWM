@@ -16,10 +16,14 @@ Proyecto en Express
 
 * * *
 
-Utiliza el proyecto que desarrollaste con el tutorial de [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html).
+Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html).
+
+* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **backend/admin**
+    - Para el hito: **`hito1-admin`**
 
 * Instala las dependencias, con: `npm install`
 * Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
+
 
 
 Detección de cambios y reinicio del servidor
