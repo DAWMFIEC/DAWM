@@ -125,9 +125,9 @@
 ## Pruebas unitarias
 
 * Copie cada archivo **.spec.ts** de la carpeta `specs` y reemplace el archivo **.spec.ts** correspondiente en su proyecto de Angular.
-	+ `specs/app.component.spec.ts` por `src/app/app.component.spec.ts`
-	+ `specs/cabecera.component.spec.ts` por `src/app/cabecera/cabecera.component.spec.ts`
-	+ `specs/redes.component.spec.ts` por `src/app/redes/redes.component.spec.ts`
+	+ `specs/app.component.spec.ts` -> `src/app/app.component.spec.ts`
+	+ `specs/cabecera.component.spec.ts` -> `src/app/cabecera/cabecera.component.spec.ts`
+	+ `specs/redes.component.spec.ts` -> `src/app/redes/redes.component.spec.ts`
 	+ `specs/contacto.component.spec.ts` por `src/app/contacto/contacto.component.spec.ts`
 * En la ruta de su proyecto en Angular, desde la línea de comandos ejecute: `npm test`
 * Los resultados posibles a las pruebas unitarias pueden ser: 
