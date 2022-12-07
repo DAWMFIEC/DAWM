@@ -44,6 +44,11 @@
 
 * Desde la línea de comandos:
   + Liste los comando disponibles, con: `npm run`
+
+  <p align="center">
+    <img src="imagenes/scripts.png">
+  </p>
+  
   + Ejecute las pruebas unitarias, con: `npm test`
 
 * Los resultados posibles a las pruebas unitarias:
