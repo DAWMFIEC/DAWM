@@ -57,49 +57,52 @@ Desde la línea de comandos del proyecto:
     <img width="405" height="220" src="imagenes/nodemon.png">
   </p>
 
-Bootstrap - Starter template
-============================
-
-* * *
-
-* Levante los servicios de la aplicación.
-* Utilice el [Starter template](https://getbootstrap.com/docs/5.0/getting-started/introduction/#starter-template) de bootstrap en lugar del contenido que se encuentra en **views/index.ejs**
-* Revise los cambios en el navegador.
-
 
 Bootstrap - Dashboard example
 =============================
 
 * * *
 
-* Descargue y descomprima los [ejemplos de Bootstrap](https://getbootstrap.com/docs/5.0/examples/)
-* Utilice la plantilla **Dashboard**.
-  + Del archivo **dashboard/index.html**, copie las etiquetas `<header>` y `<div.container-fluid>`
-  + En el archivo **views/index.ejs**
-  	- Reemplace la etiqueta `<h1>` por las etiquetas copiadas.
-  + Copie el archivo **dashboard/dashboard.css** en la carpeta **public/stylesheets**
-  + Copie el archivo **dashboard/dashboard.js** en la carpeta **public/javascripts**
-* En el **views/index.ejs** agregue la referencia a **dashboard.css** después del enlace al `bootstrap.min.css`
+* Descargue y descomprima los [ejemplos de Bootstrap](https://getbootstrap.com/docs/5.2/examples/)
+* Utilice el ejemplo **Dashboard**.
 
-	```
-		...
-		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-		...
-		<link rel='stylesheet' href='/stylesheets/dashboard.css' />
-		...
-	```
+### Archivos estáticos
 
-* En el **views/index.ejs** agregue la referencia a **feather.min.js**, **Chart.min.js** y **dashboard.js** después del script al `bootstrap.bundle.min.js`
+* Copie el archivo **dashboard/dashboard.css** del Ejemplo Dashboard, a la carpeta **public/stylesheets** del Proyecto de Express.
+* Copie el archivo **dashboard/dashboard.js** del Ejemplo Dashboard, a la carpeta **public/javascripts** del Proyecto de Express.
 
-	```
-		...
-		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-		...
-		<script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
-		<script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
-		<script src="/javascripts/dashboard.js"></script>
-		...
-	```
+### Vista principal: etiquetas HTML
+
+* Ejemplo Dashboard, del archivo **dashboard/index.html**
+	+ Copie las etiquetas `<header>` y `<div.container-fluid>`
+
+* Proyecto de Express, en el archivo **views/index.ejs**
+	+ Reemplace TODO el contenido de la etiqueta `<body>` por las etiquetas copiadas.
+	
+### Vista principal: Bootstrap
+
+* Elimine la referencia previa a cualquier hoja de estilo o script.
+* Agregue la referencia a las hojas de estilo **bootstrap** y **dashboard.css**
+
+```
+  <head>
+	...
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+    <link rel='stylesheet' href='/stylesheets/dashboard.css' />
+  </head>
+```
+	
+* Agregue la referencia a **bootstrap.bundle.min.js**, **feather.min.js**, **Chart.min.js** y **dashboard.js**.
+
+```
+ <body>
+	...
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
+    <script src="/javascripts/dashboard.js"></script>
+  </body>
+```
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/` 
