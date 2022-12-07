@@ -22,10 +22,10 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 * Instale el **express-generator**, con: `npm i -g express-generator`
   + Para obtener ayuda acerca del comando, utilice: `express --help`
 
-* Cree un sitio de prueba llamado **misitio**, con: `express --view=ejs misitio`
+* Cree un sitio de prueba llamado **admin**, con: `express --view=ejs admin`
   
   <p align="center">
-    <img width="427" height="495" src="imagenes/express_sitio_prueba.JPG">
+    <img width="427" height="495" src="imagenes/express_sitio_config.png">
   </p>
 
 * El generador producirá la siguiente estructura de archivos:
@@ -54,11 +54,18 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 * Compruebe el funcionamiento del servidor, con:  
   
   <pre><code>
-      cd misitio   
+      cd admin   
       npm install   
-      SET DEBUG=misitio:\* & npm start
+      SET DEBUG=admin:\* & npm start
   </code></pre>
     
+* En caso de ser necesario, resuelva los problemas con las dependencias, con:
+  
+  <pre><code>
+    npm audit fix --force
+  </code></pre>
+    
+
 * Acceda al URL `http://localhost:3000/` 
 
 
@@ -77,12 +84,12 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
     var logger = require('morgan');              <b style="background-color: #9b47d3;"># Registro (log) de acciones del servidor</b>
   </code></pre>
 
-  + Ruteadores 
+  + Referencia a los archivos con las rutas internas 
 
   <pre><code>
     var indexRouter = require('./routes/index'); <b style="background-color: #9b47d3;"># Carga del manejador de subrutas para la ruta raíz</b>
     var usersRouter = require('./routes/users'); <b style="background-color: #9b47d3;"># Carga del manejador de subrutas para la ruta users </b>
-  </code></pre>  
+  </code></pre> 
 
   + Instanciación de la aplicación
 
@@ -94,7 +101,7 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 
   <pre><code>
     // view engine setup
-    app.set('views', path.join(\_\_dirname, 'views')); <b style="background-color: #9b47d3;"># Ruta a los archivos físicos que contienen las vistas </b>
+    app.set('views', path.join(__dirname, 'views')); <b style="background-color: #9b47d3;"># Ruta a los archivos físicos que contienen las vistas </b>
     app.set('view engine', 'ejs');                     <b style="background-color: #9b47d3;"># Motor de renderización - EJS</b>
   </code></pre>
 
@@ -105,11 +112,11 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
     app.use(express.json());                            <b style="background-color: #9b47d3;"># Este método se usa para analizar las solicitudes entrantes con cargas JSON y se basa en el analizador de cuerpo de mensajes HTTP.</b>
     app.use(express.urlencoded({ extended: false }));   <b style="background-color: #9b47d3;"># Analiza las requests entrantes con cargas codificadas y se basa en body-parser. </b>
     app.use(cookieParser());                            <b style="background-color: #9b47d3;"># Manejo de cookies entre el cliente y el servidor </b>
-    app.use(express.static(path.join(\_\_dirname, 'public')));     <b style="background-color: #9b47d3;"># Registro de la ruta para archivos estáticos (imágenes, hojas de estilo, etc)</b>
+    app.use(express.static(path.join(__dirname, 'public')));     <b style="background-color: #9b47d3;"># Registro de la ruta para archivos estáticos (imágenes, hojas de estilo, etc)</b>
   </code></pre>
 
 
-  + Rutas
+  + Relación entre las rutas externas y las rutas internas 
 
   <pre><code>
     app.use('/', indexRouter);              <b style="background-color: #9b47d3;"># Pareo entre la ruta raíz y el manejador de subrutas</b>
