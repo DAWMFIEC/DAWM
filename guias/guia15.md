@@ -15,20 +15,54 @@ theme: jekyll-theme-leap-day
 
 ### Prerrequisito
 
-* Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
+* Genere una aplicación nueva en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
   
-  + De los tutoriales:
-  	- De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción de un **Sitio base**
-  	- De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) realice la sección **Instalación de Bootstrap (y dependencias)**
-  	- De [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html) realice la sección **Instalación de Angular Material**
-  	- De [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html) realice la sección **Rutas**.
+  + Cree un proyecto base, de acuerdo con [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html).
+  + Agregue Bootstrap al proyecto base, de acuerdo con [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
+  + Cree los componentes `splash`, `album` y `foto`, de acuerdo con [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html).
+  + Agregue Angular Material al proyecto base, de acuerdo con [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html).
+  	
+
+* Descargue y descomprima los [componentes y assets](archivos/guia15_recursos.zip)
+* Guarde las carpetas `splash`, `album` y `foto` dentro de la carpeta `src/app` del proyecto en Angular. 
+* Guarde la carpeta `imagenes` dentro de la carpeta `src/assets` del proyecto en Angular.
 
 
 ### Actividades
 
-#### Servicio
+#### Componentes: Splash, Album y Foto
 
-#### Interfaces
+* Compruebe que los componentes `splash`, `album` y `foto` se encuentren registrados en la aplicación.
+
+#### Angular Material (Módulos GridList, Icon y Button)
+
+* Registre los módulos `MatGridListModule`,`MatIconModule` y `MatButtonModule` en la aplicación.
+
+#### Rutas
+
+* Asocie:
+	+ La ruta `"splash"` con el componente `splash`
+	+ La ruta `"album"` con el componente `album`
+	+ La ruta `"foto"` con el componente `foto`
+	+ La ruta `"**"` con el componente `splash`
+
+#### Salida de las rutas (`<router-outlet>`)
+
+* Reemplace el contenido de la vista **AppComponent** por la etiqueta:
+
+	```html
+  <router-outlet></router-outlet>
+  ```
+
+* Actualice el navegador o (re)inicie el servidor
+* Cambie la vista al tamaño de un dispositivo móvil. 
+  + Las rutas `http://localhost:4200/splash`, `http://localhost:4200/album` y `http://localhost:4200/foto` deben lucir similares a:
+
+	<p align="center">
+	  <img width="30%" src="imagenes/angular_material_splash.png">
+	  <img width="30%" src="imagenes/angular_material_album.png">
+	  <img width="30%" src="imagenes/angular_material_foto.png">
+	</p>
 
 ### Términos
 
