@@ -15,7 +15,7 @@
 
 ## Pruebas unitarias
 
-* Reemplace cada archivo de la carpeta **.spec.ts** por el archivo correspondiente **.spec.ts** en su proyecto de Angular.
+* Copie cada archivo de la carpeta **.spec.ts** y reemplace el archivo **.spec.ts** correspondiente en su proyecto de Angular.
 	+ `specs/app.component.spec.ts` por `src/app/app.component.spec.ts`
 	+ `specs/foto.component.spec.ts` por `src/app/foto/foto.component.spec.ts`
 * En la ruta de su proyecto en Angular, desde la línea de comandos ejecute: `npm test`
