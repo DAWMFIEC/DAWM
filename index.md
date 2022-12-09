@@ -10,6 +10,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Fundamental](paginas/fundamental.md)
 * [Enlaces](paginas/enlaces.md)
 * [Errores](paginas/errores.md)
+* [Apuntes](paginas/apuntes.md)
 
 ## Recursos
 
