@@ -40,28 +40,34 @@ Comandos básicos
 	]
     ```
 
-* Instalación de **Angular Material**:
+* Crear componente:
 
   ```
-  ng add @angular/material
+  ng generate component <nombre-de-componente>
   ```
 
 * Crear componente:
 
   ```
-  ng generate component <componente>
-  ```
-
-* Crear componente:
-
-  ```
-  ng generate interface <interfaz>
+  ng generate interface <nombre-de-interfaz>
   ```
 
 * Crear servicios:
 
   ```
-  ng generate service <servicio>
+  ng generate service <nombre-de-servicio>
+  ```
+
+* Crear clases:
+
+  ```
+  ng generate class <nombre-de-clase>
+  ```
+
+* Instalación de **Angular Material**:
+
+  ```
+  ng add @angular/material
   ```
 
 * Servidor local:
