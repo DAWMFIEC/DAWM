@@ -52,7 +52,7 @@ Comandos básicos
   ng generate component <nombre-de-componente>
   ```
 
-* Crear componente:
+* Crear interfaz:
 
   ```
   ng generate interface <nombre-de-interfaz>
