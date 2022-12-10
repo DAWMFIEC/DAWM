@@ -43,7 +43,9 @@ Comandos básicos
 * Rutas:
 
   ```
-  { path: <ruta>, component: <referencia-component> },
+  { path: <rutaN>, component: <referencia-component> },
+  ...
+  { path: "**", redirectTo: <rutaN> }
   ```
 
 * Crear componente:
