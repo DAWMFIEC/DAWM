@@ -40,6 +40,12 @@ Comandos básicos
 	]
     ```
 
+* Rutas:
+
+  ```
+  { path: <ruta>, component: <referencia-component> },
+  ```
+
 * Crear componente:
 
   ```
