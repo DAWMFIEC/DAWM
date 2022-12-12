@@ -150,7 +150,7 @@ Angular + Apache Cordova
 Para terminar la configuración del proyecto con Angular:
 
 * Del **proyecto de Cordova** copie el directorio `platforms` y el archivo `config`.
-* Pegue los archivo en el **proyecto de Angular**
+* Pegue los archivo en la raíz del directorio del **proyecto de Angular**
 
 * Del **proyecto de Angular**, modifique los archivos:
 
