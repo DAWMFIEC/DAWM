@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
   + Cree el servicio `service/resources`
   + Agregue Bootstrap.
   + Agregue Angular Material.
-  + Genere las rutas:
+  + En `app-routing.module.ts` cree las rutas:
   	* `"splash"` al componente `SplashComponent`
   	* `"movies"` al componente `MoviesComponent`
   	* `"movie"` al componente `MovieComponent`
@@ -52,6 +52,34 @@ theme: jekyll-theme-leap-day
 * Descargue y descomprima los recursos de [Potterhead](archivos/potterhead.zip)
 	+ Reemplace los componentes, el servicio y la interfaz descargados por los recursos correspondientes que se encuentran dentro de su proyecto en Angular. 
 * Guarde la carpeta `images` dentro de la carpeta `src/assets` de su proyecto en Angular.
+* En `app.module.ts` 
+  + Importe los módulos `HttpClientModule`,`MatCardModule`, `MatListModule`, `MatToolbarModule` y `MatIconModule`
+
+```
+  ...
+  import {HttpClientModule} from '@angular/common/http';
+  import {MatCardModule} from '@angular/material/card';
+  import {MatListModule} from '@angular/material/list';
+  import {MatToolbarModule} from '@angular/material/toolbar';
+  import {MatIconModule} from '@angular/material/icon';  
+  ...
+```
+
+  + Registre los módulos en el import
+
+```
+  imports: [
+    ...
+    HttpClientModule,
+    MatCardModule,
+    MatListModule,
+    MatToolbarModule,
+    MatIconModule
+    ...
+  ]
+```
+
+
 * Compruebe las rutas con el navegador en modo responsivo, para las rutas:
 
   + `http://localhost:4200`
@@ -68,22 +96,26 @@ theme: jekyll-theme-leap-day
 #### Local Storage
 
 * En `components/splash/splash.component.ts` 
-  + En el *ngOnInit*, reemplace el contenido del _callback_ en la suscripción del servicio.
+  + En el método *ngOnInit*, reemplace el contenido del _callback_ en la suscripción del servicio.
 
 ```
-  this.resourcesService.getData().subscribe(response => {
-    
-    let potterhead = localStorage.getItem("potterhead");
-    if(!potterhead) {
-      localStorage.setItem("potterhead", JSON.stringify(response));
-    }
+  ...
+  ngOnInit() {
+    this.resourcesService.getData().subscribe(response => {
+      
+      let potterhead = localStorage.getItem("potterhead");
+      if(!potterhead) {
+        localStorage.setItem("potterhead", JSON.stringify(response));
+      }
 
-  })
+    })
+  }
+  ...
 ```
 
-* Compruebe la ruta `http://localhost:4200/splash`
+* Acceda a la ruta `http://localhost:4200/splash`
   
-  + En el inspector del navegador, en `Application > Storage > Local Storage`, identifique la entrada **potterhead**
+  + Con el inspector del navegador (en `Application > Storage > Local Storage`), identifique la entrada **potterhead**
 
 <p align="center">
   <img src="imagenes/localstorage.png">
@@ -93,20 +125,29 @@ theme: jekyll-theme-leap-day
   + En el constructor, agregue la lectura de la entrada **potterhead**.
 
 ```
-  let potterhead = JSON.parse(localStorage.getItem("potterhead")!);
+  ...
+  constructor() {
+
+    /* Leer desde el localStorage */
+    let potterhead = JSON.parse(localStorage.getItem("potterhead")!);
       
-  if(potterhead) {
-    this.movies = potterhead as Movie[]
+    if(potterhead) {
+      this.movies = potterhead as Movie[]
+    }
+    
   }
+  ...
 ```
 
 * En `components/movies/movies.component.html`
   + Itere sobre el arreglo *movies*.
 
 ```
-<div class="col-6 col-md-2" *ngFor="let movie of movies">
   ...
-</div>
+  <div class="col-6 col-md-2" *ngFor="let movie of movies">
+    ...
+  </div>
+  ...
 ```
 
   + Para cada elemento, renderice los atributos *poster*, *slug* y *title* 
@@ -116,6 +157,7 @@ theme: jekyll-theme-leap-day
   <img src="{{movie.attributes.poster}}" ... alt="{{movie.attributes.slug}}" >
   ...
   <a routerLink="/movie">{{movie.attributes.title}}</a>
+  ...
 ```
 
 * Compruebe el resultado en el navegador para la ruta `http://localhost:4200/movies`
@@ -153,7 +195,9 @@ theme: jekyll-theme-leap-day
 
 ```
   ...
-  constructor(private route: ActivatedRoute)
+  constructor(private route: ActivatedRoute) {
+    
+  }
   ...
 ```
 
@@ -230,5 +274,5 @@ material design, componentes, servicios, it's a wrap
 * Using Route Parameters - Rangle.io : Angular Training. (2022). Retrieved 9 December 2022, from https://angular-training-guide.rangle.io/routing/routeparams
 * Working with Angular Local Storage. (2019). Retrieved 10 December 2022, from https://blog.jscrambler.com/working-with-angular-local-storage/
 * Savani, H. (2022). How to Declare Global Variable in Angular 9/8?. Retrieved 10 December 2022, from https://www.itsolutionstuff.com/post/how-to-declare-global-variable-in-angular-8example.html
-* &#39;string&#39;, A., Nys, W., & Khalil, S. (2017). Argument of type 'string | null' is not assignable to parameter of type 'string'. Type 'null' is not assignable to type 'string'. Retrieved 10 December 2022, from https://stackoverflow.com/questions/46915002/argument-of-type-string-null-is-not-assignable-to-parameter-of-type-string
+* &#39;string&#39;, A., Nys, W., & Khalil, S. (2017). Argument of type 'string  null' is not assignable to parameter of type 'string'. Type 'null' is not assignable to type 'string'. Retrieved 10 December 2022, from https://stackoverflow.com/questions/46915002/argument-of-type-string-null-is-not-assignable-to-parameter-of-type-string
 * Angular. (2022). Retrieved 12 December 2022, from https://angular.io/api/router/ActivatedRoute
