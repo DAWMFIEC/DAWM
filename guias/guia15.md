@@ -104,7 +104,7 @@ theme: jekyll-theme-leap-day
     <img width="30%" src="imagenes/ag_movie.png">
   </p>
 
-#### Local Storage
+#### Local Storage: Registro
 
 * En `components/splash/splash.component.ts` 
   + En el método *ngOnInit*, reemplace el contenido del _callback_ en la suscripción del servicio.
@@ -131,6 +131,8 @@ theme: jekyll-theme-leap-day
 <p align="center">
   <img src="imagenes/localstorage.png">
 </p>
+
+#### Local Storage: Lectura
 
 * En `components/movies/movies.component.ts`
   + En el constructor, agregue la lectura de la entrada **potterhead**.
