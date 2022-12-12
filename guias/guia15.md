@@ -156,21 +156,25 @@ theme: jekyll-theme-leap-day
   + Itere sobre el arreglo *movies*.
 
 ```
+  {% raw %}
   ...
   <div class="col-6 col-md-2" *ngFor="let movie of movies">
     ...
   </div>
   ...
+  {% endraw %}
 ```
 
   + Para cada elemento, renderice los atributos *poster*, *slug* y *title* 
 
 ```
+  {% raw %}
   ...
   <img src="{{movie.attributes.poster}}" ... alt="{{movie.attributes.slug}}" >
   ...
   <a routerLink="/movie">{{movie.attributes.title}}</a>
   ...
+  {% endraw %}
 ```
 
 * Compruebe el resultado en el navegador para la ruta `http://localhost:4200/movies`
@@ -188,9 +192,11 @@ theme: jekyll-theme-leap-day
   + Modifique la referencia a la ruta `"movie/:id"` 
 
 ```
+  {% raw %}
   ...
   <a routerLink="/movie/{{movie.id}}">{{movie.attributes.title}}</a>
   ...
+  {% endraw %}
 ```
 
 #### MovieComponent 
@@ -255,6 +261,7 @@ theme: jekyll-theme-leap-day
   + Renderice los atributos *poster*, *slug*, *title*, *summary*, *box_office* y *budget* 
 
 ```
+  {% raw %}
   ...
   <img src="{{movie.attributes.poster}}" ... alt="{{movie.attributes.slug}}">
   ...
@@ -266,6 +273,7 @@ theme: jekyll-theme-leap-day
   ...
   <div class="stat">{{movie.attributes.budget}}</div>
   ...
+  {% endraw %}
 ```
 
 * Compruebe el resultado en el navegador para la ruta `http://localhost:4200/movie/04df07f4-6647-4b82-b9eb-6be4020352c9`
