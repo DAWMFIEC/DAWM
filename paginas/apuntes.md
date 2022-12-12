@@ -48,6 +48,12 @@ Comandos básicos
   { path: "**", redirectTo: <rutaN> }
   ```
 
+* Etiqueta para reemplazar dinámicamente el contenido en función del estado actual del enrutador.
+
+  ```
+  <router-outlet></router-outlet>
+  ```
+
 * Crear componente:
 
   ```

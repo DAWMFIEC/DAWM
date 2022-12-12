@@ -15,54 +15,208 @@ theme: jekyll-theme-leap-day
 
 ### Prerrequisito
 
-* Genere una aplicación nueva en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
+* Genere una aplicación nueva en Angular, siguiendo las instrucciones de [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html):
   
-  + Cree un proyecto base, de acuerdo con [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html).
-  + Agregue Bootstrap al proyecto base, de acuerdo con [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
-  + Cree los componentes `splash`, `album` y `foto`, de acuerdo con [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html).
-  + Agregue Angular Material al proyecto base, de acuerdo con [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html).
-  	
+  + Cree el proyecto: **potterhead**
+  + Cree los componentes `components/splash`, `components/movies` y `components/movie`.
+  + Cree la interfaz `interface/movie`
+  + Cree el servicio `service/resources`
+  + Agregue Bootstrap.
+  + Agregue Angular Material.
+  + Genere las rutas:
+  	* `"splash"` al componente `SplashComponent`
+  	* `"movies"` al componente `MoviesComponent`
+  	* `"movie"` al componente `MovieComponent`
+    * `"**"` redirecciona a la ruta `"splash"`
+  + Reemplace el contenido de `app/app.componente.html` por 
 
-* Descargue y descomprima los [componentes y assets](archivos/guia15_recursos.zip)
-* Guarde las carpetas `splash`, `album` y `foto` dentro de la carpeta `src/app` del proyecto en Angular. 
-* Guarde la carpeta `imagenes` dentro de la carpeta `src/assets` del proyecto en Angular.
+  	```
+  	<router-outlet></router-outlet>
+  	```
+  
+  + Levante el servidor con recarga automática:
+
+  	```
+  	ng serve -o --live-reload
+  	```
+* Compruebe las rutas con el navegador en modo responsivo, para las rutas:
+
+  + `http://localhost:4200`
+  + `http://localhost:4200/splash`
+  + `http://localhost:4200/movies`
+  + `http://localhost:4200/movie`
 
 
 ### Actividades
 
-#### Componentes: Splash, Album y Foto
+* Descargue y descomprima los recursos de [Potterhead](archivos/potterhead.zip)
+	+ Reemplace los componentes, el servicio y la interfaz descargados por los recursos correspondientes que se encuentran dentro de su proyecto en Angular. 
+* Guarde la carpeta `images` dentro de la carpeta `src/assets` de su proyecto en Angular.
+* Compruebe las rutas con el navegador en modo responsivo, para las rutas:
 
-* Compruebe que los componentes `splash`, `album` y `foto` se encuentren registrados en la aplicación.
+  + `http://localhost:4200`
+  + `http://localhost:4200/splash`
+  + `http://localhost:4200/movies`
+  + `http://localhost:4200/movie`
 
-#### Angular Material (Módulos GridList, Icon y Button)
+  <p align="center">
+    <img width="30%" src="imagenes/ag_splash.png">
+    <img width="30%" src="imagenes/ag_movies.png">
+    <img width="30%" src="imagenes/ag_movie.png">
+  </p>
 
-* Registre los módulos `MatGridListModule`,`MatIconModule` y `MatButtonModule` en la aplicación.
+#### Local Storage
 
-#### Rutas
+* En `components/splash/splash.component.ts` 
+  + En el *ngOnInit*, reemplace el contenido del _callback_ en la suscripción del servicio.
 
-* Asocie:
-	+ La ruta `"splash"` con el componente `splash`
-	+ La ruta `"album"` con el componente `album`
-	+ La ruta `"foto"` con el componente `foto`
-	+ La ruta `"**"` con el componente `splash`
+```
+  this.resourcesService.getData().subscribe(response => {
+    
+    let potterhead = localStorage.getItem("potterhead");
+    if(!potterhead) {
+      localStorage.setItem("potterhead", JSON.stringify(response));
+    }
 
-#### Salida de las rutas (`<router-outlet>`)
+  })
+```
 
-* Reemplace el contenido de la vista **AppComponent** por la etiqueta:
+* Compruebe la ruta `http://localhost:4200/splash`
+  
+  + En el inspector del navegador, en `Application > Storage > Local Storage`, identifique la entrada **potterhead**
 
-	```html
-  <router-outlet></router-outlet>
-  ```
+<p align="center">
+  <img src="imagenes/localstorage.png">
+</p>
 
-* Actualice el navegador o (re)inicie el servidor
-* Cambie la vista al tamaño de un dispositivo móvil. 
-  + Las rutas `http://localhost:4200/splash`, `http://localhost:4200/album` y `http://localhost:4200/foto` deben lucir similares a:
+* En `components/movies/movies.component.ts`
+  + En el constructor, agregue la lectura de la entrada **potterhead**.
 
-	<p align="center">
-	  <img width="30%" src="imagenes/angular_material_splash.png">
-	  <img width="30%" src="imagenes/angular_material_album.png">
-	  <img width="30%" src="imagenes/angular_material_foto.png">
-	</p>
+```
+  let potterhead = JSON.parse(localStorage.getItem("potterhead")!);
+      
+  if(potterhead) {
+    this.movies = potterhead as Movie[]
+  }
+```
+
+* En `components/movies/movies.component.html`
+  + Itere sobre el arreglo *movies*.
+
+```
+<div class="col-6 col-md-2" *ngFor="let movie of movies">
+  ...
+</div>
+```
+
+  + Para cada elemento, renderice los atributos *poster*, *slug* y *title* 
+
+```
+  ...
+  <img src="{{movie.attributes.poster}}" ... alt="{{movie.attributes.slug}}" >
+  ...
+  <a routerLink="/movie">{{movie.attributes.title}}</a>
+```
+
+* Compruebe el resultado en el navegador para la ruta `http://localhost:4200/movies`
+
+<p align="center">
+  <img width="30%" src="imagenes/ag_movies2.png">
+</p>
+
+#### Parámetros en la ruta
+
+* En `app-routing.module.ts`
+  + Modifique la ruta `"movie"` por `"movie/:id"` 
+
+* En `components/movies/movies.component.html`
+  + Modifique la referencia a la ruta `"movie/:id"` 
+
+```
+  ...
+  <a routerLink="/movie/{{movie.id}}">{{movie.attributes.title}}</a>
+  ...
+```
+
+#### MovieComponent 
+
+* En `components/movie/movie.component.ts`
+  + Agregue la referencia a *ActivatedRoute* para extraer los parámetros desde la ruta
+
+```
+  ...
+  import { ActivatedRoute } from '@angular/router';
+  ...
+```
+
+  + Inyecte la dependencia al *ActivatedRoute* en el constructor.
+
+```
+  ...
+  constructor(private route: ActivatedRoute)
+  ...
+```
+
+  + Agregue el código para leer el parámetro *id* en la ruta. 
+
+```
+  ...
+  constructor(private route: ActivatedRoute) {
+
+    this.route.params.subscribe(params => {
+      let id = params['id']; 
+
+      ...
+
+    });
+
+  }
+  ...
+```
+
+  + Lea la entrada *potterhead* del localStorage y filtre el objeto con el atributo _id_ igual que el parámetro. 
+
+```
+  ...
+  this.route.params.subscribe(params => {
+      let id = params['id']; 
+
+      let potterhead = JSON.parse(localStorage.getItem("potterhead")!);
+          
+      if(potterhead) {
+        let movies = potterhead as Array<Movie>  
+        let moviesfiltered = movies.filter(movie => movie["id"] == id)    
+        this.movie = moviesfiltered[0];
+      }
+
+  });
+  ...
+```
+
+* En `components/movie/movie.component.html`
+
+  + Renderice los atributos *poster*, *slug*, *title*, *summary*, *box_office* y *budget* 
+
+```
+  ...
+  <img src="{{movie.attributes.poster}}" ... alt="{{movie.attributes.slug}}">
+  ...
+  <h5 class="card-title">{{movie.attributes.title}}</h5>
+  ...
+  <p class="card-text">{{movie.attributes.summary}}</p>
+  ...
+  <div class="stat">{{movie.attributes.box_office}}</div>
+  ...
+  <div class="stat">{{movie.attributes.budget}}</div>
+  ...
+```
+
+* Compruebe el resultado en el navegador para la ruta `http://localhost:4200/movie/04df07f4-6647-4b82-b9eb-6be4020352c9`
+
+<p align="center">
+  <img width="30%" src="imagenes/ag_movie2.png">
+</p>
+
 
 ### Términos
 
@@ -73,3 +227,8 @@ material design, componentes, servicios, it's a wrap
 * Angular Material Tutorial. (2022). Retrieved 20 July 2022, from https://www.tutorialspoint.com/angular_material/index.htm
 * Angular. (2022). Retrieved 26 July 2022, from https://angular.io/tutorial/toh-pt5
 * Khan, R. (2022). La función setTimeout() en Angular. Retrieved 26 July 2022, from https://www.delftstack.com/es/howto/angular/settimeout-function-in-angular/
+* Using Route Parameters - Rangle.io : Angular Training. (2022). Retrieved 9 December 2022, from https://angular-training-guide.rangle.io/routing/routeparams
+* Working with Angular Local Storage. (2019). Retrieved 10 December 2022, from https://blog.jscrambler.com/working-with-angular-local-storage/
+* Savani, H. (2022). How to Declare Global Variable in Angular 9/8?. Retrieved 10 December 2022, from https://www.itsolutionstuff.com/post/how-to-declare-global-variable-in-angular-8example.html
+* &#39;string&#39;, A., Nys, W., & Khalil, S. (2017). Argument of type 'string | null' is not assignable to parameter of type 'string'. Type 'null' is not assignable to type 'string'. Retrieved 10 December 2022, from https://stackoverflow.com/questions/46915002/argument-of-type-string-null-is-not-assignable-to-parameter-of-type-string
+* Angular. (2022). Retrieved 12 December 2022, from https://angular.io/api/router/ActivatedRoute
