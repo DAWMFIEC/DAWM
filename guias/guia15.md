@@ -23,22 +23,34 @@ theme: jekyll-theme-leap-day
   + Cree el servicio `service/resources`
   + Agregue Bootstrap.
   + Agregue Angular Material.
-  + En `app-routing.module.ts` cree las rutas:
-  	* `"splash"` al componente `SplashComponent`
-  	* `"movies"` al componente `MoviesComponent`
-  	* `"movie"` al componente `MovieComponent`
-    * `"**"` redirecciona a la ruta `"splash"`
+  + En `app-routing.module.ts` agregue las referencia a los componentes y las rutas:
+  
+```
+  ...
+  import { SplashComponent } from './components/splash/splash.component';
+  import { MoviesComponent } from './components/movies/movies.component';
+  import { MovieComponent } from './components/movie/movie.component';
+
+  const routes: Routes = [
+    { path: "splash", component: SplashComponent },
+    { path: "movies", component: MoviesComponent },
+    { path: "movie", component: MovieComponent },
+    { path: "**", redirectTo: "splash" }
+  ];
+  ...
+```
+
   + Reemplace el contenido de `app/app.componente.html` por 
 
-  	```
-  	<router-outlet></router-outlet>
-  	```
+```
+  <router-outlet></router-outlet>
+```
   
   + Levante el servidor con recarga automática:
 
-  	```
-  	ng serve -o --live-reload
-  	```
+```
+  ng serve -o --live-reload
+```
 * Compruebe las rutas con el navegador en modo responsivo, para las rutas:
 
   + `http://localhost:4200`
@@ -260,6 +272,30 @@ theme: jekyll-theme-leap-day
   <img width="30%" src="imagenes/ag_movie2.png">
 </p>
 
+#### SplashComponent 
+
+* En `components/splash/splash.component.ts`
+  + En el método `ngOnInit`, agregue un redireccionamiento automático
+
+```
+  ...
+  ngOnInit() {
+    this.resourcesService.getData().subscribe(response => {
+      
+      ...
+
+    })
+
+
+    setTimeout(() => {
+      this.router.navigate(['movies']);
+    }, 2000);
+
+  }
+  ...
+```
+
+#### Angular - Cordova 
 
 * Siga las instrucciones en [Angular - Cordova](https://dawfiec.github.io/DAWM/tutoriales/angular_cordova.html) para generar el `apk` de la aplicación.
 
