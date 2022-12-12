@@ -319,7 +319,7 @@ theme: jekyll-theme-leap-day
 
     setTimeout(() => {
       this.router.navigate(['movies']);
-    }, 2000);
+    }, 1500);
 
   }
   ...
