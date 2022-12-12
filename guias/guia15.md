@@ -199,6 +199,11 @@ theme: jekyll-theme-leap-day
   {% endraw %}
 ```
 
+* Compruebe el resultado en el navegador para las rutas
+
+  + `http://localhost:4200/movie/b5c93f7c-49bb-43a6-84f3-796daa75f354`
+  + `http://localhost:4200/movie/eca3b065-d34d-4b31-aed4-7f2586b0e5dc` 
+
 #### MovieComponent 
 
 * En `components/movie/movie.component.ts`
@@ -263,7 +268,7 @@ theme: jekyll-theme-leap-day
 ```
   {% raw %}
   ...
-  <img src="{{movie.attributes.poster}}" ... alt="{{movie.attributes.slug}}">
+  <img src="{{movie.attributes.poster}}" class="rounded mx-auto d-block img-thumbnail border-0 shadow-4-strong" alt="{{movie.attributes.slug}}">
   ...
   <h5 class="card-title">{{movie.attributes.title}}</h5>
   ...
@@ -285,6 +290,21 @@ theme: jekyll-theme-leap-day
 #### SplashComponent 
 
 * En `components/splash/splash.component.ts`
+  + Agregue la referencia al módulo `Router`
+
+```
+  ...
+  import { Router } from '@angular/router';
+  ...
+```
+  + Agregue la inyección de dependencia al módulo `Router`
+
+```
+  ...
+  constructor(private resourcesService: ResourcesService, private router: Router) {}
+  ...
+```
+
   + En el método `ngOnInit`, agregue un redireccionamiento automático
 
 ```
