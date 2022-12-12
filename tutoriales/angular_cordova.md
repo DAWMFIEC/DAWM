@@ -30,7 +30,7 @@ Proyecto en Angular
 
 * * *
 
-Utiliza el proyecto con Angular.
+Utiliza un proyecto con Angular.
 
 
 Requerimientos de instalación
