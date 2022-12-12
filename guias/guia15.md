@@ -79,7 +79,6 @@ theme: jekyll-theme-leap-day
   ]
 ```
 
-
 * Compruebe las rutas con el navegador en modo responsivo, para las rutas:
 
   + `http://localhost:4200`
