@@ -183,7 +183,7 @@ theme: jekyll-theme-leap-day
   <img width="30%" src="imagenes/ag_movies2.png">
 </p>
 
-#### Parámetros en la ruta
+#### Parámetros en la ruta: creación de rutas
 
 * En `app-routing.module.ts`
   + Modifique la ruta `"movie"` por `"movie/:id"` 
@@ -204,7 +204,9 @@ theme: jekyll-theme-leap-day
   + `http://localhost:4200/movie/b5c93f7c-49bb-43a6-84f3-796daa75f354`
   + `http://localhost:4200/movie/eca3b065-d34d-4b31-aed4-7f2586b0e5dc` 
 
-#### MovieComponent 
+
+
+#### Parámetros en la ruta: Lectura 
 
 * En `components/movie/movie.component.ts`
   + Agregue la referencia a *ActivatedRoute* para extraer los parámetros desde la ruta
@@ -287,7 +289,7 @@ theme: jekyll-theme-leap-day
   <img width="30%" src="imagenes/ag_movie2.png">
 </p>
 
-#### SplashComponent 
+#### Redireccionamiento automático 
 
 * En `components/splash/splash.component.ts`
   + Agregue la referencia al módulo `Router`
