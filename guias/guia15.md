@@ -261,6 +261,8 @@ theme: jekyll-theme-leap-day
 </p>
 
 
+* Siga las instrucciones en [Angular - Cordova](https://dawfiec.github.io/DAWM/tutoriales/angular_cordova.html) para generar el `apk` de la aplicación.
+
 ### Términos
 
 material design, componentes, servicios, it's a wrap
