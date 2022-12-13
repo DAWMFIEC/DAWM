@@ -17,11 +17,11 @@ theme: jekyll-theme-leap-day
 
 ### Prerrequisito
 
-* Genere una aplicación en Angular, siguiendo las instrucciones:
+Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html) y [Express - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html)
   
-  + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
+* Desde tu repositorio personal
+* Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
     - Para el hito: **`hito1-admin`**
-
 
 ### Actividades
 
