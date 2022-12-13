@@ -15,12 +15,15 @@ theme: jekyll-theme-leap-day
 * [HTTP](https://developer.mozilla.org/es/docs/Web/HTTP). Este protocolo de la capa de aplicación nos comunicar navegadores y servidors mediante documentos HTML.
 * El [comportamiento por defecto](https://javascript.info/default-browser-action#:~:text=There%20are%20many%20default%20browser,submits%20the%20form%20after%20it.) de un navegador web presenta reacciones predeterminados a eventos del usuario. El comportamiento [predeterminado para el envío del formulario](https://www.freecodecamp.org/news/manage-default-behavior-in-browser/) considera el valor de los atributos `action` y `method`.
 
+### Prerrequisito
+
+* Genere una aplicación en Angular, siguiendo las instrucciones:
+  
+  + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
+    - Para el hito: **`hito1-admin`**
+
 
 ### Actividades
-
-* Genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
-  + De [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
-  + De [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
 
 * Realice el tutorial completo de [Express - Formularios](https://dawfiec.github.io/DAWM/tutoriales/express_forms.html).
 

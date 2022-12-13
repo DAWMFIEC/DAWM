@@ -40,10 +40,9 @@ Requerimientos de instalación
 
 De los siguientes enlaces, descargue e instale:
 
-* **Android Studio SDK - Command line tools only** del [sitio oficial](https://developer.android.com/studio#command-tools) 
+* **Android Studio SDK - Command line tools only** del [sitio oficial](https://developer.android.com/studio#command-line-tools-only) 
   + Acepte las condiciones y descargue el archivo
-  + Descomprima el archivo
-  + Copie el contenido de la carpeta `commandlinetools-win-8512546_latest` 
+  + Descomprima el archivo y copie el contenido de la carpeta `cmdline-tools` 
   + Cree el directorio `C:\Android\cmdline-tools\7.0`
   + Pegue el contenido copiado dentro la ruta  `C:\Android\cmdline-tools\7.0`
 
@@ -92,7 +91,7 @@ Agregue todas las variables de entorno anteriores al **PATH**.
 
 ## Paquetes del Android SDK
 
-Desde la línea de comandos, en la ruta **`C:\Android\cmdline-tools`**:
+Desde la línea de comandos:
 
 * Instale el **Android Debug Bridge y Fastboost**, con: **`sdkmanager "platform-tools"`**
   + Acepte la licencia. 
