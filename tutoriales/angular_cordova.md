@@ -72,7 +72,7 @@ Cree/verifique las variables de entorno para:
 Agregue todas las variables de entorno anteriores al **PATH**.
 
 * Además, agregue al **PATH** las rutas
-  + **%ANDROID\_SDK\_ROOT%\\cmdline-tools\\\\7.0\\bin\\**
+  + **%ANDROID\_SDK\_ROOT%\\cmdline-tools\\7.0\\bin\\**
   + **%ANDROID\_HOME%\\emulator\\** 
   + **%ANDROID\_HOME%\\platform-tools\\** 
 
