@@ -67,12 +67,12 @@ Cree/verifique las variables de entorno para:
 * **JAVA\_HOME.** Usualmente, la ruta es: **`C:\Program Files\Java\jdk<version>`**
 * **GRADLE**. La ruta es: **`C:\Gradle\bin`**
 * **ANDROID\_HOME.** La ruta es: **`C:\Android`**
-* **ANDROID\_SDK\_ROOT.** La ruta es: **`C:\Android\cmdline-tools\7.0`**    
+* **ANDROID\_SDK\_ROOT.** La ruta es: **`C:\Android`**    
 
 Agregue todas las variables de entorno anteriores al **PATH**.
 
 * Además, agregue al **PATH** las rutas
-  + **%ANDROID\_SDK\_ROOT%\\bin\\**
+  + **%ANDROID\_SDK\_ROOT%\\cmdline-tools\\\\7.0\\bin\\**
   + **%ANDROID\_HOME%\\emulator\\** 
   + **%ANDROID\_HOME%\\platform-tools\\** 
 
