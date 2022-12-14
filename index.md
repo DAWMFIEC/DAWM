@@ -35,7 +35,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 13: Angular > Introducción](guias/guia13.md)
 * [Guía 14: Angular > PWA + Servicios](guias/guia14.md)
 * [Guía 15: Angular > Material Design + Rutas + Cordova](guias/guia15.md)
-* [Guía 16: Express > Formularios](guias/guia16.md)
+* [Guía 16: Express > Introducción + Partials/Layout + Formularios](guias/guia16.md)
 <!--- * [Guía 17: Express > Partials y layouts](guias/guia17.md) --->
 <!--- * [Guía 18: Express > MVC](guias/guia18.md) --->
 <!--- * [Guía 19: Express > REST (Cliente/Servidor)](guias/guia19.md) --->
@@ -76,7 +76,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Express - Bases](tutoriales/express_bases.md)
 * [Express - Bootstrap](tutoriales/express_bootstrap.md)
-* [Express - Layout y Partials](tutoriales/express_partials.md)
+* [Express - Partials/Layout](tutoriales/express_partials.md)
 * [Express - Formularios](tutoriales/express_forms.md) 
 * [Express - ORM Básico](tutoriales/express_ormbasico.md)
 * [Express - REST](tutoriales/express_rest.md)
