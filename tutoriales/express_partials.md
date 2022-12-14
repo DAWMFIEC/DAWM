@@ -69,48 +69,48 @@ Del **`views/index.ejs`**, repite el proceso anterior para las etiquetas `<heade
   <img src="imagenes/partials.png">
 </p>
 
-Productos: layout y partial
+Fotos: layout y partial
 ===========================
 
 * * *
 
-Para crear la página de productos, utilizaremos los archivos del recurso [productos.zip](archivos/productos.zip). La plantilla del productos es [Bootstrap User Management Data Table](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=user-management-data-table).
+Para crear la página de fotos, utilizaremos los archivos del recurso [fotos.zip](archivos/fotos.zip). La plantilla del fotos es [Bootstrap User Management Data Table](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=user-management-data-table).
 
-* Copie el archivo **`productos.ejs`** dentro de la carpeta **`views`**.
-* Copie el archivo **`productos_tabla.ejs`** dentro de la carpeta **`views/partials`**.
-  + Agregue la referencia al partial **`productos_tabla.ejs`**
+* Copie el archivo **`fotos.ejs`** dentro de la carpeta **`views`**.
+* Copie el archivo **`fotos_tabla.ejs`** dentro de la carpeta **`views/partials`**.
+  + Agregue la referencia al partial **`fotos_tabla.ejs`**
 
 <p align="center">
-  <img src="imagenes/partial_productos.png">
+  <img src="imagenes/partial_fotos.png">
 </p>
 
 * Copie el archivo **`table.css`** dentro de la carpeta **`public/stylesheets`**. 
 * En el **`routes/index.js`**
-  + Enlaza la ruta **`"/products"`** con la vista **`productos.ejs`**.
+  + Enlaza la ruta **`"/photos"`** con la vista **`fotos.ejs`**.
 
 <pre><code>
   ...
-    router.get('/products', function(req, res, next) {
-      res.render('productos', { title: 'Productos' });
+    router.get('/photos', function(req, res, next) {
+      res.render('fotos', { title: 'Fotos' });
     })
   ...
 </code></pre>  
 
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/products` 
+* Acceda al URL `http://localhost:3000/photos` 
 
 <p align="center">
-  <img src="imagenes/productos.png">
+  <img src="imagenes/fotos.png">
 </p>
 
-Productos: ruta
+Fotos: ruta
 ===============
 
 * * *
 
 * En el **`views/partials/nav.ejs`**
-  + Modifique la referencia del texto _Products_
+  + Modifique el texto y la referencia del texto _Products_
 
   ```
   ...
@@ -125,9 +125,9 @@ Productos: ruta
 
   ```
   ...
-    <a class="nav-link" href="/products">
+    <a class="nav-link" href="/photos">
       ...
-      Products
+      Photos
     </a>
   ... 
   ```
@@ -156,7 +156,7 @@ Productos: ruta
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/`
-  + Acceda en la opción _Products_.
+  + Acceda en la opción _Photos_.
   + Acceda en la opción _Dashboard_.  
 
 
