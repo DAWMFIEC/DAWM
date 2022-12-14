@@ -16,12 +16,13 @@ Para ahorrar líneas de código y reutilizar componentes, Express ofrece el uso 
 Proyecto en Express
 ===================
 
-* * *
+Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html) y [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html).
 
-Utiliza el proyecto que desarrollaste con el tutorial de [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html) y [Express - Formularios](https://dawfiec.github.io/DAWM/tutoriales/express_forms.html).
+* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
+    - Para el hito: **`hito2-admin`**
 
 * Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
+*  Verifica que funcione correctamente al levantar los servicios, con: `npm run devstart`
 
 Partial: `<main>`
 =================
