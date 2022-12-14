@@ -189,11 +189,11 @@ Fotos: datos - controlador
   ...
   ```
 
-* En caso de tener problemas con el endpoit:
+* En caso de tener problemas con el endpoint:
   + Descargue el recurso [photos.json](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json)
   + Guarde el recurso en una carpeta local
   + Levante un servidor HTTP con Python o Chrome server
-  + Modifique el `routes/index.js`, el controlador para la ruta `/photos`
+  + Modifique el `routes/index.js`, en el controlador para la ruta `/photos`
     - Cambie la variable _URL_ por la nueva ruta, por ejemplo: `http://localhost:8080/photos.json`
 
 Fotos: datos - vista
