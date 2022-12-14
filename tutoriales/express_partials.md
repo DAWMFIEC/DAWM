@@ -165,7 +165,7 @@ Fotos: datos - controlador
 * * *
 
 * Desde la línea de comandos, agregue `axios`, con: `npm i axios`
-* Modifique `routes/index.js`
+* Modifique el `routes/index.js`
   + Agregue la referencia a `axios`
 
   ```
@@ -188,6 +188,13 @@ Fotos: datos - controlador
   })
   ...
   ```
+
+* En caso de tener problemas con el endpoit:
+  + Descargue el recurso [photos.json](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json)
+  + Guarde el recurso en una carpeta local
+  + Levante un servidor HTTP con Python o Chrome server
+  + Modifique el `routes/index.js`, el controlador para la ruta `/photos`
+    - Cambie la variable _URL_ por la nueva ruta, por ejemplo: `http://localhost:8080/photos.json`
 
 Fotos: datos - vista
 ====================
