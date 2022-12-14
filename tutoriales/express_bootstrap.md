@@ -18,11 +18,11 @@ Proyecto en Express
 
 Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html).
 
-* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/adminExpress**
+* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
     - Para el hito: **`hito1-admin`**
 
 * Instala las dependencias, con: `npm install`
-* Establezca la variable de entorno DEBUG para el proyecto, con: `SET DEBUG=adminExpress:\*`
+* Establezca la variable de entorno DEBUG para el proyecto, con: `SET DEBUG=admin:\*`
 * Verifica que funcione correctamente al levantar los servicios, con: `npm start`
 
 

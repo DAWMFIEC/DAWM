@@ -22,7 +22,7 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 * Instale el **express-generator**, con: `npm i -g express-generator`
   + Para obtener ayuda acerca del comando, utilice: `express --help`
 
-* Cree un sitio de prueba llamado **adminExpress**, con: `express --view=ejs adminExpress`
+* Cree un sitio de prueba llamado **admin**, con: `express --view=ejs admin`
   
   <p align="center">
     <img width="427" height="495" src="imagenes/express_sitio_config.png">
@@ -54,9 +54,9 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
 * Compruebe el funcionamiento del servidor, con:  
   
   <pre><code>
-      cd adminExpress   
+      cd admin   
       npm install   
-      SET DEBUG=adminExpress:\* & npm start
+      SET DEBUG=admin:\* & npm start
   </code></pre>
     
 * En caso de ser necesario, resuelva los problemas con las dependencias, con:
