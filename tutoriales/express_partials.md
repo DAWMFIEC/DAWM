@@ -151,6 +151,12 @@ Productos: ruta
   ... 
   ```
 
+* Compruebe el funcionamiento del servidor, con: **npm run devstart**
+* Acceda al URL `http://localhost:3000/`
+  + Acceda en la opción _Products_.
+  + Acceda en la opción _Dashboard_.  
+
+
 Referencias 
 ===========
 
