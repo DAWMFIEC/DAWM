@@ -59,8 +59,8 @@ Partial: header y nav
 
 Del **`views/index.ejs`**, repite el proceso anterior para las etiquetas `<header>` y `<nav>`.
 
-* Coloca la etiqueta **`<header>`** en el partial  **`views/partials/header.ejs`**
-* Coloca la etiqueta **`<nav>`** en el partial  **`views/partials/nav.ejs`**
+* Coloque la etiqueta **`<header>`** en el partial  **`views/partials/header.ejs`**
+* Coloque la etiqueta **`<nav>`** en el partial  **`views/partials/nav.ejs`**
 
 <p align="center">
   <img src="imagenes/partials.png">
@@ -73,24 +73,24 @@ Productos: layout y partial
 
 Para crear la página de productos, utilizaremos los archivos del recurso [productos.zip](archivos/productos.zip). La plantilla del productos es [Bootstrap User Management Data Table](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=user-management-data-table).
 
-* Copia el archivo **`productos.ejs`** dentro de la carpeta **`views`**.
-* Copia el archivo **`productos_tabla.ejs`** dentro de la carpeta **`views/partials`**.
+* Copie el archivo **`productos.ejs`** dentro de la carpeta **`views`**.
+* Copie el archivo **`productos_tabla.ejs`** dentro de la carpeta **`views/partials`**.
   + Agregue la referencia al partial **`productos_tabla.ejs`**
 
 <p align="center">
   <img src="imagenes/partial_productos.png">
 </p>
 
-* Copia el archivo **`table.css`** dentro de la carpeta **`public/stylesheets`**. 
+* Copie el archivo **`table.css`** dentro de la carpeta **`public/stylesheets`**. 
 * En el **`routes/index.js`**
   + Enlaza la ruta **`"/productos"`** con la vista **`productos.ejs`**.
 
 <pre><code>
   ...
-router.get('/productos', function(req, res, next) {
-  res.render('productos', { title: 'Productos' });
-})
-...
+    router.get('/productos', function(req, res, next) {
+      res.render('productos', { title: 'Productos' });
+    })
+  ...
 </code></pre>  
 
 
@@ -101,30 +101,53 @@ router.get('/productos', function(req, res, next) {
   <img src="imagenes/productos.png">
 </p>
 
+Productos: ruta
+===============
+
+* * *
+
 * En el **`views/partials/nav.ejs`**
-  + Modifica el enlace a `/productos`
+  + Modifique la referencia del texto _Products_
 
   ```
   ...
-  <li class="nav-item">
-  <a class="nav-link" href="/productos">
-     <span data-feather="shopping-cart"></span>
-     Products
-  </a>
-  </li>
+    <a class="nav-link" href="#">
+      <span data-feather="shopping-cart" class="align-text-bottom"></span>
+      Products
+    </a>
+  ...
+  ```
+
+  por
+
+  ```
+  ...
+    <a class="nav-link" href="/productos">
+       <span data-feather="shopping-cart"></span>
+       Products
+    </a>
   ... 
   ```
 
-  + Modifica el enlace a `/`
+  + Modifique la referencia del texto _Dashboard_
 
   ```
   ...
-  <li class="nav-item">
+    <a class="nav-link active" aria-current="page" href="#">
+      <span data-feather="home" class="align-text-bottom"></span>
+      Dashboard
+    </a>
+  ... 
+  ```
+
+  por
+
+  ```
+  ...
     <a class="nav-link active" aria-current="page" href="/">
       <span data-feather="home" class="align-text-bottom"></span>
       Dashboard
     </a>
-  </li>
   ... 
   ```
 
