@@ -245,6 +245,7 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
   <img width="250" src="imagenes/install_apk.jpeg">
 </p>
 
+* Pueden usar el [**app-debug.apk**](archivos/app-debug.apk) que generé.
 
 Emulador
 ========
