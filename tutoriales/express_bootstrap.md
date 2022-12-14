@@ -112,7 +112,7 @@ Bootstrap - Dashboard example
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/` 
 
-<p align="center" style="border: 0.5pt solid black;">
+<p align="center">
   <img src="imagenes/express_bootstrap.png">
 </p>
 
