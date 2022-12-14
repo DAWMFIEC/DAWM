@@ -26,7 +26,7 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 ### Actividades
 
 
-
+* Realice las actividades de la guía [Express - Partials/Layout](https://dawfiec.github.io/DAWM/tutoriales/express_partials.html).
 
 ### Términos
 
