@@ -159,6 +159,86 @@ Fotos: ruta
   + Acceda en la opción _Photos_.
   + Acceda en la opción _Dashboard_.  
 
+Fotos: datos - controlador
+==========================
+
+* * *
+
+* Desde la línea de comandos, agregue `axios`, con: `npm i axios`
+* Modifique `routes/index.js`
+  + Agregue la referencia a `axios`
+
+  ```
+  ...
+    var express = require('express');
+    const axios = require('axios')
+  ...
+  ```
+
+  + Modifique el controlador para la ruta `/photos`
+
+  ```
+  ...
+  router.get('/photos', async function(req, res, next) {
+  
+    const URL = 'https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json'
+    const response = await axios.get(URL)
+    
+    res.render('fotos', { title: 'Fotos', fotos: response.data });
+  })
+  ...
+  ```
+
+Fotos: datos - vista
+====================
+
+* En la vista de fotos, del archivo **views/fotos.ejs**, envíe como parámetro el arreglo de fotos.
+
+  ```
+  ...  
+  <div class="container-fluid">  
+       <div class="row">  
+          <%- include("partials/nav") -%>
+          <!-- Foto tabla -->
+          <%- include("partials/fotos_tabla", {arrFotos:fotos} ) -%>
+
+       </div>  
+  </div>  
+  ...
+
+  ```
+
+* En la vista, en el partial **views/partials/fotos_tabla.ejs**, reemplace el contenido de la etiqueta `<table>`:
+
+  ```
+  ...  
+    
+  <table class="table table-striped table-hover">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Description</th>
+            <th>URL</th>
+            <th>Action</th>
+        </tr>
+    </thead>
+    <tbody>  
+        <% arrFotos.forEach((foto, idx) => { %>  
+          <tr>
+            <td><%= idx %></td>  
+            <td><%= foto.descripcion %></td>  
+            <td><%= foto.url %></td>   
+            <td>  
+                <a href="#" class="settings" title="Settings" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>  
+                <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>  
+            </td>  
+          </tr>  
+        <% }); %>  
+    </tbody>  
+  </table>
+  ...
+
+  ```
 
 Referencias 
 ===========
