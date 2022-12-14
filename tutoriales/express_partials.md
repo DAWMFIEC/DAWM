@@ -24,7 +24,7 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 * Instala las dependencias, con: `npm install`
 *  Verifica que funcione correctamente al levantar los servicios, con: `npm run devstart`
 
-Partial: `<main>`
+Partial: main
 =================
 
 * * *
@@ -52,7 +52,7 @@ Para el sitio de ejemplo será necesario separar las secciones que pueden reutil
 </p>
 
 
-Partial: `<header>` y `<nav>`
+Partial: header y nav
 =============================
 
 * * *
