@@ -22,7 +22,8 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
     - Para el hito: **`hito1-admin`**
 
 * Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
+* Establezca la variable de entorno DEBUG para el proyecto, con: `SET DEBUG=adminExpress:\*`
+* Verifica que funcione correctamente al levantar los servicios, con: `npm start`
 
 
 
