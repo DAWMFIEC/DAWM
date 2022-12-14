@@ -111,7 +111,7 @@ Productos: ruta
 
   ```
   ...
-    <a class="nav-link" href="#">
+    <a class="nav-link" href="/productos">
       <span data-feather="shopping-cart" class="align-text-bottom"></span>
       Products
     </a>
@@ -123,7 +123,7 @@ Productos: ruta
   ```
   ...
     <a class="nav-link" href="/productos">
-       <span data-feather="shopping-cart"></span>
+      <span data-feather="shopping-cart" class="align-text-bottom"></span>
        Products
     </a>
   ... 
@@ -133,7 +133,7 @@ Productos: ruta
 
   ```
   ...
-    <a class="nav-link active" aria-current="page" href="#">
+    <a class="nav-link active" aria-current="page" href="/">
       <span data-feather="home" class="align-text-bottom"></span>
       Dashboard
     </a>
