@@ -62,7 +62,7 @@ Del **`views/index.ejs`**, repite el proceso anterior para las etiquetas `<heade
 * Coloca la etiqueta **`<header>`** en el partial  **`views/partials/header.ejs`**
 * Coloca la etiqueta **`<nav>`** en el partial  **`views/partials/nav.ejs`**
 
-<p align="center" style="border: 0.5pt solid black;">
+<p align="center">
   <img src="imagenes/partials.png">
 </p>
 
