@@ -32,19 +32,25 @@ Partial: `<main>`
 Para el sitio de ejemplo será necesario separar las secciones que pueden reutilizarse otras vistas (layout) y las secciones que son únicas por vista.
 
 * Del archivo **views/index.ejs**
-  + Corta la etiqueta `<main>` junto con todo su contenido.
+  + Extraiga la etiqueta `<main>` junto con todo su contenido.
 * Dentro de la carpeta **views**
-  + Crea la carpeta **`partials`** . 
-  + Crea el archivo **`views/partials/main.ejs`**.
-  + Pega las etiquetas copiadas dentro del archivo **`views/partials/main.ejs`**.
+  + Cree la carpeta **`partials`** . 
+  + Cree el archivo **`views/partials/main.ejs`**.
+  + Pegue las etiquetas copiadas dentro del archivo **`views/partials/main.ejs`**.
 * En el archivo **views/index.ejs**
-  + Coloca **`<% include partials/main %>`**, en el lugar donde se encontraba la etiqueta `<main>`.
+  + Coloque **`<%- include("partials/main") -%>`**, en el lugar donde se encontraba la etiqueta `<main>`.
+
+<p align="center">
+  <img src="imagenes/partial_main.png">
+</p>
+
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
 * Acceda al URL `http://localhost:3000/` 
 
-<p align="center" style="border: 0.5pt solid black;">
-  <img src="imagenes/partial_main.png">
+<p align="center">
+  <img src="imagenes/express_bootstrap.png">
 </p>
+
 
 Partial: `<header>` y `<nav>`
 =============================
