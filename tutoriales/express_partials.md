@@ -111,7 +111,7 @@ Productos: ruta
 
   ```
   ...
-    <a class="nav-link" href="/productos">
+    <a class="nav-link" href="#">
       <span data-feather="shopping-cart" class="align-text-bottom"></span>
       Products
     </a>
