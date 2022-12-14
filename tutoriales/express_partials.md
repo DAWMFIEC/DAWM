@@ -16,6 +16,8 @@ Para ahorrar líneas de código y reutilizar componentes, Express ofrece el uso 
 Proyecto en Express
 ===================
 
+* * *
+
 Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html) y [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html).
 
 * O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
