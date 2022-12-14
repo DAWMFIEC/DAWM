@@ -23,7 +23,7 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 
 * Instala las dependencias, con: `npm install`
 * Establezca la variable de entorno DEBUG para el proyecto, con: `SET DEBUG=admin:\*`
-* Verifica que funcione correctamente al levantar los servicios, con: `npm start`
+* Verifique el funcionamiento al levantar los servicios, con: `npm start`
 
 
 
