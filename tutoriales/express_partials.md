@@ -240,6 +240,10 @@ Fotos: datos - vista
 
   ```
 
+<p align="center">
+  <img src="imagenes/fotos_axios.png">
+</p>
+
 Referencias 
 ===========
 

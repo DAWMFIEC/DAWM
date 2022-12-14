@@ -27,6 +27,112 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 * Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
 
 
+Página de ingreso
+=================
+
+* * *
+
+Para crear la página de ingreso, o login, utilizaremos los archivos del recurso [login.zip](archivos/login.zip). La plantilla del login es [HTML Snippets for Twitter Boostrap framework](https://bootsnipp.com/snippets/dldxB).
+
+* Copie los archivos de descomprimidos a las rutas dentro del proyecto en Express:
+  + Copia el archivo **login.js** dentro de la carpeta **routes**.
+  + Copia el archivo **login.ejs** dentro de la carpeta **views**.
+  + Copia el archivo **login.css** dentro de la carpeta **public/stylesheets**.
+  + Copia el archivo **usuario.svg** dentro de la carpeta **public/icons**.
+
+* En el **app.js**
+  + Agregue la referencia al **router** `login.js` con la ruta `'./routes/login'`
+
+  <pre><code>
+    ...
+    var usersRouter = require('./routes/users');
+    <b style="color:red">
+    var loginRouter = require('./routes/login');
+    </b>
+
+    var app = express();
+
+    // view engine setup
+    ...
+  </code></pre>
+
+  + Agregue la ruta `"/login"` al **`router`** del login.
+
+  <pre><code>
+    ...
+    app.use('/', indexRouter);
+    app.use('/users', usersRouter);
+    <b style="color:red">
+    app.use('/login', loginRouter);
+    </b>
+
+    // catch 404 and forward to error handler
+    app.use(function(req, res, next) {
+    ...
+  </code></pre>
+
+* Compruebe el funcionamiento del servidor, con: **npm run devstart**
+* Acceda al URL `http://localhost:3000/login` 
+
+<p align="center">
+  <img src="imagenes/login.png">
+</p>
+
+
+* Compruebe los requerimientos tipo **GET**, el funcionamiento automático del navegador para formularios y el envío de datos por el URL.
+
+
+Envío de datos con POST
+=======================
+
+* * *
+
+Realiza las siguientes modificaciones para enviar los datos desde el formulario del cliente al servidor.
+
+* En el archivo **views/login.ejs**, en la etiqueta **`<form>`**
+  + Agregue el atributo **action** con el valor **`/login/validate`**
+  + Agregue el atributo **method** con el valor **`post`**
+
+* En el archivo **routes/login.js**, agregue el manejador para procesar requerimientos POST:
+    
+  <pre><code>
+  var express = require('express');
+  var router = express.Router();
+
+  <b style="color:red">
+  let bd = {  
+    'usuario': 'abc',  
+    'contrasenia': '123'  
+  }
+  </b>
+    
+  ...  
+  router.get('/', ...  
+  ...
+
+  <b style="color:red"> 
+  router.post('/validate', function(req, res, next) {  
+    let usuario = req.body.user;  
+    let contrasenia = req.body.password;  
+    
+    console.log("usuario: ", usuario)  
+    console.log("contraseña: ", contrasenia)  
+    
+    //Validación  
+    if(usuario == bd['usuario'] && contrasenia == bd['contrasenia']) {  
+      res.redirect('/');  
+    } else {  
+      res.redirect('/login')  
+    }  
+    
+  });
+  </b>
+  ...
+  module.exports = router;
+  </code></pre>
+
+* Verifica los resultados en el navegador. Comprueba los resultados al acceder a la ruta raíz **`/login`**,
+  + Ingrese los datos **`abc`** y contraseña **`123`**
 
 
 
