@@ -83,11 +83,11 @@ Para crear la página de productos, utilizaremos los archivos del recurso [produ
 
 * Copie el archivo **`table.css`** dentro de la carpeta **`public/stylesheets`**. 
 * En el **`routes/index.js`**
-  + Enlaza la ruta **`"/productos"`** con la vista **`productos.ejs`**.
+  + Enlaza la ruta **`"/products"`** con la vista **`productos.ejs`**.
 
 <pre><code>
   ...
-    router.get('/productos', function(req, res, next) {
+    router.get('/products', function(req, res, next) {
       res.render('productos', { title: 'Productos' });
     })
   ...
@@ -95,7 +95,7 @@ Para crear la página de productos, utilizaremos los archivos del recurso [produ
 
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/productos` 
+* Acceda al URL `http://localhost:3000/products` 
 
 <p align="center">
   <img src="imagenes/productos.png">
@@ -133,7 +133,7 @@ Productos: ruta
 
   ```
   ...
-    <a class="nav-link active" aria-current="page" href="/">
+    <a class="nav-link active" aria-current="page" href="#">
       <span data-feather="home" class="align-text-bottom"></span>
       Dashboard
     </a>
