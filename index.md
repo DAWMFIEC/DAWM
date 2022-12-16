@@ -78,7 +78,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - Bootstrap](tutoriales/express_bootstrap.md)
 * [Express - Partials/Layout](tutoriales/express_partials.md)
 * [Express - ORM Básico](tutoriales/express_ormbasico.md)
-* [Express - ORM Intermedio](tutoriales/express_ormintermedio.md)
+<!-- * [Express - ORM Intermedio](tutoriales/express_ormintermedio.md) -->
 <!-- * [Express - REST](tutoriales/express_rest.md) -->
 <!-- * [Express - Formularios](tutoriales/express_forms.md)  -->
 <!---* [Express - Parámetros de consulta y Parámetros de ruta](tutoriales/express_pcpr.md) --->

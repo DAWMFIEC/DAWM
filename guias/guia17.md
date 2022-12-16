@@ -24,8 +24,8 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 
 ### Actividades
 
-* Realice completamente tutoriales: 
-  + [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html)
+* Realice completamente el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html).
+* Tomando como referencia el tutorial anterior, para la entidad **`etiqueta`**.
 
 ### Términos
 
