@@ -24,10 +24,15 @@ Proyecto en Express
 
 * * *
 
-Utiliza el proyecto que desarrollaste con el tutorial de [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html), [Express - Formularios](https://dawfiec.github.io/DAWM/tutoriales/express_forms.html) y [Express - Layout y Partials](https://dawfiec.github.io/DAWM/tutoriales/express_partials.html).
+Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html).
 
-* Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
+* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
+    - Para el hito: **`hito1-api`**
+
+* Agregue el módulo `nodemon` y el *script* de `devstart`
+* Instale las dependencias, con: `npm install`
+* Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
+
 
 ORM: Sequelize
 ==============
@@ -53,8 +58,8 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 {
   "development": {
     "username": "root",
-    "password": null,
-    "database": "database_development",
+    "password": "root",
+    "database": "album",
     "host": "127.0.0.1",
     "dialect": "mysql"
   },
@@ -65,7 +70,7 @@ MySQL
 =====
 * * *
 
-* Cree la base de datos (schema) con el nombre requerido, por ejemplo: **misitio**.
+* Cree la base de datos (schema) con el nombre requerido, por ejemplo: **album**.
 
 Modelo
 ======
@@ -75,12 +80,15 @@ El modelo es una representación abstracta, mediante clases (atributos y método
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* Crea el modelo: producto, con: **`sequelize model:create --name producto --attributes nombre:string,cantidad:integer`**
-  + En la carpeta `models` se agregó la clase **producto.js**, con la configuración predeterminada y los atributos especificados.
-  + En la carpeta `migrations` se agregó el script **YYYYMMDDHHMMSS\-create-producto.js** para crear la entidad en la base de datos.
+* Crea el modelo: `foto`, con: 
+  
+  **`sequelize model:create --name foto --attributes titulo:string,descripcion:string,calificacion:float,ruta:string`**
+
+  + En la carpeta `models` se agregó la clase **foto.js**, con la configuración predeterminada y los atributos especificados.
+  + En la carpeta `migrations` se agregó el script **YYYYMMDDHHMMSS\-create-foto.js** para crear la entidad en la base de datos.
 
 <p align="center">
-  <img src="imagenes/sequelize_producto.JPG">
+  <img src="imagenes/sequelize_foto.png">
 </p>
 
 
@@ -94,12 +102,12 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * Ejecute TODAS las migraciones, con: **`sequelize db:migrate`**
   <p align="center">
-	<img src="imagenes/producto_migrate.JPG">
+	   <img src="imagenes/foto_migrate.png">
   </p>
 
-  + Se creó la tabla vacía **productos**. El nombre de las tablas son creadas en inglés mediante el nombre del modelo en plural, como: **orden** \-> **ordens**. 
+  + Se creó la tabla vacía **fotos**. El nombre de las tablas son creadas en inglés mediante el nombre del modelo en plural, como: **orden** \-> **ordens**. 
 	<p align="center">
-	  <img width="30%" src="imagenes/mysql_productos.png">
+	  <img width="30%" src="imagenes/mysql_foto.png">
 	</p>
   + Se agregó la migración ejecutada a la tabla **sequelizemeta**
 	<p align="center">
@@ -120,16 +128,18 @@ A veces, es necesario generar datos de manera automática.
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* De no existir, cree el generador con: **`sequelize seed:generate --name productos`**
-* Dentro del archivo `seeders/YYYYMMDDHHMMSS-productos.js`, en la función **async up**, agregue:
+* De no existir, cree el generador con: **`sequelize seed:generate --name fotos`**
+* Dentro del archivo `seeders/YYYYMMDDHHMMSS-fotos.js`, en la función **async up**, agregue:
 <pre><code>
 ...  
 async up (queryInterface, Sequelize) {
   <b style="color:red">
   for (let i = 0; i <10; i++) {  
-      await queryInterface.bulkInsert('Productos', [{  
-          nombre: 'Producto '+i,  
-          cantidad: 10+i,  
+      await queryInterface.bulkInsert('Fotos', [{  
+          titulo: 'fotos'+i,  
+          descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+          calificacion: (Math.random()*10).toFixed(2),  
+          ruta: 'public/images/'+'fotos'+i+'.png',
           createdAt: new Date(),  
           updatedAt: new Date()  
       }], {});  
@@ -139,25 +149,25 @@ async up (queryInterface, Sequelize) {
 ...
 </code></pre>
 
-*   Dentro del archivo `seeders/YYYYMMDDHHMMSS-productos.js`, en la función **async down**, agregue:
+*   Dentro del archivo `seeders/YYYYMMDDHHMMSS-fotos.js`, en la función **async down**, agregue:
 <pre><code>
 ...  
 async down (queryInterface, Sequelize) {
   <b style="color:red">
-  await queryInterface.bulkDelete('Productos', null, {});  
+  await queryInterface.bulkDelete('Fotos', null, {});  
   </b>
 },  
 ...
 </code></pre>
 
 * Ejecute de generadores de datos
-  + Uno a la vez, con: **`sequelize db:seed --seed YYYYMMDDHHMMSS-productos`**
+  + Uno a la vez, con: **`sequelize db:seed --seed YYYYMMDDHHMMSS-fotos`**
   + Todos, con: **`sequelize db:seed:all`**
   + Deshacer todos, con: **`sequelize db:seed:undo:all`**
 * Revise los cambios en la base de datos.
 
   <p align="center">
-	<img width="30%" src="imagenes/mysql_productos2.png">
+	<img width="60%" src="imagenes/mysql_fotos2.png">
   </p>
 
 Controlador
@@ -166,7 +176,21 @@ Controlador
 
 Para solicitar los datos desde la base de datos, será necesario:
 
-* Agregue al **routes/index.js** la referencia al módulo **Sequelize** y el modelo **Producto**
+* Cree y modifique un nuevo manejador de rutas **routes/fotos.js**.
+  + Agregue el requerimiento a express, la instanciación del Router y la exportación de ruteador.
+
+<pre><code>
+<b style="color:red">
+var express = require('express');
+var router = express.Router();
+</b>
+
+<b style="color:red">
+module.exports = router;
+</b>
+</code></pre>
+
+  + Agregue la referencia al módulo **Sequelize** y el modelo **Foto**
 
 <pre><code>
 var express = require('express');  
@@ -174,54 +198,87 @@ var router = express.Router();
   
 <b style="color:red">
 const Sequelize = require('sequelize');
-const Producto = require('../models').producto;  
+const Foto = require('../models').foto;  
 </b>  
-  
-/* GET home page. */  
-router.get('/', function(req, res, next) {
+
+module.exports = router;
 </code></pre>
 
-* El controlador de la ruta **`"/productos"`** solicitará todos los productos (findAll) y envía los datos como argumento de la plantilla.
+  + Incluya el controlador de la ruta **`"/findAll/json"`**. El cual, responde con todas las fotos (findAll) que se encuentran en la tabla renderizados en un json.
 
 <pre><code>
-router.get('/productos', function(req, res, next) {  
-  
-  	<b style="color:red">
-    Producto.findAll({  
-        attributes: { exclude: ["updatedAt"] }  
-    })  
-    .then(productos => {  
-        res.render('productos', { title: 'My Dashboard :: Productos', arrProductos: productos });  
-    })  
-    .catch(error => res.status(400).send(error)) 
-	</b>
+...
+const Foto = require('../models').foto;
+
+<b style="color:red">
+router.get('/findAll/json', function(req, res, next) {  
+
+	
+  Foto.findAll({  
+      attributes: { exclude: ["updatedAt"] }  
+  })  
+  .then(fotos => {  
+      res.json(fotos);  
+  })  
+  .catch(error => res.status(400).send(error)) 
 
 });
+</b>
+
+module.exports = router;
+</code></pre>
+
+  + Incluya el controlador de la ruta **`"/findAll/view"`**. El cual, responde con todas las fotos (findAll) que se encuentran en la tabla renderizados en la vista html.
+
+<pre><code>
+...
+
+<b style="color:red">
+router.get('/findAll/view', function(req, res, next) {  
+
+  
+  Foto.findAll({  
+      attributes: { exclude: ["updatedAt"] }  
+  })  
+  .then(fotos => {  
+      res.render('fotos', { title: 'Fotos', arrFotos: fotos });  
+  })  
+  .catch(error => res.status(400).send(error)) 
+
+});
+</b>
+
+module.exports = router;
 </code></pre>
 
 Vista
 =====
 * * *
 
-* En la vista de productos, del archivo **views/productos.ejs**, envíe como parámetro el arreglo de productos.
+* Para mostrar los datos desde la base de datos, será necesario:
+  + Cree y modifique una nueva vista **views/fotos.ejs**.
+  + Agregue la estructura general de un documento html.
 
 ```
-...  
-<div class="container-fluid">  
-     <div class="row">  
-         <% include partials/nav %>  
-         
-         
-         <% include partials/productos_tabla arrProductos=arrProductos %>
-         
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+  </head>
+  <body>
+      
+    ...
 
-     </div>  
-</div>  
-...
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/feather-icons@4.28.0/dist/feather.min.js" integrity="sha384-uO3SXW5IuS1ZpFPKugNNWqTZRRglnUJK6UAZ/gxOX80nxEkN9NcGZTftn6RzhGWE" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js" integrity="sha384-zNy6FEbO50N+Cg5wap8IKA4M/ZnLJgzc6w2NqACZaK0u0FXfOWRRJOnQtpZun8ha" crossorigin="anonymous"></script>
 
+  </body>
+</html>
 ```
 
-* En la vista, en el partial **views/partials/productos_tabla.ejs**, al reemplazar el contenido de la etiqueta <table>:
+  + Agregue una tabla e itere sobre el arreglo **arrFotos**.
 
 ```
 ...  
@@ -229,38 +286,72 @@ Vista
 <table class="table table-striped table-hover">  
    <thead>  
      <tr>  
-       <th>#</th>  
-       <th>Nombre</th>  
-       <th>Cantidad</th>  
-       <th>Creado</th>  
-       <th>Action</th>  
+       <th>Id</th>  
+       <th>Título</th>  
+       <th>Descripción</th>  
+       <th>Ruta</th>  
+       <th>Fecha de creación</th>  
      </tr>  
    </thead>  
    <tbody>  
-        <% arrProductos.forEach(function(producto){ %>  
+        <% arrFotos.forEach((foto) => { %>  
           <tr>  
-            <td><%= producto.id %></td>  
-            <td><%= producto.nombre %></td>   
-            <td><%= producto.cantidad %></td>  
-            <td><%= producto.createdAt.toLocaleDateString('en-US') %></td>  
-            <td>  
-                <a href="#" class="settings" title="Settings" data-toggle="tooltip"><i class="material-icons">&#xE8B8;</i></a>  
-                <a href="#" class="delete" title="Delete" data-toggle="tooltip"><i class="material-icons">&#xE5C9;</i></a>  
-            </td>  
+            <td><%= foto.id %></td>  
+            <td><%= foto.titulo %></td>   
+            <td><%= foto.descripcion %></td> 
+            <td><%= foto.ruta %></td>  
+            <td><%= foto.createdAt.toLocaleDateString('en-US') %></td>   
           </tr>  
         <% }); %>  
     </tbody>  
-</table>  
+</table>   
   
 ...
 
 ```
 
+Aplicación
+==========
+* * *
+
+* Modifique el archivo **app.js**
+  + Agregue la referencia al manejador de rutas **'./routes/fotos'**
+
+<pre><code>
+...
+var fotosRouter = require('./routes/fotos');
+...
+</code></pre>
+
+  + Agregue la ruta **'/fotos'**
+
+<pre><code>
+...
+app.use('/fotos', fotosRouter);
+...
+</code></pre>
+
+Comprobación
+============
+* * *
+
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/productos` 
+* Acceda al URL `http://localhost:3000/fotos/findAll/json` 
 
 <p align="center">
-  <img src="imagenes/orm_productos.png">
+  <img src="imagenes/orm_fotos_json.png">
+</p>
+
+* Acceda al URL `http://localhost:3000/fotos/findAll/view` 
+
+<p align="center">
+  <img src="imagenes/orm_fotos_html.png">
+</p>
+
+* Revise la línea de comandos con el registro de las peticiones.
+
+<p align="center">
+  <img src="imagenes/orm_fotos_sql.png">
 </p>
 
 Referencias 
