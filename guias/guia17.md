@@ -29,7 +29,7 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 
 ### Términos
 
-partials, layout, `ORM`
+partials, `ORM`, sequelize
 
 ### Referencias
 
