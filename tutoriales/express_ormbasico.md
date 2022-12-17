@@ -83,12 +83,12 @@ El modelo es una representación abstracta, mediante clases (atributos y método
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* Crea el modelo: `foto`, con: 
+* Cree el modelo: `foto`, con: 
   
-  **`sequelize model:create --name foto --attributes titulo:string,descripcion:string,calificacion:float,ruta:string`**
+  `sequelize model:create --name foto --attributes titulo:string,descripcion:string,calificacion:float,ruta:string`
 
-  + En la carpeta `models` se agregó la clase **foto.js**, con la configuración predeterminada y los atributos especificados.
-  + En la carpeta `migrations` se agregó el script **YYYYMMDDHHMMSS\-create-foto.js** para crear la entidad en la base de datos.
+  + En la carpeta `models` se agregó la clase **foto.js**, con la configuración predeterminada para la clase foto con los atributos especificados.
+  + En la carpeta `migrations` se agregó el script **YYYYMMDDHHMMSS\-create-foto.js** para crear la tabla en la base de datos.
 
 <p align="center">
   <img src="imagenes/sequelize_foto.png">
@@ -163,7 +163,7 @@ async down (queryInterface, Sequelize) {
 ...
 </code></pre>
 
-* Ejecute de generadores de datos
+* Ejecute el generador de datos:
   + Uno a la vez, con: **`sequelize db:seed --seed YYYYMMDDHHMMSS-fotos`**
   + Todos, con: **`sequelize db:seed:all`**
   + Deshacer todos, con: **`sequelize db:seed:undo:all`**
@@ -177,7 +177,7 @@ Controlador
 ===========
 * * *
 
-Para solicitar los datos desde la base de datos, será necesario:
+Para solicitar los datos desde la base de datos, será necesario que:
 
 * Cree y modifique un nuevo manejador de rutas **routes/fotos.js**.
   + Agregue el requerimiento a express, la instanciación del Router y la exportación de ruteador.
@@ -286,28 +286,34 @@ Vista
 ```
 ...  
   
-<table class="table table-striped table-hover">  
-   <thead>  
-     <tr>  
-       <th>Id</th>  
-       <th>Título</th>  
-       <th>Descripción</th>  
-       <th>Ruta</th>  
-       <th>Fecha de creación</th>  
-     </tr>  
-   </thead>  
-   <tbody>  
-        <% arrFotos.forEach((foto) => { %>  
-          <tr>  
-            <td><%= foto.id %></td>  
-            <td><%= foto.titulo %></td>   
-            <td><%= foto.descripcion %></td> 
-            <td><%= foto.ruta %></td>  
-            <td><%= foto.createdAt.toLocaleDateString('en-US') %></td>   
-          </tr>  
-        <% }); %>  
-    </tbody>  
-</table>   
+<div class="container-fluid p-4">
+
+  <h1 class="pb-4"><%= title %></h1>
+
+  <table class="table table-striped table-hover">
+    <thead>
+      <tr>
+        <th>Id</th>
+        <th>Título</th>
+        <th>Descripción</th>
+        <th>Ruta</th>
+        <th>Fecha de creación</th>
+      </tr>
+    </thead>
+    <tbody>
+      <% arrFotos.forEach((foto) => { %>
+      <tr>
+        <td><%= foto.id %></td>
+        <td><%= foto.titulo %></td>
+        <td><%= foto.descripcion %></td>
+        <td><%= foto.ruta %></td>
+        <td><%= foto.createdAt.toLocaleDateString('en-US') %></td>
+      </tr>
+      <% }); %>
+    </tbody>
+  </table>
+
+</div> 
   
 ...
 
