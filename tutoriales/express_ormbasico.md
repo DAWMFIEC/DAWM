@@ -29,9 +29,12 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 * O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
     - Para el hito: **`hito1-api`**
 
-* Agregue el módulo `nodemon` y el *script* `devstart`
-* Instale las dependencias, con: `npm install`
-* Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
+
+Nodemon
+=======
+
+* Agregue el módulo `nodemon` al proyecto 
+* Agregue el *script* `devstart` al archivo `package.json`
 
 
 ORM: Sequelize
@@ -135,7 +138,7 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 async up (queryInterface, Sequelize) {
   <b style="color:red">
   for (let i = 0; i <10; i++) {  
-      await queryInterface.bulkInsert('Fotos', [{  
+      await queryInterface.bulkInsert('fotos', [{  
           titulo: 'fotos'+i,  
           descripcion: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
           calificacion: (Math.random()*10).toFixed(2),  
@@ -154,7 +157,7 @@ async up (queryInterface, Sequelize) {
 ...  
 async down (queryInterface, Sequelize) {
   <b style="color:red">
-  await queryInterface.bulkDelete('Fotos', null, {});  
+  await queryInterface.bulkDelete('fotos', null, {});  
   </b>
 },  
 ...

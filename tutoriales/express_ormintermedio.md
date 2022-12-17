@@ -29,10 +29,6 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 * O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
     - Para el hito: **`hito2-api`**
 
-* Instale las dependencias, con: `npm install`
-* Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
-
-
 
 Referencias 
 ===========
