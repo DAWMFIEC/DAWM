@@ -44,9 +44,10 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 ...
 ```
 
-  + Ejecute la migración y vea los cambios en la base de datos.
-  + Cree el generador de datos para el modelo:
-    - **up:** Agregar las etiquetas `foto`, `payaso`, `rojo`, `azul`,`techo`, `cielo`, `foco` y `luz` a la tabla.
+  + Ejecute la migración y revise los cambios en la base de datos.
+  + Cree el generador de datos para el modelo `etiqueta`
+  + Modifique el generador de datos:
+    - **up:** Inserte las etiquetas `'foto'`, `'payaso'`, `'rojo'`, `'azul'`,`'techo'`, `'cielo'`, `'foco'` y `'luz'` a la tabla.
     - **down:** Eliminar todo el contenido de la tabla.
     - Asegúrese de insertar/eliminar en la tabla `etiquetas`
 
@@ -57,10 +58,12 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
   await queryInterface.bulkDelete('etiquetas',
 ...
 ```
-
+  + Ejecute la generación de datos y revise los cambios en la base de datos.
+  
   + Agregue los controladores:
     - Para la ruta `/findAll/json` que devuelve todos los registros de la tabla en formato **json**.
     - Para la ruta `/findAll/view` que devuelve todos los registros de la tabla renderizados en la vista **views/etiquetas.ejs**.
+  + Agregue y modifique la vista **views/etiquetas.ejs**
   + Registre el manejador de rutas en la aplicación, con la ruta `/etiquetas`
   + Verifique los resultados en el navegador para las rutas 
     - `http://localhost:3000/etiquetas/findAll/json`, y 
