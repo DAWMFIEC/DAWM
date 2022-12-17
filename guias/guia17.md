@@ -25,7 +25,7 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 ### Actividades
 
 * Realice completamente el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html).
-* Tome como referencia el tutorial anterior o [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html), para:
+* Tome como referencia el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) o [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html), para:
   + Crear el modelo **`etiqueta`** con el atributo `texto`. 
   + Modifique la migración `migrations/YYYYMMDDHHMMSS-create-etiqueta` para que el nombre de la tabla sea `etiquetas`
 
