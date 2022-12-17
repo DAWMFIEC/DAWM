@@ -29,6 +29,77 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 * O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
     - Para el hito: **`hito2-api`**
 
+Relación N:M (Foto-Etiqueta)
+===================
+
+* * *
+
+
+```
+sequelize model:create --name fotoetiqueta  --attributes foto_id:integer,etiqueta_id:integer
+```
+
+```
+sequelize migration:generate --name associate-foto-etiqueta
+```
+
+**up**
+
+```
+await queryInterface.addConstraint('fotoetiqueta', {
+      fields: ['foto_id'],
+      name: 'foto_id_fk',
+      type: 'foreign key',
+      references: {
+        table: 'fotos',
+        field: 'id'
+      },
+      onDelete: 'cascade',
+      onUpdate: 'set null'
+    });
+
+    await queryInterface.addConstraint('fotoetiqueta', {
+      fields: ['etiqueta_id'],
+      name: 'etiqueta_id_fk',
+      type: 'foreign key',
+      references: {
+        table: 'etiquetas',
+        field: 'id'
+      },
+      onDelete: 'cascade',
+      onUpdate: 'set null'
+    });
+```
+
+**down**
+
+```
+await queryInterface.removeConstraint('fotoetiqueta', 'foto_id_fk')
+await queryInterface.removeConstraint('fotoetiqueta', 'etiqueta_id_fk')
+```
+
+asociacion lógica en el modelo **foto**
+
+models.foto.belongsToMany(models.etiqueta, { through: 'fotoetiqueta', foreignKey: "foto_id" } );
+
+asociacion lógica en el modelo **etiqueta**
+
+models.etiqueta.belongsToMany(models.foto, { through: 'fotoetiqueta', foreignKey: "etiqueta_id" });
+
+
+controlador agregar el _include_
+
+```
+Foto.findAll({  
+    attributes: { exclude: ["updatedAt"] },
+    include: [{
+      model: Etiqueta,
+      attributes: ['texto'],
+      through: {attributes: []}
+    }],
+})  
+```
+
 
 Referencias 
 ===========
