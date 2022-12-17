@@ -89,3 +89,35 @@ Comandos básicos
   ```
   ng serve -o --live-reload
   ```
+
+## Express
+
+* Crear un proyecto
+
+  ```
+  express --view=ejs <nombre-del-proyecto>
+  ```
+
+* Crear un modelo
+
+  ```
+  sequelize model:create --name <nombre-modelo> --attributes <atributo>:<tipo>
+  ```
+
+* Migración de cambios
+
+  ```
+  sequelize db:migrate
+  ```
+
+* Creador del generador de datos
+
+  ```
+  sequelize seed:generate --name <nombre-modelo>
+  ```
+
+* Ejecución del generador de datos
+
+  ```
+  sequelize db:seed --seed YYYYMMDDHHMMSS-<nombre>
+  ```
