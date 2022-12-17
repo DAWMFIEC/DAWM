@@ -24,7 +24,12 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 
 ### Actividades
 
+#### Modelo: Foto
+
 * Realice completamente el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html).
+
+#### Modelo: Etiqueta
+
 * Tome como referencia el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) o [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html), para:
   + Crear el modelo **`etiqueta`** con el atributo `texto`. 
   + Modifique la migración `migrations/YYYYMMDDHHMMSS-create-etiqueta` para que el nombre de la tabla sea `etiquetas`
@@ -70,6 +75,7 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
     - `http://localhost:3000/etiquetas/findAll/view`
 
 
+
 ### Términos
 
 partials, `ORM`, sequelize
@@ -82,3 +88,6 @@ partials, `ORM`, sequelize
 * Creating Sequelize Associations with the Sequelize CLI tool. (2020). Retrieved 3 August 2021, from https://levelup.gitconnected.com/creating-sequelize-associations-with-the-sequelize-cli-tool-d83caa902233
 * Creating Sequelize Associations with the Sequelize CLI tool. (2020). Retrieved 3 August 2021, from https://levelup.gitconnected.com/creating-sequelize-associations-with-the-sequelize-cli-tool-d83caa902233
 * GitHub - japsolo/curso-sequelize-migrations-seeders: Creando modelos, migraciones y seeders con Sequelize en Node + Express. (2021). Retrieved 3 August 2021, from https://github.com/japsolo/curso-sequelize-migrations-seeders*
+* Sequelize Many-to-Many Association example - Node.js & MySQL - BezKoder. (2019). Retrieved 17 December 2022, from https://www.bezkoder.com/sequelize-associate-many-to-many/
+* How to define Sequelize associations using migrations. (2017). Retrieved 17 December 2022, from https://medium.com/@andrewoons/how-to-define-sequelize-associations-using-migrations-de4333bf75a7
+* How to create Many to Many relationship using Sequelize ORM (Postgres) on Express. (2019). Retrieved 17 December 2022, from https://medium.com/@the_ozmic/how-to-create-many-to-many-relationship-using-sequelize-orm-postgres-on-express-677753a3edb5
