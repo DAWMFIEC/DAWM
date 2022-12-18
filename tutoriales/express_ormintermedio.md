@@ -34,116 +34,122 @@ Relación N:M (Foto-Etiqueta)
 
 * * *
 
-* **Modelo:** Cree el modelo que manejará la relación física y lógica
+* Tome como referencia las instrucciones el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) o [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html), para:
 
-```
-sequelize model:create --name fotoetiqueta  --attributes foto_id:integer,etiqueta_id:integer
-```
+  + **Modelo:** Cree el modelo que manejará la relación física y lógica
+  ```
+  sequelize model:create --name fotoetiqueta  --attributes foto_id:integer,etiqueta_id:integer
+  ```
 
-* **Migración:** Cree una nueva migración para registrar la asociación
+  + **Migración:** Cree una nueva migración para registrar la asociación
+  ```
+  sequelize migration:generate --name associate-foto-etiqueta
+  ```
 
-```
-sequelize migration:generate --name associate-foto-etiqueta
-```
+    - Agregue en la función de ejecución de cambios **up**
+    ```
+    ...
+      await queryInterface.addConstraint('fotoetiqueta', {
+          fields: ['foto_id'],
+          name: 'foto_id_fk',
+          type: 'foreign key',
+          references: {
+            table: 'fotos',
+            field: 'id'
+          },
+          onDelete: 'cascade',
+          onUpdate: 'set null'
+        });
 
-  + En la función de ejecución de cambios **up**
+        await queryInterface.addConstraint('fotoetiqueta', {
+          fields: ['etiqueta_id'],
+          name: 'etiqueta_id_fk',
+          type: 'foreign key',
+          references: {
+            table: 'etiquetas',
+            field: 'id'
+          },
+          onDelete: 'cascade',
+          onUpdate: 'set null'
+        });
+    ..
+    ```
 
-```
-...
-  await queryInterface.addConstraint('fotoetiqueta', {
-      fields: ['foto_id'],
-      name: 'foto_id_fk',
-      type: 'foreign key',
-      references: {
-        table: 'fotos',
-        field: 'id'
-      },
-      onDelete: 'cascade',
-      onUpdate: 'set null'
-    });
+    - Agregue en la función de reversión de cambios **down**
 
-    await queryInterface.addConstraint('fotoetiqueta', {
-      fields: ['etiqueta_id'],
-      name: 'etiqueta_id_fk',
-      type: 'foreign key',
-      references: {
-        table: 'etiquetas',
-        field: 'id'
-      },
-      onDelete: 'cascade',
-      onUpdate: 'set null'
-    });
-..
-```
+    ```
+    await queryInterface.removeConstraint('fotoetiqueta', 'foto_id_fk')
+    await queryInterface.removeConstraint('fotoetiqueta', 'etiqueta_id_fk')
+    ```
 
-  + En la función de reversión de cambios **down**
-
-```
-await queryInterface.removeConstraint('fotoetiqueta', 'foto_id_fk')
-await queryInterface.removeConstraint('fotoetiqueta', 'etiqueta_id_fk')
-```
-
-  + Ejecute la migración y revise los cambios en la base de datos.
-
+    - Ejecute la migración y revise los cambios en la base de datos.
 
 <p align="center">
   <img src="imagenes/orm_fotos_etiquetas_migration.png">
 </p>
 
-* **Generador:** Cree el generador de datos para el modelo `fotoetiqueta`
+  + **Generador:** Cree el generador de datos para el modelo `fotoetiqueta`
+    - En la función de ejecución de cambios **up**, agregue:
+  <pre><code>
+  </code></pre>
+    
+    - En la función de reversión de cambios **down**, agregue:
+  <pre><code>
+  </code></pre>
 
+    - Ejecute el generador de datos y revise los cambios en la base de datos.
 
 <p align="center">
   <img src="imagenes/orm_fotos_etiquetas_seeding.png">
 </p>
 
 
-* **Asociación:** Entre los modelos `foto -> (fotoetiqueta) -> etiqueta` y `etiqueta -> (fotoetiqueta) -> foto`
+  + **Asociación:** Entre los modelos `foto -> (fotoetiqueta) -> etiqueta` y `etiqueta -> (fotoetiqueta) -> foto`
 
-  + Del modelo `models/foto`, modifique el método **associate** con la asociacion lógica al modelo `etiqueta` 
+    - Del modelo `models/foto`, modifique el método **associate** con la asociacion lógica al modelo `etiqueta` 
 
-<pre><code>
-  ...
-  static associate(models) {
-    // define association here
-    <b style="color:red">
-    models.foto.belongsToMany(models.etiqueta, { through: 'fotoetiqueta', foreignKey: "foto_id" } );
-    </b>
-  }
-  ...
-</code></pre>
-
-  + Del modelo `models/etiqueta`, modifique el método **associate** con la asociacion lógica al modelo `foto` 
-
-<pre><code>
-  ...
-  static associate(models) {
-    // define association here
-    <b style="color:red">
-    models.etiqueta.belongsToMany(models.foto, { through: 'fotoetiqueta', foreignKey: "etiqueta_id" });
-    </b>
-  }
-  ...
-</code></pre>
-
-
-* **Manejador de rutas y controladores:** modifique el controlador para la ruta `/findAll/json` al:
-  + Incluir (clave _include_) el modelo `etiqueta` 
-  + Mostrar solo el atributo `texto`
-  + Evitando cargar todos los modelos relacionados ([Nested eager loading](https://sequelize.org/v3/docs/models-usage/index.html#nested-eager-loading)).
-
-<pre><code>
-  Foto.findAll({  
-      attributes: { exclude: ["updatedAt"] },
+  <pre><code>
+    ...
+    static associate(models) {
+      // define association here
       <b style="color:red">
-      include: [{
-        model: Etiqueta,
-        attributes: ['texto'],
-        through: {attributes: []}
-      }],
+      models.foto.belongsToMany(models.etiqueta, { through: 'fotoetiqueta', foreignKey: "foto_id" } );
       </b>
-  }) 
-</code></pre>
+    }
+    ...
+  </code></pre>
+
+    - Del modelo `models/etiqueta`, modifique el método **associate** con la asociacion lógica al modelo `foto` 
+
+  <pre><code>
+    ...
+    static associate(models) {
+      // define association here
+      <b style="color:red">
+      models.etiqueta.belongsToMany(models.foto, { through: 'fotoetiqueta', foreignKey: "etiqueta_id" });
+      </b>
+    }
+    ...
+  </code></pre>
+
+
+  + **Manejador de rutas y controladores:** modifique el controlador para la ruta `/findAll/json` al:
+    - Incluir (clave _include_) el modelo `etiqueta` 
+    - Mostrar solo el atributo `texto`
+    - Evitando cargar todos los modelos relacionados ([Nested eager loading](https://sequelize.org/v3/docs/models-usage/index.html#nested-eager-loading)).
+
+  <pre><code>
+    Foto.findAll({  
+        attributes: { exclude: ["updatedAt"] },
+        <b style="color:red">
+        include: [{
+          model: Etiqueta,
+          attributes: ['texto'],
+          through: {attributes: []}
+        }],
+        </b>
+    }) 
+  </code></pre>
 
 
 Comprobación
