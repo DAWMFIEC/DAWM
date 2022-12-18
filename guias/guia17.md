@@ -30,7 +30,7 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 
 #### Modelo: Etiqueta
 
-* Tome como referencia el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) o [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html), para:
+* Tome como referencia las instrucciones el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) o [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html), para:
   + **Modelo:** Crear el modelo **`etiqueta`** con el atributo `texto`. 
     - Modifique el modelo `models/etiqueta`, agregue la clave **tableName** y el nombre de la tabla `etiquetas` a la cual estará relacionado
   ```
@@ -66,7 +66,7 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
   ...
   ```
 
-    - Ejecute la generación de datos y revise los cambios en la base de datos.
+    - Ejecute el generador de datos y revise los cambios en la base de datos.
   
   + **Manejador de rutas y controladores:** Cree el manejador de rutas **routes/etiquetas.js** y agregue los controladores:
     - Para la ruta `/findAll/json` que devuelve todos los registros de la tabla en formato **json**.
