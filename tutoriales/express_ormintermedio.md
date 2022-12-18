@@ -48,7 +48,8 @@ Relación N:M (Foto-Etiqueta)
   ...
   ```
 
-  + **Migración (Creación):** Modifique la migración `migrations/YYYYMMDDHHMMSS-create-etiqueta` para que el nombre de la tabla sea `etiquetas`
+  + **Migración** 
+    - _Creación de la tabla:_ Modifique la migración `migrations/YYYYMMDDHHMMSS-create-fotoetiqueta` para que el nombre de la tabla sea `etiquetas`
 
   ```
   ...
@@ -58,12 +59,15 @@ Relación N:M (Foto-Etiqueta)
   ...
   ```
 
-  + **Migración (Modificación):** Cree una nueva migración para registrar la asociación
+  + **Migración** 
+    - _Modificación de la tabla:_ 
+
+      1. Cree una nueva migración para registrar la asociación
   ```
   sequelize migration:generate --name associate-foto-etiqueta
   ```
 
-    - Agregue en la función de ejecución de cambios **up**
+      2. Modifique la migración `migrations/YYYYMMDDHHMMSS-associate-foto-etiqueta`, agregue en la función de ejecución de cambios **up**
     ```
     ...
       await queryInterface.addConstraint('fotoetiquetas', {
@@ -92,7 +96,7 @@ Relación N:M (Foto-Etiqueta)
     ..
     ```
 
-    - Agregue en la función de reversión de cambios **down**
+      3. Modifique la migración `migrations/YYYYMMDDHHMMSS-associate-foto-etiqueta`, agregue en la función de reversión de cambios **down**
 
     ```
     await queryInterface.removeConstraint('fotoetiquetas', 'foto_id_fk')
