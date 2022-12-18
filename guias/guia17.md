@@ -31,7 +31,7 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 #### Modelo: Etiqueta
 
 * Tome como referencia el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) o [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html), para:
-  + **Modelo** Crear el modelo **`etiqueta`** con el atributo `texto`. 
+  + **Modelo:** Crear el modelo **`etiqueta`** con el atributo `texto`. 
     - Modifique el modelo `models/etiqueta`, agregue la clave **tableName** y el nombre de la tabla `etiquetas` a la cual estará relacionado
   ```
   ...
@@ -40,7 +40,7 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
   ...
   ```
 
-  + **Migración** Modifique la migración `migrations/YYYYMMDDHHMMSS-create-etiqueta` para que el nombre de la tabla sea `etiquetas`
+  + **Migración:** Modifique la migración `migrations/YYYYMMDDHHMMSS-create-etiqueta` para que el nombre de la tabla sea `etiquetas`
 
   ```
   ...
@@ -52,9 +52,9 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 
     - Ejecute la migración y revise los cambios en la base de datos.
 
-  + **Generador** Cree el generador de datos para el modelo `etiqueta`
-    - Modifique el generador de datos:
-      1. **up:** Inserte las etiquetas `'foto'`, `'payaso'`, `'rojo'`, `'azul'`,`'techo'`, `'cielo'`, `'foco'` y `'luz'` a la tabla.
+  + **Generador:** Cree el generador de datos para el modelo `etiqueta`
+    - Modifique las funciones:
+      1. **up:** Inserte los registros con las etiquetas `'foto'`, `'payaso'`, `'rojo'`, `'azul'`,`'techo'`, `'cielo'`, `'foco'` y `'luz'` a la tabla.
       2. **down:** Eliminar todo el contenido de la tabla.
       3. Asegúrese de insertar/eliminar en la tabla `etiquetas` 
 
@@ -68,16 +68,16 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 
     - Ejecute la generación de datos y revise los cambios en la base de datos.
   
-  + **Manejador de rutas y controladores** Cree el manejador de rutas **routes/etiquetas.js** y agregue los controladores:
+  + **Manejador de rutas y controladores:** Cree el manejador de rutas **routes/etiquetas.js** y agregue los controladores:
     - Para la ruta `/findAll/json` que devuelve todos los registros de la tabla en formato **json**.
     - Para la ruta `/findAll/view` que devuelve todos los registros de la tabla renderizados en la vista **views/etiquetas.ejs**.
   
   
-  + **Vista** Agregue y modifique la vista **views/etiquetas.ejs**
+  + **Vista:** Agregue y modifique la vista **views/etiquetas.ejs**
   
-  + **Aplicación** En la aplicación **app.js**, registre el manejador de rutas **routes/etiquetas.js** con la ruta `/etiquetas`
+  + **Aplicación:** En la aplicación **app.js**, registre el manejador de rutas **routes/etiquetas.js** con la ruta `/etiquetas`
   
-  + **Comprobación** Verifique los resultados en el navegador para las rutas 
+  + **Comprobación:** Verifique los resultados en el navegador para las rutas 
     - `http://localhost:3000/etiquetas/findAll/json`, y 
     - `http://localhost:3000/etiquetas/findAll/view`
 
