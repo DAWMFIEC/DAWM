@@ -168,7 +168,9 @@ Relación N:M (Foto-Etiqueta)
     <pre><code>
     ...
     const Foto = require('../models').foto;
+    <b style="color:red">
     const Etiqueta = require('../models').etiqueta; 
+    </b>
     ...
     </code></pre>
 
