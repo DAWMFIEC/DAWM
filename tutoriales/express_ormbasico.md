@@ -132,7 +132,8 @@ A veces, es necesario generar datos de manera automática.
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * De no existir, cree el generador con: **`sequelize seed:generate --name fotos`**
-* Dentro del archivo `seeders/YYYYMMDDHHMMSS-fotos.js`, en la función **async up**, agregue:
+* Dentro del archivo `seeders/YYYYMMDDHHMMSS-fotos.js`, 
+  + En la función de ejecución de cambios **up**, agregue:
 <pre><code>
 ...  
 async up (queryInterface, Sequelize) {
@@ -152,7 +153,7 @@ async up (queryInterface, Sequelize) {
 ...
 </code></pre>
 
-*   Dentro del archivo `seeders/YYYYMMDDHHMMSS-fotos.js`, en la función **async down**, agregue:
+  + En la función de reversión de cambios **down**, agregue:
 <pre><code>
 ...  
 async down (queryInterface, Sequelize) {
