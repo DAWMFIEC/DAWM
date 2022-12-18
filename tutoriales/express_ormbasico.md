@@ -173,8 +173,9 @@ async down (queryInterface, Sequelize) {
 	<img width="60%" src="imagenes/mysql_fotos2.png">
   </p>
 
-Controlador
-===========
+
+Manejador de rutas y controladores 
+==================================
 * * *
 
 Para solicitar los datos desde la base de datos, será necesario que:
