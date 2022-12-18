@@ -40,8 +40,25 @@ Relación N:M (Foto-Etiqueta)
   ```
   sequelize model:create --name fotoetiqueta  --attributes foto_id:integer,etiqueta_id:integer
   ```
+    - Modifique el modelo `models/fotoetiqueta`, agregue la clave **tableName** y el nombre de la tabla `fotoetiquetas` a la cual estará relacionado
+  ```
+  ...
+    modelName: 'fotoetiqueta',
+    tableName: 'fotoetiquetas'
+  ...
+  ```
 
-  + **Migración:** Cree una nueva migración para registrar la asociación
+  + **Migración (Creación):** Modifique la migración `migrations/YYYYMMDDHHMMSS-create-etiqueta` para que el nombre de la tabla sea `etiquetas`
+
+  ```
+  ...
+    await queryInterface.createTable('fotoetiquetas' 
+  ...
+    await queryInterface.dropTable('fotoetiquetas' 
+  ...
+  ```
+
+  + **Migración (Modificación):** Cree una nueva migración para registrar la asociación
   ```
   sequelize migration:generate --name associate-foto-etiqueta
   ```
@@ -49,7 +66,7 @@ Relación N:M (Foto-Etiqueta)
     - Agregue en la función de ejecución de cambios **up**
     ```
     ...
-      await queryInterface.addConstraint('fotoetiqueta', {
+      await queryInterface.addConstraint('fotoetiquetas', {
           fields: ['foto_id'],
           name: 'foto_id_fk',
           type: 'foreign key',
@@ -61,7 +78,7 @@ Relación N:M (Foto-Etiqueta)
           onUpdate: 'set null'
         });
 
-        await queryInterface.addConstraint('fotoetiqueta', {
+        await queryInterface.addConstraint('fotoetiquetas', {
           fields: ['etiqueta_id'],
           name: 'etiqueta_id_fk',
           type: 'foreign key',
@@ -78,8 +95,8 @@ Relación N:M (Foto-Etiqueta)
     - Agregue en la función de reversión de cambios **down**
 
     ```
-    await queryInterface.removeConstraint('fotoetiqueta', 'foto_id_fk')
-    await queryInterface.removeConstraint('fotoetiqueta', 'etiqueta_id_fk')
+    await queryInterface.removeConstraint('fotoetiquetas', 'foto_id_fk')
+    await queryInterface.removeConstraint('fotoetiquetas', 'etiqueta_id_fk')
     ```
 
     - Ejecute la migración y revise los cambios en la base de datos.
