@@ -37,37 +37,35 @@ Relación N:M (Foto-Etiqueta)
 * Tome como referencia las instrucciones el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) o [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html), para:
 
   + **Modelo:** Cree el modelo que manejará la relación física y lógica
-  ```
-  sequelize model:create --name fotoetiqueta  --attributes foto_id:integer,etiqueta_id:integer
-  ```
+    ```
+    sequelize model:create --name fotoetiqueta  --attributes foto_id:integer,etiqueta_id:integer
+    ```
+    
     - Modifique el modelo `models/fotoetiqueta`, agregue la clave **tableName** y el nombre de la tabla `fotoetiquetas` a la cual estará relacionado
-  ```
-  ...
-    modelName: 'fotoetiqueta',
-    tableName: 'fotoetiquetas'
-  ...
-  ```
+    ```
+    ...
+      modelName: 'fotoetiqueta',
+      tableName: 'fotoetiquetas'
+    ...
+    ```
 
-  + **Migración** 
-    - _Creación de la tabla:_ Modifique la migración `migrations/YYYYMMDDHHMMSS-create-fotoetiqueta` para que el nombre de la tabla sea `etiquetas`
+  + **Migración:** _Creación de la tabla_ 
+    - Modifique la migración `migrations/YYYYMMDDHHMMSS-create-fotoetiqueta` para que el nombre de la tabla sea `etiquetas`
+    ```
+    ...
+      await queryInterface.createTable('fotoetiquetas' 
+    ...
+      await queryInterface.dropTable('fotoetiquetas' 
+    ...
+    ```
 
-  ```
-  ...
-    await queryInterface.createTable('fotoetiquetas' 
-  ...
-    await queryInterface.dropTable('fotoetiquetas' 
-  ...
-  ```
+  + **Migración:** _Modificación de la tabla:_ 
+    - Cree una nueva migración para registrar la asociación
+    ```
+    sequelize migration:generate --name associate-foto-etiqueta
+    ```
 
-  + **Migración** 
-    - _Modificación de la tabla:_ 
-
-      1. Cree una nueva migración para registrar la asociación
-  ```
-  sequelize migration:generate --name associate-foto-etiqueta
-  ```
-
-      2. Modifique la migración `migrations/YYYYMMDDHHMMSS-associate-foto-etiqueta`, agregue en la función de ejecución de cambios **up**
+    - Modifique la migración `migrations/YYYYMMDDHHMMSS-associate-foto-etiqueta`, agregue en la función de ejecución de cambios **up**
     ```
     ...
       await queryInterface.addConstraint('fotoetiquetas', {
@@ -96,8 +94,7 @@ Relación N:M (Foto-Etiqueta)
     ..
     ```
 
-      3. Modifique la migración `migrations/YYYYMMDDHHMMSS-associate-foto-etiqueta`, agregue en la función de reversión de cambios **down**
-
+    - Modifique la migración `migrations/YYYYMMDDHHMMSS-associate-foto-etiqueta`, agregue en la función de reversión de cambios **down**
     ```
     await queryInterface.removeConstraint('fotoetiquetas', 'foto_id_fk')
     await queryInterface.removeConstraint('fotoetiquetas', 'etiqueta_id_fk')
@@ -111,12 +108,12 @@ Relación N:M (Foto-Etiqueta)
 
   + **Generador:** Cree el generador de datos para el modelo `fotoetiqueta`
     - En la función de ejecución de cambios **up**, agregue:
-  <pre><code>
-  </code></pre>
+    <pre><code>
+    </code></pre>
     
     - En la función de reversión de cambios **down**, agregue:
-  <pre><code>
-  </code></pre>
+    <pre><code>
+    </code></pre>
 
     - Ejecute el generador de datos y revise los cambios en la base de datos.
 
