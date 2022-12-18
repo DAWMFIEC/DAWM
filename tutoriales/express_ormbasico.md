@@ -164,7 +164,7 @@ async down (queryInterface, Sequelize) {
 ...
 </code></pre>
 
-* Ejecute el generador de datos:
+* Ejecute el generador de datos
   + Uno a la vez, con: **`sequelize db:seed --seed YYYYMMDDHHMMSS-fotos`**
   + Todos, con: **`sequelize db:seed:all`**
   + Deshacer todos, con: **`sequelize db:seed:undo:all`**
