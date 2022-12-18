@@ -109,10 +109,20 @@ Relación N:M (Foto-Etiqueta)
   + **Generador:** Cree el generador de datos para el modelo `fotoetiqueta`
     - En la función de ejecución de cambios **up**, agregue:
     <pre><code>
+      ...
+      await queryInterface.bulkInsert('fotoetiquetas', [
+        {  foto_id: 1, etiqueta_id: 1, createdAt: new Date(), updatedAt: new Date()  },
+        {  foto_id: 1, etiqueta_id: 2, createdAt: new Date(), updatedAt: new Date()  },
+        {  foto_id: 2, etiqueta_id: 2, createdAt: new Date(), updatedAt: new Date()  }
+      ], {}); 
+      ...
     </code></pre>
     
     - En la función de reversión de cambios **down**, agregue:
     <pre><code>
+      ...
+      await queryInterface.bulkDelete('fotoetiquetas', null, {});
+      ...
     </code></pre>
 
     - Ejecute el generador de datos y revise los cambios en la base de datos.
@@ -126,48 +136,64 @@ Relación N:M (Foto-Etiqueta)
 
     - Del modelo `models/foto`, modifique el método **associate** con la asociacion lógica al modelo `etiqueta` 
 
-  <pre><code>
-    ...
-    static associate(models) {
-      // define association here
-      <b style="color:red">
-      models.foto.belongsToMany(models.etiqueta, { through: 'fotoetiqueta', foreignKey: "foto_id" } );
-      </b>
-    }
-    ...
-  </code></pre>
+    <pre><code>
+      ...
+      static associate(models) {
+        // define association here
+        <b style="color:red">
+        models.foto.belongsToMany(models.etiqueta, { through: 'fotoetiqueta', foreignKey: "foto_id" } );
+        </b>
+      }
+      ...
+    </code></pre>
 
     - Del modelo `models/etiqueta`, modifique el método **associate** con la asociacion lógica al modelo `foto` 
 
-  <pre><code>
-    ...
-    static associate(models) {
-      // define association here
-      <b style="color:red">
-      models.etiqueta.belongsToMany(models.foto, { through: 'fotoetiqueta', foreignKey: "etiqueta_id" });
-      </b>
-    }
-    ...
-  </code></pre>
-
-
-  + **Manejador de rutas y controladores:** modifique el controlador para la ruta `/findAll/json` al:
-    - Incluir (clave _include_) el modelo `etiqueta` 
-    - Mostrar solo el atributo `texto`
-    - Evitando cargar todos los modelos relacionados ([Nested eager loading](https://sequelize.org/v3/docs/models-usage/index.html#nested-eager-loading)).
-
-  <pre><code>
-    Foto.findAll({  
-        attributes: { exclude: ["updatedAt"] },
+    <pre><code>
+      ...
+      static associate(models) {
+        // define association here
         <b style="color:red">
-        include: [{
-          model: Etiqueta,
-          attributes: ['texto'],
-          through: {attributes: []}
-        }],
+        models.etiqueta.belongsToMany(models.foto, { through: 'fotoetiqueta', foreignKey: "etiqueta_id" });
         </b>
-    }) 
-  </code></pre>
+      }
+      ...
+    </code></pre>
+
+
+  + **Manejador de rutas y controladores:** 
+
+    - Agregue la referencia la modelo `etiqueta`
+
+    <pre><code>
+    ...
+    const Foto = require('../models').foto;
+    const Etiqueta = require('../models').etiqueta; 
+    ...
+    </code></pre>
+
+    - Modifique el controlador para la ruta `/findAll/json` al:
+      1. Incluir (clave _include_) el modelo `etiqueta` 
+      2. Mostrar solo el atributo `texto`
+      3. Evitando cargar todos los modelos relacionados ([Nested eager loading](https://sequelize.org/v3/docs/models-usage/index.html#nested-eager-loading)).
+
+      <pre><code>
+        ...
+        const Foto = require('../models').foto;
+        const Etiqueta = require('../models').etiqueta;  
+
+        ...
+        Foto.findAll({  
+            attributes: { exclude: ["updatedAt"] },
+            <b style="color:red">
+            include: [{
+              model: Etiqueta,
+              attributes: ['texto'],
+              through: {attributes: []}
+            }],
+            </b>
+        }) 
+      </code></pre>
 
 
 Comprobación
