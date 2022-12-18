@@ -30,23 +30,27 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
     - Para el hito: **`hito2-api`**
 
 Relación N:M (Foto-Etiqueta)
-===================
+============================
 
 * * *
 
+* **Modelo:** Cree el modelo que manejará la relación física y lógica
 
 ```
 sequelize model:create --name fotoetiqueta  --attributes foto_id:integer,etiqueta_id:integer
 ```
 
+* **Migración:** Cree una nueva migración para registrar la asociación
+
 ```
 sequelize migration:generate --name associate-foto-etiqueta
 ```
 
-**up**
+  + En la función de ejecución de cambios **up**
 
 ```
-await queryInterface.addConstraint('fotoetiqueta', {
+...
+  await queryInterface.addConstraint('fotoetiqueta', {
       fields: ['foto_id'],
       name: 'foto_id_fk',
       type: 'foreign key',
@@ -69,36 +73,91 @@ await queryInterface.addConstraint('fotoetiqueta', {
       onDelete: 'cascade',
       onUpdate: 'set null'
     });
+..
 ```
 
-**down**
+  + En la función de reversión de cambios **down**
 
 ```
 await queryInterface.removeConstraint('fotoetiqueta', 'foto_id_fk')
 await queryInterface.removeConstraint('fotoetiqueta', 'etiqueta_id_fk')
 ```
 
-asociacion lógica en el modelo **foto**
-
-models.foto.belongsToMany(models.etiqueta, { through: 'fotoetiqueta', foreignKey: "foto_id" } );
-
-asociacion lógica en el modelo **etiqueta**
-
-models.etiqueta.belongsToMany(models.foto, { through: 'fotoetiqueta', foreignKey: "etiqueta_id" });
+  + Ejecute la migración y revise los cambios en la base de datos.
 
 
-controlador agregar el _include_
+<p align="center">
+  <img src="imagenes/orm_fotos_etiquetas_migration.png">
+</p>
 
-```
-Foto.findAll({  
-    attributes: { exclude: ["updatedAt"] },
-    include: [{
-      model: Etiqueta,
-      attributes: ['texto'],
-      through: {attributes: []}
-    }],
-})  
-```
+* **Generador:** Cree el generador de datos para el modelo `fotoetiqueta`
+
+
+<p align="center">
+  <img src="imagenes/orm_fotos_etiquetas_seeding.png">
+</p>
+
+
+* **Asociación:** Entre los modelos `foto -> (fotoetiqueta) -> etiqueta` y `etiqueta -> (fotoetiqueta) -> foto`
+
+  + Del modelo `models/foto`, modifique el método **associate** con la asociacion lógica al modelo `etiqueta` 
+
+<pre><code>
+  ...
+  static associate(models) {
+    // define association here
+    <b style="color:red">
+    models.foto.belongsToMany(models.etiqueta, { through: 'fotoetiqueta', foreignKey: "foto_id" } );
+    </b>
+  }
+  ...
+</code></pre>
+
+  + Del modelo `models/etiqueta`, modifique el método **associate** con la asociacion lógica al modelo `foto` 
+
+<pre><code>
+  ...
+  static associate(models) {
+    // define association here
+    <b style="color:red">
+    models.etiqueta.belongsToMany(models.foto, { through: 'fotoetiqueta', foreignKey: "etiqueta_id" });
+    </b>
+  }
+  ...
+</code></pre>
+
+
+* **Manejador de rutas y controladores:** modifique el controlador para la ruta `/findAll/json` al:
+  + Incluir (clave _include_) el modelo `etiqueta` 
+  + Mostrar solo el atributo `texto`
+  + Evitando cargar todos los modelos relacionados ([Nested eager loading](https://sequelize.org/v3/docs/models-usage/index.html#nested-eager-loading)).
+
+<pre><code>
+  Foto.findAll({  
+      attributes: { exclude: ["updatedAt"] },
+      <b style="color:red">
+      include: [{
+        model: Etiqueta,
+        attributes: ['texto'],
+        through: {attributes: []}
+      }],
+      </b>
+  }) 
+</code></pre>
+
+
+Comprobación
+============
+* * *
+
+* Compruebe el funcionamiento del servidor, con: **npm run devstart**
+* Acceda al URL `http://localhost:3000/fotos/findAll/json` 
+
+<p align="center">
+  <img src="imagenes/orm_fotos_etiquetas_json.png">
+</p>
+
+
 
 
 Referencias 
@@ -113,3 +172,5 @@ Referencias
 * Creating Sequelize Associations with the Sequelize CLI tool. (2020). Retrieved 3 August 2021, from https://levelup.gitconnected.com/creating-sequelize-associations-with-the-sequelize-cli-tool-d83caa902233 
 * GitHub - japsolo/curso-sequelize-migrations-seeders: Creando modelos, migraciones y seeders con Sequelize en Node + Express. (2021). Retrieved 3 August 2021, from https://github.com/japsolo/curso-sequelize-migrations-seeders
 * Sequelize + Express + Migrations + Seed Starter. (2022). Retrieved 3 August 2022, from https://gist.github.com/vapurrmaid/a111bf3fc0224751cb2f76532aac2465
+* through.attribute, S., & Kammer, F. (2016). Sequelize: Include model of through.attribute. Retrieved 18 December 2022, from https://stackoverflow.com/questions/38726793/sequelize-include-model-of-through-attribute
+* Usage - Sequelize | The Node.js / io.js ORM for PostgreSQL, MySQL, SQLite and MSSQL. (2022). Retrieved 18 December 2022, from https://sequelize.org/v3/docs/models-usage/index.html#nested-eager-loading
