@@ -28,6 +28,14 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 
 * Realice las actividades de la guía [Express - Partials/Layout](https://dawfiec.github.io/DAWM/tutoriales/express_partials.html).
 
+
+* De la interacción entre el cliente y el servidor, la respuesta es completamente renderizada en lado del servidor (SSR server-side rendering) y enviada al cliente,  como se muestra en la imagen a continuación. 
+
+<p align="center">
+  <img src="imagenes/SSR1.png">
+</p>
+
+
 ### Términos
 
 `Backend`, `Frontend`, servidor, HTTP, verbos HTTP
