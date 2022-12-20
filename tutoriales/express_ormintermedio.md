@@ -134,7 +134,7 @@ Relación N:M (Foto-Etiqueta)
 
   + **Asociación:** Entre los modelos `foto -> (fotoetiqueta) -> etiqueta` y `etiqueta -> (fotoetiqueta) -> foto`
 
-    - Del modelo `models/foto`, modifique el método **associate** con la asociacion lógica al modelo `etiqueta` 
+    - Del modelo `models/foto.js`, modifique el método **associate** con la asociacion lógica al modelo `etiqueta` 
 
     <pre><code>
       ...
@@ -147,7 +147,7 @@ Relación N:M (Foto-Etiqueta)
       ...
     </code></pre>
 
-    - Del modelo `models/etiqueta`, modifique el método **associate** con la asociacion lógica al modelo `foto` 
+    - Del modelo `models/etiqueta.js`, modifique el método **associate** con la asociacion lógica al modelo `foto` 
 
     <pre><code>
       ...
