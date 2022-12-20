@@ -4,13 +4,13 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-Express - ORM (Intermedio)
+Express - ORM (Avanzado)
 ==========================================
 
 Para reconstruir los modelos de una base de datos preconstruida (tablas, relaciones y datos) a un proyecto de Express, será necesario incorporar el módulo [sequelize-auto](https://www.npmjs.com/package/sequelize-auto).
 
 
-Proyecto en Express
+Requerimientos
 ===================
 
 * * *
