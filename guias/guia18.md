@@ -171,13 +171,13 @@ theme: jekyll-theme-leap-day
 
 * El resultado de unir el cliente y el servidor debe lucir así:
 
-<p align="center">
+<!-- <p align="center">
   <img src="imagenes/cliente_servidor.png">
 </p>
 
 <p align="center">
   <img src="imagenes/cliente_servidor_tiempo.png">
-</p>
+</p> -->
 
 
 ### Términos

@@ -37,7 +37,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 15: Angular > Material Design + Rutas + Cordova](guias/guia15.md)
 * [Guía 16: Express > Introducción + Partials/Layout](guias/guia16.md)
 * [Guía 17: Express > ORM Básico](guias/guia17.md)
-* [Guía 18: Express > Cliente - Servidor](guias/guia18.md)
+* [Guía 18: Cliente (Angular | Express) - Servidor (Express)](guias/guia18.md)
 <!--- * [Guía 19: Express > REST (Cliente/Servidor)](guias/guia19.md) --->
 <!--- * [Guía 20: Express > noDBRMS](guias/guia20.md) --->
 <!--- * [Guía 21: Express > Estado](guias/guia21.md) --->
