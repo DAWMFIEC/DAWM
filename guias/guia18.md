@@ -19,170 +19,153 @@ theme: jekyll-theme-leap-day
   + El controlador contiene el código necesario para responder a las acciones que se solicitan en la aplicación, como visualizar un elemento, realizar una compra, una búsqueda de información, etc.
 
 
+### Proyecto
+
+* Desde la línea de comandos:
+  
+  + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps)
+  ```
+  git clone https://github.com/DAWFIEC/DAWM-apps.git 
+  ```
+  + Acceda a la carpeta del proyecto
+  ```
+  cd DAWM-apps
+  ```
+  + Ubique el proyecto en la rama _hito2-api_
+  ```
+  git checkout hito2-api
+  ```
+  + Una la rama _hito3-admin_
+  ```
+  git merge origin/hito3-admin
+  ```
+  + Una la rama _hito7-album_
+  ```
+  git merge origin/hito7-album
+  ```
+* Verifique que aparezcan los tres proyectos: `album/api`, `album/admin` y `album/clienteAngular`
+
+<p align="center">
+  <img src="imagenes/proyectos01.png">
+</p>
+
 ### Actividades
 
-#### Servidor
+#### API
 
-* Utilice la aplicacion web en backend o genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
-  + De [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
-  + De [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
-  + De [Express - Layouts y Partials](https://dawfiec.github.io/DAWM/tutoriales/express_partials.html) hasta **Productos: layout y partial**.
-  + De [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) hasta la **Vista** de Productos.
+* En la línea de comandos (1):
 
-* Desde la línea de comandos del proyecto, agregue el módulo **cors**, con: `npm install cors`
+  + Acceda a la ruta del proyecto `album/api`
+  + Agregue los módulos, con: `npm install`
+  + Agregue el módulo **cors**, con: `npm install cors`
 
-* Agregue la referencia al módulo **cors** el **app.js**
+* En `app.js`, agregue la referencia al middleware **cors** (para permitir las peticiones desde otros dominios). 
 
   <pre><code>
   ...
   var logger = require('morgan');
-  <b style="color:red">
-  var cors = require('cors')
-  </b>
-  ...
-
+  <b style="color:red">var cors = require('cors')</b>
+  
   app.set('view engine', 'ejs');
-  <b style="color:red">
-  app.use(cors())
-  </b>
+  <b style="color:red">app.use(cors())</b>
   app.use(logger('dev'));
   ...
   </code></pre>
 
-* Cree el ruteador **routes/api.js**
-* Agregue la referencia del ruteador **routes/api.js** en el `app.js` a la ruta `/api`
+* En la base de datos:
+  + Verifique:
+    - Que exista el schema `album` y la tabla `foto`
+    - Las credenciales para acceder a la base de datos en `config/config.json`
+  + En caso de ser necesario:
+    - Cree el schema en la base de datos
+    - Ejecute las migraciones, con: `sequelize db:migrate`
+    - Ejecute la generación de datos, con: `sequelize db:seed:all`
 
-* En el ruteador **routes/api.js** agregue: 
-  + El método **GET** de la subruta **`/productos`** que retorna un _json_ con todos los productos.
+* En la línea de comandos (1):
 
-  En lugar de renderizar la respuesta en la vista
+  + Agregue la variable de entorno **PORT**, con: `set PORT=4444`
+    - Puede verificar el valor de la variable de entorno, con: `echo %PORT%`
+  + Ejecute el servidor, con: `npm run devstart`
 
-  ```
-  .then(resultado => {  
-        res.render('vista', { arrResultado: resultado });  
-    })  
-  ```
++ En el navegador, compruebe la respuesta con el URL: `http://localhost:4444/fotos/findAll/json`
 
-  Renderice el json:
 
-  ```
-  then(resultado => {  
-      res.json(resultado)
+
+#### Admin
+
+* En la línea de comandos (2):
+
+  + Acceda a la ruta del proyecto `album/admin`
+  + Agregue los módulos, con: `npm i`
+
+
+* En `routes/index.js`, modifique el controlador de la ruta `'/photos'` con:
+  + La ruta de petición de datos
+  + Preprocesamiento del resultado al agregar la clave **url** a cada objeto.
+
+  <pre><code>
+  ...
+  router.get('/photos', async function(req, res, next) {
+  
+    <b style="color:red">const URL = 'http://localhost:4444/fotos/findAll/json'</b>
+    const response = await axios.get(URL)
+
+    <b style="color:red">response.data.map( item => { item.url = 'http://localhost:4444/'+item.ruta.replace('public/','') } )</b>
+
+    res.render('fotos', { title: 'Fotos', fotos: response.data });
   })
-  ``` 
-
-* Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/api/productos` 
-
-<p align="center">
-  <img src="imagenes/restapiget.png">
-</p>
-
-
-#### Cliente
-
-* Proyecto **Productos** en Angular
-  + De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción del sitio.
-  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) agregue bootstrap.
-  + De [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html) agregue angular material.
-  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html). 
-    - Cree el componente **lista**.
-
-  + De [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html) agregue las rutas:
-    - De la ruta `lista` al componente **lista**.
-    - De la ruta `**` al componente **lista**.
-
-* Descargue y descomprima los [componentes y assets](archivos/guia18_recursos.zip)
-
-* Copie y reemplace la carpeta **lista** dentro de la carpeta `src/app` del proyecto en Angular. 
-
-* Agregue el módulo **MatTableModule** al `app.module.ts`
-  + Importe el módulo
-    ```
-    ...
-    import {MatTableModule} from '@angular/material/table';
-    ...
-    ```
-  + Y agregue la clave **imports**
-
-  ```
   ...
-  imports: [
-    ...
-    MatTableModule
-  ],
+  </code></pre>
+
+* En la línea de comandos (2):
+
+  + Agregue la variable de entorno **PORT**, con: `set PORT=3080`
+    - Puede verificar el valor de la variable de entorno, con: `echo %PORT%`
+  + Ejecute el servidor, con: `npm run devstart`
+
++ En el navegador, compruebe la respuesta con el URL: `http://localhost:3080/photos`
+
+
+
+
+#### clienteAngular
+
+* En la línea de comandos (3):
+
+  + Acceda a la ruta del proyecto `album/clienteAngular`
+  + Agregue los módulos, con: `npm i`
+
+* En `app/servicios/recursos.service.ts`, modifique la función **obtenerDatos**:
+
+  <pre><code>
   ...
-  ```
-
-* Modifique el **app.component.html** con 
-  ```
-  <router-outlet></router-outlet>
-  ```
-
-* La aplicación debe lucir así
-
-<p align="center">
-  <img style="border: 1pt solid black;" width="150" src="imagenes/angular_productos.png">
-</p>
-
-* A partir del tutorial [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html):
-  + Cree el servicio **servicio/producto**
-  + Inyecte la dependencia del servicio **servicio/producto** al componente **lista**
- 
-  + Peticiones HTTP
-    - Registre el módulo **HttpClientModule** en el **app.module.ts**
-    - Agregue el módulo **HttpClient** en el servicio **servicio/producto**
-    - Agregue el método **obtenerProductos** al servicio **servicio/producto** 
-    ```
-    obtenerProductos() {
-      return this.http.get('http://localhost:3000/api/productos')
-    }
-    ```
-
-* Para consumir el servicio en el componente **lista**. En **lista.component.ts** agregue
-
-  + Importe el servicio 
-
-  ```
-  ...
-  import { ProductoService } from '../servicios/producto.service';
-  ...
-  ```
-
-  + Inyecte la dependencia en el constructor
-
-  ```
-  ...
-  constructor(private productoService: ProductoService) { }
-  ...
-  ```
-
-  + Realice la petición en el método **ngOnInit**
-
-  ```
-  ...
-  ngOnInit(): void {
-    this.productoService.obtenerProductos().subscribe(respuesta => {
-      this.dataSource = respuesta as any
-    })
+  obtenerDatos() {
+    <b style="color:red">return this.http.get('http://localhost:4444/fotos/findAll/json')</b>
   }
   ...
-  ```
+  </code></pre>
 
-* El resultado de unir el cliente y el servidor debe lucir así:
+* En `app/app.component.ts`, modifique el **constructor**:
 
-<!-- <p align="center">
-  <img src="imagenes/cliente_servidor.png">
-</p>
+  <pre><code>
+  ...
+  recursosService.obtenerDatos().subscribe(respuesta => {
+        
+    <b style="color:red">
+    let arregloFotos = respuesta as Array&lt;any&gt;
 
-<p align="center">
-  <img src="imagenes/cliente_servidor_tiempo.png">
-</p> -->
+    arregloFotos.map( item => { item.url = 'http://localhost:4444/'+item.ruta.replace('public/','') } )
 
+    this.fotos = arregloFotos as Array&lt;Foto&gt;
+    </b>
 
-### Términos
+  })
+  ...
+  </code></pre>
 
-Parámetros de consulta, Parámetros de ruta
+* En la línea de comandos (3):
+  + Ejecute el servidor, con: `ng serve -o`
+
 
 ### Referencias
 
