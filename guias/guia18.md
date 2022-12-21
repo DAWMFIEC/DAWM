@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
   + El controlador contiene el código necesario para responder a las acciones que se solicitan en la aplicación, como visualizar un elemento, realizar una compra, una búsqueda de información, etc.
 
 
-### Proyecto
+### Aplicación
 
 * Desde la línea de comandos:
   
