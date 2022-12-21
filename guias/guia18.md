@@ -53,13 +53,16 @@ theme: jekyll-theme-leap-day
 
 #### API
 
+* Descargue y descomprima el [guia18_recursos.zip](archivos/guia18_recursos.zip).
+  + Copie la carpeta `images` y pegue la carpeta en la ruta `album/api/public` 
+
 * En la línea de comandos (1):
 
   + Acceda a la ruta del proyecto `album/api`
-  + Agregue los módulos, con: `npm install`
-  + Agregue el módulo **cors**, con: `npm install cors`
+  + Instale los módulos, con: `npm install`
+  + Instale el módulo **cors** (para permitir las peticiones desde otros dominios), con: `npm install cors`
 
-* En `app.js`, agregue la referencia al middleware **cors** (para permitir las peticiones desde otros dominios). 
+* En `app.js`, agregue la referencia al middleware **cors** 
 
   <pre><code>
   ...
@@ -77,7 +80,7 @@ theme: jekyll-theme-leap-day
     - Que exista el schema `album` y la tabla `foto`
     - Las credenciales para acceder a la base de datos en `config/config.json`
   + En caso de ser necesario:
-    - Cree el schema en la base de datos
+    - Cree el schema `album` en la base de datos
     - Ejecute las migraciones, con: `sequelize db:migrate`
     - Ejecute la generación de datos, con: `sequelize db:seed:all`
 
@@ -96,12 +99,12 @@ theme: jekyll-theme-leap-day
 * En la línea de comandos (2):
 
   + Acceda a la ruta del proyecto `album/admin`
-  + Agregue los módulos, con: `npm i`
+  + Instale los módulos, con: `npm i`
 
 
 * En `routes/index.js`, modifique el controlador de la ruta `'/photos'` con:
   + La ruta de petición de datos
-  + Preprocesamiento del resultado al agregar la clave **url** a cada objeto.
+  + Preprocesamiento al agregar la clave **url** a cada objeto del resultado.
 
   <pre><code>
   ...
@@ -133,9 +136,10 @@ theme: jekyll-theme-leap-day
 * En la línea de comandos (3):
 
   + Acceda a la ruta del proyecto `album/clienteAngular`
-  + Agregue los módulos, con: `npm i`
+  + Instale los módulos, con: `npm i`
 
-* En `app/servicios/recursos.service.ts`, modifique la función **obtenerDatos**:
+* En `app/servicios/recursos.service.ts`, modifique la función **obtenerDatos**
+  + La ruta de petición de datos
 
   <pre><code>
   ...
@@ -145,7 +149,8 @@ theme: jekyll-theme-leap-day
   ...
   </code></pre>
 
-* En `app/app.component.ts`, modifique el **constructor**:
+* En `app/app.component.ts`, modifique el **constructor**
+  + Preprocesamiento al agregar la clave **url** a cada objeto del resultado.
 
   <pre><code>
   ...
