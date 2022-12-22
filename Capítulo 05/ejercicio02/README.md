@@ -7,6 +7,10 @@
 * Complete las actividades de [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) y [Express - ORM (Intermedio)
 ](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html).
 
+## Configuración
+
+* Modifique el archivo `config/config.json` para el ambiente "test" para los datos de conexión: username, password y database
+
 ## Pruebas unitarias
 
 * En su proyecto de Express 
@@ -53,9 +57,13 @@
 
 * Los resultados posibles a las pruebas unitarias:
   
-  <p align="center">
-    <img src="imagenes/jest.png">
-  </p>
+  ```
+  Test Suites: 4 passed, 4 total
+  Tests:       7 passed, 7 total
+  Snapshots:   0 total
+  Time:        w.xyz s, estimated w s
+  Ran all test suites.
+  ```
 
   + Todos fueron exitosas, o
   + Existen pruebas unitarias fallidas.
