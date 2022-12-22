@@ -2,47 +2,56 @@
 
 ![ejercicio02](imagenes/ejercicio02.png)
 
+## Instrucciones
 
-## Requisitos
-
-* Completar las actividades de [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html), [Express - Bootstrap](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html) y [Express - Forms](https://dawfiec.github.io/DAWM-2022/tutoriales/express_forms.html).
+* Complete las actividades de [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) y [Express - ORM (Intermedio)
+](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html).
 
 ## Pruebas unitarias
 
 * En su proyecto de Express 
-  + Instale las dependencias **Jest**, **SuperTest** y **cross-env**
+  + Instale las dependencias a **Jest**, **SuperTest** y **cross-env**
     - Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev jest supertest cross-env`
-  + Agregue la carpeta **tests** de este repositorio a su proyecto 
+  + Copie la carpeta **tests** de este repositorio a su proyecto.
   + Modifique el archivo **package.json**
-    - Agregue los pares clave-valor
+    - Agregue los pares/valores: **test** y **jest**
 
     <pre><code>
     ...
-      "scripts":{
-        ...
+      "scripts": {
+        "devstart": "nodemon ./bin/www",
+        "start": "node ./bin/www",
         <b style="color:red">
-        ,
         "test": "jest"
         </b>
-      }
-    ...
-        "nodemon": "^2.0.19",
-        "supertest": "^6.2.4"
-      }
+      },
       <b style="color:red">
-      ,
       "jest": {
         "testEnvironment": "node",
         "coveragePathIgnorePatterns": [
           "/node_modules/"
         ]
-      }
+      },
       </b>
+      "dependencies": {
+      ...
+      },
+      "devDependencies": {
+      ...
+      }
     }
     </code></pre> 
 
-* En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm test`
-* Los resultados posibles a las pruebas unitarias pueden ser: jest
+* Desde la línea de comandos:
+  + Liste los comando disponibles, con: `npm run`
+
+  <p align="center">
+    <img src="imagenes/scripts.png">
+  </p>
+  
+  + Ejecute las pruebas unitarias, con: `npm test`
+
+* Los resultados posibles a las pruebas unitarias:
   
   <p align="center">
     <img src="imagenes/jest.png">
