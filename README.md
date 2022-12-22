@@ -78,11 +78,11 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 06](Capítulo%2004/ejercicio06)         | Angular - PWA y Servicios |
 | 				| [Ejercicio 07](Capítulo%2004/ejercicio07)         | Angular - Material y Rutas |
 | Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01)         | Express - Bases y Bootstrap |
-|               | ~[Ejercicio 02](Capítulo%2005/ejercicio02)~       | ~Express - Formularios~ |
-|               | [Ejercicio 03](Capítulo%2005/ejercicio03)         | Express - Rutas, parámetros y ORM (Básico) |
+|               | [Ejercicio 02](Capítulo%2005/ejercicio02)         | Express - ORM (Básico e Intermedio) y Parámetros de consulta y Parámetros de ruta |
+| 				| [Ejercicio 03](Capítulo%2005/ejercicio03)         | Express - Rest |
 |               | [Ejercicio 04](Capítulo%2005/ejercicio04)         | Firebase - Realtime Database |
 | Capítulo 06   | [Ejercicio 01](Capítulo%2006/ejercicio01)         | Express - REST - Servidor |
-|               | ~[Ejercicio 02](Capítulo%2006/ejercicio02)~         | ~Express - REST - Cliente~ |
+|               | [Ejercicio 02](Capítulo%2006/ejercicio02)         | Express - REST - Cliente |
 
 ## Referencias 
 
