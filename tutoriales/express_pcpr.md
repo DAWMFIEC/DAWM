@@ -7,18 +7,26 @@ theme: jekyll-theme-leap-day
 Express - Parámetros de consulta y Parámetros de ruta
 =====================================================
 
-Express.js ofrece dos mecanismos para proveer de datos al servidor para el filtrado de datos: parámetros de consulta (Query String) y parámetros de ruta.
+Express.js ofrece dos mecanismos para proveer de datos al servidor para el filtrado de datos: parámetros de consulta (Query String) y parámetros de ruta (Route parameters).
 
+
+Software a utilizar
+===================
+* * *
+
+De [MySQL Community Downloads](https://dev.mysql.com/downloads/), descargue e instale:
+* Motor de base de datos: [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+* Interfaz gráfica: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
 Proyecto en Express
 ===================
 
 * * *
 
-Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html), [Express - Formularios](https://dawfiec.github.io/DAWM/tutoriales/express_forms.html), [Express - Layouts y Partials](https://dawfiec.github.io/DAWM/tutoriales/express_partials.html) y [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html).
+Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html).
 
-* Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
+* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
+    - Para el hito: **`hito3-api`**
 
 Cláusula WHERE
 ===============
@@ -26,7 +34,7 @@ Cláusula WHERE
 
 La cláusula where se utiliza para filtrar la consulta. Hay muchos operadores para usar en la cláusula where, disponibles con el símbolos de **`Op`**: `Op.between`, `Op.and`, `Op.or`, etc.
 
-* En el ruteador **`routes/index.js`**
+* En el manejador de rutas **`routes/fotos.js`**
  + Cambie el import para usar el operador **Op**, .
 
   <pre><code>
@@ -46,89 +54,108 @@ Parámetros de consulta (Query String)
 
 Los parámetros de consulta forman parte de una URL después del signo de interrogación (?). Sirve para enviar datos al servidor, que se utilizarán como filtros para la respuesta.
 
-* En el ruteador **`routes/index.js`**
-  + Agregue el controlador para el método **`GET`** con la subruta **`/productosc`**
-  + Obtenga los parámetros de consulta **`cantidadmenor`** y **`cantidadmayor`**, con:
+* En el ruteador **`routes/foto.js`**
+  + Agregue el controlador para el método **`GET`** con la subruta **`/findAllByRate/json`**
+  + Dentro del controlador
+    - Obtenga los parámetros de consulta **`lower`** y **`higher`**, con:
 
-  <pre><code>
+    <pre><code>
   	...
-  	let cantidadmenor = parseInt(req.query.cantidadmenor);
-  	let cantidadmayor = parseInt(req.query.cantidadmayor);
+  	let lower = parseFloat(req.query.lower);
+  	let higher = parseFloat(req.query.higher);
   	...
-  </code></pre>
+    </code></pre>
 
-  + Agregue el _query_ al controlador de la subruta, con:
+    - Agregue el _query_ al controlador de la subruta, con:
 
-  <pre><code>
-   ...
-   Producto.findAll({
-	    where: { 
-	      cantidad: { 
-	    	    [Op.between]: [cantidadmenor, cantidadmayor]
-	      }
-	    }
-	  })
-	  .then(productos => {  
-	      res.json( productos );  
-	  })  
-	  .catch(error => res.status(400).send(error))
-   ...
-  </code></pre>
+    <pre><code>
+    ...
+    Foto.findAll({
+      attributes: { exclude: ["updatedAt"] } ,
+      include: [{
+        model: Etiqueta,
+        attributes: ['texto'],
+        through: {attributes: []}
+      }], 
+      where: { 
+        calificacion: { 
+          [Op.between]: [lower, higher]
+        }
+      }
+    })  
+    .then(fotos => {  
+      res.json(fotos);  
+    })  
+    .catch(error => res.status(400).send(error)) 
+    ...
+    </code></pre>
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/productosc?cantidadmenor=13&cantidadmayor=17` 
+* Acceda a la siguiente URL: `http://localhost:3000/fotos/findAllByRate/json?lower=0&higher=1.2`  
+  - El resultado es diferente debido a que el valor del atributo `calificacion` es aleatorio. 
 
 <p align="center">
-  <img src="imagenes/productosc.png">
+  <img src="imagenes/fotos_byrate.png">
 </p>
+  
 
 * Compruebe su funcionamiento con otros valores
 
+  + `http://localhost:3000/fotos/findAllByRate/json?lower=1.2&higher=4.7`
+  + `http://localhost:3000/fotos/findAllByRate/json?lower=3&higher=6.2`
 
-Parámetros de ruta
-==================
+
+Parámetros de ruta (Route parameters)
+=====================================
 * * *
 
 Otra forma para pasar datos al servidor consiste en colocar información dentro de la ruta URL real. A este mecanismo se denomina parámetros de ruta. 
 
-* En el ruteador **`routes/index.js`**
-  + Agregue el controlador para el método **`GET`** con la subruta **`/productosr/nombre/:nombre/cantidad/:cantidad`**
-  + Obtenga los parámetros **`nombre`** y **`cantidad`**, con:
+* En el ruteador **`routes/fotos.js`**
+  + Agregue el controlador para el método **`GET`** con la subruta **`/findAllById/:id/json`**
+  + Obtenga el parámetro **`id`**, con:
 
   <pre><code>
-  	...
-    let cantidad = parseInt(req.params.cantidad);
-    let nombre = req.params.nombre;
-  	...
+  ...
+  let id = parseInt(req.params.id);
+  ...
   </code></pre>
 
   + Agregue el _query_ al controlador de la subruta, con:
 
   <pre><code>
    ...
-   Producto.findAll({
+   Foto.findAll({  
+      attributes: { exclude: ["updatedAt"] } ,
+      include: [{
+          model: Etiqueta,
+          attributes: ['texto'],
+          through: {attributes: []}
+        }], 
       where: { 
         [Op.and]: [
-          {cantidad: cantidad},
-          {nombre: nombre}
+          {id: id}
         ]
       }
-    })
-    .then(productos => {  
-        res.json( productos );  
-    })  
-    .catch(error => res.status(400).send(error))
+  })  
+  .then(fotos => {  
+      res.json(fotos);  
+  })  
+  .catch(error => res.status(400).send(error)) 
    ...
   </code></pre>
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/productosr/nombre/Producto%200/cantidad/10` 
+* Acceda al URL `http://localhost:3000/fotos/findAllById/1/json` 
 
 <p align="center">
-  <img src="imagenes/productosr.png">
+  <img src="imagenes/fotos_byid.png">
 </p>
 
 * Compruebe su funcionamiento con otros valores
+
+  + `http://localhost:3000/fotos/findAllById/2/json`
+  + `http://localhost:3000/fotos/findAllById/6/json`
 
 Referencias 
 ===========
