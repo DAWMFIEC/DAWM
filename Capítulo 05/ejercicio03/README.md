@@ -2,118 +2,14 @@
 
 ![ejercicio03](imagenes/ejercicio03.png)
 
-
 ## Instrucciones
 
-* Tome como referencia las instrucciones de:
+* Complete las actividades de [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) y [Express - ORM (Intermedio)
+](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html).
 
-  + [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html),
-  + [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html),
-  + [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM-2022/tutoriales/express_pcpr.html)
+## Configuración
 
-* Cree un proyecto nuevo llamado **album**
-
-* Base de datos: **album**
-
-* Modifique el archivo `config/config.json` para los ambientes "development" y "test" para los datos de conexión: **database**, **username** y **password**
-
-* Cree el modelo **`photo`**, con atributos de tipo _string_: **`descripcion`**, **`tiempo`** y **`url`**
-  
-* Modifique el seeder de **`photo`**:
-  + En la función **up**:
-  ```
-  let arreglo = [
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "3 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/53e4d2464252ae14f1dc8460962e33791c3ad6e04e507440722d72d59448c5_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "9 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/57e3d2474255a814f1dc8460962e33791c3ad6e04e507440762a7cd49348cc_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "5 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/57e4dd404d51a914f1dc8460962e33791c3ad6e04e5074417c2e7dd29744c7_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "3 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/52e1d2454e55b10ff3d8992cc12c30771037dbf852577148762c7ad2904e_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "3 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/52e8d2474851ad14f1dc8460962e33791c3ad6e04e5074417c2f7dd59f4ac1_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "19 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/52e3d4404852ac14f1dc8460962e33791c3ad6e04e507440772d7cdd9f4bcc_640.jpg"
-      }
-    ]
-
-    for (var i = arreglo.length - 1; i >= 0; i--) {
-      let foto = arreglo[i]
-      await queryInterface.bulkInsert('Photos', [{  
-            descripcion: foto['descripcion'],
-            tiempo: foto['tiempo'],
-            url: foto['url'],
-            createdAt: new Date(),  
-            updatedAt: new Date()  
-        }], {});  
-    }
-  ```
-
-  + En la función **down**:
-
-  ```
-  await queryInterface.bulkDelete('Photos', null, {});
-  ```
-
-* Ejecute los seeders
-
-<p align="center">
-  <img src="imagenes/mysql.png">
-</p>
-
-* En el app.js
-  + Registre la ruta "/photo" para que enrute las peticiones a "routes/photo.js" 
-
-* En el router "routes/photo.js" agregue la referencia a los módulos **Sequelize** y **Op**. Además, al modelo **Photo**.
-
-```
-...
-const { Sequelize, Op } = require('sequelize');
-const Photo = require('../models').photo;  
-...
-```
-
-* Agregue el controlador para el método `GET` con la subruta `/album`. Además, agregue un _query_ para traer todos los datos de la entidad **photo**.
-
-```
-...
-Photo.findAll()  
-  .then(photos => {  
-      res.json(photos)
-  })  
-  .catch(error => res.status(400).send(error))
-...
-```
-
-* Agregue el controlador para el método `GET` con la subruta `/album/:id`. Además, agregue un _query_ para traer la **photo** con _id_ enviado como parámetro.
-
-```
-...
-Photo.findOne({ where: { id: req.params.id } })  
-  .then(photos => {  
-      res.json(photos)
-  })  
-  .catch(error => res.status(400).send(error))
-...
-```
+* Modifique el archivo `config/config.json` para el ambiente "test" para los datos de conexión: username, password y database
 
 ## Pruebas unitarias
 
@@ -149,12 +45,24 @@ Photo.findOne({ where: { id: req.params.id } })
     }
     </code></pre> 
 
-* En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm test`
-* Los resultados posibles a las pruebas unitarias pueden ser:
-  
+* Desde la línea de comandos:
+  + Liste los comando disponibles, con: `npm run`
+
   <p align="center">
-    <img src="imagenes/jest.png">
+    <img src="imagenes/scripts.png">
   </p>
+  
+  + Ejecute las pruebas unitarias, con: `npm test`
+
+* Los resultados posibles a las pruebas unitarias:
+  
+  ```
+  Test Suites: 4 passed, 4 total
+  Tests:       7 passed, 7 total
+  Snapshots:   0 total
+  Time:        w.xyz s, estimated w s
+  Ran all test suites.
+  ```
 
   + Todos fueron exitosas, o
   + Existen pruebas unitarias fallidas.
