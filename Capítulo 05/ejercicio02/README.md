@@ -61,8 +61,8 @@
 * Los resultados posibles a las pruebas unitarias:
   
   ```
-  Test Suites: 4 passed, 4 total
-  Tests:       7 passed, 7 total
+  Test Suites: x passed, x total
+  Tests:       y passed, y total
   Snapshots:   0 total
   Time:        w.xyz s, estimated w s
   Ran all test suites.
