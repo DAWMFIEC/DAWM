@@ -4,7 +4,8 @@
 
 ## Instrucciones
 
-* Complete las actividades de [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html).
+* Complete las actividades para que proyecto contenga:
+  + De acuerdo con las instrucciones de [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html).
 
 ## Configuración
 
