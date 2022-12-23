@@ -4,12 +4,24 @@
 
 ## Instrucciones
 
-* Complete las actividades de [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) y [Express - ORM (Intermedio)
-](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html).
+* Complete las actividades de [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html).
 
 ## Configuración
 
 * Modifique el archivo `config/config.json` para el ambiente "test" para los datos de conexión: username, password y database
+
+## Instrucciones
+
+* Tome como referencia las instrucciones que se encuentran en el tutorial [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html) para desarrollar:
+
+  + Para `'/etiquetas'` con la ruta `'/findAllById/:idmin/:idmax/json'` 
+    - Extraiga los parámetro de ruta **idmin** y **idmax**
+    - Con el ORM, consulte por todas las etiquetas cuyos ids se encuentren entre los valores de **idmin** y **idmax**. Ambos incluidos.
+    - Devuelva los resultados en formato json
+  + Para `'/etiquetas'` con la ruta `'/findByTexto/json'` 
+    - Extraiga el parámetro de consulta **texto**
+    - Con el ORM, consulte por la etiqueta cuyo texto sea igual a **texto**.
+    - Devuelva el resultado en formato json
 
 ## Pruebas unitarias
 
@@ -57,11 +69,10 @@
 * Los resultados posibles a las pruebas unitarias:
   
   ```
-  Test Suites: 4 passed, 4 total
-  Tests:       7 passed, 7 total
+  Test Suites: X passed, X total
+  Tests:       y passed, y total
   Snapshots:   0 total
-  Time:        w.xyz s, estimated w s
-  Ran all test suites.
+  Time:        x.yx s, estimated w s
   ```
 
   + Todos fueron exitosas, o
