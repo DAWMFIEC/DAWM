@@ -80,9 +80,9 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01)         | Express - Bases y Bootstrap |
 |               | [Ejercicio 02](Capítulo%2005/ejercicio02)         | Express - ORM (Básico e Intermedio) |
 |               | [Ejercicio 03](Capítulo%2005/ejercicio03)         | Express - Parámetros de consulta y de ruta |
-| 				| [Ejercicio 04](Capítulo%2005/ejercicio04)         | Express - Rest |
 |               | [Ejercicio 05](Capítulo%2005/ejercicio05)         | Firebase - Realtime Database |
-| Capítulo 06   | [Ejercicio 01](Capítulo%2006/ejercicio01)         | Express - REST - Servidor |
+| Capítulo 06   | [Ejercicio 04](Capítulo%2005/ejercicio04)         | Express - Rest |
+|               | [Ejercicio 01](Capítulo%2006/ejercicio01)         | Express - REST - Servidor |
 |               | [Ejercicio 02](Capítulo%2006/ejercicio02)         | Express - REST - Cliente |
 
 ## Referencias 
