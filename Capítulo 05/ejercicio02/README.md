@@ -4,7 +4,10 @@
 
 ## Instrucciones
 
-* Complete las actividades de [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) y [Express - ORM (Intermedio)
+* Complete las actividades para que proyecto contenga:
+  - El modelo **foto**, de acuerdo con las instrucciones de [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html).
+  - El modelo **etiqueta**, de acuerdo con las instrucciones de [Guía 17](https://dawfiec.github.io/DAWM/guias/guia17.html).
+  - La relación **N:M (foto-etiqueta)**, de acuerdo con las instrucciones de [Express - ORM (Intermedio)
 ](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html).
 
 ## Configuración
