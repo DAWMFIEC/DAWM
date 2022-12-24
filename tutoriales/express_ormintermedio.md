@@ -91,7 +91,7 @@ Relación N:M (Foto-Etiqueta)
           onDelete: 'cascade',
           onUpdate: 'set null'
         });
-    ..
+    ...
     ```
 
     - Modifique la migración `migrations/YYYYMMDDHHMMSS-associate-foto-etiqueta`, agregue en la función de reversión de cambios **down**
@@ -106,7 +106,13 @@ Relación N:M (Foto-Etiqueta)
   <img src="imagenes/orm_fotos_etiquetas_migration.png">
 </p>
 
-  + **Generador:** Cree el generador de datos para el modelo `fotoetiqueta`
+  + **Generador:** 
+    - Cree el generador de datos para el modelo `fotoetiqueta`
+
+    ```
+    sequelize seed:create --name fotoetiqueta
+    ```
+
     - En la función de ejecución de cambios **up**, agregue:
     <pre><code>
       ...
@@ -135,7 +141,7 @@ Relación N:M (Foto-Etiqueta)
 </p>
 
 
-  + **Asociación:** Entre los modelos `foto -> (fotoetiqueta) -> etiqueta` y `etiqueta -> (fotoetiqueta) -> foto`
+  + **Asociación:** Entre los modelos `foto -< fotoetiqueta >- etiqueta`
 
     - Del modelo `models/foto.js`, modifique el método **associate** con la asociacion lógica al modelo `etiqueta` 
 
