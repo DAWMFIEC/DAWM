@@ -228,4 +228,4 @@ Referencias
 * GitHub - japsolo/curso-sequelize-migrations-seeders: Creando modelos, migraciones y seeders con Sequelize en Node + Express. (2021). Retrieved 3 August 2021, from https://github.com/japsolo/curso-sequelize-migrations-seeders
 * Sequelize + Express + Migrations + Seed Starter. (2022). Retrieved 3 August 2022, from https://gist.github.com/vapurrmaid/a111bf3fc0224751cb2f76532aac2465
 * through.attribute, S., & Kammer, F. (2016). Sequelize: Include model of through.attribute. Retrieved 18 December 2022, from https://stackoverflow.com/questions/38726793/sequelize-include-model-of-through-attribute
-* Usage - Sequelize | The Node.js / io.js ORM for PostgreSQL, MySQL, SQLite and MSSQL. (2022). Retrieved 18 December 2022, from https://sequelize.org/v3/docs/models-usage/index.html#nested-eager-loading
+* Usage - Sequelize The Node.js / io.js ORM for PostgreSQL, MySQL, SQLite and MSSQL. (2022). Retrieved 18 December 2022, from https://sequelize.org/v3/docs/models-usage/index.html#nested-eager-loading
