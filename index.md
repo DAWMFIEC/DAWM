@@ -38,7 +38,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 16: Express > Introducción + Partials/Layout](guias/guia16.md)
 * [Guía 17: Express > ORM Básico](guias/guia17.md)
 * [Guía 18: Cliente (Angular - Express) - Servidor (Express)](guias/guia18.md)
-* [Guía 19: Express > REST (Cliente/Servidor)](guias/guia19.md)
+<!-- * [Guía 19: Express > REST (Cliente/Servidor)](guias/guia19.md) -->
 <!--- * [Guía 20: Express > noDBRMS](guias/guia20.md) --->
 <!--- * [Guía 21: Express > Estado](guias/guia21.md) --->
 
@@ -80,9 +80,9 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - ORM Básico](tutoriales/express_ormbasico.md)
 * [Express - ORM Intermedio](tutoriales/express_ormintermedio.md)
 * [Express - Parámetros de consulta y Parámetros de ruta](tutoriales/express_pcpr.md)
+<!---* [Express - Cookies y Sesión](tutoriales/express_cookiesysession.md) --->
 * [Express - REST](tutoriales/express_rest.md)
 <!-- * [Express - Formularios](tutoriales/express_forms.md)  -->
-<!---* [Express - Cookies y Sesión](tutoriales/express_cookiesysession.md) --->
 <!-- * [Express - ORM Avanzado](tutoriales/express_ormavanzado.md) -->
 
 #### Firebase
