@@ -12,13 +12,16 @@ theme: jekyll-theme-leap-day
 * Las [bases de datos no relacionales](https://aws.amazon.com/es/nosql/) o bases de datos NoSQL están diseñadas específicamente para modelos de datos específicos y tienen esquemas flexibles para crear aplicaciones modernas. Entre sus principales características podemos destacar el hecho de que este sistema no trabaja como estructuras definidas. En este sentido, los datos no se almacenan en tablas y la información tampoco se organiza en registros o campos. 
   + [Mongodb](https://www.mongodb.com/es/what-is-mongodb) es una base de datos de documentos que ofrece una gran escalabilidad y flexibilidad, y un modelo de consultas e indexación avanzado.
 * Un [ODM](https://frre-dacs.github.io/teoria-practicos/acceso-datos/odm/) hace de intermediario entre la app y la DB no relacional así tenemos métodos propios que hacen todo el trabajo.
-  + Mongoose es un ODM que facilita el uso de MongoDB al traducir documentos en una base de datos a objetos en el programa. Además de Mongoose, hay varios otros ODM que se han desarrollado para MongoDB, incluidos MongooseJS, Doctrine, MongoLink y Mandango.
+  + [MongooseJS](https://mongoosejs.com/) es un ODM que facilita el uso de MongoDB al traducir documentos en una base de datos a objetos en el programa. Además de MongooseJS, hay varios otros ODM que se han desarrollado para MongoDB, incluidos Doctrine, MongoLink y Mandango.
 
 
 
 ### Actividades
 
 * Realice completamente el tutorial [Express - ODM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_odmbasico.html)
+* Tome como referencia la [documentación de Mongoose](https://mongoosejs.com/docs/index.html) para implementar los siguientes métodos:
+  + Incluya el controlador de la ruta `"/findAllGender/json"`. El cual responde un json con todos los documentos (findAll) que se encuentran en la colección.
+  + Incluya el controlador de la ruta `"/findAllByGender/:gender/json"`. El cual responde un json con todos los documentos (findAll) que se encuentran en la colección.
 
 
 ### Términos
