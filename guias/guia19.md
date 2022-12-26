@@ -24,10 +24,13 @@ theme: jekyll-theme-leap-day
   + Incluya el controlador de la ruta `"/findAllByTime/:tiempo_navegacion_seg_menor/:tiempo_navegacion_seg_mayor/json"`. El cual responde un json con todos los documentos (findAll) que se encuentran en la colección, dado que el tiempo de navegacion se encuentre en el rango.
   + Incluya el controlador de la ruta `"/findByUser/:usuario/json"`. El cual responde un json con el documento (find) que se encuentra en la colección, dado el usuario.
 
+* Compruebe el funcionamiento del servidor, con: **npm start** o **npm run devstart**
+* Acceda a los endpoints de los controladores.
+
 
 ### Términos
 
-reporte, `base de datos no relacional`
+endpoint, `base de datos no relacional`
 
 ### Referencias
 
