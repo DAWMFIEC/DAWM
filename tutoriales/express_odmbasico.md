@@ -208,7 +208,7 @@ Comprobación
 ============
 * * *
 
-* Compruebe el funcionamiento del servidor, con: **npm run devstart**
+* Compruebe el funcionamiento del servidor, con: **npm start** o **npm run devstart**
 * Acceda al URL `http://localhost:3000/log_visitas/findAll/json` 
 
 <p align="center">
