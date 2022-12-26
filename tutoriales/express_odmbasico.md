@@ -228,5 +228,5 @@ Referencias
 * * *
 
 * mongoosejs-cli. (2020). Retrieved 26 December 2022, from https://www.npmjs.com/package/mongoosejs-cli#installation
-* ORM and ODM — A Brief Introduction. (2020). Retrieved 26 December 2022, from https://medium.com/spidernitt/orm-and-odm-a-brief-introduction-369046ec57eb#ef3c
-* Mockaroo - Random Data Generator and API Mocking Tool | JSON / CSV / SQL / Excel. (2022). Retrieved 26 December 2022, from https://www.mockaroo.com/
+* ORM and ODM — A Brief Introduction. (2020). Retrieved 26 December 2022, from https://medium.com/spidernitt/orm-and-odm-a-brief-introduction-369046ec57eb#ef3c
+* Mockaroo - Random Data Generator and API Mocking Tool JSON / CSV / SQL / Excel. (2022). Retrieved 26 December 2022, from https://www.mockaroo.com/
