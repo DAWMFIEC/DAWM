@@ -215,7 +215,7 @@ Comprobación
   <img src="imagenes/odm_fotos_json.png">
 </p>
 
-* Acceda al URL `http://localhost:3000/log_visitas/findById/63a8de19f230e068eadcec17/json` 
+* Acceda a un documento especifico mendiante el `_id`, por ejemplo con el URL `http://localhost:3000/log_visitas/findById/63a8de19f230e068eadcec17/json` 
 
 <p align="center">
   <img src="imagenes/odm_foto1_json.png">
