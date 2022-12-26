@@ -7,7 +7,7 @@ theme: jekyll-theme-leap-day
 Express - ORM (Básico)
 ==========================================
 
-Sequelize es un [ORM](https://www2.deloitte.com/es/es/pages/technology/articles/que-es-orm.html) para Nodejs que te permite agilizar bastante tus desarrollos que incluyan bases de datos relacionales como Postgres, MySQL, MariaDB, SQLite y SQL Server.
+Sequelize es un [ORM](https://www2.deloitte.com/es/es/pages/technology/articles/que-es-orm.html) para Nodejs que te permite agilizar el desarrollo de aplicaciones que incluyen la conexión con bases de datos relacionales como Postgres, MySQL, MariaDB, SQLite y SQL Server.
 
 
 Software a utilizar
@@ -46,10 +46,10 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 * Instale Sequelize CLI de forma global, con: **`npm install -g sequelize-cli`**
 * Instale Sequelize y el conector para MySQL para el proyecto, con: **`npm install --save sequelize mysql2`**
 * Genere los archivos de configuración de Sequelize, con: **`sequelize init`**  
-  + El archivo `config/config.json` contiene la configuración para la conexión con la base de datos.
-  + La carpeta `models` contendrá las clases correspondientes a las entidades de la base de datos.
-  + La carpeta `migrations` contendrá los scripts a ejecutar en la base de datos y en la aplicación. Estos scripts actúan como registros históricos de los cambios.
-  + La carpeta `seeders` contendrá los scripts para generar datos para las entidades de la base datos.
+  + El archivo `config/config.json` contiene la configuración para la conexión con la base de datos relacional.
+  + La carpeta `models` contendrá las clases correspondientes a las entidades de la base de datos relacional.
+  + La carpeta `migrations` contendrá los scripts a ejecutar en la base de datos relacional y en la aplicación. Estos scripts actúan como registros históricos de los cambios.
+  + La carpeta `seeders` contendrá los scripts para generar datos para las entidades de la base datos relacional.
 
 <p align="center">
   <img src="imagenes/sequelizeinit.JPG">
