@@ -33,7 +33,7 @@ Curl + Jsontool
 * * *
 
 * Instale el módulo `jsontool` de manera global, con: `npm i -g jsontool`
-* Desde la línea de comandos, realice una petición con **cURL**, con: 
+* Desde la línea de comandos, realice una petición con [**cURL**](https://curl.se/), con: 
 
 `curl https://dawm-fiec-espol-default-rtdb.firebaseio.com/potterhead.json | json`
 
