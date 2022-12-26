@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-reporte, `base de datos no relacional`, firebase, `rest api`
+reporte, `base de datos no relacional`
 
 ### Referencias
 
