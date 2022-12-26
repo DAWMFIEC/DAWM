@@ -92,7 +92,7 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * Cree el modelo: `log_visitas`, con: 
 
-  `npx mongoosejs-cli model:create --name log_visitas --attributes usuario:String,gender:String,ciudad:String,ipv4:String,fecha_acceso:Date,tiempo_navegacion_seg:Number,foto:Array`
+  `npx mongoosejs-cli model:create --name log_visitas --attributes usuario:String,genero:String,ciudad:String,ipv4:String,fecha_acceso:Date,tiempo_navegacion_seg:Number,foto:Array`
 
   + En la carpeta `models` se agregó la clase **foto.js**, con la configuración predeterminada para la clase foto con los atributos especificados.
 
