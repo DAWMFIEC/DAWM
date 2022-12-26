@@ -147,7 +147,7 @@ Para solicitar los datos desde la base de datos, será necesario que:
   module.exports = router;
   </code></pre>
 
-  + Incluya el controlador de la ruta **`"/findById/:_id/json"`**. El cual responde un json con el documento (findOne) que se encuentra en la colección.
+  + Incluya el controlador de la ruta **`"/findById/:_id/json"`**. El cual responde un json con el documento (findOne) que se encuentra en la colección, dado el identificador (`_id`).
 
   <pre><code>
   ...
