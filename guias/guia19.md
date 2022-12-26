@@ -30,4 +30,4 @@ reporte, `base de datos no relacional`, firebase, `rest api`
 * Bases de datos no relacionales Bases de datos de gráficos AWS. (2022). Retrieved 26 December 2022, from https://aws.amazon.com/es/nosql/
 * Drew, E. (2022). Base de datos no relacional. Retrieved 26 December 2022, from https://blog.wearedrew.co/concepts/base-de-datos-no-relacional
 * ¿Qué es MongoDB? (2022). Retrieved 26 December 2022, from https://www.mongodb.com/es/what-is-mongodb
-* Prácticos, T., Datos, C., & Mapper, O. (2022). Object Document Mapper | FRRe - Desarrollo de Aplicaciones Cliente-Servidor. Retrieved 26 December 2022, from https://frre-dacs.github.io/teoria-practicos/acceso-datos/odm/
+* Prácticos, T., Datos, C., & Mapper, O. (2022). Object Document Mapper FRRe - Desarrollo de Aplicaciones Cliente-Servidor. Retrieved 26 December 2022, from https://frre-dacs.github.io/teoria-practicos/acceso-datos/odm/
