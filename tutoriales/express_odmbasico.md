@@ -155,9 +155,9 @@ Para solicitar los datos desde la base de datos, será necesario que:
   <b style="color:red">
   router.get('/findById/:_id/json', function(req, res, next) {
 
-    var id = req.params.id;
+    var _id = req.params._id;
 
-    models.log_visitas.findOne({_id: id}, function (err, log_visitas) {
+    models.log_visitas.findOne({_id: _id}, function (err, response) {
         if (err) {
             return res.status(500).json({
                 message: 'Error when getting log_visitas.',
@@ -165,13 +165,13 @@ Para solicitar los datos desde la base de datos, será necesario que:
             });
         }
 
-        if (!log_visitas) {
+        if (!response) {
             return res.status(404).json({
                 message: 'No such log_visitas'
             });
         }
 
-        return res.json(log_visitas);
+        return res.json(response);
     });
 
   });
@@ -215,7 +215,7 @@ Comprobación
   <img src="imagenes/odm_fotos_json.png">
 </p>
 
-* Acceda a un documento especifico mendiante el `_id`, por ejemplo con el URL `http://localhost:3000/log_visitas/findById/63a8de19f230e068eadcec17/json` 
+* Acceda a un documento especifico mendiante el `_id` del documento, por ejemplo con el URL `http://localhost:3000/log_visitas/findById/63a8de19f230e068eadcec17/json` 
 
 <p align="center">
   <img src="imagenes/odm_foto1_json.png">
