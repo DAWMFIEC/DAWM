@@ -122,7 +122,7 @@ Para solicitar los datos desde la base de datos, será necesario que:
   module.exports = router;
   </code></pre>
 
-  + Incluya el controlador de la ruta **`"/findAll/json"`**. El cual, responde con todas los documentos (findAll) que se encuentran en la colección renderizados en un json.
+  + Incluya el controlador de la ruta **`"/findAll/json"`**. El cual responde un json con todos los documentos (findAll) que se encuentran en la colección.
 
   <pre><code>
   ...
@@ -147,7 +147,7 @@ Para solicitar los datos desde la base de datos, será necesario que:
   module.exports = router;
   </code></pre>
 
-  + Incluya el controlador de la ruta **`"/findById/:_id/json"`**. El cual, responde con el documento (findOne) que se encuentra en la colección renderizados en un json.
+  + Incluya el controlador de la ruta **`"/findById/:_id/json"`**. El cual responde un json con el documento (findOne) que se encuentra en la colección.
 
   <pre><code>
   ...
