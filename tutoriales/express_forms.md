@@ -26,11 +26,100 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 * Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
 
 
-Envío de datos con POST
-=======================
+Vista
+=====
 
 * * *
 
+* Descargue y descomprima [fotos_formulario](archivos/fotos_formulario.zip).
+  + Mueva el archivo `fotos_formulario.ejs` a la carpeta **views**
+  + Mueva el archivo `fotos_formulario_add.ejs` a la carpeta **views/partials**
+
+* Modifique vista **views/partials/fotos_tabla.ejs**
+  + Cambie `'#'` por la referencia a la ruta `'/photos/add'`.
+
+  <pre><code>
+  ...
+    &lt;a href="/photos/add" class="btn btn-secondary"&gt; ... Add New Photo ... &lt;/a&gt;
+  ...
+  </code></pre>
+
+
+* Modifique el manejador de rutas **routes/index.js**
+  + Agregue el controlador de la ruta `"/photos/add"` para el verbo **GET**. 
+
+  <pre><code>
+  ...
+    router.get('/photos/add', function(req, res, next) {
+      res.render('fotos_formulario', { title: 'Express' });
+    });
+  ...
+  </code></pre>
+
+* Compruebe el funcionamiento del servidor, con: **npm run devstart**
+  + En el navegador, acceda a la ruta `"/photos"` y de clic en el botón **Add New Photo**
+
+  <p align="center">
+    <img width="60%" src="imagenes/photos_add.png">
+  </p>
+
+  + En el navegador, se redirigirá a la ruta `"/photos/add"`
+
+  <p align="center">
+    <img width="60%" src="imagenes/photos_form.png">
+  </p>
+
+
+
+Envío de datos con Axios.post
+=============================
+
+* * *
+
+* Modifique el manejador de rutas **routes/index.js**
+  + Agregue el controlador de la ruta `"/photos/save"` para el verbo **POST**. 
+
+  <pre><code>
+  ...
+    router.post('/photos/save', async function(req, res, next) {  
+  
+      let { title, description, rate, route } = req.body
+
+      const URL = 'http://localhost:4444/rest/fotos/save'
+      const response = await axios.post(URL, {
+            titulo:title, 
+            descripcion: description, 
+            calificacion: rate,
+            ruta: route
+        },{
+        proxy: {
+          host: 'localhost',
+          port: 4444
+        }
+      });
+
+
+      if(response.status == '200' && response.statusText == 'OK') {
+        res.redirect('/photos')
+      } else {
+        res.redirect('/') 
+      }
+
+      
+    });
+  ...
+  </code></pre>
+
+* Compruebe el funcionamiento del servidor, con: **npm run devstart**
+  + En el navegador, acceda a la ruta `"/photos/add"`
+  + Complete el formulario con los datos solicitados y de clic en el botón **Add**
+  + En el navegador, en la ruta `"/photos"`, verifique que aparezcan los datos recientemente ingresados.
+
+
+Subida de archivos con Axios.post
+=================================
+
+* * *
 
 
 
