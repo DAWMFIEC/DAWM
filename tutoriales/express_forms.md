@@ -71,8 +71,8 @@ Vista
 
 
 
-Envío de datos con Axios.post
-=============================
+Envío de datos con Axios
+========================
 
 * * *
 
@@ -114,14 +114,6 @@ Envío de datos con Axios.post
   + En el navegador, acceda a la ruta `"/photos/add"`
   + Complete el formulario con los datos solicitados y de clic en el botón **Add**
   + En el navegador, en la ruta `"/photos"`, verifique que aparezcan los datos recientemente ingresados.
-
-
-Carga de archivos con Axios.post
-=================================
-
-* * *
-
-
 
 
 Referencias 
