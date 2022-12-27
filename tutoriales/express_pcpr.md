@@ -54,7 +54,7 @@ Parámetros de consulta (Query String)
 
 Los parámetros de consulta forman parte de una URL después del signo de interrogación (?). Sirve para enviar datos al servidor, que se utilizarán como filtros para la respuesta.
 
-* En el ruteador **`routes/foto.js`**
+* En el ruteador **`routes/fotos.js`**
   + Agregue el controlador para el método **`GET`** con la subruta **`/findAllByRate/json`**
   + Dentro del controlador
     - Obtenga los parámetros de consulta **`lower`** y **`higher`**, con:
