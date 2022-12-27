@@ -16,9 +16,20 @@ REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con el
 
 ### Actividades
 
+#### REST API
+
+**Nota:** Use variable de entorno PORT, con: `set PORT=4444`
+
 * Realice completamente el tutorial [Express - REST](https://dawfiec.github.io/DAWM/tutoriales/express_rest.html).
 * Implemente el REST API para el modelo **etiqueta**, de acuerdo con las instrucciones de [Express - REST](https://dawfiec.github.io/DAWM/tutoriales/express_rest.html).
   + Compruebe los resultados con **cURL** y **Jsontool**.
+
+
+#### Admin
+
+**Nota:** Use variable de entorno PORT, con: `set PORT=3080`
+
+* Realice completamente el tutorial [Express - Formularios](https://dawfiec.github.io/DAWM/tutoriales/express_forms.html).
 
 
 ### Términos
