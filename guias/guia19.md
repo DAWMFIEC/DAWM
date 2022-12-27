@@ -38,4 +38,4 @@ endpoint, `base de datos no relacional`
 * Drew, E. (2022). Base de datos no relacional. Retrieved 26 December 2022, from https://blog.wearedrew.co/concepts/base-de-datos-no-relacional
 * ¿Qué es MongoDB? (2022). Retrieved 26 December 2022, from https://www.mongodb.com/es/what-is-mongodb
 * Prácticos, T., Datos, C., & Mapper, O. (2022). Object Document Mapper FRRe - Desarrollo de Aplicaciones Cliente-Servidor. Retrieved 26 December 2022, from https://frre-dacs.github.io/teoria-practicos/acceso-datos/odm/
-* MongoDB | ObjectRocket. (2022). Retrieved 26 December 2022, from https://kb.objectrocket.com/mongo-db
+* MongoDB ObjectRocket. (2022). Retrieved 26 December 2022, from https://kb.objectrocket.com/mongo-db
