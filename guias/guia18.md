@@ -117,6 +117,7 @@ theme: jekyll-theme-leap-day
         port: 4444
       }
     }
+    const response = await axios.get(URL, config)
     </b>
 
     <b style="color:red">response.data.map( item => { item.url = 'http://localhost:4444/'+item.ruta.replace('public/','') } )</b>
