@@ -111,12 +111,13 @@ theme: jekyll-theme-leap-day
   router.get('/photos', async function(req, res, next) {
   
     <b style="color:red">const URL = 'http://localhost:4444/fotos/findAll/json'
-    const response = await axios.get(URL, {
+    const config = {
       proxy: {
         host: 'localhost',
         port: 4444
       }
-    })</b>
+    }
+    </b>
 
     <b style="color:red">response.data.map( item => { item.url = 'http://localhost:4444/'+item.ruta.replace('public/','') } )</b>
 
