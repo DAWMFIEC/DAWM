@@ -83,14 +83,14 @@ Envío de datos con Axios.post
   ...
     router.post('/photos/save', async function(req, res, next) {  
   
-      let { title, description, rate, route } = req.body
+      let { title, description, rate } = req.body
 
       const URL = 'http://localhost:4444/rest/fotos/save'
       const response = await axios.post(URL, {
             titulo:title, 
             descripcion: description, 
             calificacion: rate,
-            ruta: route
+            ruta: ''
         },{
         proxy: {
           host: 'localhost',
@@ -116,7 +116,7 @@ Envío de datos con Axios.post
   + En el navegador, en la ruta `"/photos"`, verifique que aparezcan los datos recientemente ingresados.
 
 
-Subida de archivos con Axios.post
+Carga de archivos con Axios.post
 =================================
 
 * * *
