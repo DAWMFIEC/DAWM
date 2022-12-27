@@ -181,7 +181,13 @@ Fotos: datos - controlador
   router.get('/photos', async function(req, res, next) {
   
     const URL = 'https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json'
-    const response = await axios.get(URL)
+    const config = {
+      proxy: {
+        host: 'localhost',
+        port: 4444
+      }
+    }
+    const response = await axios.get(URL, config) #de ser necesario, incluya la constante config como segundo parámetro del método get
     
     res.render('fotos', { title: 'Fotos', fotos: response.data });
   })
