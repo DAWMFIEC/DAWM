@@ -83,7 +83,6 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | Capítulo 06   | [Ejercicio 01](Capítulo%2006/ejercicio01)         | Express - Rest - Local|
 |               | [Ejercicio 02](Capítulo%2006/ejercicio02)         | Express - Rest - Firebase |
 
-
 ## Referencias 
 
 * Guía completa markdown y su integración con R. (2022). Retrieved 19 April 2022, from https://rstudio-pubs-static.s3.amazonaws.com/330387_5a40ca72c3b14824acedceb7d34618d1.html
