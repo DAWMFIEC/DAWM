@@ -36,7 +36,7 @@ Firebase - Realtime Database
   <img width="550" src ="imagenes/firebase_setup2.png">
 </p> 
 
-* En la interfaz a la **Realtime Database**
+* En la interfaz de **Realtime Database**
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_realtime_index.png">
@@ -55,7 +55,7 @@ Firebase - Realtime Database
   <img width="550" src ="imagenes/firebase_collection_init.png">
 </p> 
    
-  + Importe los [datos](archivos/datos.json) en formato `.json`
+  + Descargue los **[datos](archivos/datos.json)** e importe los datos.
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_collection_import.png">
@@ -71,22 +71,36 @@ Firebase - Realtime Database
   <img width="550" src ="imagenes/firebase_collection_rules.png">
 </p>
 
+Petición
+========
+
 * Para realizar peticiones a la base de datos no relacional, 
 
-  + Instale el módulo `jsontool` de manera global, con: `npm i -g jsontool`
+  + Desde la línea de comandos, instale el módulo `jsontool` de manera global, con: `npm i -g jsontool`
   + Utilice la url que aparece en la interfaz. Por ejemplo:
 
-<p align="center">
-  <img width="550" src ="imagenes/firebase_url.png">
-</p>
+  ```
+  https://nosql-63d27-default-rtdb.firebaseio.com/collection.json
+  ```
+
+Petición - Todos
+================
 
   + Realice una petición GET-All con cURL, con:
 
-  `curl -X GET https://productos-375bf-default-rtdb.firebaseio.com/collection.json | json`
+  `curl -X GET https://nosql-63d27-default-rtdb.firebaseio.com/collection.json | json`
+
+
+Petición - Por índice
+=====================
 
   + Realice una petición GET-One con cURL, con:
 
-  `curl -X GET https://productos-375bf-default-rtdb.firebaseio.com/collection/3.json | json`
+  `curl -X GET https://nosql-63d27-default-rtdb.firebaseio.com/collection/3.json | json`
+
+
+Petición - Filtrado de datos
+============================
 
 * Para filtrar los datos desde el URL:
   + Modifique las reglas de acceso para indexar las claves. Para esto, debe indicar la ruta dentro de los objetos (`collection`) y los campos a indexar (`["productoNombre"]`)
@@ -97,11 +111,11 @@ Firebase - Realtime Database
 
   + Realice una petición GET-One con cURL, con:
 
-  `curl -X GET "https://productos-375bf-default-rtdb.firebaseio.com/collection.json?orderBy=%22productoNombre%22&equalTo=%22Producto%205%22"`
+  `curl -X GET "https://nosql-63d27-default-rtdb.firebaseio.com/collection.json?orderBy=%22productoNombre%22&equalTo=%22Producto%205%22" | json`
 
   + O, desde el navegador, con: 
 
-  `https://productos-375bf-default-rtdb.firebaseio.com/collection.json?orderBy="productoNombre"&equalTo="Producto 5"`
+  `https://nosql-63d27-default-rtdb.firebaseio.com/collection.json?orderBy="productoNombre"&equalTo="Producto 5"`
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_filtered.png">
