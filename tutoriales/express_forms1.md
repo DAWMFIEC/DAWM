@@ -4,8 +4,8 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-Express - Formularios
-=====================
+Express - Formularios I 
+=======================
 
 El usuario, mediante el navegador, hace peticiones para traer información desde el servidor. Estas peticiones predeterminadas son etiquetadas con el verbo GET. Mientras que para enviar datos nuevos del cliente al servidor, se recomienda el uso de peticiones etiquetadas con el verbo POST mediante el uso de formularios.
 
@@ -26,8 +26,8 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 * Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
 
 
-Proyecto en Express
-===================
+Proyecto en Express: Admin
+==========================
 
 * * *
 
