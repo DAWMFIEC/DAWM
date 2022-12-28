@@ -231,6 +231,12 @@ Comprobación
 
 * * *
 
+* En la línea de comandos (1) del proyecto **album/api**
+  + Instale las dependencias, con: `npm install`
+  + Instale la dependencia a **multer**, con: `npm install multer`
+  + Use la variable de entorno **PORT**, con: `set PORT=4444`
+  + Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
+
 * En la línea de comandos (2) del proyecto **album/admin**
   + Instale las dependencias, con: `npm install`
   + Instale la dependencia a **multer** y **form-data**, con: `npm install multer form-data`
@@ -240,11 +246,6 @@ Comprobación
     - Complete el formulario con los datos solicitados y de clic en el botón **Add**
   + En el navegador, en la ruta `"http://localhost:3080/photos"`, verifique que aparezcan los datos recientemente ingresados.
 
-* En la línea de comandos (1) del proyecto **album/api**
-  + Instale las dependencias, con: `npm install`
-  + Instale la dependencia a **multer**, con: `npm install multer`
-  + Use la variable de entorno **PORT**, con: `set PORT=4444`
-  + Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
 
 Referencias 
 ===========
