@@ -82,7 +82,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - Parámetros de consulta y Parámetros de ruta](tutoriales/express_pcpr.md)
 * [Express - ODM Básico](tutoriales/express_odmbasico.md)
 * [Express - REST](tutoriales/express_rest.md)
-* [Express - Formularios I](tutoriales/express_forms.md)
+* [Express - Formularios I](tutoriales/express_forms1.md)
+* [Express - Formularios II](tutoriales/express_forms2.md)
 <!---* [Express - Cookies y Sesión](tutoriales/express_cookiesysession.md) --->
 <!-- * [Express - ORM Avanzado](tutoriales/express_ormavanzado.md) -->
 
