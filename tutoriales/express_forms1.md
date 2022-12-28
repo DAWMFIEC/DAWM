@@ -71,12 +71,11 @@ Controlador
 
     const URL = 'http://localhost:4444/rest/fotos/save'
     const config = {
-        headers: form.getHeaders(),
-        proxy: {
-          host: 'localhost',
-          port: 4444
-        }
+      proxy: {
+        host: 'localhost',
+        port: 4444
       }
+    }
     const response = await axios.post(URL, {
           titulo:title, 
           descripcion: description, 
