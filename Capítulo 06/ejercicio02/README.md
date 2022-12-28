@@ -6,9 +6,7 @@
 
 ## Instrucciones
 
-* Tome como referencia las instrucciones de:
-
-  + [Firebase - Realtime database](https://dawfiec.github.io/DAWM-2022/tutoriales/firebase_realtime_database.html)
+* Tome como referencia las instrucciones en [Firebase - Realtime database](https://dawfiec.github.io/DAWM-2022/tutoriales/firebase_realtime_database.html)
 
 * Descargue el _dataset_ de [Kaggle - Disney Movies](https://www.kaggle.com/datasets/prateekmaj21/disney-movies).
 * Instale globalmente el módulo [csv2json](https://www.npmjs.com/package/csv2json).
