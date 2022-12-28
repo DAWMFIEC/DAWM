@@ -1,7 +1,7 @@
 # Ejercicio 01
 
 <p align="center">  
-  <img width="40%" src="imagenes/ejercicio01.png">
+  <img width="60%" src="imagenes/ejercicio01.png">
 </p>
 
 
