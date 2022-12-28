@@ -46,7 +46,7 @@ theme: jekyll-theme-leap-day
 * Verifique que aparezcan los tres proyectos: `album/api`, `album/admin` y `album/clienteAngular`
 
 <p align="center">
-  <img src="imagenes/proyectos01.png">
+  <img src="imagenes/proyectos18.png">
 </p>
 
 ### Actividades
