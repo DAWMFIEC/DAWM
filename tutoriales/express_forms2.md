@@ -13,6 +13,79 @@ Express - Formularios II
   <img width="250" src="imagenes/file-upload-using-multer-in-nodejs-express.jpeg">
 </p>
 
+Proyecto en Express: REST API
+=============================
+
+* * *
+
+
+Controlador
+===========
+
+* Modifique el manejador de rutas **api/rest/fotos.js**
+  + Agregue la ruta `"public/images/"` donde se almacenarán las imágenes.
+
+    <pre><code>
+    ...
+    const Etiqueta = require('../models').etiqueta;  
+    
+    <b style="color:red">const path = "public/images/"</b>
+    ...
+    </code></pre>
+
+  + Agregue la referencia a los módulos **multer**, e instance la clase _multer_. Configure la función _filename_ para asignar el nombre original del archivo.
+
+    <pre><code>
+    ...  
+    const path = "public/images/"
+    <b style="color:red">
+    const multer = require("multer");
+    const storage = multer.diskStorage(
+        {
+            destination: path,
+            filename: function ( req, file, cb ) {
+                cb( null, file.originalname);
+            }
+        }
+    );
+    const upload = multer({ storage: storage })
+    </b>
+    ...
+    </code></pre>
+
+  + Modifique la ruta `'/save'` del verbo POST
+    - Agregue el __middleware__ con la llamada al método **single** para procesar el campo del formulario `archivo`
+
+    <pre><code>
+    ...
+      router.post('/save', upload.single('archivo'),  function(req, res, next) {
+    ...
+    </code></pre>
+
+    - Modifique el valor de la clave _ruta_ por **path+ruta**  
+
+    <pre><code>
+    ...
+    router.post('/save', upload.single('archivo'), function(req, res, next) {  
+
+      let {titulo, descripcion, calificacion,ruta} = req.body;
+      
+      Foto.create({
+        titulo: titulo,
+        descripcion: descripcion,
+        calificacion: parseFloat(calificacion),
+        <b style="color:red">ruta: path+ruta,</b>
+        createdAt: new Date(),  
+        updatedAt: new Date()  
+      })
+      .then(foto => {
+        res.json(foto);
+      })
+      .catch(error => res.status(400).send(error))
+
+    });
+    ...
+    </code></pre>
 
 Proyecto en Express: Admin
 ==========================
@@ -130,80 +203,6 @@ Controlador
       </b>
 
       ...
-
-    });
-    ...
-    </code></pre>
-
-Proyecto en Express: REST
-=========================
-
-* * *
-
-
-Controlador
-===========
-
-* Modifique el manejador de rutas **api/rest/fotos.js**
-  + Agregue la ruta `"public/images/"` donde se almacenarán las imágenes.
-
-    <pre><code>
-    ...
-    const Etiqueta = require('../models').etiqueta;  
-    
-    <b style="color:red">const path = "public/images/"</b>
-    ...
-    </code></pre>
-
-  + Agregue la referencia a los módulos **multer**, e instance la clase _multer_. Configure la función _filename_ para asignar el nombre original del archivo.
-
-    <pre><code>
-    ...  
-    const path = "public/images/"
-    <b style="color:red">
-    const multer = require("multer");
-    const storage = multer.diskStorage(
-        {
-            destination: path,
-            filename: function ( req, file, cb ) {
-                cb( null, file.originalname);
-            }
-        }
-    );
-    const upload = multer({ storage: storage })
-    </b>
-    ...
-    </code></pre>
-
-  + Modifique la ruta `'/save'` del verbo POST
-    - Agregue el __middleware__ con la llamada al método **single** para procesar el campo del formulario `archivo`
-
-    <pre><code>
-    ...
-      router.post('/save', upload.single('archivo'),  function(req, res, next) {
-    ...
-    </code></pre>
-
-    - Modifique el valor de la clave _ruta_ por **path+ruta**  
-
-    <pre><code>
-    ...
-    router.post('/save', upload.single('archivo'), function(req, res, next) {  
-
-      let {titulo, descripcion, calificacion,ruta} = req.body;
-      
-      Foto.create({
-        titulo: titulo,
-        descripcion: descripcion,
-        calificacion: parseFloat(calificacion),
-        <b style="color:red">ruta: path+ruta,</b>
-        createdAt: new Date(),  
-        updatedAt: new Date()  
-      })
-      .then(foto => {
-        res.json(foto);
-      })
-      .catch(error => res.status(400).send(error))
 
     });
     ...
