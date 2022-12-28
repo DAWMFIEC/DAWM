@@ -18,6 +18,11 @@ Proyecto en Express: REST API
 
 * * *
 
+Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html), [Express - ORM (Intermedio)](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html), [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html) y [Express - REST](https://dawfiec.github.io/DAWM/tutoriales/express_rest.html).
+
+* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
+    - Para el hito: **`hito7-api`**
+
 
 Controlador
 ===========
@@ -160,13 +165,16 @@ Controlador
 
       let { title, description, rate } = req.body
       let { buffer, originalname } = req.file
+
+      const URL = 'http://localhost:4444/rest/fotos/save'
+
       <b style="color:red">
-      let form = new FormData()
-      form.append("titulo", title)
-      form.append("descripcion", description)
-      form.append("calificacion", rate)
-      form.append("ruta", originalname)
-      form.append("archivo", buffer, originalname)
+      let data = new FormData()
+      data.append("titulo", title)
+      data.append("descripcion", description)
+      data.append("calificacion", rate)
+      data.append("ruta", originalname)
+      data.append("archivo", buffer, originalname)
       </b>
       ...
 
@@ -174,7 +182,7 @@ Controlador
     ...
     </code></pre>
 
-    - Reconstruya la petición Axios.post con el objeto **form** y la **configuracion**
+    - Agregue las cabeceras del formulario **data.getHeaders()** al objeto _config_.
 
     <pre><code>
     ...
@@ -183,24 +191,23 @@ Controlador
       let { title, description, rate } = req.body
       let { buffer, originalname } = req.file
 
-      let form = new FormData()
-      form.append("titulo", title)
-      form.append("descripcion", description)
-      form.append("calificacion", rate)
-      form.append("ruta", originalname)
-      form.append("archivo", buffer, originalname)
-      
       const URL = 'http://localhost:4444/rest/fotos/save'
-      <b style="color:red">
+
+      const data = new FormData()
+      data.append("titulo", title)
+      data.append("descripcion", description)
+      data.append("calificacion", rate)
+      data.append("ruta", originalname)
+      data.append("archivo", buffer, originalname)
       const config = {
-        headers: form.getHeaders(),
+        <b style="color:red">headers: data.getHeaders(), </b>
         proxy: {
           host: 'localhost',
           port: 4444
         }
       }
-      const response = await axios.post(URL, form, config);
-      </b>
+      const response = await axios.post(URL, data, config);
+     
 
       ...
 
