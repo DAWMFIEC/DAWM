@@ -76,18 +76,22 @@ Controlador
     let { title, description, rate } = req.body
 
     const URL = 'http://localhost:4444/rest/fotos/save'
+
+    let data = {
+        titulo:title, 
+        descripcion: description, 
+        calificacion: rate,
+        ruta: ''
+    }
+
     const config = {
       proxy: {
         host: 'localhost',
         port: 4444
       }
     }
-    const response = await axios.post(URL, {
-          titulo:title, 
-          descripcion: description, 
-          calificacion: rate,
-          ruta: ''
-      }, config);
+    
+    const response = await axios.post(URL, data, config);
 
 
     if(response.status == '200' && response.statusText == 'OK') {
