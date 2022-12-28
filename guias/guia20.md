@@ -14,16 +14,38 @@ theme: jekyll-theme-leap-day
 REST se apoya en los verbos del protocolo HTTP: **GET**, **POST**, **PUT** y **DELETE** para realizar las operaciones sobre un recurso provisto por un servicio. 
 
 
+### Aplicación
+
+* Desde la línea de comandos:
+  
+  + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps)
+  ```
+  git clone https://github.com/DAWFIEC/DAWM-apps.git 
+  ```
+  + Acceda a la carpeta del proyecto
+  ```
+  cd DAWM-apps
+  ```
+  + Ubique el proyecto en la rama _hito7-api_
+  ```
+  git checkout hito7-api
+  ```
+  + Una la rama _hito4-admin_
+  ```
+  git merge origin/hito4-admin
+  ```
+
+* Verifique que aparezcan los tres proyectos: `album/api` y `album/admin`
+
+<p align="center">
+  <img src="imagenes/proyectos20.png">
+</p>
+
 ### Actividades
 
-#### REST API
-
-**Nota:** Use variable de entorno PORT, con: `set PORT=4444`
+#### API
 
 #### Admin
-
-**Nota:** Use variable de entorno PORT, con: `set PORT=3080`
-
 
 ### Términos
 
