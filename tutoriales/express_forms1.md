@@ -27,8 +27,6 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 Vista
 =====
 
-* * *
-
 * Descargue y descomprima [fotos_formulario](archivos/fotos_formulario.zip).
   + Mueva el archivo `fotos_formulario.ejs` a la carpeta **admin/views**
   + Mueva el archivo `fotos_formulario_add.ejs` a la carpeta **admin/views/partials**
@@ -45,8 +43,6 @@ Vista
 
 Controlador
 ===========
-
-* * *
 
 * Modifique el manejador de rutas **admin/routes/index.js**
   + Agregue el controlador de la ruta `"/photos/add"` para el verbo **GET**. 
@@ -110,8 +106,6 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 
 Comprobación
 ============
-
-* * *
 
 
 * En la línea de comandos (1) del proyecto **album/api**
