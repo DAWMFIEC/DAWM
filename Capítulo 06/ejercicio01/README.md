@@ -7,7 +7,7 @@
 
 ## Instrucciones
 
-* Tome como referencia las instrucciones de:
+* Complete las actividades de:
 
   + [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), 
   + [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html), 
