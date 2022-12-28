@@ -46,10 +46,10 @@ Vista
 * * *
 
 * Descargue y descomprima [fotos_formulario](archivos/fotos_formulario.zip).
-  + Mueva el archivo `fotos_formulario.ejs` a la carpeta **views**
-  + Mueva el archivo `fotos_formulario_add.ejs` a la carpeta **views/partials**
+  + Mueva el archivo `fotos_formulario.ejs` a la carpeta **admin/views**
+  + Mueva el archivo `fotos_formulario_add.ejs` a la carpeta **admin/views/partials**
 
-* Modifique vista **views/partials/fotos_tabla.ejs**
+* Modifique vista **admin/views/partials/fotos_tabla.ejs**
   + Cambie `'#'` por la referencia a la ruta `'/photos/add'`.
 
   <pre><code>
@@ -59,7 +59,7 @@ Vista
   </code></pre>
 
 
-* Modifique el manejador de rutas **routes/index.js**
+* Modifique el manejador de rutas **admin/routes/index.js**
   + Agregue el controlador de la ruta `"/photos/add"` para el verbo **GET**. 
 
   <pre><code>
@@ -90,7 +90,7 @@ Envío de datos con Axios
 
 * * *
 
-* Modifique el manejador de rutas **routes/index.js**
+* Modifique el manejador de rutas **admin/routes/index.js**
   + Agregue el controlador de la ruta `"/photos/save"` para el verbo **POST**. 
 
   <pre><code>
