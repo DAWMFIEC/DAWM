@@ -64,6 +64,15 @@
   
   + Ejecute las pruebas unitarias, con: `npm test`
 
+  ```
+  Express Endpoints
+    √ GET /rest/fotos/findAll/json (X ms)
+    √ GET /rest/fotos/findById/0/json (Y ms)
+    √ POST /rest/fotos/save (Z ms)
+    √ PUT /rest/fotos/update (W ms)
+    √ DELETE /delete/:id (K ms)
+  ```
+
 * Los resultados posibles a las pruebas unitarias:
   
   ```
