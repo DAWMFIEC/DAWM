@@ -14,18 +14,6 @@ El usuario, mediante el navegador, hace peticiones para traer información desde
 </p>
 
 
-Prerrequisito: REST
-===================
-
-Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html), [Express - ORM (Intermedio)](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html), [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html) y [Express - REST](https://dawfiec.github.io/DAWM/tutoriales/express_rest.html).
-
-* O, Una (merge) el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
-    - Para el hito: **`hito7-api`**
-* Instale las dependencias, con: `npm install`
-* Use la variable de entorno **PORT**, con: `set PORT=4444`
-* Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
-
-
 Proyecto en Express: Admin
 ==========================
 
@@ -35,10 +23,6 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 
 * O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
     - Para el hito: **`hito4-admin`**
-* Instale las dependencias, con: `npm install`
-* Use la variable de entorno **PORT**, con: `set PORT=3080`
-* Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
-
 
 Vista
 =====
@@ -84,7 +68,6 @@ Vista
   </p>
 
 
-
 Envío de datos con Axios
 ========================
 
@@ -124,10 +107,32 @@ Envío de datos con Axios
   ...
   </code></pre>
 
-* Compruebe el funcionamiento del servidor, con: **npm run devstart**
-  + En el navegador, acceda a la ruta `"/photos/add"`
-  + Complete el formulario con los datos solicitados y de clic en el botón **Add**
-  + En el navegador, en la ruta `"/photos"`, verifique que aparezcan los datos recientemente ingresados.
+Proyecto en Express: REST
+===================
+
+Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html), [Express - ORM (Intermedio)](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html), [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html) y [Express - REST](https://dawfiec.github.io/DAWM/tutoriales/express_rest.html).
+
+* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
+    - Para el hito: **`hito7-api`**
+
+
+Comprobación
+============
+
+* * *
+
+* En la línea de comandos (1) del proyecto **album/api**
+  + Instale las dependencias, con: `npm install`
+  + Use la variable de entorno **PORT**, con: `set PORT=4444`
+  + Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
+
+* En la línea de comandos (2) del proyecto **album/admin**
+  + Instale las dependencias, con: `npm install`
+  + Use la variable de entorno **PORT**, con: `set PORT=3080`
+  + Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
+  + En el navegador, acceda a la ruta `"http://localhost:3080/photos/add"`
+    - Complete el formulario con los datos solicitados y de clic en el botón **Add**
+  + En el navegador, en la ruta `"http://localhost:3080/photos"`, verifique que aparezcan los datos recientemente ingresados.
 
 
 Referencias 
