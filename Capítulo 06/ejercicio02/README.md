@@ -1,171 +1,195 @@
-# Ejercicio 01
+# Ejercicio 04
 
-![ejercicio01](imagenes/ejercicio01.png)
-
+<p align="center">  
+  <img width="40%" src="imagenes/ejercicio04.png">
+</p>
 
 ## Instrucciones
 
 * Tome como referencia las instrucciones de:
 
-  + [Express - Bases](https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html),
-  + [Express - ORM (Básico)](https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html),
-  + [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM-2022/tutoriales/express_pcpr.html)
-  + [Firebase - Realtime database](https://dawfiec.github.io/DAWM-2022/tutoriales/express_pcpr.html)
+  + [Firebase - Realtime database](https://dawfiec.github.io/DAWM-2022/tutoriales/firebase_realtime_database.html)
 
-* Cree un proyecto nuevo llamado **album**
+* Descargue el _dataset_ de [Kaggle - Disney Movies](https://www.kaggle.com/datasets/prateekmaj21/disney-movies).
+* Instale globalmente el módulo [csv2json](https://www.npmjs.com/package/csv2json).
+  + Convierta el dataset de **.csv** a **.json**, con: `csv2json disney_movies.csv disney_movies.json`
+* Cree un proyecto en **Firebase** de acuerdo con el tutorial [Firebase - Realtime database](https://dawfiec.github.io/DAWM-2022/tutoriales/firebase_realtime_database.html).
+  + Cree la colección: `movies`
+  + Cargue el archivo **disney_movies.json** dentro de la colección **movies**
+  + Edite las reglas de acceso a los datos para permitir acceso completo.
+* Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/) en su máquina.
+  + Obtenga una cuenta
+  + Cree una nueva colección, por ejemplo **Movies**,
+    <p align="center">  
+      <img width="20%" src="imagenes/collection.png">
+    </p>
 
-* Base de datos: **album**
 
-* Modifique el archivo `config/config.json` para los ambientes "development" y "test" para los datos de conexión: **database**, **username** y **password**
+  + Y agregue los requerimientos:
+    <p align="center"> 
+      <img width="20%" src="imagenes/request.png">
+    </p>
 
-* Cree el modelo **`photo`**, con atributos de tipo _string_: **`descripcion`**, **`tiempo`** y **`url`**
-  
-* Modifique el seeder de **`photo`**:
-  + En la función **up**:
-  ```
-  let arreglo = [
+    - _**GET-all**_: De tipo **GET** para obtener todos la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies.json`. 
+    
+      Así luce respuesta del requerimiento en _Postman_.
+
+      <p align="center">  
+        <img width="40%" src="imagenes/GET-all.png">
+      </p>
+
+    - _**GET-one**_: De tipo **GET** para del elemento **150** de la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies/150.json`. 
+
+      Así luce respuesta del requerimiento en _Postman_.
+
+      <p align="center">  
+        <img width="40%" src="imagenes/GET-one.png">
+      </p>
+
+    - _**POST**_: De tipo **POST** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. Modifique el **Body** del requerimiento de tipo **raw**. 
+      ```
       {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "3 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/53e4d2464252ae14f1dc8460962e33791c3ad6e04e507440722d72d59448c5_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "9 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/57e3d2474255a814f1dc8460962e33791c3ad6e04e507440762a7cd49348cc_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "5 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/57e4dd404d51a914f1dc8460962e33791c3ad6e04e5074417c2e7dd29744c7_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "3 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/52e1d2454e55b10ff3d8992cc12c30771037dbf852577148762c7ad2904e_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "3 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/52e8d2474851ad14f1dc8460962e33791c3ad6e04e5074417c2f7dd59f4ac1_640.jpg"
-      },
-      {
-        "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In gravida sapien at gravida semper. Aenean a lacinia diam. Nulla facilisi. Suspendisse ut turpis at tellus porttitor hendrerit.",
-        "tiempo": "19 mins",
-        "url": "https://randomwordgenerator.com/img/picture-generator/52e3d4404852ac14f1dc8460962e33791c3ad6e04e507440772d7cdd9f4bcc_640.jpg"
+          "genre": "Adventure",
+          "inflation_adjusted_gross": "",
+          "movie_title": "Red",
+          "mpaa_rating": "PG-13",
+          "release_date": "",
+          "total_gross": ""
       }
-    ]
+      ```
 
-    for (var i = arreglo.length - 1; i >= 0; i--) {
-      let foto = arreglo[i]
-      await queryInterface.bulkInsert('Photos', [{  
-            descripcion: foto['descripcion'],
-            tiempo: foto['tiempo'],
-            url: foto['url'],
-            createdAt: new Date(),  
-            updatedAt: new Date()  
-        }], {});  
-    }
-  ```
+      Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del POST.
 
-  + En la función **down**:
+      <p align="center">  
+        <img width="47%" src="imagenes/POST.png">
+        <img width="47%" src="imagenes/firebase_POST.png">
+      </p>
 
-  ```
-  await queryInterface.bulkDelete('Photos', null, {});
-  ```
+    - _**PUT**_: De tipo **PUT** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`.  Modifique el **Body** del requerimiento de tipo **raw**. 
+      ```
+      {
+          "genre": "Adventure",
+          "inflation_adjusted_gross": "1800103",
+          "movie_title": "Red",
+          "mpaa_rating": "PG",
+          "release_date": "2022-03-11",
+          "total_gross": "19501533"
+      }
+      ```
 
-* Ejecute los seeders
+      Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del PUT.
 
-<p align="center">
-  <img src="imagenes/mysql.png">
-</p>
+      <p align="center">  
+        <img width="47%" src="imagenes/PUT.png">
+        <img width="47%" src="imagenes/firebase_PUT.png">
+      </p>
 
-* En el app.js
-  + Registre la ruta "/photo" para que enrute las peticiones a "routes/photo.js" 
+    - _**DELETE**_: De tipo **DELETE** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. 
 
-* En el router "routes/photo.js" agregue la referencia a los módulos **Sequelize** y **Op**. Además, al modelo **Photo**.
+      Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del DELETE.
 
-```
-...
-const { Sequelize, Op } = require('sequelize');
-const Photo = require('../models').photo;  
-...
-```
-
-* Agregue el controlador para el método `GET` con la subruta `/album`. Además, agregue un _query_ para traer todos los datos de la entidad **photo**.
-
-```
-...
-Photo.findAll()  
-  .then(photos => {  
-      res.json(photos)
-  })  
-  .catch(error => res.status(400).send(error))
-...
-```
-
-* Agregue el controlador para el método `GET` con la subruta `/album/:id`. Además, agregue un _query_ para traer la **photo** con _id_ enviado como parámetro.
-
-```
-...
-Photo.findOne({ where: { id: req.params.id } })  
-  .then(photos => {  
-      res.json(photos)
-  })  
-  .catch(error => res.status(400).send(error))
-...
-```
+      <p align="center">  
+        <img width="47%" src="imagenes/DELETE.png">
+        <img width="47%" src="imagenes/firebase_DELETE.png">
+      </p>
 
 
 ## Pruebas unitarias
 
-* En su proyecto de Express 
-  + Instale las dependencias **Jest**, **SuperTest** y **cross-env**
-    - Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev jest supertest cross-env`
-  + Agregue la carpeta **tests** de este repositorio a su proyecto 
-  + Modifique el archivo **package.json**
-    - Agregue los pares clave-valor
+* En cada requerimiento, en la sección **Tests**
+  + Para _**GET-all**_ 
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
 
-    <pre><code>
-    ...
-      "scripts":{
-        ...
-        <b style="color:red">
-        ,
-        "test": "jest --detectOpenHandles"
-        </b>
-      }
-    ...
-        "nodemon": "^2.0.19",
-        "supertest": "^6.2.4"
-      }
-      <b style="color:red">
-      ,
-      "jest": {
-        "testEnvironment": "node",
-        "coveragePathIgnorePatterns": [
-          "/node_modules/"
-        ]
-      }
-      </b>
-    }
-    </code></pre> 
+  var data = pm.response.json();
 
-* En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm test`
-* Los resultados posibles a las pruebas unitarias pueden ser: jest
-  
-  <p align="center">
-    <img src="imagenes/jest.png">
+  pm.test('Number of mvoies returned = ' + data.length, ()=>{
+      pm.expect(data.length).to.equal(579);
+  })
+  ```
+
+  + Para _**GET-one**_ 
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
+
+  const jsonData = pm.response.json();
+
+  pm.test('Has data: mpaa_rating', function() {
+    pm.expect(jsonData).to.have.property('mpaa_rating');
+  });
+
+  pm.test('Has total_gross value: "12349549"', function() {
+    pm.expect(jsonData["total_gross"]).to.equal("12349549");
+  });
+  ```
+
+  + Para _**POST**_ 
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
+
+  const jsonData = pm.response.json();
+
+  pm.test('Has data: name', function() {
+    pm.expect(jsonData).to.have.property('name');
+  });
+  ```
+
+  + Para _**PUT**_ 
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
+
+  const jsonData = pm.response.json();
+
+  pm.test('Has data: total_gross', function() {
+    pm.expect(jsonData).to.have.property('total_gross');
+  });
+
+  pm.test('Has data: inflation_adjusted_gross', function() {
+    pm.expect(jsonData).to.have.property('inflation_adjusted_gross');
+  });
+  ```
+
+  + Para _**DELETE**_ 
+  ```
+  pm.test("Response is ok", ()=>{
+      pm.response.to.have.status(200)
+  })
+
+  const jsonData = pm.response.json();
+
+  pm.test('Response is null', function() {
+    pm.expect(jsonData).to.eql(null)
+  });
+  ```
+
+* Programe la ejecución de la colección, con:
+
+  <p align="center">  
+    <img width="47%" src="imagenes/run_collection.png">
+    <img width="47%" src="imagenes/runner.png">
   </p>
 
-  + Todos fueron exitosas, o
-  + Existen pruebas unitarias fallidas.
-* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.
+* Los resultados posibles a las pruebas unitarias pueden ser:
+  <p align="center">  
+    <img src="imagenes/tests.png">
+  </p>
+
+
+
+
 
 ## Referencias 
 
-* DAWM-2022. (2022). Retrieved 4 August 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html
-* DAWM-2022. (2022). Retrieved 4 August 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/express_ormbasico.html
-* Testing your Express.js Backend Server. (2021). Retrieved 27 July 2022, from https://dev.to/lukekyl/testing-your-express-js-backend-server-3ae6
-* Expect · Jest. (2022). Retrieved 27 July 2022, from https://jestjs.io/docs/expect
-* Concepts, C., & Finders, M. (2022). Model Querying - Finders Sequelize. Retrieved 4 August 2022, from https://sequelize.org/docs/v6/core-concepts/model-querying-finders/
+* Building requests Postman Learning Center. (2022). Retrieved 16 August 2022, from https://learning.postman.com/docs/sending-requests/requests/
+* Receiving responses Postman Learning Center. (2022). Retrieved 16 August 2022, from https://learning.postman.com/docs/sending-requests/responses/
+* Grouping requests in collections Postman Learning Center. (2022). Retrieved 16 August 2022, from https://learning.postman.com/docs/sending-requests/intro-to-collections/
+* Using variables Postman Learning Center. (2022). Retrieved 16 August 2022, from https://learning.postman.com/docs/sending-requests/variables/
+* Firebase Database REST API. (2022). Retrieved 16 August 2022, from https://firebase.google.com/docs/reference/rest/database
