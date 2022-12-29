@@ -25,13 +25,13 @@
       <img width="20%" src="imagenes/request.png">
     </p>
 
-    - _**GET-all**_: Con el método **GET** para obtener todos los elementos de la colección, al URL: `https://nosql-63d27-default-rtdb.firebaseio.com/movies.json`. Envíe la petición. Así luce respuesta del requerimiento en _Postman_.
+    - _**GET-all**_: Con el método **GET** para obtener todos los elementos de la colección, al URL: `https://nosql-63d27-default-rtdb.firebaseio.com/movies.json`. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-all.png">
       </p>
 
-    - _**GET-one**_: Con el método **GET** para del elemento **150** de la colección, al URL: `https://nosql-63d27-default-rtdb.firebaseio.com/movies/150.json`. Envíe la petición. Así luce respuesta del requerimiento en _Postman_.
+    - _**GET-one**_: Con el método **GET** para del elemento **150** de la colección, al URL: `https://nosql-63d27-default-rtdb.firebaseio.com/movies/150.json`. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-one.png">
@@ -49,7 +49,7 @@
       }
       ```
 
-      Envíe la petición. Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del POST.
+      Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del POST.
 
       <p align="center">  
         <img width="47%" src="imagenes/POST.png">
@@ -68,7 +68,7 @@
       }
       ```
 
-      Envíe la petición. Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del PUT.
+      Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del PUT.
 
       <p align="center">  
         <img width="47%" src="imagenes/PUT.png">
