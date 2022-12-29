@@ -6,8 +6,6 @@
 
 ## Instrucciones
 
-* Tome como referencia las instrucciones en [Firebase - Realtime database](https://dawfiec.github.io/DAWM-2022/tutoriales/firebase_realtime_database.html)
-
 * Descargue el _dataset_ de **disney_movies.csv** en [Kaggle - Disney Movies](https://www.kaggle.com/datasets/prateekmaj21/disney-movies).
 * Desde la línea de comandos, instale globalmente el módulo [csv2json](https://www.npmjs.com/package/csv2json).
   + Convierta el dataset de **.csv** a **.json**, con: `csv2json disney_movies.csv disney_movies.json`
@@ -16,12 +14,11 @@
   + Cargue el archivo **disney_movies.json** dentro de la colección **movies**
   + Edite las reglas de acceso a los datos para permitir acceso completo.
 * Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/) en su máquina.
-  + Obtenga una cuenta
-  + Cree una nueva colección, por ejemplo **Movies**,
+  + Obtenga una [cuenta gratuita](https://identity.getpostman.com/signup).
+  + Cree la colección **Movies**,
     <p align="center">  
       <img width="20%" src="imagenes/collection.png">
     </p>
-
 
   + Y agregue los requerimientos:
     <p align="center"> 
