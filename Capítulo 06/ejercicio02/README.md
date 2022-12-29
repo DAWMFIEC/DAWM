@@ -25,19 +25,19 @@
       <img width="20%" src="imagenes/request.png">
     </p>
 
-    - _**GET-all**_: De tipo **GET** para obtener todos la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies.json`. Envíe la petición. Así luce respuesta del requerimiento en _Postman_.
+    - _**GET-all**_: Con el método **GET** para obtener todos los elementos de la colección, al URL: `https://nosql-63d27-default-rtdb.firebaseio.com/movies.json`. Envíe la petición. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-all.png">
       </p>
 
-    - _**GET-one**_: De tipo **GET** para del elemento **150** de la colección, al URL: `https://{{myapp}}-default-rtdb.firebaseio.com/movies/150.json`. Envíe la petición. Así luce respuesta del requerimiento en _Postman_.
+    - _**GET-one**_: Con el método **GET** para del elemento **150** de la colección, al URL: `https://nosql-63d27-default-rtdb.firebaseio.com/movies/150.json`. Envíe la petición. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-one.png">
       </p>
 
-    - _**POST**_: De tipo **POST** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. Modifique el **Body** del requerimiento de tipo **raw**. 
+    - _**POST**_: Con el método **POST** para enviar datos a la colección, al URL `https://nosql-63d27-default-rtdb.firebaseio.com/movies/579.json`. Modifique el **Body** del requerimiento de tipo **raw**. 
       ```
       {
           "genre": "Adventure",
@@ -56,7 +56,7 @@
         <img width="47%" src="imagenes/firebase_POST.png">
       </p>
 
-    - _**PUT**_: De tipo **PUT** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`.  Modifique el **Body** del requerimiento de tipo **raw**. 
+    - _**PUT**_: Con el método **PUT** para enviar datos a la colección, al URL `https://nosql-63d27-default-rtdb.firebaseio.com/movies/579.json`.  Modifique el **Body** del requerimiento de tipo **raw**. 
       ```
       {
           "genre": "Adventure",
@@ -75,7 +75,7 @@
         <img width="47%" src="imagenes/firebase_PUT.png">
       </p>
 
-    - _**DELETE**_: De tipo **DELETE** para enviar datos a la colección, al URL `https://{{myapp}}-default-rtdb.firebaseio.com/movies/579.json`. Envíe la petición. Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del DELETE.
+    - _**DELETE**_: Con el método **DELETE** para enviar datos a la colección, al URL `https://nosql-63d27-default-rtdb.firebaseio.com/movies/579.json`. Envíe la petición. Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del DELETE.
 
       <p align="center">  
         <img width="47%" src="imagenes/DELETE.png">
