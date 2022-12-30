@@ -21,6 +21,8 @@ theme: jekyll-theme-leap-day
 
 ### Aplicación
 
+**Nota:** Aquí optamos por clonar el proyecto y unir las ramas de cada aplicación. 
+
 * Desde la línea de comandos:
   
   + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps)
