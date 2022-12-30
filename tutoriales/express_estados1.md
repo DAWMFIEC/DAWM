@@ -72,8 +72,8 @@ Middleware: auth.js
 
 * * *
 
-* Cree la carpeta `middlewares`
-* Agregue el _script_ de autorización en `middlewares/auth.js`:
+* Cree la carpeta `admin/middlewares`
+* Agregue el _script_ de autorización en `admin/middlewares/auth.js`:
   
     <pre><code>
     var express = require('express');
@@ -235,8 +235,8 @@ Middleware: tracking.js
 
 * * *
 
-* En la carpeta `middlewares`
-  + Agregue el _script_ de rastreo en `middlewares/tracking.js`:
+* En la carpeta `admin/middlewares`
+  + Agregue el _script_ de rastreo en `admin/middlewares/tracking.js`:
   
     ```
     var express = require('express');
