@@ -17,16 +17,6 @@ De [MySQL Community Downloads](https://dev.mysql.com/downloads/), descargue e in
 * Motor de base de datos: [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 * Interfaz gráfica: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
-Proyecto en Express
-===================
-
-* * *
-
-Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html), [Express - ORM (Intermedio)](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html) y [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html).
-
-* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
-    - Para el hito: **`hito6-api`**
-
 
 Curl + Jsontool
 ==============
@@ -43,10 +33,18 @@ Que resulta en:
   <img src="imagenes/curl1.png">
 </p>
 
+Proyecto en Express: REST API
+=============================
 
-Manejador de rutas y registro en la aplicación
-==============================================
-* * *  
+* * *
+
+Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html), [Express - ORM (Intermedio)](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html) y [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html).
+
+* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
+    - Para el hito: **`hito6-api`**
+
+
+## Manejador de rutas y registro en la aplicación
 
 * Cree el manejador de rutas **rest/fotos.js**.
 * Registre la ruta **`'/rest/fotos'`** en la aplicación para el controlador de rutas **rest/fotos.js**. 
@@ -62,9 +60,7 @@ const Etiqueta = require('../models').etiqueta;
 ...
 ```
 
-GET-All
-=======
-* * *
+### GET-All
 
 Para obtener TODOS los registros de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con el método **findAll** de la clase.
 
@@ -107,9 +103,7 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 </p>
 
 
-GET-id
-=======
-* * *
+### GET-id
 
 Para obtener UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con el método **findOne** de la clase.
 
@@ -157,9 +151,7 @@ Para obtener UN registro de una entidad en una base de datos relacional, impleme
 </p>
 
 
-POST
-====
-* * *
+### POST
 
 Para guardar UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **POST** con el método **create** de la clase.
 
@@ -201,9 +193,7 @@ Para guardar UN registro de una entidad en una base de datos relacional, impleme
   <img src="imagenes/response4.png">
 </p>
 
-PUT 
-===
-* * *
+### PUT 
 
 Para actualizar UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **PUT** con el método **update** de la clase.
 
@@ -250,9 +240,7 @@ Para actualizar UN registro de una entidad en una base de datos relacional, impl
   <img src="imagenes/response5.png">
 </p>
 
-DELETE
-======
-* * *
+### DELETE
 
 Para eliminar UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **DELETE** con el método **destroy** de la clase.
 
