@@ -110,6 +110,7 @@ Desde la línea de comandos en la raíz del proyecto.
     ...
     var logger = require('morgan');
     <b style="color:red">var session = require('express-session');</b>
+
     var indexRouter = require('./routes/index');
     ...
     </code></pre>
@@ -208,7 +209,7 @@ Inicio de sesión
 Fin de sesión
 ================
 
-* Modifique el partial `views/partials/header.ejs`. Agregue la referencia a `/login/invalidate`
+* Modifique el partial `admin/views/partials/header.ejs`. Agregue la referencia a `/login/invalidate`
 
     ```
     ...
@@ -216,7 +217,7 @@ Fin de sesión
     ...
     ```
 
-* Modifique el ruteador `routes/login.js`. Agregue el controlador para el método **GET** de la ruta `/invalidate`
+* Modifique el ruteador `admin/routes/login.js`. Agregue el controlador para el método **GET** de la ruta `/invalidate`
 
     <pre><code>
     ...
@@ -285,6 +286,7 @@ Rastreo
 
     var auth = require('./middlewares/auth');
     <b style="color:red">var tracking = require('./middlewares/tracking');</b>
+    
     var app = express();
     </code></pre>
 
