@@ -21,14 +21,14 @@ REST se apoya en los verbos del protocolo HTTP: **GET**, **POST**, **PUT** y **D
 * De [las aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps)
   
   + Línea de comandos (1) para la aplicación **album/api** en el _hito8-api_, con: 
-  ```
-  git clone --branch hito8-api https://github.com/DAWFIEC/DAWM-apps.git DAWM-apps-api
-  ```
+```
+git clone --branch hito8-api https://github.com/DAWFIEC/DAWM-apps.git DAWM-apps-api
+```
   
   + Línea de comandos (2) para la aplicación **album/admin** en el _hito4-admin_, con: 
-  ```
-  git clone --branch hito4-admin https://github.com/DAWFIEC/DAWM-apps.git DAWM-apps-admin
-  ```
+```
+git clone --branch hito4-admin https://github.com/DAWFIEC/DAWM-apps.git DAWM-apps-admin
+```
 
 
 * Verifique que aparezcan los dos proyectos: `DAWM-apps-api/album/api` y `DAWM-apps-admin/album/admin`
