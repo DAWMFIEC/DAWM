@@ -25,7 +25,12 @@ theme: jekyll-theme-leap-day
   + Agregue el controlador de la ruta `"/findByUser/:usuario/json"` para el verbo **GET**. El cual responde un json con el documento (find) que se encuentra en la colección, dado el usuario.
 
 * Compruebe el funcionamiento del servidor, con: **npm start** o **npm run devstart**
-* Acceda a los endpoints de los controladores.
+  + Acceda a los endpoints:
+    - `http://localhost:3000/log_visitas/findAll/json`
+    - `http://localhost:3000/log_visitas/findById/2/json`
+    - `http://localhost:3000/log_visitas/findAllByGender/Female/json`
+    - `http://localhost:3000/log_visitas/findAllByTime/10/30/json`
+    - `http://localhost:3000/log_visitas/findByUser/tcaff0/json`
 
 
 ### Términos
