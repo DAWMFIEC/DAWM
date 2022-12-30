@@ -110,6 +110,8 @@ Controlador
 Comprobación
 ============
 
+* * *
+
 
 * En la línea de comandos (1) del proyecto **album/api**
   + Instale las dependencias, con: `npm install`
