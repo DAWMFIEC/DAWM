@@ -34,8 +34,7 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 * O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
     - Para el hito: **`hito4-admin`**
 
-Vista
-=====
+## Vista
 
 * Descargue y descomprima [fotos_formulario](archivos/fotos_formulario.zip).
   + Mueva el archivo `fotos_formulario.ejs` a la carpeta **admin/views**
@@ -51,8 +50,7 @@ Vista
   </code></pre>
 
 
-Controlador
-===========
+## Controlador
 
 * Modifique el manejador de rutas **admin/routes/index.js**
   + Agregue el controlador de la ruta `"/photos/add"` para el verbo **GET**. 
