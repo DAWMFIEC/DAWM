@@ -42,11 +42,6 @@ git clone --branch hito4-admin https://github.com/DAWFIEC/DAWM-apps.git DAWM-app
 * Realice completamente los tutoriales [Express - Formularios I](https://dawfiec.github.io/DAWM/tutoriales/express_forms1.html) y [Express - Formularios II](https://dawfiec.github.io/DAWM/tutoriales/express_forms2.html)
 * Complete la funcionalidad para los métodos HTTP `DELETE` y `PUT` del modelo **foto**.
 
-### Comprobación
-
-* Identifique los registros ingresados en la base de datos relacional
-* Revise el archivo cargado en la carpeta `api/public/images/`
-
 
 ### Términos
 
