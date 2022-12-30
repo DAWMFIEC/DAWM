@@ -36,7 +36,7 @@ Login
   + Copie el archivo `login/login.ejs` a `admin/views/`
   + Copie el archivo `login/login.js` a `admin/routes/`
   + Copie el archivo `login/login.css` a `admin/public/stylesheets/`
-  + Copie el archivo `login/usuario.svg` a `admin/public/icons/`
+  + Copie la carpeta `login/icons` a `admin/public/`
 
 * Modifique `admin/app.js`
   + Obtenga la referencia a `admin/routes/login.js`
