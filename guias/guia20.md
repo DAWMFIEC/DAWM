@@ -16,26 +16,22 @@ REST se apoya en los verbos del protocolo HTTP: **GET**, **POST**, **PUT** y **D
 
 ### Aplicación
 
-* Desde la línea de comandos:
+**Nota:** Aquí optaremos por clonar el proyecto en diferentes carpetas, una por cada rama (aplicaciones). 
+
+* De [las aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps)
   
-  + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps)
+  + Línea de comandos (1) para la aplicación **album/api** en el _hito8-api_, con: 
   ```
-  git clone https://github.com/DAWFIEC/DAWM-apps.git 
+  git clone --branch hito8-api https://github.com/DAWFIEC/DAWM-apps.git DAWM-apps-api
   ```
-  + Acceda a la carpeta del proyecto
+  
+  + Línea de comandos (2) para la aplicación **album/admin** en el _hito4-admin_, con: 
   ```
-  cd DAWM-apps
-  ```
-  + Ubique el proyecto en la rama _hito7-api_
-  ```
-  git checkout hito7-api
-  ```
-  + Una la rama _hito4-admin_
-  ```
-  git merge origin/hito4-admin
+  git clone --branch hito4-admin https://github.com/DAWFIEC/DAWM-apps.git DAWM-apps-admin
   ```
 
-* Verifique que aparezcan los tres proyectos: `album/api` y `album/admin`
+
+* Verifique que aparezcan los dos proyectos: `DAWM-apps-api/album/api` y `DAWM-apps-admin/album/admin`
 
 <p align="center">
   <img src="imagenes/proyectos20.png">
@@ -43,13 +39,11 @@ REST se apoya en los verbos del protocolo HTTP: **GET**, **POST**, **PUT** y **D
 
 ### Actividades
 
-#### API
-
-#### Admin
+* Realice completamente los tutoriales [Express - Formularios I](https://dawfiec.github.io/DAWM/tutoriales/express_forms1.html) y [Express - Formularios II](https://dawfiec.github.io/DAWM/tutoriales/express_forms2.html)
 
 ### Términos
 
-API REST
+API REST, formularios, carga de archivos
 
 ### Referencias
 
