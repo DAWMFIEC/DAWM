@@ -22,7 +22,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-**middleware**, cookies, sesión, **`autenticación`**, **`autorización`**
+`middleware`, cookies, sesión, `autenticación`, `autorización`
 
 ### Referencias
 
