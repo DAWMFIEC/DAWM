@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Realice completamente el tutorial [Express - Manejo de estados: cookies y sessions](https://dawfiec.github.io/DAWM/tutoriales/express_estados1.html)
+* Realice completamente el tutorial [Express - Manejo de estados I](https://dawfiec.github.io/DAWM/tutoriales/express_estados1.html)
 
 
 ### Términos
