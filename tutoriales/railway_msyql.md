@@ -85,6 +85,42 @@ Aplicación: API
   <img width="60%" src="imagenes/railway_node_env.png">
 </p>
 
+* Compruebe accediendo a las URLs disponibles en el API REST, por ejemplo: `https://api-production-2437.up.railway.app/rest/fotos/findAll/json`
+
+<p align="center">
+  <img width="60%" src="imagenes/railway_api_data.png">
+</p>
+
+
+Logs
+======
+
+* * *
+
+* Desde el panel central de la aplicación, acceda a la opción `View Logs > Deploy Logs` e identifique la ejecución del script: **db:reset**
+
+<p align="center">
+  <img width="60%" src="imagenes/railway_dbcreate.png">
+</p>
+
+Servicio MySQL
+==============
+
+* * *
+
+
+* Desde la página principal [railway.app/dashboard](https://railway.app/dashboard).
+
+<p align="center">
+  <img src="imagenes/railway_projects.png">
+</p>
+
+* Identifique las tablas y los datos migrados desde la aplicación.
+
+<p align="center">
+  <img width="60%" src="imagenes/railway_tables.png">
+  <img width="60%" src="imagenes/railway_data.png">
+</p>
 
 
 Referencias 
