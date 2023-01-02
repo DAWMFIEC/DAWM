@@ -14,8 +14,8 @@ Railway - MySQL
 Railway permite alojar aplicaciones gratuitamente (por tiempo limitado) incluso con el servicio de MySQL.
 
 
-Servicio MySQL
-==============
+Proyecto: MySQL
+===============
 
 * * *
 
@@ -39,12 +39,14 @@ Servicio MySQL
 </p>
 
 
-Aplicación: API
-===============
+Repositorio: API
+=================
 
 * * *
 
-* Clone la aplicación [album/api](https://github.com/DAWFIEC/DAWM-apps) en el `hito7-api`.
+
+* Cree un nuevo repositorio en Github: **api**
+  + Copie y pegue el código de la aplicación [album/api](https://github.com/DAWFIEC/DAWM-apps) en el `hito7-api`.
   + Modifique el archivo `config/config.json` en la clave **production** con los datos para la conexión. Agregue la clave **port** al objeto de configuración.
 
   <pre><code>
@@ -72,6 +74,13 @@ Aplicación: API
   ...
   </code></pre>
 
+  + Guarde los cambios en el repositorio remoto.
+
+
+Aplicación: API
+===============
+
+* * *
 
 * Cree y configure un nuevo proyecto a partir de un repositorio de Github, de acuerdo con las instrucciones de [Railway - Sitio Estático](https://dawfiec.github.io/DAWM/tutoriales/railway_sitio_estatico.html).
 
@@ -79,7 +88,7 @@ Aplicación: API
   <img width="60%" src="imagenes/railway_project_api.png">
 </p>
 
-* En la opción `Variables` configure la variable de `NODE_EN` con el valor `production`
+* En la opción `Variables` configure la variable de `NODE_ENV` con el valor `production`
 
 <p align="center">
   <img width="60%" src="imagenes/railway_node_env.png">
@@ -103,11 +112,11 @@ Logs
   <img width="60%" src="imagenes/railway_dbcreate.png">
 </p>
 
-Servicio MySQL
-==============
+
+Proyecto: MySQL
+===============
 
 * * *
-
 
 * Desde la página principal [railway.app/dashboard](https://railway.app/dashboard).
 

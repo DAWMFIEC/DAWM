@@ -14,16 +14,8 @@ Railway - Sitio Estático
 Railway permite alojar aplicaciones gratuitamente (por tiempo limitado).
 
 
-Repositorio 
-===========
-
-* * *
-
-Utilice o cree un repositorio en Github, en la rama **main** para el despliegue automática en producción (Railway).  
-
-
-Railway
-======
+Cuenta nueva
+============
 
 * * *
 
@@ -54,28 +46,34 @@ Railway
 </p>
 
 
+Repositorio: Admin
+=================
+
+* * *
+
+
+* Cree un nuevo repositorio en Github: **admin**
+  + Copie y pegue el código de la aplicación [album/admin](https://github.com/DAWFIEC/DAWM-apps) de la rama `hito2-admin`.
+  + Guarde los cambios en el repositorio remoto.
+
+
 Aplicación: Admin
 =================
 
 * * *
 
-* Desde la página principal [railway.app/dashboard](https://railway.app/dashboard).
+* En la página principal [railway.app/dashboard](https://railway.app/dashboard).
 
 <p align="center">
   <img src="imagenes/railway_newproject.png">
 </p>
 
-* Cree y configure un nuevo proyecto a partir de un repositorio de Github.
+* Cree y configure un nuevo proyecto a partir del repositorio **admin**.
 
 <p align="center">
-  <img width="75%" src="imagenes/railway_new.png">
-  <img width="75%" src="imagenes/railway_configure.png">
-</p>
-
-* Seleccione el repositorio a desplegar en producción. En este caso, usaremos la aplicación [album/admin](https://github.com/DAWFIEC/DAWM-apps) en el `hito2-admin`.
-
-<p align="center">
-  <img src="imagenes/railway_repositorio.png">
+  <img width="50%" src="imagenes/railway_new.png">
+  <img width="50%" src="imagenes/railway_configure.png">
+  <img width="50%" src="imagenes/railway_repositorio.png">
 </p>
 
 * Seleccione la opción `Deploy now`.
