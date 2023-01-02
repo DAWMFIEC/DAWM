@@ -54,8 +54,8 @@ Railway
 </p>
 
 
-Proyecto
-========
+Aplicación: Admin
+=================
 
 * * *
 
@@ -68,8 +68,8 @@ Proyecto
 * Cree y configure un nuevo proyecto a partir de un repositorio de Github.
 
 <p align="center">
-  <img width="49%" src="imagenes/railway_new.png">
-  <img width="49%" src="imagenes/railway_configure.png">
+  <img width="75%" src="imagenes/railway_new.png">
+  <img width="75%" src="imagenes/railway_configure.png">
 </p>
 
 * Seleccione el repositorio a desplegar en producción. En este caso, usaremos la aplicación [album/admin](https://github.com/DAWFIEC/DAWM-apps) en el `hito2-admin`.
@@ -98,7 +98,25 @@ Proyecto
   <img width="49%" src="imagenes/railway_domain2.png">
 </p>
 
-* Compruebe accediendo a la URL disponible.
+* Compruebe accediendo a la URL disponible, por ejemplo: `https://admin-production-599d.up.railway.app/`
+
+<p align="center">
+  <img src="imagenes/railway_production.png">
+</p>
+
+
+Logs
+======
+
+* * *
+
+* Desde el panel central de la aplicación, acceda a la opción `View Logs` para ver los registros de la aplicación en producción en las opciones: `Details`, `Build Logs` y `Deploy Logs`.
+
+<p align="center">
+  <img width="60%" src="imagenes/railway_logs1.png">
+  <img width="49%" src="imagenes/railway_logs2.png">
+</p>
+
 
 Referencias 
 ===========
