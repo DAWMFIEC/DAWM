@@ -60,13 +60,13 @@ Aplicación: API
   ...
   </code></pre>
 
-  + Modifique el archivo `package.json` en la clave **scripts** con los scripts a ejecutar con el despliegue (i) para la generación de la base de datos y (ii) construir aplicación
+  + Modifique el archivo `package.json` en la clave **scripts** con los scripts a ejecutar con el despliegue (i) para la generación de la base de datos y (ii) iniciar la aplicación en el servidor
 
   <pre><code>
   ...
   "scripts": {
       "db:reset": "npm install sequelize pg && npm install --save-dev sequelize-cli && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
-      "build": "npm run db:reset ",
+      "start": "npm run db:reset && node ./bin/www",
       ...
   }
   ...
@@ -79,7 +79,11 @@ Aplicación: API
   <img width="60%" src="imagenes/railway_project_api.png">
 </p>
 
+* En la opción `Variables` configure la variable de `NODE_EN` con el valor `production`
 
+<p align="center">
+  <img width="60%" src="imagenes/railway_node_env.png">
+</p>
 
 
 
