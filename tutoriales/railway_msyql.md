@@ -113,8 +113,8 @@ Logs
 </p>
 
 
-Proyecto: MySQL
-===============
+Comprobación de tablas y registros
+==================================
 
 * * *
 
@@ -124,7 +124,7 @@ Proyecto: MySQL
   <img src="imagenes/railway_projects.png">
 </p>
 
-* Identifique las tablas y los datos migrados desde la aplicación.
+* Identifique las tablas migradas y los registros generados a partir del despliegue de la aplicación.
 
 <p align="center">
   <img width="60%" src="imagenes/railway_tables.png">
