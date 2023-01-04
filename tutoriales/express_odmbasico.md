@@ -94,7 +94,7 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
   `npx mongoosejs-cli model:create --name log_visitas --attributes usuario:String,genero:String,ciudad:String,ipv4:String,fecha_acceso:Date,tiempo_navegacion_seg:Number,foto:Array`
 
-  + En la carpeta `models` se agregó la clase **foto.js**, con la configuración predeterminada para la clase foto con los atributos especificados.
+  + En la carpeta `models` se agregó la clase **log_visitas.js**, con la configuración predeterminada para la clase log_visitas con los atributos especificados.
 
     <p align="center">
       <img src="imagenes/mongoosejs_foto.png">
