@@ -40,7 +40,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Guía 18: Express + Angular > Cliente (Angular - Express/Admin) - Servidor (API)](guias/guia18.md)
 * [Guía 19: Express > ODM Básico](guias/guia19.md) 
 * [Guía 20: Express > Cliente (Express/Admin) - Servidor (REST API)](guias/guia20.md)
-* [Guía 21: Express > Estado](guias/guia21.md)
+* [Guía 21: Express > Railway](guias/guia21.md)
+* [Guía 22: Express > Estado](guias/guia22.md)
 
 
 ## Tutoriales
