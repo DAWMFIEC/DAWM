@@ -24,7 +24,7 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
     - Para el hito: **`hito8-api`**
 
 
-## Controlador
+## Controlador - REST API
 
 * Modifique el manejador de rutas **api/rest/fotos.js**
   + Agregue la ruta `"public/images/"` donde se almacenarán las imágenes.
@@ -102,7 +102,7 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
     - Para el hito: **`hito5-admin`**
 
 
-## Vista
+## Vista - Admin
 
 * Modifique vista **admin/views/partials/fotos_formulario_add.ejs**
   + Agregue el atributo _enctype_ con el valor _"multipart/form-data"_.
@@ -114,7 +114,7 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
   </code></pre>
 
 
-## Controlador
+## Controlador - Admin
 
 * Modifique el manejador de rutas **admin/routes/index.js**
   + Agregue la referencia a los módulos **multer** y **form-data**, e instance la clase _multer_
