@@ -57,8 +57,8 @@ Repositorio: Admin
   + Guarde los cambios en el repositorio remoto.
 
 
-Aplicación: Admin
-=================
+Proyecto: Github repo
+=====================
 
 * * *
 
@@ -68,11 +68,21 @@ Aplicación: Admin
   <img src="imagenes/railway_newproject.png">
 </p>
 
-* Cree y configure un nuevo proyecto a partir del repositorio **admin**.
+* Cree y configure un nuevo proyecto a partir del repositorio de Github.
 
 <p align="center">
   <img width="50%" src="imagenes/railway_new.png">
   <img width="50%" src="imagenes/railway_configure.png">
+</p>
+
+Aplicación: Admin
+================
+
+* * *
+
+* Seleccione el nuevo repositorio **admin**.
+
+<p align="center">
   <img width="50%" src="imagenes/railway_repositorio.png">
 </p>
 
