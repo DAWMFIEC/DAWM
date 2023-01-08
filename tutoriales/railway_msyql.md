@@ -46,7 +46,7 @@ Repositorio: API
 
 
 * Cree un nuevo repositorio en Github: **api**
-  + Copie y pegue el código de la aplicación [album/api](https://github.com/DAWFIEC/DAWM-apps) en el `hito7-api`.
+  + Copie y pegue el código de la aplicación [album/api](https://github.com/DAWFIEC/DAWM-apps), de la rama `hito7-api`, en su nuevo repositorio.
   + Modifique el archivo `config/config.json` en la clave **production** con los datos para la conexión. Agregue la clave **port** al objeto de configuración.
 
   <pre><code>

@@ -53,7 +53,7 @@ Repositorio: Admin
 
 
 * Cree un nuevo repositorio en Github: **admin**
-  + Copie y pegue el código de la aplicación [album/admin](https://github.com/DAWFIEC/DAWM-apps) de la rama `hito2-admin`.
+  + Copie y pegue el código de la aplicación [album/admin](https://github.com/DAWFIEC/DAWM-apps), de la rama `hito2-admin`, en su nuevo repositorio.
   + Guarde los cambios en el repositorio remoto.
 
 
