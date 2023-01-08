@@ -83,7 +83,7 @@ Aplicación: Admin
 * Seleccione el nuevo repositorio **admin**.
 
 <p align="center">
-  <img width="50%" src="imagenes/railway_repositorio.png">
+  <img width="75%" src="imagenes/railway_repositorio.png">
 </p>
 
 * Seleccione la opción `Deploy now`.
