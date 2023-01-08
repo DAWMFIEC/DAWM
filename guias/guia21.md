@@ -14,7 +14,9 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Realice completamente los tutoriales [Railway - Sitio Estático](https://dawfiec.github.io/DAWM/tutoriales/railway_sitio_estatico.html) y [Railway - MySQL](https://dawfiec.github.io/DAWM/tutoriales/railway_msyql.html)
+* Realice completamente los tutoriales 
+  + [Railway - Sitio Estático](https://dawfiec.github.io/DAWM/tutoriales/railway_sitio_estatico.html), y 
+  + [Railway - MySQL](https://dawfiec.github.io/DAWM/tutoriales/railway_msyql.html)
 
 ### Términos
 
@@ -22,5 +24,5 @@ contenedores, despliegue
 
 ### Referencias
 
-* 
+* Railway. (2023). Retrieved 8 January 2023, from https://railway.app/
 
