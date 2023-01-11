@@ -4,10 +4,8 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-Express - Manejo de estados I
-=============================
-
-##  Cookies y Sessions
+Express - Manejo de estados I (Cookies y Sessions)
+==================================================
 
 Una cookie HTTP, cookie web o cookie de navegador es una pequeña pieza de datos que un servidor envía a el navegador web del usuario. El navegador guarda estos datos y los envía de regreso junto con la nueva petición al mismo servidor. Las cookies se usan generalmente para decirle al servidor que dos peticiones tienen su origen en el mismo navegador web lo que permite, por ejemplo, mantener la sesión de un usuario abierta. Las cookies permiten recordar la información de estado en vista a que el protocolo HTTP es un protocolo sin estado.
 
@@ -69,10 +67,12 @@ Login
   </p>
 
 
-Middleware: auth.js
-===================
+Autorización
+============
 
 * * *
+
+## Middleware: auth.js
 
 * Cree la carpeta `admin/middlewares`
 * Agregue el _script_ de autorización en `admin/middlewares/auth.js`:
@@ -97,10 +97,7 @@ Middleware: auth.js
     </code></pre>
 
 
-Autorización
-============
-
-* * *
+## App.js
 
 Desde la línea de comandos en la raíz del proyecto.
 
@@ -169,8 +166,8 @@ Autenticación
 
 * * *
 
-Inicio de sesión
-================
+## Inicio de sesión
+
 
 * Modifique `admin/routes/login.js`:
   + Agregue la instanciación de la sesión, con:
@@ -208,8 +205,8 @@ Inicio de sesión
   <img src="imagenes/session.png">
 </p>
 
-Fin de sesión
-================
+## Fin de sesión
+
 
 * Modifique el partial `admin/views/partials/header.ejs`. Agregue la referencia a `/login/invalidate`
 
@@ -233,10 +230,12 @@ Fin de sesión
   + De clic en la opción **`Sign out`** de la esquina superior a la derecha.
 
 
-Middleware: tracking.js
-=======================
+Rastreo
+=======
 
 * * *
+
+## Middleware: tracking.js
 
 * En la carpeta `admin/middlewares`
   + Agregue el _script_ de rastreo en `admin/middlewares/tracking.js`:
@@ -253,10 +252,7 @@ Middleware: tracking.js
     ```
 
 
-Rastreo
-=========
-
-* * *
+## App.js
 
 * Instale [**cookie-parser**](https://www.npmjs.com/package/cookie-parser) , con: `npm install --save cookie-parser`
 * Modifique `admin/app.js`:
@@ -301,8 +297,7 @@ Rastreo
     </code></pre>
 
 
-Ultima ruta
-================
+## Ultima ruta
 
 * Modifique `admin/routes/login.js`:
   + Agregue el rastreo para el redireccionamiento, con:
