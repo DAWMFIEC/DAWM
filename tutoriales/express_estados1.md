@@ -97,7 +97,7 @@ Autorización
     </code></pre>
 
 
-## App.js
+## App.js: sesión
 
 Desde la línea de comandos en la raíz del proyecto.
 
@@ -252,7 +252,7 @@ Rastreo
     ```
 
 
-## App.js
+## App.js: cookie
 
 * Instale [**cookie-parser**](https://www.npmjs.com/package/cookie-parser) , con: `npm install --save cookie-parser`
 * Modifique `admin/app.js`:
@@ -336,3 +336,5 @@ Referencias
 * HTTP cookies - HTTP MDN. (2022). Retrieved 21 August 2022, from https://developer.mozilla.org/es/docs/Web/HTTP/Cookies
 * Manejo de Cookies en Express.js · GitBook. (2021). Retrieved 23 August 2021, from https://ull-esit-pl-1617.github.io/estudiar-cookies-y-sessions-en-expressjs-victor-pamela-jesus/cookies/chapter5.html 
 * Sessions en ExpressJS · GitBook. (2021). Retrieved 23 August 2021, from https://ull-esit-dsi-1617.github.io/estudiar-cookies-y-sessions-en-expressjs-alejandro-raul-35l2-p4/sessionsexpress.html
+* required, b., & Hayat, M. (2017). bcrypt Error: data and hash arguments required. Retrieved 11 January 2023, from https://stackoverflow.com/questions/42241113/bcrypt-error-data-and-hash-arguments-required
+* Patel, H. (2022). Password hashing in Node.js with bcrypt - LogRocket Blog. Retrieved 11 January 2023, from https://blog.logrocket.com/password-hashing-node-js-bcrypt/
