@@ -10,21 +10,11 @@ Express - ORM (Avanzado)
 Para reconstruir los modelos de una base de datos preconstruida (tablas, relaciones y datos) a un proyecto de Express, será necesario incorporar el módulo [sequelize-auto](https://www.npmjs.com/package/sequelize-auto).
 
 
-Requerimientos
-===================
-
-* * *
-
-Utiliza el proyecto que desarrollaste con el tutorial de [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html), [Express - Formularios](https://dawfiec.github.io/DAWM/tutoriales/express_forms.html) y [Express - Layout y Partials](https://dawfiec.github.io/DAWM/tutoriales/express_partials.html).
-
-* Instala las dependencias, con: `npm install`
-* Verifica que funcione correctamente al levantar los servicios: `SET DEBUG=misitio:\* & npm start`
-
 Base de datos original
 ======================
 * * *
 
-La base de dato a considerar contiene las tablas **gallery** y **photo**, como se muestra a continuación.
+Ejecute el script [dbauth.sql](archivos/dbauth.sql) en el motor de la base de datos. La base de datos a considerar contiene las tablas **users**, **roles_users** y **roles**, como se muestra a continuación.
 
 <p align="center">
   <img src="imagenes/modelEER.png">
@@ -67,98 +57,30 @@ Modelos
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * Reconstruya los modelos, con: `sequelize-auto -h host -d database -u user -x password -p port`
-  + Especifique el hostname después del parámetro -h **host**
-  + Especifique el nombre de la base de datos después del parámetro  -d **database**
-  + Especifique el nombre del usuario después del parámetro -u **user**
-  + Especifique la contraseña del usuario después del parámetro -x **password**
-  + Especifique el puerto después del parámetro  -p **port**
+  + Especifique el hostname después del parámetro -h **"127.0.0.1"**
+  + Especifique el nombre de la base de datos después del parámetro  -d **"dbauth"**
+  + Especifique el nombre del usuario después del parámetro -u **"root"**
+  + Especifique la contraseña del usuario después del parámetro -x **"root"**
+  + Especifique el puerto después del parámetro  -p **3306**
 
 <p align="center">
   <img src="imagenes/sequelize_auto.png">
 </p>
 
-* Los modelos reconstruidos son **photos** y **gallery** en la carpeta `/models`. 
-  + Además se creó el archivo **`init-models.js`** con las relaciones entre los modelos. Los alias de las claves foráneas (**idgallery_gallery** y **photos**) son utilizadas para referirse a los datos asociados.
+* Los modelos reconstruidos son **users**, **roles_users** y **roles** en la carpeta `/models`. 
+  + Además se creó el archivo **`init-models.js`** con las relaciones entre los modelos. Los alias (**user_id_users**, **role_id_roles**, **roles_users**, **role** y **user**) son utilizadas para referirse a las relaciones entre los modelos.
 
 <pre><code>
-photo.belongsTo(gallery, { as: "idgallery_gallery", foreignKey: "idgallery"});
-gallery.hasMany(photo, { as: "photos", foreignKey: "idgallery"});
+roles.belongsToMany(users, { as: 'user_id_users', through: roles_users, foreignKey: "role_id", otherKey: "user_id" });
+users.belongsToMany(roles, { as: 'role_id_roles', through: roles_users, foreignKey: "user_id", otherKey: "role_id" });
+
+roles_users.belongsTo(roles, { as: "role", foreignKey: "role_id"});
+roles.hasMany(roles_users, { as: "roles_users", foreignKey: "role_id"});
+
+roles_users.belongsTo(users, { as: "user", foreignKey: "user_id"});
+users.hasMany(roles_users, { as: "roles_users", foreignKey: "user_id"});
 </code></pre>
 
-
-Controlador
-===========
-* * *
-
-Para solicitar los datos desde la base de datos, será necesario:
-
-* Agregue al **routes/index.js** la referencia a la instanciación **sequelize** y a los **modelos**
-
-<pre><code>
-var express = require('express');  
-var router = express.Router();  
-  
-<b style="color:red">
-const sequelize = require('../models/index.js').sequelize;
-var initModels = require("../models/init-models");
-var models = initModels(sequelize);  
-</b>  
-  
-/* GET home page. */  
-router.get('/', function(req, res, next) {
-</code></pre>
-
-* El controlador de la ruta **`"/photos"`** solicitará todos las fotos (findAll).
-  + El atributo **include** es opcional. El atributo **include** permite traer los datos asociados (**gallery**) mediante el alias de la clave foránea (**idgallery_gallery**)
-
-<pre><code>
-router.get('/photos', function(req, res, next) {  
-  
-  	<b style="color:red">
-    models.photo.findAll({
-      include: [{ 
-        model: models.gallery,
-        as: 'idgallery_gallery'
-      }],
-    })
-   .then(photos => {
-      res.json(photos)
-   })
-   .catch(error => res.status(400).send(error))
-	</b>
-
-});
-</code></pre>
-
-<p align="center">
-  <img src="imagenes/sequelizeauto_photos.png">
-</p>
-
-* El controlador de la ruta **`"/galleries"`** solicitará todas las galerías (findAll).
-  + El atributo **include** es opcional. El atributo **include** permite traer los datos asociados (**photo**) mediante el alias de la clave foránea (**photos**)
-
-<pre><code>
-router.get('/galleries', function(req, res, next) {  
-  
-    <b style="color:red">
-    models.gallery.findAll({
-       include: [{ 
-          model: models.photo,
-          as: 'photos'
-       }],
-    })
-   .then(galleries => {
-      res.json(galleries)
-   })
-   .catch(error => res.status(400).send(error))
-  </b>
-
-});
-</code></pre>
-
-<p align="center">
-  <img src="imagenes/sequelizeauto_galleries.png">
-</p>
 
 Referencias 
 ===========
