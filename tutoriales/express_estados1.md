@@ -4,8 +4,8 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-Express - Manejo de estados I (Cookies y Sessions)
-==================================================
+Express - Manejo de estados I: Sesión
+=====================================
 
 Una cookie HTTP, cookie web o cookie de navegador es una pequeña pieza de datos que un servidor envía a el navegador web del usuario. El navegador guarda estos datos y los envía de regreso junto con la nueva petición al mismo servidor. Las cookies se usan generalmente para decirle al servidor que dos peticiones tienen su origen en el mismo navegador web lo que permite, por ejemplo, mantener la sesión de un usuario abierta. Las cookies permiten recordar la información de estado en vista a que el protocolo HTTP es un protocolo sin estado.
 
@@ -264,103 +264,6 @@ Autenticación
     </code></pre> 
 
   + De clic en la opción **`Sign out`** de la esquina superior a la derecha.
-
-
-Rastreo
-=======
-
-* * *
-
-## Middleware: tracking.js
-
-* En la carpeta `admin/middlewares`
-  + Agregue el _script_ de rastreo en `admin/middlewares/tracking.js`:
-  
-    ```
-    var express = require('express');
-    var router = express.Router();
-
-    var tracking = (req, res, next) => {
-      res.cookie('tracing', req._parsedOriginalUrl.path , {expire : new Date() + 9999});
-      return next();
-    };
-    module.exports = tracking;
-    ```
-
-
-## App.js: cookie
-
-* Instale [**cookie-parser**](https://www.npmjs.com/package/cookie-parser) , con: `npm install --save cookie-parser`
-* Modifique `admin/app.js`:
-  + Verifique o agregue la referencia a **cookie-parser**, con: 
-
-    <pre><code>
-    ...
-    var path = require('path');
-    <b style="color:red">var cookieParser = require('cookie-parser');</b>
-    var logger = require('morgan');
-    ...
-    </code></pre>
-
-  + Verifique o añada el _middleware_ session a la aplicación, con:
-
-    <pre><code>
-    ...
-    app.use(express.urlencoded({ extended: false }));
-    <b style="color:red">app.use(cookieParser());</b>
-    ...
-    </code></pre>
-
-  + Agregue el _middleware_ **tracking.js** a la ruta raíz `/`:  
-
-    <pre><code>
-    var indexRouter = require('./routes/index');
-    var usersRouter = require('./routes/users');
-    var loginRouter = require('./routes/login');
-
-    var auth = require('./middlewares/auth');
-    <b style="color:red">var tracking = require('./middlewares/tracking');</b>
-    
-    var app = express();
-    </code></pre>
-
-  + Agregue el _middleware_ a la ruta raíz `/`
-
-    <pre><code>
-    ...
-    app.use('/', auth,  <b style="color:red">tracking,</b> indexRouter);
-    ...
-    </code></pre>
-
-
-## Ultima ruta
-
-* Modifique `admin/routes/login.js`:
-  + Agregue el rastreo para el redireccionamiento, con:
-
-  <pre><code>
-  if(valid) {
-    req.session.user = user; 
-
-    <b style="color:red">
-    let tracing = req.cookies.tracing  || ''
-    if(tracing.length > 0)
-      res.redirect(tracing)   
-    else
-      res.redirect('/');
-    </b> 
-    
-  } else {
-  </code></pre>
-
-* Después dar clicks en varios enlaces en la aplicación, verifique el valor de la cookie **tracing**
-  
-  + Cierre y abra la sesión para comprobar el redireccionamiento.
-
-<p align="center">
-  <img src="imagenes/tracing.png">
-</p>
-
 
 
 Referencias 
