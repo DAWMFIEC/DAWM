@@ -89,16 +89,14 @@ Autorización
     var express = require('express');
     var router = express.Router();
 
-    let bd = {  
-      'usuario': 'abc',  
-      'contrasenia': '123'  
-    }
-
     var auth = (req, res, next) => {
-      if (req.session && req.session.user === bd['usuario'] && req.session.admin)
+      
+      if (req.session && req.session.user !== undefined ) {
         return next();
-      else
+      } else {
         return res.sendStatus(401);
+      }
+        
     };
 
     module.exports = auth;
@@ -196,19 +194,25 @@ Autenticación
 
     <pre><code>
     ...
-    router.post('/validate', function(req, res, next) {
+    router.post('/validate', async function(req, res, next) {
 
       let { user, password } = req.body
 
-      if(user == bd['usuario'] && password == bd['contrasenia']) {
-      
-        req.session.user = bd['usuario'];
-        req.session.admin = true;  
-        
+      let userdb = await models.users.findOne({
+        where: {
+          username: user
+        } 
+      })
+
+      let valid = await bcrypt.compare(password, userdb.password);
+
+      if(valid) {
+        req.session.user = user;  
         res.redirect('/');  
       } else {  
         res.redirect('/login'); 
       }
+
     });
     ...
     </code></pre>
