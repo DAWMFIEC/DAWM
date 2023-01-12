@@ -334,9 +334,8 @@ Rastreo
   + Agregue el rastreo para el redireccionamiento, con:
 
   <pre><code>
-  if(usuario == bd['usuario'] && contrasenia == bd['contrasenia']) {
-    req.session.user = bd['usuario'];
-    req.session.admin = true;
+  if(valid) {
+    req.session.user = user; 
 
     <b style="color:red">
     let tracing = req.cookies.tracing  || ''
