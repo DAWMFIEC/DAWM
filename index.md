@@ -96,7 +96,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - Formularios I](tutoriales/express_forms1.md)
 * [Express - Formularios II](tutoriales/express_forms2.md)
 * [Express - ORM Avanzado](tutoriales/express_ormavanzado.md)
-* [Express - Manejo de estado I](tutoriales/express_estados1.md)
+* [Express - Manejo de estados I: Sesión](tutoriales/express_estados1.md)
+* [Express - Manejo de estados II: Cookies](tutoriales/express_estados1.md)
 
 
 
