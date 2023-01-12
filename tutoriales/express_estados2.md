@@ -25,6 +25,11 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
 * O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
     - Para el hito: **`hito9-api`**
 
+* En la línea de comandos (1) del proyecto **album/api**
+  + Instale las dependencias, con: `npm install`
+  + Use la variable de entorno **PORT**, con: `set PORT=4444`
+  + Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
+
 
 Proyecto en Express: Admin
 ==========================
@@ -132,21 +137,6 @@ Rastreo
   <img src="imagenes/tracing.png">
 </p>
 
-
-Comprobación
-============
-
-* * *
-
-* En la línea de comandos (1) del proyecto **album/api**
-  + Instale las dependencias, con: `npm install`
-  + Use la variable de entorno **PORT**, con: `set PORT=4444`
-  + Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
-
-* En la línea de comandos (2) del proyecto **album/admin**
-  + Instale las dependencias, con: `npm install`
-  + Use la variable de entorno **PORT**, con: `set PORT=3080`
-  + Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
 
 
 Referencias 
