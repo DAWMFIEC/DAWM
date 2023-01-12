@@ -14,7 +14,7 @@ Base de datos original
 ======================
 * * *
 
-Ejecute el script [dbauth.sql](archivos/dbauth.sql) en el motor de la base de datos. La base de datos a considerar contiene las tablas **users**, **roles_users** y **roles**, como se muestra a continuación.
+Ejecute el script [dbauth.sql](archivos/dbauth.sql) en el motor de la base de datos. Use el schema **dbauth**. La base de datos a considerar contiene las tablas **users**, **roles_users** y **roles**, como se muestra a continuación.
 
 <p align="center">
   <img src="imagenes/modelEER.png">
