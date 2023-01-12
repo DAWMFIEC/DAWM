@@ -266,6 +266,22 @@ Autenticación
   + De clic en la opción **`Sign out`** de la esquina superior a la derecha.
 
 
+Comprobación
+============
+
+* * *
+
+* En la línea de comandos (1) del proyecto **album/api**
+  + Instale las dependencias, con: `npm install`
+  + Use la variable de entorno **PORT**, con: `set PORT=4444`
+  + Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
+
+* En la línea de comandos (2) del proyecto **album/admin**
+  + Instale las dependencias, con: `npm install`
+  + Use la variable de entorno **PORT**, con: `set PORT=3080`
+  + Verifique el funcionamiento al levantar los servicios, con: `npm run devstart`
+
+
 Referencias 
 ===========
 
