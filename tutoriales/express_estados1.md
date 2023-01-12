@@ -15,6 +15,11 @@ Las cookies se utilizan principalmente con tres propósitos:
 * Personalización. Preferencias de usuario, temas y otras configuraciones
 * Rastreo. Guardar y analizar el comportamiento del usuario
 
+Proyecto en Express: API
+========================
+
+* * *
+
 
 Proyecto en Express: Admin
 ==========================
@@ -159,7 +164,7 @@ Autorización
     </code></pre>
 
 * Compruebe el funcionamiento del servidor, con: `npm run devstart`
-  + Acceda a las URLs `http://localhost:3000/` y `http://localhost:3000/productos`
+  + Acceda a las URLs `http://localhost:3000/` y `http://localhost:3000/photos`
 
   <p align="center" >
     <img width="60%" src="imagenes/express_unauthorized.png">
@@ -224,7 +229,7 @@ Autenticación
     <img src="imagenes/nosession.png">
   </p>
 
-  + Ingrese las credenciales: `abc` y  `123`
+  + Ingrese las credenciales: `admin` y  `admin`
   + Luego de la redirección, revise las **cookies de sesión**
 
 <p align="center">
