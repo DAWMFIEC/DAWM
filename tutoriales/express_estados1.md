@@ -27,6 +27,14 @@ Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/
     - Para el hito: **`hito6-admin`**
 
 
+MySQL
+=====
+
+* * *
+
+Realice las instrucciones que se encuentran en el tutorial [Express - ORM (Avanzado)](https://dawfiec.github.io/DAWM/tutoriales/express_ormavanzado.html).
+
+
 Login
 =====
 
@@ -99,9 +107,8 @@ Autorización
 
 ## App.js: sesión
 
-Desde la línea de comandos en la raíz del proyecto.
 
-* Instale [**express-session**](https://www.npmjs.com/package/express-session) , con: `npm install express-session`
+* Desde la línea de comandos en la raíz del proyecto, instale [**express-session**](https://www.npmjs.com/package/express-session) , con: `npm install express-session`
 * Modifique `admin/app.js`:
   + Agregue la referencia a **express-session**, con: 
 
@@ -168,8 +175,23 @@ Autenticación
 
 ## Inicio de sesión
 
-
+* Desde la línea de comandos en la raíz del proyecto, instale [**bcrypt**](https://www.npmjs.com/package/bcrypt) , con: `npm install bcrypt`
 * Modifique `admin/routes/login.js`:
+  + Agregue la referencia a  `bcrypt`, `sequelize` y a los modelos.
+
+    <pre><code>
+    var express = require('express');
+    var router = express.Router();
+
+    <b style="color:red">
+    const bcrypt = require("bcrypt");
+
+    const sequelize = require('../models/index.js').sequelize;
+    var initModels = require("../models/init-models");
+    var models = initModels(sequelize);</b>
+    ...
+    </code></pre>
+
   + Agregue la instanciación de la sesión, con:
 
     <pre><code>
