@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 21
+## Guía 22
 
 [Regresar](/DAWM/)
 
@@ -13,6 +13,30 @@ theme: jekyll-theme-leap-day
   + Una [sesión](https://support.google.com/analytics/answer/2731565?hl=es-419#zippy=%2Csecciones-de-este-art%C3%ADculo) es un conjunto de interacciones de los usuarios con su sitio web en un periodo determinado. Por ejemplo, una única sesión puede contener varias vistas de página, eventos, interacciones sociales y transacciones de comercio electrónico. Más información acerca de los diferentes tipos de solicitudes en Analytics
 
   Se puede decir que una sesión es el elemento que engloba las acciones del usuario en su sitio web.
+
+
+### Aplicación
+
+**Nota:** Aquí optaremos por clonar el proyecto en diferentes carpetas, una por cada rama (aplicaciones). 
+
+* De [las aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps)
+  
+  + Línea de comandos (1) para la aplicación **album/api** en el _hito9-api_, con: 
+```
+git clone --branch hito9-api https://github.com/DAWFIEC/DAWM-apps.git DAWM-apps-api
+```
+  
+  + Línea de comandos (2) para la aplicación **album/admin** en el _hito6-admin_, con: 
+```
+git clone --branch hito6-admin https://github.com/DAWFIEC/DAWM-apps.git DAWM-apps-admin
+```
+
+
+* Verifique que aparezcan los dos proyectos: `DAWM-apps-api/album/api` y `DAWM-apps-admin/album/admin`
+
+<p align="center">
+  <img src="imagenes/proyectos20.png">
+</p>
 
 
 ### Actividades
