@@ -23,7 +23,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ### Anteriores
 
-[2022 - I](guias2022I.md)
+[2022 - I](guias/2022.md)
 
 ## Tutoriales
 
