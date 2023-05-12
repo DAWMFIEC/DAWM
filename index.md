@@ -20,11 +20,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ## Guías
 
-
-### Anteriores
-
 * [Guía 01: Git + GitHub](2023/guia01.md)
 
+
+### Anteriores
 
 [2022](guias/2022.md)
 
