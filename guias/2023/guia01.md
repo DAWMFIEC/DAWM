@@ -11,9 +11,10 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
+
 ### Bard
 
-Compruebe en [Bard](https://bard.google.com/) para el prompt:
+Compruebe en [Bard](https://bard.google.com/) el prompt:
 
 ```
 ¿Cuáles son las instrucciones en markdown para crear una página principal en Github?
@@ -21,8 +22,9 @@ Compruebe en [Bard](https://bard.google.com/) para el prompt:
 
 [Respuesta](archivos/guia01-bard.pdf)
 
-### [Cheat Sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
-	
+### Cheat Sheet
+
+<img src="https://raw.githubusercontent.com/hbons/git-cheat-sheet/master/preview.png" width="80%">
 
 ### Términos
 
