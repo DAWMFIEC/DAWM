@@ -23,7 +23,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ### Anteriores
 
-[2022 - I](guias/2022.md)
+* [Guía 01: Git + GitHub](2023/guia01.md)
+
+
+[2022](guias/2022.md)
 
 ## Tutoriales
 
@@ -99,7 +102,7 @@ El proceso de diseño y maquetación conlleva la creación de mockups, entre las
 
 En una categoría especial están los IDE en línea que sirven para prototipado rápido: [StackBlitz](https://stackblitz.com/), [Codepen](https://codepen.io/), [Plunker](http://plnkr.co/) y [Codeply](https://www.codeply.com/).
 
-En cuanto a librerías y frameworks del lado del cliente, podemos encontrar a [W3.CSS](https://www.w3schools.com/w3css/default.asp), [`Flex`boxGrid](http://flexboxgrid.com/) o [Bootstrap](https://getbootstrap.com/), permiten abstraerse de las reglas de estilo para maquetar prototipos de alto nivel.
+En cuanto a librerías y frameworks del lado del cliente, podemos encontrar a [W3.CSS](https://www.w3schools.com/w3css/default.asp), [Flex boxGrid](http://flexboxgrid.com/) o [Bootstrap](https://getbootstrap.com/), permiten abstraerse de las reglas de estilo para maquetar prototipos de alto nivel.
 
 Mientras diseñas tu sitio web, puedes utilizar los inspectores de [Mozilla](https://developer.mozilla.org/es/docs/Tools/Page_Inspector) o [Chrome](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2018Q2) para verificar la estructura semántica de las páginas. Y algunos cheatsheets de HTML/CSS/GIT en la carpeta <a href="/cheatsheets">Recursos</a>, [Google Web Fonts](https://devhints.io/google-webfonts) y [Bootstrap](https://hackerthemes.com/bootstrap-cheatsheet/).
 
