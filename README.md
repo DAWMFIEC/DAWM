@@ -2,7 +2,7 @@
 
 ## Sitio web
 
-Enlace al [sitio web](https://dawfiec.github.io/DAWM/).
+Enlace al [sitio web](https://dawmfiec.github.io/DAWM/).
 
 ## Referencias 
 
