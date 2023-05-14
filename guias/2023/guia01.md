@@ -12,8 +12,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Decida el contenido de su repositorio.
-* Diseñe la estructura de su repositorio.
+* Decide el contenido de su repositorio.
+* Diseñe la estructura del contenido de su repositorio.
 * Utilice la referencia según [**Bard**](https://bard.google.com/), para:
 
 ```
