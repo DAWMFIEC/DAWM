@@ -9,8 +9,8 @@ theme: jekyll-theme-leap-day
 ### Actividades
 
 * Decide el contenido de su repositorio, p.e.: proyectos, tecnologías, estado de los proyectos, información de contacto, etc.
-* Diseñe la estructura del contenido de su repositorio, p.e.: decida el orden del contenido, títulos, subtítulos, imágenes, estilo de fuente, etc.
-* Utilice la [respuesta de Bard](bard/guia01-bard.pdf) como referencia para comenzar el repositorio.
+* Diseñe la estructura del contenido de su repositorio, p.e.: decide el orden del contenido, títulos, subtítulos, imágenes, estilo de fuente, etc.
+* Utilice la [respuesta de Bard](bard/guia01-bard.pdf) como referencia para comenzar el repositorio en [Github](https://github.com/).
 
 ### Documentación
 

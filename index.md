@@ -10,19 +10,11 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Fundamental](paginas/fundamental.md)
 * [Enlaces](paginas/enlaces.md)
 * [Errores](paginas/errores.md)
-* [Apuntes](paginas/apuntes.md)
-
-## Recursos
-
-* [Programming-Notes-for-Professionals-books](https://github.com/bao-vn/Programming-Notes-for-Professionals-books/tree/master/GoalKicker)
-* [Sobrecodigo](https://www.instagram.com/sobrecodigo/)
-* [Web.dev](https://web.dev/)
 
 ## Proyectos y Guías
 
 * [Proyecto 01: Repositorio del desarrollador](proyectos/2023/proyecto01.md)
   * [Guía 01: Git + GitHub](guias/2023/guia01.md)
-
 
 ### Anteriores
 
@@ -84,10 +76,15 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - Manejo de estados II: Cookies](tutoriales/express_estados1.md)
 
 
-
 #### Scripts
 
 * [Mock data](tutoriales/mock_data.md)
+
+## Recursos
+
+* [Programming-Notes-for-Professionals-books](https://github.com/bao-vn/Programming-Notes-for-Professionals-books/tree/master/GoalKicker)
+* [Sobrecodigo](https://www.instagram.com/sobrecodigo/)
+* [Web.dev](https://web.dev/)
 
 
 ## Indicaciones Generales
