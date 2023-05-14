@@ -6,12 +6,14 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
+### Proyecto
+
+[Proyecto01](/DAWM/proyectos/2023/proyecto01.md)
+
 ### Actividades
 
-
-### Bard
-
-Con [**Bard**](https://bard.google.com/), compruebe el resultado del prompt:
+* Escoja una 
+* Utilice la referencia del *markdown* según [**Bard**](https://bard.google.com/):
 
 ```
 ¿Cuáles son las instrucciones en markdown para crear una página principal en Github?

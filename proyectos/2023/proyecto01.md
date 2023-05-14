@@ -17,13 +17,22 @@ Durante la etapa académica se desarrolla una serie de soluciones tecnológicas 
 Para ChatGPT, con el prompt:
 
 ```
-Como desarrollador, ¿Cómo presentar al mundo mi trabajo académico-tecnológico desarrollado hasta ahora?
+Como desarrollador, ¿Cómo presentar al mundo mi trabajo 
+académico-tecnológico desarrollado hasta ahora?
 ```
 
 Las respuestas son:
 
 ![chatgpt](archivos/proyecto01-pregunta.png)
 
+Una de las posibles soluciones consiste en: 
+
+```
+Publicar en GitHub: GitHub es una plataforma popular para alojar proyectos de código abierto. 
+Puede alojar su proyecto en GitHub y compartirlo con la comunidad de desarrolladores. También 
+puede contribuir a proyectos de código abierto existentes y hacerse visible en la comunidad.
+```
+
 ### Guías
 
-* [Guía 01: Git + GitHub](../guias/2023/guia01.md)
+* [Guía 01: Git + GitHub](/DAWM/guias/2023/guia01.md)
