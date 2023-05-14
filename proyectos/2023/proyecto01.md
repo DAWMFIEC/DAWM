@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Proyecto 01: Repositorio del desarrollador
 
-[Regresar](/DAWM/)
+[DAWM](/DAWM/)
 
 ### ¿Cómo presentar al mundo mi trabajo académico-tecnológico desarrollado hasta ahora?
 
