@@ -8,18 +8,20 @@ theme: jekyll-theme-leap-day
 
 ### Proyecto
 
-[Proyecto01](/DAWM/proyectos/2023/proyecto01.md)
+[Proyecto01](/DAWM/proyectos/2023/proyecto01)
 
 ### Actividades
 
-* Escoja una 
-* Utilice la referencia del *markdown* según [**Bard**](https://bard.google.com/):
+* Decida el contenido de su repositorio.
+* Diseñe la estructura de su repositorio.
+* Utilice la referencia según [**Bard**](https://bard.google.com/), para:
 
 ```
 ¿Cuáles son las instrucciones en markdown para crear una página principal en Github?
 ```
 
 Una posible respuesta de **Bard** es [guia01-bard.pdf](bard/guia01-bard.pdf).
+
 
 ### Cheat Sheet
 

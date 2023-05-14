@@ -14,7 +14,7 @@ Durante la etapa académica se desarrolla una serie de soluciones tecnológicas 
 
 ### ChatGPT
 
-Para ChatGPT, con el prompt:
+Utilice la referencia según [**ChatGPT**](https://chat.openai.com/), para:
 
 ```
 Como desarrollador, ¿Cómo presentar al mundo mi trabajo 
@@ -28,11 +28,16 @@ Las respuestas son:
 Una de las posibles soluciones consiste en: 
 
 ```
-Publicar en GitHub: GitHub es una plataforma popular para alojar proyectos de código abierto. 
-Puede alojar su proyecto en GitHub y compartirlo con la comunidad de desarrolladores. También 
-puede contribuir a proyectos de código abierto existentes y hacerse visible en la comunidad.
+Publicar en GitHub: GitHub es una plataforma popular para alojar proyectos de 
+código abierto. Puede alojar su proyecto en GitHub y compartirlo con la 
+comunidad de desarrolladores. También puede contribuir a proyectos de código 
+abierto existentes y hacerse visible en la comunidad.
 ```
 
 ### Guías
 
-* [Guía 01: Git + GitHub](/DAWM/guias/2023/guia01.md)
+* [Guía 01: Git + GitHub](/DAWM/guias/2023/guia01)
+
+### Términos
+
+github, chatpgt
