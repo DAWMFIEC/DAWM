@@ -12,14 +12,15 @@ theme: jekyll-theme-leap-day
 
 Durante la etapa académica se desarrolla una serie de soluciones tecnológicas a problemas bajo diferentes contextos. Dichas soluciones fueron escritas con diversos lenguajes de programación, utilizando diversas plataformas y con la implementación de varios frameworks. 
 
-### ChatGPT
+### [**ChatGPT**](https://chat.openai.com/)
 
-Al utilizar [**ChatGPT**](https://chat.openai.com/), con: 
+Para el prompt: 
 
 ```
 Como desarrollador, ¿Cómo presentar al mundo mi trabajo 
 académico-tecnológico desarrollado hasta ahora?
 ```
+La respuesta es:
 
 ![chatgpt](archivos/proyecto01-pregunta.png)
 
