@@ -12,15 +12,9 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Decide el contenido de su repositorio.
-* Diseñe la estructura del contenido de su repositorio.
-* Utilice la referencia según [**Bard**](https://bard.google.com/), para:
-
-```
-¿Cuáles son las instrucciones en markdown para crear una página principal en Github?
-```
-
-Una posible respuesta de **Bard** es [guia01-bard.pdf](bard/guia01-bard.pdf).
+* Decide el contenido de su repositorio, p.e.: proyectos, tecnologías, estado de los proyectos, información de contacto, etc.
+* Diseñe la estructura del contenido de su repositorio, p.e.: decida el orden del contenido.
+* Utilice la guía de [**Bard**](https://bard.google.com/) como referencia para comenzar el repositorio [guia01-bard.pdf](bard/guia01-bard.pdf).
 
 
 ### Cheat Sheet
