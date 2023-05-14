@@ -6,21 +6,18 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-### Contenidos
-
-
 ### Actividades
 
 
 ### Bard
 
-En [**Bard**](https://bard.google.com/), compruebe el resultado del prompt:
+Con [**Bard**](https://bard.google.com/), compruebe el resultado del prompt:
 
 ```
 ¿Cuáles son las instrucciones en markdown para crear una página principal en Github?
 ```
 
-Una probable [respuesta](archivos/guia01-bard.pdf) en **Bard**.
+Una posible respuesta de **Bard** es [guia01-bard.pdf](bard/guia01-bard.pdf).
 
 ### Cheat Sheet
 

@@ -18,9 +18,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Sobrecodigo](https://www.instagram.com/sobrecodigo/)
 * [Web.dev](https://web.dev/)
 
-## Guías
+## Proyectos y Guías
 
-* [Guía 01: Git + GitHub](guias/2023/guia01.md)
+* [Proyecto 01: Repositorio del desarrollador](proyectos/2023/proyecto01.md)
+  * [Guía 01: Git + GitHub](guias/2023/guia01.md)
 
 
 ### Anteriores
