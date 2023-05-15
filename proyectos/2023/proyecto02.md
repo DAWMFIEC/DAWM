@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 Es esencial para presentar tus habilidades y experiencia de manera clara y efectiva a los empleadores potenciales o colaboradores, de tal forma que sea posible destacar tus habilidades organizativas y tus posibilidades para ser seleccionado.
 
-### 
+### ChatGPT
 
 Para el prompt: 
 
