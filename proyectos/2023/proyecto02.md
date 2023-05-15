@@ -6,7 +6,7 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/)
 
-### ¿Como desarrollador, ¿Qué tipo de información debo mostrar en mi curriculum vitae??
+### Como desarrollador, ¿Qué tipo de información debo mostrar en mi curriculum vitae?
 
 ### Antecedentes
 
