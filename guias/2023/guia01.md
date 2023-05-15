@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 ### Documentación
 
 * `Markdown` en [Markdown Guide](https://www.markdownguide.org/).
-* `Repositorios` en [Repositories documentation](https://docs.github.com/en/repositories).
+* `Repositorios` en [Documentación de repositorios](https://docs.github.com/es/repositories).
 * `Actions` en [Documentación de GitHub Actions](https://docs.github.com/es/actions)
 * Git Cheat Sheet
 
