@@ -10,34 +10,12 @@ theme: jekyll-theme-leap-day
 
 * Decide el contenido de su CV, p.e.: secciones y texto.
 * Diseñe la estructura del contenido de su CV, p.e.: el orden de las secciones, cómo listar los elementos (numérico o ítems).
-* Del diseño visual, algunas recomendaciones de:
+* Del diseño, algunas recomendaciones de:
   
-  - ChatGPT
+  - Estructura y contenido, de [ChatGPT](chatgpt/guia02-recomendacion01.png) y de [Bard](bard/guia02-bard01.pdf).
+  - Recomendaciones técnicas, de [ChatGPT](chatgpt/guia02-recomendacion02.png) y de [Bard](bard/guia02-bard02.pdf)
 
-  ```
-  como diseñador gráfico, genera un diseño para un curriculum vitae
-  ```
-  
-  Cuya respuesta es [guia02-recomendacion01](chatgpt/guia02-recomendacion01.png).
 
-  ```
-  como diseñador gráfico, genera un diseño visual para un curriculum vitae
-  ```
-
-  Cuya respuesta es [guia02-recomendacion02](chatgpt/guia02-recomendacion02.png).
-
-  - Bard
-
-  ```
-  As a graphic designer, generate a design for a curriculum vitae.
-  ```
-
-  Cuya respuesta es [guia02-recomendacion03](bard/guia02-bard01.pdf).
-
-  ```
-  As a graphic designer, generate a visual design for a curriculum vitae.
-  ```
-  Cuya respuesta es [guia02-recomendacion03](bard/guia02-bard02.pdf).
 
 ### Documentación
 
