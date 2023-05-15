@@ -6,7 +6,7 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto01](/DAWM/proyectos/2023/proyecto01)
 
-### Actividades
+### Actividades en clases
 
 * Decide el contenido de su repositorio, p.e.: proyectos, tecnologías, estado de los proyectos, información de contacto, etc.
 * Diseñe la estructura del contenido de su repositorio, p.e.: decide el orden del contenido, títulos, subtítulos, imágenes, estilo de fuente, etc.
