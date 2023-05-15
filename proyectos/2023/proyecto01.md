@@ -27,7 +27,3 @@ La respuesta es:
 ### Guías
 
 * [Guía 01: Git + GitHub](/DAWM/guias/2023/guia01)
-
-### Términos
-
-github, chatpgt

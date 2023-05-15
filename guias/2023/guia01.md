@@ -24,7 +24,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-git, github, markdown, bard, url, qr
+git, github, markdown, chatgpt, bard, url, qr
 
 ### Referencias
 
