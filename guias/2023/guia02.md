@@ -31,9 +31,7 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
-* `HTML` en la [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
-  - [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML)
-  - [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
+* `HTML` en la [HTML Living Standard](https://html.spec.whatwg.org/multipage/), [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML) o [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
 
 ### Términos
 
