@@ -25,16 +25,25 @@ theme: jekyll-theme-leap-day
 * Crea un documento HTML: `index.html`
 * Agregue al documento index.html:
   - La `estructura general` sugerida por [Bard](bard/guia02-bard03.pdf). 
-  - La `estructura semántica` sugerida por [Bard](bard/guia02-bard03.pdf).
+  - Organice su información con la `estructura semántica` de acuerdo a la sugerencia de [Bard](bard/guia02-bard04.pdf).
+* Suba el archivo index.html al repositorio **curriculum**.
+* Despliegue el sitio del repositorio **curriculum** utilizando GitHub Pages.
 
 ### Documentación
 
 * `HTML` en la [HTML Living Standard](https://html.spec.whatwg.org/multipage/)
+  - [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML)
+  - [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
 
 ### Términos
 
-estructura general
+HTML, hipertexto, etiquetas, W3C, standard, estructura general, estructura semántica, meta, title, link
 
 ### Referencias
 
 * HTML Standard. (2023). Retrieved 15 May 2023, from https://html.spec.whatwg.org/multipage/
+* HTML: Lenguaje de etiquetas de hipertexto MDN. (2021). Retrieved 18 May 2022, from https://developer.mozilla.org/es/docs/Web/HTML
+* HTML5. Ejemplo de estructura global para página web con HTML5. (2022). Retrieved 18 May 2022, from http://www.edu4java.com/es/web/html5-estructura-global.html
+* Conceptos básicos de HTML - Aprende sobre desarrollo web MDN. (2020). Retrieved 18 May 2022, from https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/HTML_basics
+* Todos los ELEMENTOS SEMÁNTICOS de HTML. (2022). Retrieved 18 May 2022, from https://www.kikopalomares.com/blog/todos-los-elementos-semanticos-de-html
+* HTML, E. (2022). Etiquetas HTML - Acerca de HTML. Retrieved 18 May 2022, from https://acercadehtml.com/etiquetas-html.html
