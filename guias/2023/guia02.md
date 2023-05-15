@@ -11,7 +11,7 @@ theme: jekyll-theme-leap-day
 #### Diseño
 
 * Decide el contenido de su CV, puede considerar la recomendación de [ChatGPT](chatgpt/guia02-recomendacion01.png) o [Bard](bard/guia02-bard01.pdf).
-* Diseñe la estructura del contenido de su CV, p.e.: el orden de las secciones, listar (numerada o no numerada) elementos, etc.
+* Diseñe la estructura del contenido de su CV, p.e.: el orden de las secciones, título de cada sección, lista numerada o no numerada de elementos, etc.
 
 #### Github
 
@@ -28,7 +28,8 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
-* `HTML` en [HTML Living Standard](https://html.spec.whatwg.org/multipage/), [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML) o [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png)
+* `HTML` en [HTML Living Standard](https://html.spec.whatwg.org/multipage/), [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML) o [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png).
+* Valide 
 
 ### Términos
 
