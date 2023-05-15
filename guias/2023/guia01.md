@@ -11,18 +11,22 @@ theme: jekyll-theme-leap-day
 * Decide el contenido de su repositorio, p.e.: proyectos, tecnologías, estado de los proyectos, información de contacto, etc.
 * Diseñe la estructura del contenido de su repositorio, p.e.: decide el orden del contenido, títulos, subtítulos, imágenes, estilo de fuente, etc.
 * Utilice la [respuesta de Bard](bard/guia01-bard.pdf) como referencia para comenzar el repositorio en [Github](https://github.com/).
+* En el repositorio, revisa en **Actions** el `workflow` de despliegue del sitio.
+* Accede al URL del sitio desplegado.
+* Genera el código QR desde el sitio [QR Code Generator](https://br.qr-code-generator.com/).
 
 ### Documentación
 
 * `Markdown` en [Markdown Guide](https://www.markdownguide.org/).
 * `Repositorios` en [Repositories documentation](https://docs.github.com/en/repositories).
+* `Actions` en [Documentación de GitHub Actions](https://docs.github.com/es/actions)
 * Git Cheat Sheet
 
 <img src="https://raw.githubusercontent.com/hbons/git-cheat-sheet/master/preview.png" width="80%">
 
 ### Términos
 
-git, github, markdown, bard
+git, github, markdown, bard, url
 
 ### Referencias
 
