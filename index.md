@@ -16,8 +16,14 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 01: Repositorio del desarrollador](proyectos/2023/proyecto01)
   * [Guía 01: Git + GitHub](guias/2023/guia01)
 * [Proyecto 02: Curriculum Vitae](proyectos/2023/proyecto02)
+  * [Guía 02: HTML - Estructura global, semánticas y etiquetas](guias/2023/guia02)
+  * [Guía 03: HTML - Formularios, multimedios y mapas](guias/2023/guia03)
+  * [Guía 04: CSS - Selectores y propiedades, modelo de caja](guias/2023/guia04)
+  * [Guía 05: CSS - Grid vs Flexbox](guias/2023/guia05)
 * [Proyecto 03: Landing Page - SPA](proyectos/2023/proyecto03)
+  * [Guía 06: Bootstrap - Responsive Design](guias/2023/guia06)
 * [Proyecto 04: Clima - MPA](proyectos/2023/proyecto04)
+  * [Guía 07: Javascript - Introducción](guias/2023/guia07)
 
 ### Anteriores
 
