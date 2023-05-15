@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
 * Crea un documento HTML: `index.html`
 * Agregue al documento index.html:
   - La `estructura general` sugerida por [Bard](bard/guia02-bard03.pdf). 
-  - Organice su información con la `estructura semántica` de acuerdo a la sugerencia de [Bard](bard/guia02-bard04.pdf).
+  - Organice el contenido de acuerdo con la `estructura semántica` sugerencia por [Bard](bard/guia02-bard04.pdf).
 * Suba el archivo index.html al repositorio **curriculum**.
 * Despliegue el sitio del repositorio **curriculum** utilizando GitHub Pages.
 
