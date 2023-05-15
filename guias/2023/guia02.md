@@ -18,13 +18,13 @@ theme: jekyll-theme-leap-day
   como diseñador gráfico, genera un diseño para un curriculum vitae
   ```
   
-  ![guia02-recomendacion01](chatgpt/guia02-recomendacion01.png)
+  Cuya respuesta es [guia02-recomendacion01](chatgpt/guia02-recomendacion01.png).
 
   ```
   como diseñador gráfico, genera un diseño visual para un curriculum vitae
   ```
 
-  ![guia02-recomendacion02](chatgpt/guia02-recomendacion02.png)
+  Cuya respuesta es [guia02-recomendacion02](chatgpt/guia02-recomendacion02.png).
 
   - Bard
 
@@ -32,12 +32,12 @@ theme: jekyll-theme-leap-day
   As a graphic designer, generate a design for a curriculum vitae.
   ```
 
-  Cuya respuesta es [guia02-recomendacion03](bard/guia02-bard01.pdf)
+  Cuya respuesta es [guia02-recomendacion03](bard/guia02-bard01.pdf).
 
   ```
   As a graphic designer, generate a visual design for a curriculum vitae.
   ```
-  Cuya respuesta es [guia02-recomendacion03](bard/guia02-bard02.pdf)
+  Cuya respuesta es [guia02-recomendacion03](bard/guia02-bard02.pdf).
 
 ### Documentación
 
