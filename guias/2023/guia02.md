@@ -18,13 +18,13 @@ theme: jekyll-theme-leap-day
 
 #### Github
 
-* Crea un repositorio con el nombre **curriculum**
+* Crea un repositorio en GitHub con el nombre **curriculum**.
 
 ### Actividades en clases
 
 * Crea un documento HTML: `index.html`
 * Agrega al documento index.html:
-  - `Estructura general`:  [estructura general](bard/guia02-bard03.pdf). 
+  - La `estructura general` sugerida por [Bard](bard/guia02-bard03.pdf). 
 
 ### Documentación
 
