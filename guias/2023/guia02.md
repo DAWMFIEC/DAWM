@@ -29,9 +29,12 @@ theme: jekyll-theme-leap-day
 ### Documentación
 
 * `HTML` en [HTML Living Standard](https://html.spec.whatwg.org/multipage/), [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML) o [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png).
-  * Valide el soporte de los grupos de etiquetas en su navegador, en [HTML5 Test](https://html5test.com/).
-  * Verifique el soporte de cada etiqueta en varios navegadores por versión, en [Can I Use](https://caniuse.com/).
-  * Verifique el anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
+
+### Validación
+
+* Soporte de los grupos de etiquetas en su navegador, en [HTML5 Test](https://html5test.com/).
+* Soporte de cada etiqueta en diversos navegadores por versión, en [Can I Use](https://caniuse.com/).
+* Verifique el anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
 
 ### Términos
 
