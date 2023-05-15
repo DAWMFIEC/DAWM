@@ -25,8 +25,8 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 02: HTML - Estructura global, semánticas y etiquetas](guias/2023/guia02)
-* [Guía 03: HTML - Formularios, multimedios y mapas](guias/2023/guia03)
-* [Guía 04: CSS - Selectores y propiedades, modelo de caja](guias/2023/guia04)
-* [Guía 05: CSS - Grid vs Flexbox](guias/2023/guia05)
+* [Guía 02: HTML - Estructura global, semánticas y etiquetas](/DAWM/guias/2023/guia02)
+* [Guía 03: HTML - Formularios, multimedios y mapas](/DAWM/guias/2023/guia03)
+* [Guía 04: CSS - Selectores y propiedades, modelo de caja](/DAWM/guias/2023/guia04)
+* [Guía 05: CSS - Grid vs Flexbox](/DAWM/guias/2023/guia05)
 
