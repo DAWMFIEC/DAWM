@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 ### Antecedentes
 
-Es esencial para presentar tus habilidades y experiencia de manera clara y efectiva a los empleadores potenciales o colaboradores, de tal forma que sea posible destacar tus habilidades organizativas y tus posibilidades para ser seleccionado.
+Es esencial presentar tus habilidades y experiencia de manera clara y efectiva a los empleadores potenciales o colaboradores mediante un CV. De tal forma que sea posible destacar tus habilidades organizativas y tus posibilidades para ser seleccionado.
 
 ### ChatGPT
 
@@ -21,7 +21,16 @@ Como desarrollador, ¿Qué tipo de información debo mostrar en mi curriculum vi
 ```
 La respuesta es:
 
-![proyecto2](archivos/proyecto02-pregunta.png)
+![proyecto2](archivos/proyecto02-pregunta1.png)
+
+Mientras que para el prompt: 
+
+```
+Como desarrollador, ¿Qué tipo de información NO debo mostrar en mi curriculum vitae?
+```
+La respuesta es:
+
+![proyecto2](archivos/proyecto02-pregunta2.png)
 
 ### Guías
 
