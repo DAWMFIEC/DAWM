@@ -23,8 +23,9 @@ theme: jekyll-theme-leap-day
 ### Actividades en clases
 
 * Crea un documento HTML: `index.html`
-* Agrega al documento index.html:
+* Agregue al documento index.html:
   - La `estructura general` sugerida por [Bard](bard/guia02-bard03.pdf). 
+  - La `estructura semántica` sugerida por [Bard](bard/guia02-bard03.pdf).
 
 ### Documentación
 
@@ -32,7 +33,8 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
+estructura general
 
 ### Referencias
 
-* 
+* HTML Standard. (2023). Retrieved 15 May 2023, from https://html.spec.whatwg.org/multipage/
