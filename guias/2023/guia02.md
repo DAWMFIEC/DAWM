@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 * Agregue al documento index.html:
   - La `estructura general` sugerida por [Bard](bard/guia02-bard02.pdf). 
 
-      **Mínimo:** `header`, 3 etiquetas `section`, 1 etiqueta `nav` y 1 etiqueta `footer` 
+      **Mínimo:** 1 etiqueta `header`, 3 etiquetas `section`, 1 etiqueta `nav` y 1 etiqueta `footer` 
 
   - Organice el contenido de acuerdo con la `estructura semántica` sugerencia por [Bard](bard/guia02-bard03.pdf).
 
@@ -35,11 +35,9 @@ theme: jekyll-theme-leap-day
 
 * `HTML` en [HTML Living Standard](https://html.spec.whatwg.org/multipage/), [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML) o [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png).
 
-### Validación
-
-* Soporte de los grupos de etiquetas en su navegador, en [HTML5 Test](https://html5test.com/).
-* Soporte de cada etiqueta en diversos navegadores por versión, en [Can I Use](https://caniuse.com/).
-* Verifique el anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
+  * Soporte de los grupos de etiquetas en su navegador, en [HTML5 Test](https://html5test.com/).
+  * Soporte de cada etiqueta en diversos navegadores por versión, en [Can I Use](https://caniuse.com/).
+  * Verificación en el anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
 
 ### Términos
 
