@@ -23,9 +23,12 @@ theme: jekyll-theme-leap-day
 * Agregue al documento index.html:
   - La `estructura general` sugerida por [Bard](bard/guia02-bard02.pdf). 
 
-      **Mínimo:** 1 etiqueta `header`, 3 etiquetas `section`, 1 etiqueta `nav` y 1 etiqueta `footer` 
+      **Mínimo:** etiqueta &lt;title&gt;; y etiqueta &lt;meta&gt; para _keywords_, 
+      _description_ y _author_
 
   - Organice el contenido de acuerdo con la `estructura semántica` sugerencia por [Bard](bard/guia02-bard03.pdf).
+      
+      **Mínimo:** 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt; 
 
 
 * Suba el archivo index.html al repositorio **curriculum**.
