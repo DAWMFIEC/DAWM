@@ -8,14 +8,15 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Decide y diseña el contenido de su CV para incorporar un formulario. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard01.pdf)
-* Decide y diseña el contenido de su CV para incorporar una imagen o un video. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard02.pdf)
-* Decide y diseña el contenido de su CV para agregar un mapa. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard03.pdf)
+* Decide y diseña el contenido de su CV para incorporar un formulario. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard01.pdf).
+* Decide y diseña el contenido de su CV para incorporar una imagen o un video. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard02.pdf).
+* Decide y diseña el contenido de su CV para agregar un mapa. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard03.pdf).
 
 
 ### Actividades en clases
 
-*  Utiliza el _prompt_ para [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) para preguntar por el uso de las etiquetas _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_ bajo el contexto: 
+* Modifica el archivo `index.html` del repositorio **curriculum**.
+* Organice el contenido de su CV mediante las etiquetas contenedoras _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. Por ejemplo, el siguiente _prompt_ en [Bard](https://bard.google.com/): 
 
 	```
 	Como desarrollador de aplicaciones web, ¿cómo incorporo las etiquetas 
@@ -23,9 +24,9 @@ theme: jekyll-theme-leap-day
 	Muéstrame ejemplos de cómo utilizar cada una de las etiquetas.
 	```
 
-	Una posible respuesta de [Bard](bard/guia03-bard04.pdf)
+	Genera la siguiente [respuesta](bard/guia03-bard04.pdf).
 
-*  Utiliza el _prompt_ para [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) para preguntar por el uso de las etiquetas _&lt;form&gt;_, _&lt;img&gt;_, _&lt;video&gt;_ y _&lt;map&gt;_.
+* Organice el contenido del sitio para el uso de un formulario, una imagen, un video y un mapa. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) el posible uso de estas etiquetas. 
 
 ### Documentación
 
