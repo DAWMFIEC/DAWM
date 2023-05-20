@@ -13,8 +13,9 @@ theme: jekyll-theme-leap-day
 *  Utiliza el _prompt_ para [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) para preguntar por el uso de las etiquetas _&lt;div&gt;_, _&lt;p&gt;_, _&lt;span&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_, _&lt;img&gt;_ y _&lt;a&gt;_ bajo el contexto: 
 
 	```
-
-	Como desarrollador de aplicaciones web, ¿cómo incorporo las etiquetas div, span, p, table, ul, ol, a e img con el contenido de un curriculum? Muéstrame ejemplos de cómo utilizar cada una de las etiquetas.
+	Como desarrollador de aplicaciones web, ¿cómo incorporo las etiquetas 
+	div, span, p, table, ul, ol, a e img con el contenido de un curriculum? 
+	Muéstrame ejemplos de cómo utilizar cada una de las etiquetas.
 	```
 
 	Una posible respuesta de [Bard](bard/guia03-bard04.pdf)
