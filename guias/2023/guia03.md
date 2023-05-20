@@ -8,17 +8,24 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+* Decide y diseña el contenido de su CV para incorporar un formulario. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard01.pdf)
+* Decide y diseña el contenido de su CV para incorporar una imagen o un video. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard02.pdf)
+* Decide y diseña el contenido de su CV para agregar un mapa. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard03.pdf)
+
+
 ### Actividades en clases
 
-*  Utiliza el _prompt_ para [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) para preguntar por el uso de las etiquetas _&lt;div&gt;_, _&lt;p&gt;_, _&lt;span&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_, _&lt;img&gt;_ y _&lt;a&gt;_ bajo el contexto: 
+*  Utiliza el _prompt_ para [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) para preguntar por el uso de las etiquetas _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_ bajo el contexto: 
 
 	```
 	Como desarrollador de aplicaciones web, ¿cómo incorporo las etiquetas 
-	div, span, p, table, ul, ol, a e img con el contenido de un curriculum? 
+	div, span, p, ul, ol, table y a con el contenido de un curriculum? 
 	Muéstrame ejemplos de cómo utilizar cada una de las etiquetas.
 	```
 
 	Una posible respuesta de [Bard](bard/guia03-bard04.pdf)
+
+*  Utiliza el _prompt_ para [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) para preguntar por el uso de las etiquetas _&lt;form&gt;_, _&lt;img&gt;_, _&lt;video&gt;_ y _&lt;map&gt;_.
 
 ### Documentación
 
@@ -26,7 +33,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-
+contenedores, multimedia, imagenes, videos, formulario
 
 ### Referencias
 
