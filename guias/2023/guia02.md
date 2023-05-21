@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-* Crea un documento HTML: `index.html`
+* Cree un documento HTML: `index.html`
 * Agregue al documento index.html:
   - La `estructura general` sugerida por [Bard](bard/guia02-bard02.pdf). 
 
