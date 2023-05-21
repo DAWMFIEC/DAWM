@@ -16,7 +16,11 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clase
 
- espaciado y alineación, navegación y estado activo
+* Modifique el archivo `index.html` del repositorio **curriculum**.
+
+* Actualice el archivo `index.html` en el repositorio **curriculum**.
+
+espaciado y alineación, navegación y estado activo
 
 ### Documentación
 
