@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 * Decide el contenido de su repositorio, p.e.: proyectos, tecnologías, estado de los proyectos, información de contacto, etc.
 * Diseñe la estructura del contenido de su repositorio, p.e.: decide el orden del contenido, títulos, subtítulos, imágenes, estilo de fuente, etc.
-* Utilice la [respuesta de Bard](bard/guia01-bard.pdf) como referencia para comenzar el repositorio en [Github](https://github.com/).
+* Utilice la [respuesta de Bard](bard/guia01-bard01.pdf) como referencia para comenzar el repositorio en [Github](https://github.com/).
 * Genera el código QR del sitio en [QR Code Generator](https://br.qr-code-generator.com/).
 
 ### Documentación
