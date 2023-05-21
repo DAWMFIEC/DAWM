@@ -39,9 +39,12 @@ En caso de necesitar contenido de relleno:
 ### Documentación
 
 * `HTML` en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/HTML).
-  - Soporte para [formularios](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) HTML.
-  - [Imágenes](https://developer.mozilla.org/es/docs/Web/HTML/Element/img) y [videos](https://www.w3schools.com/html/html5_video.asp) incrustados en un documento HTML.
-  - Soporte para mapas en [Google](https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/) o [Leaflet](https://mappinggis.com/2013/06/como-crear-un-mapa-con-leaflet/).
+	- Lista de atributos en [W3Docs - HTML Attributes](https://www.w3docs.com/learn-html/html-attributes.html).
+
+* Soporte para elementos HTML:
+  - [Formularios](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form).
+  - [Imágenes](https://developer.mozilla.org/es/docs/Web/HTML/Element/img) y [videos](https://www.w3schools.com/html/html5_video.asp).
+  - Mapas en [Google](https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/) o [Leaflet](https://mappinggis.com/2013/06/como-crear-un-mapa-con-leaflet/).
 
 ### Términos
 
