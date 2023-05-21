@@ -15,8 +15,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-* Modifica el archivo `index.html` del repositorio **curriculum**.
-* Organice el contenido de su CV mediante las etiquetas contenedoras _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. Por ejemplo, el siguiente _prompt_ en [Bard](https://bard.google.com/): 
+* Modifique el archivo `index.html` del repositorio **curriculum**.
+* Organice el contenido de cada una de las secciones de su CV mediante las etiquetas contenedoras _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. Por ejemplo, el siguiente _prompt_ en [Bard](https://bard.google.com/): 
 
 	```
 	Como desarrollador de aplicaciones web, ¿cómo incorporo las etiquetas 
@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 
 	Genera la siguiente [respuesta](bard/guia03-bard04.pdf).
 
-* Organice el contenido del sitio para el uso de un formulario, una imagen, un video y un mapa. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) el posible uso de estas etiquetas. 
+* Diseñe y modifique/agregue secciones de su CV, cuyo contenido que incorpore un formulario, una imagen, un video y un mapa. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
 
 ### Documentación
 
