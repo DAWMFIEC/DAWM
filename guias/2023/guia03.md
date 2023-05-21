@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 ### Actividades en clases
 
 * Modifique el archivo `index.html` del repositorio **curriculum**.
-* Organice el contenido de cada una de las secciones de su CV mediante las etiquetas contenedoras _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. Por ejemplo, el siguiente _prompt_ en [Bard](https://bard.google.com/): 
+* Organice y agregue contenido a cada una de las secciones de su CV mediante las etiquetas contenedoras _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. Por ejemplo, el siguiente _prompt_ en [Bard](https://bard.google.com/): 
 
 	```
 	Como desarrollador de aplicaciones web, ¿cómo incorporo las etiquetas 
@@ -26,11 +26,14 @@ theme: jekyll-theme-leap-day
 
 	Genera la siguiente [respuesta](bard/guia03-bard04.pdf).
 
-* Diseñe y modifique/agregue secciones de su CV, cuyo contenido que incorpore un formulario, una imagen, un video y un mapa. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
+* Diseñe y modifique, o agregue, secciones de su CV, cuyo contenido que incorpore un formulario, una imagen, un video y un mapa. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
 
 ### Documentación
 
 * `HTML` en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/HTML).
+  - Soporte para [formularios](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) HTML.
+  - [Imágenes](https://developer.mozilla.org/es/docs/Web/HTML/Element/img) y [videos](https://www.w3schools.com/html/html5_video.asp) incrustados en un documento HTML.
+  - Soporte para mapas en [Google](https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/) o [Leaflet](https://mappinggis.com/2013/06/como-crear-un-mapa-con-leaflet/).
 
 ### Términos
 
