@@ -8,13 +8,15 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### Diseño
+
 * Escoja una combinación de tipografías de acuerdo con la recomendación de [Fontjoy](https://fontjoy.com/).
-* Escoja una combinación de colores de acuerdo con la recomendación de [ColorMagic](https://colormagic.app/).
+* Escoja una combinación de colores de acuerdo con la recomendación de [ColorMagic](https://colormagic.app/) o la guía personalizada de [Happy Hues](https://www.happyhues.co/).
 
 
 ### Actividades en clase
 
-
+ espaciado y alineación, navegación y estado activo
 
 ### Documentación
 
