@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 
 ### Contenido
 
-En caso de necesitar contenido de relleno:
+En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 * Como texto de [Lorem Ipsum](https://www.lipsum.com/), e
 * Imágenes como marcadores de posición, en [Placehold](https://placehold.co/).
