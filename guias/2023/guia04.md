@@ -37,9 +37,7 @@ Sugerencia de [Bard](bard/guia04-bard02.pdf)
 
 Sugerencia de [Bard](bard/guia04-bard03.pdf)
 
-* Actualice el archivo `index.html` en el repositorio **curriculum**.
-
-espaciado y alineación, navegación y estado activo
+* Actualice los archivos en el repositorio **curriculum**.
 
 ### Documentación
 
