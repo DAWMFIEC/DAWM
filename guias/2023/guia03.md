@@ -34,7 +34,7 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 	Genera la siguiente [respuesta](bard/guia03-bard04.pdf).
 
-* Diseñe y modifique, o agregue, secciones de su CV, cuyo contenido que incorpore un formulario, una imagen, un video y un mapa. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
+* Diseñe y modifique, o agregue, secciones de su CV, que cuyo contenido incorpore un formulario, una imagen, un video y un mapa. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
 
 * Actualice el archivo `index.html` en el repositorio **curriculum**.
 
