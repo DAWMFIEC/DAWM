@@ -17,7 +17,6 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clase
 
-* Modifique el archivo `index.html` del repositorio **curriculum**.
 * Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la **hoja de estilo externa** `stylesheets/style.css` y para agregar la referencia de la hoja de estilo externa en el archivo `index.html`
 
 **Nota:** Verifique en el navegador el efecto de cada uno de los siguientes cambios en la hoja de estilo externa.
@@ -37,7 +36,7 @@ Sugerencia de [Bard](bard/guia04-bard02.pdf)
 
 Sugerencia de [Bard](bard/guia04-bard03.pdf)
 
-* Actualice los archivos en el repositorio **curriculum**.
+* Actualice todos los archivos en el repositorio **curriculum**.
 
 ### Documentación
 
@@ -50,4 +49,8 @@ CSS, reglas CSS, propiedades CSS, selectores CSS
 
 ### Referencias
 
-* 
+* CSS  MDN. (2023). Retrieved 22 May 2023, from https://developer.mozilla.org/es/docs/Web/CSS
+* CSS Selectors Reference. (2023). Retrieved 22 May 2023, from https://www.w3schools.com/cssref/css_selectors.php
+* ColorMagic  AI Color Palette Generator. (2023). Retrieved 22 May 2023, from https://colormagic.app/
+* Happy Hues - Curated colors in context. (2023). Retrieved 22 May 2023, from https://www.happyhues.co/
+* Fontjoy - Generate font pairings in one click. (2023). Retrieved 22 May 2023, from https://fontjoy.com/
