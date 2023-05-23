@@ -11,19 +11,18 @@ theme: jekyll-theme-leap-day
 #### Diseño
 
 * Escoja una combinación de familias tipografías de acuerdo con la recomendación de [Fontjoy](https://fontjoy.com/).
-* Elija una estructura para el sitio de [Frontend Practice](https://www.frontendpractice.com/projects)
 * Selecione una combinación de colores de acuerdo con la guía de [Happy Hues](https://www.happyhues.co/), [Huemint](https://huemint.com/website-2/), o [ColorMagic](https://colormagic.app/). 
 
 
 ### Actividades en clase
 
-* Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la **hoja de estilo externa** `stylesheets/style.css` y para agregar la referencia de la hoja de estilo externa en el archivo `index.html`
+* Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la **hoja de estilo externa** `stylesheets/style.css` y para agregar la referencia en el archivo `index.html`
 
 #### Servidor HTTP 
 
 * Levante un [servidor HTTP en Python](/DAWM/tutoriales/python) en la ruta de la aplicación.
 * Acceda desde el navegador al URL del servidor HTTP en Python, y
-* Compruebe cada uno de los siguientes cambios en las reglas CSS al actualizar el URL en el navegador.
+* Compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el URL en el navegador.
 
 #### Estilo en cascada y familia tipográfica
 
