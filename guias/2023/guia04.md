@@ -11,15 +11,19 @@ theme: jekyll-theme-leap-day
 #### Diseño
 
 * Escoja una combinación de tipografías de acuerdo con la recomendación de [Fontjoy](https://fontjoy.com/).
-* Selecione una combinación de colores de acuerdo con la guía minuciosa de [Happy Hues](https://www.happyhues.co/). 
-  - **Opcional:** [ColorMagic](https://colormagic.app/) ofrece una recomendación de paleta de colores de acuerdo con palabras claves. 
+* Elija una estructura para el sitio de [Frontend Practice](https://www.frontendpractice.com/projects)
+* Selecione una combinación de colores de acuerdo con la guía de [Happy Hues](https://www.happyhues.co/), [Huemint](https://huemint.com/website-2/), o [ColorMagic](https://colormagic.app/). 
 
 
 ### Actividades en clase
 
 * Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la **hoja de estilo externa** `stylesheets/style.css` y para agregar la referencia de la hoja de estilo externa en el archivo `index.html`
 
-**Nota:** Verifique en el navegador el efecto de cada uno de los siguientes cambios en la hoja de estilo externa.
+#### Verificación 
+
+* Levante un [servidor HTTP en Python](/DAWM/tutoriales/python).
+* Acceda desde el navegador al URL del servidor HTTP en Python .
+* Compruebe cada uno de los siguientes cambios al actualizar el sitio desde el navegador.
 
 #### Estilo en cascada y familia tipográfica
 
@@ -45,7 +49,7 @@ Sugerencia de [Bard](bard/guia04-bard03.pdf)
 
 ### Términos
 
-CSS, reglas CSS, propiedades CSS, selectores CSS
+CSS, reglas CSS, propiedades CSS, selectores CSS, HTTP, servidor HTTP, peticiones y respuestas HTTP
 
 ### Referencias
 
@@ -54,3 +58,4 @@ CSS, reglas CSS, propiedades CSS, selectores CSS
 * ColorMagic  AI Color Palette Generator. (2023). Retrieved 22 May 2023, from https://colormagic.app/
 * Happy Hues - Curated colors in context. (2023). Retrieved 22 May 2023, from https://www.happyhues.co/
 * Fontjoy - Generate font pairings in one click. (2023). Retrieved 22 May 2023, from https://fontjoy.com/
+* The W3C Markup Validation Service. (2022). Retrieved 24 May 2022, from https://validator.w3.org/
