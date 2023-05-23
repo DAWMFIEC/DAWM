@@ -19,26 +19,28 @@ theme: jekyll-theme-leap-day
 
 * Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la **hoja de estilo externa** `stylesheets/style.css` y para agregar la referencia de la hoja de estilo externa en el archivo `index.html`
 
-#### Verificación 
+#### Servidor HTTP 
 
 * Levante un [servidor HTTP en Python](/DAWM/tutoriales/python).
 * Acceda desde el navegador al URL del servidor HTTP en Python .
-* Compruebe cada uno de los siguientes cambios al actualizar el sitio desde el navegador.
+
+**Nota:** Compruebe cada uno de los siguientes cambios al actualizar el URL del servidor HTTP en el navegador.
 
 #### Estilo en cascada y familia tipográfica
+
+Considere la sugerencia de [Bard](bard/guia04-bard02.pdf), para:
 
 1. Use un _selector universal_ para asignar la _familia tipográfica_ en todo el documento. 
 2. Utilice un _selector por clase_ para fijar la familia tipográfica en todos los títulos de las secciones. 
 3. Emplee un _selector por elemento_ para establecer la familia tipográfica solo el título principal. 
 
-Sugerencia de [Bard](bard/guia04-bard02.pdf)
 
 #### Color de texto y color de fondo
 
+Considere la sugerencia de [Bard](bard/guia04-bard03.pdf), para:
+
 1. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
 2. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
-
-Sugerencia de [Bard](bard/guia04-bard03.pdf)
 
 * Actualice todos los archivos en el repositorio **curriculum**.
 
