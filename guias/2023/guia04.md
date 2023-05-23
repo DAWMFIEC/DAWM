@@ -29,14 +29,15 @@ theme: jekyll-theme-leap-day
 Considere la sugerencia de [Bard](bard/guia04-bard02.pdf), para las siguientes reglas:
 
 1. Use un _selector universal_ para asignar la familia tipográfica _'Arial, sans-serif'_ a todo el documento. 
-2. Utilice un _selector por clase_ para fijar la familia tipográfica _'Times New Roman, serif'_ en todos los títulos de las secciones. 
-3. Emplee un _selector por elemento_ para establecer la familia tipográfica _'Georgia, serif'_ solo el título principal. 
+2. Utilice un _selector por clase_ para fijar la familia tipográfica _'Times New Roman, serif'_ en todos los títulos de las secciones `<h2>`. 
+3. Emplee un _selector por elemento_ para establecer la familia tipográfica _'Georgia, serif'_ solo el título principal `<h1>`. 
 
 #### Familias tipográficas de Google Fonts
 
 Considere la sugerencia de [Bard](bard/guia04-bard03.pdf), para las siguientes reglas:
 
-1. Use las familias tipográficas externas que seleccionó de Fontjoy. Use las familias tipográficas de [Google Fonts](https://fonts.google.com/).
+1. Agregue la referencia las familias tipográficas externas de [Google Fonts](https://fonts.google.com/) que seleccionó de Fontjoy.
+2. Use las familias tipográficas para todo el documento, los títulos de las secciones y el título principal.
 
 #### Color de texto y color de fondo
 
