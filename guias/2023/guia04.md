@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Escoja una combinación de tipografías de acuerdo con la recomendación de [Fontjoy](https://fontjoy.com/).
+* Escoja una combinación de familias tipografías de acuerdo con la recomendación de [Fontjoy](https://fontjoy.com/).
 * Elija una estructura para el sitio de [Frontend Practice](https://www.frontendpractice.com/projects)
 * Selecione una combinación de colores de acuerdo con la guía de [Happy Hues](https://www.happyhues.co/), [Huemint](https://huemint.com/website-2/), o [ColorMagic](https://colormagic.app/). 
 
@@ -21,22 +21,27 @@ theme: jekyll-theme-leap-day
 
 #### Servidor HTTP 
 
-* Levante un [servidor HTTP en Python](/DAWM/tutoriales/python).
-* Acceda desde el navegador al URL del servidor HTTP en Python .
-
-**Nota:** Compruebe cada uno de los siguientes cambios en las reglas CSS al actualizar el URL en el navegador.
+* Levante un [servidor HTTP en Python](/DAWM/tutoriales/python) en la ruta de la aplicación.
+* Acceda desde el navegador al URL del servidor HTTP en Python, y
+* Compruebe cada uno de los siguientes cambios en las reglas CSS al actualizar el URL en el navegador.
 
 #### Estilo en cascada y familia tipográfica
 
-Considere la sugerencia de [Bard](bard/guia04-bard02.pdf), para:
+Considere la sugerencia de [Bard](bard/guia04-bard02.pdf), para las siguientes reglas:
 
-1. Use un _selector universal_ para asignar la _familia tipográfica_ en todo el documento. 
-2. Utilice un _selector por clase_ para fijar la familia tipográfica en todos los títulos de las secciones. 
-3. Emplee un _selector por elemento_ para establecer la familia tipográfica solo el título principal. 
+1. Use un _selector universal_ para asignar la familia tipográfica _'Arial, sans-serif'_ a todo el documento. 
+2. Utilice un _selector por clase_ para fijar la familia tipográfica _'Times New Roman, serif'_ en todos los títulos de las secciones. 
+3. Emplee un _selector por elemento_ para establecer la familia tipográfica _'Georgia, serif'_ solo el título principal. 
+
+#### Familias tipográficas de Google Fonts
+
+Considere la sugerencia de [Bard](bard/guia04-bard03.pdf), para las siguientes reglas:
+
+1. Use las familias tipográficas externas que seleccionó de Fontjoy. Use las familias tipográficas de [Google Fonts](https://fonts.google.com/).
 
 #### Color de texto y color de fondo
 
-Considere la sugerencia de [Bard](bard/guia04-bard03.pdf), para:
+Considere la sugerencia de [Bard](bard/guia04-bard04.pdf), para:
 
 1. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
 2. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
@@ -48,12 +53,14 @@ text-align, text-decoration, font-size
 
 #### Modelo de caja
 
+Agrega una imagen local
 border, margin, padding
 
 
-### Centrar contenido y contenedor
+#### Centrar contenido y contenedor
 
 margin vs text-align
+
 
 
 * Actualice todos los archivos en el repositorio **curriculum**.
@@ -62,6 +69,7 @@ margin vs text-align
 
 * `CSS` en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/CSS).
   - [Selectores CSS](https://www.w3schools.com/cssref/css_selectors.php) para acceder a uno o varios elementos del documento HTML.
+  - [Propiedades y valores](https://www.w3schools.com/cssref/index.php)
 
 ### Términos
 
