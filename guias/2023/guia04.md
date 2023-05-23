@@ -42,6 +42,10 @@ Considere la sugerencia de [Bard](bard/guia04-bard03.pdf), para:
 1. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
 2. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
 
+#### Modelo de caja
+
+
+
 * Actualice todos los archivos en el repositorio **curriculum**.
 
 ### Documentación

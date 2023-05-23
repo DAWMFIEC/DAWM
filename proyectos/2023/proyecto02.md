@@ -36,6 +36,6 @@ La respuesta es:
 
 * [Guía 02: HTML - Estructura global, semánticas y etiquetas](/DAWM/guias/2023/guia02)
 * [Guía 03: HTML - Contenedores, formularios y multimedia](/DAWM/guias/2023/guia03)
-* [Guía 04: CSS - Selectores y propiedades](/DAWM/guias/2023/guia04)
-* [Guía 05: CSS - Modelo de caja, Grid vs Flexbox](/DAWM/guias/2023/guia05)
+* [Guía 04: CSS - Selectores y propiedades CSS y modelo de caja](/DAWM/guias/2023/guia04)
+* [Guía 05: CSS - Grid vs Flexbox](/DAWM/guias/2023/guia05)
 
