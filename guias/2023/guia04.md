@@ -37,7 +37,7 @@ Considere la sugerencia de [Bard](bard/guia04-bard02.pdf), para las siguientes r
 Considere la sugerencia de [Bard](bard/guia04-bard03.pdf), para las siguientes reglas:
 
 1. Agregue la referencia las familias tipográficas externas de [Google Fonts](https://fonts.google.com/) que seleccionó de Fontjoy.
-2. Use las familias tipográficas para todo el documento, los títulos de las secciones y el título principal.
+2. Cambie las familias tipográficas para todo el documento, los títulos de las secciones y el título principal.
 
 #### Color de texto y color de fondo
 
@@ -48,19 +48,29 @@ Considere la sugerencia de [Bard](bard/guia04-bard04.pdf), para:
 
 #### Propiedades de texto
 
-text-align, text-decoration, font-size
+Consulte la documentación de CSS o pregunte a alguna de las IAs:
 
+```
+Las propiedades CSS para eliminar el subrayado predeterminado y aplicar el 
+tamaño de la fuente de 1.2rem a todas las etiquetas <a>
+```
 
 #### Modelo de caja
 
-Agrega una imagen local
-border, margin, padding
-
+1. Utilice cualquier tipo de selector para acceder a una imagen dentro del sitio web.  
+2. Consulte la documentación de CSS o pregunte a alguna de las IAs para aplicar las [propiedades de caja](https://www.w3schools.com/css/css_boxmodel.asp):
+  * Borde de `1pt solid black`
+  * Relleno de `1.1rem`
+  * Margen superior `10px`
+  * Margen izquierdo y derecho `25%`
+  * Margen inferior `2px`
 
 #### Centrar contenido y contenedor
 
-margin vs text-align
+Centrar elementos es una tarea muy usual con CSS. 
 
+1. Tome como referencia la sección `<section>` que contiene el mapa `<iframe>`. 
+2. Aplique las instrucciones de [CSS: Centering things](https://www.w3.org/Style/Examples/007/center.en.html) para centrar horizontalmente **el contenedor** `<section>` o **el contenido** `<iframe>`.
 
 
 * Actualice todos los archivos en el repositorio **curriculum**.
@@ -83,3 +93,5 @@ CSS, reglas CSS, propiedades CSS, selectores CSS, HTTP, servidor HTTP, peticione
 * Happy Hues - Curated colors in context. (2023). Retrieved 22 May 2023, from https://www.happyhues.co/
 * Fontjoy - Generate font pairings in one click. (2023). Retrieved 22 May 2023, from https://fontjoy.com/
 * The W3C Markup Validation Service. (2022). Retrieved 24 May 2022, from https://validator.w3.org/
+* CSS: centering things. (2023). Retrieved 23 May 2023, from https://www.w3.org/Style/Examples/007/center.en.html
+* CSS Box Model. (2023). Retrieved 23 May 2023, from https://www.w3schools.com/css/css_boxmodel.asp
