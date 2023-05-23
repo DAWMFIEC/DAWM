@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
 * Decide y diseña el contenido de su CV para incorporar una imagen o un video. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard02.pdf).
 * Decide y diseña el contenido de su CV para agregar un mapa. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard03.pdf).
 
-### Contenido
+#### Contenido
 
 En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
