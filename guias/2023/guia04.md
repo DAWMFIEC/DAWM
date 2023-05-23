@@ -24,7 +24,7 @@ theme: jekyll-theme-leap-day
 * Levante un [servidor HTTP en Python](/DAWM/tutoriales/python).
 * Acceda desde el navegador al URL del servidor HTTP en Python .
 
-**Nota:** Compruebe cada uno de los siguientes cambios al actualizar el URL del servidor HTTP en el navegador.
+**Nota:** Compruebe cada uno de los siguientes cambios en las reglas CSS al actualizar el URL en el navegador.
 
 #### Estilo en cascada y familia tipográfica
 
