@@ -45,7 +45,8 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 * Soporte para elementos HTML:
   - [Formularios](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form).
-  - [Imágenes](https://developer.mozilla.org/es/docs/Web/HTML/Element/img) y [videos](https://www.w3schools.com/html/html5_video.asp).
+  - [Imágenes](https://developer.mozilla.org/es/docs/Web/HTML/Element/img).
+  - Archivos videos en formato [mp3](https://www.labnol.org/internet/google-drive-mp3-embed/2232/) o enlaces a [videos](https://www.desarrollolibre.net/blog/html/como-insertar-videos-de-youtube-en-nuestra-web-html#.XtccmDr0k2w) en Youtube.
   - Mapas en [Google](https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/) o [Leaflet](https://mappinggis.com/2013/06/como-crear-un-mapa-con-leaflet/).
 
 ### Términos
