@@ -34,7 +34,6 @@ Considere la sugerencia de [Bard](bard/guia04-bard02.pdf), para:
 2. Utilice un _selector por clase_ para fijar la familia tipográfica en todos los títulos de las secciones. 
 3. Emplee un _selector por elemento_ para establecer la familia tipográfica solo el título principal. 
 
-
 #### Color de texto y color de fondo
 
 Considere la sugerencia de [Bard](bard/guia04-bard03.pdf), para:
@@ -42,8 +41,19 @@ Considere la sugerencia de [Bard](bard/guia04-bard03.pdf), para:
 1. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
 2. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
 
+#### Propiedades de texto
+
+text-align, text-decoration, font-size
+
+
 #### Modelo de caja
 
+border, margin, padding
+
+
+### Centrar contenido y contenedor
+
+margin vs text-align
 
 
 * Actualice todos los archivos en el repositorio **curriculum**.
