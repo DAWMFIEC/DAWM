@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 
 #### Estilo en cascada y familia tipográfica
 
-Considere la sugerencia de [Bard](bard/guia04-bard02.pdf), para las siguientes reglas:
+Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes actividades:
 
 1. Use un _selector universal_ para asignar la familia tipográfica _'Arial, sans-serif'_ a todo el documento. 
 2. Utilice un _selector por clase_ para fijar la familia tipográfica _'Times New Roman, serif'_ en todos los títulos de las secciones `<h2>`. 
@@ -34,21 +34,22 @@ Considere la sugerencia de [Bard](bard/guia04-bard02.pdf), para las siguientes r
 
 #### Familias tipográficas de Google Fonts
 
-Considere la sugerencia de [Bard](bard/guia04-bard03.pdf), para las siguientes reglas:
+Compruebe la sugerencia de [Bard](bard/guia04-bard03.pdf) para las siguientes actividades:
 
 1. Agregue la referencia las familias tipográficas externas de [Google Fonts](https://fonts.google.com/) que seleccionó de Fontjoy.
 2. Cambie las familias tipográficas para todo el documento, los títulos de las secciones y el título principal.
 
 #### Color de texto y color de fondo
 
-Considere la sugerencia de [Bard](bard/guia04-bard04.pdf), para:
+Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes actividades:
 
-1. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
-2. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
+1. Utilice la combinación de colores de acuerdo con la guía de Happy Hues.
+2. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
+3. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
 
 #### Propiedades de texto
 
-Consulte la documentación de CSS o pregunte a alguna de las IAs:
+Consulte y compruebe la sugerencia de alguna de las IAs para la pregunta:
 
 ```
 Las propiedades CSS para eliminar el subrayado predeterminado y aplicar el 
@@ -57,20 +58,24 @@ tamaño de la fuente de 1.2rem a todas las etiquetas <a>
 
 #### Modelo de caja
 
+Busque y compruebe la documentación en [W3School](https://www.w3schools.com/css/css_boxmodel.asp) para las siguientes actividades:
+
 1. Utilice cualquier tipo de selector para acceder a una imagen dentro del sitio web.  
-2. Consulte la documentación de CSS o pregunte a alguna de las IAs para aplicar las [propiedades de caja](https://www.w3schools.com/css/css_boxmodel.asp):
+2. Modifique la propiedadees:
   * Borde de `1pt solid black`
   * Relleno de `1.1rem`
   * Margen superior `10px`
   * Margen izquierdo y derecho `25%`
   * Margen inferior `2px`
 
+**Nota:** Experimenta con otros valores para las propiedades.
+
 #### Centrar contenido y contenedor
 
-Centrar elementos es una tarea muy usual con CSS. 
+Busque y compruebe la documentación en [CSS: Centering things](https://www.w3.org/Style/Examples/007/center.en.html) para las siguientes actividades:
 
 1. Tome como referencia la sección `<section>` que contiene el mapa `<iframe>`. 
-2. Aplique las instrucciones de [CSS: Centering things](https://www.w3.org/Style/Examples/007/center.en.html) para centrar horizontalmente **el contenedor** `<section>` o **el contenido** `<iframe>`.
+2. Centre horizontalmente **el contenedor** `<section>` o **el contenido** `<iframe>`.
 
 
 * Actualice todos los archivos en el repositorio **curriculum**.
