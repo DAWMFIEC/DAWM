@@ -16,6 +16,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clase
 
+* Descargue los archivos del repositorio **curriculum**, y
 * Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la **hoja de estilo externa** `stylesheets/style.css` y para agregar la referencia en el archivo `index.html`
 
 #### Servidor HTTP 
