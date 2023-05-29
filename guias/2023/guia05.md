@@ -46,10 +46,10 @@ theme: jekyll-theme-leap-day
 	> __display: grid;__ <mark># Modo de colocar los elementos internos a grid</mark><br>
 	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
 	> __column-gap: 0.5rem;__ <mark># y/o columnas</mark><br>
-	> __grid-template-areas: "fila1 fila1 fila1 fila1 fila1 fila1" "fila21 fila21 fila21 fila22 fila22 fila22";__ <mark># Número de columnas donde acomodar los elementos</mark><br>
+	> __grid-template-areas: "fila1 fila1 fila1 fila1 fila1 fila1" <br> "fila21 fila21 fila21 fila22 fila22 fila22" <br> "fila31 fila31 fila32 fila32 fila33 fila33"; <br> "fila41 fila41 fila41 fila42 fila42 fila42"__ <mark># Nombres de las áreas</mark><br>
 	
 * Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __grid-area: fila21;__ <mark>Nombre que ocupará en el área</mark><br>
+	> __grid-area: fila1;__ <mark>Nombre que ocupará en el área</mark><br>
  
 
 ### Documentación
