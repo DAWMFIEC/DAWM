@@ -26,20 +26,18 @@ theme: jekyll-theme-leap-day
 
 <img src="imagenes/diseno.png" alt="diseño" width="49%">
 
-### `Guía de diseño - Grid por columnas` 
+### `Grid por columnas` 
 
-* Escoja la etiqueta que funcionará **contenedor global** y aplique las propiedades:
-
-	> __display: grid;__ <mark># Cambia el modo de colocar los elementos internos a grid</mark><br>
+* Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
+	> __display: grid;__ <mark># Modo de colocar los elementos internos a grid</mark><br>
 	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
-	> __column-gap: 0.5rem;__ <mark># y/o columnas</mark>
-	>  __grid-template-columns: repeat(6, 1fr);__ <mark># Número de columnas donde acomodar los elementos</mark>
+	> __column-gap: 0.5rem;__ <mark># y/o columnas</mark><br>
+	> __grid-template-columns: repeat(6, 1fr);__ <mark># Número de columnas donde acomodar los elementos</mark><br>
 
-* Identifique las etiquetas **ítems** por filas, de tal forma que si desea una fila de:
-	> __grid-column: 4 / 7;__ <mark>Columnas que ocupará en la rejilla</mark>, y<br>
+* Utilice los selectores CSS para cada elemento `<section>`:
+	> __grid-column: 1 / 7;__ <mark>Columnas que ocupará en la rejilla</mark>, y<br>
 	> __grid-row: 1 / 2;__ <mark>Filas que ocupará en la rejilla</mark>
-
-* validación HTML y CSS 
+ 
 
 ### Documentación
 
