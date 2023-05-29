@@ -26,52 +26,51 @@ theme: jekyll-theme-leap-day
 
 <img src="imagenes/diseno.png" alt="diseño">
 
-#### `Grid por columnas` 
+##### `Grid por columnas` 
 
 * Modifique el archivo `css/grid_columnas.css`
 * Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
 	> __display: grid;__ <mark># Modo de colocar los elementos internos a grid</mark><br>
 	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
-	> __column-gap: 0.5rem;__ <mark># y/o columnas</mark><br>
-	> __grid-template-columns: repeat(6, 1fr);__ <mark># Número de columnas donde acomodar los elementos</mark><br>
+	> __column-gap: 0.5rem;__ <mark># Separación entre columnas</mark><br>
+	> __grid-template-columns: repeat(6, 1fr);__ <mark># Número de columnas donde colocar los elementos</mark><br>
 
 * Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __grid-column: <mark>Número de columna de inicio</mark> / <mark>Número de columna de fin</mark>;__ <mark>Columnas que ocupará en la rejilla</mark>, y<br>
-	> __grid-row: <mark>Número de fila de inicio</mark> / <mark>Número de fila de fin</mark>;__ <mark>Filas que ocupará en la rejilla</mark>
+	> __grid-column: <mark>Número de columna de inicio</mark> / <mark>Número de columna de fin</mark>;__, y<br>
+	> __grid-row: <mark>Número de fila de inicio</mark> / <mark>Número de fila de fin</mark>;__ <br>
 
-#### `Grid por areas` 
+##### `Grid por areas` 
 
 * Modifique el archivo `css/grid_areas.css`
 * Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
 	> __display: grid;__ <mark># Modo de colocar los elementos internos a grid</mark><br>
 	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
-	> __column-gap: 0.5rem;__ <mark># y/o columnas</mark><br>
+	> __column-gap: 0.5rem;__ <mark># Separación entre columnas</mark><br>
 	> __grid-template-areas: "fila1 fila1 fila1 fila1 fila1 fila1" <br> "fila21 fila21 fila21 fila22 fila22 fila22" <br> "fila31 fila31 fila32 fila32 fila33 fila33"; <br> "fila41 fila41 fila41 fila42 fila42 fila42"__ <mark># Nombres de las áreas</mark><br>
 	
 * Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __grid-area: <mark>Nombre del área</mark>;__ <mark>Nombre que ocupará en el área</mark><br>
- 
+	> __grid-area: <mark>Nombre del área</mark>;__ <br>
 
-#### `Flexbox`
+##### `Flexbox`
 
 * Modifique el archivo `css/flexbox.css`
 * Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __display: flex;__ <mark>Cambia el modo de colocar los elementos internos a flex</mark><br>
-	> __row-gap: 0.5rem;__ <mark>Separación entre filas</mark><br>
-	> __column-gap: 0.5rem;__ <mark>y/o columnas</mark><br>
-	> __flex-wrap: wrap;__ <mark>Los ítems ocupan el espacio de acuerdo a su tamaño</mark><br>
-	> __justify-content: space-between;__ <mark>Los elementos internos se distribuyen por igual</mark><br>
+	> __display: flex;__ <mark># Modo de colocar los elementos internos a flex</mark><br>
+	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
+	> __column-gap: 0.5rem;__ <mark># Separación entre columnas</mark><br>
+	> __flex-wrap: wrap;__ <mark># Los ítems ocupan el espacio de acuerdo a su tamaño</mark><br>
+	> __justify-content: space-between;__ <mark># Los elementos internos se distribuyen por igual</mark><br>
 
 * Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __width: <mark>Porcentaje</mark>%;__ <mark>Cantidad</mark><br>
+	> __width: <mark>Porcentaje</mark>%;__ <br>
 
 
 ### Documentación
 
-* [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) y [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/)
-* [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) y [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/)
-* En [flexbox.netlify](https://flexbox.netlify.app/) encuentras en un espacio para practicar la acomodación mediante Flexbox, mientras que  
-* En [grid.layoutit](https://grid.layoutit.com/) se ofrece un buen espacio para comprender grid.
+* En [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) existe una explicación extensa del uso de Grid.
+  - Otras opciones: [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/) y grid.layoutit](https://grid.layoutit.com/).
+* En [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) existe una explicación extensa del uso de Flexbox.
+  - Otras opciones: [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/) y [flexbox.netlify](https://flexbox.netlify.app/).
 
 ### Términos
 
