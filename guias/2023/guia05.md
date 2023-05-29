@@ -24,19 +24,32 @@ theme: jekyll-theme-leap-day
 
 * Considere el siguiente diseño para practicar el uso de flexbox y grid con el ejercicio de colocación de elementos:
 
-<img src="imagenes/diseno.png" alt="diseño" width="49%">
+<img src="imagenes/diseno.png" alt="diseño">
 
 ### `Grid por columnas` 
 
+* Modifique el archivo `css/grid_columnas.css`
 * Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
 	> __display: grid;__ <mark># Modo de colocar los elementos internos a grid</mark><br>
 	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
 	> __column-gap: 0.5rem;__ <mark># y/o columnas</mark><br>
 	> __grid-template-columns: repeat(6, 1fr);__ <mark># Número de columnas donde acomodar los elementos</mark><br>
 
-* Utilice los selectores CSS para cada elemento `<section>`:
+* Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
 	> __grid-column: 1 / 7;__ <mark>Columnas que ocupará en la rejilla</mark>, y<br>
 	> __grid-row: 1 / 2;__ <mark>Filas que ocupará en la rejilla</mark>
+
+### `Grid por areas` 
+
+* Modifique el archivo `css/grid_areas.css`
+* Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
+	> __display: grid;__ <mark># Modo de colocar los elementos internos a grid</mark><br>
+	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
+	> __column-gap: 0.5rem;__ <mark># y/o columnas</mark><br>
+	> __grid-template-areas: "fila1 fila1 fila1 fila1 fila1 fila1" "fila21 fila21 fila21 fila22 fila22 fila22";__ <mark># Número de columnas donde acomodar los elementos</mark><br>
+	
+* Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
+	> __grid-area: fila21;__ <mark>Nombre que ocupará en el área</mark><br>
  
 
 ### Documentación
