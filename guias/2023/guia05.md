@@ -11,6 +11,8 @@ theme: jekyll-theme-leap-day
 #### Diseño
 
 * Elija una estructura para el sitio de [Frontend Practice](https://www.frontendpractice.com/projects)
+	
+	**Mínimo:** Su diseño debe considerar que los elementos estén apilados y, al menos, una fila que contenga dos elementos.
 
 #### Ejercicio de colocación de elementos
 
