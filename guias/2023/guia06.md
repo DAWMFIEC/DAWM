@@ -29,6 +29,7 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
 #### Puesta a punto
 
 * Modifique el archivo `css/style.css`
+* Aplique y compruebe en el navegador el efecto de cada una de las propiedades CSS
 * **Variables CSS**: identifique el comentario `/* Variables */` identifique las variables y su uso.
   
   ```
@@ -40,15 +41,13 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
     ...
   }
   ```
-* **Flexbox**: identifique el comentario `/* Flexbox  */`, aplique y compruebe en el navegador el efecto de:
-	
-	* Selector `.about`
-	* Selector `.about .image`
-	* Selector `.about .content`.
+* **Flexbox** 
+		* Busque `Sección Flexbox`, 
+		* Elimine el comentario de las propiedades en los selectores `.about`, `.about .image` y `.about .content`.
 
-* **Grid**: identifique el comentario `/* Grid */`, aplique y compruebe en el navegador el efecto de:
-	
-	* Selector `.gallery .box-container`
+* **Grid**
+		* Busque `Sección Grid`, 
+		* Elimine el comentario de las propiedades el selector `.gallery .box-container`
 
 #### RWD
 
@@ -56,39 +55,40 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
 
 * Modifique el archivo `css/style.css`
 
-	* **Tamaño de caja**: identifique el comentario `/* RWD: Box-Sizing */` aplique y compruebe en el navegador el efecto de:
+	* **Tamaño de caja**
+			* Busque `RWD: Box-Sizing` 
+			* Agregue al selector `*` la propiedad `box-sizing: border-box;`
 
-		* Selector `*` agregue `box-sizing: border-box;`
+	* **Diseño fluído**
+			* Busque `RWD:  Autofit`
+			* Cambie en el selector `.gallery .box-container` la propiedad `grid-template-columns: repeat(auto-fit, 20rem);`
+			* Agregue al selector `.gallery .box-container img` las propiedades `width: 100%;`, `height: 100%;` y `object-fit: cover;`
 
-	* **Diseño fluído**: identifique el comentario `/* RWD:  Autofit */`  aplique y compruebe en el navegador el efecto de:
+	* **Tamaño de fuentes adaptables**
+			* Busque `RWD: Tamaño de fuentes adaptables`
+			* Cambie en el selector `.about .content p` la propiedad `font-size: 1.2rem;`
 
-		* Selector `.gallery .box-container` cambie por `grid-template-columns: repeat(auto-fit, 20rem);`
-		* Selector `.gallery .box-container img` agregue `width: 100%;`, `height: 100%;` y `object-fit: cover;`
-
-	* **Tamaño de fuentes adaptables**: identifique el comentario `/* RWD: Tamaño de fuentes adaptables */`  aplique y compruebe en el navegador el efecto de:
-
-		* Selector `.about .content p` cambie por `font-size: 1.2rem;`
-
-	* **Media queries**: identifique el comentario `/* RWD: media queries */` aplique y compruebe en el navegador el efecto de:
-
-		* Media query `@media only screen and (max-width: 620px) ` agregue las reglas CSS:
-
-		```
-		@media ...  {
-		    .about .image {
-		        width: 0%;
-		    }
-
-		    .about .content {
-		        width: 100%;
-		    }
-		}
-		```
+	* **Media queries**
+			* Busque `RWD: media queries`
+			* Dentro del media query `@media only screen and (max-width: 620px) ` agregue las reglas `.about .image { width: 0%; }`, `.about .content { width: 100%; } ` y `.about .image img { display: none; }`
 
 
 * Modifique el archivo `index.html`
   
-	* **Viewport**: Agregue el elemento `<meta name="viewport" content="width=device-width, initial-scale=1.0">` dentro del elemento `<head>`
+	* **Viewport**
+			* Agregue el elemento `<meta name="viewport" content="width=device-width, initial-scale=1.0">` dentro del elemento `<head>`
+
+#### Efectos CSS
+
+* Modifique el archivo `css/style.css`
+* **Sticky navbar**
+		* Busque `Sticky navbar`
+		* Elimine el comentario de las propiedades `.header` 
+
+* **Shadow**
+		* Busque `Shadow`
+		* Elimine el comentario de las propiedades `.header` 
+
 
 ### Documentación
 
