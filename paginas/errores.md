@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
     	```
     	git config -l
     	```
-    	- Agregue globalmente el proxy `http://david.espol.edu.ec:8080`
+    	- Agregue el proxy `http://david.espol.edu.ec:8080` entre las variables globales mediante el comando:
     	```
     	git config --global --add http.proxy http://david.espol.edu.ec:8080
     	```
