@@ -12,14 +12,12 @@ theme: jekyll-theme-leap-day
 	+ **Problema:** 
 		![proxy](imagenes/proxygit.png)
 	+ **Solución:**
-		+ Liste las variables de configuración de Git. 
-    	```
-    	git config -l
-    	```
-    	+ Agregue el proxy `http://david.espol.edu.ec:8080` entre las variables globales mediante el comando:
-    	```
-    	git config --global --add http.proxy http://david.espol.edu.ec:8080
-    	```
+		- Liste la ubicación por defecto que npm reconoce los comandos instalados
+		```
+		npm config get prefix
+		```
+		- Agregue la ruta a la variable de entorno `PATH`
+		- Reinice el cmd, de ser necesario.
 
 ## NPM
 
