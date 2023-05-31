@@ -23,7 +23,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 03: Landing Page - SPA](proyectos/2023/proyecto03)
   * [Guía 06: Responsive Design y Bootstrap](guias/2023/guia06)
 * [Proyecto 04: Clima - MPA](proyectos/2023/proyecto04)
-  * [Guía 08: Javascript - Introducción](guias/2023/guia07)
+  * [Guía 07: Javascript - Introducción](guias/2023/guia07)
 
 ### Anteriores
 
