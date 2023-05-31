@@ -60,12 +60,12 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
 
 	* **Diseño fluído**
 		* Busque `RWD: Autofit`
-		* Cambie en el selector `.gallery .box-container` la propiedad `grid-template-columns: repeat(auto-fit, 20rem);`
+		* En el selector `.gallery .box-container`, cambie el valor de la propiedad `grid-template-columns` por `repeat(auto-fit, 20rem);`
 		* Agregue al selector `.gallery .box-container img` las propiedades `width: 100%;`, `height: 100%;` y `object-fit: cover;`
 
 	* **Tamaño de fuentes adaptables**
 		* Busque `RWD: Tamaño de fuentes adaptables`
-		* Cambie en el selector `.about .content p` la propiedad `font-size: 1.2rem;`
+		* En el selector `.about .content p`, cambie el valor de la propiedad `font-size` por `1.2rem;`
 
 	* **Media queries**
 		* Busque `RWD: media queries`

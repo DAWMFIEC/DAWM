@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 ### Antecedentes
 
-
+Si tienes un producto o servicio es necesario promocionarlo de manera efectiva. Además, que sea un medio de comunicación directa con los potenciales clientes, promocionar descuentos y exponer beneficios del servicio o producto. 
 
 ### ChatGPT
 
