@@ -9,15 +9,13 @@ theme: jekyll-theme-leap-day
 ### Clonación de proyectos
 
 * Al ejecutar desde la línea de comandos `git clone https://github.com/<user>/<project>.git`
-    + **Problema:** 
-    	![proxy](imagenes/proxygit.png)
-    + **Solución:**
-    	
-    	- Liste las variables de configuración de Git. 
+	+ **Problema:** 
+		![proxy](imagenes/proxygit.png)
+	+ **Solución:**
+		- Liste las variables de configuración de Git. 
     	```
     	git config -l
     	```
-    	
     	- Agregue el proxy `http://david.espol.edu.ec:8080` entre las variables globales mediante el comando:
     	```
     	git config --global --add http.proxy http://david.espol.edu.ec:8080
