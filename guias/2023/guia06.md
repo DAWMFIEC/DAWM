@@ -62,7 +62,7 @@ theme: jekyll-theme-leap-day
 		* Busque `RWD: Box-Sizing` 
 		* Agregue al selector `*` la propiedad `box-sizing: border-box;`
 
-	* **Diseño fluído**
+	* **Diseño fluido**
 		* Busque `RWD: Autofit`
 		* En el selector `.gallery .box-container`, cambie el valor de la propiedad `grid-template-columns` por `repeat(auto-fit, 20rem);`
 		* Agregue al selector `.gallery .box-container img` las propiedades `width: 100%;`, `height: 100%;` y `object-fit: cover;`
