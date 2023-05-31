@@ -33,7 +33,9 @@ theme: jekyll-theme-leap-day
 #### Puesta a punto
 
 * Modifique el archivo `css/style.css`. Aplique y compruebe en el navegador el efecto de cada una de las propiedades CSS
-* **Variables CSS**: identifique el comentario `/* Variables */` identifique las variables y su uso.
+* **Variables CSS**:
+	* Busque el comentario `Variables`, e 
+	* Identifique las variables y su uso.
   
   ```
   :root {
