@@ -17,7 +17,7 @@ Si tienes un producto o servicio es necesario promocionarlo de manera efectiva. 
 Para el prompt: 
 
 ```
-Como desarrollador, ¿Qué tipo de información debo mostrar en mi curriculum vitae?
+Como desarrollador, ¿Qué es una landing page?
 ```
 
 La respuesta es:
@@ -26,6 +26,5 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 06: Responsive Design](/DAWM/guias/2023/guia06)
-* [Guía 07: Bootstrap](/DAWM/guias/2023/guia07)
+* [Guía 06: Responsive Design y Bootstrap](/DAWM/guias/2023/guia06)
 
