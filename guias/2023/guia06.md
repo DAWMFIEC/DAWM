@@ -88,10 +88,17 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
 	* Busque `Shadow`
 	* Elimine el comentario de las propiedades `.header` 
 
+#### Bootstrap
+
+* Clone el repositorio [HomePage-Bootstrap](https://github.com/iGioRojas/HomePage-Bootstrap).
+	* En caso de ocurrir un error en la clonación, consulte la página de [errores](/DAWM/paginas/errores).
+* Levante un servidor HTTP.
+* Consulte la documentación [Boostrap](https://getbootstrap.com/) y la [guía](recursos/bootstrap.pdf).
 
 ### Documentación
 
 * Algunos sitios para la inspiración en [Page Collective - landing page design inspiration](https://pagecollective.com/)
+* La documentación de [Boostrap](https://getbootstrap.com/), un _frontend toolkit_ para crear sitios web responsivos.
 
 ### Términos
 
