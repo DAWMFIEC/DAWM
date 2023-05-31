@@ -28,8 +28,7 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
 
 #### Puesta a punto
 
-* Modifique el archivo `css/style.css`
-* Aplique y compruebe en el navegador el efecto de cada una de las propiedades CSS
+* Modifique el archivo `css/style.css`. Aplique y compruebe en el navegador el efecto de cada una de las propiedades CSS
 * **Variables CSS**: identifique el comentario `/* Variables */` identifique las variables y su uso.
   
   ```
@@ -60,7 +59,7 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
 		* Agregue al selector `*` la propiedad `box-sizing: border-box;`
 
 	* **Diseño fluído**
-		* Busque `RWD:  Autofit`
+		* Busque `RWD: Autofit`
 		* Cambie en el selector `.gallery .box-container` la propiedad `grid-template-columns: repeat(auto-fit, 20rem);`
 		* Agregue al selector `.gallery .box-container img` las propiedades `width: 100%;`, `height: 100%;` y `object-fit: cover;`
 
