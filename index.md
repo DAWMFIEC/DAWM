@@ -21,7 +21,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 04: CSS - Selectores y propiedades CSS y modelo de caja](guias/2023/guia04)
   * [Guía 05: CSS - Grid vs Flexbox](guias/2023/guia05)
 * [Proyecto 03: Landing Page - SPA](proyectos/2023/proyecto03)
-  * [Guía 06: Bootstrap - Responsive Design](guias/2023/guia06)
+  * [Guía 06: Responsive Design y Bootstrap](guias/2023/guia06)
 * [Proyecto 04: Clima - MPA](proyectos/2023/proyecto04)
   * [Guía 07: Javascript - Introducción](guias/2023/guia07)
 
