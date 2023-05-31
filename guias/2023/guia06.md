@@ -40,13 +40,13 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
     ...
   }
   ```
-* **Flexbox**: identifique el comentario `/* Flexbox  */`, aplique y compruebe en el navegador el efecto de cada una de las propiedades CSS para:
+* **Flexbox**: identifique el comentario `/* Flexbox  */`, aplique y compruebe en el navegador el efecto de:
 	
 	* Selector `.about`
 	* Selector `.about .image`
 	* Selector `.about .content`.
 
-* **Grid**: identifique el comentario `/* Grid */`, aplique y compruebe en el navegador el efecto de cada una de las propiedades CSS para:
+* **Grid**: identifique el comentario `/* Grid */`, aplique y compruebe en el navegador el efecto de:
 	
 	* Selector `.gallery .box-container`
 
@@ -56,23 +56,25 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
 
 * Modifique el archivo `css/style.css`
 
-	* **Tamaño de caja**: identifique el comentario `/* RWD: Box-Sizing */` aplique y compruebe en el navegador el efecto la propiedad CSS para:
+	* **Tamaño de caja**: identifique el comentario `/* RWD: Box-Sizing */` aplique y compruebe en el navegador el efecto de:
 
 		* Selector `*` agregue `box-sizing: border-box;`
 
-	* **Diseño fluído**: identifique el comentario `/* RWD:  Autofit */`  aplique y compruebe en el navegador el efecto las propiedades CSS para:
+	* **Diseño fluído**: identifique el comentario `/* RWD:  Autofit */`  aplique y compruebe en el navegador el efecto de:
 
-		* Selector `*` cambie por `grid-template-columns: repeat(auto-fit, 20rem);`
+		* Selector `.gallery .box-container` cambie por `grid-template-columns: repeat(auto-fit, 20rem);`
 		* Selector `.gallery .box-container img` agregue `width: 100%;`, `height: 100%;` y `object-fit: cover;`
 
-	* **Tamaño de fuentes adaptables**: identifique el comentario `/* RWD: Tamaño de fuentes adaptables */`  aplique y compruebe en el navegador el efecto la propiedad CSS para:
+	* **Tamaño de fuentes adaptables**: identifique el comentario `/* RWD: Tamaño de fuentes adaptables */`  aplique y compruebe en el navegador el efecto de:
 
 		* Selector `.about .content p` cambie por `font-size: 1.2rem;`
 
-	* **Media queries**: identifique el comentario `/* RWD: media queries */` aplique y compruebe en el navegador el efecto la propiedad CSS para:
+	* **Media queries**: identifique el comentario `/* RWD: media queries */` aplique y compruebe en el navegador el efecto de:
+
+		* Media query `@media only screen and (max-width: 620px) ` agregue las reglas CSS:
 
 		```
-		@media only screen and (max-width: 620px) {
+		@media ...  {
 		    .about .image {
 		        width: 0%;
 		    }
