@@ -22,7 +22,9 @@ theme: jekyll-theme-leap-day
 
 #### Responsive Web Design (RWD)
 
-Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios web responsivos.
+* Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios web responsivos.
+* Visite el sitio de [ESPOL](http://www.espol.edu.ec/) e inspeccione la vista del sitio para dispositivos móviles desde el inspector (en la opción **Toggle device toolbar**).
+
 
 ### Actividades
 
@@ -49,8 +51,6 @@ Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios we
 	* Elimine el comentario de las propiedades el selector `.gallery .box-container`
 
 #### RWD
-
-**Nota:** Cambie la vista del sitio para dispositivos móviles desde el inspector, en la opción **Toggle device toolbar**.
 
 * Modifique el archivo `css/style.css`
 
