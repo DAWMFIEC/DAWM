@@ -101,8 +101,10 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
-* Algunos sitios para la inspiración en [Page Collective - landing page design inspiration](https://pagecollective.com/)
-* La documentación de [Boostrap](https://getbootstrap.com/), un _frontend toolkit_ para crear sitios web responsivos.
+* Algunos sitios para la inspiración en [Page Collective - landing page design inspiration](https://pagecollective.com/).
+* [Bootstrap](https://getbootstrap.com/) es un kit de herramientas para front-end potente, ampliable y repleto de funciones. Con el cual puedes crear y personalizar con Sass, utilizar el sistema de grillas y los componentes prediseñados.
+	- Algunas características distintivas de la versión 5 se encuentran en la [documentación oficial](https://getbootstrap.com/docs/5.0/migration/) y en [Web3canvas](https://web3canvas.com/convert-bootstrap-4-to-5-migration-guide/).
+
 
 ### Términos
 
