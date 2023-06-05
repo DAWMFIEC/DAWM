@@ -11,7 +11,7 @@ theme: jekyll-theme-leap-day
 * Identifique una idea para un sitio web, p.e.: venta de productos de belleza, proveer de información acerca de un grupo estudiantil, etc. 
 * Escoja la estructura del sitio, p.e. de [Frontend practice](https://www.frontendpractice.com/projects). 
 * Organice el contenido del sitio una alguna herramienta de diseño, p.e.: [moqups](https://moqups.com/es/) o [Figma](https://www.figma.com/).
-* Tome en consideración las [respuestas de ChatGPT](chatgpt/guia07-recomendacion01) a las preguntas:
+* Tome en consideración las [respuestas de ChatGPT](chatgpt/guia07-recomendacion01.png) a las preguntas:
 
   `Como desarrollador web, ¿cuáles son los pasos para crear un sitio web a partir de una plantilla de Bootstrap?` y `Lista con URLs de sitios web con plantillas gratuitas de Bootstrap`
 
