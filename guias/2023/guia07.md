@@ -11,12 +11,20 @@ theme: jekyll-theme-leap-day
 * Identifique una idea para un sitio web, p.e.: venta de productos de belleza, proveer de información acerca de un grupo estudiantil, etc. 
 * Escoja la estructura del sitio, p.e. de [Frontend practice](https://www.frontendpractice.com/projects). 
 * Organice el contenido del sitio una alguna herramienta de diseño, p.e.: [moqups](https://moqups.com/es/) o [Figma](https://www.figma.com/).
-* Tome en consideración las [respuestas de ChatGPT](chatgpt/guia07-recomendacion01.png) a las preguntas:
+* Analice las respuesta de [ChatGPT](chatgpt/guia07-recomendacion01.png) a las preguntas:
 
   `Como desarrollador web, ¿cuáles son los pasos para crear un sitio web a partir de una plantilla de Bootstrap?` y `Lista con URLs de sitios web con plantillas gratuitas de Bootstrap`
 
 ### Actividades
 
+1. Obtenga una plantilla (**gratuita** y solo con tecnología **HTML**) de Bootstrap de [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false)
+2. Descargue y descomprima los archivos en su directorio local. 
+3. Compruebe la estructura local: HTML, CSS, JavaScript y carpetas para imágenes, fuentes y otros recursos.
+4. Abra la carpeta en VSCode y levante el live server. 
+6. Prueba y depuración: Inspeccione la vista desktop y de móvil del sitio.
+7. Lleve el control de los cambios de sus sitio web en un repositorio remoto, como GitHub. Habilite GitHub Pages para el despliegue automático.
+8. Personalice la plantilla HTML con su texto e imágenes.
+9. De ser necesario, agregue otra hoja de estilos externas para modificar el estilo de su página.
 
 
 ### Documentación
