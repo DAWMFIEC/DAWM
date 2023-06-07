@@ -40,6 +40,11 @@ theme: jekyll-theme-leap-day
   -  A la referencia del elemento anterior, agregue un _callback_ al evento `submit`. El callback debe contener el parámetro `evento`.
 
 * Dentro del callback del evento `submit`.
+  - Detenga el comportamiento predeterminado al evento, con: 
+    ```
+    evento.preventDefault();
+    ```
+
   - Obtenga la referencia al elemento HTML con el id `valorPorHora`. Extraiga el valor con la propiedad `value`.
   - Obtenga la referencia a los elementos HTML con las horas. Extraiga el valor de cada elemento.
   - Realice los cálculos correspondientes. Y coloque el valor resultante en el elemento con el id `valorTotal`.
@@ -69,3 +74,10 @@ material design, Javascript, DOM y eventos.
 
 * Material Design . (2023). Retrieved 7 June 2023, from https://m3.material.io/
 * Material Design for Bootstrap 5 & 4. (2023). Retrieved 7 June 2023, from https://mdbootstrap.com/
+* 2021.stateofjs.com. 2022. The State of JS 2021: T-shirt. [online] Available at: <https://2021.stateofjs.com/en-US/tshirt/> [Accessed 9 June 2022].
+* JavaScript Guide - JavaScript MDN. (2022). Retrieved 9 June 2022, from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide
+* Tutorial, T. (2022). The Modern JavaScript Tutorial. Retrieved 9 June 2022, from https://javascript.info/ 
+* JavaScript Tutorial. (2022). Retrieved 9 June 2022, from https://www.javascripttutorial.net/
+* JavaScript Tutorial. (2022). Retrieved 9 June 2022, from https://www.w3schools.com/js/
+* Free JavaScript Resources Java5cript.com. (2022). Retrieved 9 June 2022, from https://www.java5cript.com/
+* 2022. online[online] Available at: <https://codepen.io/JavaScriptJunkie/pen/jvRGZy> [Accessed 10 June 2022].
