@@ -80,4 +80,3 @@ material design, Javascript, DOM y eventos.
 * JavaScript Tutorial. (2022). Retrieved 9 June 2022, from https://www.javascripttutorial.net/
 * JavaScript Tutorial. (2022). Retrieved 9 June 2022, from https://www.w3schools.com/js/
 * Free JavaScript Resources Java5cript.com. (2022). Retrieved 9 June 2022, from https://www.java5cript.com/
-* 2022. online[online] Available at: <https://codepen.io/JavaScriptJunkie/pen/jvRGZy> [Accessed 10 June 2022].
