@@ -36,8 +36,19 @@ theme: jekyll-theme-leap-day
   - Cree e invoque la función flecha `funcionPredeterminada`.
 
 * Dentro de la función `funcionPredeterminada`.  
-  - Obtenga la referencia al elemento HTML con el id `formulario`, con `document.getElementById`.
-  -  A la referencia del elemento anterior, agregue un _callback_ al evento `submit`. El callback debe contener el parámetro `evento`.
+  - Obtenga la referencia al elemento HTML con el id `formulario`, con:
+    ```
+    const formulario = document.getElementById('formulario')
+    ```
+
+  - A la referencia del elemento anterior, agregue un _callback_ al evento `submit`. El callback debe contener el parámetro `evento`, con:
+    ```
+    formulario.addEventListener('submit', (evento) => {
+      ... 
+    })
+    ```
+
+    
 
 * Dentro del callback del evento `submit`.
   - Detenga el comportamiento predeterminado al evento, con: 
@@ -45,8 +56,8 @@ theme: jekyll-theme-leap-day
     evento.preventDefault();
     ```
 
-  - Obtenga la referencia al elemento HTML con el id `valorPorHora`. Extraiga el valor con la propiedad `value`.
-  - Obtenga la referencia a los elementos HTML con las horas. Extraiga el valor de cada elemento.
+  - Obtenga la referencia al elemento HTML con el id `valorPorHora`. Extraiga el valor de la referencia con la propiedad `value`.
+  - Obtenga la referencia a los elementos HTML con las horas. Extraiga el valor de cada referencia .
   - Realice los cálculos correspondientes. Y coloque el valor resultante en el elemento con el id `valorTotal`.
 
 
