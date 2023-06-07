@@ -24,17 +24,31 @@ theme: jekyll-theme-leap-day
 
 * Abra el proyecto en VSCode en la carpeta `frontend`. Levante el live server.
 
+#### HTML
+
+* Agregue los elementos (`input` y `label`) que considere necesarios. Tome como referencia el elemento `Elemento 1: Diseño de interfaz`.
+* Por cada elemento, coloque los valores correspondientes a los atributos `id` y `for`.
+
 #### Javascript
 
 * Agregue en el `index.html` la referencia al archivo `public/javascript/calculadora.js`
-* En `public/javascript/calculadora.js` agregue:
-  
-  1. La función flecha `funcionPredeterminada`.
-  2. Invoque a la función `funcionPredeterminada`.  
+* En `public/javascript/calculadora.js`:
+  - Cree e invoque la función flecha `funcionPredeterminada`.
+
+* Dentro de la función `funcionPredeterminada`.  
+  - Obtenga la referencia al elemento HTML con el id `formulario`, con `document.getElementById`.
+  -  A la referencia del elemento anterior, agregue un _callback_ al evento `submit`. El callback debe contener el parámetro `evento`.
+
+* Dentro del callback del evento `submit`.
+  - Obtenga la referencia al elemento HTML con el id `valorPorHora`. Extraiga el valor con la propiedad `value`.
+  - Obtenga la referencia a los elementos HTML con las horas. Extraiga el valor de cada elemento.
+  - Realice los cálculos correspondientes. Y coloque el valor resultante en el elemento con el id `valorTotal`.
+
 
 ### Documentación
 
 * [Material Design](https://material.io/design) es una guía de diseño enfocado en la visualización del sistema operativo Android, además en la web y en cualquier plataforma. Fue desarrollado por Google y anunciado en la conferencia Google I/O del 2014.
+  - [Material Minimal](https://material-minimal.com/) fundamentos de Material Minimal, un enfoque de diseño elegante y moderno que fusiona la funcionalidad de Material Design con una estética minimalista.
   - [MDB](https://mdbootstrap.com/docs/standard/getting-started/installation/) es el kit de interfaz de usuario más popular para crear aplicaciones y sitios web con capacidad de respuesta para dispositivos móviles, gratis para uso personal y comercial, que implementa Material Design. Tiene versiones disponibles para jQuery, Angular, React y Vue.
 * [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)  es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase.
   - [Básico](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/JavaScript_basics). En esta publicación encontrarán las generalidades de Javascript y una introducción al lenguaje que incluye definición de variables, condicionales, funciones y eventos.
