@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 04: Calculadora - Material
+## Proyecto 04: Calculadora - Material Design
 
 [DAWM](/DAWM/)
 
