@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 Es bastante común que luego de conocer las tecnologías de frontend (HTML, CSS y Javascript) recibas propuestas para crear sitios web; sin embargo, no siempre es fácil estimar el tiempo y el costo del proyecto.  
 
-### 
+### ChatGPT
 
 Para el prompt: 
 
