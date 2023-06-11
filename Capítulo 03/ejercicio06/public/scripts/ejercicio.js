@@ -69,7 +69,7 @@ let cargarLibros = () => {
    
     // Petición async/await
     // Anteponga await a la petición fetch   
-    let resultado = fetch("https://dataserverdawm.herokuapp.com/libros/xml")
+    let resultado = fetch("https://github.com/DAWMFIEC/DAWM-apps/blob/datos/libros.xm")
 
     // Anteponga await a la conversión de la variable resultado a texto
     let data = resultado.text()
