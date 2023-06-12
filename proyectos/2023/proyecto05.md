@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 ### Antecedentes
 
-Más allá de promocionar un producto o servicio en la web, los sitios web sirven permiten consolidar y presentar datos relevantes de manera intuitiva, lo que ayuda a los usuarios a comprender rápidamente la situación actual y tomar decisiones fundamentadas. A estos sitios se conocen como dashboards. Incluso, los dashboard permiten monitorear en tiempo real o actualizarse de forma periódica, para monitorear el rendimiento y los cambios en los datos en tiempo real.
+Más allá de promocionar un producto o servicio en la web, los sitios web sirven permiten consolidar y presentar datos relevantes de manera intuitiva, lo que ayuda a los usuarios a comprender rápidamente la situación actual y tomar decisiones fundamentadas. A estos sitios se conocen como dashboards. Incluso, los dashboard permiten vigilar en tiempo real, o de forma periódica, para identificar el rendimiento y los cambios en los datos.
 
 ### ChatGPT
 
