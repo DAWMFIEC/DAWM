@@ -25,6 +25,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 07: Bootstrap](guias/2023/guia07)
 * [Proyecto 04: Calculadora - Material Design + Javascript](proyectos/2023/proyecto04)
   * [Guía 08: Javascript - Introducción, DOM y Eventos](guias/2023/guia08)
+* [Proyecto 05: Clima - Dashboard](proyectos/2023/proyecto05)
+  * [Guía 09: Javascript - Diseño del dashboard](guias/2023/guia09)
 
 ### Anteriores
 
