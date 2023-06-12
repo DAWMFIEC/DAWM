@@ -8,8 +8,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* .
-* .
+* De [Open Meteo](https://open-meteo.com/) identifique la [documentación del API](https://open-meteo.com/en/docs).
+  - Identifique las variables y .
 
 ### Actividades
 
