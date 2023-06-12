@@ -13,7 +13,7 @@ theme: jekyll-theme-leap-day
   - Identifique las variables, el dato, el tipo de dato y unidades disponibles.
   - Abra el **API URL** con el **JSON** resultante de la configuración.
 * Busque una _plantilla gratuita_ de un _dashboard_ que utilice _bootstrap_, como: [MDBootstrap](https://mdbootstrap.com/freebies/), [CORE UI](https://coreui.io/product/free-bootstrap-admin-template/), [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false) u otros.
-* Diseñe la interfaz del dashboard al ubicar de las variables y el dato dentro de la plantilla. Utilice cualquiera de las herramientas de diseño que conoce.
+* Diseñe la interfaz del dashboard al ubicar las variables y el dato dentro de la plantilla. Utilice cualquiera de las herramientas de diseño que conoce.
 
 
 ### Actividades
