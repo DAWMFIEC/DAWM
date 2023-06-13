@@ -26,4 +26,4 @@ La respuesta es:
 ### Guías
 
 * [Guía 09: Javascript - Diseño del dashboard y AJAX](/DAWM/guias/2023/guia09)
-
+* [Guía 10: Javascript - Chart.js y funciones lambda](/DAWM/guias/2023/guia10)
