@@ -9,12 +9,14 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * De [Open Meteo](https://open-meteo.com/) identifique la [documentación del API](https://open-meteo.com/en/docs).
-  - Seleccione una de las variables en la sección **Hourly Weather Variables**.
+  - Seleccione una variable de la sección **Daily Weather Variables**, p.e.: `UV Index`
+  - Seleccione una variable de la sección **Hourly Weather Variables**, p.e.: `Temperature (2 m)` 
+  
 
 * De [Chart.js](https://www.chartjs.org/) identifique la [documentación del API](https://www.chartjs.org/docs/latest/getting-started/)
   - Identifique los [tipos de gráficos](https://www.chartjs.org/docs/latest/charts/) disponibles.
 
-* Asocie la variable con el arreglo de datos y el tipo de gráficos de Chart.js. Consider la descripción de los gráficos en [Dataviz Catalogue](https://datavizcatalogue.com/).
+* Asocie cada una de las variables con el arreglo de datos y los gráficos de Chart.js. Considere la descripción de los gráficos en [Dataviz Catalogue](https://datavizcatalogue.com/).
 
 
 ### Actividades
