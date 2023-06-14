@@ -61,11 +61,11 @@ theme: jekyll-theme-leap-day
   - La fuente de datos.
 
       ```
-      const data2 = {
+      const dataset = {
           labels: data.hourly.time, /* ETIQUETA DE DATOS */
           datasets: [{
               label: 'Temperatura', /* ETIQUETA DEL GRÁFICO */
-              data: data.hourly.temperature_2m /* ARREGLO DE DATOS */,
+              data: data.hourly.temperature_2m, /* ARREGLO DE DATOS */
               fill: false,
               borderColor: 'rgb(75, 192, 192)',
               tension: 0.1
@@ -77,7 +77,7 @@ theme: jekyll-theme-leap-day
       ```
       const config = {
           type: 'line',
-          data: data2,
+          data: dataset,
       };
       ```
 
