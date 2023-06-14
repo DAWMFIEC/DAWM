@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-### HTML
+#### HTML
 
 * Levante el proyecto _dashboard_.
 * En el `index.html`, agregue:
@@ -37,7 +37,7 @@ theme: jekyll-theme-leap-day
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       ```
 
-### JavaScript
+#### JavaScript
 
 Dentro del archivo javascript (antes con la función autoejecutable).
 
@@ -115,3 +115,4 @@ cdn, librerías externas
 ### Referencias
 
 * Chart.js. (2023). Retrieved 13 June 2023, from https://www.chartjs.org/ 
+* Chart JS - YouTube. (2023). Retrieved 14 June 2023, from https://www.youtube.com/@ChartJS-tutorials
