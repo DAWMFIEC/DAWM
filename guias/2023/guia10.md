@@ -19,6 +19,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
+### HTML
 
 * Levante el proyecto _dashboard_.
 * En el `index.html`, agregue:
@@ -36,7 +37,11 @@ theme: jekyll-theme-leap-day
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
       ```
 
-* Dentro del archivo javascript (antes con la función autoejecutable), agregue la función flecha **plot** con el parámetro **data**:
+### JavaScript
+
+Dentro del archivo javascript (antes con la función autoejecutable).
+
+* Agregue la función flecha **plot** con el parámetro **data**:
 
   ```
   let plot = (data) => {
@@ -64,7 +69,7 @@ theme: jekyll-theme-leap-day
       const dataset = {
           labels: data.hourly.time, /* ETIQUETA DE DATOS */
           datasets: [{
-              label: 'Temperatura', /* ETIQUETA DEL GRÁFICO */
+              label: 'Temperatura semanal', /* ETIQUETA DEL GRÁFICO */
               data: data.hourly.temperature_2m, /* ARREGLO DE DATOS */
               fill: false,
               borderColor: 'rgb(75, 192, 192)',
@@ -87,7 +92,7 @@ theme: jekyll-theme-leap-day
       const chart = new Chart(ctx, config)
       ```
 
-- Dentro del callback del `then`, agregue la llamada a la función plot.
+* Dentro del callback del último `then`, agregue la llamada a la función plot.
   
   ```
   .then(data => {
