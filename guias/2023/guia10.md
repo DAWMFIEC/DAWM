@@ -26,18 +26,19 @@ theme: jekyll-theme-leap-day
 
 * Levante el proyecto _dashboard_.
 * En el `index.html`, agregue:
-  - El contenedor del gráfico, con:
+  - El contenedor del gráfico donde considere conveniente, con:
 
       ```
-      <div>
-         <canvas id="myChart"></canvas>
-      </div>
+      <canvas id="myChart"></canvas>
       ```
 
   - La referencia a **Chart.js** desde el CDN, con:
 
       ```
+      /* Coloque la referencia a Chart.js antes del script que instancia el objeto Chart */
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+      <script src="Aquí-va-el-script-que-instancia-Chart.js"></script>
       ```
 
 ##### JavaScript
@@ -143,7 +144,7 @@ Dentro del archivo javascript (antes con la función autoejecutable).
       let meteo = localStorage.getItem('meteo');
       ```
 
-  - Valide la petición de acuerdo con el contenido de la entrada
+  - La petición asincrónica se ejecuta solo si no existe (`meteo == null`) la respuesta guardada y guarda DATA en la memoria. Caso contrario, carga DATA desde la memoria.
 
       ```
       if(meteo == null) {
@@ -154,14 +155,14 @@ Dentro del archivo javascript (antes con la función autoejecutable).
         .then(data => {
             load(data)
 
-            /* GUARDAR DATA EN MEMORIA */
+            /* GUARDAR DATA EN LA MEMORIA */
 
         })
         .catch(console.error);
 
       } else {
 
-          /* CARGAR DATA EN MEMORIA */
+          /* CARGAR DATA DESDE LA MEMORIA */
 
       }
       ```
