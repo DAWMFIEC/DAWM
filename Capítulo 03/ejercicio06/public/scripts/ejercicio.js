@@ -69,7 +69,7 @@ let cargarLibros = () => {
    
     // Petición async/await
     // Anteponga await a la petición fetch   
-    let resultado = fetch("https://github.com/DAWMFIEC/DAWM-apps/blob/datos/libros.xm")
+    let resultado = fetch("https://raw.githubusercontent.com/DAWMFIEC/DAWM-apps/datos/libros.xml")
 
     // Anteponga await a la conversión de la variable resultado a texto
     let data = resultado.text()

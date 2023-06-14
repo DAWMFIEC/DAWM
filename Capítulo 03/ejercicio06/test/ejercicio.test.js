@@ -22,7 +22,7 @@ describe('Test unitarios para la ruta `/`', function() {
 
     let script1 = [
       `let cargarLibros = async () => {`,
-      `let resultado = await fetch("https://dataserverdawm.herokuapp.com/libros/xml")`,
+      `let resultado = await fetch("https://raw.githubusercontent.com/DAWMFIEC/DAWM-apps/datos/libros.xml")`,
       `let data = await resultado.text()`
     ]
 
