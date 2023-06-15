@@ -28,6 +28,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 05: Clima - Dashboard](proyectos/2023/proyecto05)
   * [Guía 09: Javascript - Diseño del dashboard y AJAX](guias/2023/guia09)
   * [Guía 10: Javascript - Chart.js y Local Storage](guias/2023/guia10)
+  * [Guía 11: Modelo Cliente-Servidor y Fetch - Troubleshooting](guias/2023/guia11)
 
 ### Anteriores
 
