@@ -35,6 +35,8 @@ Dentro del archivo javascript creado en la guía anterior.
 
   ```
   let plot = (data) => { ... }
+
+  let load = (data) => { ... }
   
   let loadInocar = () => { ... }
 
