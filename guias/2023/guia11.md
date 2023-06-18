@@ -101,7 +101,7 @@ Dentro del archivo javascript creado en la guía anterior.
 
 * En de la función **loadInocar**, modifique el _endpoint_ a `'http://localhost:8080/https://www.inocar.mil.ec/mareas/consultan.php'`.
 
-* Revise los resultados en el navegador.
+* Revise los resultados en el navegador y modifique el estilo del resultado.
 
 ### Documentación
 
