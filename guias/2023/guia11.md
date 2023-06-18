@@ -64,25 +64,27 @@ Dentro del archivo javascript creado en la guía anterior.
 		})
 		.catch(console.error);
 	  ```
+	  
   - Cambie el MimeType de `"application/xml"` a `"text/html"` en el método **parseFromString**.
 
   - De la respuesta **XML**, obtenga la referencia al elemento `<div class="container-fluid"> ... </div>` mediante [getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName), por ejemplo:
 
-  	  ```
-  	  let contenedorMareas = xml.getElementsByClassName('container-fluid')[0];
-  	  ```
+	  ```
+	  let contenedorMareas = xml.getElementsByClassName('container-fluid')[0];
+	  ```
 
   - Obtenga la referencia al elemento HTML mediante el documento API, por ejemplo:
   	  
-  	  ```
-  	  let contenedorHTML = document.getElementById('table-container');
-  	  ```
+	  ```
+	  let contenedorHTML = document.getElementById('table-container');
+	  ```
 
   - Coloque el contenido de la respuesta asincrónica en el elemento HTML, por ejemplo:
 
-  	  ```
-  	  contenedorHTML.innerHTML = contenedorMareas.innerHTML;
-  	  ```
+	  ```
+	  contenedorHTML.innerHTML = contenedorMareas.innerHTML;
+	  ```
+
 #### CORS
 
  Use el inspector del navegador para identificar el error en la respuesta al requerimiento de los documentos PHP externos. Acceda a la pestaña **Console**.
