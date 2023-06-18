@@ -44,12 +44,13 @@ theme: jekyll-theme-leap-day
 
 ##### JavaScript
 
-Dentro del archivo javascript (antes con la función autoejecutable).
+Dentro del archivo javascript creado en la guía anterior.
 
-* Agregue la función flecha **plot** con el parámetro **data**:
+* Agregue la función flecha **plot** con el parámetro **data**, antes con la función autoejecutable:
 
   ```
   let plot = (data) => { ... }
+  
 
   (
     function () { ... }
