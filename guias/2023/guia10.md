@@ -35,10 +35,11 @@ theme: jekyll-theme-leap-day
   - La referencia a **Chart.js** desde el CDN, con:
 
       ```
-      /* Coloque la referencia a Chart.js antes del script que instancia el objeto Chart */
+      /* Coloque la referencia a Chart.js antes del script creado en la guía anterior */
+      
       <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 
-      <script src="Aquí-va-el-script-que-instancia-Chart.js"></script>
+      <script src="script-de-la-guia-anterior.js"></script>
       ```
 
 ##### JavaScript
