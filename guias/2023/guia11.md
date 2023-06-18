@@ -20,12 +20,14 @@ theme: jekyll-theme-leap-day
  
 ### Actividades
 
-#### HTML
+#### Dashboard
+
+##### HTML
 
 * Levante el proyecto _dashboard_.
 * En el `index.html`, agregue una etiqueta HTML que contendrá la _Tabla de mareas puertos del Ecuador_. Asegúrese de colocar un identificador único. 
 
-#### JavaScript
+##### JavaScript
 
 Dentro del archivo javascript creado en la guía anterior.
 
@@ -48,10 +50,10 @@ Dentro del archivo javascript creado en la guía anterior.
 
 * Dentro de la función **loadInocar**, agregue:
 
-  - Una petición asíncrona al _endpoint_ de `'http://localhost:8080/https://www.inocar.mil.ec/mareas/consultan.php'`. Utilice la documentación del método [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) y el procesamiento de [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/)
+  - Una petición asíncrona al _endpoint_ de `'https://www.inocar.mil.ec/mareas/consultan.php'`. Utilice la documentación del método [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) y el procesamiento de [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/)
 
 	  ```
-	  let URL = 'http://localhost:8080/https://www.inocar.mil.ec/mareas/consultan.php';
+	  let URL = 'https://www.inocar.mil.ec/mareas/consultan.php';
 
 	  fetch(URL)
 	 	.then(response => response.text())
@@ -64,7 +66,19 @@ Dentro del archivo javascript creado en la guía anterior.
 	  ```
   - Cambie el MimeType de `"application/xml"` a `"text/html"` en el método **parseFromString**.
 
+  - De la respuesta **XML**, obtenga la referencia al elemento `<div class="container-fluid"> ... </div>` mediante [getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName), por ejemplo:
 
+  	  ```
+  	  let contenedorMareas = xml.getElementsByClassName('container-fluid')[0]
+  	  ```
+
+
+
+* Obtenga la referencia 
+
+#### CORS - Proxy
+
+* 
 
 ### Documentación
 
