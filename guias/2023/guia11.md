@@ -13,16 +13,58 @@ theme: jekyll-theme-leap-day
 
   	 ![doc_php](imagenes/doc_php.png)
 * Requerimientos asincrónicos de archivos en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
-	- Modificaciones en el [parseFromString](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString) para procesar otro tipo de respuestas.
+	- MimeType en el [parseFromString](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString) para procesar otro tipo de respuestas.
 * ¿Qué es [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/CORS)? y ¿Qué es un [CORS - Proxy](https://httptoolkit.com/blog/cors-proxies/)?
 	- La implementación de un CORS - Proxy en [CORS-anywhere](https://github.com/Rob--W/cors-anywhere).
 
  
 ### Actividades
 
-#### 
+#### HTML
 
-* 
+* Levante el proyecto _dashboard_.
+* En el `index.html`, agregue una etiqueta HTML que contendrá la _Tabla de mareas puertos del Ecuador_. Asegúrese de colocar un identificador único. 
+
+#### JavaScript
+
+Dentro del archivo javascript creado en la guía anterior.
+
+* Agregue la función flecha **loadInocar**, antes con la función autoejecutable. Y llame a la función loadInocar dentro de la función anónima.
+
+  ```
+  let plot = (data) => { ... }
+  
+  let loadInocar = () => { ... }
+
+  (
+    function () { 
+    	... 
+
+    	loadInocar();
+    }
+
+  )();
+  ```
+
+* Dentro de la función **loadInocar**, agregue:
+
+  - Una petición asíncrona al _endpoint_ de `'http://localhost:8080/https://www.inocar.mil.ec/mareas/consultan.php'`. Utilice la documentación del método [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) y el procesamiento de [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/)
+
+	  ```
+	  let URL = 'http://localhost:8080/https://www.inocar.mil.ec/mareas/consultan.php';
+
+	  fetch(URL)
+	 	.then(response => response.text())
+		.then(data => {
+		   const parser = new DOMParser();
+		   const xml = parser.parseFromString(data, "application/xml");
+		   console.log(xml);
+		})
+		.catch(console.error);
+	  ```
+  - Cambie el MimeType de `"application/xml"` a `"text/html"` en el método **parseFromString**.
+
+
 
 ### Documentación
 
@@ -32,9 +74,10 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
+XML, CORS, proxy
 
 ### Referencias
 
-* Joubran, J., & Joubran, J. (2023). How to fetch XML in JavaScript | Code to go. Retrieved 18 June 2023, from https://codetogo.io/how-to-fetch-xml-in-javascript/
-* Intercambio de recursos de origen cruzado (CORS) - HTTP | MDN. (2023). Retrieved 18 June 2023, from https://developer.mozilla.org/es/docs/Web/HTTP/CORS
+* Joubran, J., & Joubran, J. (2023). How to fetch XML in JavaScript  Code to go. Retrieved 18 June 2023, from https://codetogo.io/how-to-fetch-xml-in-javascript/
+* Intercambio de recursos de origen cruzado (CORS) - HTTP MDN. (2023). Retrieved 18 June 2023, from https://developer.mozilla.org/es/docs/Web/HTTP/CORS
 * What are CORS proxies, and when are they safe?. (2023). Retrieved 18 June 2023, from https://httptoolkit.com/blog/cors-proxies/
