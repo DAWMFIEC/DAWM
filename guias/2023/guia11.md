@@ -64,10 +64,16 @@ Dentro del archivo javascript creado en la guía anterior.
 		})
 		.catch(console.error);
 	  ```
-	  
+
   - Cambie el MimeType de `"application/xml"` a `"text/html"` en el método **parseFromString**.
 
-  - De la respuesta **XML**, obtenga la referencia al elemento `<div class="container-fluid"> ... </div>` mediante [getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName), por ejemplo:
+  - De la respuesta **XML**:
+  	
+  		![consultan](imagenes/consultan.png)
+
+  - Utilice el método [getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o el método [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName) para extraer la referencia al elemento contenedor.
+
+  		Por ejemplo:
 
 	  ```
 	  let contenedorMareas = xml.getElementsByClassName('container-fluid')[0];
