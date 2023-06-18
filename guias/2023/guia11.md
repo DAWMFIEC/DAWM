@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
 ##### HTML
 
 * Levante el proyecto _dashboard_.
-* En el `index.html`, agregue una etiqueta HTML que contendrá la _Tabla de mareas puertos del Ecuador_. Asegúrese de colocar un identificador único. 
+* En el `index.html`, agregue una etiqueta HTML que contendrá la _Tabla de mareas puertos del Ecuador_. Asegúrese de colocar un identificador único, por ejemplo: `table-container`. 
 
 ##### JavaScript
 
@@ -69,16 +69,39 @@ Dentro del archivo javascript creado en la guía anterior.
   - De la respuesta **XML**, obtenga la referencia al elemento `<div class="container-fluid"> ... </div>` mediante [getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName), por ejemplo:
 
   	  ```
-  	  let contenedorMareas = xml.getElementsByClassName('container-fluid')[0]
+  	  let contenedorMareas = xml.getElementsByClassName('container-fluid')[0];
   	  ```
 
+  - Obtenga la referencia al elemento HTML mediante el documento API, por ejemplo:
+  	  
+  	  ```
+  	  let contenedorHTML = document.getElementById('table-container');
+  	  ```
 
+  - Coloque el contenido de la respuesta asincrónica en el elemento HTML, por ejemplo:
 
-* Obtenga la referencia 
+  	  ```
+  	  contenedorHTML.innerHTML = contenedorMareas.innerHTML;
+  	  ```
+#### CORS
+
+ Use el inspector del navegador para identificar el error en la respuesta al requerimiento de los documentos PHP externos. Acceda a la pestaña **Console**.
+
+![cors](imagenes/cors.png)
 
 #### CORS - Proxy
 
-* 
+* Clone el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere) 
+* Instale los paquetes, con: `npm install`
+* Levante el servidor, con: `npm start`
+
+#### Dashboard
+
+##### JavaScript
+
+* En de la función **loadInocar**, modifique el _endpoint_ a `'http://localhost:8080/https://www.inocar.mil.ec/mareas/consultan.php'`.
+
+* Revise los resultados en el navegador.
 
 ### Documentación
 
