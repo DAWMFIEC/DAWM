@@ -90,13 +90,13 @@ Use el inspector del navegador (en la pestaña **Console**) para reconocer el er
 	+ Clone el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere) 
 	+ Instale los paquetes, con: `npm install`
 	+ Levante el servidor, con: `npm start`
-	+ La `URL_proxy` es `'http://localhost:8080/'`
+	+ El **URL_proxy** es `'http://localhost:8080/'`
 
 * **OPCIÓN 2:** Proxy remoto
 	
 	+ En el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere)
 	+ Solicite acceso al [proxy demo](https://cors-anywhere.herokuapp.com/corsdemo)
-	+ La `URL_proxy` es `'https://cors-anywhere.herokuapp.com/'`
+	+ El **URL_proxy** es `'https://cors-anywhere.herokuapp.com/'`
 
 ##### JavaScript
 
