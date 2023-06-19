@@ -10,18 +10,13 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * Revise la información de las [Tabla de mareas puertos del Ecuador del INOCAR](https://www.inocar.mil.ec/web/index.php/productos/tabla-mareas).
-
 	- Use el inspector del navegador (en la pestaña **Network** y filtre con la opción **Doc**) para identificar los requerimientos de cada uno de los documentos PHP externos. 
+  	![docs](imagenes/docs.png)
+  - Identifique la estructura de la respuesta al recurso **consultan.php**:
   	![consultan](imagenes/consultan.png)
-
- 	- Identifique la estructura de la respuesta al recurso **consultan.php**:
-  	![consultan](imagenes/consultan.png)
-
 * Analice el código para realizar requerimientos asincrónicos cuya respuesta se encuentra en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 	- Identifique los diferentes tipos de MimeType para el método [parseFromString](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString) de acuerdo con el tipo de respuesta.
-
 * Examine la utilidad de la implementación de [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/CORS) en los navegadores web.
-
 * Analice el uso de un [CORS - Proxy](https://httptoolkit.com/blog/cors-proxies/) para resolver la implementación de las política de CORS. En particular, revise la implementación de un CORS - Proxy que se encuentra en [CORS-anywhere](https://github.com/Rob--W/cors-anywhere).
 
  
