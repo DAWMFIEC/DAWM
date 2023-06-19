@@ -90,22 +90,24 @@ Use el inspector del navegador (en la pestaña **Console**) para reconocer el er
 	+ Clone el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere) 
 	+ Instale los paquetes, con: `npm install`
 	+ Levante el servidor, con: `npm start`
+	+ La `URL_proxy` es `'http://localhost:8080/'`
 
 * **OPCIÓN 2:** Proxy remoto
 	
 	+ En el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere)
 	+ Solicite acceso al [proxy demo](https://cors-anywhere.herokuapp.com/corsdemo)
+	+ La `URL_proxy` es `'https://cors-anywhere.herokuapp.com/'`
 
 ##### JavaScript
 
 Dentro del archivo javascript creado en las guías anteriores.
 
-* Dentro de la función **loadInocar**, agregue:
+* Dentro de la función **loadInocar**:
 
 	- Modifique el _endpoint_ para que pase por el CORS - Proxy
 
 		```
-		let URL_proxy = ' ' // Coloque el URL de acuerdo con la opción de proxy 'http://localhost:8080/' o 'https://cors-anywhere.herokuapp.com/'
+		let URL_proxy = ' ' // Coloque el URL de acuerdo con la opción de proxy
 	  let URL = URL_proxy + 'https://www.inocar.mil.ec/mareas/consultan.php';
 	  ```
 
@@ -114,9 +116,11 @@ Dentro del archivo javascript creado en las guías anteriores.
 		![proxyconsultan](imagenes/proxyconsultan.png)
 
 
-	- En el callback con el procesamiento de la respuesta, utilice el API del objeto **xml** ([getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName)) para extraer la referencia al elemento `div.container-fluid`.
+* Dentro de la función **loadInocar**, en el callback con el procesamiento de la respuesta:
 
-  		Por ejemplo:
+	- Utilice el API del objeto **xml** ([getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName)) para obtener la referencia al elemento `div.container-fluid`.
+
+  	Por ejemplo:
 
 	  ```
 	  let contenedorMareas = xml.getElementsByClassName('container-fluid')[0];
@@ -128,13 +132,13 @@ Dentro del archivo javascript creado en las guías anteriores.
 	  let contenedorMareas = xml.getElementsByTagName('div')[0];
 	  ```
 
-  - Obtenga la referencia al elemento HTML mediante el documento API, por ejemplo:
+  - Utilice el API del objeto **xml** para obtener la referencia al elemento HTML mediante el documento API, por ejemplo:
   	  
 	  ```
 	  let contenedorHTML = document.getElementById('table-container');
 	  ```
 
-  - Coloque el contenido de la respuesta asincrónica en el elemento HTML, por ejemplo:
+  - Coloque el contenido de la respuesta asincrónica como contenido del elemento HTML, por ejemplo:
 
 	  ```
 	  contenedorHTML.innerHTML = contenedorMareas.innerHTML;
