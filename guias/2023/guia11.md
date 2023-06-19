@@ -21,7 +21,7 @@ theme: jekyll-theme-leap-day
 * Analice el código para realizar requerimientos asincrónicos cuya respuesta se encuentra en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 	- Identifique los diferentes tipos de MimeType para el método [parseFromString](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString) de acuerdo con el tipo de respuesta.
 
-* Examine la implementación de [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/CORS) en los navegadores web.
+* Examine la utilidad de la implementación de [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/CORS) en los navegadores web.
 
 * Analice el uso de un [CORS - Proxy](https://httptoolkit.com/blog/cors-proxies/) para resolver la implementación de las política de CORS. En particular, revise la implementación de un CORS - Proxy que se encuentra en [CORS-anywhere](https://github.com/Rob--W/cors-anywhere).
 
@@ -33,7 +33,7 @@ theme: jekyll-theme-leap-day
 ##### HTML
 
 * Levante el proyecto _dashboard_.
-* En el `index.html`, agregue una etiqueta HTML que contendrá la _Tabla de mareas puertos del Ecuador_. Asegúrese de colocar las clases adecuadas y un identificador único, por ejemplo: `table-container`. 
+* En el `index.html`, agregue una etiqueta HTML vacía. Dicho etiqueta contendrá la _Tabla de mareas puertos del Ecuador_. Asegúrese de colocar las clases de Bootstrap adecuadas y un identificador único, por ejemplo: `table-container`. 
 
 ##### JavaScript
 
@@ -74,16 +74,51 @@ Dentro del archivo javascript creado en las guías anteriores.
 		})
 		.catch(console.error);
 	  ```
+		
+		**Nota:** En el método **parseFromString**, cambie el MimeType de `"application/xml"` a `"text/html"`.
 
-  	**Nota:** En el método **parseFromString**, cambie el MimeType de `"application/xml"` a `"text/html"`.
+
+#### CORS
+
+Use el inspector del navegador (en la pestaña **Console**) para reconocer el error en el requerimiento a un dominio cruzado. 
+
+![cors](imagenes/cors.png)
+
+#### CORS - Proxy
+
+* Clone el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere) 
+* Instale los paquetes, con: `npm install`
+* Levante el servidor, con: `npm start`
+
+##### JavaScript
+
+Dentro del archivo javascript creado en las guías anteriores.
+
+* Dentro de la función **loadInocar**, agregue:
+
+	- Modifique el _endpoint_ para que pase por el CORS - Proxy
+
+		```
+	  let URL = 'http://localhost:8080/https://www.inocar.mil.ec/mareas/consultan.php';
+	  ```
+
+		**Nota:** Consulte la nueva respuesta al requerimiento asincrónico.
+
+		![proxyconsultan](imagenes/proxyconsultan.png)
 
 
-  - Utilice el método [getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o el método [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName) para extraer la referencia al elemento contenedor.
+	- En el callback con el procesamiento de la respuesta, utilice el API del objeto **xml** ([getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName)) para extraer la referencia al elemento `div.container-fluid`.
 
   		Por ejemplo:
 
 	  ```
 	  let contenedorMareas = xml.getElementsByClassName('container-fluid')[0];
+	  ```
+
+	  o 
+
+	  ```
+	  let contenedorMareas = xml.getElementsByTagName('div')[0];
 	  ```
 
   - Obtenga la referencia al elemento HTML mediante el documento API, por ejemplo:
@@ -98,25 +133,7 @@ Dentro del archivo javascript creado en las guías anteriores.
 	  contenedorHTML.innerHTML = contenedorMareas.innerHTML;
 	  ```
 
-#### CORS
-
- Use el inspector del navegador para identificar el error en la respuesta al requerimiento de los documentos PHP externos. Acceda a la pestaña **Console**.
-
-![cors](imagenes/cors.png)
-
-#### CORS - Proxy
-
-* Clone el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere) 
-* Instale los paquetes, con: `npm install`
-* Levante el servidor, con: `npm start`
-
-#### Dashboard
-
-##### JavaScript
-
-* En de la función **loadInocar**, modifique el _endpoint_ a `'http://localhost:8080/https://www.inocar.mil.ec/mareas/consultan.php'`.
-
-* Revise los resultados en el navegador y modifique el estilo del resultado.
+* Realice los cambios necesarios en el estilo y revise los resultados en el navegador.
 
 ### Documentación
 
