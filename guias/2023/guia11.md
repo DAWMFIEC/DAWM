@@ -74,7 +74,7 @@ Dentro del archivo javascript creado en las guías anteriores.
 			.catch(console.error);
 	  ```
 
-		**Nota:** En el método **parseFromString**, cambie el MimeType de `"application/xml"` a `"text/html"`.
+	**Nota:** En el método **parseFromString**, cambie el MimeType de `"application/xml"` a `"text/html"`.
 
 
 #### CORS
