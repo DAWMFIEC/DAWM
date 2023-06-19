@@ -84,9 +84,16 @@ Use el inspector del navegador (en la pestaña **Console**) para reconocer el er
 
 #### CORS - Proxy
 
-* Clone el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere) 
-* Instale los paquetes, con: `npm install`
-* Levante el servidor, con: `npm start`
+* **OPCIÓN 1:** Proxy local
+
+	+ Clone el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere) 
+	+ Instale los paquetes, con: `npm install`
+	+ Levante el servidor, con: `npm start`
+
+* **OPCIÓN 2:** Proxy remoto
+	
+	+ En el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere)
+	+ Solicite acceso al [proxy demo](https://cors-anywhere.herokuapp.com/corsdemo)
 
 ##### JavaScript
 
@@ -97,7 +104,8 @@ Dentro del archivo javascript creado en las guías anteriores.
 	- Modifique el _endpoint_ para que pase por el CORS - Proxy
 
 		```
-	  let URL = 'http://localhost:8080/https://www.inocar.mil.ec/mareas/consultan.php';
+		let URL_proxy = '' // Coloque el URL de acuerdo con la opción de proxy 'http://localhost:8080/' o 'https://cors-anywhere.herokuapp.com/'
+	  let URL = URL_proxy + 'https://www.inocar.mil.ec/mareas/consultan.php';
 	  ```
 
 		**Nota:** Consulte la nueva respuesta al requerimiento asincrónico.
