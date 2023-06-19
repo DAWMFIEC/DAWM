@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 	- Use el inspector del navegador (en la pestaña **Network** y filtre con la opción **Doc**) para identificar los requerimientos de cada uno de los documentos PHP externos. 
 
-  		![doc_php](imagenes/doc_php.png)
+  		![docphp](imagenes/docphp.png)
 
  	- Identifique la estructura de la respuesta al recurso **consultan.php**:
   	
