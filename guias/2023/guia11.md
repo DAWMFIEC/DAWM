@@ -8,14 +8,22 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Reconozca la información de las [Tabla de mareas puertos del Ecuador](https://www.inocar.mil.ec/web/index.php/productos/tabla-mareas) de [INOCAR](https://www.inocar.mil.ec/web/).
-  - Use el inspector del navegador para identificar el requerimiento de los documentos PHP externos. Acceda a la pestaña **Network** y filtre con la opción **Doc**.  
+* Revise la información de las [Tabla de mareas puertos del Ecuador del INOCAR](https://www.inocar.mil.ec/web/index.php/productos/tabla-mareas).
 
-  	 ![doc_php](imagenes/doc_php.png)
-* Requerimientos asincrónicos de archivos en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
-	- MimeType en el [parseFromString](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString) para procesar otro tipo de respuestas.
-* ¿Qué es [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/CORS)? y ¿Qué es un [CORS - Proxy](https://httptoolkit.com/blog/cors-proxies/)?
-	- La implementación de un CORS - Proxy en [CORS-anywhere](https://github.com/Rob--W/cors-anywhere).
+	- Use el inspector del navegador (en la pestaña **Network** y filtre con la opción **Doc**) para identificar los requerimientos de cada uno de los documentos PHP externos. 
+
+  		![doc_php](imagenes/doc_php.png)
+
+ 	- Identifique la estructura de la respuesta al recurso **consultan.php**:
+  	
+  		![consultan](imagenes/consultan.png)
+
+* Analice el código para realizar requerimientos asincrónicos cuya respuesta se encuentra en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
+	- Identifique los diferentes tipos de MimeType para el método [parseFromString](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString) de acuerdo con el tipo de respuesta.
+
+* Examine la implementación de [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/CORS) en los navegadores web.
+
+* Analice el uso de un [CORS - Proxy](https://httptoolkit.com/blog/cors-proxies/) para resolver la implementación de las política de CORS. En particular, revise la implementación de un CORS - Proxy que se encuentra en [CORS-anywhere](https://github.com/Rob--W/cors-anywhere).
 
  
 ### Actividades
@@ -25,11 +33,11 @@ theme: jekyll-theme-leap-day
 ##### HTML
 
 * Levante el proyecto _dashboard_.
-* En el `index.html`, agregue una etiqueta HTML que contendrá la _Tabla de mareas puertos del Ecuador_. Asegúrese de colocar un identificador único, por ejemplo: `table-container`. 
+* En el `index.html`, agregue una etiqueta HTML que contendrá la _Tabla de mareas puertos del Ecuador_. Asegúrese de colocar las clases adecuadas y un identificador único, por ejemplo: `table-container`. 
 
 ##### JavaScript
 
-Dentro del archivo javascript creado en la guía anterior.
+Dentro del archivo javascript creado en las guías anteriores.
 
 * Agregue la función flecha **loadInocar**, antes con la función autoejecutable. Y llame a la función loadInocar dentro de la función anónima.
 
@@ -52,7 +60,7 @@ Dentro del archivo javascript creado en la guía anterior.
 
 * Dentro de la función **loadInocar**, agregue:
 
-  - Una petición asíncrona al _endpoint_ de `'https://www.inocar.mil.ec/mareas/consultan.php'`. Utilice la documentación del método [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) y el procesamiento de [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/)
+  - Una petición asíncrona al _endpoint_ de `'https://www.inocar.mil.ec/mareas/consultan.php'`. Utilice la documentación del método [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) para el procesamiento de una respuesta [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/)
 
 	  ```
 	  let URL = 'https://www.inocar.mil.ec/mareas/consultan.php';
@@ -67,11 +75,8 @@ Dentro del archivo javascript creado en la guía anterior.
 		.catch(console.error);
 	  ```
 
-  - Cambie el MimeType de `"application/xml"` a `"text/html"` en el método **parseFromString**.
+  	**Nota:** En el método **parseFromString**, cambie el MimeType de `"application/xml"` a `"text/html"`.
 
-  - De la respuesta **XML**:
-  	
-  		![consultan](imagenes/consultan.png)
 
   - Utilice el método [getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o el método [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName) para extraer la referencia al elemento contenedor.
 
