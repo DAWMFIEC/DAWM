@@ -104,7 +104,7 @@ Dentro del archivo javascript creado en las guías anteriores.
 
 * Dentro de la función **loadInocar**:
 
-	- Modifique el _endpoint_ para que pase por el CORS - Proxy
+	- Modifique el _endpoint_ para que pase por el CORS - Proxy.
 
 		```
 		let URL_proxy = ' ' // Coloque el URL de acuerdo con la opción de proxy
