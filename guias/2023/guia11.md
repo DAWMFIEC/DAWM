@@ -12,12 +12,10 @@ theme: jekyll-theme-leap-day
 * Revise la información de las [Tabla de mareas puertos del Ecuador del INOCAR](https://www.inocar.mil.ec/web/index.php/productos/tabla-mareas).
 
 	- Use el inspector del navegador (en la pestaña **Network** y filtre con la opción **Doc**) para identificar los requerimientos de cada uno de los documentos PHP externos. 
-
-  		![consultan](imagenes/consultan.png)
+  	![consultan](imagenes/consultan.png)
 
  	- Identifique la estructura de la respuesta al recurso **consultan.php**:
-  	
-  		![consultan](imagenes/consultan.png)
+  	![consultan](imagenes/consultan.png)
 
 * Analice el código para realizar requerimientos asincrónicos cuya respuesta se encuentra en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 	- Identifique los diferentes tipos de MimeType para el método [parseFromString](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString) de acuerdo con el tipo de respuesta.
