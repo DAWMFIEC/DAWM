@@ -11,10 +11,12 @@ theme: jekyll-theme-leap-day
 * Revise la información de las [Tabla de mareas puertos del Ecuador del INOCAR](https://www.inocar.mil.ec/web/index.php/productos/tabla-mareas).
 
 	- Use el inspector del navegador (en la pestaña **Network** y filtre con la opción **Doc**) para identificar los requerimientos de cada uno de los documentos PHP externos. 
-  	![docs](imagenes/docs.png)
+
+  		![docs](imagenes/docs.png)
 
   - Identifique la estructura de la respuesta al recurso **consultan.php**:
-  	![consultan](imagenes/consultan.png)
+
+  		![consultan](imagenes/consultan.png)
 
 * Analice el código para realizar requerimientos asincrónicos cuya respuesta se encuentra en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 	- Identifique los diferentes tipos de MimeType para el método [parseFromString](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString) de acuerdo con el tipo de respuesta.
@@ -64,16 +66,16 @@ Dentro del archivo javascript creado en las guías anteriores.
 	  let URL = 'https://www.inocar.mil.ec/mareas/consultan.php';
 
 	  fetch(URL)
-	 	.then(response => response.text())
-		.then(data => {
-		   const parser = new DOMParser();
-		   const xml = parser.parseFromString(data, "application/xml");
-		   console.log(xml);
-		})
-		.catch(console.error);
+		 	.then(response => response.text())
+			.then(data => {
+			   const parser = new DOMParser();
+			   const xml = parser.parseFromString(data, "application/xml");
+			   console.log(xml);
+			})
+			.catch(console.error);
 	  ```
 
-	**Nota:** En el método **parseFromString**, cambie el MimeType de `"application/xml"` a `"text/html"`.
+		**Nota:** En el método **parseFromString**, cambie el MimeType de `"application/xml"` a `"text/html"`.
 
 
 #### CORS
@@ -104,7 +106,7 @@ Dentro del archivo javascript creado en las guías anteriores.
 	- Modifique el _endpoint_ para que pase por el CORS - Proxy
 
 		```
-		let URL_proxy = '' // Coloque el URL de acuerdo con la opción de proxy 'http://localhost:8080/' o 'https://cors-anywhere.herokuapp.com/'
+		let URL_proxy = ' ' // Coloque el URL de acuerdo con la opción de proxy 'http://localhost:8080/' o 'https://cors-anywhere.herokuapp.com/'
 	  let URL = URL_proxy + 'https://www.inocar.mil.ec/mareas/consultan.php';
 	  ```
 
