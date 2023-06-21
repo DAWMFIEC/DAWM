@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 
 #### Validación y Verificación
 
-* Valide los documentos de su proyecto y aplique las modificaciones de la validación de [Markup Validation Service de la W3C](https://validator.w3.org/), [CSS Validation Service de la W3C](https://jigsaw.w3.org/css-validator/) y [JavaScript Validator de Code Beautify](https://codebeautify.org/jsvalidate).
+* Verifique y valide los documentos de su proyecto con [Markup Validation Service de la W3C](https://validator.w3.org/), [CSS Validation Service de la W3C](https://jigsaw.w3.org/css-validator/) y [JavaScript Validator de Code Beautify](https://codebeautify.org/jsvalidate).
 
 #### Typescript
 
@@ -38,4 +38,10 @@ Typescript, superset, `transpilación`, Stackblitz
 
 ### Referencias
 
+* The W3C Markup Validation Service. (2023). Retrieved 21 June 2023, from https://validator.w3.org/
+* The W3C CSS Validation Service. (2023). Retrieved 21 June 2023, from https://jigsaw.w3.org/css-validator/
+* Best JavaScript Validator Online. (2023). Retrieved 21 June 2023, from https://codebeautify.org/jsvalidate
+* (2023). Retrieved 21 June 2023, from https://thenewstack.io/what-is-typescript/
 * (2022). Retrieved 27 November 2022, from https://www.typescriptlang.org/
+* StackBlitz Instant Dev Environments Click. Code. Done. - StackBlitz. (2023). Retrieved 21 June 2023, from https://stackblitz.com/
+* TypeScript Tutorial. (2023). Retrieved 21 June 2023, from https://www.typescripttutorial.net/
