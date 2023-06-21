@@ -28,4 +28,4 @@ La respuesta es:
 * [Guía 09: Javascript - Diseño del dashboard y AJAX](/DAWM/guias/2023/guia09)
 * [Guía 10: Javascript - Chart.js y Local Storage](/DAWM/guias/2023/guia10)
 * [Guía 11: Modelo Cliente-Servidor y CORS](/DAWM/guias/2023/guia11)
-* [Guía 12: Validación y Verificación - Typescript]((/DAWM/guias/2023/guia12)
+* [Guía 12: Validación y Verificación - Typescript](/DAWM/guias/2023/guia12)
