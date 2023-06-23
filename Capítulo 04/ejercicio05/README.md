@@ -5,7 +5,7 @@
 
 ## Requisitos
 
-* Complete las actividades de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) y [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html)
+* Complete las actividades de [Angular - Local](https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawmfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) y [Angular - Componentes, Comunicación y Directivas](https://dawmfiec.github.io/DAWM/tutoriales/angular_bases.html)
 
 ## Instrucciones
 
@@ -138,7 +138,7 @@
 
 ## Referencias 
 
-* DAWM-2022. (2022). Retrieved 15 July 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/angular_bases.html
+* DAWM-2022. (2022). Retrieved 15 July 2022, from https://dawmfiec.github.io/DAWM-2022/tutoriales/angular_bases.html
 * Angular. (2022). Retrieved 26 November 2022, from https://angular.io/api/core/ng-container
 * Maluenda, R. (2018). Angular Templates: las directivas ng-template, ng-container y ngTemplateOutlet. Retrieved 26 November 2022, from https://profile.es/blog/angular-templates-las-directivas-ng-template-ng-container-y-ngtemplateoutlet/
 * Angular. (2022). Retrieved 26 November 2022, from https://angular.io/api/common/NgIf
