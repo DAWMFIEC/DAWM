@@ -31,8 +31,10 @@ const manejadorPeticiones = (req, res) => {
             /* Inicio */
 
             //Agregue las cabeceras "Content-Type" para JSON ("application/json") y con estado 200
-            //Convierta el objeto libros como string y coloque el string en la respuesta. Utilice la función JSON.stringify
+            // Convierta el objeto libros a una cadena de texto JSON utilizando JSON.stringify
+
                  
+            // Coloque la cadena de texto JSON en la respuesta con res.end
 
                 
             /* Fin */

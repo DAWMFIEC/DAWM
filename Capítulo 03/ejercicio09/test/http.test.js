@@ -40,9 +40,9 @@ describe('Test unitarios a las rutas del servidor ' + URL, function() {
         .get('/json')
         .then((response) => {
             try {
-              chai.expect(response).to.have.header('access-control-allow-origin', 'http://localhost:8001');
+              chai.expect(response).to.have.header("Access-Control-Allow-Origin", "http://localhost:8001");
             } catch (error) {
-              chai.expect.fail('El mensaje de respuesta debe contener la cabecera `access-control-allow-origin` con valor `http://localhost:8001`');
+              chai.expect.fail('El mensaje de respuesta debe contener la cabecera `Access-Control-Allow-Origin` con valor `http://localhost:8001`');
               return;
             }
 
