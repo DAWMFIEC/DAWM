@@ -142,7 +142,7 @@ Directivas
 Las directivas sirven para extender la vista y usar lógica que será ejecutada en el DOM (Document Object Model). Existen [tres tipos de directivas](https://ngchallenges.gitbook.io/project/directivas): directivas de atributo, directivas estructurales y componentes.
 
 <p align="center">
-  <img width="328" height="200" src="https://javadesde0.com/wp-content/uploads/directives-angular2.jpg">
+  <img width="328" src="https://miro.medium.com/v2/resize:fit:4068/format:webp/1*McDLKuGNV8JHk56pfr7V4g.jpeg">
 </p>
 
 
