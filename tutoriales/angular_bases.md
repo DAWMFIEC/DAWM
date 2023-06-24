@@ -12,10 +12,10 @@ Proyecto en Angular
 
 * * *
 
-Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
+Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawmfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
 
 * Ya sea desde tu repositorio personal
-* O, clonando el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/clienteAngular**
+* O, clonando el proyecto con las [aplicaciones del curso](https://github.com/dawmfiec/DAWM-apps) para la aplicación **album/clienteAngular**
     - Para el hito: **`hito2-album`**
 
 
