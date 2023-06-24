@@ -12,10 +12,10 @@ Proyecto en Angular
 
 * * *
 
-Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
+Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawmfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
 
 * Ya sea desde tu repositorio personal
-* O, clonando el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/clienteAngular**
+* O, clonando el proyecto con las [aplicaciones del curso](https://github.com/dawmfiec/DAWM-apps) para la aplicación **album/clienteAngular**
     - Para el hito: **`hito2-album`**
 
 
@@ -142,7 +142,7 @@ Directivas
 Las directivas sirven para extender la vista y usar lógica que será ejecutada en el DOM (Document Object Model). Existen [tres tipos de directivas](https://ngchallenges.gitbook.io/project/directivas): directivas de atributo, directivas estructurales y componentes.
 
 <p align="center">
-  <img width="328" height="200" src="https://javadesde0.com/wp-content/uploads/directives-angular2.jpg">
+  <img width="328" src="https://miro.medium.com/v2/resize:fit:4068/format:webp/1*McDLKuGNV8JHk56pfr7V4g.jpeg">
 </p>
 
 
