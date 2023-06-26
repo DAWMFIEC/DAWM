@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 06:
+## Proyecto 06: Dataset SPA - Angular
 
 [DAWM](/DAWM/)
 
