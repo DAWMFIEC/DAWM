@@ -15,7 +15,7 @@ theme: jekyll-theme-leap-day
 
 ### Prerrequisito
 
-* Genere una aplicación nueva en Angular, siguiendo las instrucciones de [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html):
+* Genere una aplicación nueva en Angular, siguiendo las instrucciones de [Apuntes](https://dawmfiec.github.io/DAWM/paginas/apuntes.html):
   
   + Cree el proyecto: **potterhead**
   + Cree los componentes `components/splash`, `components/movies` y `components/movie`.
@@ -329,7 +329,7 @@ theme: jekyll-theme-leap-day
 
 #### Angular - Cordova 
 
-* Siga las instrucciones en [Angular - Cordova](https://dawfiec.github.io/DAWM/tutoriales/angular_cordova.html) para generar el `apk` de la aplicación.
+* Siga las instrucciones en [Angular - Cordova](https://dawmfiec.github.io/DAWM/tutoriales/angular_cordova.html) para generar el `apk` de la aplicación.
 
 ### Términos
 

@@ -17,20 +17,20 @@ theme: jekyll-theme-leap-day
 
 * Genere una aplicación en Angular, siguiendo las instrucciones:
   
-  + De la [Guía 13](https://dawfiec.github.io/DAWM/guias/guia13.html), o 
+  + De la [Guía 13](https://dawmfiec.github.io/DAWM/guias/guia13.html), o 
   + Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **spa/clienteAngular**
     - Para el hito: **`hito1-spa`**
 
 ### Actividades
 
-* Convierta la aplicación a **PWA** y compruebe el funcionamiento offline, de acuerdo con las instrucciones de [Angular - PWA](https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html).
-* Cree y consuma el servicio **servicios/navbar**, de acuerdo con las instrucciones de [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html)
+* Convierta la aplicación a **PWA** y compruebe el funcionamiento offline, de acuerdo con las instrucciones de [Angular - PWA](https://dawmfiec.github.io/DAWM/tutoriales/angular_pwa.html).
+* Cree y consuma el servicio **servicios/navbar**, de acuerdo con las instrucciones de [Angular - Servicios](https://dawmfiec.github.io/DAWM/tutoriales/angular_servicios.html)
   + Realice peticiones al [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
   + Cree y utilice la interfaz **interfaz/Navbar** de acuerdo con la estructura del [URL](https://dawm-fiec-espol-default-rtdb.firebaseio.com/navbar.json)
 * Modifique el componente **NavbarComponent**
   + Inyecte la dependencia del servicio en el constructor
   + Cree los atributos necesarios y renderícelos donde considere conveniente en la vista del componente. 
-* Revise la página de [errores](https://dawfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
+* Revise la página de [errores](https://dawmfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
 
 ### Términos
 

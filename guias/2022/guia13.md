@@ -18,8 +18,8 @@ theme: jekyll-theme-leap-day
 * Genere una aplicación en Angular, siguiendo las instrucciones pertinentes de los tutoriales:
 
   + Cree la carpeta **spa**.
-  + Dentro de **spa**, cree la aplicación **clienteAngular** de acuerdo con las instrucciones en [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html). 
-  + Incluya bootstrap y sus dependencias de acuerdo con las instrucciones en [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html)
+  + Dentro de **spa**, cree la aplicación **clienteAngular** de acuerdo con las instrucciones en [Angular - Local](https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html). 
+  + Incluya bootstrap y sus dependencias de acuerdo con las instrucciones en [Angular - Bootstrap](https://dawmfiec.github.io/DAWM/tutoriales/angular_bootstrap.html)
 
 * Incorpore la plantilla [Creative](https://startbootstrap.com/theme/creative) a la aplicación en Angular.
 
@@ -34,17 +34,17 @@ theme: jekyll-theme-leap-day
 		- **Proyecto de Angular:** En el `src/styles.css`, pegue las reglas css.
 
 * Actualice el navegador o (re)inicie el servidor
-* Revise la página de [errores](https://dawfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
+* Revise la página de [errores](https://dawmfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
 
 * Componentes
-	+ Cree los componentes: **`common/navbar`** y **`common/footer`** de acuerdo con las instrucciones en [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html).
+	+ Cree los componentes: **`common/navbar`** y **`common/footer`** de acuerdo con las instrucciones en [Angular - Componentes, Comunicación y Directivas](https://dawmfiec.github.io/DAWM/tutoriales/angular_bases.html).
 	+ De `src/app/app.component.html` mueva:
 		- La etiqueta _\<nav\>_ a la vista del componente **common/navbar**
 		- La etiqueta _\<footer\>_ a la vista del componente **common/footer**
 	+ Agregue las etiquetas _\<app-navbar\>_ y _\<app-footer\>_ en el lugar correspondiente en `src/app/app.component.html`.
 
 * Actualice el navegador o (re)inicie el servidor
-* Revise la página de [errores](https://dawfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
+* Revise la página de [errores](https://dawmfiec.github.io/DAWM/paginas/errores.html) de ser necesario.
 
 
 ![guia 13](imagenes/guia13.png)

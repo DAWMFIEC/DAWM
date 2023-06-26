@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
 
 ### Prerrequisito
 
-Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html) y [Express - Boostrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html)
+Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](https://dawmfiec.github.io/DAWM/tutoriales/express_bases.html) y [Express - Boostrap](https://dawmfiec.github.io/DAWM/tutoriales/express_bootstrap.html)
   
 * Desde tu repositorio personal
 * Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
@@ -26,7 +26,7 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 ### Actividades
 
 
-* Realice las actividades de la guía [Express - Partials/Layout](https://dawfiec.github.io/DAWM/tutoriales/express_partials.html).
+* Realice las actividades de la guía [Express - Partials/Layout](https://dawmfiec.github.io/DAWM/tutoriales/express_partials.html).
 
 
 * De la interacción entre el cliente y el servidor, la respuesta es completamente renderizada en lado del servidor (SSR server-side rendering) y enviada al cliente,  como se muestra en la imagen a continuación. 

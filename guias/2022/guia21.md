@@ -15,8 +15,8 @@ theme: jekyll-theme-leap-day
 ### Actividades
 
 * Realice completamente los tutoriales 
-  + [Railway - Sitio Estático](https://dawfiec.github.io/DAWM/tutoriales/railway_sitio_estatico.html), y 
-  + [Railway - MySQL](https://dawfiec.github.io/DAWM/tutoriales/railway_msyql.html)
+  + [Railway - Sitio Estático](https://dawmfiec.github.io/DAWM/tutoriales/railway_sitio_estatico.html), y 
+  + [Railway - MySQL](https://dawmfiec.github.io/DAWM/tutoriales/railway_msyql.html)
 
 ### Términos
 

@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 
 ### Prerrequisito
 
-Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html).
+Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](https://dawmfiec.github.io/DAWM/tutoriales/express_bases.html).
   
 * Desde tu repositorio personal
 * Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
@@ -26,11 +26,11 @@ Utiliza el proyecto que desarrollaste con los tutoriales de [Express - Bases](ht
 
 #### Modelo: Foto
 
-* Realice completamente el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html).
+* Realice completamente el tutorial [Express - ORM (Básico)](https://dawmfiec.github.io/DAWM/tutoriales/express_ormbasico.html).
 
 #### Modelo: Etiqueta
 
-* Tome como referencia las instrucciones el tutorial [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) o [Apuntes](https://dawfiec.github.io/DAWM/paginas/apuntes.html), para:
+* Tome como referencia las instrucciones el tutorial [Express - ORM (Básico)](https://dawmfiec.github.io/DAWM/tutoriales/express_ormbasico.html) o [Apuntes](https://dawmfiec.github.io/DAWM/paginas/apuntes.html), para:
   + **Modelo:** Crear el modelo **`etiqueta`** con el atributo `texto`. 
     - Modifique el modelo `models/etiqueta`, agregue la clave **tableName** y el nombre de la tabla `etiquetas` a la cual estará relacionado
   ```

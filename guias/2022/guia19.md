@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-* Realice completamente el tutorial [Express - ODM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_odmbasico.html)
+* Realice completamente el tutorial [Express - ODM (Básico)](https://dawmfiec.github.io/DAWM/tutoriales/express_odmbasico.html)
 * Tome como referencia la [documentación de Mongoose](https://mongoosejs.com/docs/index.html) o de los [tutoriales en ObjectRocket](https://kb.objectrocket.com/mongo-db) para implementar los siguientes métodos:
   + Agregue el controlador de la ruta `"/findAllByGender/:genero/json"` para el verbo **GET**. El cual responde un json con todos los documentos (findAll) que se encuentran en la colección, dado el genero.
   + Agregue el controlador de la ruta `"/findAllByTime/:tiempo_navegacion_seg_menor/:tiempo_navegacion_seg_mayor/json"` para el verbo **GET**. El cual responde un json con todos los documentos (findAll) que se encuentran en la colección, dado que el tiempo de navegacion se encuentre en el rango.
