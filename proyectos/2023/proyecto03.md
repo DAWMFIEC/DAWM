@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 03: Landing Page
+## Proyecto 03: Landing Page SPA - Bootstrap
 
 [DAWM](/DAWM/)
 

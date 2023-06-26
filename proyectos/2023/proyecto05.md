@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 05:
+## Proyecto 05: Clima - Dashboard
 
 [DAWM](/DAWM/)
 

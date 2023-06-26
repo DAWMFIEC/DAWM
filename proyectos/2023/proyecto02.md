@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 02: Curriculum vitae
+## Proyecto 02: Curriculum vitae - HTML & CSS
 
 [DAWM](/DAWM/)
 

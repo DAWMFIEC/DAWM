@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 01: Repositorio del desarrollador
+## Proyecto 01: Repositorio del desarrollador - Markdown y GitHub Pages
 
 [DAWM](/DAWM/)
 
