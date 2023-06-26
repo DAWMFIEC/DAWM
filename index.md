@@ -34,6 +34,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 10: Javascript - Chart.js y Local Storage](guias/2023/guia10)
   * [Guía 11: Modelo Cliente-Servidor y CORS](guias/2023/guia11)
   * [Guía 12: Validación y Verificación - Typescript](guias/2023/guia12)
+* [Proyecto 06: Dataset - Dashboard](proyectos/2023/proyecto06)
+  * [Guía 13: Angular - Introducción](guias/2023/guia13)
 
 ### Anteriores
 
