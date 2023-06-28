@@ -23,20 +23,20 @@ theme: jekyll-theme-leap-day
 * [Descargue](https://github.com/startbootstrap/startbootstrap-creative/archive/gh-pages.zip) y decomprima los archivos de la plantilla.
 * Cambios básicos:
 	+ HTML
-		- **De la plantilla:** Del archivo `index.html`, copie todas las etiquetas (con su contenido): `<nav>`, `<header>`, `<section>`, `<div>` y `<footer>`. No copie las etiquetas `<script>`. 
-		- **En el proyecto de Angular:** En el `src/app/app.component.html`, reemplace el contenido por las etiquetas html previamente copiadas. 
+		- **Plantilla:** Del archivo `index.html`, copie todas las etiquetas (con su contenido): `<nav>`, `<header>`, `<section>`, `<div>` y `<footer>`. No copie las etiquetas `<script>`. 
+		- En el proyecto de **Angular:** En el `src/app/app.component.html`, reemplace el contenido por las etiquetas html previamente copiadas. 
 	+ ASSETS
-		- **De la plantilla:** Copie todos los archivos que se encuentran dentro de la carpeta `assets`. 
-		- **En el proyecto de Angular:** En la ruta `src/assets`, coloque los archivos previamente copiados.
+		- **Plantilla:** Copie todos los archivos que se encuentran dentro de la carpeta `assets`. 
+		- En el proyecto de **Angular:** En la ruta `src/assets`, coloque los archivos previamente copiados.
 	+ CSS:
-		- **De la plantilla:** Del archivo `css/styles.css`, copie todas las reglas css.
-		- **En el proyecto de Angular:** En el `src/styles.css`, pegue las reglas css previamente copiadas.
+		- **Plantilla:** Del archivo `css/styles.css`, copie todas las reglas css.
+		- En el proyecto de **Angular:** En el `src/styles.css`, pegue las reglas css previamente copiadas.
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
 * Hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
    + CSS
-   	   - De la **plantilla:** Del archivo `index.html`, copie el URL del recurso:
+   		- De la **plantilla:** Del archivo `index.html`, copie el URL del recurso:
 		
 		  ```
 		  ...
@@ -52,7 +52,7 @@ theme: jekyll-theme-leap-day
 		  ...
 		  ```
 
-   	   - En el proyecto de **Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo: 
+   	    - En el proyecto de **Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo: 
 
 		  ```
 		  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
@@ -72,14 +72,14 @@ theme: jekyll-theme-leap-day
    	  - De la **plantilla:** copie la carpeta `js`.  
    	  - En el proyecto de **Angular:** En la ruta `src`, pegue la carpeta `js`. Agregue la referencia en el archivo `angular.json`:
 
-		 ```
-	   	 ...
-		 "scripts": [
+		```
+	   	...
+		"scripts": [
 		   "node_modules/bootstrap/dist/js/bootstrap.min.js",
 		   "src/js/scripts.js"
-		 ]
-       	 ...
-   	     ```
+		]
+       	...
+   	    ```
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
