@@ -36,7 +36,7 @@ theme: jekyll-theme-leap-day
 
 * Hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
    + CSS
-   	   - De la **plantilla:** Del archivo `index.html`, copie el URL del recurso:
+   	  - De la **plantilla:** Del archivo `index.html`, copie el URL del recurso:
 		
 		 ```
 		 ...
@@ -53,7 +53,7 @@ theme: jekyll-theme-leap-day
 		 ...
 		 ```
 
-   	   - En el proyecto de **Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo: 
+   	  - En el proyecto de **Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo: 
 
 	     ```
 		 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
@@ -70,9 +70,9 @@ theme: jekyll-theme-leap-day
 
 * Archivo javascript de la plantilla `js/scripts.js`:
    + JS
-   	   - De la **plantilla:** copie la carpeta `js`.  
+   	  - De la **plantilla:** copie la carpeta `js`.  
    	   
-   	   - En el proyecto de **Angular:** En la ruta `src`, pegue la carpeta `js`. Agregue la referencia en el archivo `angular.json`:
+   	  - En el proyecto de **Angular:** En la ruta `src`, pegue la carpeta `js`. Agregue la referencia en el archivo `angular.json`:
 
 		  ```
 		  ...
