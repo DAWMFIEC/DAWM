@@ -37,7 +37,8 @@ theme: jekyll-theme-leap-day
 * Hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
    + CSS
    	   - **De la plantilla:** Del archivo `index.html`, copie el URL del recurso:
-   	       ```
+			
+			```
 		    ...
 			<!-- Bootstrap Icons-->
 			<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
@@ -50,14 +51,14 @@ theme: jekyll-theme-leap-day
 		   ```
 
    	   - **En el proyecto de Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo: 
-   	     
-   	       ```
-		   @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-		   @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700");
-		   @import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic");
-		   @import url("https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css");
-		   ...
-		   ```
+
+			```
+		    @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+		    @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700");
+		    @import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic");
+		    @import url("https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css");
+		    ...
+		    ```
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
@@ -66,18 +67,21 @@ theme: jekyll-theme-leap-day
    	   - **De la plantilla:** copie la carpeta `js`.  
    	   - **En el proyecto de Angular:** En la ruta `src`, pegue la carpeta `js`. Agregue la referencia en el archivo `angular.json`:
 
-   	       ```
-	   	   ...
-	       "scripts": [
-              "node_modules/bootstrap/dist/js/bootstrap.min.js",
-              "src/js/scripts.js"
-           ]
-       	   ...
-   	       ```
+			```
+	   	    ...
+	        "scripts": [
+               "node_modules/bootstrap/dist/js/bootstrap.min.js",
+               "src/js/scripts.js"
+            ]
+       	    ...
+   	        ```
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
 #### Componentes
+
+* Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatpgt/guia14-angular-components.png) para crear los componentes: `navigation`, `masthead`, `about`, `services`, `portfolio`, `calltoaction`, `contact` y `footer`.
+
 
 
 
