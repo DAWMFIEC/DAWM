@@ -21,12 +21,12 @@ theme: jekyll-theme-leap-day
 
 * Busque una plantilla gratuita de Bootstrap, por ejemplo: [Creative](https://startbootstrap.com/theme/creative).
 * [Descargue](https://github.com/startbootstrap/startbootstrap-creative/archive/gh-pages.zip) y decomprima los archivos de la plantilla.
-* Realice cada uno de los siguientes cambios:
+* Cambios básicos:
 	+ HTML
 		- **De la plantilla:** Del archivo `index.html`, copie todas las etiquetas (con su contenido): `<nav>`, `<header>`, `<section>`, `<div>` y `<footer>`. No copie las etiquetas `<script>`. 
 		- **En el proyecto de Angular:** En el `src/app/app.component.html`, reemplace el contenido por las etiquetas html previamente copiadas. 
 	+ ASSETS
-		- **De la plantilla:** copie todos los archivos que se encuentran dentro de la carpeta `assets`. 
+		- **De la plantilla:** Copie todos los archivos que se encuentran dentro de la carpeta `assets`. 
 		- **En el proyecto de Angular:** En la ruta `src/assets`, coloque los archivos previamente copiados.
 	+ CSS:
 		- **De la plantilla:** Del archivo `css/styles.css`, copie todas las reglas css.
@@ -41,7 +41,12 @@ theme: jekyll-theme-leap-day
 		   ```
 		   ...
 		   <!-- Bootstrap Icons-->
-		   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+	       <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+	       <!-- Google fonts-->
+	       <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+	       <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+	       <!-- SimpleLightbox plugin CSS-->
+	       <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
 		   ...
 		   ```
 
@@ -49,15 +54,27 @@ theme: jekyll-theme-leap-day
 
 	   	   ```
 		   @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+		   @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700");
+		   @import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic");
+		   @import url("https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css");
 		   ...
 		   ```
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
-* Hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
+* Archivo javascript de la plantilla `js/scripts.js`:
    + JS
-   	   - **De la plantilla:**
-   	   - **En el proyecto de Angular:**
+   	   - **De la plantilla:** copie la carpeta `js`.  
+   	   - **En el proyecto de Angular:** En la ruta `src`, pegue la carpeta `js`. Agregue la referencia en el archivo `angular.json`:
+
+   	       ```
+   	       ....
+   	       "scripts": [
+              "node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "src/js/scripts.js"
+            ]
+           ...
+   	       ```
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
