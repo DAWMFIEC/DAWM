@@ -34,24 +34,30 @@ theme: jekyll-theme-leap-day
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
-* **CSS** Para todas las hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
+* Hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
+   + CSS
+   	   - **De la plantilla:** Del archivo `index.html`, copie el URL del recurso:
 
-   + **De la plantilla:** Del archivo `index.html`, copie el URL del recurso:
+		   ```
+		   ...
+		   <!-- Bootstrap Icons-->
+		   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+		   ...
+		   ```
 
-	   ```
-	   ...
-	   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-	   ...
-	   ```
+   	   - **En el proyecto de Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo: 
 
-   + **En el proyecto de Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo: 
+	   	   ```
+		   @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+		   ...
+		   ```
 
-   	   ```
-	   @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-	   ...
-	   ```
+* Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
-* **JS**
+* Hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
+   + JS
+   	   - **De la plantilla:**
+   	   - **En el proyecto de Angular:**
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
