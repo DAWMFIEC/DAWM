@@ -72,6 +72,7 @@ theme: jekyll-theme-leap-day
 	+ JS
 		- De la **plantilla:** copie la carpeta `js`.
 		- En el proyecto de **Angular:** En la ruta `src`, pegue la carpeta `js`. Agregue la referencia en el archivo `angular.json`:
+		  
 		  ```
 		  ...
 		  	"scripts": [
