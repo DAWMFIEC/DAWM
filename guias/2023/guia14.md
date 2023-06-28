@@ -38,39 +38,39 @@ theme: jekyll-theme-leap-day
    + CSS
    	   - De la **plantilla:** Del archivo `index.html`, copie el URL del recurso:
 		
-		 ```
-		 ...
-		 <!-- Bootstrap Icons-->
-		 <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+		  ```
+		  ...
+		  <!-- Bootstrap Icons-->
+		  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
-		 <!-- Google fonts-->
-		 <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-		 <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
+		  <!-- Google fonts-->
+		  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
+		  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
 		
-		 <!-- SimpleLightbox plugin CSS-->
-		 <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-		 ...
-		 ```
+		  <!-- SimpleLightbox plugin CSS-->
+ 		  <link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
+		  ...
+		  ```
 
    	   - En el proyecto de **Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo: 
 
-		 ```
-		 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+		  ```
+		  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
 		 
-		 @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700");
+		  @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700");
 		 
-		 @import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic");
+		  @import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic");
 		 
-		 @import url("https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css");
-		 ...
-		 ```
+		  @import url("https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css");
+		  ...
+		  ```
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
 * Archivo javascript de la plantilla `js/scripts.js`:
    + JS
-   	   - De la **plantilla:** copie la carpeta `js`.  
-   	   - En el proyecto de **Angular:** En la ruta `src`, pegue la carpeta `js`. Agregue la referencia en el archivo `angular.json`:
+   	  - De la **plantilla:** copie la carpeta `js`.  
+   	  - En el proyecto de **Angular:** En la ruta `src`, pegue la carpeta `js`. Agregue la referencia en el archivo `angular.json`:
 
 		 ```
 	   	 ...
