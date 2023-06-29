@@ -37,34 +37,17 @@ theme: jekyll-theme-leap-day
 * Hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
 	+ CSS
 		- De la **plantilla:** Del archivo `index.html`, copie el URL del recurso:
-		
-		  ```
-		  ...
-		  <!-- Bootstrap Icons-->
-		  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
 
-		  <!-- Google fonts-->
-		  <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-		  <link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-		
-		  <!-- SimpleLightbox plugin CSS-->
- 		<link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-		 
-		  ...
-		  ```
+			```
+			abc
+			```
 
-   	    - En el proyecto de **Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo: 
+		- En el proyecto de **Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo:
 
-	      ```
-		  @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-		 
-		  @import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700");
-		 
-		  @import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic");
-		 
-		  @import url("https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css");
-		  ...
-		  ```
+			```
+			abc
+			```
+
 
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 
