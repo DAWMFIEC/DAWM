@@ -36,7 +36,7 @@ theme: jekyll-theme-leap-day
 
 * Hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
 	+ CSS
-		- De la **plantilla:** Del archivo `index.html`, copie el URL del recurso:
+		- De la **plantilla:** Copie cada uno de los URLs de los recursos externos que se encuentran en el archivo `index.html`:
 
 			```
 			...
@@ -53,10 +53,18 @@ theme: jekyll-theme-leap-day
 			...
 			```
 
-		- En el proyecto de **Angular:** En el `src/styles.css`, importe el recurso al inicio del archivo:
+		- En el proyecto de **Angular:** Al inicio del archivo del `src/styles.css`, importe cada uno de los recursos externos con regla `@import`:
 
 			```
-			abc
+			@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+			@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700");
+			@import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic");
+			@import url("https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css");
+			...
+
+			@charset "UTF-8";
+			/*!
+			...
 			```
 
 
