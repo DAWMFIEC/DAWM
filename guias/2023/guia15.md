@@ -13,23 +13,33 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-#### Preparación de la _data_ * 
+#### Preparación de los datos * 
 
-* 
+**Nota:** Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contrario pase a la siguiente actividad. 
+
+* Descargue su fuente de datos en formato CSV.
+* Desde la línea de comando:
+	- Instale globalmente [csvtojson](https://www.npmjs.com/package/csvtojson), con:
+
+		```
+		npm i -g csvtojson
+		```
+	- Convierta el archivo CSV a JSON, con:
+
+		```
+		csvtojson <ARCHIVO>.csv > <ARCHIVO>.json
+		```
+
 
 #### Firebase (Realtime Database)
 
-
-
-
-### Documentación
-  
-* 
+* Utilice los datos previamente preparados y siga las instrucciones del tutorial [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database/).
 
 ### Términos
 
-
+csvtojson, firebase
 
 ### Referencias
 
-* 
+* csvtojson. (2019). Retrieved 9 July 2023, from https://www.npmjs.com/package/csvtojson
+* DAWM. (2023). Retrieved 9 July 2023, from https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database.html
