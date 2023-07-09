@@ -24,6 +24,17 @@ theme: jekyll-theme-leap-day
 		```
 		git config --global --add http.proxy http://david.espol.edu.ec:8080
 		```
+## Nodejs
+
+### Heap Out of Memory Error
+
+* Al ejecutar desde la línea de comandos: `npm i` o `npm start`
+	+ **Problema:** no descarga o descarga detenida de módulos vía npm con el mensaje `“JavaScript heap out of memory”`
+	+ **Solución:**
+		- Abra el menú Inicio, busque **Configuración avanzada del sistema** y seleccione la mejor coincidencia (de preferencia por usuario).
+		- En el cuadro de diálogo, haga clic en **Variables de entorno** y, a continuación, haga clic en **Nuevo** desde _Variables del sistema_ o _Variables de usuario_. El primero se aplica a todos los usuarios de su computadora, mientras que el segundo afecta solo a su cuenta actual.
+		- En el campo _Nombre de la variable_, ingrese **NODE_OPTIONS**. En el campo _Valor_ de la variable, ingrese **--max-old-space-size=4096**. Este valor asignará 4 GB de memoria virtual a Node.js. Para establecer un valor diferente, multiplique la cantidad que necesita en GB por 1024 (el valor variable debe estar en MB).
+		- Haga clic en Aceptar para guardar sus cambios, luego haga clic en Aplicar y finalmente haga clic en Aceptar una vez más. Reinicie su proyecto para que los cambios surtan efecto y ya no enfrentará el "JavaScript heap out of memory".
 
 ## NPM
 
@@ -99,3 +110,4 @@ theme: jekyll-theme-leap-day
 
 * project?, H., Dagger, T., B, J., & Dagger, T. (2016). How to upgrade Angular CLI project?. Retrieved 29 November 2022, from https://stackoverflow.com/questions/41403810/how-to-upgrade-angular-cli-project
 * Property has no initializer and is not definitely assigned in the constructor. Retrieved 29 November 2022, from https://bobbyhadz.com/blog/typescript-property-has-no-initializer
+* How to Fix JavaScript Heap Out of Memory Error. (2022). Retrieved 9 July 2023, from https://www.makeuseof.com/javascript-heap-out-of-memory-error-fix/
