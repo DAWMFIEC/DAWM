@@ -5,7 +5,7 @@
 
 ## Requisitos
 
-* Complete las actividades de [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html), [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html), [Angular - PWA](https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html) y [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html).
+* Complete las actividades de [Angular - Local](https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawmfiec.github.io/DAWM/tutoriales/angular_bootstrap.html), [Angular - Componentes, Comunicación y Directivas](https://dawmfiec.github.io/DAWM/tutoriales/angular_bases.html), [Angular - PWA](https://dawmfiec.github.io/DAWM/tutoriales/angular_pwa.html) y [Angular - Servicios](https://dawmfiec.github.io/DAWM/tutoriales/angular_servicios.html).
 
 ## Instrucciones
 
@@ -36,8 +36,8 @@
 
 ## Referencias 
 
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_local.html
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_pwa.html
-* DAWM. (2022). Retrieved 29 November 2022, from https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawmfiec.github.io/DAWM/tutoriales/angular_bootstrap.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawmfiec.github.io/DAWM/tutoriales/angular_bases.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawmfiec.github.io/DAWM/tutoriales/angular_pwa.html
+* DAWM. (2022). Retrieved 29 November 2022, from https://dawmfiec.github.io/DAWM/tutoriales/angular_servicios.html
