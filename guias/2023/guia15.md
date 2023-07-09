@@ -27,13 +27,15 @@ theme: jekyll-theme-leap-day
 	- Convierta el archivo CSV a JSON, con:
 
 		```
-		csvtojson <ARCHIVO>.csv > <ARCHIVO>.json
+		csvtojson <NOMBRE DEL ARCHIVO>.csv > <NOMBRE DEL ARCHIVO>.json
 		```
 
 
 #### Firebase (Realtime Database)
 
-* Utilice los datos previamente preparados y siga las instrucciones del tutorial [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database/).
+* Utilice los datos previamente preparados en formato JSONS.
+* Siga las instrucciones del tutorial [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database/).
+	- Realice las pruebas de peticiones mediante la línea de comandos para [Todos](/DAWM/tutoriales/firebase_realtime_database.html#peticin---todos), [Por índice](/DAWM/tutoriales/firebase_realtime_database.html#peticin---por-ndice) y [Filtrado de datos](/DAWM/tutoriales/firebase_realtime_database.html#peticin---filtrado-de-datos).
 
 ### Términos
 
