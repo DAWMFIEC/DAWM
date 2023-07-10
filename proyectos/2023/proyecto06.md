@@ -27,4 +27,4 @@ La respuesta es:
 
 * [Guía 13: Angular - Introducción](/DAWM/guias/2023/guia13)
 * [Guía 14: Angular - Bootstrap y Componentes](/DAWM/guias/2023/guia14)
-* [Guía 15: Angular - Servicios y Firebase - Realtime Database](/DAWM/guias/2023/guia15)
+* [Guía 15: Firebase - Realtime Database](/DAWM/guias/2023/guia15)
