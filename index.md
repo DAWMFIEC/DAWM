@@ -38,6 +38,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 13: Angular - Introducción](guias/2023/guia13)
   * [Guía 14: Angular - Bootstrap y Componentes](guias/2023/guia14)
   * [Guía 15: Firebase - Realtime Database](guias/2023/guia15)
+  * [Guía 16: Angular - Interfaz, Servicios, Comunicación y Directivas](guias/2023/guia16)
 
 ### Anteriores
 
