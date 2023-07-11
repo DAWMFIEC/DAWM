@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
 
 #### Tabla con datos
 
-En su proyecto, identifique el componente que contendrá los datos que se encuentran en el servicio de Realtime Database, de Firebase.
+En su proyecto, seleccione un componente que contendrá una tabla con datos. Los datos provienen del servicio de Realtime Database de Firebase.
 
 #### Interfaz (tipo de dato), Servicios, Comunicación y Directivas
 
@@ -41,7 +41,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 * Cree el servicio proveedor de datos, con:
 
 	```
-	ng generate service proveedor/<NOMBRE_SERVICIO>
+	ng generate service providers/<NOMBRE_SERVICIO>
 	```
 
 #### HttpClientModule
@@ -85,7 +85,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	}
 	```
 
-* Agregue el URL de referencia de los datos en el servicio de Realtime Database, de Firebase. 
+* Agregue un atributo con el URL de referencia del servicio.
 
 	```typescript
 	...
@@ -108,7 +108,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 		constructor(private http:HttpClient) { }
 
-		getData() {
+		getResponse() {
 			return this.http.get(this.URL);
 		}
 
@@ -116,9 +116,66 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	```
 
 
-#### Inyección de dependencias en el componente
+#### Inyección de dependencias
 
-#### Interfaz
+* Importe el servicio `<NOMBRE_SERVICIO>Service` y la interfaz en el componente seleccionado para mostrar los datos.
+
+	```typescript
+	import { Component } from '@angular/core';
+	import { <NOMBRE_INTERFAZ> } from '../interfaces/<NOMBRE_INTERFAZ>';
+	import { <NOMBRE_SERVICIO>Service } from '../proveedores/<NOMBRE_SERVICIO>.service';
+	```
+
+* Inyecte el servicio `<NOMBRE_SERVICIO>Service` en el constructor del componente seleccionado para mostrar los datos.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+	  
+	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service) { }
+	}
+	...
+	```
+
+* Agregue un atributo que almacenará el arreglo resultante de la petición.
+
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	  private data : <NOMBRE_INTERFAZ>[] = [];
+	  
+	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service) { }
+	}
+	...
+	```
+
+* Agregue un método que realice la petición y que se suscriba a la respuesta de la petición.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	  ...
+
+	  ngOnInit() {
+	    this.dataProvider.getResponse().subscribe((response) => { 
+	      this.data = (response as <NOMBRE_INTERFAZ>[]); 
+	    })
+	  }
+	}
+	...
+	```
 
 #### \*ngFor
 
