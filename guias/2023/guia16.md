@@ -26,9 +26,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 ### Actividades
 
-#### Interfaz
-
-Utilice una interfaz para representar el tipo de dato de los objetos en formato JSON.
+#### Interfaz de Tipo de Datos
 
 * Cree una interfaz de Angular, con:
 
@@ -36,9 +34,9 @@ Utilice una interfaz para representar el tipo de dato de los objetos en formato 
 	ng generate interface interfaces/<NOMBRE_INTERFAZ>
 	```
 
-* Coloque el contenido de la definición de la interfaz en TypeScript en la interfaz recientemente creada. 
+* Coloque el contenido de la interfaz en TypeScript en la interfaz recientemente creada. 
 
-#### Servicio
+#### Servicio Proveedor de Datos
 
 * Cree el servicio proveedor de datos, con:
 
@@ -46,30 +44,89 @@ Utilice una interfaz para representar el tipo de dato de los objetos en formato 
 	ng generate service proveedor/<NOMBRE_SERVICIO>
 	```
 
-##### HTTPClient
+#### HttpClientModule
 
-En la clase con el servicio:
+* Importe el módulo `HttpClientModule` en el `app.module.ts` 
+	
+	```typescript
+	import { NgModule } from '@angular/core';
+	...
+	import { HttpClientModule } from  '@angular/common/http';
 
-* Importe el módulo **HttpClient** para peticiones asíncronas, con:
+
+	@NgModule({
+	declarations: [AppComponent],
+		imports: [
+			BrowserModule,
+    		AppRoutingModule,
+			HttpClientModule  //Módulo importado
+		],
+		providers: [],
+		bootstrap: [AppComponent]
+	})
+	export  class  AppModule { }
+	```
+
+* Importe el cliente `HttpClient` en el servicio proveedor de datos.
 
 	```typescript
 	import { Injectable } from '@angular/core';
 	import { HttpClient } from '@angular/common/http';
 	```
 
+* Inyecte el cliente `HttpClient` en el constructor del servicio proveedor de datos.
+
+	```typescript
+	...
+	export class <NOMBRE_SERVICIO>Service {
+
+		constructor(private http:HttpClient) { }
+
+	}
+	```
+
+* Agregue el URL de referencia de los datos en el servicio de Realtime Database, de Firebase. 
+
+	```typescript
+	...
+	export class <NOMBRE_SERVICIO>Service {
+
+		private URL: string = 'https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json';
+
+		constructor(private http:HttpClient) { }
+
+	}
+	```
+
+* Agregue un método para hacer una petición HTTP GET. 
+
+	```typescript
+	...
+	export class <NOMBRE_SERVICIO>Service {
+
+		private URL: string = 'https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json';
+
+		constructor(private http:HttpClient) { }
+
+		getData() {
+			return this.http.get(this.URL);
+		}
+
+	}
+	```
 
 
-##### Inyección de dependencias en el componente
+#### Inyección de dependencias en el componente
 
-##### Interfaz
+#### Interfaz
 
-##### \*ngFor
+#### \*ngFor
 
 
 
 ### Términos
 
-interfaz, servicio
+interfaz, servicio, httpclient, inyección de dependencias, proveedor, directivas
 
 ### Referencias
 
@@ -77,3 +134,4 @@ interfaz, servicio
 * Angular. (2023). Retrieved 11 July 2023, from https://angular.io/guide/creating-injectable-service
 * Angular 16 HttpClient & Http Services Example Tutorial - positronX.io. (2019). Retrieved 11 July 2023, from https://www.positronx.io/angular-httpclient-http-service/#tc_1202_06
 * Angular. (2023). Retrieved 11 July 2023, from https://angular.io/api/common/NgForOf
+* Angular Basics: How To Use HttpClient in Angular. (2021). Retrieved 11 July 2023, from https://www.telerik.com/blogs/angular-basics-how-to-use-httpclient
