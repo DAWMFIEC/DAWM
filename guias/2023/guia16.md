@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
 
 #### Tabla con datos
 
-En su proyecto, seleccione un componente que contendrá una tabla con datos. Los datos provienen del servicio de Realtime Database de Firebase.
+En su proyecto, seleccione un componente en el que se mostrará una tabla con datos (del Realtime Database de Firebase).
 
 #### Interfaz (tipo de dato), Servicios, Comunicación y Directivas
 
@@ -85,7 +85,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	}
 	```
 
-* Agregue un atributo con el URL de referencia del servicio.
+* Agregue un atributo con el URL de referencia al servicio.
 
 	```typescript
 	...
@@ -93,7 +93,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 		private URL: string = 'https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json';
 
-		constructor(private http:HttpClient) { }
+		...
 
 	}
 	```
@@ -106,7 +106,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 		private URL: string = 'https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json';
 
-		constructor(private http:HttpClient) { }
+		...
 
 		getResponse() {
 			return this.http.get(this.URL);
@@ -123,7 +123,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	```typescript
 	import { Component } from '@angular/core';
 	import { <NOMBRE_INTERFAZ> } from '../interfaces/<NOMBRE_INTERFAZ>';
-	import { <NOMBRE_SERVICIO>Service } from '../proveedores/<NOMBRE_SERVICIO>.service';
+	import { <NOMBRE_SERVICIO>Service } from '../providers/<NOMBRE_SERVICIO>.service';
 	```
 
 * Inyecte el servicio `<NOMBRE_SERVICIO>Service` en el constructor del componente seleccionado para mostrar los datos.
@@ -150,9 +150,9 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	})
 	export class <COMPONENTE_SELECCIONADO>Component {
 
-	  private data : <NOMBRE_INTERFAZ>[] = [];
+	  public data : <NOMBRE_INTERFAZ>[] = [];
 	  
-	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service) { }
+	  ...
 	}
 	...
 	```
@@ -179,7 +179,21 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 #### \*ngFor
 
+* Recorra el arreglo `data` en la vista (html) del componente seleccionado.
 
+	```
+	...
+	<table>
+        <tbody>
+            <tr *ngFor="let datum of data">
+                <th>{{ datum[<CLAVE1>] }}</th><td>{{ datum[<CLAVE1>] }}</td>
+            </tr>
+        </tbody>
+    </table>
+    ...
+	```
+
+**NOTA:** Ubique la tabla en el lugar adecuado y coloque el estilo adecuado.
 
 ### Términos
 
