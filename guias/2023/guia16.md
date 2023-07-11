@@ -11,15 +11,56 @@ theme: jekyll-theme-leap-day
 * Clone su proyecto e instale las dependencias.
 * Levante el servidor y compruebe el resultado en el navegador.
 
+#### JSON a TypeScript
+
+* Tome una muestra de la respuesta en formato JSON de los datos guardados en el servicio de Realtime Database, de Firebase.
+* Utilice los servicios de [Transform Tools](https://transform.tools/json-to-typescript) para generar los tipos de objetos (interfaces en TypeScript).
+
+#### Tabla con datos
+
+En su proyecto, identifique el componente que contendrá los datos que se encuentran en el servicio de Realtime Database, de Firebase.
+
+#### Interfaz (tipo de dato), Servicios, Comunicación y Directivas
+
+Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) el uso y ejemplos de código de los términos interfaz como tipo de dato, servicios, comunicación unidireccional y la directiva \*ngFor en Angular.
+
 ### Actividades
 
 #### Interfaz
 
+Utilice una interfaz para representar el tipo de dato de los objetos en formato JSON.
+
+* Cree una interfaz de Angular, con:
+
+	```
+	ng generate interface interfaces/<NOMBRE_INTERFAZ>
+	```
+
+* Coloque el contenido de la definición de la interfaz en TypeScript en la interfaz recientemente creada. 
+
 #### Servicio
 
-#### Comunicación
+* Cree el servicio proveedor de datos, con:
 
-#### Directivas (\*ngFor)
+	```
+	ng generate service proveedor/<NOMBRE_SERVICIO>
+	```
+
+##### HTTPClient
+
+* En el servicio, importe el módulo para peticiones asíncronas, con:
+
+	```
+	import { HttpClient } from '@angular/common/http';
+	```
+
+##### Inyección de dependencias en el componente
+
+##### Interfaz
+
+##### \*ngFor
+
+
 
 ### Términos
 
