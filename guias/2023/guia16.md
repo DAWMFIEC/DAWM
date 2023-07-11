@@ -48,11 +48,16 @@ Utilice una interfaz para representar el tipo de dato de los objetos en formato 
 
 ##### HTTPClient
 
-* En el servicio, importe el módulo para peticiones asíncronas, con:
+En la clase con el servicio:
 
-	```
+* Importe el módulo **HttpClient** para peticiones asíncronas, con:
+
+	```typescript
+	import { Injectable } from '@angular/core';
 	import { HttpClient } from '@angular/common/http';
 	```
+
+
 
 ##### Inyección de dependencias en el componente
 
