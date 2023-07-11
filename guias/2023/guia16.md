@@ -20,9 +20,9 @@ theme: jekyll-theme-leap-day
 
 En su proyecto, seleccione un componente en el que se mostrará una tabla con datos (del Realtime Database de Firebase).
 
-#### Interfaz (tipo de dato), Servicios, Comunicación y Directivas
+#### Términos
 
-Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) el uso y ejemplos de código de los términos interfaz como tipo de dato, servicios, comunicación unidireccional y la directiva \*ngFor en Angular.
+Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) el uso y ejemplos de código de los términos interfaz como tipo de dato, inyección de dependencias, servicios, observador y la directiva \*ngFor en Angular.
 
 ### Actividades
 
@@ -51,6 +51,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	```typescript
 	import { NgModule } from '@angular/core';
 	...
+	//Importación del módulo 
 	import { HttpClientModule } from  '@angular/common/http';
 
 
@@ -59,7 +60,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 		imports: [
 			BrowserModule,
     		AppRoutingModule,
-			HttpClientModule  //Módulo importado
+			HttpClientModule  //Registro de módulo importado
 		],
 		providers: [],
 		bootstrap: [AppComponent]
@@ -71,6 +72,8 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 	```typescript
 	import { Injectable } from '@angular/core';
+
+	//Importación del HttpClient
 	import { HttpClient } from '@angular/common/http';
 	```
 
@@ -80,6 +83,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	...
 	export class <NOMBRE_SERVICIO>Service {
 
+		//Inyección de dependencia del HttpClient
 		constructor(private http:HttpClient) { }
 
 	}
@@ -91,6 +95,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	...
 	export class <NOMBRE_SERVICIO>Service {
 
+		//Atributo URL
 		private URL: string = 'https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json';
 
 		...
@@ -108,6 +113,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 		...
 
+		//Método con la petición HTTP
 		getResponse() {
 			return this.http.get(this.URL);
 		}
@@ -122,7 +128,11 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 	```typescript
 	import { Component } from '@angular/core';
+
+	//Importación de la interfaz
 	import { <NOMBRE_INTERFAZ> } from '../interfaces/<NOMBRE_INTERFAZ>';
+
+	//Importación del servicio
 	import { <NOMBRE_SERVICIO>Service } from '../providers/<NOMBRE_SERVICIO>.service';
 	```
 
@@ -135,6 +145,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	})
 	export class <COMPONENTE_SELECCIONADO>Component {
 	  
+	  //Inyección de dependencia del servicio
 	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service) { }
 	}
 	...
@@ -150,6 +161,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	})
 	export class <COMPONENTE_SELECCIONADO>Component {
 
+	  //Atributo con el tipo de dato de la interfaz
 	  public data : <NOMBRE_INTERFAZ>[] = [];
 	  
 	  ...
@@ -168,6 +180,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 	  ...
 
+	  //Ejecución de la petición y suscripción de la respuesta
 	  ngOnInit() {
 	    this.dataProvider.getResponse().subscribe((response) => { 
 	      this.data = (response as <NOMBRE_INTERFAZ>[]); 
@@ -177,12 +190,14 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 	...
 	```
 
-#### \*ngFor
+#### Renderización con la directiva \*ngFor
 
 * Recorra el arreglo `data` en la vista (html) del componente seleccionado.
 
 	```
 	...
+	<!-- Tabla con datos -->
+
 	<table>
         <tbody>
             <tr *ngFor="let datum of data">
