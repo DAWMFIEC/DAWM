@@ -15,7 +15,7 @@ theme: jekyll-theme-leap-day
 
 #### Bootstrap
 
-* Incluya bootstrap y sus dependencias siguiendo las instrucciones, hasta el paso 5, de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/0f0a9f90-bbef-439e-9d58-6fe73941a357) o [en la imagen](chatpgt/guia14-angular-bootstrap.png).
+* Incluya bootstrap y sus dependencias siguiendo las instrucciones, hasta el paso 5, de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/0f0a9f90-bbef-439e-9d58-6fe73941a357) o [en la imagen](chatgpt/guia14-angular-bootstrap.png).
 
 #### Plantilla
 
@@ -88,7 +88,7 @@ theme: jekyll-theme-leap-day
 
 #### Componentes
 
-* Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatpgt/guia14-angular-components.png) para crear los componentes: `navigation`, `masthead`, `about`, `services`, `portfolio`, `calltoaction`, `contact` y `footer`.
+* Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatgpt/guia14-angular-components.png) para crear los componentes: `navigation`, `masthead`, `about`, `services`, `portfolio`, `calltoaction`, `contact` y `footer`.
 
 * Para cada componente creado previamente:
 	+ HTML
