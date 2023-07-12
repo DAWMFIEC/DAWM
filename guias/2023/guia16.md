@@ -124,7 +124,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 #### Inyección de dependencias
 
-* Importe el servicio `<NOMBRE_SERVICIO>Service` y la interfaz en el componente seleccionado para mostrar los datos.
+* Importe el servicio `<NOMBRE_SERVICIO>Service` y la interfaz `<NOMBRE_INTERFAZ>` en el componente seleccionado para mostrar los datos.
 
 	```typescript
 	import { Component } from '@angular/core';
