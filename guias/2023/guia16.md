@@ -192,22 +192,20 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 #### Renderización con la directiva \*ngFor
 
-* Recorra el arreglo `data` en la vista (html) del componente seleccionado.
+* Utilice la directiva `*ngFor` para recorrer el arreglo `data` en la vista (html) del componente seleccionado. Las `CLAVE1` y `CLAVE2` corresponden a las claves en la interfaz.
 
 	```
-	{% raw %}
 	...
 	<!-- Tabla con datos -->
 
 	<table>
         <tbody>
             <tr *ngFor="let datum of data">
-                <th>{{ datum[ <CLAVE1> ] }}</th><td>{{ datum[ <CLAVE2> ] }}</td>
+                <td>{% raw %} {{ {% endraw %} datum[ <CLAVE1> ] {% raw %} }} {% endraw %} </td><td>{% raw %} {{ {% endraw %} datum[ <CLAVE2> ] {% raw %} }} {% endraw %}</td>
             </tr>
         </tbody>
     </table>
     ...
-    {% endraw %}
 	```
 
 **NOTA:** Modifique la ubicación y el estilo de la tabla dentro del documento.
