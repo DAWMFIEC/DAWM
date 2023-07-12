@@ -194,8 +194,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 * Recorra el arreglo `data` en la vista (html) del componente seleccionado.
 
-	~~~
-	```html
+	```javascript
 	...
 	<!-- Tabla con datos -->
 
@@ -208,7 +207,6 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
     </table>
     ...
 	```
-	~~~
 
 **NOTA:** Modifique la ubicación y el estilo de la tabla dentro del documento.
 
