@@ -194,14 +194,14 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 * Recorra el arreglo `data` en la vista (html) del componente seleccionado.
 
-	```text
+	```html
 	...
 	<!-- Tabla con datos -->
 
 	<table>
         <tbody>
             <tr *ngFor="let datum of data">
-                <th>{{ datum[ <CLAVE1> ] }}</th><td>{{ datum[ <CLAVE2> ] }}</td>
+                <th>\{\{ datum[ <CLAVE1> ] \}\}</th><td>\{\{ datum[ <CLAVE2> ] \}\}</td>
             </tr>
         </tbody>
     </table>
