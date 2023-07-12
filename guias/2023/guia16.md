@@ -194,7 +194,7 @@ Consulte con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.co
 
 * Recorra el arreglo `data` en la vista (html) del componente seleccionado.
 
-	```javascript
+	```typescript
 	...
 	<!-- Tabla con datos -->
 
