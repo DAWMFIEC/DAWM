@@ -19,6 +19,7 @@ theme: jekyll-theme-leap-day
 
 * Agregue el código en el archivo de pruebas del servicio (`<NOMBRE_SERVICIO>.service.spec.ts`) creado previamente.
 * Agregue el código en el archivo de pruebas del componente que usa el servicio (`<COMPONENTE_SELECCIONADO>.spec.ts`) creado previamente.
+* Agregue el código en el archivo de pruebas de todos los componentes de su aplicación.
 
 ### Términos
 
