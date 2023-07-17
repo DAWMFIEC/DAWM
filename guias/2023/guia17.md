@@ -11,14 +11,19 @@ theme: jekyll-theme-leap-day
 * Clone su proyecto e instale las dependencias.
 * Levante el servidor y compruebe el resultado en el navegador.
 
+#### Testing
+
+* Consulte la documentación la [guía](recursos/TestAngularV2.pdf) con los test en Angular, la documentación de [Angular - Testing](https://angular.io/guide/testing) o consulte con [ChatGPT](https://chat.openai.com/) | [Bard](https://bard.google.com/).
+
 ### Actividades
 
-
+* Agregue el código en el archivo de pruebas del servicio (`<NOMBRE_SERVICIO>.service.spec.ts`) creado previamente.
+* Agregue el código en el archivo de pruebas del componente que usa el servicio (`<COMPONENTE_SELECCIONADO>.spec.ts`) creado previamente.
 
 ### Términos
 
-
+testing
 
 ### Referencias
 
-* 
+*  Angular. (2023). Retrieved 17 July 2023, from https://angular.io/guide/testing
