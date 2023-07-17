@@ -13,7 +13,7 @@ theme: jekyll-theme-leap-day
 
 #### Testing
 
-* Consulte la documentación la [guía](recursos/TestAngularV2.pdf) con los test en Angular, la documentación de [Angular - Testing](https://angular.io/guide/testing) o consulte con [ChatGPT](https://chat.openai.com/) | [Bard](https://bard.google.com/).
+* Consulte la documentación la [guía](recursos/TestAngularV2.pdf) con los test en Angular, la documentación de [Angular - Testing](https://angular.io/guide/testing) o consulte alguno de los sistemas de IA ([ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/)).
 
 ### Actividades
 
