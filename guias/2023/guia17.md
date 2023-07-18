@@ -22,10 +22,10 @@ theme: jekyll-theme-leap-day
 * Agregue el código en el archivo de pruebas de **todos** los componentes de su aplicación.
 
 	<details>
-	  <summary>Spoiler warning</summary>
+	  <summary><b>Pista:</b> Tests para componentes solo con HTML</summary>
 	  
 	  <br>
-	  Spoiler text. Note that it's important to have a space after the summary tag. 
+	  A continuación, un ejemplo de dos test que podrían incluir en el archivos de testing.  
 	  
 	  <pre>
 	  	<code>
