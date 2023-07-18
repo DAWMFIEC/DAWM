@@ -21,26 +21,35 @@ theme: jekyll-theme-leap-day
 * Agregue el código en el archivo de pruebas del componente que usa el servicio (`<COMPONENTE_SELECCIONADO>.spec.ts`) creado previamente.
 * Agregue el código en el archivo de pruebas de **todos** los componentes de su aplicación.
 
-	```typescript
-	describe('<COMPONENTE_SOLO_CON_HTML>Component', () => {
-		let component: <COMPONENTE_SOLO_CON_HTML>Component;
-  		let fixture: ComponentFixture<<COMPONENTE_SOLO_CON_HTML>Component>;
-		...
 
-		it('nav element', ()=> {
-		    const headerElement: HTMLElement = fixture.nativeElement;
-		    const nav = headerElement.querySelector('nav')!;
-		    expect(nav).toBeTruthy();
-		  })
+	<details>
+	  <summary>Para componentes solo con html en la</summary>
+	  
+	  
+	  ```typescript
+		describe('SoloHTMLComponent', () => {
+			let component: SoloHTMLComponent;
+	  		let fixture: ComponentFixture<SoloHTMLComponent>;
+			...
 
-		it('p element', ()=> {
-			const headerElement: HTMLElement = fixture.nativeElement;
-			const nav = headerElement.querySelector('p')!;
-			expect(nav).toBeFalsy();
-		})
+			it('nav element', ()=> {
+			    const headerElement: HTMLElement = fixture.nativeElement;
+			    const nav = headerElement.querySelector('nav')!;
+			    expect(nav).toBeTruthy();
+			  })
 
-	});
-	```
+			it('p element', ()=> {
+				const headerElement: HTMLElement = fixture.nativeElement;
+				const nav = headerElement.querySelector('p')!;
+				expect(nav).toBeFalsy();
+			})
+
+		});
+		```
+	  
+	</details>
+
+	
 
 ### Términos
 
