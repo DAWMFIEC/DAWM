@@ -21,37 +21,18 @@ theme: jekyll-theme-leap-day
 * Agregue el código en el archivo de pruebas del componente que usa el servicio (`<COMPONENTE_SELECCIONADO>.spec.ts`) creado previamente.
 * Agregue el código en el archivo de pruebas de **todos** los componentes de su aplicación.
 
-
 	<details>
-	  <summary>Para componentes solo con HTML</summary>
+	  <summary>Spoiler warning</summary>
 	  
-	  A continuación, un ejemplo de dos test que podrían incluir en el `.spec.ts`.  
-
+	  Spoiler text. Note that it's important to have a space after the summary tag. You should be able to write any markdown you want inside the `<details>` tag... just make sure you close `<details>` afterward.
 	  
-	  ```typescript
-		describe('SoloHTMLComponent', () => {
-			...
-
-			//Por la existencia de un elemento <nav>
-
-			it('nav element', ()=> {
-			    const headerElement: HTMLElement = fixture.nativeElement;
-			    const nav = headerElement.querySelector('nav')!;
-			    expect(nav).toBeTruthy();
-			  })
-
-			//Por la NO existencia de un elemento <p>
-
-			it('p element', ()=> {
-				const headerElement: HTMLElement = fixture.nativeElement;
-				const nav = headerElement.querySelector('p')!;
-				expect(nav).toBeFalsy();
-			})
-
-		});
-		```
+	  ```javascript
+	  console.log("I'm a code block!");
+	  ```
 	  
 	</details>
+
+	
 
 	
 
