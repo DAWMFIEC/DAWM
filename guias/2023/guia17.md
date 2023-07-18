@@ -29,7 +29,26 @@ theme: jekyll-theme-leap-day
 	  
 	  <pre>
 	  	<code>
-		  console.log("I'm a code block!");  		
+			describe('SoloHTMLComponent', () => {
+				...
+
+				//Por la existencia de un elemento <nav>
+
+				it('nav element', ()=> {
+				    const headerElement: HTMLElement = fixture.nativeElement;
+				    const nav = headerElement.querySelector('nav')!;
+				    expect(nav).toBeTruthy();
+				  })
+
+				//Por la NO existencia de un elemento <p>
+
+				it('p element', ()=> {
+					const headerElement: HTMLElement = fixture.nativeElement;
+					const nav = headerElement.querySelector('p')!;
+					expect(nav).toBeFalsy();
+				})
+
+			});	
 	  	</code>
 	  </pre>
 	  
