@@ -23,20 +23,24 @@ theme: jekyll-theme-leap-day
 
 
 	<details>
-	  <summary>Para componentes solo con html en la</summary>
+	  <summary>Para componentes solo con HTML</summary>
 	  
+	  A continuación, un ejemplo de dos test que podrían incluir en el `.spec.ts`.  
+
 	  
 	  ```typescript
 		describe('SoloHTMLComponent', () => {
-			let component: SoloHTMLComponent;
-	  		let fixture: ComponentFixture<SoloHTMLComponent>;
 			...
+
+			//Por la existencia de un elemento <nav>
 
 			it('nav element', ()=> {
 			    const headerElement: HTMLElement = fixture.nativeElement;
 			    const nav = headerElement.querySelector('nav')!;
 			    expect(nav).toBeTruthy();
 			  })
+
+			//Por la NO existencia de un elemento <p>
 
 			it('p element', ()=> {
 				const headerElement: HTMLElement = fixture.nativeElement;
