@@ -21,38 +21,28 @@ theme: jekyll-theme-leap-day
 * Agregue el código en el archivo de pruebas del componente que usa el servicio (`<COMPONENTE_SELECCIONADO>.spec.ts`) creado previamente.
 * Agregue el código en el archivo de pruebas de **todos** los componentes de su aplicación.
 
-	<details>
-	  <summary><b>Pista:</b> Tests para componentes solo con HTML</summary>
-	  
-	  <br>
-	  A continuación, un ejemplo de dos test que podrían incluir en el archivos de testing.  
-	  
-	  <pre>
-	  	<code>
-			describe('SoloHTMLComponent', () => {
-				...
+	```typescript
+	describe('SoloHTMLComponent', () => {
+		...
 
-				//Por la existencia de un elemento <nav>
+		//Por la existencia de un elemento <nav>
 
-				it('nav element', ()=> {
-				    const headerElement: HTMLElement = fixture.nativeElement;
-				    const nav = headerElement.querySelector('nav')!;
-				    expect(nav).toBeTruthy();
-				  })
+		it('nav element', ()=> {
+		    const headerElement: HTMLElement = fixture.nativeElement;
+		    const nav = headerElement.querySelector('nav')!;
+		    expect(nav).toBeTruthy();
+		  })
 
-				//Por la NO existencia de un elemento <p>
+		//Por la NO existencia de un elemento <p>
 
-				it('p element', ()=> {
-					const headerElement: HTMLElement = fixture.nativeElement;
-					const nav = headerElement.querySelector('p')!;
-					expect(nav).toBeFalsy();
-				})
+		it('p element', ()=> {
+			const headerElement: HTMLElement = fixture.nativeElement;
+			const nav = headerElement.querySelector('p')!;
+			expect(nav).toBeFalsy();
+		})
 
-			});	
-	  	</code>
-	  </pre>
-	  
-	</details>
+	});	
+	```
 
 	
 
