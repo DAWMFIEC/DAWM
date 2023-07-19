@@ -98,9 +98,8 @@ theme: jekyll-theme-leap-day
 	      ...
 	    });
 
-
-	    //Instancie el servicio
-	    service = TestBed.inject(<NOMBRE_SERVICIO>Service);
+	    ...
+	   
 	  });
 
 	  ...
@@ -123,10 +122,7 @@ theme: jekyll-theme-leap-day
 	      done();
 
 	    });
-
-	    
-	   });
-
+	  });
 	});
 	````
 
