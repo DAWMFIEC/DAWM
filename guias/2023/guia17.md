@@ -21,8 +21,13 @@ theme: jekyll-theme-leap-day
 
 	```typescript
 	...
+	//Importe el módulo cliente para requerimientos http
 	import { HttpClientModule } from '@angular/common/http';
+
+	//Importe el servicio
 	import { <NOMBRE_SERVICIO>Service } from './<nombre_servicio>.service';
+
+	//Importe la interfaz
 	import { <NOMBRE_INTERFAZ> } from '../interfaces/<nombre_interfaz>';
 
 
@@ -34,7 +39,7 @@ theme: jekyll-theme-leap-day
 	  beforeEach(() => {
 	    TestBed.configureTestingModule({
 
-	      //Registre el módulo de petición asíncrona
+	      //Registre el módulo de petición http
 	      imports: [ HttpClientModule ],
 
 	      //Registre el servicio como proveedor de datos
@@ -48,10 +53,15 @@ theme: jekyll-theme-leap-day
 
 	  ...
 
-	  it('<NOMBRE_METODO> should return value from observable',
-	    (done: DoneFn) => {
+	  // La función done se encarga de esperar por completar el requerimiento
+	  it('<NOMBRE_METODO> should return value from observable', (done: DoneFn) => {
+	  	//Invoque el método con la petición asincrónica
 	    service.getResponse().subscribe(data => {
+	      
+	      // Valide que la respuesta sea mayor que 0
 	      expect((data as <NOMBRE_INTERFAZ>[]).length).toBeGreaterThan(0)
+	      
+	      // Que espere hasta que llegue la respuesta 
 	      done();
 	    });
 	  });
@@ -67,7 +77,7 @@ theme: jekyll-theme-leap-day
 	describe('SoloHTMLComponent', () => {
 		...
 
-		//Valida la existencia de un elemento <nav> en la plantilla html del elemento
+		//Valide la existencia de un elemento <nav> en la plantilla html del elemento
 
 		it('nav element', ()=> {
 		    const headerElement: HTMLElement = fixture.nativeElement;
@@ -75,7 +85,7 @@ theme: jekyll-theme-leap-day
 		    expect(nav).toBeTruthy();
 		  })
 
-		//Valida la NO existencia de un elemento <p> en la plantilla html del elemento
+		//Valide la NO existencia de un elemento <p> en la plantilla html del elemento
 
 		it('No p element', ()=> {
 			const headerElement: HTMLElement = fixture.nativeElement;
@@ -91,6 +101,7 @@ theme: jekyll-theme-leap-day
 
 	```typescript
 	...
+
 	//Importe el módulo para realizar peticiones asincrónicas
 	import { HttpClientModule } from '@angular/common/http';
 
@@ -119,7 +130,7 @@ theme: jekyll-theme-leap-day
 	  });
 
 
-	  //Valida por la existencia de TODOS los componentes que son instanciados en la aplicación mediante un selector
+	  //Valide por la existencia de TODOS los componentes que son instanciados en la aplicación mediante un selector
 	  it('should have the Header component', () => {
 	    const fixture = TestBed.createComponent(AppComponent);
 	    fixture.detectChanges();
