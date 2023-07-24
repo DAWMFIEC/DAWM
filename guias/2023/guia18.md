@@ -92,7 +92,7 @@ theme: jekyll-theme-leap-day
 * Cree el directorio `.github/workflows/`
 * Cree el archivo `deploy.yml` dentro del directorio `.github/workflows/`, con el contenido:
 
-	```
+	```yaml
 	# This is a basic workflow to help you get started with Actions
 
 	name: Angular CI
