@@ -152,7 +152,7 @@ theme: jekyll-theme-leap-day
 	        with:
 	          build_dir: dist/<NOMBRE_APLICACION>
 	        env:
-	          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
+	          GITHUB_TOKEN: {% raw %} ${{secrets.GITHUB_TOKEN}} {% endraw %}
 	```
 
 * Sincronice los cambios del repositorio local en el repositorio remoto, con:
