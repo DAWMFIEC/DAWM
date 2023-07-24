@@ -11,6 +11,12 @@ theme: jekyll-theme-leap-day
 * Clone su proyecto e instale las dependencias.
 * Levante el servidor y compruebe el resultado en el navegador.
 
+#### Nombre del proyecto y nombre del repositorio remoto
+
+* El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
+
+* El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` puede, o no, ser igual al `<NOMBRE_APLICACION>`
+
 #### Compilación
 
 * Compile la aplicación en Angular en el directorio de salida `dist/`, con el comando [build](https://angular.io/cli/build): 
@@ -27,6 +33,7 @@ theme: jekyll-theme-leap-day
 
 **NOTA:** Este comando crea la carpeta `dist/<NOMBRE_APLICACION>` con los archivos que pueden ejecutarse en un [servidor HTTP](https://www.hostinger.es/tutoriales/que-es-un-servidor-web). Revise el contenido de la carpeta.
 
+
 #### Servidor HTTP
 
 * Desde la línea de comandos, en la raíz del proyecto, levante el servidor HTTP de Python:
@@ -34,9 +41,6 @@ theme: jekyll-theme-leap-day
 	```
 	python -m http.server --dir dist/<NOMBRE_APLICACION>
 	```
-
-**NOTA:** El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
-
 
 * En el navegador, acceda al URL `http://localhost:8000/` y verifique el funcionamiento correcto de su aplicación.
 
@@ -56,8 +60,6 @@ theme: jekyll-theme-leap-day
 	}
 	...
 	```
-
-**NOTA:** El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` puede, o no, ser igual al `<NOMBRE_APLICACION>`
 
 #### Repositorio local
 
@@ -92,7 +94,7 @@ theme: jekyll-theme-leap-day
 * Cree el directorio `.github/workflows/`
 * Cree el archivo `deploy.yml` dentro del directorio `.github/workflows/`, con el contenido:
 
-	<pre><code>
+	```text
 	# This is a basic workflow to help you get started with Actions
 
 	name: Angular CI
@@ -139,10 +141,7 @@ theme: jekyll-theme-leap-day
 	          build_dir: dist/<NOMBRE_APLICACION>
 	        env:
 	          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-	</code></pre>
-
-	
-**NOTA:** El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
+	```
 
 * Sincronice los cambios del repositorio local en el repositorio remoto, con:
 
