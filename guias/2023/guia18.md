@@ -92,7 +92,7 @@ theme: jekyll-theme-leap-day
 * Cree el directorio `.github/workflows/`
 * Cree el archivo `deploy.yml` dentro del directorio `.github/workflows/`, con el contenido:
 
-	```yaml
+	<pre><code>
 	# This is a basic workflow to help you get started with Actions
 
 	name: Angular CI
@@ -139,7 +139,7 @@ theme: jekyll-theme-leap-day
 	          build_dir: dist/<NOMBRE_APLICACION>
 	        env:
 	          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
-	```
+	</code></pre>
 
 	**NOTA:** El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
 
@@ -159,6 +159,8 @@ theme: jekyll-theme-leap-day
 	+ Acceda a la opción `Actions > General`.
 	+ En `Workflow permissions`, seleccione la opción `Read and Write permissions`
 	+ Guarde los cambios.
+
+* En `Actions`, verifique la ejecución del despliegue automático. 
 
 * Habilite el despliegue con GitHub Pages del repositorio remoto, con:
 
