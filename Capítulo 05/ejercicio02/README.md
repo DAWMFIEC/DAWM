@@ -5,11 +5,11 @@
 ## Instrucciones
 
 * Complete las actividades para que proyecto contenga:
-  + Proyecto base con Express, de acuerdo con las instrucciones de [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html).
-  + El modelo **foto**, de acuerdo con las instrucciones de [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html).
-  + El modelo **etiqueta**, de acuerdo con las instrucciones de [Guía 17](https://dawfiec.github.io/DAWM/guias/guia17.html).
+  + Proyecto base con Express, de acuerdo con las instrucciones de [Express - Bases](https://dawmfiec.github.io/DAWM/tutoriales/express_bases.html).
+  + El modelo **foto**, de acuerdo con las instrucciones de [Express - ORM (Básico)](https://dawmfiec.github.io/DAWM/tutoriales/express_ormbasico.html).
+  + El modelo **etiqueta**, de acuerdo con las instrucciones de [Guía 17](https://dawmfiec.github.io/DAWM/guias/2022/guia17).
   + La relación **N:M (foto-etiqueta)**, de acuerdo con las instrucciones de [Express - ORM (Intermedio)
-](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html).
+](https://dawmfiec.github.io/DAWM/tutoriales/express_ormintermedio.html).
 
 ## Configuración
 
