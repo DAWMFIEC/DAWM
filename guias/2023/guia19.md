@@ -110,7 +110,7 @@ theme: jekyll-theme-leap-day
 
 * En `app/app.componente.html` reemplace todo el contenido por:
 	
-	```
+	```html
 	<app-menu></app-menu>
 	<router-outlet></router-outlet>
 	```
@@ -124,7 +124,7 @@ theme: jekyll-theme-leap-day
 
 * En `app.module.ts` importe y registre los módulos `MatSidenavModule` y `MatListModule`
 
-	```
+	```typescript
 	import { MatSidenavModule } from '@angular/material/sidenav';
 	import { MatListModule } from '@angular/material/list';
 	...
@@ -140,7 +140,7 @@ theme: jekyll-theme-leap-day
 
 * En `app/app.componente.html` reemplace todo el contenido por:
 
-	```
+	```html
 	<mat-drawer-container class="container">
 	  <mat-drawer mode="side" opened>
 	  	<app-menu></app-menu>
@@ -153,7 +153,7 @@ theme: jekyll-theme-leap-day
 
 * En `app/app.component.css` agregue la regla:
 
-	```
+	```css
 	.container {
 	    width: auto;
 	    height: 100%;
@@ -163,7 +163,7 @@ theme: jekyll-theme-leap-day
 
 * En `app/pages/menu.component.html` reemplace todo el contenido por:
 
-	```
+	```html
 	<mat-list role="list">
 	    <mat-list-item role="listitem"><a routerLink="/main">Main</a></mat-list-item>
 	    ...
