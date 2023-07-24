@@ -165,7 +165,7 @@ theme: jekyll-theme-leap-day
 
 * En el repositorio remoto, en la opción `Actions`, verifique la ejecución automática del workflow. 
 
-**NOTA:** El error aparece debido a que no se ha habilitado el uso de un flujo de trabajo propio.
+**NOTA:** El error que aparece se debe a que no ha habilitado el uso de un flujo de trabajo propio.
 
 #### Configuración de GitHub Pages
 
@@ -185,16 +185,17 @@ theme: jekyll-theme-leap-day
 * Verifique la creación de la rama `gh-pages`, con:
 	
 	+ Acceda a la opción `Code`.
-	+ Liste las ramas disponibles, debe aparecer la rama `gh-pages`.
+	+ Liste las ramas disponibles y verifique el contenido de la rama `gh-pages`.
 
 * Habilite el despliegue con GitHub Pages del repositorio remoto, con:
 
 	+ Acceda a la opción `Settings`.
-	+ Acceda a la opción `Pages`.
-	+ En `Build and deployment`, seleccione la rama `gh-pages`
+	+ Acceda a la opción `Code and automation` > `Pages`.
+	+ En `Build and deployment`, seleccione la rama `gh-pages`.
+	+ Guarde los cambios.
 
 
-* Verifique la ejecución del flujo de trabajo de compilación y despliegue `pages build and deployment`
+* Verifique la ejecución de un nuevo flujo de trabajo: `pages build and deployment`
 
 * Acceda al URL de despliegue `https://<USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO_REMOTO>/`
 
