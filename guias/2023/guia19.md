@@ -24,11 +24,11 @@ theme: jekyll-theme-leap-day
 	> CSS
 	```
 
-### Versionamiento remoto 
+#### Versionamiento remoto 
 
 * Cree un repositorio remoto en GitHub, de acceso **público**.
 
-### Versionamiento local
+#### Versionamiento local
 
 * Agregue al `package.json` el script:
 
