@@ -205,7 +205,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-servidor HTTP, 
+servidor HTTP, continuos integration, yaml
 
 ### Referencias
 
