@@ -54,7 +54,7 @@ theme: jekyll-theme-leap-day
 #### Despliegue automático con GitHub Actions
 
 * Cree el directorio `.github/workflows` 
-* Descargue [deploy.yml](recursos/deploy.yml) y cambie la variable `<NOMBRE_REPOSITORIO_REMOTO>` por el nombre del repositorio en GitHub.
+* Descargue [deploy.yml](recursos/deploy.yml) y cambie el `<NOMBRE_REPOSITORIO_REMOTO>` por el nombre del repositorio en GitHub.
 * Versione el repositorio local y sincronice el repositorio remoto.
 
 #### GitHub Actions - Workflow 
@@ -66,7 +66,7 @@ theme: jekyll-theme-leap-day
 
 #### Angular Material
 
-* Agregue [Angular Material](https://material.angular.io/), con:
+* Agregue [Angular Material](https://material.angular.io/) a su proyecto local, con:
 
 	```
 	ng add @angular/material
