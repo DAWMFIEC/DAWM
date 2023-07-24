@@ -13,9 +13,9 @@ theme: jekyll-theme-leap-day
 
 #### Nombre del proyecto y nombre del repositorio remoto
 
-* El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json`.
+* El `<NOMBRE_APLICACION>` se encuentra la clave `"name"` del `package.json`.
 
-* El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` lo encuentra en el GitHub. Este, puede ser igual, o diferente, al `<NOMBRE_APLICACION>`.
+* El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` es el nombre del repositorio de GitHub. Este, puede ser igual, o diferente, al `<NOMBRE_APLICACION>`.
 
 #### Compilación
 
