@@ -40,7 +40,11 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 15: Firebase - Realtime Database](guias/2023/guia15)
   * [Guía 16: Angular - Interfaz, Servicios, Comunicación y Directivas](guias/2023/guia16)
   * [Guía 17: Angular - Testing](guias/2023/guia17)
-  * [Guía 18: Angular GitHub Actions - Despliegue en producción](guias/2023/guia18)
+  * [Guía 18: Angular - Despliegue en producción con GitHub Actions](guias/2023/guia18)
+* [Proyecto 07: Dataset MPA - Angular](proyectos/2023/proyecto07)
+  * [Guía 19: Angular - Material y Routing](guias/2023/guia19)
+  * [Guía 20: Angular - PWA](guias/2023/guia20)
+  * [Guía 21: Angular - Cordova](guias/2023/guia21)
 
 ### Anteriores
 
