@@ -40,7 +40,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 15: Firebase - Realtime Database](guias/2023/guia15)
   * [Guía 16: Angular - Interfaz, Servicios, Comunicación y Directivas](guias/2023/guia16)
   * [Guía 17: Angular - Testing](guias/2023/guia17)
-  * [Guía 18: Angular - Despliegue y GitHub Actions - Producción](guias/2023/guia18)
+  * [Guía 18: Angular GitHub Actions - Despliegue en producción](guias/2023/guia18)
 
 ### Anteriores
 

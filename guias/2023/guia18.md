@@ -61,6 +61,8 @@ theme: jekyll-theme-leap-day
 	...
 	```
 
+* Modifique el valor de `<NOMBRE_DEL_REPOSITORIO_REMOTO>` en el archivo `package.json`.
+
 #### Repositorio local
 
 * Verifique la clave `origin` con URL del repositorio remoto, con:
