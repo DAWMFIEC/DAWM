@@ -86,7 +86,7 @@ theme: jekyll-theme-leap-day
 	ng g c pages/about
 	```
 
-#### Rutas
+#### Rutas y Páginas Múltiples
 
 * Agregue las rutas en 
 
@@ -106,6 +106,18 @@ theme: jekyll-theme-leap-day
 	...
 	```
 
+* En `app/pages/menu.component.html` reemplace todo el contenido por:
+
+	```html
+	<ul>
+	    <li><a routerLink="/main">Main</a></li>
+	    ...
+		<!-- Agregue las demás rutas de la aplicación -->
+		...
+	    <li><a routerLink="/about">About</a></li>
+	</ul>
+	```
+
 #### Router Outlet
 
 * En `app/app.componente.html` reemplace todo el contenido por:
@@ -120,19 +132,17 @@ theme: jekyll-theme-leap-day
 	ng serve -o
 	```
 
-#### Páginas Múltiples
+#### MatSidenavModule
 
-* En `app.module.ts` importe y registre los módulos `MatSidenavModule` y `MatListModule`
+* En `app.module.ts` importe y registre el módulo `MatSidenavModule`
 
 	```typescript
 	import { MatSidenavModule } from '@angular/material/sidenav';
-	import { MatListModule } from '@angular/material/list';
 	...
 
 	imports: [
 	    ...
 	    MatSidenavModule,
-	    MatListModule
 	    ...
 	  ]
 
@@ -161,6 +171,12 @@ theme: jekyll-theme-leap-day
 	  }
 	```
 
+* Revise los cambios en el navegador.
+
+#### MatListModule
+
+* En `app.module.ts` importe y registre el módulo `MatListModule`
+
 * En `app/pages/menu.component.html` reemplace todo el contenido por:
 
 	```html
@@ -173,7 +189,31 @@ theme: jekyll-theme-leap-day
 	</mat-list>
 	```
 
-* Levante el servidor y acceda a las rutas disponibles en los enlaces de la aplicación.
+* En `app/app.componente.html` reemplace todo el contenido por:
+
+	```html
+	<mat-drawer-container class="container">
+	  <mat-drawer #drawer mode="side" opened>
+	    <app-menu></app-menu>
+	  </mat-drawer>
+	  <mat-drawer-content>
+	    <mat-toolbar>
+	      <button mat-icon-button class="example-icon"
+	        mat-button (click)="drawer.toggle()">
+	        <mat-icon>menu</mat-icon>
+	      </button>
+	    </mat-toolbar>
+	    <router-outlet></router-outlet>
+	  </mat-drawer-content>
+	</mat-drawer-container>
+	```
+
+* Revise los cambios en el navegador.
+
+#### MatIconModule y MatToolbarModule
+
+* En `app.module.ts` importe y registre los módulos `MatIconModule` y `MatToolbarModule`
+
 
 ### Términos
 
