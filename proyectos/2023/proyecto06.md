@@ -30,3 +30,4 @@ La respuesta es:
 * [Guía 15: Firebase - Realtime Database](/DAWM/guias/2023/guia15)
 * [Guía 16: Angular - Interfaz, Servicios, Comunicación y Directivas](/DAWM/guias/2023/guia16)
 * [Guía 17: Angular - Testing](/DAWM/guias/2023/guia17)
+* [Guía 18: Angular - Despliegue y GitHub Actions - Producción](/DAWM/guias/2023/guia18)
