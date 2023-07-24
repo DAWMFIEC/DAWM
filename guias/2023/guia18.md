@@ -155,6 +155,8 @@ theme: jekyll-theme-leap-day
 	          GITHUB_TOKEN: {% raw %} ${{secrets.GITHUB_TOKEN}} {% endraw %}
 	```
 
+* Modifique el valor de `<NOMBRE_APLICACION>` en el archivo `.github/workflows/deploy.yml`.
+
 * Sincronice los cambios del repositorio local en el repositorio remoto, con:
 
 	```
@@ -179,13 +181,13 @@ theme: jekyll-theme-leap-day
 * Vuelva a ejecutar el flujo de trabajo, con:
 
 	+ Acceda a la opción `Actions`.
-	+ Acceda al flujo `"my workflow"`.
+	+ Acceda al flujo de trabajo identificado con el comentario `"my workflow"`.
 	+ Haga clic en el botón `Re-run all jobs` y clic el botón `Re-run jobs`.
 
 * Verifique la creación de la rama `gh-pages`, con:
 	
 	+ Acceda a la opción `Code`.
-	+ Liste las ramas disponibles y verifique el contenido de la rama `gh-pages`.
+	+ Liste las ramas disponibles y verifique que exista la rama `gh-pages`. Debe ser el mismo contenido que en el directorio `dist/<NOMBRE_APLICACION>` que en en el repositorio local.
 
 * Habilite el despliegue con GitHub Pages del repositorio remoto, con:
 
