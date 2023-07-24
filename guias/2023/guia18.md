@@ -35,14 +35,14 @@ theme: jekyll-theme-leap-day
 	python -m http.server --dir dist/<NOMBRE_APLICACION>
 	```
 
-	**NOTA:** El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
+**NOTA:** El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
 
 
 * En el navegador, acceda al URL `http://localhost:8000/` y verifique el funcionamiento correcto de su aplicación.
 
 ### Actividades
 
-#### Compilado remoto
+#### Compilación del repositorio remoto
 
 * En el archivo `package.json`, agregue en la clave `scripts`:
 
@@ -57,7 +57,7 @@ theme: jekyll-theme-leap-day
 	...
 	```
 
-	**NOTA:** El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` puede, o no, ser igual al `<NOMBRE_APLICACION>`
+**NOTA:** El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` puede, o no, ser igual al `<NOMBRE_APLICACION>`
 
 #### Repositorio local
 
@@ -141,7 +141,8 @@ theme: jekyll-theme-leap-day
 	          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 	</code></pre>
 
-	**NOTA:** El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
+	
+**NOTA:** El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
 
 * Sincronice los cambios del repositorio local en el repositorio remoto, con:
 
