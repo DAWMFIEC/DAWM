@@ -35,6 +35,9 @@ theme: jekyll-theme-leap-day
 	python -m http.server --dir dist/<NOMBRE_APLICACION>
 	```
 
+	**NOTA:** El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
+
+
 * En el navegador, acceda al URL `http://localhost:8000/` y verifique el funcionamiento correcto de su aplicación.
 
 ### Actividades
@@ -42,6 +45,7 @@ theme: jekyll-theme-leap-day
 #### Compilado remoto
 
 * En el archivo `package.json`, agregue en la clave `scripts`:
+
 
 	```
 	...
@@ -52,6 +56,8 @@ theme: jekyll-theme-leap-day
 	}
 	...
 	```
+
+	**NOTA:** El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` puede, o no, ser igual al `<NOMBRE_APLICACION>`
 
 #### Repositorio local
 
@@ -135,6 +141,8 @@ theme: jekyll-theme-leap-day
 	          GITHUB_TOKEN: ${{secrets.GITHUB_TOKEN}}
 	```
 
+	**NOTA:** El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
+
 * Sincronice los cambios del repositorio local en el repositorio remoto, con:
 
 	```
@@ -164,4 +172,6 @@ servidor HTTP,
 
 ### Referencias
 
-* 
+* (2023). Retrieved 24 July 2023, from https://www.youtube.com/watch?v=hnCgPowCu9Y
+* Publishing static sites to GitHub Pages using GitHub Actions. (2021). Retrieved 24 July 2023, from https://medium.com/@danieljimgarcia/publishing-static-sites-to-github-pages-using-github-actions-8040f57dfeaf
+* Despliegue de tu aplicación en Angular usando Github Actions. (2021). Retrieved 24 July 2023, from https://medium.com/notasdeangular/despliegue-de-tu-aplicaci%C3%B3n-en-angular-usando-github-actions-c0b5bc67ddb0
