@@ -54,7 +54,7 @@ theme: jekyll-theme-leap-day
 #### Despliegue automático con GitHub Actions
 
 * Cree el directorio `.github/workflows` 
-* Descargue y modifique el archivo [`deploy.yml`](recursos/deploy.yml)
+* Descargue [deploy.yml](recursos/deploy.yml) y cambie la variable `<NOMBRE_REPOSITORIO_REMOTO>` por el nombre del repositorio en GitHub.
 * Versione el repositorio local y sincronice el repositorio remoto.
 
 #### GitHub Actions - Workflow 
