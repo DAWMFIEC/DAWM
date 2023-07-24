@@ -134,6 +134,8 @@ theme: jekyll-theme-leap-day
 
 #### MatSidenavModule
 
+* Revise la documentación en [MatSidenavModule](https://material.angular.io/components/sidenav/overview)
+
 * En `app.module.ts` importe y registre el módulo `MatSidenavModule`
 
 	```typescript
@@ -175,6 +177,8 @@ theme: jekyll-theme-leap-day
 
 #### MatListModule
 
+* Revise la documentación en [MatListModule](https://material.angular.io/components/list/overview)
+
 * En `app.module.ts` importe y registre el módulo `MatListModule`
 
 * En `app/pages/menu.component.html` reemplace todo el contenido por:
@@ -188,6 +192,14 @@ theme: jekyll-theme-leap-day
 	    <mat-list-item role="listitem"><a routerLink="/about">About</a></mat-list-item>
 	</mat-list>
 	```
+
+* Revise los cambios en el navegador.
+
+#### MatIconModule y MatToolbarModule
+
+* Revise la documentación en [MatIconModule](https://material.angular.io/components/icon/overview) y [MatToolbarModule](https://material.angular.io/components/toolbar/overview)
+
+* En `app.module.ts` importe y registre los módulos `MatIconModule` y `MatToolbarModule`
 
 * En `app/app.componente.html` reemplace todo el contenido por:
 
@@ -209,10 +221,6 @@ theme: jekyll-theme-leap-day
 	```
 
 * Revise los cambios en el navegador.
-
-#### MatIconModule y MatToolbarModule
-
-* En `app.module.ts` importe y registre los módulos `MatIconModule` y `MatToolbarModule`
 
 
 ### Términos
