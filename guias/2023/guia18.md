@@ -148,26 +148,44 @@ theme: jekyll-theme-leap-day
 
 	```
 	git add .
-	git commit -m "deploy"
+	git commit -m "my workflow"
 	git push origin main
 	```
+
+* En el repositorio remoto, en la opción `Actions`, verifique la ejecución automática del workflow. 
+
+:heavy_exclamation_mark: El error aparece debido a que no se ha habilitado el uso de un flujo de trabajo propio.
 
 #### Configuración de GitHub Pages
 
 * Habilite el permiso de sobreescritura de flujo de trabajo (**workflow**) del repositorio remoto, con:
 
 	+ Acceda a la opción `Settings`.
-	+ Acceda a la opción `Actions > General`.
+	+ Acceda a la opción `Code and automation` > `Actions` > `General`.
 	+ En `Workflow permissions`, seleccione la opción `Read and Write permissions`
 	+ Guarde los cambios.
 
-* En `Actions`, verifique la ejecución del despliegue automático. 
+* Vuelva a ejecutar el flujo de trabajo, con:
+
+	+ Acceda a la opción `Actions`.
+	+ Acceda al flujo `"my workflow"`.
+	+ Haga clic en el botón `Re-run all jobs` y clic el botón `Re-run jobs`.
+
+* Verifique la creación de la rama `gh-pages`, con:
+	
+	+ Acceda a la opción `Code`.
+	+ Liste las ramas disponibles, debe aparecer la rama `gh-pages`.
 
 * Habilite el despliegue con GitHub Pages del repositorio remoto, con:
 
 	+ Acceda a la opción `Settings`.
 	+ Acceda a la opción `Pages`.
 	+ En `Build and deployment`, seleccione la rama `gh-pages`
+
+
+* Verifique la ejecución del flujo de trabajo de compilación y despliegue `pages build and deployment`
+
+* Acceda al URL de despliegue `https://<USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO_REMOTO>/`
 
 ### Términos
 
