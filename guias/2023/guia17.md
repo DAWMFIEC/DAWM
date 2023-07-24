@@ -175,8 +175,7 @@ theme: jekyll-theme-leap-day
 	        HttpClientModule
 	      ],
 	      declarations: [
-
-	      	//Registre TODOS los componentes que son instanciados en la aplicación mediante un selector
+	      //Registre TODOS los componentes que son instanciados en la aplicación mediante un selector
 	        UnComponent,
 	        ...
 	        OtroComponent,
