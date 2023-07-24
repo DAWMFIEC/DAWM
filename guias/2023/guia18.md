@@ -13,9 +13,9 @@ theme: jekyll-theme-leap-day
 
 #### Nombre del proyecto y nombre del repositorio remoto
 
-* El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json` o en el nombre de la carpeta del proyecto de Angular.
+* El `<NOMBRE_APLICACION>` lo encuentra la clave `"name"` del `package.json`.
 
-* El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` puede, o no, ser igual al `<NOMBRE_APLICACION>`
+* El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` lo encuentra en el GitHub. Este, puede ser igual, o diferente, al `<NOMBRE_APLICACION>`.
 
 #### Compilación
 
@@ -63,17 +63,29 @@ theme: jekyll-theme-leap-day
 
 #### Repositorio local
 
+* Verifique la clave `origin` con URL del repositorio remoto, con:
+
+	```
+	git remote -v
+	```
+
+	+ De ser necesario, agregue o cambie la clave `origin`, con:
+
+		```
+		git remote add origin https://github.com/<USUARIO>/<NOMBRE_DEL_REPOSITORIO_REMOTO>.git
+		```
+
 * Verifique que su repositorio local se encuentre en la rama `main`, con:
 
 	```
 	git branch -v
 	```
 
-* Verifique el URL del repositorio remoto, con:
+	+ De ser necesario, cambie a la rama main, con:
 
-	```
-	git remote -v
-	```
+		```
+		git checkout -b main
+		```
 
 * Verifique que su repositorio local este sincronizado con el repositorio remoto y que se encuentre en la rama `main`, con:
 
@@ -153,7 +165,7 @@ theme: jekyll-theme-leap-day
 
 * En el repositorio remoto, en la opción `Actions`, verifique la ejecución automática del workflow. 
 
-:heavy_exclamation_mark: El error aparece debido a que no se ha habilitado el uso de un flujo de trabajo propio.
+**NOTA:** El error aparece debido a que no se ha habilitado el uso de un flujo de trabajo propio.
 
 #### Configuración de GitHub Pages
 
