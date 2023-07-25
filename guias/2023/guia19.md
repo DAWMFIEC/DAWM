@@ -86,9 +86,15 @@ theme: jekyll-theme-leap-day
 	ng g c pages/about
 	```
 
-#### Rutas y Páginas Múltiples
+* Levante el servidor, con:
 
-* Agregue las rutas en 
+	```
+	ng serve -o
+	```
+
+#### Rutas (Routes)
+
+* En `app/app-routing.module.ts` importe los componentes y agregue las rutas: 
 
 	```typescript
 	...
@@ -106,6 +112,8 @@ theme: jekyll-theme-leap-day
 	...
 	```
 
+#### Enlace a las rutas (Router Link)
+
 * En `app/pages/menu.component.html` reemplace todo el contenido por:
 
 	```html
@@ -118,19 +126,16 @@ theme: jekyll-theme-leap-day
 	</ul>
 	```
 
-#### Router Outlet
+#### Salida del enrutador (Router Outlet)
 
-* En `app/app.componente.html` reemplace todo el contenido por:
+* En `app/app.component.html` reemplace todo el contenido por:
 	
 	```html
 	<app-menu></app-menu>
 	<router-outlet></router-outlet>
 	```
-* Levante el servidor, con:
 
-	```
-	ng serve -o
-	```
+* Revise los cambios en el navegador.
 
 #### MatSidenavModule
 
@@ -150,7 +155,7 @@ theme: jekyll-theme-leap-day
 
 	```
 
-* En `app/app.componente.html` reemplace todo el contenido por:
+* En `app/app.component.html` reemplace todo el contenido por:
 
 	```html
 	<mat-drawer-container class="container">
@@ -201,7 +206,7 @@ theme: jekyll-theme-leap-day
 
 * En `app.module.ts` importe y registre los módulos `MatIconModule` y `MatToolbarModule`
 
-* En `app/app.componente.html` reemplace todo el contenido por:
+* En `app/app.component.html` reemplace todo el contenido por:
 
 	```html
 	<mat-drawer-container class="container">
