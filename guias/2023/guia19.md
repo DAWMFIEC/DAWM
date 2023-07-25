@@ -190,11 +190,11 @@ theme: jekyll-theme-leap-day
 
 	```html
 	<mat-list role="list">
-	    <mat-list-item role="listitem"><a routerLink="/main">Main</a></mat-list-item>
+	    <mat-list-item role="listitem" routerLink="/main">Main</mat-list-item>
 	    ...
 		<!-- Agregue el resto del rutas de la aplicación -->
 		...
-	    <mat-list-item role="listitem"><a routerLink="/about">About</a></mat-list-item>
+	    <mat-list-item role="listitem" routerLink="/about">About</mat-list-item>
 	</mat-list>
 	```
 
