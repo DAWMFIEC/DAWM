@@ -206,25 +206,46 @@ theme: jekyll-theme-leap-day
 
 * En `app.module.ts` importe y registre los módulos `MatIconModule` y `MatToolbarModule`
 
-* En `app/app.component.html` reemplace todo el contenido por:
+* En `app/app.component.html` agregue la etiqueta `<mat-toolbar>`:
 
 	```html
-	<mat-toolbar>
-	  <button mat-icon-button class="example-icon"
-	    mat-button (click)="drawer.toggle()">
+	<mat-toolbar color="primary">
+	  <button mat-icon-button class="example-icon" mat-button>
 	    <mat-icon>menu</mat-icon>
 	  </button>
 	</mat-toolbar>
 	<mat-drawer-container class="container">
+	  ...
+	</mat-drawer-container>
+	```
+
+* Revise los cambios en el navegador.
+
+#### Variables de plantilla
+
+* Agregue la [variable de plantilla](https://angular.io/guide/template-reference-variables) `drawer` en la etiqueta `<mat-drawer>`
+
+	```html
+	...
+	  <mat-drawer #drawer mode="side" opened>
+	    <app-menu></app-menu>
+  	  </mat-drawer>
+	...
+	```
+
+* Haga la referencia a la variable de plantilla `drawer` en el botón dentro de la etiqueta `<mat-toolbar>`
+
+	```html
+	...
+	  <button mat-icon-button class="example-icon" mat-button (click)="drawer.toggle()">
+	    <mat-icon>menu</mat-icon>
+	  </button>
+	...
 	  <mat-drawer #drawer mode="side" opened>
 	    <app-menu></app-menu>
 	  </mat-drawer>
-	  <mat-drawer-content>
-	    <router-outlet></router-outlet>
-	  </mat-drawer-content>
-	</mat-drawer-container>
-
-	```
+	...
+	``` 
 
 * Revise los cambios en el navegador.
 
