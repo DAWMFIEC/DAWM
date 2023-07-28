@@ -209,20 +209,21 @@ theme: jekyll-theme-leap-day
 * En `app/app.component.html` reemplace todo el contenido por:
 
 	```html
+	<mat-toolbar>
+	  <button mat-icon-button class="example-icon"
+	    mat-button (click)="drawer.toggle()">
+	    <mat-icon>menu</mat-icon>
+	  </button>
+	</mat-toolbar>
 	<mat-drawer-container class="container">
 	  <mat-drawer #drawer mode="side" opened>
 	    <app-menu></app-menu>
 	  </mat-drawer>
 	  <mat-drawer-content>
-	    <mat-toolbar>
-	      <button mat-icon-button class="example-icon"
-	        mat-button (click)="drawer.toggle()">
-	        <mat-icon>menu</mat-icon>
-	      </button>
-	    </mat-toolbar>
 	    <router-outlet></router-outlet>
 	  </mat-drawer-content>
 	</mat-drawer-container>
+
 	```
 
 * Revise los cambios en el navegador.
