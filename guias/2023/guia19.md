@@ -229,7 +229,7 @@ theme: jekyll-theme-leap-day
 	...
 	  <mat-drawer #drawer mode="side" opened>
 	    <app-menu></app-menu>
-  	  </mat-drawer>
+	  </mat-drawer>
 	...
 	```
 
