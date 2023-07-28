@@ -100,6 +100,8 @@ theme: jekyll-theme-leap-day
 	...
 	import { MainComponent } from './pages/main/main.component';
 	...
+	/* Importe los demás componentes de la aplicación */
+	...
 	import { AboutComponent } from './pages/about/about.component';
 
 	const routes: Routes = [
@@ -120,7 +122,7 @@ theme: jekyll-theme-leap-day
 	<ul>
 	    <li><a routerLink="/main">Main</a></li>
 	    ...
-		<!-- Agregue las demás rutas de la aplicación -->
+		<!-- Agregue las demás etiquetas a las rutas de la aplicación -->
 		...
 	    <li><a routerLink="/about">About</a></li>
 	</ul>
@@ -249,10 +251,53 @@ theme: jekyll-theme-leap-day
 
 * Revise los cambios en el navegador.
 
+#### MatCardModule
+
+* Revise la documentación en [MatCardModule](https://material.angular.io/components/card/overview)
+
+* En `app.module.ts` importe y registre los módulos `MatCardModule` 
+
+* En `app/pages/about.component.html` reemplace todo el contenido por:
+
+	```html
+	<mat-card class="about-card">
+	    <mat-card-header>
+	      <mat-card-title>About</mat-card-title>
+	      <mat-card-subtitle>Proyecto 07</mat-card-subtitle>
+	    </mat-card-header>
+	    <mat-card-content>
+	      <p class="about-text"> ... </p>
+	    </mat-card-content>
+	</mat-card>
+	```
+
+* Revise los cambios en el navegador.
+
+#### Interpolación
+
+* En `app/pages/about.component.ts` agregue el atributo `description`:
+
+	```typescript
+	...
+	export class AboutComponent {
+ 		description: string = 'Descripción'; /* Cambie por la descripción del proyecto */
+	}
+	```
+
+* En `app/pages/about.component.html` agregue la [interpolación](https://angular.io/guide/interpolation) del atributo **description**:
+
+	```html
+	...
+	  <p class="about-text">{% raw %}{{description}}{% endraw %}</p>
+	...
+	```
+
+* Revise los cambios en el navegador.
+
 
 ### Términos
 
-multiple page aplication, angular material 
+multiple page aplication, angular material, atributo de clase, interpolación, variables de plantilla
 
 
 ### Referencias
