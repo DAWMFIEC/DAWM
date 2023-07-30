@@ -15,7 +15,13 @@ theme: jekyll-theme-leap-day
 #### Repositorio local
 
 * Clone el repositorio remoto [core-app](https://github.com/aavendan/core-app)
-* Cambie el clave **origin** con el URL de su repositorio remoto, con:
+* Muestre el valor de la clave **origin**
+
+	```
+	git remote -v
+	```
+
+* Cambie la clave **origin** con el URL de su repositorio remoto, con:
 
 	```
 	git remote remove origin 
@@ -153,14 +159,12 @@ theme: jekyll-theme-leap-day
 
 * En `app.module.ts` importe y registre el módulo `MatListModule`
 
-* En `app/pages/menu.component.html` reemplace todo el contenido por:
+* En `app/shared/menu.component.html` reemplace todo el contenido por:
 
 	```html
 	<mat-list role="list">
 	    <mat-list-item role="listitem" routerLink="/main">Main</mat-list-item>
-	    ...
-		<!-- Agregue el resto del rutas de la aplicación -->
-		...
+	    <mat-list-item role="listitem" routerLink="/report">Report</mat-list-item>
 	    <mat-list-item role="listitem" routerLink="/about">About</mat-list-item>
 	</mat-list>
 	```
@@ -200,7 +204,7 @@ theme: jekyll-theme-leap-day
 	...
 	```
 
-* Haga la referencia a la variable de plantilla `drawer` en el botón dentro de la etiqueta `<mat-toolbar>`
+* Habilite el evento **click** para que reaccione con la variable de plantilla `drawer` 
 
 	```html
 	...
