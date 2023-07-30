@@ -123,7 +123,6 @@ theme: jekyll-theme-leap-day
 	imports: [
 	    ...
 	    MatSidenavModule,
-	    ...
 	  ]
 
 	```
@@ -132,7 +131,7 @@ theme: jekyll-theme-leap-day
 
 	```html
 	<mat-drawer-container class="container">
-	  <mat-drawer mode="side" opened>
+	  <mat-drawer mode="over" opened>
 	  	<app-menu></app-menu>
 	  </mat-drawer>
 	  <mat-drawer-content>
@@ -249,7 +248,7 @@ theme: jekyll-theme-leap-day
 	```typescript
 	...
 	export class AboutComponent {
- 		description: string = 'Descripción'; /* Cambie por la descripción del proyecto */
+ 		description: string = 'Descripción'; /* Cambie el texto con la descripción de su proyecto */
 	}
 	```
 
@@ -263,13 +262,61 @@ theme: jekyll-theme-leap-day
 
 * Revise los cambios en el navegador.
 
+#### Angular Flex-Layout
+
+* Revise la documentación en [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) y el [Layout Demos](https://tburleson-layouts-demos.firebaseapp.com/#/docs)
+
+* Agregue [Angular Flex-Layout](https://github.com/angular/flex-layout) a su proyecto, con:
+
+	```
+	npm i -s @angular/flex-layout
+	```
+
+* En `app.module.ts` importe y registre el módulo `FlexLayoutModule`
+
+	```typescript
+	import { FlexLayoutModule } from "@angular/flex-layout";
+	...
+
+	imports: [
+	    ...
+	    FlexLayoutModule,
+	  ]
+
+	```
+
+* En `app/pages/about.component.html` reemplace todo el contenido por:
+
+	```html
+	<div class="container" fxLayout="row" fxLayoutAlign="space-evenly center">
+	    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" >
+	        <mat-card class="about-card">
+	        ...
+			</mat-card>
+	    </div>
+	</div>
+	```
+
+
+* En `app/pages/about.component.css` agregue la regla:
+
+	```css
+	.container {
+	    padding-top: 2vh;
+	    padding-left: 2vw;
+	    padding-right: 2vw;
+	}
+	```
+
+
+* Revise los cambios en el navegador. Compruebe la vista responsiva del sitio.
 
 ### Términos
 
-multiple page aplication, angular material, atributo de clase, interpolación, variables de plantilla
-
+multiple page aplication, angular material, variables de plantilla, eventos, atributo de clase, interpolación, 
 
 ### Referencias
 
 * Team, A. (2023). Angular Material. Retrieved 24 July 2023, from https://material.angular.io/
 * Angular. (2023). Retrieved 24 July 2023, from https://angular.io/guide/router
+* Create a responsive card grid in Angular using Flex Layout | Zoaib Khan. (2021). Retrieved 30 July 2023, from https://zoaibkhan.com/blog/create-a-responsive-card-grid-in-angular-using-flex-layout-part-1/
