@@ -8,82 +8,41 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-#### Proyecto con Rutas y CSS
-
-* Crea un proyecto con Angular, con:
-	
-	```
-	ng new <NOMBRE_PROYECTO>
-	```
-
-* Acepte el routeo de Angular y seleccione CSS como formato de estilo
-
-	```html
-	? Would you like to add Angular routing? (y/N) y
-	? Which stylesheet format would you like to use? (Use arrow keys)
-	> CSS
-	```
-
-#### Versionamiento remoto 
+#### Repositorio remoto
 
 * Cree un repositorio remoto en GitHub, de acceso **público**.
 
-#### Versionamiento local
+#### Repositorio local
 
-* Agregue al `package.json` el script:
-
-	```
-	"build:prod": "ng build --configuration production --base-href /<NOMBRE_REPOSITORIO_REMOTO>/",
-	```
-
-* Acceda a la carpeta del proyecto y versione el proyecto, con:
+* Clone el repositorio remoto [core-app](https://github.com/aavendan/core-app)
+* Cambie el clave **origin** con el URL de su repositorio remoto, con:
 
 	```
-	git init .
-	git checkout -b main	
-	git remote add origin https://github.com/<USUARIO>/<NOMBRE_REPOSITORIO_REMOTO>.git
+	git remote remove origin 
+	git remote add origin https://github.com/<USUARIO>/<REPOSITORIO_REMOTO>.git
 	```
-* Versione el repositorio local y sincronice el repositorio remoto, con:
-
-	```
-	git add .
-	git commit -m "init"
-	git push origin main
-	```
-
-#### Despliegue automático con GitHub Actions
-
-* Cree el directorio `.github/workflows` 
-* Descargue [deploy.yml](recursos/deploy.yml) y cambie el `<NOMBRE_REPOSITORIO_REMOTO>` por el nombre del repositorio en GitHub.
-* Versione el repositorio local y sincronice el repositorio remoto.
-
-#### GitHub Actions - Workflow 
-
-* Habilite los permisos de lectura/escritura en `Workflow permissions`
-* Seleccione la rama de despliegue `gh-pages`.
 
 ### Actividades
 
-#### Angular Material
+#### Configuración
 
-* Agregue [Angular Material](https://material.angular.io/) a su proyecto local, con:
+* Cámbiese a la rama **desktop**, con:
 
 	```
-	ng add @angular/material
+	git switch desktop
 	```
 
-* Seleccione el tema de su aplicación, agregue el estilo de tipografía y habilite el módulo de animación.
+* Instale las dependencias del proyecto de Angular
 
 #### Componentes
 
-* Agregue los componentes `Main`, `Report`, `Form`, `Menu` y `About`
+* Cree los componentes básicos `Main`, `Report`, `About` y `Menu`
 
 	```
 	ng g c pages/main
 	ng g c pages/report
-	ng g c pages/form
-	ng g c pages/menu
 	ng g c pages/about
+	ng g c shared/menu
 	```
 
 * Levante el servidor, con:
@@ -94,20 +53,18 @@ theme: jekyll-theme-leap-day
 
 #### Rutas (Routes)
 
-* En `app/app-routing.module.ts` importe los componentes y agregue las rutas: 
+* En `app/app-routing.module.ts` importe los componentes `Main`, `Report` y `About`. Agregue las rutas correspondientes. 
 
 	```typescript
 	...
 	import { MainComponent } from './pages/main/main.component';
-	...
-	/* Importe los demás componentes de la aplicación */
-	...
 	import { AboutComponent } from './pages/about/about.component';
+	import { ReportComponent } from './pages/report/report.component';
 
 	const routes: Routes = [
 	    { path: "main", component: MainComponent },
-	    ...
 	    { path: "about", component: AboutComponent },
+	    { path: "report", component: ReportComponent },
 	    { path: "**", redirectTo: "main" }
 	  ];
 
@@ -116,21 +73,19 @@ theme: jekyll-theme-leap-day
 
 #### Enlace a las rutas (Router Link)
 
-* En `app/pages/menu.component.html` reemplace todo el contenido por:
+* En la vista del componente **Menu** (`app/shared/menu.component.html`) coloque las rutas de acceso a los componentes `Main`, `Report`, `Form` y `About`:
 
 	```html
 	<ul>
 	    <li><a routerLink="/main">Main</a></li>
-	    ...
-		<!-- Agregue las demás etiquetas a las rutas de la aplicación -->
-		...
+	    <li><a routerLink="/report">Report</a></li>
 	    <li><a routerLink="/about">About</a></li>
 	</ul>
 	```
 
 #### Salida del enrutador (Router Outlet)
 
-* En `app/app.component.html` reemplace todo el contenido por:
+* En la vista del componente **App** `app/app.component.html` reemplace todo el contenido por:
 	
 	```html
 	<app-menu></app-menu>
@@ -138,6 +93,16 @@ theme: jekyll-theme-leap-day
 	```
 
 * Revise los cambios en el navegador.
+
+#### Angular Material
+
+* Agregue [Angular Material](https://material.angular.io/) a su proyecto, con:
+
+	```
+	ng add @angular/material
+	```
+
+* Seleccione el **tema** de su aplicación, agregue el **estilo de tipográfico** y habilite el **módulo de animación**.
 
 #### MatSidenavModule
 
