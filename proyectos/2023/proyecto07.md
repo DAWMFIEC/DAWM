@@ -26,5 +26,7 @@ La respuesta es:
 ### Guías
 
 * [Guía 19: Angular - Material y Routing](/DAWM/guias/2023/guia19)
+<!--- 
 * [Guía 20: Angular - PWA](/DAWM/guias/2023/guia20)
-* [Guía 21: Angular - Cordova](/DAWM/guias/2023/guia21)
+* [Guía 21: Angular - Cordova](/DAWM/guias/2023/guia21) 
+ -->
