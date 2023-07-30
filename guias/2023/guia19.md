@@ -202,7 +202,7 @@ theme: jekyll-theme-leap-day
 
 	```html
 	...
-	  <mat-drawer #drawer mode="side" opened>
+	  <mat-drawer #drawer mode="over" opened>
 	    <app-menu></app-menu>
 	  </mat-drawer>
 	...
@@ -216,7 +216,7 @@ theme: jekyll-theme-leap-day
 	    <mat-icon>menu</mat-icon>
 	  </button>
 	...
-	  <mat-drawer #drawer mode="side" opened>
+	  <mat-drawer #drawer mode="over" opened>
 	    <app-menu></app-menu>
 	  </mat-drawer>
 	...
@@ -253,7 +253,7 @@ theme: jekyll-theme-leap-day
 	```typescript
 	...
 	export class AboutComponent {
- 		description: string = 'Descripción'; /* Cambie el texto con la descripción de su proyecto */
+ 		description: string = 'Descripción ... '; /* Cambie el texto con la descripción de su proyecto */
 	}
 	```
 
@@ -293,7 +293,7 @@ theme: jekyll-theme-leap-day
 * En `app/pages/about.component.html` reemplace todo el contenido por:
 
 	```html
-	<div class="container" fxLayout="row" fxLayoutAlign="space-evenly center">
+	<div class="container" fxLayout="row" fxLayoutAlign="center start">
 	    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" >
 	        <mat-card class="about-card">
 	        ...
@@ -310,6 +310,10 @@ theme: jekyll-theme-leap-day
 	    padding-top: 2vh;
 	    padding-left: 2vw;
 	    padding-right: 2vw;
+
+	    min-height: 91vh;
+	    height: auto;
+	    margin: 0;
 	}
 	```
 
