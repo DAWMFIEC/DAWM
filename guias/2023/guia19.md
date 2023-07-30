@@ -38,7 +38,11 @@ theme: jekyll-theme-leap-day
 	git switch desktop
 	```
 
-* Instale las dependencias del proyecto de Angular
+* Instale las dependencias del proyecto de Angular, con:
+
+	```
+	npm i
+	```
 
 #### Componentes
 
@@ -71,7 +75,7 @@ theme: jekyll-theme-leap-day
 	    { path: "main", component: MainComponent },
 		{ path: "about", component: AboutComponent },
 		{ path: "report", component: ReportComponent },
-		{ path: "", redirectTo: '/main', pathMatch: 'full' },
+		{ path: " ", redirectTo: '/main', pathMatch: 'full' },
 		{ path: "**", redirectTo: "main" }
 	  ];
 
@@ -145,9 +149,9 @@ theme: jekyll-theme-leap-day
 
 	```css
 	.container {
-	    width: auto;
-	    height: 100%;
-	    margin: 0px;
+	    min-height: 91vh;
+	    height: auto;
+	    margin: 0;
 	  }
 	```
 
