@@ -69,9 +69,10 @@ theme: jekyll-theme-leap-day
 
 	const routes: Routes = [
 	    { path: "main", component: MainComponent },
-	    { path: "about", component: AboutComponent },
-	    { path: "report", component: ReportComponent },
-	    { path: "**", redirectTo: "main" }
+		{ path: "about", component: AboutComponent },
+		{ path: "report", component: ReportComponent },
+		{ path: "", redirectTo: '/main', pathMatch: 'full' },
+		{ path: "**", redirectTo: "main" }
 	  ];
 
 	...
