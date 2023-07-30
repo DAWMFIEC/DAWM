@@ -320,4 +320,4 @@ multiple page aplication, angular material, variables de plantilla, eventos, atr
 
 * Team, A. (2023). Angular Material. Retrieved 24 July 2023, from https://material.angular.io/
 * Angular. (2023). Retrieved 24 July 2023, from https://angular.io/guide/router
-* Create a responsive card grid in Angular using Flex Layout | Zoaib Khan. (2021). Retrieved 30 July 2023, from https://zoaibkhan.com/blog/create-a-responsive-card-grid-in-angular-using-flex-layout-part-1/
+* Create a responsive card grid in Angular using Flex Layout Zoaib Khan. (2021). Retrieved 30 July 2023, from https://zoaibkhan.com/blog/create-a-responsive-card-grid-in-angular-using-flex-layout-part-1/
