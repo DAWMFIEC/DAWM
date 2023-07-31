@@ -136,7 +136,7 @@ theme: jekyll-theme-leap-day
 
 	```html
 	<mat-drawer-container class="container">
-	  <mat-drawer mode="over" opened>
+	  <mat-drawer mode="side" opened>
 	  	<app-menu></app-menu>
 	  </mat-drawer>
 	  <mat-drawer-content>
@@ -202,7 +202,7 @@ theme: jekyll-theme-leap-day
 
 	```html
 	...
-	  <mat-drawer #drawer mode="over" opened>
+	  <mat-drawer #drawer mode="side" opened>
 	    <app-menu></app-menu>
 	  </mat-drawer>
 	...
@@ -216,7 +216,7 @@ theme: jekyll-theme-leap-day
 	    <mat-icon>menu</mat-icon>
 	  </button>
 	...
-	  <mat-drawer #drawer mode="over" opened>
+	  <mat-drawer #drawer mode="side" opened>
 	    <app-menu></app-menu>
 	  </mat-drawer>
 	...
@@ -311,7 +311,7 @@ theme: jekyll-theme-leap-day
 	    height: auto;
 	    margin: 0;
 	}
-	
+
 	.container {
 	    padding-top: 2vh;
 	    padding-left: 2vw;
@@ -319,8 +319,11 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-
 * Revise los cambios en el navegador. Compruebe la vista responsiva del sitio.
+
+#### Versionamiento
+
+* Versione en la rama **desktop**
 
 ### Términos
 
