@@ -323,7 +323,7 @@ theme: jekyll-theme-leap-day
 
 #### Versionamiento
 
-* Versione en la rama **desktop** en su repositorio local y en su remoto. 
+* Versione en la rama **desktop** en su repositorio local y en su repositorio remoto. 
 
 ### Términos
 
