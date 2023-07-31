@@ -307,13 +307,15 @@ theme: jekyll-theme-leap-day
 
 	```css
 	.container {
-	    padding-top: 2vh;
-	    padding-left: 2vw;
-	    padding-right: 2vw;
-
 	    min-height: 91vh;
 	    height: auto;
 	    margin: 0;
+	}
+	
+	.container {
+	    padding-top: 2vh;
+	    padding-left: 2vw;
+	    padding-right: 2vw;
 	}
 	```
 
