@@ -15,6 +15,19 @@ theme: jekyll-theme-leap-day
 #### Repositorio local
 
 * Clone el repositorio remoto [core-app](https://github.com/aavendan/core-app)
+
+* Cámbiese a la rama **desktop**, con:
+
+	```
+	git switch desktop
+	```
+
+* Instale las dependencias del proyecto de Angular, con:
+
+	```
+	npm i
+	```
+
 * Muestre el valor de la clave **origin**
 
 	```
@@ -29,20 +42,6 @@ theme: jekyll-theme-leap-day
 	```
 
 ### Actividades
-
-#### Configuración
-
-* Cámbiese a la rama **desktop**, con:
-
-	```
-	git switch desktop
-	```
-
-* Instale las dependencias del proyecto de Angular, con:
-
-	```
-	npm i
-	```
 
 #### Componentes
 
