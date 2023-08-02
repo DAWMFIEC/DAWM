@@ -68,7 +68,7 @@ Utilice la interfaz gráfica crear las entidades, agregar atritutos y las relaci
 
 ![meq_newentity](imagenes/meq_newentity.png)
 
-* Seleccione tabla para agregar los atributos (columnas) con su tipo de datos.
+* Seleccione tabla para agregar los atributos (columnas) con su tipo de datos. Cree el resto de entidades de acuerdo con el diseño.
 
 ![meq_setting](imagenes/meq_setting.png)
 
