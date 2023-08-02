@@ -57,6 +57,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Flexbox - Sitio Web](tutoriales/diseno_flexbox.md)
 
+#### SQL
+
+* [Modelo EER a SQL](tutoriales/modeloeer_sql.md)
+
 #### Servidor
 
 * [HTTP - Python](tutoriales/python.md)

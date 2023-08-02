@@ -8,34 +8,44 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### Modelo EER a SQL script
+
 * Del modelo de su base de datos, considere al menos dos entidades y su relación entre sí. 
+* Siga las instrucciones del tutorial [Modelo EER a SQL](tutoriales/modeloeer_sql)
+
+* Express
+* ORM
 
 ### Actividades
 
-#### Base de datos: Schema
+#### Express - Base
 
-1. Establezca una conexión local en MySQL Workbench, con el usuario y contraseña **root**
-2. Cree un nuevo _schema_ con el nombre de su base de datos, p.e. `libreria`. 
-3. Aplique los cambios.
+Desde la línea de comandos:
 
-#### Base de datos: Modelo EER
+1. Instale el módulo **express-generator** de manera global, con:
 
-1. Seleccione el _schema_ de su base de datos.
-2. Escoja la opción `Database` > `Reverse Engineer`
-3. Incluya solo el _schema_ de su base de datos.
-4. Utilice la interfaz gráfica para: 
-	+ Crear las entidades (tablas), con sus atributos (columnas) y tipos de datos.
-	+ Establecer las relaciones entre las tablas y tablas intermedias (para las relaciones 1:N y N:M).
-5. Escoja la opción `Database` > `Forward Engineer`.
-	+ En el paso **Set Options for Database to be Created**, marque las opciones: `DROP objects before each CREATE object`, y `GENERATE DROP SCHEMA`
-6. Actualice el _schema_ de su base de datos.
+	```
+	npm i -g express-generator
+	```
 
+2. Cree un proyecto para su REST - API, p.e. `rest_libreria`, con: 
 
-#### NodeJS: Express - REST API
+	```
+	express --view=ejs rest_<NOMBRE_DEL_PROYECTO>
+	```
+
+3. Acceda a la carpeta del proyecto, instale las dependencias y corra la aplicación, con:
+
+	```
+	cd rest_<NOMBRE_DEL_PROYECTO>
+	npm install
+	SET DEBUG=rest-<NOMBRE_DEL_PROYECTO>:* & npm start
+	```
+
 
 ### Términos
 
-
+reverse engineer, forward engineer, mysql workbench
 
 ### Referencias
 
