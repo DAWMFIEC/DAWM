@@ -99,21 +99,23 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 * Cree el archivo manejador de rutas `routes/rest_<MODELO>.js`. 
 * En `app.js`, relacione la ruta del URL **`'/rest/<MODELO>'`** con el manejador de rutas.
 
-	```
+	```typescript
 	...
 	var indexRouter = require('./routes/index');
 	...
-	/* Referencia al manejador de rutas */
-	var librosRouter = require('./routes/rest_libros');
+	
+	/* REFERENCIA AL MANEJADOR DE RUTAS */
+	var <MODELO>Router = require('./routes/rest_<MODELO>');
 	...
 	app.use('/', indexRouter);
 	...
-	/* Relación entre la ruta del URL con la referencia con el manejador de rutas */
-	app.use('/rest/libros', librosRouter);
+	
+	/* RELACIÓN ENTRE LA RUTA DEL URL CON LA REFERENCIA CON EL MANEJADOR DE RUTAS */
+	app.use('/rest/<MODELO>', <MODELO>Router);
 	...
 	``` 
 
-**NOTA:** En este ejemplo el valor `<MODELO>` es `libros`. 
+**NOTA:** En este caso el valor de `<MODELO>` es `libros`. 
 
 * Revise la respuesta con el URL `http://localhost:3000/rest/<MODELO>`
 
@@ -125,22 +127,26 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 
 * Incluya los módulos y modelos en el encabezado del manejador de rutas.
 
-	```
+	```typescript
 	var express = require('express');
 	var router = express.Router();
 
 	const { Sequelize, Op } = require('sequelize');
-	const Libro = require('../models').libro;
+
+	/* IMPORTE EL MODELO */
+	const <NOMBRE_CLASE> = require('../models').<NOMBRE_ARCHIVO>;
 	...
 	```
 
 * Cree el controlador para el verbo GET de la ruta **`/findAll/json`** que retorna un json con todos los registros.
 
-	```
+	```typescript
 	  ...
 	  router.get('/findAll/json', function(req, res, next) {  
 
-	    Libro.findAll({  
+	  	/* MÉTODO ESTÁTICO findAll  */
+
+	    <NOMBRE_CLASE>.findAll({  
 	        attributes: { exclude: ["updatedAt", "createdAt"] } ,
 	    })  
 	    .then(resultado => {  
@@ -152,6 +158,9 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 	  ...
 	```
 
+**NOTA:** En este caso el valor de `<NOMBRE_ARCHIVO>` es `libro` y de `<NOMBRE_CLASE>` es `claseLibro`.
+
+* Revise la respuesta con el URL `http://localhost:3000/rest/<MODELO>/findAll/json`
 
 ### Términos
 
