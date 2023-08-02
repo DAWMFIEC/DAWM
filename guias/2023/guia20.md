@@ -43,7 +43,7 @@ Desde la línea de comandos:
 	express --view=ejs rest_<NOMBRE_DEL_PROYECTO>
 	```
 
-* Acceda a la carpeta del proyecto, instale las dependencias y corra la aplicación, con:
+* Acceda a la carpeta del proyecto, instale las dependencias y ejecute la aplicación, con:
 
 	```
 	cd rest_<NOMBRE_DEL_PROYECTO>
@@ -53,7 +53,7 @@ Desde la línea de comandos:
 
 * Compruebe los resultados al acceder a `http://localhost:3000`
 
-#### ORM Sequelize
+#### ORM: Sequelize
 
 Dentro de la carpeta del proyecto y desde la línea de comandos:
 
@@ -83,7 +83,7 @@ Dentro de la carpeta del proyecto y desde la línea de comandos:
 	  ...
 	```
 
-#### ORM Sequelize Auto
+#### ORM: Sequelize Auto
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
@@ -93,7 +93,7 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 	sequelize-auto -h "127.0.0.1" -d <NOMBRE_SCHEMA> -u "root" -x <CONTRASEÑA> -p 3306
 	```
 
-**NOTA:** Los valores de `<NOMBRE_SCHEMA>` y `<CONTRASEÑA>` son cadenas de caracteres por lo que debe colocarlo entre comillas dobles
+**NOTA:** Los valores de `<NOMBRE_SCHEMA>` y `<CONTRASEÑA>` son cadenas de caracteres por lo que debe colocar el valor entre comillas dobles
 
 #### Manejador de rutas y registro en la aplicación
 
@@ -117,6 +117,8 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 	``` 
 
 **NOTA:** En este caso el valor de `<MODELO>` es `libros`. 
+
+* Reinicie o ejecute la aplicación
 
 * Revise la respuesta con el URL `http://localhost:3000/rest/<MODELO>`
 
@@ -158,6 +160,8 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 	```
 
 **NOTA:** En este caso el valor de `<NOMBRE_ARCHIVO>` es `libro` y de `<NOMBRE_CLASE>` es `claseLibro`.
+
+* Reinicie o ejecute la aplicación
 
 * Revise la respuesta con el URL `http://localhost:3000/rest/<MODELO>/findAll/json`
 
