@@ -131,9 +131,7 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 	var express = require('express');
 	var router = express.Router();
 
-	const { Sequelize, Op } = require('sequelize');
-
-	/* IMPORTE EL MODELO */
+	/* IMPORTE El ARCHIVO CON EL MODELO */
 	const <NOMBRE_CLASE> = require('../models').<NOMBRE_ARCHIVO>;
 	...
 	```
