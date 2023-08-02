@@ -22,6 +22,7 @@ theme: jekyll-theme-leap-day
 
 * Del modelo de su base de datos, considere al menos dos entidades y su relación entre sí. 
 * Siga las instrucciones del tutorial [Modelo EER a SQL](/DAWM/tutoriales/modeloeer_sql)
+* Agregue algunos registros a sus entidades
 
 
 ### Actividades
@@ -36,7 +37,7 @@ Desde la línea de comandos:
 	npm i -g express-generator sequelize-cli sequelize-auto
 	```
 
-* Cree un proyecto para su REST - API, p.e. `rest_libreria`, con: 
+* Cree un proyecto para su REST - API, con: 
 
 	```
 	express --view=ejs rest_<NOMBRE_DEL_PROYECTO>
