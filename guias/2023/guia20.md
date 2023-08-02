@@ -117,7 +117,40 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 * Revise la respuesta con el URL `http://localhost:3000/rest/<MODELO>`
 
-#### Manejador de rutas y registro en la aplicación
+#### REST: GET-All
+
+Para obtener TODOS los registros de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con el método **findAll** de la clase.
+
+* Modifique el archivo manejador de rutas `routes/rest_<MODELO>.js`
+
+* Incluya los módulos y modelos en el encabezado del manejador de rutas.
+
+	```
+	var express = require('express');
+	var router = express.Router();
+
+	const { Sequelize, Op } = require('sequelize');
+	const Libro = require('../models').libro;
+	...
+	```
+
+* Cree el controlador para el verbo GET de la ruta **`/findAll/json`** que retorna un json con todos los registros.
+
+	```
+	  ...
+	  router.get('/findAll/json', function(req, res, next) {  
+
+	    Libro.findAll({  
+	        attributes: { exclude: ["updatedAt", "createdAt"] } ,
+	    })  
+	    .then(resultado => {  
+	        res.json(resultado);  
+	    })  
+	    .catch(error => res.status(400).send(error)) 
+
+	  });
+	  ...
+	```
 
 
 ### Términos
