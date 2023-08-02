@@ -16,24 +16,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-#### Environments
 
-* Cree la carpeta `environments` y los archivos `environments.ts` y `environments.prod.ts`
-* En `environments.ts` agregue el contenido
-
-	```
-	export const environment = {
-	    production: false
-	  };
-	```
-
-* En `environments.prod.ts` agregue el contenido
-
-	```
-	export const environment = {
-	    production: true,
-	  };
-	```
 
 ### Referencias
 
