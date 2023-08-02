@@ -23,6 +23,7 @@ theme: jekyll-theme-leap-day
 * Del modelo de su base de datos, considere al menos dos entidades y su relación entre sí. 
 * Siga las instrucciones del tutorial [Modelo EER a SQL](/DAWM/tutoriales/modeloeer_sql)
 
+
 ### Actividades
 
 #### Express - Base
@@ -51,7 +52,7 @@ Desde la línea de comandos:
 
 * Compruebe los resultados al acceder a `http://localhost:3000`
 
-#### Express - Sequelize
+#### ORM Sequelize
 
 Dentro de la carpeta del proyecto y desde la línea de comandos:
 
@@ -81,11 +82,11 @@ Dentro de la carpeta del proyecto y desde la línea de comandos:
 	  ...
 	```
 
-#### ORM
+#### ORM Sequelize Auto
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* Reconstruya los modelos, con: 
+* Reconstruya los modelos lógicos desde las entidades relacionales, con: 
 
 	```
 	sequelize-auto -h "127.0.0.1" -d <NOMBRE_SCHEMA> -u "root" -x <CONTRASEÑA> -p 3306
