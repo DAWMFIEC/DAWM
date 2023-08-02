@@ -29,19 +29,19 @@ theme: jekyll-theme-leap-day
 
 Desde la línea de comandos:
 
-1. Instale los módulos **Express Generator**, **Sequelize CLI** y **Sequelize auto** de manera global, con:
+* Instale los módulos **Express Generator**, **Sequelize CLI** y **Sequelize auto** de manera global, con:
 
 	```
 	npm i -g express-generator sequelize-cli sequelize-auto
 	```
 
-2. Cree un proyecto para su REST - API, p.e. `rest_libreria`, con: 
+* Cree un proyecto para su REST - API, p.e. `rest_libreria`, con: 
 
 	```
 	express --view=ejs rest_<NOMBRE_DEL_PROYECTO>
 	```
 
-3. Acceda a la carpeta del proyecto, instale las dependencias y corra la aplicación, con:
+* Acceda a la carpeta del proyecto, instale las dependencias y corra la aplicación, con:
 
 	```
 	cd rest_<NOMBRE_DEL_PROYECTO>
@@ -49,6 +49,49 @@ Desde la línea de comandos:
 	SET DEBUG=rest-<NOMBRE_DEL_PROYECTO>:* & npm start
 	```
 
+* Compruebe los resultados al acceder a `http://localhost:3000`
+
+#### Express - Sequelize
+
+Dentro de la carpeta del proyecto y desde la línea de comandos:
+
+* Instale Sequelize y el conector para MySQL para el proyecto, con: 
+
+	```
+	npm install --save sequelize mysql2
+	```
+
+* Genere los archivos de configuración de Sequelize, con: 
+
+	```
+	sequelize init
+	```  
+
+* Modifique el archivo `config/config.json` con los datos para la conexión con el motor de bases de datos. En este caso, el ambiente a utilizar es **development**.
+
+	```
+	{
+	  "development": {
+	    "username": "root",
+	    "password": <CONTRASEÑA>,
+	    "database": <NOMBRE_SCHEMA>,
+	    "host": "127.0.0.1",
+	    "dialect": "mysql"
+	  },
+	  ...
+	```
+
+#### ORM
+
+Desde la línea de comandos, en la raíz de la carpeta del proyecto.
+
+* Reconstruya los modelos, con: 
+
+	```
+	sequelize-auto -h "127.0.0.1" -d <NOMBRE_SCHEMA> -u "root" -x <CONTRASEÑA> -p 3306
+	```
+
+**NOTA:** Los valores de `<NOMBRE_SCHEMA>` y `<CONTRASEÑA>` son cadenas de caracteres por lo que debe colocarlo entre comillas dobles
 
 ### Términos
 
