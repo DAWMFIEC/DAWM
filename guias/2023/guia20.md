@@ -94,6 +94,32 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 **NOTA:** Los valores de `<NOMBRE_SCHEMA>` y `<CONTRASEÑA>` son cadenas de caracteres por lo que debe colocarlo entre comillas dobles
 
+#### Manejador de rutas y registro en la aplicación
+
+* Cree el archivo manejador de rutas `routes/rest_<MODELO>.js`. 
+* En `app.js`, relacione la ruta del URL **`'/rest/<MODELO>'`** con el manejador de rutas.
+
+	```
+	...
+	var indexRouter = require('./routes/index');
+	...
+	/* Referencia al manejador de rutas */
+	var librosRouter = require('./routes/rest_libros');
+	...
+	app.use('/', indexRouter);
+	...
+	/* Relación entre la ruta del URL con la referencia con el manejador de rutas */
+	app.use('/rest/libros', librosRouter);
+	...
+	``` 
+
+**NOTA:** En este ejemplo el valor `<MODELO>` es `libros`. 
+
+* Revise la respuesta con el URL `http://localhost:3000/rest/<MODELO>`
+
+#### Manejador de rutas y registro en la aplicación
+
+
 ### Términos
 
 reverse engineer, forward engineer, mysql workbench
