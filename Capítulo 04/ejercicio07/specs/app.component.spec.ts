@@ -7,6 +7,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import {MatIconModule} from '@angular/material/icon';  
 import {MatButtonModule} from '@angular/material/button';
 import {MatSidenavModule} from '@angular/material/sidenav';
+import { HttpClientTestingModule } from '@angular/common/http/testing';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -17,7 +18,8 @@ describe('AppComponent', () => {
         MatToolbarModule,
         MatIconModule,  
         MatButtonModule,
-        MatSidenavModule
+        MatSidenavModule,
+        HttpClientTestingModule
       ],
       declarations: [
         AppComponent

@@ -54,7 +54,7 @@ describe('RedesComponent', () => {
 
   it('should render redes', () => {
     const compiled = fixture.nativeElement as HTMLElement;
-    expect(compiled.querySelectorAll('ul.list-group.list-group-horizontal.justify-content-center li')?.length).toEqual(3);
+    expect(compiled.querySelectorAll('ul.list-group.list-group-horizontal.justify-content-center li')?.length).toEqual(4);
   });
 
 });
