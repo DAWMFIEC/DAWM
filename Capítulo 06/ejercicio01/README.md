@@ -9,11 +9,11 @@
 
 * Complete las actividades de:
 
-  + [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), 
-  + [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html), 
-  + [Express - ORM (Intermedio)](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html), 
-  + [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html), y 
-  + [Express - REST](https://dawfiec.github.io/DAWM/tutoriales/express_rest.html)
+  + [Express - Bases](https://dawmfiec.github.io/DAWM/tutoriales/express_bases.html), 
+  + [Express - ORM (Básico)](https://dawmfiec.github.io/DAWM/tutoriales/express_ormbasico.html), 
+  + [Express - ORM (Intermedio)](https://dawmfiec.github.io/DAWM/tutoriales/express_ormintermedio.html), 
+  + [Express - Parámetros de consulta y Parámetros de ruta](https://dawmfiec.github.io/DAWM/tutoriales/express_pcpr.html), y 
+  + [Express - REST](https://dawmfiec.github.io/DAWM/tutoriales/express_rest.html)
 
 
 ## Configuración
@@ -89,7 +89,7 @@
 
 ## Referencias 
 
-* DAWM-2022. (2022). Retrieved 27 July 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/express_bases.html
-* DAWM-2022. (2022). Retrieved 27 July 2022, from https://dawfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html
+* DAWM-2022. (2022). Retrieved 27 July 2022, from https://dawmfiec.github.io/DAWM-2022/tutoriales/express_bases.html
+* DAWM-2022. (2022). Retrieved 27 July 2022, from https://dawmfiec.github.io/DAWM-2022/tutoriales/express_bootstrap.html
 * Testing your Express.js Backend Server. (2021). Retrieved 27 July 2022, from https://dev.to/lukekyl/testing-your-express-js-backend-server-3ae6
 * Expect · Jest. (2022). Retrieved 27 July 2022, from https://jestjs.io/docs/expect
