@@ -18,31 +18,33 @@ theme: jekyll-theme-leap-day
 * Cree y configure un nuevo proyecto que supla el servicio de MySQL. Acceda a `New` > `Database` > `Add MySQL`.
 * Acceda a la configuración del proyecto y copie los datos para la conexión. Acceda a `Connect` > `Available Variables`: _MYSQL_URL_, _MYSQLDATABASE_, _MYSQLHOST_, _MYSQLPASSWORD_, _MYSQLPORT_ y _MYSQLUSER_.
 
+
 #### Ambiente de producción
 
-Desde la línea de comandos, en la raíz del proyecto en Express.
 
-* Coloque la variable de entorno _NODE_ENV_ en modo `development`
+* Modifique el archivo el archivo `config/config.json`, el ambiente de producción (clave `production`), con los valores previos.
+
+* En el proyecto en Express, desde la línea de comandos, coloque la variable de entorno _NODE_ENV_ con el valor `production`
 
 	```
-	set NODE_ENV=development
+	set NODE_ENV=production
 	```
 
-**NOTA:** En adelante, todas los instrucciones se ejecutarán en el servicio en Railway.
+**NOTA:** En adelante, todas los instrucciones se ejecutarán en el servicio con MySQL de Railway.
 
 #### Migraciones
 
 Desde la línea de comandos, en la raíz del proyecto en Express.
 
-* Cree las migraciones por cada una de las tablas del proyecto, con:
+* Cree las migraciones por cada una de las tablas de la base de datos del proyecto, con:
 	
 	```
 	sequelize migration:create --name <TABLA>
 	```
 
-**NOTA:** Empiece por los nombres de tablas sin claves foráneas.
+**NOTA:** Empiece por los nombres de tablas SIN claves foráneas.
 
-* Por cada archivo de migración, agregue el código para hacer (**up**) o deshacer (**down**):
+* En cada archivo de migración, agregue el código para aplicar (**up**) o deshacer (**down**):
 
 	```typescript
 	...
@@ -53,13 +55,13 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 	module.exports = {
 	  async up (queryInterface, Sequelize) {
 	    
-	    /* SINCRONIZACIÓN DEL MODELO CON LA CREACIÓN DE LA TABLA */
+	    /* CREACIÓN DE LA TABLA A PARTIR DE LA CLASE */
 	    await <NOMBRE_CLASE>.sync()
 	  },
 
 	  async down (queryInterface, Sequelize) {
 	    
-	    /* ELIMINAR LA TABLA */
+	    /* ELIMINACIÓN LA TABLA */
 	    await queryInterface.dropTable('<NOMBRE_TABLA>');
 	  }
 	};
@@ -69,13 +71,13 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 
 Desde la línea de comandos, en la raíz del proyecto en Express.
 
-* Cree los generadores de datos por cada una de las tablas del proyecto, con:
+* Cree los generadores de datos por cada una de las tablas de la base de datos del proyecto, con:
 	
 	```
 	sequelize seed:create --name <TABLA>
 	```
 
-**NOTA:** Empiece por los nombres de tablas sin claves foráneas.
+**NOTA:** Empiece por los nombres de tablas SIN claves foráneas.
 
 * Por cada archivo generador de dato, agregue el código para hacer (**up**) o deshacer (**down**):
 
@@ -84,22 +86,19 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 	module.exports = {
 	  async up (queryInterface, Sequelize) {
 	    
-	    /* INSERTAR LOS REGISTROS EN LA TABLA */
+	    /* INSERTAR UNA LISTA DE OBJETOS (REGISTROS) EN LA TABLA */
 	    await queryInterface.bulkInsert('<NOMBRE_TABLA>', [
 	     
-	     /*
-
-     	CREE LOS OBJETOS SON (CLAVE-VALOR)
-		TOME COMO REFERENCIA LOS NOMBRES DE LAS CLAVES DE LOS MODELOS 
-
-		POR EJEMPLO:
-	     
-	    {
-	        idautor: 1,
-	        nombre: 'J. R. R. Tolkien'
-	    }
-	    */
-
+	     /* LA ESTRUCTURA DE LOS OBJETOS JSON (CLAVE-VALOR), DE ACUERDO CON EL MODELO RELACIONADO */
+	     {
+	     	<CLAVE_1_DEL_MODELO>: <VALOR_1>,
+	     	<CLAVE_2_DEL_MODELO>: <VALOR_2>,
+	     	...
+	     	<CLAVE_N_DEL_MODELO>: <VALOR_N>,
+	     },
+	     {
+	     	...
+	     }
 	     ...
 	     ], {});
 	  },
@@ -133,13 +132,19 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 **NOTA:** Para revertir la ejecución de todos los generadores de datos, con: `sequelize db:seed:undo:all`
 
 
-* Registre todas las referencias de las rutas (dentro de la carpeta `routes`) en la aplicación (`app.js`).
-* Ejecute la aplicación
-* Revise la respuesta con los URLs `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
+* Cree todos los manejadores de rutas en la carpeta `routes`. 
+* Registre todos los manejadores de rutas con las rutas respectivas, en archivo de la aplicación (`app.js`).
+* Ejecute la aplicación, con: 
+	
+	```
+	npm start
+	```
+
+* Revise la respuesta de todas las rutas creadas, de acuerdo con la plantilla de URLs `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
 
 ### Términos
 
-migraciones, generadores de datos
+servicios, migraciones, generadores de datos
 
 ### Referencias
 
