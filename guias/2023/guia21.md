@@ -65,14 +65,6 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 	};
 	```
 
-* Ejecute las migraciones, con:
-	
-	```
-	sequelize db:migrate
-	```
-
-**NOTA:** Para revertir la ejecución de todas las migraciones, use: `sequelize db:migrate:undo:all`
-
 #### Generadores de datos
 
 Desde la línea de comandos, en la raíz del proyecto en Express.
@@ -120,6 +112,18 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 	};
 	```
 
+#### Express - ORM
+
+Desde la línea de comandos, en la raíz del proyecto en Express. 
+
+* Ejecute las migraciones, con:
+	
+	```
+	sequelize db:migrate
+	```
+
+**NOTA:** Para revertir la ejecución de todas las migraciones, use: `sequelize db:migrate:undo:all`
+
 * Ejecute las migraciones, con:
 	
 	```
@@ -128,11 +132,17 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 
 **NOTA:** Para revertir la ejecución de todos los generadores de datos, con: `sequelize db:seed:undo:all`
 
+
+* Registre todas las referencias de las rutas (dentro de la carpeta `routes`) en la aplicación (`app.js`).
+* Ejecute la aplicación
+* Revise la respuesta con los URLs `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
+
 ### Términos
 
 migraciones, generadores de datos
 
 ### Referencias
 
+* Sebhastian, N. (2023). How to create a database table using Sequelize code. Retrieved 7 August 2023, from https://sebhastian.com/sequelize-create-table/
 * topics, O. (2023). Migrations Sequelize. Retrieved 7 August 2023, from https://sequelize.org/docs/v6/other-topics/migrations/#creating-the-first-model-and-migration
 * topics, O. (2023). Migrations Sequelize. Retrieved 7 August 2023, from https://sequelize.org/docs/v6/other-topics/migrations/#creating-the-first-seed
