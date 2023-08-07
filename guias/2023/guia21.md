@@ -15,8 +15,8 @@ theme: jekyll-theme-leap-day
 #### Railway
 
 * Obtenga una cuenta en [Railway](https://railway.app/) autenticando mediante su cuentan en GitHub.
-* Cree y configure un nuevo proyecto que supla el servicio de MySQL.
-* Acceda a la configuración del proyecto y copie los datos para la conexión. Revise en `Connect` > `Available Variables`: _MYSQL_URL_, _MYSQLDATABASE_, _MYSQLHOST_, _MYSQLPASSWORD_, _MYSQLPORT_ y _MYSQLUSER_.
+* Cree y configure un nuevo proyecto que supla el servicio de MySQL. Acceda a `New` > `Database` > `Add MySQL`.
+* Acceda a la configuración del proyecto y copie los datos para la conexión. Acceda a `Connect` > `Available Variables`: _MYSQL_URL_, _MYSQLDATABASE_, _MYSQLHOST_, _MYSQLPASSWORD_, _MYSQLPORT_ y _MYSQLUSER_.
 
 #### Ambiente de producción
 
@@ -28,24 +28,26 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 	set NODE_ENV=development
 	```
 
+**NOTA:** En adelante, todas los instrucciones se ejecutarán en el servicio en Railway.
+
 #### Migraciones
 
 Desde la línea de comandos, en la raíz del proyecto en Express.
 
-* Genere las migraciones por cada una de las tablas del proyecto, con:
+* Cree las migraciones por cada una de las tablas del proyecto, con:
 	
 	```
 	sequelize migration:create --name <TABLA>
 	```
 
-**NOTA:** Empiece por las tablas sin claves foráneas.
+**NOTA:** Empiece por los nombres de tablas sin claves foráneas.
 
 * Por cada archivo de migración, agregue el código para hacer (**up**) o deshacer (**down**):
 
 	```typescript
 	...
 	/* IMPORTE El ARCHIVO CON EL MODELO */
-	const <NOMBRE_CLASE> = require('../models').<NOMBRE_ARCHIVO>;
+	const <NOMBRE_CLASE> = require('../models').<NOMBRE_TABLA>;
 	
 	...
 	module.exports = {
@@ -58,7 +60,7 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 	  async down (queryInterface, Sequelize) {
 	    
 	    /* ELIMINAR LA TABLA */
-	    await queryInterface.dropTable('<NOMBRE_CLASE>');
+	    await queryInterface.dropTable('<NOMBRE_TABLA>');
 	  }
 	};
 	```
@@ -69,15 +71,57 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 	sequelize db:migrate
 	```
 
-**NOTA:** Para revertir las migraciones, use: `sequelize db:migrate:undo:all`
+**NOTA:** Para revertir la ejecución de todas las migraciones, use: `sequelize db:migrate:undo:all`
 
 #### Generadores de datos
 
+Desde la línea de comandos, en la raíz del proyecto en Express.
 
-* Genere los generadores de datos por cada una de las tablas del proyecto, con:
+* Cree los generadores de datos por cada una de las tablas del proyecto, con:
 	
 	```
 	sequelize seed:create --name <TABLA>
+	```
+
+**NOTA:** Empiece por los nombres de tablas sin claves foráneas.
+
+* Por cada archivo generador de dato, agregue el código para hacer (**up**) o deshacer (**down**):
+
+	```typescript
+	...
+	module.exports = {
+	  async up (queryInterface, Sequelize) {
+	    
+	    /* INSERTAR LOS REGISTROS EN LA TABLA */
+	    await queryInterface.bulkInsert('<NOMBRE_TABLA>', [
+	     
+	     /*
+
+     	CREE LOS OBJETOS SON (CLAVE-VALOR)
+		TOME COMO REFERENCIA LOS NOMBRES DE LAS CLAVES DE LOS MODELOS 
+
+		POR EJEMPLO:
+	     
+	    {
+	        idautor: 1,
+	        nombre: 'J. R. R. Tolkien'
+	    },
+	    {
+	        idautor: 2,
+	        nombre: 'J. K. Rowling'
+	    }
+	    */
+
+	     ...
+	     ], {});
+	  },
+
+	  async down (queryInterface, Sequelize) {
+	    
+	    /* ELIMINAR TODOS LOS REGISTROS DE LA TABLA */
+	    await queryInterface.bulkDelete('<NOMBRE_TABLA>', null, {});
+	  }
+	};
 	```
 
 * Ejecute las migraciones, con:
@@ -86,15 +130,13 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 	sequelize db:seed:all
 	```
 
-#### NodeJS - Express: REST - API
-
-
-
+**NOTA:** Para revertir la ejecución de todos los generadores de datos, con: `sequelize db:seed:undo:all`
 
 ### Términos
 
-Deployment
+migraciones, generadores de datos
 
 ### Referencias
 
-* Moisset, D. (2023). Estructura y nombres de archivos y carpetas de un proyecto Angular - Carpeta 'environments'. Retrieved 30 July 2023, from https://www.tutorialesprogramacionya.com/angularya/detalleconcepto.php?punto=62&codigo=62&inicio=60
+* topics, O. (2023). Migrations Sequelize. Retrieved 7 August 2023, from https://sequelize.org/docs/v6/other-topics/migrations/#creating-the-first-model-and-migration
+* topics, O. (2023). Migrations Sequelize. Retrieved 7 August 2023, from https://sequelize.org/docs/v6/other-topics/migrations/#creating-the-first-seed
