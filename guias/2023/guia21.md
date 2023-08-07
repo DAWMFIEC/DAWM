@@ -105,10 +105,6 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 	    {
 	        idautor: 1,
 	        nombre: 'J. R. R. Tolkien'
-	    },
-	    {
-	        idautor: 2,
-	        nombre: 'J. K. Rowling'
 	    }
 	    */
 
