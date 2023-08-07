@@ -97,8 +97,8 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 #### Manejador de rutas y registro en la aplicación
 
-* Cree el archivo manejador de rutas `routes/rest_<MODELO>.js`. 
-* En `app.js`, relacione la ruta del URL **`'/rest/<MODELO>'`** con el manejador de rutas.
+* Cree el archivo manejador de rutas `routes/rest_<NOMBRE_CLASE>.js`. 
+* En `app.js`, relacione la ruta del URL **`'/rest/<NOMBRE_CLASE>'`** con el manejador de rutas.
 
 	```typescript
 	...
@@ -106,21 +106,19 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 	...
 	
 	/* REFERENCIA AL MANEJADOR DE RUTAS */
-	var <MODELO>Router = require('./routes/rest_<MODELO>');
+	var <NOMBRE_CLASE>Router = require('./routes/rest_<NOMBRE_CLASE>');
 	...
 	app.use('/', indexRouter);
 	...
 	
 	/* RELACIÓN ENTRE LA RUTA DEL URL CON LA REFERENCIA CON EL MANEJADOR DE RUTAS */
-	app.use('/rest/<MODELO>', <MODELO>Router);
+	app.use('/rest/<NOMBRE_CLASE>', <NOMBRE_CLASE>Router);
 	...
 	``` 
 
-**NOTA:** En este caso el valor de `<MODELO>` es `libros`. 
-
 * Reinicie o ejecute la aplicación
 
-* Revise la respuesta con el URL `http://localhost:3000/rest/<MODELO>`
+* Revise la respuesta con el URL `http://localhost:3000/rest/<NOMBRE_CLASE>`
 
 #### REST: GET-All
 
@@ -135,7 +133,7 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 	var router = express.Router();
 
 	/* IMPORTE El ARCHIVO CON EL MODELO */
-	const <NOMBRE_CLASE> = require('../models').<NOMBRE_ARCHIVO>;
+	const <NOMBRE_CLASE> = require('../models').<NOMBRE_TABLA>;
 	...
 	```
 
@@ -161,7 +159,7 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 
 * Reinicie o ejecute la aplicación
 
-* Revise la respuesta con el URL `http://localhost:3000/rest/<MODELO>/findAll/json`
+* Revise la respuesta con el URL `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
 
 ### Términos
 
