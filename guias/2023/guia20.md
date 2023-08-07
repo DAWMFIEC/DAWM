@@ -159,8 +159,6 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 	  ...
 	```
 
-**NOTA:** En este caso el valor de `<NOMBRE_ARCHIVO>` es `libro` y de `<NOMBRE_CLASE>` es `claseLibro`.
-
 * Reinicie o ejecute la aplicación
 
 * Revise la respuesta con el URL `http://localhost:3000/rest/<MODELO>/findAll/json`
