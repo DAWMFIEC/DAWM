@@ -39,7 +39,7 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 * Cree las migraciones por cada una de las tablas de la base de datos del proyecto, con:
 	
 	```
-	sequelize migration:create --name <TABLA>
+	sequelize migration:create --name <NOMBRE_TABLA>
 	```
 
 **NOTA:** Empiece por los nombres de tablas SIN claves foráneas.
@@ -74,7 +74,7 @@ Desde la línea de comandos, en la raíz del proyecto en Express.
 * Cree los generadores de datos por cada una de las tablas de la base de datos del proyecto, con:
 	
 	```
-	sequelize seed:create --name <TABLA>
+	sequelize seed:create --name <NOMBRE_TABLA>
 	```
 
 **NOTA:** Empiece por los nombres de tablas SIN claves foráneas.
