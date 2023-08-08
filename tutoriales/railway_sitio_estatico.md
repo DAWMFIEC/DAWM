@@ -46,19 +46,8 @@ Cuenta nueva
 </p>
 
 
-Repositorio: Admin
-=================
-
-* * *
-
-
-* Cree un nuevo repositorio en Github: **admin**
-  + Copie y pegue el código de la aplicación [album/admin](https://github.com/DAWFIEC/DAWM-apps), de la rama `hito2-admin`, en su nuevo repositorio.
-  + Guarde los cambios en el repositorio remoto.
-
-
-Proyecto: Github repo
-=====================
+Despliegue desde un repositorio
+===============================
 
 * * *
 
@@ -75,12 +64,8 @@ Proyecto: Github repo
   <img width="50%" src="imagenes/railway_configure.png">
 </p>
 
-Aplicación: Admin
-================
 
-* * *
-
-* Seleccione el nuevo repositorio **admin**.
+* Seleccione el nuevo repositorio que desea colocar en producción.
 
 <p align="center">
   <img width="75%" src="imagenes/railway_repositorio.png">
