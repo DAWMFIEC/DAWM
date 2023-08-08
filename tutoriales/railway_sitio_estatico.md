@@ -46,8 +46,8 @@ Cuenta nueva
 </p>
 
 
-Despliegue desde un repositorio
-===============================
+Servicio: Github Repo
+=====================
 
 * * *
 
@@ -91,12 +91,7 @@ Despliegue desde un repositorio
   <img width="49%" src="imagenes/railway_domain2.png">
 </p>
 
-* Compruebe accediendo a la URL disponible, por ejemplo: `https://admin-production-599d.up.railway.app/`
-
-<p align="center">
-  <img src="imagenes/railway_production.png">
-</p>
-
+* Compruebe accediendo a la URL disponible, por ejemplo: `https://<NOMBRE_REPOSITORIO>-production.up.railway.app/`
 
 Logs
 ======
