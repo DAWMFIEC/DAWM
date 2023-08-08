@@ -14,7 +14,7 @@ Railway - MySQL
 Railway permite alojar aplicaciones gratuitamente (por tiempo limitado) incluso con el servicio de MySQL.
 
 
-Proyecto: MySQL
+Servicio: MySQL
 ===============
 
 * * *
@@ -39,15 +39,13 @@ Proyecto: MySQL
 </p>
 
 
-Repositorio: API
-=================
+Configuración local: Railway - MySQL 
+====================================
 
 * * *
 
 
-* Cree un nuevo repositorio en Github: **api**
-  + Copie y pegue el código de la aplicación [album/api](https://github.com/DAWFIEC/DAWM-apps), de la rama `hito7-api`, en su nuevo repositorio.
-  + Modifique el archivo `config/config.json` en la clave **production** con los datos para la conexión. Agregue la clave **port** al objeto de configuración.
+* Modifique el archivo `config/config.json` en la clave **production** con los datos para la conexión. Agregue la clave **port** al objeto de configuración.
 
   <pre><code>
   ...
@@ -62,39 +60,42 @@ Repositorio: API
   ...
   </code></pre>
 
-  + Modifique el archivo `package.json` en la clave **scripts** con los scripts a ejecutar con el despliegue (i) para la generación de la base de datos y (ii) iniciar la aplicación en el servidor
+
+Configuración local: Scripts de automatización  
+==============================================
+
+* * *
+
+* Modifique el archivo `package.json` en la clave **scripts** con los scripts a ejecutar con el despliegue (i) para la generación de la base de datos y (ii) iniciar la aplicación en el servidor
 
   <pre><code>
   ...
   "scripts": {
-      "db:reset": "npm install sequelize pg && npm install --save-dev sequelize-cli && npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
-      "start": "npm run db:reset && node ./bin/www",
+      "packages:install": "npm install sequelize pg && npm install --save-dev sequelize-cli",
+      "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
+      "start": "npm run packages:install && npm run db:reset && node ./bin/www"
       ...
   }
   ...
   </code></pre>
 
-  + Guarde los cambios en el repositorio remoto.
+* Guarde los cambios en el repositorio local y remoto.
 
 
-Aplicación: API
-===============
+Servicio: Github Repo
+=====================
 
 * * *
 
-* Cree y configure un nuevo proyecto a partir de un repositorio de Github, de acuerdo con las instrucciones de [Railway - Sitio Estático](https://dawfiec.github.io/DAWM/tutoriales/railway_sitio_estatico.html).
+* Cree y configure un nuevo proyecto a partir de un repositorio de Github, de acuerdo con las instrucciones de [Railway - Sitio Estático](https://dawmfiec.github.io/DAWM/tutoriales/railway_sitio_estatico.html).
 
-<p align="center">
-  <img width="60%" src="imagenes/railway_project_api.png">
-</p>
-
-* En la opción `Variables` configure la variable de `NODE_ENV` con el valor `production`
+* En la opción `Variables` configure la variable de `NODE_ENV` con el valor `production`.
 
 <p align="center">
   <img width="60%" src="imagenes/railway_node_env.png">
 </p>
 
-* Compruebe accediendo a las URLs disponibles en el API REST, por ejemplo: `https://api-production-2437.up.railway.app/rest/fotos/findAll/json`
+* Compruebe accediendo a las URLs disponibles en el API REST, por ejemplo: `https://<NOMBRE_REPOSITORIO>-production.up.railway.app/rest/<NOMBRE_CLASE>/findAll/json`
 
 <p align="center">
   <img width="60%" src="imagenes/railway_api_data.png">
