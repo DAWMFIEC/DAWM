@@ -124,7 +124,7 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
 Para obtener TODOS los registros de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con el método **findAll** de la clase.
 
-* Modifique el archivo manejador de rutas `routes/rest_<MODELO>.js`
+* Modifique el archivo manejador de rutas `routes/rest_<NOMBRE_CLASE>.js`
 
 * Incluya los módulos y modelos en el encabezado del manejador de rutas.
 
@@ -132,7 +132,7 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 	var express = require('express');
 	var router = express.Router();
 
-	/* IMPORTE El ARCHIVO CON EL MODELO */
+	/* IMPORTE El ARCHIVO CON EL NOMBRE_CLASE */
 	const <NOMBRE_CLASE> = require('../models').<NOMBRE_TABLA>;
 	...
 	```
