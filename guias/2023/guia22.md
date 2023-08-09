@@ -30,7 +30,7 @@ theme: jekyll-theme-leap-day
        "db:reset": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all", 
       
 
-      /* La instrucción db:reset es opcional */
+      /* La instrucción npm run db:reset es opcional */
       "start": "npm run packages:install && npm run db:reset && node ./bin/www"
       ...
   }
