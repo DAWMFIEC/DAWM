@@ -154,7 +154,8 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 	    .catch(error => res.status(400).send(error)) 
 
 	  });
-	  ...
+	  
+	  module.exports = router;
 	```
 
 * Reinicie o ejecute la aplicación
