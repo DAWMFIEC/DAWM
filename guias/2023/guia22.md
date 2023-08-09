@@ -18,14 +18,12 @@ theme: jekyll-theme-leap-day
 * Modifique el archivo `package.json` en la clave **scripts** con las instrucciones a ejecutar con el despliegue 
 	
 	+ **packages:install** para instalar los paquetes del proyecto,
-	+ **db:reset** para la generación de la base de datos, y 
 	+ **start** iniciar la aplicación en el servidor
 
   <pre><code>
   ...
   "scripts": {
       "packages:install": "npm install sequelize pg && npm install --save-dev sequelize-cli",
-      "db:reset": "npx sequelize-cli db:drop && npx sequelize-cli db:create && npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all",
       "start": "npm run packages:install && npm run db:reset && node ./bin/www"
       ...
   }
@@ -45,7 +43,7 @@ theme: jekyll-theme-leap-day
 #### Logs
 
 * Desde el panel central de la aplicación, acceda a la opción `View Logs` > `Deploy Logs`
-* Identifique la ejecución de las instrucciones: **start**, **packages:install** y **db:reset**.
+* Identifique la ejecución de las instrucciones: **start** y **packages:install**.
 
 ### Términos
 
