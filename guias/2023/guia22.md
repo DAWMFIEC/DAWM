@@ -11,6 +11,11 @@ theme: jekyll-theme-leap-day
 * Clone su proyecto e instale las dependencias.
 * Levante el servidor y compruebe el resultado en el navegador.
 
+#### Métodos y códigos de respuesta HTTP
+
+* HTTP define un conjunto de [métodos de petición](https://developer.mozilla.org/es/docs/Web/HTTP/Methods) para indicar la acción que se desea realizar para un recurso determinado.
+* Los [códigos de estado de respuesta](https://developer.mozilla.org/es/docs/Web/HTTP/Status) HTTP indican si se ha completado satisfactoriamente una solicitud HTTP específica. 
+
 #### Sequelize
 
 * Revise los [conceptos básicos](https://sequelize.org/docs/v6/category/core-concepts/) de Sequelize: [instancias](https://sequelize.org/docs/v6/core-concepts/model-instances/), [consulta](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/) y [buscadores por parámetros](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/) de modelos.
