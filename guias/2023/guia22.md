@@ -104,7 +104,7 @@ theme: jekyll-theme-leap-day
 * Revise la respuesta en OTRA línea de comandos mediante una petición GET:
 	
 	```
-	curl -X GET http://localhost:3000/rest/<NOMBRE_CLASE>/findById/1/json
+	curl -X GET http://localhost:3000/rest/<NOMBRE_CLASE>/findById/<ID>/json
 	```
 
 #### REST API: POST
@@ -133,6 +133,46 @@ theme: jekyll-theme-leap-day
 
     ```
     curl -X POST -d "<ATRIBUTO1>=<VALOR1>&...&<ATRIBUTON>=<VALORN>" http://localhost:3000/rest/<NOMBRE_CLASE>/save
+    ```
+
+#### REST API: PUT
+
+* Cree el controlador para el verbo PUT de la ruta **`/update/:id`** que recibe los datos en el cuerpo del requerimiento y actualiza los datos en la base de datos relacional.
+
+	```typescript
+	...
+		router.put('/update/:id', function(req, res, next) {  
+
+		  let id = req.params.id;
+
+		  <NOMBRE_CLASE>.findByPk(id)
+		    .then(resultado => {
+		      if(resultado) {
+
+		        resultado.update(req.body)
+		          .then(resultadoActualizado => {
+		            res.status(201).json(resultadoActualizado);
+		          })
+		          .catch(error => {
+		            res.status(500).json({ error: 'Error al actualizar el registro' });
+		          });
+
+		      } else {
+		        res.status(404).json({error: "No existe registro con el identificador "+id})
+		      }
+		    })
+		    .catch(error => res.status(400).send(error))
+		  
+		});
+	...
+	```
+
+
+* Reinicie o ejecute la aplicación
+* Revise la respuesta en OTRA línea de comandos mediante una petición PUT con parámetros en el cuerpo del requerimiento:
+
+    ```
+    curl -X PUT -d "<ATRIBUTO1>=<VALOR1>&...&<ATRIBUTON>=<VALORN>" http://localhost:3000/rest/<NOMBRE_CLASE>/update/<ID>
     ```
 
 ### Términos
