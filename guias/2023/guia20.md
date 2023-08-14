@@ -116,10 +116,6 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 	...
 	``` 
 
-* Reinicie o ejecute la aplicación
-
-* Revise la respuesta con el URL `http://localhost:3000/rest/<NOMBRE_CLASE>`
-
 #### REST: GET-All
 
 Para obtener TODOS los registros de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con el método **findAll** de la clase.
@@ -137,7 +133,7 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 	...
 	```
 
-* Cree el controlador para el verbo GET de la ruta **`/findAll/json`** que retorna un json con todos los registros.
+* Cree el controlador para el verbo GET de la ruta **`/findAll/json`** retorne un json con todos los registros.
 
 	```typescript
 	  ...
