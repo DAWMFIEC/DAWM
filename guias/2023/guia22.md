@@ -71,11 +71,15 @@ theme: jekyll-theme-leap-day
 	```
 
 * Reinicie o ejecute la aplicación
-* Revise la respuesta con el URL `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
+* Revise la respuesta en OTRA línea de comandos mediante una petición GET:
+	
+	```
+	curl -X GET http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json
+	```
 
 #### REST API: GET-id
 
-* Cree el controlador para el verbo GET de la ruta **`/findById/:id/json`** que retorne un json dado el id de un foto.
+* Cree el controlador para el verbo GET de la ruta **`/findById/:id/json`** que retorne un json dado el id.
 
   ```typescript
   ...
@@ -97,7 +101,39 @@ theme: jekyll-theme-leap-day
   ```
 
 * Reinicie o ejecute la aplicación
-* Revise la respuesta con el URL `http://localhost:3000/rest/<NOMBRE_CLASE>/findById/1/json`
+* Revise la respuesta en OTRA línea de comandos mediante una petición GET:
+	
+	```
+	curl -X GET http://localhost:3000/rest/<NOMBRE_CLASE>/findById/1/json
+	```
+
+#### REST API: POST
+
+* Cree el controlador para el verbo POST de la ruta **`/save`** que recibe los datos en el cuerpo del requerimiento y guarda los datos en la base de datos relacional.
+
+	```typescript
+	...
+		router.post('/save', function(req, res, next) {  
+
+		  <NOMBRE_CLASE>.create(req.body)
+		    .then(resultado => {
+		      res.status(201).json(resultado);
+		    })
+		    .catch(error => {
+		      res.status(500).json({ error: 'Error al crear el registro' });
+		    });
+
+		});
+	...
+	```
+
+
+* Reinicie o ejecute la aplicación
+* Revise la respuesta en OTRA línea de comandos mediante una petición POST con parámetros en el cuerpo del requerimiento:
+
+    ```
+    curl -X POST -d "<ATRIBUTO1>=<VALOR1>&...&<ATRIBUTON>=<VALORN>" http://localhost:3000/rest/<NOMBRE_CLASE>/save
+    ```
 
 ### Términos
 
