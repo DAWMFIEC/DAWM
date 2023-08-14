@@ -11,6 +11,10 @@ theme: jekyll-theme-leap-day
 * Clone su proyecto e instale las dependencias.
 * Levante el servidor y compruebe el resultado en el navegador.
 
+#### Sequelize
+
+* Revise los [conceptos básicos](https://sequelize.org/docs/v6/category/core-concepts/) de Sequelize: [instancias](https://sequelize.org/docs/v6/core-concepts/model-instances/) y [consulta](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/) de modelos.
+
 #### REST vs CRUD
 
 * Consulte con ChatGPT por la [diferencia entre REST y CRUD](chatgpt/guia22-rest-crud.png).
