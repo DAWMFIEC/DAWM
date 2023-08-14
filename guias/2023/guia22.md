@@ -13,7 +13,7 @@ theme: jekyll-theme-leap-day
 
 #### Sequelize
 
-* Revise los [conceptos básicos](https://sequelize.org/docs/v6/category/core-concepts/) de Sequelize: [instancias](https://sequelize.org/docs/v6/core-concepts/model-instances/) y [consulta](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/) de modelos.
+* Revise los [conceptos básicos](https://sequelize.org/docs/v6/category/core-concepts/) de Sequelize: [instancias](https://sequelize.org/docs/v6/core-concepts/model-instances/), [consulta](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/) y [buscadores por parámetros](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/) de modelos.
 
 #### REST vs CRUD
 
@@ -92,9 +92,9 @@ theme: jekyll-theme-leap-day
 	    let id = req.params.id;
 
 	    <NOMBRE_CLASE>.findByPk(id)
-		    .then(resultado => {
-		      if(resultado) {
-		        res.status(200).json(resultado);
+		    .then(instancia => {
+		      if(instancia) {
+		        res.status(200).json(instancia);
 		      } else {
 		        res.status(404).json({error: "No existe registro con el identificador "+id})
 		      }
@@ -120,8 +120,8 @@ theme: jekyll-theme-leap-day
 		router.post('/save', function(req, res, next) {  
 
 		  <NOMBRE_CLASE>.create(req.body)
-		    .then(resultado => {
-		      res.status(201).json(resultado);
+		    .then(instancia => {
+		      res.status(201).json(instancia);
 		    })
 		    .catch(error => {
 		      res.status(500).json({ error: 'Error al crear el registro' });
@@ -150,12 +150,12 @@ theme: jekyll-theme-leap-day
 		  let id = req.params.id;
 
 		  <NOMBRE_CLASE>.findByPk(id)
-		    .then(resultado => {
-		      if(resultado) {
+		    .then(instancia => {
+		      if(instancia) {
 
-		        resultado.update(req.body)
-		          .then(resultadoActualizado => {
-		            res.status(201).json(resultadoActualizado);
+		        instancia.update(req.body)
+		          .then(instanciaActualizada => {
+		            res.status(201).json(instanciaActualizada);
 		          })
 		          .catch(error => {
 		            res.status(500).json({ error: 'Error al actualizar el registro' });
@@ -190,10 +190,10 @@ theme: jekyll-theme-leap-day
 		  let id = req.params.id;
 
 		  <NOMBRE_CLASE>.findByPk(id)
-	        .then(resultado => {
-	          if(resultado) {
+	        .then(instancia => {
+	          if(instancia) {
 
-	            resultado.destroy()
+	            instancia.destroy()
 	              .then(() => {
 	                res.status(204).json({ mensaje: 'Registro eliminado'});
 	              })
