@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 22
 
-[DAWM](/DAWM/) / [ProyectoYY](/DAWM/proyectos/2023/proyecto07)
+[DAWM](/DAWM/) / [Proyecto07](/DAWM/proyectos/2023/proyecto07)
 
 ### Actividades previas
 
@@ -21,12 +21,15 @@ theme: jekyll-theme-leap-day
 * Revise el código provisto por alguno de los chatbots (ChatGPT o Bard) del REST API, con el CRUD del modelo. Por ejemplo, para el prompt:
 
 	```
-	Como desarrollador de aplicaciones web, escribe solo el código del router con el REST API que contenga el CRUD del modelo <MODELO> (con los atributos <ATRIBUTOS>). Utiliza Promesas para manejar las respuestas de sequelize.
+	Como desarrollador de aplicaciones web, escribe solo el código del router con el 
+	REST API que contenga el CRUD del modelo <MODELO> (con los atributos <ATRIBUTOS>). 
+	Utiliza Promesas para manejar las respuestas de sequelize.
 
-	La plataforma es NodeJS. El web framework del servidor es Express. El ORM es sequelize. El motor de la base de datos es MySQL.
+	La plataforma es NodeJS. El web framework del servidor es Express. 
+	El ORM es sequelize. El motor de la base de datos es MySQL.
 	```
 	
-	Tiene como resultado el [REST API con el CRUD del modelo Autor](chatgpt/guia22-rest-autor.png).
+	Tiene como resultado del REST API con el CRUD del modelo Autor, en el [enlace](https://chat.openai.com/share/c932b53f-4d41-4a48-b923-1469c7248b0a) o en la [imagen](chatgpt/guia22-rest-autor.png).
 
 ### Actividades
 
@@ -68,7 +71,6 @@ theme: jekyll-theme-leap-day
 	```
 
 * Reinicie o ejecute la aplicación
-
 * Revise la respuesta con el URL `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
 
 #### REST API: GET-id
@@ -95,7 +97,6 @@ theme: jekyll-theme-leap-day
   ```
 
 * Reinicie o ejecute la aplicación
-
 * Revise la respuesta con el URL `http://localhost:3000/rest/<NOMBRE_CLASE>/findById/1/json`
 
 ### Términos
