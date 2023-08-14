@@ -101,7 +101,7 @@ theme: jekyll-theme-leap-day
   ```
 
 * Reinicie o ejecute la aplicación
-* Revise la respuesta en OTRA línea de comandos mediante una petición GET:
+* Revise la respuesta en OTRA línea de comandos mediante una petición GET con parámetro en la ruta `<ID>`:
 	
 	```
 	curl -X GET http://localhost:3000/rest/<NOMBRE_CLASE>/findById/<ID>/json
@@ -169,15 +169,55 @@ theme: jekyll-theme-leap-day
 
 
 * Reinicie o ejecute la aplicación
-* Revise la respuesta en OTRA línea de comandos mediante una petición PUT con parámetros en el cuerpo del requerimiento:
+* Revise la respuesta en OTRA línea de comandos mediante una petición PUT con parámetros en el cuerpo del requerimiento y con parámetro en la ruta `<ID>`:
 
     ```
     curl -X PUT -d "<ATRIBUTO1>=<VALOR1>&...&<ATRIBUTON>=<VALORN>" http://localhost:3000/rest/<NOMBRE_CLASE>/update/<ID>
     ```
 
+#### REST API: DELETE
+
+* Cree el controlador para el verbo DELETE de la ruta **`/delete/:id`** que recibe los datos en el cuerpo del requerimiento y elimina los datos en la base de datos relacional.
+
+	```typescript
+	...
+		router.delete('/delete/:id', function(req, res, next) {  
+
+		  let id = req.params.id;
+
+		  <NOMBRE_CLASE>.findByPk(id)
+	        .then(resultado => {
+	          if(resultado) {
+
+	            resultado.destroy()
+	              .then(() => {
+	                res.status(204).json({ mensaje: 'Registro eliminado'});
+	              })
+	              .catch(error => {
+	                res.status(500).json({ error: 'Error al actualizar el registro' });
+	              });
+
+	          } else {
+	            res.status(404).json({error: "No existe registro con el identificador "+id})
+	          }
+	        })
+	        .catch(error => res.status(400).send(error))
+		  
+		});
+	...
+	```
+
+
+* Reinicie o ejecute la aplicación
+* Revise la respuesta en OTRA línea de comandos mediante una petición DELETE con parámetros en el cuerpo del requerimiento y con parámetro en la ruta `<ID>`:
+
+    ```
+    curl -X DELETE http://localhost:3000/rest/<NOMBRE_CLASE>/delete/<ID>
+    ```
+
 ### Términos
 
-rest api, crud
+rest api, crud, verbos HTTP, estados HTTP
 
 ### Referencias
 
