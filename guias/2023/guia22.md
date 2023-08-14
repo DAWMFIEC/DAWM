@@ -18,7 +18,15 @@ theme: jekyll-theme-leap-day
 #### REST API
 
 * Identifique un modelo de su aplicación en Express.
-* Revise el código provisto por alguno de los chatbots (ChatGPT o Bard) del REST API, con el CRUD del modelo, p.e.: [REST API con el CRUD del modelo Autor](chatgpt/guia22-rest-autor.png)
+* Revise el código provisto por alguno de los chatbots (ChatGPT o Bard) del REST API, con el CRUD del modelo. Por ejemplo, para el prompt:
+
+	```
+	Como desarrollador de aplicaciones web, escribe solo el código del router con el REST API que contenga el CRUD del modelo <MODELO> (con los atributos <ATRIBUTOS>). Utiliza Promesas para manejar las respuestas de sequelize.
+
+	La plataforma es NodeJS. El web framework del servidor es Express. El ORM es sequelize. El motor de la base de datos es MySQL.
+	```
+	
+	Tiene como resultado el [REST API con el CRUD del modelo Autor](chatgpt/guia22-rest-autor.png).
 
 ### Actividades
 
@@ -71,22 +79,24 @@ theme: jekyll-theme-leap-day
   ...
 	  router.get('/findById/:id/json', function(req, res, next) {  
 
-	    let id = parseInt(req.params.id);
+	    let id = req.params.id;
 
-	    <NOMBRE_CLASE>.findAll({  
-	        attributes: { exclude: ["updatedAt", "createdAt"] } ,
-	        where: {
-		      idautor: id,
-		    },
-	    })  
-	    .then(resultado => {  
-	        res.json(resultado);  
-	    })  
-	    .catch(error => res.status(400).send(error))  
-
+	    <NOMBRE_CLASE>.findByPk(id)
+		    .then(resultado => {
+		      if(resultado) {
+		        res.status(200).json(resultado);
+		      } else {
+		        res.status(404).json({error: "No existe registro con el identificador "+id})
+		      }
+		    })
+		    .catch(error => res.status(400).send(error))
 	  });
   ...
   ```
+
+* Reinicie o ejecute la aplicación
+
+* Revise la respuesta con el URL `http://localhost:3000/rest/<NOMBRE_CLASE>/findById/1/json`
 
 ### Términos
 
