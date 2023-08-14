@@ -47,9 +47,11 @@ theme: jekyll-theme-leap-day
 
 **NOTA:** En adelante, todas los instrucciones se ejecutarán en el servicio con MySQL local.
 
+* Ejecute el servidor de la aplicación: `npm start`
+
 #### Manejador de ruta
 
-* En adelante, modifique el archivo manejador de rutas `routes/rest_<NOMBRE_CLASE>.js`.
+* En adelante, modifique el archivo manejador de rutas `routes/rest_<NOMBRE_CLASE>.js` con los controladores para los métodos `GET`, `POST`, `PUT` y `DELETE`.
 
 #### REST API: GET-All
 
@@ -74,8 +76,8 @@ theme: jekyll-theme-leap-day
 	  module.exports = router;
 	```
 
-* Reinicie o ejecute la aplicación
-* Revise la respuesta en OTRA línea de comandos mediante una petición GET:
+* Reinicie o ejecute el servidor de la aplicación
+* En otra línea de comandos, realice la petición con cURL con el método GET:
 	
 	```
 	curl -X GET http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json
@@ -104,8 +106,8 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
-* Reinicie o ejecute la aplicación
-* Revise la respuesta en OTRA línea de comandos mediante una petición GET con parámetro en la ruta `<ID>`:
+* Reinicie o ejecute el servidor de la aplicación
+* En otra línea de comandos, realice la petición con cURL con el método GET con parámetro en la ruta `<ID>`:
 	
 	```
 	curl -X GET http://localhost:3000/rest/<NOMBRE_CLASE>/findById/<ID>/json
@@ -132,8 +134,8 @@ theme: jekyll-theme-leap-day
 	```
 
 
-* Reinicie o ejecute la aplicación
-* Revise la respuesta en OTRA línea de comandos mediante una petición POST con parámetros en el cuerpo del requerimiento:
+* Reinicie o ejecute el servidor de la aplicación
+* En otra línea de comandos, realice la petición con cURL con el método POST con parámetros en el cuerpo del requerimiento `-d`:
 
     ```
     curl -X POST -d "<ATRIBUTO1>=<VALOR1>&...&<ATRIBUTON>=<VALORN>" http://localhost:3000/rest/<NOMBRE_CLASE>/save
@@ -172,8 +174,8 @@ theme: jekyll-theme-leap-day
 	```
 
 
-* Reinicie o ejecute la aplicación
-* Revise la respuesta en OTRA línea de comandos mediante una petición PUT con parámetros en el cuerpo del requerimiento y con parámetro en la ruta `<ID>`:
+* Reinicie o ejecute el servidor de la aplicación
+* En otra línea de comandos, realice la petición con cURL con el método PUT con parámetros en el cuerpo del requerimiento `-d` y con parámetro en la ruta `<ID>`:
 
     ```
     curl -X PUT -d "<ATRIBUTO1>=<VALOR1>&...&<ATRIBUTON>=<VALORN>" http://localhost:3000/rest/<NOMBRE_CLASE>/update/<ID>
@@ -212,8 +214,8 @@ theme: jekyll-theme-leap-day
 	```
 
 
-* Reinicie o ejecute la aplicación
-* Revise la respuesta en OTRA línea de comandos mediante una petición DELETE con parámetros en el cuerpo del requerimiento y con parámetro en la ruta `<ID>`:
+* Reinicie o ejecute el servidor de la aplicación
+* En otra línea de comandos, realice la petición con cURL con el método DELETE con parámetros en el cuerpo del requerimiento `-d` y con parámetro en la ruta `<ID>`:
 
     ```
     curl -X DELETE http://localhost:3000/rest/<NOMBRE_CLASE>/delete/<ID>
