@@ -31,7 +31,6 @@ El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un
 #### Express
 
 * Instale el módulo `cors`, con:
-	
 	```
 	npm i cors
 	```
@@ -95,7 +94,7 @@ El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un
 			```
 		+ En `app/app.component.html` reemplace todo el contenido por:
 			```text
-			<div class="container" fxLayout="row" fxLayoutAlign="left start">
+			<div class="container" fxLayout="row" fxLayoutAlign="center start">
 			    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
 			        <table mat-table [dataSource]="data" class="mat-elevation-z8">
 
