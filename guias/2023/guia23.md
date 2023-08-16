@@ -10,7 +10,13 @@ theme: jekyll-theme-leap-day
 
 #### Middleware: CORS
 
+Un middleware se encuentra en medio del ciclo de solicitud y respuesta de la ejecución. 
+
+![middleware](https://d2mk45aasx86xg.cloudfront.net/How_Node_js_Middleware_works_e09cc37e20.webp)
+
 El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un middleware que permite habilitar requerimientos de origen cruzado.
+
+![cors](https://d2mk45aasx86xg.cloudfront.net/Express_middleware_11zon_bf752a6bd4.webp)
 
 #### Angular
 
@@ -141,3 +147,4 @@ middleware
 
 * Express cors middleware. (2023). Retrieved 16 August 2023, from https://expressjs.com/en/resources/middleware/cors.html
 * How to use CORS in Node.js with Express. (2023). Retrieved 16 August 2023, from https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/
+* A Complete Guide on How to Build Middleware For Node.js. (2023). Retrieved 16 August 2023, from https://www.turing.com/kb/building-middleware-for-node-js
