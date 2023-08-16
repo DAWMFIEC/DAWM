@@ -8,6 +8,10 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### Middleware: CORS
+
+El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un middleware que permite habilitar requerimientos de origen cruzado.
+
 #### Angular
 
 * Clone su proyecto e instale las dependencias.
@@ -20,6 +24,38 @@ theme: jekyll-theme-leap-day
 * Escoja un modelo del proyecto y compruebe el acceso a los datos en el navegador con: `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
 
 ### Actividades
+
+#### Express
+
+* Instale el módulo `cors`, con:
+	
+	```
+	npm i cors
+	```
+* En el archivo del servidor `app.js`:
+	1. Agregue la referencia al módulo `cors`
+		```text
+		...
+		var logger = require('morgan');
+
+		/* MÓDULO CORS */
+		var cors = require('cors')
+
+		var indexRouter = require('./routes/index');
+		...
+		```
+	2. Agregue el middleware `cors` al servidor a nivel de la aplicación completa
+		```text
+		...
+		var app = express();
+
+		/* AGREGUE EL MIDDLEWARE CORS */
+		app.use(cors());
+
+		// view engine setup
+		app.set('views', path.join(__dirname, 'views'));
+		...
+		```
 
 #### Angular
 
@@ -99,8 +135,9 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-
+middleware
 
 ### Referencias
 
-* 
+* Express cors middleware. (2023). Retrieved 16 August 2023, from https://expressjs.com/en/resources/middleware/cors.html
+* How to use CORS in Node.js with Express. (2023). Retrieved 16 August 2023, from https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/
