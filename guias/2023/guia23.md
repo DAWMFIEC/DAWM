@@ -86,11 +86,12 @@ El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un
 * Aplique las actividades de la [Guía 19](/DAWM/guias/2023/guia19):
 	1. Importe y registre el módulo `MatTableModule` en `app.module.ts`.
 	2. En el componente `main`
-		+ Agregue el atributo `displayedColumns`:
+		+ Agregue el atributo `displayedColumns` con los nombres de los atributos de la interfaz:
 			```typescript
 			export class MainComponent {
 
-				displayedColumns: string[] = ['idautor', 'nombre'];
+				/* LISTA CON LOS ATRIBUTOS DE LA INTERFAZ */
+				displayedColumns: string[] = ['<ATRIBUTO-1>', ... , '<ATRIBUTO-N>'];
 
 				...
 			}
@@ -101,18 +102,12 @@ El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un
 			    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
 			        <table mat-table [dataSource]="data" class="mat-elevation-z8">
 
-			            <!-- idautor Column -->
-			            <ng-container matColumnDef="idautor">
+			            <!-- REPETIR POR CADA ATRIBUTO DE LA INTERFAZ - INICIO -->
+			            <ng-container matColumnDef="<ATRIBUTO-M>">
 			                <th mat-header-cell *matHeaderCellDef> No. </th>
-			                <td mat-cell *matCellDef="let element"> {{element.idautor}}
-			                </td>
+			                <td mat-cell *matCellDef="let element"> {{element.<ATRIBUTO-M>}}</td>
 			            </ng-container>
-
-			            <!-- nombre Column -->
-			            <ng-container matColumnDef="nombre">
-			                <th mat-header-cell *matHeaderCellDef> Nombre </th>
-			                <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
-			            </ng-container>
+			            <!-- FIN -->
 
 			            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
 			            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
@@ -148,3 +143,5 @@ middleware
 * Express cors middleware. (2023). Retrieved 16 August 2023, from https://expressjs.com/en/resources/middleware/cors.html
 * How to use CORS in Node.js with Express. (2023). Retrieved 16 August 2023, from https://www.section.io/engineering-education/how-to-use-cors-in-nodejs-with-express/
 * A Complete Guide on How to Build Middleware For Node.js. (2023). Retrieved 16 August 2023, from https://www.turing.com/kb/building-middleware-for-node-js
+* Guía 16. (2023). Retrieved 16 August 2023, from https://dawmfiec.github.io/DAWM/guias/2023/guia16
+* Guía 19. (2023). Retrieved 16 August 2023, from https://dawmfiec.github.io/DAWM/guias/2023/guia19
