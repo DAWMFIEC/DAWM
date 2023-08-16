@@ -43,11 +43,56 @@ theme: jekyll-theme-leap-day
 
 * Aplique las actividades de la [Guía 19](/DAWM/guias/2023/guia19):
 	1. Importe y registre el módulo `MatTableModule` en `app.module.ts`.
-	2. En `app/app.component.html` reemplace todo el contenido por:
+	2. En el componente `main`
+		+ Agregue el atributo `displayedColumns`:
+			```typescript
+			export class MainComponent {
 
-		```html
+				displayedColumns: string[] = ['idautor', 'nombre'];
 
-		```
+				...
+			}
+			```
+		+ En `app/app.component.html` reemplace todo el contenido por:
+			```text
+			<div class="container" fxLayout="row" fxLayoutAlign="left start">
+			    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%">
+			        <table mat-table [dataSource]="data" class="mat-elevation-z8">
+
+			            <!-- idautor Column -->
+			            <ng-container matColumnDef="idautor">
+			                <th mat-header-cell *matHeaderCellDef> No. </th>
+			                <td mat-cell *matCellDef="let element"> {{element.idautor}}
+			                </td>
+			            </ng-container>
+
+			            <!-- nombre Column -->
+			            <ng-container matColumnDef="nombre">
+			                <th mat-header-cell *matHeaderCellDef> Nombre </th>
+			                <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
+			            </ng-container>
+
+			            <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+			            <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
+			        </table>
+
+			    </div>
+			</div>
+			```
+		+ En `app/app.component.css` reemplace todo el contenido por: 
+			```txt
+			.container {
+			    min-height: 91vh;
+			    height: auto;
+			    margin: 0;
+			}
+
+			.container {
+			    padding-top: 2vh;
+			    padding-left: 2vw;
+			    padding-right: 2vw;
+			}
+			``` 
 
 * Revise los cambios en el navegador.
 
