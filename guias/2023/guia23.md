@@ -101,7 +101,7 @@ El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un
 			            <!-- REPETIR POR CADA ATRIBUTO DE LA INTERFAZ - INICIO -->
 			            <ng-container matColumnDef="<ATRIBUTO-M>">
 			                <th mat-header-cell *matHeaderCellDef> No. </th>
-			                <td mat-cell *matCellDef="let element"> {{element.<ATRIBUTO-M>}}</td>
+			                <td mat-cell *matCellDef="let element"> {% raw %} {{element.<ATRIBUTO-M>}} {% endraw %}</td>
 			            </ng-container>
 			            <!-- FIN -->
 
