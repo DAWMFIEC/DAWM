@@ -10,24 +10,21 @@ theme: jekyll-theme-leap-day
 
 #### Middleware: CORS
 
-Un middleware se encuentra en medio del ciclo de solicitud y respuesta de la ejecución. 
+Un middleware se encuentra en medio del ciclo de solicitud y respuesta de la ejecución. Como se muestra en la [representación](https://d2mk45aasx86xg.cloudfront.net/How_Node_js_Middleware_works_e09cc37e20.webp).
 
-![middleware](https://d2mk45aasx86xg.cloudfront.net/How_Node_js_Middleware_works_e09cc37e20.webp)
-
-El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un middleware que permite habilitar requerimientos de origen cruzado.
-
-![cors](https://d2mk45aasx86xg.cloudfront.net/Express_middleware_11zon_bf752a6bd4.webp)
-
-#### Angular
-
-* Clone su proyecto e instale las dependencias.
-* Levante el servidor y compruebe el resultado en el navegador, en: `http://localhost:4200/`.
+El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un middleware que permite habilitar requerimientos de origen cruzado. Como se muestra en la [representación](https://d2mk45aasx86xg.cloudfront.net/Express_middleware_11zon_bf752a6bd4.webp).
 
 #### Express
 
 * Clone su proyecto e instale las dependencias.
 * Levante el servidor y compruebe el resultado en el navegador.
 * Escoja un modelo del proyecto y compruebe el acceso a los datos en el navegador con: `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
+
+#### Angular
+
+* Clone su proyecto e instale las dependencias.
+* Levante el servidor y compruebe el resultado en el navegador, en: `http://localhost:4200/`.
+
 
 ### Actividades
 
@@ -130,9 +127,7 @@ El módulo [cors](https://expressjs.com/en/resources/middleware/cors.html) es un
 			    padding-right: 2vw;
 			}
 			``` 
-
 * Revise los cambios en el navegador.
-
 
 ### Términos
 
