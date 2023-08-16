@@ -46,7 +46,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 20: Express - ORM I](guias/2023/guia20) 
   * [Guía 21: Express - ORM II](guias/2023/guia21) 
   * [Guía 22: Express - REST api y CRUD](guias/2023/guia22) 
-  * [Guía 23: Express y Angular](guias/2023/guia23) 
+  * [Guía 23: Express y Angular - Integración por API](guias/2023/guia23) 
  
 
 ### Anteriores
