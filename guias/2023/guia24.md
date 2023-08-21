@@ -40,62 +40,46 @@ theme: jekyll-theme-leap-day
 	  PRIMARY KEY (`idusuario`));
 
 	INSERT INTO `security`.`usuario` (`idusuario`, `nombre`, `contrasena`, `rol`)
-	VALUES (1, "admin", "admin123key","admin");
+	VALUES (1, "admin", "admin123key","admin"), (2, "user", "user456key","user");
 	```
-
-#### Express - Security
-
-* Desde la línea de comandos: 
-
-	+ Cree un proyecto de express, acceda a la carpeta e instale los módulos:
-
-		```
-		express --no-view security
-		cd security
-		npm install --save dotenv sequelize mysql2 dotenv
-		```
-
-	+ Inicialice la estructura de archivos para _sequelize_, con:
-
-		```
-		sequelize init
-		```
-
-	+ Configure los datos de conexión en **config/config.json**.
-	+ Reconstruya los modelos lógicos, con:
-		```
-		sequelize-auto -h "127.0.0.1" -d security -u "root" -x <CONTRASEÑA> -p 3306
-		```
 
 #### Generación del Token Secreto
 
 * En la línea de comandos, acceda a node y genere un token secreto de seguridad, con:
-	
 	```text
 	node
 	> require('crypto').randomBytes(64).toString('hex')
 	```
 
-* Copie todos los caracteres del **token secreto**, sin las comillas.
-
+* Copie todos los caracteres del **token secreto**. Sin las comillas.
 * Salga de node, con:
-
 	```
 	.exit
 	```
 
-#### Token Secreto de aplicación
+#### Express - Security
 
-* En la raíz del proyecto **security**, cree el archivo `.env` 
-* Agregue las variables `PORT` y `TOKEN_SECRET`. Asigne a la `TOKEN_SECRET` el valor previamente generado. 
-
+* Inicialización del proyecto **security**: 
+	+ Desde la línea de comandos, cree un proyecto de express, acceda a la carpeta e instale los módulos:
+		```
+		express --no-view security
+		cd security
+		npm install --save sequelize mysql2 dotenv jsonwebtoken
+		```
+	+ Inicialice la estructura de archivos para _sequelize_, con:
+		```
+		sequelize init
+		```
+	+ Configure los datos de conexión en **config/config.json** para el schema `security`.
+	+ Reconstruya los modelos lógicos, con:
+		```
+		sequelize-auto -h "127.0.0.1" -d security -u "root" -x <CONTRASEÑA> -p 3306
+		```
+* En la raíz del proyecto, cree el archivo `.env`. Agregue las variables `PORT` y `TOKEN_SECRET`. Asigne a la `TOKEN_SECRET` el valor del **token secreto**. 
 	```
 	PORT=3001
 	TOKEN_SECRET=09f26e402586e2faa8da4c98a35f1b20d6b033c60...
 	```
-
-#### Generador del access token
-
 * En el archivo `app.js`, agregue el módulo `dotenv` y cargue los datos de configuración.
 
 	```text
@@ -104,6 +88,8 @@ theme: jekyll-theme-leap-day
 
 	/* MÓDULO dotenv */
 	const dotenv = require('dotenv');
+
+	/* CARGA DE DATOS DE CONFIGURACION EN MEMORIA */
 	dotenv.config();
 
 	...
@@ -153,24 +139,128 @@ theme: jekyll-theme-leap-day
 	module.exports = router;
 	``` 
 
-* Levante el servidor del proyecto **security**
+* Levante el servidor del proyecto **security**.
 	
+#### Express - REST API
 
-#### Token de acceso
+* En el proyecto con el REST API, desde la línea de comandos, instale: 
+	```
+	npm install --save dotenv jsonwebtoken
+	```
+* En la raíz del proyecto, cree el archivo `.env`. Agregue la variable `TOKEN_SECRET`. Asigne a la `TOKEN_SECRET` el valor del **token secreto**. 
+	```
+	TOKEN_SECRET=09f26e402586e2faa8da4c98a35f1b20d6b033c60...
+	```
+* En la raíz del proyecto, cree el archivo `middleware/auth.js`, con el código del **verificador de autenticación**:
+	```
+	var express = require('express');
+	var router = express.Router();
 
-* Desde una nueva línea de comandos, haga un requerimiento:
+	const jwt = require('jsonwebtoken');
 
+	/* VERIFICADOR DE AUTENTICACIÓN */
+
+	var authenticateJWT = (req, res, next) => {
+	    const authHeader = req.headers.authorization;
+
+	    if (authHeader) {
+	        const token = authHeader.split(' ')[1];
+
+	        jwt.verify(token, process.env.TOKEN_SECRET, (err, user) => {
+	            if (err) {
+	                return res.sendStatus(403);
+	            }
+
+	            console.log(user)
+
+	            req.user = user;
+	            return next();
+	        });
+	    } else {
+	        return res.sendStatus(401);
+	    }
+	};
+
+	module.exports = authenticateJWT;
+	```
+
+* En el archivo `app.js`, agregue el módulo `dotenv`, cargue los datos de configuración, carga del middleware `middleware/auth` y use la función `authenticateJWT`.
+
+	```text
+	var logger = require('morgan');
+	...
+
+	/* MÓDULO dotenv */
+	const dotenv = require('dotenv');
+
+	/* CARGA DE DATOS DE CONFIGURACION EN MEMORIA */
+	dotenv.config();
+
+	...
+	var indexRouter = ...
+	...
+
+	/* CARGA DEL MIDDLEWARE authenticateJWT */
+	var authenticateJWT = require('./middleware/auth');
+	
+	...
+	var app = express();
+	...
+
+	/* USE LA FUNCIÓN authenticateJWT */
+	app.use('/rest/libro', authenticateJWT, librosRouter);
+	```
+
+* Modifique el controlador para el verbo GET de la ruta `/findAll/json`, con el código del **verificador de autorización**.
+
+	```
+	router.get('/findAll/json', function (req, res, next) {
+
+	  /* VERIFICADOR DE AUTORIZACIÓN */
+
+	  const { rol } = req.user;
+
+	  if (rol !== 'admin') {
+	      return res.sendStatus(403);
+	  }
+
+	  /* MÉTODO ESTÁTICO findAll  */
+	  ...
+	
+	});
+	...
+
+	module.exports = router;
+	```
+* Levante el servidor del proyecto **rest api**.
+
+#### Validación de la Autenticación
+
+Desde una nueva línea de comandos, compruebe el resultado de los siguientes requerimientos:
+
+* Realice la petición a la ruta con el verificador de autorización. El resultado de la petición será un mensaje de `Unauthorized`.
+	```
+	curl -X GET "http://localhost:3000/rest/<MODELO>/findAll/json"
+	```
+* Genere el token de acceso para el usuario **user**. Copie el valor de la clave **accessToken**.
+	```
+	curl -X POST -d "nombre=user&contrasena=user456key" "http://localhost:3001/users/login"
+	```
+* Realice la petición a la ruta con el verificador de autorización. El resultado de la petición será un mensaje de `Forbidden`.
+	```
+	curl -X GET -H "Authorization: Bearer <VALOR DEL ACCESS TOKEN>" "http://localhost:3000/rest/<MODELO>/findAll/json"
+	```
+
+#### Validación de la Autorización
+
+* Genere el token de acceso para el usuario **admin**. Copie el valor de la clave **accessToken**.
 	```
 	curl -X POST -d "nombre=admin&contrasena=admin123key" "http://localhost:3001/users/login" 
 	```
-
-* Copie el **accessToken** para las futuras peticiones.
-
+* Realice la petición a la ruta con el verificador de autorización. El resultado de la petición será un arreglo con un arreglo en formato **JSON**.
 	```
-	{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6Ikp..."} 
+	curl -X GET -H "Authorization: Bearer <VALOR DEL ACCESS TOKEN>" "http://localhost:3000/rest/<MODELO>/findAll/json"
 	```
-
-#### 
 
 ### Términos
 
