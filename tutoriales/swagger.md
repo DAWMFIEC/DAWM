@@ -57,7 +57,7 @@ Esquema de salida: swagger_ouput
   npm run swagger-autogen
   ```
 
-* Modifique el archivo **swagger** con la ruta URL base (clave _basepath_), con:
+* Modifique el archivo **swagger_ouput.json** con la ruta URL base (clave _basepath_), con:
 
   ```text
   ...
@@ -65,7 +65,7 @@ Esquema de salida: swagger_ouput
   ...
   ```
 
-* Modifique el archivo **swagger** con la ruta URL de cada endpoint (clave _path_):
+* Modifique el archivo **swagger_ouput.json** con la ruta URL de cada endpoint (clave _path_):
 
   ```text
     ...
@@ -86,7 +86,7 @@ Esquema de salida: swagger_ouput
 Registro en al aplicación
 ===============
 
-* Modifique el archivo generado **swagger_ouput.json** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
+* Modifique el archivo generado **app.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
 
 
   ```text
