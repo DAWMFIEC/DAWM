@@ -57,11 +57,29 @@ Esquema de salida: swagger_ouput
 npm run swagger-autogen
 ```
 
-* Modifique el archivo **swagger** con la ruta URL al modelo en la clave _basepath_. Tome como referencia la ruta URL correspondiente en **app.js**
+* Modifique el archivo **swagger** con la ruta URL base (clave _basepath_), con:
 
 ```
   ...
-  "basePath": "/rest/autor",
+  "basePath": "/rest",
+  ...
+```
+
+* Modifique el archivo **swagger** con la ruta URL de cada endpoint (clave _path_), con:
+
+```
+  ...
+  "paths": {
+    "/<MODELO>/findAll/json": {
+      ...
+    },
+    "/<MODELO>/findById/{id}/json": {
+      ...
+    }
+    ...
+    "/<MODELO>/delete/{id}": {
+    }
+  }
   ...
 ```
 
