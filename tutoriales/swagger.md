@@ -7,7 +7,9 @@ theme: jekyll-theme-leap-day
 Swagger
 =======================
 
+![SWAGGER](imagenes/swagger.webp)
 
+[Swagger](https://swagger.io/) ayuda a diseñar y documentar un API.
 
 Módulos
 ===============
