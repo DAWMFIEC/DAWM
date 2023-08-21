@@ -19,7 +19,12 @@ theme: jekyll-theme-leap-day
 
 * Clone su proyecto e instale las dependencias.
 * Levante el servidor y compruebe el resultado en el navegador.
-* Escoja un modelo del proyecto y compruebe el acceso a los datos en el navegador con: `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
+* Escoja un modelo del proyecto y compruebe el acceso a los datos desde la línea de comandos, con: 
+
+	```
+	curl -X GET "http://localhost:3000/rest/<MODELO>/findAll/json"
+	```
+
 
 ### Actividades
 
