@@ -139,7 +139,7 @@ theme: jekyll-theme-leap-day
 	module.exports = router;
 	``` 
 
-* Levante el servidor del proyecto **security**.
+* Levante el servidor del proyecto **security**, en el puerto **3001**.
 	
 #### Express - REST API
 
@@ -232,7 +232,7 @@ theme: jekyll-theme-leap-day
 
 	module.exports = router;
 	```
-* Levante el servidor del proyecto **rest api**.
+* Levante el servidor del proyecto **rest api**, en el puerto **3000**.
 
 #### Validación de la Autenticación
 
