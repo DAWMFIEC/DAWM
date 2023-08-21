@@ -16,100 +16,101 @@ Módulos
 
 * Instale los módulos **swagger-autogen** y **swagger-ui-express**
 
-```
-npm install swagger-autogen swagger-ui-express
-```
+  ```
+  npm install swagger-autogen swagger-ui-express
+  ```
 
 Configuración
 ===============
 
 * En la raíz del proyecto, cree el archivo **swagger.js**. En la variable **endpointsFiles** coloque las rutas a los controladores de los modelos.
 
-```
-const swaggerAutogen = require('swagger-autogen')()
+  ```text
+  const swaggerAutogen = require('swagger-autogen')()
 
-const outputFile = './swagger_output.json'
-const endpointsFiles = ['./routes/rest_<MODELO>.js']
+  const outputFile = './swagger_output.json'
+  const endpointsFiles = ['./routes/rest_<MODELO>.js']
 
-swaggerAutogen(outputFile, endpointsFiles)
-```
+  swaggerAutogen(outputFile, endpointsFiles)
+  ```
 
 Script
 ===============
 
 * Modifique el archivo **package.json** y agregue la entrada _swagger-autogen_.
 
-```
-...
+  ```text
+  ...
   "scripts": {
     "start": "node index.js",
     "swagger-autogen": "node swagger.js"
   },
-...
-```
+  ...
+  ```
 
 Esquema de salida: swagger_ouput
 ===============
 
 * Desde la línea de comandos, ejecute el comando:
 
-```
-npm run swagger-autogen
-```
+  ```
+  npm run swagger-autogen
+  ```
 
 * Modifique el archivo **swagger** con la ruta URL base (clave _basepath_), con:
 
-```
+  ```text
   ...
   "basePath": "/rest",
   ...
-```
+  ```
 
-* Modifique el archivo **swagger** con la ruta URL de cada endpoint (clave _path_), con:
+* Modifique el archivo **swagger** con la ruta URL de cada endpoint (clave _path_):
 
-```
-  ...
-  "paths": {
-    "/<MODELO>/findAll/json": {
+  ```text
+    ...
+    "paths": {
+      "/<MODELO>/findAll/json": {
+        ...
+      },
+      "/<MODELO>/findById/{id}/json": {
+        ...
+      }
       ...
-    },
-    "/<MODELO>/findById/{id}/json": {
-      ...
+      "/<MODELO>/delete/{id}": {
+      }
     }
     ...
-    "/<MODELO>/delete/{id}": {
-    }
-  }
-  ...
-```
+  ```
 
 Registro en al aplicación
 ===============
 
 * Modifique el archivo generado **swagger_ouput.json** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
 
-```text
-...
-/* REFERENCIA AL MÓDULO */
-const swaggerUi = require('swagger-ui-express')
 
-/* REFERENCIA AL ARCHIVO GENERADO */
-const swaggerFile = require('./swagger_output.json')
-...
+  ```text
+  ...
+  /* REFERENCIA AL MÓDULO */
+  const swaggerUi = require('swagger-ui-express')
 
-const app = express();
+  /* REFERENCIA AL ARCHIVO GENERADO */
+  const swaggerFile = require('./swagger_output.json')
+  ...
 
-...
-/* CONFIGURACIÓN DE LA RUTA A LA DOCUMENTACIÓN */
-app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
-...
-```
+  const app = express();
+
+  ...
+  /* CONFIGURACIÓN DE LA RUTA A LA DOCUMENTACIÓN */
+  app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+  ...
+  ```
 
 * Ejecute el servidor, con:
 
-```
-npm start
-```
+  ```
+  npm start
+  ```
 
 * Revise el URL de la documentación en el navegador:
 
