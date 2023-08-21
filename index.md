@@ -64,6 +64,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Modelo EER a SQL](tutoriales/modeloeer_sql.md)
 
+#### Documentación
+
+* [Swagger](tutoriales/swagger.md)
+
 #### Servidor
 
 * [HTTP - Python](tutoriales/python.md)
