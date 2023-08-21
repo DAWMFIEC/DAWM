@@ -8,9 +8,6 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Clone su proyecto e instale las dependencias.
-* Levante el servidor y compruebe el resultado en el navegador.
-
 #### JSON Web Tokens
 
 [JSON Web Token (abreviado JWT)](https://jwt.io/) es un estándar abierto basado en JSON propuesto por IETF (RFC 7519) para la creación de tokens de acceso que permiten la propagación de identidad y privilegios. Por ejemplo, un servidor podría generar un token indicando que el usuario tiene privilegios de administrador y proporcionarlo a un cliente.
