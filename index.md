@@ -48,6 +48,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 22: Express - REST api y CRUD](guias/2023/guia22) 
   * [Guía 23: Express y Angular - Integración por API](guias/2023/guia23) 
   * [Guía 24: Express - Verificación y Validación con JWT](guias/2023/guia24)
+  * [Guía 25: Express - Despliegue en Railway](guias/2023/guia25)
  
 
 ### Anteriores

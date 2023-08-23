@@ -31,3 +31,4 @@ La respuesta es:
 * [Guía 22: Express - REST api y CRUD](/DAWM/guias/2023/guia22)
 * [Guía 23: Express y Angular - Integración por API](/DAWM/guias/2023/guia23)
 * [Guía 24: Express - Verificación y Validación con JWT](/DAWM/guias/2023/guia24)
+* [Guía 25: Express - Despliegue en Railway](/DAWM/guias/2023/guia25)
