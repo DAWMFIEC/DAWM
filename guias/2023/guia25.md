@@ -16,15 +16,15 @@ theme: jekyll-theme-leap-day
 #### Railway - Servicio MySQL
 
 * Acceda a [Railway](https://railway.app/) mediante su cuentan en GitHub.
-  * En caso de **NO** haber creado un proyecto de Railway con el servicio MySQL.
-    * Cree un nuevo Proyecto, con: `New Project` > `Provision MySQL`
+* En caso de **NO** haber creado un proyecto de Railway con el servicio MySQL.
+  * Cree un nuevo proyecto vacío, con: `New Project` > `Provision MySQL`
 * Copie las **credenciales de conexión**:
   * Acceda a `Connect` > `Available Variables`: _MYSQLDATABASE_, _MYSQLHOST_, _MYSQLPASSWORD_, _MYSQLPORT_ y _MYSQLUSER_.
 
 #### Express - REST API: Conexión con Railway - Servicio MySQL
 
-* Modifique el archivo `config/config.json`, en el ambiente de producción (clave `production`). Cambie los valores con las **credenciales de conexión** correspondientes.
-
+* Modifique el archivo `config/config.json`, en el ambiente de producción (clave `production`). 
+* Cambie los valores con las **credenciales de conexión** correspondientes.
 * Versione los cambios en el repositorio local y remoto.
 
 #### Express - REST API: Scripts de automatización  
@@ -38,13 +38,17 @@ theme: jekyll-theme-leap-day
   <pre><code>
   ...
   "scripts": {
+      
       "packages:install": "npm install sequelize pg && npm install --save-dev sequelize-cli",
 
-      /* OPCIONAL: solo incluya este script sino ha migrado previamente la base de datos */
-       "db:reset": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all", 
+      /* OPCIONAL: solo incluya este script si no ha ejecutado las migraciones y generadores de datos */
+      
+      "db:reset": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all", 
       
 
-      /* OPCIONAL: solo incluya la instrucción npm run db:reset en caso de ser necesario */
+      /* OPCIONAL: solo incluya la instrucción npm run db:reset en caso de no haber ejecutado previamente 
+      las migraciones y generadores de datos */
+
       "start": "npm run packages:install && npm run db:reset && node ./bin/www"
       ...
   }
