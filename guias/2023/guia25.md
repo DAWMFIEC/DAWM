@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 26
+## Guía 25
 
 [DAWM](/DAWM/) / [Proyecto07](/DAWM/proyectos/2023/proyecto07)
 
@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
   "scripts": {
       "packages:install": "npm install sequelize pg && npm install --save-dev sequelize-cli",
 
-      /* OPCIONAL */
+      /* OPCIONAL: solo incluya este script sino ha migrado previamente la base de datos */
        "db:reset": "npx sequelize-cli db:migrate && npx sequelize-cli db:seed:all", 
       
 
@@ -39,18 +39,23 @@ theme: jekyll-theme-leap-day
 
 * Guarde los cambios en el repositorio local y remoto.
 
-#### Railway
+#### Railway - Servicio REST API
 
 * Acceda a [Railway](https://railway.app/) mediante su cuentan en GitHub.
-* Cree y configure el proyecto previamente creado para que supla el servicio de Despliegue de Sitios Estáticos. Acceda a `New` > `GitHub Repo`.
-	* En la opción `Variables` configure la variable de `NODE_ENV` con el valor `production`.
-	* En la opción `Settings` > `Domains` genere un dominio aleatorio para la aplicación. 
+* Utilice el proyecto de Railway que contiene el servicio MySQL.
+  * **Repositorio remoto:** Acceda a `New` > `GitHub Repo` y cree un servicio a partir del repositorio remoto en **GitHub**.
+	* **Producción:** En la opción `Variables`, agregue la variable de `NODE_ENV` con el valor `production`.
+	* **Dominio:** En la opción `Settings` > `Domains`, genere un dominio aleatorio para la aplicación en la opción `Generate Domain`. 
 * Compruebe accediendo a las URLs disponibles en el API REST, por ejemplo: `https://<NOMBRE_REPOSITORIO>-production.up.railway.app/rest/<NOMBRE_CLASE>/findAll/json`
 
 #### Logs
 
 * Desde el panel central de la aplicación, acceda a la opción `View Logs` > `Deploy Logs`
 * Identifique la ejecución de las instrucciones: **start** y **packages:install**.
+
+#### Angular
+
+* En el servicio de la aplicación, cambie los _endpoints_ por los URLs del servicio **Railway - REST API**.
 
 ### Términos
 
