@@ -22,7 +22,7 @@ theme: jekyll-theme-leap-day
 #### Ambiente de producción
 
 
-* Modifique el archivo el archivo `config/config.json`, el ambiente de producción (clave `production`), con los valores previos.
+* Modifique el archivo `config/config.json`, en el ambiente de producción (clave `production`). Cambie los valores con las **credenciales de conexión** correspondientes.
 
 * En el proyecto en Express, desde la línea de comandos, coloque la variable de entorno _NODE_ENV_ con el valor `production`
 
