@@ -17,9 +17,9 @@ theme: jekyll-theme-leap-day
 
 * Guía sobre [`Markdown`](https://www.markdownguide.org/) con el [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
 * Documentación de `GitHub` acerca de [repositorios](https://docs.github.com/es/repositories) y las acciones con [GitHub Actions](https://docs.github.com/es/actions)
-* Funcionamiento de **Github Actions**
+* Arquitectura de **Github Actions**
 
-<img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png" width="80%">
+<img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png">
 
 ### Términos
 
