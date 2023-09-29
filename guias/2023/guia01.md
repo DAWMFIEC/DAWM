@@ -8,19 +8,18 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-* Decide el contenido de su repositorio, p.e.: proyectos, tecnologías, estado de los proyectos, información de contacto, etc.
-* Diseñe la estructura del contenido de su repositorio, p.e.: decide el orden del contenido, títulos, subtítulos, imágenes, estilo de fuente, etc.
+* Decide el contenido de tu repositorio, p.e.: tus proyectos, las tecnologías que has utilizado, el estado de tus proyectos, correo electrónico institucional, etc.
+* Diseñe la estructura del contenido de su repositorio, p.e.: decide el orden del contenido, los títulos y subtítulos de cada sección, imágenes de los proyectos, etc.
 * Utilice la [respuesta de Bard](bard/guia01-bard01.pdf) como referencia para comenzar el repositorio en [Github](https://github.com/).
 * Genera el código QR del sitio en [QR Code Generator](https://br.qr-code-generator.com/).
 
 ### Documentación
 
-* `Markdown` en [Markdown Guide](https://www.markdownguide.org/).
-* `Repositorios` en [Documentación de repositorios](https://docs.github.com/es/repositories).
-* `Actions` en [Documentación de GitHub Actions](https://docs.github.com/es/actions)
-* Git Cheat Sheet
+* Guía sobre [`Markdown`](https://www.markdownguide.org/) con el [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+* Documentación de `GitHub` acerca de [repositorios](https://docs.github.com/es/repositories) y las acciones con [GitHub Actions](https://docs.github.com/es/actions)
+* Funcionamiento de **Github Actions**
 
-<img src="https://raw.githubusercontent.com/hbons/git-cheat-sheet/master/preview.png" width="80%">
+<img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png" width="80%">
 
 ### Términos
 
