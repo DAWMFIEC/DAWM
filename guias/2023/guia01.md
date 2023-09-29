@@ -15,7 +15,7 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
-* Guía sobre [`Markdown`](https://www.markdownguide.org/) con el [Markdown Cheat Sheet](https://www.markdownguide.org/cheat-sheet/).
+* [Guía completa](https://www.markdownguide.org/) acerca de `Markdown`, con el [Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) de la instrucciones más usadas.
 * Documentación de `GitHub` acerca de [repositorios](https://docs.github.com/es/repositories) y las acciones con [GitHub Actions](https://docs.github.com/es/actions)
 * Arquitectura de **Github Actions**
 
