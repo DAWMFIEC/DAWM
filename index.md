@@ -20,10 +20,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 01: Repositorio del desarrollador - Markdown y GitHub Pages](proyectos/2023/proyecto01)
     * [Guía 01: Git + GitHub](guias/2023/guia01)
 * [Proyecto 02: Curriculum Vitae - HTML & CSS](proyectos/2023/proyecto02)
-* [Proyecto 03: Landing Page SPA - Bootstrap](proyectos/2023/proyecto03)
-* [Proyecto 04: Clima - Dashboard](proyectos/2023/proyecto04)
-* [Proyecto 05: Dataset SPA - Angular](proyectos/2023/proyecto05)
-* [Proyecto 06: Dataset MPA - Angular](proyectos/2023/proyecto06)
+* [Proyecto 03: Landing Page SPA - Bootstrap](proyectos/2023/proyecto0x)
+* [Proyecto 04: Clima - Dashboard](proyectos/2023/proyecto0x)
+* [Proyecto 05: Dataset SPA - Angular](proyectos/2023/proyecto0x)
+* [Proyecto 06: Dataset MPA - Angular](proyectos/2023/proyecto0x)
   
 ### Anteriores
 
