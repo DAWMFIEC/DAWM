@@ -27,6 +27,8 @@ theme: jekyll-theme-leap-day
 
 * [Github Actions](https://keepler.io/es/2020/09/crear-workflows-en-base-a-eventos-con-github-actions/)
 
+En el siguiente diagrama se muestran los principales componentes de Github Actions.
+
 <img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png" style="margin: 0 12%;" width="80%">
 
 
