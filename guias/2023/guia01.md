@@ -23,6 +23,8 @@ theme: jekyll-theme-leap-day
 
 * GIT
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Almost every software engineer has used Git before, but only a handful know how it works.<br><br>To begin with, it&#39;s essential to identify where our code is stored. The common assumption is that there are only two locations - one on a remote server like Github and the other on our… <a href="https://t.co/edXjF0fulA">pic.twitter.com/edXjF0fulA</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1708145139515109449?ref_src=twsrc%5Etfw">September 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 <img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2016/11/Git-Architechture-Git-Tutorial-Edureka-2-768x720.png" style="width: 60%; margin: 0 25%;">
 
 
