@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 
 * GIT
 
-<img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2016/11/Git-Architechture-Git-Tutorial-Edureka-2-768x720.png">
+<img src="https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2016/11/Git-Architechture-Git-Tutorial-Edureka-2-768x720.png" style="width: 60%; margin: 0 25%;">
 
 
 * `Github Actions`
