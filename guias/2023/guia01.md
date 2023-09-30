@@ -30,10 +30,6 @@ theme: jekyll-theme-leap-day
 
 <img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png">
 
-### Términos
-
-git, github, markdown, bard, url, qr
-
 ### Referencias
 
 * Markdown Guide. (2023). Retrieved 12 May 2023, from https://www.markdownguide.org/
