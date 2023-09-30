@@ -26,9 +26,9 @@ Enlace al [sitio web](https://dawmfiec.github.io/DAWM/).
 
 ## ¿Dónde comienzo?
 
-* Clone el repositorio con: `git clone https://github.com/DAWFIEC/DAWM.git`
+* Descarga y descomprime el ejercicio requerido
 * Por cada ejercicio, desde la línea de comandos
-	+ Ingrese a la carpeta del capítulo y del ejercicio
+	+ Ingrese a la carpeta del ejericicio
 * Siga las instrucciones que aparecen en el README.md de cada ejercicio.
 * Verifique los resultados al actualizar en el navegador
 
@@ -48,40 +48,40 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 
 | Capítulo      | Ejercicios                                        | Temas    |
 | :-----------: | :-----------------------------------------------: | :------- |
-| Capítulo 01   | [Ejercicio 01](Capítulo%2001/ejercicio01)         | Títulos  |
-| 			    | [Ejercicio 02](Capítulo%2001/ejercicio02)         | Listas (no) numeradas, tablas, atributos   |
-| 			    | [Ejercicio 03](Capítulo%2001/ejercicio03)         | Imágenes, enlaces, etiquetas contenedores (p-span), atributo (clase) |
-| 			    | [Ejercicio 04](Capítulo%2001/ejercicio04)         | Formularios, atributo (identificador) |
-| 			    | [Ejercicio 05](Capítulo%2001/ejercicio05)         | Semántico |
-| 			    | [Ejercicio 06](Capítulo%2001/ejercicio06)         | Media |
-| 			    | [Ejercicio 07](Capítulo%2001/ejercicio07)         | Reglas y Selectores |
-| 			    | [Ejercicio 08](Capítulo%2001/ejercicio08)         | Modelo de cajas |
-| 			    | [Ejercicio 09](Capítulo%2001/ejercicio09)         | Colocación |
-| 			    | [Ejercicio 10](Capítulo%2001/ejercicio10)         | Posicionamiento |
-| Capítulo 02   | [Ejercicio 01](Capítulo%2002/ejercicio01)         | Diseño responsivo: Grid  |
-| 			    | [Ejercicio 02](Capítulo%2002/ejercicio02)         | Diseño responsivo: Flexbox  |
-| Capítulo 03   | [Ejercicio 01](Capítulo%2003/ejercicio01)         | Etiqueta script  |
-| 				| [Ejercicio 02](Capítulo%2003/ejercicio02)         | Fundamentos  |
-|               | [Ejercicio 03](Capítulo%2003/ejercicio03)         | Control de flujo y Funciones  |
-| 				| [Ejercicio 04](Capítulo%2003/ejercicio04)         | DOM  |
-| 				| [Ejercicio 05](Capítulo%2003/ejercicio05)         | Eventos |
-| 				| [Ejercicio 06](Capítulo%2003/ejercicio06)         | Promesas y Async/Await  |
-| 				| [Ejercicio 07](Capítulo%2003/ejercicio07)         | Servidor HTTP - Básico  |
-| 				| [Ejercicio 08](Capítulo%2003/ejercicio08)         | Servidor HTTP - URL + Headers   |
-| 				| [Ejercicio 09](Capítulo%2003/ejercicio09)         | Servidor HTTP - Cliente HTTP  |
-| 				| [Ejercicio 10](Capítulo%2003/ejercicio10)         | WebSockets  |
-| Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01)         | Typescript - Transpilar TypeScript en JavaScript |
-| 				| [Ejercicio 02](Capítulo%2004/ejercicio02)         | Typescript - Anotación de tipos básicos, arreglos y objetos |
-| 				| [Ejercicio 03](Capítulo%2004/ejercicio03)         | Typescript - Interfaces y clases |
-| 				| [Ejercicio 04](Capítulo%2004/ejercicio04)         | Typescript - Funciones |
-| 				| [Ejercicio 05](Capítulo%2004/ejercicio05)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
-| 				| [Ejercicio 06](Capítulo%2004/ejercicio06)         | Angular - PWA y Servicios |
-| 				| [Ejercicio 07](Capítulo%2004/ejercicio07)         | Angular - Material y Rutas |
-| Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01)         | Express - Bases y Bootstrap |
-|               | [Ejercicio 02](Capítulo%2005/ejercicio02)         | Express - ORM (Básico e Intermedio) |
-|               | [Ejercicio 03](Capítulo%2005/ejercicio03)         | Express - Parámetros de consulta y de ruta |
-| Capítulo 06   | [Ejercicio 01](Capítulo%2006/ejercicio01)         | Express - Rest - Local|
-|               | [Ejercicio 02](Capítulo%2006/ejercicio02)         | Express - Rest - Firebase |
+| Capítulo 01   | [Ejercicio 01](Capítulo%2001/ejercicio01.zip)         | Títulos  |
+| 			    | [Ejercicio 02](Capítulo%2001/ejercicio02.zip)         | Listas (no) numeradas, tablas, atributos   |
+| 			    | [Ejercicio 03](Capítulo%2001/ejercicio03.zip)         | Imágenes, enlaces, etiquetas contenedores (p-span), atributo (clase) |
+| 			    | [Ejercicio 04](Capítulo%2001/ejercicio04.zip)         | Formularios, atributo (identificador) |
+| 			    | [Ejercicio 05](Capítulo%2001/ejercicio05.zip)         | Semántico |
+| 			    | [Ejercicio 06](Capítulo%2001/ejercicio06.zip)         | Media |
+| 			    | [Ejercicio 07](Capítulo%2001/ejercicio07.zip)         | Reglas y Selectores |
+| 			    | [Ejercicio 08](Capítulo%2001/ejercicio08.zip)         | Modelo de cajas |
+| 			    | [Ejercicio 09](Capítulo%2001/ejercicio09.zip)         | Colocación |
+| 			    | [Ejercicio 10](Capítulo%2001/ejercicio10.zip)         | Posicionamiento |
+| Capítulo 02   | [Ejercicio 01](Capítulo%2002/ejercicio01.zip)         | Diseño responsivo: Grid  |
+| 			    | [Ejercicio 02](Capítulo%2002/ejercicio02.zip)         | Diseño responsivo: Flexbox  |
+| Capítulo 03   | [Ejercicio 01](Capítulo%2003/ejercicio01.zip)         | Etiqueta script  |
+| 				| [Ejercicio 02](Capítulo%2003/ejercicio02.zip)         | Fundamentos  |
+|               | [Ejercicio 03](Capítulo%2003/ejercicio03.zip)         | Control de flujo y Funciones  |
+| 				| [Ejercicio 04](Capítulo%2003/ejercicio04.zip)         | DOM  |
+| 				| [Ejercicio 05](Capítulo%2003/ejercicio05.zip)         | Eventos |
+| 				| [Ejercicio 06](Capítulo%2003/ejercicio06.zip)         | Promesas y Async/Await  |
+| 				| [Ejercicio 07](Capítulo%2003/ejercicio07.zip)         | Servidor HTTP - Básico  |
+| 				| [Ejercicio 08](Capítulo%2003/ejercicio08.zip)         | Servidor HTTP - URL + Headers   |
+| 				| [Ejercicio 09](Capítulo%2003/ejercicio09.zip)         | Servidor HTTP - Cliente HTTP  |
+| 				| [Ejercicio 10](Capítulo%2003/ejercicio10.zip)         | WebSockets  |
+| Capítulo 04   | [Ejercicio 01](Capítulo%2004/ejercicio01.zip)         | Typescript - Transpilar TypeScript en JavaScript |
+| 				| [Ejercicio 02](Capítulo%2004/ejercicio02.zip)         | Typescript - Anotación de tipos básicos, arreglos y objetos |
+| 				| [Ejercicio 03](Capítulo%2004/ejercicio03.zip)         | Typescript - Interfaces y clases |
+| 				| [Ejercicio 04](Capítulo%2004/ejercicio04.zip)         | Typescript - Funciones |
+| 				| [Ejercicio 05](Capítulo%2004/ejercicio05.zip)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
+| 				| [Ejercicio 06](Capítulo%2004/ejercicio06.zip)         | Angular - PWA y Servicios |
+| 				| [Ejercicio 07](Capítulo%2004/ejercicio07.zip)         | Angular - Material y Rutas |
+| Capítulo 05   | [Ejercicio 01](Capítulo%2005/ejercicio01.zip)         | Express - Bases y Bootstrap |
+|               | [Ejercicio 02](Capítulo%2005/ejercicio02.zip)         | Express - ORM (Básico e Intermedio) |
+|               | [Ejercicio 03](Capítulo%2005/ejercicio03.zip)         | Express - Parámetros de consulta y de ruta |
+| Capítulo 06   | [Ejercicio 01](Capítulo%2006/ejercicio01.zip)         | Express - Rest - Local|
+|               | [Ejercicio 02](Capítulo%2006/ejercicio02.zip)         | Express - Rest - Firebase |
 
 ## Referencias 
 
