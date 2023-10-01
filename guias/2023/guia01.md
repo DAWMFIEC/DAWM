@@ -21,13 +21,11 @@ theme: jekyll-theme-leap-day
 
 ### Arquitectura
 
-* GIT
+* GIT en [Twitter](https://twitter.com/alexxubyte/status/1708145139515109449)
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Almost every software engineer has used Git before, but only a handful know how it works.<br><br>To begin with, it&#39;s essential to identify where our code is stored. The common assumption is that there are only two locations - one on a remote server like Github and the other on our… <a href="https://t.co/edXjF0fulA">pic.twitter.com/edXjF0fulA</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1708145139515109449?ref_src=twsrc%5Etfw">September 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<img src="https://pbs.twimg.com/media/F7SM78-bgAAKd6h?format=jpg&name=900x900" style="margin: 0 12%;" width="80%">
 
-* [Github Actions](https://keepler.io/es/2020/09/crear-workflows-en-base-a-eventos-con-github-actions/)
-
-En el siguiente diagrama se muestran los principales componentes de Github Actions.
+* Github Actions en [Keepler.io](https://keepler.io/es/2020/09/crear-workflows-en-base-a-eventos-con-github-actions/)
 
 <img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png" style="margin: 0 12%;" width="80%">
 
