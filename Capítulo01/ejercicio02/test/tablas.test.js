@@ -66,8 +66,8 @@ describe('Test unitarios para la ruta `/` con tablas', function() {
         .get('/')
         .then((response) => {
             
-            let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
-            let table1clean = table1.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'');
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+            let table1clean = table1.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '');
 
             chai.expect(responseclean).to.contain(table1clean);
             
@@ -79,8 +79,8 @@ describe('Test unitarios para la ruta `/` con tablas', function() {
         .get('/')
         .then((response) => {
             
-            let responseclean = response.text.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'')
-            let table2clean = table2.replace(/(\r\n|\n|\r)/gm, '').replace(/ /g,'');
+            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+            let table2clean = table2.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '');
 
             chai.expect(responseclean).to.contain(table2clean);
             
