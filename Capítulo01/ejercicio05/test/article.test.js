@@ -34,8 +34,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
           
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let typetextclean = article.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let typetextclean = article.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(typetextclean);
             
