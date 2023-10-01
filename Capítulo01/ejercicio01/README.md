@@ -17,7 +17,7 @@
 
 * Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
 * Desde el editor de texto, modifica el archivo `views/index.ejs`, 
-	+ Agrega su respuesta dentro de cada uno de los comentarios marcados, con:  
+	+ Agrega tu respuesta dentro de cada uno de los comentarios marcados, con:  
 	`<!-- Inicio -->` y `<!-- Fin -->`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 
