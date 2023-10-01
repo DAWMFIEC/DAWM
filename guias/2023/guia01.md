@@ -29,6 +29,9 @@ theme: jekyll-theme-leap-day
 
 <img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png" style="margin: 0 12%;" width="80%">
 
+### Términos
+
+ChatGPT, Bard, QR, URL, GIT, Markdown, GitHub, GitHub Actions
 
 ### Referencias
 
