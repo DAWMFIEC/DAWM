@@ -25,13 +25,9 @@
 
 * Desde otra instancia de la línea de comandos, ejecute: `npm test`
 * Los resultados posibles a las pruebas unitarias pueden ser: 
-	+ Todas las pruebas unitarias fueron exitosas, o
+	+ Todos fueron exitosas, o
 	+ Existen pruebas unitarias fallidas.
-
-* En caso de aparecer pruebas unitarias fallidas:
-	+ Revise los valores esperados, 
-	+ Modifique el/los archivo(s), y 
-	+ Vuelva a ejecutar las pruebas unitarias. 
+* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.
 
 ## Referencias 
 
