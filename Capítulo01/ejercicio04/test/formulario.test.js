@@ -51,10 +51,10 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
 
-          let form1clean = form1.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let form2clean = form2.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let form1clean = form1.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let form2clean = form2.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(form1clean);
           chai.expect(responseclean).to.contain(form2clean);
@@ -67,8 +67,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let typetextclean = typetext.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let typetextclean = typetext.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(typetextclean);
             
@@ -80,8 +80,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let typetextclean = typeemail.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let typetextclean = typeemail.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(typetextclean);
             
@@ -107,8 +107,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let typetextclean = typedate.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let typetextclean = typedate.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(typetextclean);
             
@@ -120,8 +120,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let typetextclean = select.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let typetextclean = select.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(typetextclean);
             
@@ -134,8 +134,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let typetextclean = typenumber.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let typetextclean = typenumber.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(typetextclean);
             
@@ -148,8 +148,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let typetextclean = textarea.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let typetextclean = textarea.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(typetextclean);
             
@@ -161,8 +161,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let typetextclean = typecheckbox.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let typetextclean = typecheckbox.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(typetextclean);
             
@@ -175,8 +175,8 @@ describe('Test unitarios para la ruta `/`', function() {
         .get('/')
         .then((response) => {
 
-          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-          let typetextclean = buttons.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
+          let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
+          let typetextclean = buttons.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
           
           chai.expect(responseclean).to.contain(typetextclean);
             
