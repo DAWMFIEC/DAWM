@@ -4,7 +4,7 @@
 
 ## Instrucciones
 
-* Descargue y descomprima [ejercicio01.zip](ejercicio01.zip)
+* Descargue y descomprima [ejercicio01.zip](../zips/ejercicio01.zip)
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
