@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-* Clona localmente tu proyecto. 
+* Clona localmente tu repositorio **curriculum**. 
 * Dentro del directorio de tu proyecto, crea el documento `HTML`: _index.html_
 * Agregue al documento index.html:
   - La `estructura general` sugerida por [Bard](bard/guia02-bard02.pdf). 
