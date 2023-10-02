@@ -10,8 +10,8 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Decida el contenido de su CV, puede considerar la recomendación de [ChatGPT](chatgpt/guia02-recomendacion01.png) o [Bard](bard/guia02-bard01.pdf).
-* Diseñe la estructura del contenido de su CV, p.e.: el orden de las secciones, título de cada sección, uso de listas numeradas o listas no numeradas de elementos, etc.
+* Decide el contenido de su CV, puede considerar la recomendación de [ChatGPT](chatgpt/guia02-recomendacion01.png) o [Bard](bard/guia02-bard01.pdf).
+* Diseña la estructura del contenido de su CV, p.e.: el orden de las secciones, título de cada sección, uso de listas numeradas o listas no numeradas de elementos, etc.
 
 #### Github
 
@@ -19,19 +19,19 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-* Cree un documento HTML: `index.html`
+* Clona localmente tu proyecto. 
+* Dentro del directorio de tu proyecto, crea el documento `HTML`: `index.html`
 * Agregue al documento index.html:
   - La `estructura general` sugerida por [Bard](bard/guia02-bard02.pdf). 
 
-      **Mínimo:** etiqueta &lt;title&gt;; y etiqueta &lt;meta&gt; para _keywords_, 
-      _description_ y _author_
+      **Mínimo:** agrega la etiqueta &lt;title&gt; con su contenido; y etiqueta &lt;meta&gt; y valor para los atributos _keywords_, _description_ y _author_
 
-  - Organice el contenido de acuerdo con la `estructura semántica` sugerencia por [Bard](bard/guia02-bard03.pdf).
+  - Organiza el contenido de acuerdo con la `estructura semántica` sugerida por [Bard](bard/guia02-bard03.pdf).
       
-      **Mínimo:** 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt; 
+      **Mínimo:** agrega 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;dentro de la etiqueta body. 
 
 
-* Suba el archivo index.html al repositorio **curriculum**.
+* Versiona local y remotamente el repositorio **curriculum**.
 * Despliegue el sitio del repositorio **curriculum** utilizando GitHub Pages.
 
 ### Documentación
