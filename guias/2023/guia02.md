@@ -21,14 +21,14 @@ theme: jekyll-theme-leap-day
 
 * Clona localmente tu repositorio **curriculum**. 
 * Dentro del directorio de tu proyecto, crea el documento `HTML`: _index.html_
-* Agregue al documento index.html:
+* Utiliza `VSCode` para editar el documento index.html, con:
   - La `estructura general` sugerida por [Bard](bard/guia02-bard02.pdf). 
 
-      **Mínimo:** agrega la etiqueta &lt;title&gt; con su contenido; y etiqueta &lt;meta&gt; y valor para los atributos _keywords_, _description_ y _author_
+      **Mínimo:** agrega la etiqueta &lt;title&gt; con su contenido; y las etiquetas &lt;meta&gt; con los nombres _keywords_, _description_ y _author_. 
 
-  - Organiza el contenido de acuerdo con la `estructura semántica` sugerida por [Bard](bard/guia02-bard03.pdf).
+  - La `estructura semántica` sugerida por [Bard](bard/guia02-bard03.pdf).
       
-      **Mínimo:** agrega 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;dentro de la etiqueta body. 
+      **Mínimo:** agrega dentro de la etiqueta body 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. 
 
 
 * Versiona local y remotamente el repositorio **curriculum**.
@@ -50,7 +50,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-HTML, hipertexto, etiquetas, W3C, estándar, estructura general, estructura semántica, meta, title, link
+HTML, hipertexto, VSCode, etiquetas, W3C, estándar, estructura general, estructura semántica, meta, title, link
 
 ### Referencias
 
