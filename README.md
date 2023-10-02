@@ -54,7 +54,10 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 			    | [Ejercicio 04](Capítulo01/ejercicio04)         | Formularios, atributo (identificador) |
 | 			    | [Ejercicio 05](Capítulo01/ejercicio05)         | Semántico |
 | 			    | [Ejercicio 06](Capítulo01/ejercicio06)         | Media |
-
+| 			    | [Ejercicio 07](Capítulo01/ejercicio07)         | Reglas y Selectores |
+| 			    | [Ejercicio 08](Capítulo01/ejercicio08)         | Modelo de cajas |
+| 			    | [Ejercicio 09](Capítulo01/ejercicio09)         | Colocación |
+| 			    | [Ejercicio 10](Capítulo01/ejercicio10)         | Posicionamiento |
 
 
 ## Referencias 
