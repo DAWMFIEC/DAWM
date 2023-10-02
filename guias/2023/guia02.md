@@ -38,9 +38,15 @@ theme: jekyll-theme-leap-day
 
 * `Estándar` de HTML en [HTML Living Standard](https://html.spec.whatwg.org/multipage/) de la `W3C`, [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML) o [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png).
 
-  * Soporte de los grupos de `etiquetas` HTML en su navegador, en [HTML5 Test](https://html5test.com/).
+  * Soporte de los grupos de `etiquetas` de `hipertexto` en su navegador, en [HTML5 Test](https://html5test.com/).
   * Soporte de cada etiqueta en diversos navegadores por versión, en [Can I Use](https://caniuse.com/).
   * Verificación en el anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
+
+### Twitter
+
+* Etiquetas semánticas en [Twitter](https://twitter.com/Manz/status/1518947493790334980)
+
+<img src="https://pbs.twimg.com/media/FRRX3k6XoAArmrp?format=jpg&name=900x900" style="margin: 0 12%;" width="80%">
 
 ### Términos
 
