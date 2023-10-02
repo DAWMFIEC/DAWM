@@ -23,20 +23,13 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 ### Actividades en clases
 
-* Modifique el archivo `index.html` del repositorio **curriculum**.
-* Organice y agregue contenido a cada una de las secciones de su CV mediante las etiquetas contenedoras _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. Por ejemplo, el siguiente _prompt_ en [Bard](https://bard.google.com/): 
+* Clona localmente tu repositorio **curriculum**. 
+* Modifique el archivo _index.html_ del repositorio **curriculum**.
+* Organiza y agrega contenido a cada una de las secciones de su CV mediante las etiquetas `contenedoras` _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. Algunas sugerencias según [Bard](bard/guia03-bard04.pdf).
 
-	```
-	Como desarrollador de aplicaciones web, ¿cómo incorporo las etiquetas 
-	div, span, p, ul, ol, table y a con el contenido de un curriculum? 
-	Muéstrame ejemplos de cómo utilizar cada una de las etiquetas.
-	```
+* Diseñe y modifique, o agregue, secciones de su CV, que cuyo contenido incorpore un `formulario`, una `imagen`, un `video` y un `mapa`. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
 
-	Genera la siguiente [respuesta](bard/guia03-bard04.pdf).
-
-* Diseñe y modifique, o agregue, secciones de su CV, que cuyo contenido incorpore un formulario, una imagen, un video y un mapa. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
-
-* Actualice el archivo `index.html` en el repositorio **curriculum**.
+* Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 
