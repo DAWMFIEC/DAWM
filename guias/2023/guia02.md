@@ -36,15 +36,15 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
-* `HTML` en [HTML Living Standard](https://html.spec.whatwg.org/multipage/), [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML) o [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png).
+* `Estándar` de HTML en [HTML Living Standard](https://html.spec.whatwg.org/multipage/) de la `W3C`, [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML) o [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png).
 
-  * Soporte de los grupos de etiquetas en su navegador, en [HTML5 Test](https://html5test.com/).
+  * Soporte de los grupos de `etiquetas` HTML en su navegador, en [HTML5 Test](https://html5test.com/).
   * Soporte de cada etiqueta en diversos navegadores por versión, en [Can I Use](https://caniuse.com/).
   * Verificación en el anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
 
 ### Términos
 
-HTML, hipertexto, etiquetas, W3C, standard, estructura general, estructura semántica, meta, title, link
+HTML, hipertexto, etiquetas, W3C, estándar, estructura general, estructura semántica, meta, title, link
 
 ### Referencias
 
