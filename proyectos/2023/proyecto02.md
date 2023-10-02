@@ -34,8 +34,8 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 02: HTML - Estructura global, semánticas y etiquetas](/DAWM/guias/2023/guia02)
-* [Guía 03: HTML - Contenedores, formularios y multimedia](/DAWM/guias/2023/guia03)
-* [Guía 04: CSS - Selectores y propiedades CSS y modelo de caja](/DAWM/guias/2023/guia04)
+* [Guía 02: HTML - Estructura global, etiquetas HTML y semántica](/DAWM/guias/2023/guia02)
+* [Guía 03: HTML - Etiquetas contenedoras, formularios y multimedia](/DAWM/guias/2023/guia03)
+* [Guía 04: CSS - Selectores CSS, propiedades y modelo de caja](/DAWM/guias/2023/guia04)
 * [Guía 05: CSS - Grid vs Flexbox](/DAWM/guias/2023/guia05)
 
