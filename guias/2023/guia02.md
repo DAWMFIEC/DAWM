@@ -42,7 +42,7 @@ theme: jekyll-theme-leap-day
   * Soporte de cada etiqueta en diversos navegadores por versión, en [Can I Use](https://caniuse.com/).
   * Verificación en el anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
 
-### Twitter
+### HTML Semántico
 
 * Etiquetas semánticas en [Twitter](https://twitter.com/Manz/status/1518947493790334980)
 
