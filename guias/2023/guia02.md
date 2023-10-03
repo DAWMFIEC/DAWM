@@ -42,11 +42,11 @@ theme: jekyll-theme-leap-day
   * Soporte de cada etiqueta en diversos navegadores por versión, en [Can I Use](https://caniuse.com/).
   * Verificación en el anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
 
-### HTML Semántico
+### SEO
 
-* Etiquetas semánticas en [X](https://twitter.com/Manz/status/1518947493790334980)
+* SEO en [X](https://twitter.com/deepanshusharmx/status/1708118904391053714)
 
-<img src="https://pbs.twimg.com/media/FRRX3k6XoAArmrp?format=jpg&name=900x900" style="margin: 0 12%;" width="80%">
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Semantic HTML elements play a crucial role in improving website SEO and its accessibility.<br><br>Replacing non-semantic elements makes code more readable and maintainable.<br><br>HTML Semantic Elements:<br>→ Carry inherent meanings;<br>→ Make web content more Structured;<br>→ More Meaningful.… <a href="https://t.co/O18NI5L8XD">pic.twitter.com/O18NI5L8XD</a></p>&mdash; Deepanshu Sharma (@deepanshusharmx) <a href="https://twitter.com/deepanshusharmx/status/1708118904391053714?ref_src=twsrc%5Etfw">September 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
