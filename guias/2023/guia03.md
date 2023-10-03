@@ -42,6 +42,12 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
   - Archivos videos en formato [mp3](https://www.labnol.org/internet/google-drive-mp3-embed/2232/) o enlaces a [videos](https://www.desarrollolibre.net/blog/html/como-insertar-videos-de-youtube-en-nuestra-web-html#.XtccmDr0k2w) en Youtube.
   - Mapas en [Google](https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/) o [Leaflet](https://mappinggis.com/2013/06/como-crear-un-mapa-con-leaflet/).
 
+### Arquitectura
+
+* Protocolo HTTP en [X](https://twitter.com/alexxubyte/status/1692560840853962987) 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">HTTP 1.0 -&gt; HTTP 1.1 -&gt; HTTP 2.0 -&gt; HTTP 3.0 (QUIC).<br><br>What problem does each generation of HTTP solve?<br><br>The diagram below illustrates the key features.<br><br>🔹HTTP 1.0 was finalized and fully documented in 1996. Every request to the same server requires a separate TCP connection.… <a href="https://t.co/V9uSXv0tvn">pic.twitter.com/V9uSXv0tvn</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1692560840853962987?ref_src=twsrc%5Etfw">August 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Términos
 
 contenedores, multimedia, imagenes, videos, formulario
