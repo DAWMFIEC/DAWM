@@ -33,7 +33,7 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 ### Documentación
 
-* `HTML` en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/HTML).
+* HTML en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/HTML).
 	- Lista de atributos en [W3Docs - HTML Attributes](https://www.w3docs.com/learn-html/html-attributes.html).
 
 * Soporte para elementos HTML:
