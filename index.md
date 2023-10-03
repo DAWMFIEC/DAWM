@@ -22,6 +22,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 02: Curriculum Vitae - HTML & CSS](proyectos/2023/proyecto02)
     * [Guía 02: HTML - Estructura global, etiquetas HTML y semántica](guias/2023/guia02)
     * [Guía 03: HTML - Etiquetas contenedoras, formularios y multimedia](guias/2023/guia03)
+    * [Guía 04: CSS - Selectores CSS, propiedades y modelo de caja](guias/2023/guia04)
 * [Proyecto 03: Landing Page SPA - Bootstrap](proyectos/2023/proyecto0x)
 * [Proyecto 04: Clima - Dashboard](proyectos/2023/proyecto0x)
 * [Proyecto 05: Dataset SPA - Angular](proyectos/2023/proyecto0x)
