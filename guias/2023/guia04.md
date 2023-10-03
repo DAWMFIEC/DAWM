@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
 ### Actividades en clase
 
 * Descargue los archivos del repositorio **curriculum**, y
-* Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la **hoja de estilo externa** `stylesheets/style.css` y para agregar la referencia en el archivo `index.html`
+* Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la **hoja de estilo externa** `CSS` _stylesheets/style.css_ y para agregar la referencia en el archivo _index.html_
 
 #### Servidor HTTP 
 
@@ -30,8 +30,8 @@ theme: jekyll-theme-leap-day
 Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes actividades:
 
 1. Use un _selector universal_ para asignar la familia tipográfica _'Arial, sans-serif'_ a todo el documento. 
-2. Utilice un _selector por clase_ para fijar la familia tipográfica _'Times New Roman, serif'_ en todos los títulos de las secciones `<h2>`. 
-3. Emplee un _selector por elemento_ para establecer la familia tipográfica _'Georgia, serif'_ solo el título principal `<h1>`. 
+2. Utilice un _selector por clase_ para fijar la familia tipográfica _'Times New Roman, serif'_ en todos los títulos de las secciones &lt;h2&gt;. 
+3. Emplee un _selector por elemento_ para establecer la familia tipográfica _'Georgia, serif'_ solo el título principal &lt;h1&gt;. 
 
 #### Familias tipográficas de Google Fonts
 
@@ -63,11 +63,11 @@ Busque y compruebe la documentación en [W3School](https://www.w3schools.com/css
 
 1. Utilice cualquier tipo de selector para acceder a una imagen dentro del sitio web.  
 2. Modifique la propiedadees:
-  * Borde de `1pt solid black`
-  * Relleno de `1.1rem`
-  * Margen superior `10px`
-  * Margen izquierdo y derecho `25%`
-  * Margen inferior `2px`
+  * Borde de *1pt solid black*
+  * Relleno de *1.1rem*
+  * Margen superior *10px*
+  * Margen izquierdo y derecho *25%*
+  * Margen inferior *2px*
 
 **Nota:** Experimenta con otros valores para las propiedades.
 
@@ -75,15 +75,15 @@ Busque y compruebe la documentación en [W3School](https://www.w3schools.com/css
 
 Busque y compruebe la documentación en [CSS: Centering things](https://www.w3.org/Style/Examples/007/center.en.html) para las siguientes actividades:
 
-1. Tome como referencia la sección `<section>` que contiene el mapa `<iframe>`. 
-2. Centre horizontalmente **el contenedor** `<section>` o **el contenido** `<iframe>`.
+1. Tome como referencia la sección &lt;section&gt; que contiene el mapa &lt;iframe&gt;. 
+2. Centre horizontalmente **el contenedor** &lt;section&gt; o **el contenido** &lt;iframe&gt;.
 
 
 * Actualice todos los archivos en el repositorio **curriculum**.
 
 ### Documentación
 
-* `CSS` en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/CSS).
+* CSS en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/CSS).
   - [Selectores CSS](https://www.w3schools.com/cssref/css_selectors.php) para acceder a uno o varios elementos del documento HTML.
   - [Propiedades y valores](https://www.w3schools.com/cssref/index.php)
 
