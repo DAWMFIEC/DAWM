@@ -17,11 +17,11 @@ theme: jekyll-theme-leap-day
 ### Actividades en clase
 
 * Descargue los archivos del repositorio **curriculum**, y
-* Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la **hoja de estilo externa** `CSS` _stylesheets/style.css_ y para agregar la referencia en el archivo _index.html_
+* Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la hoja de estilo externa `CSS` _stylesheets/style.css_ y para agregar la referencia en el archivo _index.html_
 
 #### Servidor HTTP 
 
-* Levante un [servidor HTTP en Python](/DAWM/tutoriales/python) en la ruta de la aplicación.
+* Levante un [`servidor HTTP` en Python](/DAWM/tutoriales/python) en la ruta de la aplicación.
 * Acceda desde el navegador al URL del servidor HTTP en Python, y
 * Compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el URL en el navegador.
 
@@ -89,7 +89,7 @@ Busque y compruebe la documentación en [CSS: Centering things](https://www.w3.o
 
 ### Términos
 
-CSS, reglas CSS, propiedades CSS, selectores CSS, HTTP, servidor HTTP, peticiones y respuestas HTTP
+servidor HTTP, CSS, ruta de la aplicación, reglas CSS, propiedades CSS, selectores CSS, HTTP, servidor HTTP, peticiones y respuestas HTTP
 
 ### Referencias
 
