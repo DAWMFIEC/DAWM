@@ -25,9 +25,9 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 * Clona localmente tu repositorio **curriculum**. 
 * Modifique el archivo _index.html_ del repositorio **curriculum**.
-* Organiza y agrega contenido a cada una de las secciones de su CV mediante las etiquetas `contenedoras` _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. Algunas sugerencias según [Bard](bard/guia03-bard04.pdf).
+  - Organiza y agrega contenido a cada una de las secciones de su CV mediante las etiquetas `contenedoras` _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. Algunas sugerencias según [Bard](bard/guia03-bard04.pdf).
 
-* Diseñe y modifique, o agregue, secciones de su CV, que cuyo contenido incorpore un `formulario`, una `imagen`, un `video` y un `mapa`. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
+  - Diseñe y modifique, o agregue, secciones de su CV, que cuyo contenido incorpore un `formulario`, una `imagen`, un `video` y un `mapa`. Consulte a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
 
 * Versiona local y remotamente el repositorio **curriculum**.
 
@@ -37,8 +37,8 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 	- Lista de atributos en [W3Docs - HTML Attributes](https://www.w3docs.com/learn-html/html-attributes.html).
 
 * Soporte para elementos HTML:
-  - [Formularios](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form).
-  - [Imágenes](https://developer.mozilla.org/es/docs/Web/HTML/Element/img).
+  - [Formularios](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) y sus elementos.
+  - [Imágenes](https://developer.mozilla.org/es/docs/Web/HTML/Element/img) y sus atributos.
   - Archivos videos en formato [mp3](https://www.labnol.org/internet/google-drive-mp3-embed/2232/) o enlaces a [videos](https://www.desarrollolibre.net/blog/html/como-insertar-videos-de-youtube-en-nuestra-web-html#.XtccmDr0k2w) en Youtube.
   - Mapas en [Google](https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/) o [Leaflet](https://mappinggis.com/2013/06/como-crear-un-mapa-con-leaflet/).
 
