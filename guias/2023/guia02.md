@@ -44,7 +44,7 @@ theme: jekyll-theme-leap-day
 
 ### HTML Semántico
 
-* Etiquetas semánticas en [Twitter](https://twitter.com/Manz/status/1518947493790334980)
+* Etiquetas semánticas en [X](https://twitter.com/Manz/status/1518947493790334980)
 
 <img src="https://pbs.twimg.com/media/FRRX3k6XoAArmrp?format=jpg&name=900x900" style="margin: 0 12%;" width="80%">
 
