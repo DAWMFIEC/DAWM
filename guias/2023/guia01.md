@@ -19,15 +19,11 @@ theme: jekyll-theme-leap-day
 * [Guía completa](https://www.markdownguide.org/) de `Markdown`, con el [Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) de la instrucciones más usadas.
 * Documentación de `GitHub` acerca de [repositorios](https://docs.github.com/es/repositories) y los [flujos de trabajo](https://docs.github.com/es/actions) en `GitHub Actions`.
 
-### Arquitectura
+### Diseño
 
 * GIT en [Twitter](https://twitter.com/alexxubyte/status/1708145139515109449)
 
 <img src="https://pbs.twimg.com/media/F7SM78-bgAAKd6h?format=jpg&name=900x900" style="margin: 0 12%;" width="80%">
-
-* Github Actions en [Keepler.io](https://keepler.io/es/2020/09/crear-workflows-en-base-a-eventos-con-github-actions/)
-
-<img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png" style="margin: 0 12%;" width="80%">
 
 ### Términos
 
