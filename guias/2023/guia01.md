@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 * [Guía completa](https://www.markdownguide.org/) de `Markdown`, con el [Cheat Sheet](https://www.markdownguide.org/cheat-sheet/) de la instrucciones más usadas.
 * Documentación de `GitHub` acerca de [repositorios](https://docs.github.com/es/repositories) y los [flujos de trabajo](https://docs.github.com/es/actions) en `GitHub Actions`.
 
-### Diseño
+### Fundamental
 
 * GIT en [Twitter](https://twitter.com/alexxubyte/status/1708145139515109449)
 
