@@ -46,11 +46,13 @@ theme: jekyll-theme-leap-day
 
 * ¿Cómo funciona la web? en [Mozilla Developer Network - MDN](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
 
-<img src="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works/simple-client-server.png" style="margin: 0 25% auto 25%;" width="80%">
+<img src="https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works/simple-client-server.png" style="margin: 0 auto" width="80%">
 
 * SEO (Search Engine Optimization) en [X](https://twitter.com/deepanshusharmx/status/1708118904391053714)
 
+<p align="center">
 <blockquote class="twitter-tweet" width="60%" style="margin: 0 25% auto 25%;"><p lang="en" dir="ltr">Semantic HTML elements play a crucial role in improving website SEO and its accessibility.<br><br>Replacing non-semantic elements makes code more readable and maintainable.<br><br>HTML Semantic Elements:<br>→ Carry inherent meanings;<br>→ Make web content more Structured;<br>→ More Meaningful.… <a href="https://t.co/O18NI5L8XD">pic.twitter.com/O18NI5L8XD</a></p>&mdash; Deepanshu Sharma (@deepanshusharmx) <a href="https://twitter.com/deepanshusharmx/status/1708118904391053714?ref_src=twsrc%5Etfw">September 30, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</p>
 
 ### Términos
 
