@@ -46,11 +46,11 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 * Protocolo HTTP en [X](https://twitter.com/alexxubyte/status/1692560840853962987) 
 
-<blockquote class="twitter-tweet" width="60%" style="margin: 0 auto;"><p lang="en" dir="ltr">HTTP 1.0 -&gt; HTTP 1.1 -&gt; HTTP 2.0 -&gt; HTTP 3.0 (QUIC).<br><br>What problem does each generation of HTTP solve?<br><br>The diagram below illustrates the key features.<br><br>🔹HTTP 1.0 was finalized and fully documented in 1996. Every request to the same server requires a separate TCP connection.… <a href="https://t.co/V9uSXv0tvn">pic.twitter.com/V9uSXv0tvn</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1692560840853962987?ref_src=twsrc%5Etfw">August 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" width="60%" style="margin: 0 25% auto 25%;"><p lang="en" dir="ltr">HTTP 1.0 -&gt; HTTP 1.1 -&gt; HTTP 2.0 -&gt; HTTP 3.0 (QUIC).<br><br>What problem does each generation of HTTP solve?<br><br>The diagram below illustrates the key features.<br><br>🔹HTTP 1.0 was finalized and fully documented in 1996. Every request to the same server requires a separate TCP connection.… <a href="https://t.co/V9uSXv0tvn">pic.twitter.com/V9uSXv0tvn</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1692560840853962987?ref_src=twsrc%5Etfw">August 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 * Inside look at modern web browser en Chrome Developer Network [Parte 1](https://developer.chrome.com/blog/inside-browser-part1/), [Parte 2](https://developer.chrome.com/blog/inside-browser-part2/), [Parte 3](https://developer.chrome.com/blog/inside-browser-part3/) y [Parte 4](https://developer.chrome.com/blog/inside-browser-part4/)
 
-<img src="https://wd.imgix.net/image/T4FyVKpzu4WKF1kBNvXepbi08t52/vl5sRzL8pFwlLSN7WW12.png?auto=format&w=964" style="margin: 0 auto" width="80%">
+<img src="https://wd.imgix.net/image/T4FyVKpzu4WKF1kBNvXepbi08t52/vl5sRzL8pFwlLSN7WW12.png?auto=format&w=964" style="margin: 0 25% auto 25%" width="80%">
 
 
 ### Términos
