@@ -203,6 +203,12 @@ theme: jekyll-theme-leap-day
 
 * Acceda al URL de despliegue `https://<USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO_REMOTO>/`
 
+### Diseño
+
+* Github Actions en [Keepler.io](https://keepler.io/es/2020/09/crear-workflows-en-base-a-eventos-con-github-actions/)
+
+<img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png" style="margin: 0 12%;" width="80%">
+
 ### Términos
 
 servidor HTTP, continuos integration, yaml
