@@ -46,11 +46,14 @@ picture span {
     - Relleno
         arriba y abajo:  1.4rem
         izquierda y derecha:  2rem
+    - Margen 
+          superior e inferior: 0
+          izquierda y derecha: automático 
 */
 
 /* Inicio */
 picture span {
-
+         
 }
 /* Fin */
 
