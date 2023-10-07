@@ -1,7 +1,5 @@
 /*
-	Agregue el selector para DESCENDIENTES para
-
-		La etiqueta p, que se encuentra dentro de la etiqueta con clase respuesta
+	Agregue el selector para el elemento con clase respuesta cuyo DESCENDIENTE es el elemento p
 
 	Con las propiedades para centrar respecto con 
 	el exterior: 
@@ -25,9 +23,7 @@
 /* Fin */
 
 /*
-	Agregue el selector para DESCENDIENTES para
-
-		La etiqueta span, que se encuentra dentro de la etiqueta p, que se encuentra dentro de la etiqueta con clase respuesta
+	Agregue el selector para el elemento con clase respuesta cuyo DESCENDIENTE es el elemento p cuyo DESCENDIENTE es el elemento span
 
 	Con la propiedad y valor: 
 		text-shadow: 2px 2px 4px #a59f9f;
@@ -38,9 +34,7 @@
 /* Fin */
 
 /*
-	Agregue el selector para DESCENDIENTES para
-
-		La etiqueta sub, que se encuentra dentro de la etiqueta p, que se encuentra dentro de la etiqueta con clase respuesta
+	Agregue el selector para el elemento con clase respuesta cuyo DESCENDIENTE es el elemento p cuyo DESCENDIENTE es el elemento span
 
 	Con la propiedad y valor: 
 		text-transform: uppercase;
@@ -51,9 +45,7 @@
 /* Fin */
 
 /*
-	Agregue el selector para ELEMENTOS HIJAS para
-
-		La etiqueta p, que se encuentra dentro de la etiqueta con clase respuesta
+	Agregue el selector para el elemento con clase respuesta cuyo HIJO es el elemento p
 
 	Con las propiedades: 
 
