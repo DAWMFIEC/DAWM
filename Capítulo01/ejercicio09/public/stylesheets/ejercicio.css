@@ -17,7 +17,7 @@ img {
 
 #bloque1 {
   /* Inicio */
- 
+  
   /* Fin */
 }
 
@@ -25,7 +25,7 @@ img {
   Agregue las propiedades al selector #bloque1 img:nth-child(4)
   para: 
 
-    - Coloque la imagen al final, utilice la regla order con valor -1
+    - Colocar la imagen al final con la regla order y el valor -1
     
   Referencias: 
     https://css-tricks.com/snippets/css/a-guide-to-flexbox/
