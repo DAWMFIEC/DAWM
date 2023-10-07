@@ -4,6 +4,7 @@
 
 ## Instrucciones
 
+* Descargue y descomprima [C01E07.zip](../../zips/C01E07.zip)
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
@@ -13,12 +14,20 @@
 			+ En Windows, con: `npm run debugw`
 			+ En MacOs, con: `npm run debugm`
 	+ Utilice su navegador preferido para abrir la vista inicial del ejercicio, con el URL: `http://localhost:3000/`
+
 * Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
-* Desde el editor de texto, modifica el archivo `public/stylesheets/ejercicio.css`, 
-	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
-	+ Agrega los cambiossolicitadas dentro de las secciones marcadas, con:  
-	`/* Inicio */` y `/* Fin */`
+* Desde el editor de texto, modifica el archivo `public/stylesheets/ejercicio.css`,
+	+ Agrega tu respuesta dentro de cada uno de los comentarios marcados, con:  
+	`<!-- Inicio -->` y `<!-- Fin -->`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
+
+## Pruebas unitarias
+
+* Desde otra instancia de la línea de comandos, ejecute: `npm test`
+* Los resultados posibles a las pruebas unitarias pueden ser: 
+	+ Todos fueron exitosas, o
+	+ Existen pruebas unitarias fallidas.
+* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
 
 ## Pruebas unitarias
 
