@@ -16,8 +16,11 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clase
 
-* Descargue los archivos del repositorio **curriculum**, y
-* Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para crear la hoja de estilo externa `CSS` _stylesheets/style.css_ y para agregar la referencia en el archivo _index.html_
+* Clona localmente tu repositorio **curriculum**.
+* Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para:
+  - Cree la carpeta _'stylesheets'_
+  - Cree la hoja de estilo externa `CSS` _'style.css'_ dentro de la carpeta _stylesheets_.
+  - Agregue la referencia con la ruta a la hoja de estilo externa en el archivo _index.html_
 
 #### Servidor HTTP 
 
