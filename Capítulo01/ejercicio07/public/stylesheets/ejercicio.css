@@ -138,8 +138,7 @@
 /* Fin */
 
 /*
-  Utilice el selector para aplicar a la etiqueta div con clase card, 
-  la cual SE ENCUENTRA DENTRO de la etiqueta div con clase container
+  Utilice el selector para aplicar al elemento div con clase container CUYO DESCENDIENTE ES la etiqueta div con clase card
 
   con las reglas con valores:
     background: white;
@@ -157,8 +156,7 @@
 
 
 /*
-  Utilice el selector para aplicar a la etiqueta del elemento p, 
-  la cual es HIJA de la etiqueta con clase card
+  Utilice el selector para aplicar al elemento con clase card cuya ETIQUETA HIJA es el elemento p
 
   con las reglas con valores:
     opacity: 0.4;
@@ -170,8 +168,7 @@
 /* Fin */
 
 /*
-  Utilice el selector para aplicar a la etiqueta del elemento p 
-  que es ADYACENTE de la etiqueta h2
+  Utilice el selector para aplicar al elemento h2 CON ETIQUETA ADYACENTE es el elemento p
 
   con las reglas con valores:
     text-align: justify;
@@ -182,8 +179,7 @@
 /* Fin */
 
 /*
-  Utilice el selector para aplicar a la etiqueta del elemento p 
-  que es HERMANO de la etiqueta h1
+  Utilice el selector para aplicar al elemento h1 CON ETIQUETA HERMANA es el elemento p
 
   con las reglas con valores:
     text-align: center;
@@ -194,8 +190,7 @@
 /* Fin */
 
 /*
-  Utilice el selector para aplicar a la etiqueta con clase card 
-  que AL PASAR EL MOUSE POR ENCIMA
+  Utilice el selector para aplicar a la etiqueta con clase card que AL PASAR EL MOUSE POR ENCIMA
 
   con las reglas con valores:
     box-shadow: 0px 50px 75px -25px #ad3500 !important;
