@@ -23,7 +23,9 @@ theme: jekyll-theme-leap-day
 
 * GIT en [Twitter](https://twitter.com/alexxubyte/status/1708145139515109449)
 
-<img src="https://pbs.twimg.com/media/F7SM78-bgAAKd6h?format=jpg&name=900x900" style="margin: 0 25% auto 25%;" width="60%">
+<p style="text-align: center;">
+<img src="https://pbs.twimg.com/media/F7SM78-bgAAKd6h?format=jpg&name=900x900" width="60%">
+</p>
 
 ### Términos
 
