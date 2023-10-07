@@ -48,16 +48,16 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 
 | Capítulo      | Ejercicios                                     | Temas    |
 | :-----------: | :--------------------------------------------: | :------- |
-| Capítulo 01   | [Ejercicio 01](Capítulo01/ejercicio01)         | Títulos  |
-| 			    | [Ejercicio 02](Capítulo01/ejercicio02)         | Listas (no) numeradas, tablas, atributos   |
-| 			    | [Ejercicio 03](Capítulo01/ejercicio03)         | Imágenes, enlaces, etiquetas contenedores (p-span), atributo (clase) |
-| 			    | [Ejercicio 04](Capítulo01/ejercicio04)         | Formularios, atributo (identificador) |
-| 			    | [Ejercicio 05](Capítulo01/ejercicio05)         | Semántico |
-| 			    | [Ejercicio 06](Capítulo01/ejercicio06)         | Media |
-| 			    | [Ejercicio 07](Capítulo01/ejercicio07)         | Reglas y Selectores |
-| 			    | [Ejercicio 08](Capítulo01/ejercicio08)         | Modelo de cajas |
-| 			    | [Ejercicio 09](Capítulo01/ejercicio09)         | Colocación |
-| 			    | [Ejercicio 10](Capítulo01/ejercicio10)         | Posicionamiento |
+| Capítulo 01   | [Ejercicio 01](Capítulo01/ejercicio01)         | HTML: Títulos  |
+| 			    | [Ejercicio 02](Capítulo01/ejercicio02)         | HTML: Listas (no) numeradas, tablas, atributos   |
+| 			    | [Ejercicio 03](Capítulo01/ejercicio03)         | HTML: Imágenes, enlaces, etiquetas contenedores (p-span), atributo (clase) |
+| 			    | [Ejercicio 04](Capítulo01/ejercicio04)         | HTML: Formularios, atributo (identificador) |
+| 			    | [Ejercicio 05](Capítulo01/ejercicio05)         | HTML: Semántico |
+| 			    | [Ejercicio 06](Capítulo01/ejercicio06)         | CSS: Media |
+| 			    | [Ejercicio 07](Capítulo01/ejercicio07)         | CSS: Reglas y Selectores |
+| 			    | [Ejercicio 08](Capítulo01/ejercicio08)         | CSS: Modelo de cajas |
+| 			    | [Ejercicio 09](Capítulo01/ejercicio09)         | CSS: Colocación |
+| 			    | [Ejercicio 10](Capítulo01/ejercicio10)         | CSS: Posicionamiento |
 
 
 ## Referencias 
