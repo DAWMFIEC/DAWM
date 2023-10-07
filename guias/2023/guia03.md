@@ -27,11 +27,11 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 * Modifica el archivo _index.html_ del repositorio **curriculum**.
   - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las etiquetas `contenedoras` _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. 
     
-    Algunas sugerencias según [Bard](bard/guia03-bard04.pdf).
+    _Algunas sugerencias según [Bard](bard/guia03-bard04.pdf)._
 
   - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, una `imagen`, un `video` y un `mapa`. 
     
-    Consulta a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio. 
+    _Consulta a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
 
 * Versiona local y remotamente el repositorio **curriculum**.
 
@@ -50,9 +50,7 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 * Protocolo HTTP en [X](https://twitter.com/alexxubyte/status/1692560840853962987) 
 
-<p style="text-align: center;">
-<blockquote class="twitter-tweet" width="60%"><p lang="en" dir="ltr">HTTP 1.0 -&gt; HTTP 1.1 -&gt; HTTP 2.0 -&gt; HTTP 3.0 (QUIC).<br><br>What problem does each generation of HTTP solve?<br><br>The diagram below illustrates the key features.<br><br>🔹HTTP 1.0 was finalized and fully documented in 1996. Every request to the same server requires a separate TCP connection.… <a href="https://t.co/V9uSXv0tvn">pic.twitter.com/V9uSXv0tvn</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1692560840853962987?ref_src=twsrc%5Etfw">August 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-</p>
+<blockquote class="twitter-tweet" style="text-align: center;" width="60%"><p lang="en" dir="ltr">HTTP 1.0 -&gt; HTTP 1.1 -&gt; HTTP 2.0 -&gt; HTTP 3.0 (QUIC).<br><br>What problem does each generation of HTTP solve?<br><br>The diagram below illustrates the key features.<br><br>🔹HTTP 1.0 was finalized and fully documented in 1996. Every request to the same server requires a separate TCP connection.… <a href="https://t.co/V9uSXv0tvn">pic.twitter.com/V9uSXv0tvn</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1692560840853962987?ref_src=twsrc%5Etfw">August 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 * Inside look at modern web browser en Chrome Developer Network [Parte 1](https://developer.chrome.com/blog/inside-browser-part1/), [Parte 2](https://developer.chrome.com/blog/inside-browser-part2/), [Parte 3](https://developer.chrome.com/blog/inside-browser-part3/) y [Parte 4](https://developer.chrome.com/blog/inside-browser-part4/)
 
