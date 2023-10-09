@@ -17,16 +17,15 @@ theme: jekyll-theme-leap-day
 ### Actividades en clase
 
 * Clona localmente tu repositorio **curriculum**.
-* Siga las instrucciones de [Bard](bard/guia04-bard01.pdf) para:
-  - Cree la carpeta _'stylesheets'_
-  - Cree la hoja de estilo externa `CSS` _'style.css'_ dentro de la carpeta _stylesheets_.
-  - Agregue la referencia con la ruta a la hoja de estilo externa en el archivo _index.html_
+* Sigue las instrucciones de [Bard](bard/guia04-bard01.pdf), y:
+  - Cree la carpeta _'stylesheets'_, y dentro hoja de estilo externa `CSS` _'style.css'_.
+  - Agregue la referencia con la ruta a la hoja de estilo externa en el archivo _index.html_.
 
 #### Servidor HTTP 
 
-* Levante un [`servidor HTTP` en Python](/DAWM/tutoriales/python) en la ruta de la aplicación.
-* Acceda desde el navegador al URL del servidor HTTP en Python, y
-* Compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el URL en el navegador.
+* Levante un [`servidor HTTP` en Python](/DAWM/tutoriales/python) en la `ruta de la aplicación`.
+* Acceda desde el navegador con el URL del servidor HTTP en Python, y
+* Compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el navegador.
 
 #### Estilo en cascada y familia tipográfica
 
