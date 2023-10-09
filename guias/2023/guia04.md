@@ -31,9 +31,9 @@ theme: jekyll-theme-leap-day
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes actividades:
 
-1. Use un `selector universal` para asignar la familia tipográfica _Arial, sans-serif_ para todo el documento. 
-2. Utilice un `selector por clase` para fijar la familia tipográfica _Times New Roman, serif_ para todos los títulos de las secciones (&lt;h2&gt;). 
-3. Emplee un `selector por elemento` para establecer la familia tipográfica _Georgia, serif_ para el título principal (&lt;h1&gt;). 
+1. Use un _selector universal_ para asignar la familia tipográfica _Arial, sans-serif_ para todo el documento. 
+2. Utilice un _selector por clase_ para fijar la familia tipográfica _Times New Roman, serif_ para todos los títulos de las secciones (&lt;h2&gt;). 
+3. Emplee un _selector por elemento_ para establecer la familia tipográfica _Georgia, serif_ para el título principal (&lt;h1&gt;). 
 
 #### Familias tipográficas de Google Fonts
 
@@ -41,24 +41,23 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard03.pdf) para las siguientes ac
 
 1. En Google Fonts, genere la referencia a las familias tipográficas escogidas previamente de Fontjoy.
 2. Al inicio del archivo _'stylesheets/style.css'_, agregue la referencia a las familias tipográficas de Google Fonts.
-3. Asigne a su gusto las familias tipográficas a los selectores.
+3. Asigne a su gusto las familias tipográficas a las `reglas CSS`.
 
 #### Color de texto y color de fondo
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes actividades:
 
-1. Utilice un `selector por identificador` para fijar el color de fondo para cada sección.
-2. Utilice un `selector anidado` para asignar el color del texto para el contenido de cada sección.
+1. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
+2. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
 
 ### Documentación
 
 * CSS en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/CSS).
-  - [Selectores CSS](https://www.w3schools.com/cssref/css_selectors.php) para acceder a uno o varios elementos del documento HTML.
-  - [Propiedades y valores](https://www.w3schools.com/cssref/index.php)
+* En W3Schools [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php) revise los `selectores CSS` para acceder a uno o varios elementos del documento HTML y [CSS Reference](https://www.w3schools.com/cssref/index.php) `propiedades y valores CSS`
 
 ### Términos
 
-servidor HTTP, ruta de la aplicación, CSS, reglas CSS, propiedades CSS, selectores CSS
+servidor HTTP, ruta de la aplicación, CSS, reglas CSS, selectores CSS, propiedades y valores CSS
 
 ### Referencias
 
