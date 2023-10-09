@@ -1,5 +1,4 @@
-| Capítulo 02   | [Ejercicio 01](Capítulo02/ejercicio01)         | Diseño responsivo: Grid  |
-| 			    | [Ejercicio 02](Capítulo02/ejercicio02)         | Diseño responsivo: Flexbox  |
+
 | Capítulo 03   | [Ejercicio 01](Capítulo03/ejercicio01)         | Etiqueta script  |
 | 				| [Ejercicio 02](Capítulo03/ejercicio02)         | Fundamentos  |
 |               | [Ejercicio 03](Capítulo03/ejercicio03)         | Control de flujo y Funciones  |
