@@ -47,42 +47,8 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard03.pdf) para las siguientes ac
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes actividades:
 
-1. Utilice la combinación de colores de acuerdo con la guía de Happy Hues.
-2. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
-3. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
-
-#### Propiedades de texto
-
-Consulte y compruebe la sugerencia de alguna de las IAs para la pregunta:
-
-```
-Las propiedades CSS para eliminar el subrayado predeterminado y aplicar el 
-tamaño de la fuente de 1.2rem a todas las etiquetas <a>
-```
-
-#### Modelo de caja
-
-Busque y compruebe la documentación en [W3School](https://www.w3schools.com/css/css_boxmodel.asp) para las siguientes actividades:
-
-1. Utilice cualquier tipo de selector para acceder a una imagen dentro del sitio web.  
-2. Modifique la propiedadees:
-  * Borde de *1pt solid black*
-  * Relleno de *1.1rem*
-  * Margen superior *10px*
-  * Margen izquierdo y derecho *25%*
-  * Margen inferior *2px*
-
-**Nota:** Experimenta con otros valores para las propiedades.
-
-#### Centrar contenido y contenedor
-
-Busque y compruebe la documentación en [CSS: Centering things](https://www.w3.org/Style/Examples/007/center.en.html) para las siguientes actividades:
-
-1. Tome como referencia la sección &lt;section&gt; que contiene el mapa &lt;iframe&gt;. 
-2. Centre horizontalmente **el contenedor** &lt;section&gt; o **el contenido** &lt;iframe&gt;.
-
-
-* Actualice todos los archivos en el repositorio **curriculum**.
+1. Utilice un `selector por identificador` para fijar el color de fondo para cada sección.
+2. Utilice un `selector anidado` para asignar el color del texto para el contenido de cada sección.
 
 ### Documentación
 
@@ -92,7 +58,7 @@ Busque y compruebe la documentación en [CSS: Centering things](https://www.w3.o
 
 ### Términos
 
-servidor HTTP, CSS, ruta de la aplicación, reglas CSS, propiedades CSS, selectores CSS, HTTP, servidor HTTP, peticiones y respuestas HTTP
+servidor HTTP, ruta de la aplicación, CSS, reglas CSS, propiedades CSS, selectores CSS
 
 ### Referencias
 
