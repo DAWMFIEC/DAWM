@@ -4,7 +4,7 @@
 
 ## Instrucciones
 
-* Descargue y descomprima [C02E02.zip](../../zips/C02E02.zip)
+* Descargue y descomprima [C03E01.zip](../../zips/C03E01.zip)
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
