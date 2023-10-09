@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Escoja una combinación de familias tipografías de acuerdo con la recomendación de [Fontjoy](https://fontjoy.com/).
+* Escoja una combinación de familias tipografías para título de pricipal, para títulos de las secciones y para todo el documento, de acuerdo con la recomendación de [Fontjoy](https://fontjoy.com/).
 * Selecione una combinación de colores de acuerdo con la guía de [Happy Hues](https://www.happyhues.co/), [Huemint](https://huemint.com/website-2/), o [ColorMagic](https://colormagic.app/). 
 
 
@@ -31,9 +31,9 @@ theme: jekyll-theme-leap-day
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes actividades:
 
-1. Use un _selector universal_ para asignar la familia tipográfica _'Arial, sans-serif'_ a todo el documento. 
-2. Utilice un _selector por clase_ para fijar la familia tipográfica _'Times New Roman, serif'_ en todos los títulos de las secciones &lt;h2&gt;. 
-3. Emplee un _selector por elemento_ para establecer la familia tipográfica _'Georgia, serif'_ solo el título principal &lt;h1&gt;. 
+1. Use un `selector universal` para asignar la familia tipográfica escogida previamente a todo el documento. 
+2. Utilice un `selector por clase` para fijar la familia tipográfica escogida previamente en todos los títulos de las secciones (&lt;h2&gt;). 
+3. Emplee un `selector por elemento` para establecer la familia tipográfica escogida previamente solo el título principal (&lt;h1&gt;). 
 
 #### Familias tipográficas de Google Fonts
 
