@@ -40,20 +40,21 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes ac
 Compruebe la sugerencia de [Bard](bard/guia04-bard03.pdf) para las siguientes actividades:
 
 1. En Google Fonts, genere la referencia a las familias tipográficas escogidas previamente de Fontjoy.
-2. Al inicio del archivo _'stylesheets/style.css'_, agregue la referencia a las familias tipográficas de Google Fonts.
+2. Al inicio de la hoja de estilo, agregue la referencia a las familias tipográficas de Google Fonts.
 3. Asigne a su gusto las familias tipográficas a las `reglas CSS`.
 
 #### Color de texto y color de fondo
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes actividades:
 
-1. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
-2. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
+1. Tome como referencia la combinación de colores previamente seleccionada a partir de Happy Hues, Huemint o ColorMagic.
+2. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
+3. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
 
 ### Documentación
 
 * CSS en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/CSS).
-* En W3Schools [CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php) revise los `selectores CSS` para acceder a uno o varios elementos del documento HTML y [CSS Reference](https://www.w3schools.com/cssref/index.php) `propiedades y valores CSS`
+* En [W3Schools CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php) revise los `selectores CSS` para acceder a uno o varios elementos del documento HTML y [W3Schools CSS Reference](https://www.w3schools.com/cssref/index.php) `propiedades y valores CSS`
 
 ### Términos
 
