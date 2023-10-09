@@ -58,7 +58,8 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 			    | [Ejercicio 08](Capítulo01/ejercicio08)         | Modelo de cajas |
 | 			    | [Ejercicio 09](Capítulo01/ejercicio09)         | Colocación |
 | 			    | [Ejercicio 10](Capítulo01/ejercicio10)         | Posicionamiento |
-
+| Capítulo 02   | [Ejercicio 01](Capítulo02/ejercicio01)         | Diseño responsivo: Grid  |
+| 			    | [Ejercicio 02](Capítulo02/ejercicio02)         | Diseño responsivo: Flexbox  |
 
 ## Referencias 
 
