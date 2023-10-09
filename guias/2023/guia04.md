@@ -10,8 +10,8 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Escoja una combinación de familias tipografías para título de pricipal, para títulos de las secciones y para todo el documento, de acuerdo con la recomendación de [Fontjoy](https://fontjoy.com/).
-* Selecione una combinación de colores de acuerdo con la guía de [Happy Hues](https://www.happyhues.co/), [Huemint](https://huemint.com/website-2/), o [ColorMagic](https://colormagic.app/). 
+* Escoge a tu gusto una combinación de familias tipografías para título de pricipal, para los títulos de las secciones y para todo el documento, de acuerdo con la recomendación de [Fontjoy](https://fontjoy.com/). Verifica que las familias tipográficas seleccionadas también existan en [Google Fonts](https://fonts.google.com/).
+* Seleciona a tu gusto una combinación de colores de acuerdo con la guía de [Happy Hues](https://www.happyhues.co/), [Huemint](https://huemint.com/website-2/), o [ColorMagic](https://colormagic.app/). 
 
 
 ### Actividades en clase
@@ -31,16 +31,17 @@ theme: jekyll-theme-leap-day
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes actividades:
 
-1. Use un `selector universal` para asignar la familia tipográfica escogida previamente a todo el documento. 
-2. Utilice un `selector por clase` para fijar la familia tipográfica escogida previamente en todos los títulos de las secciones (&lt;h2&gt;). 
-3. Emplee un `selector por elemento` para establecer la familia tipográfica escogida previamente solo el título principal (&lt;h1&gt;). 
+1. Use un `selector universal` para asignar la familia tipográfica _'Arial, sans-serif'_ para todo el documento. 
+2. Utilice un `selector por clase` para fijar la familia tipográfica _'Times New Roman, serif'_ para todos los títulos de las secciones (&lt;h2&gt;). 
+3. Emplee un `selector por elemento` para establecer la familia tipográfica _'Georgia, serif'_ para el título principal (&lt;h1&gt;). 
 
 #### Familias tipográficas de Google Fonts
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard03.pdf) para las siguientes actividades:
 
-1. Agregue la referencia las familias tipográficas externas de [Google Fonts](https://fonts.google.com/) que seleccionó de Fontjoy.
-2. Cambie las familias tipográficas para todo el documento, los títulos de las secciones y el título principal.
+1. En Google Fonts, busque las familias tipográficas escogidas previamente de Fontjoy.
+2. Al inicio del archivo _'stylesheets/style.css'_, agregue la referencia a las familias tipográficas externas de Google Fonts.
+3. Cambie las familias tipográficas de acuerdo a su gusto.
 
 #### Color de texto y color de fondo
 
