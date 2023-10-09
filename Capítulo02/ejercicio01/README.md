@@ -2,7 +2,7 @@
 
 #### Dispositivo Fijo
 
-![image info](images/ejercicio01-1.png)
+![image info](images/ejercicio01-1.gif)
 
 #### Dispositivo Móvil (Ancho máximo: 640px)
 
