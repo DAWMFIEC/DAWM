@@ -9,7 +9,18 @@
 /* Inicio */
 
 article {
-  
+
+}
+
+/*
+
+  Agregue las propiedades al selectro img.hero-image
+  - max-width: 30%;
+  - height: 10%;
+*/
+
+img.hero-image {
+
 }
 
 /*
@@ -31,20 +42,11 @@ article > img {
 */
 
 article > div.right {
-  
+
 }
 
 
-/*
 
-  Agregue las propiedades al selectro img.hero-image
-  - max-width: 30%;
-  - height: 10%;
-*/
-
-img.hero-image {
-  
-}
 
 /* Fin */
 
@@ -62,7 +64,7 @@ img.hero-image {
 @media screen and (max-width: 640px) {
 
   div.respuesta article {
-   
+  
   }
 
 }
@@ -84,11 +86,11 @@ img.hero-image {
 @media screen and (max-width: 640px) {
 
   div.right img {
-   
+  
   }
 
   div.respuesta article img.hero-image {
-   
+  
   }
 
 }

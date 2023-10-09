@@ -62,6 +62,21 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
+    it(`En public/stylesheets/ejercicio.css utilice el/los selectores con la(s) propiedades y valor(es):
+        ${selector4} {
+          ${maxwidthname}: ${maxwidthvalue};
+          ${heightname}: ${heightvalue};
+        }`, function() {
+      return request(app)
+        .get('/stylesheets/ejercicio.css')
+        .then((response) => {
+          
+          chai.expect(response.text).to.have.rule(selector4)
+            .and.decl( maxwidthname, maxwidthvalue )
+            .and.decl( heightname, heightvalue )
+        })
+    });
+
    
     it(`En public/stylesheets/ejercicio.css utilice el/los selectores con la(s) propiedades y valor(es):
         ${selector2} {
@@ -97,22 +112,6 @@ describe('Test unitarios para la ruta `/`', function() {
             .and.decl( flexbasisname, flexbasisvalue )
         })
     });
-
-    it(`En public/stylesheets/ejercicio.css utilice el/los selectores con la(s) propiedades y valor(es):
-        ${selector4} {
-          ${maxwidthname}: ${maxwidthvalue};
-          ${heightname}: ${heightvalue};
-        }`, function() {
-      return request(app)
-        .get('/stylesheets/ejercicio.css')
-        .then((response) => {
-          
-          chai.expect(response.text).to.have.rule(selector4)
-            .and.decl( maxwidthname, maxwidthvalue )
-            .and.decl( heightname, heightvalue )
-        })
-    });
-
 
     //Responsiveness
 
