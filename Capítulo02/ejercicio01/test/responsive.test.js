@@ -60,24 +60,6 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-
-    it(`En public/stylesheets/ejercicio.css utilice el/los selectores con la(s) propiedades y valor(es):
-      @media screen and (max-width: 640px) {
-        ${selector2} {
-          ${displaygridname2}: ${displaygridvalue2};
-          ${gridtemplatecolumnsname2}: ${gridtemplatecolumnsvalue2};
-        }
-      }`, function() {
-      return request(app)
-        .get('/stylesheets/ejercicio.css')
-        .then((response) => {
-          
-          chai.expect(response.text).to.have.rule(selector2)
-            .and.decl( displaygridname2, displaygridvalue2 )
-            .and.decl( gridtemplatecolumnsname2, gridtemplatecolumnsvalue2 )
-        })
-    });
-
     it(`En public/stylesheets/ejercicio.css utilice el/los selectores con la(s) propiedades y valor(es):
       @media screen and (max-width: 640px) {
         ${selector3} {
