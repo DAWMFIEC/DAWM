@@ -6,7 +6,7 @@
 
 #### Dispositivo Móvil (Ancho máximo: 640px)
 
-![image info](images/ejercicio01-2.png)
+![image info](images/ejercicio01-2.gif)
 
 ## Instrucciones
 
