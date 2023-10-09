@@ -25,15 +25,15 @@ theme: jekyll-theme-leap-day
 
 * Levante un [`servidor HTTP` en Python](/DAWM/tutoriales/python) en la `ruta de la aplicación`.
 * Acceda desde el navegador con el URL del servidor HTTP en Python, y
-* Compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el navegador.
+* En adelante, compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el navegador.
 
 #### Estilo en cascada y familia tipográfica
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes actividades:
 
-1. Use un `selector universal` para asignar la familia tipográfica _'Arial, sans-serif'_ para todo el documento. 
-2. Utilice un `selector por clase` para fijar la familia tipográfica _'Times New Roman, serif'_ para todos los títulos de las secciones (&lt;h2&gt;). 
-3. Emplee un `selector por elemento` para establecer la familia tipográfica _'Georgia, serif'_ para el título principal (&lt;h1&gt;). 
+1. Use un `selector universal` para asignar la familia tipográfica _Arial, sans-serif_ para todo el documento. 
+2. Utilice un `selector por clase` para fijar la familia tipográfica _Times New Roman, serif_ para todos los títulos de las secciones (&lt;h2&gt;). 
+3. Emplee un `selector por elemento` para establecer la familia tipográfica _Georgia, serif_ para el título principal (&lt;h1&gt;). 
 
 #### Familias tipográficas de Google Fonts
 
