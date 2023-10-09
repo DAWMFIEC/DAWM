@@ -51,11 +51,12 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes ac
 2. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
 3. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
 
-#### Propiedades de texto
-
 #### Modelo de caja
 
-#### Centrar contenido y contenedor
+Compruebe la sugerencia de [Bard](bard/guia04-bard05.pdf) para las siguientes actividades:
+
+1. Utilice alguno de los _selectores_ para las secciones (&lt;section&gt;).
+2. Aplique a su gusto las propiedades y los valores CSS: _margin_, _border_ y _padding_. 
 
 ### Fundamental
 
@@ -66,7 +67,7 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes ac
 ### Documentación
 
 * CSS en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/CSS).
-* En [W3Schools CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php) revise los `selectores CSS` para acceder a uno o varios elementos del documento HTML y [W3Schools CSS Reference](https://www.w3schools.com/cssref/index.php) `propiedades y valores CSS`
+* En [W3Schools CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php) revise los `selectores CSS` para acceder a uno o varios elementos del documento HTML y [W3Schools CSS Reference](https://www.w3schools.com/cssref/index.php) para aplicar las `propiedades y valores CSS`.
 
 ### Términos
 
