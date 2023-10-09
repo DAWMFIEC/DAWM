@@ -1,9 +1,5 @@
 
-| Capítulo 03   | [Ejercicio 01](Capítulo03/ejercicio01)         | Etiqueta script  |
-| 				| [Ejercicio 02](Capítulo03/ejercicio02)         | Fundamentos  |
-|               | [Ejercicio 03](Capítulo03/ejercicio03)         | Control de flujo y Funciones  |
-| 				| [Ejercicio 04](Capítulo03/ejercicio04)         | DOM  |
-| 				| [Ejercicio 05](Capítulo03/ejercicio05)         | Eventos |
+
 | 				| [Ejercicio 06](Capítulo03/ejercicio06)         | Promesas y Async/Await  |
 | 				| [Ejercicio 07](Capítulo03/ejercicio07)         | Servidor HTTP - Básico  |
 | 				| [Ejercicio 08](Capítulo03/ejercicio08)         | Servidor HTTP - URL + Headers   |
