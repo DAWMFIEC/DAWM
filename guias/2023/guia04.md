@@ -51,6 +51,18 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes ac
 2. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
 3. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
 
+#### Propiedades de texto
+
+#### Modelo de caja
+
+#### Centrar contenido y contenedor
+
+### Fundamental
+
+* Generadores de CSS en [X](https://twitter.com/Div_pradeep/status/1710898245570892182) 
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">HTTP 1.0 -&gt; HTTP 1.1 -&gt; HTTP 2.0 -&gt; HTTP 3.0 (QUIC).<br><br>What problem does each generation of HTTP solve?<br><br>The diagram below illustrates the key features.<br><br>🔹HTTP 1.0 was finalized and fully documented in 1996. Every request to the same server requires a separate TCP connection.… <a href="https://t.co/V9uSXv0tvn">pic.twitter.com/V9uSXv0tvn</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1692560840853962987?ref_src=twsrc%5Etfw">August 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Documentación
 
 * CSS en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/CSS).
