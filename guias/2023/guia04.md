@@ -39,9 +39,9 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes ac
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard03.pdf) para las siguientes actividades:
 
-1. En Google Fonts, busque las familias tipográficas escogidas previamente de Fontjoy.
-2. Al inicio del archivo _'stylesheets/style.css'_, agregue la referencia a las familias tipográficas externas de Google Fonts.
-3. Cambie las familias tipográficas de acuerdo a su gusto.
+1. En Google Fonts, genere la referencia a las familias tipográficas escogidas previamente de Fontjoy.
+2. Al inicio del archivo _'stylesheets/style.css'_, agregue la referencia a las familias tipográficas de Google Fonts.
+3. Asigne a su gusto las familias tipográficas a los selectores.
 
 #### Color de texto y color de fondo
 
