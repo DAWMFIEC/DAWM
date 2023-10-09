@@ -62,7 +62,11 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard05.pdf) para las siguientes ac
 
 * Generadores de CSS en [X](https://twitter.com/Div_pradeep/status/1710898245570892182) 
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">HTTP 1.0 -&gt; HTTP 1.1 -&gt; HTTP 2.0 -&gt; HTTP 3.0 (QUIC).<br><br>What problem does each generation of HTTP solve?<br><br>The diagram below illustrates the key features.<br><br>🔹HTTP 1.0 was finalized and fully documented in 1996. Every request to the same server requires a separate TCP connection.… <a href="https://t.co/V9uSXv0tvn">pic.twitter.com/V9uSXv0tvn</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1692560840853962987?ref_src=twsrc%5Etfw">August 18, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">10 CSS Generators to save you hours of work:<br><br>1. Blob maker<a href="https://t.co/ExD4VVBZhS">https://t.co/ExD4VVBZhS</a><br><br>2. Getwaves<a href="https://t.co/gGDI7pqFda">https://t.co/gGDI7pqFda</a><br><br>3. Neumorphism<a href="https://t.co/NSaOALMj7j">https://t.co/NSaOALMj7j</a><br><br>4. Glassmorphism<a href="https://t.co/iWTpASvFAQ">https://t.co/iWTpASvFAQ</a><br><br>5. CSS Glow Generator<a href="https://t.co/8Moqd2n9nr">https://t.co/8Moqd2n9nr</a><br><br>6. Cubic-bezier… <a href="https://t.co/aDuLPUJkCD">pic.twitter.com/aDuLPUJkCD</a></p>&mdash; Pradeep Pandey (@Div_pradeep) <a href="https://twitter.com/Div_pradeep/status/1710898245570892182?ref_src=twsrc%5Etfw">October 8, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+* Animaciones CSS en [X](https://twitter.com/carmenansio/status/1710351098211389450)
+
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">🚀 Más de 500 animaciones de carga creadas con un único elemento en CSS<a href="https://t.co/kVvt9DHzFy">https://t.co/kVvt9DHzFy</a> <a href="https://t.co/VEaBgXpgyR">pic.twitter.com/VEaBgXpgyR</a></p>&mdash; Cosmic Red 🔥 (@carmenansio) <a href="https://twitter.com/carmenansio/status/1710351098211389450?ref_src=twsrc%5Etfw">October 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Documentación
 
