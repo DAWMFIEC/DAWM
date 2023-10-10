@@ -55,8 +55,17 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes ac
 
 Compruebe la sugerencia de [Bard](bard/guia04-bard05.pdf) para las siguientes actividades:
 
-1. Utilice alguno de los _selectores_ para las secciones (&lt;section&gt;).
-2. Aplique a su gusto las propiedades y los valores CSS: _margin_, _border_ y _padding_. 
+1. Utilice alguno de los _selectores_ (por clase o por identificador) para las secciones (&lt;section&gt;).
+2. Aplique a su gusto las propiedades y los valores CSS: _margin_, _border_ y _padding_, por ejemplo:
+
+  ```
+  #principal {
+    margin: 2px 1px 1.5px;
+    margin-top: 0.8rem;
+    border: 1pt solid black;
+    padding: 2% 1.2%;  
+  }
+  ```
 
 ### Fundamental
 
