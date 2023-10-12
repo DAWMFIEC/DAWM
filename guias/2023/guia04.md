@@ -67,6 +67,8 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard05.pdf) para las siguientes ac
   }
   ```
 
+* Versiona local y remotamente el repositorio **curriculum**.
+
 ### Fundamental
 
 * Generadores de CSS en [X](https://twitter.com/Div_pradeep/status/1710898245570892182) 
