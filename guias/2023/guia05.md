@@ -15,7 +15,7 @@ theme: jekyll-theme-leap-day
 
 #### Grid vs Flexbox
 
-* Considere el siguiente diseño al aplicar `flexbox` y `grid` para la `colocación de elementos`:
+* Considere el siguiente diseño al aplicar `flexbox` y `grid` para la `colocación de elementos`.
 
 <img src="imagenes/diseno.png" alt="diseño">
 
@@ -69,9 +69,9 @@ theme: jekyll-theme-leap-day
 
 		/* Nombres de las áreas*/
 		grid-template-areas: "A A A A A A" 
-												 "B B B Q Q Q"
-												 "D D E E F F"
-												 "M M M T T T"
+                       "B B B Q Q Q"
+                       "D D E E F F"
+                       "M M M T T T"
 
 	```
 
