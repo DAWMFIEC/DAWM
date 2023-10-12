@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 
 	```
 
-		/* Modo de colocar los elementos internos a grid */
+		/* Modo de colocar los elementos internos en una rejilla */
 		display: grid; 
 
 		/* Separación entre filas */
@@ -58,7 +58,7 @@ theme: jekyll-theme-leap-day
 
 	```
 
-		/* Modo de colocar los elementos internos a grid */
+		/* Modo de colocar los elementos internos en una rejilla */
 		display: grid; 
 
 		/* Separación entre filas */
@@ -68,10 +68,10 @@ theme: jekyll-theme-leap-day
 		column-gap: 0.5rem; 
 
 		/* Nombres de las áreas*/
-		grid-template-areas: "A A A A A A" 
-                       "B B B Q Q Q"
-                       "D D E E F F"
-                       "M M M T T T"
+		grid-template-areas: "A A A A A A"
+	                         "B B B Q Q Q"
+	                         "D D E E F F"
+	                         "M M M T T T"
 
 	```
 
@@ -86,16 +86,37 @@ theme: jekyll-theme-leap-day
 
 **Flexbox**
 
-* Modifique el archivo `css/flexbox.css`
-* Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __display: flex;__ <mark># Modo de colocar los elementos internos a flex</mark><br>
-	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
-	> __column-gap: 0.5rem;__ <mark># Separación entre columnas</mark><br>
-	> __flex-wrap: wrap;__ <mark># Los ítems ocupan el espacio de acuerdo a su tamaño</mark><br>
-	> __justify-content: space-between;__ <mark># Los elementos internos se distribuyen por igual</mark><br>
+* Modifique el archivo _css/grid_columnas.css_.
+* Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
 
-* Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __width: <mark>Porcentaje</mark>%;__ <br>
+	```
+
+		/* Modo de colocar los elementos internos de manera flexible */
+		display: flex; 
+
+		/* Separación entre filas */
+		row-gap: 0.5rem; 
+
+		/* Separación entre columnas */
+		column-gap: 0.5rem; 
+
+		/* Los ítems ocupan el espacio de acuerdo a su tamaño */
+		flex-wrap: wrap;
+
+		/* Los elementos internos se distribuyen por igual */
+		justify-content: space-between;
+
+	```
+
+* Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. 
+* Coloque los valores para **porcentaje**. Verifique los cambios en el navegador
+	
+	```
+
+		width: porcentaje;
+
+	```
+
 
 #### Diseño
 
