@@ -8,19 +8,11 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-#### Diseño
-
-* Elija una estructura para el sitio de [Frontend Practice](https://www.frontendpractice.com/projects)
-	
-	**Mínimo:** Su diseño debe considerar que los elementos estén apilados y, al menos, una fila que contenga dos elementos.
-
 #### Ejercicio de colocación de elementos
 
 * Descargue el ejercicio de [colocación](ejercicios/colocacion.zip). 
 * Utilice **Visual Studio Code** para abrir el ejercicio de colocación.
 * Instale el [Live Server de Visual Studio Code](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
-
-### Actividades
 
 #### Grid vs Flexbox
 
@@ -65,6 +57,18 @@ theme: jekyll-theme-leap-day
 
 * Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
 	> __width: <mark>Porcentaje</mark>%;__ <br>
+
+#### Diseño
+
+* Elija una estructura para el sitio de [Frontend Practice](https://www.frontendpractice.com/projects)
+	
+	**Mínimo:** Su diseño debe considerar que los elementos estén apilados y, al menos, una fila que contenga dos elementos.
+
+
+
+### Actividades
+
+
 
 
 ### Documentación
