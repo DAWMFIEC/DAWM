@@ -1,4 +1,4 @@
-
+  * [Guía 07: Bootstrap](guias/2023/guia07)
 * [Proyecto 03: Landing Page SPA - Bootstrap](proyectos/2023/proyecto03)
   * [Guía 06: Responsive Design](guias/2023/guia06)
   * [Guía 07: Bootstrap](guias/2023/guia07)
@@ -24,3 +24,11 @@
   * [Guía 23: Express y Angular - Integración por API](guias/2023/guia23) 
   * [Guía 24: Express - Verificación y Validación con JWT](guias/2023/guia24)
   * [Guía 25: Express - Despliegue en Railway](guias/2023/guia25)
+
+
+#### Centrar contenido y contenedor
+
+Busque y compruebe la documentación en [CSS: Centering things](https://www.w3.org/Style/Examples/007/center.en.html) para las siguientes actividades:
+
+1. Tome como referencia la sección &lt;section&gt; que contiene el mapa &lt;iframe&gt;. 
+2. Centre horizontalmente **el contenedor** &lt;section&gt; o **el contenido** &lt;iframe&gt;.
