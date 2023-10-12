@@ -19,19 +19,19 @@ theme: jekyll-theme-leap-day
 
 <img src="imagenes/diseno.png" alt="diseño">
 
-##### `Grid por columnas` 
+##### Grid por columnas 
 
-* Modifique el archivo `css/grid_columnas.css`
-* Utilice el selector CSS para la etiqueta `<main>`. Aplique cada una de las siguientes propiedades y verifique los cambios:
+* Modifique el archivo _css/grid_columnas.css_
+* Utilice el selector CSS para la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador:
 	> __display: grid;__ <mark>/* Modo de colocar los elementos internos a grid */</mark><br>
 	> __row-gap: 0.5rem;__ <mark>/* Separación entre filas */</mark><br>
 	> __column-gap: 0.5rem;__ <mark>/* Separación entre columnas */</mark><br>
-	> __grid-template-columns: repeat(6, 1fr);__ <mark>/* Número de columnas donde colocar los elementos */</mark><br>
-
-* Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
+	> __grid-template-columns: repeat(6, 1fr);__ <mark>/* Número de columnas donde colocar los elementos */</mark>
+	<br>
+* Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. Indique los valores para las propiedades _grid-column_ y _grid-row_. Verifique los cambios en el navegador:
 	> __grid-column: <mark>Número de columna de inicio</mark> / <mark>Número de columna de fin</mark>;__, y<br>
-	> __grid-row: <mark>Número de fila de inicio</mark> / <mark>Número de fila de fin</mark>;__ <br>
-
+	> __grid-row: <mark>Número de fila de inicio</mark> / <mark>Número de fila de fin</mark>;__
+	<br>
 ##### `Grid por areas` 
 
 * Modifique el archivo `css/grid_areas.css`
