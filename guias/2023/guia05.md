@@ -131,10 +131,13 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Elija una estructura para el sitio de [Frontend Practice](https://www.frontendpractice.com/projects)
+* Tome como referencia [Frontend Practice](https://www.frontendpractice.com/projects) para elegir la colocación de elementos de su proyecto.
 	
 	**Mínimo:** Su diseño NO solo debe considerar que los elementos estén apilados. Al menos, una fila debe contener dos elementos.
 
+* Clona localmente tu repositorio **curriculum**.
+* Aplique la colocación de elementos en su proyecto.
+* Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 
