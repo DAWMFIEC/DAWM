@@ -23,15 +23,21 @@ theme: jekyll-theme-leap-day
 
 * Modifique el archivo _css/grid_columnas.css_.
 * Utilice el selector CSS para la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador:
-	> __display: grid;__ <mark>/* Modo de colocar los elementos internos a grid */</mark><br>
-	> __row-gap: 0.5rem;__ <mark>/* Separación entre filas */</mark><br>
-	> __column-gap: 0.5rem;__ <mark>/* Separación entre columnas */</mark><br>
-	> __grid-template-columns: repeat(6, 1fr);__ <mark>/* Número de columnas donde colocar los elementos */</mark><br>
+
+	<pre><code>
+		display: grid;                         /* Modo de colocar los elementos internos a grid */
+		row-gap: 0.5rem;                       /* Separación entre filas */
+		column-gap: 0.5rem;   								 /* Separación entre columnas */
+		grid-template-columns: repeat(6, 1fr); /* Número de columnas donde colocar los elementos */
+	</code></pre>
+	
 * Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. Indique los valores para las propiedades _grid-column_ y _grid-row_. Verifique los cambios en el navegador:
 	> __grid-column: <mark>Número de columna de inicio</mark> / <mark>Número de columna de fin</mark>;__, y<br>
 	> __grid-row: <mark>Número de fila de inicio</mark> / <mark>Número de fila de fin</mark>;__
 	<br>
 	<br>
+
+
 ##### **Grid por area**
 
 * Modifique el archivo _css/grid_areas.css_.
