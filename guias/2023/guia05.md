@@ -35,7 +35,7 @@ theme: jekyll-theme-leap-day
 		/* Separación entre columnas */
 		column-gap: 0.5rem; 
 
-		/* Número de columnas */
+		/* Número de columnas: 6 * 1fr */
 		grid-template-columns: repeat(6, 1fr); 
 
 	```
@@ -54,15 +54,35 @@ theme: jekyll-theme-leap-day
 **Grid por area**
 
 * Modifique el archivo _css/grid_areas.css_.
-* Utilice el selector CSS para la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador:
-	> __display: grid;__ <mark>/* Modo de colocar los elementos internos a grid */</mark><br>
-	> __row-gap: 0.5rem;__ <mark>/* Separación entre filas */</mark><br>
-	> __column-gap: 0.5rem;__ <mark>/* Separación entre columnas*/</mark><br>
-	> __grid-template-areas: \"fila1 fila1 fila1 fila1 fila1 fila1\" <br> \"fila21 fila21 fila21 fila22 fila22 fila22\" <br> \"fila31 fila31 fila32 fila32 fila33 fila33\" <br> \"fila41 fila41 fila41 fila42 fila42 fila42\"__; <mark>/* Nombres de las áreas*/</mark><br>
-* Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. Indique los valores para las propiedades _grid-column_ y _grid-row_. Verifique los cambios en el navegador:
-	> __grid-area: <mark>Nombre del área</mark>;__
-	<br>
-	<br>
+* Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
+
+	```
+
+		/* Modo de colocar los elementos internos a grid */
+		display: grid; 
+
+		/* Separación entre filas */
+		row-gap: 0.5rem; 
+
+		/* Separación entre columnas */
+		column-gap: 0.5rem; 
+
+		/* Nombres de las áreas*/
+		grid-template-areas: "A A A A A A" 
+												 "B B B Q Q Q"
+												 "D D E E F F"
+												 "M M M T T T"
+
+	```
+
+* Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. 
+* Coloque los valores para **idarea**. Verifique los cambios en el navegador
+	
+	```
+
+		grid-area: idarea;
+
+	```
 
 **Flexbox**
 
