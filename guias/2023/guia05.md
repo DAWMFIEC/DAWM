@@ -19,10 +19,10 @@ theme: jekyll-theme-leap-day
 
 <img src="imagenes/diseno.png" alt="diseño">
 
-##### **Grid por columnas** 
+1. **Grid por columnas** 
 
 * Modifique el archivo _css/grid_columnas.css_.
-* Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador:
+* Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
 
 	```
 	display: grid; /* Modo de colocar los elementos internos a grid */
@@ -31,14 +31,16 @@ theme: jekyll-theme-leap-day
 	grid-template-columns: repeat(6, 1fr); /* Número de columnas donde colocar los elementos */
 	```
 	
-* Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. Indique los valores para las propiedades _grid-column_ y _grid-row_. Verifique los cambios en el navegador:
-	> __grid-column: <mark>Número de columna de inicio</mark> / <mark>Número de columna de fin</mark>;__, y<br>
-	> __grid-row: <mark>Número de fila de inicio</mark> / <mark>Número de fila de fin</mark>;__
-	<br>
-	<br>
+* Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. 
+* Coloque los valores para **cinicio**, **cfinal**, **finicio** y **ffinal**. Verifique los cambios en el navegador/
+	
+	```
+		grid-column: cinicio / cfinal;
+		grid-row: finicio / ffinal;
+	```
 
 
-##### **Grid por area**
+2. **Grid por area**
 
 * Modifique el archivo _css/grid_areas.css_.
 * Utilice el selector CSS para la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador:
@@ -51,7 +53,7 @@ theme: jekyll-theme-leap-day
 	<br>
 	<br>
 
-##### `Flexbox`
+3. **Flexbox**
 
 * Modifique el archivo `css/flexbox.css`
 * Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
