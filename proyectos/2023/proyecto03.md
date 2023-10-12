@@ -27,4 +27,5 @@ La respuesta es:
 ### Guías
 
 * [Guía 06: Responsive Design y Bootstrap](/DAWM/guias/2023/guia06)
+* [Guía 07: Bootstrap](/DAWM/guias/2023/guia07)
 
