@@ -92,28 +92,37 @@ theme: jekyll-theme-leap-day
 	```
 
 		/* Modo de colocar los elementos internos de manera flexible */
-		display: flex; 
+	  display: flex; 
 
-		/* Separación entre filas */
-		row-gap: 0.5rem; 
+	  /* Eje primario con la dirección de los elementos */
+	  flex-direction: row;
 
-		/* Separación entre columnas */
-		column-gap: 0.5rem; 
+	  /* Separación entre filas */
+	  row-gap: 0.5rem; 
 
-		/* Los ítems ocupan el espacio de acuerdo a su tamaño */
-		flex-wrap: wrap;
+	  /* Separación entre columnas */
+	  column-gap: 0.5rem; 
 
-		/* Los elementos internos se distribuyen por igual */
-		justify-content: space-between;
+	  /* Los elementos ocupan el espacio de acuerdo a su tamaño */
+	  flex-wrap: wrap;
+
+	  /* Los elementos están distribuidos uniformemente en el eje primario  */
+	  justify-content: space-between;
+
+	  /* Los elementos se estiran para llenar el eje transversal */
+	  align-items: stretch;
 
 	```
 
 * Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. 
-* Coloque los valores para **porcentaje**. Verifique los cambios en el navegador
+* Coloque los valores para **valor**. Verifique los cambios en el navegador
 	
 	```
 
-		width: porcentaje;
+		flex-basis: valor%;
+
+		/* El espacio restante en el contenedor se distribuirá equitativamente entre todos los elementos internos */
+		flex-grow: 1;
 
 	```
 
