@@ -15,34 +15,35 @@ theme: jekyll-theme-leap-day
 
 #### Grid vs Flexbox
 
-* Considere el siguiente diseño al aplicar flexbox y grid para la disposición de elementos:
+* Considere el siguiente diseño al aplicar `flexbox` y `grid` para la `colocación de elementos`:
 
 <img src="imagenes/diseno.png" alt="diseño">
 
-##### Grid por columnas 
+##### **Grid por columnas** 
 
-* Modifique el archivo _css/grid_columnas.css_
+* Modifique el archivo _css/grid_columnas.css_.
 * Utilice el selector CSS para la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador:
 	> __display: grid;__ <mark>/* Modo de colocar los elementos internos a grid */</mark><br>
 	> __row-gap: 0.5rem;__ <mark>/* Separación entre filas */</mark><br>
 	> __column-gap: 0.5rem;__ <mark>/* Separación entre columnas */</mark><br>
-	> __grid-template-columns: repeat(6, 1fr);__ <mark>/* Número de columnas donde colocar los elementos */</mark>
-	<br>
+	> __grid-template-columns: repeat(6, 1fr);__ <mark>/* Número de columnas donde colocar los elementos */</mark><br>
 * Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. Indique los valores para las propiedades _grid-column_ y _grid-row_. Verifique los cambios en el navegador:
 	> __grid-column: <mark>Número de columna de inicio</mark> / <mark>Número de columna de fin</mark>;__, y<br>
 	> __grid-row: <mark>Número de fila de inicio</mark> / <mark>Número de fila de fin</mark>;__
 	<br>
-##### `Grid por areas` 
+	<br>
+##### **Grid por area**
 
-* Modifique el archivo `css/grid_areas.css`
-* Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __display: grid;__ <mark># Modo de colocar los elementos internos a grid</mark><br>
-	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
-	> __column-gap: 0.5rem;__ <mark># Separación entre columnas</mark><br>
-	> __grid-template-areas: \"fila1 fila1 fila1 fila1 fila1 fila1\" <br> \"fila21 fila21 fila21 fila22 fila22 fila22\" <br> \"fila31 fila31 fila32 fila32 fila33 fila33\" <br> \"fila41 fila41 fila41 fila42 fila42 fila42\"__; <mark># Nombres de las áreas</mark><br>
-	
-* Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __grid-area: <mark>Nombre del área</mark>;__ <br>
+* Modifique el archivo _css/grid_areas.css_.
+* Utilice el selector CSS para la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador:
+	> __display: grid;__ <mark>/* Modo de colocar los elementos internos a grid */</mark><br>
+	> __row-gap: 0.5rem;__ <mark>/* Separación entre filas */</mark><br>
+	> __column-gap: 0.5rem;__ <mark>/* Separación entre columnas*/</mark><br>
+	> __grid-template-areas: \"fila1 fila1 fila1 fila1 fila1 fila1\" <br> \"fila21 fila21 fila21 fila22 fila22 fila22\" <br> \"fila31 fila31 fila32 fila32 fila33 fila33\" <br> \"fila41 fila41 fila41 fila42 fila42 fila42\"__; <mark>/* Nombres de las áreas*/</mark><br>
+* Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. Indique los valores para las propiedades _grid-column_ y _grid-row_. Verifique los cambios en el navegador:
+	> __grid-area: <mark>Nombre del área</mark>;__
+	<br>
+	<br>
 
 ##### `Flexbox`
 
@@ -79,7 +80,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-Colocación de cajas, `flexbox`, `grid`, servidor http, localhost, puerto, IP
+Colocación de elementos, flexbox, grid
 
 ### Referencias
 
