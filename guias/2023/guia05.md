@@ -15,18 +15,18 @@ theme: jekyll-theme-leap-day
 
 #### Grid vs Flexbox
 
-* Considere el siguiente diseño para la disposición de elementos al aplicar flexbox y grid:
+* Considere el siguiente diseño al aplicar flexbox y grid para la disposición de elementos:
 
 <img src="imagenes/diseno.png" alt="diseño">
 
 ##### `Grid por columnas` 
 
 * Modifique el archivo `css/grid_columnas.css`
-* Utilice el selector CSS para la etiqueta `<main>` y aplique las siguientes propiedades:
-	> __display: grid;__ <mark># Modo de colocar los elementos internos a grid</mark><br>
-	> __row-gap: 0.5rem;__ <mark># Separación entre filas</mark><br>
-	> __column-gap: 0.5rem;__ <mark># Separación entre columnas</mark><br>
-	> __grid-template-columns: repeat(6, 1fr);__ <mark># Número de columnas donde colocar los elementos</mark><br>
+* Utilice el selector CSS para la etiqueta `<main>`. Aplique cada una de las siguientes propiedades y verifique los cambios:
+	> __display: grid;__ <mark>//* Modo de colocar los elementos internos a grid \*/</mark><br>
+	> __row-gap: 0.5rem;__ <mark>/* Separación entre filas \*/</mark><br>
+	> __column-gap: 0.5rem;__ <mark>/* Separación entre columnas \*/</mark><br>
+	> __grid-template-columns: repeat(6, 1fr);__ <mark>/* Número de columnas donde colocar los elementos \*/</mark><br>
 
 * Utilice los selectores CSS para cada elemento `<section>` dentro de la etiqueta `<main>` y aplique las siguientes propiedades:
 	> __grid-column: <mark>Número de columna de inicio</mark> / <mark>Número de columna de fin</mark>;__, y<br>
