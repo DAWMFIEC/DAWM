@@ -56,7 +56,7 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes ac
 Compruebe la sugerencia de [Bard](bard/guia04-bard05.pdf) para las siguientes actividades:
 
 1. Utilice alguno de los _selectores_ (por clase o por identificador) para acceder a una sección (&lt;section&gt;).
-2. Aplique a su gusto las propiedades y los valores CSS para el modelo de caja: _margin_, _border_ y _padding_, por ejemplo:
+2. Aplique a su gusto las `propiedades CSS` y los `valores CSS` para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
 
   ```
   #principal {
@@ -84,7 +84,7 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard05.pdf) para las siguientes ac
 
 ### Términos
 
-servidor HTTP, ruta de la aplicación, CSS, reglas CSS, selectores CSS, propiedades y valores CSS
+servidor HTTP, ruta de la aplicación, CSS, reglas CSS, selectores CSS, propiedades CSS, valores CSS, modelo de caja
 
 ### Referencias
 
