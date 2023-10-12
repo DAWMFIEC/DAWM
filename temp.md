@@ -1,5 +1,3 @@
-  * [Guía 04: CSS - Selectores CSS, propiedades y modelo de caja](guias/2023/guia04)
-  * [Guía 05: CSS - Grid vs Flexbox](guias/2023/guia05)
 
 * [Proyecto 03: Landing Page SPA - Bootstrap](proyectos/2023/proyecto03)
   * [Guía 06: Responsive Design](guias/2023/guia06)
