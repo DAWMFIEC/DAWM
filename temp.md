@@ -1,4 +1,3 @@
-  * [Guía 07: Bootstrap](guias/2023/guia07)
 * [Proyecto 03: Landing Page SPA - Bootstrap](proyectos/2023/proyecto03)
   * [Guía 06: Responsive Design](guias/2023/guia06)
   * [Guía 07: Bootstrap](guias/2023/guia07)
