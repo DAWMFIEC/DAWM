@@ -1,0 +1,75 @@
+/* 
+    Agregue las propiedades y los valores para:
+    
+    - Ancho al 100%
+    - Ancho máximo al 100% del contenedor (no se redimensione más que el tamaño original )
+    - Altura automática
+*/
+
+/* Inicio */
+img {
+
+}
+/* Fin */
+
+.contenedor, .fila {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    
+    row-gap: 0.5%;
+    column-gap: 0.5%;
+}
+
+.contenedor {
+    flex-wrap: wrap;
+}
+
+.fila {
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+/* 
+    Agregue las propiedades y los valores para:
+    
+    - Ancho al 80%
+*/
+
+/* Inicio */
+.col-8 {
+
+}
+/* Fin */
+
+
+/* 
+    Agregue las propiedades y los valores para:
+    
+    - Ancho al 40%
+*/
+
+/* Inicio */
+.col-4 {
+
+}
+/* Fin */
+
+
+/* 
+    Agregue el media query para la pantalla de dispositivo (screen) y para un ancho máximo de 768px:
+    
+        @media screen and (max-width: 768px)
+        
+    Dentro del media query:
+
+            .fila {
+            flex-wrap: wrap;
+            }
+
+            .col-md-12 {
+                width: 100%;
+            }  
+
+*/
