@@ -26,7 +26,8 @@ theme: jekyll-theme-leap-day
 * Analice las respuesta de [ChatGPT](chatgpt/guia06-recomendacion01.png) a las preguntas:
 
   ```
-  Como desarrollador web, ¿cuáles son los pasos para crear un sitio web a partir de una plantilla de Bootstrap?
+  Como desarrollador web, ¿cuáles son los pasos para 
+  crear un sitio web a partir de una plantilla de Bootstrap?
   ``` 
   y 
 
@@ -36,7 +37,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-1. Obtenga una plantilla (**gratuita** y solo con las tecnologías **HTML**, **CSS** y **Javascript**) de Bootstrap de [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false)
+1. Obtenga una plantilla (gratuita y solo con las tecnologías HTML) de Bootstrap de [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false)
 2. Descargue y descomprima los archivos en su directorio local. 
 3. Compruebe la estructura local: HTML, CSS, JavaScript y carpetas para imágenes, fuentes y otros recursos.
 4. Abra la carpeta en VSCode y levante el live server. 
@@ -48,13 +49,13 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
  
-* [Bootstrap](https://getbootstrap.com/) es un kit de herramientas para front-end potente, ampliable y repleto de funciones. Con el cual puedes crear y personalizar con Sass, utilizar el sistema de grillas y los componentes prediseñados.
+* [Bootstrap](https://getbootstrap.com/) es un `kit de herramientas` para `front-end` potente, ampliable y repleto de funciones. Con el cual puedes crear y personalizar con Sass, utilizar el sistema de grillas y los `componentes` prediseñados.
 	- Algunas características distintivas de la versión 5 se encuentran en la [documentación oficial](https://getbootstrap.com/docs/5.0/migration/) y en [Web3canvas](https://web3canvas.com/convert-bootstrap-4-to-5-migration-guide/).
 
 
 ### Términos
 
-`Front-end`, `CDN` ,`toolkit`, componentes
+front-end, kit de herramientas, componentes
 
 ### Referencias
 
