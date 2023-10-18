@@ -87,7 +87,7 @@ theme: jekyll-theme-leap-day
 
 **Flexbox**
 
-* Modifique el archivo _css/grid_columnas.css_.
+* Modifique el archivo _css/flexbox.css_.
 * Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
 
 	```
