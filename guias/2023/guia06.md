@@ -18,25 +18,12 @@ theme: jekyll-theme-leap-day
      + En los sitios [Responsinator](http://www.responsinator.com/), [Website planet](https://www.websiteplanet.com/es/webtools/responsive-checker/) o [Browserstack](https://www.browserstack.com/responsive).
   3. Distinga las diferencias entre la vista entre 2 diferentes dimensiones de dispositivos, p.e.: dispositivo móvil y dispositivo desktop.
 
-#### Diseño
+#### Landing Page
 
-* Identifique una idea para un sitio web, p.e.: venta de productos de belleza, grupo estudiantil, etc. 
-* Escoja la estructura del sitio, p.e. tome como referencia alguna de las plantillas de [Frontend practice](https://www.frontendpractice.com/projects). 
-* Organice el contenido del sitio una alguna herramienta de diseño, p.e.: [moqups](https://moqups.com/es/) o [Figma](https://www.figma.com/).
+* Defina los objetivos de la  `landing page`, p.e.: venta de productos de belleza, grupo estudiantil, veterinaria, noticias de KPOP etc. 
+* Decida las secciones y el contenido que serán parte de la landing page. Esto puede incluir encabezados, imágenes, videos, testimonios, formularios de registro, etc.
+* Seleccione una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
 
-#### Bootstrap
-
-* Analice las respuesta de [ChatGPT](chatgpt/guia06-recomendacion01.png) a las preguntas:
-
-  ```
-  Como desarrollador web, ¿cuáles son los pasos para 
-  crear un sitio web a partir de una plantilla de Bootstrap?
-  ``` 
-  y 
-
-  ```
-  Lista con URLs de sitios web con plantillas gratuitas de Bootstrap
-  ```
 
 ### Actividades
 
@@ -64,7 +51,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-responsivo
+responsivo, landing page
 front-end, kit de herramientas, componentes
 
 ### Referencias
