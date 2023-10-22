@@ -19,7 +19,10 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    let script1 = [`arreglo = document.getElementsByClassName('respuesta')`,`elemento = arreglo[0]`,`elemento.innerHTML = snippet`]
+    let script1 = [
+      `arreglo = document.getElementsByClassName('respuesta')`,
+      `elemento = arreglo[0]`,
+      `elemento.innerHTML = snippet`]
     let script2 = [
             `audio = document.getElementById('audio1')`,
             `arreglo = document.getElementsByClassName('plItem')`,
