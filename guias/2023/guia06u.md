@@ -11,14 +11,13 @@ theme: jekyll-theme-leap-day
 #### Responsive Web Design (RWD)
 
 * Considere las sugerencias de [Bard](bard/guia06-bard01.pdf) para crear sitios web responsivos.
-  - Identifique un sitio, p.e.: [ESPOL](http://www.espol.edu.ec/), y 
-  - Revise la vista del sitio para dispositivos móviles, con:
-    + El inspector del navegador, en la opción **Toggle device toolbar**, o 
-	  + En los sitios [Responsinator](http://www.responsinator.com/), [Website planet](https://www.websiteplanet.com/es/webtools/responsive-checker/) o [Browserstack](https://www.browserstack.com/responsive).
+* Visite el sitio de [ESPOL](http://www.espol.edu.ec/) y revise la vista del sitio para dispositivos móviles, con:
+	- El inspector (en la opción **Toggle device toolbar**), 
+	- En los sitios [Responsinator](http://www.responsinator.com/), [Website planet](https://www.websiteplanet.com/es/webtools/responsive-checker/) o [Browserstack](https://www.browserstack.com/responsive).
 
 #### Diseño
 
-* Identifique una idea para un sitio web, p.e.: venta de productos de belleza, grupo estudiantil, etc. 
+* Identifique una idea para un sitio web, p.e.: venta de productos de belleza, proveer de información acerca de un grupo estudiantil, etc. 
 * Escoja la estructura del sitio, p.e. tome como referencia alguna de las plantillas de [Frontend practice](https://www.frontendpractice.com/projects). 
 * Organice el contenido del sitio una alguna herramienta de diseño, p.e.: [moqups](https://moqups.com/es/) o [Figma](https://www.figma.com/).
 
