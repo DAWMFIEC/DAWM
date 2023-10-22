@@ -15,7 +15,7 @@ function byId() {
 
 
     /*Inicio*/
-
+    
     /*Fin*/
 }
 
@@ -38,7 +38,7 @@ function byClass() {
 
 
     /*Inicio*/
-
+    
     /*Fin*/
 
 }
@@ -63,7 +63,7 @@ function byTagName() {
 
 
     /*Inicio*/
-
+    
     /*Fin*/
 
 }
@@ -107,7 +107,7 @@ function querySelector() {
 
 
     /*Inicio*/
-
+    
     /*Fin*/
 
 }

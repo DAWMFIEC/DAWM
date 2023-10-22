@@ -21,10 +21,20 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    let script1 = [`elemento = document.getElementById("nombre");`,`elemento.textContent = 'Muhammed Erdem'`]
-    let script2 = [`arreglo = document.getElementsByClassName('profile-card-loc__txt')`,`elemento = arreglo[0]`, `elemento.textContent = 'Istanbul, Turkey'`]
-    let script3 = [`arreglo = document.getElementsByTagName('img')`,`elemento = arreglo[0]`, `elemento.setAttribute('src','https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg')`]
-    let script4 = [`elemento = document.querySelector('div.profile-card-inf')`,` elemento.innerHTML = textoHTML`]
+    let script1 = [
+      `elemento = document.getElementById("nombre");`,
+      `elemento.textContent = 'Muhammed Erdem'`]
+    let script2 = [
+      `arreglo = document.getElementsByClassName('profile-card-loc__txt')`,
+      `elemento = arreglo[0]`, 
+      `elemento.textContent = 'Istanbul, Turkey'`]
+    let script3 = [
+      `arreglo = document.getElementsByTagName('img')`,
+      `elemento = arreglo[0]`, 
+      `elemento.setAttribute('src','https://res.cloudinary.com/muhammederdem/image/upload/v1537638518/Ba%C5%9Fl%C4%B1ks%C4%B1z-1.jpg')`]
+    let script4 = [
+      `elemento = document.querySelector('div.profile-card-inf')`,
+      `elemento.innerHTML = textoHTML`]
 
     it(`En public/scripts/ejercicio.js con el código:
 
