@@ -14,8 +14,8 @@ theme: jekyll-theme-leap-day
 * Analiza la capacidad de respuesta de un sitio web al tamaño del dispositivo:
   1. Identifique un sitio, p.e.: sitio web de [ESPOL](http://www.espol.edu.ec/), y 
   2. Revise la vista del sitio para dispositivos móviles, con:
-    + El inspector del navegador, en la opción **Toggle device toolbar**, o 
-	  + En los sitios [Responsinator](http://www.responsinator.com/), [Website planet](https://www.websiteplanet.com/es/webtools/responsive-checker/) o [Browserstack](https://www.browserstack.com/responsive).
+     + El inspector del navegador, en la opción **Toggle device toolbar**, o 
+     + En los sitios [Responsinator](http://www.responsinator.com/), [Website planet](https://www.websiteplanet.com/es/webtools/responsive-checker/) o [Browserstack](https://www.browserstack.com/responsive).
   3. Distinga las diferencias entre la vista entre 2 diferentes dimensiones de dispositivos, p.e.: dispositivo móvil y dispositivo desktop.
 
 #### Diseño
