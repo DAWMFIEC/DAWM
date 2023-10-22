@@ -19,14 +19,30 @@ describe('Test unitarios para la ruta `/`', function() {
         })
     });
 
-    let script1 = [`if( edad >= 18 && estado == 'CA') {`,`mensaje1 = 'Puede manejar'`,`} else {`, `mensaje1 = 'No puede manejar'}`]
+    let script1 = [
+      `if( edad >= 18 && estado == 'CA') {`,
+      `mensaje1 = 'Puede manejar'`,
+      `} else {`, 
+      `mensaje1 = 'No puede manejar'}`]
     let script2 = `mensaje2 = velocidad >= 120 ? 'Muy rápido' : 'OK';`
     
-    let script3 = [`for (i = 1; i < 5; i++) {`,`elementos1.push(i)`,`}`]
-    let script4 = [`for(clave in objeto) {`,`elementos2.push(objeto[clave])`,`}`]
+    let script3 = [
+      `for (i = 1; i < 5; i++) {`,
+      `elementos1.push(i)`,
+      `}`]
+    let script4 = [
+      `for(clave in objeto) {`,
+      `elementos2.push(objeto[clave])`,
+      `}`]
     
-    let script5 = [`funcionAnonima = function() {`,`resultado1 = 'Función anónima';`,`}`]
-    let script6 = [`funcionFlecha = () => {`,`resultado2 = 'Función flecha'`,`}`]
+    let script5 = [
+      `funcionAnonima = function() {`,
+      `resultado1 = 'Función anónima';`,
+      `}`]
+    let script6 = [
+      `funcionFlecha = () => {`,
+      `resultado2 = 'Función flecha'`,
+      `}`]
 
     let respuesta1 = "No puede manejar OK"
     let respuesta2 = "34 13"
