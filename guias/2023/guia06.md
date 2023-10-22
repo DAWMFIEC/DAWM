@@ -23,6 +23,7 @@ theme: jekyll-theme-leap-day
 * Defina los objetivos de la  `landing page`, p.e.: venta de productos de belleza, grupo estudiantil, veterinaria, noticias de KPOP etc. 
 * Decida las secciones y el contenido que serán parte de la landing page. Esto puede incluir encabezados, imágenes, videos, testimonios, formularios de registro, etc.
 * Seleccione una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
+* Utiliza colores, tipografía y elementos visuales que refuercen el mensaje del sitio. Considere las paletas de colores de [Tintmint](https://tintmint.net/), imágenes de [iStock](https://www.istockphoto.com/es) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
 
 
 ### Actividades
@@ -51,10 +52,12 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-responsivo, landing page
-front-end, kit de herramientas, componentes
+responsivo, landing page, kit de herramientas, front-end, componentes
 
 ### Referencias
 
+* Marcotte, E., Dauer, J., Eagan, C., MacIntyre, J., Clancey, P., Overkamp, L., & Brosset, P. (2019). Responsive Web Design. Retrieved from https://alistapart.com/article/responsive-web-design/
+* Web Design History. (n.d.). Retrieved from https://www.webdesignmuseum.org/web-design-history
+* UXPin. (2023). Responsive Design: Best Practices & Examples. Retrieved from https://www.uxpin.com/studio/blog/best-practices-examples-of-excellent-responsive-design/
 * Mark Otto, a. (2022). Bootstrap. Retrieved 8 June 2022, from https://getbootstrap.com/
 * How To Convert a Website to Bootstrap 4 (Case Study) AZMIND. (2018). Retrieved 8 June 2022, from https://azmind.com/convert-website-bootstrap-4/
