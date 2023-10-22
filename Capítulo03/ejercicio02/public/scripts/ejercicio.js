@@ -10,7 +10,7 @@ function definicionVariablesConstantes() {
     */
 
     /* Inicio */
-    
+
     /* Fin */
 
     /*
@@ -19,7 +19,7 @@ function definicionVariablesConstantes() {
     */
 
     /* Inicio */
-    
+
     /* Fin */
 
     return mensaje + LENGUAJE;
@@ -47,7 +47,7 @@ function definicionObjeto() {
     */
 
     /*Inicio*/
-   
+
     /*Fin*/
 
     return contacto.nombre + ' ' + contacto.apellido + ' de ' + contacto.direccion.pais + ', con ' + contacto.edad + ' años.'
@@ -65,7 +65,7 @@ function definicionArreglos() {
     */
 
     /*Inicio*/
-    
+
     /*Fin*/
 
     /*
@@ -110,7 +110,7 @@ function metodosArreglos() {
     */
 
     /*Inicio*/
-    
+
     /*Fin*/
 
     /*
@@ -123,7 +123,7 @@ function metodosArreglos() {
     */
 
     /*Inicio*/
-    
+
     /*Fin*/
 
     /*
@@ -136,7 +136,7 @@ function metodosArreglos() {
     */
 
     /*Inicio*/
-    
+
     /*Fin*/
 
 
@@ -150,7 +150,7 @@ function metodosArreglos() {
     */
 
     /*Inicio*/
-    
+
     /*Fin*/
 
     return 'Map: '+doubled.toString()+' - Reduce:'+sum.toString()+' - Some: '+exists.toString()+' - Filtered: '+filtered.toString()
