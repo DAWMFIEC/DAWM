@@ -28,14 +28,12 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-1. Obtenga una plantilla (gratuita y solo con las tecnologías HTML) de Bootstrap de [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false)
-2. Descargue y descomprima los archivos en su directorio local. 
-3. Compruebe la estructura local: HTML, CSS, JavaScript y carpetas para imágenes, fuentes y otros recursos.
-4. Abra la carpeta en VSCode y levante el live server. 
-6. Prueba y depuración: Inspeccione la vista desktop y de móvil del sitio.
-7. Lleve el control de los cambios de sus sitio web en un repositorio remoto, como GitHub. Habilite GitHub Pages para el despliegue automático.
-8. Personalice la plantilla HTML con su texto e imágenes.
-9. De ser necesario, agregue otra hoja de estilos externas para modificar el estilo de su página.
+1. Obtenga una plantilla gratuita. Asegúrate que solo use Bootstrap, sin frameworks como Angular o librerías como React.
+   + Descargue y descomprima los archivos en su directorio local. 
+   + Compruebe la estructura local: HTML, CSS, JavaScript y carpetas para imágenes, fuentes y otros recursos.
+   + Abra la carpeta de la plantilla en VSCode y utilice el Live Server para identificar los cambios. 
+2. Personalice el contenido (texto e imágenes) de la plantilla.
+3. Utilice una hoja de estilo externa para agregar o modificar la paleta de colores y tipografía de la plantilla.
 
 
 ### Fundamental
