@@ -22,13 +22,12 @@ theme: jekyll-theme-leap-day
 
 * Defina los objetivos de la  `landing page`, p.e.: venta de productos de belleza, grupo estudiantil, veterinaria, noticias de KPOP etc. 
 * Decida las secciones y el contenido que serán parte de la landing page. Esto puede incluir encabezados, imágenes, videos, testimonios, formularios de registro, etc.
-
- **Mínimo:** su landing page debe contener 3 secciones con información del sitio, 1 sección con un formulario, 1 menú para desplazarse entre secciones.
+  
+  **Mínimo:** su landing page debe contener 3 secciones con información del sitio, 1 sección con un formulario, 1 menú para desplazarse entre secciones.
 
 * Seleccione una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
-
-
-**NOTA:** Asegúrese que solo use Bootstrap (^v5), sin frameworks como Angular o librerías como React o VueJS.
+  
+  **NOTA:** Asegúrese que solo use Bootstrap (^v5), sin frameworks como Angular o librerías como React o VueJS.
 
 * Utiliza colores, tipografía y elementos visuales que refuercen el mensaje del sitio. Considere las paletas de colores de [Tintmint](https://tintmint.net/), imágenes de [iStock](https://www.istockphoto.com/es) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
 
@@ -47,7 +46,7 @@ theme: jekyll-theme-leap-day
    + Abra la carpeta de la plantilla en VSCode y utilice el Live Server para identificar los cambios. 
 2. Personalice el contenido (texto e imágenes) de la plantilla.
 3. Utilice una hoja de estilo externa para agregar o modificar la paleta de colores y tipografía de la plantilla.
-4. Primero realice los cambios para la versión para dispositivos móviles antes que la versión para dispositivos de escritorio.
+4. Realice los cambios para la versión para dispositivos móviles antes que en la versión para dispositivos de escritorio.
 5. Versiona local y remotamente el repositorio **landing**.
 6. Despliegue el sitio del repositorio **landing** utilizando GitHub Pages.
 
