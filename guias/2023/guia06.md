@@ -28,8 +28,11 @@ theme: jekyll-theme-leap-day
 * Seleccione una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
   
   **NOTA:** Asegúrese que solo use Bootstrap (^v5), sin frameworks como Angular o librerías como React o VueJS.
+  **NOTA:** Utilice una plantilla que NO esté relacionada con la temática de su sitio.
 
 * Utiliza colores, tipografía y elementos visuales que refuercen el mensaje del sitio. Considere las paletas de colores de [Tintmint](https://tintmint.net/), imágenes de [iStock](https://www.istockphoto.com/es) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
+  
+  **NOTA:** Cambie todos los elementos visuales para que se ajusten con la temática del sitio.
 
 
 ### Actividades
