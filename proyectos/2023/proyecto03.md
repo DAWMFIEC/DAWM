@@ -27,5 +27,5 @@ La respuesta es:
 ### Guías
 
 * [Guía 06: Responsive Design y Bootstrap](/DAWM/guias/2023/guia06)
-* [Guía 07: Validación y Verificación](/DAWM/guias/2023/guia07)
+* [Guía 07: Validación de HTML y CSS](/DAWM/guias/2023/guia07)
 
