@@ -8,20 +8,12 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-
-
 ### Actividades
-
-
-
 
 ### Fundamental
 
 ### Documentación
 
-
 ### Términos
-
-
 
 ### Referencias
