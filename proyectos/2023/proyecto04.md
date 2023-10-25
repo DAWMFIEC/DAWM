@@ -2,28 +2,31 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 04: Calculadora - Material Design + Javascript
+## Proyecto 04: Clima - Dashboard
 
 [DAWM](/DAWM/)
 
-### ¿Qué debo considerar para elaborar un presupuesto de un sitio web con solo tecnologías de frontend (HTML, CSS y Javascript)?
+### Como desarrollador de aplicaciones web, ¿Qué es un dashboard y qué información debe tener un dashboard?
 
 ### Antecedentes
 
-Es bastante común que luego de conocer las tecnologías de frontend (HTML, CSS y Javascript) recibas propuestas para crear sitios web; sin embargo, no siempre es fácil estimar el tiempo y el costo del proyecto.  
+Más allá de promocionar un producto o servicio en la web, los sitios web sirven permiten consolidar y presentar datos relevantes de manera intuitiva, lo que ayuda a los usuarios a comprender rápidamente la situación actual y tomar decisiones fundamentadas. A estos sitios se conocen como dashboards. Incluso, los dashboard permiten vigilar en tiempo real, o de forma periódica, para identificar el rendimiento y los cambios en los datos.
 
 ### ChatGPT
 
 Para el prompt: 
 
 ```
-Elabora un presupuesto para la implementación de una aplicación web con tecnologías HTML, CSS y Javascript. Por cada elemento, coloca el costo y tiempo estimado. 
+Como desarrollador de aplicaciones web, ¿Qué es un dashboard y qué información debe tener un dashboard?
 ```
 La respuesta es:
 
-![proyecto04-pregunta1](archivos/proyecto04-pregunta1.png)
+![respuesta](archivos/proyecto05-pregunta.png)
 
 ### Guías
 
 * [Guía 08: Javascript - Introducción, DOM y Eventos](/DAWM/guias/2023/guia08)
-
+* [Guía 09: Javascript - Diseño del dashboard y AJAX](/DAWM/guias/2023/guia09)
+* [Guía 10: Javascript - Chart.js y Local Storage](/DAWM/guias/2023/guia10)
+* [Guía 11: CORS](/DAWM/guias/2023/guia11)
+* [Guía 12: Typescript](/DAWM/guias/2023/guia12)

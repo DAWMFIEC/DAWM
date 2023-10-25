@@ -2,30 +2,32 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 05: Clima - Dashboard
+## Proyecto 06: Dataset SPA - Angular
 
 [DAWM](/DAWM/)
 
-### Como desarrollador de aplicaciones web, ¿Qué es un dashboard y qué información debe tener un dashboard?
+### Como desarrollador de aplicaciones web, redacta un escenario para crear una aplicación web con un web framework del lado del cliente (como Angular) y una fuente de datos (como las disponibles en Kaggle). No incluyas código.
 
 ### Antecedentes
 
-Más allá de promocionar un producto o servicio en la web, los sitios web sirven permiten consolidar y presentar datos relevantes de manera intuitiva, lo que ayuda a los usuarios a comprender rápidamente la situación actual y tomar decisiones fundamentadas. A estos sitios se conocen como dashboards. Incluso, los dashboard permiten vigilar en tiempo real, o de forma periódica, para identificar el rendimiento y los cambios en los datos.
+Como desarrollador de aplicaciones web, te encuentras en la tarea de crear una aplicación web que utilice un web framework del lado del cliente, por ejemplo Angular, y una fuente de datos externa, como los conjuntos de datos disponibles en Kaggle.
 
 ### ChatGPT
 
 Para el prompt: 
 
 ```
-Como desarrollador de aplicaciones web, ¿Qué es un dashboard y qué información debe tener un dashboard?
+Como desarrollador de aplicaciones web, redacta un escenario para crear una aplicación web con un web framework del lado del cliente (como Angular) y una fuente de datos (como las disponibles en Kaggle). No incluyas código.
 ```
 La respuesta es:
 
-![respuesta](archivos/proyecto05-pregunta.png)
+![respuesta](archivos/proyecto06-pregunta.png)
 
 ### Guías
 
-* [Guía 09: Javascript - Diseño del dashboard y AJAX](/DAWM/guias/2023/guia09)
-* [Guía 10: Javascript - Chart.js y Local Storage](/DAWM/guias/2023/guia10)
-* [Guía 11: Modelo Cliente-Servidor y CORS](/DAWM/guias/2023/guia11)
-* [Guía 12: Validación y Verificación - Typescript](/DAWM/guias/2023/guia12)
+* [Guía 13: Angular - Introducción](/DAWM/guias/2023/guia13)
+* [Guía 14: Angular - Bootstrap y Componentes](/DAWM/guias/2023/guia14)
+* [Guía 15: Firebase - Realtime Database](/DAWM/guias/2023/guia15)
+* [Guía 16: Angular - Interfaz, Servicios, Comunicación y Directivas](/DAWM/guias/2023/guia16)
+* [Guía 17: Angular - Testing](/DAWM/guias/2023/guia17)
+* [Guía 18: Angular - Despliegue en producción con GitHub Actions](/DAWM/guias/2023/guia18)
