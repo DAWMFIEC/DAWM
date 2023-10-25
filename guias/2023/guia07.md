@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
   - Para HTML: [Markup Validation Service de la W3C](https://validator.w3.org/), y 
   - Para CSS: [CSS Validation Service de la W3C](https://jigsaw.w3.org/css-validator/)
 * Valide y corrija los errores graves en sus documentos HTML y CSS.
-* Versiona local y remotamente el repositorio **curriculum**.
+* Versiona local y remotamente el repositorio **landing**.
 
 ### Fundamental
 
