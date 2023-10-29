@@ -4,13 +4,61 @@ theme: jekyll-theme-leap-day
 
 ## Guía 08
 
-[DAWM](/DAWM/) / [Proyecto03](/DAWM/proyectos/2023/proyecto03)
+[DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2023/proyecto04)
 
 ### Actividades previas
 
-
+* Identifique los elementos comunes para el desarrollo de una aplicación web.
+* Identifique el valor por hora a cobrar
 
 ### Actividades
+
+#### Proyecto Base
+
+* Clone el proyecto [DAWM-apps](https://github.com/DAWMFIEC/DAWM-apps)
+* Cámbiese a la rama **hito1-calculadora**, con:
+
+  ```
+  git switch hito1-calculadora 
+  ```
+
+* Abra el proyecto en VSCode en la carpeta `frontend`. Levante el live server.
+
+#### HTML
+
+* Agregue los elementos (`input` y `label`) que considere necesarios. Tome como referencia el elemento `Elemento 1: Diseño de interfaz`.
+* Por cada elemento, coloque los valores correspondientes a los atributos `id` y `for`.
+
+#### Javascript
+
+* Agregue en el `index.html` la referencia al archivo `public/javascript/calculadora.js`
+* En `public/javascript/calculadora.js`:
+  - Cree e invoque la función flecha `funcionPredeterminada`.
+
+* Dentro de la función `funcionPredeterminada`.  
+  - Obtenga la referencia al elemento HTML con el id `formulario`, con:
+    ```
+    const formulario = document.getElementById('formulario')
+    ```
+
+  - A la referencia del elemento anterior, agregue un _callback_ al evento `submit`. El callback debe contener el parámetro `evento`, con:
+    ```
+    formulario.addEventListener('submit', (evento) => {
+      ... 
+    })
+    ```
+
+    
+
+* Dentro del callback del evento `submit`.
+  - Detenga el comportamiento predeterminado al evento, con: 
+    ```
+    evento.preventDefault();
+    ```
+
+  - Obtenga la referencia al elemento HTML con el id `valorPorHora`. Extraiga el valor de la referencia con la propiedad `value`.
+  - Obtenga la referencia a los elementos HTML con las horas. Extraiga el valor de cada referencia .
+  - Realice los cálculos correspondientes. Y coloque el valor resultante en el elemento con el id `valorTotal`.
 
 
 ### Documentación
