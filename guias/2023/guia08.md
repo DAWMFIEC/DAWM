@@ -23,7 +23,6 @@ Edite el archivo `index.html`
 
 ```
     ...
-
     <!-- Static data -->
     <script type="module" src="public/javascript/static_data.js"></script>
 
@@ -57,22 +56,11 @@ let fechaActual = () => new Date().toISOString().slice(0,10);
 let cargarPrecipitacion = () => {
 
   //Obtenga la función fechaActual
-  
-
   //Defina un arreglo temporal vacío
-
-
   //Itere en los valores de tiempoArr y filtre los valores de precipitacionArr de acuerdo con fecha actual
-  
-
   //De los valores filtrados, obtenga los valores máximo, promedio y mínimo
-  
-  
   //Obtenga la referencia al elemento con los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
-  
-
   //Actualice los elementos HTML con los valores correspondientes
-  
 
 }
 
@@ -106,7 +94,6 @@ cargarPrecipitacion()
     if(tiempo.includes(actual)) {
       datos.push(precipitacion)
     }
-    
   }
   ...
 ```
@@ -149,15 +136,8 @@ cargarPrecipitacion()
 
 ### Documentación
 
-* [Material Design](https://material.io/design) es una guía de diseño enfocado en la visualización del sistema operativo Android, además en la web y en cualquier plataforma. Fue desarrollado por Google y anunciado en la conferencia Google I/O del 2014.
-  - [Material Minimal](https://material-minimal.com/) fundamentos de Material Minimal, un enfoque de diseño elegante y moderno que fusiona la funcionalidad de Material Design con una estética minimalista.
-  - [MDB](https://mdbootstrap.com/docs/standard/getting-started/installation/) es el kit de interfaz de usuario más popular para crear aplicaciones y sitios web con capacidad de respuesta para dispositivos móviles, gratis para uso personal y comercial, que implementa Material Design. Tiene versiones disponibles para jQuery, Angular, React y Vue.
-* [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)  es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase.
-  - [Básico](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/JavaScript_basics). En esta publicación encontrarán las generalidades de Javascript y una introducción al lenguaje que incluye definición de variables, condicionales, funciones y eventos.
-  - [EcmaScript6](http://es6-features.org/#). Aquí encontrarás las características incorporadas al EcmaScript6 y la [compatibilidad con los diferentes navegadores](http://kangax.github.io/compat-table/es6/). 
-  - [Arreglos](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array). El manejo de arreglos en JavaScript resulta primordial, especialmente para la aplicación de propiedades a un grupo de elementos.
-  - [Objetos](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Trabajando_con_objectos). Esencialmente, todo es un objeto en JavaScript. En algunos casos son elementos propios del navegador y otros son objetos creados por los desarrolladores.
-  - [Elementos del navegador](https://javascript.info/browser-environment). Existen elementos básicos que todo navegador debe proveer como interfaz para los desarrolladores de aplicaciones web del lado del cliente.
+* [MDB](https://mdbootstrap.com/docs/standard/getting-started/installation/) es el kit de interfaz de usuario más popular para crear aplicaciones y sitios web con capacidad de respuesta para dispositivos móviles, gratis para uso personal y comercial, que implementa Material Design. Tiene versiones disponibles para jQuery, Angular, React y Vue.
+* [JavaScript](https://developer.mozilla.org/es/docs/Web/JavaScript)  es un lenguaje de programación ligero, interpretado, o compilado justo-a-tiempo (just-in-time) con funciones de primera clase: [Básico](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/JavaScript_basics), [EcmaScript6](http://es6-features.org/#) y la [compatibilidad con los diferentes navegadores](http://kangax.github.io/compat-table/es6/), [Arreglos](https://developer.mozilla.org/es/docs/Web/JavaScript/Referencia/Objetos_globales/Array), [Objetos](https://developer.mozilla.org/es/docs/Web/JavaScript/Guide/Trabajando_con_objectos), y [Elementos del navegador](https://javascript.info/browser-environment).
   - [Web API](https://developer.mozilla.org/es/docs/Web/API) En esta sección puedes encontrar las referencias al Web API que se utiliza cuando programas con Javascript.
   - [DOM](https://javascript.info/dom-nodes). El DOM y su uso a través de ejemplos de etiquetas, anidamientos, autocorrección e inspección por la consola del navegador con sus [propiedades y métodos](https://developer.mozilla.org/es/docs/Web/API/Document).
   - [Objeto: Document](https://javascript.info/dom-navigation). Este objeto te permite manipular el DOM de cualquier página web.
