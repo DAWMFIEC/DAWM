@@ -10,23 +10,67 @@ theme: jekyll-theme-leap-day
 
 #### Proyecto Base
 
-* Descargue la plantilla del [_dashboard_](recursos/dashboard_template.zip). 
+* Descargue la plantilla del [_dashboard_](recursos/dashboard_template.zip) de [**MDBootstrap**](https://mdbootstrap.com/freebies/). 
 * Abra el proyecto en VSCode y levante el live server.
 
 ### Actividades
 
-#### Carga de datos estáticos
+#### Referencia a los módulos
 
-* Edite el archivo `index.html` con la referencia a `static_data.js` y `load_data.js`.
+Edite el archivo `index.html` 
+
+* Agregue la referencia a los módulos de **Javascript** `public/javascript/static_data.js` y `public/javascript/load_data.js`.
 
 ```
-  <!-- Static data -->
-  <script type="module" src="public/javascript/static_data.js"></script>
+    ...
 
-  <!-- Load data -->
-  <script type="module" src="public/javascript/load_data.js"></script>
+    <!-- Static data -->
+    <script type="module" src="public/javascript/static_data.js"></script>
+
+    <!-- Load data -->
+    <script type="module" src="public/javascript/load_data.js"></script>
+
+  </body>
+</html>
 ```
 
+#### IIFE
+
+Edite el archivo `public/javascript/load_data.js`
+
+* Importe los arreglos de _tiempoArr_, _precipitacionArr_, _uvArr_ y _temperaturaArr_.
+
+```
+import {tiempoArr, precipitacionArr, uvArr, temperaturaArr} from './static_data.js';
+```
+
+* Agregue la [**IIFE - función autoejecutable**](https://developer.mozilla.org/es/docs/Glossary/IIFE):
+
+```
+(
+  
+  function () {
+     
+  }
+
+)();
+```
+
+* Envíe los arreglos a la función autoejecutable:
+
+```
+(
+  
+  function (tiempoArr, precipitacionArr, uvArr, temperaturaArr) {
+  
+    
+   
+
+  }
+
+  
+)(tiempoArr, precipitacionArr, uvArr, temperaturaArr);
+```  
 
 
 ### Documentación
@@ -47,7 +91,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-material design, Javascript, DOM y eventos.
+MDBootstrap, Javascript, IIFE - función autoejecutable, DOM, eventos.
 
 ### Referencias
 
