@@ -39,27 +39,27 @@ Edite el archivo `public/javascript/load_data.js`
 
 * Importe los arreglos de _tiempoArr_, _precipitacionArr_, _uvArr_ y _temperaturaArr_.
 
-```
+```typescript
 import {tiempoArr, precipitacionArr, uvArr, temperaturaArr} from './static_data.js';
 ```
 
 * Agregue la **función flecha** para obtener la fecha actual:
 
-```
+```typescript
 ...
 let fechaActual = () => new Date().toISOString().slice(0,10);
 ```
 
 * Agregue e invoque la función flecha cargarPrecipitacion:
 
-```
+```typescript
 let cargarPrecipitacion = () => {
 
   //Obtenga la función fechaActual
   //Defina un arreglo temporal vacío
-  //Itere en los valores de tiempoArr y filtre los valores de precipitacionArr de acuerdo con fecha actual
-  //De los valores filtrados, obtenga los valores máximo, promedio y mínimo
-  //Obtenga la referencia al elemento con los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
+  //Itere en el arreglo tiempoArr para filtrar los valores de precipitacionArr que sean igual con la fecha actual
+  //Con los valores filtrados, obtenga los valores máximo, promedio y mínimo
+  //Obtenga la referencia a los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
   //Actualice los elementos HTML con los valores correspondientes
 
 }
@@ -69,9 +69,9 @@ cargarPrecipitacion()
 
 * Dentro de la función cargarPrecipitacion:
 
-  + Obtenga la fecha actual y defina un arreglo temporal vacío, con:
+  + Obtenga la fecha actual y defina un arreglo temporal vacío.
 
-```
+```typescript
   ...
   
   //Obtenga la fecha actual
@@ -82,11 +82,11 @@ cargarPrecipitacion()
   ...
 ```
 
-  + Itere en los valores de tiempoArr y filtre los valores de precipitacionArr de acuerdo con fecha actual
+  + Itere en el arreglo tiempoArr para filtrar los valores de precipitacionArr que sean igual con la fecha actual.
 
-```
+```typescript
   ...
-  //Itere en los valores de tiempoArr y filtre los valores de precipitacionArr de acuerdo con fecha actual
+  //Itere en el arreglo tiempoArr para filtrar los valores de precipitacionArr que sean igual con la fecha actual
   for (let index = 0; index < tiempoArr.length; index++) {
     const tiempo = tiempoArr[index];
     const precipitacion = precipitacionArr[index]
@@ -98,11 +98,11 @@ cargarPrecipitacion()
   ...
 ```
 
-  + De los valores filtrados, obtenga los valores máximo, promedio y mínimo
+  + Con los valores filtrados, obtenga los valores máximo, promedio y mínimo
 
-```
+```typescript
   ...
-  //De los valores filtrados, obtenga los valores máximo, promedio y mínimo
+  //Con los valores filtrados, obtenga los valores máximo, promedio y mínimo
   let max = Math.max(...datos)
   let min = Math.min(...datos)
   let sum = datos.reduce((a, b) => a + b, 0);
@@ -110,11 +110,12 @@ cargarPrecipitacion()
   ...
 ```
 
-  + Obtenga la referencia al elemento con los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
+  + Obtenga la referencia a los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
 
-```
+```typescript
   ...
-  //Obtenga la referencia al elemento con los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
+  //Obtenga la referencia a los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
+  
   let precipitacionMinValue = document.getElementById("precipitacionMinValue")
   let precipitacionPromValue = document.getElementById("precipitacionPromValue")
   let precipitacionMaxValue = document.getElementById("precipitacionMaxValue")
@@ -123,25 +124,21 @@ cargarPrecipitacion()
 
   + Actualice los elementos HTML con los valores correspondientes
 
-```
+```typescript
   ...
   //Actualice los elementos HTML con los valores correspondientes
   precipitacionMinValue.textContent = `Min ${min} [mm]`
-  precipitacionPromValue.textContent = `Prom ${Math.round(prom * 100) / 100} [mm]`
+  precipitacionPromValue.textContent = `Prom ${ Math.round(prom * 100) / 100 } [mm]`
   precipitacionMaxValue.textContent = `Max ${max} [mm]`
   ...
 ```
-
-#### Indicadores: UV y Temperatura
-
-**NOTA:** Cree una nueva función para cada indicador y realice la carga de los valores correspondientes
 
 
 #### Fecha actual
 
 * Agregue e invoque la función flecha cargarFechaActual
 
-```
+```typescript
 let cargarFechaActual = () => {
   
   //Obtenga la referencia al elemento h6
@@ -155,7 +152,7 @@ cargarFechaActual()
 
 * Obtenga la referencia al elemento h6
 
-```
+```typescript
   ...
   //Obtenga la referencia al elemento h6
   let coleccionHTML = document.getElementsByTagName("h6")
@@ -166,7 +163,7 @@ cargarFechaActual()
 
 * Actualice la referencia al elemento h6 con el valor de la función fechaActual()
 
-```
+```typescript
   ...
   //Actualice la referencia al elemento h6 con el valor de la función fechaActual()
   tituloH6.textContent = fechaActual()
