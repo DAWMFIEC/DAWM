@@ -21,7 +21,7 @@ Edite el archivo `index.html`
 
 * Agregue la referencia a los módulos de **Javascript** `public/javascript/static_data.js` y `public/javascript/load_data.js`.
 
-```
+```html
     ...
     <!-- Static data -->
     <script type="module" src="public/javascript/static_data.js"></script>
