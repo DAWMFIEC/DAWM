@@ -44,33 +44,35 @@ Edite el archivo `public/javascript/load_data.js`
 import {tiempoArr, precipitacionArr, uvArr, temperaturaArr} from './static_data.js';
 ```
 
-* Agregue la [**IIFE - función autoejecutable**](https://developer.mozilla.org/es/docs/Glossary/IIFE):
+* Agregue e invoque la **función flecha** indicadores:
 
 ```
-(
-  
-  function () {
-     
-  }
+let indicadores = (tiempoArr, precipitacionArr, uvArr, temperaturaArr) => {
 
-)();
+  //Fecha y Hora actual
+
+  
+  //Filtre el valor de precipitacionArr correspondiente a la hora actual
+
+
+  //Referencia al elemento con el id precipitacionValue
+
+
+  //Actualice el valor del elemento con el id precipitacionValue
+
+}
+
+indicadores(tiempoArr, precipitacionArr, uvArr, temperaturaArr)
 ```
 
-* Envíe los arreglos a la función autoejecutable:
+* Dentro de la función indicadores:
+
+  + Obtenga la fecha y hora actual, con:
 
 ```
-(
-  
-  function (tiempoArr, precipitacionArr, uvArr, temperaturaArr) {
-  
-    
-   
+let actual = new Date().toISOString().slice(0,13);
+```
 
-  }
-
-  
-)(tiempoArr, precipitacionArr, uvArr, temperaturaArr);
-```  
 
 
 ### Documentación
@@ -91,7 +93,7 @@ import {tiempoArr, precipitacionArr, uvArr, temperaturaArr} from './static_data.
 
 ### Términos
 
-MDBootstrap, Javascript, IIFE - función autoejecutable, DOM, eventos.
+MDBootstrap, Javascript, función flecha, DOM, eventos.
 
 ### Referencias
 
