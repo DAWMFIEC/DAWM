@@ -26,7 +26,3 @@ La respuesta es:
 ### Guías
 
 * [Guía 08: Javascript - Introducción, DOM y Eventos](/DAWM/guias/2023/guia08)
-* [Guía 09: Javascript - Diseño del dashboard y AJAX](/DAWM/guias/2023/guia09)
-* [Guía 10: Javascript - Chart.js y Local Storage](/DAWM/guias/2023/guia10)
-* [Guía 11: CORS](/DAWM/guias/2023/guia11)
-* [Guía 12: Typescript](/DAWM/guias/2023/guia12)

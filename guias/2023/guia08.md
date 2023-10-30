@@ -34,7 +34,7 @@ Edite el archivo `index.html`
 </html>
 ```
 
-#### IIFE
+#### Indicadores: Precipitación
 
 Edite el archivo `public/javascript/load_data.js`
 
