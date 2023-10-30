@@ -132,6 +132,46 @@ cargarPrecipitacion()
   ...
 ```
 
+#### Indicadores: UV y Temperatura
+
+**NOTA:** Cree una nueva función para cada indicador y realice la carga de los valores correspondientes
+
+
+#### Fecha actual
+
+* Agregue e invoque la función flecha cargarFechaActual
+
+```
+let cargarFechaActual = () => {
+  
+  //Obtenga la referencia al elemento h6
+  //Actualice la referencia al elemento h6 con el valor de la función fechaActual()
+}
+
+...
+
+cargarFechaActual()
+```
+
+* Obtenga la referencia al elemento h6
+
+```
+  ...
+  //Obtenga la referencia al elemento h6
+  let coleccionHTML = document.getElementsByTagName("h6")
+
+  let tituloH6 = coleccionHTML[0]
+  ...
+```
+
+* Actualice la referencia al elemento h6 con el valor de la función fechaActual()
+
+```
+  ...
+  //Actualice la referencia al elemento h6 con el valor de la función fechaActual()
+  tituloH6.textContent = fechaActual()
+  ...
+```
 
 
 ### Documentación
