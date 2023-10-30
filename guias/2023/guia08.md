@@ -8,10 +8,21 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### Proyecto Base
 
+* Descargue la plantilla del [_dashboard_](recursos/dashboard_template.rar). 
+* Abra el proyecto en VSCode y levante el live server.
 
 ### Actividades
 
+#### Carga de datos estáticos
+
+* En el archivo `index.html`, agregue la referencia a `static_data.js` y `load_data.js`.
+
+```
+  <script type="module" src="public/javascript/static_data.js"></script>
+  <script type="module" src="public/javascript/load_data.js"></script>
+```
 
 ### Documentación
 
