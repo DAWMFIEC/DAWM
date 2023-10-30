@@ -44,33 +44,105 @@ Edite el archivo `public/javascript/load_data.js`
 import {tiempoArr, precipitacionArr, uvArr, temperaturaArr} from './static_data.js';
 ```
 
-* Agregue e invoque la **función flecha** indicadores:
+* Agregue la **función flecha** para obtener la fecha actual:
 
 ```
-let indicadores = (tiempoArr, precipitacionArr, uvArr, temperaturaArr) => {
+...
+let fechaActual = () => new Date().toISOString().slice(0,10);
+```
 
-  //Fecha y Hora actual
+* Agregue e invoque la función flecha cargarPrecipitacion:
 
+```
+let cargarPrecipitacion = () => {
+
+  //Obtenga la función fechaActual
   
-  //Filtre el valor de precipitacionArr correspondiente a la hora actual
+
+  //Defina un arreglo temporal vacío
 
 
-  //Referencia al elemento con el id precipitacionValue
+  //Itere en los valores de tiempoArr y filtre los valores de precipitacionArr de acuerdo con fecha actual
+  
 
+  //De los valores filtrados, obtenga los valores máximo, promedio y mínimo
+  
+  
+  //Obtenga la referencia al elemento con los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
+  
 
-  //Actualice el valor del elemento con el id precipitacionValue
+  //Actualice los elementos HTML con los valores correspondientes
+  
 
 }
 
-indicadores(tiempoArr, precipitacionArr, uvArr, temperaturaArr)
+cargarPrecipitacion()
 ```
 
-* Dentro de la función indicadores:
+* Dentro de la función cargarPrecipitacion:
 
-  + Obtenga la fecha y hora actual, con:
+  + Obtenga la fecha actual y defina un arreglo temporal vacío, con:
 
 ```
-let actual = new Date().toISOString().slice(0,13);
+  ...
+  
+  //Obtenga la fecha actual
+  let actual = fechaActual();
+
+  //Defina un arreglo temporal vacío
+  let datos = []
+  ...
+```
+
+  + Itere en los valores de tiempoArr y filtre los valores de precipitacionArr de acuerdo con fecha actual
+
+```
+  ...
+  //Itere en los valores de tiempoArr y filtre los valores de precipitacionArr de acuerdo con fecha actual
+  for (let index = 0; index < tiempoArr.length; index++) {
+    const tiempo = tiempoArr[index];
+    const precipitacion = precipitacionArr[index]
+
+    if(tiempo.includes(actual)) {
+      datos.push(precipitacion)
+    }
+    
+  }
+  ...
+```
+
+  + De los valores filtrados, obtenga los valores máximo, promedio y mínimo
+
+```
+  ...
+  //De los valores filtrados, obtenga los valores máximo, promedio y mínimo
+  let max = Math.max(...datos)
+  let min = Math.min(...datos)
+  let sum = datos.reduce((a, b) => a + b, 0);
+  let prom = (sum / datos.length) || 0;
+  ...
+```
+
+  + Obtenga la referencia al elemento con los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
+
+```
+  ...
+  //Obtenga la referencia al elemento con los elementos HTML con id precipitacionMinValue, precipitacionPromValue y precipitacionMaxValue
+  let precipitacionMinValue = document.getElementById("precipitacionMinValue")
+  let precipitacionPromValue = document.getElementById("precipitacionPromValue")
+  let precipitacionMaxValue = document.getElementById("precipitacionMaxValue")
+  ...
+```
+
+  + Actualice los elementos HTML con los valores correspondientes
+
+```
+  ...
+  //Actualice los elementos HTML con los valores correspondientes
+  precipitacionMinValue.textContent = `Min ${min} [mm]`
+  precipitacionPromValue.textContent = `Prom ${Math.round(prom * 100) / 100} [mm]`
+  precipitacionMaxValue.textContent = `Max ${max} [mm]`
+  ...
 ```
 
 
