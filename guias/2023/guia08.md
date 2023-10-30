@@ -15,6 +15,10 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
+#### Github
+
+* Crea un repositorio en GitHub con el nombre **dashboard**.
+
 #### Referencia a los módulos
 
 Edite el archivo `index.html` 
@@ -170,6 +174,8 @@ cargarFechaActual()
   ...
 ```
 
+* Versiona local y remotamente el repositorio **dashboard**.
+* Despliegue el sitio del repositorio **dashboard** utilizando GitHub Pages.
 
 ### Documentación
 
