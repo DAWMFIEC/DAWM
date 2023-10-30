@@ -63,13 +63,11 @@ let animarCartas = (carta) => {
 
 let cargarLibros = () => {
 
-    let plantilla, arreglo, contenedor;
+    let plantilla;
 
-    
-   
     // Petición async/await
     // Anteponga await a la petición fetch   
-    let resultado = fetch("https://raw.githubusercontent.com/DAWMFIEC/DAWM-apps/datos/libros.xml")
+    let resultado =  fetch("https://raw.githubusercontent.com/DAWMFIEC/DAWM-apps/datos/libros.xml")
 
     // Anteponga await a la conversión de la variable resultado a texto
     let data = resultado.text()
@@ -77,14 +75,16 @@ let cargarLibros = () => {
     const parser = new DOMParser();
     const xml = parser.parseFromString(data, "application/xml");
   
-    // Utilice el selector 'libros > libro'
-    let books = xml.querySelectorAll('')
+    let books = xml.querySelectorAll('libros > libro')
 
     books.forEach( book => {
 
-      // Extraiga el contenido del texto para las etiquetas: title, isbn y shortDescription.
-      // Utilice el operador condicional ternario para validar la existencia de las etiquetas previo a extraer el contenido del texto
+      // Utilice el siguiente querySelector para acceder a la respuesta con la etiqueta <thumbnailUrl>
       let thumbnailUrl = book.querySelector('thumbnailUrl')?book.querySelector('thumbnailUrl').textContent:''
+      
+      // De la respuesta, extraiga el texto dentro de las etiquetas: <title>, <isbn> y <shortDescription>.
+      // Utilice el operador condicional ternario para validar la existencia de cada etiqueta, previo a extraer el texto
+      
       let title = ''
       let isbn = ''
       let shortDescription = ''

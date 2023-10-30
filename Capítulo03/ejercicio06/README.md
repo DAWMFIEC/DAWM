@@ -4,6 +4,7 @@
 
 ## Instrucciones
 
+* Descargue y descomprima [C03E06.zip](../../zips/C03E06.zip)
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
@@ -13,10 +14,10 @@
 			+ En Windows, con: `npm run debugw`
 			+ En MacOs, con: `npm run debugm`
 	+ Utilice su navegador preferido para abrir la vista inicial del ejercicio, con el URL: `http://localhost:3000/`
+	
 * Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
-* Desde el editor de texto, modifica el archivo el archivo `public/scripts/ejercicio.js`, 
-	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
-	+ Agrega los cambios solicitadas dentro de las secciones marcadas, con:  
+* Desde el editor de texto, modifica el archivo `public/scripts/ejercicio.js`
+	+ Agrega tu respuesta dentro de cada uno de los comentarios marcados, con:  
 	`/* Inicio */` - `/* Fin */`
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 
@@ -26,7 +27,7 @@
 * Los resultados posibles a las pruebas unitarias pueden ser: 
 	+ Todos fueron exitosas, o
 	+ Existen pruebas unitarias fallidas.
-* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
+* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.
 
 ## Referencias 
 

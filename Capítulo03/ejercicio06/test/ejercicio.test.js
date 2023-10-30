@@ -27,10 +27,6 @@ describe('Test unitarios para la ruta `/`', function() {
     ]
 
     let script2 = [
-      `let books = xml.querySelectorAll('libros > libro')`
-    ]
-
-    let script3 = [
       `let title = book.querySelector('title')?book.querySelector('title').textContent:''`,
       `let isbn = book.querySelector('isbn')?book.querySelector('isbn').textContent:''`,
       `let shortDescription = book.querySelector('shortDescription')?book.querySelector('shortDescription').textContent:''`
@@ -86,35 +82,6 @@ describe('Test unitarios para la ruta `/`', function() {
             chai.expect.fail(`Código esperado: 
               
               ${script2.join('\n')}
-              
-              `);
-            return;
-          }
-        
-        })
-    });
-
-    it(`En public/scripts/ejercicio.js con el código:
-
-      ${script3.join('\n')}
-      
-      `, function() {
-      return request(app)
-        .get('/scripts/ejercicio.js')
-        .then((response) => {
-
-          try {
-
-            let responseclean = response.text.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,'')
-            
-            for(let elemento of script3) {
-              chai.expect(responseclean).to.contain(elemento.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '').replace(/<br\s*[\/]?>/gi,'').replace(/<\/br\s*[\/]?>/gi,''))
-            }
-            
-          } catch (error) {
-            chai.expect.fail(`Código esperado: 
-              
-              ${script3.join('\n')}
               
               `);
             return;
