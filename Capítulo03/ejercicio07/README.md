@@ -9,16 +9,15 @@
 
 ## Instrucciones
 
+* Descargue y descomprima [C03E07.zip](../../zips/C03E07.zip)
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
 
 ### Servidor HTTP
 
-* Desde la línea de comandos, crea una carpeta, con: `mkdir servidorHTTP`.
-* Acceda a la carpeta, con: `cd servidorHTTP`
 * Cree el archivo `servidor.js`
-* Agregue las instrucciones 
+* Agregue las instrucciones en el archivo `servidor.js`
 
 ```
 /* Módulo HTTP para crear el servidor */
@@ -62,7 +61,7 @@ servidor.listen(puerto, host, () => {
 
 ## Pruebas unitarias
 
-* Desde otra instancia de la línea de comandos, en la carpeta raíz del ejercicio, ejecute: `npm test`
+* Desde otra instancia de la línea de comandos, ejecute: `npm test`
 * Los resultados posibles a las pruebas unitarias pueden ser: 
 	+ Todos fueron exitosas, o
 	+ Existen pruebas unitarias fallidas.
