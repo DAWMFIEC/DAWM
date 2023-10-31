@@ -16,11 +16,12 @@ const manejadorPeticiones = (req, res) => {
         case "/texto":
             /* Inicio */
             //Agregue el encabezado a la respuesta con res.setHeader con el nombre "Content-Type" y el valor "text/plain"
+            res.setHeader("Content-Type","text/plain")
             
             //Agregue el codigo de estado con res.writeHead con el valor 200
-            
+            res.writeHead(2000)
             //Escriba la respuesta con res.end con el texto `Esto es un texto`
-            
+            res.end(`Esto es un texto`)        
             break;
             /* Fin */
 

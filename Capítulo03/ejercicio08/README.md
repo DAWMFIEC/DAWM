@@ -19,15 +19,15 @@
 
 ## Instrucciones
 
+* Descargue y descomprima [C03E08.zip](../../zips/C03E08.zip)
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
-* Desde el editor de texto, modifica el archivo el archivo `servidorHTTP/servidor.js`,
+* Desde el editor de texto, modifica el archivo el archivo `servidor.js`,
 	+ Identifique las instrucciones a realizar que se encuentran en los bloques de comentarios.
 	+ Agrega los cambios solicitadas dentro de las secciones marcadas, con:  
 	`/* Inicio */` - `/* Fin */`
 * Por cada bloque de instrucciones:
-	+ Desde la línea de comandos desde la carpeta del proyecto `servidorHTTP`
 	+ Reinicie el servidor con: `node servidor.js`
 	+ Desde el navegador, abra una pestaña en el navegador para el URL `http://localhost:8000`.
 

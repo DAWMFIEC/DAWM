@@ -68,8 +68,6 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 05](Capítulo03/ejercicio05)         | Eventos |
 | 				| [Ejercicio 06](Capítulo03/ejercicio06)         | Promesas y Async/Await  |
 | 				| [Ejercicio 07](Capítulo03/ejercicio07)         | Servidor HTTP - Básico  |
-| 				| [Ejercicio 08](Capítulo03/ejercicio08)         | Servidor HTTP - URL + Headers   |
-| 				| [Ejercicio 09](Capítulo03/ejercicio09)         | Servidor HTTP - Cliente HTTP  |
 
 
 ## Referencias 
