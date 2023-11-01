@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 * En la [documentación del API](https://open-meteo.com/en/docs) de [Open Meteo](https://open-meteo.com/):
   - Busque y elija en _Search Location_ la ciudad de `Guayaquil`,
-  - En  _Timezone_ seleccione la opci[on] `Automatically detect time zone`.
+  - En  _Timezone_ seleccione la opción `Automatically detect time zone`.
   - Elija en _Forecast Length_ el valor de `7 días (default)`.
   - Marque en _Hourly Weather Variables_ la opción `Precipitation Probability`.
 * En la sección _Preview and API URL_, recargue e inspeccione los resultados del gráfico.
@@ -51,6 +51,9 @@ Edite el archivo `index.html`
               <div class="col">
                   <canvas id="plot1"></canvas>
               </div>
+              <div class="col">
+                  <canvas id="plot2"></canvas>
+              </div>
           </div>
       </div>
   </section>
@@ -63,7 +66,7 @@ Edite el archivo `index.html`
 
 Edite el archivo `public/javascript/load_data.js`
 
-* Agregue e invoque la función flecha **cargarOpenMeteo**.
+* Agregue e invoque la función flecha _cargarOpenMeteo_.
 
 * Dentro de la función _cargarOpenMeteo_, agregue una **petición asíncrona**. Utilice el **endpoint** previamente generado. 
 
@@ -110,7 +113,7 @@ Edite el archivo `public/javascript/load_data.js`
     //Respuesta en formato JSON
 
     //Referencia al elemento con el identificador plot
-    let plotRef = document.getElementById('plot');
+    let plotRef = document.getElementById('plot1');
 
     //Etiquetas del gráfico
     let labels = responseJSON.hourly.time;
@@ -133,16 +136,18 @@ Edite el archivo `public/javascript/load_data.js`
     };
 
     //Objeto con la instanciación del gráfico
-    let chart  = new Chart(plotRef, config);
-
-    //Modificación en el estilo del contenedor 
-    chart.canvas.parentNode.style.width = '100vh';
+    let chart1  = new Chart(plotRef, config);
 
   })
   ...
 ```
 
-* Versiona local y remotamente el repositorio **curriculum**.
+* Coloque el código necesario para agregar un segundo gráfico en su _dashboard_.
+  + Experimente con otras variables de _OpenMeteo_.
+  + Modifique el _objeto de configuración_ para mostrar otras características en el gráfico.
+  + Inserte el gráfico en el elemento _plot2_.
+
+* Versiona local y remotamente el repositorio **dashboard**.
 
 
 ### Documentación
@@ -165,7 +170,7 @@ Edite el archivo `public/javascript/load_data.js`
 
 ### Términos
 
-dashboard, endpoint, ajax, json
+petición asíncrona, endpoint, json
 
 ### Referencias
 
