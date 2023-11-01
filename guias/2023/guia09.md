@@ -101,7 +101,7 @@ cargarOpenMeteo()
 
 Edite el archivo `public/javascript/load_data.js`
 
-* Dentro del callback con la respuesta JSON, agregue las instrucciones para procesar los datos como un gráfico.
+* Dentro del callback con la respuesta JSON, agregue las instrucciones para procesar los datos en un gráfico de Chart.js. Revise la [documentación de Chart.js](https://www.chartjs.org/docs/latest/).
 
 ```typescript
   ...
@@ -150,6 +150,16 @@ Edite el archivo `public/javascript/load_data.js`
 * El [API-fetch](https://www.javascripttutorial.net/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos asíncronos cuya respuesta viene en formato [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/) o [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 
 ### Fundamental
+
+#### Sincronía
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">For comparison here is how synchronous data fetching would work. <a href="https://t.co/GTjqmpnz3K">pic.twitter.com/GTjqmpnz3K</a></p>&mdash; Yash (@yashguptaz) <a href="https://twitter.com/yashguptaz/status/1236594518054469632?ref_src=twsrc%5Etfw">March 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+#### Asincronía
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Asynchronous JavaScript Promises Visualized.<br><br>Notice how Web APIs are given the task of processing the request and the output is received back by the main thread.<br><br>This shows how single-threaded JavaScript can do async operations.<br><br>Animation made by me. <a href="https://t.co/p5vprPyxzn">pic.twitter.com/p5vprPyxzn</a></p>&mdash; Yash (@yashguptaz) <a href="https://twitter.com/yashguptaz/status/1236586576722812928?ref_src=twsrc%5Etfw">March 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+#### Promesas 
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 18 of JS30Xplore:<br><br>1. What is Asynchronous Programming:<br><br>JavaScript is a single-threaded language, meaning it can execute one operation at a time in a sequential manner. However, many operations in web development are inherently asynchronous.<br> These operations include… <a href="https://t.co/PWYIzeJ736">pic.twitter.com/PWYIzeJ736</a></p>&mdash; Sanjana Sanghi (@ainasanghi) <a href="https://twitter.com/ainasanghi/status/1719306612165468659?ref_src=twsrc%5Etfw">October 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
