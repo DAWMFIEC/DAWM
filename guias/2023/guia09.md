@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
   - Elija en _Forecast Length_ el valor de `7 días (default)`.
   - Marque en _Hourly Weather Variables_ la opción `Precipitation Probability`.
 * En la sección _Preview and API URL_, recargue e inspeccione los resultados del gráfico.
-* Abra _API URL_ en una pestaña nueva e identifique el JSON resultante.
+* Abra _API URL_ en una pestaña nueva e identifique el [JSON](https://blog.greenroots.info/how-to-parse-json-in-javascript) resultante.
 
 ### Actividades
 
@@ -97,7 +97,7 @@ cargarOpenMeteo()
 **NOTA:** Utilice la documentación del método [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) y el procesamiento de [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/)
 
 
-#### Requerimiento asíncrono
+#### Chart.js
 
 Edite el archivo `public/javascript/load_data.js`
 
@@ -142,16 +142,12 @@ Edite el archivo `public/javascript/load_data.js`
   ...
 ```
 
-* Procese la respuesta del JSON para mostrar los datos en la plantilla, de acuerdo con:
-  - La documentación de [Document API](https://developer.mozilla.org/es/docs/Web/API/Document).
-  - [Análisis de JSON](https://blog.greenroots.info/how-to-parse-json-in-javascript).
-
 * Versiona local y remotamente el repositorio **curriculum**.
+
 
 ### Documentación
 
-* [AJAX](https://www.espai.es/blog/2019/07/ajax-con-fetch-api/). La tecnología de requerimientos asincrónicos que maneja JavaScript permite hacer requerimientos a terceros sin que necesite recargar todo el contenido de la página. 
-* El [API-fetch](https://www.javascripttutorial.net/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos de [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/) y [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
+* El [API-fetch](https://www.javascripttutorial.net/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos asíncronos cuya respuesta viene en formato [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/) o [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 
 ### Fundamental
 
