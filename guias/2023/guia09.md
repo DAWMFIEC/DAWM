@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
   - Busque y elija en _Search Location_ la ciudad de `Guayaquil`,
   - En  _Timezone_ seleccione la opción `Automatically detect time zone`.
   - Elija en _Forecast Length_ el valor de `7 días (default)`.
-  - Marque en _Hourly Weather Variables_ la opción `Precipitation Probability`.
+  - Marque en _Hourly Weather Variables_ la opción `Temperature (2m)`.
 * En la sección _Preview and API URL_, recargue e inspeccione los resultados del gráfico.
 * Abra _API URL_ en una pestaña nueva e identifique el [JSON](https://blog.greenroots.info/how-to-parse-json-in-javascript) resultante.
 
