@@ -25,5 +25,5 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 08: Javascript - Introducción, DOM y Eventos](/DAWM/guias/2023/guia08)
+* [Guía 08: Javascript - Introducción y DOM](/DAWM/guias/2023/guia08)
 * [Guía 09: Javascript - Sincronía/Asincronía y Promesass](/DAWM/guias/2023/guia09)
