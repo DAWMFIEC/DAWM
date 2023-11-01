@@ -12,15 +12,10 @@ theme: jekyll-theme-leap-day
   - Permita la ubicación mediante el GPS.
   - Identifique las variables, el dato, el tipo de dato y unidades disponibles.
   - Abra el **API URL** con el **JSON** resultante de la configuración.
-* Busque una _plantilla gratuita_ de un _dashboard_ que utilice _bootstrap_, como: [MDBootstrap](https://mdbootstrap.com/freebies/), [CORE UI](https://coreui.io/product/free-bootstrap-admin-template/), [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false) u otros.
-* Diseñe la interfaz del dashboard al ubicar las variables y el dato dentro de la plantilla. Utilice cualquiera de las herramientas de diseño que conoce.
-
 
 ### Actividades
 
-#### Proyecto Base
-
-* Descargue la _plantilla gratuita_ de un _dashboard_ que utilice _bootstrap_. 
+* Clona localmente tu repositorio **dashboard**.
 * Abra el proyecto en VSCode y levante el live server.
 * Depure el dashboard de enlaces a secciones innesarias, de acuerdo con su diseño.
 
@@ -53,9 +48,15 @@ theme: jekyll-theme-leap-day
   - La documentación de [Document API](https://developer.mozilla.org/es/docs/Web/API/Document).
   - [Análisis de JSON](https://blog.greenroots.info/how-to-parse-json-in-javascript).
 
+* Versiona local y remotamente el repositorio **curriculum**.
+
 ### Documentación
 
 * [AJAX](https://www.espai.es/blog/2019/07/ajax-con-fetch-api/). La tecnología de requerimientos asincrónicos que maneja JavaScript permite hacer requerimientos a terceros sin que necesite recargar todo el contenido de la página. El [API-fetch](https://www.javascripttutorial.net/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos de [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/) y [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
+
+### Fundamental
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 18 of JS30Xplore:<br><br>1. What is Asynchronous Programming:<br><br>JavaScript is a single-threaded language, meaning it can execute one operation at a time in a sequential manner. However, many operations in web development are inherently asynchronous.<br> These operations include… <a href="https://t.co/PWYIzeJ736">pic.twitter.com/PWYIzeJ736</a></p>&mdash; Sanjana Sanghi (@ainasanghi) <a href="https://twitter.com/ainasanghi/status/1719306612165468659?ref_src=twsrc%5Etfw">October 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
