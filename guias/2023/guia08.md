@@ -54,7 +54,7 @@ import {tiempoArr, precipitacionArr, uvArr, temperaturaArr} from './static_data.
 let fechaActual = () => new Date().toISOString().slice(0,10);
 ```
 
-* Agregue e invoque la función flecha cargarPrecipitacion:
+* Agregue e invoque la función flecha **cargarPrecipitacion**:
 
 ```typescript
 let cargarPrecipitacion = () => {
