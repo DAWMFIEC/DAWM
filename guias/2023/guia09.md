@@ -21,7 +21,7 @@ theme: jekyll-theme-leap-day
 * Clona localmente tu repositorio **dashboard**.
 * Abra el proyecto en VSCode y levante el live server.
 
-#### Chart.js
+#### HTML
 
 Edite el archivo `index.html`
 
