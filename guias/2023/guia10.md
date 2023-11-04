@@ -129,42 +129,45 @@ let loadForecastByCity = () => {
   selectElement.addEventListener("change", selectListener)
 
 }
-
 ```
 
 * Dentro de selectListener, agregue su API key, arme el URL del requerimiento y procese la respuesta en la función parseXML. Revise los cambios por la consola.
 
 ```typescript
-let selectListener = (event) => {
+let selectListener = async (event) => {
 
     let selectedCity = event.target.value
+
+    try {
+
+        //API key
+        let APIkey = ''
+        let url = `https://api.openweathermap.org/data/2.5/forecast?q=${selectedCity}&mode=xml&appid=${APIkey}`
+
+        let response = await fetch(url)
+        let responseText = await response.text()
+        
+        await parseXML(responseText)
     
-    //API key
-    let APIkey = ''
-    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${selectedCity}&mode=xml&appid=${APIkey}`
-
-
-    fetch(url)
-        .then(response => response.text())
-        .then(responseText => {
-
-            parseXML(responseText)
-
-        })
-        .catch(console.error);
-
-    
+    } catch (error) {
+        console.log(error)
+    }
 
 }
 ```
 
-* Dentro de parseXML, coloque el código para procesar el objeto xml. Obtenga los valores para las variables _windSpeed_, _precipitation_, _pressure_ y _cloud_. Revise los cambios en el navegador.
+* Dentro de parseXML, obtenga la referencia al elemento `#forecastbody` del documento HTML, y procese los elementos con etiqueta `<time>` del objeto xml. Revise los cambios en el navegador.
 
 ```typescript
 let parseXML = (responseText) => {
 
     const parser = new DOMParser();
     const xml = parser.parseFromString(responseText, "application/xml");
+
+
+    //Referencia 
+    let forecastElement = document.querySelector("#forecastbody")
+    forecastElement.innerHTML = ''
 
     
     let timeArr = xml.querySelectorAll("time")
@@ -196,6 +199,8 @@ let parseXML = (responseText) => {
 
 }
 ```
+
+**NOTA:** Extraiga el resto de los valores del XML para las variables _windSpeed_, _precipitation_, _pressure_ y _cloud_.
 
 * Versiona local y remotamente el repositorio **dashboard**.
 
