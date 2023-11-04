@@ -4,198 +4,207 @@ theme: jekyll-theme-leap-day
 
 ## Guía 10
 
-[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2023/proyecto05)
+[DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2023/proyecto04)
 
 ### Actividades previas
 
-* De [Open Meteo](https://open-meteo.com/) identifique la [documentación del API](https://open-meteo.com/en/docs).
-  - Seleccione una variable de la sección **Hourly Weather Variables**, p.e.: `Temperature (2 m)` 
-  - Seleccione una variable de la sección **Daily Weather Variables**, p.e.: `UV Index`
+#### OpenWeatherMap
 
-* De [Chart.js](https://www.chartjs.org/) identifique la [documentación del API](https://www.chartjs.org/docs/latest/getting-started/)
-  - Identifique los [tipos de gráficos](https://www.chartjs.org/docs/latest/charts/) disponibles.
-
-* Asocie cada una de las variables con el arreglo de datos y los gráficos de Chart.js. Considere la descripción de los gráficos en [Dataviz Catalogue](https://datavizcatalogue.com/).
-
+1. Obtenga una cuenta en [OpenWeatherMap](https://openweathermap.org/). 
+2. Copie el **API key** de su correo o desde su [perfil](https://home.openweathermap.org/api_keys).
+3. Acceda a la documentación de [Call 5 day / 3 hour forecast data](https://openweathermap.org/forecast5).
 
 ### Actividades
 
-#### Chart.js
+* Clona localmente tu repositorio **dashboard**.
+* Abra el proyecto en VSCode y levante el live server.
 
-##### HTML
 
-* Levante el proyecto _dashboard_.
-* En el `index.html`, agregue:
-  - El contenedor del gráfico donde considere conveniente, con:
+#### HTML
 
-      ```
-      <canvas id="myChart"></canvas>
-      ```
+Edite el archivo `index.html`
 
-  - La referencia a **Chart.js** desde el CDN, con:
+* Agregue las etiquetas contenedoras de los datos tabulados.
 
-      ```
-      /* Coloque la referencia a Chart.js antes del script creado en la guía anterior */
-      
-      <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+```html
+...
 
-      <script src="script-de-la-guia-anterior.js"></script>
-      ```
+  <!-- Datos -->
+  <section class="p-4 text-right bg-light">
+      <h4 id="datos" class="mb-3">
+          Datos
+      </h4>
+      <div class="container">
 
-##### JavaScript
+          <div
+              class="row justify-content-end row-cols-6 row-cols-md-6 g-3 mt-2">
 
-Dentro del archivo javascript creado en la guía anterior.
+              <div class="col">
+                  <select class="form-select form-select-lg mb-3"
+                      aria-label="Default select example">
+                      <option selected>Ciudades</option>
+                      <option value="Machala">Machala</option>
+                      <option value="Guayaquil">Guayaquil</option>
+                      <option value="Quito">Quito</option>
+                  </select>
+              </div>
 
-* Agregue la función flecha **plot** con el parámetro **data**, antes con la función autoejecutable:
+          </div>
+          <div class="row row-cols-1 row-cols-md-1 g-3 mt-2">
+              <div class="col">
 
-  ```
-  let plot = (data) => { ... }
+                  <div class="card">
+                      <div class="card-body">
+                          <h5 class="card-title">Pronóstico del tiempo
+                              para 5 días con datos cada 3 horas por
+                              ciudad</h5>
+                          <table id="forecast"
+                              class="table align-middle mb-0 bg-white">
+                              <thead class="bg-light">
+                                  <tr>
+                                      <th>Hora</th>
+                                      <th>Humedad [%]</th>
+                                      <th>Velocidad del viento [m/s]</th>
+                                      <th>Precipitación [--]</th>
+                                      <th>Presión [hPa]</th>
+                                      <th>Nubosidad [%]</th>
+                                  </tr>
+                              </thead>
+                              <tbody id="forecastbody">
+
+                              </tbody>
+                          </table>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Datos -->
+...
+```
+
+#### Requerimiento asíncrono
+
+Edite el archivo `public/javascript/load_data.js`
+
+* Agregue las funciones flecha _loadForecastByCity_, _selectListener_ y _parseXML_. E invoque la función _loadForecastByCity_.
+
+```typescript
+... 
+let parseXML = (responseText) => {
   
+  // Parsing XML
+  const parser = new DOMParser();
+  const xml = parser.parseFromString(responseText, "application/xml");
 
-  (
-    function () { ... }
+  console.log(xml)
 
-  )();
-  ```
+}
 
-* Dentro de la función **plot**, agregue:
-  - La referencia al elemento HTML.
+let selectListener = (event) => {
 
-      ```
-      const ctx = document.getElementById('myChart');
-      ```
-  - La fuente de datos.
+  //Callback
+  let selectedCity = event.target.value
+  console.log(selectedCity);
 
-      ```
-      const dataset = {
-          labels: data.hourly.time, /* ETIQUETA DE DATOS */
-          datasets: [{
-              label: 'Temperatura semanal', /* ETIQUETA DEL GRÁFICO */
-              data: data.hourly.temperature_2m, /* ARREGLO DE DATOS */
-              fill: false,
-              borderColor: 'rgb(75, 192, 192)',
-              tension: 0.1
-          }]
-      };
-      ```
-  - La configuración del gráfico
+}
 
-      ```
-      const config = {
-          type: 'line',
-          data: dataset,
-      };
-      ```
+let loadForecastByCity = () => {
 
-  - La instanciación del gráfico
+  //Handling event
 
-      ```
-      const chart = new Chart(ctx, config)
-      ```
+}
 
-* Dentro del callback del segundo `then`, agregue la llamada a la función plot.
-  
-  ```
-  fetch(URL)
-  .then(response => response.json())
-  .then(data => {
+loadForecastByCity()
+```
+
+* Dentro de loadForecastByCity, obtenga la referencia al elemento select y agregue el callback al **evento** change. Revise los cambios por la consola.
+
+```typescript
+let loadForecastByCity = () => {
+
+  //Handling event
+  let selectElement = document.querySelector("select")
+  selectElement.addEventListener("change", selectListener)
+
+}
+
+```
+
+* Dentro de selectListener, agregue su API key, arme el URL del requerimiento y procese la respuesta en la función parseXML. Revise los cambios por la consola.
+
+```typescript
+let selectListener = (event) => {
+
+    let selectedCity = event.target.value
     
-    ...
+    //API key
+    let APIkey = ''
+    let url = `https://api.openweathermap.org/data/2.5/forecast?q=${selectedCity}&mode=xml&appid=${APIkey}`
 
-    plot(data)
-  })
-  .catch(console.error);
-  ```
 
-#### LocalStorage
+    fetch(url)
+        .then(response => response.text())
+        .then(responseText => {
 
-##### JavaScript
-
-Dentro del archivo javascript (antes con la función autoejecutable).
-
-* Agregue la función flecha **load** con el parámetro **data**:
-
-  ```
-  let plot = (data) => { ... }
-
-  let load = (data) => { ... }
-
-  (
-    function () { ... }
-  )();
-  ```
-
-* Mueva el contenido del segundo `then` a la función flecha **load**.
-  
-  ```
-  let URL = 'https://...'
-
-  fetch(URL)
-    .then(response => response.json())
-    .then(data => {
-        load(data)
-    })
-    .catch(console.error);
-  ```
-
-* Dentro de la función anónima:
-
-  - Obtenga el contenido de la entrada `'meteo'` en la memoria del navegdor.
-
-      ```
-      let meteo = localStorage.getItem('meteo');
-      ```
-
-  - La petición asincrónica se ejecuta solo si no existe (`meteo == null`) la respuesta guardada y guarda DATA en la memoria. Caso contrario, carga DATA desde la memoria.
-
-      ```
-      if(meteo == null) {
-        let URL = 'https://...';
-        
-        fetch(URL)
-        .then(response => response.json())
-        .then(data => {
-            load(data)
-
-            /* GUARDAR DATA EN LA MEMORIA */
+            parseXML(responseText)
 
         })
         .catch(console.error);
 
-      } else {
+    
 
-          /* CARGAR DATA DESDE LA MEMORIA */
+}
+```
 
-      }
-      ```
+* Dentro de parseXML, coloque el código para procesar el objeto xml. Obtenga los valores para las variables _windSpeed_, _precipitation_, _pressure_ y _cloud_. Revise los cambios en el navegador.
 
-  - Guarde el resultado de la petición asincrónica en la entrada 'meteo' de la memoria del navegador. Los valores en la memoria del navegador son de tipo texto.
+```typescript
+let parseXML = (responseText) => {
 
-    Utilice el método [JSON.stringify()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) para convertir el objeto en texto.
+    const parser = new DOMParser();
+    const xml = parser.parseFromString(responseText, "application/xml");
 
-      ```
-      ...
-       
+    
+    let timeArr = xml.querySelectorAll("time")
 
-      /* GUARDAR DATA EN MEMORIA */
-      localStorage.setItem("meteo", JSON.stringify(data))
+    timeArr.forEach(time => {
+        
+        let from = time.getAttribute("from")
+        let to = time.getAttribute("to")
 
-      ...
-      ```
+        let humidity = time.querySelector("humidity").getAttribute("value")
+        let windSpeed = ''
+        let precipitation = ''
+        let pressure = ''
+        let cloud = ''
 
-  - Convierta el contenido de la entrada 'meteo' a objeto y cargue con la función **load**.
+        let template = `
+            <tr>
+                <td>${from} - ${to}</td>
+                <td>${humidity}</td>
+                <td>${windSpeed}</td>
+                <td>${precipitation}</td>
+                <td>${pressure}</td>
+                <td>${cloud}</td>
+            </tr>
+        `
 
-    Utilice el método [JSON.parse()](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) para convertir el texto en objeto.
+        forecastElement.innerHTML += template;
+    })
 
-      ```
-      else {
+}
+```
 
-        /* CARGAR DATA EN MEMORIA */
-        load(JSON.parse(meteo))
-      
-      }
-      ```
+* Versiona local y remotamente el repositorio **dashboard**.
 
+
+### Fundamental
+
+* Async/Await
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Day 20 of JS30Xplore:<br><br>Async/await is a powerful feature in JavaScript that allows you to write asynchronous code in a more synchronous and readable manner. <br>It&#39;s particularly useful for handling asynchronous operations like network requests, file I/O, and more.<br><br>To learn… <a href="https://t.co/QwEfBLW2Om">pic.twitter.com/QwEfBLW2Om</a></p>&mdash; Sanjana Sanghi (@ainasanghi) <a href="https://twitter.com/ainasanghi/status/1720392932266807598?ref_src=twsrc%5Etfw">November 3, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ### Documentación
@@ -205,11 +214,10 @@ Dentro del archivo javascript (antes con la función autoejecutable).
 
 ### Términos
 
-cdn, librerías externas
+API key, async/await, evento
 
 ### Referencias
 
-* Chart.js. (2023). Retrieved 13 June 2023, from https://www.chartjs.org/ 
-* Chart JS - YouTube. (2023). Retrieved 14 June 2023, from https://www.youtube.com/@ChartJS-tutorials
+
+* (N.d.). Retrieved from https://openweathermap.org/forecast5
 * Window.localStorage - Referencia de la API Web MDN. (2023). Retrieved 14 June 2023, from https://developer.mozilla.org/es/docs/Web/API/Window/localStorage
-* JSON.parse() - JavaScript MDN. (2023). Retrieved 14 June 2023, from https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse
