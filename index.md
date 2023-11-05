@@ -28,6 +28,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 04: Clima - Dashboard](proyectos/2023/proyecto04)
   * [Guía 08: Javascript - Introducción y DOM](guias/2023/guia08)
   * [Guía 09: Javascript - Sincronía/Asincronía y Promesas](guias/2023/guia09)
+  * [Guía 10: Javascript - Async/Await y LocalStorage](guias/2023/guia10)
 * [Proyecto 05: Dataset SPA - Angular](proyectos/2023/proyecto0x)
 * [Proyecto 06: Dataset MPA - Angular](proyectos/2023/proyecto0x)
   
