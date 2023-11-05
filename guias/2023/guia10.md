@@ -187,8 +187,7 @@ let parseXML = (responseText) => {
 
     timeArr.forEach(time => {
         
-        let from = time.getAttribute("from")
-        let to = time.getAttribute("to")
+        let from = time.getAttribute("from").replace("T", " ")
 
         let humidity = time.querySelector("humidity").getAttribute("value")
         let windSpeed = ''
@@ -198,7 +197,7 @@ let parseXML = (responseText) => {
 
         let template = `
             <tr>
-                <td>${from} - ${to}</td>
+                <td>${from}</td>
                 <td>${humidity}</td>
                 <td>${windSpeed}</td>
                 <td>${precipitation}</td>
