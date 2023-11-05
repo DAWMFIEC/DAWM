@@ -13,6 +13,11 @@ theme: jekyll-theme-leap-day
 1. Obtenga una cuenta en [OpenWeatherMap](https://openweathermap.org/). 
 2. Copie el **API key** de su correo o desde su [perfil](https://home.openweathermap.org/api_keys).
 3. Acceda a la documentación de [Call 5 day / 3 hour forecast data](https://openweathermap.org/forecast5).
+4. Compruebe la petición en su navegador
+
+```
+https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<API KEY>
+```
 
 ### Actividades
 
@@ -102,9 +107,9 @@ let parseXML = (responseText) => {
 
 }
 
+//Callback
 let selectListener = (event) => {
 
-  //Callback
   let selectedCity = event.target.value
   console.log(selectedCity);
 
@@ -135,9 +140,10 @@ let loadForecastByCity = () => {
 
 #### Async/await
 
-* Dentro de selectListener, agregue su API key, arme el URL del requerimiento y procese la respuesta en la función parseXML. Revise los cambios por la consola.
+* Dentro de selectListener, convierta el callback como async, agregue su API key, arme el URL del requerimiento y procese la respuesta en la función parseXML. Revise los cambios por la consola.
 
 ```typescript
+// Callback async
 let selectListener = async (event) => {
 
     let selectedCity = event.target.value
@@ -225,23 +231,18 @@ let selectListener = async (event) => {
 
     if (cityStorage == null) {
     
-      try {
+        try {
+          ...
+          // Guarde la entrada de almacenamiento local
+          await localStorage.setItem(selectedCity, responseText)
 
-        ...
-
-        // Guarde la entrada de almacenamiento local
-        await localStorage.setItem(selectedCity, responseText)
-
-      } catch (error) {
-         
-         ...
-
-      }
+        } catch (error) {
+           ...
+        }
 
     } else {
-
-         // Procese un valor previo
-         parseXML(cityStorage)
+        // Procese un valor previo
+        parseXML(cityStorage)
     }
 
 }
