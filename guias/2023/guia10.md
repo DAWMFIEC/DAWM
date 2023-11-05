@@ -84,7 +84,7 @@ Edite el archivo `index.html`
 ...
 ```
 
-#### Requerimiento asíncrono
+#### Javascript
 
 Edite el archivo `public/javascript/load_data.js`
 
@@ -119,6 +119,8 @@ let loadForecastByCity = () => {
 loadForecastByCity()
 ```
 
+#### Event Listener
+
 * Dentro de loadForecastByCity, obtenga la referencia al elemento select y agregue el callback al **evento** change. Revise los cambios por la consola.
 
 ```typescript
@@ -130,6 +132,8 @@ let loadForecastByCity = () => {
 
 }
 ```
+
+#### Async/await
 
 * Dentro de selectListener, agregue su API key, arme el URL del requerimiento y procese la respuesta en la función parseXML. Revise los cambios por la consola.
 
@@ -148,13 +152,15 @@ let selectListener = async (event) => {
         let responseText = await response.text()
         
         await parseXML(responseText)
-    
+
     } catch (error) {
         console.log(error)
     }
 
 }
 ```
+
+#### Procesamiento del XML
 
 * Dentro de parseXML, obtenga la referencia al elemento `#forecastbody` del documento HTML, y procese los elementos con etiqueta `<time>` del objeto xml. Revise los cambios en el navegador.
 
@@ -165,11 +171,12 @@ let parseXML = (responseText) => {
     const xml = parser.parseFromString(responseText, "application/xml");
 
 
-    //Referencia 
+    // Referencia al elemento `#forecastbody` del documento HTML
+
     let forecastElement = document.querySelector("#forecastbody")
     forecastElement.innerHTML = ''
 
-    
+    // Procesamiento de los elementos con etiqueta `<time>` del objeto xml
     let timeArr = xml.querySelectorAll("time")
 
     timeArr.forEach(time => {
@@ -194,6 +201,7 @@ let parseXML = (responseText) => {
             </tr>
         `
 
+        //Renderizando la plantilla en el elemento HTML
         forecastElement.innerHTML += template;
     })
 
@@ -201,6 +209,43 @@ let parseXML = (responseText) => {
 ```
 
 **NOTA:** Extraiga el resto de los valores del XML para las variables _windSpeed_, _precipitation_, _pressure_ y _cloud_.
+
+#### Local Storage
+
+* Dentro de selectListener, lea la entrada de almacenamiento local, guarde la entrada de almacenamiento local y procese un valor previo.
+
+
+```typescript
+let selectListener = async (event) => {
+
+    let selectedCity = event.target.value
+
+    // Lea la entrada de almacenamiento local
+    let cityStorage = localStorage.getItem(selectedCity);
+
+    if (cityStorage == null) {
+    
+      try {
+
+        ...
+
+        // Guarde la entrada de almacenamiento local
+        await localStorage.setItem(selectedCity, responseText)
+
+      } catch (error) {
+         
+         ...
+
+      }
+
+    } else {
+
+         // Procese un valor previo
+         parseXML(cityStorage)
+    }
+
+}
+```
 
 * Versiona local y remotamente el repositorio **dashboard**.
 
