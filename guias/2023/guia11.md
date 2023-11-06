@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 11
 
-[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2023/proyecto05)
+[DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2023/proyecto04)
 
 ### Actividades previas
 
@@ -26,6 +26,9 @@ theme: jekyll-theme-leap-day
 
  
 ### Actividades
+
+* Clona localmente tu repositorio **dashboard**.
+* Abra el proyecto en VSCode y levante el live server.
 
 #### Dashboard
 
@@ -145,6 +148,11 @@ Dentro del archivo javascript creado en las guías anteriores.
 	  ```
 
 * Realice los cambios necesarios en el estilo y revise los resultados en el navegador.
+
+* Versiona local y remotamente el repositorio **dashboard**.
+
+
+### Fundamental
 
 ### Documentación
 
