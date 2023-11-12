@@ -74,7 +74,14 @@ loadExternalTable()
 	2. Obtenga a XML a partir de la respuesta de cadena de caracteres convertida en `"text/html"`. 
 	3. Del objeto XML, utilice el método `querySelector` para extraer el elemento que se encuentra en la ruta `"#postcontent table"`
 	4. Del objeto DOM, utilice el método `getElementById` para extraer el elemento con id `monitoreo`
-	5. 
+	5. Asigne el contenido del elemento XML en el contenido del DOM, con:
+
+	```typescript
+	...
+		elementoDOM.innerHTML = elementoXML.outerHTML
+	...
+	```
+
 	6. Use el inspector del navegador (en la pestaña **Console**) para reconocer el error en el requerimiento a un dominio cruzado. 
 
 ![cors](imagenes/cors_gestion.png)
@@ -83,9 +90,6 @@ loadExternalTable()
 #### CORS - Proxy
 
 * Solicite acceso al [proxy demo](https://cors-anywhere.herokuapp.com/corsdemo)
-
-
-	+ El **URL_proxy** es `'https://cors-anywhere.herokuapp.com/'`
 
 ##### JavaScript
 
@@ -114,7 +118,19 @@ Edite el archivo `public/javascript/load_data.js`
 
 ![proxygestion](imagenes/proxygestion.png)
 
-* Realice los cambios necesarios en el estilo y revise los resultados en el navegador.
+##### CSS
+
+* Realice los cambios necesarios en el estilo.
+
+```css
+...
+table tr:not(:nth-child(1)):not(:nth-child(2)) {
+    display: none;
+}
+...
+```
+
+* Revise los resultados en el navegador
 
 * Versiona local y remotamente el repositorio **dashboard**.
 
