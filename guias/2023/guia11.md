@@ -17,25 +17,41 @@ theme: jekyll-theme-leap-day
 
   	![consultan](imagenes/consultan.png)
 
-* Analice el código para realizar requerimientos asincrónicos cuya respuesta se encuentra en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
-	- Identifique los diferentes tipos de MimeType para el método [parseFromString](https://developer.mozilla.org/en-US/docs/Web/API/DOMParser/parseFromString) de acuerdo con el tipo de respuesta.
-
-* Examine la utilidad de la implementación de [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/CORS) en los navegadores web.
-
-* Analice el uso de un [CORS - Proxy](https://httptoolkit.com/blog/cors-proxies/) para resolver la implementación de las política de CORS. En particular, revise la implementación de un CORS - Proxy que se encuentra en [CORS-anywhere](https://github.com/Rob--W/cors-anywhere).
-
  
 ### Actividades
 
 * Clona localmente tu repositorio **dashboard**.
 * Abra el proyecto en VSCode y levante el live server.
 
-#### Dashboard
+#### HTML
 
-##### HTML
+Edite el archivo `index.html`
 
-* Levante el proyecto _dashboard_.
-* En el `index.html`, agregue una etiqueta HTML vacía. Dicho etiqueta contendrá la _Tabla de mareas puertos del Ecuador_. Asegúrese de colocar las clases de Bootstrap adecuadas y un identificador único, por ejemplo: `table-container`. 
+* Agregue las etiquetas contenedoras de la tabla de mareas.
+
+```html
+...
+
+  <!-- Tabla de mareas -->
+  <section class="p-4 text-right bg-light">
+      <h4 class="mb-3">
+          Tabla de mareas
+      </h4>
+      <div class="container">
+          <div class="row row-cols-1 row-cols-md-1 g-3 mt-2">
+              <div class="col">
+                  <div class="card">
+                      <div id="tablademareas" class="card-body">
+                          
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+  <!-- Tabla de mareas -->
+...
+```
 
 ##### JavaScript
 
@@ -160,9 +176,7 @@ Dentro del archivo javascript creado en las guías anteriores.
 
 ### Documentación
 
-* Requerimientos asincrónicos de archivos en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
-* El significado, uso y consideraciones de los [CORS - Proxies](https://httptoolkit.com/blog/cors-proxies/).
-* Mecanismo de [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/CORS) implementado por el navegador.
+* Mecanismo de [CORS](https://developer.mozilla.org/es/docs/Web/HTTP/CORS) implementado por el navegador. El significado, uso y consideraciones de los [CORS - Proxies](https://httptoolkit.com/blog/cors-proxies/).
 
 ### Términos
 
