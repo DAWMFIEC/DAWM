@@ -8,7 +8,6 @@
 | Jeremy Poveda		 |     [Ver](imagenes_cv/poveda_gorotiza.png)          |   [Ir](https://jeremy-poveda.github.io/curriculum/)    |
 | Kevin Roldan		 |   [Ver](imagenes_cv/roldan_pilozo.png)            |    [Ir](https://k3vr0ld4n.github.io/curriculum/)   |
 | José Ramos		 |   [Ver](imagenes_cv/ramos_rios.png)            |   [Ir](https://josdramo.github.io/curriculum/)    |
-| Michael Jimenez		 |    [Ver](imagenes_cv/jimenez_coello.png)           |   [Ir](https://michaeljimenezc.github.io/curriculum/)    |
 
 
 ## Landing Page
