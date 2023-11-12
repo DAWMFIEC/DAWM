@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 
 Edite el archivo `index.html`
 
-* Agregue las etiquetas contenedoras de la tabla de mareas.
+* Agregue las etiquetas contenedoras para la tabla del mapa de monitoreo.
 
 ```html
 ...
@@ -112,9 +112,10 @@ Edite el archivo `public/javascript/load_data.js`
 	 ...
 
 	}
-
-	loadExternalTable()
+	...
 	```
+
+	3. Compruebe el requerimiento exitoso.
 
 ![proxygestion](imagenes/proxygestion.png)
 
@@ -124,7 +125,7 @@ Edite el archivo `public/javascript/load_data.js`
 
 ```css
 ...
-table tr:not(:nth-child(1)):not(:nth-child(2)) {
+table.default tr:not(:nth-child(1)):not(:nth-child(2)) {
     display: none;
 }
 ...
