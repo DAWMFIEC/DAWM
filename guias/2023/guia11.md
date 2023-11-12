@@ -53,28 +53,27 @@ Edite el archivo `index.html`
 ...
 ```
 
-##### JavaScript
+#### Javascript
 
-Dentro del archivo javascript creado en las guías anteriores.
+Edite el archivo `public/javascript/load_data.js`
 
-* Agregue la función flecha **loadInocar**, antes con la función autoejecutable. Y llame a la función loadInocar dentro de la función anónima.
+* Agregue e invoque la función flecha _loadInocar_.
 
-  ```
-  let plot = (data) => { ... }
-
-  let load = (data) => { ... }
+```typescript
+... 
+let loadInocar = () => {
   
-  let loadInocar = () => { ... }
+ //Requerimiento asíncrono
 
-  (
-    function () { 
-    	... 
+}
 
-    	loadInocar();
-    }
+loadInocar()
+```
 
-  )();
-  ```
+#### Petición asíncrona
+
+* Dentro de loadInocar, realice una petición asíncrona y procese la respuesta del tipo `"application/xml"`. 
+
 
 * Dentro de la función **loadInocar**, agregue:
 
