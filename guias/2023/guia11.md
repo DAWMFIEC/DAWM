@@ -8,14 +8,10 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Revise la información de las [Tabla de mareas puertos del Ecuador del INOCAR](https://www.inocar.mil.ec/web/index.php/productos/tabla-mareas).
+* Revise la tabla del [Mapa de monitoreo de amenaza de inundaciones bajo pronóstico de precipitaciones](https://www.gestionderiesgos.gob.ec/monitoreo-de-inundaciones/).
 
-	- Use el inspector del navegador (en la pestaña **Network** y filtre con la opción **Doc**) para identificar los requerimientos de cada uno de los documentos PHP externos. 
-  	![docs](imagenes/docs.png)
-
-  - Identifique la estructura de la respuesta al recurso **consultan.php**:
-
-  	![consultan](imagenes/consultan.png)
+	- Use el inspector del navegador para identificar la sección del HTML a extraer. 
+  	![docs](imagenes/inspector_gestion.png)
 
  
 ### Actividades
@@ -35,13 +31,13 @@ Edite el archivo `index.html`
   <!-- Tabla de mareas -->
   <section class="p-4 text-right bg-light">
       <h4 class="mb-3">
-          Tabla de mareas
+          Mapa de monitoreo de amenaza de inundaciones bajo pronóstico de precipitaciones
       </h4>
       <div class="container">
           <div class="row row-cols-1 row-cols-md-1 g-3 mt-2">
               <div class="col">
                   <div class="card">
-                      <div id="tablademareas" class="card-body">
+                      <div id="monitoreo" class="card-body">
                           
                       </div>
                   </div>
@@ -57,49 +53,35 @@ Edite el archivo `index.html`
 
 Edite el archivo `public/javascript/load_data.js`
 
-* Agregue e invoque la función flecha _loadInocar_.
+* Agregue e invoque la función flecha _loadExternalTable_.
 
 ```typescript
 ... 
-let loadInocar = () => {
+let loadExternalTable = () => {
   
  //Requerimiento asíncrono
 
 }
 
-loadInocar()
+loadExternalTable()
 ```
 
 #### Petición asíncrona
 
-* Dentro de loadInocar, realice una petición asíncrona y procese la respuesta del tipo `"application/xml"`. 
+* Dentro de la función loadExternalTable:
+	
+	1. Realice una petición asíncrona al _endpoint_ de `'https://www.gestionderiesgos.gob.ec/monitoreo-de-inundaciones/'`, y
+	2. Convierta a XML la respuesta de cadena de caracteres a `"text/html"`. 
+	3. Del XML, con el método `querySelector` extraiga el elemento que se encuentra en la ruta `"#postcontent table"`
+	4. Muestre por consola el resultado 
+	5. Use el inspector del navegador (en la pestaña **Console**) para reconocer el error en el requerimiento a un dominio cruzado. 
 
-
-* Dentro de la función **loadInocar**, agregue:
-
-  - Una petición asíncrona al _endpoint_ de `'https://www.inocar.mil.ec/mareas/consultan.php'`. Utilice la documentación del método [fetch](https://www.javascripttutorial.net/javascript-fetch-api/) para el procesamiento de una respuesta [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/)
-
-	  ```
-	  let URL = 'https://www.inocar.mil.ec/mareas/consultan.php';
-
-	  fetch(URL)
-		 	.then(response => response.text())
-			.then(data => {
-			   const parser = new DOMParser();
-			   const xml = parser.parseFromString(data, "application/xml");
-			   console.log(xml);
-			})
-			.catch(console.error);
-	  ```
-
-	**Nota:** En el método **parseFromString**, cambie el MimeType de `"application/xml"` a `"text/html"`.
+![cors](imagenes/cors_gestion.png)
 
 
 #### CORS
 
-Use el inspector del navegador (en la pestaña **Console**) para reconocer el error en el requerimiento a un dominio cruzado. 
 
-![cors](imagenes/cors.png)
 
 #### CORS - Proxy
 
