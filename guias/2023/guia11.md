@@ -71,78 +71,48 @@ loadExternalTable()
 * Dentro de la función loadExternalTable:
 	
 	1. Realice una petición asíncrona al _endpoint_ de `'https://www.gestionderiesgos.gob.ec/monitoreo-de-inundaciones/'`, y
-	2. Convierta a XML la respuesta de cadena de caracteres a `"text/html"`. 
-	3. Del XML, con el método `querySelector` extraiga el elemento que se encuentra en la ruta `"#postcontent table"`
-	4. Muestre por consola el resultado 
-	5. Use el inspector del navegador (en la pestaña **Console**) para reconocer el error en el requerimiento a un dominio cruzado. 
+	2. Obtenga a XML a partir de la respuesta de cadena de caracteres convertida en `"text/html"`. 
+	3. Del objeto XML, utilice el método `querySelector` para extraer el elemento que se encuentra en la ruta `"#postcontent table"`
+	4. Del objeto DOM, utilice el método `getElementById` para extraer el elemento con id `monitoreo`
+	5. 
+	6. Use el inspector del navegador (en la pestaña **Console**) para reconocer el error en el requerimiento a un dominio cruzado. 
 
 ![cors](imagenes/cors_gestion.png)
 
 
-#### CORS
-
-
-
 #### CORS - Proxy
 
-* **OPCIÓN 1:** Proxy local
+* Solicite acceso al [proxy demo](https://cors-anywhere.herokuapp.com/corsdemo)
 
-	+ Clone el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere) 
-	+ Instale los paquetes, con: `npm install`
-	+ Levante el servidor, con: `npm start`
-	+ El **URL_proxy** es `'http://localhost:8080/'`
 
-* **OPCIÓN 2:** Proxy remoto
-	
-	+ En el repositorio [Rob--W/cors-anywhere](https://github.com/Rob--W/cors-anywhere)
-	+ Solicite acceso al [proxy demo](https://cors-anywhere.herokuapp.com/corsdemo)
 	+ El **URL_proxy** es `'https://cors-anywhere.herokuapp.com/'`
 
 ##### JavaScript
 
-Dentro del archivo javascript creado en las guías anteriores.
+Edite el archivo `public/javascript/load_data.js`
 
-* Dentro de la función **loadInocar**:
+* Edite la función loadExternalTable:
+	
+	1. Agregue la variable **proxyURL**
+	2. Modifique el _endpoint_ para que los requerimientos sean respondidos por el CORS - Proxy.
 
-	- Modifique el _endpoint_ para que pase por el CORS - Proxy.
+	```typescript
+	... 
+	let loadExternalTable = () => {
+	  
+	 //Requerimiento asíncrono
 
-		```
-		let URL_proxy = ' ' // Coloque el URL de acuerdo con la opción de proxy
-	  let URL = URL_proxy + 'https://www.inocar.mil.ec/mareas/consultan.php';
-	  ```
+	 let proxyURL = 'https://cors-anywhere.herokuapp.com/'
+	 let endpoint = proxyURL + 'https://www.gestionderiesgos.gob.ec/monitoreo-de-inundaciones/'
 
-		**Nota:** Consulte la nueva respuesta al requerimiento asincrónico.
+	 ...
 
-		![proxyconsultan](imagenes/proxyconsultan.png)
+	}
 
+	loadExternalTable()
+	```
 
-* Dentro de la función **loadInocar**, en el callback con el procesamiento de la respuesta:
-
-	- Utilice el API del objeto **xml** ([getElementsByClassName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByClassName) o [getElementsByTagName](https://developer.mozilla.org/es/docs/Web/API/Document/getElementsByTagName)) para obtener la referencia al elemento `div.container-fluid`.
-
-  	Por ejemplo:
-
-	  ```
-	  let contenedorMareas = xml.getElementsByClassName('container-fluid')[0];
-	  ```
-
-	  o 
-
-	  ```
-	  let contenedorMareas = xml.getElementsByTagName('div')[0];
-	  ```
-
-  - Utilice el API del objeto **xml** para obtener la referencia al elemento HTML mediante el documento API, por ejemplo:
-  	  
-	  ```
-	  let contenedorHTML = document.getElementById('table-container');
-	  ```
-
-  - Coloque el contenido de la respuesta asincrónica como contenido del elemento HTML, por ejemplo:
-
-	  ```
-	  contenedorHTML.innerHTML = contenedorMareas.innerHTML;
-	  ```
+![proxygestion](imagenes/proxygestion.png)
 
 * Realice los cambios necesarios en el estilo y revise los resultados en el navegador.
 
