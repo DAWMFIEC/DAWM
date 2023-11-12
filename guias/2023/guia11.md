@@ -154,6 +154,10 @@ Dentro del archivo javascript creado en las guías anteriores.
 
 ### Fundamental
 
+* CORS en [X](https://twitter.com/midudev/status/1721516493995716680)
+
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">¡Soluciona el Error de CORS de tu API de una vez!<br>Con estos diagramas entenderás por qué pasa:<a href="https://t.co/8rCqeRKSNX">https://t.co/8rCqeRKSNX</a> <a href="https://t.co/x58yEkwTvf">pic.twitter.com/x58yEkwTvf</a></p>&mdash; Miguel Ángel Durán (@midudev) <a href="https://twitter.com/midudev/status/1721516493995716680?ref_src=twsrc%5Etfw">November 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Documentación
 
 * Requerimientos asincrónicos de archivos en formato [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
