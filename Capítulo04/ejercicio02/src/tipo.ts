@@ -4,9 +4,11 @@ let valorInt = 55
 function comparandoCadenas()
 {   
 	console.log("\nComparación entre cadenas de caracteres")
+
+	/* Inicio */
 	//Convierta la variable valorInt a cadena de caracteres con la función toString()
 	//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Number/toString
-	/* Inicio */
+	
 	return valorStr == valorInt;
 	/* Fin */
 }
@@ -14,9 +16,11 @@ function comparandoCadenas()
 function comparandoEnteros()
 {
 	console.log("\nComparación entre enteros")
+	
+	/* Inicio */
 	//Convierte (parsea) la cadena de texto a entero con la función parseInt
 	//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt
-	/* Inicio */
+
 	return valorStr != valorInt;
 	/* Fin */
 }

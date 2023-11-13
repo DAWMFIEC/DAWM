@@ -11,24 +11,25 @@
 
 ## Instrucciones
 
+* Descargue y descomprima [C04E02.zip](../../zips/C04E02.zip)
+
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
-* Transpile en modo estricto los archivos de Typescript a Javascript:
-	+  Ya sea cada archivo y especificando el directorio de salida:
-	```
-  	npx tsc src/tipo.ts --strict --outDir build 
-  	```
-	+ O, todos los archivos:
+* Transpile en modo estricto los archivos de Typescript a Javascript, con:
+
 	```
   	npx tsc --strict
   	```
+
 * Corrija los errores mostrados por consola y transpile el código.
-* Ejecute el código de Javascript:
-	+ De cada archivo: 
+
+* Ejecute el código de Javascript por cada archivo: 
+  	
   	```
   	node build/tipo.js
   	``` 
+  	y 
 
   	```
   	node build/anotacion.js
