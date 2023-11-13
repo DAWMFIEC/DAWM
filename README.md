@@ -68,7 +68,10 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 05](Capítulo03/ejercicio05)         | Eventos |
 | 				| [Ejercicio 06](Capítulo03/ejercicio06)         | Promesas y Async/Await  |
 | 				| [Ejercicio 07](Capítulo03/ejercicio07)         | Servidor HTTP - Básico  |
-
+| Capítulo 04   | [Ejercicio 01](Capítulo04/ejercicio01)         | Typescript - Transpilar TypeScript en JavaScript |
+| 				| [Ejercicio 02](Capítulo04/ejercicio02)         | Typescript - Anotación de tipos básicos, arreglos y objetos |
+| 				| [Ejercicio 03](Capítulo04/ejercicio03)         | Typescript - Interfaces y clases |
+| 				| [Ejercicio 04](Capítulo04/ejercicio04)         | Typescript - Funciones |
 
 ## Referencias 
 
