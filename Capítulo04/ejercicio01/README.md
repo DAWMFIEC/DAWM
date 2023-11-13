@@ -11,28 +11,15 @@
 
 ## Instrucciones
 
+* Descargue y descomprima [C04E01.zip](../../zips/C04E01.zip)
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Cree el archivo tsconfig.json, con `npx tsc --init`
 
-* Desde su editor de texto
-	+ Revise el archivo `src/main.ts` escrito en Typescript
-
 * En el archivo **tsconfig.json**
-	+ Agregue el punto de transpilación con la clave _include_ con valor `"src/**/*"`
+	+ Agregue el punto de transpilación con la clave _include_ con valor `"src/**/*"` y el punto de salida con la clave _outDir_ con valor `"build"`
 
-	```
-	{
-		"include": ["src/**/*"],
-		"compilerOptions": {
-			...
-		}
-	}
-	```
-
-	+ Agregue el punto de salida con la clave _outDir_ con valor `"build"`
-
-	```
+	```typescript
 	{
 		"include": ["src/**/*"],
 		"compilerOptions": {
