@@ -4,12 +4,12 @@ let anotacionEntero = () => {
 	/* Inicio */
 	//Agregue el tipo de dato number a la variable numero
 
-	let numero = 1
+	let numero:string = 1
 
 	//Convierte (parsea) la cadena de texto a entero con la función parseInt
 	//https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/parseInt
 
-	numero += '45'
+	numero += parseInt('45')
 	/* Fin */
 
 	return numero + 236;

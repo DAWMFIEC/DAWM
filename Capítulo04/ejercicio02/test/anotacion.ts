@@ -5,7 +5,7 @@ import {expect} from 'chai'
 describe("Anotación de tipo de datos",()=>{
 
     it('Tipo entero',()=>{
-        expect(anotacionEntero()).to.equal(237)
+        expect(anotacionEntero()).to.equal(282)
     })
 
     it('Tipo cadena de caracteres',()=>{
@@ -13,7 +13,7 @@ describe("Anotación de tipo de datos",()=>{
     })
 
     it('Tipo array',()=>{
-        let skills = ['Problem Solving','Software Design','Programming','Design']
+        let skills = ['Problem Solving','Software Design','Programming', '4','Design']
         expect(anotacionArray(4, "Design")).to.deep.equal(skills)
     })
 
