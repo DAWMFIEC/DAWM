@@ -1,7 +1,7 @@
 
 
-//Agregue al parámetro palabras el tipo arreglo de cadena de caracteres y al parámetro indice el tipo número
 /* Inicio */
+//Agregue al parámetro palabras el tipo arreglo de cadena de caracteres y al parámetro indice el tipo número
 let anotacionFuncionParametros = (palabras, indice) => {
 /* Fin */
 	return palabras.filter(palabra => palabra.length > 3)[indice];
@@ -14,16 +14,15 @@ let anotacionFuncionParametros = (palabras, indice) => {
 //Tomado de https://www.typescripttutorial.net/typescript-tutorial/typescript-type-annotations/
 let anotacionFuncionRetorno : (texto: string) => string;
 
-//Siguiendo la definición de la función anotacionFuncionRetorno
-//Agregue el parámetro texto de tipo string y el tipo de retorno string 
 /* Inicio */
+//Agregue el parámetro texto de tipo string
+//Agregue el tipo de retorno string 
 anotacionFuncionRetorno = () => {
 
-	//comente esta línea
-    console.log('Hello');
+	console.log('Hello');
 
     //retorne la cadena texto
-    
+    return 
 };
 /* Fin */
 
