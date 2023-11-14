@@ -30,8 +30,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 09: Javascript - Sincronía/Asincronía y Promesas](guias/2023/guia09)
   * [Guía 10: Javascript - Async/Await y LocalStorage](guias/2023/guia10)
   * [Guía 11: Javascript - CORS](guias/2023/guia11)
-* [Proyecto 05: Dataset SPA - Angular](proyectos/2023/proyecto0x)
-* [Proyecto 06: Dataset MPA - Angular](proyectos/2023/proyecto0x)
+* [Proyecto 05: MPA - Angular](proyectos/2023/proyecto0x)
+* [Proyecto 06: RESTful API - Express](proyectos/2023/proyecto0x)
   
 ### Anteriores
 
