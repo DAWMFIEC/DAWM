@@ -1,32 +1,39 @@
-//Agregue el tipo a las propiedades, parámetros y métodos
-// ssn: number
-// firstName y lastName: string
 
-/* Inicio */
 class Person {
+    //Agregue el tipo a las propiedades
+    // ssn: number
+    // firstName y lastName: string
+
+    /* Inicio */
     ssn;
     firstName;
     lastName;
+    /* Fin */
 
+     //Agregue el tipo a los parámetros 
+    // ssn: number
+    // firstName y lastName: string
+    /* Inicio */
     constructor(ssn, firstName, lastName) {
         this.ssn = ssn;
         this.firstName = firstName;
         this.lastName = lastName;
     }
+    /* Fin */
 
     getFullName() {
         return `${this.firstName} ${this.lastName}`;
     }
 }
-/* Fin */
+
 
 let claseInstanciacion = () => {
 
-	//Instancie la clase persona en la variable person 
-
-	/* Inicio */
 	
-	/* Fin */
+	/* Inicio */
+    //Instancie el objeto person de la clase Person
+	
+    /* Fin */
 
 	return person
 }

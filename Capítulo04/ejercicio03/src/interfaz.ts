@@ -8,9 +8,8 @@ interface Person {
 
 let interfazPropiedades = () => {
 
-	//Defina la variable person de acuerdo con la interfaz Person
-
 	/* Inicio */
+	//Defina la variable person del tipo Person
 	
 	/* Fin */
 
