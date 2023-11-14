@@ -11,12 +11,14 @@
 
 ## Instrucciones
 
+* Descargue y descomprima [C04E04.zip](../../zips/C04E04.zip)
+
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
-* Transpile en modo estricto los archivos de Typescript a Javascript
+* Transpile en modo estricto los archivos de Typescript a Javascript, con: `npx tsc --strict`
 * Corrija los errores mostrados por consola y transpile el código.
-* Ejecute el código de Javascript de cada archivo en la carpeta `build`
+* Ejecute el código de Javascript por cada archivo en la carpeta `build`
 
 
 ## Pruebas unitarias
