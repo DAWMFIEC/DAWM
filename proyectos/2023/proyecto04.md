@@ -29,3 +29,4 @@ La respuesta es:
 * [Guía 09: Javascript - Sincronía/Asincronía y Promesas](/DAWM/guias/2023/guia09)
 * [Guía 10: Javascript - Async/Await y LocalStorage](/DAWM/guias/2023/guia10)
 * [Guía 11: Javascript - CORS](/DAWM/guias/2023/guia11)
+* [Guía 12: Typescript](/DAWM/guias/2023/guia12)

@@ -4,19 +4,13 @@ theme: jekyll-theme-leap-day
 
 ## Guía 12
 
-[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2023/proyecto05)
+[DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2023/proyecto04)
 
 ### Actividades previas
-
-* Identifique el uso del [Markup Validation Service de la W3C](https://validator.w3.org/), [CSS Validation Service de la W3C](https://jigsaw.w3.org/css-validator/) y [JavaScript Validator de Code Beautify](https://codebeautify.org/jsvalidate).
 
 * Reconozca el uso y la necesidad de [Typescript](https://thenewstack.io/what-is-typescript/).
 
 ### Actividades
-
-#### Validación y Verificación
-
-* Verifique y valide los documentos de su proyecto con [Markup Validation Service de la W3C](https://validator.w3.org/), [CSS Validation Service de la W3C](https://jigsaw.w3.org/css-validator/) y [JavaScript Validator de Code Beautify](https://codebeautify.org/jsvalidate).
 
 #### Typescript
 
