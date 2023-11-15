@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Reconozca el uso y la necesidad de [Typescript](https://thenewstack.io/what-is-typescript/).
+* Del sitio [What Is TypeScript?](https://thenewstack.io/what-is-typescript/) identifique las características y justificaciones de Typescript sobre Javascript.
 
 ### Actividades
 
@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 
 * Obtenga una cuenta en [Stackblitz](https://stackblitz.com/)
 * Acceda a la colección [Typescript](https://stackblitz.com/@aavendan/collections/typescript) en Stackblitz.
-* Para cada ejercicio, para cada proyecto obtenga una copia personal con **fork**.
+* Para cada ejercicio, obtenga una copia personal con la opción **fork**.
 	+ Analice los archivos de Typescript (extensión **.ts**)
 	+ Resuelva las actividades identificadas con el texto _Actividades_
 	+ Revise los enlaces relacionados que se encuentran identificados con el texto _Referencia_.
@@ -28,7 +28,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-Typescript, superset, `transpilación`, Stackblitz
+Typescript, superset, transpilación, Stackblitz
 
 ### Referencias
 
