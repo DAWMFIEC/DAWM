@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 12
 
-[DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2023/proyecto04)
+[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2023/proyecto05)
 
 ### Actividades previas
 
