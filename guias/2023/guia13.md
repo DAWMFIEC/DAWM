@@ -30,9 +30,15 @@ theme: jekyll-theme-leap-day
 * Versiona local y remotamente el repositorio **mpa**.
 * Despliegue el sitio del repositorio **mpa** utilizando GitHub Pages.
 
+### Fundamental
+
+* Características de AngularV17 en [X](https://twitter.com/TheAngularDev/status/1726252238593560813).
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Think there&#39;s a lot going on in Angular 17? Well, I&#39;ll defer to you... 😉<a href="https://twitter.com/hashtag/DEVCommunity?src=hash&amp;ref_src=twsrc%5Etfw">#DEVCommunity</a> <a href="https://twitter.com/hashtag/Angular?src=hash&amp;ref_src=twsrc%5Etfw">#Angular</a><a href="https://t.co/xkGzMAtX1A">https://t.co/xkGzMAtX1A</a></p>&mdash; The Angular Dev (@TheAngularDev) <a href="https://twitter.com/TheAngularDev/status/1726252238593560813?ref_src=twsrc%5Etfw">November 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Documentación
   
-* La documentación de [Angular](https://angular.io/) en su sitio oficial.
+* La documentación de [angular.dev](https://angular.dev/) en su sitio oficial.
   - **Características:** [en línea](https://chat.openai.com/share/c307ae2f-1213-4599-9491-ed849a71e33b) o [en la imagen](chatgpt/guia13-angular-caracteristicas.png).
   - **Estructura del proyecto:** [en línea](https://chat.openai.com/share/6c2c7ae7-cffd-4097-82b8-5b5a93d0f394) o [en la imagen](chatgpt/guia13-angular-estructura.png).
   - **Patrones de diseño:** [en línea](https://chat.openai.com/share/eeee5534-3efb-4701-bbc4-9f26b622fcd8) o [en la imagen](chatgpt/guia13-angular-patrones.png).  
