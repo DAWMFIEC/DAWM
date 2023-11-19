@@ -9,11 +9,19 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * Arma tu grupo (solo 2 o 3 personas) de trabajo.
-* Investiguen y seleccionen un tema o dominio para la aplicación web a partir de un conjunto de dato disponible de cualquier fuente de datos, p.e.: [Kaggle](https://www.kaggle.com/).
-* Definan los requisitos y características principales de la aplicación. Para esto responde a las respuestas a: ¿Qué funcionalidades deseamos implementar? y ¿Qué otros recursos (como texto, imágenes o videos) necesita la aplicación?
-* Diseñen la interfaz del usuario. Ubique, al menos, 4 secciones donde mostrarán información a partir del conjunto de datos:
-  - Dos secciones informativas con texto o imágenes.
-  - Dos secciones con una tabla datos y un gráfico.
+* Seleccionen un tema para la aplicación web a partir de un conjunto de datos de acceso público, p.e.: [Kaggle](https://www.kaggle.com/).
+* Diseñe la interfaz de la aplicación con las siguientes páginas y secciones: 
+  - Página de Inicio:
+    + Bienvenida y descripción breve de la aplicación.
+    + Resumen de las características clave del dataset.
+    + Pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones.
+    + Menú de navegación para acceder rápidamente a diferentes páginas y secciones.
+  - Página de Visualización de Datos
+    + Presentación tabular del dataset con filas y columnas, con opciones para ordenar y filtrar datos.
+    + Gráficos que resumen y visualizan datos importantes.
+  - Página de Contacto
+    + Información de contacto y formulario para enviar comentarios o preguntas.
+
 
 ### Actividades
 
