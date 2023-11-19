@@ -9,8 +9,8 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * Arma tu grupo (solo 2 o 3 personas) de trabajo.
-* Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
 * Seleccionen un tema para la aplicación web a partir de un conjunto de datos de acceso público, p.e.: [Kaggle](https://www.kaggle.com/).
+* Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
 * Diseñen la interfaz de la aplicación con las siguientes páginas y secciones: 
   - Página de Inicio:
     + Bienvenida y descripción breve de la aplicación.
@@ -29,13 +29,24 @@ theme: jekyll-theme-leap-day
 #### Github
 
 * Crea un repositorio en GitHub con el nombre **mpa**.
+  + Sin `README.md`, ni `.gitignore`, ni licencia. 
 
 #### Angular
 
-* Cree un proyecto en Angular, de acuerdo con las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/a033dd65-d993-4dc2-afac-3bd14447b750) o [en la imagen](chatgpt/guia13-angular.png).
-  - Levante el servidor y compruebe los resultados.
-* Versione su proyecto en Github, de acuerdo con las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/a541c121-9b66-4273-b090-3d9d1562bb3b) o [en la imagen](chatgpt/guia13-angular-versionamiento.png)
+* Cree un proyecto en Angular: 
+  + Instale Angular CLI, con:
 
+    ```prompt
+    npm install -g @angular/cli
+    ```
+
+  + Cree un nuevo proyecto, con:
+
+    ```prompt
+    ng new <NOMBRE_DEL_PROYECTO>
+    ```
+
+* Versione su proyecto en Github
 * Versiona local y remotamente el repositorio **mpa**.
 * Despliegue el sitio del repositorio **mpa** utilizando GitHub Pages.
 
