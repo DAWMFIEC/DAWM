@@ -4,22 +4,31 @@ theme: jekyll-theme-leap-day
 
 ## Guía 13
 
-[DAWM](/DAWM/) / [Proyecto06](/DAWM/proyectos/2023/proyecto06)
+[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2023/proyecto05)
 
 ### Actividades previas
 
-* Arma tu grupo de trabajo, solo 2 o 3 personas.
+* Arma tu grupo (solo 2 o 3 personas) de trabajo.
 * Investiguen y seleccionen un tema o dominio para la aplicación web a partir de un conjunto de dato disponible de cualquier fuente de datos, p.e.: [Kaggle](https://www.kaggle.com/).
-* Define los requisitos y características principales de la aplicación. Para esto responde a las respuestas a: ¿Qué funcionalidades deseamos implementar? y ¿Qué otros recursos (como texto, imágenes o videos) necesita la aplicación?
-* Diseñe la interfaz del usuario. Ubique, al menos, 4 secciones donde mostrarán información a partir del conjunto de datos:
+* Definan los requisitos y características principales de la aplicación. Para esto responde a las respuestas a: ¿Qué funcionalidades deseamos implementar? y ¿Qué otros recursos (como texto, imágenes o videos) necesita la aplicación?
+* Diseñen la interfaz del usuario. Ubique, al menos, 4 secciones donde mostrarán información a partir del conjunto de datos:
   - Dos secciones informativas con texto o imágenes.
   - Dos secciones con una tabla datos y un gráfico.
 
 ### Actividades
 
+#### Github
+
+* Crea un repositorio en GitHub con el nombre **mpa**.
+
+#### Angular
+
 * Cree un proyecto en Angular, de acuerdo con las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/a033dd65-d993-4dc2-afac-3bd14447b750) o [en la imagen](chatgpt/guia13-angular.png).
   - Levante el servidor y compruebe los resultados.
 * Versione su proyecto en Github, de acuerdo con las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/a541c121-9b66-4273-b090-3d9d1562bb3b) o [en la imagen](chatgpt/guia13-angular-versionamiento.png)
+
+* Versiona local y remotamente el repositorio **mpa**.
+* Despliegue el sitio del repositorio **mpa** utilizando GitHub Pages.
 
 ### Documentación
   
