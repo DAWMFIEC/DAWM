@@ -33,23 +33,14 @@ theme: jekyll-theme-leap-day
 
 #### Angular
 
-* Cree un proyecto en Angular: 
-
-```prompt
-
-# Instale Angular CLI
-npm install -g @angular/cli
-
-# Cree un nuevo proyecto
-ng new <NOMBRE_DEL_PROYECTO>
-
-# Seleccione CSS como el formato para aplicar hojas de estilos
-
-? Which stylesheet format would you like to use? (Use arrow keys)
-> CSS
-```
-
+* Cree un proyecto en Angular
+  - Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/a033dd65-d993-4dc2-afac-3bd14447b750) o [en la imagen](chatgpt/guia13-angular.png).
+  - Utilice **CSS** como formato para las hojas de estilo 
+  - **No** utilice _Server-Side Rendering (SSR)_, ni _Static Site Generation (SSG/Prerendering)_.
 * Versione su proyecto en Github
+  - Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/a541c121-9b66-4273-b090-3d9d1562bb3b) o [en la imagen](chatgpt/guia13-angular-versionamiento.png)
+  - Utilice la rama `main` en lugar de `master`.
+
 * Versiona local y remotamente el repositorio **mpa**.
 * Despliegue el sitio del repositorio **mpa** utilizando GitHub Pages.
 
