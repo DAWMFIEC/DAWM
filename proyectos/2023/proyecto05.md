@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 06: Dataset SPA - Angular
+## Proyecto 05: Dataset MPA - Angular y Express
 
 [DAWM](/DAWM/)
 
@@ -25,9 +25,5 @@ La respuesta es:
 
 ### Guías
 
+* [Guía 12: Typescript](/DAWM/guias/2023/guia12)
 * [Guía 13: Angular - Introducción](/DAWM/guias/2023/guia13)
-* [Guía 14: Angular - Bootstrap y Componentes](/DAWM/guias/2023/guia14)
-* [Guía 15: Firebase - Realtime Database](/DAWM/guias/2023/guia15)
-* [Guía 16: Angular - Interfaz, Servicios, Comunicación y Directivas](/DAWM/guias/2023/guia16)
-* [Guía 17: Angular - Testing](/DAWM/guias/2023/guia17)
-* [Guía 18: Angular - Despliegue en producción con GitHub Actions](/DAWM/guias/2023/guia18)
