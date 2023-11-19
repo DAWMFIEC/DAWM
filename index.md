@@ -25,14 +25,15 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 03: Landing Page SPA - Bootstrap](proyectos/2023/proyecto03)
   * [Guía 06: Responsive Web Design y Bootstrap](guias/2023/guia06)
   * [Guía 07: Validación de HTML y CSS](guias/2023/guia07)
-* [Proyecto 04: Clima - Dashboard](proyectos/2023/proyecto04)
+* [Proyecto 04: Dashboard - Javascript](proyectos/2023/proyecto04)
   * [Guía 08: Javascript - Introducción y DOM](guias/2023/guia08)
   * [Guía 09: Javascript - Sincronía/Asincronía y Promesas](guias/2023/guia09)
   * [Guía 10: Javascript - Async/Await y LocalStorage](guias/2023/guia10)
   * [Guía 11: Javascript - CORS](guias/2023/guia11)
+* [Proyecto 05: Dataset MPA - Angular y Express](proyectos/2023/proyecto05)
   * [Guía 12: Typescript](guias/2023/guia12)
-* [Proyecto 05: MPA - Angular](proyectos/2023/proyecto0x)
-* [Proyecto 06: RESTful API - Express](proyectos/2023/proyecto0x)
+  * [Guía 13: Angular - Introducción, Bootstrap y Componentes](guias/2023/guia13)
+* [Proyecto 06: Móvil - Ionic y Firebase](proyectos/2023/proyecto0x)
   
 ### Anteriores
 
