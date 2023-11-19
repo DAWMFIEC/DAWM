@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 07: Dataset MPA - Angular
+## Proyecto 06: Móvil - Ionic y Firebase
 
 [DAWM](/DAWM/)
 
