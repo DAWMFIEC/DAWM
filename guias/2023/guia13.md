@@ -9,8 +9,9 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * Arma tu grupo (solo 2 o 3 personas) de trabajo.
+* Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
 * Seleccionen un tema para la aplicación web a partir de un conjunto de datos de acceso público, p.e.: [Kaggle](https://www.kaggle.com/).
-* Diseñe la interfaz de la aplicación con las siguientes páginas y secciones: 
+* Diseñen la interfaz de la aplicación con las siguientes páginas y secciones: 
   - Página de Inicio:
     + Bienvenida y descripción breve de la aplicación.
     + Resumen de las características clave del dataset.
@@ -57,6 +58,7 @@ Librería, marco de trabajo, bootstrapping, spa
 
 ### Referencias
 
-* Angular. (2021). Retrieved 1 December 2021, from [https://angular.io/](https://angular.io/)
+* (N.d.). Retrieved from https://angular.dev/
 * Introduction to Angular Components and How to Implement It? (20202) https://www.simplilearn.com/tutorials/angular-tutorial/angular-components
 * Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
+* Dev, T. A. (2023). Effortlessly deploy your static websites to GitHub Pages with the gh-pages NPM package.{ author: @sean_coughlin_ } #DEVCommunity #Angularhttps://t.co/Ldk3cFxz5J. Retrieved from https://twitter.com/TheAngularDev/status/1712104014630834561
