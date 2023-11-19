@@ -17,7 +17,9 @@ La creación de una aplicación web a partir de un dataset es crucial para democ
 Para el prompt: 
 
 ```
-Como desarrollador de aplicaciones web, redacta un escenario para crear una aplicación web con un web framework del lado del cliente (como Angular) y una fuente de datos (como las disponibles en Kaggle). No incluyas código.
+Como desarrollador de aplicaciones web, redacta un escenario para crear una aplicación 
+web con un web framework del lado del cliente (como Angular) y una fuente de datos 
+(como las disponibles en Kaggle). No incluyas código.
 ```
 La respuesta es:
 
