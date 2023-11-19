@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 ### Antecedentes
 
-Como desarrollador de aplicaciones web, te encuentras en la tarea de crear una aplicación web que utilice un web framework del lado del cliente, por ejemplo Angular, y una fuente de datos externa, como los conjuntos de datos disponibles en Kaggle.
+La creación de una aplicación web a partir de un dataset es crucial para democratizar el acceso y la comprensión de datos. Al transformar información cruda en una interfaz interactiva y accesible, se facilita a los usuarios, incluso aquellos sin experiencia técnica, la exploración y comprensión de patrones y tendencias. Esto no solo mejora la toma de decisiones informada, sino que también amplía el alcance de la información contenida en el dataset. Una aplicación web puede proporcionar visualizaciones claras, herramientas de filtrado y funciones interactivas, permitiendo a diversos usuarios, desde profesionales hasta el público en general, aprovechar los insights contenidos en los datos de una manera más eficiente y efectiva.
 
 ### ChatGPT
 
