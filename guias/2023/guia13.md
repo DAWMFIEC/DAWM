@@ -34,17 +34,20 @@ theme: jekyll-theme-leap-day
 #### Angular
 
 * Cree un proyecto en Angular: 
-  + Instale Angular CLI, con:
 
-    ```prompt
-    npm install -g @angular/cli
-    ```
+```prompt
 
-  + Cree un nuevo proyecto, con:
+# Instale Angular CLI
+npm install -g @angular/cli
 
-    ```prompt
-    ng new <NOMBRE_DEL_PROYECTO>
-    ```
+# Cree un nuevo proyecto
+ng new <NOMBRE_DEL_PROYECTO>
+
+# Seleccione CSS como el formato para aplicar hojas de estilos
+
+? Which stylesheet format would you like to use? (Use arrow keys)
+> CSS
+```
 
 * Versione su proyecto en Github
 * Versiona local y remotamente el repositorio **mpa**.
