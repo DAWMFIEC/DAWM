@@ -33,8 +33,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 05: Dataset MPA - Angular y Express](proyectos/2023/proyecto05)
   * [Guía 12: Typescript](guias/2023/guia12)
   * [Guía 13: Angular - Introducción, Bootstrap y Componentes](guias/2023/guia13)
-* [Proyecto 06: Móvil - Ionic y Firebase](proyectos/2023/proyecto0x)
-  
+
 ### Anteriores
 
 [2022](guias/2022.md)

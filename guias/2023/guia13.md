@@ -39,13 +39,13 @@ theme: jekyll-theme-leap-day
   - **No** utilice _Server-Side Rendering (SSR)_, ni _Static Site Generation (SSG/Prerendering)_.
   - Levante el proyecto, con:
 
-  ```prompt
-  ng serve --open
-  ```
+    ```prompt
+    ng serve --open
+    ```
 
 #### Angular - Bootstrap
 
-* Incluya bootstrap y sus dependencias siguiendo las instrucciones, hasta el paso 5, de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/0f0a9f90-bbef-439e-9d58-6fe73941a357) o [en la imagen](chatgpt/guia14-angular-bootstrap.png).
+* Incluya bootstrap y sus dependencias siguiendo las instrucciones, hasta el **paso 5**, de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/1d7d24cf-051c-4e2b-936c-d02757b65748) o [en la imagen](chatgpt/guia14-angular-bootstrap.png).
 
 
 #### Versionamiento
