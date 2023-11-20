@@ -28,4 +28,4 @@ La respuesta es:
 ### Guías
 
 * [Guía 12: Typescript](/DAWM/guias/2023/guia12)
-* [Guía 13: Angular - Introducción](/DAWM/guias/2023/guia13)
+* [Guía 13: Angular - Introducción, Bootstrap y Componentes](/DAWM/guias/2023/guia13)
