@@ -11,7 +11,7 @@ theme: jekyll-theme-leap-day
 * Arma tu grupo (solo 2 o 3 personas) de trabajo.
 * Seleccionen un tema para la aplicación web a partir de un conjunto de datos de acceso público, p.e.: [Kaggle](https://www.kaggle.com/).
 * Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap que contenga múltiples páginas, p.e.: [Theme Wagon](https://themewagon.com/theme-price/free/), [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/) o [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free).
-  + Para esta guía utilizaremos [Furni – Free Bootstrap 5 Business & Corporate Website Template](https://themewagon.com/themes/furni-online-store/).
+  + Para esta guía utilizaremos [Ogani – Free Bootstrap 4 HTML5 Responsive Ecommerce Website Template](https://themewagon.com/themes/free-bootstrap-4-html5-responsive-ecommerce-website-template-ogani/).
 * Diseñen la interfaz de la aplicación con las siguientes páginas y secciones: 
   - **Página de Inicio** con la descripción del sitio; resumen de las características del dataset; pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones; y un menú de navegación para acceder rápidamente a diferentes páginas y secciones.
   - **Página de Visualización de Datos** con una tabla (con opciones para ordenar y filtrar datos) y gráficos que resumen y visualizan datos importantes.
@@ -43,37 +43,42 @@ theme: jekyll-theme-leap-day
 #### Angular - Plantilla
 
 * HTML
+
   - De la plantilla: Del archivo `index.html`, copie todas las etiquetas dentro de la etiqueta `<body>` excepto las etiquetas `<script>`. 
   - En el proyecto de Angular: En el componente principal `src/app/app.component.html`, reemplace el contenido por las etiquetas HTML previamente copiadas.
+
 * Recursos o **assets**
+
   - De la plantilla: Copie todas las carpetas (p.e. `images`, `js`, `css`, etc) con los recursos de la plantilla.
   - En el proyecto de Angular: 
+
     + Coloque las carpetas dentro de `src/assets`.
     + Modifique el archivo `angular.json` con la ruta a los recursos. Coloque las rutas de acuerdo con el orden en la plantilla, p.e.:
 
-
-
       ```typescript
-      ...
-      "styles": [
-        "node_modules/bootstrap/dist/css/bootstrap.min.css",
-        "src/assets/css/tiny-slider.css",
-        "src/assets/css/style.css"
-      ],
-      "scripts": [
-        "node_modules/bootstrap/dist/js/bootstrap.min.js",
-        "src/assets/js/tiny-slider.js",
-        "src/assets/js/custom.js"
-      ]
-      ...
+      "build": {
+        ...
+        "styles": [
+          "node_modules/bootstrap/dist/css/bootstrap.min.css",
+          "src/assets/css/tiny-slider.css",
+          "src/assets/css/style.css"
+        ],
+        "scripts": [
+          "node_modules/bootstrap/dist/js/bootstrap.min.js",
+          "src/assets/js/tiny-slider.js",
+          "src/assets/js/custom.js"
+        ]
+        ...
+      }
       ```
 
-* Revise los cambios en el navegador al reiniciar el servidor.
+* Reinicie el servidor y revise los cambios en el navegador.
 
 #### Angular - Referencias
 
-* De ser necesario, modifique las referencias a las imágenes a la ruta de recursos, p.e. `images/user.svg` a `assets/images/user.svg`
-* Revise los cambios en el navegador al reiniciar el servidor.
+* De ser necesario, modifique en `src/index.html`
+* De ser necesario, modifique en `src/app/app.component.html` las referencias a las imágenes a la ruta de recursos, p.e. `images/user.svg` a `assets/images/user.svg`
+* Reinicie el servidor y revise los cambios en el navegador.
 
 #### Versionamiento
 
