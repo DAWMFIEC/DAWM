@@ -13,9 +13,9 @@ theme: jekyll-theme-leap-day
 * Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap que contenga múltiples páginas, p.e.: [Theme Wagon](https://themewagon.com/theme-price/free/), [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/) o [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free).
   + Para esta guía utilizaremos [Furni – Free Bootstrap 5 Business & Corporate Website Template](https://themewagon.com/themes/furni-online-store/).
 * Diseñen la interfaz de la aplicación con las siguientes páginas y secciones: 
-  - Página de Inicio: descripción del sitio; resumen de las características del dataset; pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones; y menú de navegación para acceder rápidamente a diferentes páginas y secciones.
-  - Página de Visualización de Datos: tabla (con opciones para ordenar y filtrar datos) y gráficos que resumen y visualizan datos importantes.
-  - Página de Contacto: información de contacto y formulario para enviar comentarios o preguntas.
+  - **Página de Inicio** con la descripción del sitio; resumen de las características del dataset; pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones; y un menú de navegación para acceder rápidamente a diferentes páginas y secciones.
+  - **Página de Visualización de Datos** con una tabla (con opciones para ordenar y filtrar datos) y gráficos que resumen y visualizan datos importantes.
+  - **Página de Contacto** con la información de contacto y un formulario para enviar comentarios o preguntas.
 
 
 ### Actividades
@@ -50,6 +50,8 @@ theme: jekyll-theme-leap-day
   - En el proyecto de Angular: 
     + Coloque las carpetas dentro de `src/assets`.
     + Modifique el archivo `angular.json` con la ruta a los recursos. Coloque las rutas de acuerdo con el orden en la plantilla, p.e.:
+
+
 
       ```typescript
       ...
