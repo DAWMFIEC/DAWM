@@ -13,16 +13,9 @@ theme: jekyll-theme-leap-day
 * Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap que contenga múltiples páginas, p.e.: [Theme Wagon](https://themewagon.com/theme-price/free/), [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/) o [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free).
   + Para esta guía utilizaremos [Furni – Free Bootstrap 5 Business & Corporate Website Template](https://themewagon.com/themes/furni-online-store/).
 * Diseñen la interfaz de la aplicación con las siguientes páginas y secciones: 
-  - Página de Inicio:
-    + Bienvenida y descripción breve de la aplicación.
-    + Resumen de las características clave del dataset.
-    + Pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones.
-    + Menú de navegación para acceder rápidamente a diferentes páginas y secciones.
-  - Página de Visualización de Datos:
-    + Presentación tabular del dataset con filas y columnas, con opciones para ordenar y filtrar datos.
-    + Gráficos que resumen y visualizan datos importantes.
-  - Página de Contacto:
-    + Información de contacto y formulario para enviar comentarios o preguntas.
+  - Página de Inicio: descripción del sitio; resumen de las características del dataset; pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones; y menú de navegación para acceder rápidamente a diferentes páginas y secciones.
+  - Página de Visualización de Datos: tabla (con opciones para ordenar y filtrar datos) y gráficos que resumen y visualizan datos importantes.
+  - Página de Contacto: información de contacto y formulario para enviar comentarios o preguntas.
 
 
 ### Actividades
