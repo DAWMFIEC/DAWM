@@ -47,17 +47,31 @@ theme: jekyll-theme-leap-day
   - En el proyecto de Angular: En el componente principal `src/app/app.component.html`, reemplace el contenido por las etiquetas HTML previamente copiadas.
 * Recursos o **assets**
   - De la plantilla: Copie todas las carpetas (p.e. `images`, `js`, `css`, etc) con los recursos de la plantilla.
-  - En el proyecto de Angular: Coloque las carpetas dentro de `src/assets`.
+  - En el proyecto de Angular: 
+    + Coloque las carpetas dentro de `src/assets`.
+    + Modifique el archivo `angular.json` con la ruta a los recursos. Coloque las rutas de acuerdo con el orden en la plantilla, p.e.:
+
+      ```typescript
+      ...
+      "styles": [
+        "node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "src/assets/css/tiny-slider.css",
+        "src/assets/css/style.css"
+      ],
+      "scripts": [
+        "node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "src/assets/js/tiny-slider.js",
+        "src/assets/js/custom.js"
+      ]
+      ...
+      ```
+
+* Revise los cambios en el navegador al reiniciar el servidor.
 
 #### Angular - Referencias
 
-* De ser necesario, modifique las referencias a las imágenes, p.e.:
-
-  ```html
-  ...
-  <img src="assets/images/user.svg">
-  ...
-  ```
+* De ser necesario, modifique las referencias a las imágenes a la ruta de recursos, p.e. `images/user.svg` a `assets/images/user.svg`
+* Revise los cambios en el navegador al reiniciar el servidor.
 
 #### Versionamiento
 
