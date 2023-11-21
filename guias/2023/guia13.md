@@ -10,18 +10,19 @@ theme: jekyll-theme-leap-day
 
 * Arma tu grupo (solo 2 o 3 personas) de trabajo.
 * Seleccionen un tema para la aplicación web a partir de un conjunto de datos de acceso público, p.e.: [Kaggle](https://www.kaggle.com/).
-* Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
+* Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap que contenga múltiples páginas, p.e.: [Theme Wagon](https://themewagon.com/theme-price/free/), [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/) o [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free).
+  + Para esta guía utilizaremos [Furni – Free Bootstrap 5 Business & Corporate Website Template](https://themewagon.com/themes/furni-online-store/).
 * Diseñen la interfaz de la aplicación con las siguientes páginas y secciones: 
-  - Página de Inicio:
-    + Bienvenida y descripción breve de la aplicación.
-    + Resumen de las características clave del dataset.
-    + Pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones.
-    + Menú de navegación para acceder rápidamente a diferentes páginas y secciones.
-  - Página de Visualización de Datos
-    + Presentación tabular del dataset con filas y columnas, con opciones para ordenar y filtrar datos.
-    + Gráficos que resumen y visualizan datos importantes.
-  - Página de Contacto
-    + Información de contacto y formulario para enviar comentarios o preguntas.
+  1. Página de Inicio:
+     + Bienvenida y descripción breve de la aplicación.
+     + Resumen de las características clave del dataset.
+     + Pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones.
+     + Menú de navegación para acceder rápidamente a diferentes páginas y secciones.
+  2. Página de Visualización de Datos
+     + Presentación tabular del dataset con filas y columnas, con opciones para ordenar y filtrar datos.
+     + Gráficos que resumen y visualizan datos importantes.
+  3. Página de Contacto
+     + Información de contacto y formulario para enviar comentarios o preguntas.
 
 
 ### Actividades
