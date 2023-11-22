@@ -28,5 +28,5 @@ La respuesta es:
 ### Guías
 
 * [Guía 12: Typescript](/DAWM/guias/2023/guia12)
-* [Guía 13: Angular - Introducción y Bootstrap](/DAWM/guias/2023/guia13)
+* [Guía 13: Angular - Introducción y Plantilla](/DAWM/guias/2023/guia13)
 * [Guía 14: Angular - Componentes y Rutas](/DAWM/guias/2023/guia14)

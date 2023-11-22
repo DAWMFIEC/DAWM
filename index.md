@@ -32,7 +32,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 11: Javascript - CORS](guias/2023/guia11)
 * [Proyecto 05: Dataset MPA - Angular y Express](proyectos/2023/proyecto05)
   * [Guía 12: Typescript](guias/2023/guia12)
-  * [Guía 13: Angular - Introducción y Bootstrap](guias/2023/guia13)
+  * [Guía 13: Angular - Introducción y Plantilla](guias/2023/guia13)
   * [Guía 14: Angular - Componentes y Rutas](guias/2023/guia14)
 
 ### Anteriores
