@@ -13,80 +13,6 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-
-#### Bootstrap
-
-* Incluya bootstrap y sus dependencias siguiendo las instrucciones, hasta el paso 5, de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/0f0a9f90-bbef-439e-9d58-6fe73941a357) o [en la imagen](chatgpt/guia14-angular-bootstrap.png).
-
-#### Plantilla
-
-* Busque una plantilla gratuita de Bootstrap, por ejemplo: [Creative](https://startbootstrap.com/theme/creative).
-* [Descargue](https://github.com/startbootstrap/startbootstrap-creative/archive/gh-pages.zip) y decomprima los archivos de la plantilla.
-* Cambios básicos:
-	+ HTML
-		- **Plantilla:** Del archivo `index.html`, copie todas las etiquetas (con su contenido): `<nav>`, `<header>`, `<section>`, `<div>` y `<footer>`. No copie las etiquetas `<script>`. 
-		- En el proyecto de **Angular:** En el `src/app/app.component.html`, reemplace el contenido por las etiquetas html previamente copiadas. 
-	+ ASSETS
-		- **Plantilla:** Copie todos los archivos que se encuentran dentro de la carpeta `assets`. 
-		- En el proyecto de **Angular:** En la ruta `src/assets`, coloque los archivos previamente copiados.
-	+ CSS:
-		- **Plantilla:** Del archivo `css/styles.css`, copie todas las reglas css.
-		- En el proyecto de **Angular:** En el `src/styles.css`, pegue las reglas css previamente copiadas.
-
-* Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
-
-* Hojas de estilos externas `Bootstrap Icons`, `Google fonts` y `SimpleLightbox plugin CSS`:
-	+ CSS
-		- De la **plantilla:** Copie cada uno de los URLs de los recursos externos que se encuentran en el archivo `index.html`:
-
-			```
-			...
-			<!-- Bootstrap Icons-->
-			<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
-
-			<!-- Google fonts-->
-			<link href="https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700" rel="stylesheet" />
-			<link href="https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic" rel="stylesheet" type="text/css" />
-
-			<!-- SimpleLightbox plugin CSS-->
-			<link href="https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css" rel="stylesheet" />
-
-			...
-			```
-
-		- En el proyecto de **Angular:** Al inicio del archivo del `src/styles.css`, importe cada uno de los recursos externos con regla `@import`:
-
-			```
-			@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
-			@import url("https://fonts.googleapis.com/css?family=Merriweather+Sans:400,700");
-			@import url("https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic");
-			@import url("https://cdnjs.cloudflare.com/ajax/libs/SimpleLightbox/2.1.0/simpleLightbox.min.css");
-			...
-
-			@charset "UTF-8";
-			/*!
-			...
-			```
-
-
-* Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
-
-* Archivo javascript de la plantilla `js/scripts.js`:
-	+ JS
-		- De la **plantilla:** copie la carpeta `js`.
-		- En el proyecto de **Angular:** En la ruta `src`, pegue la carpeta `js`. Agregue la referencia en el archivo `angular.json`:
-
-			```
-			...
-			"scripts": [
-				"node_modules/bootstrap/dist/js/bootstrap.min.js",
-				"src/js/scripts.js"
-			]
-			...
-			```
-
-* Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
-
 #### Componentes
 
 * Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatgpt/guia14-angular-components.png) para crear los componentes: `navigation`, `masthead`, `about`, `services`, `portfolio`, `calltoaction`, `contact` y `footer`.
@@ -114,9 +40,19 @@ theme: jekyll-theme-leap-day
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 * Inspeccione el sitio html.
 
+#### Ruteo
+
+
+
+#### Versionamiento
+
 * Versiona local y remotamente el repositorio **mpa**.
 
 ### Fundamental
+
+* Server-Side Rendering (SSR) y Static Site Generation (SSG/Prerendering) en [X](https://twitter.com/mgechev/status/1336298729347932161)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">A tiny demo with hybrid rendering in Angular Universal (SSR &amp; SSG) <a href="https://t.co/mgLY9yeVN1">https://t.co/mgLY9yeVN1</a><br><br>At build time:<br>- Universal prerenders routes without params<br><br>At runtime:<br>- Server tries to render prerendered page<br>- Server fallbacks to SSR<br><br>&lt;5 lines of diff to enable from default setup <a href="https://t.co/pvdIp0eYrB">pic.twitter.com/pvdIp0eYrB</a></p>&mdash; Minko Gechev (@mgechev) <a href="https://twitter.com/mgechev/status/1336298729347932161?ref_src=twsrc%5Etfw">December 8, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Documentación
   
