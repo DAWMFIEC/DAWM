@@ -8,10 +8,11 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Clone su proyecto e instale las dependencias.
-* Levante el servidor y compruebe el resultado en el navegador.
+* Clona localmente tu repositorio **mpa**.
+* Abra el proyecto en VSCode y levante el servidor.
 
 ### Actividades
+
 
 #### Bootstrap
 
@@ -113,13 +114,17 @@ theme: jekyll-theme-leap-day
 * Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
 * Inspeccione el sitio html.
 
+* Versiona local y remotamente el repositorio **mpa**.
+
+### Fundamental
+
 ### Documentación
   
 * Los [componentes](https://angular.io/guide/component-overview) en Angular son los bloques principales en la arquitectura del framework. Los cuales están constituidos por una plantilla html, una clase en typescript, una hoja de estilo y una clase para el testeo.
 
 ### Términos
 
-Librería, marco de trabajo, bootstrapping, spa
+Componentes, ruteo
 
 ### Referencias
 
