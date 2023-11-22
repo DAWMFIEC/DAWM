@@ -43,26 +43,41 @@ theme: jekyll-theme-leap-day
 
 #### Angular - Recursos o **assets**
 
-* De la plantilla: 
+* De la plantilla, copie todas las carpetas (`img`, `js`, `css` y `lib`) con los recursos de la plantilla.
+* En el proyecto de Angular, coloque las carpetas copiadas dentro de `src/assets`.
 
-  + Copie todas las carpetas (`img`, `js`, `css` y `lib`) con los recursos de la plantilla.
-  + Del archivo `index.html`, copie las referencias a los archivos estáticos (`.css` y `.js`), p.e.:
+#### Angular - Referencias locales
+
+* De la plantilla, del archivo `index.html` copie las referencias a los archivos locales (en las etiquetas `<link>` y `<script>`), p.e.:
 
     ```html
-    ...
-    <!-- Libraries Stylesheet -->
-    <link href="lib/animate/animate.min.css" rel="stylesheet">
-    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
-    ...
-    <script src="lib/wow/wow.min.js"></script>
-    <script src="lib/easing/easing.min.js"></script>
-    ...
+    <html>
+      <head>
+      ...
+          <!-- Libraries Stylesheet -->
+          <link href="lib/animate/animate.min.css" rel="stylesheet">
+          <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+          <!-- Customized Bootstrap Stylesheet -->
+          <link href="css/bootstrap.min.css" rel="stylesheet">
+
+          <!-- Template Stylesheet -->
+          <link href="css/style.css" rel="stylesheet">
+      </head>
+      <body>
+      ...
+          <script src="lib/wow/wow.min.js"></script>
+          <script src="lib/easing/easing.min.js"></script>
+          <script src="lib/waypoints/waypoints.min.js"></script>
+          <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+          <!-- Template Javascript -->
+          <script src="js/main.js"></script>
+      </body>
+    </html>
     ```
 
-* En el proyecto de Angular: 
-
-  + Coloque las carpetas copiadas dentro de `src/assets`.
-  + Modifique el archivo `angular.json` con la ruta a los recursos locales. Coloque las rutas de acuerdo con el orden en el que aparecen en la plantilla, p.e.:
+* En el proyecto de Angular, modifique el archivo `angular.json` con la ruta a los recursos locales. Coloque las rutas de acuerdo con el orden en el que aparecen en la plantilla, p.e.:
 
     ```typescript
     "build": {
@@ -92,8 +107,8 @@ theme: jekyll-theme-leap-day
 * De la plantilla: Del archivo `index.html`, copie las referencias a URL externas, p.e.:
   
   ```html
-  </html>
-    </head>
+  <html>
+    <head>
       ...
       <!-- Google Web Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -122,8 +137,8 @@ theme: jekyll-theme-leap-day
 
   
   ```html
-  </html>
-    </head>
+  <html>
+    <head>
       ...
       <!-- Google Web Fonts -->
       <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -186,7 +201,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-Librería, marco de trabajo, bootstrapping, spa, assets
+Librería, marco de trabajo, bootstrapping, spa, recursos o assets, entidades HTML
 
 ### Referencias
 
