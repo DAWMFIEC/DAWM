@@ -180,7 +180,6 @@ theme: jekyll-theme-leap-day
   - Utilice la rama `main` en lugar de `master`.
 
 * Versiona local y remotamente el repositorio **mpa**.
-* Despliegue el sitio del repositorio **mpa** utilizando GitHub Pages.
 
 ### Fundamental
 
