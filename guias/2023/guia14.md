@@ -15,7 +15,9 @@ theme: jekyll-theme-leap-day
 
 #### Componentes
 
-* Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatgpt/guia14-angular-components.png) para crear los componentes: `navigation`, `masthead`, `about`, `services`, `portfolio`, `calltoaction`, `contact` y `footer`.
+* Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatgpt/guia14-angular-components.png) para crear los componentes:
+  - En la carpeta _shared_: `shared/navbar` y `shared/footer`
+  - En la carpeta _index_: `index/content` y `index/navigation`.
 
 * Para cada componente creado previamente:
 	+ HTML
@@ -42,8 +44,6 @@ theme: jekyll-theme-leap-day
 
 #### Ruteo
 
-
-
 #### Versionamiento
 
 * Versiona local y remotamente el repositorio **mpa**.
@@ -56,7 +56,7 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
   
-* Los [componentes](https://angular.io/guide/component-overview) en Angular son los bloques principales en la arquitectura del framework. Los cuales están constituidos por una plantilla html, una clase en typescript, una hoja de estilo y una clase para el testeo.
+* Los [componentes](https://angular.dev/guide/components) en Angular son los bloques principales en la arquitectura del framework. Los cuales están constituidos por una plantilla html, una clase en typescript, una hoja de estilo y una clase para las pruebas unitarias.
 
 ### Términos
 
