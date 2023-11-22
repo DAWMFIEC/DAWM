@@ -48,7 +48,7 @@ theme: jekyll-theme-leap-day
 
 #### Angular - Referencias locales
 
-* De la plantilla, del archivo `index.html` copie las referencias a los archivos locales (en las etiquetas `<link>` y `<script>`), p.e.:
+* De la plantilla, del archivo `index.html` copie las rutas a los recursos locales que se encuentran en las etiquetas `<link>` y `<script>`, p.e.:
 
     ```html
     <html>
@@ -77,7 +77,7 @@ theme: jekyll-theme-leap-day
     </html>
     ```
 
-* En el proyecto de Angular, modifique el archivo `angular.json` con la ruta a los recursos locales. Coloque las rutas de acuerdo con el orden en el que aparecen en la plantilla, p.e.:
+* En el proyecto de Angular, modifique el archivo `angular.json` con la ruta relativa a los recursos locales. Considere el orden en el que aparecen los recursos en la plantilla, p.e.:
 
     ```typescript
     "build": {
@@ -133,7 +133,7 @@ theme: jekyll-theme-leap-day
   </html>
   ```
 
-* En el proyecto de Angular: En el archivo `index.html`, pegue las referencias a URL externas, p.e.:
+* En el proyecto de Angular: En el archivo `index.html`, coloque las referencias a URL externas, p.e.:
 
   
   ```html
@@ -164,7 +164,8 @@ theme: jekyll-theme-leap-day
 
 #### Angular - Componente principal
 
-* De la plantilla: Del archivo `index.html`, copie todas las etiquetas dentro de la etiqueta `<body>`; excepto, la etiqueta `<div id="spinner">` y las etiquetas `<script>`. 
+* De la plantilla: Del archivo `index.html`, copie todas las etiquetas dentro de la etiqueta `<body>`.
+  - Excepto la etiqueta `<div id="spinner">` y las etiquetas `<script>`. 
 * En el proyecto de Angular: En el componente principal `src/app/app.component.html`, reemplace el contenido por las etiquetas HTML previamente copiadas.
   - Modifique los errores mostrados por la consola, como usar **entidades HTML**, p.e.: de `info@example.com` a `info&#64;example.com`  
   - Modifique las referencias a las imágenes a la ruta relativa a los recursos, p.e. de `images/user.svg` a `assets/images/user.svg`
@@ -175,11 +176,11 @@ theme: jekyll-theme-leap-day
 
 #### Versionamiento
 
-* Versione su proyecto en Github
+* Versionen su proyecto en Github
   - Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/a541c121-9b66-4273-b090-3d9d1562bb3b) o [en la imagen](chatgpt/guia13-angular-versionamiento.png)
   - Utilice la rama `main` en lugar de `master`.
 
-* Versiona local y remotamente el repositorio **mpa**.
+* Versionen local y remotamente el repositorio **mpa**.
 
 ### Fundamental
 
