@@ -40,16 +40,30 @@ theme: jekyll-theme-leap-day
 
 * Incluya bootstrap y sus dependencias siguiendo las instrucciones, hasta el paso 5, de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/1d7d24cf-051c-4e2b-936c-d02757b65748) o [en la imagen](chatgpt/guia14-angular-bootstrap.png).
 
-#### Angular - Plantilla
+#### Angular - Referencias a archivos estáticos
 
 * HTML
 
-  - De la plantilla: Del archivo `index.html`, copie todas las etiquetas dentro de la etiqueta `<body>` excepto las etiquetas `<script>`. 
+  - De la plantilla: Del archivo `index.html`, copie todas las etiquetas dentro de la etiqueta `<body>`; excepto, la etiqueta `<div id="spinner">` y las etiquetas `<script>`. 
   - En el proyecto de Angular: En el componente principal `src/app/app.component.html`, reemplace el contenido por las etiquetas HTML previamente copiadas.
 
 * Recursos o **assets**
 
-  - De la plantilla: Copie todas las carpetas (p.e. `images`, `js`, `css`, etc) con los recursos de la plantilla.
+  - De la plantilla: 
+    + Copie todas las carpetas (`img`, `js`, `css` y `lib`) con los recursos de la plantilla.
+    + Del archivo `index.html`, copie las referencias a los archivos estáticos (`.css` y `.js`), p.e.:
+
+      ```html
+      ...
+      <!-- Libraries Stylesheet -->
+      <link href="lib/animate/animate.min.css" rel="stylesheet">
+      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+      ...
+      <script src="lib/wow/wow.min.js"></script>
+      <script src="lib/easing/easing.min.js"></script>
+      ...
+      ```
+
   - En el proyecto de Angular: 
 
     + Coloque las carpetas dentro de `src/assets`.
@@ -60,23 +74,31 @@ theme: jekyll-theme-leap-day
         ...
         "styles": [
           "node_modules/bootstrap/dist/css/bootstrap.min.css",
-          "src/assets/css/tiny-slider.css",
-          "src/assets/css/style.css"
+          "src/assets/css/bootstrap.min.css",
+          "src/assets/css/style.css",
+          "src/assets/lib/animate/animate.css",
+          "src/assets/lib/owlcarousel/assets/owl.carousel.css",
+          "src/styles.css"
         ],
         "scripts": [
           "node_modules/bootstrap/dist/js/bootstrap.min.js",
-          "src/assets/js/tiny-slider.js",
-          "src/assets/js/custom.js"
+          "src/assets/lib/wow/wow.min.js",
+          "src/assets/lib/easing/easing.min.js",
+          "src/assets/lib/waypoints/waypoints.min.js",
+          "src/assets/lib/owlcarousel/owl.carousel.min.js",
+          "src/assets/js/main.js"
         ]
         ...
       }
       ```
 
+    + En el componente principal `src/app/app.component.html`, modifique las referencias a las imágenes a la ruta de recursos, p.e. `images/user.svg` a `assets/images/user.svg`
+
 * Reinicie el servidor y revise los cambios en el navegador.
 
-#### Angular - Referencias
+#### Angular - Referencias 
 
-* De ser necesario, modifique en `src/index.html`
+* De ser necesario, modifique en `src/index.html` con las referencias 
 * De ser necesario, modifique en `src/app/app.component.html` las referencias a las imágenes a la ruta de recursos, p.e. `images/user.svg` a `assets/images/user.svg`
 * Reinicie el servidor y revise los cambios en el navegador.
 
