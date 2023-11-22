@@ -166,7 +166,7 @@ theme: jekyll-theme-leap-day
 
 * De la plantilla: Del archivo `index.html`, copie todas las etiquetas dentro de la etiqueta `<body>`; excepto, la etiqueta `<div id="spinner">` y las etiquetas `<script>`. 
 * En el proyecto de Angular: En el componente principal `src/app/app.component.html`, reemplace el contenido por las etiquetas HTML previamente copiadas.
-  - Modifique los errores mostrados por la consola, como usar **entidades HTML**, p.e.: de `info@example.com` a `info&#64;`example.com`  
+  - Modifique los errores mostrados por la consola, como usar **entidades HTML**, p.e.: de `info@example.com` a `info&#64;example.com`  
   - Modifique las referencias a las imágenes a la ruta relativa a los recursos, p.e. de `images/user.svg` a `assets/images/user.svg`
 
 
