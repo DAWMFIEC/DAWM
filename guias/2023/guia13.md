@@ -9,9 +9,10 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * Arma tu grupo (solo 2 o 3 personas) de trabajo.
-* Seleccionen un tema para la aplicación web a partir de un conjunto de datos de acceso público, p.e.: [Kaggle](https://www.kaggle.com/).
-* Seleccionen una plantilla gratuita, y que utilice Bootstrap, con múltiples páginas (HTML, CSS y JS). Puede considerar alguna de las siguientes fuentes: [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free), [Templatemo](https://templatemo.com/tag/multi-page), [Theme Wagon](https://themewagon.com/theme-price/free/), [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false) o [BootstrapMade](https://bootstrapmade.com/).
-  + Tomaremos como referencia la plantilla []().
+* Seleccionen un conjunto de datos de acceso público de [Kaggle](https://www.kaggle.com/).
+  + Tomaremos como referencia el conjunto de datos [World Happiness Report](https://www.kaggle.com/datasets/unsdsn/world-happiness).
+* Seleccionen una plantilla gratuita, y que utilice Bootstrap, con múltiples páginas (HTML, CSS y JS). Puede considerar alguna de las siguientes fuentes: [HTML Codex](https://htmlcodex.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free), [Templatemo](https://templatemo.com/tag/multi-page), [Theme Wagon](https://themewagon.com/theme-price/free/), [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false) o [BootstrapMade](https://bootstrapmade.com/).
+  + Tomaremos como referencia la plantilla [Hairnic – Single Product Website Template](https://htmlcodex.com/single-product-website-template/).
 * Diseñen la interfaz de la aplicación con las siguientes páginas y secciones: 
   - **Página de Inicio** con la descripción del sitio; resumen de las características del dataset; pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones; y un menú de navegación para acceder rápidamente a diferentes páginas y secciones.
   - **Página de Visualización de Datos** con una tabla (con opciones para ordenar y filtrar datos) y gráficos que resumen y visualizan datos importantes.
