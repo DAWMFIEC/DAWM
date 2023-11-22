@@ -40,68 +40,122 @@ theme: jekyll-theme-leap-day
 
 * Incluya bootstrap y sus dependencias siguiendo las instrucciones, hasta el paso 5, de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/1d7d24cf-051c-4e2b-936c-d02757b65748) o [en la imagen](chatgpt/guia14-angular-bootstrap.png).
 
-#### Angular - Plantilla
+#### Angular - Recursos o **assets**
 
-* Recursos o **assets**
+* De la plantilla: 
 
-  - De la plantilla: 
-    + Copie todas las carpetas (`img`, `js`, `css` y `lib`) con los recursos de la plantilla.
-    + Del archivo `index.html`, copie las referencias a los archivos estáticos (`.css` y `.js`), p.e.:
+  + Copie todas las carpetas (`img`, `js`, `css` y `lib`) con los recursos de la plantilla.
+  + Del archivo `index.html`, copie las referencias a los archivos estáticos (`.css` y `.js`), p.e.:
 
-      ```html
+    ```html
+    ...
+    <!-- Libraries Stylesheet -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    ...
+    <script src="lib/wow/wow.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+    ...
+    ```
+
+* En el proyecto de Angular: 
+
+  + Coloque las carpetas copiadas dentro de `src/assets`.
+  + Modifique el archivo `angular.json` con la ruta a los recursos locales. Coloque las rutas de acuerdo con el orden en el que aparecen en la plantilla, p.e.:
+
+    ```typescript
+    "build": {
       ...
-      <!-- Libraries Stylesheet -->
-      <link href="lib/animate/animate.min.css" rel="stylesheet">
-      <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+      "styles": [
+        "node_modules/bootstrap/dist/css/bootstrap.min.css",
+        "src/assets/lib/animate/animate.css",
+        "src/assets/lib/owlcarousel/assets/owl.carousel.css",
+        "src/assets/css/bootstrap.min.css",
+        "src/assets/css/style.css",
+        "src/styles.css"
+      ],
+      "scripts": [
+        "node_modules/bootstrap/dist/js/bootstrap.min.js",
+        "src/assets/lib/wow/wow.min.js",
+        "src/assets/lib/easing/easing.min.js",
+        "src/assets/lib/waypoints/waypoints.min.js",
+        "src/assets/lib/owlcarousel/owl.carousel.min.js",
+        "src/assets/js/main.js"
+      ]
       ...
-      <script src="lib/wow/wow.min.js"></script>
-      <script src="lib/easing/easing.min.js"></script>
+    }
+    ```
+
+#### Angular - Referencias externas
+
+* De la plantilla: Del archivo `index.html`, copie las referencias externas (`cdn` y `googleapis`), p.e.:
+  
+  ```html
+  </html>
+    </head>
       ...
-      ```
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
+          rel="stylesheet">
 
-  - En el proyecto de Angular: 
+      <!-- Icon Font Stylesheet -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+      ...
 
-    + Coloque las carpetas dentro de `src/assets`.
-    + Modifique el archivo `angular.json` con la ruta a los recursos. Coloque las rutas de acuerdo con el orden en la plantilla, p.e.:
+    </head>
+    <body>
+      ...
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      ...
+    </body>
+  </html>
+  ```
 
-      ```typescript
-      "build": {
-        ...
-        "styles": [
-          "node_modules/bootstrap/dist/css/bootstrap.min.css",
-          "src/assets/css/bootstrap.min.css",
-          "src/assets/css/style.css",
-          "src/assets/lib/animate/animate.css",
-          "src/assets/lib/owlcarousel/assets/owl.carousel.css",
-          "src/styles.css"
-        ],
-        "scripts": [
-          "node_modules/bootstrap/dist/js/bootstrap.min.js",
-          "src/assets/lib/wow/wow.min.js",
-          "src/assets/lib/easing/easing.min.js",
-          "src/assets/lib/waypoints/waypoints.min.js",
-          "src/assets/lib/owlcarousel/owl.carousel.min.js",
-          "src/assets/js/main.js"
-        ]
-        ...
-      }
-      ```
+* En el proyecto de Angular: En el archivo `index.html`, pegue las referencias externas, p.e.:
 
-* HTML
+  
+  ```html
+  </html>
+    </head>
+      ...
+      <!-- Google Web Fonts -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link
+          href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&family=Poppins:wght@200;600;700&display=swap"
+          rel="stylesheet">
 
-  - De la plantilla: Del archivo `index.html`, copie todas las etiquetas dentro de la etiqueta `<body>`; excepto, la etiqueta `<div id="spinner">` y las etiquetas `<script>`. 
-  - En el proyecto de Angular: En el componente principal `src/app/app.component.html`, reemplace el contenido por las etiquetas HTML previamente copiadas.
-    + Modifique los errores mostrados por la consola, como usar **entidades HTML**, p.e.: de `info@example.com` a `info&#64;example.com`  
-    + Modifique las referencias a las imágenes a la ruta relativa a los recursos, p.e. de `images/user.svg` a `assets/images/user.svg`
+      <!-- Icon Font Stylesheet -->
+      <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+
+    </head>
+    <body>
+      <app-root></app-root>
+      
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"></script>
+      
+    </body>
+  </html>
+  ```
+
+#### Angular - Componente principal
+
+* De la plantilla: Del archivo `index.html`, copie todas las etiquetas dentro de la etiqueta `<body>`; excepto, la etiqueta `<div id="spinner">` y las etiquetas `<script>`. 
+* En el proyecto de Angular: En el componente principal `src/app/app.component.html`, reemplace el contenido por las etiquetas HTML previamente copiadas.
+  - Modifique los errores mostrados por la consola, como usar **entidades HTML**, p.e.: de `info@example.com` a `info&#64;`example.com`  
+  - Modifique las referencias a las imágenes a la ruta relativa a los recursos, p.e. de `images/user.svg` a `assets/images/user.svg`
 
 
 * Reinicie el servidor y revise los cambios en el navegador.
 
-#### Angular - Referencias 
-
-* De ser necesario, modifique en `src/index.html` con las referencias 
-* De ser necesario, modifique en `src/app/app.component.html` las referencias a las imágenes a la ruta de recursos, p.e. `images/user.svg` a `assets/images/user.svg`
-* Reinicie el servidor y revise los cambios en el navegador.
 
 #### Versionamiento
 
