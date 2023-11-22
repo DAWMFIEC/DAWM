@@ -10,8 +10,8 @@ theme: jekyll-theme-leap-day
 
 * Arma tu grupo (solo 2 o 3 personas) de trabajo.
 * Seleccionen un tema para la aplicación web a partir de un conjunto de datos de acceso público, p.e.: [Kaggle](https://www.kaggle.com/).
-* Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap que contenga múltiples páginas, p.e.: [Theme Wagon](https://themewagon.com/theme-price/free/), [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/) o [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free).
-  + Para esta guía utilizaremos [Ogani – Free Bootstrap 4 HTML5 Responsive Ecommerce Website Template](https://themewagon.com/themes/free-bootstrap-4-html5-responsive-ecommerce-website-template-ogani/).
+* Seleccionen una plantilla (HTML, CSS y JS) gratuita con Bootstrap que contenga múltiples páginas, p.e.: [Templatemo](https://templatemo.com/tag/multi-page).
+  + Aquí tomaremos como referencia [Woox Travel Template](https://templatemo.com/tm-580-woox-travel).
 * Diseñen la interfaz de la aplicación con las siguientes páginas y secciones: 
   - **Página de Inicio** con la descripción del sitio; resumen de las características del dataset; pie de página con enlaces a políticas de privacidad, términos de servicio, datos de copyright y atribuciones; y un menú de navegación para acceder rápidamente a diferentes páginas y secciones.
   - **Página de Visualización de Datos** con una tabla (con opciones para ordenar y filtrar datos) y gráficos que resumen y visualizan datos importantes.
