@@ -88,7 +88,7 @@ theme: jekyll-theme-leap-day
 
 #### Angular - Referencias externas
 
-* De la plantilla: Del archivo `index.html`, copie las referencias externas (`cdn` y `googleapis`), p.e.:
+* De la plantilla: Del archivo `index.html`, copie las referencias a URL externas, p.e.:
   
   ```html
   </html>
@@ -117,7 +117,7 @@ theme: jekyll-theme-leap-day
   </html>
   ```
 
-* En el proyecto de Angular: En el archivo `index.html`, pegue las referencias externas, p.e.:
+* En el proyecto de Angular: En el archivo `index.html`, pegue las referencias a URL externas, p.e.:
 
   
   ```html
@@ -167,6 +167,10 @@ theme: jekyll-theme-leap-day
 * Despliegue el sitio del repositorio **mpa** utilizando GitHub Pages.
 
 ### Fundamental
+
+* Buenas prácticas de programación de Angular en [X](https://twitter.com/GergelySzerovay/status/1724842152704851979).
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🅰️📰&quot;<a href="https://twitter.com/angular?ref_src=twsrc%5Etfw">@Angular</a> Architecture Best Practices&quot;<br>✍️ by Nisar Ahmed<a href="https://t.co/VRHqREToSj">https://t.co/VRHqREToSj</a><a href="https://twitter.com/hashtag/angular?src=hash&amp;ref_src=twsrc%5Etfw">#angular</a> <a href="https://twitter.com/hashtag/javascript?src=hash&amp;ref_src=twsrc%5Etfw">#javascript</a> <a href="https://twitter.com/hashtag/typescript?src=hash&amp;ref_src=twsrc%5Etfw">#typescript</a> <a href="https://twitter.com/hashtag/AngularAddicts?src=hash&amp;ref_src=twsrc%5Etfw">#AngularAddicts</a></p>&mdash; Gergely Szerovay (@GergelySzerovay) <a href="https://twitter.com/GergelySzerovay/status/1724842152704851979?ref_src=twsrc%5Etfw">November 15, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 * Características de AngularV17 en [X](https://twitter.com/TheAngularDev/status/1726252238593560813).
 
