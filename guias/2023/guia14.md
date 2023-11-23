@@ -15,32 +15,9 @@ theme: jekyll-theme-leap-day
 
 #### Componentes
 
-* Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatgpt/guia14-angular-components.png) para crear los componentes:
-  - En la carpeta _shared_: `shared/navbar` y `shared/footer`
-  - En la carpeta _index_: `index/content` y `index/navigation`.
+* Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatgpt/guia14-angular-components.png) para crear los componentes: `shared/navbar`, `shared/footer`, `index/content` y `index/navigation`.
 
-* Para cada componente creado previamente:
-	+ HTML
-		- En **app.component.html** mueva la etiqueta `<nav>`:
-
-		  ```
-		  <!-- Navigation-->
-		  <nav class="navbar navbar-expand-lg navbar-light fixed-top py-3" id="mainNav">
-		  ...
-		  </nav>
-		  ```
-
-		- En **navigation.component.html** reemplace el contenido por la etiqueta html previamente copiada.
-		
-		- En **app.component.html** haga la llamada al selector del componente:
-
-		  ```
-		  <!-- Navigation-->
-		  <app-navigation></app-navigation>
-		  ```
-
-* Revise los cambios al actualizar la página en el navegador o (re)iniciando el servidor.
-* Inspeccione el sitio html.
+* Reinicie el servidor y revise los cambios en el navegador.
 
 #### Ruteo
 
