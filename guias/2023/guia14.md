@@ -15,8 +15,89 @@ theme: jekyll-theme-leap-day
 
 #### Componentes
 
-* Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatgpt/guia14-angular-components.png) para crear los componentes: `shared/navbar`, `shared/footer`, `index/content` y `index/navigation`.
+* Siga las instrucciones de ChatGPT que se encuentran [en línea](https://chat.openai.com/share/04b2d3fe-2083-4c15-ad17-d72b3583ba41) o [en la imagen](chatgpt/guia14-angular-components.png) para crear los componentes: `shared/navbar`, `shared/footer`, `shared/backtotop` y `pages/index`.
 
+#### Componentes compartidos
+
+* Del componente principal `src/app/app.component.ts` importe el componente **Navbar**
+  
+  ```typescript
+  ...
+  import { NavbarComponent } from './shared/navbar/navbar.component'
+
+  @Component({
+  	...
+  	imports: [CommonModule, RouterOutlet, NavbarComponent],
+  	...
+  })
+  ...
+  ````
+
+* Del componente principal `src/app/app.component.html`
+
+  - Extraiga las etiquetas HTML que se encuentran entre `<!-- Navbar Start -->` y `<!-- Navbar End -->`
+
+	```html
+	<!-- Navbar Start -->
+	<div class="container-fluid sticky-top">
+	  	...
+	</div>
+	<!-- Navbar End -->
+	```
+
+  - Reemplace por el selector del componente **Navbar**
+
+    ```html
+    <!-- Navbar Start -->
+    <app-navbar></app-navbar>
+    <!-- Navbar End -->
+    ```
+
+* En el componente Navbar `shared/navbar/navbar.component.html` reemplace el contenido por las etiquetas HTML extraídas.
+* Reinicie el servidor y revise los cambios en el navegador.
+
+**NOTA:** Repita el proceso con el componente **Footer** y **Backtotop**.
+
+#### Páginas
+
+* Del componente principal `src/app/app.component.ts` importe el componente **Index**
+  
+  ```typescript
+  ...
+  import { IndexComponent } from './pages/index/index.component';
+
+  @Component({
+  	...
+  	imports: [CommonModule, RouterOutlet, ... , IndexComponent],
+  	...
+  })
+  ...
+  ````
+
+* Del componente principal `src/app/app.component.html`
+
+  - Extraiga todas las etiquetas HTML; excepto las etiquetas de los componentes previamente agregados.
+
+  - Reemplace por el selector del componente **Index**
+
+    ```html
+    <!-- Navbar Start -->
+	<app-navbar></app-navbar>
+	<!-- Navbar End -->
+
+	<!-- Page Start -->
+	<app-index></app-index>
+	<!-- Page End -->
+
+	<!-- Footer Start -->
+	<app-footer></app-footer>
+	<!-- Footer End -->
+
+	<!-- Back to Top -->
+	<app-backtotop></app-backtotop>
+    ```
+
+* En el componente Index `pages/index/index.component.html` reemplace el contenido por las etiquetas HTML extraídas.
 * Reinicie el servidor y revise los cambios en el navegador.
 
 #### Ruteo
