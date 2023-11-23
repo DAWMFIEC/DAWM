@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 #### Componentes compartidos
 
-* Del componente principal `src/app/app.component.ts` importe el componente **Navbar**
+* En el componente principal `app.component.ts` importe el componente **Navbar**
   
   ```typescript
   ...
@@ -33,7 +33,7 @@ theme: jekyll-theme-leap-day
   ...
   ````
 
-* Del componente principal `src/app/app.component.html`
+* En el componente principal `app.component.html`
 
   - Extraiga las etiquetas HTML que se encuentran entre `<!-- Navbar Start -->` y `<!-- Navbar End -->`
 
@@ -53,14 +53,14 @@ theme: jekyll-theme-leap-day
     <!-- Navbar End -->
     ```
 
-* En el componente Navbar `shared/navbar/navbar.component.html` reemplace el contenido por las etiquetas HTML extraídas.
+* En el componente Navbar `navbar.component.html` reemplace el contenido por las etiquetas HTML extraídas.
 * Reinicie el servidor y revise los cambios en el navegador.
 
-**NOTA:** Repita el proceso con el componente **Footer** y **Backtotop**.
+**NOTA:** Repita el proceso con los componentes **Footer** y **Backtotop**.
 
 #### Páginas
 
-* Del componente principal `src/app/app.component.ts` importe el componente **Index**
+* En el componente principal `app.component.ts` importe el componente **Index**
   
   ```typescript
   ...
@@ -74,7 +74,7 @@ theme: jekyll-theme-leap-day
   ...
   ````
 
-* Del componente principal `src/app/app.component.html`
+* En el componente principal `app.component.html`
 
   - Extraiga todas las etiquetas HTML; excepto las etiquetas de los componentes previamente agregados.
 
@@ -97,7 +97,7 @@ theme: jekyll-theme-leap-day
 	<app-backtotop></app-backtotop>
     ```
 
-* En el componente Index `pages/index/index.component.html` reemplace el contenido por las etiquetas HTML extraídas.
+* En el componente Index `index.component.html` reemplace el contenido por las etiquetas HTML extraídas.
 * Reinicie el servidor y revise los cambios en el navegador.
 
 #### Ruteo
