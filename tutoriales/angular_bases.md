@@ -144,7 +144,7 @@ Las directivas sirven para extender la vista y usar lógica que será ejecutada 
 Directivas estructurales - (\*ngFor)
 ------------------------------------
 
-Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) podemos repetir n veces un bloque de etiquetas.
+Con esta directiva estructural [@for](https://blog.angular.io/introducing-angular-v17-4d7033312e4b), o [\*ngFor](https://angular.io/api/common/NgForOf), podemos repetir n veces un bloque de etiquetas.
 
 * En el _.ts_ (el controlador) del componente **contacto**
 
@@ -217,6 +217,7 @@ Referencias
 
 * * *
 
+* Gechev, M. (2023). Introducing Angular v17. Retrieved from https://blog.angular.io/introducing-angular-v17-4d7033312e4b
 * Angular. (2021). Retrieved 1 December 2021, from [https://angular.io/](https://angular.io/)
 * Introduction to Angular Components and How to Implement It? (20202) https://www.simplilearn.com/tutorials/angular-tutorial/angular-components
 * Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
