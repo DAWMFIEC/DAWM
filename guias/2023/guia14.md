@@ -24,6 +24,12 @@ theme: jekyll-theme-leap-day
  + Componentes compartidos, como: `shared/navbar` y `shared/footer`
  + Páginas, como: `pages/index` y `pages/about`.
 
+ por ejemplo:
+
+ ```prompt
+ ng g c carpeta/nombre-componente
+ ```
+
 #### Componentes compartidos
 
 * En el componente principal `app.component.ts` importe el componente **Navbar**
@@ -113,12 +119,12 @@ theme: jekyll-theme-leap-day
   	```typescript
   	import { Routes } from '@angular/router';
   	import { IndexComponent } from './pages/index/index.component';
-	import { AboutComponent } from './pages/about/about.component';
+		import { AboutComponent } from './pages/about/about.component';
 
-	export const routes: Routes = [
-	    { path: '', component: IndexComponent },
-	    { path: 'about', component: AboutComponent },
-	];
+		export const routes: Routes = [
+		    { path: '', component: IndexComponent },
+		    { path: 'about', component: AboutComponent },
+		];
   	```
 
 * En el componente principal `app.component.html`
@@ -127,31 +133,31 @@ theme: jekyll-theme-leap-day
 
     ```html
     <!-- Navbar Start -->
-	<app-navbar></app-navbar>
-	<!-- Navbar End -->
+		<app-navbar></app-navbar>
+		<!-- Navbar End -->
 
-	<!-- Page Start -->
-	<router-outlet></router-outlet>
-	<!-- Page End -->
+		<!-- Page Start -->
+		<router-outlet></router-outlet>
+		<!-- Page End -->
 
-	<!-- Footer Start -->
-	<app-footer></app-footer>
-	<!-- Footer End -->
+		<!-- Footer Start -->
+		<app-footer></app-footer>
+		<!-- Footer End -->
     ```
 
 * En el componente compartido **Navbar**
 
-  - En el `navbar.component.ts` importe los módulos `RouterOutlet`, `RouterLinkActive` y `RouterLink`.
+  - En el `navbar.component.ts` importe los módulos `RouterLinkActive` y `RouterLink`.
 
     ```typescript
     import { Component } from '@angular/core';
-	import { CommonModule } from '@angular/common';
+		import { CommonModule } from '@angular/common';
     
-    import { RouterOutlet, RouterLinkActive, RouterLink } from '@angular/router';
+    import { RouterLinkActive, RouterLink } from '@angular/router';
     
     @Component({
 	  ...
-	  imports: [CommonModule, RouterOutlet,RouterLinkActive, RouterLink],
+	  imports: [CommonModule, RouterLinkActive, RouterLink],
 	  ...
 	})
     ```
