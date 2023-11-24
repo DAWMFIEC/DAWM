@@ -10,8 +10,8 @@
 ## Instrucciones
 
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
-* Cree los componentes: **cabecera** y **redes**.
-* Para el componente **cabecera**:
+* Cree los componentes: **shared/cabecera** y **main/redes**.
+* Para el componente **shared/cabecera**:
 	+ En **cabecera.component.ts**:
 		- Agregue los atributos _strAcerca_ y _strInfo_
 		```
@@ -19,12 +19,12 @@
         strInfo:string = "A través de mis ojos"
 		```
 	+ En **cabecera.component.html**
-		- Utilice la siguiente plantilla y renderice los atributos del componente
+		- Utilice la siguiente plantilla para renderizar los atributos del componente
 		```
 		<h1 class="fw-light"><!-- Renderice el atributo strAcerca --></h1>
         <p class="lead text-muted"><!-- Renderice el atributo strInfo --></p>
 		```
-* Para el componente **redes**:
+* Para el componente **main/redes**:
 	+ En **redes.component.ts**:
 		- Agregue el atributo _redes_
 		```
@@ -60,17 +60,18 @@
 		```html
 		<ul class="list-group list-group-horizontal justify-content-center mb-5">
 			
-			<!-- Iterar por cada elemento del atributo redes -->
-			<!-- El elemento se muestra dependiendo del valor de la clave show -->
-			<li class="list-group-item border-0" >
-				<a href=" <!-- Renderice el href del elemento --> " class="text-primary">
-					<img width="25" src=" <!-- Renderice el src del elemento --> " alt=" <!-- Renderice el alt del elemento --> ">
-				</a>
-			</li>
+			<!-- Itere el atributo redes -->
+				<!-- El elemento se renderizar si y solo si el valor de la clave show es true -->
+				<li class="list-group-item border-0" >
+					<a href=" <!-- Renderice el href del elemento --> " class="text-primary">
+						<img width="25" src=" <!-- Renderice el src del elemento --> " alt=" <!-- Renderice el alt del elemento --> ">
+					</a>
+				</li>
 			
 		</ul>
 		```
 * En **app.component.html**
+
 	+ Reemplace las etiquetas html `h1.fw-light` y `p.lead.text-muted`:
 
 	```html
