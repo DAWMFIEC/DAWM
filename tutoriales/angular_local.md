@@ -38,10 +38,10 @@ Desde la línea de comandos, en la ruta donde desea crear el proyecto:
   ng new clienteAngular
   ```
 
-    + Acepte el manejador de rutas por defecto
-        - (Would you like to add Angular routing?) **\[y\]**
     + Acepte **CSS** como formato de hoja de estilos 
         - (Which stylesheet format would you like to use?) > CSS
+    + No habilite el **SSR**, ni **SSG**
+        - Do you want to enable Server-Side Rendering (SSR) and Static Site Generation (SSG/Prerendering)? (y/N) **\[N\]**
 * En cuanto termine la configuración del sitio
     + Ingrese a la carpeta creada: 
       ```
@@ -55,7 +55,7 @@ Desde la línea de comandos, en la ruta donde desea crear el proyecto:
       
     + El resultado se encuentra en [http://localhost:4200/](http://localhost:4200/)
 
-![default angular site](https://i.stack.imgur.com/2DZqQ.png)
+![default angular site](imagenes/default_site_angular.png)
 
 Estructura
 ==========
@@ -68,15 +68,15 @@ En el proyecto Angular tiene la siguiente estructura de archivos, con su descrip
 * Archivos de configuración
     + **./angular.json** contiene la descripción de los archivos del proyecto
     + **./package.json** contiene la lista de los paquetes instalados
-    + **./tsconfig.json**c on los parámetros de transpilación del código en TypeScript  
+    + **./tsconfig.json**, **./tsconfig.app.json** y **./tsconfig.spec.json**, con los parámetros de transpilación del código en TypeScript  
           
 * Código fuente
     + **src/styles.css** estilo global de la app
     + **src/index.html** página de inicio
     + **src/assets** para los archivos estáticos, p.e. imágenes
     + **src/app** para componentes y servicios
-    + **src/app/app.module.ts** punto inicial de la aplicación
-    + **src/app/app-routing.module.ts** contiene las rutas que manejará la aplicación
+    + **src/app/app.config.ts** punto inicial de la aplicación
+    + **src/app/app.routes.ts** contiene las rutas que manejará la aplicación
 * Componentes:
     + **src/app** ruta donde se guardarán los componentes
     + **src/app/app.component** componente _app_ con los archivos con extensión:
@@ -92,6 +92,7 @@ En el proyecto Angular tiene la siguiente estructura de archivos, con su descrip
 Referencias
 =======
 
+* (N.d.). Retrieved from https://angular.dev/
 * Angular. (2022). Retrieved 9 July 2022, from https://angular.io/guide/what-is-angular
 * Angular. (2022). Retrieved 9 July 2022, from https://angular.io/start
 * Acerca de · GitBook. (2022). Retrieved 9 July 2022, from https://contraslash.github.io/todo-list-tutorial-spanish/
