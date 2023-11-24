@@ -18,10 +18,6 @@ Proyecto en Angular
 
 Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html).
 
-* Ya sea desde tu repositorio personal
-* O, clonando el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/clienteAngular**
-    - Para el hito: **`hito1-album`**
-
 
 Instalación de Bootstrap (y dependencias)
 =========================================
@@ -54,26 +50,6 @@ Desde la línea de comandos, en la carpeta del proyecto sobre Angular.
           ]
       ```
 
-* Instale popperjs, con: 
-  ```
-  npm install @popperjs/core
-  ```
-
-    + En el archivo _package.json_ se agrega automáticamente módulo **@popperjs/core** (última versión).
-    + En el archivo _angular.json_,en la clave **architect > build > options > scripts** con la referencia a _javascript_ de Popperjs/core.
-
-      ```
-        "scripts": [
-          "node_modules/@popperjs/core/dist/umd/popper.min.js",
-          "node_modules/bootstrap/dist/js/bootstrap.min.js"
-        ]
-      ```
-
-*   (Re)Inicie el servidor de Angular: 
-    ```
-    ng serve -o
-    ```
-    
 *   Notarás que el estilo por defecto del sitio ha cambiado.
 
 
