@@ -71,7 +71,7 @@ theme: jekyll-theme-leap-day
 
 **NOTA:** Repita el proceso con el componente **Footer**.
 
-#### Componente/Página
+#### Componente/Página - Index
 
 * En el componente principal `app.component.ts` importe el componente **Index**
   
@@ -110,7 +110,9 @@ theme: jekyll-theme-leap-day
 * En la componente/página Index `index.component.html` reemplace el contenido por las etiquetas HTML extraídas.
 * Reinicie el servidor y revise los cambios en el navegador.
 
-**NOTA:** Repita el proceso con el componente/página **About**.
+#### Componente/Página - About
+
+
 
 #### Ruteo
 
