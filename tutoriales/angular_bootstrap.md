@@ -63,9 +63,8 @@ Plantilla de Bootstrap
 
 Ahora es momento de incorporar una plantilla de Bootstrap dentro de tu proyecto de Angular:
 
-* Descargue los ejemplos de [Bootstrap](https://getbootstrap.com/docs/5.2/examples/).
-* Descomprima el archivo que descargaste y selecciona un ejemplo.
-* En este caso, utilizaremos el ejemplo **album**: **"bootstrap-x.y.z-examples\\album"**.
+* Descargue los ejemplos de [Bootstrap](https://getbootstrap.com/docs/5.3/examples/).
+* Descomprima el archivo que descargaste y selecciona el ejemplo **album**: **"bootstrap-x.y.z-examples\\album"**.
     + Abra el archivo **"bootstrap-x.y.z-examples\\album\\index.html"** en el navegador. El archivo luce así en el navegador.
 
 ![angular bootstrap plantilla](imagenes/angular_bootstrap_plantilla.png)
