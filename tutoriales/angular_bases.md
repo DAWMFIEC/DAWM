@@ -33,9 +33,13 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 
     ![angular componente contacto archivos](imagenes/angular_componente_contacto_archivos.png)
 
-* Del componente **app** al componente **contacto**
 
-  + De `app.component.html`, extraiga:
+contacto.component dentro de app.component
+===========
+
+* * *
+
+* De `app.component.html`, extraiga las siguientes etiquetas HTML:
 
   ```html
   ...
@@ -48,7 +52,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
   ...
   ```
 
-  + En `contacto.component.html`, reemplace por el contenido copiado.
+* Reemplace el contenido de `contacto.component.html` por las etiquetas HTML copiadas previamente.
 
 * Renderice el componente **contacto** dentro del componente **app**:
     
@@ -77,8 +81,8 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
       </div>
     ``` 
 
-    + Actualice el navegador o (re)inicie el servidor
-    + Inspeccione el html e identifique el componente renderizado
+    + Reinicie el servidor
+    + Inspeccione el html y compruebe el componente renderizado
 
     ![angular componente contacto salida1](imagenes/angular_componente_contacto_salida1.png)
     
