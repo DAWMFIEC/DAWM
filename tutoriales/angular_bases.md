@@ -14,10 +14,6 @@ Proyecto en Angular
 
 Utiliza el proyecto que desarrollaste con los tutoriales de [Angular - Local](https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html) y [Angular - Boostrap](https://dawmfiec.github.io/DAWM/tutoriales/angular_bootstrap.html).
 
-* Ya sea desde tu repositorio personal
-* O, clonando el proyecto con las [aplicaciones del curso](https://github.com/dawmfiec/DAWM-apps) para la aplicación **album/clienteAngular**
-    - Para el hito: **`hito2-album`**
-
 
 Componentes
 ===========
@@ -28,7 +24,7 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 
 ![Componentes](https://www.simplilearn.com/ice9/free_resources_article_thumb/Components_Heirarchy-Angular_Components.PNG)
 
-* Desde la línea de comandos, en la ruta raíz del proyecto de Angular, cree el componente **contacto**: `ng g c contacto`
+* Desde la línea de comandos, en la ruta raíz del proyecto de Angular, cree el componente **contacto**: `ng g c shared/contacto`
     + El mensaje de `update` indica que el componente creado está incluido en el arreglo de declaraciones del componente principal (`src/app/app.module.ts`).
 
     ![angular componente contacto](imagenes/angular_componente_contacto.png)
@@ -37,62 +33,57 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 
     ![angular componente contacto archivos](imagenes/angular_componente_contacto_archivos.png)
 
+* Del componente **app** al componente **contacto**
+
+  + De `app.component.html`, extraiga:
+
+  ```html
+  ...
+  <h4>Contact</h4>
+  <ul class="list-unstyled">
+    <li><a href="#" class="text-white">Follow on Twitter</a></li>
+    <li><a href="#" class="text-white">Like on Facebook</a></li>
+    <li><a href="#" class="text-white">Email me</a></li>
+  </ul>
+  ...
+  ```
+
+  + En `contacto.component.html`, reemplace por el contenido copiado.
+
 * Renderice el componente **contacto** dentro del componente **app**:
     
-    + Identifique el `selector` del componente hijo en el decorador de la clase:
+    + En el _ts_ (el controlador) del componente **app**, importe y agregue la referencia al componente _contacto_:
+
     ```javascript
     ...
+    import { ContactoComponent } from './shared/contacto/contacto.component';
+
     @Component({
-      selector: 'app-contacto',
-      templateUrl: './contacto.component.html',
-      styleUrls: ['./contacto.component.css']
+      selector: 'app-root',
+      standalone: true,
+      imports: [CommonModule, RouterOutlet, ContactoComponent],
+      templateUrl: './app.component.html',
+      styleUrl: './app.component.css'
     })
-    export class ContactoComponent {
+    export class AppComponent {
     ...
     ```
 
-    + En el _html_ (la vista) del componente **app**, reemplace el contenido
-    ```
-      <div class="col-sm-4 offset-md-1 py-4">
-        <h4 class="text-white">Contact</h4>
-        <ul class="list-unstyled">
-          <li><a href="#" class="text-white">Follow on Twitter</a></li>
-          <li><a href="#" class="text-white">Like on Facebook</a></li>
-          <li><a href="#" class="text-white">Email me</a></li>
-        </ul>
-      </div>
-    ```
-    por el selector **`<app-contacto>`**
-    ```
+    + En el _html_ (la vista) del componente **app**, coloque el selector **`<app-contacto>`**:
+
+    ```html
       <div class="col-sm-4 offset-md-1 py-4">
         <app-contacto></app-contacto>
       </div>
     ``` 
 
     + Actualice el navegador o (re)inicie el servidor
-    + Notará que al abrir la barra superior aparece la vista predeterminada del componente, con el texto: `contacto works!`.
+    + Inspeccione el html e identifique el componente renderizado
 
     ![angular componente contacto salida1](imagenes/angular_componente_contacto_salida1.png)
     
 
   
-* Modifique el _html_ (la vista) del componente **contacto**:
-
-    + Reemplace TODO el contenido por
-    ```
-      <h4 class="text-white">Aquí irá el título</h4>
-      <ul class="list-unstyled">
-        <li><a href="#" class="text-white">Medio 1</a></li>
-        <li><a href="#" class="text-white">Medio 2</a></li>
-        <li><a href="#" class="text-white">Medio 3</a></li>
-      </ul>
-    ```
-
-    + Actualice el navegador o (re)inicie el servidor
-    + Notará que al abrir la barra superior aparece la vista modificada.
-
-    ![angular componente contacto salida2](imagenes/angular_componente_contacto_salida2.png)
-
 Comunicación 
 ============
 
