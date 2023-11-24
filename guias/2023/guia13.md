@@ -170,7 +170,6 @@ theme: jekyll-theme-leap-day
   - Modifique los errores mostrados por la consola, como usar **entidades HTML**, p.e.: de `info@example.com` a `info&#64;example.com`  
   - Modifique las referencias a las imágenes a la ruta relativa a los recursos, p.e. de `img/user.svg` a `assets/img/user.svg`
 
-
 * Reinicie el servidor y revise los cambios en el navegador.
 
 
