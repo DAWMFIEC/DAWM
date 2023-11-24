@@ -56,21 +56,18 @@
 		]
 		```
 	+ En **redes.component.html**
-		- Utilice la siguiente plantilla y renderice el atributo del componente
+		- Utilice la siguiente plantilla para renderizar el atributo  **redes** en la vista del componente
 		```html
 		<ul class="list-group list-group-horizontal justify-content-center mb-5">
 			
+			<!-- Iterar por cada elemento del atributo redes -->
+			<!-- El elemento se muestra dependiendo del valor de la clave show -->
+			<li class="list-group-item border-0" >
+				<a href=" <!-- Renderice el href del elemento --> " class="text-primary">
+					<img width="25" src=" <!-- Renderice el src del elemento --> " alt=" <!-- Renderice el alt del elemento --> ">
+				</a>
+			</li>
 			
-			<!-- Utilice la directiva *ngFor para iterar el arreglo redes -->
-			<ng-container >
-				<!-- Utilice la directiva *ngIf para evaluar el atributo show del elemento -->
-				<li class="list-group-item border-0" >
-					<a href=" <!-- Renderice el href del elemento --> " class="text-primary">
-						<img width="25" src=" <!-- Renderice el src del elemento --> " alt=" <!-- Renderice el alt del elemento --> ">
-					</a>
-				</li>
-			</ng-container>
-
 		</ul>
 		```
 * En **app.component.html**
