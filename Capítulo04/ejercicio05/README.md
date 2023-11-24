@@ -9,8 +9,7 @@
 
 ## Instrucciones
 
-* Desde la línea de comandos, en la raíz de la carpeta del proyecto 
-* Cree los componentes: **shared/cabecera** y **main/redes**.
+* Desde la línea de comandos, en la raíz de la carpeta del proyecto, cree los componentes: **shared/cabecera** y **main/redes**.
 * Para el componente **shared/cabecera**:
 	+ En **cabecera.component.ts**:
 		- Agregue los atributos _strAcerca_ y _strInfo_
@@ -61,10 +60,10 @@
 		<ul class="list-group list-group-horizontal justify-content-center mb-5">
 			
 			<!-- Itere el atributo redes -->
-				<!-- El elemento se renderizar si y solo si el valor de la clave show es true -->
+				<!-- El elemento se muestra sí, y solo sí, el valor de la clave show es true -->
 				<li class="list-group-item border-0" >
-					<a href=" <!-- Renderice el href del elemento --> " class="text-primary">
-						<img width="25" src=" <!-- Renderice el src del elemento --> " alt=" <!-- Renderice el alt del elemento --> ">
+					<a href=" <!-- Renderice el valor de la clave href del elemento --> " class="text-primary">
+						<img width="25" src=" <!-- Renderice el valor de la clave src del elemento --> " alt=" <!-- Renderice el valor de la clave alt del elemento --> ">
 					</a>
 				</li>
 			
@@ -72,37 +71,7 @@
 		```
 * En **app.component.html**
 
-	+ Reemplace las etiquetas html `h1.fw-light` y `p.lead.text-muted`:
-
-	```html
-	<main>
-	  <section class="py-5 text-center container">
-	    <div class="row py-lg-5">
-	      <div class="col-lg-6 col-md-8 mx-auto">
-	        <h1 class="fw-light">Album example</h1>
-	        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-	        ...
-	      </div>
-	    </div>
-	  </section>
-	</main>
-	```
-	por el selector del componente **Cabecera**
-
-	```html
-    <main>
-	  <section class="py-5 text-center container">
-	    <div class="row py-lg-5">
-	      <div class="col-lg-6 col-md-8 mx-auto">
-	        <app-cabecera></app-cabecera>
-	        ...
-	      </div>
-	    </div>
-	  </section>
-	</main>
-	```
-
-	y agregue el selector del componente **Redes**
+	+ Reemplace las etiquetas html `<h1>` y `<p>` (subsiguiente) con selector del componente **Cabecera** y el selector del componente **Redes**
 
 	```html
     <main>
@@ -122,7 +91,8 @@
 
 ## Pruebas unitarias
 
-* Copie cada archivo **.spec.ts** de la carpeta `specs` y reemplace el archivo **.spec.ts** correspondiente en su proyecto de Angular.
+* Descargue y descomprima [C04E05.zip](../../zips/C04E05.zip)
+* Copie cada archivo **.spec.ts** y reemplace con el archivo **.spec.ts** a cada componente del proyecto.
 	+ `specs/app.component.spec.ts` -> `src/app/app.component.spec.ts`
 	+ `specs/cabecera.component.spec.ts` -> `src/app/cabecera/cabecera.component.spec.ts`
 	+ `specs/redes.component.spec.ts` -> `src/app/redes/redes.component.spec.ts`
