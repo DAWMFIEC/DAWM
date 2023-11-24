@@ -93,7 +93,7 @@ Comunicación
 
 * * *
 
-Hay [más de un mecanismo de comunicación](https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/) entre el **.html** y el **.ts**: string interpolation, property binding, event binding y two way databinding.
+Hay [más de un mecanismo de comunicación](https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/) entre la vista (el **.html**) y el controlador (**.ts**): string interpolation, property binding, event binding y two way databinding.
 
 <p align="center">
   <img width="500" height="241" src="https://www.sneppets.com/wp-content/uploads/2020/08/data_binding_angular_9.png">
@@ -164,22 +164,26 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
 * En el _html_ (la vista) del componente **contacto**
   
     + Reemplace el contenido
-    ```
-      <ul class="list-unstyled">
-        <li><a href="#" class="text-white">Medio 1</a></li>
-        <li><a href="#" class="text-white">Medio 2</a></li>
-        <li><a href="#" class="text-white">Medio 3</a></li>
-      </ul>
+    
+    ```html
+    ...
+    <ul class="list-unstyled">
+      <li><a href="#" class="text-white">Follow on Twitter</a></li>
+      <li><a href="#" class="text-white">Like on Facebook</a></li>
+      <li><a href="#" class="text-white">Email me</a></li>
+    </ul>
+    ...
     ```
     por
-    ```
-      <ul class="list-unstyled">
-        <li *ngFor="let medio of medios">
-          <a href="#" class="text-white">
-            {% raw %} {{medio.texto}} {% endraw %}
-          </a>
-        </li>
-      </ul>
+
+    ```html
+    <ul class="list-unstyled">
+      <li *ngFor="let medio of medios">
+        <a href="#" class="text-white">
+          {% raw %} {{medio.texto}} {% endraw %}
+        </a>
+      </li>
+    </ul>
     ```
 
 * Actualice el navegador o (re)inicie el servidor
