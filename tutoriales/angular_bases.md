@@ -82,7 +82,7 @@ contacto.component dentro de app.component
     ``` 
 
     + Reinicie el servidor
-    + Inspeccione el html y compruebe el componente renderizado
+    + Inspeccione el html y compruebe el componente renderizado.
 
     ![angular componente contacto salida1](imagenes/angular_componente_contacto_salida1.png)
     
