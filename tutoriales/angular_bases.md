@@ -174,7 +174,10 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
     </ul>
     ...
     ```
+    
     por
+
+    **&lt;V17:**
 
     ```html
     <ul class="list-unstyled">
@@ -185,6 +188,23 @@ Con esta directiva estructural [\*ngFor](https://angular.io/api/common/NgForOf) 
       </li>
     </ul>
     ```
+
+    **&lte;V17:**
+    
+    ```html
+    <ul class="list-unstyled">
+      @for (medio of medios; track medio.texto) {
+        <li>
+          <a href="#" class="text-white">
+          {% raw %} {{medio.texto}} {% endraw %}
+          </a>
+      </li>
+      } @empty {
+        Empty list of media
+      }
+    </ul>
+    ```
+
 
 * Actualice el navegador o (re)inicie el servidor
 * Notará que al abrir la barra superior aparece la vista modificada.
