@@ -15,4 +15,15 @@
 
 | Nombre | Título | Vista  Previa | Sitio |
 | :----  | :----- | :------- ---: | :---: |
+| Carlos Alvia       | Parfums Ecuador       | [Ver](imagenes_landingpage/ii/carlos_alvia.png)              |   [Ir](https://carlosalvia.github.io/landing/)    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+
+## Dashboard
+
+| Nombre | Título | Vista  Previa | Sitio |
+| :----  | :----- | :------- ---: | :---: |
 |        |        |               |       |
