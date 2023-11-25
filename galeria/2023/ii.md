@@ -18,7 +18,7 @@
 | Carlos Alvia       | Parfums Ecuador       | [Ver](imagenes_landingpage/ii/carlos_alvia.png)              |   [Ir](https://carlosalvia.github.io/landing/)    |
 | Angello Bravo       | Confecciones Bravo       | [Ver](imagenes_landingpage/ii/angello_bravo.png)              |   [Ir](https://sangello31.github.io/landing/)    |
 | Jared Castillo       |  Imagine - Courses Platform      | [Ver](imagenes_landingpage/ii/jared_castillo.png)              |   [Ir](https://wayared.github.io/landing/)    |
-|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+| Andrés Cornejo       |  Frekaram Company      | [Ver](imagenes_landingpage/ii/andres_cornejo)              |   [Ir](https://andresacf.github.io/landing/)    |
 |        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
 |        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
 
