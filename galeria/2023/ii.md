@@ -15,10 +15,17 @@
 
 | Nombre | Título | Vista  Previa | Sitio |
 | :----  | :----- | :------- ---: | :---: |
-| Carlos Alvia       | Parfums Ecuador       | [Ver](imagenes_landingpage/ii/carlos_alvia.png)              |   [Ir](https://carlosalvia.github.io/landing/)    |
-| Angello Bravo       | Confecciones Bravo       | [Ver](imagenes_landingpage/ii/angello_bravo.png)              |   [Ir](https://sangello31.github.io/landing/)    |
-| Jared Castillo       |  Imagine - Courses Platform      | [Ver](imagenes_landingpage/ii/jared_castillo.png)              |   [Ir](https://wayared.github.io/landing/)    |
-| Andrés Cornejo       |  Frekaram Company      | [Ver](imagenes_landingpage/ii/andres_cornejo)              |   [Ir](https://andresacf.github.io/landing/)    |
+| Kevin Ibarra       | Spider-man Comics       | [Ver](imagenes_landingpage/ii/kevin523523.png)              |   [Ir](https://kevin523523.github.io/landing/)    |
+| Carlos Alvia       | Parfums Ecuador       | [Ver](imagenes_landingpage/ii/carlosalvia.png)              |   [Ir](https://carlosalvia.github.io/landing/)    |
+| Angello Bravo       | Confecciones Bravo       | [Ver](imagenes_landingpage/ii/sangello31.png)              |   [Ir](https://sangello31.github.io/landing/)    |
+| Jared Castillo       |  Imagine - Courses Platform      | [Ver](imagenes_landingpage/ii/wayared.png)              |   [Ir](https://wayared.github.io/landing/)    |
+| Andrés Cornejo       |  Frekaram Company      | [Ver](imagenes_landingpage/ii/andresacf.png)              |   [Ir](https://andresacf.github.io/landing/)    |
+| Roberto Encalada       | Landing Page T1       | [Ver](imagenes_landingpage/ii/robertoencalada.png)              |   [Ir](https://robertoencalada.github.io/Landing/)    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
 |        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
 |        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
 
