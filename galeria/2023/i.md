@@ -4,29 +4,29 @@
 
 | Nombre | Título | Vista  Previa | Sitio |
 | :----  | :----- | :------- ---: | :---: |
-| Guillermo Arévalo | Veterinaria | [Ver](imagenes_landingpage/guillermo-arevalo.png) | [Ir](https://gjareval.github.io/veterinaria/) |
-| John Cañarte | Cancha V.A.R. | [Ver](imagenes_landingpage/john-canarte.png) | [Ir](https://jecanart.github.io/proyectoLPage/) |
-| Alejandra Cotrina | Noticias de KPOP | [Ver](imagenes_landingpage/alejandra-cotrina.png) | [Ir](https://alenocot.github.io/LandingPage.github.io/) |
-| Daniel Fernández | Shop homepage | [Ver](imagenes_landingpage/daniel-fernandez.png) | [Ir](https://dafebust.github.io/) |
-| Ronny García | ANOY | [Ver](imagenes_landingpage/ronny-garcia.png) | [Ir](https://rsgarcia0203.github.io/Landing-Page/) |
-| Katherine Morales | Green Bear | [Ver](imagenes_landingpage/katherine-morales.png) | [Ir](https://kathmoralest.github.io/greenbear/) |
-| Juan Quimí | Películas de Spiderman | [Ver](imagenes_landingpage/juan-quimi.png) | [Ir](https://juanfr1.github.io/Proyecto03/) |
-| Johnny Rodríguez | Retro Ball | [Ver](imagenes_landingpage/johnny-rodriguez.png) | [Ir](https://santi0ne.github.io/Bootstrap-e-commerce/) |
-| Sergio Basurto | Fun Factory | [Ver](imagenes_landingpage/sergio-basurto.png) | [Ir](https://sebasurto.github.io/bootstrap/#!) |
-| Danny Burneo | Ciudad Mascota |  [Ver](imagenes_landingpage/danny-burneo.png) | [Ir](https://burneodanny.github.io/LandingPage/) |
-| Luis Cañarte | IHC | [Ver](imagenes_landingpage/luis-canarte.png) | [Ir](https://gabrielcanarte14.github.io/Landing/) |
-| Meiyin Chang | Psicólogo Joseph Chang | [Ver](imagenes_landingpage/meiyin-chang.png) | [Ir](https://meiyincr3.github.io/WebPage/) |
-| Mario Cueva | Sueño Pastelero | [Ver](imagenes_landingpage/mario-cueva.png) | [Ir](https://steevens98.github.io/Bootstrap/) |
-| Jefferson Eras | Zone of Fun | [Ver](imagenes_landingpage/jefferson-eras.png) | [Ir](https://jefferaslindao.github.io/bootstrap/) |
-| Dario Laborde | Camping del Valle | [Ver](imagenes_landingpage/dario-laborde.png) | [Ir](https://dlaborde27.github.io/Landing-Page/) |
-| Irving Macías | Dónde es que es? | [Ver](imagenes_landingpage/irving-macias.png) | [Ir](https://irvmgarz.github.io/bootstrap-guia7/) |
-| Diego Martínez | Recicao Sieccle | [Ver](imagenes_landingpage/diego-martinez.png) | [Ir](https://damm2001.github.io/SitioWeb/) |
-| Jorge Moncayo | Mundo Delicia | [Ver](imagenes_landingpage/jorge-moncayo.png) | [Ir](https://jlmoncay.github.io/landing-page/) |
-| Roberto Patiño | TAWS | [Ver](imagenes_landingpage/roberto-patino.png) | [Ir](https://robertopatino1.github.io/LandingPageProject3/) |
-| Kevin Quintuña | Shirt Shape | [Ver](imagenes_landingpage/kevin-quintuna.png) | [Ir](https://kevin-qq-82.github.io/Landing-Page/) |
-| Douglas Sabando | B&B -  Ingeniería y Perforaciones de pozos| [Ver](imagenes_landingpage/douglas-sabando.png) | [Ir](https://djsabando.github.io/B-B_perforaciones/) |
-| Cristopher Villa | Daily Food | [Ver](imagenes_landingpage/cristopher-villa.png) | [Ir](https://cristophervilla20.github.io/Landing-Page/) |
-| José Zambrano | Zampatos Store | [Ver](imagenes_landingpage/jose-zambrano.png) | [Ir](https://ezambranofx.github.io/Proyecto-3-Landing-Page/) |
+| Guillermo Arévalo | Veterinaria | [Ver](imagenes_landingpage/i/guillermo-arevalo.png) | [Ir](https://gjareval.github.io/veterinaria/) |
+| John Cañarte | Cancha V.A.R. | [Ver](imagenes_landingpage/i/john-canarte.png) | [Ir](https://jecanart.github.io/proyectoLPage/) |
+| Alejandra Cotrina | Noticias de KPOP | [Ver](imagenes_landingpage/i/alejandra-cotrina.png) | [Ir](https://alenocot.github.io/LandingPage.github.io/) |
+| Daniel Fernández | Shop homepage | [Ver](imagenes_landingpage/i/daniel-fernandez.png) | [Ir](https://dafebust.github.io/) |
+| Ronny García | ANOY | [Ver](imagenes_landingpage/i/ronny-garcia.png) | [Ir](https://rsgarcia0203.github.io/Landing-Page/) |
+| Katherine Morales | Green Bear | [Ver](imagenes_landingpage/i/katherine-morales.png) | [Ir](https://kathmoralest.github.io/greenbear/) |
+| Juan Quimí | Películas de Spiderman | [Ver](imagenes_landingpage/i/juan-quimi.png) | [Ir](https://juanfr1.github.io/Proyecto03/) |
+| Johnny Rodríguez | Retro Ball | [Ver](imagenes_landingpage/i/johnny-rodriguez.png) | [Ir](https://santi0ne.github.io/Bootstrap-e-commerce/) |
+| Sergio Basurto | Fun Factory | [Ver](imagenes_landingpage/i/sergio-basurto.png) | [Ir](https://sebasurto.github.io/bootstrap/#!) |
+| Danny Burneo | Ciudad Mascota |  [Ver](imagenes_landingpage/i/danny-burneo.png) | [Ir](https://burneodanny.github.io/LandingPage/) |
+| Luis Cañarte | IHC | [Ver](imagenes_landingpage/i/luis-canarte.png) | [Ir](https://gabrielcanarte14.github.io/Landing/) |
+| Meiyin Chang | Psicólogo Joseph Chang | [Ver](imagenes_landingpage/i/meiyin-chang.png) | [Ir](https://meiyincr3.github.io/WebPage/) |
+| Mario Cueva | Sueño Pastelero | [Ver](imagenes_landingpage/i/mario-cueva.png) | [Ir](https://steevens98.github.io/Bootstrap/) |
+| Jefferson Eras | Zone of Fun | [Ver](imagenes_landingpage/i/jefferson-eras.png) | [Ir](https://jefferaslindao.github.io/bootstrap/) |
+| Dario Laborde | Camping del Valle | [Ver](imagenes_landingpage/i/dario-laborde.png) | [Ir](https://dlaborde27.github.io/Landing-Page/) |
+| Irving Macías | Dónde es que es? | [Ver](imagenes_landingpage/i/irving-macias.png) | [Ir](https://irvmgarz.github.io/bootstrap-guia7/) |
+| Diego Martínez | Recicao Sieccle | [Ver](imagenes_landingpage/i/diego-martinez.png) | [Ir](https://damm2001.github.io/SitioWeb/) |
+| Jorge Moncayo | Mundo Delicia | [Ver](imagenes_landingpage/i/jorge-moncayo.png) | [Ir](https://jlmoncay.github.io/landing-page/) |
+| Roberto Patiño | TAWS | [Ver](imagenes_landingpage/i/roberto-patino.png) | [Ir](https://robertopatino1.github.io/LandingPageProject3/) |
+| Kevin Quintuña | Shirt Shape | [Ver](imagenes_landingpage/i/kevin-quintuna.png) | [Ir](https://kevin-qq-82.github.io/Landing-Page/) |
+| Douglas Sabando | B&B -  Ingeniería y Perforaciones de pozos| [Ver](imagenes_landingpage/i/douglas-sabando.png) | [Ir](https://djsabando.github.io/B-B_perforaciones/) |
+| Cristopher Villa | Daily Food | [Ver](imagenes_landingpage/i/cristopher-villa.png) | [Ir](https://cristophervilla20.github.io/Landing-Page/) |
+| José Zambrano | Zampatos Store | [Ver](imagenes_landingpage/i/jose-zambrano.png) | [Ir](https://ezambranofx.github.io/Proyecto-3-Landing-Page/) |
 
 
 ## Calculadora
