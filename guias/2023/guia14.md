@@ -118,16 +118,16 @@ theme: jekyll-theme-leap-day
 
 * En el archivo de rutas de la aplicación `app.routes.ts`, importe los componentes/páginas y registre las rutas
 
-  	```typescript
-  	import { Routes } from '@angular/router';
-  	import { IndexComponent } from './pages/index/index.component';
-		import { AboutComponent } from './pages/about/about.component';
+	```typescript
+	import { Routes } from '@angular/router';
+	import { IndexComponent } from './pages/index/index.component';
+	import { AboutComponent } from './pages/about/about.component';
 
-		export const routes: Routes = [
-		    { path: '', component: IndexComponent },
-		    { path: 'about', component: AboutComponent },
-		];
-  	```
+	export const routes: Routes = [
+	    { path: '', component: IndexComponent },
+	    { path: 'about', component: AboutComponent },
+	];
+	```
 
 * En el componente principal `app.component.html`
   
