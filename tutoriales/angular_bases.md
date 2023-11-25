@@ -25,12 +25,11 @@ Los componentes son las unidades básicas de una interfaz de usuario en una apli
 ![Componentes](https://www.simplilearn.com/ice9/free_resources_article_thumb/Components_Heirarchy-Angular_Components.PNG)
 
 * Desde la línea de comandos, en la ruta raíz del proyecto de Angular, cree el componente **contacto**: `ng g c shared/contacto`
-    + El mensaje de `update` indica que el componente creado está incluido en el arreglo de declaraciones del componente principal (`src/app/app.module.ts`).
-
-    ![angular componente contacto](imagenes/angular_componente_contacto.png)
-
+    
     + Se creará una carpeta con el nombre del componente, con los elementos: **.html**, **.css**, **.ts** (luego, Angular se encargará de transpilar a **.js**) y **.spec.ts** (pruebas unitarias sobre el componente).
 
+    ![angular componente contacto](imagenes/angular_componente_contacto.png)
+    
     ![angular componente contacto archivos](imagenes/angular_componente_contacto_archivos.png)
 
 
