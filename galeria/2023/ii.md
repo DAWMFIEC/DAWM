@@ -25,9 +25,7 @@
 | José Ramos       | Megacopias       | [Ver](imagenes_landingpage/ii/josdramo.png)              |   [Ir](https://josdramo.github.io/landing/)    |
 | Kevin Roldán       | PopVibes Hub       | [Ver](imagenes_landingpage/ii/k3vr0ld4n.png)              |   [Ir](https://k3vr0ld4n.github.io/landing/)    |
 | Axcel Villagrán       |  Start All Video      | [Ver](imagenes_landingpage/ii/axcelvillagran.png)              |   [Ir](https://axcelvillagran.github.io/landing/)    |
-|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
-|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
-|        |        | [Ver](imagenes_landingpage/ii/)              |   [Ir]()    |
+
 
 ## Dashboard
 
