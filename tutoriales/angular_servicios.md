@@ -36,7 +36,7 @@ Desde la raíz del proyecto con Angular
 	
 	```typescript
 	export interface Foto {
-		descripcion: string;
+	descripcion: string;
 	  id: string;
 	  url: string;
 	}
@@ -83,7 +83,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 		...
   	</code></pre>
 
-	+ Agregue el constructor de la clase con la inyección de dependencia (argumento del constructor) al servicio `RecursosService`.
+	+ Agregue la inyección de dependencia (argumento del constructor) al servicio `RecursosService` al constructor.
 		<pre><code>
 		...
 		export class AppComponent {
