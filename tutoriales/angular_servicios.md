@@ -103,63 +103,55 @@ Las aplicaciones en el front-end necesitan comunicarse con un servidor a través
 Para este caso, Angular usa los `observables` en lugar de promesas para entregar valores de [forma asíncrona](https://docs.angular.lat/guide/comparing-observables).
 
 * En **src/app/app.component.ts**,
-
 	+ Importe el módulo `HttpClientModule`
+		<pre><code>
+		...
+		<b style="color:red">import { HttpClientModule } from '@angular/common/http';</b>
+		...
 
-<pre><code>
-...
-import { CabeceraComponent } from './cabecera/cabecera.component';
-import { RedesComponent } from './redes/redes.component';
-...
-<b style="color:red">import { HttpClientModule } from '@angular/common/http';</b>
-...
+		@Component({
+		  selector: 'app-root',
+		  standalone: true,
+		  imports: [ ... <b style="color:red">HttpClientModule</b> ... ],
+		...
+		</code></pre>
 
-@Component({
-  selector: 'app-root',
-  standalone: true,
-  imports: [ ... <b style="color:red">HttpClientModule</b> ... ],
-...
-</code></pre>
 
 
 * En **src/app/servicios/recursos.service.ts**, 
+	+ Importe el módulo `HttpClient`
+		<pre><code>
+		import { Injectable } from '@angular/core';
+		<b style="color:red">import { HttpClient } from '@angular/common/http';</b>
+			
+		@Injectable({
+		  providedIn: 'root'
+		...
+		</code></pre>
 
-  + Importe el módulo `HttpClient`
-
-<pre><code>
-import { Injectable } from '@angular/core';
-<b style="color:red">import { HttpClient } from '@angular/common/http';</b>
-	
-@Injectable({
-  providedIn: 'root'
-...
-</code></pre>
 
 	+ Agregue el servicio `HttpClient` como inyección de dependencia en el método constructor.
-	
-<pre><code>
-...
-export class RecursosService {
+		<pre><code>
+		...
+		export class RecursosService {
 
-  <b style="color:red">constructor(private http: HttpClient) { }</b>
-  ...
-}
-</code></pre>
+		  <b style="color:red">constructor(private http: HttpClient) { }</b>
+		  ...
+		}
+		</code></pre>
 
 	+ Agregue la función *obtenerDatos* para hacer una petición `http` para obtener `get` una respuesta del URL <a href="https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json">Fotos</a>
-
-<pre><code>
-...
-	constructor(private http: HttpClient) { }
-	...
-	<b style="color:red">
-	obtenerDatos() {
-      return this.http.get('https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json')
-	}
-	</b>
-...
-</code></pre>
-
+		<pre><code>
+		...
+		constructor(private http: HttpClient) { }
+		...
+			<b style="color:red">
+			obtenerDatos() {
+			    return this.http.get('https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json')
+			}
+			</b>
+		...
+		</code></pre>
 
 Uso del servicio en el componente
 ===================================
