@@ -33,14 +33,14 @@ Desde la raíz del proyecto con Angular
 * Cree la interfaz **Foto**, con: `ng generate interface interfaz/foto`
 
 * Identifique la estructura de la respuesta del servicio a consultar para definir los atributos de la interfaz de respuesta. Según el recurso [Foto](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json) la estructura es:
-
-<pre><code>
-export interface Foto {
-	descripcion: string;
-  id: string;
-  url: string;
-}
-</code></pre>
+	
+	```typescript
+	export interface Foto {
+		descripcion: string;
+	  id: string;
+	  url: string;
+	}
+	```
 
 
 Servicio
@@ -63,38 +63,36 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 
 * En **src/app/app.component.ts** 
 	+ Agregue el _import_ al servicio
-	
-<pre><code>
-...
-import { Component } from '@angular/core';
-<b style="color:red">import { RecursosService } from './servicios/recursos.service';</b>
+		<pre><code>
+		...
+		import { Component } from '@angular/core';
+		<b style="color:red">import { RecursosService } from './servicios/recursos.service';</b>
 
-@Component({
-  selector: 'app-root',
-  templateUrl: './app.component.html',
-...  
-</code></pre>
+		@Component({
+			selector: 'app-root',
+			templateUrl: './app.component.html',
+		... 
+		</code></pre>
 
   + Registre el proveedor en la clave **providers**.
-
-<pre><code>
-...
-	imports: [ ... ],
-	<b style="color:red">providers: [RecursosService],</b>
-	templateUrl: '...',
-...
-</code></pre>
+  	<pre><code>
+  	...
+		imports: [ ... ],
+		<b style="color:red">providers: [RecursosService],</b>
+		templateUrl: '...',
+		...
+  	</code></pre>
 
 	+ Agregue el constructor de la clase con la inyección de dependencia (argumento del constructor) al servicio `RecursosService`.
+		<pre><code>
+		...
+		export class AppComponent {
 
-<pre><code>
-...
-export class AppComponent {
-  
-  <b style="color:red">constructor(private recursosService: RecursosService) {}</b>
-}
-...
-</code></pre>
+			<b style="color:red">constructor(private recursosService: RecursosService) {}</b>
+		
+		}
+		...
+		</code></pre>
 
 
 Peticiones HTTP
@@ -227,7 +225,7 @@ export class AppComponent {
 ```html
 <div class="album py-5 bg-light">
 	<div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
 		
 		...
 
@@ -235,12 +233,13 @@ export class AppComponent {
 	</div>
 </div>
 ```
-	
-	Por el arreglo **fotos** renderizado con la directiva [@for](https://blog.angular.io/introducing-angular-v17-4d7033312e4b#7e46), o [\*ngFor](https://angular.io/api/common/NgForOf).
+
+Por el arreglo **fotos** renderizado con la directiva [@for](https://blog.angular.io/introducing-angular-v17-4d7033312e4b#7e46), o [\*ngFor](https://angular.io/api/common/NgForOf).
+
 ```html
 <div class="album py-5 bg-light">
 	<div class="container">
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
       
       @for (foto of fotos; track foto.id) {
         <div class="col">
@@ -261,8 +260,8 @@ export class AppComponent {
         </div>
       }
 
-    </div>
-  </div>
+		</div>
+	</div>
 </div>
 ```
 
