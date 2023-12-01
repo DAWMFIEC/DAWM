@@ -1,6 +1,5 @@
 import { TestBed } from '@angular/core/testing';
 import { HttpClientModule } from '@angular/common/http';
-
 import { RecursosService } from './recursos.service';
 
 describe('RecursosService', () => {
@@ -8,8 +7,8 @@ describe('RecursosService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-       imports: [HttpClientModule],
-       providers: [RecursosService]
+      imports: [HttpClientModule],
+      providers: [RecursosService]
     });
     service = TestBed.inject(RecursosService);
   });
@@ -25,5 +24,4 @@ describe('RecursosService', () => {
       done();
     });
   });
-
 });
