@@ -228,33 +228,6 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
   <img width="330" src="imagenes/angular_servicios_output.png">
 </p>
 
-Cacheo de servicios y respuestas 
-================================
-
-* Modifique el archivo `ngsw-config.json`
-* Agregue la clave **dataGroups** con los siguientes valores:
-
-	```
-  "dataGroups": [
-    {
-      "name": "imagenes",
-      "urls": [
-        "https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json"
-      ],
-      "cacheConfig": {
-        "maxSize": 5,
-        "maxAge": "6h",
-        "timeout": "10s",
-        "strategy": "freshness"
-      }
-    }
-  ]
-	```
-
-* Genere el proyecto para ambiente de producción
-* Levante el servidor HTTTP
-* Compruebe el proyecto offline
-* Actualice el navegador
 
 Referencias 
 ===========
