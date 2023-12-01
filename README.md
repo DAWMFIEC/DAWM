@@ -73,6 +73,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 03](Capítulo04/ejercicio03)         | Typescript - Interfaces y clases |
 | 				| [Ejercicio 04](Capítulo04/ejercicio04)         | Typescript - Funciones |
 | 				| [Ejercicio 05](Capítulo04/ejercicio05)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
+| 				| [Ejercicio 06](Capítulo04/ejercicio06)         | Angular - Rutas y Servicios |
 
 ## Referencias 
 
