@@ -92,6 +92,34 @@ Peticiones HTTP
 
 Las aplicaciones en el front-end necesitan comunicarse con un servidor a través del protocolo HTTP, para descargar o cargar datos y acceder a otros servicios back-end. Angular proporciona una API HTTP de cliente para aplicaciones Angular, la clase de servicio `HttpClient` en `@angular/common/http`.
 
+Para este caso, Angular usa los `observables` en lugar de promesas para entregar valores de [forma asíncrona](https://docs.angular.lat/guide/comparing-observables).
+
+* En **src/app/app.component.ts**,
+	+ Importe el módulo `HttpClientModule`
+
+	<pre><code>
+		...
+		import { CabeceraComponent } from './cabecera/cabecera.component';
+		import { RedesComponent } from './redes/redes.component';
+		...
+		<b style="color:red">import { HttpClientModule } from '@angular/common/http';</b>
+		...
+
+		@Component({
+		  selector: 'app-root',
+		  standalone: true,
+		  imports: [ ... <b style="color:red">HttpClientModule</b>
+		...
+	</code></pre>
+
+	+ Registre el proveedor en clave **providers**.
+
+	<pre><code>
+		...
+		  providers: <b style="color:red">[RecursosService],</b>
+		...
+	</code></pre>
+
 * En **src/app/servicios/recursos.service.ts**, 
   + Importe el módulo `HttpClient`
 
@@ -187,35 +215,41 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 
 * En **src/app/app.component.html**, reemplace el contenido de:
 	```html
-	<div class="album py-5 bg-light bg-body-tertiary">
+	<div class="album py-5 bg-body-tertiary">
 		<div class="container">
 		...
 		</div>
 	</div>
 	```
 	
-	Por el arreglo **fotos** renderizado con la directiva \*ngFor
+	Por el arreglo **fotos** renderizado con la directiva [@for](https://blog.angular.io/introducing-angular-v17-4d7033312e4b#7e46), o [\*ngFor](https://angular.io/api/common/NgForOf).
 	```html
-	<div class="album py-5 bg-light bg-body-tertiary">
+	<div class="album py-5 bg-light">
 		<div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col" *ngFor="let foto of fotos">
-          <div class="card shadow-sm">
-            <img src="{% raw %}{{foto.url}}{% endraw %}" alt="{% raw %}{{foto.id}}{% endraw %}">
+        
+        @for (foto of fotos; track foto.id) {
+	        <div class="col">
+	          <div class="card shadow-sm">
+	            <img src="{% raw %}{{foto.url}}{% endraw %}" alt="{% raw %}{{foto.id}}{% endraw %}">
 
-            <div class="card-body">
-              <p class="card-text">{% raw %}{{foto.descripcion}}{% endraw %}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
+	            <div class="card-body">
+	              <p class="card-text">{% raw %}{{foto.descripcion}}{% endraw %}</p>
+	              <div class="d-flex justify-content-between align-items-center">
+	                <div class="btn-group">
+	                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+	                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+	                </div>
+	                <small class="text-muted">9 mins</small>
+	              </div>
+	            </div>
+	          </div>
+	        </div>
+        } @empty {
+	        Empty list of photos
+	      }
+
       </div>
       
     </div>
