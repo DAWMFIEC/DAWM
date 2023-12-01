@@ -34,13 +34,13 @@ Desde la raíz del proyecto con Angular
 
 * Identifique la estructura de la respuesta del servicio a consultar para definir los atributos de la interfaz de respuesta. Según el recurso [Foto](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json) la estructura es:
 
-	<pre><code>
-	export interface Foto {
-     descripcion: string;
-     id: string;
-     url: string;
-  }
-	</code></pre>
+<pre><code>
+export interface Foto {
+   descripcion: string;
+   id: string;
+   url: string;
+}
+</code></pre>
 
 
 Servicio
@@ -91,37 +91,6 @@ Peticiones HTTP
 ===============
 
 Las aplicaciones en el front-end necesitan comunicarse con un servidor a través del protocolo HTTP, para descargar o cargar datos y acceder a otros servicios back-end. Angular proporciona una API HTTP de cliente para aplicaciones Angular, la clase de servicio `HttpClient` en `@angular/common/http`.
-
-Para este caso, Angular usa los `observables` en lugar de promesas para entregar valores de [forma asíncrona](https://docs.angular.lat/guide/comparing-observables).
-
-* En **src/app/app.module.ts**,
-	+ Importe el módulo `HttpClientModule`
-
-	<pre><code>
-		...
-		import { CabeceraComponent } from './cabecera/cabecera.component';
-		import { RedesComponent } from './redes/redes.component';
-		...
-		<b style="color:red">import { HttpClientModule } from '@angular/common/http';</b>
-		...
-
-		@NgModule({
-		  declarations: [
-		    AppComponent,
-		...
-	</code></pre>
-
-	+ Registre el servicio en la lista de módulos de la clave **import**, para que todos los componentes puedan acceder a este servicio.
-
-	<pre><code>
-		...
-		  imports: [
-		    BrowserModule,
-		    AppRoutingModule,
-		    ...
-		    <b style="color:red">HttpClientModule,</b>
-		...
-	</code></pre>
 
 * En **src/app/servicios/recursos.service.ts**, 
   + Importe el módulo `HttpClient`
@@ -218,7 +187,7 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 
 * En **src/app/app.component.html**, reemplace el contenido de:
 	```html
-	<div class="album py-5 bg-light">
+	<div class="album py-5 bg-light bg-body-tertiary">
 		<div class="container">
 		...
 		</div>
@@ -227,7 +196,7 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 	
 	Por el arreglo **fotos** renderizado con la directiva \*ngFor
 	```html
-	<div class="album py-5 bg-light">
+	<div class="album py-5 bg-light bg-body-tertiary">
 		<div class="container">
 
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
