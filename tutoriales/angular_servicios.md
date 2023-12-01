@@ -36,7 +36,7 @@ Desde la raíz del proyecto con Angular
 	
 	```typescript
 	export interface Foto {
-	descripcion: string;
+	 descripcion: string;
 	  id: string;
 	  url: string;
 	}
