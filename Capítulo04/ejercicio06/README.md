@@ -5,7 +5,7 @@
 
 ## Requisitos
 
-* Complete las actividades de [Angular - Local](https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawmfiec.github.io/DAWM/tutoriales/angular_bootstrap.html), [Angular - Componentes, Comunicación y Directivas](https://dawmfiec.github.io/DAWM/tutoriales/angular_bases.html), [Angular - PWA](https://dawmfiec.github.io/DAWM/tutoriales/angular_pwa.html) y [Angular - Servicios](https://dawmfiec.github.io/DAWM/tutoriales/angular_servicios.html).
+* Complete las actividades de [Angular - Local](https://dawmfiec.github.io/DAWM/tutoriales/angular_local.html), [Angular - Bootstrap](https://dawmfiec.github.io/DAWM/tutoriales/angular_bootstrap.html), [Angular - Componentes, Comunicación y Directivas](https://dawmfiec.github.io/DAWM/tutoriales/angular_bases.html) y [Angular - Servicios](https://dawmfiec.github.io/DAWM/tutoriales/angular_servicios.html).
 
 ## Instrucciones
 
