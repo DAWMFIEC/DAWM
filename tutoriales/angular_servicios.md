@@ -160,59 +160,60 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 
 * En **src/app/app.component.ts** 
 	+ Agregue la referencia a la interfaz **Foto** 
-    
-<pre><code>
-...
+		<pre><code>
+		...
 
-<b style="color:red">
-import { Foto } from './interfaz/foto';
-</b>
+		<b style="color:red">
+		import { Foto } from './interfaz/foto';
+		</b>
 
-@Component({
-	selector: 'app-root',
-	templateUrl: './app.component.html',
-...
-</code></pre>
+		@Component({
+			selector: 'app-root',
+			templateUrl: './app.component.html',
+		...
+		</code></pre>
 
 	+ Cree el atributo **fotos**
+		<pre><code>
+		...
+		export class AppComponent {
+		  
+		  <b style="color:red">
+		  fotos: Foto[] = [];  
+		  </b>
 
-<pre><code>
-...
-export class AppComponent {
-  
-  <b style="color:red">
-  fotos: Foto[] = [];  
-  </b>
-
-  constructor(private recursosService: RecursosService) {
-  	
-  }
-}
-...
-</code></pre>
+		  constructor(private recursosService: RecursosService) {
+		  	
+		  }
+		}
+		...
+		</code></pre>
 
 	+ Modifique el constructor para suscribirse a la respuesta del servicio
 
-<pre><code>
-...
-export class AppComponent {
-  
-  fotos: Foto[] = [];
+		<pre><code>
+		...
+		export class AppComponent {
+		  
+		  fotos: Foto[] = [];
 
-  constructor(private recursosService: RecursosService) {
+		  constructor(private recursosService: RecursosService) {
 
-  	<b style="color:red">
-    recursosService.obtenerDatos().subscribe(respuesta => {
-      this.fotos = respuesta as Array&lt;Foto&gt;
-    })
-    </b>
+		  	<b style="color:red">
+		    recursosService.obtenerDatos().subscribe(respuesta => {
+		      this.fotos = respuesta as Array&lt;Foto&gt;
+		    })
+		    </b>
 
-  }
-}
-...
-</code></pre>
+		  }
+		}
+		...			
+		</code></pre>
 
-* En **src/app/app.component.html**, reemplace el contenido de:
+
+* En **src/app/app.component.html**
+
+Reemplace el contenido de:
 
 ```html
 <div class="album py-5 bg-light">
@@ -234,22 +235,22 @@ Por el arreglo **fotos** renderizado con la directiva [@for](https://blog.angula
 		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
       
       @for (foto of fotos; track foto.id) {
-        <div class="col">
-          <div class="card shadow-sm">
-            <img src="{% raw %}{{foto.url}}{% endraw %}" alt="{% raw %}{{foto.id}}{% endraw %}">
+				<div class="col">
+				  <div class="card shadow-sm">
+				    <img src="{% raw %}{{foto.url}}{% endraw %}" alt="{% raw %}{{foto.id}}{% endraw %}">
 
-            <div class="card-body">
-              <p class="card-text">{% raw %}{{foto.descripcion}}{% endraw %}</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
+				    <div class="card-body">
+				      <p class="card-text">{% raw %}{{foto.descripcion}}{% endraw %}</p>
+				      <div class="d-flex justify-content-between align-items-center">
+				        <div class="btn-group">
+				          <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+				          <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+				        </div>
+				        <small class="text-muted">9 mins</small>
+				      </div>
+				    </div>
+				  </div>
+				</div>
       }
 
 		</div>
