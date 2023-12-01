@@ -34,13 +34,13 @@ Desde la raíz del proyecto con Angular
 
 * Identifique la estructura de la respuesta del servicio a consultar para definir los atributos de la interfaz de respuesta. Según el recurso [Foto](https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json) la estructura es:
 
-<pre><code>
-export interface Foto {
-   descripcion: string;
-   id: string;
-   url: string;
-}
-</code></pre>
+	<pre><code>
+	export interface Foto {
+		descripcion: string;
+	  id: string;
+	  url: string;
+	}
+	</code></pre>
 
 
 Servicio
@@ -74,13 +74,22 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 	...  
   </code></pre>
 
+  + Registre el proveedor en clave **providers**.
+
+	<pre><code>
+		...
+		imports: [ ... ],
+		<b style="color:red">providers: [RecursosService],</b>
+		templateUrl: '...',
+		...
+	</code></pre>
+
 	+ Agregue el constructor de la clase con la inyección de dependencia (argumento del constructor) al servicio `RecursosService`.
 
   <pre><code>
     ...
 	export class AppComponent {
-	  title  = 'testAngular';
-
+	  
 	  <b style="color:red">constructor(private recursosService: RecursosService) {}</b>
 	}
 	...
@@ -95,6 +104,7 @@ Las aplicaciones en el front-end necesitan comunicarse con un servidor a través
 Para este caso, Angular usa los `observables` en lugar de promesas para entregar valores de [forma asíncrona](https://docs.angular.lat/guide/comparing-observables).
 
 * En **src/app/app.component.ts**,
+
 	+ Importe el módulo `HttpClientModule`
 
 	<pre><code>
@@ -108,19 +118,13 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 		@Component({
 		  selector: 'app-root',
 		  standalone: true,
-		  imports: [ ... <b style="color:red">HttpClientModule</b>
+		  imports: [ ... <b style="color:red">HttpClientModule</b> ... ],
 		...
 	</code></pre>
 
-	+ Registre el proveedor en clave **providers**.
-
-	<pre><code>
-		...
-		  providers: <b style="color:red">[RecursosService],</b>
-		...
-	</code></pre>
 
 * En **src/app/servicios/recursos.service.ts**, 
+
   + Importe el módulo `HttpClient`
 
   <pre><code>
@@ -157,7 +161,7 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 	</code></pre>
 
 
-Usando el servicio en el componente
+Uso del servicio en el componente
 ===================================
 
 Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ver cómo usaríamos el servicio **RecursosService** en el componente **AppComponent**.
@@ -182,7 +186,7 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
   <pre><code>
   ...
   export class AppComponent {
-	  title = 'Angular';
+	  
 	  <b style="color:red">
 	  fotos: Foto[] = [];  
 	  </b>
@@ -199,7 +203,7 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
   <pre><code>
   ...
   export class AppComponent {
-	  title = 'Angular';
+	  
 	  fotos: Foto[] = [];
 
 	  constructor(private recursosService: RecursosService) {
