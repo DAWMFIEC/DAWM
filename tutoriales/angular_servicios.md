@@ -64,36 +64,37 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 * En **src/app/app.component.ts** 
 	+ Agregue el _import_ al servicio
 	
-	<pre><code>
-    import { Component } from '@angular/core';
-	<b style="color:red">import { RecursosService } from './servicios/recursos.service';</b>
+		<pre><code>
+	  ...
+	  import { Component } from '@angular/core';
+		<b style="color:red">import { RecursosService } from './servicios/recursos.service';</b>
 
-	@Component({
-	  selector: 'app-root',
-	  templateUrl: './app.component.html',
-	...  
-  </code></pre>
+		@Component({
+		  selector: 'app-root',
+		  templateUrl: './app.component.html',
+		...  
+	  </code></pre>
 
-  + Registre el proveedor en clave **providers**.
+  + Registre el proveedor en la clave **providers**.
 
-	<pre><code>
+		<pre><code>
 		...
-		imports: [ ... ],
-		<b style="color:red">providers: [RecursosService],</b>
-		templateUrl: '...',
+			imports: [ ... ],
+			<b style="color:red">providers: [RecursosService],</b>
+			templateUrl: '...',
 		...
-	</code></pre>
+		</code></pre>
 
 	+ Agregue el constructor de la clase con la inyección de dependencia (argumento del constructor) al servicio `RecursosService`.
 
-  <pre><code>
-    ...
-	export class AppComponent {
-	  
-	  <b style="color:red">constructor(private recursosService: RecursosService) {}</b>
-	}
-	...
-  </code></pre>
+	  <pre><code>
+	  ...
+		export class AppComponent {
+		  
+		  <b style="color:red">constructor(private recursosService: RecursosService) {}</b>
+		}
+		...
+	  </code></pre>
 
 
 Peticiones HTTP
@@ -107,7 +108,7 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 
 	+ Importe el módulo `HttpClientModule`
 
-	<pre><code>
+		<pre><code>
 		...
 		import { CabeceraComponent } from './cabecera/cabecera.component';
 		import { RedesComponent } from './redes/redes.component';
@@ -120,45 +121,46 @@ Para este caso, Angular usa los `observables` en lugar de promesas para entregar
 		  standalone: true,
 		  imports: [ ... <b style="color:red">HttpClientModule</b> ... ],
 		...
-	</code></pre>
+		</code></pre>
 
 
 * En **src/app/servicios/recursos.service.ts**, 
 
   + Importe el módulo `HttpClient`
 
-  <pre><code>
-	import { Injectable } from '@angular/core';
-	<b style="color:red">import { HttpClient } from '@angular/common/http';</b>
-	
-  	
-	@Injectable({
-	  providedIn: 'root'
-	...
-	</code></pre>
+	  <pre><code>
+		import { Injectable } from '@angular/core';
+		<b style="color:red">import { HttpClient } from '@angular/common/http';</b>
+			
+		@Injectable({
+		  providedIn: 'root'
+		...
+		</code></pre>
 
 	+ Agregue el servicio `HttpClient` como inyección de dependencia en el método constructor.
 	
-	<pre><code>
-	...
-	export class RecursosService {
-	  <b style="color:red">constructor(private http: HttpClient) { }</b>
-	  ...
-	}
-	</code></pre>
+		<pre><code>
+		...
+		export class RecursosService {
+
+		  <b style="color:red">constructor(private http: HttpClient) { }</b>
+		  ...
+		}
+		</code></pre>
 
 	+ Agregue la función *obtenerDatos* para hacer una petición `http` para obtener `get` una respuesta del URL <a href="https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json">Fotos</a>
 
-	<pre><code>
-	constructor(private http: HttpClient) { }
-	...
-	<b style="color:red">
-	obtenerDatos() {
-      return this.http.get('https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json')
-	}
-	</b>
-	...
-	</code></pre>
+		<pre><code>
+		...
+			constructor(private http: HttpClient) { }
+			...
+			<b style="color:red">
+			obtenerDatos() {
+		      return this.http.get('https://dawm-fiec-espol-default-rtdb.firebaseio.com/photos.json')
+			}
+			</b>
+		...
+		</code></pre>
 
 
 Uso del servicio en el componente
@@ -170,7 +172,8 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 	+ Agregue la referencia a la interfaz **Foto** 
     
     <pre><code>
-    import { Component } from '@angular/core';
+    ...
+    
     <b style="color:red">
     import { Foto } from './interfaz/foto';
     </b>
@@ -183,45 +186,52 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 
 	+ Cree el atributo **fotos**
 
-  <pre><code>
-  ...
-  export class AppComponent {
-	  
-	  <b style="color:red">
-	  fotos: Foto[] = [];  
-	  </b>
+	  <pre><code>
+	  ...
+	  export class AppComponent {
+		  
+		  <b style="color:red">
+		  fotos: Foto[] = [];  
+		  </b>
 
-	  constructor(private recursosService: RecursosService) {
-	  	
-	  }
-	}
-  ...
-  </code></pre>
+		  constructor(private recursosService: RecursosService) {
+		  	
+		  }
+		}
+	  ...
+	  </code></pre>
 
 	+ Modifique el constructor para suscribirse a la respuesta del servicio
 
-  <pre><code>
-  ...
-  export class AppComponent {
-	  
-	  fotos: Foto[] = [];
+	  <pre><code>
+	  ...
+	  export class AppComponent {
+		  
+		  fotos: Foto[] = [];
 
-	  constructor(private recursosService: RecursosService) {
-	  	<b style="color:red">
-	    recursosService.obtenerDatos().subscribe(respuesta => {
-	      this.fotos = respuesta as Array&lt;Foto&gt;
-	    })
-	    </b>
-	  }
-	}
-  ...
-  </code></pre>
+		  constructor(private recursosService: RecursosService) {
+
+		  	<b style="color:red">
+		    recursosService.obtenerDatos().subscribe(respuesta => {
+		      this.fotos = respuesta as Array&lt;Foto&gt;
+		    })
+		    </b>
+
+		  }
+		}
+	  ...
+	  </code></pre>
 
 * En **src/app/app.component.html**, reemplace el contenido de:
+
 	```html
-	<div class="album py-5 bg-body-tertiary">
+	<div class="album py-5 bg-light">
 		<div class="container">
-		...
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+			
+			...
+
+			</div>
 		</div>
 	</div>
 	```
@@ -230,7 +240,6 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 	```html
 	<div class="album py-5 bg-light">
 		<div class="container">
-
       <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
         
         @for (foto of fotos; track foto.id) {
@@ -250,12 +259,9 @@ Ahora, para acabar esta introducción a los servicios en Angular, tenemos que ve
 	            </div>
 	          </div>
 	        </div>
-        } @empty {
-	        Empty list of photos
-	      }
+        }
 
       </div>
-      
     </div>
   </div>
 	```
