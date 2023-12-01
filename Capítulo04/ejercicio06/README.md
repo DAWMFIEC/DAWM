@@ -12,10 +12,10 @@
 * Desde la línea de comandos, en la raíz de la carpeta del proyecto 
 * Ejecute su aplicación, con: `ng serve`
 
-
 ## Pruebas unitarias
 
-* Copie cada archivo **.spec.ts** de la carpeta `specs` y reemplace el archivo **.spec.ts** correspondiente en su proyecto de Angular.
+* Descargue y descomprima [C04E06.zip](../../zips/C04E06.zip)
+* Copie cada archivo **.spec.ts** y reemplace con el archivo **.spec.ts** a cada componente del proyecto.
 	+ `specs/app.component.spec.ts` -> `src/app/app.component.spec.ts`
 	+ `specs/recursos.component.spec.ts` -> `src/app/servicios/recursos.component.spec.ts`
 * En la ruta de su proyecto en Angular, desde la línea de comandos ejecute: `npm test`
@@ -23,16 +23,7 @@
 	![karma](imagenes/karma.png)
 	+ Todos fueron exitosas, o
 	+ Existen pruebas unitarias fallidas.
-* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias.
-
-
-## Prueba PWA
-
-* Genere el proyecto en modo de producción
-* Levante un servidor HTTP local que apunte a la ruta del proyecto en modo de producción: `dist/cliente-angular`
-* En Chrome o Firefox, verifique el registro del service worker
-
-![serviceworkers](imagenes/serviceworkers.png)
+* En caso de ser necesario, modifique el/los archivo(s) y vuelva a ejecutar las pruebas unitarias. 
 
 ## Referencias 
 
