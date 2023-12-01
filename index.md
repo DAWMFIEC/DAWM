@@ -79,9 +79,9 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Angular - Local](tutoriales/angular_local.md)
 * [Angular - Bootstrap](tutoriales/angular_bootstrap.md)
 * [Angular - Componentes, Comunicación y Directivas](tutoriales/angular_bases.md)
-* [Angular - Rutas](tutoriales/angular_rutas.md)
 * [Angular - Servicios](tutoriales/angular_servicios.md)
 * [Angular - Material](tutoriales/angular_material.md)
+* [Angular - Rutas](tutoriales/angular_rutas.md)
 * [Angular - PWA](tutoriales/angular_pwa.md)
 * [Angular - Cordova](tutoriales/angular_cordova.md)
 
