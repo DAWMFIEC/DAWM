@@ -83,11 +83,11 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 		...
   	</code></pre>
 
-	+ Agregue la inyección de dependencia (argumento del constructor) al servicio `RecursosService` al constructor.
+	+ Agregue el servicio como inyección de dependencia del constructor.
 		<pre><code>
 		...
 		export class AppComponent {
-
+		
 			<b style="color:red">constructor(private recursosService: RecursosService) {}</b>
 		
 		}
