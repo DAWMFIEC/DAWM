@@ -61,7 +61,7 @@ Las dependencias son servicios u objetos que una clase necesita para realizar su
 
 Para inyectar una dependencia en un componente solo debes agregar un argumento (con el tipo de la dependencia) en el método constructor de la clase.
 
-* En **src/app/app.component.ts** 
+* En **src/app/app.component.ts**
 	+ Agregue el _import_ al servicio
 		<pre><code>
 		...
@@ -74,7 +74,7 @@ Para inyectar una dependencia en un componente solo debes agregar un argumento (
 		... 
 		</code></pre>
 
-  + Registre el proveedor en la clave **providers**.
+	+ Registre el proveedor en la clave **providers**.
   	<pre><code>
   	...
 		imports: [ ... ],
@@ -234,7 +234,7 @@ Por el arreglo **fotos** renderizado con la directiva [@for](https://blog.angula
 	<div class="container">
 		<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
       
-      @for (foto of fotos; track foto.id) {
+      			@for (foto of fotos; track foto.id) {
 				<div class="col">
 				  <div class="card shadow-sm">
 				    <img src="{% raw %}{{foto.url}}{% endraw %}" alt="{% raw %}{{foto.id}}{% endraw %}">
@@ -251,7 +251,7 @@ Por el arreglo **fotos** renderizado con la directiva [@for](https://blog.angula
 				    </div>
 				  </div>
 				</div>
-      }
+      			}
 
 		</div>
 	</div>
