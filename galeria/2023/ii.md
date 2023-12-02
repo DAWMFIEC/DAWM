@@ -29,6 +29,12 @@
 
 ## Dashboard
 
-| Nombre | Título | Vista  Previa | Sitio |
-| :----  | :----- | :------- ---: | :---: |
-|        |        |               |       |
+| Nombre | Vista  Previa | Sitio |
+| :----  | :----------: | :---: |
+| Carlos Alvia           | [Ver](imagenes_landing/ii/carlosalvia.png)              | [Ir](https://carlosalvia.github.io/dashboard/)       |
+|        |               |       |
+|        |               |       |
+|        |               |       |
+|        |               |       |
+|        |               |       |
+|        |               |       |

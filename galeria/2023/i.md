@@ -47,21 +47,21 @@
 
 | Nombre | Extra | Vista  Previa | Sitio |
 | :----  | :----- | :------- ---: | :---: |
-| Dario Laborde | Muy buena interfaz | [Ver](imagenes_dashboard/dario_laborde.png) | [Ir](https://dlaborde27.github.io/Dashboard/) |
-| Roberto Patiño | Muy buena interfaz | [Ver](imagenes_dashboard/roberto_patino.png) | [Ir](https://robertopatino1.github.io/ClimateDashboard/) |
-| Christopher Villa | Muy buena interfaz | [Ver](imagenes_dashboard/christopher_villa.png) | [Ir](https://cristophervilla20.github.io/Dashboard-clima/) |
-| Andrés Zambrano | Acceso por secciones, manejo de colores y gráficos, descripción del sitio y de gráficos | [Ver](imagenes_dashboard/andres_zambrano.png) | [Ir](https://ajzambra.github.io/Proyecto5-Dashboard/) |
-| Danny Burneo | Varios tipos de gráficos y buena documentación | [Ver](imagenes_dashboard/danny_burneo.png) | [Ir](https://burneodanny.github.io/Dashboard-dawn/) |
-| Guillermo Arévalo | Utilizó una plantilla y la adecuó | [Ver](imagenes_dashboard/guillermo_arevalo.png) | [Ir](https://gjareval.github.io/dashboard/admin) |
-| Daniel Fernández | Varios tipos de gráficos y buena documentación | [Ver](imagenes_dashboard/.png) | [Ir](https://dafebust.github.io/Meteo/) |
-| Keneth Pacheco | Interfaz de MDB | [Ver](imagenes_dashboard/keneth_pacheco.png) | [Ir](https://kenethps.github.io/dawm/proyectos/proyecto%204/) |
-| Joseph Carabajo | Varios tipos de gráficos | [Ver](imagenes_dashboard/joseph_carabajo.png) | [Ir](https://joemcara.github.io/proyectoDash/) |
-| Mario Cueva | Código limpio | [Ver](imagenes_dashboard/mario_cueva.png) | [Ir](https://steevens98.github.io/Dashboard/) |
-| Juan Demera | Secciones accesibles | [Ver](imagenes_dashboard/juan_demera.png) | [Ir](https://juandemera.github.io/Dashboard/) |
-| Jeremy Martínez | Buen diseño y código ordenado | [Ver](imagenes_dashboard/jeremy_martinez.png) | [Ir](https://jeremymartinez01.github.io/DashboardClimatico/) |
-| Ricardo Molina | Buen diseño y código ordenado | [Ver](imagenes_dashboard/ricardo_molina.png) | [Ir](https://ricardomolinacoronel.github.io/dashboard/) |
-| Kevin Quintuña | Buen diseño y código ordenado | [Ver](imagenes_dashboard/kevin_quintuna.png) | [Ir](https://kevin-qq-82.github.io/Dashboard2/) |
-| Andrés Amador | Buen diseño y código ordenado | [Ver](imagenes_dashboard/andres_amador.png) | [Ir](https://amadoran.github.io/Weather-App/) |
+| Dario Laborde | Muy buena interfaz | [Ver](imagenes_dashboard/i/dario_laborde.png) | [Ir](https://dlaborde27.github.io/Dashboard/) |
+| Roberto Patiño | Muy buena interfaz | [Ver](imagenes_dashboard/i/roberto_patino.png) | [Ir](https://robertopatino1.github.io/ClimateDashboard/) |
+| Christopher Villa | Muy buena interfaz | [Ver](imagenes_dashboard/i/christopher_villa.png) | [Ir](https://cristophervilla20.github.io/Dashboard-clima/) |
+| Andrés Zambrano | Acceso por secciones, manejo de colores y gráficos, descripción del sitio y de gráficos | [Ver](imagenes_dashboard/i/andres_zambrano.png) | [Ir](https://ajzambra.github.io/Proyecto5-Dashboard/) |
+| Danny Burneo | Varios tipos de gráficos y buena documentación | [Ver](imagenes_dashboard/i/danny_burneo.png) | [Ir](https://burneodanny.github.io/Dashboard-dawn/) |
+| Guillermo Arévalo | Utilizó una plantilla y la adecuó | [Ver](imagenes_dashboard/i/guillermo_arevalo.png) | [Ir](https://gjareval.github.io/dashboard/admin) |
+| Daniel Fernández | Varios tipos de gráficos y buena documentación | [Ver](imagenes_dashboard/i/.png) | [Ir](https://dafebust.github.io/Meteo/) |
+| Keneth Pacheco | Interfaz de MDB | [Ver](imagenes_dashboard/i/keneth_pacheco.png) | [Ir](https://kenethps.github.io/dawm/proyectos/proyecto%204/) |
+| Joseph Carabajo | Varios tipos de gráficos | [Ver](imagenes_dashboard/i/joseph_carabajo.png) | [Ir](https://joemcara.github.io/proyectoDash/) |
+| Mario Cueva | Código limpio | [Ver](imagenes_dashboard/i/mario_cueva.png) | [Ir](https://steevens98.github.io/Dashboard/) |
+| Juan Demera | Secciones accesibles | [Ver](imagenes_dashboard/i/juan_demera.png) | [Ir](https://juandemera.github.io/Dashboard/) |
+| Jeremy Martínez | Buen diseño y código ordenado | [Ver](imagenes_dashboard/i/jeremy_martinez.png) | [Ir](https://jeremymartinez01.github.io/DashboardClimatico/) |
+| Ricardo Molina | Buen diseño y código ordenado | [Ver](imagenes_dashboard/i/ricardo_molina.png) | [Ir](https://ricardomolinacoronel.github.io/dashboard/) |
+| Kevin Quintuña | Buen diseño y código ordenado | [Ver](imagenes_dashboard/i/kevin_quintuna.png) | [Ir](https://kevin-qq-82.github.io/Dashboard2/) |
+| Andrés Amador | Buen diseño y código ordenado | [Ver](imagenes_dashboard/i/andres_amador.png) | [Ir](https://amadoran.github.io/Weather-App/) |
 
 
 ## Single Page Application + Dataset 
