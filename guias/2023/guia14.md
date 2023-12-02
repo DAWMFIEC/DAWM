@@ -110,10 +110,6 @@ theme: jekyll-theme-leap-day
 * En la componente/página Index `index.component.html` reemplace el contenido por las etiquetas HTML extraídas.
 * Reinicie el servidor y revise los cambios en el navegador.
 
-#### Componente/Página - About
-
-
-
 #### Ruteo
 
 * En el archivo de rutas de la aplicación `app.routes.ts`, importe los componentes/páginas y registre las rutas
@@ -153,7 +149,7 @@ theme: jekyll-theme-leap-day
 
     ```typescript
     import { Component } from '@angular/core';
-		import { CommonModule } from '@angular/common';
+    import { CommonModule } from '@angular/common';
     
     import { RouterLinkActive, RouterLink } from '@angular/router';
     
@@ -175,6 +171,11 @@ theme: jekyll-theme-leap-day
 
 * Reinicie el servidor y revise los cambios en el navegador.
 
+#### De la plantilla a las Componente/Página
+
+* Identifique las etiquetas HTML con contenido único para cada página. No incluya las etiquetas en los componentes compartidos.
+* Coloque las etiquetas en el `Componente/Página` correspondiente.
+* Reinicie el servidor y revise los cambios en el navegador.
 
 #### Versionamiento
 
