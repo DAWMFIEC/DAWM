@@ -31,10 +31,4 @@
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
-| Carlos Alvia           | [Ver](imagenes_landing/ii/carlosalvia.png)              | [Ir](https://carlosalvia.github.io/dashboard/)       |
-|        |               |       |
-|        |               |       |
-|        |               |       |
-|        |               |       |
-|        |               |       |
-|        |               |       |
+| Carlos Alvia           | [Ver](imagenes_dashboard/ii/carlosalvia.png)              | [Ir](https://carlosalvia.github.io/dashboard/)       |
