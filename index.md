@@ -34,6 +34,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 12: Typescript](guias/2023/guia12)
   * [Guía 13: Angular - Introducción y Plantilla](guias/2023/guia13)
   * [Guía 14: Angular - Componentes y Rutas](guias/2023/guia14)
+  * [Guía 15: Firebase - Realtime Database](guias/2023/guia15)
+  * [Guía 16: Angular - Interfaz, Servicios, Comunicación y Directivas](guias/2023/guia16)
 
 ### Anteriores
 
