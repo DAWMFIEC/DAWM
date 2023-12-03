@@ -49,7 +49,15 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	ng generate interface interfaces/<NOMBRE_INTERFAZ>
 	```
 
-* Coloque la interfaz generada a partir del objeto en lugar de la interfaz creada. 
+* Coloque la interfaz generada en lugar de la interfaz creada. 
+
+#### Servicio Proveedor de Datos
+
+* Cree el servicio proveedor de datos, con:
+
+	```
+	ng generate service providers/<NOMBRE_SERVICIO>
+	```
 
 #### Versionamiento
 
