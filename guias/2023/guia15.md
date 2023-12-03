@@ -116,7 +116,7 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 
 
 * Seleccione el módulo que consumirá el proveedor de datos
-* Importe el módulo `HttpClientModule`, la interfaz `<NOMBRE_INTERFAZ>` y el servicio `<NOMBRE_SERVICIO>Service`. Además, registre el módulo `HttpClientModule` en la clave _imports_ y el servicio `<NOMBRE_SERVICIO>Service` en la clave _providers_.
+* Importe el módulo `HttpClientModule`, la interfaz `<NOMBRE_INTERFAZ>` y el servicio `<NOMBRE_SERVICIO>Service`. 
 
 	```typescript
 	...
@@ -129,6 +129,14 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	//Importación del servicio
 	import { <NOMBRE_SERVICIO>Service } from '<RUTA>/providers/<NOMBRE_SERVICIO>.service'
 
+	@Component({
+	...
+	````
+
+* Registre el módulo `HttpClientModule` en la clave _imports_ y el servicio `<NOMBRE_SERVICIO>Service` en la clave _providers_.
+
+	```typescript
+	...
 	@Component({
 	  ...
 	  standalone: true,
@@ -186,7 +194,8 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	  //Ejecución de la petición y suscripción de la respuesta
 	  ngOnInit() {
 	    this.dataProvider.getResponse().subscribe((response) => { 
-	      this.data = (response as <NOMBRE_INTERFAZ>[]); 
+	      let dataArray = (response as <NOMBRE_INTERFAZ>[]); 
+	      this.data = dataArray.slice(0,10);
 	    })
 	  }
 	}
@@ -205,13 +214,13 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
         <tbody>
             @for (datum of data; track datum.id) {
               <tr>
-	            th>{% raw %} {{ {% endraw %} datum[ <CLAVE1> ] {% raw %} }} {% endraw %} </th>
+	            <th>{% raw %} {{ {% endraw %} datum[ <CLAVE1> ] {% raw %} }} {% endraw %} </th>
                 <td>{% raw %} {{ {% endraw %} datum[ <CLAVE2> ] {% raw %} }} {% endraw %} </td>
                 <td>{% raw %} {{ {% endraw %} datum[ <CLAVE3> ] {% raw %} }} {% endraw %}</td>
               </tr>
             } @empty {
               <tr>
-                <td colspan="4" style="text-align: center;">Aún no hay datos</td>
+                <td colspan="4" class="text-center">Aún no hay datos</td>
               </tr>
             }
         </tbody>
