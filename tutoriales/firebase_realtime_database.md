@@ -55,7 +55,7 @@ Firebase - Realtime Database
   <img width="550" src ="imagenes/firebase_collection_init.png">
 </p> 
    
-  + Descargue los **[datos](archivos/datos.json)** e importe los datos.
+  + Importe los datos en formato JSON.
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_collection_import.png">
