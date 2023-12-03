@@ -69,19 +69,6 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	//Importación del HttpClient
 	import { HttpClient } from '@angular/common/http';
 	```
-
-* Inyecte el cliente `HttpClient` en el constructor del servicio proveedor de datos.
-
-	```typescript
-	...
-	export class <NOMBRE_SERVICIO>Service {
-
-		//Inyección de dependencia del HttpClient
-		constructor(private http:HttpClient) { }
-
-	}
-	```
-
 * Agregue un atributo con el URL de referencia al servicio.
 
 	```typescript
@@ -96,13 +83,32 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	}
 	```
 
+* Inyecte el cliente `HttpClient` en el constructor del servicio proveedor de datos.
+
+	```typescript
+	...
+	export class <NOMBRE_SERVICIO>Service {
+
+		//Atributo URL
+		private URL: string ...
+
+		//Inyección de dependencia del HttpClient
+		constructor(private http:HttpClient) { }
+
+	}
+	```
+
 * Agregue un método para hacer una petición HTTP GET. 
 
 	```typescript
 	...
 	export class <NOMBRE_SERVICIO>Service {
 
-		...
+		//Atributo URL
+		private URL: string ...
+
+		//Inyección de dependencia del HttpClient
+		constructor( ... ) { }
 
 		//Método con la petición HTTP
 		getResponse() {
@@ -147,22 +153,6 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	...
 	````
 
-* Inyecte la dependencia el servicio `<NOMBRE_SERVICIO>Service` en el constructor del componente seleccionado para mostrar los datos.
-
-	```typescript
-	...
-	@Component({
-	  ...
-	})
-	export class <COMPONENTE_SELECCIONADO>Component {
-	  
-	  //Inyección de dependencia del servicio
-	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service) { }
-	}
-	...
-	```
-
-
 * Agregue un atributo para almacenar la respuesta a la petición.
 
 	```typescript
@@ -180,7 +170,7 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	...
 	```
 
-* Agregue un método que realice la petición y que se suscriba a la respuesta de la petición.
+* Inyecte la dependencia el servicio `<NOMBRE_SERVICIO>Service` en el constructor del componente seleccionado para mostrar los datos.
 
 	```typescript
 	...
@@ -189,9 +179,29 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	})
 	export class <COMPONENTE_SELECCIONADO>Component {
 
+		public data ...
+	  
+	  //Inyección de dependencia del servicio
+	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service) { }
+	}
+	...
+	```
+
+* Agregue un método que realice la petición y que se suscriba a la respuesta de la petición. 
+
+	```typescript
+	...
+	@Component({
 	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	  public data ...
+
+	  constructor( ... ) { }
 
 	  //Ejecución de la petición y suscripción de la respuesta
+
 	  ngOnInit() {
 	    this.dataProvider.getResponse().subscribe((response) => { 
 	      let dataArray = (response as <NOMBRE_INTERFAZ>[]); 
@@ -214,7 +224,7 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
         <tbody>
             @for (datum of data; track datum.id) {
               <tr>
-	            <th>{% raw %} {{ {% endraw %} datum[ <CLAVE1> ] {% raw %} }} {% endraw %} </th>
+	              <th>{% raw %} {{ {% endraw %} datum[ <CLAVE1> ] {% raw %} }} {% endraw %} </th>
                 <td>{% raw %} {{ {% endraw %} datum[ <CLAVE2> ] {% raw %} }} {% endraw %} </td>
                 <td>{% raw %} {{ {% endraw %} datum[ <CLAVE3> ] {% raw %} }} {% endraw %}</td>
               </tr>
