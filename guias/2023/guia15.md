@@ -8,14 +8,9 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Clone su proyecto e instale las dependencias.
-* Levante el servidor y compruebe el resultado en el navegador.
+#### Preparación de los datos
 
-### Actividades
-
-#### Preparación de los datos * 
-
-**Nota:** Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contrario pase a la siguiente actividad. 
+Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contrario pase a la siguiente actividad. 
 
 * Descargue su fuente de datos en formato CSV.
 * Desde la línea de comando:
@@ -33,13 +28,30 @@ theme: jekyll-theme-leap-day
 
 #### Firebase (Realtime Database)
 
-* Utilice los datos previamente preparados en formato JSONS.
 * Siga las instrucciones del tutorial [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database).
 	- Realice las pruebas de peticiones mediante la línea de comandos para [Todos](/DAWM/tutoriales/firebase_realtime_database.html#peticin---todos), [Por índice](/DAWM/tutoriales/firebase_realtime_database.html#peticin---por-ndice) y [Filtrado de datos](/DAWM/tutoriales/firebase_realtime_database.html#peticin---filtrado-de-datos).
 
+### Actividades
+
+* Clona localmente tu repositorio **mpa**.
+* Abra el proyecto en VSCode y levante el servidor.
+
+
+
+
+#### Versionamiento
+
+* Versiona local y remotamente el repositorio **mpa**.
+
+### Fundamental
+
+* Duet AI for Firebase en [X](https://twitter.com/Firebase/status/1730632854151762207)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Using AI to improve app development 🚀<br><br>Two AI announcements from Firebase Demo Day:<br>1️⃣ We started building Duet AI for Firebase, a helpful assistant for developers.<br>2️⃣ We&#39;re bringing AI-powered automated testing to App Distribution.<br><br>Get the details → <a href="https://t.co/4TmBtZ1v8o">https://t.co/4TmBtZ1v8o</a> <a href="https://t.co/6tnhfay0Rc">pic.twitter.com/6tnhfay0Rc</a></p>&mdash; Firebase (@Firebase) <a href="https://twitter.com/Firebase/status/1730632854151762207?ref_src=twsrc%5Etfw">December 1, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Términos
 
-csvtojson, firebase
+csvtojson, firebase, interfaz, servicio, httpclient, inyección de dependencias, proveedor, directivas
 
 ### Referencias
 
