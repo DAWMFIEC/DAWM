@@ -31,13 +31,25 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 * Siga las instrucciones del tutorial [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database).
 	- Realice las pruebas de peticiones mediante la línea de comandos para [Todos](/DAWM/tutoriales/firebase_realtime_database.html#peticin---todos), [Por índice](/DAWM/tutoriales/firebase_realtime_database.html#peticin---por-ndice) y [Filtrado de datos](/DAWM/tutoriales/firebase_realtime_database.html#peticin---filtrado-de-datos).
 
+#### JSON a TypeScript
+
+* De la colección de datos, copie un objeto del arreglo.
+* Utilice el servicio de [Transform Tools](https://transform.tools/json-to-typescript), para generar la interfaz en TypeScript a partir del objeto copiado.
+
 ### Actividades
 
 * Clona localmente tu repositorio **mpa**.
 * Abra el proyecto en VSCode y levante el servidor.
 
+#### Interfaz de Tipo de Datos
 
+* Cree una interfaz de Angular, con:
 
+	```
+	ng generate interface interfaces/<NOMBRE_INTERFAZ>
+	```
+
+* Coloque la interfaz generada a partir del objeto en lugar de la interfaz creada. 
 
 #### Versionamiento
 
