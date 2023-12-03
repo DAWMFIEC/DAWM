@@ -179,7 +179,7 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	})
 	export class <COMPONENTE_SELECCIONADO>Component {
 
-		public data ...
+		public data : <NOMBRE_INTERFAZ>[] ...
 	  
 	  //Inyección de dependencia del servicio
 	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service) { }
@@ -196,7 +196,7 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	})
 	export class <COMPONENTE_SELECCIONADO>Component {
 
-	  public data ...
+	  public data : <NOMBRE_INTERFAZ>[] ...
 
 	  constructor( ... ) { }
 
@@ -256,3 +256,8 @@ csvtojson, firebase, interfaz, servicio, httpclient, inyección de dependencias,
 
 * csvtojson. (2019). Retrieved 9 July 2023, from https://www.npmjs.com/package/csvtojson
 * DAWM. (2023). Retrieved 9 July 2023, from https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database.html
+* Angular. (2023). Retrieved 11 July 2023, from https://angular.io/tutorial/first-app/first-app-lesson-04
+* Angular. (2023). Retrieved 11 July 2023, from https://angular.io/guide/creating-injectable-service
+* Angular 16 HttpClient & Http Services Example Tutorial - positronX.io. (2019). Retrieved 11 July 2023, from https://www.positronx.io/angular-httpclient-http-service/#tc_1202_06
+* Angular. (2023). Retrieved 11 July 2023, from https://angular.io/api/common/NgForOf
+* Angular Basics: How To Use HttpClient in Angular. (2021). Retrieved 11 July 2023, from https://www.telerik.com/blogs/angular-basics-how-to-use-httpclient
