@@ -32,6 +32,7 @@
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
 | Ángel Tomalá          | [Ver](imagenes_dashboard/ii/angelt.png)              | [Ir](https://angelt-lancervs.github.io/dashboard/)       |
+| Emilio Saenz          | [Ver](imagenes_dashboard/ii/emiliosg23.png)              | [Ir](https://emiliosg23.github.io/dashboard/)       |
 | Katherine Tumbaco          | [Ver](imagenes_dashboard/ii/katumbac.png)              | [Ir](https://katumbac.github.io/Dashboard/)       |
 | Angello Bravo          | [Ver](imagenes_dashboard/ii/sangello31.png)              | [Ir](https://sangello31.github.io/Dashboard/)       |
 | Mauricio Bravo          | [Ver](imagenes_dashboard/ii/mbravop.png)              | [Ir](https://mbravop.github.io/dashboard/)       |
@@ -41,5 +42,7 @@
 | Kevin Ibarra          | [Ver](imagenes_dashboard/ii/kevin523523.png)              | [Ir](https://kevin523523.github.io/dashboard/)       |
 | Sofía Zárate          | [Ver](imagenes_dashboard/ii/zaratesofia.png)              | [Ir](https://zaratesofia.github.io/dashboard/)       |
 | Axcel Villagrán          | [Ver](imagenes_dashboard/ii/axcelvillagran.png)              | [Ir](https://axcelvillagran.github.io/Dashboard/)       |
+| Michael Jiménez          | [Ver](imagenes_dashboard/ii/michaeljimenezc.png)              | [Ir](https://michaeljimenezc.github.io/dashboard/)       |
+|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
 |           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
 |           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
