@@ -31,4 +31,12 @@
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
+| Angello Bravo          | [Ver](imagenes_dashboard/ii/sangello31.png)              | [Ir](https://sangello31.github.io/Dashboard/)       |
+| Mauricio Bravo          | [Ver](imagenes_dashboard/ii/mbravop.png)              | [Ir](https://mbravop.github.io/dashboard/)       |
 | Carlos Alvia           | [Ver](imagenes_dashboard/ii/carlosalvia.png)              | [Ir](https://carlosalvia.github.io/dashboard/)       |
+| Roberto Encalada          | [Ver](imagenes_dashboard/ii/robertoencalada.png)              | [Ir](https://robertoencalada.github.io/Dashboard/)       |
+| Xavier Cobos          | [Ver](imagenes_dashboard/ii/xxcobos.png)              | [Ir](https://xxcobos.github.io/Dashboard1/index.html)       |
+|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
+|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
+|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
+|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
