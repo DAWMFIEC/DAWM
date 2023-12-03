@@ -29,7 +29,7 @@ Firebase - Realtime Database
   <img width="550" src ="imagenes/firebase_realtime_init.png">
 </p>
 
-  + Durante el proceso de creación de la base de datos no relacional, se establece que de manera predeterminada ningún cliente EXTERNO puede leer o escribir sobre los datos. 
+  + Durante el proceso de creación de la base de datos no relacional, habilite el _test mode_ para la edición por 30 días. 
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_setup1.png">
