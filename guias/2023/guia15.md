@@ -187,7 +187,7 @@ Estas instrucciones aplican si su fuente de datos es de formato CSV, caso contra
 	...
 	```
 
-* Agregue un método que realice la petición y que se suscriba a la respuesta de la petición. 
+* Agregue un método que realice la petición y que se suscriba a la respuesta de la petición. Extraiga una muestra de los datos en el atributo a renderizar en la vista.
 
 	```typescript
 	...
