@@ -36,7 +36,7 @@
 | Carlos Alvia           | [Ver](imagenes_dashboard/ii/carlosalvia.png)              | [Ir](https://carlosalvia.github.io/dashboard/)       |
 | Roberto Encalada          | [Ver](imagenes_dashboard/ii/robertoencalada.png)              | [Ir](https://robertoencalada.github.io/Dashboard/)       |
 | Xavier Cobos          | [Ver](imagenes_dashboard/ii/xxcobos.png)              | [Ir](https://xxcobos.github.io/Dashboard1/index.html)       |
-|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
-|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
+| Kevin Ibarra          | [Ver](imagenes_dashboard/ii/kevin523523.png)              | [Ir](https://kevin523523.github.io/dashboard/)       |
+| Sofía Zárate          | [Ver](imagenes_dashboard/ii/zaratesofia.png)              | [Ir](https://zaratesofia.github.io/dashboard/)       |
 |           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
 |           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
