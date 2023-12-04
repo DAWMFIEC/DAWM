@@ -34,20 +34,20 @@
 | Ángel Tomalá          | [Ver](imagenes_dashboard/ii/angelt.png)              | [Ir](https://angelt-lancervs.github.io/dashboard/)       |
 | Emilio Saenz          | [Ver](imagenes_dashboard/ii/emiliosg23.png)              | [Ir](https://emiliosg23.github.io/dashboard/)       |
 | Katherine Tumbaco          | [Ver](imagenes_dashboard/ii/katumbac.png)              | [Ir](https://katumbac.github.io/Dashboard/)       |
+| Michael Jiménez          | [Ver](imagenes_dashboard/ii/michaeljimenezc.png)              | [Ir](https://michaeljimenezc.github.io/dashboard/)       |
+| Kevin Roldán          | [Ver](imagenes_dashboard/ii/k3vr0ld4n.png)              | [Ir](https://k3vr0ld4n.github.io/dashboard/index.html)       |
+| Sofía Zárate          | [Ver](imagenes_dashboard/ii/zaratesofia.png)              | [Ir](https://zaratesofia.github.io/dashboard/)       |
 | Angello Bravo          | [Ver](imagenes_dashboard/ii/sangello31.png)              | [Ir](https://sangello31.github.io/Dashboard/)       |
+| Jeremy Poveda          | [Ver](imagenes_dashboard/ii/poveda.png)              | [Ir](https://jeremy-poveda.github.io/dashboard/)       |
+| José Ramos          | [Ver](imagenes_dashboard/ii/josdramo.png)              | [Ir](https://josdramo.github.io/dashboard/)       |
 | Mauricio Bravo          | [Ver](imagenes_dashboard/ii/mbravop.png)              | [Ir](https://mbravop.github.io/dashboard/)       |
+| Dafne Ruiz          | [Ver](imagenes_dashboard/ii/taizruiz.png)              | [Ir](https://taizruiz.github.io/dashboard_template/)       |
+| Richard Pérez          | [Ver](imagenes_dashboard/ii/rochardp12.png)              | [Ir](https://rochardp12.github.io/dashboard/)       |
 | Carlos Alvia           | [Ver](imagenes_dashboard/ii/carlosalvia.png)              | [Ir](https://carlosalvia.github.io/dashboard/)       |
 | Roberto Encalada          | [Ver](imagenes_dashboard/ii/robertoencalada.png)              | [Ir](https://robertoencalada.github.io/Dashboard/)       |
 | Xavier Cobos          | [Ver](imagenes_dashboard/ii/xxcobos.png)              | [Ir](https://xxcobos.github.io/Dashboard1/index.html)       |
 | Kevin Ibarra          | [Ver](imagenes_dashboard/ii/kevin523523.png)              | [Ir](https://kevin523523.github.io/dashboard/)       |
-| Sofía Zárate          | [Ver](imagenes_dashboard/ii/zaratesofia.png)              | [Ir](https://zaratesofia.github.io/dashboard/)       |
 | Axcel Villagrán          | [Ver](imagenes_dashboard/ii/axcelvillagran.png)              | [Ir](https://axcelvillagran.github.io/Dashboard/)       |
-| Michael Jiménez          | [Ver](imagenes_dashboard/ii/michaeljimenezc.png)              | [Ir](https://michaeljimenezc.github.io/dashboard/)       |
 | Luis Litardo          | [Ver](imagenes_dashboard/ii/lalitard.png)              | [Ir](https://lalitard.github.io/dashboard/)       |
-| Loor Paulina          | [Ver](imagenes_dashboard/ii/loorpaulina.png)              | [Ir](https://loorpaulina.github.io/dashboard/)       |
 | Jorge Mawyin          | [Ver](imagenes_dashboard/ii/jorgemawyin.png)              | [Ir](https://jorgemawyin.github.io/dashboard/)       |
-|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
-|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
-|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
-|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
-|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
+| Loor Paulina          | [Ver](imagenes_dashboard/ii/loorpaulina.png)              | [Ir](https://loorpaulina.github.io/dashboard/)       |
