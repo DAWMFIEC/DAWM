@@ -34,3 +34,7 @@ Busque y compruebe la documentación en [CSS: Centering things](https://www.w3.o
 
 1. Tome como referencia la sección &lt;section&gt; que contiene el mapa &lt;iframe&gt;. 
 2. Centre horizontalmente **el contenedor** &lt;section&gt; o **el contenido** &lt;iframe&gt;.
+
+
+  * [Guía 16: Angular - Eventos](guias/2023/guia16)
+  * [Guía 17: Angular - Despliegue con GitHub Actions](guias/2023/guia17)
