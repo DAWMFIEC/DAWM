@@ -4,39 +4,167 @@ theme: jekyll-theme-leap-day
 
 ## Guía 20
 
-[Regresar](/DAWM/)
+[DAWM](/DAWM/) / [Proyecto07](/DAWM/proyectos/2023/proyecto07)
 
-### Contenidos
+### Actividades previas
 
-* Revisión de ejercicios previos: dudas y comentarios.
-* [Firebase](https://firebase.google.com/?hl=es) es una plataforma para el desarrollo de aplicaciones web y aplicaciones móviles lanzada en 2011 y adquirida por Google en 2014.
-  + [Realtime database](https://firebase.google.com/products/realtime-database) es una base de datos NoSQL alojada en la nube que te permite almacenar y sincronizar datos entre tus usuarios en tiempo real.
+#### Nodejs y Express
+
+* Node.js® es un entorno de ejecución para JavaScript construido con el [motor de JavaScript V8 de Chrome](https://v8.dev/ "https://v8.dev/"). 
+* Mientras que [Express](https://expressjs.com/es/) permite crear una infraestructura web rápida, minimalista y flexible el backend para Node.js
+
+#### Sequelize
+
+* Sequelize es un [ORM](https://www2.deloitte.com/es/es/pages/technology/articles/que-es-orm.html) para Nodejs que te permite agilizar el desarrollo de aplicaciones que incluyen la conexión con bases de datos relacionales como Postgres, MySQL, MariaDB, SQLite y SQL Server.
+* El módulo [sequelize-auto](https://www.npmjs.com/package/sequelize-auto) sirve para reconstruir los modelos de una base de datos preconstruida (tablas, relaciones y datos) a un proyecto de Express.
+
+#### Modelo EER a SQL script
+
+* Del modelo de su base de datos, considere al menos dos entidades y su relación entre sí. 
+* Siga las instrucciones del tutorial [Modelo EER a SQL](/DAWM/tutoriales/modeloeer_sql)
+* Agregue algunos registros a sus entidades
 
 
 ### Actividades
 
-* Realice completamente el tutorial:
-  + [Realtime Database](https://dawfiec.github.io/DAWM/tutoriales/firebase_realtime_database.html)
+#### Express - Base
 
-* Realice un reporte de compras con las siguientes características:
+Desde la línea de comandos:
 
-* Debe aparecer en el dashboard en la ruta `/reporte`
-* La lista desplegable contiene los **nombres de los productos** de la **base de datos relacional**.
-* La tabla contiene la **colección de productos** de la **base de datos no relacional**.
-* Al seleccionar un elemento de la lista desplegable se actualiza el contenido de la tabla de acuerdo con el valor seleccionado.
+* Instale los módulos **Express Generator**, **Sequelize CLI** y **Sequelize auto** de manera global, con:
 
-La imagen de abajo es solo un ejemplo del reporte.
+	```
+	npm i -g express-generator sequelize-cli sequelize-auto
+	```
 
-<p align="center">
-  <img src ="imagenes/reporte.png">
-</p>
+* Cree un proyecto para su REST - API, con: 
+
+	```
+	express --view=ejs rest_<NOMBRE_DEL_PROYECTO>
+	```
+
+* Acceda a la carpeta del proyecto, instale las dependencias y ejecute la aplicación, con:
+
+	```
+	cd rest_<NOMBRE_DEL_PROYECTO>
+	npm install
+	SET DEBUG=rest-<NOMBRE_DEL_PROYECTO>:* & npm start
+	```
+
+* Compruebe los resultados al acceder a `http://localhost:3000`
+
+#### ORM: Sequelize
+
+Dentro de la carpeta del proyecto y desde la línea de comandos:
+
+* Instale Sequelize y el conector para MySQL para el proyecto, con: 
+
+	```
+	npm install --save sequelize mysql2
+	```
+
+* Genere los archivos de configuración de Sequelize, con: 
+
+	```
+	sequelize init
+	```  
+
+* Modifique el archivo `config/config.json` con los datos para la conexión con el motor de bases de datos. En este caso, el ambiente a utilizar es **development**.
+
+	```
+	{
+	  "development": {
+	    "username": "root",
+	    "password": <CONTRASEÑA>,
+	    "database": <NOMBRE_SCHEMA>,
+	    "host": "127.0.0.1",
+	    "dialect": "mysql"
+	  },
+	  ...
+	```
+
+#### ORM: Sequelize Auto
+
+Desde la línea de comandos, en la raíz de la carpeta del proyecto.
+
+* Reconstruya los modelos lógicos desde las entidades relacionales, con: 
+
+	```
+	sequelize-auto -h "127.0.0.1" -d <NOMBRE_SCHEMA> -u "root" -x <CONTRASEÑA> -p 3306
+	```
+
+**NOTA:** Los valores de `<NOMBRE_SCHEMA>` y `<CONTRASEÑA>` son cadenas de caracteres por lo que debe colocar el valor entre comillas dobles
+
+#### Manejador de rutas y registro en la aplicación
+
+* Cree el archivo manejador de rutas `routes/rest_<NOMBRE_CLASE>.js`. 
+* En `app.js`, relacione la ruta del URL **`'/rest/<NOMBRE_CLASE>'`** con el manejador de rutas.
+
+	```typescript
+	...
+	var indexRouter = require('./routes/index');
+	...
+	
+	/* REFERENCIA AL MANEJADOR DE RUTAS */
+	var <NOMBRE_CLASE>Router = require('./routes/rest_<NOMBRE_CLASE>');
+	...
+	app.use('/', indexRouter);
+	...
+	
+	/* RELACIÓN ENTRE LA RUTA DEL URL CON LA REFERENCIA CON EL MANEJADOR DE RUTAS */
+	app.use('/rest/<NOMBRE_CLASE>', <NOMBRE_CLASE>Router);
+	...
+	``` 
+
+#### REST: GET-All
+
+Para obtener TODOS los registros de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con el método **findAll** de la clase.
+
+* Modifique el archivo manejador de rutas `routes/rest_<NOMBRE_CLASE>.js`
+
+* Incluya los módulos y modelos en el encabezado del manejador de rutas.
+
+	```typescript
+	var express = require('express');
+	var router = express.Router();
+
+	/* IMPORTE El ARCHIVO CON EL NOMBRE_CLASE */
+	const <NOMBRE_CLASE> = require('../models').<NOMBRE_TABLA>;
+	...
+	```
+
+* Cree el controlador para el verbo GET de la ruta **`/findAll/json`** retorne un json con todos los registros.
+
+	```typescript
+	  ...
+	  router.get('/findAll/json', function(req, res, next) {  
+
+	  	/* MÉTODO ESTÁTICO findAll  */
+
+	    <NOMBRE_CLASE>.findAll({  
+	        attributes: { exclude: ["updatedAt", "createdAt"] } ,
+	    })  
+	    .then(resultado => {  
+	        res.json(resultado);  
+	    })  
+	    .catch(error => res.status(400).send(error)) 
+
+	  });
+	  
+	  module.exports = router;
+	```
+
+* Reinicie o ejecute la aplicación
+
+* Revise la respuesta con el URL `http://localhost:3000/rest/<NOMBRE_CLASE>/findAll/json`
 
 ### Términos
 
-reporte, `base de datos no relacional`, firebase, `rest api`
+reverse engineer, forward engineer, mysql workbench
 
 ### Referencias
 
-* Angular: Sending a POST Request with Firebase. (2020). Retrieved 14 August 2022, from https://medium.com/@monalisorathiya8/angular-sending-a-post-request-with-firebase-820f4046c89
-* Firebase, I., Williams, R., & singh, s. (2018). Iterate with ngFor on objects obtained from Firebase. Retrieved 14 August 2022, from https://stackoverflow.com/questions/48243273/iterate-with-ngfor-on-objects-obtained-from-firebase
-* Recupera datos Firebase Realtime Database. (2022). Retrieved 15 August 2022, from https://firebase.google.com/docs/database/rest/retrieve-data?hl=es
+* Creating a Secure REST API in Node.js. (2021). Retrieved 7 August 2021, from https://www.toptal.com/nodejs/secure-rest-api-in-nodejs 
+* GitHub - sequelize/sequelize-auto: Automatically generate bare sequelize models from your database. (2021). Retrieved 7 August 2021, from https://github.com/sequelize/sequelize-auto 
+* Route Parameters in Express. (2019). Retrieved 7 August 2021, from https://masteringjs.io/tutorials/express/route-parameters
+* Manual Sequelize. (2021). Retrieved 7 August 2021, from https://sequelize.org/master/manual/model-querying-basics.html#applying-where-clauses

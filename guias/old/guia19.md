@@ -4,240 +4,332 @@ theme: jekyll-theme-leap-day
 
 ## Guía 19
 
-[Regresar](/DAWM/)
+[DAWM](/DAWM/) / [Proyecto07](/DAWM/proyectos/2023/proyecto07)
 
-### Contenidos
+### Actividades previas
 
-* Revisión de ejercicios previos: dudas y comentarios.
-* [REST](https://openwebinars.net/blog/que-es-rest-conoce-su-potencia/) es una interfaz para conectar varios sistemas basados en el protocolo HTTP (uno de los protocolos más antiguos) y nos sirve para obtener y generar datos y operaciones, devolviendo esos datos en formatos muy específicos, como XML y JSON. 
+#### Repositorio remoto
 
-REST se apoya en HTTP, los verbos que utiliza son exactamente los mismos, con ellos se puede hacer **GET**, **POST**, **PUT** y **DELETE**. 
+* Cree un repositorio remoto en GitHub, de acceso **público**.
 
+#### Repositorio local
+
+* Clone el repositorio remoto [core-app](https://github.com/aavendan/core-app)
+
+* Cámbiese a la rama **desktop**, con:
+
+	```
+	git switch desktop
+	```
+
+* Instale las dependencias del proyecto de Angular, con:
+
+	```
+	npm i
+	```
+
+* Muestre el valor de la clave **origin**
+
+	```
+	git remote -v
+	```
+
+* Cambie la clave **origin** con el URL de su repositorio remoto, con:
+
+	```
+	git remote remove origin 
+	git remote add origin https://github.com/<USUARIO>/<REPOSITORIO_REMOTO>.git
+	```
 
 ### Actividades
 
-#### Servidor
+#### Componentes
 
-* Utilice la aplicacion web en backend o genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
-  + De [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
-  + De [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
-  + De [Express - Layouts y Partials](https://dawfiec.github.io/DAWM/tutoriales/express_partials.html) hasta **Productos: layout y partial**.
-  + De [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) hasta la **Vista** de Productos.
+* Cree los componentes básicos `Main`, `Report`, `About` y `Menu`
 
-* Asegúrese de contar con la referencia al módulo **cors** el **app.js**
+	```
+	ng g c pages/main
+	ng g c pages/report
+	ng g c pages/about
+	ng g c shared/menu
+	```
 
-* Verifique la referencia del ruteador **routes/api.js** en el `app.js` a la ruta `/api`
+* Levante el servidor, con:
 
-* En el ruteador **routes/api.js** agregue: 
-  + El método **GET** de la subruta **`/productos/:id`** que retorna un _json_ del producto dado el **id**.
+	```
+	ng serve -o
+	```
 
-    - Para obtener un elemento mediante Sequelize revise el método [findOne](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findone)
-    - Para obtener el **id**, revise **Parámetros de ruta** del tutorial [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html)
+#### Rutas (Routes)
 
-* Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/api/productos/3` 
+* En `app/app-routing.module.ts` importe los componentes `Main`, `Report` y `About`. Agregue las rutas correspondientes. 
 
-<p align="center">
-  <img src="imagenes/restapigetid.png">
-</p>
+	```typescript
+	...
+	import { MainComponent } from './pages/main/main.component';
+	import { AboutComponent } from './pages/about/about.component';
+	import { ReportComponent } from './pages/report/report.component';
 
-#### Cliente
+	const routes: Routes = [
+	    { path: "main", component: MainComponent },
+		{ path: "about", component: AboutComponent },
+		{ path: "report", component: ReportComponent },
+		{ path: " ", redirectTo: '/main', pathMatch: 'full' },
+		{ path: "**", redirectTo: "main" }
+	  ];
 
-* Proyecto **Productos** en Angular
-  + De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción del sitio.
-  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) agregue bootstrap.
-  + De [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html) agregue angular material.
-  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html). 
-    - Cree el componente **producto**.
+	...
+	```
 
-    + De [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html) agregue la ruta:
-    - De la ruta `producto/:id` al componente **producto**.
+#### Enlace a las rutas (Router Link)
 
-* Descargue y descomprima los [componentes y assets](archivos/guia19_recursos.zip)
+* En la vista del componente **Menu** (`app/shared/menu.component.html`) coloque las rutas de acceso a los componentes `Main`, `Report`, `Form` y `About`:
 
-* Copie y reemplace la carpeta **producto** dentro de la carpeta `src/app` del proyecto en Angular. 
+	```html
+	<ul>
+	    <li><a routerLink="/main">Main</a></li>
+	    <li><a routerLink="/report">Report</a></li>
+	    <li><a routerLink="/about">About</a></li>
+	</ul>
+	```
 
-* Agregue el módulo **MatCardModule** y **MatButtonModule** al `app.module.ts`
+#### Salida del enrutador (Router Outlet)
 
-* La aplicación debe lucir así
+* En la vista del componente **App** `app/app.component.html` reemplace todo el contenido por:
+	
+	```html
+	<app-menu></app-menu>
+	<router-outlet></router-outlet>
+	```
 
-<p align="center">
-  <img style="border: 1pt solid black;" width="150" src="imagenes/angular_producto_id.png">
-</p>
+* Revise los cambios en el navegador.
 
-* A partir del tutorial [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html):
-  
-  + Inyecte la dependencia del servicio **servicio/producto** al componente **producto**
- 
-  + Peticiones HTTP
-    - Agregue el método **obtenerProductos** al servicio **servicio/producto** 
-    ```
-    obtenerProductoPorId(id: number) {
-      return this.http.get('http://localhost:3000/api/productos/'+id.toString())
-    }
-    ```
+#### Angular Material
 
-  + Cree la interfaz **interfaz/producto** con los atributos `id: number`, `nombre: string`, `cantidad: number`, `createdAt: string` y `updatedAt: string`
+* Agregue [Angular Material](https://material.angular.io/) a su proyecto, con:
 
-* Para consumir el servicio en el componente **producto**. En **producto.component.ts** agregue
+	```
+	ng add @angular/material
+	```
 
-  + Importe el servicio 
+* Seleccione el **tema** de su aplicación, agregue el **estilo de tipográfico** y habilite el **módulo de animación**.
 
-  ```
-  ...
-  import { ProductoService } from '../servicios/producto.service';
-  ...
-  ```
+#### MatSidenavModule
 
-  + Importe la interfaz 
+* Revise la documentación en [MatSidenavModule](https://material.angular.io/components/sidenav/overview)
 
-  ```
-  ...
-  import { Producto } from '../interfaz/producto';
-  ...
-  ```
+* En `app.module.ts` importe y registre el módulo `MatSidenavModule`
 
-  + Agregue la propiedad **item** de la interfaz **Producto** con los valores predeterminados
+	```typescript
+	import { MatSidenavModule } from '@angular/material/sidenav';
+	...
 
-  ```
-  ...
-  export class ProductoComponent implements OnInit {
-      item : Producto = {
-        id: -1,
-        nombre: "",
-        cantidad: 0,
-        createdAt: "",
-        updatedAt: ""
-      };
+	imports: [
+	    ...
+	    MatSidenavModule,
+	  ]
 
-      constructor( ... 
-  ...
-  ```
+	```
 
-  + Inyecte la dependencia en el constructor
+* En `app/app.component.html` reemplace todo el contenido por:
 
-  ```
-  ...
-  constructor(private productoService: ProductoService) { }
-  ...
-  ```
+	```html
+	<mat-drawer-container class="container">
+	  <mat-drawer mode="side" opened>
+	  	<app-menu></app-menu>
+	  </mat-drawer>
+	  <mat-drawer-content>
+	  	<router-outlet></router-outlet>
+	  </mat-drawer-content>
+	</mat-drawer-container>
+	```
 
-  + Realice la petición en el método **ngOnInit**
+* En `app/app.component.css` agregue la regla:
 
-  ```
-  ...
-  ngOnInit(): void {
-    this.productoService.obtenerProductoPorId(3).subscribe(respuesta => {
-      this.item = respuesta as Producto
-    })
-  }
-  ...
-  ```
+	```css
+	.container {
+	    min-height: 91vh;
+	    height: auto;
+	    margin: 0;
+	  }
+	```
 
-* Modifique la vista **producto.component.html** con los valores del producto
+* Revise los cambios en el navegador.
 
-  ```
-  ...
-    {% raw %}
-    <mat-card-title>{{item.nombre}}</mat-card-title>
-    <mat-card-subtitle>{{item.id}}</mat-card-subtitle>
-    {% endraw %}
-  ...
-    {% raw %}
-    <mat-card-content>
-      <p>Fecha de creación: {{item.createdAt | date:'MMM d, y h:mm'}}</p>
-      <p>Fecha de actualización: {{item.updatedAt | date:'MMM d, y h:mm'}}</p>
-    </mat-card-content>
-    {% endraw %}
-  ...
-  ``` 
+#### MatListModule
 
-* Compruebe el funcionamiento del servidor, con: **npm start**
-* Acceda al URL `http://localhost:4200/producto/3` 
+* Revise la documentación en [MatListModule](https://material.angular.io/components/list/overview)
 
-<p align="center">
-  <img style="border: 1pt solid black;" width="150" src="imagenes/angular_producto_id2.png">
-</p>
+* En `app.module.ts` importe y registre el módulo `MatListModule`
+
+* En `app/shared/menu.component.html` reemplace todo el contenido por:
+
+	```html
+	<mat-list role="list">
+	    <mat-list-item role="listitem" routerLink="/main">Main</mat-list-item>
+	    <mat-list-item role="listitem" routerLink="/report">Report</mat-list-item>
+	    <mat-list-item role="listitem" routerLink="/about">About</mat-list-item>
+	</mat-list>
+	```
+
+* Revise los cambios en el navegador.
+
+#### MatIconModule y MatToolbarModule
+
+* Revise la documentación en [MatIconModule](https://material.angular.io/components/icon/overview) y [MatToolbarModule](https://material.angular.io/components/toolbar/overview)
+
+* En `app.module.ts` importe y registre los módulos `MatIconModule` y `MatToolbarModule`
+
+* En `app/app.component.html` agregue la etiqueta `<mat-toolbar>`:
+
+	```html
+	<mat-toolbar color="primary">
+	  <button mat-icon-button class="example-icon" mat-button>
+	    <mat-icon>menu</mat-icon>
+	  </button>
+	</mat-toolbar>
+	<mat-drawer-container class="container">
+	  ...
+	</mat-drawer-container>
+	```
+
+* Revise los cambios en el navegador.
+
+#### Variables de plantilla
+
+* Agregue la [variable de plantilla](https://angular.io/guide/template-reference-variables) `drawer` en la etiqueta `<mat-drawer>`
+
+	```html
+	...
+	  <mat-drawer #drawer mode="side" opened>
+	    <app-menu></app-menu>
+	  </mat-drawer>
+	...
+	```
+
+* Habilite el evento **click** para que reaccione con la variable de plantilla `drawer` 
+
+	```html
+	...
+	  <button mat-icon-button class="example-icon" mat-button (click)="drawer.toggle()">
+	    <mat-icon>menu</mat-icon>
+	  </button>
+	...
+	  <mat-drawer #drawer mode="side" opened>
+	    <app-menu></app-menu>
+	  </mat-drawer>
+	...
+	``` 
+
+* Revise los cambios en el navegador.
+
+#### MatCardModule
+
+* Revise la documentación en [MatCardModule](https://material.angular.io/components/card/overview)
+
+* En `app.module.ts` importe y registre los módulos `MatCardModule` 
+
+* En `app/pages/about.component.html` reemplace todo el contenido por:
+
+	```html
+	<mat-card class="about-card">
+	    <mat-card-header>
+	      <mat-card-title>About</mat-card-title>
+	      <mat-card-subtitle>Proyecto 07</mat-card-subtitle>
+	    </mat-card-header>
+	    <mat-card-content>
+	      <p class="about-text"> ... </p>
+	    </mat-card-content>
+	</mat-card>
+	```
+
+* Revise los cambios en el navegador.
+
+#### Interpolación
+
+* En `app/pages/about.component.ts` agregue el atributo `description`:
+
+	```typescript
+	...
+	export class AboutComponent {
+ 		description: string = 'Descripción ... '; /* Cambie el texto con la descripción de su proyecto */
+	}
+	```
+
+* En `app/pages/about.component.html` agregue la [interpolación](https://angular.io/guide/interpolation) del atributo **description**:
+
+	```html
+	...
+	  <p class="about-text">{% raw %}{{description}}{% endraw %}</p>
+	...
+	```
+
+* Revise los cambios en el navegador.
+
+#### Angular Flex-Layout
+
+* Revise la documentación en [Angular Flex-Layout](https://github.com/angular/flex-layout/wiki/API-Documentation) y el [Layout Demos](https://tburleson-layouts-demos.firebaseapp.com/#/docs)
+
+* Agregue [Angular Flex-Layout](https://github.com/angular/flex-layout) a su proyecto, con:
+
+	```
+	npm i -s @angular/flex-layout
+	```
+
+* En `app.module.ts` importe y registre el módulo `FlexLayoutModule`
+
+	```typescript
+	import { FlexLayoutModule } from "@angular/flex-layout";
+	...
+
+	imports: [
+	    ...
+	    FlexLayoutModule,
+	  ]
+
+	```
+
+* En `app/pages/about.component.html` reemplace todo el contenido por:
+
+	```html
+	<div class="container" fxLayout="row" fxLayoutAlign="center start">
+	    <div fxFlex="25%" fxFlex.xs="100%" fxFlex.sm="33%" >
+	        <mat-card class="about-card">
+	        ...
+			</mat-card>
+	    </div>
+	</div>
+	```
 
 
+* En `app/pages/about.component.css` agregue la regla:
 
-Para recibir el parámetro del URL al componente **Producto**
+	```css
+	.container {
+	    min-height: 91vh;
+	    height: auto;
+	    margin: 0;
+	}
 
-* Modifique el **producto.component.ts**
+	.container {
+	    padding-top: 2vh;
+	    padding-left: 2vw;
+	    padding-right: 2vw;
+	}
+	```
 
-  + Importe el **ActivatedRoute** 
+* Revise los cambios en el navegador. Compruebe la vista responsiva del sitio.
 
-  ```
-  ...
-  import { ActivatedRoute } from '@angular/router';
-  ...
-  ```
+#### Versionamiento
 
-  + Inyecte la dependencia al **ActivatedRoute** en el contructor
-
-  ```
-  ...
-  constructor(private productoService: ProductoService, private activatedRoute: ActivatedRoute) {}
-  ...
-  ```
-
-  + Extraiga el parámetro de la ruta y modifique la petición **obtenerProductoPorId** con el _id_
-
-  ```
-  ...
-  ngOnInit(): void {
-
-    let params = this.activatedRoute.snapshot.params;
-    let id = params["id"]
-
-    this.productoService.obtenerProductoPorId(id).subscribe(respuesta => {
-      ...
-    })
-  }
-  ...
-  ```
-
-Para enviar el parámetro del URL al componente **List**
-
-* Modifique el **lista.component.html**
-  
-  Cambie la etiqueta
-
-  ```
-  ...
-  {% raw %}
-  <td mat-cell *matCellDef="let element"> {{element.nombre}} </td>
-  {% endraw %}
-  ...
-  ```
-
-  por un enlace
-
-  ```
-  ...
-  {% raw %}
-  <td mat-cell *matCellDef="let element"> 
-    <a [routerLink]="['/producto', element.id]" title="">{{element.nombre}}</a>
-  </td>
-  {% endraw %}
-  ...
-  ```
-
-* Compruebe el funcionamiento del servidor, con: **npm start**
-* Acceda al URL `http://localhost:4200/` y seleccione cualquier elemento de la tabla 
-
-<p align="center">
-  <img style="border: 1pt solid black;" width="49%" src="imagenes/angular_producto_lista.png">
-  <img style="border: 1pt solid black;" width="49%" src="imagenes/angular_producto_id3.png">
-</p>
+* Versione en la rama **desktop** en su repositorio local y en su repositorio remoto. 
 
 ### Términos
 
-API REST
+multiple page aplication, angular material, variables de plantilla, eventos, atributo de clase, interpolación, 
 
 ### Referencias
 
-* ¿Qué es REST? Conoce su potencia. (2018). Retrieved 9 August 2022, from https://openwebinars.net/blog/que-es-rest-conoce-su-potencia/
-* Using Default values with Interfaces in TypeScript. (2022) Retrieved 9 August 2022, from https://bobbyhadz.com/blog/typescript-interface-default-values
-* What is the activated route?. (2022). Retrieved 9 August 2022, from https://blog.briebug.com/blog/what-is-the-activated-route
-* Singhal, G., & AcitivatedRouteSnapshot, A. (2022). Accessing Route Parameters with ActivatedRoute vs. AcitivatedRouteSnapshot Pluralsight. Retrieved 9 August 2022, from https://www.pluralsight.com/guides/accessing-route-parameters-with-activatedroute-vs.-acitivatedroutesnapshot
+* Team, A. (2023). Angular Material. Retrieved 24 July 2023, from https://material.angular.io/
+* Angular. (2023). Retrieved 24 July 2023, from https://angular.io/guide/router
+* Create a responsive card grid in Angular using Flex Layout Zoaib Khan. (2021). Retrieved 30 July 2023, from https://zoaibkhan.com/blog/create-a-responsive-card-grid-in-angular-using-flex-layout-part-1/

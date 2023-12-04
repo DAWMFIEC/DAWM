@@ -4,189 +4,217 @@ theme: jekyll-theme-leap-day
 
 ## Guía 18
 
-[Regresar](/DAWM/)
+[DAWM](/DAWM/) / [Proyecto06](/DAWM/proyectos/2023/proyecto06)
 
-### Contenidos
+### Actividades previas
 
-* Revisión de ejercicios previos: dudas y comentarios.
-* [Sequelize](https://sequelize.org/docs/v6/) es una herramienta ORM de Node.js basada en promesas para Postgres, MySQL, MariaDB, SQLite, Microsoft SQL Server, Amazon Redshift y Snowflake's Data Cloud. Cuenta con un sólido soporte de transacciones, relaciones, carga _eager_ y _lazy_, replicación de lectura y más.
-  + Los [modelos](https://sequelize.org/docs/v6/core-concepts/model-basics/) son una abstracción para representa una tabla en la base de datos. 
-  + Las [migraciones](https://sequelize.org/docs/v6/other-topics/migrations/) se usan para dar seguimiento a los cambios en la base de datos, pasando de un estado a otro.
-  + Los [generadores](https://sequelize.org/docs/v6/other-topics/migrations/#creating-the-first-seed) son utilizados para llenar las tablas de la base de datos con datos de muestra o de prueba.
-* Para [MVC](https://desarrolloweb.com/articulos/que-es-mvc.html) es un patrón de arquitectura del software utilizada para separar el código por sus distintas responsabilidades, manteniendo distintas capas que se encargan de hacer una tarea muy concreta, lo que ofrece beneficios diversos.
-  + El modelo es la capa donde se trabaja con los datos, por tanto contendrá mecanismos para acceder a la información y también para actualizar su estado.
-  + La vista contienen el código de nuestra aplicación que va a producir la visualización de las interfaces de usuario, o sea, el código que nos permitirá renderizar los estados de nuestra aplicación en HTML.
-  + El controlador contiene el código necesario para responder a las acciones que se solicitan en la aplicación, como visualizar un elemento, realizar una compra, una búsqueda de información, etc.
+* Clone su proyecto e instale las dependencias.
+* Levante el servidor y compruebe el resultado en el navegador.
 
+#### Nombre del proyecto y nombre del repositorio remoto
+
+* El `<NOMBRE_APLICACION>` se encuentra la clave `"name"` del `package.json`.
+
+* El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` es el nombre del repositorio de GitHub. Este, puede ser igual, o diferente, al `<NOMBRE_APLICACION>`.
+
+#### Compilación
+
+* Compile la aplicación en Angular en el directorio de salida `dist/`, con el comando [build](https://angular.io/cli/build): 
+
+	```
+	ng build
+	```
+
+	o 
+
+	```
+	npm run build
+	```
+
+**NOTA:** Este comando crea la carpeta `dist/<NOMBRE_APLICACION>` con los archivos que pueden ejecutarse en un [servidor HTTP](https://www.hostinger.es/tutoriales/que-es-un-servidor-web). Revise el contenido de la carpeta.
+
+
+#### Servidor HTTP
+
+* Desde la línea de comandos, en la raíz del proyecto, levante el servidor HTTP de Python:
+
+	```
+	python -m http.server --dir dist/<NOMBRE_APLICACION>
+	```
+
+* En el navegador, acceda al URL `http://localhost:8000/` y verifique el funcionamiento correcto de su aplicación.
 
 ### Actividades
 
-#### Servidor
+#### Compilación del repositorio remoto
 
-* Utilice la aplicacion web en backend o genere una aplicación en Express, siguiendo las instrucciones pertinentes de los tutoriales:
-  + De [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html) realice el **Esqueleto de un proyecto web**.
-  + De [Express - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/express_bootstrap.html) realice hasta el **Bootstrap - Dashboard example**.
-  + De [Express - Layouts y Partials](https://dawfiec.github.io/DAWM/tutoriales/express_partials.html) hasta **Productos: layout y partial**.
-  + De [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html) hasta la **Vista** de Productos.
-
-* Desde la línea de comandos del proyecto, agregue el módulo **cors**, con: `npm install cors`
-
-* Agregue la referencia al módulo **cors** el **app.js**
-
-  <pre><code>
-  ...
-  var logger = require('morgan');
-  <b style="color:red">
-  var cors = require('cors')
-  </b>
-  ...
-
-  app.set('view engine', 'ejs');
-  <b style="color:red">
-  app.use(cors())
-  </b>
-  app.use(logger('dev'));
-  ...
-  </code></pre>
-
-* Cree el ruteador **routes/api.js**
-* Agregue la referencia del ruteador **routes/api.js** en el `app.js` a la ruta `/api`
-
-* En el ruteador **routes/api.js** agregue: 
-  + El método **GET** de la subruta **`/productos`** que retorna un _json_ con todos los productos.
-
-  En lugar de renderizar la respuesta en la vista
-
-  ```
-  .then(resultado => {  
-        res.render('vista', { arrResultado: resultado });  
-    })  
-  ```
-
-  Renderice el json:
-
-  ```
-  then(resultado => {  
-      res.json(resultado)
-  })
-  ``` 
-
-* Compruebe el funcionamiento del servidor, con: **npm run devstart**
-* Acceda al URL `http://localhost:3000/api/productos` 
-
-<p align="center">
-  <img src="imagenes/restapiget.png">
-</p>
+* En el archivo `package.json`, agregue en la clave `scripts`:
 
 
-#### Cliente
+	```
+	...
+	"scripts": {
+		...
+		"build:prod": "ng build --configuration production --base-href /<NOMBRE_DEL_REPOSITORIO_REMOTO>/",
+		...
+	}
+	...
+	```
 
-* Proyecto **Productos** en Angular
-  + De [Angular - Local](https://dawfiec.github.io/DAWM/tutoriales/angular_local.html) realice hasta la construcción del sitio.
-  + De [Angular - Bootstrap](https://dawfiec.github.io/DAWM/tutoriales/angular_bootstrap.html) agregue bootstrap.
-  + De [Angular - Material](https://dawfiec.github.io/DAWM/tutoriales/angular_material.html) agregue angular material.
-  + De [Angular - Componentes, Comunicación y Directivas](https://dawfiec.github.io/DAWM/tutoriales/angular_bases.html). 
-    - Cree el componente **lista**.
+* Modifique el valor de `<NOMBRE_DEL_REPOSITORIO_REMOTO>` en el archivo `package.json`.
 
-  + De [Angular - Rutas](https://dawfiec.github.io/DAWM/tutoriales/angular_rutas.html) agregue las rutas:
-    - De la ruta `lista` al componente **lista**.
-    - De la ruta `**` al componente **lista**.
+#### Repositorio local
 
-* Descargue y descomprima los [componentes y assets](archivos/guia18_recursos.zip)
+* Verifique la clave `origin` con URL del repositorio remoto, con:
 
-* Copie y reemplace la carpeta **lista** dentro de la carpeta `src/app` del proyecto en Angular. 
+	```
+	git remote -v
+	```
 
-* Agregue el módulo **MatTableModule** al `app.module.ts`
-  + Importe el módulo
-    ```
-    ...
-    import {MatTableModule} from '@angular/material/table';
-    ...
-    ```
-  + Y agregue la clave **imports**
+	+ De ser necesario, agregue o cambie la clave `origin`, con:
 
-  ```
-  ...
-  imports: [
-    ...
-    MatTableModule
-  ],
-  ...
-  ```
+		```
+		git remote add origin https://github.com/<USUARIO>/<NOMBRE_DEL_REPOSITORIO_REMOTO>.git
+		```
 
-* Modifique el **app.component.html** con 
-  ```
-  <router-outlet></router-outlet>
-  ```
+* Verifique que su repositorio local se encuentre en la rama `main`, con:
 
-* La aplicación debe lucir así
+	```
+	git branch -v
+	```
 
-<p align="center">
-  <img style="border: 1pt solid black;" width="150" src="imagenes/angular_productos.png">
-</p>
+	+ De ser necesario, cambie a la rama main, con:
 
-* A partir del tutorial [Angular - Servicios](https://dawfiec.github.io/DAWM/tutoriales/angular_servicios.html):
-  + Cree el servicio **servicio/producto**
-  + Inyecte la dependencia del servicio **servicio/producto** al componente **lista**
- 
-  + Peticiones HTTP
-    - Registre el módulo **HttpClientModule** en el **app.module.ts**
-    - Agregue el módulo **HttpClient** en el servicio **servicio/producto**
-    - Agregue el método **obtenerProductos** al servicio **servicio/producto** 
-    ```
-    obtenerProductos() {
-      return this.http.get('http://localhost:3000/api/productos')
-    }
-    ```
+		```
+		git checkout -b main
+		```
 
-* Para consumir el servicio en el componente **lista**. En **lista.component.ts** agregue
+* Verifique que su repositorio local este sincronizado con el repositorio remoto y que se encuentre en la rama `main`, con:
 
-  + Importe el servicio 
+	```
+	git status
+	```
 
-  ```
-  ...
-  import { ProductoService } from '../servicios/producto.service';
-  ...
-  ```
+* De ser necesario, guarde los cambios en el repositorio remoto, con:
 
-  + Inyecte la dependencia en el constructor
+	```
+	git add .
+	git commit -m "updates"
+	git push origin main
+	```
 
-  ```
-  ...
-  constructor(private productoService: ProductoService) { }
-  ...
-  ```
+#### Workflow
 
-  + Realice la petición en el método **ngOnInit**
+* Cree el directorio `.github/workflows/`
+* Cree el archivo `deploy.yml` dentro del directorio `.github/workflows/`, con el contenido:
 
-  ```
-  ...
-  ngOnInit(): void {
-    this.productoService.obtenerProductos().subscribe(respuesta => {
-      this.dataSource = respuesta as any
-    })
-  }
-  ...
-  ```
+	```text
+	# This is a basic workflow to help you get started with Actions
 
-* El resultado de unir el cliente y el servidor debe lucir así:
+	name: Angular CI
 
-<p align="center">
-  <img src="imagenes/cliente_servidor.png">
-</p>
+	# Controls when the workflow will run
+	on:
+	  # Triggers the workflow on push or pull request events but only for the "main" branch
+	  push:
+	    branches: [ "main" ]
+	  pull_request:
+	    branches: [ "main" ]
 
-<p align="center">
-  <img src="imagenes/cliente_servidor_tiempo.png">
-</p>
+	  # Allows you to run this workflow manually from the Actions tab
+	  # Input para el workflow
+	  # workflow_dispatch:
 
+	# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+	jobs:
+	  # This workflow contains a single job called "build"
+	  build:
+	    # The type of runner that the job will run on
+	    runs-on: ubuntu-latest
+
+	    # Steps represent a sequence of tasks that will be executed as part of the job
+	    steps:
+	      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+	      - name: Checkout
+	        uses: actions/checkout@v3
+
+	      - name: Setup Node.js environment
+	        uses: actions/setup-node@v3.7.0
+	        with:
+	          node-version: "18"
+	          
+	      - name: Install deps
+	        run: npm i
+	        
+	      - name: Build
+	        run: npm run build:prod
+	        
+	      - name: Deploy
+	        uses: crazy-max/ghaction-github-pages@v3.1.0
+	        with:
+	          build_dir: dist/<NOMBRE_APLICACION>
+	        env:
+	          GITHUB_TOKEN: {% raw %} ${{secrets.GITHUB_TOKEN}} {% endraw %}
+	```
+
+* Modifique el valor de `<NOMBRE_APLICACION>` en el archivo `.github/workflows/deploy.yml`.
+
+* Sincronice los cambios del repositorio local en el repositorio remoto, con:
+
+	```
+	git add .
+	git commit -m "my workflow"
+	git push origin main
+	```
+
+* En el repositorio remoto, en la opción `Actions`, verifique la ejecución automática del workflow. 
+
+**NOTA:** El error que aparece se debe a que no ha habilitado el uso de un flujo de trabajo propio.
+
+#### Configuración de GitHub Pages
+
+* Habilite el permiso de sobreescritura de flujo de trabajo (**workflow**) del repositorio remoto, con:
+
+	+ Acceda a la opción `Settings`.
+	+ Acceda a la opción `Code and automation` > `Actions` > `General`.
+	+ En `Workflow permissions`, seleccione la opción `Read and Write permissions`
+	+ Guarde los cambios.
+
+* Vuelva a ejecutar el flujo de trabajo, con:
+
+	+ Acceda a la opción `Actions`.
+	+ Acceda al flujo de trabajo identificado con el comentario `"my workflow"`.
+	+ Haga clic en el botón `Re-run all jobs` y clic el botón `Re-run jobs`.
+
+* Verifique la creación de la rama `gh-pages`, con:
+	
+	+ Acceda a la opción `Code`.
+	+ Liste las ramas disponibles y verifique que exista la rama `gh-pages`. Debe ser el mismo contenido que en el directorio `dist/<NOMBRE_APLICACION>` que en en el repositorio local.
+
+* Habilite el despliegue con GitHub Pages del repositorio remoto, con:
+
+	+ Acceda a la opción `Settings`.
+	+ Acceda a la opción `Code and automation` > `Pages`.
+	+ En `Build and deployment`, seleccione la rama `gh-pages`.
+	+ Guarde los cambios.
+
+
+* Verifique la ejecución de un nuevo flujo de trabajo: `pages build and deployment`
+
+* Acceda al URL de despliegue `https://<USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO_REMOTO>/`
+
+### Diseño
+
+* Github Actions en [Keepler.io](https://keepler.io/es/2020/09/crear-workflows-en-base-a-eventos-con-github-actions/)
+
+<img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png" style="margin: 0 12%;" width="80%">
 
 ### Términos
 
-Parámetros de consulta, Parámetros de ruta
+servidor HTTP, continuos integration, yaml
 
 ### Referencias
 
-* Sequelize v6 Sequelize. (2022). Retrieved 7 August 2022, from https://sequelize.org/docs/v6/
-* Concepts, C., & Basics, M. (2022). Model Basics Sequelize. Retrieved 7 August 2022, from https://sequelize.org/docs/v6/core-concepts/model-basics/
-* topics, O. (2022). Migrations Sequelize. Retrieved 7 August 2022, from https://sequelize.org/docs/v6/other-topics/migrations/
-* Qué es MVC. (2022). Retrieved 7 August 2022, from https://desarrolloweb.com/articulos/que-es-mvc.html
+* (2023). Retrieved 24 July 2023, from https://www.youtube.com/watch?v=hnCgPowCu9Y
+* Publishing static sites to GitHub Pages using GitHub Actions. (2021). Retrieved 24 July 2023, from https://medium.com/@danieljimgarcia/publishing-static-sites-to-github-pages-using-github-actions-8040f57dfeaf
+* Despliegue de tu aplicación en Angular usando Github Actions. (2021). Retrieved 24 July 2023, from https://medium.com/notasdeangular/despliegue-de-tu-aplicaci%C3%B3n-en-angular-usando-github-actions-c0b5bc67ddb0
