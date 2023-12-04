@@ -43,6 +43,11 @@
 | Sofía Zárate          | [Ver](imagenes_dashboard/ii/zaratesofia.png)              | [Ir](https://zaratesofia.github.io/dashboard/)       |
 | Axcel Villagrán          | [Ver](imagenes_dashboard/ii/axcelvillagran.png)              | [Ir](https://axcelvillagran.github.io/Dashboard/)       |
 | Michael Jiménez          | [Ver](imagenes_dashboard/ii/michaeljimenezc.png)              | [Ir](https://michaeljimenezc.github.io/dashboard/)       |
+| Luis Litardo          | [Ver](imagenes_dashboard/ii/lalitard.png)              | [Ir](https://lalitard.github.io/dashboard/)       |
+| Loor Paulina          | [Ver](imagenes_dashboard/ii/loorpaulina.png)              | [Ir](https://loorpaulina.github.io/dashboard/)       |
+| Jorge Mawyin          | [Ver](imagenes_dashboard/ii/jorgemawyin.png)              | [Ir](https://jorgemawyin.github.io/dashboard/)       |
+|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
+|           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
 |           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
 |           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
 |           | [Ver](imagenes_dashboard/ii/.png)              | [Ir]()       |
