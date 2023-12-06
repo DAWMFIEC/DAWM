@@ -43,8 +43,6 @@ En adelante, para:
 
 #### Compilación del repositorio remoto
 
-**NOTA:** Modifique el valor de `<NOMBRE_DEL_REPOSITORIO_REMOTO>` en el archivo `package.json`.
-
 * En el archivo `package.json`, agregue en la clave `scripts`:
 
 
@@ -57,6 +55,9 @@ En adelante, para:
 	}
 	...
 	```
+
+* Reemplace `<NOMBRE_DEL_REPOSITORIO_REMOTO>` por el nombre del repositorio de GitHub
+
 
 #### Repositorio local
 
@@ -99,8 +100,6 @@ En adelante, para:
 	```
 
 #### Workflow
-
-**NOTA:** Modifique el valor de `<NOMBRE_APLICACION>` en el archivo `.github/workflows/deploy.yml`.
 
 * Cree el directorio `.github/workflows/`
 * Cree el archivo `deploy.yml` dentro del directorio `.github/workflows/`, con el contenido:
@@ -153,6 +152,8 @@ En adelante, para:
 	        env:
 	          GITHUB_TOKEN: {% raw %} ${{secrets.GITHUB_TOKEN}} {% endraw %}
 	```
+
+* Reemplace `<NOMBRE_APLICACION>` por la clave `"name"` del `package.json`.
 
 * Sincronice los cambios del repositorio local en el repositorio remoto, con:
 
