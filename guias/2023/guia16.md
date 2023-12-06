@@ -23,13 +23,7 @@ En adelante, para:
 	ng build
 	```
 
-	o 
-
-	```
-	npm run build
-	```
-
-**NOTA:** Este comando crea la carpeta `dist/browser/<NOMBRE_APLICACION>` con los archivos que pueden ejecutarse en un [servidor HTTP](https://www.hostinger.es/tutoriales/que-es-un-servidor-web). Revise el contenido de la carpeta.
+**NOTA:** Este comando crea la carpeta `dist/<NOMBRE_APLICACION>` con los archivos que pueden ejecutarse en un [servidor HTTP](https://www.hostinger.es/tutoriales/que-es-un-servidor-web). Revise el contenido de la carpeta.
 
 
 #### Servidor HTTP
@@ -37,7 +31,7 @@ En adelante, para:
 * Desde la línea de comandos, en la raíz del proyecto, levante el servidor HTTP de Python:
 
 	```
-	python -m http.server --dir dist/browser/<NOMBRE_APLICACION>
+	python -m http.server --dir dist/<NOMBRE_APLICACION>/browser/
 	```
 
 * En el navegador, acceda al URL `http://localhost:8000/` y verifique el funcionamiento correcto de su aplicación.
@@ -49,6 +43,8 @@ En adelante, para:
 * Abra el proyecto en VSCode y levante el servidor.
 
 #### Compilación del repositorio remoto
+
+**NOTA:** Modifique el valor de `<NOMBRE_DEL_REPOSITORIO_REMOTO>` en el archivo `package.json`.
 
 * En el archivo `package.json`, agregue en la clave `scripts`:
 
@@ -105,6 +101,8 @@ En adelante, para:
 
 #### Workflow
 
+**NOTA:** Modifique el valor de `<NOMBRE_APLICACION>` en el archivo `.github/workflows/deploy.yml`.
+
 * Cree el directorio `.github/workflows/`
 * Cree el archivo `deploy.yml` dentro del directorio `.github/workflows/`, con el contenido:
 
@@ -152,12 +150,10 @@ En adelante, para:
 	      - name: Deploy
 	        uses: crazy-max/ghaction-github-pages@v3.1.0
 	        with:
-	          build_dir: dist/<NOMBRE_APLICACION>
+	          build_dir: dist/<NOMBRE_APLICACION>/browser
 	        env:
 	          GITHUB_TOKEN: {% raw %} ${{secrets.GITHUB_TOKEN}} {% endraw %}
 	```
-
-* Modifique el valor de `<NOMBRE_APLICACION>` en el archivo `.github/workflows/deploy.yml`.
 
 * Sincronice los cambios del repositorio local en el repositorio remoto, con:
 
@@ -167,11 +163,9 @@ En adelante, para:
 	git push origin main
 	```
 
-* En el repositorio remoto, en la opción `Actions`, verifique la ejecución automática del workflow. 
+* Verifique el error en la ejecución automática del workflow debido a permisos en la creación de archivos. 
 
-**NOTA:** El error que aparece se debe a que no ha habilitado el uso de un flujo de trabajo propio.
-
-#### Configuración de GitHub Pages
+#### Workflow permissions
 
 * Habilite el permiso de sobreescritura de flujo de trabajo (**workflow**) del repositorio remoto, con:
 
@@ -180,16 +174,22 @@ En adelante, para:
 	+ En `Workflow permissions`, seleccione la opción `Read and Write permissions`
 	+ Guarde los cambios.
 
+#### Re-run all jobs
+
 * Vuelva a ejecutar el flujo de trabajo, con:
 
 	+ Acceda a la opción `Actions`.
 	+ Acceda al flujo de trabajo identificado con el comentario `"my workflow"`.
 	+ Haga clic en el botón `Re-run all jobs` y clic el botón `Re-run jobs`.
 
+#### Rama gh-pages
+
 * Verifique la creación de la rama `gh-pages`, con:
 	
 	+ Acceda a la opción `Code`.
-	+ Liste las ramas disponibles y verifique que exista la rama `gh-pages`. Debe ser el mismo contenido que en el directorio `dist/<NOMBRE_APLICACION>` que en en el repositorio local.
+	+ Liste las ramas disponibles y verifique que exista la rama `gh-pages`. Debe ser el mismo contenido que en el directorio `dist/<NOMBRE_APLICACION>/browser` que en en el repositorio local.
+
+#### Build and deployment
 
 * Habilite el despliegue con GitHub Pages del repositorio remoto, con:
 
@@ -197,7 +197,6 @@ En adelante, para:
 	+ Acceda a la opción `Code and automation` > `Pages`.
 	+ En `Build and deployment`, seleccione la rama `gh-pages`.
 	+ Guarde los cambios.
-
 
 * Verifique la ejecución de un nuevo flujo de trabajo: `pages build and deployment`
 
