@@ -2,20 +2,18 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 18
+## Guía 16
 
-[DAWM](/DAWM/) / [Proyecto06](/DAWM/proyectos/2023/proyecto06)
+[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2023/proyecto05)
 
 ### Actividades previas
 
-* Clone su proyecto e instale las dependencias.
-* Levante el servidor y compruebe el resultado en el navegador.
-
 #### Nombre del proyecto y nombre del repositorio remoto
 
-* El `<NOMBRE_APLICACION>` se encuentra la clave `"name"` del `package.json`.
+En adelante, para: 
 
-* El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` es el nombre del repositorio de GitHub. Este, puede ser igual, o diferente, al `<NOMBRE_APLICACION>`.
+* El `<NOMBRE_APLICACION>` se encuentra la clave `"name"` del `package.json`.
+* El `<NOMBRE_DEL_REPOSITORIO_REMOTO>` es el nombre del repositorio de GitHub. Puede ser igual a `<NOMBRE_APLICACION>`.
 
 #### Compilación
 
@@ -31,7 +29,7 @@ theme: jekyll-theme-leap-day
 	npm run build
 	```
 
-**NOTA:** Este comando crea la carpeta `dist/<NOMBRE_APLICACION>` con los archivos que pueden ejecutarse en un [servidor HTTP](https://www.hostinger.es/tutoriales/que-es-un-servidor-web). Revise el contenido de la carpeta.
+**NOTA:** Este comando crea la carpeta `dist/browser/<NOMBRE_APLICACION>` con los archivos que pueden ejecutarse en un [servidor HTTP](https://www.hostinger.es/tutoriales/que-es-un-servidor-web). Revise el contenido de la carpeta.
 
 
 #### Servidor HTTP
@@ -39,12 +37,16 @@ theme: jekyll-theme-leap-day
 * Desde la línea de comandos, en la raíz del proyecto, levante el servidor HTTP de Python:
 
 	```
-	python -m http.server --dir dist/<NOMBRE_APLICACION>
+	python -m http.server --dir dist/browser/<NOMBRE_APLICACION>
 	```
 
 * En el navegador, acceda al URL `http://localhost:8000/` y verifique el funcionamiento correcto de su aplicación.
 
 ### Actividades
+
+
+* Clona localmente tu repositorio **mpa**.
+* Abra el proyecto en VSCode y levante el servidor.
 
 #### Compilación del repositorio remoto
 
@@ -55,13 +57,11 @@ theme: jekyll-theme-leap-day
 	...
 	"scripts": {
 		...
-		"build:prod": "ng build --configuration production --base-href /<NOMBRE_DEL_REPOSITORIO_REMOTO>/",
+		"build:prod": "ng build --configuration production --base-href /<NOMBRE_DEL_REPOSITORIO_REMOTO>/browser --browser",
 		...
 	}
 	...
 	```
-
-* Modifique el valor de `<NOMBRE_DEL_REPOSITORIO_REMOTO>` en el archivo `package.json`.
 
 #### Repositorio local
 
