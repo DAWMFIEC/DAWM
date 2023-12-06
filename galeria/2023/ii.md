@@ -1,5 +1,14 @@
 # Galería
 
+## Repositorio
+
+| Nombre | Vista  Previa | Sitio |
+| :----  | :------- ---: | :---: |
+| Luis Litardo		 |       [Ver](imagenes_repositorio/ii/lalitard.png)         |   [Ir](https://github.com/lalitard)    |
+| Ghost04102002		 |       [Ver](imagenes_repositorio/ii/Ghost04102002.png)         |   [Ir](https://github.com/Ghost04102002)    |
+| Katherine Tumbaco		 |       [Ver](imagenes_repositorio/ii/katumbac.png)         |   [Ir](https://katumbac.github.io/katumbac/)    |
+
+
 ## CV
 
 | Nombre | Vista  Previa | Sitio |
