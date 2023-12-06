@@ -23,7 +23,7 @@ En adelante, para:
 	ng build
 	```
 
-**NOTA:** Este comando crea la carpeta `dist/<NOMBRE_APLICACION>` con los archivos que pueden ejecutarse en un [servidor HTTP](https://www.hostinger.es/tutoriales/que-es-un-servidor-web). Revise el contenido de la carpeta.
+**NOTA:** Este comando crea la carpeta `dist/<NOMBRE_APLICACION>/browser` con los archivos que pueden ejecutarse en un [servidor HTTP](https://www.hostinger.es/tutoriales/que-es-un-servidor-web). Revise el contenido de la carpeta.
 
 
 #### Servidor HTTP
@@ -38,8 +38,7 @@ En adelante, para:
 
 ### Actividades
 
-
-* Clona localmente tu repositorio **mpa**.
+* Clone localmente tu repositorio **mpa**.
 * Abra el proyecto en VSCode y levante el servidor.
 
 #### Compilación del repositorio remoto
@@ -53,7 +52,7 @@ En adelante, para:
 	...
 	"scripts": {
 		...
-		"build:prod": "ng build --configuration production --base-href /<NOMBRE_DEL_REPOSITORIO_REMOTO>/browser --browser",
+		"build:prod": "ng build --configuration production --base-href /<NOMBRE_DEL_REPOSITORIO_REMOTO>/browser",
 		...
 	}
 	...
@@ -174,15 +173,13 @@ En adelante, para:
 	+ En `Workflow permissions`, seleccione la opción `Read and Write permissions`
 	+ Guarde los cambios.
 
-#### Re-run all jobs
+#### Rama gh-pages
 
 * Vuelva a ejecutar el flujo de trabajo, con:
 
 	+ Acceda a la opción `Actions`.
 	+ Acceda al flujo de trabajo identificado con el comentario `"my workflow"`.
 	+ Haga clic en el botón `Re-run all jobs` y clic el botón `Re-run jobs`.
-
-#### Rama gh-pages
 
 * Verifique la creación de la rama `gh-pages`, con:
 	
