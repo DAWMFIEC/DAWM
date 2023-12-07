@@ -74,9 +74,6 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 04](Capítulo04/ejercicio04)         | Typescript - Funciones |
 | 				| [Ejercicio 05](Capítulo04/ejercicio05)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
 | 				| [Ejercicio 06](Capítulo04/ejercicio06)         | Angular - Servicios |
-| Capítulo 05   | [Ejercicio 01](Capítulo05/ejercicio01)         | Express - Bases y Bootstrap |
-|               | [Ejercicio 02](Capítulo05/ejercicio02)         | Express - ORM (Básico e Intermedio) |
-|               | [Ejercicio 03](Capítulo05/ejercicio03)         | Express - Parámetros de consulta y de ruta |
 | Capítulo 06   | [Ejercicio 01](Capítulo06/ejercicio01)         | Express - Rest - Local|
 |               | [Ejercicio 02](Capítulo06/ejercicio02)         | Express - Rest - Firebase |
 
