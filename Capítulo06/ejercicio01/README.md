@@ -10,9 +10,7 @@
 * Complete las actividades de:
 
   + [Express - Bases](https://dawmfiec.github.io/DAWM/tutoriales/express_bases.html), 
-  + [Express - ORM (Básico)](https://dawmfiec.github.io/DAWM/tutoriales/express_ormbasico.html), 
-  + [Express - ORM (Intermedio)](https://dawmfiec.github.io/DAWM/tutoriales/express_ormintermedio.html), 
-  + [Express - Parámetros de consulta y Parámetros de ruta](https://dawmfiec.github.io/DAWM/tutoriales/express_pcpr.html), y 
+  + [Express - ORM (Avanzado)](https://dawmfiec.github.io/DAWM/tutoriales/express_ormavanzado.html), 
   + [Express - REST](https://dawmfiec.github.io/DAWM/tutoriales/express_rest.html)
 
 
