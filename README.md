@@ -77,6 +77,8 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | Capítulo 05   | [Ejercicio 01](Capítulo05/ejercicio01)         | Express - Bases y Bootstrap |
 |               | [Ejercicio 02](Capítulo05/ejercicio02)         | Express - ORM (Básico e Intermedio) |
 |               | [Ejercicio 03](Capítulo05/ejercicio03)         | Express - Parámetros de consulta y de ruta |
+| Capítulo 06   | [Ejercicio 01](Capítulo06/ejercicio01)         | Express - Rest - Local|
+|               | [Ejercicio 02](Capítulo06/ejercicio02)         | Express - Rest - Firebase |
 
 ## Referencias 
 
