@@ -206,6 +206,10 @@ En adelante, para:
 
 <img src="https://keepler.io/wp-content/uploads/2020/10/github-actions.png" style="margin: 0 12%;" width="80%">
 
+* Git en [X](https://twitter.com/Harsa_Dash/status/1732259699477881232)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Don&#39;t overwhelm to learn Git,🙄<br><br>Git is this much only👇😊<br><br>1.Core:<br>• git init<br>• git clone<br>• git add<br>• git commit<br>• git status<br>• git diff<br>• git checkout<br>• git reset<br>• git log<br>• git show<br>• git tag<br>• git push<br>• git pull… <a href="https://t.co/2r0qzWQpyL">pic.twitter.com/2r0qzWQpyL</a></p>&mdash; Harsa Dash ✨ (@Harsa_Dash) <a href="https://twitter.com/Harsa_Dash/status/1732259699477881232?ref_src=twsrc%5Etfw">December 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Términos
 
 servidor HTTP, continuos integration, yaml
