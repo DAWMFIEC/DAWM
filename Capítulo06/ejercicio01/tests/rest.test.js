@@ -5,55 +5,52 @@ const requestWithSupertest = supertest(server);
 
 describe('Express Endpoints', () => {
 
-  it('GET /rest/fotos/findAll/json', async () => {
-      const res = await requestWithSupertest.get('/rest/fotos/findAll/json');
+  it('GET /users/findAll/json', async () => {
+      const res = await requestWithSupertest.get('/users/findAll/json');
       expect(res.header['content-type']).toBe('application/json; charset=utf-8')
       expect(res.statusCode).toBe(200);
-      // expect(res.body.length).toEqual(10);
   });
 
-  it('GET /rest/fotos/findById/0/json', async () => {
-       const res = await requestWithSupertest.get('/rest/fotos/findById/0/json');
+  it('GET /users/findById/1/json', async () => {
+       const res = await requestWithSupertest.get('/users/findById/1/json');
        expect(res.header['content-type']).toBe('application/json; charset=utf-8')
        expect(res.statusCode).toBe(200);
   });
 
-  it('POST /rest/fotos/save', async () => {
+  it('POST /users/save', async () => {
        const obj = {
-            "titulo":"fotos10",
-            "descripcion": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-            "calificacion": "4.35",
-            "ruta": "public/images/fotos10.png"
-        }
+              "email": "user1000@gmail.com",
+              "username": "user1000",
+              "password": "password"
+          }
 
-       const res = await requestWithSupertest.post('/rest/fotos/save').send(obj);
+       const res = await requestWithSupertest.post('/users/save').send(obj);
        expect(res.header['content-type']).toBe('application/json; charset=utf-8')
        expect(res.statusCode).toBe(200);
   });
 
-  it('PUT /rest/fotos/update', async () => {
-       let result = await requestWithSupertest.get('/rest/fotos/findAll/json');
+  it('PUT /users/update', async () => {
+       let result = await requestWithSupertest.get('/users/findAll/json');
        let id = result.body[result.body.length-1]["id"]
        
        const obj = {
-            "id": id,
-            "titulo":"fotos11",
-            "descripcion": "Vivamus dictum mollis lacus, eu accumsan ipsum vulputate elementum.",
-            "calificacion": "8.26",
-            "ruta": "public/images/fotos11.png"
-        }
+              "id": id,
+              "email": "user3000@gmail.com",
+              "username": "user3000",
+              "password": "password"
+          }
 
-       const res = await requestWithSupertest.put('/rest/fotos/update').send(obj);
+       const res = await requestWithSupertest.put('/users/update').send(obj);
        expect(res.header['content-type']).toBe('application/json; charset=utf-8')
        expect(res.statusCode).toBe(200);
   });
 
 
-  it('DELETE /delete/:id', async () => {
-       let result = await requestWithSupertest.get('/rest/fotos/findAll/json');
+  it('DELETE /users/delete/:id', async () => {
+       let result = await requestWithSupertest.get('/users/findAll/json');
        let id = result.body[result.body.length-1]["id"]
 
-       const res = await requestWithSupertest.delete('/rest/fotos/delete/'+id);
+       const res = await requestWithSupertest.delete('/users/delete/'+id);
        expect(res.header['content-type']).toBe('application/json; charset=utf-8')
        expect(res.statusCode).toBe(200);
   });

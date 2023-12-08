@@ -20,10 +20,12 @@
 
 ## Pruebas unitarias
 
+* Descargue y descomprima [C06E01.zip](../../zips/C06E01.zip)
+  + Copie la carpeta **tests** de este repositorio a su proyecto.
+
 * En su proyecto de Express 
   + Instale las dependencias a **Jest**, **SuperTest** y **cross-env**
     - Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev jest supertest cross-env`
-  + Copie la carpeta **tests** de este repositorio a su proyecto.
   + Modifique el archivo **package.json**
     - Agregue los pares/valores: **test** y **jest**
 
@@ -64,11 +66,11 @@
 
   ```
   Express Endpoints
-    √ GET /rest/fotos/findAll/json (X ms)
-    √ GET /rest/fotos/findById/0/json (Y ms)
-    √ POST /rest/fotos/save (Z ms)
-    √ PUT /rest/fotos/update (W ms)
-    √ DELETE /delete/:id (K ms)
+    √ GET /users/findAll/json (105 ms)
+    √ GET /users/findById/1/json (17 ms)
+    √ POST /users/save (32 ms)
+    √ PUT /users/update (25 ms)
+    √ DELETE /users/delete/:id (21 ms)
   ```
 
 * Los resultados posibles a las pruebas unitarias:
