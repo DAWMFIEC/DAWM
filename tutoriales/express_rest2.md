@@ -18,45 +18,18 @@ De [MySQL Community Downloads](https://dev.mysql.com/downloads/), descargue e in
 * Interfaz gráfica: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
 
-Curl + Jsontool
-==============
-* * *
-
-* Instale el módulo `jsontool` de manera global, con: `npm i -g jsontool`
-* Desde la línea de comandos, realice una petición con [**cURL**](https://curl.se/), con: 
-
-`curl https://dawm-fiec-espol-default-rtdb.firebaseio.com/potterhead.json | json`
-
-Que resulta en:
-
-<p align="center">
-  <img src="imagenes/curl1.png">
-</p>
-
-Proyecto en Express: REST API
-=============================
-
-* * *
-
-Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html), [Express - ORM (Básico)](https://dawfiec.github.io/DAWM/tutoriales/express_ormbasico.html), [Express - ORM (Intermedio)](https://dawfiec.github.io/DAWM/tutoriales/express_ormintermedio.html) y [Express - Parámetros de consulta y Parámetros de ruta](https://dawfiec.github.io/DAWM/tutoriales/express_pcpr.html).
-
-* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
-    - Para el hito: **`hito6-api`**
-
-
 ## Manejador de rutas y registro en la aplicación
 
-* Cree el manejador de rutas **rest/fotos.js**.
-* Registre la ruta **`'/rest/fotos'`** en la aplicación para el controlador de rutas **rest/fotos.js**. 
-* Incluya los módulos y modelos en el encabezado del manejador de rutas **rest/fotos.js**  
+Modifique el manejador de rutas **rest/users.js**.
+
+* Incluya los objetos `Sequelize` y `Op` del módulo **sequelize** y el modelo `Users` 
 
 ```
 var express = require('express');
 var router = express.Router();
 
 const { Sequelize, Op } = require('sequelize');
-const Foto = require('../models').foto;
-const Etiqueta = require('../models').etiqueta;  
+const Users = require('../models').users;
 ...
 ```
 
@@ -70,16 +43,10 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
   ...
   router.get('/findAll/json', function(req, res, next) {  
 
-    Foto.findAll({  
-        attributes: { exclude: ["updatedAt", "createdAt"] } ,
-        include: [{
-            model: Etiqueta,
-            attributes: ['texto'],
-            through: {attributes: []}
-          }], 
+    Users.findAll({  
     })  
-    .then(fotos => {  
-        res.json(fotos);  
+    .then(users => {  
+        res.json(users);  
     })  
     .catch(error => res.status(400).send(error)) 
 
@@ -87,19 +54,12 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
   ...
   ```
 
-* Compruebe el funcionamiento del servidor, con: **npm run devstart**
-  + En la línea de comandos del cliente, realice una petición GET al URL `http://localhost:3000/rest/fotos/findAll/json`
+* Reinicie el servidor para comprobar el funcionamiento del controlador.
 
-  `curl -X GET http://localhost:3000/rest/fotos/findAll/json | json` 
-
-<p align="center">
-  <img src="imagenes/curl2.png">
-</p>
-
-  + En la línea de comandos del servidor del proyecto de Express aparece la petición:
+  + En postman, realice una petición GET al URL `http://localhost:3000/users`
 
 <p align="center">
-  <img src="imagenes/response2.png">
+  <img src="imagenes/postman_getall.png">
 </p>
 
 
@@ -136,9 +96,9 @@ Para obtener UN registro de una entidad en una base de datos relacional, impleme
   ```
 
 * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-  + En la línea de comandos del cliente, realice una petición GET al URL `http://localhost:3000/rest/fotos/findById/2/json` 
+  + En la línea de comandos del cliente, realice una petición GET al URL `http://localhost:3000/rest/users/findById/2/json` 
 
-  `curl -X GET http://localhost:3000/rest/fotos/findById/2/json | json`
+  `curl -X GET http://localhost:3000/rest/users/findById/2/json | json`
 
 <p align="center">
   <img src="imagenes/curl3.png">
@@ -179,9 +139,9 @@ Para guardar UN registro de una entidad en una base de datos relacional, impleme
   ```
 
   * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-    + En la línea de comandos del cliente, realice una petición POST al URL `http://localhost:3000/rest/fotos/save` con los siguientes parámetros en el **body**:
+    + En la línea de comandos del cliente, realice una petición POST al URL `http://localhost:3000/rest/users/save` con los siguientes parámetros en el **body**:
 
-    `curl -X POST -d "titulo=fotos10&descripcion=Lorem ipsum dolor sit amet, consectetur adipiscing elit.&calificacion=4.35&ruta=public/images/fotos10.png" http://localhost:3000/rest/fotos/save | json`
+    `curl -X POST -d "titulo=fotos10&descripcion=Lorem ipsum dolor sit amet, consectetur adipiscing elit.&calificacion=4.35&ruta=public/images/fotos10.png" http://localhost:3000/rest/users/save | json`
 
 <p align="center">
   <img src="imagenes/curl4.png">
@@ -226,9 +186,9 @@ Para actualizar UN registro de una entidad en una base de datos relacional, impl
   ```
 
   * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-    + En la línea de comandos del cliente, realice una petición PUT al URL `http://localhost:3000/rest/fotos/update` con los siguientes parámetros en el **body**:
+    + En la línea de comandos del cliente, realice una petición PUT al URL `http://localhost:3000/rest/users/update` con los siguientes parámetros en el **body**:
 
-    `curl -X PUT -d "id=11&descripcion=Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&ruta=public/images/fotos10.png&titulo=foto10&calificacion=4.73" http://localhost:3000/rest/fotos/update | json`
+    `curl -X PUT -d "id=11&descripcion=Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&ruta=public/images/fotos10.png&titulo=foto10&calificacion=4.73" http://localhost:3000/rest/users/update | json`
 
 <p align="center">
   <img src="imagenes/curl5.png">
@@ -267,9 +227,9 @@ Para eliminar UN registro de una entidad en una base de datos relacional, implem
   ```
 
   * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-    + En la línea de comandos del cliente, realice una petición DELETE al URL `http://localhost:3000/rest/fotos/delete/11` con los siguientes parámetros en el **body**:
+    + En la línea de comandos del cliente, realice una petición DELETE al URL `http://localhost:3000/rest/users/delete/11` con los siguientes parámetros en el **body**:
 
-    `curl -X DELETE http://localhost:3000/rest/fotos/delete/11 | json`
+    `curl -X DELETE http://localhost:3000/rest/users/delete/11 | json`
 
 <p align="center">
   <img src="imagenes/curl6.png">
