@@ -98,10 +98,11 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Express - ORM Intermedio](tutoriales/express_ormintermedio.md)
 * [Express - Parámetros de consulta y Parámetros de ruta](tutoriales/express_pcpr.md)
 * [Express - ODM Básico](tutoriales/express_odmbasico.md)
-* [Express - REST](tutoriales/express_rest.md)
+* [Express - REST I](tutoriales/express_rest.md)
 * [Express - Formularios I](tutoriales/express_forms1.md)
 * [Express - Formularios II](tutoriales/express_forms2.md)
 * [Express - ORM Avanzado](tutoriales/express_ormavanzado.md)
+* [Express - REST II](tutoriales/express_rest2.md)
 * [Express - Manejo de estados I: Sesión](tutoriales/express_estados1.md)
 * [Express - Manejo de estados II: Cookies](tutoriales/express_estados1.md)
 
