@@ -142,90 +142,82 @@ Para guardar UN registro de una entidad en una base de datos relacional, impleme
 
 ### PUT 
 
-Para actualizar UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **PUT** con el método **update** de la clase.
+Para actualizar UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **PUT** y el requerimineto al método **update** del modelo.
 
 * Cree el controlador para el verbo PUT de la ruta **`/update`** que recibe los datos de una foto en el cuerpo del requerimiento y guarda los datos en la base de datos relacional de acuerdo con el identificador original.
 
   ```
+  /* PUT user. */
   router.put('/update', function(req, res, next) {  
 
-      let {id, titulo, descripcion, calificacion,ruta} = req.body;
-      
-      Foto.update({
-        titulo: titulo,
-        descripcion: descripcion,
-        calificacion: parseFloat(calificacion),
-        ruta: ruta,
-        createdAt: new Date(),  
-        updatedAt: new Date()  
+      let {id, email, username, password} = req.body;
+        
+      Users.update({
+        email: email,
+        username: username,
+        password: password,
+        logins: 0,
+        last_login: 0
       },
       {
           where: {
             id: parseInt(id)
           }
       })
-      .then(respuesta => {
-        res.json(respuesta);
-      })
-      .catch(error => res.status(400).send(error))
-
+      .then(users => {  
+        res.json(users);  
+    })  
+    .catch(error => res.status(400).send(error)) 
   });
   ```
 
-  * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-    + En la línea de comandos del cliente, realice una petición PUT al URL `http://localhost:3000/rest/users/update` con los siguientes parámetros en el **body**:
+  * Reinicie el servidor para comprobar el funcionamiento del controlador.
 
-    `curl -X PUT -d "id=11&descripcion=Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.&ruta=public/images/fotos10.png&titulo=foto10&calificacion=4.73" http://localhost:3000/rest/users/update | json`
+  + En postman, realice una petición PUT al URL `http://localhost:3000/users/update` y envíe los datos en el cuerpo de la petición 
+
+  ```typescript
+  {
+      "id": 2,
+      "email": "user01@gmail.com",
+      "username": "user3",
+      "password": "password"
+  }
+  ```
 
 <p align="center">
-  <img src="imagenes/curl5.png">
-</p>
-
-  + En la línea de comandos del servidor del proyecto de Express aparece la petición:
-
-<p align="center">
-  <img src="imagenes/response5.png">
+  <img src="imagenes/postman_put.png">
 </p>
 
 ### DELETE
 
-Para eliminar UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **DELETE** con el método **destroy** de la clase.
+Para eliminar UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **DELETE** y el requerimineto al método **destroy** del modelo.
 
 * Cree el controlador para el verbo DELETE de la ruta **`/delete/:id`** que recibe el id de una foto en el cuerpo del requerimiento y elimina el registro de la base de datos relacional.
 
   ```
-  ...
+  /* DELETE user. */
   router.delete('/delete/:id', function(req, res, next) {  
 
         let id = parseInt(req.params.id);
-        
-        Foto.destroy({
+          
+        Users.destroy({
           where: { 
             id: id
           }
         })
-        .then(respuesta => {
-          res.json(respuesta);
-        })
-        .catch(error => res.status(400).send(error))
-
+        .then(users => {  
+        res.json(users);  
+    })  
+    .catch(error => res.status(400).send(error)) 
   });
-  ...
   ```
 
-  * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-    + En la línea de comandos del cliente, realice una petición DELETE al URL `http://localhost:3000/rest/users/delete/11` con los siguientes parámetros en el **body**:
+  * Reinicie el servidor para comprobar el funcionamiento del controlador.
 
-    `curl -X DELETE http://localhost:3000/rest/users/delete/11 | json`
-
-<p align="center">
-  <img src="imagenes/curl6.png">
-</p>
-
-  + En la línea de comandos del servidor del proyecto de Express aparece la petición:
+  + En postman, realice una petición DELETE al URL `http://localhost:3000/users/delete/2`
 
 <p align="center">
-  <img src="imagenes/response6.png">
+  <img src="imagenes/postman_delete.png">
 </p>
 
 
