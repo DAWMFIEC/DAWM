@@ -73,7 +73,7 @@ Para obtener UN registro de una entidad en una base de datos relacional, impleme
 
     let id = parseInt(req.params.id);
 
-    Users.findAll({  
+    Users.findOne({  
         where: { 
           [Op.and]: [
             {id: id}
