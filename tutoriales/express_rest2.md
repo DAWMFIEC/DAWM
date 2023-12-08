@@ -41,7 +41,7 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 
   ```
   /* GET users listing. */
-  router.get('/', function(req, res, next) {
+  router.get('/findAll/json', function(req, res, next) {
     Users.findAll({  
     })  
     .then(users => {  
@@ -65,7 +65,7 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 
 Para obtener UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** y el requerimiento al método **findOne** del modelo.
 
-* Cree el controlador para el verbo GET de la ruta **`/findAll/:id/json`** que retorna un json dado el id de un foto.
+* Cree el controlador para el verbo GET de la ruta **`/findById/:id/json`** que retorna un json dado el id de un foto.
 
   ```
   /* GET user by id. */
