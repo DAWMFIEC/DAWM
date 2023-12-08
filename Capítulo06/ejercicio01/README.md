@@ -21,7 +21,7 @@
 ## Pruebas unitarias
 
 * Descargue y descomprima [C06E01.zip](../../zips/C06E01.zip)
-  + Copie la carpeta **tests** de este repositorio a su proyecto.
+  + Copie la carpeta **tests** en el directorio raíz su proyecto.
 
 * En su proyecto de Express 
   + Instale las dependencias a **Jest**, **SuperTest** y **cross-env**
