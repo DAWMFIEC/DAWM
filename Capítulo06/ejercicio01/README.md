@@ -11,7 +11,7 @@
 
   + [Express - Bases](https://dawmfiec.github.io/DAWM/tutoriales/express_bases.html), 
   + [Express - ORM (Avanzado)](https://dawmfiec.github.io/DAWM/tutoriales/express_ormavanzado.html), 
-  + [Express - REST](https://dawmfiec.github.io/DAWM/tutoriales/express_rest.html)
+  + [Express - REST 2](https://dawmfiec.github.io/DAWM/tutoriales/express_rest2.html)
 
 
 ## Configuración
