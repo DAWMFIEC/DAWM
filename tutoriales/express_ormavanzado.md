@@ -56,12 +56,8 @@ Modelos
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* Reconstruya los modelos, con: `sequelize-auto -h host -d database -u user -x password -p port`
-  + Especifique el hostname después del parámetro -h **"127.0.0.1"**
-  + Especifique el nombre de la base de datos después del parámetro  -d **"dbauth"**
-  + Especifique el nombre del usuario después del parámetro -u **"root"**
-  + Especifique la contraseña del usuario después del parámetro -x **"root"**
-  + Especifique el puerto después del parámetro  -p **3306**
+* Reconstruya los modelos, con: `sequelize-auto -h 127.0.0.1 -d dbauth -u root -x root -p 3306`
+  + Especifique el nombre del usuario después de la bandera -u, la contraseña del usuario después de la bandera -x y el puerto después de la bandera -p.
 
 <p align="center">
   <img src="imagenes/sequelize_auto.png">
