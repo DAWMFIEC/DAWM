@@ -35,21 +35,19 @@ const Users = require('../models').users;
 
 ### GET-All
 
-Para obtener TODOS los registros de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con el método **findAll** de la clase.
+Para obtener TODOS los registros de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con y el requerimiento al método **findAll** del modelo.
 
 * Cree el controlador para el verbo GET de la ruta **`/findAll/json`** que retorna un json con todos los fotos.
 
   ```
-  ...
-  router.get('/findAll/json', function(req, res, next) {  
-
+  /* GET users listing. */
+  router.get('/', function(req, res, next) {
     Users.findAll({  
     })  
     .then(users => {  
         res.json(users);  
     })  
     .catch(error => res.status(400).send(error)) 
-
   });
   ...
   ```
@@ -65,93 +63,82 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
 
 ### GET-id
 
-Para obtener UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con el método **findOne** de la clase.
+Para obtener UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** y el requerimiento al método **findOne** del modelo.
 
 * Cree el controlador para el verbo GET de la ruta **`/findAll/:id/json`** que retorna un json dado el id de un foto.
 
   ```
+  /* GET user by id. */
   router.get('/findById/:id/json', function(req, res, next) {  
 
     let id = parseInt(req.params.id);
 
-    Foto.findAll({  
-        attributes: { exclude: ["updatedAt", "createdAt"] } ,
-        include: [{
-            model: Etiqueta,
-            attributes: ['texto'],
-            through: {attributes: []}
-          }], 
+    Users.findAll({  
         where: { 
           [Op.and]: [
             {id: id}
           ]
         }
     })  
-    .then(fotos => {  
-        res.json(fotos);  
+    .then(users => {  
+        res.json(users);  
     })  
     .catch(error => res.status(400).send(error)) 
-
   });
   ```
 
-* Compruebe el funcionamiento del servidor, con: **npm run devstart**
-  + En la línea de comandos del cliente, realice una petición GET al URL `http://localhost:3000/rest/users/findById/2/json` 
+* Reinicie el servidor para comprobar el funcionamiento del controlador.
 
-  `curl -X GET http://localhost:3000/rest/users/findById/2/json | json`
-
-<p align="center">
-  <img src="imagenes/curl3.png">
-</p>
-
-  + En la línea de comandos del servidor del proyecto de Express aparece la petición:
+  + En postman, realice una petición GET al URL `http://localhost:3000/users/findById/1/json`
 
 <p align="center">
-  <img src="imagenes/response3.png">
+  <img src="imagenes/postman_getone.png">
 </p>
+
 
 
 ### POST
 
-Para guardar UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **POST** con el método **create** de la clase.
+Para guardar UN registro de una entidad en una base de datos relacional, implemente el controlador para el verbo **POST** y el requerimineto al método **create** del modelo.
 
 * Cree el controlador para el verbo POST de la ruta **`/save`** que recibe los datos de un foto en el cuerpo del requerimiento y guarda los datos en la base de datos relacional.
 
   ```
+  /* POST user. */
   router.post('/save', function(req, res, next) {  
 
-      let {titulo, descripcion, calificacion,ruta} = req.body;
-      
-      Foto.create({
-        titulo: titulo,
-        descripcion: descripcion,
-        calificacion: parseFloat(calificacion),
-        ruta: ruta,
-        createdAt: new Date(),  
-        updatedAt: new Date()  
+      let {email, username, password} = req.body;
+        
+      Users.create({
+        email: email,
+        username: username,
+        password: password,
+        logins: 0,
+        last_login: 0
       })
-      .then(foto => {
-        res.json(foto);
-      })
-      .catch(error => res.status(400).send(error))
-
+      .then(users => {  
+        res.json(users);  
+    })  
+    .catch(error => res.status(400).send(error)) 
   });
   ```
 
-  * Compruebe el funcionamiento del servidor, con: **npm run devstart**
-    + En la línea de comandos del cliente, realice una petición POST al URL `http://localhost:3000/rest/users/save` con los siguientes parámetros en el **body**:
+  * Reinicie el servidor para comprobar el funcionamiento del controlador.
 
-    `curl -X POST -d "titulo=fotos10&descripcion=Lorem ipsum dolor sit amet, consectetur adipiscing elit.&calificacion=4.35&ruta=public/images/fotos10.png" http://localhost:3000/rest/users/save | json`
+  + En postman, realice una petición POST al URL `http://localhost:3000/users/save` y envíe los datos en el cuerpo de la petición 
+
+  ```typescript
+  {
+    "email": "user01@gmail.com",
+    "username": "user01",
+    "password": "password"
+  }
+  ```
 
 <p align="center">
-  <img src="imagenes/curl4.png">
+  <img src="imagenes/postman_post.png">
 </p>
 
-  + En la línea de comandos del servidor del proyecto de Express aparece la petición:
-
-<p align="center">
-  <img src="imagenes/response4.png">
-</p>
 
 ### PUT 
 
