@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 05: Dataset MPA - Angular y Express
+## Proyecto 05: Dataset MPA - Angular
 
 [DAWM](/DAWM/)
 
