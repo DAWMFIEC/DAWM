@@ -23,7 +23,7 @@ web con un web framework del lado del cliente (como Angular) y una fuente de dat
 ```
 La respuesta es:
 
-![respuesta](archivos/proyecto06-pregunta.png)
+![respuesta](archivos/proyecto05-pregunta.png)
 
 ### Guías
 

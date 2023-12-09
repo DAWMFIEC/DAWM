@@ -6,7 +6,7 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/)
 
-### Como desarrollador de aplicaciones web, diseña un ejemplo con el modelo de un negocio, con las entidades, atributos, relación entre las  entidades y cardinalidad. Considera que el modelo debe tener una relación de uno a muchos (1:N) y una relación de muchos a muchos (N:M).
+### Como desarrollador de aplicaciones web, ¿Qué es un REST API?
 
 ### Antecedentes
 
@@ -17,7 +17,7 @@ Como desarrollador de aplicaciones web, necesitas desarrollar una solución basa
 Para el prompt: 
 
 ```
-Como desarrollador de aplicaciones web, diseña un ejemplo con el modelo de un negocio, con las entidades, atributos, relación entre las  entidades y cardinalidad. Considera que el modelo debe tener una relación de uno a muchos (1:N) y una relación de muchos a muchos (N:M). 
+Como desarrollador de aplicaciones web, ¿Qué es un REST API? 
 ```
 La respuesta es:
 

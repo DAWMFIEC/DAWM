@@ -21,7 +21,7 @@ Como desarrollador de aplicaciones web, ¿Qué es un dashboard y qué informaci�
 ```
 La respuesta es:
 
-![respuesta](archivos/proyecto05-pregunta.png)
+![respuesta](archivos/proyecto04-pregunta.png)
 
 ### Guías
 
