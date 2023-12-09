@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 06: Móvil - Ionic y Firebase
+## Proyecto 06: REST API - Express
 
 [DAWM](/DAWM/)
 
@@ -21,14 +21,8 @@ Como desarrollador de aplicaciones web, diseña un ejemplo con el modelo de un n
 ```
 La respuesta es:
 
-![respuesta](archivos/proyecto07-pregunta.png)
+![respuesta](archivos/proyecto06-pregunta.png)
 
 ### Guías
 
-* [Guía 19: Angular - Material y Routing](/DAWM/guias/2023/guia19)
-* [Guía 20: Express - ORM I](/DAWM/guias/2023/guia20) 
-* [Guía 21: Express - ORM II](/DAWM/guias/2023/guia21) 
-* [Guía 22: Express - REST api y CRUD](/DAWM/guias/2023/guia22)
-* [Guía 23: Express y Angular - Integración por API](/DAWM/guias/2023/guia23)
-* [Guía 24: Express - Verificación y Validación con JWT](/DAWM/guias/2023/guia24)
-* [Guía 25: Express - Despliegue en Railway](/DAWM/guias/2023/guia25)
+* [Guía 17: Express - ORM](/DAWM/guias/2023/guia17)

@@ -30,13 +30,15 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 09: Javascript - Sincronía/Asincronía y Promesas](guias/2023/guia09)
   * [Guía 10: Javascript - Async/Await y LocalStorage](guias/2023/guia10)
   * [Guía 11: Javascript - CORS](guias/2023/guia11)
-* [Proyecto 05: Dataset MPA - Angular y Express](proyectos/2023/proyecto05)
+* [Proyecto 05: Dataset MPA - Angular](proyectos/2023/proyecto05)
   * [Guía 12: Typescript](guias/2023/guia12)
   * [Guía 13: Angular - Introducción y Plantilla](guias/2023/guia13)
   * [Guía 14: Angular - Componentes y Rutas](guias/2023/guia14)
   * [Guía 15: Firebase - Realtime Database y Angular - Interfaz, Servicios y Directivas](guias/2023/guia15)
   * [Guía 16: Angular - Despliegue en producción con GitHub Actions](guias/2023/guia16)
-
+* [Proyecto 06: REST API - Express](proyectos/2023/proyecto06)
+  * [Guía 17: Express - ORM](guias/2023/guia17)
+* [Proyecto 07: AppMóvil - Angular y Ionic](proyectos/2023/proyecto07)
 
 ### Anteriores
 
