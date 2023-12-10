@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
 
 #### Dependencias Globales
 
-* Instale Sequelize CLI, Sequelize Auto y Express Generator de forma global, con: 
+* Instale los módulos Sequelize CLI, Sequelize Auto y Express Generator de forma global, con: 
 
   ```command
   npm install -g sequelize-cli sequelize-auto express-generator
@@ -25,15 +25,38 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
-
-#### Dependencias Locales
-
-* Instale Sequelize y el conector para MySQL para el proyecto, con: **`npm install --save sequelize mysql2`**
-* Genere los archivos de configuración de Sequelize, con: **`sequelize init`**  
-
 #### Github
 
 * Crea un repositorio en GitHub con el nombre **rest_api**.
+
+#### Express - Proyecto Base
+
+* Cree un proyecto en Express:
+  + Desde la línea de comandos, utilice el comando **express** con: `express --view=ejs rest_api`
+  + Compruebe el funcionamiento del servidor, con:  
+  
+	<pre><code>
+		cd rest_api   
+	    npm install   
+	    SET DEBUG=rest_api:\* & npm start
+	</code></pre>
+
+#### Dependencias Locales
+
+* Instale Sequelize y el conector para MySQL para el proyecto, con: 
+
+  ```
+  npm install --save sequelize mysql2
+  ```
+
+#### Sequelize
+
+* Genere los archivos de configuración de Sequelize, con: 
+
+  ```
+  sequelize init
+  ```  
+
 
 
 * Versiona local y remotamente el repositorio **rest_api**.
