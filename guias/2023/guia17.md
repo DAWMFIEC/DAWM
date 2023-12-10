@@ -62,6 +62,26 @@ theme: jekyll-theme-leap-day
   sequelize init
   ```
 
+#### Modelos
+
+* Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: `sequelize-auto -h 127.0.0.1 -d northwind -u root -x root -p 3306`
+
+#### Credenciales de conexión
+
+* Modifique el archivo `config/config.json`, en el ambiente **development**, con los datos de conexión con el motor de bases de datos.
+
+<pre><code>
+{
+  "development": {
+    "username": "root",
+    "password": "root",
+    "database": "northwind",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  ...
+</code></pre>
+
 * Versiona local y remotamente el repositorio **rest_api**.
 
 ### Fundamental
