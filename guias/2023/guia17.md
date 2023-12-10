@@ -13,8 +13,18 @@ theme: jekyll-theme-leap-day
 * Descargue la base de datos de [Northwind](https://en.wikiversity.org/wiki/Database_Examples/Northwind/MySQL) 
 * Identifique las credenciales de acceso al [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 
+#### Dependencias Globales
+
+* Instale Sequelize CLI de forma global, con: **`npm install -g sequelize-cli`**
+* Instale Sequelize auto de forma global, con: **`npm install -g sequelize-auto`**
 
 ### Actividades
+
+
+#### Dependencias Locales
+
+* Instale Sequelize y el conector para MySQL para el proyecto, con: **`npm install --save sequelize mysql2`**
+* Genere los archivos de configuración de Sequelize, con: **`sequelize init`**  
 
 #### Github
 
