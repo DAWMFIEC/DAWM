@@ -200,7 +200,7 @@ En adelante, para:
 
 * Acceda al URL de despliegue `https://<USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO_REMOTO>/`
 
-### Diseño
+### Fundamental
 
 * Github Actions en [Keepler.io](https://keepler.io/es/2020/09/crear-workflows-en-base-a-eventos-con-github-actions/)
 
