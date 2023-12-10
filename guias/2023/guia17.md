@@ -64,7 +64,11 @@ theme: jekyll-theme-leap-day
 
 #### Modelos
 
-* Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: `sequelize-auto -h 127.0.0.1 -d northwind -u root -x root -p 3306`
+* Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
+
+  ```
+  sequelize-auto -h 127.0.0.1 -d northwind -u root -x root -p 3306
+  ```
 
 #### Credenciales de conexión
 
