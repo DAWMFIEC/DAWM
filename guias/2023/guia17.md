@@ -15,8 +15,8 @@ theme: jekyll-theme-leap-day
 
 #### Dependencias Globales
 
-* Instale Sequelize CLI de forma global, con: **`npm install -g sequelize-cli`**
-* Instale Sequelize auto de forma global, con: **`npm install -g sequelize-auto`**
+* Instale Sequelize CLI, Sequelize Auto y Express Generator de forma global, con: **`npm install -g sequelize-cli sequelize-auto express-generator`**
+
 
 ### Actividades
 
