@@ -8,10 +8,12 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-#### MySQL
+#### Base de datos Relacional
 
-* Descargue la base de datos de [Northwind](https://en.wikiversity.org/wiki/Database_Examples/Northwind/MySQL) 
-* Identifique las credenciales de acceso al [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+* Copie el script (DDL y DML) SQL de [Northwind](https://en.wikiversity.org/wiki/Database_Examples/Northwind/MySQL).
+* Acceda al motor [MySQL Community Server](https://dev.mysql.com/downloads/mysql/) mediante la interfaz [MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
+  + Identifique las credenciales de acceso: usuario y contraseña.
+  + Ejecute el script y acceda a schema **northwind**
 
 #### Dependencias Globales
 
@@ -20,7 +22,6 @@ theme: jekyll-theme-leap-day
   ```command
   npm install -g sequelize-cli sequelize-auto express-generator
   ```
-
 
 ### Actividades
 
