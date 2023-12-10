@@ -32,14 +32,19 @@ theme: jekyll-theme-leap-day
 #### Express - Proyecto Base
 
 * Cree un proyecto en Express:
-  + Desde la línea de comandos, utilice el comando **express** con: `express --view=ejs rest_api`
-  + Compruebe el funcionamiento del servidor, con:  
-  
-	<pre><code>
-		cd rest_api   
-	    npm install   
-	    SET DEBUG=rest_api:\* & npm start
-	</code></pre>
+  + Desde la línea de comandos, utilice el comando **express** con: 
+
+    ```command
+    express --view=ejs rest_api
+    ```
+
+  + Compruebe el funcionamiento del servidor, con:
+
+	```command
+	cd rest_api   
+	npm install   
+	SET DEBUG=rest_api:\* & npm start
+	```
 
 #### Dependencias Locales
 
@@ -55,9 +60,7 @@ theme: jekyll-theme-leap-day
 
   ```
   sequelize init
-  ```  
-
-
+  ```
 
 * Versiona local y remotamente el repositorio **rest_api**.
 
