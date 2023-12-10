@@ -8,7 +8,20 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### MySQL
+
+* Descargue la base de datos de [Northwind](https://en.wikiversity.org/wiki/Database_Examples/Northwind/MySQL) 
+* Identifique las credenciales de acceso al [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
+
+
 ### Actividades
+
+#### Github
+
+* Crea un repositorio en GitHub con el nombre **rest_api**.
+
+
+* Versiona local y remotamente el repositorio **rest_api**.
 
 ### Fundamental
 
@@ -17,6 +30,8 @@ theme: jekyll-theme-leap-day
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/REST?src=hash&amp;ref_src=twsrc%5Etfw">#REST</a> <a href="https://twitter.com/hashtag/API?src=hash&amp;ref_src=twsrc%5Etfw">#API</a> what is it?<br>Representational State Transfer<br>This means that when a <a href="https://twitter.com/hashtag/client?src=hash&amp;ref_src=twsrc%5Etfw">#client</a> requests a resource using a REST API, the <a href="https://twitter.com/hashtag/server?src=hash&amp;ref_src=twsrc%5Etfw">#server</a> transfers back the current state of the resource in a standardized representation <a href="https://t.co/xCFXw9cQFZ">pic.twitter.com/xCFXw9cQFZ</a></p>&mdash; Terrasoft Ltd (@Terrasoft_ltd) <a href="https://twitter.com/Terrasoft_ltd/status/1732354546528067738?ref_src=twsrc%5Etfw">December 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Documentación
+
+En [ExpressJS](https://expressjs.com/) se encuentra la referencia del API, guías y tutoriales.
 
 ### Términos
 
