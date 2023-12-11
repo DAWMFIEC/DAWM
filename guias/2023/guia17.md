@@ -139,7 +139,7 @@ theme: jekyll-theme-leap-day
   SET DEBUG=rest_api:\* & npm start
   ```
 
-* Utilice [Postman](https://www.postman.com/) para comprobar la respuesta para cada tipo de petición.
+* Utilice el workspace público de [Postman](https://elements.getpostman.com/redirect?entityId=1898620-df625a84-2a04-44ef-9492-d31713c26330&entityType=collection) como plantilla para comprobar la respuesta para cada tipo de petición.
 
 <p align="center">
   <img src="imagenes/postman.png">
