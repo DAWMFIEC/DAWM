@@ -90,7 +90,7 @@ theme: jekyll-theme-leap-day
 
 #### Manejador de ruta
 
-* Cree el archivo manejador de rutas `routes/suppliers.js` con los controladores para los métodos `GET`, `POST`, `PUT` y `DELETE`.
+* Cree el archivo manejador de rutas `routes/suppliers.js` con los controladores para los verbos HTTP `GET`, `POST`, `PUT` y `DELETE`.
 
   ```typescript
   var express = require('express');
@@ -133,17 +133,40 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
-* Levante el servidor, con:
+#### Verificación
+
+* Reinicie el servidor, con:
 
   ```command
   SET DEBUG=rest_api:\* & npm start
   ```
 
-* Utilice el workspace público de [Postman](https://elements.getpostman.com/redirect?entityId=1898620-df625a84-2a04-44ef-9492-d31713c26330&entityType=collection) como plantilla para comprobar la respuesta para cada tipo de petición.
+* Utilice el workspace público de [Postman](https://elements.getpostman.com/redirect?entityId=1898620-df625a84-2a04-44ef-9492-d31713c26330&entityType=collection) para comprobar la respuesta para cada tipo de petición.
 
 <p align="center">
   <img src="imagenes/postman.png">
 </p>
+
+#### ORM
+
+Tome como referencia el tutorial [Express - REST II](https://dawmfiec.github.io/DAWM/tutoriales/express_rest2) para completar los controladores para los verbos HTTP.
+
+* Para el verbo **GET** con la ruta `findALL`:
+  
+  ```typescript
+  ...
+  router.get('/findAll', function(req, res, next) {
+      Suppliers.findAll({  
+    })  
+    .then(data => {  
+        res.json(data);  
+    })  
+    .catch(error => res.status(400).send(error)) 
+  });
+  ...
+  ```
+
+* Reinicie el servidor y compruebe la respuesta con Postman.
 
 * Versiona local y remotamente el repositorio **rest_api**.
 
@@ -159,7 +182,7 @@ En [ExpressJS](https://expressjs.com/) se encuentra la referencia del API, guía
 
 ### Términos
 
-rest api, crud, verbos HTTP, estados HTTP
+rest api, orm, crud, verbos HTTP, estados HTTP
 
 ### Referencias
 
