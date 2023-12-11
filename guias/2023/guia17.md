@@ -149,15 +149,12 @@ theme: jekyll-theme-leap-day
 
 #### ORM
 
-Tome como referencia el tutorial [Express - REST II](https://dawmfiec.github.io/DAWM/tutoriales/express_rest2) para completar los controladores para los verbos HTTP.
-
-* Para el verbo **GET** con la ruta `findALL`:
+* Complete el controlador para el verbo **GET** con la ruta `findALL`:
   
   ```typescript
   ...
   router.get('/findAll', function(req, res, next) {
-      Suppliers.findAll({  
-    })  
+    Suppliers.findAll({ })  
     .then(data => {  
         res.json(data);  
     })  
@@ -167,6 +164,7 @@ Tome como referencia el tutorial [Express - REST II](https://dawmfiec.github.io/
   ```
 
 * Reinicie el servidor y compruebe la respuesta con Postman.
+* Complete los demás controladores de acuerdo con el tutorial [Express - REST II](https://dawmfiec.github.io/DAWM/tutoriales/express_rest2).
 
 * Versiona local y remotamente el repositorio **rest_api**.
 
