@@ -50,7 +50,7 @@ theme: jekyll-theme-leap-day
 
 #### Dependencias Locales
 
-*  Desde la línea de comandos en la carpeta del proyecto, instale Sequelize y el conector para MySQL para el proyecto, con: 
+* Desde la línea de comandos en la carpeta del proyecto, instale Sequelize y el conector para MySQL para el proyecto, con: 
 
   ```
   npm install --save sequelize mysql2
@@ -76,17 +76,17 @@ theme: jekyll-theme-leap-day
 
 * Modifique el archivo `config/config.json`, en el ambiente **development**, con los datos de conexión con el motor de bases de datos.
 
-<pre><code>
-{
-  "development": {
-    "username": "root",
-    "password": "root",
-    "database": "northwind",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  ...
-</code></pre>
+  ```typescript
+  {
+    "development": {
+      "username": "root",
+      "password": "root",
+      "database": "northwind",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    ...
+  ```
 
 #### Manejador de ruta
 
