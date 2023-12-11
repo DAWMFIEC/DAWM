@@ -149,13 +149,23 @@ theme: jekyll-theme-leap-day
 
 #### ORM
 
-* Complete el controlador para el verbo **GET** con la ruta `findALL`:
+* Complete el controlador para el verbo **POST** con la ruta `save`:
   
   ```typescript
   ...
-  router.get('/findAll', function(req, res, next) {
-    Suppliers.findAll({ })  
-    .then(data => {  
+  router.post('/save', function(req, res, next) { 
+    let {SupplierName, ContactName, Address, City, PostalCode, Country, Phone} = req.body;
+        
+      Suppliers.create({
+          SupplierName: SupplierName, 
+          ContactName: ContactName, 
+          Address: Address, 
+          City: City, 
+          PostalCode: PostalCode, 
+          Country: Country, 
+          Phone: Phone
+      })
+      .then(data => {  
         res.json(data);  
     })  
     .catch(error => res.status(400).send(error)) 
@@ -163,8 +173,33 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
+* Complete el controlador para el verbo **GET** con la ruta `findById`:
+  
+  ```typescript
+  ...
+  router.get('/findById/:id', function(req, res, next) {
+
+    let id = parseInt(req.params.id);
+
+    Suppliers.findOne({  
+        where: { 
+          [Op.and]: [
+            {SupplierID: id}
+          ]
+        }
+    })  
+    .then(data => {  
+        res.json(data);  
+    })  
+    .catch(error => res.status(400).send(error)) 
+});
+  ...
+  ```
+
+* Complete todos controladores de acuerdo con el tutorial [Express - REST II](https://dawmfiec.github.io/DAWM/tutoriales/express_rest2).
+
 * Reinicie el servidor y compruebe la respuesta con Postman.
-* Complete los demás controladores de acuerdo con el tutorial [Express - REST II](https://dawmfiec.github.io/DAWM/tutoriales/express_rest2).
+
 
 * Versiona local y remotamente el repositorio **rest_api**.
 

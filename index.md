@@ -37,7 +37,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 15: Firebase - Realtime Database y Angular - Interfaz, Servicios y Directivas](guias/2023/guia15)
   * [Guía 16: Angular - Despliegue en producción con GitHub Actions](guias/2023/guia16)
 * [Proyecto 06: REST API - Express](proyectos/2023/proyecto06)
-  * [Guía 17: Express - REST api y CRUD](guias/2023/guia17) 
+  * [Guía 17: Express - REST API](guias/2023/guia17) 
 * [Proyecto 07: AppMóvil - Angular y Ionic](proyectos/2023/proyecto07)
 
 ### Anteriores
