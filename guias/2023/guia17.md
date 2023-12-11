@@ -20,7 +20,7 @@ theme: jekyll-theme-leap-day
 * Instale los módulos Sequelize CLI, Sequelize Auto y Express Generator de forma global, con: 
 
   ```command
-  npm install -g sequelize-cli sequelize-auto express-generator
+  npm install -g sequelize-cli sequelize-auto express-generator mysql2
   ```
 
 ### Actividades
