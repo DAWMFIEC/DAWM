@@ -38,17 +38,19 @@ theme: jekyll-theme-leap-day
     express --view=ejs rest_api
     ```
 
-  + Compruebe el funcionamiento del servidor, con:
+  + Acceda a la carpeta del proyecto, instale las dependencias y levante el servidor, con:
 
 	```command
 	cd rest_api   
 	npm install   
 	SET DEBUG=rest_api:\* & npm start
 	```
+  
+  + En el navegador, acceda al URL `http://localhost:3000` y compruebe la respuesta predeterminada. 
 
 #### Dependencias Locales
 
-* Instale Sequelize y el conector para MySQL para el proyecto, con: 
+*  Desde la línea de comandos en la carpeta del proyecto, instale Sequelize y el conector para MySQL para el proyecto, con: 
 
   ```
   npm install --save sequelize mysql2
@@ -56,7 +58,7 @@ theme: jekyll-theme-leap-day
 
 #### Sequelize
 
-* Genere los archivos de configuración de Sequelize, con: 
+* Desde la línea de comandos en la carpeta del proyecto, genere los archivos de configuración de Sequelize, con: 
 
   ```
   sequelize init
@@ -64,7 +66,7 @@ theme: jekyll-theme-leap-day
 
 #### Modelos
 
-* Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
+* Desde la línea de comandos en la carpeta del proyecto, reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
 
   ```
   sequelize-auto -h 127.0.0.1 -d northwind -u root -x root -p 3306
@@ -85,6 +87,63 @@ theme: jekyll-theme-leap-day
   },
   ...
 </code></pre>
+
+#### Manejador de ruta
+
+* Cree el archivo manejador de rutas `routes/suppliers.js` con los controladores para los métodos `GET`, `POST`, `PUT` y `DELETE`.
+
+  ```typescript
+  var express = require('express');
+  var router = express.Router();
+
+  const { Sequelize, Op } = require('sequelize');
+  const Suppliers = require('../models').suppliers;
+
+  router.get('/findAll', function(req, res, next) {
+      res.send("GET All")
+  });
+  router.get('/findById/:id', function(req, res, next) {
+      res.send("GET By Id")
+  });
+  router.post('/save', function(req, res, next) { 
+      res.send("POST")
+  });
+  router.put('/update/:id', function(req, res, next) { 
+      res.send("PUT")
+  });  
+  router.delete('/delete/:id', function(req, res, next) { 
+      res.send("DELETE")
+  });
+  
+  module.exports = router;
+  ```
+
+#### Registro del manejador de rutas
+
+* Modifique el archivo `app.js` con el registro del archivo manejador de rutas `routes/suppliers.js` a la ruta `/suppliers`
+
+  ```typescript
+  ...
+  var suppliersRouter = require('./routes/suppliers');
+  
+  var app = express();
+
+  app.use('/users', ... );
+  app.use('/suppliers', suppliersRouter);
+  ...
+  ```
+
+* Levante el servidor, con:
+
+  ```command
+  SET DEBUG=rest_api:\* & npm start
+  ```
+
+* Arme las rutas para cada petición para cada método y compruebe la respuesta con Postman.
+
+<p align="center">
+  <img src="imagenes/postman_getall.png">
+</p>
 
 * Versiona local y remotamente el repositorio **rest_api**.
 
