@@ -114,7 +114,7 @@ theme: jekyll-theme-leap-day
   router.delete('/delete/:id', function(req, res, next) { 
       res.send("DELETE")
   });
-  
+
   module.exports = router;
   ```
 
@@ -139,10 +139,10 @@ theme: jekyll-theme-leap-day
   SET DEBUG=rest_api:\* & npm start
   ```
 
-* Arme las rutas para cada petición para cada método y compruebe la respuesta con Postman.
+* Utilice [Postman](https://www.postman.com/) para comprobar la respuesta para cada tipo de petición.
 
 <p align="center">
-  <img src="imagenes/postman_getall.png">
+  <img src="imagenes/postman.png">
 </p>
 
 * Versiona local y remotamente el repositorio **rest_api**.
