@@ -25,4 +25,4 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 17: Express - ORM](/DAWM/guias/2023/guia17)
+* [Guía 17: Express - REST API](/DAWM/guias/2023/guia17)
