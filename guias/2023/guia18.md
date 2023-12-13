@@ -55,15 +55,7 @@ theme: jekyll-theme-leap-day
   npm run swagger-autogen
   ```
 
-* Modifique el archivo **swagger_ouput.json** con la ruta URL base (clave _basepath_), con:
-
-  ```text
-  ...
-  "basePath": "/rest",
-  ...
-  ```
-
-* Modifique el archivo **swagger_ouput.json** con la ruta URL de cada endpoint (clave _path_):
+* En el archivo **swagger_ouput.json**, anteponga a las URLs de cada endpoint (clave _path_) el nombre del modelo (p.e. `suppliers`):
 
   ```text
     ...
@@ -99,7 +91,7 @@ theme: jekyll-theme-leap-day
 
   ...
   /* CONFIGURACIÓN DE LA RUTA A LA DOCUMENTACIÓN */
-  app.use('/doc', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+  app.use('/documentation', swaggerUi.serve, swaggerUi.setup(swaggerFile))
   ...
   ```
 
@@ -112,7 +104,7 @@ theme: jekyll-theme-leap-day
 * Revise el URL de la documentación en el navegador:
 
   ```
-  http://localhost:3000/doc
+  http://localhost:3000/documentation
   ```
 
 
