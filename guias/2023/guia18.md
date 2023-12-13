@@ -2,11 +2,13 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 17
+## Guía 18
 
 [DAWM](/DAWM/) / [Proyecto06](/DAWM/proyectos/2023/proyecto06)
 
 ### Actividades previas
+
+* Identifique el uso de Swagger en la [documentación oficial](https://swagger.io/).
 
 ### Actividades
 
@@ -115,6 +117,10 @@ theme: jekyll-theme-leap-day
 
 
 ### Fundamental
+
+* Uso de Swagger en [X](https://twitter.com/rawas_aditya/status/1709735670040694799)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">🚀 Made significant progress today on our Project Management System! Integrated centralized Swagger documentation for clear API understanding. Also, added endpoints for projects and tasks. Excited to see it coming together! 💻🔨 <a href="https://twitter.com/hashtag/MERNStack?src=hash&amp;ref_src=twsrc%5Etfw">#MERNStack</a> <a href="https://twitter.com/hashtag/ProjectManagement?src=hash&amp;ref_src=twsrc%5Etfw">#ProjectManagement</a> <a href="https://twitter.com/hashtag/SwaggerUI?src=hash&amp;ref_src=twsrc%5Etfw">#SwaggerUI</a> <a href="https://t.co/ZP3iin9RMa">pic.twitter.com/ZP3iin9RMa</a></p>&mdash; Aditya Rawas (@rawas_aditya) <a href="https://twitter.com/rawas_aditya/status/1709735670040694799?ref_src=twsrc%5Etfw">October 5, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Documentación
 
