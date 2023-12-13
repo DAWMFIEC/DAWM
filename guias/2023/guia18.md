@@ -55,19 +55,19 @@ theme: jekyll-theme-leap-day
   npm run swagger-autogen
   ```
 
-* En el archivo **swagger_ouput.json**, anteponga a las URLs de cada endpoint (clave _path_) el nombre del modelo (p.e. `suppliers`):
+* En el archivo **swagger_ouput.json**, modifique las URLs de cada endpoint (clave _paths_) de acuerdo con las rutas en la aplicación:
 
   ```text
     ...
     "paths": {
-      "/<MODELO>/findAll": {
+      "/suppliers/findAll": {
         ...
       },
-      "/<MODELO>/findById/{id}": {
+      "/suppliers/findById/{id}": {
         ...
       }
       ...
-      "/<MODELO>/delete/{id}": {
+      "/suppliers/delete/{id}": {
       }
     }
     ...
@@ -101,7 +101,7 @@ theme: jekyll-theme-leap-day
   npm start
   ```
 
-* Revise el URL de la documentación en el navegador:
+* Compruebe los endpoints del manejador de ruta, con:
 
   ```
   http://localhost:3000/documentation
@@ -120,7 +120,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-swagger
+swagger, documentación
 
 ### Referencias
 
