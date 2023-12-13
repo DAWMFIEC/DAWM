@@ -28,7 +28,7 @@ theme: jekyll-theme-leap-day
   const swaggerAutogen = require('swagger-autogen')()
 
   const outputFile = './swagger_output.json'
-  const endpointsFiles = ['./routes/rest_<MODELO>.js']
+  const endpointsFiles = ['./routes/<ROUTER>.js']
 
   swaggerAutogen(outputFile, endpointsFiles)
   ```
