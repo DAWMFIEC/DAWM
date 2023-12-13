@@ -38,6 +38,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 16: Angular - Despliegue en producción con GitHub Actions](guias/2023/guia16)
 * [Proyecto 06: REST API - Express](proyectos/2023/proyecto06)
   * [Guía 17: Express - REST API](guias/2023/guia17)
+  * [Guía 18: Express - Swagger](/DAWM/guias/2023/guia18)
 * [Proyecto 07: AppMóvil - Angular y Ionic](proyectos/2023/proyecto07)
 
 ### Anteriores
