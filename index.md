@@ -37,8 +37,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 15: Firebase - Realtime Database y Angular - Interfaz, Servicios y Directivas](guias/2023/guia15)
   * [Guía 16: Angular - Despliegue en producción con GitHub Actions](guias/2023/guia16)
 * [Proyecto 06: REST API - Express](proyectos/2023/proyecto06)
-  * [Guía 17: Express - REST API](guias/2023/guia17)
-  * [Guía 18: Express - Swagger](/DAWM/guias/2023/guia18)
+  * [Guía 17: Express - REST API - Datos](guias/2023/guia17)
+  * [Guía 18: Express - Swagger](guias/2023/guia18)
+  * [Guía 19: Express - REST API - Seguridad](guias/2023/guia19)
+  * [Guía 20: Express - Autenticación y Autorización con JWT](guias/2023/guia20)
 * [Proyecto 07: AppMóvil - Angular y Ionic](proyectos/2023/proyecto07)
 
 ### Anteriores
