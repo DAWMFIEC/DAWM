@@ -25,7 +25,7 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 17: Express - REST API - Datos](/DAWM/guias/2023/guia17)
+* [Guía 17: Express - REST API](/DAWM/guias/2023/guia17)
 * [Guía 18: Express - Swagger](/DAWM/guias/2023/guia18)
-* [Guía 19: Express - REST API - Seguridad](/DAWM/guias/2023/guia19)
+* [Guía 19: Express - API - Seguridad](/DAWM/guias/2023/guia19)
 * [Guía 20: Express - Autenticación y Autorización con JWT](/DAWM/guias/2023/guia20)
