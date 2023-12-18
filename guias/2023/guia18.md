@@ -12,6 +12,9 @@ theme: jekyll-theme-leap-day
 
 ### Actividades
 
+* Clone localmente tu repositorio **rest_api**.
+* Abra el proyecto en VSCode y levante el servidor.
+
 #### Dependencias Locales
 
 * Instale los módulos **swagger-autogen** y **swagger-ui-express**
@@ -107,6 +110,7 @@ theme: jekyll-theme-leap-day
   http://localhost:3000/documentation
   ```
 
+* Versiona local y remotamente el repositorio **rest_api**.
 
 ### Fundamental
 
