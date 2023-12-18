@@ -21,9 +21,19 @@ theme: jekyll-theme-leap-day
 Desde la línea de comandos
 
 * Cree un proyecto en Express, con: `express --view=ejs security`
-* Dentro de la carpeta del proyecto, instale los módulos: `npm install --save sequelize mysql2 dotenv swagger-autogen swagger-ui-express`
+* Dentro de la carpeta del proyecto, instale los módulos: 
+
+  ```
+  npm install --save sequelize mysql2 dotenv swagger-autogen swagger-ui-express
+  ```
+
 * Genere los archivos de configuración de Sequelize, con: `sequelize init`
-* Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: `sequelize-auto -h 127.0.0.1 -d security -u root -x root -p 3306`
+* Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
+
+  ```
+  sequelize-auto -h 127.0.0.1 -d security -u root -x root -p 3306
+  ```
+
 * Modifique el archivo `config/config.json`, en el ambiente **development**, con los datos de conexión con el motor de bases de datos.
 
 ### Actividades
@@ -42,8 +52,8 @@ Desde la línea de comandos.
 * Genere y copie la secuencia de datos aleatorios, con:
 
   ```typescript
-  let crypto = require('crypto');
-  crypto.randomBytes(16).toString('base64');
+  > let crypto = require('crypto');
+  > crypto.randomBytes(16).toString('base64');
   ```
 
 * En la raíz del proyecto, cree el archivo `.env`. Agregue las variables **PORT** y **SALT**. Asigne el  como **SALT**.
@@ -53,7 +63,7 @@ Desde la línea de comandos.
   SALT=...8uUYwT...
   ```
 
-#### Manejador de rutas: users.js
+#### users.js - POST
 
 * Referencie los modelos autogenerados y el operador **Op**.
 
@@ -74,43 +84,67 @@ Desde la línea de comandos.
 * Agregue el controlador para el verbo HTTP `POST` con la ruta `/register` 
 
   ```typescript
-  router.post('/register', async (req, res,next) => {
+	router.post('/register', async (req, res,next) => {
 
-  	// Parámetros en el cuerpo del requerimiento
-  	let { name, password, roleName } = req.body;
+		// Parámetros en el cuerpo del requerimiento
+		let { name, password, roleName } = req.body;
 
-  	try {
+		try {
 
-  		// Encripte la contraseña
-  		let salt = process.env.SALT
-		let hash = crypto.createHmac('sha512',salt).update(password).digest("base64");
-		let passwordHash = salt + "$" + hash
+			// Encripte la contraseña
+			let salt = process.env.SALT
+			let hash = crypto.createHmac('sha512',salt).update(password).digest("base64");
+			let passwordHash = salt + "$" + hash
 
-  		// Guarde los datos del usuario
-	    let user = await Users.create({ name: name, password: passwordHash })
-	    
-	    // Obtenga el rol en función del nombre
-	    let role = await Roles.findOne({ 
-	      where: { 
-	        [Op.and]: [
-	          {name: roleName}
-	        ]
-	      } 
-	    })
+				// Guarde los datos del usuario
+			let user = await Users.create({ name: name, password: passwordHash })
 
-	    // Cree la relación usuario-rol
-	    await UsersRoles.create({ users_iduser: user.iduser, roles_idrole: role.idrole })
+			// Obtenga el rol en función del nombre
+			let role = await Roles.findOne({ 
+			  where: { 
+			    [Op.and]: [
+			      {name: roleName}
+			    ]
+			  } 
+			})
 
-	    res.status(200).json({ user: user.name, role: role.name })
+			// Cree la relación usuario-rol
+			await UsersRoles.create({ users_iduser: user.iduser, roles_idrole: role.idrole })
 
-	} catch (error) {
-	    res.status(400).send(error)
-	}
+			// Redirige a la página de registros
+			res.redirect('/users')
 
-  })
+		} catch (error) {
+			res.status(400).send(error)
+		}
 
-  module.exports = router;
+	})
+
+	module.exports = router;
   ```
+
+#### users.js - GET
+
+* Descargue el archivo [register.ejs](recursos/register.ejs) y coloque el archivo dentro la carpeta `views`
+
+* Descargue y descomprima el archivo [assets.zip](recursos/assets.zip). Mueva la carpeta `assets` dentro la carpeta `public`
+
+* Modifique el controlador para el verbo HTTP `GET` con la ruta `/` 
+
+  ```typescript
+  router.get('/', function(req, res, next) {
+	  let users = await Users.findAll({ })
+  	  res.render('register', { title: 'User Registration', users: users });
+  });
+  ```
+
+* Ejecute el servidor, con:
+
+  ```
+  npm start
+  ```
+
+* Compruebe el registro de los datos mediante el URL: `http://localhost:3002/users`
 
 * Versiona local y remotamente el repositorio **security**.
 
