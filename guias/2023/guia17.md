@@ -200,7 +200,6 @@ theme: jekyll-theme-leap-day
 
 * Reinicie el servidor y compruebe la respuesta con Postman.
 
-
 * Versiona local y remotamente el repositorio **rest_api**.
 
 ### Fundamental
