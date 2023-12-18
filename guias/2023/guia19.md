@@ -77,6 +77,8 @@ Desde la línea de comandos.
 
 	...
 	var indexRouter = ...
+
+	var app = express();
 	```
 
 #### users.js - POST
@@ -148,7 +150,7 @@ Desde la línea de comandos.
 * Modifique el controlador para el verbo HTTP `GET` con la ruta `/` 
 
   ```typescript
-  router.get('/', function(req, res, next) {
+  router.get('/', async function(req, res, next) {
 	  let users = await Users.findAll({ })
   	  res.render('register', { title: 'User Registration', users: users });
   });
