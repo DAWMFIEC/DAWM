@@ -25,7 +25,7 @@ DROP TABLE IF EXISTS `roles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `roles` (
-  `idrole` int NOT NULL,
+  `idrole` int NOT NULL AUTO_INCREMENT,
   `name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idrole`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
@@ -49,7 +49,7 @@ DROP TABLE IF EXISTS `users`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users` (
-  `iduser` int NOT NULL,
+  `iduser` int NOT NULL AUTO_INCREMENT,
   `name` varchar(45) DEFAULT NULL,
   `password` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`iduser`)
@@ -64,7 +64,7 @@ DROP TABLE IF EXISTS `users_roles`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!50503 SET character_set_client = utf8mb4 */;
 CREATE TABLE `users_roles` (
-  `idusers_roles` int NOT NULL,
+  `idusers_roles` int NOT NULL AUTO_INCREMENT,
   `users_iduser` int NOT NULL,
   `roles_idrole` int NOT NULL,
   PRIMARY KEY (`idusers_roles`),
