@@ -63,6 +63,22 @@ Desde la línea de comandos.
   SALT=...8uUYwT...
   ```
 
+* En el archivo `app.js`, agregue el módulo `dotenv` y cargue los datos de configuración.
+
+	```text
+	var logger = require('morgan');
+	...
+
+	/* MÓDULO dotenv */
+	const dotenv = require('dotenv');
+
+	/* CARGA DE DATOS DE CONFIGURACION EN MEMORIA */
+	dotenv.config();
+
+	...
+	var indexRouter = ...
+	```
+
 #### users.js - POST
 
 * Referencie los modelos autogenerados y el operador **Op**.
