@@ -57,6 +57,7 @@
                 <tr>
                     <th class="text-center">#</th>
                     <th>User</th>
+                    <th>Password</th>
                 </tr>
             </thead>
             <tbody>
@@ -64,6 +65,7 @@
                     <tr>
                         <td class="text-center"><%= user.iduser %></td>
                         <td><%= user.name %></td>
+                        <td><%= user.password.slice(0,10) %> ... </td>
                     </tr>
                 <% } %>
             </tbody>
