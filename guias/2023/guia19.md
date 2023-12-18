@@ -91,12 +91,12 @@ Desde la línea de comandos.
 
 		try {
 
-			// Encripte la contraseña
+			// Encripte la contraseña con SALT
 			let salt = process.env.SALT
 			let hash = crypto.createHmac('sha512',salt).update(password).digest("base64");
 			let passwordHash = salt + "$" + hash
 
-				// Guarde los datos del usuario
+			// Guarde los datos del usuario
 			let user = await Users.create({ name: name, password: passwordHash })
 
 			// Obtenga el rol en función del nombre
@@ -150,16 +150,18 @@ Desde la línea de comandos.
 
 ### Fundamental
 
-Renderización de las vistas, Encriptación
+* Encriptación de una contraseña con SALT en [X](https://twitter.com/El_Pop/status/1560356275774447618)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="es" dir="ltr">Como almacenar passwords en una BD para que estos no estén expuestos en el caso de un acceso a esta base:<br><br>el truco es reconstruir el password a partir de su hash y el salt previamente generado y almacenado. <a href="https://t.co/sdESoBZOeg">pic.twitter.com/sdESoBZOeg</a></p>&mdash; Fernando Romo (@El_Pop) <a href="https://twitter.com/El_Pop/status/1560356275774447618?ref_src=twsrc%5Etfw">August 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Documentación
 
-Sequelize
-
-Express
+* Documentación de [Express](https://expressjs.com/) y [Sequelize](https://sequelize.org/docs/v6/getting-started/).
 
 ### Términos
 
 vistas, encriptación
 
 ### Referencias
+
+* (N.d.). Retrieved from https://expressjs.com/en/guide/using-template-engines.html
