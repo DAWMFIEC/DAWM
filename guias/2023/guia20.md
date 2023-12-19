@@ -63,12 +63,12 @@ Desde la línea de comandos
   ...
   ```
 
-* Agregue el controlador para el verbo HTTP `POST` con la ruta `/getToken`
+* Agregue el controlador para el verbo HTTP `POST` con la ruta `/generateToken`
 
   ```typescript
     ...
-    
-	router.post('/getToken', async (req, res,next) => {
+
+	router.post('/generateToken', async (req, res,next) => {
 
 		// Parámetros en el cuerpo del requerimiento
 		let { name, password } = req.body;
@@ -98,6 +98,27 @@ Desde la línea de comandos
 
 	module.exports = router;
   ```
+
+##### users.js - GET
+
+* Descargue el archivo [register.ejs](recursos/register.ejs) y coloque el archivo dentro la carpeta `views`
+
+* Modifique el controlador para el verbo HTTP `GET` con la ruta `/` 
+
+  ```typescript
+  router.get('/', async function(req, res, next) {
+  });
+  ```
+
+* Ejecute el servidor, con:
+
+  ```
+  npm start
+  ```
+
+* Compruebe el registro de los datos mediante el URL: `http://localhost:3002/users`
+
+* Versiona local y remotamente el repositorio **security**.
 
 #### REST API
 
