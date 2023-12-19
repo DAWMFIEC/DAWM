@@ -67,12 +67,34 @@ Desde la línea de comandos
 
   ```typescript
     ...
-
+    
 	router.post('/getToken', async (req, res,next) => {
 
+		// Parámetros en el cuerpo del requerimiento
+		let { name, password } = req.body;
 
+		try {
 
-  	});
+		// Encripte la contraseña
+		let salt = process.env.SALT
+		let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
+		let passwordHash = salt + "$" + hash
+
+		/* Obtenga el usuario y su rol */
+		let user = await Users.findOne({ where: { [Op.and]: [ { name: name }, { password: passwordHash } ] } })
+		let relations = await UsersRoles.findOne({ where: { [Op.and]: [ { users_iduser: user.iduser } ] } });
+		let roles = await Roles.findOne({ where: { [Op.and]: [ { idrole: relations.roles_idrole } ] } });
+
+		/* Genera el token con los datos encriptados */
+		const accessToken = jwt.sign({ name: user.name, role: roles.name }, process.env.TOKEN_SECRET);
+
+		res.send({ accessToken });
+
+		} catch (error) {
+			res.status(400).send(error)
+		}
+
+	});
 
 	module.exports = router;
   ```
