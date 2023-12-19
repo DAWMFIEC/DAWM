@@ -39,7 +39,7 @@ Desde la línea de comandos
 ### Actividades
 
 
-### SALT
+#### SALT
 
 Desde la línea de comandos.
 
@@ -56,7 +56,7 @@ Desde la línea de comandos.
   > crypto.randomBytes(16).toString('base64');
   ```
 
-* En la raíz del proyecto, cree el archivo `.env`. Agregue las variables **PORT** y **SALT**. Asigne el  como **SALT**.
+* En la raíz del proyecto, cree el archivo `.env`. Agregue las variables **PORT** y **SALT**. Asigne la secuencia de datos aleatorios a la variable **SALT**.
 
   ```
   PORT=3002
@@ -83,12 +83,13 @@ Desde la línea de comandos.
 
 #### users.js - POST
 
-* Referencie los modelos autogenerados y el operador **Op**.
+* Agregue el módulo **crypto**, referencie los modelos autogenerados y el operador **Op**.
 
   ```typescript
   var express = require('express');
   var router = express.Router();
 
+  /* Módulo crypto */
   let crypto = require('crypto');
 
   /* Referencia a los modelos */
