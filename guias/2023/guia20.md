@@ -16,9 +16,80 @@ theme: jekyll-theme-leap-day
 
 #### Security
 
+##### Token Secret
+
+Desde la línea de comandos
+
+* Instale el módulo **jsonwebtoken**, con:
+
+  ```command
+  npm install --save jsonwebtoken
+  ```
+
+* Acceda a la interfaz de **nodeJS**, con:
+  
+  ```typescript
+  node
+  ```
+
+* Genere y copie la secuencia de datos aleatorios, con:
+
+  ```typescript
+  > let crypto = require('crypto');
+  > crypto.randomBytes(64).toString('hex');
+  ```
+
+* En la raíz del proyecto, modifique el archivo `.env`. Agregue la variable **TOKEN_SECRET**. Asigne la secuencia de datos aleatorios a la variable **TOKEN_SECRET**.
+
+  ```
+  PORT=3002
+  SALT=...8uUYwT...
+  TOKEN_SECRET=...26e402586e2faa8da4c98a35f1b20d6b033c60...
+  ```
+
+##### users.js - POST
+
+* Agregue el módulo **jsonwebtoken**.
+
+  ```typescript
+  var express = require('express');
+  var router = express.Router();
+
+  /* Módulo jsonwebtoken */
+  const jwt = require('jsonwebtoken');
+
+  /* Módulo crypto */
+  let crypto = require('crypto');
+  ...
+  ```
+
+* Agregue el controlador para el verbo HTTP `POST` con la ruta `/getToken`
+
+  ```typescript
+    ...
+
+	router.post('/getToken', async (req, res,next) => {
+
+
+
+  	});
+
+	module.exports = router;
+  ```
+
 #### REST API
 
+* Instale el módulo **jsonwebtoken**, con:
+
+  ```command
+  npm install --save jsonwebtoken
+  ```
+
 ### Fundamental
+
+* Estructura de JSON Web Tokens (JWT) en [X](https://twitter.com/ProgressiveCod2/status/1734893719290319143)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">What&#39;s the most scalable solution to authentication?<br><br>JSON Web Tokens or JWT.<br><br>A single JWT can contain all the required information about an entity, making it an ideal candidate for authentication.<br><br>There are 3 main components of a JWT.<br><br>Here&#39;s the structure of JWT:<br><br>[1] Header… <a href="https://t.co/gwbX8UJU7l">pic.twitter.com/gwbX8UJU7l</a></p>&mdash; Saurabh Dashora (@ProgressiveCod2) <a href="https://twitter.com/ProgressiveCod2/status/1734893719290319143?ref_src=twsrc%5Etfw">December 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Documentación
 
