@@ -8,23 +8,24 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Clone localmente los repositorios **rest_api** y **security**.
-* Abra los proyectos en un espacio de trabajo de VSCode
-* Levante el servidor para cada aplicación.
+* Clone localmente tu repositorio **security**.
+* Abra el proyecto en VSCode y levante el servidor.
 
-### Actividades
-
-#### Security
-
-##### Token Secret
+#### Dependencias Locales
 
 Desde la línea de comandos
 
-* Instale el módulo **jsonwebtoken**, con:
+* Dentro de la carpeta del proyecto, instale los módulos: 
 
   ```command
-  npm install --save jsonwebtoken
+  npm install --save jsonwebtoken swagger-autogen swagger-ui-express
   ```
+
+### Actividades
+
+#### TOKEN SECRET
+
+Desde la línea de comandos
 
 * Acceda a la interfaz de **nodeJS**, con:
   
@@ -47,7 +48,7 @@ Desde la línea de comandos
   TOKEN_SECRET=...26e402586e2faa8da4c98a35f1b20d6b033c60...
   ```
 
-##### users.js - POST
+#### users.js - POST
 
 * Agregue el módulo **jsonwebtoken**.
 
@@ -88,7 +89,7 @@ Desde la línea de comandos
 		/* Genera el token con los datos encriptados */
 		const accessToken = jwt.sign({ name: user.name, role: roles.name }, process.env.TOKEN_SECRET);
 
-		res.send({ accessToken });
+		res.json({ accessToken });
 
 		} catch (error) {
 			res.status(400).send(error)
@@ -99,22 +100,7 @@ Desde la línea de comandos
 	module.exports = router;
   ```
 
-##### users.js - GET
 
-* Descargue el archivo [register.ejs](recursos/register.ejs) y coloque el archivo dentro la carpeta `views`
-
-* Modifique el controlador para el verbo HTTP `GET` con la ruta `/` 
-
-  ```typescript
-  router.get('/', async function(req, res, next) {
-  });
-  ```
-
-* Ejecute el servidor, con:
-
-  ```
-  npm start
-  ```
 
 * Compruebe el registro de los datos mediante el URL: `http://localhost:3002/users`
 
@@ -129,10 +115,6 @@ Desde la línea de comandos
   ```
 
 ### Fundamental
-
-* Métodos de autenticación en [X](https://twitter.com/alexxubyte/status/1737151765097951544)
-
-<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Authentication in REST APIs acts as the crucial gateway, ensuring that solely authorized users or applications gain access to the API&#39;s resources.<br><br>Some popular authentication methods for REST APIs include:<br><br>1. Basic Authentication: <br>Involves sending a username and password with… <a href="https://t.co/Y4CKqZUhBF">pic.twitter.com/Y4CKqZUhBF</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1737151765097951544?ref_src=twsrc%5Etfw">December 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 * Estructura de JSON Web Tokens (JWT) en [X](https://twitter.com/ProgressiveCod2/status/1734893719290319143)
 
@@ -150,6 +132,5 @@ middleware, autenticación, autorización, JSON Web Tokens
 ### Referencias
 
 * JWT.IO. (2023). Retrieved 21 August 2023, from https://jwt.io/
-* Authentication and Authorization with JWTs in Express.js. (2020). Retrieved 21 August 2023, from https://stackabuse.com/authentication-and-authorization-with-jwts-in-express-js/
 * How To Use JSON Web Tokens (JWTs) in Express.js DigitalOcean. (2023). Retrieved 21 August 2023, from https://www.digitalocean.com/community/tutorials/nodejs-jwt-expressjs
 * Concepts, C., & Basics, M. (2023). Model Querying - Basics Sequelize. Retrieved 21 August 2023, from https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#operators
