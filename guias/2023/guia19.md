@@ -24,7 +24,7 @@ Desde la línea de comandos
 * Dentro de la carpeta del proyecto, instale los módulos: 
 
   ```
-  npm install --save sequelize mysql2 dotenv swagger-autogen swagger-ui-express
+  npm install --save sequelize mysql2 dotenv
   ```
 
 * Genere los archivos de configuración de Sequelize, con: `sequelize init`
@@ -37,7 +37,6 @@ Desde la línea de comandos
 * Modifique el archivo `config/config.json`, en el ambiente **development**, con los datos de conexión con el motor de bases de datos.
 
 ### Actividades
-
 
 #### SALT
 
