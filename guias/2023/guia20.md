@@ -100,26 +100,93 @@ Desde la línea de comandos
 	module.exports = router;
   ```
 
+#### Swagger
 
+* En la raíz del proyecto, cree el archivo **swagger.js**. En la variable **endpointsFiles** coloque las rutas a los controladores de los modelos.
 
-* Compruebe el registro de los datos mediante el URL: `http://localhost:3002/users`
+  ```typescript
+  const swaggerAutogen = require('swagger-autogen')()
 
-* Versiona local y remotamente el repositorio **security**.
+  const outputFile = './swagger_output.json'
+  const endpointsFiles = ['./routes/users.js']
 
-#### REST API
+  swaggerAutogen(outputFile, endpointsFiles)
+  ```
 
-* Instale el módulo **jsonwebtoken**, con:
+* Modifique el archivo **package.json** y agregue la entrada _swagger-autogen_.
+
+  ```typescript
+  ...
+  "scripts": {
+    ...
+    "swagger-autogen": "node swagger.js"
+    ...
+  },
+  ...
+  ```
+
+* Desde la línea de comandos, ejecute el comando:
 
   ```command
-  npm install --save jsonwebtoken
+  npm run swagger-autogen
   ```
+
+* En el archivo **swagger_ouput.json**, modifique el puerto (**3002**) y las URLs de cada endpoint (clave _paths_) de acuerdo con las rutas en la aplicación:
+
+  ```typescript
+    "host": "localhost:3002",
+    ...
+    "paths": {
+      "/users": {
+    		...
+      },
+      "/users/register": {
+        ...
+      },
+      "/users/generateToken": {
+        ...
+      }
+    }
+    ...
+  ```
+
+* Modifique el archivo generado **app.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
+
+
+  ```typescript
+  ...
+  /* REFERENCIA AL MÓDULO */
+  const swaggerUi = require('swagger-ui-express')
+
+  /* REFERENCIA AL ARCHIVO GENERADO */
+  const swaggerFile = require('./swagger_output.json')
+  ...
+
+  const app = express();
+
+  ...
+  app.use('/users', usersRouter);
+
+  /* CONFIGURACIÓN DE LA RUTA A LA DOCUMENTACIÓN */
+  app.use('/documentation', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+  ...
+  ```
+
+* Ejecute el servidor, con:
+
+  ```command
+  npm start
+  ```
+
+* Compruebe el _endpoint_ para generar el token [http://localhost:3002/documentation/#/default/post_users_generateToken](http://localhost:3002/documentation/#/default/post_users_generateToken) a partir de las credenciales de acceso.
+
+* Versiona local y remotamente el repositorio **security**.
 
 ### Fundamental
 
 * Estructura de JSON Web Tokens (JWT) en [X](https://twitter.com/ProgressiveCod2/status/1734893719290319143)
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">What&#39;s the most scalable solution to authentication?<br><br>JSON Web Tokens or JWT.<br><br>A single JWT can contain all the required information about an entity, making it an ideal candidate for authentication.<br><br>There are 3 main components of a JWT.<br><br>Here&#39;s the structure of JWT:<br><br>[1] Header… <a href="https://t.co/gwbX8UJU7l">pic.twitter.com/gwbX8UJU7l</a></p>&mdash; Saurabh Dashora (@ProgressiveCod2) <a href="https://twitter.com/ProgressiveCod2/status/1734893719290319143?ref_src=twsrc%5Etfw">December 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 
 ### Documentación
 
