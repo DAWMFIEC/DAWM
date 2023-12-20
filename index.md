@@ -39,8 +39,11 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 06: REST API - Express](proyectos/2023/proyecto06)
   * [Guía 17: Express - REST API](guias/2023/guia17)
   * [Guía 18: Express - Swagger](guias/2023/guia18)
-  * [Guía 19: Express - API - Seguridad](guias/2023/guia19)
-  * [Guía 20: Express - JWT](guias/2023/guia20)
+  * [Guía 19: Express - API de Seguridad - Encriptación de contraseña](guias/2023/guia19)
+  * [Guía 20: Express - API de Seguridad - JWT](guias/2023/guia20)
+  * [Guía 21: Express - API de Seguridad - Cookies](guias/2023/guia21)
+  * [Guía 22: Express - API de Seguridad - Autenticación-Autorización](guias/2023/guia22)
+  * [Guía 23: Express - API de Seguridad - Railway](guias/2023/guia23)
 * [Proyecto 07: AppMóvil - Angular y Ionic](proyectos/2023/proyecto07)
 
 ### Anteriores
