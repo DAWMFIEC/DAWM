@@ -76,20 +76,20 @@ Desde la línea de comandos
 
 		try {
 
-		// Encripte la contraseña
-		let salt = process.env.SALT
-		let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
-		let passwordHash = salt + "$" + hash
+  		// Encripte la contraseña
+  		let salt = process.env.SALT
+  		let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
+  		let passwordHash = salt + "$" + hash
 
-		/* Obtenga el usuario y su rol */
-		let user = await Users.findOne({ where: { [Op.and]: [ { name: name }, { password: passwordHash } ] } })
-		let relations = await UsersRoles.findOne({ where: { [Op.and]: [ { users_iduser: user.iduser } ] } });
-		let roles = await Roles.findOne({ where: { [Op.and]: [ { idrole: relations.roles_idrole } ] } });
+  		/* Obtenga el usuario y su rol */
+  		let user = await Users.findOne({ where: { [Op.and]: [ { name: name }, { password: passwordHash } ] } })
+  		let relations = await UsersRoles.findOne({ where: { [Op.and]: [ { users_iduser: user.iduser } ] } });
+  		let roles = await Roles.findOne({ where: { [Op.and]: [ { idrole: relations.roles_idrole } ] } });
 
-		/* Genera el token con los datos encriptados */
-		const accessToken = jwt.sign({ name: user.name, role: roles.name }, process.env.TOKEN_SECRET);
+  		/* Genera el token con los datos encriptados */
+  		const accessToken = jwt.sign({ name: user.name, role: roles.name }, process.env.TOKEN_SECRET);
 
-		res.json({ accessToken });
+  		res.json({ accessToken });
 
 		} catch (error) {
 			res.status(400).send(error)
