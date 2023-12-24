@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 
       const accessToken = jwt.sign({ name: user.name, role: roles.name }, process.env.TOKEN_SECRET);
 
-      /* Tiempo de expiración de la cookie: 30 milisegundos */
+      /* Tiempo de expiración de la cookie: 30 segundos */
       const options = {
         expires: new Date(
           Date.now() + 30 * 1000
@@ -45,7 +45,7 @@ theme: jekyll-theme-leap-day
       /* En caso de error, elimina la cookie */
       res.clearCookie('jwt-token')
 
-      /* Tiempo de expiración de la cookie: 10 milisegundos */
+      /* Tiempo de expiración de la cookie: 10 segundos */
       const options = {
         expires: new Date(
           Date.now() + 10 * 1000
@@ -81,7 +81,7 @@ theme: jekyll-theme-leap-day
     let token = req.cookies['jwt-token']
     let error = req.cookies['error']
 
-    /* Renderiza el contenido de las cookies en la visata */
+    /* Renderiza el contenido de las cookies en la vista */
     res.render('gettoken', { title: 'User Login', token: token, error: error });
 
   });
