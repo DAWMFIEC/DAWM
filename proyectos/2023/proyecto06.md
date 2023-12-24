@@ -30,5 +30,5 @@ La respuesta es:
 * [Guía 19: Express - API de Seguridad - Encriptación de contraseña](/DAWM/guias/2023/guia19)
 * [Guía 20: Express - API de Seguridad - JWT](/DAWM/guias/2023/guia20)
 * [Guía 21: Express - API de Seguridad - Cookies](/DAWM/guias/2023/guia21)
-* [Guía 22: Express - API de Seguridad - Autenticación-Autorización](/DAWM/guias/2023/guia22)
-* [Guía 23: Express - API de Seguridad - Railway](/DAWM/guias/2023/guia23)
+* [Guía 22: Express - API de Datos y de Seguridad - Autenticación-Autorización](/DAWM/guias/2023/guia22)
+* [Guía 23: Express - API de Datos y de Seguridad - Railway](/DAWM/guias/2023/guia23)
