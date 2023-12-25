@@ -87,7 +87,7 @@ theme: jekyll-theme-leap-day
   ```typescript
   ...
 
-  router.get('/getToken', async function (req, res, next) {
+  router.get('/getToken', function (req, res, next) {
   
     /* Lee las cookies "jwt-token" y "error" */
     let token = req.cookies['jwt-token']
