@@ -42,7 +42,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 19: Express - API de Seguridad - Encriptación de contraseña](guias/2023/guia19)
   * [Guía 20: Express - API de Seguridad - JWT](guias/2023/guia20)
   * [Guía 21: Express - API de Seguridad - Cookies](guias/2023/guia21)
-  * [Guía 22: Express - API de Datos - Autenticación y Autorización](guias/2023/guia22)
+  * [Guía 22: Express - API de Datos y de Seguridad - Autenticación y Autorización](guias/2023/guia22)
   * [Guía 23: Express - API de Datos y de Seguridad - Railway](guias/2023/guia23)
 * [Proyecto 07: AppMóvil - Angular y Ionic](proyectos/2023/proyecto07)
 

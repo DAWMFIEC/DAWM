@@ -8,8 +8,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Clone localmente tu repositorio **rest_api**.
-* Abra el proyecto en VSCode y levante el servidor.
+* Clone localmente los repositorios **rest_api** y **security**.
+* Abra los proyectos en VSCode y levante los servidores.
 
 #### Dependencias Locales
 
@@ -23,10 +23,11 @@ theme: jekyll-theme-leap-day
 
 #### TOKEN SECRET
 
-* En la raíz del proyecto, cree el archivo `.env`. Agregue las variables **PORT** y **TOKEN_SECRET**. Para el valor de  **TOKEN_SECRET**, copie la secuencia de datos aleatorios generados en el proyecto _security_.
+* En la raíz del proyecto, cree el archivo `.env`. Agregue las variables **PORT**, **ADMIN** y **TOKEN_SECRET**. Para el valor de  **TOKEN_SECRET**, copie la secuencia de datos aleatorios generados en el proyecto _security_.
 
   ```
   PORT=3002
+  ADMIN=admin
   TOKEN_SECRET=...8uUYwT...
   ```
 
