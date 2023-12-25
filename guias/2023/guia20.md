@@ -67,7 +67,7 @@ Desde la línea de comandos
 * Agregue el controlador para el verbo HTTP `POST` con la ruta `/generateToken`
 
   ```typescript
-    ...
+  ...
 
 	router.post('/generateToken', async (req, res,next) => {
 
