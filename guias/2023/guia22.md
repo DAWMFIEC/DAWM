@@ -13,8 +13,7 @@ theme: jekyll-theme-leap-day
 * Clone localmente el repositorio **security**.
 * Abra el proyecto en VSCode y levante el servidor.
 * Acceda a [http://localhost:3002/users/getToken](http://localhost:3002/users/getToken)
-  * Utilice las credenciales para dos usuarios con los roles **user** y **admin** 
-  * Genere los jwt tokens para cada usuario
+  * Genere un par de jwt tokens. Uno para cada usuario con un rol diferente (**user** y **admin**). 
 
 #### Dependencias Locales
 
@@ -139,20 +138,19 @@ theme: jekyll-theme-leap-day
   ```
 
 * Ejecute el servidor, con `npm start`
+* Acceda a `http://localhost:3000/documentation`
 
 #### Validación de autenticación
 
 * **Prueba 1:**
-  1. Acceda a `http://localhost:3000/documentation`
-  2. Realice un requerimiento a la ruta `/suppliers/findAll`
-  3. Compruebe la salida **403 - Error: Forbidden**
+  1. Realice un requerimiento a la ruta `/suppliers/findAll`
+  2. Compruebe la salida **403 - Error: Forbidden**
 
 * **Prueba 2:**
-  1. Acceda a `http://localhost:3000/documentation`
-  2. Con el botón **Authorize**, acceda la ventana **Available authorizations**
-  3. Agregue valor del jwt token: `Bearer eyJhbG...`
-  4. Realice un requerimiento a la ruta `/suppliers/findAll`
-  5. Compruebe la salida **200 - OK** con el arreglo de los datos.
+  1. Con el botón **Authorize**, acceda la ventana **Available authorizations**
+  2. Agregue valor del jwt token: `Bearer eyJhbG...`
+  3. Realice un requerimiento a la ruta `/suppliers/findAll`
+  4. Compruebe la salida **200 - OK** con el arreglo de los datos.
 
 #### Autorización
 
@@ -176,22 +174,21 @@ theme: jekyll-theme-leap-day
   ```
 
 * Ejecute el servidor, con `npm start`
+* Acceda a `http://localhost:3000/documentation`
 
 #### Validación de autorización
 
 * **Prueba 1:**
-  1. Acceda a `http://localhost:3000/documentation`
-  2. Con el botón **Authorize**, acceda la ventana **Available authorizations**
-  3. Utilice el jwt token de un usuario con el rol **user**: `Bearer eyJhbG...`
-  4. Realice un requerimiento a la ruta `/suppliers/findAll`
-  5. Compruebe la salida **401 - Error: Unauthorized**
+  1. Con el botón **Authorize**, acceda la ventana **Available authorizations**
+  2. Utilice el jwt token de un usuario con el rol **user**: `Bearer eyJhbG...`
+  3. Realice un requerimiento a la ruta `/suppliers/findAll`
+  4. Compruebe la salida **401 - Error: Unauthorized**
 
 * **Prueba 2:**
-  1. Acceda a `http://localhost:3000/documentation`
-  2. Con el botón **Authorize**, acceda la ventana **Available authorizations**
-  3. Utilice el jwt token de un usuario con el rol **admin**: `Bearer eyJhbG...`
-  4. Realice un requerimiento a la ruta `/suppliers/findAll`
-  5. Compruebe la salida **200 - OK** con el arreglo de los datos.
+  1. Con el botón **Authorize**, acceda la ventana **Available authorizations**
+  2. Utilice el jwt token de un usuario con el rol **admin**: `Bearer eyJhbG...`
+  3. Realice un requerimiento a la ruta `/suppliers/findAll`
+  4. Compruebe la salida **200 - OK** con el arreglo de los datos.
 
 * Versiona local y remotamente los repositorios **rest_api** y **security**.
 
