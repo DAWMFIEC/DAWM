@@ -120,9 +120,10 @@ theme: jekyll-theme-leap-day
 	import { AboutComponent } from './pages/about/about.component';
 
 	export const routes: Routes = [
-	    { path: '', component: IndexComponent },
+		  { path: '', redirectTo: 'home', pathMatch: 'full' },
+	    { path: 'home', component: IndexComponent },
 	    { path: 'about', component: AboutComponent },
-	    { path: '**', redirectTo: ''}
+	    { path: '**', component: IndexComponent }
 	];
 	```
 
@@ -165,7 +166,7 @@ theme: jekyll-theme-leap-day
 
     ```html
     ...
-	 <a routerLink="/" class="nav-item nav-link">Home</a>
+	 <a routerLink="/home" class="nav-item nav-link">Home</a>
 	 <a routerLink="/about" class="nav-item nav-link">About</a>
 	...
     ```
@@ -202,3 +203,4 @@ Componentes, ruteo
 * Introduction to Angular Components and How to Implement It? (20202) https://www.simplilearn.com/tutorials/angular-tutorial/angular-components
 * Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
 * Angular. (n.d.). Retrieved from https://angular.dev/guide/routing/common-router-tasks#lazy-loading
+* Hooda, P. (2023). Wildcard Routes in Angular. Retrieved from https://medium.com/@parikshithooda/wildcard-routes-in-angular-15947e0668e7
