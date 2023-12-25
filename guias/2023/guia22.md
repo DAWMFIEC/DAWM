@@ -12,7 +12,9 @@ theme: jekyll-theme-leap-day
 
 * Clone localmente el repositorio **security**.
 * Abra el proyecto en VSCode y levante el servidor.
-* Utilice las credenciales para los usuarios con los roles **user** y **admin** para generar los tokens en [http://localhost:3002/users/getToken](http://localhost:3002/users/getToken).
+* Acceda a [http://localhost:3002/users/getToken](http://localhost:3002/users/getToken)
+  * Utilice las credenciales para dos usuarios con los roles **user** y **admin** 
+  * Genere los jwt tokens para cada usuario
 
 #### Dependencias Locales
 
@@ -167,7 +169,7 @@ theme: jekyll-theme-leap-day
         return res.sendStatus(401);
     }
 
-    Suppliers.findAll({ })  
+    Suppliers.findAll({ ... })  
     ...
   });
   ...
