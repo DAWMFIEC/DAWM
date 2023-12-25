@@ -11,17 +11,46 @@ theme: jekyll-theme-leap-day
 * Clone localmente tu repositorio **rest_api**.
 * Abra el proyecto en VSCode y levante el servidor.
 
-#### Express - Proyecto Base
+#### Dependencias Locales
 
-Desde la línea de comandos
-
-* Dentro de la carpeta del proyecto, instale los módulos: 
+* Instale los módulos **jsonwebtoken** y **dotenv** 
 
   ```command
   npm install --save jsonwebtoken dotenv
   ```
 
 ### Actividades
+
+#### TOKEN SECRET
+
+* En la raíz del proyecto, cree el archivo `.env`. Agregue las variables **PORT** y **TOKEN_SECRET**. Para el valor de  **TOKEN_SECRET**, copie la secuencia de datos aleatorios generados en el proyecto _security_.
+
+  ```
+  PORT=3002
+  TOKEN_SECRET=...8uUYwT...
+  ```
+
+* En el archivo `app.js`, agregue el módulo `dotenv` y cargue los datos de configuración.
+
+  ```text
+  var logger = require('morgan');
+  ...
+
+  /* MÓDULO dotenv */
+  const dotenv = require('dotenv');
+
+  /* CARGA DE DATOS DE CONFIGURACION EN MEMORIA */
+  dotenv.config();
+
+  ...
+  var indexRouter = ...
+
+  var app = express();
+  ```
+
+#### Autenticación
+
+#### Autorización
 
 * Versiona local y remotamente el repositorio **rest_api**.
 
