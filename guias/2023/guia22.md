@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 * Clone localmente el repositorio **security**.
 * Abra el proyecto en VSCode y levante el servidor.
-* Genere los tokens en [http://localhost:3002/users/getToken](http://localhost:3002/users/getToken) para los usuarios con los roles **user** y **admin**.
+* Utilice las credenciales para los usuarios con los roles **user** y **admin** para generar los tokens en [http://localhost:3002/users/getToken](http://localhost:3002/users/getToken).
 
 #### Dependencias Locales
 
@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
   npm install --save jsonwebtoken dotenv
   ```
 
-* Agregue al archivo `swagger_output.json` 
+* Edite el archivo `swagger_output.json` con las entradas **securityDefinitions** y **security**:
 
   ```typescript
   ...
@@ -62,7 +62,7 @@ theme: jekyll-theme-leap-day
 
 * En el archivo `app.js`, agregue el módulo `dotenv` y cargue los datos de configuración.
 
-  ```text
+  ```typescript
   var logger = require('morgan');
   ...
 
@@ -114,17 +114,62 @@ theme: jekyll-theme-leap-day
   module.exports = authenticateJWT;
   ```
 
-* Modifique el `app.js`, agregue la autenticación para la ruta `/suppliers`
+* Modifique el archivo `app.js`, obtenga la referencia al _middleware_ y la intercepción para la ruta `/suppliers`
 
   ```typescript
   ...
+
+  var suppliersRouter = ...;
+
+  /* Referencia al middleware */
+  var authJWT = require('./middleware/auth');
+  
+  const swaggerUi = ...
+
+  ...
   app.use('/users', ...);
 
-  /* USE LA FUNCIÓN authenticateJWT */
+  /* Agregue el middleware para la ruta '/suppliers' */
   app.use('/suppliers', authJWT, suppliersRouter);
 
-  /* CONFIGURACIÓN DE LA RUTA A LA DOCUMENTACIÓN */
   app.use('/documentation', ... )
+  ...
+  ```
+
+* Ejecute el servidor, con `npm start`
+
+#### Validación de autenticación
+
+* **Prueba 1:**
+  1. Acceda a `http://localhost:3000/documentation`
+  2. Realice un requerimiento a la ruta `/suppliers/findAll`
+  3. Compruebe la salida **403 - Error: Forbidden**
+
+* **Prueba 2:**
+  1. Acceda a `http://localhost:3000/documentation`
+  2. Con el botón **Authorize**, acceda la ventana **Available authorizations**
+  3. Agregue valor del jwt token: `Bearer eyJhbG...`
+  4. Realice un requerimiento a la ruta `/suppliers/findAll`
+  5. Compruebe la salida **200 - OK** con el arreglo de los datos.
+
+#### Autorización
+
+* Edite el archivo `routes/suppliers.js` para el controlador para el verbo HTTP `GET` con la ruta `/findAll` 
+
+  ```typescript
+  router.get('/findAll', function(req, res, next) {
+
+    /* Verificador de autorización */
+
+    const { role } = req.user;
+
+    if (role !== process.env.ADMIN) {
+        return res.sendStatus(401);
+    }
+
+    Suppliers.findAll({ })  
+    ...
+  });
   ...
   ```
 
@@ -134,17 +179,17 @@ theme: jekyll-theme-leap-day
 
 * **Prueba 1:**
   1. Acceda a `http://localhost:3000/documentation`
-  2. Realice un requerimiento a la ruta `/suppliers/findAll`
-  3. Compruebe la salida **403 - Error: Forbidden**
+  2. Con el botón **Authorize**, acceda la ventana **Available authorizations**
+  3. Utilice el jwt token de un usuario con el rol **user**: `Bearer eyJhbG...`
+  4. Realice un requerimiento a la ruta `/suppliers/findAll`
+  5. Compruebe la salida **401 - Error: Unauthorized**
 
 * **Prueba 2:**
   1. Acceda a `http://localhost:3000/documentation`
-  2. Solicite la autorización con el botón **Authorize**
-  3. En la ventana **Available authorizations**, coloque el valor del jwt token: `Bearer eyJhbG...`
+  2. Con el botón **Authorize**, acceda la ventana **Available authorizations**
+  3. Utilice el jwt token de un usuario con el rol **admin**: `Bearer eyJhbG...`
   4. Realice un requerimiento a la ruta `/suppliers/findAll`
   5. Compruebe la salida **200 - OK** con el arreglo de los datos.
-
-#### Autorización
 
 * Versiona local y remotamente los repositorios **rest_api** y **security**.
 
