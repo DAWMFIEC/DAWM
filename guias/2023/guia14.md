@@ -122,6 +122,7 @@ theme: jekyll-theme-leap-day
 	export const routes: Routes = [
 	    { path: '', component: IndexComponent },
 	    { path: 'about', component: AboutComponent },
+	    { path: '**', redirectTo: ''}
 	];
 	```
 
