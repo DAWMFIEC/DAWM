@@ -110,6 +110,20 @@ theme: jekyll-theme-leap-day
 * En la componente/página Index `index.component.html` reemplace el contenido por las etiquetas HTML extraídas.
 * Reinicie el servidor y revise los cambios en el navegador.
 
+#### HashLocationStrategy
+
+* En el archivo `app.config.ts`, importe el **withHashLocation** y agréguelo en el _provider_.
+
+	```typescript
+	...
+	import { provideRouter, withHashLocation } from '@angular/router';
+	...
+
+	export const appConfig: ApplicationConfig = {
+	  providers: [provideRouter(routes,   withHashLocation()   )]
+	};
+	```
+
 #### Ruteo
 
 * En el archivo de rutas de la aplicación `app.routes.ts`, importe los componentes/páginas y registre las rutas
@@ -120,10 +134,9 @@ theme: jekyll-theme-leap-day
 	import { AboutComponent } from './pages/about/about.component';
 
 	export const routes: Routes = [
-		  { path: '', redirectTo: 'home', pathMatch: 'full' },
-	    { path: 'home', component: IndexComponent },
+		  { path: '', component: IndexComponent },
 	    { path: 'about', component: AboutComponent },
-	    { path: '**', component: IndexComponent }
+	    { path: '**', redirectTo: '' }
 	];
 	```
 
@@ -166,7 +179,7 @@ theme: jekyll-theme-leap-day
 
     ```html
     ...
-	 <a routerLink="/home" class="nav-item nav-link">Home</a>
+	 <a routerLink="/" class="nav-item nav-link">Home</a>
 	 <a routerLink="/about" class="nav-item nav-link">About</a>
 	...
     ```
@@ -204,3 +217,4 @@ Componentes, ruteo
 * Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
 * Angular. (n.d.). Retrieved from https://angular.dev/guide/routing/common-router-tasks#lazy-loading
 * Hooda, P. (2023). Wildcard Routes in Angular. Retrieved from https://medium.com/@parikshithooda/wildcard-routes-in-angular-15947e0668e7
+* Moraites, A. (2019). Angular Location Strategies. Retrieved from https://medium.com/@achillesmoraites/angular-location-strategies-df20f3311101
