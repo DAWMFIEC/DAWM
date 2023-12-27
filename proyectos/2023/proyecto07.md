@@ -17,7 +17,7 @@ El desarrollo de una aplicación móvil exitosa requiere una cuidadosa considera
 Para el prompt: 
 
 ```
-Como desarrollador de aplicaciones móviles, explicas los pasos del proceso para crear una aplicación móvil.
+Como desarrollador de aplicaciones móviles, explica los pasos del proceso para crear una aplicación móvil.
 ```
 La respuesta es:
 
