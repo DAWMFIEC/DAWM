@@ -10,12 +10,7 @@ theme: jekyll-theme-leap-day
 
 ### Antecedentes
 
-El desarrollo de una aplicación móvil exitosa requiere una cuidadosa consideración de diversos antecedentes para asegurar su viabilidad y relevancia en el mercado actual. Antes de comenzar, es esencial tener en cuenta los siguientes factores clave:
-
-1. Análisis de Mercado. Comprender el mercado objetivo al identificar necesidades no satisfechas, evaluar la competencia y definir el posicionamiento único de la aplicación. La investigación de usuarios proporciona información valiosa sobre sus preferencias, comportamientos y desafíos, lo que permite diseñar una experiencia de usuario (UX) altamente efectiva.
-2. Plataforma y Dispositivos Compatibles. Asegurarse de que la aplicación sea compatible con una variedad de tamaños de pantalla y versiones de sistema operativo garantiza una mayor accesibilidad.
-3. Desarrollo Ágil y Pruebas Rigurosas. Adoptar metodologías de desarrollo ágil permite una adaptación más rápida a los cambios y comentarios del usuario para identificar y corregir errores antes del lanzamiento. 
-4. Soporte Continuo y Actualizaciones. Garantizar un soporte continuo, recibir comentarios de los usuarios y realizar actualizaciones periódicas son elementos cruciales para mantener la relevancia y la calidad a lo largo del tiempo
+El desarrollo de una aplicación móvil exitosa requiere una cuidadosa consideración de diversos antecedentes para asegurar su viabilidad y relevancia en el mercado actual. Antes de comenzar, es esencial tener en cuenta los siguientes factores clave: análisis de Mercado, plataforma y dispositivos Compatibles, desarrollo ágil y pruebas rigurosas y soporte continuo y actualizaciones.
 
 ### ChatGPT
 
