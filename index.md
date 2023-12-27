@@ -45,6 +45,11 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 22: Express - API de Datos y de Seguridad - Autenticación y Autorización](guias/2023/guia22)
   * [Guía 23: Express - API de Datos y de Seguridad - Railway](guias/2023/guia23)
 * [Proyecto 07: AppMóvil - Angular y Ionic](proyectos/2023/proyecto07)
+  * [Guía 24: Ionic - Introducción y Componentes](guias/2023/guia24)
+  * [Guía 25: Ionic](guias/2023/guia25)
+  * [Guía 26: Ionic](guias/2023/guia26)
+  * [Guía 27: Ionic](guias/2023/guia27)
+  * [Guía 28: Ionic](guias/2023/guia28)
 
 ### Anteriores
 
