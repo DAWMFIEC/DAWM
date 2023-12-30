@@ -12,6 +12,7 @@ theme: jekyll-theme-leap-day
 
 * Clone localmente el repositorio **security**.
 * Abra el proyecto en VSCode y levante el servidor.
+* Del archivo **.env**, copie la variable **TOKEN_SECRET** y su valor. 
 * Acceda a [http://localhost:3002/users/getToken](http://localhost:3002/users/getToken)
   * Genere un par de jwt tokens. Uno para cada usuario con un rol diferente (**user** y **admin**). 
 
@@ -53,7 +54,7 @@ theme: jekyll-theme-leap-day
 
 #### TOKEN SECRET
 
-* En la raíz del proyecto, cree el archivo `.env`. Agregue las variables **PORT**, **ADMIN** y **TOKEN_SECRET**. Para el valor de  **TOKEN_SECRET**, copie la secuencia de datos aleatorios generados en el proyecto _security_.
+* En la raíz del proyecto, cree el archivo `.env`. Agregue las variables **PORT**, **ADMIN** y **TOKEN_SECRET**. Para la variable **TOKEN_SECRET** y su valor, utilice el dato del proyecto _security_.
 
   ```
   PORT=3002
