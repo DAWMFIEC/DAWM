@@ -28,6 +28,61 @@ theme: jekyll-theme-leap-day
   ionic g service services/photo
   ```
 
+* Agregue al servicio
+
+  ```typescript
+  ...
+  import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
+  import { Filesystem, Directory } from '@capacitor/filesystem';
+  import { Preferences } from '@capacitor/preferences';
+  ...
+
+
+  public async addNewToGallery() {
+	// Take a photo
+	const capturedPhoto = await Camera.getPhoto({
+	  resultType: CameraResultType.Uri,
+	  source: CameraSource.Camera,
+	  quality: 100
+	});
+  }
+  ```
+
+* Edite el archivo `tab2/tab2.page.ts`, con:
+
+  ```typescript
+  ...
+
+  //Importe el servicio
+  import { PhotoService } from '../services/photo.service';
+  ...
+  
+  export class Tab2Page {
+
+  	//Inyecte la dependencia del servicio
+	constructor(public photoService: PhotoService) {}
+
+	//Método a invocar
+	addPhotoToGallery() {
+	    this.photoService.addNewToGallery();
+	}
+
+  }
+  ```
+
+* Edite el archivo `tab2/tab2.page.html`, con:
+
+  ```html
+  ...
+  <ion-content>
+	<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+		<ion-fab-button (click)="addPhotoToGallery()">
+		  <ion-icon name="camera"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
+  </ion-content>
+  ```
+
 * Versiona local y remotamente el repositorio **hybrid**.
 
 ### Fundamental
