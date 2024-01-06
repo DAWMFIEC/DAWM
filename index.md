@@ -47,9 +47,9 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 07: AppMóvil - Angular y Ionic](proyectos/2023/proyecto07)
   * [Guía 24: Ionic - Introducción](guias/2023/guia24)
   * [Guía 25: Ionic - Componentes](guias/2023/guia25)
-  * [Guía 26: Ionic](guias/2023/guia26)
-  * [Guía 27: Ionic](guias/2023/guia27)
-  * [Guía 28: Ionic](guias/2023/guia28)
+  * [Guía 26: Ionic - Interacción con Firebase](guias/2023/guia26)
+  * [Guía 27: Ionic - Funcionalidad nativa](guias/2023/guia27)
+  * [Guía 28: Ionic - Generación del apk](guias/2023/guia28)
 
 ### Anteriores
 
