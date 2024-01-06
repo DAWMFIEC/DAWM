@@ -8,8 +8,6 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-
-
 ### Actividades
 
 * Clone localmente tu repositorio **hybrid**.
@@ -184,3 +182,4 @@ theme: jekyll-theme-leap-day
 ### Referencias
 
 * Ionicframework. (n.d.). Your First Ionic App: Angular: Ionic Documentation. Retrieved from https://ionicframework.com/docs/angular/your-first-app
+* Ionicframework. (n.d.). Taking Photos with the Camera: Ionic Documentation. Retrieved from https://ionicframework.com/docs/angular/your-first-app/taking-photos
