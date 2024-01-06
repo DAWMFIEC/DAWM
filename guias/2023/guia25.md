@@ -21,7 +21,7 @@ theme: jekyll-theme-leap-day
 * Clone localmente tu repositorio **hybrid**.
 * Abra el proyecto en VSCode y levante el servidor.
 
-#### Acerca de
+#### Tab Panel
 
 * En [Ionicons](https://ionic.io/ionicons), seleccione el ícono para la página, p.e.: `people` de tipo `filled`
 
@@ -39,6 +39,8 @@ theme: jekyll-theme-leap-day
     ...
 
     constructor() {
+
+      //Iconos a utilizar
       addIcons({ ... , peopleCircle });
     }
   }
@@ -51,6 +53,7 @@ theme: jekyll-theme-leap-day
   	<ion-tab-bar slot="bottom">
   		...
 
+  		<!-- Ícono y nombre del tab -->
 	    <ion-tab-button tab="tab3" href="/tabs/tab3">
 	      <ion-icon name="people-circle"></ion-icon>
 	      <ion-label>Acerca de</ion-label>
@@ -60,9 +63,84 @@ theme: jekyll-theme-leap-day
   </ion-tabs>
   ```
 
+* Revise los cambios en el navegador
+
+#### Acerca de
+
+* Revise la documentación del componente [IonCard](https://ionicframework.com/docs/api/card).
+
+* Edite el archivo `tab3/tab3.page.ts`, con:
+  
+  ```typescript
+  ...
+
+  //Importe los componentes
+  import { 
+  	...  
+    IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
+    ... 
+  } from '@ionic/angular/standalone';
+
+  @Component({
+	  ...
+	  imports: [
+	    ... 
+	    //Registre los componentes
+	    IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
+	    ...],
+  })
+  export class Tab3Page {
+	  constructor() {}
+  }
+  ```
+
+* Edite el archivo `tab3/tab3.page.html`, con:
+
+  ```html
+  ...
+
+  <!-- Padding en sus cuatro lados -->
+  <ion-content [fullscreen]="true" class="ion-padding">
+
+	  <ion-card>
+	    <ion-card-header>
+	      <ion-card-title class="titulo">Mi aplicación</ion-card-title>
+	    </ion-card-header>
+	  
+	    <ion-card-content>
+	      <p id="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+	        Sed nesciunt officia est sapiente quidem accusantium, veritatis perferendis 
+	        expedita, ad magni temporibus totam eligendi quod nemo sit eveniet, odit 
+	        inventore aspernatur!</p>
+	    </ion-card-content>
+	  </ion-card>
+
+  </ion-content>
+  ```
+
+* Edite el archivo `tab3/tab3.page.scss`, con:
+
+  ```css
+  .titulo {
+  	color: var(--ion-color-primary);
+	font-weight: bold;
+	text-align: center;
+  }
+
+  p#descripcion {
+  	text-align: justify;
+  }
+  ```
+
+* Revise los cambios en el navegador
+
 * Versiona local y remotamente el repositorio **hybrid**.
 
 ### Fundamental
+
+* Estructura de componentes de Ionic en [X](https://twitter.com/93alan/status/1512587338962116611)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">This is why I love <a href="https://twitter.com/Ionicframework?ref_src=twsrc%5Etfw">@Ionicframework</a>. We can build essentially any UI, sometimes even like this iOS Twitter settings screen with UI Components out of the box. 👨🏼‍🔧<br><br>Everything you see here is from Ionic, <a href="https://twitter.com/ionicons?ref_src=twsrc%5Etfw">@ionicons</a> and styled using Ionic&#39;s theme application colors. <a href="https://t.co/ZocsDvBShH">pic.twitter.com/ZocsDvBShH</a></p>&mdash; Alan Montgomery (@93alan) <a href="https://twitter.com/93alan/status/1512587338962116611?ref_src=twsrc%5Etfw">April 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Documentación
 
