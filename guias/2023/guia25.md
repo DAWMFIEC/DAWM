@@ -123,7 +123,7 @@ theme: jekyll-theme-leap-day
 	        Sed nesciunt officia est sapiente quidem accusantium, veritatis perferendis 
 	        expedita, ad magni temporibus totam eligendi quod nemo sit eveniet, odit 
 	        inventore aspernatur!</p>
-          
+
 	    </ion-card-content>
 	  </ion-card>
 
@@ -135,8 +135,8 @@ theme: jekyll-theme-leap-day
   ```css
   .titulo {
   	color: var(--ion-color-primary);
-	font-weight: bold;
-	text-align: center;
+      font-weight: bold;
+      text-align: center;
   }
 
   p#descripcion {
