@@ -23,7 +23,42 @@ theme: jekyll-theme-leap-day
 
 #### Acerca de
 
-* 
+* En [Ionicons](https://ionic.io/ionicons), seleccione el ícono para la página, p.e.: `people` de tipo `filled`
+
+* Edite el archivo `tabs/tabs.page.ts`, con:
+
+  ```typescript
+  ...
+
+  //Importe la referencia al ícono peopleCircle
+  import { ... , peopleCircle } from 'ionicons/icons';
+
+  ...
+
+  export class TabsPage {
+    ...
+
+    constructor() {
+      addIcons({ ... , peopleCircle });
+    }
+  }
+  ```
+
+* Edite el archivo `tabs/tabs.page.html`, con:
+
+  ```html
+  <ion-tabs>
+  	<ion-tab-bar slot="bottom">
+  		...
+
+	    <ion-tab-button tab="tab3" href="/tabs/tab3">
+	      <ion-icon name="people-circle"></ion-icon>
+	      <ion-label>Acerca de</ion-label>
+	    </ion-tab-button>
+
+	</ion-tab-bar>
+  </ion-tabs>
+  ```
 
 * Versiona local y remotamente el repositorio **hybrid**.
 
@@ -31,7 +66,12 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
+* Ionic Icons en la [página oficial](https://ionic.io/ionicons)
+* Ionic Components en la [página oficial](https://ionicframework.com/docs/components)
+
 ### Términos
+
+íconos, componentes
 
 ### Referencias
 
