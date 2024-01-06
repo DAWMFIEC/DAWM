@@ -8,19 +8,24 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+* Instale Android Studio desde su [página oficial](https://developer.android.com/studio).
+
 ### Actividades
 
 * Clone localmente tu repositorio **hybrid**.
 * Abra el proyecto en VSCode y levante el servidor.
 
-* Construya
+
+* Primero, creemos nuestra aplicación desde la línea de comandos para asegurarnos de que tenemos los recursos web más recientes en su proyecto nativo:
 
   ```command
-  ionic build
-  ionic cap add android
+  ionic cap build android --prod
   ```
 
-* Versiona local y remotamente el repositorio **hybrid**.
+* En **Android Studio**, genere el APK al hacer clic en la ruta `Build > Build Bundle(s) / APK(s) > Build APK`
+
+* Si la generación del APK resulta exitosa, transfiera el archivo generado `android/app/build/outputs/apk/debug/app-debug.apk` a su dispositivo móvil
+
 
 ### Fundamental
 
@@ -30,6 +35,8 @@ theme: jekyll-theme-leap-day
 * Ionic Components en la [página oficial](https://ionicframework.com/docs/components)
 
 ### Términos
+
+APK
 
 ### Referencias
 
