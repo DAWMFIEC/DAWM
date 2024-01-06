@@ -21,7 +21,7 @@ theme: jekyll-theme-leap-day
 * Clone localmente tu repositorio **hybrid**.
 * Abra el proyecto en VSCode y levante el servidor.
 
-#### Tab Panel
+#### IonTab
 
 * En [Ionicons](https://ionic.io/ionicons), seleccione el ícono para la página, p.e.: `people` de tipo `filled`
 
@@ -51,33 +51,37 @@ theme: jekyll-theme-leap-day
   ```html
   <ion-tabs>
   	<ion-tab-bar slot="bottom">
-  		...
+  		
+      ...
 
-  		<!-- Ícono y nombre del tab -->
+      <!-- Ícono y nombre del tab -->
 	    <ion-tab-button tab="tab3" href="/tabs/tab3">
-	      <ion-icon name="people-circle"></ion-icon>
-	      <ion-label>Acerca de</ion-label>
+	       <ion-icon name="people-circle"></ion-icon>
+	       <ion-label>Acerca de</ion-label>
 	    </ion-tab-button>
 
-	</ion-tab-bar>
+	  </ion-tab-bar>
   </ion-tabs>
   ```
 
 * Revise los cambios en el navegador
 
-#### Acerca de
+#### IonCard
 
-* Revise la documentación del componente [IonCard](https://ionicframework.com/docs/api/card).
+* Revise la documentación del componente [IonCard](https://ionicframework.com/docs/api/card), el [Layout - CSS Utilities](https://ionicframework.com/docs/layout/css-utilities#element-padding) y el [Theming - Colors](https://ionicframework.com/docs/theming/colors#adding-colors).
 
 * Edite el archivo `tab3/tab3.page.ts`, con:
   
   ```typescript
   ...
 
-  //Importe los componentes
+  
   import { 
   	...  
+
+    //Importe los componentes
     IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
+    
     ... 
   } from '@ionic/angular/standalone';
 
@@ -85,9 +89,11 @@ theme: jekyll-theme-leap-day
 	  ...
 	  imports: [
 	    ... 
+
 	    //Registre los componentes
 	    IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
-	    ...],
+	    
+      ...],
   })
   export class Tab3Page {
 	  constructor() {}
@@ -104,14 +110,20 @@ theme: jekyll-theme-leap-day
 
 	  <ion-card>
 	    <ion-card-header>
+
+        <!-- clase en la hoja de estilo -->
 	      <ion-card-title class="titulo">Mi aplicación</ion-card-title>
-	    </ion-card-header>
+	    
+      </ion-card-header>
 	  
 	    <ion-card-content>
-	      <p id="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+
+        <!-- identificador en la hoja de estilo -->
+        <p id="descripcion">Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
 	        Sed nesciunt officia est sapiente quidem accusantium, veritatis perferendis 
 	        expedita, ad magni temporibus totam eligendi quod nemo sit eveniet, odit 
 	        inventore aspernatur!</p>
+          
 	    </ion-card-content>
 	  </ion-card>
 
