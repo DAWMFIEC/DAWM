@@ -83,6 +83,93 @@ theme: jekyll-theme-leap-day
   </ion-content>
   ```
 
+* Cree la interfaz
+
+  ```command
+  ionic g interface interface/UserPhoto
+  ```
+
+* Modifique el archivo `interface/UserPhoto`
+
+  ```typescript
+  export interface UserPhoto {
+	filepath: string;
+	webviewPath?: string;
+  }
+  ```
+
+* Modifique el archivo `service/photo.service.ts`
+
+  ```typescript
+
+  ...
+  //Importe la interfaz
+  import { UserPhoto } from '../interface/user-photo';
+  
+  export class PhotoService {
+
+  	//Atributo para almacenar las fotos
+  	public photos: UserPhoto[] = [];
+
+  	...
+  	public async addNewToGallery() {
+	    // Take a photo
+	    const capturedPhoto = await Camera.getPhoto({
+	      resultType: CameraResultType.Uri,
+	      source: CameraSource.Camera,
+	      quality: 100
+	    });
+
+	    this.photos.unshift({
+	      filepath: "soon...",
+	      webviewPath: capturedPhoto.webPath!
+	    });
+	    
+	}
+  }
+  ```
+
+* Edite el archivo `tab2/tab2.page.ts`, con:
+
+  ```typescript
+  ...
+  import { CommonModule } from '@angular/common'
+  import { ... IonImg, IonCol, IonRow, IonGrid } from '@ionic/angular/standalone';
+
+  @Component({
+  	...
+	imports: [ CommonModule, ... , IonImg, IonCol, IonRow, IonGrid]
+  })
+  export class Tab2Page {
+  
+  ...
+
+  }
+  ```
+
+* Edite el archivo `tab2/tab2.page.html`, con:
+
+  ```html
+  ...
+  <ion-content>
+
+  	<!-- Muestra los elementos --> 
+    <ion-grid>
+	    <ion-row>
+	      <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+	        <ion-img [src]="photo.webviewPath"></ion-img>
+	      </ion-col>
+	    </ion-row>
+	</ion-grid>
+
+	<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+		<ion-fab-button (click)="addPhotoToGallery()">
+		  <ion-icon name="camera"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
+  </ion-content>
+  ```
+
 * Versiona local y remotamente el repositorio **hybrid**.
 
 ### Fundamental
