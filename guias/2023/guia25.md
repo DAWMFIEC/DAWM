@@ -144,7 +144,11 @@ theme: jekyll-theme-leap-day
   }
   ```
 
-* Revise los cambios en el navegador
+* Revise los cambios en el navegador, con:
+
+  ```command
+  ionic serve
+  ```
 
 * Versiona local y remotamente el repositorio **hybrid**.
 
