@@ -95,7 +95,7 @@ theme: jekyll-theme-leap-day
 
   **NOTA:** Coloque el URL generado en el valor de la entrada **host**
 
-  ```json
+  ```typescript
   ...
   "host": "restapi-production-ABCD.up.railway.app",
   ...
