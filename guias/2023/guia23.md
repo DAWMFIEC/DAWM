@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Acceda a [Railway](https://railway.app/) mediante su cuentan en GitHub.
+* Obtenga una cuenta en [Railway](https://railway.app/) mediante su cuentan en GitHub.
 
 ### Actividades
 
