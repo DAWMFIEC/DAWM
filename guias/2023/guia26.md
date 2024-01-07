@@ -260,6 +260,86 @@ theme: jekyll-theme-leap-day
   ionic serve
   ```
 
+#### Preferences API
+
+* Modifique el archivo `services/photo.service.ts`
+
+  ```typescript
+  ...
+  export class PhotoService {
+
+	  //Clave para el almacenamiento
+	  private PHOTO_STORAGE: string = 'photos';
+
+
+	  public async addNewToGallery() {
+
+	    ...
+
+	    Preferences.set({
+	      key: this.PHOTO_STORAGE,
+	      value: JSON.stringify(this.photos),
+	    });
+
+	    // Agregue el archivo al inicio del arreglo
+	    // this.photos.unshift({
+	    //   filepath: "soon...",
+	    //   webviewPath: capturedPhoto.webPath!
+	    // });
+	  }
+
+	  ...
+
+	  public async loadSaved() {
+
+	    // Recuperar datos del arreglo de fotografías en caché
+	    const { value } = await Preferences.get({ key: this.PHOTO_STORAGE });
+	    this.photos = (value ? JSON.parse(value) : []) as UserPhoto[];
+
+
+	    // La forma más sencilla de detectar cuando se ejecuta en la web:
+		// “cuando la plataforma NO sea híbrida, haz esto”
+	    if (!this.platform.is('hybrid')) {
+
+	      // Muestra la foto leyendo en formato base64
+	      for (let photo of this.photos) {
+
+	        // Lee los datos de cada foto guardada desde el sistema de archivos
+	        const readFile = await Filesystem.readFile({
+	          path: photo.filepath,
+	          directory: Directory.Data
+	        });
+
+	        // Solo plataforma web: carga la foto como datos base64
+	        photo.webviewPath = `data:image/jpeg;base64,${readFile.data}`;
+	      }
+	    }
+	  }
+  }
+  ```
+
+* Edite el archivo `tab2/tab2.page.ts`, con:
+
+  ```typescript
+  ...
+  export class Tab2Page {
+
+	  ...
+	  
+	  async ngOnInit() {
+	    await this.photoService.loadSaved();
+	  }
+	 
+
+	}
+  ```
+
+* Revise los cambios en el navegador, con:
+
+  ```command
+  ionic serve
+  ```
+
 * Versiona local y remotamente el repositorio **hybrid**.
 
 ### Fundamental
