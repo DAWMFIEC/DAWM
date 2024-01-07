@@ -157,14 +157,14 @@ theme: jekyll-theme-leap-day
   		...
 
   		// Agregue el archivo al inicio del arreglo
-    	const savedImageFile = await this.savePicture(capturedPhoto);
-   		this.photos.unshift(savedImageFile);
+  		const savedImageFile = await this.savePicture(capturedPhoto);
+  		this.photos.unshift(savedImageFile);
 
-   		/*
-		    this.photos.unshift({
-		      filepath: "soon...",
-		      webviewPath: capturedPhoto.webPath!
-		    });
+  		/*
+	    this.photos.unshift({
+	      filepath: "soon...",
+	      webviewPath: capturedPhoto.webPath!
+	    });
 	    */
   	}
 
