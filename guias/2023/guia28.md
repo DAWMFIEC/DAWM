@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 
 * En **Android Studio**, genere el APK al hacer clic en la ruta `Build` **>** `Build Bundle(s) / APK(s)` **>** `Build APK`
 
-* Si la generación del APK resulta exitosa, transfiera y compruebe el funcionamiento del archivo generado `android/app/build/outputs/apk/debug/app-debug.apk` en su dispositivo móvil
+* Si la generación del APK resulta exitosa, transfiera y compruebe el funcionamiento del archivo generado en `android/app/build/outputs/apk/debug/app-debug.apk` en su dispositivo móvil
 
 
 ### Fundamental
