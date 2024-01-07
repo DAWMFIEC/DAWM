@@ -15,8 +15,7 @@ theme: jekyll-theme-leap-day
 * Clone localmente tu repositorio **hybrid**.
 * Abra el proyecto en VSCode y levante el servidor.
 
-
-* Primero, creemos nuestra aplicación desde la línea de comandos para asegurarnos de que tenemos los recursos web más recientes en su proyecto nativo:
+* Desde la línea de comandos, construimos nuestra aplicación a partir de los recursos web más recientes en el proyecto nativo:
 
   ```command
   ionic cap build android --prod
