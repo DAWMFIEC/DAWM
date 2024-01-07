@@ -119,21 +119,21 @@ theme: jekyll-theme-leap-day
   ...
   <ion-content>
 
-  	<!-- Muestra los elementos --> 
-    <ion-grid>
-	    <ion-row>
-	      <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
-	        <ion-img [src]="photo.webviewPath"></ion-img>
-	      </ion-col>
-	    </ion-row>
-	</ion-grid>
+	  	<!-- Muestra los elementos --> 
+	    <ion-grid>
+		    <ion-row>
+		      <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+		        <ion-img [src]="photo.webviewPath"></ion-img>
+		      </ion-col>
+		    </ion-row>
+		</ion-grid>
 
-  	<!-- Muestra el obtón y habilita el servicio de la cámara --> 
-	<ion-fab vertical="bottom" horizontal="center" slot="fixed">
-		<ion-fab-button (click)="addPhotoToGallery()">
-		  <ion-icon name="camera"></ion-icon>
-		</ion-fab-button>
-	</ion-fab>
+	  	<!-- Muestra el obtón y habilita el servicio de la cámara --> 
+		<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+			<ion-fab-button (click)="addPhotoToGallery()">
+			  <ion-icon name="camera"></ion-icon>
+			</ion-fab-button>
+		</ion-fab>
 
   </ion-content>
   ```
