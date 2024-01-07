@@ -172,12 +172,11 @@ theme: jekyll-theme-leap-day
   		const savedImageFile = await this.savePicture(capturedPhoto);
   		this.photos.unshift(savedImageFile);
 
-  		/*
-	    this.photos.unshift({
-	      filepath: "soon...",
-	      webviewPath: capturedPhoto.webPath!
-	    });
-	    */
+  		// Agregue el archivo al inicio del arreglo
+	    // this.photos.unshift({
+	    //   filepath: "soon...",
+	    //   webviewPath: capturedPhoto.webPath!
+	    // });
   	}
 
   }
@@ -190,10 +189,10 @@ theme: jekyll-theme-leap-day
   export class PhotoService {
   	...
 
-  	private async savePicture(photo: Photo) {
+	  private async savePicture(photo: Photo) {
 	    // Convierta la foto al formato base64, requerido por el API para guardar en el sistema de archivos
 	    const base64Data = await this.readAsBase64(photo);
-	  
+
 	    // Escriba el archivo en el directorio de datos.
 	    const fileName = Date.now() + '.jpeg';
 	    const savedFile = await Filesystem.writeFile({
@@ -212,45 +211,45 @@ theme: jekyll-theme-leap-day
 	      };
 	    }
 	    else {
-	  
-		    // Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que 
-		    // ya está cargada en la memoria
-		    return {
-		      filepath: fileName,
-		      webviewPath: photo.webPath
-		    };
 
-		}
-	}
+	      // Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que 
+	      // ya está cargada en la memoria
+	      return {
+	        filepath: fileName,
+	        webviewPath: photo.webPath
+	      };
 
-	private async readAsBase64(photo: Photo) {
+	    }
+	  }
 
-		// "hybrid" detecta si es Cordova o Capacitor
-		if (this.platform.is('hybrid')) {
-			// Lee el archivo en formato base64
-			const file = await Filesystem.readFile({
-			  path: photo.path!
-			});
+	  private async readAsBase64(photo: Photo) {
 
-			return file.data;
-		}
-		else {
-			// Obtenga la foto, léala como un blob y luego conviértala al formato base64.
-			const response = await fetch(photo.webPath!);
-			const blob = await response.blob();
+	    // "hybrid" detecta si es Cordova o Capacitor
+	    if (this.platform.is('hybrid')) {
+	      // Lee el archivo en formato base64
+	      const file = await Filesystem.readFile({
+	        path: photo.path!
+	      });
 
-			return await this.convertBlobToBase64(blob) as string;
-		}
-	}
+	      return file.data;
+	    }
+	    else {
+	      // Obtenga la foto, léala como un blob y luego conviértala al formato base64.
+	      const response = await fetch(photo.webPath!);
+	      const blob = await response.blob();
 
-	private convertBlobToBase64 = (blob: Blob) => new Promise((resolve, reject) => {
-		const reader = new FileReader();
-		reader.onerror = reject;
-		reader.onload = () => {
-		    resolve(reader.result);
-		};
-		reader.readAsDataURL(blob);
-	});
+	      return await this.convertBlobToBase64(blob) as string;
+	    }
+	  }
+
+	  private convertBlobToBase64 = (blob: Blob) => new Promise((resolve, reject) => {
+	    const reader = new FileReader();
+	    reader.onerror = reject;
+	    reader.onload = () => {
+	      resolve(reader.result);
+	    };
+	    reader.readAsDataURL(blob);
+	  });
   }
   ```
 
