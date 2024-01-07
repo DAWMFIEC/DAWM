@@ -40,32 +40,6 @@ theme: jekyll-theme-leap-day
   + Seleccione en la opción _Default Target Schema_: **railway**.
   + Haga clic en la opción **Start Import**.
 
-#### Express - REST API: Conexión con Railway - Servicio MySQL
-
-* En cada proyecto (**security** y **rest_api**):
-  + Modifique el archivo `config/config.json`, en el ambiente de producción (clave `production`). 
-  + Cambie los valores con las **credenciales de conexión** correspondientes.
-  + Versione los cambios en el repositorio local y remoto.
-
-#### Express - REST API: Scripts de automatización  
-
-* Modifique el archivo `package.json` en la clave **scripts** con las instrucciones a ejecutar con el despliegue 
-	
-  + **packages:install** para instalar los paquetes del proyecto, y
-  + **start** iniciar la aplicación en el servidor.
-  
-  <pre><code>
-  ...
-  "scripts": {
-      "packages:install": "npm install sequelize pg && npm install --save-dev sequelize-cli",
-	  "start": "npm run packages:install && node ./bin/www"
-      ...
-  }
-  ...
-  </code></pre>
-
-* Versione los cambios en el repositorio local y remoto.
-
 #### Railway - GitHub Repo
 
 * Por cada proyecto: 
@@ -73,7 +47,9 @@ theme: jekyll-theme-leap-day
   + Seleccione el repositorio de GitHub
   + Haga clic en `Deploy now`
   + Cambie el nombre del proyecto por el nombre del repositorio (**security** y **rest_api**)
-  + En la opción `Settings` > `Networking`, genere un dominio aleatorio para la aplicación en la opción `Generate Domain`. 
+  + En la opción `Settings` > `Networking`, genere un dominio aleatorio para la aplicación en la opción `Generate Domain`.
+  	- Por ejemplo: para el proyecto **security**, el URL de acceso es `security-production-WXYZ.up.railway.app`
+  	- Por ejemplo: para el proyecto **rest_api**, el URL de acceso es `restapi-production-ABCD.up.railway.app`
   + En la opción `Variables`, 
   	- Agregue las variables de entorno que se encuentran en el archivo **.env**. Excepto la variable **PORT**.
   	- Agregue la variable de entorno `NODE_ENV` con el valor `production`.
@@ -86,12 +62,55 @@ theme: jekyll-theme-leap-day
 	<img src="imagenes/security_vars.png" width="80%">
 </p>
 
-#### Railway - Comprobación
+#### Express - Credenciales de conexión
+
+* En cada proyecto (**security** y **rest_api**):
+  + Modifique el archivo `config/config.json`, en el ambiente de producción (clave `production`). 
+  + Cambie los valores con las **credenciales de conexión** correspondientes.
+
+* Versione los cambios en el repositorio local y remoto.
+
+#### Express - Scripts de automatización  
+
+* Modifique el archivo `package.json` en la clave **scripts** con las instrucciones a ejecutar con el despliegue 
+	
+  + **packages:install** para instalar los paquetes del proyecto, y
+  + **start** iniciar la aplicación en el servidor.
+  
+  <pre><code>
+  ...
+  "scripts": {
+      "packages:install": "npm install sequelize pg && npm install --save-dev sequelize-cli",
+	  "start": "npm run packages:install && node ./bin/www",
+      ...
+  }
+  ...
+  </code></pre>
+
+* Versione los cambios en el repositorio local y remoto.
+
+#### Express - REST API
+
+* En el proyecto **rest_api**, modifique el archivo `swagger_output.json` los valores de las entradas **host** y **schemes**.
+
+  ```json
+  ...
+  "host": "restapi-production-ABCD.up.railway.app",
+  ...
+  "schemes": [
+    "https"
+  ],
+  ...
+  ```
+
+* Versione los cambios en el repositorio local y remoto.
+
+#### Comprobación
 
 * De acuerdo con el URL con el dominio generado, acceda a:
 
-  + **/users/getToken**: [https://security-production-WXYZ.up.railway.app/users/getToken](https://security-production-WXYZ.up.railway.app/users/getToken)
-  + **/documentation**: [https://restapi-production-ABCD.up.railway.app/documentation/](https://restapi-production-ABCD.up.railway.app/documentation/)
+  + **/users/getToken**: al URL https://security-production-WXYZ.up.railway.app/users/getToken
+  + **/documentation**: al URL https://restapi-production-ABCD.up.railway.app/documentation/
 
 ### Fundamental
 
