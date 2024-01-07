@@ -122,6 +122,7 @@ theme: jekyll-theme-leap-day
   		<ion-row>
   			<ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
   				<ion-img [src]="photo.webviewPath"></ion-img>
+  				<p>filepath: {{photo.filepath}}</p>
   			</ion-col>
   		</ion-row>
   	</ion-grid>
