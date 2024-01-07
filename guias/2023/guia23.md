@@ -42,7 +42,7 @@ theme: jekyll-theme-leap-day
 
 #### Railway - GitHub Repo
 
-* Por cada proyecto: 
+* Por cada proyecto (**security** y **rest_api**): 
   + Cree un proyecto de Railway, con: `New Project` > `Deploy from GitHub repo`
   + Seleccione el repositorio de GitHub
   + Haga clic en `Deploy now`
@@ -91,7 +91,9 @@ theme: jekyll-theme-leap-day
 
 #### Express - REST API
 
-* En el proyecto **rest_api**, modifique el archivo `swagger_output.json` los valores de las entradas **host** y **schemes**.
+* En el proyecto **rest_api**, modifique el archivo `swagger_output.json`.
+
+  **NOTA:** Coloque el URL generado en el valor de la entrada **host**
 
   ```json
   ...
