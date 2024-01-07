@@ -30,9 +30,9 @@ theme: jekyll-theme-leap-day
 
   ```typescript
   export interface UserPhoto {
-	filepath: string;
-	webviewPath?: string;
-  }
+    filepath: string;
+    webviewPath?: string;
+}
   ```
 
 * Cree el servicio `services/photo`
@@ -57,26 +57,26 @@ theme: jekyll-theme-leap-day
 
   export class PhotoService {
 
-  	//Atributo para almacenar las fotos
-  	public photos: UserPhoto[] = [];
+    //Atributo para almacenar las fotos
+    public photos: UserPhoto[] = [];
 
-  	constructor() { }
+    constructor() { }
 
-  	public async addNewToGallery() {
+    public async addNewToGallery() {
 
-  		// Tome una foto
-  		const capturedPhoto = await Camera.getPhoto({
-  			resultType: CameraResultType.Uri,
-  			source: CameraSource.Camera,
-  			quality: 100
-  		});
+      // Tome una foto
+      const capturedPhoto = await Camera.getPhoto({
+        resultType: CameraResultType.Uri,
+        source: CameraSource.Camera,
+        quality: 100
+      });
 
-  		// Agregue el archivo al inicio del arreglo
-  		this.photos.unshift({
-  			filepath: "soon...",
-  			webviewPath: capturedPhoto.webPath!
-  		});
-  	}
+      // Agregue el archivo al inicio del arreglo
+      this.photos.unshift({
+        filepath: "soon...",
+        webviewPath: capturedPhoto.webPath!
+      });
+    }
   }
   ```
 
@@ -155,15 +155,15 @@ theme: jekyll-theme-leap-day
   ...
   export class PhotoService {
 
+  	...
 
   	//Referencia local a la plataforma utilizada 'hybrid' o 'web'
   	private platform: Platform;
-  	
 
   	//Referencia en la inyección de dependencias
   	constructor(platform: Platform) {
-	    this.platform = platform;
-	}
+  		this.platform = platform;
+  	}
 
   	public async addNewToGallery() {
   		...
