@@ -22,17 +22,20 @@ theme: jekyll-theme-leap-day
   ionic cap build android --prod
   ```
 
-* En **Android Studio**, genere el APK al hacer clic en la ruta `Build > Build Bundle(s) / APK(s) > Build APK`
+* En **Android Studio**, genere el APK al hacer clic en la ruta `Build` **>** `Build Bundle(s) / APK(s)` **>** `Build APK`
 
-* Si la generación del APK resulta exitosa, transfiera el archivo generado `android/app/build/outputs/apk/debug/app-debug.apk` a su dispositivo móvil
+* Si la generación del APK resulta exitosa, transfiera y compruebe el funcionamiento del archivo generado `android/app/build/outputs/apk/debug/app-debug.apk` en su dispositivo móvil
 
 
 ### Fundamental
 
+* Android Studio Giraffe UI en [x](https://twitter.com/androidstudio/status/1707774273543102821)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">The new Android Studio Giraffe UI is now fully supported with the Intelli.J 2022.3 platform update!<br><br>Some design changes include:<br>⚙️ Simplified main toolbar<br>❇️ Redesigned tool windows<br>⚡️ And more! <a href="https://t.co/rJoaHlGL5B">pic.twitter.com/rJoaHlGL5B</a></p>&mdash; Android Studio (@androidstudio) <a href="https://twitter.com/androidstudio/status/1707774273543102821?ref_src=twsrc%5Etfw">September 29, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Documentación
 
-* Ionic Icons en la [página oficial](https://ionic.io/ionicons)
-* Ionic Components en la [página oficial](https://ionicframework.com/docs/components)
+* De una aplicación en Ionic a liberar una aplicación de Android en [Building And Releasing Your Capacitor Android App](https://ionic.io/blog/building-and-releasing-your-capacitor-android-app)
 
 ### Términos
 
@@ -40,4 +43,4 @@ APK
 
 ### Referencias
 
-* Ionicframework. (n.d.). Your First Ionic App: Angular: Ionic Documentation. Retrieved from https://ionicframework.com/docs/angular/your-first-app
+* Grimm, S. (2023). Building And Releasing Your Capacitor Android App. Retrieved from https://ionic.io/blog/building-and-releasing-your-capacitor-android-app
