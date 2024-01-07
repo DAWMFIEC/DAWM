@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 * Clone localmente tu repositorio **hybrid**.
 * Abra el proyecto en VSCode y levante el servidor.
-* Instale los módulos
+* Instale los módulos con la funcionalidad nativa
 
   ```command
   npm install @capacitor/camera @capacitor/preferences @capacitor/filesystem
@@ -45,6 +45,8 @@ theme: jekyll-theme-leap-day
 
   ```typescript
   ...
+
+  //Importe los módulos con la funcionalidad nativa
   import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
   import { Filesystem, Directory } from '@capacitor/filesystem';
   import { Preferences } from '@capacitor/preferences';
@@ -58,7 +60,8 @@ theme: jekyll-theme-leap-day
   	//Atributo para almacenar las fotos
   	public photos: UserPhoto[] = [];
 
-  	...
+  	constructor() { }
+
   	public async addNewToGallery() {
 	    
 	    // Tome una foto
@@ -82,9 +85,11 @@ theme: jekyll-theme-leap-day
 
   ```typescript
   ...
-  // Importe los módulos
+  // Importe el módulo con la directiva @ngFor
   import { CommonModule } from '@angular/common'
-  import { ... IonImg, IonCol, IonRow, IonGrid } from '@ionic/angular/standalone';
+
+  // Importe los componentes de la UI
+  import { ... , IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid } from '@ionic/angular/standalone';
 
   //Importe el servicio
   import { PhotoService } from '../services/photo.service';
@@ -93,7 +98,7 @@ theme: jekyll-theme-leap-day
   @Component({
   	...
   	// Registre los módulos
-	imports: [ CommonModule, ... , IonImg, IonCol, IonRow, IonGrid]
+	imports: [ ... , CommonModule, IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid]
   })
   export class Tab2Page {
 
