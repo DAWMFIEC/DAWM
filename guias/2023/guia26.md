@@ -49,8 +49,7 @@ theme: jekyll-theme-leap-day
   //Importe los módulos con la funcionalidad nativa
   import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
   import { Filesystem, Directory } from '@capacitor/filesystem';
-  import { Preferences } from '@capacitor/preferences';
-
+  
 
   //Importe la interfaz
   import { UserPhoto } from '../interface/user-photo';
@@ -64,21 +63,20 @@ theme: jekyll-theme-leap-day
   	constructor() { }
 
   	public async addNewToGallery() {
-	    
-	    // Tome una foto
-	    const capturedPhoto = await Camera.getPhoto({
-	      resultType: CameraResultType.Uri,
-	      source: CameraSource.Camera,
-	      quality: 100
-	    });
 
-	    // Agregue el archivo al inicio del arreglo
-	    this.photos.unshift({
-	      filepath: "soon...",
-	      webviewPath: capturedPhoto.webPath!
-	    });
-	    
-	}
+  		// Tome una foto
+  		const capturedPhoto = await Camera.getPhoto({
+  			resultType: CameraResultType.Uri,
+  			source: CameraSource.Camera,
+  			quality: 100
+  		});
+
+  		// Agregue el archivo al inicio del arreglo
+  		this.photos.unshift({
+  			filepath: "soon...",
+  			webviewPath: capturedPhoto.webPath!
+  		});
+  	}
   }
   ```
 
@@ -104,12 +102,12 @@ theme: jekyll-theme-leap-day
   export class Tab2Page {
 
   	//Inyecte la dependencia del servicio
-	constructor(public photoService: PhotoService) {}
+  	constructor(public photoService: PhotoService) {}
 
-	//Método a invocar
-	addPhotoToGallery() {
-	    this.photoService.addNewToGallery();
-	}
+  	//Método a invocar
+  	addPhotoToGallery() {
+  		this.photoService.addNewToGallery();
+  	}
 
   }
   ```
@@ -119,23 +117,22 @@ theme: jekyll-theme-leap-day
   ```html
   ...
   <ion-content>
+  	<!-- Muestra los elementos -->
+  	<ion-grid>
+  		<ion-row>
+  			<ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+  				<ion-img [src]="photo.webviewPath"></ion-img>
+  			</ion-col>
+  		</ion-row>
+  	</ion-grid>
 
-	  	<!-- Muestra los elementos --> 
-	    <ion-grid>
-		    <ion-row>
-		      <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
-		        <ion-img [src]="photo.webviewPath"></ion-img>
-		      </ion-col>
-		    </ion-row>
-		</ion-grid>
 
-	  	<!-- Muestra el obtón y habilita el servicio de la cámara --> 
-		<ion-fab vertical="bottom" horizontal="center" slot="fixed">
-			<ion-fab-button (click)="addPhotoToGallery()">
-			  <ion-icon name="camera"></ion-icon>
-			</ion-fab-button>
-		</ion-fab>
-
+  	<!-- Muestra el obtón y habilita el servicio de la cámara --> 
+  	<ion-fab vertical="bottom" horizontal="center" slot="fixed">
+  		<ion-fab-button (click)="addPhotoToGallery()">
+  			<ion-icon name="camera"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
   </ion-content>
   ```
 
@@ -230,7 +227,7 @@ theme: jekyll-theme-leap-day
 
 		// "hybrid" detecta si es Cordova o Capacitor
 		if (this.platform.is('hybrid')) {
-			// Read the file into base64 format
+			// Lee el archivo en formato base64
 			const file = await Filesystem.readFile({
 			  path: photo.path!
 			});
