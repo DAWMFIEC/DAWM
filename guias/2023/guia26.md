@@ -151,16 +151,19 @@ theme: jekyll-theme-leap-day
 
   ```typescript
   ...
-  // Importa el módulo Platform
+  // Importa el módulo Platform y Capacitor
   import { Platform } from '@ionic/angular';
+  import { Capacitor } from '@capacitor/core';
 
   ...
   export class PhotoService {
 
 
+  	//Referencia local a la plataforma utilizada 'hybrid' o 'web'
   	private platform: Platform;
   	
 
+  	//Referencia en la inyección de dependencias
   	constructor(platform: Platform) {
 	    this.platform = platform;
 	}
@@ -201,21 +204,46 @@ theme: jekyll-theme-leap-day
 	      data: base64Data,
 	      directory: Directory.Data
 	    });
+
+
+	    if (this.platform.is('hybrid')) {
+	      // Muestre la nueva imagen reescribiendo la ruta 'file://' a HTTP
+	      // Detalles: https://ionicframework.com/docs/building/webview#file-protocol
+	      return {
+	        filepath: savedFile.uri,
+	        webviewPath: Capacitor.convertFileSrc(savedFile.uri),
+	      };
+	    }
+	    else {
 	  
-	    // Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que 
-	    // ya está cargada en la memoria
-	    return {
-	      filepath: fileName,
-	      webviewPath: photo.webPath
-	    };
+		    // Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que 
+		    // ya está cargada en la memoria
+		    return {
+		      filepath: fileName,
+		      webviewPath: photo.webPath
+		    };
+
+		}
 	}
 
 	private async readAsBase64(photo: Photo) {
-		// Obtenga la foto, léala como un blob y luego conviértala al formato base64.
-		const response = await fetch(photo.webPath!);
-		const blob = await response.blob();
 
-		return await this.convertBlobToBase64(blob) as string;
+		// "hybrid" detecta si es Cordova o Capacitor
+		if (this.platform.is('hybrid')) {
+			// Read the file into base64 format
+			const file = await Filesystem.readFile({
+			  path: photo.path!
+			});
+
+			return file.data;
+		}
+		else {
+			// Obtenga la foto, léala como un blob y luego conviértala al formato base64.
+			const response = await fetch(photo.webPath!);
+			const blob = await response.blob();
+
+			return await this.convertBlobToBase64(blob) as string;
+		}
 	}
 
 	private convertBlobToBase64 = (blob: Blob) => new Promise((resolve, reject) => {
