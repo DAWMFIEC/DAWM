@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
   npm install @capacitor/camera @capacitor/preferences @capacitor/filesystem
   ```
 
-#### Cámara de fotos
+#### Camera API
 
 * Cree la interfaz `interface/UserPhoto`
 
@@ -50,6 +50,7 @@ theme: jekyll-theme-leap-day
   import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
   import { Filesystem, Directory } from '@capacitor/filesystem';
   import { Preferences } from '@capacitor/preferences';
+
 
   //Importe la interfaz
   import { UserPhoto } from '../interface/user-photo';
@@ -144,14 +145,25 @@ theme: jekyll-theme-leap-day
   ionic serve
   ```
 
-#### Guardar archivos en el sistema
+#### Filesystem API
 
 * Modifique el método **addNewToGallery**, en el archivo `services/photo.service.ts`
 
   ```typescript
   ...
+  // Importa el módulo Platform
+  import { Platform } from '@ionic/angular';
+
+  ...
   export class PhotoService {
-  	...
+
+
+  	private platform: Platform;
+  	
+
+  	constructor(platform: Platform) {
+	    this.platform = platform;
+	}
 
   	public async addNewToGallery() {
   		...
@@ -179,7 +191,7 @@ theme: jekyll-theme-leap-day
   	...
 
   	private async savePicture(photo: Photo) {
-	    // Convierta una foto al formato base64, requerido por la API del sistema de archivos para guardar
+	    // Convierta la foto al formato base64, requerido por el API para guardar en el sistema de archivos
 	    const base64Data = await this.readAsBase64(photo);
 	  
 	    // Escriba el archivo en el directorio de datos.
@@ -216,14 +228,6 @@ theme: jekyll-theme-leap-day
 	});
   }
   ```
-
-* Revise los cambios en el navegador, con:
-
-  ```command
-  ionic serve
-  ```
-
-#### Carga de fotos
 
 * Revise los cambios en el navegador, con:
 
