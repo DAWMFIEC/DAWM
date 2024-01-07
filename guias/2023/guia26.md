@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
   npm install @capacitor/camera @capacitor/preferences @capacitor/filesystem
   ```
 
-#### Toma de fotos
+#### Cámara de fotos
 
 * Cree la interfaz `interface/UserPhoto`
 
@@ -138,9 +138,98 @@ theme: jekyll-theme-leap-day
   </ion-content>
   ```
 
-#### Guardar fotos
+* Revise los cambios en el navegador, con:
+
+  ```command
+  ionic serve
+  ```
+
+#### Guardar archivos en el sistema
+
+* Modifique el método **addNewToGallery**, en el archivo `services/photo.service.ts`
+
+  ```typescript
+  ...
+  export class PhotoService {
+  	...
+
+  	public async addNewToGallery() {
+  		...
+
+  		// Agregue el archivo al inicio del arreglo
+    	const savedImageFile = await this.savePicture(capturedPhoto);
+   		this.photos.unshift(savedImageFile);
+
+   		/*
+		    this.photos.unshift({
+		      filepath: "soon...",
+		      webviewPath: capturedPhoto.webPath!
+		    });
+	    */
+  	}
+
+  }
+  ```
+
+* Agregue los métodos **savePicture**, **readAsBase64** y **convertBlobToBase64**, en el archivo `services/photo.service.ts`
+
+  ```typescript
+  ...
+  export class PhotoService {
+  	...
+
+  	private async savePicture(photo: Photo) {
+	    // Convierta una foto al formato base64, requerido por la API del sistema de archivos para guardar
+	    const base64Data = await this.readAsBase64(photo);
+	  
+	    // Escriba el archivo en el directorio de datos.
+	    const fileName = Date.now() + '.jpeg';
+	    const savedFile = await Filesystem.writeFile({
+	      path: fileName,
+	      data: base64Data,
+	      directory: Directory.Data
+	    });
+	  
+	    // Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que 
+	    // ya está cargada en la memoria
+	    return {
+	      filepath: fileName,
+	      webviewPath: photo.webPath
+	    };
+	}
+
+	private async readAsBase64(photo: Photo) {
+		// Obtenga la foto, léala como un blob y luego conviértala al formato base64.
+		const response = await fetch(photo.webPath!);
+		const blob = await response.blob();
+
+		return await this.convertBlobToBase64(blob) as string;
+	}
+
+	private convertBlobToBase64 = (blob: Blob) => new Promise((resolve, reject) => {
+		const reader = new FileReader();
+		reader.onerror = reject;
+		reader.onload = () => {
+		    resolve(reader.result);
+		};
+		reader.readAsDataURL(blob);
+	});
+  }
+  ```
+
+* Revise los cambios en el navegador, con:
+
+  ```command
+  ionic serve
+  ```
 
 #### Carga de fotos
+
+* Revise los cambios en el navegador, con:
+
+  ```command
+  ionic serve
+  ```
 
 * Versiona local y remotamente el repositorio **hybrid**.
 
