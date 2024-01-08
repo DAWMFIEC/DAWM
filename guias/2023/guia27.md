@@ -20,7 +20,7 @@ theme: jekyll-theme-leap-day
 * Cree una interfaz de Angular, con:
 
 	```
-	ionic g interface interface/<NOMBRE_INTERFAZ>
+	ionic g interface interfaces/<NOMBRE_INTERFAZ>
 	```
 
 * Coloque la interfaz generada en lugar de la interfaz creada. 
