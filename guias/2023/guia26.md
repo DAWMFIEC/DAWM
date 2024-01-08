@@ -23,10 +23,10 @@ theme: jekyll-theme-leap-day
 * Cree la interfaz `interfaces/UserPhoto`
 
   ```command
-  ionic g interface interface/UserPhoto
+  ionic g interface interfaces/UserPhoto
   ```
 
-* Modifique el archivo `interface/user-photo.ts`
+* Modifique el archivo `interfaces/user-photo.ts`
 
   ```typescript
   export interface UserPhoto {
@@ -52,7 +52,7 @@ theme: jekyll-theme-leap-day
   
 
   //Importe la interfaz
-  import { UserPhoto } from '../interface/user-photo';
+  import { UserPhoto } from '../interfaces/user-photo';
 
 
   export class PhotoService {
