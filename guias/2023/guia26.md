@@ -20,7 +20,7 @@ theme: jekyll-theme-leap-day
 
 #### Camera API
 
-* Cree la interfaz `interface/UserPhoto`
+* Cree la interfaz `interfaces/UserPhoto`
 
   ```command
   ionic g interface interface/UserPhoto
