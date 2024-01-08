@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
   npm install --save jsonwebtoken dotenv
   ```
 
-* Edite el archivo `swagger_output.json` con las entradas **securityDefinitions** y **security**:
+* Edite el archivo `swagger_output.json` con las entradas **host**, **securityDefinitions** y **security**:
 
   ```typescript
   ...
@@ -33,6 +33,7 @@ theme: jekyll-theme-leap-day
     ...
   ],
 
+  "host": "localhost:3002",
 
   "securityDefinitions": {
     "ApiKeyAuth": {
@@ -139,7 +140,7 @@ theme: jekyll-theme-leap-day
   ```
 
 * Ejecute el servidor, con `npm start`
-* Acceda a `http://localhost:3000/documentation`
+* Acceda a `http://localhost:3002/documentation`
 
 #### Validación de autenticación
 
@@ -175,7 +176,7 @@ theme: jekyll-theme-leap-day
   ```
 
 * Ejecute el servidor, con `npm start`
-* Acceda a `http://localhost:3000/documentation`
+* Acceda a `http://localhost:3002/documentation`
 
 #### Validación de autorización
 
