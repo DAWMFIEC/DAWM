@@ -97,6 +97,208 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
+#### Componente.ts - Consumo de Servicio
+
+* Modifique el archivo `tab1/tab1.page.ts`
+* Importe el módulo `HttpClientModule`, la interfaz `<NOMBRE_INTERFAZ>` y el servicio `<NOMBRE_SERVICIO>Service`. 
+
+	```typescript
+	...
+
+	// Importe el módulo con la directiva @ngFor
+	import { CommonModule } from '@angular/common'
+
+	import {
+	  ...
+	  //Importe los componentes
+	  IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
+	  IonInput, IonButton,
+	  IonLabel, IonList, IonItem
+	} from '@ionic/angular/standalone';
+
+	//Importación del método http
+	import { HttpClientModule } from  '@angular/common/http';
+
+	//Importación de la interfaz
+	import { <NOMBRE_INTERFAZ> } from '<RUTA>/interfaces/<NOMBRE_INTERFAZ>';
+
+	//Importación del servicio
+	import { <NOMBRE_SERVICIO>Service } from '<RUTA>/providers/<NOMBRE_SERVICIO>.service'
+
+	//Importación de los constructores del formulario
+	import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+
+
+	@Component({
+	...
+	````
+
+* Registre los módulos en la clave _imports_ y el servicio `<NOMBRE_SERVICIO>Service` en la clave _providers_.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	  standalone: true,
+	  imports: [
+	  	...
+	  	
+	  	//Registre los componentes
+	    HttpClientModule, ReactiveFormsModule,
+
+	    CommonModule, 
+	    IonLabel, IonList,IonItem,
+	    IonInput, IonButton,
+
+	    IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent
+	  ],
+	  providers: [<NOMBRE_SERVICIO>Service],
+	  ...
+	})
+	...
+	````
+
+* Agregue un atributo para almacenar la respuesta a la petición y el constructor del formulario.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	  //Atributo con el tipo de dato de la interfaz
+	  public data : <NOMBRE_INTERFAZ>[] = [];
+
+	  checkoutForm = this.formBuilder.group({
+	    texto: ''
+	  });
+	  
+	  ...
+	}
+	...
+	```
+
+* Inyecte la dependencia al servicio y al constructor del formulario en el constructor del componente seleccionado para mostrar los datos.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	   public data : <NOMBRE_INTERFAZ>[] ...
+
+	   checkoutForm = ...
+	  
+	  //Inyección de dependencia del servicio
+	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service , private formBuilder: FormBuilder) { }
+	}
+	...
+	```
+
+* Agregue un método que realice la petición y que se suscriba a la respuesta de la petición. Extraiga una muestra de los datos en el atributo a renderizar en la vista.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	  ...
+
+	  constructor( ... ) { }
+
+	  //Ejecución de la petición y suscripción de la respuesta
+
+	  ngOnInit() {
+	    this.loadData()
+	  }
+
+	  loadData() {
+	    this.dataProvider.getResponse().subscribe( response => {
+	      if( response != null) {
+	        this.data = Object.values(response) as Data[]
+	      }
+	        
+	    })
+	  }
+	}
+	...
+	```
+
+* Agregue un método que envíe la petición con los datos del formulario
+
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	  ...
+
+	  onSubmit(): void {
+	  	// Proceso para enviar los datos
+		this.dataProvider.postResponse(this.checkoutForm.value).subscribe( (response) => {
+				this.checkoutForm.reset();
+				this.loadData()
+			})
+		}
+
+	}
+	...
+	```
+
+#### Componente.ts - Formulario y Renderización del resultado
+
+* Utilice la directiva `*ngFor` para recorrer el arreglo `data` en la vista (html) del componente seleccionado. 
+
+	```
+	...
+	<ion-content [fullscreen]="true">
+
+	  <ion-card class="ion-padding-bottom ion-margin-bottom">
+	    
+	    <ion-card-header>
+	      <ion-card-title>Memorias</ion-card-title>
+	    </ion-card-header>
+
+	    <ion-card-content class="ion-text-center">
+	      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+	        <ion-input formControlName="texto"
+	          placeholder="Ingresa tu memoria"></ion-input>
+	        <ion-button type="submit">Enviar</ion-button>
+	      </form>
+	    </ion-card-content>
+	  </ion-card>
+	  
+
+	  <ion-card>
+	    <ion-card-header>
+	      <ion-card-title>Lista de Memorias</ion-card-title>
+	    </ion-card-header>
+
+	    <ion-card-content>
+
+	      <!-- Muestra los elementos -->
+	      <ion-list>
+	        <ion-item *ngFor="let datum of data">
+	          <ion-label>{{datum.texto}}</ion-label>
+	        </ion-item>
+	      </ion-list>
+
+	    </ion-card-content>
+	  </ion-card>
+
+	  
+	</ion-content>
+	```
+
+
 * Versiona local y remotamente el repositorio **hybrid**.
 
 ### Fundamental
