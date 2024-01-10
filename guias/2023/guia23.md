@@ -27,11 +27,13 @@ theme: jekyll-theme-leap-day
 
 #### MySQL Workbench - Migración
 
-* Dentro de la conexión local, por cada esquema (**northwind** y **security**) por separado:
+* Dentro de la conexión local, por cada esquema (**rest_api** y **security**) por separado:
   + Haga clic en la opción **Server** > **Data Export**.
   + Seleccione el esquema con las tablas.
   + Seleccione la opción **Export to Self-Contained File** con un nombre específico y diferente. 
   + Haga clic en la opción **Start Export**.
+
+**NOTA:** En caso de no contar con los esquema, utilice los backups [rest_api](backup/rest_api.sql) y [security](backup/security.sql).
 
 * Para cada servicio MySQL en Railway:
   + Cree una nueva conexión
