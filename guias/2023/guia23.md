@@ -33,7 +33,7 @@ theme: jekyll-theme-leap-day
   + Seleccione la opción **Export to Self-Contained File** con un nombre específico y diferente. 
   + Haga clic en la opción **Start Export**.
 
-**NOTA:** En caso de no contar con los esquema, utilice los backups [rest_api](backup/rest_api.sql) y [security](backup/security.sql).
+**NOTA:** En caso de no contar con los esquema, utilice los backups [rest_api](recursos/backup/rest_api.sql) y [security](recursos/backup/security.sql).
 
 * Para cada servicio MySQL en Railway:
   + Cree una nueva conexión
