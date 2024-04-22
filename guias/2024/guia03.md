@@ -10,9 +10,9 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Decide y diseña el contenido de su CV para incorporar un formulario. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard01.pdf).
-* Decide y diseña el contenido de su CV para incorporar una imagen o un video. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard02.pdf).
-* Decide y diseña el contenido de su CV para agregar un mapa. Algunas sugerencias de contenido, según [Bard](bard/guia03-bard03.pdf).
+* Decide y diseña el contenido de su CV para incorporar un formulario. Algunas [sugerencias](bard/guia03-bard01.pdf) de contenido, según Bard.
+* Decide y diseña el contenido de su CV para incorporar una imagen o un video. Algunas [sugerencias](bard/guia03-bard02.pdf) de contenido, según Bard.
+* Decide y diseña el contenido de su CV para agregar un mapa. Algunas [sugerencias](bard/guia03-bard03.pdf) de contenido, según Bard.
 
 #### Contenido
 
@@ -25,13 +25,13 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 * Clona localmente tu repositorio **curriculum**. 
 * Modifica el archivo _index.html_ del repositorio **curriculum**.
-  - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las etiquetas `contenedoras` _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. 
+  - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las `etiquetas contenedoras` _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. 
     
     _Algunas sugerencias según [Bard](bard/guia03-bard04.pdf)._
 
-  - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, una `imagen`, un `video` y un `mapa`. 
+  - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, un `multimedio` (`imagen` o `video`) y un `mapa`. 
     
-    _Consulta a [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
+    _Consulta con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
 
 * Versiona local y remotamente el repositorio **curriculum**.
 
@@ -61,7 +61,7 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 ### Términos
 
-contenedores, multimedia, imagenes, videos, formulario
+etiquetas contenedores, multimedia, imagenes, videos, formulario
 
 ### Referencias
 
