@@ -10,8 +10,8 @@ theme: jekyll-theme-leap-day
 
 #### Ejercicio de colocación de elementos
 
-* Descargue el ejercicio de [colocación](ejercicios/colocacion.zip). 
-* Utilice **Visual Studio Code** para abrir el ejercicio de colocación. Use o habilite el [Live Server de Visual Studio Code](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
+* Descargue y descomprima el ejercicio de [colocación](ejercicios/colocacion.zip). 
+* Habilite el [Live Server de Visual Studio Code](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
 * Habilite el inspector en el navegador para visualizar los cambios en vivo.
 
 #### Grid vs Flexbox
