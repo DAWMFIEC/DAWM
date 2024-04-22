@@ -15,8 +15,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ## Proyectos y Guías
 
-* [Proyecto 00: Repositorio del desarrollador - Markdown y GitHub Pages](proyectos/2023/proyecto01)
-    * [Guía 01: Git + GitHub](guias/2023/guia01)
+* [Proyecto 00: Repositorio del desarrollador - Markdown y GitHub Pages](proyectos/2024/proyecto00)
+    * [Guía 01: Git + GitHub](guias/2024/guia01)
 
 #### Scripts
 
