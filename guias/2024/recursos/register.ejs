@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link id="pagestyle" href="./assets/css/material-kit.css?v=3.0.4" rel="stylesheet" />
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+  </head>
+  <body>
+    <section class="border-radius-xl overflow-hidden shadow-lg mb-7 mx-10">
+        <div class="container py-4">
+          <div class="row">
+            <div class="col-lg-5 mx-auto d-flex justify-content-center flex-column">
+              <h3 class="text-center">Registration form</h3>
+              <form role="form" id="contact-form" method="post" autocomplete="off" action="/users/register">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group input-group-dynamic mb-4">
+                        <label class="form-label">Username</label>
+                        <input class="form-control" aria-label="Username..." type="text" name="name" >
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <div class="input-group input-group-dynamic mb-4">
+                        <label class="form-label">Password</label>
+                        <input type="password" class="form-control" name="password">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                        <div class="input-group input-group-dynamic mb-4">
+                            <select name="roleName" id="roleName" class="form-select form-select-lg mb-3">
+                                <option value="admin">Admin</option>
+                                <option value="user">User</option>
+                            </select>
+                        </div>
+                        
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-md-12">
+                      <button type="submit" class="btn bg-gradient-dark w-100">Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    <section class="border-radius-xl overflow-hidden shadow-lg mb-7 mx-10">
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="text-center">#</th>
+                    <th>User</th>
+                    <th>Password</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% for(let user of users) { %>
+                    <tr>
+                        <td class="text-center"><%= user.iduser %></td>
+                        <td><%= user.name %></td>
+                        <td><%= user.password.slice(0,10) %> ... </td>
+                    </tr>
+                <% } %>
+            </tbody>
+        </table>
+    </section>
+      <script src="./assets/js/material-kit.min.js?v=3.0.4" type="text/javascript"></script>
+  </body>
+</html>
