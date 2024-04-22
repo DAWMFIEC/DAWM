@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Decide el contenido de su CV, puede considerar la recomendación de [ChatGPT](chatgpt/guia02-recomendacion01.png) o [Bard](bard/guia02-bard01.pdf).
+* Decide el contenido de su CV, puede considerar la [recomendación](chatgpt/guia02-recomendacion01.png) de ChatGPT o la [recomendación](bard/guia02-bard01.pdf) de Bard.
 * Diseña la estructura del contenido de su CV, p.e.: el orden de las secciones, título de cada sección, uso de listas numeradas o listas no numeradas de elementos, etc.
 
 #### Github
@@ -22,17 +22,17 @@ theme: jekyll-theme-leap-day
 * Clona localmente tu repositorio **curriculum**. 
 * Dentro del directorio de tu proyecto, crea el documento `HTML`: _index.html_
 * Utiliza `VSCode` para editar el documento index.html, con:
-  - La `estructura general` sugerida por [Bard](bard/guia02-bard02.pdf). 
+  - La `estructura general` [sugerida](bard/guia02-bard02.pdf) por Bard. 
 
       **Mínimo:** agrega la etiqueta &lt;title&gt; con su contenido; y las etiquetas &lt;meta&gt; con los nombres _keywords_, _description_ y _author_. 
 
-  - La `estructura semántica` sugerida por [Bard](bard/guia02-bard03.pdf).
+  - La `estructura semántica` [sugerida](bard/guia02-bard03.pdf) por Bard.
       
       **Mínimo:** agrega dentro de la etiqueta body 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. 
 
 
 * Versiona local y remotamente el repositorio **curriculum**.
-* Utilice la [respuesta](bard/guia02-bard04.pdf) `Bard` para desplegar el sitio del repositorio **curriculum** utilizando GitHub Pages.
+* Utilice la [respuesta](bard/guia02-bard04.pdf) de Bard para desplegar el sitio del repositorio **curriculum** utilizando GitHub Pages.
 
 ### Documentación
 
