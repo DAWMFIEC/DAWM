@@ -23,9 +23,17 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
     * [Guía 04: CSS - Selectores, propiedades y valores. Modelo de caja](guias/2024/guia04)
     * [Guía 05: CSS - Grid vs Flexbox](guias/2024/guia05)
 
-#### Scripts
+## Scripts
 
 * [Mock data](tutoriales/mock_data.md)
+
+## Tutoriales
+
+### Servidor
+
+* [HTTP - Python](tutoriales/python.md)
+* [HTTP - Nodejs](tutoriales/nodejs.md)
+* [Local CORS Proxy](tutoriales/lcp.md)
 
 ## Recursos
 
