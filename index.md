@@ -17,6 +17,11 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Proyecto 00: Repositorio del desarrollador - Markdown y GitHub Pages](proyectos/2024/proyecto00)
     * [Guía 01: Git + GitHub](guias/2024/guia01)
+* [Proyecto 01: Curriculum Vitae - HTML & CSS](proyectos/2024/proyecto01)
+    * [Guía 02: HTML - Estructura global, etiquetas HTML y semántica](guias/2024/guia02)
+    * [Guía 03: HTML - Etiquetas contenedoras, formularios y multimedia](guias/2024/guia03)
+    * [Guía 04: CSS - Selectores, propiedades y valores. Modelo de caja](guias/2024/guia04)
+    * [Guía 05: CSS - Grid vs Flexbox](guias/2024/guia05)
 
 #### Scripts
 
