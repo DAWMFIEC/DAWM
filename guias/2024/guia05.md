@@ -41,9 +41,9 @@ theme: jekyll-theme-leap-day
 
 	```
 
-* Para cada elementos	&lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;
-	+ Acceda mediante el selector CSS de su preferencia. 
-	+ Coloque los valores para **cinicio**, **cfinal**, **finicio** y **ffinal**.
+* Para cada elemento	**&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
+	+ Acceda con el selector CSS de su preferencia. 
+	+ Para las propiedades **grid-column** y **grid-row**, coloque los valores para **cinicio**, **cfinal**, **finicio** y **ffinal**.
 	
 		```
 
@@ -55,7 +55,7 @@ theme: jekyll-theme-leap-day
 
 **Grid por area**
 
-* Modifique el archivo _css/grid_areas.css_.
+* Modifique la hoja de estilos _css/grid_areas.css_.
 * Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
 
 	```
@@ -77,18 +77,21 @@ theme: jekyll-theme-leap-day
 
 	```
 
-* Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. 
-* Coloque los valores para **idarea**. Verifique los cambios en el navegador
+* Para cada elemento	**&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
+	+ Acceda con el selector CSS de su preferencia. 
+	+ Para la propiedad **grid-area**, coloque los valores para **idarea**.
 	
-	```
+		```
 
-		grid-area: idarea;
+			grid-area: idarea;
 
-	```
+		```
+	+ Verifique los cambios en el navegador
+	
 
 **Flexbox**
 
-* Modifique el archivo _css/flexbox.css_.
+* Modifique la hoja de estilos _css/flexbox.css_.
 * Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
 
 	```
