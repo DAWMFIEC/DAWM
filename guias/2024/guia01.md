@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 01
 
-[DAWM](/DAWM/) / [Proyecto01](/DAWM/proyectos/2023/proyecto01)
+[DAWM](/DAWM/) / [Proyecto01](/DAWM/proyectos/2024/proyecto00)
 
 ### Actividades en clases
 

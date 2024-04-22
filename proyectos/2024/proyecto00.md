@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 01: Repositorio del desarrollador - Markdown y GitHub Pages
+## Proyecto 00: Repositorio del desarrollador - Markdown y GitHub Pages
 
 [DAWM](/DAWM/)
 
@@ -26,4 +26,4 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 01: Git + GitHub](/DAWM/guias/2023/guia01)
+* [Guía 01: Git + GitHub](/DAWM/guias/2024/guia01)
