@@ -32,7 +32,7 @@ theme: jekyll-theme-leap-day
 
 
 * Versiona local y remotamente el repositorio **curriculum**.
-* Despliegue el sitio del repositorio **curriculum** utilizando GitHub Pages.
+* Utilice la [respuesta](bard/guia02-bard04.pdf) `Bard` para desplegar el sitio del repositorio **curriculum** utilizando GitHub Pages.
 
 ### Documentación
 
