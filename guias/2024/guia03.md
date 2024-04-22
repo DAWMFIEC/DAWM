@@ -29,7 +29,7 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
     
     _Algunas sugerencias según [Bard](bard/guia03-bard04.pdf)._
 
-  - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, un `multimedia` (`imagen` o `video`) y un `mapa`. 
+  - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, `multimedia` (una `imagen` y un `video`) y un `mapa`. 
     
     _Consulta con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
 
