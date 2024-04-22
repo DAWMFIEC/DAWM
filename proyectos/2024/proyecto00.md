@@ -22,7 +22,7 @@ académico-tecnológico desarrollado hasta ahora?
 ```
 La respuesta es:
 
-![chatgpt](archivos/proyecto01-pregunta.png)
+![chatgpt](archivos/proyecto00-pregunta.png)
 
 ### Guías
 
