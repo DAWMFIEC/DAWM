@@ -23,13 +23,13 @@ theme: jekyll-theme-leap-day
 
 #### Servidor HTTP 
 
-* Levante un [`servidor HTTP` en Python](/DAWM/tutoriales/python) en la `ruta de la aplicación`.
+* Levante un [`servidor HTTP` con Python](/DAWM/tutoriales/python) en la `ruta de la aplicación`.
 * Acceda desde el navegador con el URL del servidor HTTP en Python, y
 * En adelante, compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el navegador.
 
-#### Estilo en cascada y familia tipográfica
+#### `Selectores`, `estilo en cascada` y `familia tipográfica`
 
-Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes actividades:
+Compruebe la [sugerencia](bard/guia04-bard02.pdf) de Bard para las siguientes actividades:
 
 1. Use un _selector universal_ para asignar la familia tipográfica _Arial, sans-serif_ para todo el documento. 
 2. Utilice un _selector por clase_ para fijar la familia tipográfica _Times New Roman, serif_ para todos los títulos de las secciones (&lt;h2&gt;). 
@@ -37,7 +37,7 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard02.pdf) para las siguientes ac
 
 #### Familias tipográficas de Google Fonts
 
-Compruebe la sugerencia de [Bard](bard/guia04-bard03.pdf) para las siguientes actividades:
+Compruebe la [sugerencia](bard/guia04-bard03.pdf) de Bard para las siguientes actividades:
 
 1. En Google Fonts, genere la referencia a las familias tipográficas escogidas previamente de Fontjoy.
 2. Al inicio de la hoja de estilo, agregue la referencia a las familias tipográficas de Google Fonts.
@@ -45,7 +45,7 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard03.pdf) para las siguientes ac
 
 #### Color de texto y color de fondo
 
-Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes actividades:
+Compruebe la [sugerencia](bard/guia04-bard04.pdf) de Bard para las siguientes actividades:
 
 1. Tome como referencia la combinación de colores previamente seleccionada a partir de Happy Hues, Huemint o ColorMagic.
 2. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
@@ -53,10 +53,10 @@ Compruebe la sugerencia de [Bard](bard/guia04-bard04.pdf) para las siguientes ac
 
 #### Modelo de caja
 
-Compruebe la sugerencia de [Bard](bard/guia04-bard05.pdf) para las siguientes actividades:
+Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes actividades:
 
 1. Utilice alguno de los _selectores_ (por clase o por identificador) para acceder a una sección (&lt;section&gt;).
-2. Aplique a su gusto las `propiedades CSS` y los `valores CSS` para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
+2. Aplique a su gusto las `reglas CSS` (las `propiedades CSS` y los `valores CSS`) para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
 
   ```
   #principal {
