@@ -4,13 +4,13 @@ theme: jekyll-theme-leap-day
 
 ## Guía 01
 
-[DAWM](/DAWM/) / [Proyecto01](/DAWM/proyectos/2024/proyecto00)
+[DAWM](/DAWM/) / [Proyecto00](/DAWM/proyectos/2024/proyecto00)
 
 ### Actividades en clases
 
+* Utilice la [respuesta](bard/guia01-bard01.pdf) `Bard` como referencia para comenzar con el repositorio personal en [Github](https://github.com/).
 * Utiliza `ChatGPT` para decidir el contenido de tu repositorio personal, p.e.: tus proyectos, las tecnologías que has utilizado, el estado de tus proyectos, correo institucional, etc. Omite datos sensibles, como: foto, números de contacto, correo personal, dirección, etc.
 * Diseñe la estructura del contenido de su repositorio, p.e.: decide el orden del contenido, los títulos y subtítulos de cada sección, imágenes de los proyectos, etc.
-* Utilice la [respuesta](bard/guia01-bard01.pdf) `Bard` como referencia para comenzar el repositorio personal en [Github](https://github.com/).
 * Genera el código `QR` del sitio en [QR Code Generator](https://br.qr-code-generator.com/) a partir del `URL`.
 
 ### Documentación
