@@ -55,7 +55,7 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 * Inside look at modern web browser en Chrome Developer Network [Parte 1](https://developer.chrome.com/blog/inside-browser-part1/), [Parte 2](https://developer.chrome.com/blog/inside-browser-part2/), [Parte 3](https://developer.chrome.com/blog/inside-browser-part3/) y [Parte 4](https://developer.chrome.com/blog/inside-browser-part4/)
 
 <p style="text-align: center;">
-<img src="https://wd.imgix.net/image/T4FyVKpzu4WKF1kBNvXepbi08t52/vl5sRzL8pFwlLSN7WW12.png?auto=format&w=964"  width="80%">
+<img src="https://developer.chrome.com/images/hero.webp?w=1160&%3Bh=608&%3BfetchPriority=high&hl=es-419"  width="80%">
 </p>
 
 
