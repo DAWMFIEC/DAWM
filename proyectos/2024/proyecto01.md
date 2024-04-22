@@ -21,7 +21,7 @@ Como desarrollador, ¿Qué tipo de información debo mostrar en mi curriculum vi
 ```
 La respuesta es:
 
-![proyecto2](archivos/proyecto02-pregunta1.png)
+![proyecto2](archivos/proyecto01-pregunta1.png)
 
 Mientras que para el prompt: 
 
@@ -30,7 +30,7 @@ Como desarrollador, ¿Qué tipo de información NO debo mostrar en mi curriculum
 ```
 La respuesta es:
 
-![proyecto2](archivos/proyecto02-pregunta2.png)
+![proyecto2](archivos/proyecto01-pregunta2.png)
 
 ### Guías
 
