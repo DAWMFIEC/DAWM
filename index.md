@@ -15,110 +15,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ## Proyectos y Guías
 
-* [Proyecto 01: Repositorio del desarrollador - Markdown y GitHub Pages](proyectos/2023/proyecto01)
+* [Proyecto 00: Repositorio del desarrollador - Markdown y GitHub Pages](proyectos/2023/proyecto01)
     * [Guía 01: Git + GitHub](guias/2023/guia01)
-* [Proyecto 02: Curriculum Vitae - HTML & CSS](proyectos/2023/proyecto02)
-    * [Guía 02: HTML - Estructura global, etiquetas HTML y semántica](guias/2023/guia02)
-    * [Guía 03: HTML - Etiquetas contenedoras, formularios y multimedia](guias/2023/guia03)
-    * [Guía 04: CSS - Selectores, propiedades y valores. Modelo de caja](guias/2023/guia04)
-    * [Guía 05: CSS - Grid vs Flexbox](guias/2023/guia05)
-* [Proyecto 03: Landing Page SPA - Bootstrap](proyectos/2023/proyecto03)
-  * [Guía 06: Responsive Web Design y Bootstrap](guias/2023/guia06)
-  * [Guía 07: Validación de HTML y CSS](guias/2023/guia07)
-* [Proyecto 04: Dashboard - Javascript](proyectos/2023/proyecto04)
-  * [Guía 08: Javascript - Introducción y DOM](guias/2023/guia08)
-  * [Guía 09: Javascript - Sincronía/Asincronía y Promesas](guias/2023/guia09)
-  * [Guía 10: Javascript - Async/Await y LocalStorage](guias/2023/guia10)
-  * [Guía 11: Javascript - CORS](guias/2023/guia11)
-* [Proyecto 05: Dataset MPA - Angular](proyectos/2023/proyecto05)
-  * [Guía 12: Typescript](guias/2023/guia12)
-  * [Guía 13: Angular - Introducción y Plantilla](guias/2023/guia13)
-  * [Guía 14: Angular - Componentes y Rutas](guias/2023/guia14)
-  * [Guía 15: Firebase - Realtime Database y Angular - Interfaz, Servicios y Directivas](guias/2023/guia15)
-  * [Guía 16: Angular - Despliegue en producción con GitHub Actions](guias/2023/guia16)
-* [Proyecto 06: REST API - Express](proyectos/2023/proyecto06)
-  * [Guía 17: Express - API de Datos - REST API](guias/2023/guia17)
-  * [Guía 18: Express - API de Datos - Swagger](guias/2023/guia18)
-  * [Guía 19: Express - API de Seguridad - Encriptación de contraseña](guias/2023/guia19)
-  * [Guía 20: Express - API de Seguridad - JWT](guias/2023/guia20)
-  * [Guía 21: Express - API de Seguridad - Cookies](guias/2023/guia21)
-  * [Guía 22: Express - API de Datos y de Seguridad - Autenticación y Autorización](guias/2023/guia22)
-  * [Guía 23: Express - Despliegue en producción con Railway](guias/2023/guia23)
-* [Proyecto 07: AppMóvil - Angular y Ionic](proyectos/2023/proyecto07)
-  * [Guía 24: Ionic - Introducción](guias/2023/guia24)
-  * [Guía 25: Ionic - Componentes](guias/2023/guia25)
-  * [Guía 26: Ionic - Funcionalidad nativa](guias/2023/guia26)
-  * [Guía 27: Ionic - Interacción con Firebase](guias/2023/guia27)
-  * [Guía 28: Ionic - Generación del apk](guias/2023/guia28)
-
-### Anteriores
-
-[2022](guias/2022.md)
-
-## Tutoriales
-
-#### CSS
-
-* [Flexbox - Sitio Web](tutoriales/diseno_flexbox.md)
-
-#### SQL
-
-* [Modelo EER a SQL](tutoriales/modeloeer_sql.md)
-
-#### Documentación
-
-* [Swagger](tutoriales/swagger.md)
-
-#### Servidor
-
-* [HTTP - Python](tutoriales/python.md)
-* [HTTP - Nodejs](tutoriales/nodejs.md)
-* [Local CORS Proxy](tutoriales/lcp.md)
-
-#### Firebase (Servicios gratuitos)
-
-* [Firebase - Hosting / Sitio Estático](tutoriales/firebase_hosting_estatico.md)
-* [Firebase - Realtime Database](tutoriales/firebase_realtime_database.md)
-
-#### Railway (Servicios gratuitos por tiempo limitado)
-
-* [Railway - Hosting / Sitio Estático](tutoriales/railway_sitio_estatico.md)
-* [Railway - Hosting / MySQL](tutoriales/railway_msyql.md)
-
-#### Heroku (Servicios pagados)
-
-* [Heroku - Sitio Estático](tutoriales/heroku_estatico.md)
-* [Heroku - Express](tutoriales/heroku_express.md)
-
-#### Angular
-
-* [Angular - Local](tutoriales/angular_local.md)
-* [Angular - Bootstrap](tutoriales/angular_bootstrap.md)
-* [Angular - Componentes, Comunicación y Directivas](tutoriales/angular_bases.md)
-* [Angular - Servicios](tutoriales/angular_servicios.md)
-* [Angular - Material](tutoriales/angular_material.md)
-* [Angular - Rutas](tutoriales/angular_rutas.md)
-* [Angular - PWA](tutoriales/angular_pwa.md)
-* [Angular - Cordova](tutoriales/angular_cordova.md)
-
-
-#### Express
-
-* [Express - Bases](tutoriales/express_bases.md)
-* [Express - Bootstrap](tutoriales/express_bootstrap.md)
-* [Express - Partials/Layout](tutoriales/express_partials.md)
-* [Express - ORM Básico](tutoriales/express_ormbasico.md)
-* [Express - ORM Intermedio](tutoriales/express_ormintermedio.md)
-* [Express - Parámetros de consulta y Parámetros de ruta](tutoriales/express_pcpr.md)
-* [Express - ODM Básico](tutoriales/express_odmbasico.md)
-* [Express - REST I](tutoriales/express_rest.md)
-* [Express - Formularios I](tutoriales/express_forms1.md)
-* [Express - Formularios II](tutoriales/express_forms2.md)
-* [Express - ORM Avanzado](tutoriales/express_ormavanzado.md)
-* [Express - REST II](tutoriales/express_rest2.md)
-* [Express - Manejo de estados I: Sesión](tutoriales/express_estados1.md)
-* [Express - Manejo de estados II: Cookies](tutoriales/express_estados1.md)
-
 
 #### Scripts
 
@@ -129,7 +27,6 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Programming-Notes-for-Professionals-books](https://github.com/bao-vn/Programming-Notes-for-Professionals-books/tree/master/GoalKicker)
 * [Sobrecodigo](https://www.instagram.com/sobrecodigo/)
 * [Web.dev](https://web.dev/)
-
 
 ## Indicaciones Generales
 
@@ -148,10 +45,6 @@ En cuanto a librerías y frameworks del lado del cliente, podemos encontrar a [W
 Mientras diseñas tu sitio web, puedes utilizar los inspectores de [Mozilla](https://developer.mozilla.org/es/docs/Tools/Page_Inspector) o [Chrome](https://developers.google.com/web/tools/chrome-devtools/?utm_source=dcc&utm_medium=redirect&utm_campaign=2018Q2) para verificar la estructura semántica de las páginas. Y algunos cheatsheets de HTML/CSS/GIT en la carpeta <a href="/cheatsheets">Recursos</a>, [Google Web Fonts](https://devhints.io/google-webfonts) y [Bootstrap](https://hackerthemes.com/bootstrap-cheatsheet/).
 
 Cuando tengas listo tu sitio web estático o tu aplicación web dinámica será necesario utilizar un servidor web. Mediante la extensión [Web Server for Chrome](https://chrome.google.com/webstore/detail/web-server-for-chrome/ofhbbkphhbklhfoeikjpcbhemlocgigb?hl=en) para Google Chrome es posible lanzar un servidor local para sitios web estáticos. Si requieres de un PAAS para poner en producción tu aplicación web, existen opciones como [Firebase](https://firebase.google.com/docs/hosting/quickstart?authuser=1) o [Heroku](https://www.heroku.com/).
-
-### Otras versiones
-
-* Versión anterior [Sitio Web](https://dawfiec.github.io/DAWM-old/) y [Repo](https://github.com/DAWFIEC/DAWM-old).
 
 ### Markdown
 
