@@ -126,7 +126,9 @@ theme: jekyll-theme-leap-day
 		```
 			flex-basis: porcentaje%;
 
-			/* El espacio restante en el contenedor se distribuirá equitativamente entre todos los elementos internos */
+			/* El espacio restante en el contenedor se distribuirá 
+			equitativamente entre todos los elementos internos */
+			
 			flex-grow: 1;
 		```
 
