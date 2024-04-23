@@ -87,7 +87,7 @@ theme: jekyll-theme-leap-day
 
 		```
 	+ Verifique los cambios en el navegador
-	
+
 
 **Flexbox**
 
@@ -119,17 +119,16 @@ theme: jekyll-theme-leap-day
 
 	```
 
-* Utilice los selectores CSS para acceder a cada elemento &lt;section&gt; que se encuentran dentro de la etiqueta &lt;main&gt;. 
-* Coloque los valores para **valor**. Verifique los cambios en el navegador
+* Para cada elemento	**&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
+	+ Acceda con el selector CSS de su preferencia. 
+	+ Para la propiedad **flex-basis**, coloque los valores para **porcentaje**. Verifique los cambios en el navegador
 	
-	```
+		```
+			flex-basis: porcentaje%;
 
-		flex-basis: valor%;
-
-		/* El espacio restante en el contenedor se distribuirá equitativamente entre todos los elementos internos */
-		flex-grow: 1;
-
-	```
+			/* El espacio restante en el contenedor se distribuirá equitativamente entre todos los elementos internos */
+			flex-grow: 1;
+		```
 
 ### Actividades
 
