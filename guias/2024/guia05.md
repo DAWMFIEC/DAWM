@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* [Colocación de elementos](/DAWM/enclases/colocacion.md)
+* [Colocación de elementos](/DAWM/enclases/colocacion)
 
 ### Actividades
 

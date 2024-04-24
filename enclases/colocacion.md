@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 # Ejercicio de colocación de elementos
 
-* Descargue y descomprima el ejercicio de [colocación](ejercicios/colocacion.zip). 
+* Descargue y descomprima el ejercicio de [colocación](/DAWM/ejercicios/colocacion.zip). 
 * Habilite el [Live Server de Visual Studio Code](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
 * Habilite el inspector en el navegador para visualizar los cambios en vivo.
 
@@ -45,7 +45,7 @@ theme: jekyll-theme-leap-day
 			grid-row: finicio / ffinal;
 
 		```
-  + Verifique los cambios en el navegador
+    + Verifique los cambios en el navegador
 
 **Grid por area**
 
@@ -113,9 +113,9 @@ theme: jekyll-theme-leap-day
 
 	```
 
-* Para cada elemento	**&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
+* Para cada elemento **&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
 	+ Acceda con el selector CSS de su preferencia. 
-	+ Para la propiedad **flex-basis**, coloque los valores para **porcentaje**. Verifique los cambios en el navegador
+	+ Para la propiedad **flex-basis**, coloque los valores para **porcentaje**. 
 	
 		```
 			flex-basis: porcentaje%;
@@ -125,3 +125,25 @@ theme: jekyll-theme-leap-day
 			
 			flex-grow: 1;
 		```
+
+    + Verifique los cambios en el navegador
+
+
+### Respuesta
+
+* Responda a la actividad 
+
+### Referencias
+
+* Pseudoclases y pseudoelementos - Aprende sobre desarrollo web MDN. (2021). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Learn/CSS/Building__blocks/Selectors/Pseudo-classes__and__pseudo-elements
+* Pseudo-classes - CSS MDN. (2022). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+* Pseudoelementos - CSS MDN. (2022). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
+* 3.4. Pseudo-clases (CSS avanzado). (2022). Retrieved 31 May 2022, from https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-clases
+* 3.5. Pseudo-elementos (CSS avanzado). (2022). Retrieved 31 May 2022, from https://uniwebsidad.com/libros/css-avanzado/capitulo-3/pseudo-elementos
+* Relación de Grid Layout con otros métodos de diseño y posicionamiento - CSS - CSS MDN. (2021). Retrieved 31 May 2022, from https://developer.mozilla.org/es/docs/Web/CSS/CSS__Grid__Layout/Relationship__of__Grid__Layout
+* Don't Overthink It (Flexbox) Grids  CSS-Tricks. (2016). Retrieved 31 May 2022, from https://css-tricks.com/dont-overthink-flexbox-grids/
+* flexbox-playground. (2022). Retrieved 31 May 2022, from https://flexbox.netlify.app/
+* A Complete Guide to Flexbox  CSS-Tricks. (2013). Retrieved 31 May 2022, from https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+* A Complete Guide to Grid CSS-Tricks. (2021). Retrieved 31 May 2022, from https://css-tricks.com/snippets/css/complete-guide-grid/
+* Layoutit Grid: Learning CSS Grid Visually With a Generator CSS-Tricks. (2020). Retrieved 1 June 2022, from https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/
+* Simple HTTP server in Python - Anurag Kumar. (2022). Retrieved 1 June 2022, from https://www.hackerearth.com/practice/notes/simple-http-server-in-python/
