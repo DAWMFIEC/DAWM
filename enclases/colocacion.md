@@ -2,19 +2,21 @@
 theme: jekyll-theme-leap-day
 ---
 
-# Ejercicio de colocación de elementos
+# Colocación de elementos
+
+## Actividades previas
 
 * Descargue y descomprima el ejercicio de [colocación](/DAWM/ejercicios/colocacion.zip). 
 * Habilite el [Live Server de Visual Studio Code](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
 * Habilite el inspector en el navegador para visualizar los cambios en vivo.
 
-#### Grid vs Flexbox
+## Grid vs Flexbox
 
 * Considere el siguiente diseño para la `colocación de elementos` mediante `flexbox` y `grid` .
 
 <img src="imagenes/diseno.png" alt="diseño">
 
-**Grid por columnas** 
+### Grid por columnas 
 
 * Modifique la hoja de estilos _css/grid_columnas.css_.
 * Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
@@ -47,7 +49,7 @@ theme: jekyll-theme-leap-day
 		```
     + Verifique los cambios en el navegador
 
-**Grid por area**
+### Grid por area
 
 * Modifique la hoja de estilos _css/grid_areas.css_.
 * Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
@@ -83,7 +85,7 @@ theme: jekyll-theme-leap-day
 	+ Verifique los cambios en el navegador
 
 
-**Flexbox**
+### Flexbox
 
 * Modifique la hoja de estilos _css/flexbox.css_.
 * Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
@@ -128,10 +130,9 @@ theme: jekyll-theme-leap-day
 
     + Verifique los cambios en el navegador
 
-
 ### Respuesta
 
-* Responda a la actividad 
+* Comprima los archivos en formato .zip o .rar y responda a la actividad en el aulavirtual.
 
 ### Referencias
 
