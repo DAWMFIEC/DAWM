@@ -14,12 +14,12 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Tome como referencia [Frontend Practice](https://www.frontendpractice.com/projects) para elegir la colocación de elementos de su proyecto.
+* Elige la colocación de elementos del sitio. Toma como referencia los ejemplos de [Frontend Practice](https://www.frontendpractice.com/projects).
 	
-	**Mínimo:** Su diseño NO solo debe considerar que los elementos estén apilados. Al menos, una fila debe contener dos elementos.
+	**Mínimo:** Al menos, una fila debe contener dos elementos y una fila con tres elementos.
 
 * Clona localmente tu repositorio **curriculum**.
-* Aplique la colocación de elementos en su proyecto.
+* Aplica flexbox o grid de acuerdo con la colocación de elementos del sitio.
 * Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
