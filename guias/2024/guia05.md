@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
 
 * Elige la colocación de elementos del sitio. Toma como referencia los ejemplos de [Frontend Practice](https://www.frontendpractice.com/projects).
 	
-	**Mínimo:** Al menos, una fila debe contener dos elementos y una fila con tres elementos.
+	**Mínimo:** Al menos, una fila debe contener dos elementos y una fila debe contener tres elementos.
 
 * Clona localmente tu repositorio **curriculum**.
 * Aplica flexbox o grid de acuerdo con la colocación de elementos del sitio.
