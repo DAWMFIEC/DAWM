@@ -4,6 +4,8 @@ theme: jekyll-theme-leap-day
 
 # Colocación de elementos
 
+[DAWM](/DAWM/)
+
 ## Actividades previas
 
 * Descargue y descomprima el ejercicio de [colocación](/DAWM/ejercicios/colocacion.zip). 
