@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 02: Dashboard - RWD & Javascript
+## Proyecto 02: Dashboard - Responsive Web Design (RWD) & Javascript
 
 [DAWM](/DAWM/)
 
