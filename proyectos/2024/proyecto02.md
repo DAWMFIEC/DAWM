@@ -28,10 +28,7 @@ La respuesta es:
 
 * [Guía 06: Responsive Design y Bootstrap](/DAWM/guias/2024/guia06)
 * [Guía 07: Validación de HTML y CSS](/DAWM/guias/2024/guia07)
-
 * [Guía 08: Javascript - Introducción y DOM](/DAWM/guias/2024/guia08)
-
 * [Guía 09: Javascript - Sincronía/Asincronía y Promesas](/DAWM/guias/2024/guia09)
-
 * [Guía 10: Javascript - Async/Await y LocalStorage](/DAWM/guias/2024/guia10)
 * [Guía 11: Javascript - CORS](/DAWM/guias/2024/guia11)
