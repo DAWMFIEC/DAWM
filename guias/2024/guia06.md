@@ -6,6 +6,10 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto03](/DAWM/proyectos/2023/proyecto03)
 
+### Actividad en clases
+
+* [Responsivo](/DAWM/enclases/responsivo)
+
 ### Actividades previas
 
 #### Responsive Web Design (RWD)

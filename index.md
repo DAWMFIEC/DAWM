@@ -22,7 +22,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
     * [Guía 03: HTML - Etiquetas contenedoras, formularios y multimedia](guias/2024/guia03)
     * [Guía 04: CSS - Selectores, propiedades y valores. Modelo de caja](guias/2024/guia04)
     * [Guía 05: CSS - Grid vs Flexbox](guias/2024/guia05)
-* [Proyecto 02: Dashboard - Responsive Web Design (RWD) & Javascript](proyectos/2024/proyecto02)
+* [Proyecto 02: Landing Page SPA - Responsive Web Design (RWD) & Javascript](proyectos/2024/proyecto02)
   
   * [Guía 06: Responsive Web Design y Bootstrap](guias/2024/guia06)
   * [Guía 07: Validación de HTML y CSS](guias/2024/guia07)
@@ -34,7 +34,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 10: Javascript - Async/Await y LocalStorage](guias/2024/guia10)
   * [Guía 11: Javascript - CORS](guias/2024/guia11)
   
-* [Proyecto 03: Landing Page SPA - Bootstrap & React](proyectos/2024/proyecto03)
+* [Proyecto 03: Dashboard MPA - Bootstrap & React](proyectos/2024/proyecto03)
 
 ## Scripts
 
