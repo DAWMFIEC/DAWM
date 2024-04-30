@@ -8,11 +8,24 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+* 
+* Accede a los sitios:
+	- [ESPOL](https://www.espol.edu.ec)
+	- [Académico](https://academico.espol.edu.ec/) e ingrese con sus credenciales
+	- [Alcaldía de Guayaquil](https://www.guayaquil.gob.ec/)
+	- [Ministerio de Gobierno](https://www.ministeriodegobierno.gob.ec/)
+
 ### Actividades
+
+* Utiliza la respuesta de Bard para evaluar la capacidad de respuesta de un sitio web al tamaño del dispositivo:
+  1. Revise la vista del sitio para dispositivos móviles, con:
+     + El inspector del navegador, en la opción **Toggle device toolbar**, o 
+     + En los sitios [Responsinator](http://www.responsinator.com/), [Website planet](https://www.websiteplanet.com/es/webtools/responsive-checker/) o [Browserstack](https://www.browserstack.com/responsive).
+  2. .
 
 ### Entregable
 
-* Comprima todos los archivos en formato .zip, o .rar, y responda a la actividad en el aulavirtual.
+* Archivo de excel y responda a la actividad en el aulavirtual.
 
 ### Referencias
 
