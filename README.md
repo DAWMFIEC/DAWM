@@ -61,8 +61,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | Capítulo 02   | [Ejercicio 01](Capítulo02/ejercicio01)         | Diseño responsivo: Grid  |
 | 			    | [Ejercicio 02](Capítulo02/ejercicio02)         | Diseño responsivo: Flexbox  |
 | 			    | [Ejercicio 03](Capítulo02/ejercicio03)         | RWD  |
-| 			    | [Ejercicio 04](Capítulo02/ejercicio04)         | Bootstrap  |
-| 			    | [Ejercicio 05](Capítulo02/ejercicio05)         | Validación  |
+| 			    | [Ejercicio 04](Capítulo02/ejercicio04)         | Validación  |
 | Capítulo 03   | [Ejercicio 01](Capítulo03/ejercicio01)         | Etiqueta script  |
 | 				| [Ejercicio 02](Capítulo03/ejercicio02)         | Fundamentos  |
 |               | [Ejercicio 03](Capítulo03/ejercicio03)         | Control de flujo y Funciones  |
