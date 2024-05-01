@@ -6,6 +6,8 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto02](/DAWM/proyectos/2024/proyecto02)
 
+### Actividades previas
+
 #### Landing Page
 
 * Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc. 
@@ -38,8 +40,8 @@ theme: jekyll-theme-leap-day
 
 1. Obtenga una plantilla gratuita. 
    + Descargue y descomprima los archivos en su directorio local. 
-   + Compruebe la estructura local: HTML, CSS, JavaScript y carpetas para imágenes, fuentes y otros recursos.
-   + Abra la carpeta de la plantilla en VSCode y utilice el Live Server para identificar los cambios. 
+   + Revise la estructura de carpetas: HTML, CSS, JavaScript, imágenes, fuentes y otros recursos.
+   + Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
 2. Personalice el contenido (texto e imágenes) de la plantilla.
 3. Utilice una hoja de estilo externa para agregar o modificar la paleta de colores y tipografía de la plantilla.
 4. Realice los cambios para la versión para dispositivos móviles antes que en la versión para dispositivos de escritorio.
@@ -55,17 +57,13 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
  
-* Responsive Web Design
-  + [Responsive Web Design - A List Apart](https://alistapart.com/article/responsive-web-design/) contiene las directrices generales redactadas desde 2010. 
-  + [Web Design History Timeline](https://www.webdesignmuseum.org/web-design-history) con la cronología de hitos en la historia del diseño web desde 1990 hasta la actualidad.
-  + [Responsive Design: Best Practices & Examples](https://www.uxpin.com/studio/blog/best-practices-examples-of-excellent-responsive-design/) describe las buenas prácticas y ejemplos de sitios responsivos.
 * [Bootstrap](https://getbootstrap.com/) es un `kit de herramientas` para `front-end` potente, ampliable y repleto de funciones. Con el cual puedes crear y personalizar con Sass, utilizar el sistema de grillas y los `componentes` prediseñados.
 	- Algunas características distintivas de la versión 5 se encuentran en la [documentación oficial](https://getbootstrap.com/docs/5.0/migration/) y en [Web3canvas](https://web3canvas.com/convert-bootstrap-4-to-5-migration-guide/).
 
 
 ### Términos
 
-responsivo, landing page, kit de herramientas, front-end, componentes
+landing page, kit de herramientas, front-end, componentes
 
 ### Referencias
 
