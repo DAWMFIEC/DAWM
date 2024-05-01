@@ -26,7 +26,7 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 06: Responsive Web Design y Validación de HTML y CSS](/DAWM/guias/2024/guia06)
+* [Guía 06: Bootstrap y Validación](/DAWM/guias/2024/guia06)
 * [Guía 07: Javascript - Introducción y DOM](/DAWM/guias/2024/guia07)
 * [Guía 08: Javascript - Sincronía/Asincronía y Promesas](/DAWM/guias/2024/guia08)
 * [Guía 09: Javascript - Async/Await](/DAWM/guias/2024/guia09)
