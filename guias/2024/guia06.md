@@ -8,12 +8,13 @@ theme: jekyll-theme-leap-day
 
 #### Landing Page
 
-* Defina los objetivos de su  `landing page`, p.e.: venta de productos de belleza, grupo estudiantil, veterinaria, noticias de KPOP, etc. 
-* Decida las secciones y el contenido que serán parte de la landing page. Esto puede incluir encabezados, imágenes, videos, testimonios, formularios de registro, etc.
+* Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc. 
+* Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Gemini.
   
   **Contenido Mínimo:** 
   - 3 secciones con información del sitio, <br>
-  - 1 sección con un formulario, <br>
+  - 1 sección con un formulario de contacto, suscripción o registro, <br>
+  - 1 sección con información de contacto, <br>
   - 1 menú para desplazarse entre secciones.
 
 * Seleccione una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
