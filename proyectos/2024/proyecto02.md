@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 02:  Landing Page SPA - Responsive Web Design (RWD) & Javascript
+## Proyecto 02:  Landing Page SPA - Bootstrap & Javascript
 
 [DAWM](/DAWM/)
 
