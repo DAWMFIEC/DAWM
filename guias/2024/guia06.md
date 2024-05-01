@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividad en clases
 
-* [Responsivo](/DAWM/enclases/responsivo)
+* [Responsive Web Design](/DAWM/enclases/responsivo)
 
 ### Actividades previas
 

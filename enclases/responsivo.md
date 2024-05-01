@@ -2,13 +2,13 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Colocación de elementos
+## Responsive Web Design
 
 [DAWM](/DAWM/)
 
 ### Actividades previas
 
-* 
+* Utilice ChatGPT, o Bard, para generar una rúbrica de evaluación para el diseño web adaptativo (Responsive Web Design). 
 * Accede a los sitios:
 	- [ESPOL](https://www.espol.edu.ec)
 	- [Académico](https://academico.espol.edu.ec/) e ingrese con sus credenciales
