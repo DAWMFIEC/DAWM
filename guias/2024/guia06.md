@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
 * Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Gemini.
   
   **Contenido Mínimo:** 
-  - 3 secciones con información del sitio (debe contener listas, imágenes y texto), <br>
+  - 3 secciones con información (mediante listas, imágenes y texto) del sitio, <br>
   - 1 sección con un formulario de contacto, suscripción o registro, <br>
   - 1 sección con información de contacto, <br>
   - 1 menú para desplazarse entre secciones.
