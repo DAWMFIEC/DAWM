@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
 * Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Gemini.
   
   **Contenido Mínimo:** 
-  - 3 secciones con información del sitio, <br>
+  - 3 secciones con información del sitio (debe contener listas, imágenes y texto), <br>
   - 1 sección con un formulario de contacto, suscripción o registro, <br>
   - 1 sección con información de contacto, <br>
   - 1 menú para desplazarse entre secciones.
@@ -42,9 +42,9 @@ theme: jekyll-theme-leap-day
    + Descargue y descomprima los archivos en su directorio local. 
    + Revise la estructura de carpetas: HTML, CSS, JavaScript, imágenes, fuentes y otros recursos.
    + Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
-2. Personalice el contenido (texto e imágenes) de la plantilla.
-3. Utilice una hoja de estilo externa para agregar o modificar la paleta de colores y tipografía de la plantilla.
-4. Realice los cambios para la versión para dispositivos móviles antes que en la versión para dispositivos de escritorio.
+2. Personalice el contenido (texto e imágenes) de la plantilla de acuerdo con el objetivo de su _landing page_.
+3. Agregue una hoja de estilo externa para modificar el estilo de la plantilla.
+4. Realice los cambios para la versión para dispositivos móviles y para dispositivos de escritorio.
 5. Versiona local y remotamente el repositorio **landing**.
 6. Despliegue el sitio del repositorio **landing** utilizando GitHub Pages.
 
