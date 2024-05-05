@@ -9,8 +9,8 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * Descargue y descomprima el ejercicio de [colocación](/DAWM/ejercicios/colocacion.zip). 
-* Habilite el [Live Server de Visual Studio Code](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
-* Habilite el inspector en el navegador para visualizar los cambios en vivo.
+* Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
+* En el navegador, habilite el inspector para visualizar los cambios en vivo.
 
 ### Actividades
 
@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 #### Grid por columnas 
 
 * Modifique la hoja de estilos _css/grid_columnas.css_.
-* Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
+* Utilice el selector CSS de su preferencia para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
 
 	```
 
@@ -36,19 +36,19 @@ theme: jekyll-theme-leap-day
 		/* Separación entre columnas */
 		column-gap: 0.5rem; 
 
-		/* Número de columnas: 6 * 1fr */
+		/* Número de columnas: 6 x 1fr */
 		grid-template-columns: repeat(6, 1fr); 
 
 	```
 
-* Para cada elemento	**&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
-	+ Acceda con el selector CSS de su preferencia. 
-	+ Para las propiedades **grid-column** y **grid-row**, coloque los valores para **cinicio**, **cfinal**, **finicio** y **ffinal**.
+* Para cada elemento **&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
+	+ Acceda al elemento con el selector CSS de su preferencia. 
+	+ Para las propiedades **grid-column** y **grid-row**, en lugar de **columna_inicio**, **columna_final**, **fila_inicio** y **fila_final** reemplace por los valores que considere necesarios.
 	
 		```
 
-			grid-column: cinicio / cfinal;
-			grid-row: finicio / ffinal;
+			grid-column: columna_inicio / columna_final;
+			grid-row: fila_inicio / fila_final;
 
 		```
     + Verifique los cambios en el navegador
@@ -56,7 +56,7 @@ theme: jekyll-theme-leap-day
 #### Grid por area
 
 * Modifique la hoja de estilos _css/grid_areas.css_.
-* Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
+* Utilice el selector CSS de su preferencia para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
 
 	```
 
@@ -77,13 +77,13 @@ theme: jekyll-theme-leap-day
 
 	```
 
-* Para cada elemento	**&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
-	+ Acceda con el selector CSS de su preferencia. 
-	+ Para la propiedad **grid-area**, coloque los valores para **idarea**.
+* Para cada elemento **&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
+	+ Acceda al elemento con el selector CSS de su preferencia. 
+	+ Para la propiedad **grid-area**, en lugar **nombre_area** coloque el nombre del área de acuerdo con la plantilla.
 	
 		```
 
-			grid-area: idarea;
+			grid-area: nombre_area;
 
 		```
 	+ Verifique los cambios en el navegador
@@ -92,7 +92,7 @@ theme: jekyll-theme-leap-day
 #### Flexbox
 
 * Modifique la hoja de estilos _css/flexbox.css_.
-* Utilice el selector CSS para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
+* Utilice el selector CSS de su preferencia para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
 
 	```
 
@@ -121,7 +121,7 @@ theme: jekyll-theme-leap-day
 
 * Para cada elemento **&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
 	+ Acceda con el selector CSS de su preferencia. 
-	+ Para la propiedad **flex-basis**, coloque los valores para **porcentaje**. 
+	+ Para la propiedad **flex-basis**, reemplace **porcentaje** por el valor que crea conveniente. 
 	
 		```
 			flex-basis: porcentaje%;
