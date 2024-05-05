@@ -55,17 +55,27 @@ Compruebe la [sugerencia](bard/guia04-bard04.pdf) de Bard para las siguientes ac
 
 Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes actividades:
 
-1. Utilice alguno de los _selectores_ (por clase o por identificador) para acceder a una sección (&lt;section&gt;).
+1. Utilice alguno de los _selectores_ para acceder a una sección (&lt;section&gt;) de su página web.
 2. Aplique a su gusto las `reglas CSS` (las `propiedades CSS` y los `valores CSS`) para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
 
   ```
-  #principal {
+  <selectorCSS> {
     margin: 2px 1px 1.5px;
     margin-top: 0.8rem;
-    border: 1pt solid black;
-    padding: 2% 1.2%;  
+    border: 0.2pt dashed #827d7d;
+    padding: 2% 1.2%;   
   }
   ```
+3. Agregue la propiedad **box-shadow** con los siguientes valores:
+
+   ```
+   box-shadow: 
+      rgba(0, 0, 0, 0.25) 0px 54px 55px, 
+      rgba(0, 0, 0, 0.12) 0px -12px 30px, 
+      rgba(0, 0, 0, 0.12) 0px 4px 6px,
+      rgba(0, 0, 0, 0.17) 0px 12px 13px, 
+      rgba(0, 0, 0, 0.09) 0px -3px 5px; 
+   ```
 
 * Versiona local y remotamente el repositorio **curriculum**.
 
@@ -98,3 +108,4 @@ servidor HTTP, ruta de la aplicación, CSS, reglas CSS, selectores CSS, propieda
 * The W3C Markup Validation Service. (2022). Retrieved 24 May 2022, from https://validator.w3.org/
 * CSS: centering things. (2023). Retrieved 23 May 2023, from https://www.w3.org/Style/Examples/007/center.en.html
 * CSS Box Model. (2023). Retrieved 23 May 2023, from https://www.w3schools.com/css/css_boxmodel.asp
+* Beautiful CSS box-shadow examples - CSS Scan. (n.d.). Retrieved from https://getcssscan.com/css-box-shadow-examples
