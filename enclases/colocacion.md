@@ -36,17 +36,8 @@ theme: jekyll-theme-leap-day
 		/* Separación entre columnas */
 		column-gap: 0.5rem; 
 
-	```
-
-* Agregue la propiedad **grid-template-columns**. En lugar de **numero_columnas**, reemplace por el valor que considere conveniente. Verifique los cambios en el navegador.
-
-	```
-
-		...
-		column-gap: ... 
-
-		/* Número de columnas: numero_columnas x 1fr */
-		grid-template-columns: repeat( numero_columnas , 1fr); 
+		/* Número de columnas: 6 x 1fr */
+		grid-template-columns: repeat(6, 1fr); 
 
 	```
 
@@ -78,21 +69,11 @@ theme: jekyll-theme-leap-day
 		/* Separación entre columnas */
 		column-gap: 0.5rem; 
 
-	```
-
-* Agregue la propiedad **grid-template-columns**. Tome como referencia las dos primeras filas para reemplazar **fila3** y **fila4** por las cadenas de texto con el patrón adecuado.  Verifique los cambios en el navegador.
-
-	```
-
-		...
-		column-gap: ... 
-
 		/* Nombres de las áreas*/
 		grid-template-areas: "A A A A A A"
 	                         "B B B Q Q Q"
-	                         fila3
-	                         fila4
-	                         
+	                         "D D E E F F"
+	                         "M M M T T T"
 
 	```
 
