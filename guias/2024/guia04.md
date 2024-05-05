@@ -66,6 +66,7 @@ Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes ac
     padding: 2% 1.2%;   
   }
   ```
+  
 3. Agregue la propiedad **box-shadow** con los siguientes valores:
 
   ```
