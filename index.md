@@ -22,17 +22,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 03: HTML - Etiquetas contenedoras, formularios y multimedia](guias/2024/guia03)
   * [Guía 04: CSS - Selectores, propiedades y valores. Modelo de caja](guias/2024/guia04)
   * [Guía 05: CSS - Grid vs Flexbox](guias/2024/guia05)
-* [Proyecto 02: Landing Page SPA - Bootstrap & Javascript](proyectos/2024/proyecto02)
-  * [Guía 06: Bootstrap](guias/2024/guia06)
-  * [Guía 07: Javascript - Introducción y DOM](guias/2024/guia07)
-  * [Guía 08: Javascript - Eventos](guias/2024/guia08)
-  * [Guía 09: Javascript - Promesas y Async/Await](guias/2024/guia09)
-  * [Guía 10: Javascript - LocalStorage](guias/2024/guia10)
-  * [Guía 11: Javascript - CORS](guias/2024/guia11)
-* [Proyecto 03: Dashboard MPA - React](proyectos/2024/proyecto03)
-  * [Guía 12: React - Intro y componentes](guias/2024/guia11)
-  * [Guía 13: React - Props y Eventos](guias/2024/guia12)
-  * [Guía 14: React - Hooks](guias/2024/guia13)
+
 
 ## Scripts
 
