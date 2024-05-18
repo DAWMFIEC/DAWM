@@ -19,7 +19,6 @@
 * Desde el editor de texto, modifica el archivo `views/index.ejs`
 	+ Realiza todas las notificaciones **INFO**, **WARNING** y **ERROR**.
 	+ En caso de necesitar ayuda, revisa las recomendaciones en [Rocket Validator](https://rocketvalidator.com/html-validation)
-* Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 
 ## Pruebas unitarias
 
