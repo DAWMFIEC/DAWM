@@ -22,7 +22,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 03: HTML - Etiquetas contenedoras, formularios y multimedia](guias/2024/guia03)
   * [Guía 04: CSS - Selectores, propiedades y valores. Modelo de caja](guias/2024/guia04)
   * [Guía 05: CSS - Grid vs Flexbox](guias/2024/guia05)
-
+* [Proyecto 02: Landing Page SPA - Bootstrap & Javascript](proyectos/2024/proyecto02)
+  * [Guía 06: Bootstrap](guias/2024/guia06)
 
 ## Scripts
 
