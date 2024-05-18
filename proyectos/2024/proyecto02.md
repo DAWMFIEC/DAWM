@@ -27,8 +27,3 @@ La respuesta es:
 ### Guías
 
 * [Guía 06: Bootstrap](/DAWM/guias/2024/guia06)
-* [Guía 07: Javascript - Introducción y DOM](/DAWM/guias/2024/guia07)
-* [Guía 08: Javascript - Eventos](/DAWM/guias/2024/guia08)
-* [Guía 09: Javascript - Promesas y Async/Await](/DAWM/guias/2024/guia09)
-* [Guía 10: Javascript - LocalStorage](/DAWM/guias/2024/guia10)
-* [Guía 11: Javascript - CORS](/DAWM/guias/2024/guia11)
