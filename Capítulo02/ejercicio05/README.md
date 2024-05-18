@@ -1,10 +1,10 @@
-# Ejercicio 03
+# Ejercicio 05
 
-![image info](images/ejercicio03.gif)
+![image info](images/ejercicio05.png)
 
 ## Instrucciones
 
-* Descargue y descomprima [C02E03.zip](../../zips/C02E03.zip)
+* Descargue y descomprima [C02E05.zip](../../zips/C02E05.zip)
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Instale los paquetes necesarios, con: `npm install`
@@ -15,10 +15,10 @@
 			+ En MacOs, con: `npm run debugm`
 	+ Utilice su navegador preferido para abrir la vista inicial del ejercicio, con el URL: `http://localhost:3000/`
 
-* Desde el navegador, revise cada una de las instrucciones que aparecen en los recuadros de color verde.
-* Desde el editor de texto, modifica el archivo `views/index.ejs` y el archivo `public/stylesheets/ejercicio.css`
-	+ Agrega tu respuesta dentro de cada uno de los comentarios marcados, con:  
-	`<!-- Inicio -->` y `<!-- Fin -->`; y, `/* Inicio */` y `/* Fin */`
+* Copie todo el contenido del archivo `views/index.ejs` y valide la estructura html con el [W3C Validator By Input](https://validator.w3.org/#validate_by_input).
+* Desde el editor de texto, modifica el archivo `views/index.ejs`
+	+ Realiza todas las notificaciones **INFO**, **WARNING** y **ERROR**.
+	+ En caso de necesitar ayuda, revisa las recomendaciones en [Rocket Validator](https://rocketvalidator.com/html-validation)
 * Desde el navegador, actualice la página y verifique si los cambios cumplen con las instrucciones solicitadas.
 
 ## Pruebas unitarias
@@ -31,4 +31,5 @@
 
 ## Referencias 
 
-* Responsive Web Design - Introduction. (n.d.). Retrieved from https://www.w3schools.com/css/css_rwd_intro.asp
+* Markup Validation Service. (n.d.). Retrieved from https://validator.w3.org/#validate_by_input
+* HTML Guide · Rocket Validator. (n.d.). Retrieved from https://rocketvalidator.com/html-validation
