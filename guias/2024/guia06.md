@@ -16,7 +16,7 @@ theme: jekyll-theme-leap-day
   **Contenido Mínimo:** 
   - 3 secciones con información (mediante listas, imágenes y texto) del sitio, <br>
   - 1 sección con un formulario de contacto, suscripción o registro, <br>
-  - 1 sección con información de contacto, <br>
+  - 1 sección para mostrar los datos ingresados en el formulario, <br>
   - 1 menú para desplazarse entre secciones.
 
 * Seleccione una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
