@@ -24,7 +24,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 05: CSS - Grid vs Flexbox](guias/2024/guia05)
 * [Proyecto 02: Landing Page SPA - Bootstrap & Javascript](proyectos/2024/proyecto02)
   * [Guía 06: Bootstrap](guias/2024/guia06)
-
+  * [Guía 07: Javascript - Introducción, DOM y Eventos](guias/2024/guia07)
+  
 ## Scripts
 
 * [Mock data](tutoriales/mock_data.md)

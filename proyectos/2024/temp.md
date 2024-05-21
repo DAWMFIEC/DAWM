@@ -1,4 +1,4 @@
-* [Guía 07: Javascript - Introducción y DOM](/DAWM/guias/2024/guia07)
+
 * [Guía 08: Javascript - Eventos](/DAWM/guias/2024/guia08)
 * [Guía 09: Javascript - Promesas y Async/Await](/DAWM/guias/2024/guia09)
 * [Guía 10: Javascript - LocalStorage](/DAWM/guias/2024/guia10)
