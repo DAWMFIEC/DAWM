@@ -8,9 +8,14 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+* [Intro a Javascript](/DAWM/enclases/javascript)
+
 ### Actividades
 
 * Clona localmente tu repositorio **landing**.
+* Sigue las instrucciones de [Bard](bard/guia07-gemini01.pdf), y:
+  - Cree la carpeta _'scripts'_, y dentro el archivo de código `Javascript` _'myscript.js'_.
+  - Agregue la referencia con la ruta a la hoja de estilo externa en el archivo _index.html_.
 * Versiona local y remotamente el repositorio **landing**.
 
 ### Fundamental
