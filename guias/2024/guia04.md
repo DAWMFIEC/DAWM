@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
 
 * Clona localmente tu repositorio **curriculum**.
 * Sigue las instrucciones de [Bard](bard/guia04-bard01.pdf), y:
-  - Cree la carpeta _'stylesheets'_, y dentro hoja de estilo externa `CSS` _'style.css'_.
+  - Cree la carpeta _'stylesheets'_, y dentro la hoja de estilo externa `CSS` _'style.css'_.
   - Agregue la referencia con la ruta a la hoja de estilo externa en el archivo _index.html_.
 
 #### Servidor HTTP 
