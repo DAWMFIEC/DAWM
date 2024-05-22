@@ -13,8 +13,8 @@ theme: jekyll-theme-leap-day
 ### Actividades
 
 * Clona localmente tu repositorio **landing**.
-* Sigue las instrucciones de [Gemini](bard/guia07-gemini01.pdf), y:
-  - Cree la carpeta _'scripts'_, y dentro el archivo de código externo `Javascript` _'myscript.js'_.
+* Sigue las instrucciones de [Gemini](gemini/guia07-gemini01.pdf), y:
+  - Cree la carpeta _'scripts'_, y dentro el archivo de código externo `Javascript` _'script.js'_.
   - Agregue la referencia con la ruta al archivo de código externo en el archivo _index.html_.
 * Versiona local y remotamente el repositorio **landing**.
 
