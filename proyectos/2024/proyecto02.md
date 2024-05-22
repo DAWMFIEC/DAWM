@@ -27,3 +27,4 @@ La respuesta es:
 ### Guías
 
 * [Guía 06: Bootstrap](/DAWM/guias/2024/guia06)
+* [Guía 07: Javascript - Introducción, DOM y Eventos](/DAWM/guias/2024/guia07)
