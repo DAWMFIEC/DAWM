@@ -34,10 +34,7 @@ theme: jekyll-theme-leap-day
 
 #### Plantilla
 
-1. Obtenga una plantilla gratuita. 
-   + Descargue y descomprima los archivos en su directorio local. 
-   + Revise la estructura de carpetas: HTML, CSS, JavaScript, imágenes, fuentes y otros recursos.
-   + Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
+1. Revise la estructura de carpetas: HTML, CSS, JavaScript, imágenes, fuentes y otros recursos. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
 2. Personalice el contenido (texto e imágenes) de la plantilla de acuerdo con el objetivo de su _landing page_.
 3. Agregue una hoja de estilo externa para modificar el estilo de la plantilla.
 4. Realice los cambios para la versión para dispositivos móviles y para dispositivos de escritorio.
