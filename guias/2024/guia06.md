@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
 
   **NOTA:** Venta de muebles
 
-* Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Gemini.
+* Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Bard.
   
   **Contenido Mínimo:** 
   - 3 secciones con información (mediante listas, imágenes y texto) del sitio, <br>
@@ -23,12 +23,9 @@ theme: jekyll-theme-leap-day
   - 1 sección para interactuar con los datos ingresados mediante el formulario, <br>
   - 1 menú para desplazarse entre secciones.
 
-* Descarga la plantilla [Furni](https://themewagon.com/themes/furni-online-store/)
-* Decide los colores, la tipografía y los elementos visuales que refuercen el mensaje del sitio. Considere las paletas de colores de [Tintmint](https://tintmint.net/), imágenes de [iStock](https://www.istockphoto.com/es) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
+* Descargue y use la plantilla [Furni](https://themewagon.com/themes/furni-online-store/) de ThemeWagon.
+* Decide los colores, la tipografía y los elementos visuales que refuercen el mensaje del sitio. Considere la paleta de colores de [Tintmint](https://tintmint.net/), imágenes de [DevianArt](www.deviantart.com) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
   
-  **NOTA:** Cambie todos los elementos visuales para que se ajusten con la temática del sitio.
-
-
 ### Actividades
 
 #### Github
