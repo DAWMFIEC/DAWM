@@ -11,6 +11,9 @@ theme: jekyll-theme-leap-day
 #### Landing Page
 
 * Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc. 
+
+  **NOTA:** Venta de muebles
+
 * Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Gemini.
   
   **Contenido Mínimo:** 
@@ -20,13 +23,8 @@ theme: jekyll-theme-leap-day
   - 1 sección para interactuar con los datos ingresados mediante el formulario, <br>
   - 1 menú para desplazarse entre secciones.
 
-* Seleccione una plantilla (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
-  
-  **NOTA:** 
-  - Asegúrese que solo use Bootstrap (última versión), sin frameworks como Angular o librerías como React o VueJS.<br>
-  - Utilice una plantilla que NO esté relacionada con la temática de su sitio.
-
-* Utiliza colores, tipografía y elementos visuales que refuercen el mensaje del sitio. Considere las paletas de colores de [Tintmint](https://tintmint.net/), imágenes de [iStock](https://www.istockphoto.com/es) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
+* Descarga la plantilla [Furni](https://themewagon.com/themes/furni-online-store/)
+* Decide los colores, la tipografía y los elementos visuales que refuercen el mensaje del sitio. Considere las paletas de colores de [Tintmint](https://tintmint.net/), imágenes de [iStock](https://www.istockphoto.com/es) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
   
   **NOTA:** Cambie todos los elementos visuales para que se ajusten con la temática del sitio.
 
@@ -60,6 +58,9 @@ theme: jekyll-theme-leap-day
  
 * [Bootstrap](https://getbootstrap.com/) es un `kit de herramientas` para `front-end` potente, ampliable y repleto de funciones. Con el cual puedes crear y personalizar con Sass, utilizar el sistema de grillas y los `componentes` prediseñados.
 	- Algunas características distintivas de la versión 5 se encuentran en la [documentación oficial](https://getbootstrap.com/docs/5.0/migration/) y en [Web3canvas](https://web3canvas.com/convert-bootstrap-4-to-5-migration-guide/).
+
+
+* Sitios con plantillas (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
 
 
 ### Términos
