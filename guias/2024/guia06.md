@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
   - 1 sección para interactuar con los datos ingresados mediante el formulario, <br>
   - 1 menú para desplazarse entre secciones, no entre páginas.
 
-* Descargue y use la plantilla [Furni](https://themewagon.com/themes/furni-online-store/) de ThemeWagon.
+* Descargue y use la plantilla [Furni](https://themewagon.com/themes/furni-online-store/) de ThemeWagon o del [recurso local](recursos/furni-1.0.0.zip).
 * Decide los colores, la tipografía y los elementos visuales que refuercen el mensaje del sitio. Considere la paleta de colores de [Tintmint](https://tintmint.net/), imágenes de [DevianArt](www.deviantart.com) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
   
 ### Actividades
