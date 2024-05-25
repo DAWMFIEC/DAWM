@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
   - Cree, o utilice, una carpeta con scripts y agregue el archivo de código externo _'main.js'_.
   - Agregue la referencia con la ruta al archivo de código externo en el archivo _index.html_.
 
-#### Función flecha
+#### Window API
 
 * Defina la `función flecha` _loaded_ con el parámetro _evento_. Use la función **alert** del `API` del objeto `window`.
 
@@ -27,7 +27,7 @@ let loaded = (evento) => {
 }
 ```
 
-* Use la función **addEventListener** del `API` del objeto `window`, para agregar un `callback` para el `evento` **DOMContentLoaded**.  
+* Use la función **addEventListener** del API del objeto window, para agregar un callback para el `evento` **DOMContentLoaded**.  
 
 ```typescript
 let loaded = ...
@@ -35,7 +35,25 @@ let loaded = ...
 window.addEventListener("DOMContentLoaded", loaded)
 ```
 
-* Revise los cambios en el navegador.
+* Actualice su navegador y revise los cambios.
+
+#### Document API
+
+* Asigne un identificador único al formulario y cada elemento de ingreso de datos.
+
+* Use la función **getElementById** del API del objeto `document`.
+
+```typescript
+let loaded = (evento) => {
+
+  let formulario = document.getElementById('<identificador-del-formulario>')
+
+}
+
+window.addEventListener( ... ) 
+```
+
+* Actualice su navegador y revise los cambios en el inspector del navegador.
 
 * Versiona local y remotamente el repositorio **landing**.
 
@@ -59,7 +77,7 @@ window.addEventListener("DOMContentLoaded", loaded)
 
 ### Términos
 
-Javascript, función flecha, window, callback, eventos, DOM.
+Javascript, función flecha, window, eventos, document.
 
 ### Referencias
 
