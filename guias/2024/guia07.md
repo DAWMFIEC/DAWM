@@ -35,6 +35,8 @@ let loaded = ...
 window.addEventListener("DOMContentLoaded", loaded)
 ```
 
+* Revise los cambios en el navegador.
+
 * Versiona local y remotamente el repositorio **landing**.
 
 ### Documentación
