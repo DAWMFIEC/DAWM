@@ -19,10 +19,10 @@ theme: jekyll-theme-leap-day
 
 #### Window API
 
-* Defina la `función flecha` _loaded_ con el parámetro _evento_. Use la función **alert** del `API` del objeto `window`.
+* Defina la `función flecha` _loaded_ con el parámetro _eventLoaded_. Use la función **alert** del `API` del objeto `window`.
 
 ```typescript
-let loaded = (evento) => {
+let loaded = ( eventLoaded ) => {
   window.alert("landing page loaded")
 }
 ```
@@ -39,21 +39,71 @@ window.addEventListener("DOMContentLoaded", loaded)
 
 #### Document API
 
-* Asigne un identificador único al formulario y cada elemento de ingreso de datos.
+* Asigne un identificador único al formulario.
 
-* Use la función **getElementById** del API del objeto `document`.
+* Use la función **getElementById** del API del objeto `document`. Use el objeto `console` para mostrar el elemento html. Detenga la ejecución del código con el objeto `debugger`.
 
 ```typescript
-let loaded = (evento) => {
+let loaded = ( eventLoaded ) => {
 
-  let formulario = document.getElementById('<identificador-del-formulario>')
+  let myform = document.getElementById('<identificador-del-formulario>');
+  console.log( myform );
+  debugger;
 
 }
 
 window.addEventListener( ... ) 
 ```
 
-* Actualice su navegador y revise los cambios en el inspector del navegador.
+* Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
+
+#### Eventos
+
+* Asigne un identificador único para cada elemento de ingreso de datos dentro del formulario.
+
+* Use la función **addEventListener** del API del objeto **myform**. Agregue el callback con el parámetro _eventSubmit_ y muestre su contenido por consola. 
+
+```typescript
+let loaded = ( eventLoaded ) => {
+
+  let myform = document.getElementById('<identificador-del-formulario>');
+  
+  myform.addEventListener('submit', ( eventSubmit ) => {
+
+    console.log( eventSubmit )
+    debugger
+
+  })
+
+}
+
+window.addEventListener( ... ) 
+```
+
+* Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
+
+#### Acciones predeterminadas
+
+* Use la función **addEventListener** del API del objeto **myform**. Agregue el callback con el parámetro _eventSubmit_ y muestre su contenido por consola. 
+
+```typescript
+let loaded = ( eventLoaded ) => {
+
+  let myform = document.getElementById('<identificador-del-formulario>');
+  
+  myform.addEventListener('submit', ( eventSubmit ) => {
+
+    console.log( eventSubmit )
+    debugger
+
+  })
+
+}
+
+window.addEventListener( ... ) 
+```
+
+* Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
 
 * Versiona local y remotamente el repositorio **landing**.
 
