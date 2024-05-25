@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
   **Contenido Mínimo:** 
   - 3 secciones con información (mediante listas, imágenes y texto) del sitio, <br>
   - 1 sección con un formulario de contacto, suscripción o registro, <br>
-    + Debe incluir al menos un _<input>_, un _<select>_ y un _<button>_ para el envío. <br>
+    + Debe incluir al menos un _&lt;input&gt;_, un _&lt;select&gt;_ y un _&lt;button&gt;_ para el envío. <br>
   - 1 sección para interactuar con los datos ingresados mediante el formulario, <br>
   - 1 menú para desplazarse entre las secciones de la landing page, no entre páginas.
 
