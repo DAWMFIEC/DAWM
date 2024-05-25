@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 #### Función flecha
 
-* Defina la `función flecha` _loaded_ con el argumento _evento_.
+* Defina la `función flecha` _loaded_ con el argumento _evento_. Use la función **alert** del `API` del objeto `window`.
 
 ```typescript
 let loaded = (evento) => {
@@ -27,7 +27,7 @@ let loaded = (evento) => {
 }
 ```
 
-* Utilizando del `API` objeto `window` y agregue el `callback` al `evento` **DOMContentLoaded** 
+* Use la función **addEventListener** del `API` del objeto `window`, para agregar un `callback` para el `evento` **DOMContentLoaded**.  
 
 ```typescript
 let loaded = ...
