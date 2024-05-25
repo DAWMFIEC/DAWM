@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* [Intro a Javascript](/DAWM/enclases/javascript)
+* [Intro a `Javascript`](/DAWM/enclases/javascript)
 
 ### Actividades
 
@@ -16,11 +16,37 @@ theme: jekyll-theme-leap-day
 * Sigue las instrucciones de [Gemini](gemini/guia07-gemini01.pdf), y:
   - Cree, o utilice, una carpeta con scripts y agregue el archivo de código externo _'main.js'_.
   - Agregue la referencia con la ruta al archivo de código externo en el archivo _index.html_.
+
+#### Función flecha
+
+* Defina la `función flecha` _loaded_ con el argumento _evento_.
+
+```typescript
+let loaded = (evento) => {
+  window.alert("landing page loaded")
+}
+```
+
+* Utilizando del `API` objeto `window` y agregue el `callback` al `evento` **DOMContentLoaded** 
+
+```typescript
+let loaded = ...
+
+window.addEventListener("DOMContentLoaded", loaded)
+```
+
 * Versiona local y remotamente el repositorio **landing**.
 
 ### Fundamental
 
+* Tiempo de descarga y ejecución del código Javascript via [X](https://twitter.com/kamrify/status/1436392322451841026)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Avoid render blocking JavaScript using async and defer scripts. <a href="https://t.co/JPDOlshMpk">pic.twitter.com/JPDOlshMpk</a></p>&mdash; Kamran Ahmed (@kamrify) <a href="https://twitter.com/kamrify/status/1436392322451841026?ref_src=twsrc%5Etfw">September 10, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+* Preguntas básicas relacionadas con el DOM via [X](https://x.com/emiko_dev/status/1719339017051738188)
+
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">You&#39;re in a web developer internship interview. 💼<br><br>The interviewer asked:<br><br>&quot;What&#39;s a DOM (Document Object Model) in web development?&quot;<br><br>Here&#39;s how to answer:</p>&mdash; Emiko.dev ☀️ (@emiko_dev) <a href="https://twitter.com/emiko_dev/status/1719339017051738188?ref_src=twsrc%5Etfw">October 31, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 
 ### Documentación
 
@@ -32,7 +58,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-Javascript, función flecha, DOM, eventos.
+Javascript, función flecha, window, callback, eventos, DOM.
 
 ### Referencias
 
@@ -41,3 +67,4 @@ Javascript, función flecha, DOM, eventos.
 * JavaScript Tutorial. (2022). Retrieved 9 June 2022, from https://www.javascripttutorial.net/
 * JavaScript Tutorial. (2022). Retrieved 9 June 2022, from https://www.w3schools.com/js/
 * Free JavaScript Resources Java5cript.com. (2022). Retrieved 9 June 2022, from https://www.java5cript.com/
+* ¿Qué diferencia async y defer en JavaScript? (2019). Retrieved from https://cybmeta.com/diferencia-async-y-defer
