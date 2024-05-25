@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 #### Función flecha
 
-* Defina la `función flecha` _loaded_ con el argumento _evento_. Use la función **alert** del `API` del objeto `window`.
+* Defina la `función flecha` _loaded_ con el parámetro _evento_. Use la función **alert** del `API` del objeto `window`.
 
 ```typescript
 let loaded = (evento) => {
