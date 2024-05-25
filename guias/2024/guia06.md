@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 * Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc. 
 
-  **NOTA:** Venta de muebles
+  **NOTA:** No puede utilizar el tema _venta de muebles_.
 
 * Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Bard.
   
@@ -21,7 +21,7 @@ theme: jekyll-theme-leap-day
   - 1 sección con un formulario de contacto, suscripción o registro, <br>
     + Debe incluir al menos un `<input>`, un `<select>` y un `<button>` para el envío. <br>
   - 1 sección para interactuar con los datos ingresados mediante el formulario, <br>
-  - 1 menú para desplazarse entre secciones.
+  - 1 menú para desplazarse entre secciones, no entre páginas.
 
 * Descargue y use la plantilla [Furni](https://themewagon.com/themes/furni-online-store/) de ThemeWagon.
 * Decide los colores, la tipografía y los elementos visuales que refuercen el mensaje del sitio. Considere la paleta de colores de [Tintmint](https://tintmint.net/), imágenes de [DevianArt](www.deviantart.com) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
