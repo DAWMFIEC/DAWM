@@ -27,7 +27,7 @@ let loaded = ( eventLoaded ) => {
 }
 ```
 
-* Use la función **addEventListener** del API del objeto window, para agregar un callback para el `evento` **DOMContentLoaded**.  
+* Use la función **addEventListener** del API del objeto window para agregar un callback que responda al `evento` **DOMContentLoaded**.  
 
 ```typescript
 let loaded = ...
@@ -37,11 +37,11 @@ window.addEventListener("DOMContentLoaded", loaded)
 
 * Actualice su navegador y revise los cambios.
 
-#### Document API
+#### Document API: getElementById
 
 * Asigne un identificador único al formulario.
 
-* Use la función **getElementById** del API del objeto `document`. Use el objeto `console` para mostrar el elemento html. Detenga la ejecución del código con el objeto `debugger`.
+* Use la función **getElementById** del API del objeto `document` para obtener una referencia al elemento con el identificador. Use el objeto `console` para mostrar la referencia al elemento html. Detenga la ejecución del código con el objeto `debugger`.
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -61,7 +61,7 @@ window.addEventListener( ... )
 
 * Asigne un identificador único para cada elemento de ingreso de datos dentro del formulario.
 
-* Use la función **addEventListener** del API del objeto **myform**. Agregue el callback con el parámetro _eventSubmit_ y muestre su contenido por consola. 
+* Use la función **addEventListener** del API del objeto **myform** para agregar el callback que responda al evento _submit_. El callback debe contar con el parámetro _eventSubmit_ y muestre su contenido por consola. 
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -71,7 +71,7 @@ let loaded = ( eventLoaded ) => {
   myform.addEventListener('submit', ( eventSubmit ) => {
 
     console.log( eventSubmit )
-    debugger
+    debugger;
 
   })
 
@@ -84,7 +84,7 @@ window.addEventListener( ... )
 
 #### Acciones predeterminadas
 
-* Use la función **addEventListener** del API del objeto **myform**. Agregue el callback con el parámetro _eventSubmit_ y muestre su contenido por consola. 
+* Use la función **preventDefault** del API del objeto **eventSubmit**. 
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -93,8 +93,8 @@ let loaded = ( eventLoaded ) => {
   
   myform.addEventListener('submit', ( eventSubmit ) => {
 
-    console.log( eventSubmit )
-    debugger
+    eventSubmit.preventDefault();
+    alert("Ready to submit!")
 
   })
 
@@ -102,6 +102,12 @@ let loaded = ( eventLoaded ) => {
 
 window.addEventListener( ... ) 
 ```
+
+* Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
+
+#### Document API: querySelectorAll
+
+* Use la función **querySelectorAll** del API del objeto `document` para acceder a los elementos del formulario.
 
 * Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
 
