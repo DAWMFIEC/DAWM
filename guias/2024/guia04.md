@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
 * Seleciona a tu gusto una combinación de colores de acuerdo con la guía de [Happy Hues](https://www.happyhues.co/), [Huemint](https://huemint.com/website-2/), o [ColorMagic](https://colormagic.app/). 
 
 
-### Actividades en clase
+### Actividades en clases
 
 * Clona localmente tu repositorio **curriculum**.
 * Sigue las instrucciones de [Bard](bard/guia04-bard01.pdf), y:
@@ -83,6 +83,11 @@ Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes ac
 
 * Versiona local y remotamente el repositorio **curriculum**.
 
+### Documentación
+
+* CSS en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/CSS).
+* En [W3Schools CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php) revise los `selectores CSS` para acceder a uno o varios elementos del documento HTML y [W3Schools CSS Reference](https://www.w3schools.com/cssref/index.php) para aplicar las `propiedades y valores CSS`.
+
 ### Fundamental
 
 * Generadores de CSS en [X](https://twitter.com/Div_pradeep/status/1710898245570892182) 
@@ -92,11 +97,6 @@ Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes ac
 * Animaciones CSS en [X](https://twitter.com/carmenansio/status/1710351098211389450)
 
 <blockquote class="twitter-tweet"><p lang="es" dir="ltr">🚀 Más de 500 animaciones de carga creadas con un único elemento en CSS<a href="https://t.co/kVvt9DHzFy">https://t.co/kVvt9DHzFy</a> <a href="https://t.co/VEaBgXpgyR">pic.twitter.com/VEaBgXpgyR</a></p>&mdash; Cosmic Red 🔥 (@carmenansio) <a href="https://twitter.com/carmenansio/status/1710351098211389450?ref_src=twsrc%5Etfw">October 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-### Documentación
-
-* CSS en la documentación de [MDN](https://developer.mozilla.org/es/docs/Web/CSS).
-* En [W3Schools CSS Selector Reference](https://www.w3schools.com/cssref/css_selectors.php) revise los `selectores CSS` para acceder a uno o varios elementos del documento HTML y [W3Schools CSS Reference](https://www.w3schools.com/cssref/index.php) para aplicar las `propiedades y valores CSS`.
 
 ### Términos
 

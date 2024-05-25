@@ -6,11 +6,11 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto01](/DAWM/proyectos/2024/proyecto01)
 
-### Actividad en clases
+### Actividades previas
 
 * [Colocación de elementos](/DAWM/enclases/colocacion)
 
-### Actividades
+### Actividades en clases
 
 #### Diseño
 
