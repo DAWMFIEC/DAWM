@@ -44,7 +44,7 @@ window.addEventListener("DOMContentLoaded", loaded);
 
 * Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
-#### Document API: getElementById
+#### Document API
 
 * Asigne un identificador único al elemento formulario del documento HTML.
 
