@@ -68,12 +68,27 @@ window.addEventListener( ... )
 * Asigne un identificador único para cada elemento de ingreso de datos del formulario.
 
 * Al objeto con la referencia al formulario, agregue un callback que responda al evento _submit_ (con el parámetro _eventSubmit_). 
-  + Del API del objeto _eventSubmit_, use la función **preventDefault** para detener su proceso predeterminado. 
 
 ```typescript
 let loaded = ( eventLoaded ) => {
 
   let myform = document.getElementById('<identificador-del-formulario>');
+  
+  myform.addEventListener('submit', ( eventSubmit ) => {
+
+  })
+
+}
+
+window.addEventListener( ... ) 
+```
+
+* Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
+
+```typescript
+let loaded = ( eventLoaded ) => {
+
+  ...
   
   myform.addEventListener('submit', ( eventSubmit ) => {
 
@@ -117,7 +132,7 @@ window.addEventListener( ... )
 
 ### Términos
 
-Javascript, función flecha, window, eventos, document.
+Javascript, función flecha, API, console, debugger, window, evento, document.
 
 ### Referencias
 
