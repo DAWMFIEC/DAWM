@@ -95,9 +95,11 @@ window.addEventListener( ... )
 ...
 ```
 
-* Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
+* En el callback del evento _submit_:
 
-* Del API del objeto con referencia al elemento HTML con identificador `idElemento1`, use la propiedad **value** para extraer el contenido. Muestre el texto en la consola.  
+  + Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
+
+  + Del API por cada objeto con referencia al elemento HTML con identificador `idElemento1`, use la propiedad **value** para extraer el contenido. Muestre el texto en la consola.  
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -110,6 +112,8 @@ let loaded = ( eventLoaded ) => {
 
     let idElemento1Value = idElemento1.value;
     console.log( idElemento1Value );
+
+    ...
 
     debugger;
 
