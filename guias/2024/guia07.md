@@ -19,35 +19,41 @@ theme: jekyll-theme-leap-day
 
 #### Window API
 
-* Defina la `función flecha` _loaded_ con el parámetro _eventLoaded_. Use la función **alert** del `API` del objeto `window`.
+* Defina la `función flecha` _loaded_. Incluya el parámetro _eventLoaded_ como referencia al evento. 
+  + Del `API` del objeto `window`, use la función **alert** para mostrar un mensaje.
+  + Use el objeto `console` para mostrar la referencia al evento. 
+  + Detenga la ejecución del código con el objeto `debugger`.
 
 ```typescript
 let loaded = ( eventLoaded ) => {
-  window.alert("landing page loaded")
+  
+  window.alert("landing page loaded");
+  console.log( eventLoaded );
+  debugger;
+
 }
 ```
 
-* Use la función **addEventListener** del API del objeto window para agregar un callback que responda al `evento` **DOMContentLoaded**.  
+* Del API del objeto window, use la función **addEventListener** para establecer la función _loaded_ como un callback que responda al `evento` **DOMContentLoaded**.  
 
 ```typescript
 let loaded = ...
 
-window.addEventListener("DOMContentLoaded", loaded)
+window.addEventListener("DOMContentLoaded", loaded);
 ```
 
-* Actualice su navegador y revise los cambios.
+* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
 #### Document API: getElementById
 
-* Asigne un identificador único al formulario.
+* Asigne un identificador único al elemento formulario del documento HTML.
 
-* Use la función **getElementById** del API del objeto `document` para obtener una referencia al elemento con el identificador. Use el objeto `console` para mostrar la referencia al elemento html. Detenga la ejecución del código con el objeto `debugger`.
+* Del API del objeto `document`, use la función **getElementById** para obtener una referencia al elemento HTML de acuerdo con el argumento. 
 
 ```typescript
 let loaded = ( eventLoaded ) => {
 
   let myform = document.getElementById('<identificador-del-formulario>');
-  console.log( myform );
   debugger;
 
 }
@@ -55,13 +61,13 @@ let loaded = ( eventLoaded ) => {
 window.addEventListener( ... ) 
 ```
 
-* Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
+* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
 #### Eventos
 
-* Asigne un identificador único para cada elemento de ingreso de datos dentro del formulario.
+* Asigne un identificador único para cada elemento de ingreso de datos del formulario.
 
-* Use la función **addEventListener** del API del objeto **myform** para agregar el callback que responda al evento _submit_. El callback debe contar con el parámetro _eventSubmit_ y muestre su contenido por consola. 
+* Al objeto con la referencia al formulario, agregue un callback que responda al evento _submit_ (con el parámetro _eventSubmit_). 
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -70,7 +76,6 @@ let loaded = ( eventLoaded ) => {
   
   myform.addEventListener('submit', ( eventSubmit ) => {
 
-    console.log( eventSubmit )
     debugger;
 
   })
@@ -80,11 +85,11 @@ let loaded = ( eventLoaded ) => {
 window.addEventListener( ... ) 
 ```
 
-* Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
+* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
 #### Acciones predeterminadas
 
-* Use la función **preventDefault** del API del objeto **eventSubmit**. 
+* Del API del objeto _eventSubmit_, use la función **preventDefault** para detener su proceso predeterminado. 
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -94,7 +99,8 @@ let loaded = ( eventLoaded ) => {
   myform.addEventListener('submit', ( eventSubmit ) => {
 
     eventSubmit.preventDefault();
-    alert("Ready to submit!")
+    alert("Ready to submit!");
+    debugger;
 
   })
 
@@ -103,11 +109,11 @@ let loaded = ( eventLoaded ) => {
 window.addEventListener( ... ) 
 ```
 
-* Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
+* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
 #### Document API: querySelectorAll
 
-* Use la función **querySelectorAll** del API del objeto `document` para acceder a los elementos del formulario.
+* Del API del objeto `document`, use la función **querySelectorAll** para acceder a los elementos del formulario.
 
 * Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
 
