@@ -19,9 +19,9 @@ theme: jekyll-theme-leap-day
 
 #### Window API
 
-* Defina la `función flecha` _loaded_, con un parámetro (_eventLoaded_) referencia al evento. 
+* Defina la `función flecha` _loaded_, con un parámetro _eventLoaded_. 
   + Del `API` del objeto `window`, use la función **alert** para mostrar un mensaje.
-  + Use el objeto `console` para mostrar la referencia al evento. 
+  + Use el objeto `console` para mostrar el contenido del parámetero. 
   + Detenga la ejecución del código con el objeto `debugger`.
 
 ```typescript
@@ -74,9 +74,7 @@ let loaded = ( eventLoaded ) => {
 
   let myform = document.getElementById('<identificador-del-formulario>');
   
-  myform.addEventListener('submit', ( eventSubmit ) => {
-
-  })
+  myform.addEventListener('submit', ( eventSubmit ) => { })
 
 }
 
