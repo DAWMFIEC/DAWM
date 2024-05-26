@@ -14,9 +14,11 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Programación Estructurada
+#### Conceptos básicos
 
-#### Función flecha
+#### Tipos de datos avanzados y estructuras de control
+
+#### Funciones
 
 #### DOM: métodos
 
