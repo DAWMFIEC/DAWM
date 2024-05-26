@@ -2,13 +2,27 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Colocación de elementos
+## Introducción a Javascript
 
 [DAWM](/DAWM/)
 
 ### Actividades previas
 
+* Descargue y descomprima el ejercicio de [javascript](/DAWM/ejercicios/javascript.zip). 
+* Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
+* En el navegador, habilite el inspector para visualizar los cambios en vivo.
+
 ### Actividades en clases
+
+#### Programación Estructurada
+
+#### Función flecha
+
+#### DOM: métodos
+
+#### DOM: propiedades
+
+#### DOM: eventos
 
 ### Entregable
 
