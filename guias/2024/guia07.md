@@ -96,8 +96,8 @@ window.addEventListener( ... )
 ```
 
 * Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
-  + Del API del elemento HTML con identificador `idElemento1`, use la propiedad **value** para extraiga el contenido. 
-  + Muestre el texto en la consola.  
+
+* Del API del objeto con referencia al elemento HTML con identificador `idElemento1`, use la propiedad **value** para extraer el contenido. Muestre el texto en la consola.  
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -144,7 +144,7 @@ window.addEventListener( ... )
 
 ### Términos
 
-Javascript, función flecha, API, console, debugger, window, evento, document.
+Javascript, función flecha, API, console, debugger, window, evento, document, propiedad, función.
 
 ### Referencias
 
