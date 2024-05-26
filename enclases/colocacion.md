@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 * Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
 * En el navegador, habilite el inspector para visualizar los cambios en vivo.
 
-### Actividades
+### Actividades en clases
 
 #### Grid vs Flexbox
 
