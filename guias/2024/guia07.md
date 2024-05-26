@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 #### Window API
 
-* Defina la `función flecha` _loaded_. Incluya el parámetro _eventLoaded_ como referencia al evento. 
+* Defina la `función flecha` _loaded_, con un parámetro (_eventLoaded_) referencia al evento. 
   + Del `API` del objeto `window`, use la función **alert** para mostrar un mensaje.
   + Use el objeto `console` para mostrar la referencia al evento. 
   + Detenga la ejecución del código con el objeto `debugger`.
@@ -63,33 +63,12 @@ window.addEventListener( ... )
 
 * Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
-#### Eventos
+#### Evento predeterminado
 
 * Asigne un identificador único para cada elemento de ingreso de datos del formulario.
 
 * Al objeto con la referencia al formulario, agregue un callback que responda al evento _submit_ (con el parámetro _eventSubmit_). 
-
-```typescript
-let loaded = ( eventLoaded ) => {
-
-  let myform = document.getElementById('<identificador-del-formulario>');
-  
-  myform.addEventListener('submit', ( eventSubmit ) => {
-
-    debugger;
-
-  })
-
-}
-
-window.addEventListener( ... ) 
-```
-
-* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
-
-#### Acciones predeterminadas
-
-* Del API del objeto _eventSubmit_, use la función **preventDefault** para detener su proceso predeterminado. 
+  + Del API del objeto _eventSubmit_, use la función **preventDefault** para detener su proceso predeterminado. 
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -99,7 +78,6 @@ let loaded = ( eventLoaded ) => {
   myform.addEventListener('submit', ( eventSubmit ) => {
 
     eventSubmit.preventDefault();
-    alert("Ready to submit!");
     debugger;
 
   })
