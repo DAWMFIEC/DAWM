@@ -65,8 +65,6 @@ window.addEventListener( ... )
 
 #### Evento predeterminado
 
-* Asigne un identificador único para cada elemento de ingreso de datos del formulario.
-
 * Al objeto con la referencia al formulario, agregue un callback que responda al evento _submit_ (con el parámetro _eventSubmit_). 
 
 ```typescript
@@ -74,23 +72,8 @@ let loaded = ( eventLoaded ) => {
 
   let myform = document.getElementById('<identificador-del-formulario>');
   
-  myform.addEventListener('submit', ( eventSubmit ) => { })
+  myform.addEventListener('submit', ( eventSubmit ) => { 
 
-}
-
-window.addEventListener( ... ) 
-```
-
-* Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
-
-```typescript
-let loaded = ( eventLoaded ) => {
-
-  ...
-  
-  myform.addEventListener('submit', ( eventSubmit ) => {
-
-    eventSubmit.preventDefault();
     debugger;
 
   })
@@ -102,11 +85,39 @@ window.addEventListener( ... )
 
 * Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
-#### Document API: querySelectorAll
+#### Evento personalizado
 
-* Del API del objeto `document`, use la función **querySelectorAll** para acceder a los elementos del formulario.
+* Asigne un identificador único para cada elemento de ingreso de datos del formulario, p.e.:
 
-* Habilite el inspector del navegador. Actualice su navegador y revise los cambios en la consola.
+```html
+...
+<input id="idElemento1" type="text">
+...
+```
+
+* Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
+  + Muestre en la consola el elemento HTML mediante el identificador único.  
+
+```typescript
+let loaded = ( eventLoaded ) => {
+
+  ...
+  
+  myform.addEventListener('submit', ( eventSubmit ) => {
+
+    eventSubmit.preventDefault();
+
+    console.log( idElemento1 )
+    debugger;
+
+  })
+
+}
+
+window.addEventListener( ... ) 
+```
+
+* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
 * Versiona local y remotamente el repositorio **landing**.
 
