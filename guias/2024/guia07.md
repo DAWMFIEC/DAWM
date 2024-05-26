@@ -96,7 +96,8 @@ window.addEventListener( ... )
 ```
 
 * Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
-  + Muestre en la consola el elemento HTML mediante el identificador único.  
+  + Del API del elemento HTML con identificador `idElemento1`, use la propiedad **value** para extraiga el contenido. 
+  + Muestre el texto en la consola.  
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -107,7 +108,9 @@ let loaded = ( eventLoaded ) => {
 
     eventSubmit.preventDefault();
 
-    console.log( idElemento1 )
+    let idElemento1Value = idElemento1.value;
+    console.log( idElemento1Value );
+
     debugger;
 
   })
