@@ -115,9 +115,9 @@ window.addEventListener( ... )
 ```
 
 * Validación del contenido de un elemento:
-  + Del API del objeto con la referencia al elemento HTML con identificador `element1`, use la propiedad **value** para extraer el contenido. 
+  + Del API del objeto con la referencia al elemento HTML con identificador **element1**, use la propiedad **value** para extraer el contenido. 
   + Del API de la cadena de texto, use la propiedad **length** para contar las cantidad de letras en el texto.
-  + Del API del objeto con la referencia al elemento HTML con identificador `element1`, use el método **focus** para establecer el enfoque en el elemento HTML.
+  + Del API del objeto con la referencia al elemento HTML con identificador **element1**, use el método **focus** para establecer el enfoque en el elemento HTML.
   + Del API del objeto window, use él método alert para mostrar con un mensaje de alerta.
 
 ```typescript
