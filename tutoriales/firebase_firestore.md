@@ -23,54 +23,31 @@ Firebase - Firestore
   <img width="550" src ="imagenes/firebase_step3.png">
 </p>
 
-* Acceda a la opción **Realtime Database** a través de la opción **`Build > Realtime Database`** para **Create Database**
+* Acceda a la opción **Firestore Database** a través de la opción **`Build > Realtime Database`** para **Create Database**
 
 <p align="center">
-  <img width="550" src ="imagenes/firebase_realtime_init.png">
+  <img width="550" src ="imagenes/firebase_firestore_init.png">
 </p>
 
   + Durante el proceso de creación de la base de datos no relacional, habilite el _test mode_ para la edición por 30 días. 
 
 <p align="center">
-  <img width="550" src ="imagenes/firebase_setup1.png">
-  <img width="550" src ="imagenes/firebase_setup2.png">
+  <img width="550" src ="imagenes/firebase_firestore_name.png">
+  <img width="550" src ="imagenes/firebase_firestore_testing.png">
 </p> 
 
-* En la interfaz de **Realtime Database**
+* En la interfaz de **Firestore Database**
 
 <p align="center">
-  <img width="550" src ="imagenes/firebase_realtime_index.png">
+  <img width="550" src ="imagenes/firebase_firestore_index.png">
 </p> 
 
   + Agregue una clave llamada **collection**, sin valor
 
 <p align="center">
-  <img width="49%" src ="imagenes/firebase_collection1.png">
-  <img width="49%" src ="imagenes/firebase_collection2.png">
+  <img width="49%" src ="imagenes/firebase_firestore_collectionid.png">
+  <img width="49%" src ="imagenes/firebase_firestore_collectionfirst.png">
 </p> 
-
-* Acceda a la clave **collection**
-
-<p align="center">
-  <img width="550" src ="imagenes/firebase_collection_init.png">
-</p> 
-   
-  + Importe los datos en formato JSON.
-
-<p align="center">
-  <img width="550" src ="imagenes/firebase_collection_import.png">
-</p> 
-
-<p align="center">
-  <img width="550" src ="imagenes/firebase_collection_data.png">
-</p> 
-
-  + Cambie las reglas de acceso para que los datos puedan ser leídos y modificados desde una aplicación de terceros
-
-<p align="center">
-  <img width="550" src ="imagenes/firebase_collection_rules.png">
-</p>
-
 
 
 Referencias 
