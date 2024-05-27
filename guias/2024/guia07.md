@@ -87,14 +87,6 @@ window.addEventListener( ... )
 
 #### Evento personalizado
 
-* Asigne un identificador único para cada elemento de ingreso de datos del formulario, p.e.:
-
-```html
-...
-<input id="idElemento1" type="text">
-...
-```
-
 * Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
 
 ```typescript
@@ -105,9 +97,6 @@ let loaded = ( eventLoaded ) => {
   myform.addEventListener('submit', ( eventSubmit ) => {
 
     eventSubmit.preventDefault();
-
-    ...
-
     debugger;
 
   })
@@ -117,11 +106,19 @@ let loaded = ( eventLoaded ) => {
 window.addEventListener( ... ) 
 ```
 
-* Del API del objeto con la referencia al elemento HTML con identificador `idElemento1`:
-  + Use la propiedad **value** para extraer el contenido. 
-  + Use la propiedad **length** para contar las cantidad de letras en el texto.
-  + Use el método **focus** para establecer el enfoque en el elemento HTML.
-  + Muestre con un mensaje de alerta.
+* Asigne un identificador único para cada elemento de ingreso de datos del formulario, p.e.:
+
+```html
+...
+<input id="element1" type="text">
+...
+```
+
+* Validación del contenido de un elemento:
+  + Del API del objeto con la referencia al elemento HTML con identificador `element1`, use la propiedad **value** para extraer el contenido. 
+  + Del API de la cadena de texto, use la propiedad **length** para contar las cantidad de letras en el texto.
+  + Del API del objeto con la referencia al elemento HTML con identificador `element1`, use el método **focus** para establecer el enfoque en el elemento HTML.
+  + Del API del objeto window, use él método alert para mostrar con un mensaje de alerta.
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -132,13 +129,13 @@ let loaded = ( eventLoaded ) => {
 
     eventSubmit.preventDefault();
 
-    let idElemento1Value = idElemento1.value;
+    let element1Value = element1.value;
     
-    if( idElemento1Value.length == 0 ) {
+    if( element1Value.length == 0 ) {
       
-      idElemento1.focus()
+      element1.focus()
 
-      alert('Ingrese un texto')
+      alert('Ingrese un texto válido')
     }
 
     ...
