@@ -38,7 +38,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [Firebase - Hosting / Sitio Estático](tutoriales/firebase_hosting_estatico.md)
 * [Firebase - Realtime Database](tutoriales/firebase_realtime_database.md)
-* [Firebase - Firestore](tutoriales/firestore.md)
+* [Firebase - Firestore](tutoriales/firebase_firestore.md)
 
 ### Angular
 
