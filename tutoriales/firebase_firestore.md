@@ -23,7 +23,7 @@ Firebase - Firestore
   <img width="550" src ="imagenes/firebase_step3.png">
 </p>
 
-* Acceda a la opción **Firestore Database** a través de la opción **`Build > Realtime Database`** para **Create Database**
+* Acceda a la opción **Firestore Database** a través de la opción **`Build > Firestore Database`** para **Create Database**
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_firestore_init.png">
@@ -42,7 +42,7 @@ Firebase - Firestore
   <img width="550" src ="imagenes/firebase_firestore_index.png">
 </p> 
 
-  + Agregue una clave llamada **collection**, sin valor
+  + Agregue un nombre a la colección y agregue un documento (con o sin campos). 
 
 <p align="center">
   <img width="49%" src ="imagenes/firebase_firestore_collectionid.png">
