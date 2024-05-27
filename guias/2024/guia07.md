@@ -95,11 +95,33 @@ window.addEventListener( ... )
 ...
 ```
 
-* En el callback del evento _submit_:
+* Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
 
-  + Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
+```typescript
+let loaded = ( eventLoaded ) => {
 
-  + Del API del objeto con la referencia al elemento HTML con identificador `idElemento1`, use la propiedad **value** para extraer el contenido. Muestre el texto en la consola.  
+  ...
+  
+  myform.addEventListener('submit', ( eventSubmit ) => {
+
+    eventSubmit.preventDefault();
+
+    ...
+
+    debugger;
+
+  })
+
+}
+
+window.addEventListener( ... ) 
+```
+
+* Del API del objeto con la referencia al elemento HTML con identificador `idElemento1`:
+  + Use la propiedad **value** para extraer el contenido. 
+  + Use la propiedad **length** para contar las cantidad de letras en el texto.
+  + Use el método **focus** para establecer el enfoque en el elemento HTML.
+  + Muestre con un mensaje de alerta.
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -111,7 +133,13 @@ let loaded = ( eventLoaded ) => {
     eventSubmit.preventDefault();
 
     let idElemento1Value = idElemento1.value;
-    console.log( idElemento1Value );
+    
+    if( idElemento1Value.length == 0 ) {
+      
+      idElemento1.focus()
+
+      alert('Ingrese un texto')
+    }
 
     ...
 
