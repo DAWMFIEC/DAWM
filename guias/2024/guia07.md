@@ -131,11 +131,15 @@ let loaded = ( eventLoaded ) => {
 
     let element1Value = element1.value;
     
+    // Validación del contenido del input 
+
     if( element1Value.length == 0 ) {
       
       element1.focus()
 
       alert('Ingrese un texto válido')
+
+      return;
     }
 
     ...
@@ -150,6 +154,8 @@ window.addEventListener( ... )
 ```
 
 * Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
+
+* Continúe con la validación del resto de elementos HTML para el ingreso de datos, que se encuentran en el formulario.
 
 * Versiona local y remotamente el repositorio **landing**.
 
