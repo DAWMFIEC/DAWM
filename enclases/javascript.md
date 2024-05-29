@@ -14,9 +14,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-1. En el `index.html`, agregue la referencia al archivo `javascripts/script.js`
-2. En el `javascripts/script.js`, siga las instrucciones en los comentarios.
-	* Para comprobrar su código, utilice la opción **Sources** del inspector para colocar puntos de interrupción.
+1. Siga las instrucciones que se encuentran en los comentarios de los archivos HTML y JS.
+2. Utilice la opción **Sources** del inspector para agregar puntos de interrupción y así comprobar su código JS.
 
 ### Entregable
 
