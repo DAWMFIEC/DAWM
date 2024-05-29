@@ -14,17 +14,9 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Conceptos básicos
-
-#### Tipos de datos avanzados y estructuras de control
-
-#### Funciones
-
-#### DOM: métodos
-
-#### DOM: propiedades
-
-#### DOM: eventos
+1. En el `index.html`, agregue la referencia al archivo `javascripts/script.js`
+2. En el `javascripts/script.js`, siga las instrucciones en los comentarios.
+	* Para comprobrar su código, utilice la opción **Sources** del inspector para colocar puntos de interrupción.
 
 ### Entregable
 
