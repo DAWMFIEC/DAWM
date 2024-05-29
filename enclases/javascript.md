@@ -15,7 +15,7 @@ theme: jekyll-theme-leap-day
 ### Actividades en clases
 
 1. Siga las instrucciones que se encuentran en los comentarios de los archivos HTML y JS.
-2. Utilice la opción **Sources** del inspector para agregar puntos de interrupción y así comprobar su código JS.
+2. Para la comprobación de su código, utilice el inspector - opción **Sources** para agregar puntos de interrupción.
 
 ### Entregable
 
