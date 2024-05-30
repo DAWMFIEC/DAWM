@@ -27,4 +27,4 @@ theme: jekyll-theme-leap-day
 * JavaScript Fetch API Explained By Examples. (2022). Retrieved 15 June 2022, from https://www.javascripttutorial.net/javascript-fetch-api/
 * Joubran, J., & Joubran, J. (2022). How to fetch json in JavaScript Code to go. Retrieved 15 June 2022, from https://codetogo.io/how-to-fetch-json-in-javascript/
 * Joubran, J., & Joubran, J. (2022). How to fetch XML in JavaScript Code to go. Retrieved 15 June 2022, from https://codetogo.io/how-to-fetch-xml-in-javascript/
-* Chart.js. (n.d.). Retrieved from https://www.chartjs.org/
+* MozDevNet. (n.d.). IIFE - MDN Web Docs Glossary: Definitions of Web-related terms: MDN. Retrieved from https://developer.mozilla.org/en-US/docs/Glossary/IIFE
