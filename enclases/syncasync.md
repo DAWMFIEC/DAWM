@@ -2,13 +2,13 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Introducción a Javascript
+## Sync vs Async
 
 [DAWM](/DAWM/)
 
 ### Actividades previas
 
-* Descargue y descomprima el ejercicio de [asincronia](/DAWM/ejercicios/asincronia.zip). 
+* Descargue y descomprima el ejercicio de [Sync vs Async](/DAWM/ejercicios/syncasync.zip). 
 * Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
 * En el navegador, habilite el inspector para visualizar los cambios en vivo.
 
