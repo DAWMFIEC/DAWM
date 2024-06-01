@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
   - Cree, o utilice, una carpeta con scripts y agregue el archivo de código externo _'main.js'_.
   - Agregue la referencia con la ruta al archivo de código externo en el archivo _index.html_.
 
-#### Window API
+#### DOMContentLoaded & Window API
 
 * Defina la `función flecha` _loaded_, con un parámetro _eventLoaded_. 
   + Del `API` del objeto `window`, use la función **alert** para mostrar un mensaje.
@@ -48,7 +48,8 @@ window.addEventListener("DOMContentLoaded", loaded);
 
 * Asigne un identificador único al elemento formulario del documento HTML.
 
-* Del API del objeto `document`, use la función **getElementById** para obtener una referencia al elemento HTML de acuerdo con el argumento. 
+* Dentro de la función flecha _loaded_:
+  + Del API del objeto `document`, use la función **getElementById** para obtener una referencia al elemento HTML de acuerdo con el argumento. 
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -65,7 +66,8 @@ window.addEventListener( ... )
 
 #### Evento predeterminado
 
-* Al objeto con la referencia al formulario, agregue un callback que responda al evento _submit_ (con el parámetro _eventSubmit_). 
+* Dentro de la función flecha _loaded_:
+  + Al objeto con la referencia al formulario, agregue un callback que responda al evento _submit_ (con el parámetro _eventSubmit_). 
 
 ```typescript
 let loaded = ( eventLoaded ) => {
@@ -87,25 +89,6 @@ window.addEventListener( ... )
 
 #### Evento personalizado
 
-* Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
-
-```typescript
-let loaded = ( eventLoaded ) => {
-
-  ...
-  
-  myform.addEventListener('submit', ( eventSubmit ) => {
-
-    eventSubmit.preventDefault();
-    debugger;
-
-  })
-
-}
-
-window.addEventListener( ... ) 
-```
-
 * Asigne un identificador único para cada elemento de ingreso de datos del formulario, p.e.:
 
 ```html
@@ -114,7 +97,8 @@ window.addEventListener( ... )
 ...
 ```
 
-* Validación del contenido de un elemento:
+* Dentro de la función flecha _loaded_:
+  + Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
   + Del API del objeto con la referencia al elemento HTML con identificador **element1**, use la propiedad **value** para extraer el contenido. 
   + Del API de la cadena de texto, use la propiedad **length** para contar las cantidad de letras en el texto.
   + Del API del objeto con la referencia al elemento HTML con identificador **element1**, use el método **focus** para establecer el enfoque en el elemento HTML.
@@ -142,8 +126,6 @@ let loaded = ( eventLoaded ) => {
       return;
     }
 
-    ...
-
     debugger;
 
   })
@@ -155,7 +137,9 @@ window.addEventListener( ... )
 
 * Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
-* Continúe con la validación del resto de elementos HTML para el ingreso de datos, que se encuentran en el formulario.
+#### Validación del contenido del formulario
+
+* Continúe con la validación del resto de elementos HTML para el ingreso de datos en el formulario.
 
 * Versiona local y remotamente el repositorio **landing**.
 
