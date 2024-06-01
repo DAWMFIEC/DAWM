@@ -2,17 +2,17 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 08
+## Guía 09
 
 [DAWM](/DAWM/) / [Proyecto02](/DAWM/proyectos/2024/proyecto02)
 
 ### Actividades previas
 
-* [`Sync vs Async`](/DAWM/enclases/syncasync)
+* [`Sincronía vs Asincronía`](/DAWM/enclases/syncasync)
 
 ### Actividades en clases
 
-* Firestore
+* Requerimiento asíncrono
 
 ### Documentación
 
@@ -30,7 +30,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-asíncrona, json, xml
+sincronía, asíncrona, json, xml
 
 ### Referencias
 

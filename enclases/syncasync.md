@@ -2,13 +2,13 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Sync vs Async
+## Sincronía vs Asincronía
 
 [DAWM](/DAWM/)
 
 ### Actividades previas
 
-* Descargue y descomprima el ejercicio de [Sync vs Async](/DAWM/ejercicios/syncasync.zip). 
+* Descargue y descomprima el ejercicio de [Sincronía vs Asincronía](/DAWM/ejercicios/syncasync.zip). 
 * Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
 * En el navegador, habilite el inspector para visualizar los cambios en vivo.
 
