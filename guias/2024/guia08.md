@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 09
+## Guía 08
 
 [DAWM](/DAWM/) / [Proyecto02](/DAWM/proyectos/2024/proyecto02)
 
