@@ -42,7 +42,7 @@ Firebase - Realtime Database
   <img width="550" src ="imagenes/firebase_realtime_index.png">
 </p> 
 
-  + Agregue una clave llamada **collection**, sin valor
+  + Agregue una clave, sin valor
 
 <p align="center">
   <img width="49%" src ="imagenes/firebase_collection1.png">
