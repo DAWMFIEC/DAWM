@@ -8,11 +8,11 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* [`Sincronía vs Asincronía`](/DAWM/enclases/syncasync)
+* [`Sincronía vs Asincronía`](/DAWM/enclases/syncasync) 
 
 ### Actividades en clases
 
-* Requerimiento asíncrono
+* 
 
 ### Documentación
 
