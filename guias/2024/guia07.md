@@ -37,7 +37,11 @@ let loaded = ( eventLoaded ) => {
 * Del API del objeto window, use la función **addEventListener** para establecer la función _loaded_ como un callback que responda al `evento` **DOMContentLoaded**.  
 
 ```typescript
-let loaded = ...
+let loaded = ( ... ) => {
+
+  ...
+
+}
 
 window.addEventListener("DOMContentLoaded", loaded);
 ```
