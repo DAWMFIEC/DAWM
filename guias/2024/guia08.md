@@ -12,11 +12,25 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-* 
+#### Firebase - Realtime Database
+
+* Siga el tutorial de [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database) para crear una colección para su proyecto. Configure su proyecto en modo de prueba. Compruebe el acceso al URL resultante:
+
+```
+https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
+```
+
+#### Fetch - POST
+
+
+
+#### Fetch - GET
+
+
 
 ### Documentación
 
-* El [API-fetch](https://www.javascripttutorial.net/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos asíncronos cuya respuesta viene en formato [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/) o [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
+* El [API-fetch](https://www.javascripttutorial.net/web-apis/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos asíncronos cuya respuesta viene en formato [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/) o [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 
 ### Fundamental
 
