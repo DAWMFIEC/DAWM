@@ -27,16 +27,18 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 * Detenga el comportamiento predeterminado del formulario al evento submit.
 * Verifique la existencia de contenido válido en los elementos del formulario.  
 * Utilice las instrucciones de [Gemini](gemini/guia08-gemini01.pdf) para realizar un requerimiento `asíncrono` `HTTP - POST`, de los datos de un formulario, mediante `fetch`.
+* Compruebe el resultado en la colección de firebase.
 
 #### Fetch - GET
 
 * Reserve una sección en el documento HTML donde incluya los datos almacenados.
 * Identifique los eventos por los que se realizará la petición asíncrona de datos
 * Utilice las instrucciones de [Gemini](gemini/guia08-gemini02.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
+* Compruebe el resultado en el navegador.
 
 ### Documentación
 
-* El [API-fetch](https://www.javascripttutorial.net/web-apis/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos asíncronos cuya respuesta viene en formato [`JSON`](https://codetogo.io/how-to-fetch-json-in-javascript/) o [`XML`](https://codetogo.io/how-to-fetch-xml-in-javascript/).
+* El [API-fetch](https://www.javascripttutorial.net/web-apis/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos asíncronos cuya respuesta viene en formato [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/) o [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 
 ### Fundamental
 
