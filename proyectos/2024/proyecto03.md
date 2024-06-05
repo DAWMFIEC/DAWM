@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 03:Dashboard - Tailwind & React
+## Proyecto 03:Dashboard - React
 
 [DAWM](/DAWM/)
 
