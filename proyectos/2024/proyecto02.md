@@ -28,5 +28,5 @@ La respuesta es:
 
 * [Guía 06: Bootstrap](/DAWM/guias/2024/guia06)
 * [Guía 07: Javascript - Introducción, DOM y Eventos](/DAWM/guias/2024/guia07)
-* [Guía 08: Javascript - Firebase, JSON, HTTP POST/GET y Asincronía](/DAWM/guias/2024/guia08)
-* [Guía 09: Javascript - LocalStorage](/DAWM/guias/2024/guia09)
+* [Guía 08: Javascript - Firebase, JSON, HTTP POST y Asincronía](/DAWM/guias/2024/guia08)
+* [Guía 09: Javascript - HTTP POST, Asincronía, LocalStorage](/DAWM/guias/2024/guia09)
