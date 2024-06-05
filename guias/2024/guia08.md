@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
 
 #### Firebase - Realtime Database
 
-* Siga el tutorial de [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database) para crear una colección de datos para su proyecto,en modo de prueba. 
+* Siga el tutorial de [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database) para crear una colección de datos para su proyecto, en modo de prueba. 
 	+ Compruebe el acceso a la colección de datos mediante el patrón de URL:
 
 ```
@@ -23,15 +23,20 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 
 #### Fetch - POST
 
-
+* Coloque identificadores únicos al formulrio y a los elementos del formulario.
+* Detenga el comportamiento predeterminado del formulario al evento submit.
+* Verifique la existencia de contenido válido en los elementos del formulario.  
+* Utilice las instrucciones de [Gemini](gemini/guia08-gemini01.pdf) para realizar un requerimiento `asíncrono` `HTTP - POST`, de los datos de un formulario, mediante `fetch`.
 
 #### Fetch - GET
 
-
+* Reserve una sección en el documento HTML donde incluya los datos almacenados.
+* Identifique los eventos por los que se realizará la petición asíncrona de datos
+* Utilice las instrucciones de [Gemini](gemini/guia08-gemini02.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
 
 ### Documentación
 
-* El [API-fetch](https://www.javascripttutorial.net/web-apis/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos asíncronos cuya respuesta viene en formato [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/) o [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
+* El [API-fetch](https://www.javascripttutorial.net/web-apis/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos asíncronos cuya respuesta viene en formato [`JSON`](https://codetogo.io/how-to-fetch-json-in-javascript/) o [`XML`](https://codetogo.io/how-to-fetch-xml-in-javascript/).
 
 ### Fundamental
 
@@ -45,7 +50,7 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 
 ### Términos
 
-sincronía, asíncrona, json, xml
+fetch, sincronía, asíncrona, firebase, json, xml, HTTP - GET, HTTP - POST
 
 ### Referencias
 
