@@ -83,7 +83,7 @@ myform.addEventListener('submit', (eventSubmit) => {
 
 ### Términos
 
-fetch, sincronía, asíncrona, firebase, json, xml, HTTP - GET, HTTP - POST
+fetch, sincronía, asíncrona, firebase, json, xml, HTTP - GET
 
 ### Referencias
 
