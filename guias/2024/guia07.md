@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* [Intro a `Javascript`](/DAWM/enclases/javascript)
+* Realice la actividad [Intro a `Javascript`](/DAWM/enclases/javascript)
 
 ### Actividades en clases
 
