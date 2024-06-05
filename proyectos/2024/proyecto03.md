@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 03:Dashboard - Bootstrap & React
+## Proyecto 03:Dashboard - React
 
 [DAWM](/DAWM/)
 
@@ -25,6 +25,7 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 06: Responsive Design y Bootstrap](/DAWM/guias/2023/guia06)
-* [Guía 07: Validación de HTML y CSS](/DAWM/guias/2023/guia07)
-
+* [Guía 10: React - Introducción](/DAWM/guias/2024/guia10)
+* [Guía 11: React - Componentes](/DAWM/guias/2024/guia10)
+* [Guía 12: React - Props y Eventos](/DAWM/guias/2024/guia10)
+* [Guía 13: React - Hooks](/DAWM/guias/2024/guia10)
