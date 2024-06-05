@@ -27,7 +27,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 07: Javascript - Introducción, DOM y Eventos](guias/2024/guia07)
   * [Guía 08: Javascript - Firebase, JSON, HTTP POST/GET y Asincronía](guias/2024/guia08)
   * [Guía 09: Javascript - LocalStorage](guias/2024/guia09)
-* [Proyecto 03: Dashboard - React](proyectos/2024/proyecto03)
+* [Proyecto 03: Dashboard - Tailwind & React](proyectos/2024/proyecto03)
   * [Guía 10: React - Introducción](guias/2024/guia10)
   * [Guía 11: React - Componentes](guias/2024/guia11)
   * [Guía 12: React - Props y Eventos](guias/2024/guia12)
