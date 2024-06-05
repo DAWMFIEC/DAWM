@@ -14,8 +14,7 @@ theme: jekyll-theme-leap-day
 
 #### Firebase - Realtime Database
 
-* Siga el tutorial de [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database) para crear una colección para su proyecto. Configure su proyecto en modo de prueba. 
-	+ Compruebe que la URL de acceso tenga el siguiente formato y que responda desde el navegador:
+* Siga el tutorial de [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database) para crear una colección de datos para su proyecto. Configure su proyecto en modo de prueba. Compruebe el acceso a la colección de datos mediante la URL, con el siguiente formato:
 
 ```
 https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
