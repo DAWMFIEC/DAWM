@@ -35,7 +35,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-fetch, sincronía, asíncrona, firebase, json, xml, HTTP - GET, HTTP - POST
+fetch, sincronía, asíncrona, firebase, json, xml, HTTP - POST
 
 ### Referencias
 
