@@ -23,18 +23,49 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 
 #### Fetch - POST
 
-* Coloque identificadores únicos al formulrio y a los elementos del formulario.
-* Detenga el comportamiento predeterminado del formulario al evento submit.
+* Coloque identificadores únicos al formulrio y a los elementos del formulario, p.e.:
+
+```html
+<form id="formulario" ... >
+	...
+	<input id="form_name" type="text" ... >
+	...
+	<select id="form_products"> ... </select>
+	...
+</form>	
+```
+
+* Detenga el comportamiento predeterminado del formulario al evento submit, p.e.:
+
+```javascript
+formulario.addEventListener('submit', (eventSubmit) => {
+	
+	eventSubmit.preventDefault() 
+	...
+})
+```
+
 * Verifique la existencia de contenido válido en los elementos del formulario.  
+
+```javascript
+myform.addEventListener('submit', (eventSubmit) => {
+
+        eventSubmit.preventDefault()
+
+        if (form_name.value.length == 0) {
+            alert("Nombre requerido")
+            form_name.focus()
+            return;
+        }
+
+        ...
+
+})
+```
+
 * Utilice las instrucciones de [Gemini](gemini/guia08-gemini01.pdf) para realizar un requerimiento `asíncrono` `HTTP - POST`, de los datos de un formulario, mediante `fetch`.
-* Compruebe el resultado en la colección de firebase.
+* Acceda al URL de la colección de firebase para comprobar el resultado.
 
-#### Fetch - GET
-
-* Reserve una sección en el documento HTML donde incluya los datos almacenados.
-* Identifique los eventos por los que se realizará la petición asíncrona de datos
-* Utilice las instrucciones de [Gemini](gemini/guia08-gemini02.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
-* Compruebe el resultado en el navegador.
 
 ### Documentación
 
