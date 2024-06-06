@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
 				<table class="table site-block-order-table mb-5">
 					<thead>
 						<th>Categoría</th>
-						<th>Conteo</th>
+						<th>Valor</th>
 					</thead>
 					<tbody id="tablebody">
 
@@ -40,23 +40,24 @@ theme: jekyll-theme-leap-day
 </div>
 ```
 
-* Diseñe una plantilla para completar con el contenido dinámico, p.e.:
-
-```javascript
-	let template = `
-		<tr>
-			<td>${elemento.categoria}</td>
-			<td>${elemento.cantidad}</td>
-		</tr>
-	`
-```
-
 * Identifique el o los eventos en los que realizará la petición asíncrona de datos, p.e.:
 
 	+ Inmediatamente después de cargar el documento HTML.
 	+ Luego de recibir una respuesta a la petición fetch - POST
 
 * Utilice las instrucciones de [Gemini](gemini/guia09-gemini01.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
+
+	+ Diseñe una plantilla para completar con el contenido dinámico, p.e.:
+
+```javascript
+	let template = `
+		<tr>
+			<td>${elemento.categoria}</td>
+			<td>${elemento.valor}</td>
+		</tr>
+	`
+```
+
 * Acceda al URL de la colección de firebase para comprobar el resultado.
 
 ### Documentación
