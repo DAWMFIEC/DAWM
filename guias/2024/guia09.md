@@ -33,7 +33,7 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 				<table class="table site-block-order-table mb-5">
 					<thead>
 						<th>Categoría</th>
-						<th>Valor</th>
+						<th>Conteo</th>
 					</thead>
 					<tbody id="tablebody">
 
@@ -62,7 +62,7 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 	let template = `
 		<tr>
 			<td>${categoria}</td>
-			<td>${valor_conteo}</td>
+			<td>${conteo}</td>
 		</tr>
 	`
 ```
