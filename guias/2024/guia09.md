@@ -8,13 +8,14 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
-   + Compruebe el acceso a la colección de datos mediante el patrón de URL:
+* Compruebe el acceso a la colección de datos mediante el patrón de URL:
 
-```text
+```
 https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 ```
-   + Diseñe una estrategia para mostrar los datos, p.e.: conteo por categoría, listar comentarios de usuarios, etc.
+
+* Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
+* Diseñe una estrategia para mostrar los datos, p.e.: conteo por categoría, listar comentarios de usuarios, etc.
 
 ### Actividades en clases
 
