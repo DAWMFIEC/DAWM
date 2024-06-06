@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Realice la actividad [`Filtro`](/DAWM/enclases/filtro)
+* Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
 
 ### Actividades en clases
 
