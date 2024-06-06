@@ -15,7 +15,8 @@ theme: jekyll-theme-leap-day
 https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 ```
 
-* Diseñe una estrategia para mostrar los datos, p.e.: conteo por categoría, listar comentarios de usuarios, etc.
+* Diseñe una estrategia para el conteo de datos, p.e.:
+	+ Utilice las estructuras [Map y Set](https://javascript.info/map-set) para obtener valores únicos con sus valores correspondientes.
 
 ### Actividades en clases
 
@@ -53,7 +54,8 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 	+ Luego de recibir una respuesta a la petición fetch - POST
 
 * Utilice las instrucciones de [Gemini](gemini/guia09-gemini01.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
-
+	
+	+ Aplique la estrategia para mostrar los datos, p.e.: conteo por categoría, listar comentarios de usuarios, etc.
 	+ Diseñe una plantilla para rellenar con el contenido dinámico, p.e.:
 
 ```javascript
