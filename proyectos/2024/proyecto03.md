@@ -25,7 +25,7 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 10: Typescript](/DAWM/guias/2023/guia10)
+* [Guía 10: Typescript - Introducción](/DAWM/guias/2024/guia10)
 * [Guía 11: React - Introducción](/DAWM/guias/2024/guia11)
 * [Guía 12: React - Componentes](/DAWM/guias/2024/guia12)
 * [Guía 13: React - Props y Eventos](/DAWM/guias/2024/guia13)
