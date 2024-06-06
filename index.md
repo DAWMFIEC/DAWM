@@ -28,10 +28,11 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 08: Javascript - Firebase, JSON, HTTP POST y Cadena de Promesas](guias/2024/guia08)
   * [Guía 09: Javascript - HTTP GET y Async/Await](guias/2024/guia09)
 * [Proyecto 03: Dashboard - React](proyectos/2024/proyecto03)
-  * [Guía 10: React - Introducción](guias/2024/guia10)
-  * [Guía 11: React - Componentes](guias/2024/guia11)
-  * [Guía 12: React - Props y Eventos](guias/2024/guia12)
-  * [Guía 13: React - Hooks](guias/2024/guia13)
+  * [Guía 10: Typescript](guias/2023/guia10)
+  * [Guía 11: React - Introducción](guias/2024/guia11)
+  * [Guía 12: React - Componentes](guias/2024/guia12)
+  * [Guía 13: React - Props y Eventos](guias/2024/guia13)
+  * [Guía 14: React - Hooks](guias/2024/guia14)
   
   
 ## Scripts
