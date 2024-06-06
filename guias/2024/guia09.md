@@ -9,6 +9,12 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
+   + Compruebe el acceso a la colección de datos mediante el patrón de URL:
+
+```text
+https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
+```
+   + Diseñe una estrategia para mostrar los datos, p.e.: conteo por categoría, listar comentarios de usuarios, etc.
 
 ### Actividades en clases
 
@@ -47,8 +53,7 @@ theme: jekyll-theme-leap-day
 
 * Utilice las instrucciones de [Gemini](gemini/guia09-gemini01.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
 
-	+ Diseñe una estrategia para mostrar los datos, p.e.: conteo por categoría, listar comentarios de usuarios, etc.
-	+ Diseñe y use plantilla para completar con el contenido dinámico, p.e.:
+	+ Diseñe una plantilla para rellenar con el contenido dinámico, p.e.:
 
 ```javascript
 	let template = `
