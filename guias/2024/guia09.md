@@ -14,8 +14,48 @@ theme: jekyll-theme-leap-day
 
 #### Fetch - GET
 
-* Reserve una sección en el documento HTML donde incluya los datos almacenados.
-* Identifique los eventos por los que se realizará la petición asíncrona de datos
+* Identifique la sección del documento HTML donde agregará el contenido dinámicamente, p.e.:
+
+```html
+<div id="resultados" class="blog-section">
+	<div class="container">
+		...
+		<div class="row">
+			<div class="p-3 p-lg-5 border bg-white">
+				<table class="table site-block-order-table mb-5">
+					<thead>
+						<th>Categoría</th>
+						<th>Conteo</th>
+					</thead>
+					<tbody id="tablebody">
+
+					<!-- Filas dinámicas -->
+					
+					</tbody>
+				</table>
+			</div>
+		</div>
+		...
+	</div>
+</div>
+```
+
+* Diseñe una plantilla para completar con el contenido dinámico, p.e.:
+
+```javascript
+	let template = `
+		<tr>
+			<td>${elemento.categoria}</td>
+			<td>${elemento.cantidad}</td>
+		</tr>
+	`
+```
+
+* Identifique el o los eventos en los que realizará la petición asíncrona de datos, p.e.:
+
+	+ Inmediatamente después de cargar el documento HTML.
+	+ Luego de recibir una respuesta a la petición fetch - POST
+
 * Utilice las instrucciones de [Gemini](gemini/guia09-gemini01.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
 * Acceda al URL de la colección de firebase para comprobar el resultado.
 
