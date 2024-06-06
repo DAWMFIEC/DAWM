@@ -20,11 +20,10 @@ theme: jekyll-theme-leap-day
 4. Compruebe la respuesta en su navegador del siguiente endpoint.
 
 ```
-https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<API KEY>
+https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQUI-EL-API-KEY>
 ```
 
 **NOTA:** Para mejorar la visualización del XML utilice el [XMLviewer](https://codebeautify.org/xmlviewer).
-
 
 ### Documentación
 
