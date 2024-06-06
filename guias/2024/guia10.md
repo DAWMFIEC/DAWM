@@ -8,6 +8,10 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+* Realice la actividad [Intro a `Typescript`](/DAWM/enclases/typescript) 
+
+### Actividades en clases
+
 #### OpenWeatherMap
 
 1. Obtenga una cuenta en [OpenWeatherMap](https://openweathermap.org/). 
@@ -21,12 +25,26 @@ https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<API
 
 **NOTA:** Para mejorar la visualización del XML utilice el [XMLviewer](https://codebeautify.org/xmlviewer).
 
-### Actividades en clases
 
 ### Documentación
 
+* [Typescript](https://www.typescriptlang.org/) es JavaScript escrito. TypeScript agrega tipos a JavaScript para ayudarlo a acelerar el desarrollo al detectar errores incluso antes de ejecutar el código JavaScript.
+	+ En el tutorial [TypeScript Tutorial](https://www.typescripttutorial.net/) explica los conocimientos fundamentales, tipos básicos, estructural de control, funciones, clases, interfaces, tipos avanzados, genéricos, módulos y su uso en NodeJS.
+
 ### Fundamental
+
+* Bootcamp FullStack JavaScript en Español Gratuito y con Certificado final
+
+<blockquote class="twitter-tweet"><p lang="ca" dir="ltr">Bootcamp FullStack JavaScript en Español<br>Gratuito y con Certificado final<br><br>✓ React + Redux<br>✓ Node con TypeScript<br>✓ APIs Express y GraphQL<br>✓ Desarrollo apps móviles<br>✓ Docker &amp; GitHub Actions<br>✓ PostgreSQL y MongoDB<br><br>De la Universidad de Helsinki:<br>→ <a href="https://t.co/Divm89YuBi">https://t.co/Divm89YuBi</a> <a href="https://t.co/HDJbhMdam6">pic.twitter.com/HDJbhMdam6</a></p>&mdash; Miguel Ángel Durán (@midudev) <a href="https://twitter.com/midudev/status/1768301655861190958?ref_src=twsrc%5Etfw">March 14, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
+Typescript, superset, transpilación, Stackblitz
+
 ### Referencias
+
+* (N.d.). Retrieved from https://openweathermap.org/forecast5
+* (2023). Retrieved 21 June 2023, from https://thenewstack.io/what-is-typescript/
+* (2022). Retrieved 27 November 2022, from https://www.typescriptlang.org/
+* StackBlitz Instant Dev Environments Click. Code. Done. - StackBlitz. (2023). Retrieved 21 June 2023, from https://stackblitz.com/
+* TypeScript Tutorial. (2023). Retrieved 21 June 2023, from https://www.typescripttutorial.net/
