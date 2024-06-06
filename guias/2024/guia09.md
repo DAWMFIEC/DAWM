@@ -47,13 +47,14 @@ theme: jekyll-theme-leap-day
 
 * Utilice las instrucciones de [Gemini](gemini/guia09-gemini01.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
 
-	+ Diseñe una plantilla para completar con el contenido dinámico, p.e.:
+	+ Diseñe una estrategia para mostrar los datos, p.e.: conteo por categoría, listar comentarios de usuarios, etc.
+	+ Diseñe y use plantilla para completar con el contenido dinámico, p.e.:
 
 ```javascript
 	let template = `
 		<tr>
-			<td>${elemento.categoria}</td>
-			<td>${elemento.valor}</td>
+			<td>${categoria}</td>
+			<td>${valor_conteo}</td>
 		</tr>
 	`
 ```
