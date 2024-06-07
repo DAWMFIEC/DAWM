@@ -25,6 +25,16 @@ https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQU
 
 **NOTA:** Para mejorar la visualización del XML utilice el [XMLviewer](https://codebeautify.org/xmlviewer).
 
+#### Diseño del Dashboard
+
+1. Utilice papel y lápiz para el diseño del dashboard. Considere elementos y secciones (grupo de elementos).
+2. Analice la fuente de datos para identificar los nombres, las unidades y operaciones de los elementos del dashboard (**indicadores**, **gráficos**, **tablas** y **operaciones con los datos de las tablas**).
+3. Agrupe y ordene las secciones con los elementos del dashboard.
+4. Bocete el dashboard:
+	+ Vista para dispositivos móviles: Un sección debajo de otra. Máximo dos elementos en una fila. Considere ocultar secciones o elementos.
+	+ Vista pantallas grandes: Máximo secciones en una fila. Varios elementos en una fila. Muestre todas las secciones o elementos.  
+
+
 ### Documentación
 
 * [Typescript](https://www.typescriptlang.org/) es JavaScript escrito. TypeScript agrega tipos a JavaScript para ayudarlo a acelerar el desarrollo al detectar errores incluso antes de ejecutar el código JavaScript.
