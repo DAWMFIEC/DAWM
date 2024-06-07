@@ -27,7 +27,7 @@ https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQU
 
 #### Diseño del Dashboard
 
-1. Utilice papel y lápiz para el diseño del dashboard. Considere elementos y secciones (grupo de elementos).
+1. Utilice papel y lápiz para el diseño del dashboard.
 2. Analice la fuente de datos para identificar los nombres, las unidades y operaciones de los elementos del dashboard (**indicadores**, **gráficos**, **tablas** y **operaciones con los datos de las tablas**).
 3. Agrupe y ordene las secciones con los elementos del dashboard.
 4. Bocete el dashboard:
