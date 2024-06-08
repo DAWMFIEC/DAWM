@@ -29,6 +29,13 @@ https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQU
 
 1. Utilice papel y lápiz para el diseño del dashboard.
 2. Analice la fuente de datos para identificar los nombres, las unidades y operaciones de los elementos del dashboard (**indicadores**, **gráficos**, **tablas** y **operaciones con los datos de las tablas**).
+
+	**Contenido Mínimo:** 
+  	- 3 indicadores, <br>
+  	- 1 gráfico (línea, barra, pastel, etc), <br>
+  	- 1 tabla (filas, columnas y datos a su elección) <br>
+  	- 1 indicador resultante de operaciones con los datos en la tabla (total, mayor, etc)
+
 3. Agrupe, ordene y coloque un título a las secciones (grupo de elementos relacionados entre sí) del dashboard. 
 4. Bocete el dashboard responsivo. Considere los siguientes ejemplos ([1](https://dribbble.com/shots/20316787-Dashboard-Responsive), [2](https://dribbble.com/shots/22541272-Spectra-CRM-dashboard), [3](https://dribbble.com/shots/23711917-Sales-Dashboard-Responsive), [4](https://dribbble.com/shots/23711917-Sales-Dashboard-Responsive) y [5](https://dribbble.com/shots/22895176-Dashboard-responsive-Mobile-Desktop)) de Dribbble como referencias para ambas vistas:
 	+ Vista para dispositivos móviles: Un sección debajo de otra. Máximo dos elementos en una fila. Considere ocultar secciones o elementos.
