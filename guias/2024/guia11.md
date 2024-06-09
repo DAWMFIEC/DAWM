@@ -9,7 +9,7 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * Desde la línea de comandos:
-	- Verifique la versión de npm
+	- Verifique la versión de npm, con: `npm --v`
 
 ### Actividades en clases
 
@@ -162,7 +162,7 @@ export default App
 
 #### React MUI: Layout
 
-* Agregue las propiedades **xs**, **md** y **lg** a los elementos internos.
+* Agregue las propiedades **xs**, **sm**, **md** y **lg** a los elementos internos.
 
 ```jsx
 ...
