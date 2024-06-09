@@ -112,7 +112,7 @@ theme: jekyll-theme-leap-day
 npm install @mui/material @emotion/react @emotion/styled
 ```
 
-#### React MUI: Grid v2
+#### React MUI: Componente Grid v2
 
 * En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
 
@@ -145,7 +145,7 @@ export default App
 ```
 * Compruebe el resultado en el navegador.
 
-#### React MUI: Propiedades
+#### React MUI: Props
 
 * En `App.tsx`, convierta el primer Grid en contenedor con el atributo **container** y asigne un espacio entre elementos con **spacing**.
 
