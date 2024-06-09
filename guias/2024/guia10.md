@@ -37,7 +37,7 @@ https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQU
   	- 1 indicador resultante de operaciones con los datos en la tabla (total, mayor, etc)
 
 3. Agrupe, ordene y coloque un título a las secciones (grupo de elementos relacionados entre sí) del dashboard. 
-4. Bocete el dashboard responsivo. Considere los siguientes ejemplos ([1](https://dribbble.com/shots/20316787-Dashboard-Responsive), [2](https://dribbble.com/shots/22541272-Spectra-CRM-dashboard), [3](https://dribbble.com/shots/23711917-Sales-Dashboard-Responsive), [4](https://dribbble.com/shots/23711917-Sales-Dashboard-Responsive) y [5](https://dribbble.com/shots/22895176-Dashboard-responsive-Mobile-Desktop)) de Dribbble como referencias para ambas vistas:
+4. Modele el dashboard responsivo. Considere los siguientes ejemplos ([1](https://dribbble.com/shots/20316787-Dashboard-Responsive), [2](https://dribbble.com/shots/22541272-Spectra-CRM-dashboard), [3](https://dribbble.com/shots/23711917-Sales-Dashboard-Responsive), [4](https://dribbble.com/shots/23711917-Sales-Dashboard-Responsive) y [5](https://dribbble.com/shots/22895176-Dashboard-responsive-Mobile-Desktop)) de Dribbble como referencias para ambas vistas:
 	+ Vista para dispositivos móviles: Un sección debajo de otra. Máximo dos elementos en una fila. Considere ocultar secciones o elementos.
 	+ Vista pantallas grandes: Máximo secciones en una fila. Varios elementos en una fila. Muestre todas las secciones o elementos.  
 
