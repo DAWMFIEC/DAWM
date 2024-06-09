@@ -88,7 +88,8 @@ export default function Indicator() {
 
 * Cree el componente `components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
 
-{% raw %}
+
+```jsx
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -99,7 +100,7 @@ import sunrise from '../assets/sunrise.jpeg'
 
 export default function Summary() {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card sx={% raw %}{{{% endraw %} maxWidth: 345 {% raw %}}}{% endraw %}>
             <CardActionArea>
                 <CardMedia
                     component="img"
@@ -114,7 +115,7 @@ export default function Summary() {
                     <Typography component="p" variant="h4">
                         05:19:08
                     </Typography>
-                    <Typography color="text.secondary" sx={{ flex: 1}}>
+                    <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
                        on {new Date().toLocaleString("en-US", { day : '2-digit'})} {new Date().toLocaleString("en-US", { month: "long" })} ,  {new Date().getFullYear()}
                     </Typography>
                 </CardContent>
@@ -122,7 +123,7 @@ export default function Summary() {
         </Card>
     )
 }
-{% endraw %}
+```
 
 * En `App.tsx` importe el componente **Summary** y use en el contenido a renderizar:
 
