@@ -96,6 +96,7 @@ theme: jekyll-theme-leap-day
 
 * Desde la línea de comandos:
 	+ Ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
+	+ De ser necesario, corrija o comente las secciones de código identificadas por el transpilador.
 	+ Levante un servidor HTTP en la carpeta `dist`, para comprobar el funcionamiento del sitio web transpilado.
 
 * En GitHub:
@@ -178,10 +179,11 @@ export default App
 ...
 ```
 
-* Compruebe el resultado en el navegador.
+* Compruebe el resultado para los diferentes tamaños del navegador.
 
 #### Despliegue automático
 
+* Aplique la ubicación de los elementos de acuerdo con su modelo. 
 * Versiona local y remotamente el repositorio **dashboard**.
 * Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
 
