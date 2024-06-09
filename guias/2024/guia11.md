@@ -102,7 +102,7 @@ theme: jekyll-theme-leap-day
 * En GitHub:
 	+ En `Settings` > `Code and automation` > `Pages` > `Build and deployment` seleccione la rama `gh-pages`
 	+ Revise que exista la rama `gh-pages` y que contenga el sitio web transpilado.
-	+ En `Settings` > `Code and automation` > `Pages` > `GitHub Pages` revise el URL del sitio web desplegado cumpla con la plantilla: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
+	+ Revise el URL del sitio web desplegado, que se encuentra en `Settings` > `Code and automation` > `Pages` > `GitHub Pages`: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
 
 ### Documentación
 
