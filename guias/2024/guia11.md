@@ -8,6 +8,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+
+
 ### Actividades en clases
 
 #### Github
@@ -18,7 +20,7 @@ theme: jekyll-theme-leap-day
 
 * Desde la línea de comandos, cree un nuevo sitio con Vite:
    - Seleccione **React** como framework: `√ Select a framework: » React`
-   - Seleccione **Javascript** como variante: `√ Select a variant: » JavaScript`
+   - Seleccione **Javascript** como variante: `√ Select a variant: » Typescript`
 
 ```prompt
 	npm create vite@latest <NOMBRE_DEL_PROYECTO>
@@ -45,7 +47,7 @@ theme: jekyll-theme-leap-day
 * Revise el resultado en [http://localhost:5173/](http://localhost:5173/)
 
 <div align="center">
-    <img src="images/default_site_react_vite.png" alt="">
+    <img src="imagenes/default_site_react_vite.png" alt="">
 </div>
 
 #### Estructura de archivos del proyecto en Vite - React.
@@ -70,7 +72,7 @@ theme: jekyll-theme-leap-day
 	npm install gh-pages --save-dev
 ```
 
-* En el archivo `package.json` agregue las siguientes líneas antes de `"build": "vite build"`:
+* En el archivo `package.json` agregue las siguientes líneas antes de la entrada **build**:
 
 ```typescript
     ...
@@ -86,23 +88,18 @@ theme: jekyll-theme-leap-day
     ...
 ```
 
+* Versiona local y remotamente el repositorio **dashboard**.
+
 * Desde la línea de comandos, ejecute el comando de despliegue
 
 ```prompt
 	npm run deploy
 ```
 
-:six: Puedes verificar el URL del sitio web en `Settings` > `Code and automation` > `Pages`. El sitio web está deplegado en la ruta:
-`https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
-
-* En el repositorio remoto, revise rama `gh-pages` con el código del sitio web.
-* Versiona local y remotamente el repositorio **dashboard**.
-* Despliegue el sitio del repositorio **dashboard** utilizando GitHub Pages, con el comando 
-
-```prompt
-	npm run deploy
-```
-
+* En GitHub:
+	+ Revise que exista la rama `gh-pages` y que contenga el sitio web transpilado.
+	+ En `Settings` > `Code and automation` > `Pages` > `Build and deployment` seleccione la rama `gh-pages`
+	+ En `Settings` > `Code and automation` > `Pages` > `GitHub Pages` revise el URL del sitio web desplegado cumpla con la plantilla: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
 
 ### Documentación
 
