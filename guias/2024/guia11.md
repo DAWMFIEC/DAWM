@@ -183,7 +183,7 @@ export default App
 
 #### Despliegue automático
 
-* Aplique la ubicación de los elementos de acuerdo con su modelo. 
+* Agregue los elementos necesarios, para cada uno de los tamaños de dispositivos, de acuerdo con el diseño de su dashboard responsivo. 
 * Versiona local y remotamente el repositorio **dashboard**.
 * Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
 
