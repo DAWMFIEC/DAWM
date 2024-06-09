@@ -122,7 +122,7 @@ import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 
 * En `App.tsx`, reemplace el contenido a renderizar por:
 
-```typescript
+```jsx
 ...
 
 function App() {
@@ -141,8 +141,23 @@ function App() {
 
 export default App
 ```
-
 * Compruebe el resultado en el navegador.
+
+* En `App.tsx`, convierta el primer Grid en contenedor con el atributo **container** y asigne un espacio entre elementos con **spacing**.
+
+```jsx
+function App() {
+
+	return (
+		<Grid container spacing={5}>
+		...
+		</Grid>
+    )
+}
+```
+* Compruebe el resultado en el navegador.
+
+
 * Versiona local y remotamente el repositorio **dashboard**.
 * Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
 
