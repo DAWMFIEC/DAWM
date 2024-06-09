@@ -8,7 +8,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-
+* Desde la línea de comandos:
+	- Verifique la versión de npm
 
 ### Actividades en clases
 
