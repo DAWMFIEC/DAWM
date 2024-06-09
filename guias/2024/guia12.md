@@ -186,3 +186,7 @@ componentes, jsx
 ### Referencias
 
 * The React component library you always wanted. (n.d.). Retrieved from https://mui.com/
+* Your First Component. (n.d.). Retrieved from https://react.dev/learn/your-first-component
+* Rwparrish. (2020). React Basics. Retrieved from https://dev.to/rwparrish/react-basics-2je1
+* Built-in React Components. (n.d.). Retrieved from https://react.dev/reference/react/components
+* Codemarch. (2024). Build a Card Component: pic.twitter.com/AQ6VwHhl20. Retrieved from https://twitter.com/codemarch/status/1745649409436660118?t=kTuhWffwFZ2UJ0oW4V_SEw&s=08
