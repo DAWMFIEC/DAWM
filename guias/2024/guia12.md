@@ -54,7 +54,7 @@ import Paper from '@mui/material/Paper';
 
 * Use los componentes **Typography** y **Paper**
 
-```javascript
+```text
 ...
 
 export default function Indicator() {
@@ -88,7 +88,7 @@ export default function Indicator() {
 
 * Cree el componente `components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
 
-```javascript
+```text
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
