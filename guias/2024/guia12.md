@@ -88,7 +88,7 @@ export default function Indicator() {
 
 * Cree el componente `components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
 
-<pre><code>
+```
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -122,7 +122,7 @@ export default function Summary() {
         </Card>
     )
 }
-</code></pre> 
+```
 
 * En `App.tsx` importe el componente **Summary** y use en el contenido a renderizar:
 
