@@ -48,9 +48,6 @@ theme: jekyll-theme-leap-day
     <img src="images/default_site_react_vite.png" alt="">
 </div>
 
-* Versiona local y remotamente el repositorio **dashboard**.
-* Despliegue el sitio del repositorio **dashboard** utilizando GitHub Pages.
-
 #### Estructura de archivos del proyecto en Vite - React.
 
 * Archivos de configuración
@@ -70,7 +67,7 @@ theme: jekyll-theme-leap-day
 * Instale el paquete `gh-pages`
 
 ```prompt
-npm install gh-pages --save-dev
+	npm install gh-pages --save-dev
 ```
 
 * En el archivo `package.json` agregue las siguientes líneas antes de `"build": "vite build"`:
@@ -91,16 +88,20 @@ npm install gh-pages --save-dev
 
 * Desde la línea de comandos, ejecute el comando de despliegue
 
-```command
-npm run deploy
+```prompt
+	npm run deploy
 ```
 
 :six: Puedes verificar el URL del sitio web en `Settings` > `Code and automation` > `Pages`. El sitio web está deplegado en la ruta:
 `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
 
 * En el repositorio remoto, revise rama `gh-pages` con el código del sitio web.
+* Versiona local y remotamente el repositorio **dashboard**.
+* Despliegue el sitio del repositorio **dashboard** utilizando GitHub Pages, con el comando 
 
-**NOTA:** Para actualizar el despligue del sitio web, simplemente ejecute el comando `npm run deploy` implementar nuevamente.
+```prompt
+	npm run deploy
+```
 
 
 ### Documentación
