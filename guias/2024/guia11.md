@@ -67,7 +67,7 @@ theme: jekyll-theme-leap-day
     + **src/App.jsx** función componente principal
     + **src/App.css** estilo de la función componente principal
 
-#### Despliegue automático
+#### Configuración para el despliegue
 
 * Desde la línea de comandos, acceda a la ruta del proyecto.
 * Instale el paquete `gh-pages`
@@ -103,7 +103,7 @@ theme: jekyll-theme-leap-day
 	+ Verifique que exista la rama **gh-pages** y que contenga el sitio web transpilado.
 	+ Revise el URL del sitio web desplegado, que se encuentra en _Settings_ > _Code and automation_ > _Pages_ > _GitHub Pages_: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
 
-#### React MUI
+#### React MUI: Instalación
 
 * Desde la línea de comandos, [instale React MUI](https://mui.com/material-ui/getting-started/installation/) con:
 
@@ -126,6 +126,7 @@ import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 ...
 
 function App() {
+	...
 
 	return (
 		<Grid>
@@ -143,20 +144,43 @@ export default App
 ```
 * Compruebe el resultado en el navegador.
 
+#### React MUI: Propiedades
+
 * En `App.tsx`, convierta el primer Grid en contenedor con el atributo **container** y asigne un espacio entre elementos con **spacing**.
 
 ```jsx
-function App() {
-
+...
 	return (
 		<Grid container spacing={5}>
 		...
 		</Grid>
     )
-}
+...
 ```
 * Compruebe el resultado en el navegador.
 
+#### React MUI: Layout
+
+* Agregue las propiedades **xs**, **md** y **lg** a los elementos internos.
+
+```jsx
+...
+	return (
+		<Grid container spacing={5}>
+	      <Grid xs={12} sm={4} md={3} lg={2}>1</Grid>
+	      <Grid xs={6} sm={4} md={3} lg={2}>2</Grid>
+	      <Grid xs={6} sm={4} md={3} lg={2}>3</Grid>
+	      <Grid xs={12} sm={4} md={3} lg={2}>4</Grid>
+	      <Grid xs={6} sm={4} md={6} lg={2}>5</Grid>
+	      <Grid xs={6} sm={4} md={6} lg={2}>6</Grid>
+	    </Grid
+	)
+...
+```
+
+* Compruebe el resultado en el navegador.
+
+#### Despliegue automático
 
 * Versiona local y remotamente el repositorio **dashboard**.
 * Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
