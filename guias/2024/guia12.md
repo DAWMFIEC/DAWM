@@ -31,9 +31,9 @@ import Indicator from './components/Indicator';
 function App() {
 	return (
 		...
-		<Grid xs={6} sm={4} md={3} lg={2}>
-			<Indicator />
-	    </Grid>        
+		<Grid xs={6} md={4} lg={2}>
+	        <Indicator />
+	    </Grid>       
 		...
 	)
 }
@@ -67,13 +67,13 @@ export default function Indicator() {
             {% raw %}}}{% endraw %}
           >
             <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                Precipitation 
+                Precipitación 
             </Typography>
             <Typography component="p" variant="h4">
                 0.13
             </Typography>
             <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
-                probability
+                probabilidad
             </Typography>
         </Paper> 
     )
@@ -106,17 +106,17 @@ export default function Summary() {
                     component="img"
                     height="140"
                     image={sunrise}
-                    alt="sunrise"
+                    alt="Amanecer"
                 />
                 <CardContent>
                     <Typography gutterBottom component="h2" variant="h6" color="primary">
-                        Sunrise
+                        Amanecer
                     </Typography>
                     <Typography component="p" variant="h4">
                         05:19:08
                     </Typography>
                     <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
-                       on {new Date().toLocaleString("en-US", { day : '2-digit'})} {new Date().toLocaleString("en-US", { month: "long" })} ,  {new Date().getFullYear()}
+                       en {new Date().toLocaleString("en-US", { day : '2-digit'})} {new Date().toLocaleString("en-US", { month: "long" })} ,  {new Date().getFullYear()}
                     </Typography>
                 </CardContent>
             </CardActionArea>
@@ -134,7 +134,7 @@ function App() {
 	return (
 		...
 		<Grid xs={6} sm={4} md={3} lg={2}>
-	       <Summary></Summary>
+	        <Summary></Summary>
 	    </Grid>        
 		...
 	)
@@ -157,8 +157,8 @@ import BasicTable from './components/BasicTable';
 function App() {
 	return (
 		...
-		<Grid xs={12} sm={6} md={6} lg={9}>
-	       <BasicTable/>
+		<Grid xs={12} md={6} lg={9} >
+	       <BasicTable />
 	    </Grid>        
 		...
 	)
