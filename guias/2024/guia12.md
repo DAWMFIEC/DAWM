@@ -60,11 +60,11 @@ import Paper from '@mui/material/Paper';
 export default function Indicator() {
     return (
         <Paper
-            sx={{
+            sx={% raw %}{{{% endraw %}
               p: 2,
               display: 'flex',
               flexDirection: 'column'
-            }}
+            {% raw %}}}{% endraw %}
           >
             <Typography component="h2" variant="h6" color="primary" gutterBottom>
                 Precipitation 
@@ -72,7 +72,7 @@ export default function Indicator() {
             <Typography component="p" variant="h4">
                 0.13
             </Typography>
-            <Typography color="text.secondary" sx={{ flex: 1 }}>
+            <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
                 probability
             </Typography>
         </Paper> 
@@ -84,7 +84,7 @@ export default function Indicator() {
 
 #### Componente MUI Card
 
-* Busque y descargue la imagen [sunrise.jpeg](imagenes/sunrise.jpeg). Ubique la imagen dentro de la carpeta `assets`.
+* Descargue la imagen [sunrise.jpeg](imagenes/sunrise.jpeg) dentro de la carpeta `assets` dentro del proyecto.
 
 * Cree el componente `components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
 
