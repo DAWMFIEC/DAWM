@@ -15,8 +15,6 @@ theme: jekyll-theme-leap-day
 * Cree el archivo `components/Indicator.tsx` con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
 
 ```jsx
-import * as React from 'react';
-
 export default function Indicator() {
     return (
        	<>
@@ -82,27 +80,13 @@ export default function Indicator() {
 }
 ```
 
+* Compruebe el resultado en el navegador.
+
 #### Componente MUI Card
 
-* En `App.tsx` importe el componente **Summary** y use en el contenido a renderizar:
+* Busque y descargue la imagen [sunrise.jpeg](imagenes/sunrise.jpeg). Ubique la imagen dentro de la carpeta `assets`.
 
-```jsx
-import Summary from './components/Summary';
-
-function App() {
-	return (
-		...
-		<Grid xs={6} sm={4} md={3} lg={2}>
-			<Summary></Summary>
-	    </Grid>        
-		...
-	)
-}
-
-export default App
-```
-
-* En `components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
+* Cree el componente `components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
 
 ```jsx
 import Typography from '@mui/material/Typography';
@@ -111,7 +95,7 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import { CardActionArea } from '@mui/material';
 
-import amanecer from '../assets/amanecer.jpeg'
+import sunrise from '../assets/sunrise.jpeg'
 
 export default function Summary() {
     return (
@@ -139,6 +123,50 @@ export default function Summary() {
     )
 }
 ``` 
+
+* En `App.tsx` importe el componente **Summary** y use en el contenido a renderizar:
+
+```jsx
+import Summary from './components/Summary';
+
+function App() {
+	return (
+		...
+		<Grid xs={6} sm={4} md={3} lg={2}>
+	       <Summary></Summary>
+	    </Grid>        
+		...
+	)
+}
+
+export default App
+```
+
+* Compruebe el resultado en el navegador.
+
+#### Componente MUI Table
+
+* Cree el componente `components/BasicTable.tsx`
+* Del ejemplo [Basic Table](https://mui.com/material-ui/react-table/#basic-table) muestre y copie el código en el componente recién creado.
+* En `App.tsx` importe el componente **BasicTable** y use en el contenido a renderizar:
+
+```jsx
+import BasicTable from './components/BasicTable';
+
+function App() {
+	return (
+		...
+		<Grid xs={12} sm={6} md={6} lg={9}>
+	       <BasicTable/>
+	    </Grid>        
+		...
+	)
+}
+
+export default App
+```
+
+* Compruebe el resultado en el navegador.
 
 ### Documentación
 
