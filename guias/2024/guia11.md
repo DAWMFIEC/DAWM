@@ -51,6 +51,8 @@ theme: jekyll-theme-leap-day
     <img src="imagenes/default_site_react_vite.png" alt="">
 </div>
 
+* Versiona local y remotamente el repositorio **dashboard**.
+
 #### Estructura de archivos del proyecto en Vite - React.
 
 * Archivos de configuración
@@ -98,8 +100,8 @@ theme: jekyll-theme-leap-day
 ```
 
 * En GitHub:
-	+ Revise que exista la rama `gh-pages` y que contenga el sitio web transpilado.
 	+ En `Settings` > `Code and automation` > `Pages` > `Build and deployment` seleccione la rama `gh-pages`
+	+ Revise que exista la rama `gh-pages` y que contenga el sitio web transpilado.
 	+ En `Settings` > `Code and automation` > `Pages` > `GitHub Pages` revise el URL del sitio web desplegado cumpla con la plantilla: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
 
 ### Documentación
