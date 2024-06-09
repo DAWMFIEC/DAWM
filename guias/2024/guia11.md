@@ -14,13 +14,35 @@ theme: jekyll-theme-leap-day
 
 * Crea un repositorio en GitHub con el nombre **dashboard**.
 
+#### Proyecto Base
+
+* Desde la línea de comandos, cree un nuevo sitio con Vite:
+   - Seleccione **React** como framework: `√ Select a framework: » React`
+   - Seleccione **Javascript** como variante: `√ Select a variant: » JavaScript`
+
+```text
+	npm create vite@latest <NOMBRE_DEL_PROYECTO>
+```
+
+* Ingrese a la carpeta creada:
+
+```text
+	cd <NOMBRE_DEL_PROYECTO>
+```
+
+* Instale las dependencias
+
+```text
+	npm install
+```
+
 * Versiona local y remotamente el repositorio **landing**.
 * Despliegue el sitio del repositorio **landing** utilizando GitHub Pages.
 
 ### Documentación
 
-* [react.dev](https://react.dev/) se encuentra la documentación, tutoriales, playground y referencias.
-* [vitejs.dev](https://vitejs.dev/) se encuentra la documentación y referencias.
+* En [react.dev](https://react.dev/) se encuentra la documentación, tutoriales, playground y referencias para crear interfaces de sitios web y aplicaciones nativas.
+* En [vitejs.dev](https://vitejs.dev/) se encuentra la documentación y referencias que provee de un servidor de desarrollo local que se utiliza para crear aplicaciones web de JavaScript. Vite es conocido por su velocidad, facilidad de uso y soporte para una amplia gama de marcos y bibliotecas de JavaScript.
 
 ### Fundamental
 
