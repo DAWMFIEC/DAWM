@@ -130,7 +130,7 @@ function App() {
 	...
 
 	return (
-		<Grid>
+	  <Grid>
 	      <Grid>1</Grid>
 	      <Grid>2</Grid>
 	      <Grid>3</Grid>
@@ -152,7 +152,7 @@ export default App
 ```jsx
 ...
 	return (
-		<Grid container spacing={5}>
+	  <Grid container spacing={5}>
 		...
 		</Grid>
     )
@@ -167,7 +167,7 @@ export default App
 ```jsx
 ...
 	return (
-		<Grid container spacing={5}>
+	  <Grid container spacing={5}>
 	      <Grid xs={12} sm={4} md={3} lg={2}>1</Grid>
 	      <Grid xs={6} sm={4} md={3} lg={2}>2</Grid>
 	      <Grid xs={6} sm={4} md={3} lg={2}>3</Grid>
