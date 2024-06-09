@@ -94,15 +94,16 @@ theme: jekyll-theme-leap-day
 
 * Versiona local y remotamente el repositorio **dashboard**.
 
-* Desde la línea de comandos, ejecute el comando de despliegue
+* Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web.
 
 ```prompt
 	npm run deploy
 ```
+   - Levante un servidor HTTP para comprobar el contenido de la carpeta `dist`.
 
 * En GitHub:
 	+ En `Settings` > `Code and automation` > `Pages` > `Build and deployment` seleccione la rama `gh-pages`
-	+ Revise que exista la rama `gh-pages` y que contenga el sitio web transpilado.
+	+ Verifique que exista la rama `gh-pages` y que contenga el sitio web transpilado.
 	+ Revise el URL del sitio web desplegado, que se encuentra en `Settings` > `Code and automation` > `Pages` > `GitHub Pages`: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
 
 ### Documentación
