@@ -54,7 +54,7 @@ import Paper from '@mui/material/Paper';
 
 * Use los componentes **Typography** y **Paper**
 
-```jsx
+```typescript
 ...
 
 export default function Indicator() {
@@ -88,7 +88,7 @@ export default function Indicator() {
 
 * Cree el componente `components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
 
-```jsx
+```typescript
 import Typography from '@mui/material/Typography';
 import Card from '@mui/material/Card';
 import CardContent from '@mui/material/CardContent';
@@ -173,6 +173,10 @@ export default App
 * En [mui.com](https://mui.com/) se encuentra la documentación de la librería de componentes visuales para React.
 
 ### Fundamental
+
+* MUI is more than just Material UI!
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">🗣️💬 Shout it from the rooftops:<br><br>MUI is more than just Material UI! ✨<br><br>Headless components? <br>✅ Base UI<br><br>Next-gen design &amp; DX?<br>✅ Joy UI<br><br>Advanced components?<br>✅ MUI X Data Grid &amp; Date Pickers<br><br>Low-code admin builder?<br>✅ MUI Toolpad<br><br>Learn more here:<a href="https://t.co/ZulMd41oIf">https://t.co/ZulMd41oIf</a></p>&mdash; MUI org (@MUI_hq) <a href="https://twitter.com/MUI_hq/status/1651256048307585029?ref_src=twsrc%5Etfw">April 26, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
