@@ -36,8 +36,8 @@ theme: jekyll-theme-leap-day
 	npm install
 ```
 
-* Versiona local y remotamente el repositorio **landing**.
-* Despliegue el sitio del repositorio **landing** utilizando GitHub Pages.
+* Versiona local y remotamente el repositorio **dashboard**.
+* Despliegue el sitio del repositorio **dashboard** utilizando GitHub Pages.
 
 ### Documentación
 
@@ -56,4 +56,11 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
+librería, ui, ui material
+
 ### Referencias
+
+* Quick Start. (n.d.). Retrieved from https://react.dev/learn
+* Vite. (n.d.). Retrieved from https://vitejs.dev/
+* Cómo iniciar un proyecto React con Vite. (2022). Retrieved from https://carlosazaustre.es/react-vite
+* Shamloo, R. (2023). Deploying Vite / React App to GitHub Pages. Retrieved from https://dev.to/rashidshamloo/deploying-vite-react-app-to-github-pages-35hf
