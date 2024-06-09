@@ -22,7 +22,7 @@ theme: jekyll-theme-leap-day
 * Desde la línea de comandos, cree un nuevo sitio con Vite:
 
 ```prompt
-	npm create vite@latest <NOMBRE_DEL_PROYECTO>
+	npm create vite@latest <NOMBRE_DEL_REPOSITORIO>
 ```
 
    - Seleccione **React** como framework: `√ Select a framework: » React`
@@ -31,7 +31,7 @@ theme: jekyll-theme-leap-day
 * Ingrese a la carpeta creada:
 
 ```prompt
-	cd <NOMBRE_DEL_PROYECTO>
+	cd <NOMBRE_DEL_REPOSITORIO>
 ```
 
 * Instale las dependencias
@@ -94,12 +94,9 @@ theme: jekyll-theme-leap-day
 
 * Versiona local y remotamente el repositorio **dashboard**.
 
-* Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web.
-
-```prompt
-	npm run deploy
-```
-   - Levante un servidor HTTP para comprobar el contenido de la carpeta `dist`.
+* Desde la línea de comandos:
+	+ Ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
+	+ Levante un servidor HTTP en la carpeta `dist`, para comprobar el funcionamiento del sitio web transpilado.
 
 * En GitHub:
 	+ En `Settings` > `Code and automation` > `Pages` > `Build and deployment` seleccione la rama `gh-pages`
