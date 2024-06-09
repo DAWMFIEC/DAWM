@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
 export default function Indicator() {
     return (
        	<>
-            Indicador
+            Indicator
         </> 
     )
 }
@@ -67,13 +67,13 @@ export default function Indicator() {
             }}
           >
             <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                Title
+                Precipitation 
             </Typography>
             <Typography component="p" variant="h4">
-                Subtitle
+                0.13
             </Typography>
             <Typography color="text.secondary" sx={{ flex: 1 }}>
-                Text
+                probability
             </Typography>
         </Paper> 
     )
@@ -109,7 +109,7 @@ export default function Summary() {
                 />
                 <CardContent>
                     <Typography gutterBottom component="h2" variant="h6" color="primary">
-                        Amanecer
+                        Sunrise
                     </Typography>
                     <Typography component="p" variant="h4">
                         05:19:08
@@ -170,8 +170,14 @@ export default App
 
 ### Documentación
 
+* En [mui.com](https://mui.com/) se encuentra la documentación de la librería de componentes visuales para React.
+
 ### Fundamental
 
 ### Términos
 
+componentes, jsx
+
 ### Referencias
+
+* The React component library you always wanted. (n.d.). Retrieved from https://mui.com/
