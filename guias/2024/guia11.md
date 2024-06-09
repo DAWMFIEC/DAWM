@@ -20,12 +20,13 @@ theme: jekyll-theme-leap-day
 #### Proyecto Base
 
 * Desde la línea de comandos, cree un nuevo sitio con Vite:
-   - Seleccione **React** como framework: `√ Select a framework: » React`
-   - Seleccione **Javascript** como variante: `√ Select a variant: » Typescript`
 
 ```prompt
 	npm create vite@latest <NOMBRE_DEL_PROYECTO>
 ```
+
+   - Seleccione **React** como framework: `√ Select a framework: » React`
+   - Seleccione **Javascript** como variante: `√ Select a variant: » Typescript`
 
 * Ingrese a la carpeta creada:
 
