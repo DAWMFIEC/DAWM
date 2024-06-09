@@ -85,7 +85,7 @@ theme: jekyll-theme-leap-day
     ...
 ```
 
-* En el archivo `vite.config.js` agregue esta línea antes de: `plugins: [react()],`:
+* En el archivo `vite.config.js` agregue esta línea antes de: **plugins: [react()],**:
 
 ```typescript
     base: "/<NOMBRE_DEL_REPOSITORIO>",
@@ -99,14 +99,58 @@ theme: jekyll-theme-leap-day
 	+ Levante un servidor HTTP en la carpeta `dist`, para comprobar el funcionamiento del sitio web transpilado.
 
 * En GitHub:
-	+ En `Settings` > `Code and automation` > `Pages` > `Build and deployment` seleccione la rama `gh-pages`
-	+ Verifique que exista la rama `gh-pages` y que contenga el sitio web transpilado.
-	+ Revise el URL del sitio web desplegado, que se encuentra en `Settings` > `Code and automation` > `Pages` > `GitHub Pages`: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
+	+ En _Settings_ > _Code and automation_ > _Pages_ > _Build and deployment_ seleccione la rama **gh-pages**
+	+ Verifique que exista la rama **gh-pages** y que contenga el sitio web transpilado.
+	+ Revise el URL del sitio web desplegado, que se encuentra en _Settings_ > _Code and automation_ > _Pages_ > _GitHub Pages_: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
+
+#### React MUI
+
+* Desde la línea de comandos, [instale React MUI](https://mui.com/material-ui/getting-started/installation/) con:
+
+```prompt
+npm install @mui/material @emotion/react @emotion/styled
+```
+
+#### React MUI: Grid v2
+
+* En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
+
+```typescript
+import { useState } from 'react'
+import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+```
+
+* En `App.tsx`, reemplace el contenido a renderizar por:
+
+```typescript
+...
+
+function App() {
+
+	return (
+		<Grid>
+	      <Grid>1</Grid>
+	      <Grid>2</Grid>
+	      <Grid>3</Grid>
+	      <Grid>4</Grid>
+	      <Grid>5</Grid>
+	      <Grid>6</Grid>
+	    </Grid>
+    )
+}
+
+export default App
+```
+
+* Compruebe el resultado en el navegador.
+* Versiona local y remotamente el repositorio **dashboard**.
+* Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
 
 ### Documentación
 
 * En [react.dev](https://react.dev/) se encuentra la documentación, tutoriales, playground y referencias para crear interfaces de sitios web y aplicaciones nativas.
 * En [vitejs.dev](https://vitejs.dev/) se encuentra la documentación y referencias que provee de un servidor de desarrollo local que se utiliza para crear aplicaciones web de JavaScript. Vite es conocido por su velocidad, facilidad de uso y soporte para una amplia gama de marcos y bibliotecas de JavaScript.
+* En [mui.com](https://mui.com/) se encuentra la documentación de la librería de componentes visuales para React.
 
 ### Fundamental
 
@@ -128,3 +172,4 @@ librería, ui, ui material
 * Vite. (n.d.). Retrieved from https://vitejs.dev/
 * Cómo iniciar un proyecto React con Vite. (2022). Retrieved from https://carlosazaustre.es/react-vite
 * Shamloo, R. (2023). Deploying Vite / React App to GitHub Pages. Retrieved from https://dev.to/rashidshamloo/deploying-vite-react-app-to-github-pages-35hf
+* The React component library you always wanted. (n.d.). Retrieved from https://mui.com/
