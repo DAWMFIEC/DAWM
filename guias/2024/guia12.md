@@ -116,7 +116,7 @@ export default function Summary() {
                         05:19:08
                     </Typography>
                     <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
-                       en {new Date().toLocaleString("en-US", { day : '2-digit'})} {new Date().toLocaleString("en-US", { month: "long" })} ,  {new Date().getFullYear()}
+                    	en 17 Junio, 2024
                     </Typography>
                 </CardContent>
             </CardActionArea>
