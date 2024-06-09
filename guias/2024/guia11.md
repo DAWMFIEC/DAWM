@@ -145,7 +145,7 @@ export default App
 ```
 * Compruebe el resultado en el navegador.
 
-#### React MUI: Props
+#### React MUI: Propiedades (Props)
 
 * En `App.tsx`, convierta el primer Grid en contenedor con el atributo **container** y asigne un espacio entre elementos con **spacing**.
 
