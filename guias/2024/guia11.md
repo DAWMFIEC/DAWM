@@ -20,24 +20,88 @@ theme: jekyll-theme-leap-day
    - Seleccione **React** como framework: `√ Select a framework: » React`
    - Seleccione **Javascript** como variante: `√ Select a variant: » JavaScript`
 
-```text
+```prompt
 	npm create vite@latest <NOMBRE_DEL_PROYECTO>
 ```
 
 * Ingrese a la carpeta creada:
 
-```text
+```prompt
 	cd <NOMBRE_DEL_PROYECTO>
 ```
 
 * Instale las dependencias
 
-```text
+```prompt
 	npm install
 ```
 
+* Inicie el servidor.
+
+```prompt
+	npm run dev
+```
+
+* Revise el resultado en [http://localhost:5173/](http://localhost:5173/)
+
+<div align="center">
+    <img src="images/default_site_react_vite.png" alt="">
+</div>
+
 * Versiona local y remotamente el repositorio **dashboard**.
 * Despliegue el sitio del repositorio **dashboard** utilizando GitHub Pages.
+
+#### Estructura de archivos del proyecto en Vite - React.
+
+* Archivos de configuración
+    + **./vite.config.js** contiene la información al ejecutar el servidor de Vite.
+    + **./package.json** contiene la lista de los paquetes instalados
+
+* Código fuente
+    + **./index.html** página de inicio
+    + **src/index.css** estilo global de la página
+    + **src/main.jsx** punto de entrada de la página
+    + **src/App.jsx** función componente principal
+    + **src/App.css** estilo de la función componente principal
+
+#### Despliegue automático
+
+* Desde la línea de comandos, acceda a la ruta del proyecto.
+* Instale el paquete `gh-pages`
+
+```prompt
+npm install gh-pages --save-dev
+```
+
+* En el archivo `package.json` agregue las siguientes líneas antes de `"build": "vite build"`:
+
+```typescript
+    ...
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d dist",
+    ...
+```
+
+* En el archivo `vite.config.js` agregue esta línea antes de: `plugins: [react()],`:
+
+```typescript
+    base: "/<NOMBRE_DEL_REPOSITORIO>",
+    ...
+```
+
+* Desde la línea de comandos, ejecute el comando de despliegue
+
+```command
+npm run deploy
+```
+
+:six: Puedes verificar el URL del sitio web en `Settings` > `Code and automation` > `Pages`. El sitio web está deplegado en la ruta:
+`https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
+
+* En el repositorio remoto, revise rama `gh-pages` con el código del sitio web.
+
+**NOTA:** Para actualizar el despligue del sitio web, simplemente ejecute el comando `npm run deploy` implementar nuevamente.
+
 
 ### Documentación
 
