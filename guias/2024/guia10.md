@@ -38,7 +38,7 @@ https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQU
 1. Utilice papel y lápiz para el diseño del dashboard.
 2. Analice la fuente de datos para identificar los nombres, las unidades y operaciones de los elementos del dashboard (**indicadores**, **gráficos**, **tablas** y **operaciones con los datos de las tablas**).
 
-	**Contenido Mínimo:** 
+	**Contenido Mínimo:** <br>
   	- 5 indicadores de las fuentes de datos, <br>
   	- 1 gráfico (línea, barra, pastel, etc), <br>
   	- 1 tabla (filas, columnas y datos a su elección) <br>
