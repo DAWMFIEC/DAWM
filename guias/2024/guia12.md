@@ -6,8 +6,6 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto03](/DAWM/proyectos/2024/proyecto03)
 
-### Actividades previas
-
 ### Actividades en clases
 
 #### Componente Indicador
@@ -43,6 +41,50 @@ export default App
 
 * Compruebe el resultado en el navegador.
 
+#### Props
+
+* Agregue la interfaz `Config` al componente **Indicator**
+
+```jsx
+...
+interface Config {
+    title?: String;
+    subtitle?: String;
+    value: Number;
+}
+
+export default function Indicator(config: Config) {
+	return (
+        <>
+            {config.title}<br/>
+            {config.value.toString()}<br/>
+            {config.subtitle}
+            
+        </>
+    )
+}
+```
+
+* En `App.tsx` agregue las propiedades y los valores del componente **Indicator**
+
+```jsx
+import Indicator from './components/Indicator';
+
+function App() {
+	return (
+		...
+		<Grid xs={6} md={4} lg={2}>
+	        <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} />
+	    </Grid>       
+		...
+	)
+}
+
+export default App
+```
+
+* Compruebe el resultado en el navegador.
+
 #### Componente MUI Paper y Typography
 
 * Agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
@@ -57,7 +99,7 @@ import Paper from '@mui/material/Paper';
 ```jsx
 ...
 
-export default function Indicator() {
+export default function Indicator(config: Config) {
     return (
         <Paper
             sx={% raw %}{{{% endraw %}
@@ -67,13 +109,13 @@ export default function Indicator() {
             {% raw %}}}{% endraw %}
           >
             <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                Precipitación 
+                {config.title} 
             </Typography>
             <Typography component="p" variant="h4">
-                0.13
+                {config.value.toString()}
             </Typography>
             <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
-                probabilidad
+                {config.subtitle}
             </Typography>
         </Paper> 
     )
