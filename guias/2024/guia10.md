@@ -31,7 +31,7 @@ https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQU
 2. Analice la fuente de datos para identificar los nombres, las unidades y operaciones de los elementos del dashboard (**indicadores**, **gráficos**, **tablas** y **operaciones con los datos de las tablas**).
 
 	**Contenido Mínimo:** <br>
-  	- 5 indicadores de las fuentes de datos, <br>
+  	- 5 indicadores de la fuente de datos (p.e. nombre de ciudad, país, zona horaria, etc), <br>
   	- 1 gráfico (línea, barra, pastel, etc), <br>
   	- 1 tabla (filas, columnas y datos a su elección) <br>
   	- 1 indicador resultante de las operaciones con los datos en la tabla (total, mayor, etc).
