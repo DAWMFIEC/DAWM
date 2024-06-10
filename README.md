@@ -74,8 +74,13 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 02](Capítulo04/ejercicio02)         | Typescript - Anotación de tipos básicos, arreglos y objetos |
 | 				| [Ejercicio 03](Capítulo04/ejercicio03)         | Typescript - Interfaces y clases |
 | 				| [Ejercicio 04](Capítulo04/ejercicio04)         | Typescript - Funciones |
-| 				| [Ejercicio 05](Capítulo04/ejercicio05)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
-| 				| [Ejercicio 06](Capítulo04/ejercicio06)         | Angular - Servicios |
+| 				| [Ejercicio 05](Capítulo04/ejercicio05)         | React - Introducción |
+| 				| [Ejercicio 06](Capítulo04/ejercicio06)         | React - Componentes |
+| 				| [Ejercicio 07](Capítulo04/ejercicio07)         | React - Props |
+| 				| [Ejercicio 08](Capítulo04/ejercicio08)         | React - Hooks |
+| 				| [Ejercicio 09](Capítulo04/ejercicio09)         | React - Eventos |
+| 				| [Ejercicio 10](Capítulo04/ejercicio10)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
+| 				| [Ejercicio 11](Capítulo04/ejercicio11)         | Angular - Servicios |
 | Capítulo 05   | [Ejercicio 01](Capítulo05/ejercicio01)         | Express - Bases y Bootstrap |
 |               | [Ejercicio 02](Capítulo05/ejercicio02)         | Express - ORM (Básico e Intermedio) |
 |               | [Ejercicio 03](Capítulo05/ejercicio03)         | Express - Parámetros de consulta y de ruta |
