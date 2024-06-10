@@ -25,16 +25,6 @@ https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQU
 
 **NOTA:** Para mejorar la visualización del XML utilice el [XMLviewer](https://codebeautify.org/xmlviewer).
 
-#### Open-Meteo
-
-1. En la [documentación del API de Open-Meteo](https://open-meteo.com/en/docs):
-  - En _Search_ elija `Detect Location via GPS`,
-  - En _Hourly Weather Variables_ marque las opciones **Temperature (2m)**, **Rain**, **Cloud cover Total** y **Precipitation Probability**.
-2. En la sección _API Response_, recargue el gráfico.
-3. En _API URL_, copie la URL en una pestaña nueva, p.e.:
-
-[https://api.open-meteo.com/v1/forecast?latitude=-2.1454&longitude=-79.9671&hourly=temperature_2m,precipitation_probability,rain,cloud_cover](https://api.open-meteo.com/v1/forecast?latitude=-2.1454&longitude=-79.9671&hourly=temperature_2m,precipitation_probability,rain,cloud_cover) 
-
 #### Diseño del Dashboard
 
 1. Utilice papel y lápiz para el diseño del dashboard.
