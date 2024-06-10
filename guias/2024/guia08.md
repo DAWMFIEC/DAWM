@@ -38,29 +38,33 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 * Detenga el comportamiento predeterminado del formulario al evento submit, p.e.:
 
 ```javascript
-formulario.addEventListener('submit', (eventSubmit) => {
-	
-	eventSubmit.preventDefault() 
-	...
-})
+...
+	myform.addEventListener('submit', (eventSubmit) => {
+		
+		eventSubmit.preventDefault() 
+		...
+	})
+...
 ```
 
 * Verifique la existencia de contenido válido en los elementos del formulario.  
 
 ```javascript
-myform.addEventListener('submit', (eventSubmit) => {
+...
+	myform.addEventListener('submit', (eventSubmit) => {
 
-        eventSubmit.preventDefault()
+	        eventSubmit.preventDefault()
 
-        if (form_name.value.length == 0) {
-            alert("Nombre requerido")
-            form_name.focus()
-            return;
-        }
+	        if (form_name.value.length == 0) {
+	            alert("Nombre requerido")
+	            form_name.focus()
+	            return;
+	        }
 
-        ...
+	        ...
 
-})
+	})
+...
 ```
 
 * Utilice las instrucciones de [Gemini](gemini/guia08-gemini01.pdf) para realizar un requerimiento `asíncrono` `HTTP - POST`, de los datos de un formulario, mediante `fetch`.
