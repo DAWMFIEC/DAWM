@@ -13,7 +13,7 @@
 
 * Complete las actividades de [React - Bases](https://dawmfiec.github.io/DAWM/tutoriales/react_bases.html) y [React - Componentes Integrados](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_integrados.html) 
 
-* En el archivo `src/App.jsx`, modifique el **JSX** a renderizar por:
+* En el archivo `src/App.tsx`, modifique el **JSX** a renderizar por:
 
 ```tsx
 ...
