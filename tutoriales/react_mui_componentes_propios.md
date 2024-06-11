@@ -85,7 +85,7 @@ MUI
 npm install @mui/material @emotion/react @emotion/styled
 ```
 
-Grid v2
+Componente App: Grid v2
 ==========
 
 * * *
