@@ -28,7 +28,7 @@ theme: jekyll-theme-leap-day
    - Seleccione **React** como framework: `√ Select a framework: » React`
    - Seleccione **Javascript** como variante: `√ Select a variant: » Typescript`
 
-* Ingrese a la carpeta creada:
+* Ingrese a la carpeta del repositorio:
 
 ```prompt
 	cd <NOMBRE_DEL_REPOSITORIO>
