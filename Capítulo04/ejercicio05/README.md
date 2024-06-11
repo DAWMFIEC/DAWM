@@ -32,6 +32,9 @@
     }
     </code></pre>
 
+    + Modifique el archivo **vite.confing.ts**
+    	- Agregue los pares/valores: **test**
+
     <pre><code>
     import { defineConfig } from 'vite'
 	import react from '@vitejs/plugin-react-swc'
