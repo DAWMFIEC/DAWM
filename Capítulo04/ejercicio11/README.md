@@ -14,7 +14,7 @@
 
 ## Pruebas unitarias
 
-* Descargue y descomprima [C04E06.zip](../../zips/C04E06.zip)
+* Descargue y descomprima [C04E06.zip](../../zips/C04E11.zip)
 * Copie cada archivo **.spec.ts** y reemplace con el archivo **.spec.ts** a cada componente del proyecto.
 	+ `specs/app.component.spec.ts` -> `src/app/app.component.spec.ts`
 	+ `specs/recursos.component.spec.ts` -> `src/app/servicios/recursos.component.spec.ts`
