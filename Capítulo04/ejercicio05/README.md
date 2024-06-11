@@ -13,22 +13,6 @@
 
 * Complete las actividades de [React - Bases](https://dawmfiec.github.io/DAWM/tutoriales/react_bases.html) y [React - Componentes Integrados](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_integrados.html) 
 
-* En el archivo `src/App.tsx`, modifique el **JSX** a renderizar por:
-
-```tsx
-...
-function App() {
-  return (
-    <>
-	  <h1>Título Principal</h1>
-	  <h2>Título Secundario</h2>
-	  <p data-testid="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sint mollitia tempora cumque fuga velit ut distinctio rem eos, quia beatae accusamus, totam ex error nemo atque vitae dolor aspernatur!</p>
-	</>
-  )
-}
-...
-```
-
 ## Pruebas unitarias
 
 * Descargue y descomprima [C04E05.zip](../../zips/C04E05.zip).
