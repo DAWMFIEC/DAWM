@@ -13,6 +13,14 @@
 
 ## Pruebas unitarias
 
+* Descargue y descomprima [C04E05.zip](../../zips/C04E05.zip)
+* Copie cada archivo **.test.tsx** en la carpeta `src` del proyecto.
+* En su proyecto de React 
+	+ Instale las dependencias a **Vitest**, **Jsdom** y **React Testing**
+    	- Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event`
+
+* En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm run test`
+
 ## Referencias 
 
 * Quick Start. (n.d.). Retrieved from https://react.dev/learn
