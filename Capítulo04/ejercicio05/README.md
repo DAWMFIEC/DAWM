@@ -18,6 +18,21 @@
 * En su proyecto de React 
 	+ Instale las dependencias a **Vitest**, **Jsdom** y **React Testing**
     	- Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event`
+    + Modifique el archivo **package.json**
+    	- Agregue los pares/valores: **test**
+
+    <pre><code>
+    ...
+      "scripts": {
+      	...
+        "preview": "vite preview",
+        <b style="color:red">
+        "test": "vitest"
+        </b>
+      },
+      ...
+    }
+    </code></pre>
 
 * En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm run test`
 
