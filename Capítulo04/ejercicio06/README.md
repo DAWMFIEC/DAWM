@@ -11,7 +11,7 @@
 
 ## Instrucciones
 
-* Complete las actividades de [React - Bases](https://dawmfiec.github.io/DAWM/tutoriales/react_bases.html), [React - Componentes Integrados](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_integrados.html) y [React - Material UI + Componentes Propios](https://dawmfiec.github.io/DAWM/tutoriales/react_mui_componentes_propios.html) 
+* Complete las actividades de [React - Bases](https://dawmfiec.github.io/DAWM/tutoriales/react_bases.html), [React - Componentes Integrados](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_integrados.html) y [React - MUI + Componentes Propios](https://dawmfiec.github.io/DAWM/tutoriales/react_mui_componentes_propios.html) 
 
 
 ## Pruebas unitarias
@@ -19,7 +19,7 @@
 * Descargue y descomprima [C04E06.zip](../../zips/C04E06.zip)
 * Copie cada archivo **.test.tsx** en la carpeta `src` del proyecto.
 * En su proyecto de React 
-	+ Instale las dependencias a **Vitest**, **Jsdom** y **React Testing**
+	+ Instale las dependencias de **Vitest**, **Jsdom** y **React Testing**
     	- Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event @vitest/coverage-v8`
     + Modifique el archivo **package.json**
     	- Agregue los pares/valores: **test** y **coverage**

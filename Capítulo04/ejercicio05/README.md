@@ -34,7 +34,7 @@ function App() {
 * Descargue y descomprima [C04E05.zip](../../zips/C04E05.zip)
 * Copie cada archivo **.test.tsx** en la carpeta `src` del proyecto.
 * En su proyecto de React 
-	+ Instale las dependencias a **Vitest**, **Jsdom** y **React Testing**
+	+ Instale las dependencias de **Vitest**, **Jsdom** y **React Testing**
     	- Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event @vitest/coverage-v8`
     + Modifique el archivo **package.json**
     	- Agregue los pares/valores: **test** y **coverage**
