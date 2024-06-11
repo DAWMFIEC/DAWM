@@ -24,9 +24,32 @@ De manera predeterminada, React provee de algunos componentes integrados ([Built
 > JSX es una extensión de sintaxis para JavaScript que le permite escribir etiquetas similares a HTML dentro de un archivo JavaScript. Aunque existen otras formas de escribir componentes, la mayoría de los desarrolladores de React prefieren la concisión de JSX y la mayoría de las bases de código lo utilizan.
 
 <div align="center">
-    <img src="images/jsx.png" alt="" width="60%">
+    <img src="images/react_jsx.png" alt="" width="60%">
     <p>Fuente: <a href="https://medium.com/nerd-for-tech/jsx-rules-in-react-a-javascript-framework-4b0ab66fdbf9">JSX Rules in React(A JavaScript Framework).</a> </p>
 </div>
+
+App.tsx
+==========
+
+* * *
+
+* En el archivo `src/App.jsx`, modifique el JSX a renderizar por:
+
+```jsx
+...
+
+function App() {
+  return (
+    <>
+      <h1>Título Principal</h1>
+      <h2>Título Secundario</h2>
+      <p data-testid="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sint mollitia tempora cumque fuga velit ut distinctio rem eos, quia beatae accusamus, totam ex error nemo atque vitae dolor aspernatur!</p>
+    </>
+  )
+}
+
+export default App
+```
 
 Referencias
 =======
