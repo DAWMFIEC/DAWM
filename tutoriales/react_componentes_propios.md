@@ -10,6 +10,11 @@ React - Componentes Propios
 ![react banner](imagenes/react_native_logo.png)
 
 
+<div align="center">
+    <img src="images/react_components.png" alt="" width="60%">
+    <p>Fuente: <a href="https://dev.to/rwparrish/react-basics-2je1">React Basics.</a> </p>
+</div>
+
 Referencias
 =======
 
