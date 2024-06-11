@@ -32,6 +32,22 @@
     }
     </code></pre>
 
+    <pre><code>
+    import { defineConfig } from 'vite'
+	import react from '@vitejs/plugin-react-swc'
+
+	// https://vitejs.dev/config/
+	export default defineConfig({
+	  plugins: [react()],
+	  <b style="color:red">
+	  test: {
+	    environment: 'jsdom',
+	  }
+	  </b>
+	})
+
+    </code></pre>
+
 * En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm run test`
 
 ## Referencias 
