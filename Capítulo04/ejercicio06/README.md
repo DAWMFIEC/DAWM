@@ -31,7 +31,7 @@
         "preview": "vite preview",
         <b style="color:red">
         	"test": "vitest",
-    	"coverage": "vitest run --coverage"
+    			"coverage": "vitest run --coverage"
     	</b>
       },
       ...
@@ -57,7 +57,7 @@
 
     </code></pre>
 
-* En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm run test`
+* En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm run coverage`
 
 ## Referencias 
 
