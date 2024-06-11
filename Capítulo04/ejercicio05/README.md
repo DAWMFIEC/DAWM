@@ -11,6 +11,8 @@
 
 ## Instrucciones
 
+* Complete las actividades de [React - Local](https://dawmfiec.github.io/DAWM/tutoriales/react_local.html) 
+
 ## Pruebas unitarias
 
 * Descargue y descomprima [C04E05.zip](../../zips/C04E05.zip)
@@ -27,7 +29,7 @@
       	...
         "preview": "vite preview",
         <b style="color:red">
-        "test": "vitest",
+        	"test": "vitest",
     	"coverage": "vitest run --coverage"
     	</b>
       },
@@ -35,7 +37,7 @@
     }
     </code></pre>
 
-    + Modifique el archivo **vite.confing.ts**
+    + Modifique el archivo **vite.config.ts**
     	- Agregue los pares/valores: **test**
 
     <pre><code>
