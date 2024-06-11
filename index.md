@@ -30,7 +30,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 03: Dashboard - React](proyectos/2024/proyecto03)
   * [Guía 10: Typescript - Introducción](guias/2024/guia10)
   * [Guía 11: React - Introducción y MUI](guias/2024/guia11)
-  * [Guía 12: React - Componentes y Props](guias/2024/guia12)
+  * [Guía 12: React - Componentes, Interfaces y Props](guias/2024/guia12)
   * [Guía 13: React - Hooks](guias/2024/guia13)
   * [Guía 14: React - Eventos](guias/2024/guia14)
   
@@ -52,7 +52,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [React - Bases](tutoriales/react_bases.md)
 * [React - Componentes Integrados](tutoriales/react_componentes_integrados.md)
 * [React - MUI + Componentes Propios](tutoriales/react_mui_componentes_propios.md)
-* [React - Props](tutoriales/react_props.md)
+* [React - Interfaces + Props](tutoriales/react_props.md)
 
 ### Angular
 

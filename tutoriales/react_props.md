@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-React - Props
+React - Interfaces + Props
 ===============
 
 ![react banner](imagenes/react_native_logo.png)
