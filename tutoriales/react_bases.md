@@ -7,7 +7,9 @@ theme: jekyll-theme-leap-day
 React - Bases
 ===============
 
-Sitio base
+![react banner](https://github.com/JavascriptFS/React/blob/main/banners/React_Native_Logo.png)
+
+Esqueleto de un sitio web
 ==========
 
 * * *
