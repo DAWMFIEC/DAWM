@@ -76,7 +76,7 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 04](Capítulo04/ejercicio04)         | Typescript - Funciones |
 | 				| [Ejercicio 05](Capítulo04/ejercicio05)         | React - Bases + Componentes Integrados |
 | 				| [Ejercicio 06](Capítulo04/ejercicio06)         | React - MUI + Componentes Propios |
-| 				| [Ejercicio 07](Capítulo04/ejercicio07)         | React - Props |
+| 				| [Ejercicio 07](Capítulo04/ejercicio07)         | React - Interfaces + Props |
 | 				| [Ejercicio 08](Capítulo04/ejercicio08)         | React - Hooks |
 | 				| [Ejercicio 09](Capítulo04/ejercicio09)         | React - Eventos |
 | 				| [Ejercicio 10](Capítulo04/ejercicio10)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
