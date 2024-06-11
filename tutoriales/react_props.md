@@ -21,7 +21,7 @@ Los componentes de React emplean props como medio de comunicación entre ellos. 
     <p>Fuente: <a href="https://dev.to/rwparrish/react-basics-2je1">React Basics</a> </p>
 </div>
 
-Interfaz Datum
+Interfaz
 ==========
 
 * * *
@@ -36,7 +36,7 @@ export default interface Datum {
 }
 ```
 
-Card
+Componente MUI: Card
 ==========
 
 * * *
