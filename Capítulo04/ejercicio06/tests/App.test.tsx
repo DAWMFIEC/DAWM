@@ -1,8 +1,7 @@
 import '@testing-library/jest-dom/vitest';
 import { afterEach, describe, it, expect } from 'vitest'
 import { cleanup, render, screen } from '@testing-library/react'
-import App from './App'
-
+import App from '../App'
 
 describe('App', () => {
 
@@ -10,12 +9,13 @@ describe('App', () => {
 
     it('render App', () => {
         render(<App />)
+        screen.debug();
     })
 
     it('render Calculator Component', () => {
         render(<App />)
         const calculatorComponent = screen.getByText("Calculator Component");
-        expect(calculatorComponent).toBeInTheDocument();
+        expect(calculatorComponent).toBeInTheDocument();        
     })
 
     it('render Plan Component', () => {
