@@ -12,28 +12,17 @@ describe('App', () => {
         render(<App />)
     })
 
-    it('render h1', () => {
+    it('render ¡Hola mundo!', () => {
         render(<App />)
 
-        // Busca el elemento H1 con el texto "Título Principal"
-        const h1Element = screen.getByText('Título Principal');
+        // Busca el elemento con el texto "¡Hola mundo!"
+        const h1Element = screen.getByText('¡Hola mundo!');
 
-        // Verifica que el elemento H1 esté en el documento
+        // Verifica que el elemento esté en el documento
         expect(h1Element).toBeInTheDocument();
 
         screen.debug();
 
     })
 
-    it('render h2', () => {
-        render(<App />)
-        const h2Element = screen.getByText('Título Secundario');
-        expect(h2Element).toBeInTheDocument();
-    })
-
-    it('render p', () => {
-        render(<App />)
-        const pElement = screen.getByTestId("content");
-        expect(pElement).toBeInTheDocument();
-    })
 })
