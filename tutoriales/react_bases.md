@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-React - Local
+React - Bases
 ===============
 
 Sitio base

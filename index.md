@@ -49,7 +49,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ### React
 
-* [React - Local](tutoriales/react_local.md)
+* [React - Bases](tutoriales/react_bases.md)
+* [React - Componente App](tutoriales/react_componente_app.md)
 
 ### Angular
 
