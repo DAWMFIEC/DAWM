@@ -47,6 +47,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Firebase - Realtime Database](tutoriales/firebase_realtime_database.md)
 * [Firebase - Firestore](tutoriales/firebase_firestore.md)
 
+### React
+
+* [React - Local](tutoriales/react_local.md)
+
 ### Angular
 
 * [Angular - Local](tutoriales/angular_local.md)
