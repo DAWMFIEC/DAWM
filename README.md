@@ -74,8 +74,8 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 02](Capítulo04/ejercicio02)         | Typescript - Anotación de tipos básicos, arreglos y objetos |
 | 				| [Ejercicio 03](Capítulo04/ejercicio03)         | Typescript - Interfaces y clases |
 | 				| [Ejercicio 04](Capítulo04/ejercicio04)         | Typescript - Funciones |
-| 				| [Ejercicio 05](Capítulo04/ejercicio05)         | React - Introducción |
-| 				| [Ejercicio 06](Capítulo04/ejercicio06)         | React - MUI + Componentes |
+| 				| [Ejercicio 05](Capítulo04/ejercicio05)         | React - Bases + Componentes Integrados |
+| 				| [Ejercicio 06](Capítulo04/ejercicio06)         | React - MUI + Componentes Propios |
 | 				| [Ejercicio 07](Capítulo04/ejercicio07)         | React - Props |
 | 				| [Ejercicio 08](Capítulo04/ejercicio08)         | React - Hooks |
 | 				| [Ejercicio 09](Capítulo04/ejercicio09)         | React - Eventos |
