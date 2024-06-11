@@ -21,7 +21,7 @@ JSX es una extensión de sintaxis para JavaScript que le permite escribir etique
     <p>Fuente: <a href="https://dev.to/rwparrish/react-basics-2je1">React Basics</a> </p>
 </div>
 
-Componente Plan
+Componente Propio: Plan
 ==========
 
 * * *
@@ -39,7 +39,7 @@ export default function Plan() {
 ```
 
 
-Componente Calculator
+Componente Propio: Calculator
 ==========
 
 * * *
@@ -56,7 +56,7 @@ export default function Calculator() {
 }
 ```
 
-Componente Result
+Componente Propio: Result
 ==========
 
 * * *
@@ -85,7 +85,7 @@ MUI
 npm install @mui/material @emotion/react @emotion/styled
 ```
 
-Componente App: Grid v2
+Componente MUI: Grid v2
 ==========
 
 * * *
