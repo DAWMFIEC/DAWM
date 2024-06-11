@@ -11,7 +11,32 @@
 
 ## Instrucciones
 
-* Descargue y descomprima [C04E01.zip](../../zips/C04E01.zip)
+* Desde la línea de comandos
+	+ Cree un nuevo sitio con Vite, con:
+
+	```command
+	npm create vite@latest reactui
+	```
+
+	+ Seleccione **React** como framework: `√ Select a framework: » React`
+   	+ Seleccione **Javascript** como variante: `√ Select a variant: » Typescript`
+   	+ Ingrese a la carpeta del repositorio:
+
+	```prompt
+	cd reactui
+	```
+	+ Instale las dependencias
+
+	```prompt
+	npm install
+	```
+
+	+ Inicie el servidor.
+
+	```prompt
+	npm run dev
+	```
+
 * Desde la línea de comandos
 	+ Ingrese a la carpeta con el ejercicio
 	+ Cree el archivo tsconfig.json, con `npx tsc --init`
