@@ -4,12 +4,12 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-React - Componente App
+React - Componentes Integrados
 ===============
 
 ![react banner](https://github.com/JavascriptFS/React/blob/main/banners/React_Native_Logo.png)
 
-Built-in React Components
+Componentes Integrados
 ==========
 
 * * *
