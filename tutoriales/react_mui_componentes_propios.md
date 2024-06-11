@@ -135,6 +135,12 @@ function App() {
 export default App
 ```
 
+* Compruebe el funcionamiento del servidor, con: **npm run dev**
+* Acceda al URL [http://localhost:5174/](http://localhost:5174/)
+
+![react_componentes_propios](imagenes/react_componentes_propios.png)
+
+
 Referencias
 =======
 
