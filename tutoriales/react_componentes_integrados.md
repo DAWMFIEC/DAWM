@@ -41,9 +41,7 @@ App.tsx
 function App() {
   return (
     <>
-      <h1>Título Principal</h1>
-      <h2>Título Secundario</h2>
-      <p data-testid="content">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta sint mollitia tempora cumque fuga velit ut distinctio rem eos, quia beatae accusamus, totam ex error nemo atque vitae dolor aspernatur!</p>
+        ¡Hola mundo!
     </>
   )
 }
