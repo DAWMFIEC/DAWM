@@ -11,7 +11,7 @@
 
 ## Instrucciones
 
-* Complete las actividades de [React - Local](https://dawmfiec.github.io/DAWM/tutoriales/react_local.html) 
+* Complete las actividades de [React - Local](https://dawmfiec.github.io/DAWM/tutoriales/react_local.html) y [React - App.tsx](https://dawmfiec.github.io/DAWM/tutoriales/react_app_tsx.html) 
 
 ## Pruebas unitarias
 
