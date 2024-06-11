@@ -21,8 +21,6 @@ De manera predeterminada, React provee de algunos componentes integrados ([Built
 * `<Suspense>` le permite mostrar un respaldo mientras se cargan los componentes secundarios.
 * `<StrictMode>` permite comprobaciones adicionales solo de desarrollo que le ayudan a encontrar errores con antelación.
 
-> JSX es una extensión de sintaxis para JavaScript que le permite escribir etiquetas similares a HTML dentro de un archivo JavaScript. Aunque existen otras formas de escribir componentes, la mayoría de los desarrolladores de React prefieren la concisión de JSX y la mayoría de las bases de código lo utilizan.
-
 <div align="center">
     <img src="imagenes/react_jsx.png" alt="" width="60%">
     <p>Fuente: <a href="https://medium.com/nerd-for-tech/jsx-rules-in-react-a-javascript-framework-4b0ab66fdbf9">JSX Rules in React(A JavaScript Framework).</a> </p>

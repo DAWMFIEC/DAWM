@@ -51,7 +51,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [React - Bases](tutoriales/react_bases.md)
 * [React - Componentes Integrados](tutoriales/react_componentes_integrados.md)
-* [React - Componentes Propios](tutoriales/react_componentes_propios.md)
+* [React - MUI + Componentes Propios](tutoriales/react_mui_componentes_propios.md)
 
 ### Angular
 
