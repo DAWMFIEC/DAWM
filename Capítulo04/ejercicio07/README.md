@@ -13,6 +13,7 @@
 
 * Complete las actividades de [React - Bases](https://dawmfiec.github.io/DAWM/tutoriales/react_bases.html), [React - Componentes Integrados](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_integrados.html), [React - MUI + Componentes Propios](https://dawmfiec.github.io/DAWM/tutoriales/react_mui_componentes_propios.html) y [React - Interfaces + Props](https://dawmfiec.github.io/DAWM/tutoriales/react_props.html).
 
+* 
 
 ## Pruebas unitarias
 
@@ -22,7 +23,7 @@
 	+ Instale las dependencias de **Vitest**, **Jsdom** y **React Testing**
     	- Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event @vitest/coverage-v8`
     + Modifique el archivo **package.json**
-    	- Agregue los pares/valores: **test** y **coverage**
+    	- Agregue los pares/valores: **test**, **test:watch**, **test:ui** y **test:coverage**
 
     <pre><code>
     ...
@@ -31,7 +32,10 @@
         "preview": "vite preview",
         <b style="color:red">
         	"test": "vitest",
-    	"coverage": "vitest run --coverage"
+        	"coverage": "vitest run --coverage",
+			    "test:watch": "vitest --watch",
+			    "test:ui": "vitest --ui",
+			    "test:coverage": "vitest --coverage"
     	</b>
       },
       ...
@@ -57,7 +61,7 @@
 
     </code></pre>
 
-* En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm run test`
+* En la ruta de su proyecto en Express, desde la línea de comandos ejecute: `npm run test:ui`
 
 ## Referencias 
 
