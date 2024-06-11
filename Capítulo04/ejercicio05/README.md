@@ -37,7 +37,22 @@
 	npm run dev
 	```
 
-* 
+* En `src/App.tsx`, reemplace todo el contenido por:
+
+```tsx
+import './App.css'
+
+function App() {
+
+  return (
+    <>
+      <h1>Título Principal</h1>
+    </>
+  )
+}
+
+export default App
+```
 
 ## Referencias 
 
