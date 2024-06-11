@@ -11,7 +11,7 @@
 
 ## Instrucciones
 
-* Complete las actividades de [React - Local](https://dawmfiec.github.io/DAWM/tutoriales/react_bases.html), [React - Componentes Integrados](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_integrados.html) y [React - Componentes Propios](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_propios.html) 
+* Complete las actividades de [React - Bases](https://dawmfiec.github.io/DAWM/tutoriales/react_bases.html), [React - Componentes Integrados](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_integrados.html) y [React - Componentes Propios](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_propios.html) 
 
 ## Pruebas unitarias
 
