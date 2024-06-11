@@ -11,7 +11,7 @@ describe('App', () => {
     it('render App', () => {
         render(<App />)
     })
-    
+
     it('render h1', () => {
         render(<App />)
 
@@ -23,5 +23,17 @@ describe('App', () => {
 
         screen.debug();
 
+    })
+
+    it('render h2', () => {
+        render(<App />)
+        const h2Element = screen.getByText('Título Secundario');
+        expect(h2Element).toBeInTheDocument();
+    })
+
+    it('render p', () => {
+        render(<App />)
+        const pElement = screen.getByTestId("content");
+        expect(pElement).toBeInTheDocument();
     })
 })
