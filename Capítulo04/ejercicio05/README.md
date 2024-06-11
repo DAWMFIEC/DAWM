@@ -26,9 +26,7 @@
       "scripts": {
       	...
         "preview": "vite preview",
-        <b style="color:red">
-        "test": "vitest"
-        </b>
+        <b style="color:red">"test": "vitest"</b>
       },
       ...
     }
