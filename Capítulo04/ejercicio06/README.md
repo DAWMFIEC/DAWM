@@ -1,6 +1,6 @@
-# Ejercicio 05
+# Ejercicio 06
 
-![ejercicio05](images/ejercicio05.png)
+![ejercicio06](images/ejercicio06.png)
 
 
 ## Requisitos
