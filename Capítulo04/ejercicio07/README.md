@@ -16,7 +16,7 @@
 
 ## Pruebas unitarias
 
-* Descargue y descomprima [C04E06.zip](../../zips/C04E06.zip).
+* Descargue y descomprima [C04E07.zip](../../zips/C04E07.zip).
 * Copie la carpeta **tests** en la carpeta `src` del proyecto.
 * En su proyecto de React 
 	+ Instale las dependencias de **Vitest**, **Jsdom** y **React Testing**
