@@ -7,7 +7,7 @@ theme: jekyll-theme-leap-day
 React - Componentes Integrados
 ===============
 
-![react banner](https://github.com/JavascriptFS/React/blob/main/banners/React_Native_Logo.png)
+![react banner](imagenes/react_native_logo.png)
 
 Componentes Integrados
 ==========

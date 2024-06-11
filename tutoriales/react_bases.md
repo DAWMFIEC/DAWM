@@ -7,7 +7,7 @@ theme: jekyll-theme-leap-day
 React - Bases
 ===============
 
-![react banner](https://github.com/JavascriptFS/React/blob/main/banners/React_Native_Logo.png)
+![react banner](imagenes/react_native_logo.png)
 
 Esqueleto de un sitio web
 ==========
@@ -18,7 +18,7 @@ Desde la línea de comandos, en la ruta donde desea crear el proyecto:
 
 * Cree un nuevo sitio con: 
   ```
-  npm create vite@latest reactui
+  npm create vite@latest <NOMBRE_DEL_REPOSITORIO>
   ```
 
    - Seleccione **React** como framework: `√ Select a framework: » React`
