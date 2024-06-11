@@ -16,8 +16,8 @@
 
 ## Pruebas unitarias
 
-* Descargue y descomprima [C04E06.zip](../../zips/C04E06.zip)
-* Copie cada archivo **.test.tsx** en la carpeta `src` del proyecto.
+* Descargue y descomprima [C04E06.zip](../../zips/C04E06.zip).
+* Copie la carpeta **tests** en la carpeta `src` del proyecto.
 * En su proyecto de React 
 	+ Instale las dependencias de **Vitest**, **Jsdom** y **React Testing**
     	- Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event @vitest/coverage-v8`
@@ -66,3 +66,4 @@
 * Cómo iniciar un proyecto React con Vite. (2022). Retrieved from https://carlosazaustre.es/react-vite
 * Bruce-Crabbe, V. (2024). Vitest with React Testing Library In React(created with Vite). Retrieved from https://victorbruce82.medium.com/vitest-with-react-testing-library-in-react-created-with-vite-3552f0a9a19a
 * Jaime Fernández Moreno                Soy ingeniero electrónico industrial y. (n.d.). Testing en React con Vitest. Retrieved from https://www.paradigmadigital.com/dev/testing-react-vitest/
+* V, A. (2023). Vitest - Blazing fast component testing for React. Retrieved from https://dev.to/abhi0498/vitest-blazing-fast-component-testing-for-react-2992
