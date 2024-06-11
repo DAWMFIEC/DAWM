@@ -28,12 +28,12 @@ De manera predeterminada, React provee de algunos componentes integrados ([Built
     <p>Fuente: <a href="https://medium.com/nerd-for-tech/jsx-rules-in-react-a-javascript-framework-4b0ab66fdbf9">JSX Rules in React(A JavaScript Framework).</a> </p>
 </div>
 
-App.tsx
+Componente App
 ==========
 
 * * *
 
-* En el archivo `src/App.jsx`, modifique el JSX a renderizar por:
+* En el archivo `src/App.tsx`, modifique el JSX a renderizar por:
 
 ```jsx
 ...
