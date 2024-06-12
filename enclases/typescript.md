@@ -8,9 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Descargue y descomprima el ejercicio de [typescript](/DAWM/ejercicios/typescript.zip). 
-* Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
-* En el navegador, habilite el inspector para visualizar los cambios en vivo.
+
 
 ### Actividades en clases
 
