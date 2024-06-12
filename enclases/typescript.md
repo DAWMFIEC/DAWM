@@ -23,7 +23,7 @@ Para cada proyecto:
 
 ### Entregable
 
-* Descargue cada proyecto mediante el botón **Download Project** 
+* Descargue todos proyectos resueltos mediante el botón **Download Project** 
 
 <div align="center">
     <img src="imagenes/download_project.png" alt="" width="60%">
