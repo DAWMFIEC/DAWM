@@ -13,19 +13,17 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-Para cada ejercicio:
+Para cada proyecto:
 
-1. Cree una bifurcación (**fork**) del ejercicio original
-2. Acceda a todos los archivos con extensión **.ts** (`index.ts`, `clase.ts`, `funciones.ts`, etc)
-3. Complete las instrucciones descritas en los comentarios de los archivos con extensión **.ts**
-4. Su respuesta es válida cuando: 
-	+ No existen líneas subrayadas con error en los archivos con extensión **.ts**.
-	+ La vista previa debe ejecutarse sin problemas.
-	+ La consola de la vista previa no marca errores.
+1. Cree una bifurcación (**fork**)
+2. Acceda a todos los archivos con extensión **.ts** (`index.ts`, `clase.ts`, `funciones.ts`, etc) y complete las instrucciones que se encuentran en los comentarios.
+3. Verifique la validez de su respuesta: 
+	+ Errores en tiempo de transpilación: No debe tener líneas marcadas en rojo.
+	+ Errores en tiempo de compilación: La vista previa debe ejecutarse sin problemas y la consola de la vista previa no debe contener errores.
 
 ### Entregable
 
-* Para cada ejercicio, descargue el proyecto mediante el botón **Download Project** 
+* Descargue cada proyecto mediante el botón **Download Project** 
 
 ![download_project](imagenes/download_project.png)
 
