@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
 ```
 
    - Seleccione **React** como framework: `√ Select a framework: » React`
-   - Seleccione **Javascript** como variante: `√ Select a variant: » Typescript`
+   - Seleccione **Typescript** como variante: `√ Select a variant: » Typescript`
 
 * Ingrese a la carpeta del repositorio:
 
@@ -214,3 +214,4 @@ librería, ui, ui material
 * Cómo iniciar un proyecto React con Vite. (2022). Retrieved from https://carlosazaustre.es/react-vite
 * Shamloo, R. (2023). Deploying Vite / React App to GitHub Pages. Retrieved from https://dev.to/rashidshamloo/deploying-vite-react-app-to-github-pages-35hf
 * The React component library you always wanted. (n.d.). Retrieved from https://mui.com/
+* Khaled, A. (2024). TypeScript vs. TypeScript SWC in Vite: Understanding the Differences. Retrieved from https://medium.com/@amirakhaled2027/typescript-vs-typescript-swc-in-vite-understanding-the-differences-7240e7309ca7
