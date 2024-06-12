@@ -223,7 +223,7 @@ export default App
 
 ### Términos
 
-componentes, jsx
+component, interface, props
 
 ### Referencias
 
