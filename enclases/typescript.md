@@ -27,3 +27,4 @@ theme: jekyll-theme-leap-day
 * (2022). Retrieved 27 November 2022, from https://www.typescriptlang.org/
 * StackBlitz Instant Dev Environments Click. Code. Done. - StackBlitz. (2023). Retrieved 21 June 2023, from https://stackblitz.com/
 * TypeScript Tutorial. (2023). Retrieved 21 June 2023, from https://www.typescripttutorial.net/
+* Explore Challenges. (n.d.). Retrieved from https://typehero.dev/explore/beginner
