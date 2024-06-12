@@ -87,7 +87,7 @@ export default function Plan(data: Datum) {
 }
 ```
 
-* Renderice los atributos **subtitle**, **title** y **description**
+* Renderice el objeto **data** en el JSX:
 
 ```typescript
 ...
