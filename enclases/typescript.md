@@ -25,7 +25,9 @@ Para cada proyecto:
 
 * Descargue cada proyecto mediante el botón **Download Project** 
 
-![download_project](imagenes/download_project.png)
+<div align="center">
+    <img src="imagenes/download_project.png" alt="" width="60%">
+</div>
 
 * Comprima todos los archivos en formato .zip, o .rar, y responda a la actividad en el aulavirtual.
 
