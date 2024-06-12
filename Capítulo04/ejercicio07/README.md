@@ -71,3 +71,4 @@
 * Bruce-Crabbe, V. (2024). Vitest with React Testing Library In React(created with Vite). Retrieved from https://victorbruce82.medium.com/vitest-with-react-testing-library-in-react-created-with-vite-3552f0a9a19a
 * Jaime Fernández Moreno                Soy ingeniero electrónico industrial y. (n.d.). Testing en React con Vitest. Retrieved from https://www.paradigmadigital.com/dev/testing-react-vitest/
 * V, A. (2023). Vitest - Blazing fast component testing for React. Retrieved from https://dev.to/abhi0498/vitest-blazing-fast-component-testing-for-react-2992
+* Bo(gr). (n.d.). Retrieved from https://bogr.dev/blog/react-testing-intro/
