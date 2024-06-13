@@ -58,7 +58,7 @@ import { CardActionArea } from '@mui/material';
 ...
 export default function <COMPONENTE>() {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card>
         <CardActionArea>
             <CardContent>
                 <Typography gutterBottom component="h2" variant="h6" color="primary">
@@ -93,7 +93,7 @@ export default function Plan(data: Datum) {
 ...
 export default function Plan(data: Datum) {
     return (
-        <Card sx={{ maxWidth: 345 }}>
+        <Card>
             <CardActionArea>
                 <CardContent>
                     <Typography gutterBottom component="h2" variant="h6" color="primary">
