@@ -53,8 +53,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [React - Componentes Integrados](tutoriales/react_componentes_integrados.md)
 * [React - MUI + Componentes Propios](tutoriales/react_mui_componentes_propios.md)
 * [React - Interfaces + Props](tutoriales/react_props.md)
-* [React - Eventos + Hook: useState](tutoriales/react_hooks.md)
-* [React - Hooks: useRef y useEffect](tutoriales/react_eventos.md)
+* [React - Eventos + Hook: useState](tutoriales/react_eventos.md)
+* [React - Hooks: useRef y useEffect](tutoriales/react_hooks.md)
 
 ### Angular
 
