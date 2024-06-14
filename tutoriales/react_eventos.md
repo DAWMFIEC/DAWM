@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-React - Hooks: useRef y useEffect
+React - Eventos + Hook: useState
 ===============
 
 ![react banner](imagenes/react_native_logo.png)
