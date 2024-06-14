@@ -77,8 +77,8 @@ Cada ejercicio contiene un conjunto de pruebas unitarias. Dichas pruebas permite
 | 				| [Ejercicio 05](Capítulo04/ejercicio05)         | React - Bases + Componentes Integrados |
 | 				| [Ejercicio 06](Capítulo04/ejercicio06)         | React - MUI + Componentes Propios |
 | 				| [Ejercicio 07](Capítulo04/ejercicio07)         | React - Interfaces + Props |
-| 				| [Ejercicio 08](Capítulo04/ejercicio08)         | React - Hooks |
-| 				| [Ejercicio 09](Capítulo04/ejercicio09)         | React - Eventos |
+| 				| [Ejercicio 08](Capítulo04/ejercicio08)         | React - Eventos |
+| 				| [Ejercicio 09](Capítulo04/ejercicio09)         | React - Hooks |
 | 				| [Ejercicio 10](Capítulo04/ejercicio10)         | Angular - Bases, Bootstrap y Componentes/Comunicación/Directivas |
 | 				| [Ejercicio 11](Capítulo04/ejercicio11)         | Angular - Servicios |
 | Capítulo 05   | [Ejercicio 01](Capítulo05/ejercicio01)         | Express - Bases y Bootstrap |
