@@ -263,7 +263,7 @@ Eventos: SelectChangeEvent y ChangeEvent
 
 * * *
 
-* En el componente `Calculator.tsx`, agregue los [manejadores](https://react.dev/learn/responding-to-events) del evento [Change](https://mui.com/material-ui/guides/typescript/#handling-value-and-event-handlers).
+* En el componente `Calculator.tsx`, agregue los [manejadores](https://react.dev/learn/responding-to-events) para los [evento en la interfaz](https://mui.com/material-ui/guides/typescript/#handling-value-and-event-handlers).
 
 ```tsx
 ...
