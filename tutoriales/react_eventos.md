@@ -16,12 +16,8 @@ Al igual que los eventos HTML DOM, React puede realizar acciones basadas en even
 	<p>Fuente: <a href="https://medium.com/@vitorbritto/react-an-overview-about-syntheticevent-d3a6d35295f1">React: An Overview about SyntheticEvent</a> </p>
 </div>
 
-Virtual DOM
-==========
 
-* * *
-
-El Virtual DOM es una representación del DOM guardada en memoria, que actúa de intermediario entre los estados de la aplicación y los estados del DOM (vistos por el usuario). Cuando ocurre un cambio en la aplicación web, el virtual DOM interpreta dichos cambios y calcula la manera más eficiente de actualizar el DOM para que renderice la menor cantidad de cambios posibles.
+El **Virtual DOM** es una representación del DOM guardada en memoria, que actúa de intermediario entre los estados de la aplicación y los estados del DOM (vistos por el usuario). Cuando ocurre un cambio en la aplicación web, el virtual DOM interpreta dichos cambios y calcula la manera más eficiente de actualizar el DOM para que renderice la menor cantidad de cambios posibles.
 
 <div align="center">
 	<img src="imagenes/react_virtual_dom.webp" alt="" width="60%">
@@ -128,7 +124,7 @@ Componente MUI: Select y RadioGroup
 ...
 	{/* Select */}
 
-	<Select>
+	<Select defaultValue='-1'>
         <MenuItem value="-1">
           <em>Seleccione un tipo de promoción</em>
         </MenuItem>
