@@ -28,6 +28,34 @@ El Virtual DOM es una representación del DOM guardada en memoria, que actúa de
 	<p>Fuente: <a href="https://medium.com/@itsanuragjoshi/mastering-react-understanding-real-dom-vs-virtual-dom-and-the-dom-update-process-78a233454ff8">Mastering React: Understanding Real DOM vs Virtual DOM and the DOM Update Process</a> </p>
 </div>
 
+Datos
+==========
+
+* * *
+
+* En el componente `Calculator.tsx`, agregue los datos para rellenar los elementos Select y Radio Groups.
+
+```tsx
+export default function Calculator() {
+
+  {/* Datos */}
+
+  let menuItems = [
+    { title: "Plan", subtitle: "100 Gb", description: "Todos los servicios incluídos" },
+    { title: "Suscripción", subtitle: ">100 Gb", description: "Servicios A y B" },
+    { title: "Ilimitado", subtitle: "<100 Gb", description: "Todos los servicios incluídos" }
+  ]
+
+  {/* Elementos renderizados */}
+
+  let selectMenuItem = menuItems.map( (element, key) => <MenuItem value={key}>{element.title}</MenuItem> )
+
+  {/* JSX */}
+
+  return ( ... )
+}
+```
+
 
 Componente MUI: Select y RadioGroup
 ==========
@@ -69,6 +97,15 @@ import MenuItem from '@mui/material/MenuItem';
 ```tsx
 ...
 export default function Calculator() {
+
+	{/* Datos */}
+	...
+
+	{/* Elementos renderizados */}
+	...
+
+	{/* JSX */}
+
 	return (
 		<Card>
 		      <CardContent>        
@@ -109,13 +146,13 @@ export default function Calculator() {
 ...
 	{/* Select */}
 	<Select>
-	        <MenuItem value="-1">
-	          <em>Seleccione un tipo de promoción</em>
-	        </MenuItem>
-	        <MenuItem value={0}>Plan</MenuItem>
-	        <MenuItem value={1}>Suscripción</MenuItem>
-	        <MenuItem value={2}>Ilimitado</MenuItem>
-	    </Select>
+        <MenuItem value="-1">
+          <em>Seleccione un tipo de promoción</em>
+        </MenuItem>
+        
+        {selectMenuItem}
+
+    </Select>
 ...
 ```
 
@@ -126,15 +163,15 @@ y
 	
 	{/* Radio Group */}
 	<RadioGroup
-			name="radio-buttons-group"
-			sx={% raw %}{{{% endraw %}
-			  marginLeft: '2%'
-			{% raw %}}}{% endraw %}
+		name="radio-buttons-group"
+		sx={% raw %}{{{% endraw %}
+		  marginLeft: '2%'
+		{% raw %}}}{% endraw %}
 		>
-			<FormControlLabel key={0} value={0} control={<Radio />} label="1 mes" />
-			<FormControlLabel key={1} value={1} control={<Radio />} label="6 meses" />
-			<FormControlLabel key={2} value={2} control={<Radio />} label="12 meses" />
-		</RadioGroup>
+		<FormControlLabel key={0} value={0} control={<Radio />} label="1 mes" />
+		<FormControlLabel key={1} value={1} control={<Radio />} label="6 meses" />
+		<FormControlLabel key={2} value={2} control={<Radio />} label="12 meses" />
+	</RadioGroup>
 ...
 ```
 
