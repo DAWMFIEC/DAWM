@@ -29,7 +29,7 @@ El Virtual DOM es una representación del DOM guardada en memoria, que actúa de
 </div>
 
 
-Referencia a elementos
+MUI: Referencia a los componentes
 ==========
 
 * * *
