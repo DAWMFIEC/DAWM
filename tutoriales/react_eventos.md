@@ -28,34 +28,6 @@ El Virtual DOM es una representación del DOM guardada en memoria, que actúa de
 	<p>Fuente: <a href="https://medium.com/@itsanuragjoshi/mastering-react-understanding-real-dom-vs-virtual-dom-and-the-dom-update-process-78a233454ff8">Mastering React: Understanding Real DOM vs Virtual DOM and the DOM Update Process</a> </p>
 </div>
 
-Datos
-==========
-
-* * *
-
-* En el componente `Calculator.tsx`, agregue los datos para rellenar los elementos Select y Radio Groups.
-
-```tsx
-export default function Calculator() {
-
-  {/* Datos */}
-
-  let menuItems = [
-    { title: "Plan", subtitle: "100 Gb", description: "Todos los servicios incluídos" },
-    { title: "Suscripción", subtitle: ">100 Gb", description: "Servicios A y B" },
-    { title: "Ilimitado", subtitle: "<100 Gb", description: "Todos los servicios incluídos" }
-  ]
-
-  {/* Elementos renderizados */}
-
-  let selectMenuItem = menuItems.map( (element, key) => <MenuItem value={key}>{element.title}</MenuItem> )
-
-  {/* JSX */}
-
-  return ( ... )
-}
-```
-
 
 Componente MUI: Select y RadioGroup
 ==========
@@ -149,9 +121,12 @@ export default function Calculator() {
         <MenuItem value="-1">
           <em>Seleccione un tipo de promoción</em>
         </MenuItem>
-        
-        {selectMenuItem}
 
+        {/* Elementos renderizados */}
+
+        <MenuItem key={0} value={0}>Plan</MenuItem>
+        <MenuItem key={1} value={1}>Suscripción</MenuItem>
+        <MenuItem key={2} value={2}>Ilimitado</MenuItem>
     </Select>
 ...
 ```
@@ -168,12 +143,105 @@ y
 		  marginLeft: '2%'
 		{% raw %}}}{% endraw %}
 		>
+
+		{/* Elementos renderizados */}
+
 		<FormControlLabel key={0} value={0} control={<Radio />} label="1 mes" />
 		<FormControlLabel key={1} value={1} control={<Radio />} label="6 meses" />
 		<FormControlLabel key={2} value={2} control={<Radio />} label="12 meses" />
 	</RadioGroup>
 ...
 ```
+
+* Compruebe el funcionamiento del servidor, con: **npm run dev**
+* Acceda al URL [http://localhost:5174/](http://localhost:5174/)
+
+Datos
+==========
+
+* * *
+
+* En el componente `Calculator.tsx`, agregue los datos para rellenar los elementos Select y Radio Groups.
+
+```tsx
+export default function Calculator() {
+
+  {/* Datos */}
+
+  let menuItems = [
+    { title: "Plan", subtitle: "100 Gb", description: "Todos los servicios incluídos" },
+    { title: "Suscripción", subtitle: ">100 Gb", description: "Servicios A y B" },
+    { title: "Ilimitado", subtitle: "<100 Gb", description: "Todos los servicios incluídos" }
+  ]
+
+  let radioItems = [
+     {title: "1 mes"},
+     {title: "6 meses"},
+     {title: "12 meses"}
+  ]
+
+  {/* Elementos renderizados */}
+
+  let selectMenuItems = menuItems.map( (element, key) => <MenuItem key={key} value={key}>{element.title}</MenuItem> )
+
+  let radioGroupItems = radioItems.map(function (element, key) {
+    return (<FormControlLabel key={element.title} value={key} control={<Radio />} label={element.title} />)
+  })
+
+  {/* JSX */}
+
+  return ( ... )
+}
+```
+
+* En el componente `Calculator.tsx`, reemplace los elementos renderizados en el Select y en el Radio Group.
+
+```tsx
+...
+	{/* Select */}
+	<Select>
+        <MenuItem value="-1">
+          <em>Seleccione un tipo de promoción</em>
+        </MenuItem>
+
+        {/* Elementos renderizados */}
+
+        {selectMenuItems}
+
+        {/*<MenuItem key={0} value={0}>Plan</MenuItem>
+        <MenuItem key={1} value={1}>Suscripción</MenuItem>
+        <MenuItem key={2} value={2}>Ilimitado</MenuItem>*/}
+    </Select>
+...
+```
+
+y 
+
+```tsx
+...
+	
+	{/* Radio Group */}
+	<RadioGroup
+		name="radio-buttons-group"
+		sx={% raw %}{{{% endraw %}
+		  marginLeft: '2%'
+		{% raw %}}}{% endraw %}
+		>
+
+		{/* Elementos renderizados */}
+
+		{radioGroupItems}
+
+		{/*<FormControlLabel key={0} value={0} control={<Radio />} label="1 mes" />
+		<FormControlLabel key={1} value={1} control={<Radio />} label="6 meses" />
+		<FormControlLabel key={2} value={2} control={<Radio />} label="12 meses" />*/}
+	</RadioGroup>
+...
+```
+
+* Compruebe el funcionamiento del servidor, con: **npm run dev**
+* Acceda al URL [http://localhost:5174/](http://localhost:5174/)
+
 
 Eventos: SelectChangeEvent y ChangeEvent
 ==========
