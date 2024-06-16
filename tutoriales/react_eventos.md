@@ -263,7 +263,7 @@ Eventos: SelectChangeEvent y ChangeEvent
 
 * * *
 
-* En el componente `Calculator.tsx`, agregue los manejadores de eventos.
+* En el componente `Calculator.tsx`, agregue los [manejadores](https://react.dev/learn/responding-to-events) del evento [Change](https://mui.com/material-ui/guides/typescript/#handling-value-and-event-handlers).
 
 ```tsx
 ...
@@ -286,7 +286,7 @@ export default function Calculator() {
 }
 ```
 
-* En el componente `Calculator.tsx`, referencie los elementos con los manejadores de eventos.
+* En el componente `Calculator.tsx`, referencie los manejadores de eventos con los eventos [Select - onChange](https://mui.com/material-ui/api/select/#select-prop-onChange) y [RadioGroup - onChange](https://mui.com/material-ui/api/radio-group/#radio-group-prop-onChange).
 
 ```tsx
 ...
@@ -299,9 +299,9 @@ export default function Calculator() {
     {/* Radio Group */}
     <RadioGroup
       name="radio-buttons-group"
-      sx={{
-        marginLeft: '2%'
-      }}
+	  sx={% raw %}{{{% endraw %}
+		  marginLeft: '2%'
+		 {% raw %}}}{% endraw %}
       onChange={handleChangeRadio}
     >
 
