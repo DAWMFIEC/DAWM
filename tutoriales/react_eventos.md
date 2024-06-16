@@ -108,10 +108,7 @@ export default function Calculator() {
 ```tsx
 ...
 	{/* Select */}
-	<Select
-        displayEmpty
-        inputProps={% raw %}{{{% endraw %} 'aria-label': 'Without label' {% raw %}}}{% endraw %}
-      >
+	<Select>
         <MenuItem value="-1">
           <em>Seleccione un tipo de promoción</em>
         </MenuItem>
@@ -129,15 +126,14 @@ y
 	
 	{/* Radio Group */}
 	<RadioGroup
-		aria-labelledby="demo-radio-buttons-group-label"
 		name="radio-buttons-group"
 		sx={% raw %}{{{% endraw %}
 		  marginLeft: '2%'
 		{% raw %}}}{% endraw %}
 	>
-	<FormControlLabel key="0" value="0" control={<Radio />} label="1 mes" />
-	<FormControlLabel key="1" value="1" control={<Radio />} label="6 meses" />
-	<FormControlLabel key="2" value="2" control={<Radio />} label="12 meses" />
+		<FormControlLabel key={0} value={0} control={<Radio />} label="1 mes" />
+		<FormControlLabel key={1} value={1} control={<Radio />} label="6 meses" />
+		<FormControlLabel key={2} value={2} control={<Radio />} label="12 meses" />
 	</RadioGroup>
 ...
 ```
