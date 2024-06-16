@@ -209,7 +209,7 @@ export default function Calculator() {
 
 	{/* Select */}
 
-	<Select>
+	<Select defaultValue='-1'>
         <MenuItem value="-1">
           <em>Seleccione un tipo de promoción</em>
         </MenuItem>
