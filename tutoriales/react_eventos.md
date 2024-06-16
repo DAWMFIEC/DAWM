@@ -29,7 +29,7 @@ El Virtual DOM es una representación del DOM guardada en memoria, que actúa de
 </div>
 
 
-Componente MUI: Select y RadioGroup
+Referencia a elementos
 ==========
 
 * * *
@@ -66,6 +66,11 @@ import MenuItem from '@mui/material/MenuItem';
 
 export default function Calculator() { ... }
 ```
+
+MUI Diseño
+==========
+
+* * *
  
 * En el componente `Calculator.tsx`, agregue las etiquetas para los componentes Card y Grid.
 
@@ -108,6 +113,14 @@ export default function Calculator() {
 	)
 }
 ```
+
+* Compruebe el funcionamiento del servidor, con: **npm run dev**
+* Acceda al URL [http://localhost:5174/](http://localhost:5174/)
+
+Componente MUI: Select y RadioGroup
+==========
+
+* * *
 
 * En el componente `Calculator.tsx`, agregue las etiquetas para los componentes Select y Radio Group.
 
