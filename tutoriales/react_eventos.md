@@ -311,7 +311,7 @@ export default function Calculator() {
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
 
-![react_props](imagenes/react_props.png)
+![react_virtualdom_events](imagenes/react_virtualdom_events.png)
 
 Referencias
 =======
