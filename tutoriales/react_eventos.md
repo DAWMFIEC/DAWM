@@ -71,34 +71,34 @@ import MenuItem from '@mui/material/MenuItem';
 export default function Calculator() {
 	return (
 		<Card>
-	      <CardContent>        
-	        <Typography gutterBottom component="h2" variant="h4" color="primary">
-	          Promociones del mes
-	        </Typography>
+		      <CardContent>        
+		        <Typography gutterBottom component="h2" variant="h4" color="primary">
+		          Promociones del mes
+		        </Typography>
 
-	        <Grid container spacing={5}>
+		        <Grid container spacing={5}>
 
-	            <Grid xs={12} xl={6} >
-	              <Typography gutterBottom component="h4" color="secondary">
-	                Tipos de promociones 
-	              </Typography>
+		            <Grid xs={12} xl={6} >
+		              <Typography gutterBottom component="h4" color="secondary">
+		                Tipos de promociones 
+		              </Typography>
 
-	              {/* Select */}
+		              {/* Select */}
 
-	            </Grid>
+		            </Grid>
 
-	            <Grid xs={12} xl={6}>
-	              <Typography gutterBottom component="h4" color="secondary">
-	                Tiempo de aplicación 
-	              </Typography>
+		            <Grid xs={12} xl={6}>
+		              <Typography gutterBottom component="h4" color="secondary">
+		                Tiempo de aplicación 
+		              </Typography>
 
-	              {/* Radio Group */}
+		              {/* Radio Group */}
 
-	            </Grid>
+		            </Grid>
 
-          	</Grid>
-	      </CardContent>
-    	</Card>
+	          	</Grid>
+		      </CardContent>
+	    	</Card>
 	)
 }
 ```
@@ -109,13 +109,13 @@ export default function Calculator() {
 ...
 	{/* Select */}
 	<Select>
-        <MenuItem value="-1">
-          <em>Seleccione un tipo de promoción</em>
-        </MenuItem>
-        <MenuItem value={0}>Plan</MenuItem>
-        <MenuItem value={1}>Suscripción</MenuItem>
-        <MenuItem value={2}>Ilimitado</MenuItem>
-    </Select>
+	        <MenuItem value="-1">
+	          <em>Seleccione un tipo de promoción</em>
+	        </MenuItem>
+	        <MenuItem value={0}>Plan</MenuItem>
+	        <MenuItem value={1}>Suscripción</MenuItem>
+	        <MenuItem value={2}>Ilimitado</MenuItem>
+	    </Select>
 ...
 ```
 
@@ -126,15 +126,15 @@ y
 	
 	{/* Radio Group */}
 	<RadioGroup
-		name="radio-buttons-group"
-		sx={% raw %}{{{% endraw %}
-		  marginLeft: '2%'
-		{% raw %}}}{% endraw %}
-	>
-		<FormControlLabel key={0} value={0} control={<Radio />} label="1 mes" />
-		<FormControlLabel key={1} value={1} control={<Radio />} label="6 meses" />
-		<FormControlLabel key={2} value={2} control={<Radio />} label="12 meses" />
-	</RadioGroup>
+			name="radio-buttons-group"
+			sx={% raw %}{{{% endraw %}
+			  marginLeft: '2%'
+			{% raw %}}}{% endraw %}
+		>
+			<FormControlLabel key={0} value={0} control={<Radio />} label="1 mes" />
+			<FormControlLabel key={1} value={1} control={<Radio />} label="6 meses" />
+			<FormControlLabel key={2} value={2} control={<Radio />} label="12 meses" />
+		</RadioGroup>
 ...
 ```
 
