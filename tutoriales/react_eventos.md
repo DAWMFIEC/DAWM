@@ -42,7 +42,7 @@ Componente MUI: Select y RadioGroup
 	+ [Select](https://mui.com/material-ui/react-select/) y sus componentes asociados.
 
 ```tsx
-...
+import * as React from 'react';
 
 //Card
 import Typography from '@mui/material/Typography';
@@ -61,7 +61,10 @@ import FormControlLabel from '@mui/material/FormControlLabel';
 //Select
 import Select, { SelectChangeEvent } from '@mui/material/Select';
 import MenuItem from '@mui/material/MenuItem';
+
 ...
+
+export default function Calculator() { ... }
 ```
  
 * En el componente `Calculator.tsx`, agregue las etiquetas para los componentes Card y Grid.
@@ -69,12 +72,6 @@ import MenuItem from '@mui/material/MenuItem';
 ```tsx
 ...
 export default function Calculator() {
-
-	{/* Datos */}
-	...
-
-	{/* Elementos renderizados */}
-	...
 
 	{/* JSX */}
 
@@ -117,6 +114,7 @@ export default function Calculator() {
 ```tsx
 ...
 	{/* Select */}
+
 	<Select>
         <MenuItem value="-1">
           <em>Seleccione un tipo de promoción</em>
@@ -134,9 +132,9 @@ export default function Calculator() {
 y 
 
 ```tsx
-...
-	
+...	
 	{/* Radio Group */}
+
 	<RadioGroup
 		name="radio-buttons-group"
 		sx={% raw %}{{{% endraw %}
@@ -156,7 +154,7 @@ y
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
 
-Datos
+Datos y renderizado en los elementos
 ==========
 
 * * *
@@ -164,6 +162,7 @@ Datos
 * En el componente `Calculator.tsx`, agregue los datos para rellenar los elementos Select y Radio Groups.
 
 ```tsx
+...
 export default function Calculator() {
 
   {/* Datos */}
@@ -175,9 +174,9 @@ export default function Calculator() {
   ]
 
   let radioItems = [
-     {title: "1 mes"},
-     {title: "6 meses"},
-     {title: "12 meses"}
+     { title: "1 mes" },
+     { title: "6 meses" },
+     { title: "12 meses" }
   ]
 
   {/* Elementos renderizados */}
@@ -194,11 +193,13 @@ export default function Calculator() {
 }
 ```
 
-* En el componente `Calculator.tsx`, reemplace los elementos renderizados en el Select y en el Radio Group.
+* En el componente `Calculator.tsx`, comente los elementos anteriores y agregue los elementos renderizados en el Select y en el Radio Group.
 
 ```tsx
 ...
+
 	{/* Select */}
+
 	<Select>
         <MenuItem value="-1">
           <em>Seleccione un tipo de promoción</em>
@@ -219,8 +220,9 @@ y
 
 ```tsx
 ...
-	
+
 	{/* Radio Group */}
+
 	<RadioGroup
 		name="radio-buttons-group"
 		sx={% raw %}{{{% endraw %}
@@ -248,7 +250,50 @@ Eventos: SelectChangeEvent y ChangeEvent
 
 * * *
 
+* En el componente `Calculator.tsx`, agregue los manejadores de eventos.
 
+```tsx
+...
+export default function Calculator() {
+	...
+
+	{/* Manejadores de eventos */}
+	  
+	const handleChangeSelect = (event: SelectChangeEvent) => {
+		alert(event.target.value)
+	};
+
+	const handleChangeRadio = (event: React.ChangeEvent<HTMLInputElement>) => {
+		alert((event.target as HTMLInputElement).value)
+	};
+
+	{/* JSX */}
+
+	return ( ... )
+}
+```
+
+* En el componente `Calculator.tsx`, referencie los elementos con los manejadores de eventos.
+
+```tsx
+...
+	{/* Select */}
+    <Select
+      onChange={handleChangeSelect}
+    > 
+    ...
+
+    {/* Radio Group */}
+    <RadioGroup
+      name="radio-buttons-group"
+      sx={{
+        marginLeft: '2%'
+      }}
+      onChange={handleChangeRadio}
+    >
+
+    ...
+```
 
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
