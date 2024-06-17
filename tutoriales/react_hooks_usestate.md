@@ -29,9 +29,7 @@ import * as React from 'react';
 ...
 ```
 
-* En el componente `Calculator.tsx`, agregue la desestructuración de:
-	+ La variable **planId** y la función de actualización **setPlanId**. El valor predeterminado es **-1**.
-	+ La variable **timeId** y la función de actualización **setTimeId**. El valor predeterminado es **-1**.
+* En el componente `Calculator.tsx`, agregue la desestructuración de arreglo (estado actual y función de actualización) para declarar los estados del componente. El valor predeterminado de ambos estado actual es -1.
 
 ```tsx
 ...
@@ -47,8 +45,30 @@ export default function Calculator() {
 }
 ```
 
+* En el componente `Calculator.tsx`, use la variable estado para acceder a la descripción del elemento actual. 
+
+```tsx
+...
+	</Select>
+
+	<p>
+      {(planId != -1)?menuItems[planId].description:'Descripción del plan'}
+    </p>
+...
+```
+
+y 
 
 
+```tsx
+...
+	</RadioGroup>
+
+    <p>
+      {(timeId != -1)?'Desde hoy y por '+radioItems[timeId].title:''}
+    </p>
+...
+```
 
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
