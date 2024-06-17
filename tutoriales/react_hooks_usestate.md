@@ -52,11 +52,13 @@ export default function Calculator() {
 	{/* Manejadores de eventos */}
 	  
 	const handleChangeSelect = (event: SelectChangeEvent) => {
-		setPlanId(parseInt(event.target.value))
+		let newMenuId = parseInt(event.target.value)    
+		setPlanId(newMenuId)
 	};
 
 	const handleChangeRadio = (event: React.ChangeEvent<HTMLInputElement>) => {
-		setTimeId(parseInt((event.target as HTMLInputElement).value))
+		let newChangeId = parseInt((event.target as HTMLInputElement).value)
+		setTimeId(newChangeId)
 	};
 
       {/* JSX */ }
@@ -92,7 +94,7 @@ y
     </RadioGroup>
 
     <p>
-      {(timeId != -1)?radioItems[timeId].intro:''}
+      {(timeId != -1)?radioItems[timeId].description:''}
     </p>
 ...
 ```
