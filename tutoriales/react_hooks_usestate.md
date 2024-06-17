@@ -76,7 +76,7 @@ export default function Calculator() {
 	</Select>
 
 	<p>
-      	{(planId != -1)?menuItems[planId].description:'Descripción del plan'}
+      	{(planId != -1)?menuItems[planId].intro:''}
      </p>
 ...
 ```
@@ -92,7 +92,7 @@ y
     </RadioGroup>
 
     <p>
-      {(timeId != -1)?radioItems[timeId].description:''}
+      {(timeId != -1)?radioItems[timeId].intro:''}
     </p>
 ...
 ```
