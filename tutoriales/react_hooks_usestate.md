@@ -9,12 +9,45 @@ React - Hooks: useState
 
 ![react banner](imagenes/react_native_logo.png)
 
+El Hook de useState ofrece una variable de estado para mantener los datos entre renderizados y una función que coloca el estado para actualizar la variable y provocar que React renderice el componente nuevamente.
+
+<div align="center">
+	<img src="images/reac_usestate_logo.png" alt="" width="60%">
+	<p>Fuente: <a href="http://www.room51.co.uk/tutorials/react/usestate/part1.html">Managing component state with the useState Hook</a> </p>
+</div>
+
 Hooks: useState
 ==========
 
 * * *
 
-Hooks: useState
+* En el componente `Calculator.tsx`, agregue la referencia a los componentes:
+
+```tsx
+import * as React from 'react';
+
+...
+```
+
+* En el componente `Calculator.tsx`, agregue la desestructuración de:
+	+ La variable **planId** y la función de actualización **setPlanId**. El valor predeterminado es **-1**.
+	+ La variable **timeId** y la función de actualización **setTimeId**. El valor predeterminado es **-1**.
+
+```tsx
+...
+
+export default function Calculator() {
+
+  {/* Hooks: useState */}
+  const [planId, setPlanId] = React.useState(-1);
+  const [timeId, setTimeId] = React.useState(-1);
+
+  ...
+
+}
+```
+
+
 
 
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
