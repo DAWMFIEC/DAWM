@@ -12,7 +12,7 @@ React - Hooks: useState
 El Hook de useState ofrece una variable de estado para mantener los datos entre renderizados y una función que coloca el estado para actualizar la variable y provocar que React renderice el componente nuevamente.
 
 <div align="center">
-	<img src="images/reac_usestate_logo.png" alt="" width="60%">
+	<img src="imagenes/reac_usestate_logo.png" alt="" width="60%">
 	<p>Fuente: <a href="http://www.room51.co.uk/tutorials/react/usestate/part1.html">Managing component state with the useState Hook</a> </p>
 </div>
 
@@ -98,6 +98,14 @@ y
     </p>
 ...
 ```
+
+* Compruebe el funcionamiento del servidor, con: **npm run dev**
+* Acceda al URL [http://localhost:5174/](http://localhost:5174/)
+
+Comunicación entre Componentes: useState
+==========
+
+* * *
 
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
