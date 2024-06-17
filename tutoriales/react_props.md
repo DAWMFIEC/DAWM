@@ -112,7 +112,7 @@ export default function Plan(data: Datum) {
 }
 ```
 
-Componente App: Props
+Comunicación entre Componentes: Props
 ==========
 
 * * *
