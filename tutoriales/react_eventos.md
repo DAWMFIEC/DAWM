@@ -125,7 +125,7 @@ Componente MUI: Select y RadioGroup
 	{/* Select */}
 
 	<Select defaultValue='-1'>
-        <MenuItem value="-1">
+        <MenuItem value="-1" disabled={true}>
           <em>Seleccione un tipo de promoción</em>
         </MenuItem>
 
@@ -177,9 +177,9 @@ export default function Calculator() {
   {/* Datos */}
 
   let menuItems = [
-    { title: "Plan", subtitle: "100 Gb", description: "Todos los servicios incluídos" },
-    { title: "Suscripción", subtitle: ">100 Gb", description: "Servicios A y B" },
-    { title: "Ilimitado", subtitle: "<100 Gb", description: "Todos los servicios incluídos" }
+    { title: "Plan", subtitle: "100 Gb", description: 'El tipo de promoción "Plan" ofrece una estructura de precios y beneficios definida que se adapta a las necesidades específicas del cliente. Generalmente, este tipo de promoción está diseñado para aquellos que buscan un equilibrio entre costo y servicios, permitiendo elegir entre diferentes niveles de beneficios según el precio. ' },
+    { title: "Suscripción", subtitle: ">100 Gb", description: 'Las promociones tipo "Suscripción" están orientadas a ofrecer un acceso continuo a servicios o productos mediante el pago de una cuota recurrente, que puede ser mensual, trimestral o anual. Este tipo de promoción es común en servicios digitales como plataformas de streaming, software, y publicaciones, así como en clubes o programas de membresía.' },
+    { title: "Ilimitado", subtitle: "<100 Gb", description: 'La promoción "Ilimitado" se caracteriza por ofrecer acceso sin restricciones a los servicios incluidos, como datos móviles, minutos de llamada, o acceso a plataformas de streaming. Este tipo de promoción está diseñada para usuarios que tienen un alto consumo y prefieren no preocuparse por los límites mensuales.' }
   ]
 
   let radioItems = [
@@ -210,7 +210,7 @@ export default function Calculator() {
 	{/* Select */}
 
 	<Select defaultValue='-1'>
-        <MenuItem value="-1">
+        <MenuItem value="-1" disabled={true}>
           <em>Seleccione un tipo de promoción</em>
         </MenuItem>
 
