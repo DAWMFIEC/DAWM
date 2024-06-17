@@ -210,18 +210,18 @@ export default function Calculator() {
 	{/* Select */}
 
 	<Select defaultValue='-1'>
-        <MenuItem value="-1" disabled={true}>
-          <em>Seleccione un tipo de promoción</em>
-        </MenuItem>
+      <MenuItem value="-1" disabled={true}>
+        <em>Seleccione un tipo de promoción</em>
+      </MenuItem>
 
-        {/* Elementos renderizados */}
+      {/* Elementos renderizados */}
 
-        {selectMenuItems}
+      {selectMenuItems}
 
-        {/*<MenuItem key={0} value={0}>Plan</MenuItem>
-        <MenuItem key={1} value={1}>Suscripción</MenuItem>
-        <MenuItem key={2} value={2}>Ilimitado</MenuItem>*/}
-    </Select>
+      {/*<MenuItem key={0} value={0}>Plan</MenuItem>
+      <MenuItem key={1} value={1}>Suscripción</MenuItem>
+      <MenuItem key={2} value={2}>Ilimitado</MenuItem>*/}
+	</Select>
 ...
 ```
 
