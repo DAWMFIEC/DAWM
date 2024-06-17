@@ -59,7 +59,7 @@ export default function Calculator() {
 		setTimeId(parseInt((event.target as HTMLInputElement).value))
 	};
 
-    {/* JSX */ }
+      {/* JSX */ }
 
   	return ( ... )
 ...
@@ -76,8 +76,8 @@ export default function Calculator() {
 	</Select>
 
 	<p>
-      {(planId != -1)?menuItems[planId].description:'Descripción del plan'}
-    </p>
+      	{(planId != -1)?menuItems[planId].description:'Descripción del plan'}
+     </p>
 ...
 ```
 
@@ -100,7 +100,7 @@ y
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
 
-![react_props](imagenes/react_props.png)
+![react_componentes_useState1](imagenes/react_componentes_useState1.png)
 
 Referencias
 =======
