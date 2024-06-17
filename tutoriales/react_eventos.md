@@ -183,9 +183,9 @@ export default function Calculator() {
   ]
 
   let radioItems = [
-     { title: "1 mes" },
-     { title: "6 meses" },
-     { title: "12 meses" }
+    { title: "1 mes", description: 'Las promociones con una duración de 1 mes están diseñadas para brindar una experiencia a corto plazo y son ideales para clientes que buscan flexibilidad y no desean comprometerse a largo plazo. ' },
+    { title: "6 meses", description: 'Las promociones con una duración de 6 meses ofrecen un equilibrio entre compromiso y flexibilidad, proporcionando un periodo suficiente para que los usuarios disfruten de los beneficios.'},
+    { title: "12 meses", description: 'Las promociones de 12 meses están diseñadas para clientes que buscan un compromiso a largo plazo, generalmente acompañadas de los mayores beneficios y descuentos.' }
   ]
 
   {/* Elementos renderizados */}
