@@ -29,7 +29,7 @@ import * as React from 'react';
 ...
 ```
 
-* En el componente `Calculator.tsx`, agregue la desestructuración de arreglo (estado actual y función de actualización) para declarar los estados del componente. El valor predeterminado de ambos estado actual es -1.
+* En el componente `Calculator.tsx`, agregue la desestructuración de arreglo (**estado actual** y **función de actualización**) para declarar los estados del componente. El valor predeterminado de ambos estado actual es -1.
 
 ```tsx
 ...
@@ -45,10 +45,34 @@ export default function Calculator() {
 }
 ```
 
+* En el componente `Calculator.tsx`, actualice los manejadores de eventos al invocar la **función de actualización** de la variable de **estado actual**.
+
+```tsx
+...
+	{/* Manejadores de eventos */}
+	  
+	const handleChangeSelect = (event: SelectChangeEvent) => {
+		setPlanId(parseInt(event.target.value))
+	};
+
+	const handleChangeRadio = (event: React.ChangeEvent<HTMLInputElement>) => {
+		setTimeId(parseInt((event.target as HTMLInputElement).value))
+	};
+
+    {/* JSX */ }
+
+  	return ( ... )
+...
+```
+
+
 * En el componente `Calculator.tsx`, use la variable estado para acceder a la descripción del elemento actual. 
 
 ```tsx
 ...
+	{/* Select */}
+
+	...
 	</Select>
 
 	<p>
@@ -62,10 +86,13 @@ y
 
 ```tsx
 ...
-	</RadioGroup>
+	{/* Radio Group */}
+
+	...
+    </RadioGroup>
 
     <p>
-      {(timeId != -1)?'Desde hoy y por '+radioItems[timeId].title:''}
+      {(timeId != -1)?radioItems[timeId].description:''}
     </p>
 ...
 ```
