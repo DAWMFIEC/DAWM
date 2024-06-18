@@ -16,7 +16,7 @@ El Hook de useState ofrece una variable de estado para mantener los datos entre 
 	<p>Fuente: <a href="http://www.room51.co.uk/tutorials/react/usestate/part1.html">Managing component state with the useState Hook</a> </p>
 </div>
 
-Comunicación entre Componentes: useState
+App.tsx: Hook - useState
 ==========
 
 * * *
@@ -45,6 +45,11 @@ function App() {
 }
 ```
 
+App.tsx: Callbacks
+==========
+
+* * *
+
 * En el componente `App.tsx`, agregue los callbacks que serán enviados al componente **Calculator**.
 
 ```tsx
@@ -56,12 +61,12 @@ function App() {
   ...
 
   {/* Callbacks */}
-  const getPlan = (msg: Array<String>) => {
-    setPlan(msg);
+  const getPlan = (msgPlan: Array<String>) => {
+    setPlan(msgPlan);
   };
 
-  const getResult = (msg: Array<String>) => {
-    setResult(msg);
+  const getResult = (msgResult: Array<String>) => {
+    setResult(msgResult);
   };
 
 ...
@@ -82,6 +87,16 @@ function App() {
 	...
 }
 ```
+
+Calculator.tsx: Callbacks como Props
+==========
+
+* * *
+
+App.tsx: Variable de estadco como Props
+==========
+
+* * *
 
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
