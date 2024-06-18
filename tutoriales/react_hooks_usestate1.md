@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 [Regresar](/DAWM/)
 
-React - Hooks: useState
+React - Hooks: useState I
 ===============
 
 ![react banner](imagenes/react_native_logo.png)
@@ -98,14 +98,6 @@ y
     </p>
 ...
 ```
-
-* Compruebe el funcionamiento del servidor, con: **npm run dev**
-* Acceda al URL [http://localhost:5174/](http://localhost:5174/)
-
-Comunicación entre Componentes: useState
-==========
-
-* * *
 
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
