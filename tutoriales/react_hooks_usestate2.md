@@ -180,10 +180,10 @@ App.tsx: Renderización condicionada
     ...
 
     <Grid xs={12} sm={6} md={6} lg={6}>
-      {plan.length>0?<Plan title={plan[0]} subtitle={plan[1]} description={plan[2]} />:<></>}
+      { (plan.length>0) ? <Plan title={plan[0]} subtitle={plan[1]} description={plan[2]} /> : <></>}
     </Grid>
     <Grid xs={12} sm={6} md={6} lg={6}>
-      {plan.length>0 && result.length>0?<Result title={result[2]} subtitle={result[0]} description={plan[0] + " " + plan[1]}/>:<></>}
+      { (plan.length>0 && result.length>0)  ? <Result title={result[2]} subtitle={result[0]} description={plan[0] + " " + plan[1]}/> : <></>}
     </Grid>
     ...
   )
