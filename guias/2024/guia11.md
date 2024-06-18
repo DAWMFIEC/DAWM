@@ -63,8 +63,8 @@ theme: jekyll-theme-leap-day
 * Código fuente
     + **./index.html** página de inicio
     + **src/index.css** estilo global de la página
-    + **src/main.jsx** punto de entrada de la página
-    + **src/App.jsx** función componente principal
+    + **src/main.tsx** punto de entrada de la página
+    + **src/App.tsx** función componente principal
     + **src/App.css** estilo de la función componente principal
 
 #### Configuración para el despliegue
