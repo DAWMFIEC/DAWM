@@ -93,15 +93,108 @@ Calculator.tsx: Callbacks como Props
 
 * * *
 
-App.tsx: Variable de estadco como Props
+* En el componente `Calculator.tsx`, agregue los callbacks como props.
+
+```tsx
+...
+export default function Calculator( {setPlan, setResult} ) {
+...
+}
+```
+
+* En el componente `Calculator.tsx`, modifique los manejadores de eventos.
+
+```tsx
+...
+export default function Calculator( {setPlan, setResult} ) {
+
+  ...
+
+  {/* Manejadores de eventos */}
+
+  const handleChangeSelect = (event: SelectChangeEvent) => {
+    let newMenuId = parseInt(event.target.value)
+    setPlanId(newMenuId)
+    
+    let newMenuItem = (newMenuId != -1)?menuItems[newMenuId]:null;
+    setPlan([
+      newMenuItem?.title, 
+      newMenuItem?.subtitle, 
+      newMenuItem?.description 
+    ]);
+
+  };
+
+  const handleChangeRadio = (event: React.ChangeEvent<HTMLInputElement>) => {
+    let newChangeId = parseInt((event.target as HTMLInputElement).value)
+    setTimeId(newChangeId)
+    
+    let newChageItem = (newChangeId != -1)?radioItems[newChangeId]:null;
+    let month = (newChageItem?.title as String).substring(0,2)
+    let subtotal = (parseInt(month)* 20).toString()
+    let total = "$"+subtotal
+    setResult( [ newChageItem?.title, newChageItem?.description, total ])
+
+  };
+
+}
+```
+
+
+
+App.tsx: Variable de estado como Props
 ==========
 
 * * *
 
+* En el componente `App.tsx`, modifique el valor de los props en los componentes **Plan** y **Result**:
+
+```tsx
+...
+  return (
+    
+    ...
+
+    <Grid xs={12} sm={6} md={6} lg={6}>
+      <Plan title={plan[0]} subtitle={plan[1]} description={plan[2]} />
+    </Grid>
+    <Grid xs={12} sm={6} md={6} lg={6}>
+      <Result title={result[2]} subtitle={result[0]} description={plan[0] + " " + plan[1]}/>
+    </Grid>
+    ...
+  )
+...
+```
+
+App.tsx: Renderización condicionada
+==========
+
+* * *
+
+* En el componente `App.tsx`, condicione la renderización con los valores de las variables de estado.
+
+```tsx
+...
+  return (
+    
+    ...
+
+    <Grid xs={12} sm={6} md={6} lg={6}>
+      {plan.length>0?<Plan title={plan[0]} subtitle={plan[1]} description={plan[2]} />:<></>}
+    </Grid>
+    <Grid xs={12} sm={6} md={6} lg={6}>
+      {plan.length>0 && result.length>0?<Result title={result[2]} subtitle={result[0]} description={plan[0] + " " + plan[1]}/>:<></>}
+    </Grid>
+    ...
+  )
+...
+```
+
+
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
 
-![react_componentes_useState1](imagenes/react_componentes_useState1.png)
+![react_componentes_useState2](imagenes/react_componentes_useState2.png)
 
 Referencias
 =======
