@@ -31,7 +31,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 10: Typescript - Introducción](guias/2024/guia10)
   * [Guía 11: React - Introducción y MUI](guias/2024/guia11)
   * [Guía 12: React - Componentes, Interfaces y Props](guias/2024/guia12)
-  * [Guía 13: React - Eventos y Hooks: useState + useRef](guias/2024/guia13)
+  * [Guía 13: React - Eventos y Hooks: useState](guias/2024/guia13)
   * [Guía 14: React - Hooks: useEffect](guias/2024/guia14)
   
   
@@ -54,8 +54,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [React - MUI + Componentes Propios](tutoriales/react_mui_componentes_propios.md)
 * [React - Interfaces + Props](tutoriales/react_props.md)
 * [React - Virtual DOM y Eventos](tutoriales/react_eventos.md)
-* [React - Hooks: useState](tutoriales/react_hooks_usestate.md)
-* [React - Hooks: useRef](tutoriales/react_hooks_useref.md)
+* [React - Hooks: useState I](tutoriales/react_hooks_usestate1.md)
+* [React - Hooks: useState II](tutoriales/react_hooks_usestate2.md)
 * [React - Hooks: useEffect](tutoriales/react_hooks_useeffect.md)
 
 ### Angular
