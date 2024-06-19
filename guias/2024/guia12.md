@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 #### Componente Indicador
 
-* Cree el archivo `components/Indicator.tsx` con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
+* Cree el archivo `src/components/Indicator.tsx` con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
 
 ```jsx
 export default function Indicator() {
@@ -130,7 +130,7 @@ export default function Indicator(config: Config) {
 
 * Descargue la imagen [sunrise.jpeg](imagenes/sunrise.jpeg) dentro de la carpeta `assets` dentro del proyecto.
 
-* Cree el componente `components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
+* Cree el componente `src/components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
 
 
 ```jsx
