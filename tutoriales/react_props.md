@@ -78,12 +78,12 @@ export default function <COMPONENTE>() {
 }
 ```
 
-* Importe la interfaz **Datum** y agregue el parámetro **data: Datum**
+* En los componentes `Plan.tsx` y `Result.tsx`, importe la interfaz **Datum** y agregue el parámetro **data: Datum**
 
 ```typescript
 import Datum from '../interfaces/Datum';
 
-export default function Plan(data: Datum) {
+export default function <COMPONENTE>(data: Datum) {
     ...
 }
 ```
@@ -92,7 +92,7 @@ export default function Plan(data: Datum) {
 
 ```typescript
 ...
-export default function Plan(data: Datum) {
+export default function <COMPONENTE>(data: Datum) {
     return (
         <Card>
             <CardActionArea>
