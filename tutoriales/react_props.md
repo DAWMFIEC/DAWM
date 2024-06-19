@@ -68,7 +68,7 @@ export default function <COMPONENTE>() {
                 <Typography component="p" variant="h4">
                     Título
                 </Typography>
-                <Typography color="text.secondary" sx={{ flex: 1 }}>
+                <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
                     Descripción
                 </Typography>
             </CardContent>
@@ -103,7 +103,7 @@ export default function Plan(data: Datum) {
                     <Typography component="p" variant="h4">
                         {data.title}
                     </Typography>
-                    <Typography color="text.secondary" sx={{ flex: 1 }}>
+                    <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
                         {data.description}
                     </Typography>
                 </CardContent>
