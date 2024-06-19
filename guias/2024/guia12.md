@@ -67,7 +67,7 @@ export default function Indicator(config: Config) {
 }
 ```
 
-* En `App.tsx` agregue las propiedades y los valores del componente **Indicator**
+* En `App.tsx`, agregue las propiedades y los valores del componente **Indicator**
 
 ```jsx
 import Indicator from './components/Indicator';
@@ -89,7 +89,7 @@ export default App
 
 #### Componente MUI Paper y Typography
 
-* Agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
+* En `Indicator.tsx`, agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
 
 ```jsx
 import Typography from '@mui/material/Typography';
@@ -169,7 +169,7 @@ export default function Summary() {
 }
 ```
 
-* En `App.tsx` importe el componente **Summary** y use en el contenido a renderizar:
+* En `App.tsx`, importe el componente **Summary** y use en el contenido a renderizar:
 
 ```jsx
 import Summary from './components/Summary';
@@ -191,9 +191,9 @@ export default App
 
 #### Componente MUI Table
 
-* Cree el componente `components/BasicTable.tsx`
+* Cree el componente `src/components/BasicTable.tsx`
 * Del ejemplo [Basic Table](https://mui.com/material-ui/react-table/#basic-table) muestre y copie el código en el componente recién creado.
-* En `App.tsx` importe el componente **BasicTable** y use en el contenido a renderizar:
+* En `App.tsx`, importe el componente **BasicTable** y use en el contenido a renderizar:
 
 ```jsx
 import BasicTable from './components/BasicTable';
