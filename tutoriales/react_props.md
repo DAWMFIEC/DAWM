@@ -81,7 +81,7 @@ export default function <COMPONENTE>() {
 * En los componentes `Plan.tsx` y `Result.tsx`, importe la interfaz **Datum** y agregue el parámetro **data: Datum**
 
 ```typescript
-import Datum from '../interfaces/Datum';
+import Datum from '../interfaces/Datum.tsx';
 
 export default function <COMPONENTE>(data: Datum) {
     ...
