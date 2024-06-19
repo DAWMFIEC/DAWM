@@ -124,7 +124,7 @@ Componente MUI: Select y RadioGroup
 ...
 	{/* Select */}
 
-	<Select defaultValue='-1'>
+	<Select defaultValue='-1' sx={% raw %}{{{% endraw %} width: "65%" {% raw %}}}{% endraw %}>
         <MenuItem value="-1" disabled={true}>
           <em>Seleccione un tipo de promoción</em>
         </MenuItem>
