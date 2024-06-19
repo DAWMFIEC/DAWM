@@ -171,7 +171,7 @@ App.tsx: Renderización condicionada
 
 * * *
 
-* En el componente `App.tsx`, condicione la renderización con las variables de estado.
+* En el componente `App.tsx`, condicione la renderización de acuerdo con las variables de estado.
 
 ```tsx
 ...
