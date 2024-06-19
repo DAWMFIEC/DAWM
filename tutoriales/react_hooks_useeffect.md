@@ -21,12 +21,74 @@ El hook useEffect combina el comportamiento de los métodos del ciclo de vida **
 * Si el segundo argumento (la lista de dependencias) es un array vacío [], el efecto se ejecutará solo una vez después del primer renderizado (similar a **componentDidMount**).
 * Si no se proporciona un segundo argumento, el efecto se ejecutará después de cada renderizado (similar a **componentDidUpdate**).
 
-Hooks: useEffect
+De variable locales ... 
 ==========
 
 * * *
 
+* En el componente `Calculator.tsx`, comente o elimine las variables locales **menuItems** y **radioItems**
 
+```tsx
+...
+	{/* Datos */ }
+
+	/*
+		let menuItems = [ ... ]
+	*/
+
+	/*
+		let radioItems = [ ... ]
+	*/
+...
+```
+
+... a variables de estado
+==========
+
+* * *
+
+* En el componente `Calculator.tsx`, agregue la desestructuración de arreglo (**estado actual** y **función de actualización**) para declarar los estados del componente. El valor predeterminado de ambos estado actual es [].
+
+```tsx
+export default function Calculator({ setPlan, setResult }) {
+
+  {/* Hooks: useState */ }
+  ...
+  const [menuItems, setMenuItems] = React.useState<Array<Datum>>([]);
+  const [radioItems, setRadioItems] = React.useState<Array<Datum>>([]);
+
+}
+```
+
+* En el componente `Calculator.tsx`, agregue el hook **useState** con las peticiones asincrónicas. En cuanto los datos sean recibidos y convertidos a JSON, se utilizarán las funciones de actualización de los estados. 
+
+```tsx
+export default function Calculator({ setPlan, setResult }) {
+
+	{/* Hooks: useState */ }
+
+	...
+
+	{/* Hooks: useEffect */ }
+	React.useEffect(() => {
+
+	    (async () => {
+	      const res = await fetch('https://raw.githubusercontent.com/aavendan/datos/main/tutoriales/planes.json');
+	      const data = await res.json();
+	      setMenuItems(data)
+	    })();
+
+	    (async () => {
+	      const res = await fetch('https://raw.githubusercontent.com/aavendan/datos/main/tutoriales/tiempo.json');
+	      const data = await res.json();
+	      setRadioItems(data)
+	    })();
+
+	}, [])
+
+	...
+}
+```
 
 
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
