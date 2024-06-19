@@ -102,12 +102,14 @@ export default function Calculator({ setPlan, setResult }) {
 }
 ```
 
+* Compruebe los requerimientos asíncronos con el inspector.
+
+![react_useeffect1](imagenes/react_useeffect1.png)
 
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
-* Compruebe los requerimientos asíncronos con el inspector.
 
-![react_useeffect](imagenes/react_useeffect.png)
+![react_useeffect2](imagenes/react_useeffect2.png)
 
 Referencias
 =======
