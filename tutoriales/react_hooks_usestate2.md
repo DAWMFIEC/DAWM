@@ -102,7 +102,10 @@ export default function Calculator( {setPlan, setResult} ) {
 }
 ```
 
-* En el componente `Calculator.tsx`, modifique los manejadores de eventos.
+* En el componente `Calculator.tsx`, modifique los manejadores de eventos:
+
+  + Utiliza el nuevo índice para seleccionar el elemento en el arreglo
+  + Envía como parámetro un arreglo de cadenas de caracteres
 
 ```tsx
 ...
@@ -115,8 +118,11 @@ export default function Calculator( {setPlan, setResult} ) {
   const handleChangeSelect = (event: SelectChangeEvent) => {
     let newMenuId = parseInt(event.target.value)
     setPlanId(newMenuId)
-    
+
+    /* Utiliza el nuevo índice para seleccionar el elemento en el arreglo */
     let newMenuItem = (newMenuId != -1)?menuItems[newMenuId]:null;
+
+    /* Envía como parámetro un arreglo de cadenas de caracteres  */
     setPlan([
       newMenuItem?.title, 
       newMenuItem?.subtitle, 
@@ -129,10 +135,14 @@ export default function Calculator( {setPlan, setResult} ) {
     let newChangeId = parseInt((event.target as HTMLInputElement).value)
     setTimeId(newChangeId)
     
+    /* Utiliza el nuevo índice para seleccionar el elemento en el arreglo */
     let newChageItem = (newChangeId != -1)?radioItems[newChangeId]:null;
+
     let month = (newChageItem?.title as String).substring(0,2)
     let subtotal = (parseInt(month)* 20).toString()
     let total = "$"+subtotal
+    
+    /* Envía como parámetro un arreglo de cadenas de caracteres */
     setResult( [ newChageItem?.title, newChageItem?.description, total ])
 
   };
