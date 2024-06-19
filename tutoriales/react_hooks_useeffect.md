@@ -47,6 +47,16 @@ De variable locales ...
 
 * * *
 
+* En el componente `Calculator.tsx`, importe la interfaz **Datum**
+
+```typescript
+import Datum from '../interfaces/Datum.tsx';
+
+export default function Calculator({ setPlan, setResult }) {
+    ...
+}
+```
+
 * En el componente `Calculator.tsx`, agregue la desestructuración de arreglo (**estado actual** y **función de actualización**) para declarar los estados del componente. El valor predeterminado de ambos estado actual es [].
 
 ```tsx
@@ -56,6 +66,8 @@ export default function Calculator({ setPlan, setResult }) {
   ...
   const [menuItems, setMenuItems] = React.useState<Array<Datum>>([]);
   const [radioItems, setRadioItems] = React.useState<Array<Datum>>([]);
+
+  ...
 
 }
 ```
