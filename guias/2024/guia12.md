@@ -8,6 +8,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+* Clona localmente tu repositorio **dashboard**.
+
 #### Componente Indicador
 
 * Cree el archivo `components/Indicator.tsx` con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
@@ -210,6 +212,8 @@ export default App
 ```
 
 * Compruebe el resultado en el navegador.
+* Versiona local y remotamente el repositorio **dashboard**.
+* Despliega la aplicación **dashboard**.
 
 ### Documentación
 
