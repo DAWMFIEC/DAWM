@@ -105,8 +105,9 @@ export default function Calculator({ setPlan, setResult }) {
 
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
+* Compruebe los requerimientos asíncronos con el inspector.
 
-![react_props](imagenes/react_props.png)
+![react_useeffect](imagenes/react_useeffect.png)
 
 Referencias
 =======
