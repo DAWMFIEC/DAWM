@@ -20,7 +20,7 @@
 * Copie la carpeta **tests** en la carpeta `src` del proyecto.
 * En su proyecto de React 
 	+ Instale las dependencias de **Vitest**, **Jsdom** y **React Testing**
-    	- Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event @vitest/coverage-v8`
+    	- Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev vitest jsdom @testing-library/jest-dom @testing-library/react @testing-library/user-event @vitest/coverage-v8 @vitest/ui`
     + Modifique el archivo **package.json**
     	- Agregue los pares/valores: **test**, **test:watch**, **test:ui** y **test:coverage**
 
