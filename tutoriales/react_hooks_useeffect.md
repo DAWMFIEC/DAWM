@@ -26,7 +26,7 @@ De variable locales ...
 
 * * *
 
-* En el componente `Calculator.tsx`, comente o elimine las variables locales **menuItems** y **radioItems**
+* En el componente `Calculator.tsx`, comente las variables locales **menuItems** y **radioItems**
 
 ```tsx
 ...
@@ -106,6 +106,12 @@ export default function Calculator({ setPlan, setResult }) {
 
 ![react_useeffect1](imagenes/react_useeffect1.png)
 
+Resultado Final
+==========
+
+* * *
+
+* Selecciona la opción **Suscripción** a **6 meses**
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
 
