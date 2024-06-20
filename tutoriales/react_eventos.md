@@ -124,17 +124,20 @@ Componente MUI: Select y RadioGroup
 ...
 	{/* Select */}
 
-	<Select defaultValue='-1' sx={% raw %}{{{% endraw %} width: "35%" {% raw %}}}{% endraw %}>
-        <MenuItem value="-1" disabled={true}>
-          <em>Seleccione un tipo de promoción</em>
-        </MenuItem>
+	<Select 
+		defaultValue='-1' 
+		sx={% raw %}{{{% endraw %} width: "35%" {% raw %}}}{% endraw %}>
+		
+		<MenuItem value="-1" disabled={true}>
+			<em>Seleccione un tipo de promoción</em>
+		</MenuItem>
 
-        {/* Elementos renderizados */}
+		{/* Elementos renderizados */}
 
-        <MenuItem key={0} value={0}>Plan</MenuItem>
-        <MenuItem key={1} value={1}>Suscripción</MenuItem>
-        <MenuItem key={2} value={2}>Ilimitado</MenuItem>
-    </Select>
+		<MenuItem key={0} value={0}>Plan</MenuItem>
+		<MenuItem key={1} value={1}>Suscripción</MenuItem>
+		<MenuItem key={2} value={2}>Ilimitado</MenuItem>
+	</Select>
 ...
 ```
 
@@ -215,18 +218,20 @@ export default function Calculator() {
 
 	{/* Select */}
 
-	<Select defaultValue='-1' sx={% raw %}{{{% endraw %} width: "35%" {% raw %}}}{% endraw %}>
-      <MenuItem value="-1" disabled={true}>
-        <em>Seleccione un tipo de promoción</em>
-      </MenuItem>
+	<Select 
+		defaultValue='-1' 
+		sx={% raw %}{{{% endraw %} width: "35%" {% raw %}}}{% endraw %}>
+		<MenuItem value="-1" disabled={true}>
+			<em>Seleccione un tipo de promoción</em>
+		</MenuItem>
 
-      {/* Elementos renderizados */}
+		{/* Elementos renderizados */}
 
-      {selectMenuItems}
+		{selectMenuItems}
 
-      {/*<MenuItem key={0} value={0}>Plan</MenuItem>
-      <MenuItem key={1} value={1}>Suscripción</MenuItem>
-      <MenuItem key={2} value={2}>Ilimitado</MenuItem>*/}
+		{/*<MenuItem key={0} value={0}>Plan</MenuItem>
+		<MenuItem key={1} value={1}>Suscripción</MenuItem>
+		<MenuItem key={2} value={2}>Ilimitado</MenuItem>*/}
 	</Select>
 ...
 ```
@@ -301,11 +306,8 @@ export default function Calculator() {
 
     {/* Radio Group */}
     <RadioGroup
-      name="radio-buttons-group"
-	  sx={% raw %}{{{% endraw %}
-		  marginLeft: '2%'
-		 {% raw %}}}{% endraw %}
-      onChange={handleChangeRadio}
+			...
+			onChange={handleChangeRadio}
     >
 
     ...
