@@ -165,24 +165,30 @@ App.tsx: Variable de estado como Props
     
     <Grid container spacing={5}>
 
-      /* Calculator */
+      {/* Calculator */}
       <Grid xs={12} sm={12} md={12} lg={12}>
         <Calculator setPlan={getPlan} setResult={getResult} />
       </Grid>
 
-      /* Plan */
+      {/* Plan */}
       <Grid xs={12} sm={6} md={6} lg={6}>
         <Plan title={plan[0]} subtitle={plan[1]} description={plan[2]} />
       </Grid>
 
-      /* Result */
+      {/* Result */}
       <Grid xs={12} sm={6} md={6} lg={6}>
         <Result title={result[2]} subtitle={result[0]} description={plan[0] + " " + plan[1]}/>
       </Grid>
+
     </Grid>
   )
 ...
 ```
+
+* Compruebe el funcionamiento del servidor, con: **npm run dev**
+* Acceda al URL [http://localhost:5174/](http://localhost:5174/)
+
+![react_componentes_useState2-1](imagenes/react_componentes_useState21.png)
 
 App.tsx: Renderización condicionada
 ==========
@@ -197,12 +203,12 @@ App.tsx: Renderización condicionada
     
     <Grid container spacing={5}>
 
-      /* Calculator */
+      {/* Calculator */}
       <Grid xs={12} sm={12} md={12} lg={12}>
         <Calculator setPlan={getPlan} setResult={getResult} />
       </Grid>
 
-      /* Plan */
+      {/* Plan */}
       <Grid xs={12} sm={6} md={6} lg={6}>
         {
           plan.length>0?
@@ -212,7 +218,7 @@ App.tsx: Renderización condicionada
         }
       </Grid>
 
-      /* Result */
+      {/* Result */}
       <Grid xs={12} sm={6} md={6} lg={6}>
         {
           plan.length>0 && result.length>0?
@@ -221,16 +227,27 @@ App.tsx: Renderización condicionada
             <></>
         }
       </Grid>
+
     </Grid>
   )
 ...
 ```
 
-
 * Compruebe el funcionamiento del servidor, con: **npm run dev**
 * Acceda al URL [http://localhost:5174/](http://localhost:5174/)
 
-![react_componentes_useState2](imagenes/react_componentes_useState2.png)
+![react_componentes_useState2-2](imagenes/react_componentes_useState22.png)
+
+App.tsx: Renderización condicionada
+==========
+
+* * *
+
+* Selecciona la opción **Suscripción** a **6 meses**
+* Compruebe el funcionamiento del servidor, con: **npm run dev**
+* Acceda al URL [http://localhost:5174/](http://localhost:5174/)
+
+![react_componentes_useState2-3](imagenes/react_componentes_useState23.png)
 
 Referencias
 =======
