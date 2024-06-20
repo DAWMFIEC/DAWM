@@ -238,7 +238,7 @@ App.tsx: Renderización condicionada
 
 ![react_componentes_useState2-2](imagenes/react_componentes_useState22.png)
 
-App.tsx: Renderización condicionada
+Resultado Final
 ==========
 
 * * *
