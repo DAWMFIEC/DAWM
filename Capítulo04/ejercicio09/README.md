@@ -11,7 +11,7 @@
 
 ## Instrucciones
 
-* Complete las actividades de [React - Bases](https://dawmfiec.github.io/DAWM/tutoriales/react_bases.html), [React - Componentes Integrados](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_integrados.html), [React - MUI + Componentes Propios](https://dawmfiec.github.io/DAWM/tutoriales/react_mui_componentes_propios.html), [React - Interfaces + Props](https://dawmfiec.github.io/DAWM/tutoriales/react_props.html) y [React - Virtual DOM y Eventos](https://dawmfiec.github.io/DAWM/tutoriales/react_eventos.html).
+* Complete las actividades de [React - Bases](https://dawmfiec.github.io/DAWM/tutoriales/react_bases.html), [React - Componentes Integrados](https://dawmfiec.github.io/DAWM/tutoriales/react_componentes_integrados.html), [React - MUI + Componentes Propios](https://dawmfiec.github.io/DAWM/tutoriales/react_mui_componentes_propios.html), [React - Interfaces + Props](https://dawmfiec.github.io/DAWM/tutoriales/react_props.html), [React - Virtual DOM y Eventos](https://dawmfiec.github.io/DAWM/tutoriales/react_eventos.html), [React - Hooks: useState I](https://dawmfiec.github.io/DAWM/tutoriales/react_hooks_usestate1.html), [React - Hooks: useState II](https://dawmfiec.github.io/DAWM/tutoriales/react_hooks_usestate2.html) y [React - Hooks: useEffect](https://dawmfiec.github.io/DAWM/tutoriales/react_hooks_useeffect.html).
  
 
 ## Pruebas unitarias
