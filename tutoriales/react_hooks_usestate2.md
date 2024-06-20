@@ -163,15 +163,23 @@ App.tsx: Variable de estado como Props
 ...
   return (
     
-    ...
+    <Grid container spacing={5}>
 
-    <Grid xs={12} sm={6} md={6} lg={6}>
-      <Plan title={plan[0]} subtitle={plan[1]} description={plan[2]} />
+      /* Calculator */
+      <Grid xs={12} sm={12} md={12} lg={12}>
+        <Calculator setPlan={getPlan} setResult={getResult} />
+      </Grid>
+
+      /* Plan */
+      <Grid xs={12} sm={6} md={6} lg={6}>
+        <Plan title={plan[0]} subtitle={plan[1]} description={plan[2]} />
+      </Grid>
+
+      /* Result */
+      <Grid xs={12} sm={6} md={6} lg={6}>
+        <Result title={result[2]} subtitle={result[0]} description={plan[0] + " " + plan[1]}/>
+      </Grid>
     </Grid>
-    <Grid xs={12} sm={6} md={6} lg={6}>
-      <Result title={result[2]} subtitle={result[0]} description={plan[0] + " " + plan[1]}/>
-    </Grid>
-    ...
   )
 ...
 ```
@@ -187,25 +195,33 @@ App.tsx: Renderización condicionada
 ...
   return (
     
-    ...
+    <Grid container spacing={5}>
 
-    <Grid xs={12} sm={6} md={6} lg={6}>
+      /* Calculator */
+      <Grid xs={12} sm={12} md={12} lg={12}>
+        <Calculator setPlan={getPlan} setResult={getResult} />
+      </Grid>
+
+      /* Plan */
+      <Grid xs={12} sm={6} md={6} lg={6}>
         {
           plan.length>0?
             <Plan title={plan[0]} subtitle={plan[1]} description={plan[2]} />
-            :
+          :
             <></>
         }
       </Grid>
+
+      /* Result */
       <Grid xs={12} sm={6} md={6} lg={6}>
         {
           plan.length>0 && result.length>0?
             <Result title={result[2]} subtitle={result[0]} description={plan[0] + " " + plan[1]}/>
-            :
+          :
             <></>
         }
       </Grid>
-    ...
+    </Grid>
   )
 ...
 ```
