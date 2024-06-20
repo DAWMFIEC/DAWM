@@ -14,6 +14,12 @@ theme: jekyll-theme-leap-day
 
 #### React Google Charts
 
+* Desde la línea de comandos, [instale React Google Charts](https://www.react-google-charts.com/) con:
+
+```prompt
+npm install --save react-google-charts
+```
+
 #### Componente Propio: WeatherChart
 
 #### Componente Propio: ControlPanel
