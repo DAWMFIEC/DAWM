@@ -134,13 +134,181 @@ export default function ControlPanel() {
 							/>}
 					label="Humedad"
 				/>
-				
+
 		</Paper>
     )
 }
 ```
 
-#### Hook: useState
+* En `App.tsx`, importe y use el componente **ControlPanel**
+
+```tsx
+...
+	<Grid xs={12} lg={2}>
+		<ControlPanel />	
+	</Grid>
+
+	<Grid xs={12} lg={10}>
+		<WeatherChart></WeatherChart>
+	</Grid>
+...
+```
+
+* Compruebe el resultado en el navegador.
+
+#### Evento: onChange
+
+* En `ControlPanel.tsx`, importe la interfaz **ChangeEvent**.
+
+```tsx
+import { ChangeEvent } from 'react';
+...
+import Paper from '@mui/material/Paper';
+...
+```
+
+* En `ControlPanel.tsx`, agregue el manejador **handleChange** para el evento _ChangeEvent_.
+
+```tsx
+...
+export default function ControlPanel() {
+
+	{/* manejador de eventos */}
+	
+	const handleChange = (event: ChangeEvent<HTMLInputElement>) => { 
+		alert(event.target.name)
+	}
+
+	...
+
+}
+```
+
+* En `ControlPanel.tsx`, agregue el manejador _handleChange_ al prop **onChange** del componente _Checkbox_.
+
+```tsx
+	...
+	
+	<Checkbox
+		name="precipitation"
+		value="precipitation"
+		onChange={handleChange}
+	/>
+    
+    ...
+
+	<Checkbox
+		name="humidity"
+		value="humidity"
+		onChange={handleChange}
+	/>
+    ...
+```
+
+* Compruebe el resultado en el navegador.
+
+#### Hook: useState - Componente Hijo
+
+* En `ControlPanel.tsx`, importe la función **useState**.
+
+```tsx
+import { ChangeEvent, useState } from 'react';
+...
+import Paper from '@mui/material/Paper';
+...
+```
+
+* En `ControlPanel.tsx`, agregue la variable de estado **checked** y la función de actualización **setChecked**. El valor predeterminado de la variable de estado es un arreglo de cadena de caracteres vacío.
+
+```tsx
+...
+export default function ControlPanel() {
+	
+	{/* variable de estado y función de actualización */}
+
+	let emptyArray = new Array<String>()
+	let [checked, setChecked] = useState(emptyArray)
+
+
+	{/* manejador de eventos */}
+
+	...
+}
+```
+
+* En `ControlPanel.tsx`, agregue la estrategia de actualización de la variable de estado en el manejador **handleChange**.
+
+```tsx
+...
+
+export default function ControlPanel() {
+
+	{/* variable de estado y función de actualización */}
+	...
+
+    {/* manejador de eventos */}
+
+    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
+
+        {/* Copia del arreglo (variable de estado) con el operador spread  */ }
+        let copy = [...checked]
+
+        let element = event.target.name
+
+        {/* Indice del elemento en el arreglo. Si no existe en el arreglo, el resultado es -1 */ }
+        let index = copy.indexOf(element)
+
+        if (index != -1) {
+
+            {/* Filtra los elementos del arreglo que sean diferentes del elemento seleccionado */ }
+            let copyFilter = copy.filter(value => value !== element)
+
+            {/* Actualiza la variable de estado checked */ }
+            setChecked([...copyFilter])
+        } else {
+
+            {/* Actualiza la variable de estado checked */ }
+            setChecked([...copy, element])
+        }
+
+
+    };
+
+    ...
+}
+```
+
+```tsx
+...
+export default function ControlPanel() {
+
+	...
+
+	return (
+
+		<Paper>
+
+			...
+
+			{/* Temporal: Muestra los elementos seleccionados */}
+			<ul>
+				{
+				    checked.map(el => <li> {el} </li>)
+				}
+			</ul>
+
+		</Paper>
+	)
+
+}
+```
+
+
+* Compruebe el resultado en el navegador.
+
+#### Hook: useState - Componente Padre
+
+* Compruebe el resultado en el navegador.
 
 * Versiona local y remotamente el repositorio **dashboard**.
 * Despliega la aplicación **dashboard**.
