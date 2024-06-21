@@ -106,7 +106,7 @@ theme: jekyll-theme-leap-day
 
 #### React MUI: Instalación
 
-* Desde la línea de comandos, [instale React MUI](https://mui.com/material-ui/getting-started/installation/) con:
+* Desde la línea de comandos, instale [React MUI](https://mui.com/material-ui/getting-started/installation/) con:
 
 ```prompt
 npm install @mui/material @emotion/react @emotion/styled
