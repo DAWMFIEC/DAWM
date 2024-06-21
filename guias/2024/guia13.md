@@ -39,7 +39,7 @@ import Paper from '@mui/material/Paper';
 export default function WeatherChart() {
 
     const data = [
-        ["Hora", "Precipitación [Prob]", "Humedad [%]"],
+        ["Hora", "Precipitación [Prob]", "Humedad [% como decimal]"],
         ["03:00", 0.13, 0.78],
         ["06:00", 0.04, 0.81],
         ["09:00", 0.07, 0.82],
@@ -67,7 +67,6 @@ export default function WeatherChart() {
                     curveType: "function",
                     legend: { position: "bottom" },
                 {% raw %}}}{% endraw %}
-                legendToggle
             />
         </Paper>
     )
@@ -87,6 +86,59 @@ export default function WeatherChart() {
 * Compruebe el resultado en el navegador.
 
 #### Componente Propio: ControlPanel
+
+* Cree el componente `src/components/ControlPanel.tsx`
+
+* En `ControlPanel.tsx`, importe los componentes **Paper**, **FormControlLabel**, **Checkbox** y **Typography**:
+
+```tsx
+import Paper from '@mui/material/Paper';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import Checkbox from '@mui/material/Checkbox';
+import Typography from '@mui/material/Typography';
+``` 
+
+* En `ControlPanel.tsx`, agregue el componente funcional:
+
+```tsx
+...
+export default function ControlPanel() {
+    
+
+    return (
+		<Paper
+			sx={% raw %}{{{% endraw %}
+					p: 2,
+					display: 'flex',
+					flexDirection: 'column'
+				{% raw %}}}{% endraw %}>
+
+				<Typography gutterBottom component="h2" variant="h6" color="primary">
+					Controles
+				</Typography>
+
+				<FormControlLabel
+					control={
+							<Checkbox
+								name="precipitation"
+								value="precipitation"
+							/>}
+					label="Precipitación"
+				/>
+
+				<FormControlLabel
+					control={
+							<Checkbox
+								name="humidity"
+								value="humidity"
+							/>}
+					label="Humedad"
+				/>
+				
+		</Paper>
+    )
+}
+```
 
 #### Hook: useState
 
