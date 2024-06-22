@@ -51,6 +51,8 @@ export default function WeatherChart() {
         ["21:00", 5, 77, 99]
     ];
 
+    {/* JSX */}
+
     return (
 		<Paper
 			sx={% raw %}{{{% endraw %}
@@ -79,10 +81,22 @@ export default function WeatherChart() {
 
 ```tsx
 ...
-	<Grid xs={12} lg={10}>
-		<WeatherChart></WeatherChart>
-	</Grid>
-...
+
+import WeatherChart from './components/WeatherChart';
+
+function App() {
+	
+	...
+
+	{/* JSX */}
+
+	return (
+		...
+		<Grid xs={12} lg={10}>
+			<WeatherChart></WeatherChart>
+		</Grid>
+	)
+}
 ```
 
 * Compruebe el resultado en el navegador.
@@ -142,8 +156,12 @@ export default function ControlPanel() {
 						labelId="simple-select-label"
 						id="simple-select"
 						label="Variables"
+						defaultValue='-1'
 					>
+						<MenuItem key="-1" value="-1" disabled>Seleccione una variable</MenuItem>
+
 						{options}
+
 					</Select>
 				</FormControl>
 
@@ -161,14 +179,23 @@ export default function ControlPanel() {
 
 ```tsx
 ...
-	<Grid xs={12} lg={2}>
-		<ControlPanel />	
-	</Grid>
+import ControlPanel from './components/ControlPanel';
 
-	<Grid xs={12} lg={10}>
-		<WeatherChart></WeatherChart>
-	</Grid>
-...
+function App() {
+	
+	...
+
+	{/* JSX */}
+
+	return (
+		...
+		<Grid xs={12} lg={2}>
+			<ControlPanel />
+		</Grid>
+		<Grid xs={12} lg={10}>
+			<WeatherChart></WeatherChart>
+		</Grid>
+}
 ```
 
 * Compruebe el resultado en el navegador.
@@ -189,11 +216,18 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 ...
 export default function ControlPanel() {
 
-	{/* manejador de eventos */}
+	...
+
+	{/* Manejador de eventos */}
 	
 	const handleChange = (event: SelectChangeEvent) => {
-		alert( parseInt(event.target.value) );
+		
+		let idx = parseInt(event.target.value)
+		alert( idx );
+
 	};
+
+	{/* JSX */}
 
 	...
 
@@ -209,6 +243,7 @@ export default function ControlPanel() {
 		labelId="simple-select-label"
 		id="simple-select"
 		label="Variables"
+		defaultValue='-1'
 		onChange={handleChange}
 	>
     ...
@@ -232,7 +267,7 @@ import Paper from '@mui/material/Paper';
 ...
 export default function ControlPanel() {
 	
-	{/* variable de estado y función de actualización */}
+	{/* Variable de estado y función de actualización */}
 
 	let [selected, setSelected] = useState(-1)
 
@@ -242,7 +277,7 @@ export default function ControlPanel() {
 }
 ```
 
-* En `ControlPanel.tsx`, agregue la estrategia de actualización de la variable de estado en el manejador **handleChange**.
+* En `ControlPanel.tsx`, agregue la estrategia de actualización de la variable de estado en el manejador **handleChange** y renderice el contenido del elemento seleccionado.
 
 ```tsx
 ...
@@ -251,15 +286,20 @@ export default function ControlPanel() {
 
 	...
 
-    {/* manejador de eventos */}
+    {/* Manejador de eventos */}
 
 	const handleChange = (event: SelectChangeEvent) => {
-		setSelected( parseInt(event.target.value) );
+
+		let idx = parseInt(event.target.value)
+		setSelected( idx );
+
 	};
 
     ...
 }
 ```
+
+y
 
 ```tsx
 ...
@@ -289,6 +329,89 @@ export default function ControlPanel() {
 }
 ```
 
+* Compruebe el resultado en el navegador.
+
+#### Hook: useRef - Componente Hijo
+
+* En `ControlPanel.tsx`, importe la función **useRef**.
+
+```tsx
+import { useState, useRef } from 'react';
+import Paper from '@mui/material/Paper';
+...
+```
+
+* En `ControlPanel.tsx`, agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
+
+```tsx
+...
+export default function ControlPanel() {
+	
+	{/* Variable de estado y función de actualización */}
+
+	...
+
+    {/* Variable de referencia a un elemento */ }
+
+    const descriptionRef = useRef<HTMLDivElement>(null);
+
+	...
+}
+```
+
+* En `ControlPanel.tsx`, establezca la referencia al elemento con la descripción de la variable seleccionada. 
+
+```tsx
+...
+export default function ControlPanel() {
+
+	...
+
+	{/* JSX */}	
+
+	return (
+
+		<Paper>
+
+			...
+
+			{/* Muestra la descripción de la variable seleccionada */}
+			<Typography ref={descriptionRef} mt={2} component="p" color="text.secondary" />
+			
+
+		</Paper>
+	)
+
+}
+```
+
+* En `ControlPanel.tsx`, agregue la modificación de la referencia en el manejador de eventos.
+
+```tsx
+...
+
+export default function ControlPanel() {
+
+	...
+
+    {/* Manejador de eventos */}
+
+	const handleChange = (event: SelectChangeEvent) => {
+
+		let idx = parseInt(event.target.value)
+		setSelected( idx );
+
+		{/* Modificación de la referencia */}
+
+		if (descriptionRef.current !== null) {
+            descriptionRef.current.innerHTML = (idx >= 0) ? items[idx]["description"] : ""
+        }
+
+	};
+
+    ...
+}
+```
 
 * Compruebe el resultado en el navegador.
 
