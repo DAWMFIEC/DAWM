@@ -38,39 +38,41 @@ import Paper from '@mui/material/Paper';
 
 export default function WeatherChart() {
 
+	{/* Datos de las variables meteorológicas */}
+
     const data = [
-        ["Hora", "Precipitación [Prob]", "Humedad [% como decimal]"],
-        ["03:00", 0.13, 0.78],
-        ["06:00", 0.04, 0.81],
-        ["09:00", 0.07, 0.82],
-        ["12:00", 0.03, 0.73],
-        ["15:00", 0.04, 0.66],
-        ["18:00", 0.06, 0.64],
-        ["21:00", 0.05, 0.77],
+        ["Hora", "Precipitación", "Humedad", "Nubosidad"],
+        ["03:00", 13, 78, 75],
+        ["06:00", 4, 81, 79],
+        ["09:00", 7, 82, 69],
+        ["12:00", 3, 73, 62],
+        ["15:00", 4, 66, 75],
+        ["18:00", 6, 64, 84],
+        ["21:00", 5, 77, 99]
     ];
 
     return (
-        <Paper
-            sx={% raw %}{{{% endraw %}
-                p: 2,
-                display: 'flex',
-                flexDirection: 'column'
-            {% raw %}}}{% endraw %}
-        >
-            <Chart
-                chartType="LineChart"
-                data={data}
-                width="100%"
-                height="400px"
-                options={% raw %}{{{% endraw %}
-                    title: "Precipitación y Humedad vs Hora",
-                    curveType: "function",
-                    legend: { position: "bottom" },
-                {% raw %}}}{% endraw %}
-            />
-        </Paper>
+		<Paper
+			sx={% raw %}{{{% endraw %}
+				p: 2,
+				display: 'flex',
+				flexDirection: 'column'
+			{% raw %}}}{% endraw %}
+		>
+			<Chart
+				chartType="LineChart"
+				data={data}
+				width="100%"
+				height="400px"
+				options={% raw %}{{{% endraw %}
+					title: "Precipitación, Humedad y Nubosidad vs Hora",
+					curveType: "function",
+					legend: { position: "right" },
+				{% raw %}}}{% endraw %}
+		/>
+		</Paper>
     )
-}
+}	
 ```
 
 * En `App.tsx`, importe y use el componente **WeatherChart**
@@ -89,13 +91,16 @@ export default function WeatherChart() {
 
 * Cree el componente `src/components/ControlPanel.tsx`
 
-* En `ControlPanel.tsx`, importe los componentes **Paper**, **FormControlLabel**, **Checkbox** y **Typography**:
+* En `ControlPanel.tsx`, importe los componentes:
 
 ```tsx
 import Paper from '@mui/material/Paper';
-import FormControlLabel from '@mui/material/FormControlLabel';
-import Checkbox from '@mui/material/Checkbox';
 import Typography from '@mui/material/Typography';
+import Box from '@mui/material/Box';
+import InputLabel from '@mui/material/InputLabel';
+import MenuItem from '@mui/material/MenuItem';
+import FormControl from '@mui/material/FormControl';
+import Select from '@mui/material/Select';
 ``` 
 
 * En `ControlPanel.tsx`, agregue el componente funcional:
@@ -103,39 +108,51 @@ import Typography from '@mui/material/Typography';
 ```tsx
 ...
 export default function ControlPanel() {
+
+	{/* Datos de los elementos del Select */}
+
+	let items = [
+        {"name":"Precipitación", "description":"Cantidad de agua, en forma de lluvia, nieve o granizo, que cae sobre una superficie en un período específico."}, 
+        {"name": "Humedad", "description":"Cantidad de vapor de agua presente en el aire, generalmente expresada como un porcentaje."}, 
+        {"name":"Nubosidad", "description":"Grado de cobertura del cielo por nubes, afectando la visibilidad y la cantidad de luz solar recibida."}
+    ]
+
+    let options = items.map( (item, key) => <MenuItem key={key} value={key}>{item["name"]}</MenuItem> )
     
+    {/* JSX */}
 
     return (
 		<Paper
 			sx={% raw %}{{{% endraw %}
-					p: 2,
-					display: 'flex',
-					flexDirection: 'column'
-				{% raw %}}}{% endraw %}>
+				p: 2,
+				display: 'flex',
+				flexDirection: 'column'
+			{% raw %}}}{% endraw %}
+		>
 
-				<Typography gutterBottom component="h2" variant="h6" color="primary">
-					Controles
-				</Typography>
+			<Typography mb={2} component="h3" variant="h6" color="primary">
+				Variables Meteorológicas
+			</Typography>
 
-				<FormControlLabel
-					control={
-							<Checkbox
-								name="precipitation"
-								value="precipitation"
-							/>}
-					label="Precipitación"
-				/>
+			<Box sx={% raw %}{{{% endraw %} minWidth: 120 {% raw %}}}{% endraw %}>
+				
+				<FormControl fullWidth>
+					<InputLabel id="simple-select-label">Variables</InputLabel>
+					<Select
+						labelId="simple-select-label"
+						id="simple-select"
+						label="Variables"
+					>
+						{options}
+					</Select>
+				</FormControl>
 
-				<FormControlLabel
-					control={
-							<Checkbox
-								name="humidity"
-								value="humidity"
-							/>}
-					label="Humedad"
-				/>
+			</Box>
+
 
 		</Paper>
+
+
     )
 }
 ```
@@ -161,9 +178,8 @@ export default function ControlPanel() {
 * En `ControlPanel.tsx`, importe la interfaz **ChangeEvent**.
 
 ```tsx
-import { ChangeEvent } from 'react';
 ...
-import Paper from '@mui/material/Paper';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
 ...
 ```
 
@@ -175,33 +191,26 @@ export default function ControlPanel() {
 
 	{/* manejador de eventos */}
 	
-	const handleChange = (event: ChangeEvent<HTMLInputElement>) => { 
-		alert(event.target.name)
-	}
+	const handleChange = (event: SelectChangeEvent) => {
+		alert( parseInt(event.target.value) );
+	};
 
 	...
 
 }
 ```
 
-* En `ControlPanel.tsx`, agregue el manejador _handleChange_ al prop **onChange** del componente _Checkbox_.
+* En `ControlPanel.tsx`, agregue el manejador _handleChange_ al prop **onChange** del componente _Select_.
 
 ```tsx
 	...
 	
-	<Checkbox
-		name="precipitation"
-		value="precipitation"
+	<Select
+		labelId="simple-select-label"
+		id="simple-select"
+		label="Variables"
 		onChange={handleChange}
-	/>
-    
-    ...
-
-	<Checkbox
-		name="humidity"
-		value="humidity"
-		onChange={handleChange}
-	/>
+	>
     ...
 ```
 
@@ -212,13 +221,12 @@ export default function ControlPanel() {
 * En `ControlPanel.tsx`, importe la función **useState**.
 
 ```tsx
-import { ChangeEvent, useState } from 'react';
-...
+import { useState } from 'react';
 import Paper from '@mui/material/Paper';
 ...
 ```
 
-* En `ControlPanel.tsx`, agregue la variable de estado **checked** y la función de actualización **setChecked**. El valor predeterminado de la variable de estado es un arreglo de cadena de caracteres vacío.
+* En `ControlPanel.tsx`, agregue la variable de estado **selected** y la función de actualización **setSelected**. El valor predeterminado de la variable de estado es una cadena de caracteres vacío.
 
 ```tsx
 ...
@@ -226,11 +234,9 @@ export default function ControlPanel() {
 	
 	{/* variable de estado y función de actualización */}
 
-	let emptyArray = new Array<String>()
-	let [checked, setChecked] = useState(emptyArray)
+	let [selected, setSelected] = useState(-1)
 
-
-	{/* manejador de eventos */}
+	{/* Datos de los elementos del Select */}
 
 	...
 }
@@ -243,36 +249,13 @@ export default function ControlPanel() {
 
 export default function ControlPanel() {
 
-	{/* variable de estado y función de actualización */}
 	...
 
     {/* manejador de eventos */}
 
-    const handleChange = (event: ChangeEvent<HTMLInputElement>) => {
-
-        {/* Copia del arreglo (variable de estado) con el operador spread  */ }
-        let copy = [...checked]
-
-        let element = event.target.name
-
-        {/* Indice del elemento en el arreglo. Si no existe en el arreglo, el resultado es -1 */ }
-        let index = copy.indexOf(element)
-
-        if (index != -1) {
-
-            {/* Filtra los elementos del arreglo que sean diferentes del elemento seleccionado */ }
-            let copyFilter = copy.filter(value => value !== element)
-
-            {/* Actualiza la variable de estado checked */ }
-            setChecked([...copyFilter])
-        } else {
-
-            {/* Actualiza la variable de estado checked */ }
-            setChecked([...copy, element])
-        }
-
-
-    };
+	const handleChange = (event: SelectChangeEvent) => {
+		setSelected( parseInt(event.target.value) );
+	};
 
     ...
 }
@@ -284,18 +267,21 @@ export default function ControlPanel() {
 
 	...
 
+	{/* JSX */}	
+
 	return (
 
 		<Paper>
 
 			...
 
-			{/* Temporal: Muestra los elementos seleccionados */}
-			<ul>
-				{
-				    checked.map(el => <li> {el} </li>)
-				}
-			</ul>
+			{/* Muestra la descripción de la variable seleccionada */}
+			<Typography mt={2} component="p" color="text.secondary">
+			{
+				(selected >= 0)?items[selected]["description"]:""
+			}
+			</Typography>
+			
 
 		</Paper>
 	)
