@@ -94,10 +94,10 @@ export default function Calculator({ setPlan, setResult }) {
 
 				const data = Array.from(xml.getElementsByTagName("item")).map(element => {
 					return {
-						"title": element.getElementsByTagName("title")[0].innerHTML,
-						"subtitle": element.getElementsByTagName("subtitle")[0].innerHTML,
-						"intro": element.getElementsByTagName("intro")[0].innerHTML,
-						"description": element.getElementsByTagName("description")[0].innerHTML,
+						"title": element.getElementsByTagName("title")[0].textContent,
+						"subtitle": element.getElementsByTagName("subtitle")[0].textContent,
+						"intro": element.getElementsByTagName("intro")[0].textContent,
+						"description": element.getElementsByTagName("description")[0].textContent,
 					}
 				})
 
