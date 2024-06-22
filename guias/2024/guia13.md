@@ -380,7 +380,7 @@ export default function ControlPanel() {
 		<Paper>
 
 			...
-			
+
 			</Box>
 
 
@@ -423,7 +423,6 @@ export default function ControlPanel() {
 ```
 
 * Compruebe el resultado en el navegador.
-
 * Versiona local y remotamente el repositorio **dashboard**.
 * Despliega la aplicación **dashboard**.
 
