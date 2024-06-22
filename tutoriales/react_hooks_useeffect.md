@@ -85,15 +85,36 @@ export default function Calculator({ setPlan, setResult }) {
 	React.useEffect(() => {
 
 	    (async () => {
-	      const res = await fetch('https://raw.githubusercontent.com/aavendan/datos/main/tutoriales/planes.json');
+
+				const res = await fetch('https://raw.githubusercontent.com/aavendan/datos/main/tutoriales/planes.xml');
+				const textXML = await res.text();
+
+				const parser = new DOMParser();
+				const xml = parser.parseFromString(textXML, "application/xml");
+
+				const data = Array.from(xml.getElementsByTagName("item")).map(element => {
+					return {
+						"title": element.getElementsByTagName("title")[0].innerHTML,
+						"subtitle": element.getElementsByTagName("subtitle")[0].innerHTML,
+						"intro": element.getElementsByTagName("intro")[0].innerHTML,
+						"description": element.getElementsByTagName("description")[0].innerHTML,
+					}
+				})
+
+				setMenuItems(data)
+
+	      {/*const res = await fetch('https://raw.githubusercontent.com/aavendan/datos/main/tutoriales/planes.json');
 	      const data = await res.json();
-	      setMenuItems(data)
+	      setMenuItems(data)*/}
+	    
 	    })();
 
 	    (async () => {
+	    
 	      const res = await fetch('https://raw.githubusercontent.com/aavendan/datos/main/tutoriales/tiempo.json');
 	      const data = await res.json();
 	      setRadioItems(data)
+	    
 	    })();
 
 	}, [])
@@ -124,3 +145,4 @@ Referencias
 * Vite. (n.d.). Retrieved from https://vitejs.dev/
 * Cómo iniciar un proyecto React con Vite. (2022). Retrieved from https://carlosazaustre.es/react-vite
 * Consumiendo APIs con ReactJS: Aprende useEffect y useState (2024). Retrieved from https://www.freecodecamp.org/espanol/news/consumiendo-una-api-rest-con-react-js/
+* How to fetch XML in JavaScript (no date) Code to go. Available at: https://codetogo.io/how-to-fetch-xml-in-javascript/ (Accessed: 22 June 2024). 
