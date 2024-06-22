@@ -428,6 +428,9 @@ export default function ControlPanel() {
 
 ### Fundamental
 
+* Guía de `hooks` en React
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">⚛️ Massive React hooks cheatsheet ↓ <br><br>1/8 <a href="https://t.co/S0BPD9OHrf">pic.twitter.com/S0BPD9OHrf</a></p>&mdash; George Moller (@_georgemoller) <a href="https://twitter.com/_georgemoller/status/1748347605606600820?ref_src=twsrc%5Etfw">January 19, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 
 ### Términos
