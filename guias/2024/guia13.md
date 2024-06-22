@@ -38,6 +38,14 @@ import Paper from '@mui/material/Paper';
 
 export default function WeatherChart() {
 
+	{/* Configuración */}
+
+    let options = {
+        title: "Precipitación, Humedad y Nubosidad vs Hora",
+        curveType: "function",
+        legend: { position: "right" },
+    }
+
 	{/* Datos de las variables meteorológicas */}
 
     const data = [
@@ -66,11 +74,7 @@ export default function WeatherChart() {
 				data={data}
 				width="100%"
 				height="400px"
-				options={% raw %}{{{% endraw %}
-					title: "Precipitación, Humedad y Nubosidad vs Hora",
-					curveType: "function",
-					legend: { position: "right" },
-				{% raw %}}}{% endraw %}
+				options={options}
 		/>
 		</Paper>
     )
@@ -126,12 +130,12 @@ export default function ControlPanel() {
 	{/* Datos de los elementos del Select */}
 
 	let items = [
-        {"name":"Precipitación", "description":"Cantidad de agua, en forma de lluvia, nieve o granizo, que cae sobre una superficie en un período específico."}, 
-        {"name": "Humedad", "description":"Cantidad de vapor de agua presente en el aire, generalmente expresada como un porcentaje."}, 
-        {"name":"Nubosidad", "description":"Grado de cobertura del cielo por nubes, afectando la visibilidad y la cantidad de luz solar recibida."}
-    ]
+		{"name":"Precipitación", "description":"Cantidad de agua, en forma de lluvia, nieve o granizo, que cae sobre una superficie en un período específico."}, 
+		{"name": "Humedad", "description":"Cantidad de vapor de agua presente en el aire, generalmente expresada como un porcentaje."}, 
+		{"name":"Nubosidad", "description":"Grado de cobertura del cielo por nubes, afectando la visibilidad y la cantidad de luz solar recibida."}
+	]
 
-    let options = items.map( (item, key) => <MenuItem key={key} value={key}>{item["name"]}</MenuItem> )
+	let options = items.map( (item, key) => <MenuItem key={key} value={key}>{item["name"]}</MenuItem> )
     
     {/* JSX */}
 
@@ -261,7 +265,7 @@ import Paper from '@mui/material/Paper';
 ...
 ```
 
-* En `ControlPanel.tsx`, agregue la variable de estado **selected** y la función de actualización **setSelected**. El valor predeterminado de la variable de estado es una cadena de caracteres vacío.
+* En `ControlPanel.tsx`, agregue la `variable de estado` **selected** y la `función de actualización` **setSelected**. El valor predeterminado de la variable de estado es una cadena de caracteres vacío.
 
 ```tsx
 ...
@@ -277,7 +281,7 @@ export default function ControlPanel() {
 }
 ```
 
-* En `ControlPanel.tsx`, agregue la estrategia de actualización de la variable de estado en el manejador **handleChange** y renderice el contenido del elemento seleccionado.
+* En `ControlPanel.tsx`, use la función de actualización en el manejador **handleChange** y renderice el contenido del elemento seleccionado.
 
 ```tsx
 ...
@@ -351,7 +355,7 @@ export default function ControlPanel() {
 
 	...
 
-    {/* Variable de referencia a un elemento */ }
+	{/* Variable de referencia a un elemento */ }
 
     const descriptionRef = useRef<HTMLDivElement>(null);
 
@@ -401,11 +405,11 @@ export default function ControlPanel() {
 		let idx = parseInt(event.target.value)
 		setSelected( idx );
 
-		{/* Modificación de la referencia */}
+	{/* Modificación de la referencia */}
 
-		if (descriptionRef.current !== null) {
-            descriptionRef.current.innerHTML = (idx >= 0) ? items[idx]["description"] : ""
-        }
+	if (descriptionRef.current !== null) {
+		descriptionRef.current.innerHTML = (idx >= 0) ? items[idx]["description"] : ""
+	}
 
 	};
 
@@ -415,18 +419,20 @@ export default function ControlPanel() {
 
 * Compruebe el resultado en el navegador.
 
-#### Hook: useState - Componente Padre
-
-* Compruebe el resultado en el navegador.
-
 * Versiona local y remotamente el repositorio **dashboard**.
 * Despliega la aplicación **dashboard**.
 
 ### Documentación
 
+* En [React Google Charts](https://www.react-google-charts.com/) se encuentra la documentación de la biblioteca React Google Charts.
+
 ### Fundamental
 
+
+
 ### Términos
+
+hooks, variable de estaddo, función de actualización
 
 ### Referencias
 
