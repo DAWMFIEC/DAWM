@@ -444,4 +444,5 @@ hooks, variable de estaddo, función de actualización
 ### Referencias
 
 * Rakannimer. (n.d.). rakannimer/react-google-charts: A thin, typed, React wrapper over Google Charts Visualization and Charts API. Retrieved from https://github.com/RakanNimer/react-google-charts?tab=readme-ov-file
+* Yosami. "Creating a Weather Dashboard Using HTML, CSS, and JavaScript." Medium, 8 Jul. 2020, https://medium.com/@yosami14/creating-a-weather-dashboard-using-html-css-and-javascript-217f80229fb.
 * (N.d.). Retrieved from https://www.react-google-charts.com/
