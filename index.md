@@ -32,7 +32,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 11: React - Introducción y MUI](guias/2024/guia11)
   * [Guía 12: React - Componentes, Interfaces y Props](guias/2024/guia12)
   * [Guía 13: React - Eventos y Hooks: useState y useRef](guias/2024/guia13)
-  * [Guía 14: React - Hooks: useEffect](guias/2024/guia14)
+  * [Guía 14: React - Hooks: useEffect y LocalStorage](guias/2024/guia14)
   
   
 ## Scripts
