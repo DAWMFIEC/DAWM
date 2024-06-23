@@ -127,22 +127,22 @@ theme: jekyll-theme-leap-day
 
 			{/* Arreglo con los resultados */}
 
-			let results = new Array()
+			let dataToIndicators = new Array()
 
 			{/* Análisis del XML */}
 
 			let location = xml.getElementsByTagName("location")[1]
 
 			let geobaseid = location.getAttribute("geobaseid")
-			results.push(["Location","geobaseid", geobaseid])
+			dataToIndicators.push(["Location","geobaseid", geobaseid])
 
 			let latitude = location.getAttribute("latitude")
-			results.push(["Location","Latitude", latitude])
+			dataToIndicators.push(["Location","Latitude", latitude])
 
 			let longitude = location.getAttribute("longitude")
-			results.push(["Location","Longitude", longitude])
+			dataToIndicators.push(["Location","Longitude", longitude])
 
-			console.log( results )
+			console.log( dataToIndicators )
 
 
 		},[])
@@ -171,7 +171,9 @@ theme: jekyll-theme-leap-day
 
 			{/* Renderice el arreglo de resultados en un arreglo de elementos Indicator */}
 
-			let indicatorsElements = Array.from(results).map((element) => <Indicator title={element[0]} subtitle={element[1]} value={element[2]} />)
+			let indicatorsElements = Array.from(dataToIndicators).map(
+				(element) => <Indicator title={element[0]} subtitle={element[1]} value={element[2]} />
+			)
 			
 			{/* Actualización de la variable de estado mediante la función de actualización */}
 
@@ -280,11 +282,9 @@ theme: jekyll-theme-leap-day
 
 2. (STOP 3) Compruebe el resultado en el navegador.
 
-#### Table o React Google Chart: Análisis del XML
+#### BasicTable o React Google Chart: Análisis del XML
 
 * (STOP 4) Compruebe el resultado en el navegador.
-
-
 
 * Versiona local y remotamente el repositorio **dashboard**.
 * Despliega la aplicación **dashboard**.
