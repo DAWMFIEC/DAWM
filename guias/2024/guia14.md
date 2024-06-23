@@ -16,237 +16,54 @@ theme: jekyll-theme-leap-day
 
 1. En el componente `App.tsx`, agregue la referencia a los hooks **useState** y **useEffect**
 
-```tsx
-import {useEffect, useState} from 'react';
-...
-```
+	```tsx
+	import {useEffect, useState} from 'react';
+	...
+	```
 
 2. En el componente `App.tsx`, agregue la variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío.
 
-```tsx
-function App() {
+	```tsx
+	function App() {
 
-	{/* Variable de estado y función de actualización */}
+		{/* Variable de estado y función de actualización */}
 
-	let [indicators, setIndicators] = useState([])
+		let [indicators, setIndicators] = useState([])
 
-	...
-}
-```
+		...
+	}
+	```
 
 3. En el componente `App.tsx`, agregue el hook **useEffect** para reaccionar después del primer renderizado ( `fase` de **Montaje** en el [`ciclo de vida`](https://www.reactjs.wiki/que-es-el-ciclo-de-vida-de-un-componente-en-react) ) en el DOM.
 
-```tsx
-function App() {
+	```tsx
+	function App() {
 
-	{/* Variable de estado y función de actualización */}
+		{/* Variable de estado y función de actualización */}
 
-	...
+		...
 
-	{/* Hook: useEffect */}
-	
-	useEffect(()=>{
+		{/* Hook: useEffect */}
+		
+		useEffect(()=>{
 
 
-	},[])
+		},[])
 
-	...
-}
-```
+		...
+	}
+	```
 
 #### Petición asíncrona de un XML
 
 1. En el hook useEffect del componente `App.tsx`, agregue una petición asíncrona con fetch
 
-```tsx
-	...
-
-	{/* Hook: useEffect */}
-
-	useEffect(()=>{
-
-		{/* Request */}
-
-		let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
-		let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
-		savedTextXML = await response.text();
-
-	},[])
-
-	...
-```
-
-#### XML Parser
-
-1. En el hook useEffect del componente `App.tsx`, agregue el analizador (`parser`) de XML
-
-```tsx
-	...
-
-	{/* Hook: useEffect */}
-
-	useEffect(()=>{
-
-		{/* Request */}
-
+	```tsx
 		...
 
-		{/* XML Parser */}
+		{/* Hook: useEffect */}
 
-		const parser = new DOMParser();
-		const xml = parser.parseFromString(savedTextXML, "application/xml");
-
-	},[])
-
-	...
-```
-
-#### Indicadores: Análisis del XML
-
-1. En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
-
-```tsx
-	...
-
-	{/* Hook: useEffect */}
-
-	useEffect(()=>{
-
-		...
-
-		{/* XML Parser */}
-
-		...
-
-		{/* Arreglo con los resultados */}
-
-		let results = new Array()
-
-		{/* Análisis del XML */}
-
-		let location = xml.getElementsByTagName("location")[1]
-
-		let geobaseid = location.getAttribute("geobaseid")
-		results.push(["Location","geobaseid", geobaseid])
-
-		let latitude = location.getAttribute("latitude")
-		results.push(["Location","Latitude", latitude])
-
-		let longitude = location.getAttribute("longitude")
-		results.push(["Location","Longitude", longitude])
-
-		console.log( results )
-
-
-	},[])
-
-	...
-```
-
-2. (STOP 1) Compruebe el resultado en el navegador.
-
-#### Renderización Dinámica con Map
-
-1. En el hook useEffect del componente `App.tsx`, renderice el resultado en un arreglo de elementos y modifique la variable de estado mediante la función de actualización.
-
-```tsx
-	...
-
-	{/* Hook: useEffect */}
-
-	useEffect(()=>{
-
-		...
-
-		{/* Análisis del XML */}
-
-		... 
-
-		{/* Renderice el arreglo de resultados en un arreglo de elementos Indicator */}
-
-		let indicatorsElements = Array.from(results).map((element) => <Indicator title={element[0]} subtitle={element[1]} value={element[2]} />)
-		
-		{/* Actualización de la variable de estado mediante la función de actualización */}
-
-		setIndicators(indicatorsElements)
-
-	},[])
-
-	...
-```
-
-2. En el JSX del componente `App.tsx`, cambie los elementos **Indicator** por elementos de la variable de estado
-
-
-```tsx
-...
-
-function App() {
-
-
-	{/* JSX */}
-
-	return (
-
-		<Grid container spacing={5}>
-		
-			<Grid xs={6} lg={2}>
-				{indicators[0]}
-
-				{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
-			</Grid>
-			
-			<Grid xs={6} lg={2}>
-				{indicators[1]}
-				
-				{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
-			</Grid>
-			
-			<Grid xs={6} lg={2}>
-				{indicators[2]}
-				
-				{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
-			</Grid>
-
-		...
-
-		</Grid>
-
-	)
-}
-```
-
-3. (STOP 2) Compruebe el resultado en el navegador.
-
-#### LocalStorage 
-
-4. En el hook useEffect del componente `App.tsx`, use el `LocalStorage` para almacenar la respuesta de la petición asincrónica.
-
-```tsx
-	...
-
-	{/* Hook: useEffect */}
-
-	useEffect(()=>{
-
-
-		{/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime*/}
-
-		let savedTextXML = localStorage.getItem("openWeatherMap")
-		let expiringTime = localStorage.getItem("expiringTime")
-
-		{/* Diferencia de tiempo */}
-		let hours = 1
-		let delay = hours * 3600000
-
-		{/* Estampa de tiempo actual */}
-		let nowTime = (new Date()).getTime();
-
-		{/* Realiza la petición asicrónica cuando: 
-			(1) La estampa de tiempo de expiración (expiringTime) es nulo   
-			(2) La estampa de tiempo actual es mayor al tiempo de expiración */}
-
-		if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+		useEffect(()=>{
 
 			{/* Request */}
 
@@ -254,25 +71,207 @@ function App() {
 			let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
 			savedTextXML = await response.text();
 
-			{/* En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
-			localStorage.setItem("openWeatherMap", savedTextXML)
-			localStorage.setItem("expiringTime", (nowTime + delay ).toString() )
-		}
-
-		{/* XML Parser */}
-
-		... 
-
-		{/* Arreglo con los resultados */}
+		},[])
 
 		...
+	```
 
-	},[])
+#### XML Parser
 
+1. En el hook useEffect del componente `App.tsx`, agregue el analizador (`parser`) de XML
+
+	```tsx
+		...
+
+		{/* Hook: useEffect */}
+
+		useEffect(()=>{
+
+			{/* Request */}
+
+			...
+
+			{/* XML Parser */}
+
+			const parser = new DOMParser();
+			const xml = parser.parseFromString(savedTextXML, "application/xml");
+
+		},[])
+
+		...
+	```
+
+#### Indicadores: Análisis del XML
+
+1. En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
+
+	```tsx
+		...
+
+		{/* Hook: useEffect */}
+
+		useEffect(()=>{
+
+			...
+
+			{/* XML Parser */}
+
+			...
+
+			{/* Arreglo con los resultados */}
+
+			let results = new Array()
+
+			{/* Análisis del XML */}
+
+			let location = xml.getElementsByTagName("location")[1]
+
+			let geobaseid = location.getAttribute("geobaseid")
+			results.push(["Location","geobaseid", geobaseid])
+
+			let latitude = location.getAttribute("latitude")
+			results.push(["Location","Latitude", latitude])
+
+			let longitude = location.getAttribute("longitude")
+			results.push(["Location","Longitude", longitude])
+
+			console.log( results )
+
+
+		},[])
+
+		...
+	```
+
+2. (STOP 1) Compruebe el resultado en el navegador.
+
+#### Renderización Dinámica con Map
+
+1. En el hook useEffect del componente `App.tsx`, renderice el resultado en un arreglo de elementos y modifique la variable de estado mediante la función de actualización.
+
+	```tsx
+		...
+
+		{/* Hook: useEffect */}
+
+		useEffect(()=>{
+
+			...
+
+			{/* Análisis del XML */}
+
+			... 
+
+			{/* Renderice el arreglo de resultados en un arreglo de elementos Indicator */}
+
+			let indicatorsElements = Array.from(results).map((element) => <Indicator title={element[0]} subtitle={element[1]} value={element[2]} />)
+			
+			{/* Actualización de la variable de estado mediante la función de actualización */}
+
+			setIndicators(indicatorsElements)
+
+		},[])
+
+		...
+	```
+
+2. En el JSX del componente `App.tsx`, cambie los elementos **Indicator** por elementos de la variable de estado
+
+	```tsx
 	...
-```
 
-5. (STOP 3) Compruebe el resultado en el navegador.
+	function App() {
+
+
+		{/* JSX */}
+
+		return (
+
+			<Grid container spacing={5}>
+			
+				<Grid xs={6} lg={2}>
+					{indicators[0]}
+
+					{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+				</Grid>
+				
+				<Grid xs={6} lg={2}>
+					{indicators[1]}
+					
+					{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+				</Grid>
+				
+				<Grid xs={6} lg={2}>
+					{indicators[2]}
+					
+					{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+				</Grid>
+
+			...
+
+			</Grid>
+
+		)
+	}
+	```
+
+3. (STOP 2) Compruebe el resultado en el navegador.
+
+#### LocalStorage 
+
+1. En el hook useEffect del componente `App.tsx`, use el `LocalStorage` para almacenar la respuesta de la petición asincrónica.
+
+	```tsx
+		...
+
+		{/* Hook: useEffect */}
+
+		useEffect(()=>{
+
+
+			{/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime*/}
+
+			let savedTextXML = localStorage.getItem("openWeatherMap")
+			let expiringTime = localStorage.getItem("expiringTime")
+
+			{/* Diferencia de tiempo */}
+			let hours = 1
+			let delay = hours * 3600000
+
+			{/* Estampa de tiempo actual */}
+			let nowTime = (new Date()).getTime();
+
+			{/* Realiza la petición asicrónica cuando: 
+				(1) La estampa de tiempo de expiración (expiringTime) es nulo   
+				(2) La estampa de tiempo actual es mayor al tiempo de expiración */}
+
+			if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+
+				{/* Request */}
+
+				let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
+				let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
+				savedTextXML = await response.text();
+
+				{/* En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
+				localStorage.setItem("openWeatherMap", savedTextXML)
+				localStorage.setItem("expiringTime", (nowTime + delay ).toString() )
+			}
+
+			{/* XML Parser */}
+
+			... 
+
+			{/* Arreglo con los resultados */}
+
+			...
+
+		},[])
+
+		...
+	```
+
+2. (STOP 3) Compruebe el resultado en el navegador.
 
 #### Table o React Google Chart: Análisis del XML
 
