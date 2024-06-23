@@ -73,6 +73,7 @@ Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes ac
 3. Agregue la propiedad **box-shadow** con los siguientes valores:
    
    ```css
+   ... {
      ...
      padding: ...
      box-shadow: 
