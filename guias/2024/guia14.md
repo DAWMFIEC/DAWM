@@ -3,10 +3,10 @@ theme: jekyll-theme-leap-day
 ---
 
 <style>
-  code {
+  /*code {
     white-space : pre-wrap !important;
     word-break: break-word;
-  }
+  }*/
 </style>
 
 ## Guía 14
