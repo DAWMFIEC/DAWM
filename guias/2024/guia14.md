@@ -274,13 +274,11 @@ function App() {
 
 5. (STOP 3) Compruebe el resultado en el navegador.
 
-#### Table: Análisis del XML
+#### Table o React Google Chart: Análisis del XML
 
 * (STOP 4) Compruebe el resultado en el navegador.
 
-#### React Google Chart: Análisis del XML
 
-* (STOP 5) Compruebe el resultado en el navegador.
 
 * Versiona local y remotamente el repositorio **dashboard**.
 * Despliega la aplicación **dashboard**.
