@@ -101,6 +101,8 @@ function App() {
 	...
 ```
 
+#### Indicadores: Análisis del XML
+
 * En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
 
 ```tsx
@@ -141,7 +143,7 @@ function App() {
 	...
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 1) Compruebe el resultado en el navegador.
 
 #### Renderización Dinámica con Map
 
@@ -214,7 +216,7 @@ function App() {
 }
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 2) Compruebe el resultado en el navegador.
 
 #### LocalStorage 
 
@@ -270,7 +272,15 @@ function App() {
 	...
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 3) Compruebe el resultado en el navegador.
+
+#### Table: Análisis del XML
+
+* (STOP 4) Compruebe el resultado en el navegador.
+
+#### React Google Chart: Análisis del XML
+
+* (STOP 5) Compruebe el resultado en el navegador.
 
 * Versiona local y remotamente el repositorio **dashboard**.
 * Despliega la aplicación **dashboard**.
