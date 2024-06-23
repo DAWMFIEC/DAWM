@@ -218,7 +218,57 @@ function App() {
 
 #### LocalStorage 
 
+* En el hook useEffect del componente `App.tsx`, use el `LocalStorage` para almacenar la respuesta de la petición asincrónica.
 
+```tsx
+	...
+
+	{/* Hook: useEffect */}
+
+	useEffect(()=>{
+
+
+		{/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime*/}
+
+		let savedTextXML = localStorage.getItem("openWeatherMap")
+		let expiringTime = localStorage.getItem("expiringTime")
+
+		{/* Diferencia de tiempo */}
+		let hours = 1
+		let delay = hours * 3600000
+
+		{/* Estampa de tiempo actual */}
+		let nowTime = (new Date()).getTime();
+
+		{/* Realiza la petición asicrónica cuando: 
+			(1) La estampa de tiempo de expiración (expiringTime) es nulo   
+			(2) La estampa de tiempo actual es mayor al tiempo de expiración */}
+
+		if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+
+			{/* Request */}
+
+			let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
+			let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
+			savedTextXML = await response.text();
+
+			{/* En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
+			localStorage.setItem("openWeatherMap", savedTextXML)
+			localStorage.setItem("expiringTime", (nowTime + delay ).toString() )
+		}
+
+		{/* XML Parser */}
+
+		... 
+
+		{/* Arreglo con los resultados */}
+
+		...
+
+	},[])
+
+	...
+```
 
 * Compruebe el resultado en el navegador.
 
