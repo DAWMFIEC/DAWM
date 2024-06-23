@@ -103,7 +103,7 @@ function App() {
 }
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 1) Compruebe el resultado en el navegador.
 
 #### Componente Propio: ControlPanel
 
@@ -202,7 +202,7 @@ function App() {
 }
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 2) Compruebe el resultado en el navegador.
 
 #### Evento: onChange
 
@@ -253,7 +253,7 @@ export default function ControlPanel() {
     ...
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 3) Compruebe el resultado en el navegador.
 
 #### Hook: useState - Componente Hijo
 
@@ -335,7 +335,7 @@ export default function ControlPanel() {
 }
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 4) Compruebe el resultado en el navegador.
 
 #### Hook: useRef - Componente Hijo
 
@@ -422,7 +422,8 @@ export default function ControlPanel() {
 }
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 5) Compruebe el resultado en el navegador.
+
 * Versiona local y remotamente el repositorio **dashboard**.
 * Despliega la aplicación **dashboard**.
 
