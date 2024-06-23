@@ -24,27 +24,27 @@ theme: jekyll-theme-leap-day
   + Use el objeto `console` para mostrar el contenido del parámetero. 
   + Detenga la ejecución del código con el objeto `debugger`.
 
-```typescript
-let loaded = ( eventLoaded ) => {
-  
-  window.alert("landing page loaded");
-  console.log( eventLoaded );
-  debugger;
+  ```typescript
+  let loaded = ( eventLoaded ) => {
+    
+    window.alert("landing page loaded");
+    console.log( eventLoaded );
+    debugger;
 
-}
-```
+  }
+  ```
 
 2. Del API del objeto window, use la función **addEventListener** para establecer la función _loaded_ como un callback que responda al `evento` **DOMContentLoaded**.  
 
-```typescript
-let loaded = ( ... ) => {
+  ```typescript
+  let loaded = ( ... ) => {
 
-  ...
+    ...
 
-}
+  }
 
-window.addEventListener("DOMContentLoaded", loaded);
-```
+  window.addEventListener("DOMContentLoaded", loaded);
+  ```
 
 3. (STOP 1) Compruebe el resultado en el navegador.
 4. Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
@@ -55,16 +55,16 @@ window.addEventListener("DOMContentLoaded", loaded);
 2. Dentro de la función flecha _loaded_:
   + Del API del objeto `document`, use la función **getElementById** para obtener una referencia al elemento HTML de acuerdo con el argumento. 
 
-```typescript
-let loaded = ( eventLoaded ) => {
+  ```typescript
+  let loaded = ( eventLoaded ) => {
 
-  let myform = document.getElementById('<identificador-del-formulario>');
-  debugger;
+    let myform = document.getElementById('<identificador-del-formulario>');
+    debugger;
 
-}
+  }
 
-window.addEventListener( ... ) 
-```
+  window.addEventListener( ... ) 
+  ```
 
 3. (STOP 2) Compruebe el resultado en el navegador.
 4. Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
@@ -74,21 +74,21 @@ window.addEventListener( ... )
 1. Dentro de la función flecha _loaded_:
   + Al objeto con la referencia al formulario, agregue un callback que responda al evento _submit_ (con el parámetro _eventSubmit_). 
 
-```typescript
-let loaded = ( eventLoaded ) => {
+  ```typescript
+  let loaded = ( eventLoaded ) => {
 
-  let myform = document.getElementById('<identificador-del-formulario>');
-  
-  myform.addEventListener('submit', ( eventSubmit ) => { 
+    let myform = document.getElementById('<identificador-del-formulario>');
+    
+    myform.addEventListener('submit', ( eventSubmit ) => { 
 
-    debugger;
+      debugger;
 
-  })
+    })
 
-}
+  }
 
-window.addEventListener( ... ) 
-```
+  window.addEventListener( ... ) 
+  ```
 2. (STOP 3) Compruebe el resultado en el navegador.
 3. Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
@@ -96,11 +96,11 @@ window.addEventListener( ... )
 
 1. Asigne un identificador único para cada elemento de ingreso de datos del formulario, p.e.:
 
-```html
-...
-<input id="element1" type="text">
-...
-```
+  ```html
+  ...
+  <input id="element1" type="text">
+  ...
+  ```
 
 2. Dentro de la función flecha _loaded_:
   + Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
@@ -109,36 +109,36 @@ window.addEventListener( ... )
   + Del API del objeto con la referencia al elemento HTML con identificador **element1**, use el método **focus** para establecer el enfoque en el elemento HTML.
   + Del API del objeto window, use él método alert para mostrar con un mensaje de alerta.
 
-```typescript
-let loaded = ( eventLoaded ) => {
+  ```typescript
+  let loaded = ( eventLoaded ) => {
 
-  ...
-  
-  myform.addEventListener('submit', ( eventSubmit ) => {
-
-    eventSubmit.preventDefault();
-
-    let element1Value = element1.value;
+    ...
     
-    // Validación del contenido del input 
+    myform.addEventListener('submit', ( eventSubmit ) => {
 
-    if( element1Value.length == 0 ) {
+      eventSubmit.preventDefault();
+
+      let element1Value = element1.value;
       
-      element1.focus()
+      // Validación del contenido del input 
 
-      alert('Ingrese un texto válido')
+      if( element1Value.length == 0 ) {
+        
+        element1.focus()
 
-      return;
-    }
+        alert('Ingrese un texto válido')
 
-    debugger;
+        return;
+      }
 
-  })
+      debugger;
 
-}
+    })
 
-window.addEventListener( ... ) 
-```
+  }
+
+  window.addEventListener( ... ) 
+  ```
 
 3. (STOP 4) Compruebe el resultado en el navegador.
 4. Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.

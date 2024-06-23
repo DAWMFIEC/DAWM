@@ -21,30 +21,30 @@ theme: jekyll-theme-leap-day
 
 1. Desde la línea de comandos, cree un nuevo sitio con Vite:
 
-```prompt
+	```prompt
 	npm create vite@latest <NOMBRE_DEL_REPOSITORIO>
-```
+	```
 
    - Seleccione **React** como framework: `√ Select a framework: » React`
    - Seleccione **Typescript** como variante: `√ Select a variant: » Typescript`
 
 2. Ingrese a la carpeta del repositorio:
 
-```prompt
+	```prompt
 	cd <NOMBRE_DEL_REPOSITORIO>
-```
+	```
 
 3. Instale las dependencias
 
-```prompt
+	```prompt
 	npm install
-```
+	```
 
 4. Inicie el servidor.
 
-```prompt
+	```prompt
 	npm run dev
-```
+	```
 
 5. (STOP 1) Compruebe el resultado en el navegador.
 6. Revise el resultado en [http://localhost:5173/](http://localhost:5173/)
@@ -73,25 +73,25 @@ theme: jekyll-theme-leap-day
 1. Desde la línea de comandos, acceda a la ruta del proyecto.
 2. Instale el paquete `gh-pages`
 
-```prompt
+	```prompt
 	npm install gh-pages --save-dev
-```
+	```
 
 3. En el archivo `package.json` agregue las siguientes líneas antes de la entrada **build**:
 
-```typescript
-    ...
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d dist",
-    ...
-```
+	```typescript
+	    ...
+	    "predeploy": "npm run build",
+	    "deploy": "gh-pages -d dist",
+	    ...
+	```
 
 4. En el archivo `vite.config.js` agregue esta línea antes de: **plugins: [react()],**:
 
-```typescript
-    base: "/<NOMBRE_DEL_REPOSITORIO>",
-    ...
-```
+	```typescript
+	    base: "/<NOMBRE_DEL_REPOSITORIO>",
+	    ...
+	```
 
 5. Versiona local y remotamente el repositorio **dashboard**.
 
@@ -109,76 +109,76 @@ theme: jekyll-theme-leap-day
 
 1. Desde la línea de comandos, instale [React MUI](https://mui.com/material-ui/getting-started/installation/) con:
 
-```prompt
-npm install @mui/material @emotion/react @emotion/styled
-```
+	```prompt
+	npm install @mui/material @emotion/react @emotion/styled
+	```
 
 #### React MUI: Componente Grid v2
 
 1. En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
 
-```typescript
-import { useState } from 'react'
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
-```
+	```typescript
+	import { useState } from 'react'
+	import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+	```
 
 2. En `App.tsx`, reemplace el contenido a renderizar por:
 
-```jsx
-...
-
-function App() {
+	```jsx
 	...
 
-	return (
-	  <Grid>
-	      <Grid>1</Grid>
-	      <Grid>2</Grid>
-	      <Grid>3</Grid>
-	      <Grid>4</Grid>
-	      <Grid>5</Grid>
-	      <Grid>6</Grid>
-	    </Grid>
-    )
-}
+	function App() {
+		...
 
-export default App
-```
+		return (
+		  <Grid>
+		      <Grid>1</Grid>
+		      <Grid>2</Grid>
+		      <Grid>3</Grid>
+		      <Grid>4</Grid>
+		      <Grid>5</Grid>
+		      <Grid>6</Grid>
+		    </Grid>
+	    )
+	}
+
+	export default App
+	```
 3. (STOP 1) Compruebe el resultado en el navegador.
 
 #### React MUI: Propiedades (Props)
 
 1. En `App.tsx`, convierta el primer Grid en contenedor con el atributo **container** y asigne un espacio entre elementos con **spacing**.
 
-```jsx
-...
-	return (
-	  <Grid container spacing={5}>
-		...
-		</Grid>
-    )
-...
-```
+	```jsx
+	...
+		return (
+		  <Grid container spacing={5}>
+			...
+			</Grid>
+	    )
+	...
+	```
 2. (STOP 2) Compruebe el resultado en el navegador.
 
 #### React MUI: Layout
 
 1. Agregue las propiedades **xs**, **sm**, **md** y **lg** a los elementos internos.
 
-```jsx
-...
-	return (
-	  <Grid container spacing={5}>
-	      <Grid xs={12} sm={4} md={3} lg={2}>1</Grid>
-	      <Grid xs={6} sm={4} md={3} lg={2}>2</Grid>
-	      <Grid xs={6} sm={4} md={3} lg={2}>3</Grid>
-	      <Grid xs={12} sm={4} md={3} lg={2}>4</Grid>
-	      <Grid xs={6} sm={4} md={6} lg={2}>5</Grid>
-	      <Grid xs={6} sm={4} md={6} lg={2}>6</Grid>
-	    </Grid>
-	)
-...
-```
+	```jsx
+	...
+		return (
+		  <Grid container spacing={5}>
+		      <Grid xs={12} sm={4} md={3} lg={2}>1</Grid>
+		      <Grid xs={6} sm={4} md={3} lg={2}>2</Grid>
+		      <Grid xs={6} sm={4} md={3} lg={2}>3</Grid>
+		      <Grid xs={12} sm={4} md={3} lg={2}>4</Grid>
+		      <Grid xs={6} sm={4} md={6} lg={2}>5</Grid>
+		      <Grid xs={6} sm={4} md={6} lg={2}>6</Grid>
+		    </Grid>
+		)
+	...
+	```
 
 2. (STOP 3) Compruebe el resultado para los diferentes tamaños del navegador.
 

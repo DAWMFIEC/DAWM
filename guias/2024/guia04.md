@@ -61,7 +61,7 @@ Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes ac
 1. Utilice alguno de los _selectores_ para acceder a una sección (&lt;section&gt;) de su página web.
 2. Aplique a su gusto las `reglas CSS` (las `propiedades CSS` y los `valores CSS`) para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
 
-   ```
+   ```css
    <selectorCSS> {
      margin: 2px 1px 1.5px;
      margin-top: 0.8rem;
@@ -72,7 +72,7 @@ Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes ac
 
 3. Agregue la propiedad **box-shadow** con los siguientes valores:
    
-   ```
+   ```css
      ...
      padding: ...
      box-shadow: 

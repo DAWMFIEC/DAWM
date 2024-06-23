@@ -17,55 +17,55 @@ theme: jekyll-theme-leap-day
 1. Siga el tutorial de [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database) para crear una colección de datos para su proyecto, en modo de prueba. 
 	+ Compruebe el acceso a la colección de datos mediante el patrón de URL:
 
-```
-https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
-```
+	```
+	https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
+	```
 
 #### Fetch - POST
 
 1. Coloque identificadores únicos al formulrio y a los elementos del formulario, p.e.:
 
-```html
-<form id="formulario" ... >
-	...
-	<input id="form_name" type="text" ... >
-	...
-	<select id="form_products"> ... </select>
-	...
-</form>	
-```
+	```html
+	<form id="formulario" ... >
+		...
+		<input id="form_name" type="text" ... >
+		...
+		<select id="form_products"> ... </select>
+		...
+	</form>	
+	```
 
 2. Detenga el comportamiento predeterminado del formulario al evento submit, p.e.:
 
-```javascript
-...
-	myform.addEventListener('submit', (eventSubmit) => {
-		
-		eventSubmit.preventDefault() 
-		...
-	})
-...
-```
+	```javascript
+	...
+		myform.addEventListener('submit', (eventSubmit) => {
+			
+			eventSubmit.preventDefault() 
+			...
+		})
+	...
+	```
 
 3. Verifique la existencia de contenido válido en los elementos del formulario.  
 
-```javascript
-...
-	myform.addEventListener('submit', (eventSubmit) => {
+	```javascript
+	...
+		myform.addEventListener('submit', (eventSubmit) => {
 
-	        eventSubmit.preventDefault()
+		        eventSubmit.preventDefault()
 
-	        if (form_name.value.length == 0) {
-	            alert("Nombre requerido")
-	            form_name.focus()
-	            return;
-	        }
+		        if (form_name.value.length == 0) {
+		            alert("Nombre requerido")
+		            form_name.focus()
+		            return;
+		        }
 
-	        ...
+		        ...
 
-	})
-...
-```
+		})
+	...
+	```
 
 4. Utilice las instrucciones de [Gemini](gemini/guia08-gemini01.pdf) para realizar un requerimiento `asíncrono` `HTTP - POST`, de los datos de un formulario, mediante `fetch`.
 5. (STOP 1) Compruebe el resultado en el navegador.

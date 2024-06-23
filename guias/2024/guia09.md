@@ -11,9 +11,9 @@ theme: jekyll-theme-leap-day
 1. Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
 2. Compruebe el acceso a la colección de datos mediante el patrón de URL:
 
-```
-https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
-```
+	```
+	https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
+	```
 
 3. Diseñe una estrategia para el procesamiento de datos, p.e.:
 	+ Utilice las estructuras [Map y Set](https://javascript.info/map-set) para obtener valores únicos con sus valores correspondientes.
@@ -24,29 +24,29 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 
 1. Identifique la sección del documento HTML donde agregará el contenido dinámicamente, p.e.:
 
-```html
-<div id="resultados" class="blog-section">
-	<div class="container">
-		...
-		<div class="row">
-			<div class="p-3 p-lg-5 border bg-white">
-				<table class="table site-block-order-table mb-5">
-					<thead>
-						<th>Categoría</th>
-						<th>Conteo</th>
-					</thead>
-					<tbody id="tablebody">
+	```html
+	<div id="resultados" class="blog-section">
+		<div class="container">
+			...
+			<div class="row">
+				<div class="p-3 p-lg-5 border bg-white">
+					<table class="table site-block-order-table mb-5">
+						<thead>
+							<th>Categoría</th>
+							<th>Conteo</th>
+						</thead>
+						<tbody id="tablebody">
 
-					<!-- Filas dinámicas -->
-					
-					</tbody>
-				</table>
+						<!-- Filas dinámicas -->
+						
+						</tbody>
+					</table>
+				</div>
 			</div>
+			...
 		</div>
-		...
 	</div>
-</div>
-```
+	```
 
 2. Identifique el o los eventos en los que realizará la petición asíncrona de datos, p.e.:
 
@@ -58,14 +58,14 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 	+ Aplique la estrategia para el procesamiento de datos.
 	+ Diseñe una plantilla para rellenar con el contenido dinámico, p.e.:
 
-```javascript
+	```javascript
 	let template = `
 		<tr>
 			<td>${categoria}</td>
 			<td>${conteo}</td>
 		</tr>
 	`
-```
+	```
 4. (STOP 1) Compruebe el resultado en el navegador.
 5. Acceda al URL de la colección de firebase para comprobar el resultado.
 

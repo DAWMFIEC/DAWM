@@ -14,33 +14,33 @@ theme: jekyll-theme-leap-day
 
 1. Cree el archivo `src/components/Indicator.tsx` con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
 
-```jsx
-export default function Indicator() {
-    return (
-       	<>
-            Indicator
-        </> 
-    )
-}
-```
+    ```jsx
+    export default function Indicator() {
+        return (
+           	<>
+                Indicator
+            </> 
+        )
+    }
+    ```
 
 2. En `App.tsx` importe el componente **Indicator** y use en el contenido a renderizar:
 
-```jsx
-import Indicator from './components/Indicator';
+    ```jsx
+    import Indicator from './components/Indicator';
 
-function App() {
-	return (
-		...
-		<Grid xs={6} md={4} lg={2}>
-	        <Indicator />
-	    </Grid>       
-		...
-	)
-}
+    function App() {
+    	return (
+    		...
+    		<Grid xs={6} md={4} lg={2}>
+    	        <Indicator />
+    	    </Grid>       
+    		...
+    	)
+    }
 
-export default App
-```
+    export default App
+    ```
 
 3. (STOP 1) Compruebe el resultado en el navegador.
 
@@ -48,43 +48,43 @@ export default App
 
 1. Agregue la interfaz `Config` al componente **Indicator**
 
-```jsx
-...
-interface Config {
-    title?: String;
-    subtitle?: String;
-    value: Number;
-}
+    ```jsx
+    ...
+    interface Config {
+        title?: String;
+        subtitle?: String;
+        value: Number;
+    }
 
-export default function Indicator(config: Config) {
-	return (
-        <>
-            {config.title}<br/>
-            {config.value.toString()}<br/>
-            {config.subtitle}
-            
-        </>
-    )
-}
-```
+    export default function Indicator(config: Config) {
+    	return (
+            <>
+                {config.title}<br/>
+                {config.value.toString()}<br/>
+                {config.subtitle}
+                
+            </>
+        )
+    }
+    ```
 
 2. En `App.tsx`, agregue las propiedades y los valores del componente **Indicator**
 
-```jsx
-import Indicator from './components/Indicator';
+    ```jsx
+    import Indicator from './components/Indicator';
 
-function App() {
-	return (
-		...
-		<Grid xs={6} md={4} lg={2}>
-	        <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} />
-	    </Grid>       
-		...
-	)
-}
+    function App() {
+    	return (
+    		...
+    		<Grid xs={6} md={4} lg={2}>
+    	        <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} />
+    	    </Grid>       
+    		...
+    	)
+    }
 
-export default App
-```
+    export default App
+    ```
 
 3. (STOP 2) Compruebe el resultado en el navegador.
 
@@ -92,38 +92,38 @@ export default App
 
 1. En `Indicator.tsx`, agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
 
-```jsx
-import Typography from '@mui/material/Typography';
-import Paper from '@mui/material/Paper';
-```
+    ```jsx
+    import Typography from '@mui/material/Typography';
+    import Paper from '@mui/material/Paper';
+    ```
 
 2. Use los componentes **Typography** y **Paper**
 
-```jsx
-...
+    ```jsx
+    ...
 
-export default function Indicator(config: Config) {
-    return (
-        <Paper
-            sx={% raw %}{{{% endraw %}
-              p: 2,
-              display: 'flex',
-              flexDirection: 'column'
-            {% raw %}}}{% endraw %}
-          >
-            <Typography component="h2" variant="h6" color="primary" gutterBottom>
-                {config.title} 
-            </Typography>
-            <Typography component="p" variant="h4">
-                {config.value.toString()}
-            </Typography>
-            <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
-                {config.subtitle}
-            </Typography>
-        </Paper> 
-    )
-}
-```
+    export default function Indicator(config: Config) {
+        return (
+            <Paper
+                sx={% raw %}{{{% endraw %}
+                  p: 2,
+                  display: 'flex',
+                  flexDirection: 'column'
+                {% raw %}}}{% endraw %}
+              >
+                <Typography component="h2" variant="h6" color="primary" gutterBottom>
+                    {config.title} 
+                </Typography>
+                <Typography component="p" variant="h4">
+                    {config.value.toString()}
+                </Typography>
+                <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
+                    {config.subtitle}
+                </Typography>
+            </Paper> 
+        )
+    }
+    ```
 
 3. (STOP 3) Compruebe el resultado en el navegador.
 
@@ -133,59 +133,59 @@ export default function Indicator(config: Config) {
 2. Cree el componente `src/components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
 
 
-```jsx
-import Typography from '@mui/material/Typography';
-import Card from '@mui/material/Card';
-import CardContent from '@mui/material/CardContent';
-import CardMedia from '@mui/material/CardMedia';
-import { CardActionArea } from '@mui/material';
+    ```jsx
+    import Typography from '@mui/material/Typography';
+    import Card from '@mui/material/Card';
+    import CardContent from '@mui/material/CardContent';
+    import CardMedia from '@mui/material/CardMedia';
+    import { CardActionArea } from '@mui/material';
 
-import sunrise from '../assets/sunrise.jpeg'
+    import sunrise from '../assets/sunrise.jpeg'
 
-export default function Summary() {
-    return (
-        <Card sx={% raw %}{{{% endraw %} maxWidth: 345 {% raw %}}}{% endraw %}>
-            <CardActionArea>
-                <CardMedia
-                    component="img"
-                    height="140"
-                    image={sunrise}
-                    alt="Amanecer"
-                />
-                <CardContent>
-                    <Typography gutterBottom component="h2" variant="h6" color="primary">
-                        Amanecer
-                    </Typography>
-                    <Typography component="p" variant="h4">
-                        05:19:08
-                    </Typography>
-                    <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
-                    	en 17 Junio, 2024
-                    </Typography>
-                </CardContent>
-            </CardActionArea>
-        </Card>
-    )
-}
-```
+    export default function Summary() {
+        return (
+            <Card sx={% raw %}{{{% endraw %} maxWidth: 345 {% raw %}}}{% endraw %}>
+                <CardActionArea>
+                    <CardMedia
+                        component="img"
+                        height="140"
+                        image={sunrise}
+                        alt="Amanecer"
+                    />
+                    <CardContent>
+                        <Typography gutterBottom component="h2" variant="h6" color="primary">
+                            Amanecer
+                        </Typography>
+                        <Typography component="p" variant="h4">
+                            05:19:08
+                        </Typography>
+                        <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
+                        	en 17 Junio, 2024
+                        </Typography>
+                    </CardContent>
+                </CardActionArea>
+            </Card>
+        )
+    }
+    ```
 
 3. En `App.tsx`, importe el componente **Summary** y use en el contenido a renderizar:
 
-```jsx
-import Summary from './components/Summary';
+    ```jsx
+    import Summary from './components/Summary';
 
-function App() {
-	return (
-		...
-		<Grid xs={6} sm={4} md={3} lg={2}>
-	        <Summary></Summary>
-	    </Grid>        
-		...
-	)
-}
+    function App() {
+    	return (
+    		...
+    		<Grid xs={6} sm={4} md={3} lg={2}>
+    	        <Summary></Summary>
+    	    </Grid>        
+    		...
+    	)
+    }
 
-export default App
-```
+    export default App
+    ```
 
 4. (STOP 4) Compruebe el resultado en el navegador.
 
@@ -195,21 +195,21 @@ export default App
 * Del ejemplo [Basic Table](https://mui.com/material-ui/react-table/#basic-table) muestre y copie el código en el componente recién creado.
 * En `App.tsx`, importe el componente **BasicTable** y use en el contenido a renderizar:
 
-```jsx
-import BasicTable from './components/BasicTable';
+    ```jsx
+    import BasicTable from './components/BasicTable';
 
-function App() {
-	return (
-		...
-		<Grid xs={12} md={6} lg={9} >
-	       <BasicTable />
-	    </Grid>        
-		...
-	)
-}
+    function App() {
+    	return (
+    		...
+    		<Grid xs={12} md={6} lg={9} >
+    	       <BasicTable />
+    	    </Grid>        
+    		...
+    	)
+    }
 
-export default App
-```
+    export default App
+    ```
 
 2. (STOP 5) Compruebe el resultado en el navegador.
 3. Versiona local y remotamente el repositorio **dashboard**.
