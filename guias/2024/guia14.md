@@ -282,12 +282,116 @@ theme: jekyll-theme-leap-day
 
 2. (STOP 3) Compruebe el resultado en el navegador.
 
-#### BasicTable o React Google Chart: Análisis del XML
+#### BasicTable: Análisis del XML
 
-* (STOP 4) Compruebe el resultado en el navegador.
+1. Defina los datos a mostrar
+2. En el componente `App.tsx`, agregue la variable de estado **dataTable** y la función de actualización **setDataTable**. El valor predeterminado de la variable de estado es un arreglo vacío.
 
-* Versiona local y remotamente el repositorio **dashboard**.
-* Despliega la aplicación **dashboard**.
+	```tsx
+	function App() {
+
+		{/* Variable de estado y función de actualización */}
+
+		...
+		let [dataTable, setDataTable] = useState([])
+
+		...
+	}
+	```
+
+3. En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
+
+	```tsx
+		...
+
+		{/* Hook: useEffect */}
+
+		useEffect(()=>{
+
+			...
+
+			{/* Actualización de la variable de estado mediante la función de actualización */}
+
+			...
+
+			{/* Arreglo con los resultados */}
+
+			let dataToShow = Array.from(xml.getElementsByTagName("time")).map( (timeElement) =>  {
+				
+				let dateTime = timeElement.getAttribute("from").split("T")[1] + " - " + timeElement.getAttribute("to").split("T")[1]
+
+				let windDirection = timeElement.getElementsByTagName("windDirection")[0].getAttribute("deg") + " "+  timeElement.getElementsByTagName("windDirection")[0].getAttribute("code") 
+				
+				return { "dateTime": dateTime,"windDirection": windDirection }
+			
+			})
+
+			dataToShow = dataToShow.slice(0,10)
+		
+			{/* Actualización de la variable de estado mediante la función de actualización */}
+
+			setDataPlot(dataToShow)
+
+
+		},[])
+
+		...
+	```
+
+4. Variable en el JSX en el `App.tsx`
+
+	```tsx
+		...
+		<Grid xs={12} lg={8}>
+			<BasicTable input={dataTable}></BasicTable>
+		</Grid>
+		...
+	```
+
+5. Prop en la clase BasicTable
+
+	```tsx
+	...
+	export default function BasicTable( input:Array ) {
+		...
+	}
+	```
+
+6. Comentar **function createData** y **rows**
+
+	```tsx
+	```
+
+7. Importar useState y useState en BasicTable
+
+	```tsx
+	import {useState, useEffect} from 'react';
+	```
+
+8. Variable de estado en BasicTable
+
+	```tsx
+		let [rows, setRows] = useState([])
+	```
+
+9. useState controlada por el prop donde usa la función de actualización
+
+	```tsx
+		useEffect( () => {
+
+			(()=> {
+
+				setRows(input.input)
+
+			})()
+
+		}, [input])
+	```
+
+10. Procesar en el JSX de BasicTable
+11. (STOP 4) Compruebe el resultado en el navegador.
+12. Versiona local y remotamente el repositorio **dashboard**.
+13. Despliega la aplicación **dashboard**.
 
 ### Documentación
 
