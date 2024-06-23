@@ -21,10 +21,27 @@ import {useEffect, useState} from 'react';
 ...
 ```
 
+* En el componente `App.tsx`, agregue la variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío.
+
+```tsx
+function App() {
+
+	{/* Variable de estado y función de actualización */}
+
+	let [indicators, setIndicators] = useState([])
+
+	...
+}
+```
+
 * En el componente `App.tsx`, agregue el hook **useEffect** para reaccionar después del primer renderizado ( `fase` de **Montaje** en el [`ciclo de vida`](https://www.reactjs.wiki/que-es-el-ciclo-de-vida-de-un-componente-en-react) ) en el DOM.
 
 ```tsx
 function App() {
+
+	{/* Variable de estado y función de actualización */}
+
+	...
 
 	{/* Hook: useEffect */}
 	
@@ -84,7 +101,7 @@ function App() {
 	...
 ```
 
-* En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y analice el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
+* En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
 
 ```tsx
 	...
@@ -92,8 +109,6 @@ function App() {
 	{/* Hook: useEffect */}
 
 	useEffect(()=>{
-
-		{/* Request */}
 
 		...
 
@@ -118,20 +133,92 @@ function App() {
 		let longitude = location.getAttribute("longitude")
 		results.push(["Location","Longitude", longitude])
 
+		console.log( results )
+
+
 	},[])
 
 	...
 ```
 
-#### Renderización Estática
-
 * Compruebe el resultado en el navegador.
 
 #### Renderización Dinámica con Map
 
+* En el hook useEffect del componente `App.tsx`, renderice el resultado en un arreglo de elementos y modifique la variable de estado mediante la función de actualización.
+
+```tsx
+	...
+
+	{/* Hook: useEffect */}
+
+	useEffect(()=>{
+
+		...
+
+		{/* Análisis del XML */}
+
+		... 
+
+		{/* Renderice el arreglo de resultados en un arreglo de elementos Indicator */}
+
+		let indicatorsElements = Array.from(results).map((element) => <Indicator title={element[0]} subtitle={element[1]} value={element[2]} />)
+		
+		{/* Actualización de la variable de estado mediante la función de actualización */}
+
+		setIndicators(indicatorsElements)
+
+	},[])
+
+	...
+```
+
+* En el JSX del componente `App.tsx`, cambie los elementos **Indicator** por elementos de la variable de estado
+
+
+```tsx
+...
+
+function App() {
+
+
+	{/* JSX */}
+
+	return (
+
+		<Grid container spacing={5}>
+		
+			<Grid xs={6} lg={2}>
+				{indicators[0]}
+
+				{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+			</Grid>
+			
+			<Grid xs={6} lg={2}>
+				{indicators[1]}
+				
+				{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+			</Grid>
+			
+			<Grid xs={6} lg={2}>
+				{indicators[2]}
+				
+				{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+			</Grid>
+
+		...
+
+		</Grid>
+
+	)
+}
+```
+
 * Compruebe el resultado en el navegador.
 
 #### LocalStorage 
+
+
 
 * Compruebe el resultado en el navegador.
 
