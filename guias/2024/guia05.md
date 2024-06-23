@@ -14,13 +14,14 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Elige la colocación de elementos del sitio. Toma como referencia los ejemplos de [Frontend Practice](https://www.frontendpractice.com/projects).
+1. Elige la colocación de elementos del sitio. Toma como referencia los ejemplos de [Frontend Practice](https://www.frontendpractice.com/projects).
 	
 	**Mínimo:** Al menos, una fila debe contener dos elementos y una fila debe contener tres elementos.
 
-* Clona localmente tu repositorio **curriculum**.
-* Aplica flexbox o grid de acuerdo con la colocación de elementos del sitio.
-* Versiona local y remotamente el repositorio **curriculum**.
+2. Clona localmente tu repositorio **curriculum**.
+3. Aplica flexbox o grid de acuerdo con la colocación de elementos del sitio.
+4. (STOP 1) Compruebe el resultado en el navegador.
+5. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 

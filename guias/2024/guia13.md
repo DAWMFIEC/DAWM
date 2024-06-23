@@ -8,13 +8,13 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Clona localmente tu repositorio **dashboard**.
+1. Clona localmente tu repositorio **dashboard**.
 
 ### Actividades en clases
 
 #### React Google Charts
 
-* Desde la línea de comandos, instale [React Google Charts](https://www.react-google-charts.com/) con:
+1. Desde la línea de comandos, instale [React Google Charts](https://www.react-google-charts.com/) con:
 
 ```prompt
 npm install --save react-google-charts
@@ -22,7 +22,7 @@ npm install --save react-google-charts
 
 #### Componente Propio: WeatherChart
 
-* Cree el componente `src/components/WeatherChart.tsx`
+1. Cree el componente `src/components/WeatherChart.tsx`
 
 * En `WeatherChart.tsx`, importe los componentes **Chart** y **Paper**:
 
@@ -31,7 +31,7 @@ import { Chart } from "react-google-charts";
 import Paper from '@mui/material/Paper';
 ``` 
 
-* En `WeatherChart.tsx`, agregue el componente funcional:
+2. En `WeatherChart.tsx`, agregue el componente funcional:
 
 ```tsx
 ...
@@ -81,7 +81,7 @@ export default function WeatherChart() {
 }	
 ```
 
-* En `App.tsx`, importe y use el componente **WeatherChart**
+3. En `App.tsx`, importe y use el componente **WeatherChart**
 
 ```tsx
 ...
@@ -103,13 +103,12 @@ function App() {
 }
 ```
 
-* (STOP 1) Compruebe el resultado en el navegador.
+4. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Componente Propio: ControlPanel
 
-* Cree el componente `src/components/ControlPanel.tsx`
-
-* En `ControlPanel.tsx`, importe los componentes:
+1. Cree el componente `src/components/ControlPanel.tsx`
+2. En `ControlPanel.tsx`, importe los componentes:
 
 ```tsx
 import Paper from '@mui/material/Paper';
@@ -121,7 +120,7 @@ import FormControl from '@mui/material/FormControl';
 import Select from '@mui/material/Select';
 ``` 
 
-* En `ControlPanel.tsx`, agregue el componente funcional:
+3. En `ControlPanel.tsx`, agregue el componente funcional:
 
 ```tsx
 ...
@@ -179,7 +178,7 @@ export default function ControlPanel() {
 }
 ```
 
-* En `App.tsx`, importe y use el componente **ControlPanel**
+4. En `App.tsx`, importe y use el componente **ControlPanel**
 
 ```tsx
 ...
@@ -202,11 +201,11 @@ function App() {
 }
 ```
 
-* (STOP 2) Compruebe el resultado en el navegador.
+5. (STOP 2) Compruebe el resultado en el navegador.
 
 #### Evento: onChange
 
-* En `ControlPanel.tsx`, importe la interfaz **ChangeEvent**.
+1. En `ControlPanel.tsx`, importe la interfaz **ChangeEvent**.
 
 ```tsx
 ...
@@ -214,7 +213,7 @@ import Select, { SelectChangeEvent } from '@mui/material/Select';
 ...
 ```
 
-* En `ControlPanel.tsx`, agregue el manejador **handleChange** para el evento _ChangeEvent_.
+2. En `ControlPanel.tsx`, agregue el manejador **handleChange** para el evento _ChangeEvent_.
 
 ```tsx
 ...
@@ -238,7 +237,7 @@ export default function ControlPanel() {
 }
 ```
 
-* En `ControlPanel.tsx`, agregue el manejador _handleChange_ al prop **onChange** del componente _Select_.
+3. En `ControlPanel.tsx`, agregue el manejador _handleChange_ al prop **onChange** del componente _Select_.
 
 ```tsx
 	...
@@ -253,11 +252,11 @@ export default function ControlPanel() {
     ...
 ```
 
-* (STOP 3) Compruebe el resultado en el navegador.
+4. (STOP 3) Compruebe el resultado en el navegador.
 
 #### Hook: useState - Componente Hijo
 
-* En `ControlPanel.tsx`, importe la función **useState**.
+1. En `ControlPanel.tsx`, importe la función **useState**.
 
 ```tsx
 import { useState } from 'react';
@@ -265,7 +264,7 @@ import Paper from '@mui/material/Paper';
 ...
 ```
 
-* En `ControlPanel.tsx`, agregue la `variable de estado` **selected** y la `función de actualización` **setSelected**. El valor predeterminado de la variable de estado es una cadena de caracteres vacío.
+2. En `ControlPanel.tsx`, agregue la `variable de estado` **selected** y la `función de actualización` **setSelected**. El valor predeterminado de la variable de estado es una cadena de caracteres vacío.
 
 ```tsx
 ...
@@ -281,7 +280,7 @@ export default function ControlPanel() {
 }
 ```
 
-* En `ControlPanel.tsx`, use la función de actualización en el manejador **handleChange** y renderice el contenido del elemento seleccionado.
+3. En `ControlPanel.tsx`, use la función de actualización en el manejador **handleChange** y renderice el contenido del elemento seleccionado.
 
 ```tsx
 ...
@@ -335,11 +334,11 @@ export default function ControlPanel() {
 }
 ```
 
-* (STOP 4) Compruebe el resultado en el navegador.
+4. (STOP 4) Compruebe el resultado en el navegador.
 
 #### Hook: useRef - Componente Hijo
 
-* En `ControlPanel.tsx`, importe la función **useRef**.
+1. En `ControlPanel.tsx`, importe la función **useRef**.
 
 ```tsx
 import { useState, useRef } from 'react';
@@ -347,7 +346,7 @@ import Paper from '@mui/material/Paper';
 ...
 ```
 
-* En `ControlPanel.tsx`, agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
+2. En `ControlPanel.tsx`, agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
 
 ```tsx
 ...
@@ -365,7 +364,7 @@ export default function ControlPanel() {
 }
 ```
 
-* En `ControlPanel.tsx`, establezca la referencia al elemento con la descripción de la variable seleccionada. 
+3. En `ControlPanel.tsx`, establezca la referencia al elemento con la descripción de la variable seleccionada. 
 
 ```tsx
 ...
@@ -394,7 +393,7 @@ export default function ControlPanel() {
 }
 ```
 
-* En `ControlPanel.tsx`, agregue la modificación de la referencia en el manejador de eventos.
+4. En `ControlPanel.tsx`, agregue la modificación de la referencia en el manejador de eventos.
 
 ```tsx
 ...
@@ -422,10 +421,9 @@ export default function ControlPanel() {
 }
 ```
 
-* (STOP 5) Compruebe el resultado en el navegador.
-
-* Versiona local y remotamente el repositorio **dashboard**.
-* Despliega la aplicación **dashboard**.
+5. (STOP 5) Compruebe el resultado en el navegador.
+6. Versiona local y remotamente el repositorio **dashboard**.
+7. Despliega la aplicación **dashboard**.
 
 ### Documentación
 

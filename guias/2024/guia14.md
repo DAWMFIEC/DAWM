@@ -8,20 +8,20 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Clona localmente tu repositorio **dashboard**.
+1. Clona localmente tu repositorio **dashboard**.
 
 ### Actividades en clases
 
 #### Hook: useEffect - Componente Padre
 
-* En el componente `App.tsx`, agregue la referencia a los hooks **useState** y **useEffect**
+1. En el componente `App.tsx`, agregue la referencia a los hooks **useState** y **useEffect**
 
 ```tsx
 import {useEffect, useState} from 'react';
 ...
 ```
 
-* En el componente `App.tsx`, agregue la variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío.
+2. En el componente `App.tsx`, agregue la variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío.
 
 ```tsx
 function App() {
@@ -34,7 +34,7 @@ function App() {
 }
 ```
 
-* En el componente `App.tsx`, agregue el hook **useEffect** para reaccionar después del primer renderizado ( `fase` de **Montaje** en el [`ciclo de vida`](https://www.reactjs.wiki/que-es-el-ciclo-de-vida-de-un-componente-en-react) ) en el DOM.
+3. En el componente `App.tsx`, agregue el hook **useEffect** para reaccionar después del primer renderizado ( `fase` de **Montaje** en el [`ciclo de vida`](https://www.reactjs.wiki/que-es-el-ciclo-de-vida-de-un-componente-en-react) ) en el DOM.
 
 ```tsx
 function App() {
@@ -56,7 +56,7 @@ function App() {
 
 #### Petición asíncrona de un XML
 
-* En el hook useEffect del componente `App.tsx`, agregue una petición asíncrona con fetch
+1. En el hook useEffect del componente `App.tsx`, agregue una petición asíncrona con fetch
 
 ```tsx
 	...
@@ -78,7 +78,7 @@ function App() {
 
 #### XML Parser
 
-* En el hook useEffect del componente `App.tsx`, agregue el analizador (`parser`) de XML
+1. En el hook useEffect del componente `App.tsx`, agregue el analizador (`parser`) de XML
 
 ```tsx
 	...
@@ -103,7 +103,7 @@ function App() {
 
 #### Indicadores: Análisis del XML
 
-* En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
+1. En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
 
 ```tsx
 	...
@@ -143,11 +143,11 @@ function App() {
 	...
 ```
 
-* (STOP 1) Compruebe el resultado en el navegador.
+2. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Renderización Dinámica con Map
 
-* En el hook useEffect del componente `App.tsx`, renderice el resultado en un arreglo de elementos y modifique la variable de estado mediante la función de actualización.
+1. En el hook useEffect del componente `App.tsx`, renderice el resultado en un arreglo de elementos y modifique la variable de estado mediante la función de actualización.
 
 ```tsx
 	...
@@ -175,7 +175,7 @@ function App() {
 	...
 ```
 
-* En el JSX del componente `App.tsx`, cambie los elementos **Indicator** por elementos de la variable de estado
+2. En el JSX del componente `App.tsx`, cambie los elementos **Indicator** por elementos de la variable de estado
 
 
 ```tsx
@@ -216,11 +216,11 @@ function App() {
 }
 ```
 
-* (STOP 2) Compruebe el resultado en el navegador.
+3. (STOP 2) Compruebe el resultado en el navegador.
 
 #### LocalStorage 
 
-* En el hook useEffect del componente `App.tsx`, use el `LocalStorage` para almacenar la respuesta de la petición asincrónica.
+4. En el hook useEffect del componente `App.tsx`, use el `LocalStorage` para almacenar la respuesta de la petición asincrónica.
 
 ```tsx
 	...
@@ -272,7 +272,7 @@ function App() {
 	...
 ```
 
-* (STOP 3) Compruebe el resultado en el navegador.
+5. (STOP 3) Compruebe el resultado en el navegador.
 
 #### Table: Análisis del XML
 

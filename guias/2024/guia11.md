@@ -15,11 +15,11 @@ theme: jekyll-theme-leap-day
 
 #### Github
 
-* Crea un repositorio en GitHub con el nombre **dashboard**.
+1. Crea un repositorio en GitHub con el nombre **dashboard**.
 
 #### Proyecto Base
 
-* Desde la línea de comandos, cree un nuevo sitio con Vite:
+1. Desde la línea de comandos, cree un nuevo sitio con Vite:
 
 ```prompt
 	npm create vite@latest <NOMBRE_DEL_REPOSITORIO>
@@ -28,31 +28,32 @@ theme: jekyll-theme-leap-day
    - Seleccione **React** como framework: `√ Select a framework: » React`
    - Seleccione **Typescript** como variante: `√ Select a variant: » Typescript`
 
-* Ingrese a la carpeta del repositorio:
+2. Ingrese a la carpeta del repositorio:
 
 ```prompt
 	cd <NOMBRE_DEL_REPOSITORIO>
 ```
 
-* Instale las dependencias
+3. Instale las dependencias
 
 ```prompt
 	npm install
 ```
 
-* Inicie el servidor.
+4. Inicie el servidor.
 
 ```prompt
 	npm run dev
 ```
 
-* Revise el resultado en [http://localhost:5173/](http://localhost:5173/)
+5. (STOP 1) Compruebe el resultado en el navegador.
+6. Revise el resultado en [http://localhost:5173/](http://localhost:5173/)
 
 <div align="center">
     <img src="imagenes/default_site_react_vite.png" alt="">
 </div>
 
-* Versiona local y remotamente el repositorio **dashboard**.
+7. Versiona local y remotamente el repositorio **dashboard**.
 
 #### Estructura de archivos del proyecto en Vite - React.
 
@@ -69,14 +70,14 @@ theme: jekyll-theme-leap-day
 
 #### Configuración para el despliegue
 
-* Desde la línea de comandos, acceda a la ruta del proyecto.
-* Instale el paquete `gh-pages`
+1. Desde la línea de comandos, acceda a la ruta del proyecto.
+2. Instale el paquete `gh-pages`
 
 ```prompt
 	npm install gh-pages --save-dev
 ```
 
-* En el archivo `package.json` agregue las siguientes líneas antes de la entrada **build**:
+3. En el archivo `package.json` agregue las siguientes líneas antes de la entrada **build**:
 
 ```typescript
     ...
@@ -85,28 +86,28 @@ theme: jekyll-theme-leap-day
     ...
 ```
 
-* En el archivo `vite.config.js` agregue esta línea antes de: **plugins: [react()],**:
+4. En el archivo `vite.config.js` agregue esta línea antes de: **plugins: [react()],**:
 
 ```typescript
     base: "/<NOMBRE_DEL_REPOSITORIO>",
     ...
 ```
 
-* Versiona local y remotamente el repositorio **dashboard**.
+5. Versiona local y remotamente el repositorio **dashboard**.
 
-* Desde la línea de comandos:
+6. Desde la línea de comandos:
 	+ Ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
 	+ De ser necesario, corrija o comente las secciones de código identificadas por el transpilador.
 	+ Levante un servidor HTTP en la carpeta `dist`, para comprobar el funcionamiento del sitio web transpilado.
 
-* En GitHub:
+7. En GitHub:
 	+ En _Settings_ > _Code and automation_ > _Pages_ > _Build and deployment_ seleccione la rama **gh-pages**
 	+ Verifique que exista la rama **gh-pages** y que contenga el sitio web transpilado.
 	+ Revise el URL del sitio web desplegado, que se encuentra en _Settings_ > _Code and automation_ > _Pages_ > _GitHub Pages_: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
 
 #### React MUI: Instalación
 
-* Desde la línea de comandos, instale [React MUI](https://mui.com/material-ui/getting-started/installation/) con:
+1. Desde la línea de comandos, instale [React MUI](https://mui.com/material-ui/getting-started/installation/) con:
 
 ```prompt
 npm install @mui/material @emotion/react @emotion/styled
@@ -114,14 +115,14 @@ npm install @mui/material @emotion/react @emotion/styled
 
 #### React MUI: Componente Grid v2
 
-* En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
+1. En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
 
 ```typescript
 import { useState } from 'react'
 import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
 ```
 
-* En `App.tsx`, reemplace el contenido a renderizar por:
+2. En `App.tsx`, reemplace el contenido a renderizar por:
 
 ```jsx
 ...
@@ -143,11 +144,11 @@ function App() {
 
 export default App
 ```
-* (STOP 1) Compruebe el resultado en el navegador.
+3. (STOP 1) Compruebe el resultado en el navegador.
 
 #### React MUI: Propiedades (Props)
 
-* En `App.tsx`, convierta el primer Grid en contenedor con el atributo **container** y asigne un espacio entre elementos con **spacing**.
+1. En `App.tsx`, convierta el primer Grid en contenedor con el atributo **container** y asigne un espacio entre elementos con **spacing**.
 
 ```jsx
 ...
@@ -158,11 +159,11 @@ export default App
     )
 ...
 ```
-* (STOP 2) Compruebe el resultado en el navegador.
+2. (STOP 2) Compruebe el resultado en el navegador.
 
 #### React MUI: Layout
 
-* Agregue las propiedades **xs**, **sm**, **md** y **lg** a los elementos internos.
+1. Agregue las propiedades **xs**, **sm**, **md** y **lg** a los elementos internos.
 
 ```jsx
 ...
@@ -179,13 +180,13 @@ export default App
 ...
 ```
 
-* (STOP 3) Compruebe el resultado para los diferentes tamaños del navegador.
+2. (STOP 3) Compruebe el resultado para los diferentes tamaños del navegador.
 
 #### Despliegue automático
 
-* Agregue los elementos necesarios, para cada uno de los tamaños de dispositivos, de acuerdo con el diseño de su dashboard responsivo. 
-* Versiona local y remotamente el repositorio **dashboard**.
-* Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
+1. Agregue los elementos necesarios, para cada uno de los tamaños de dispositivos, de acuerdo con el diseño de su dashboard responsivo. 
+2. Versiona local y remotamente el repositorio **dashboard**.
+3. Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
 
 ### Documentación
 

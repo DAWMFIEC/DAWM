@@ -8,10 +8,10 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-* Utilice la [respuesta](bard/guia01-bard01.pdf) `Bard` como referencia para comenzar con el repositorio personal en [Github](https://github.com/).
-* Utiliza `ChatGPT` para decidir el contenido de tu repositorio personal, p.e.: tus proyectos, las tecnologías que has utilizado, el estado de tus proyectos, correo institucional, etc. Omite datos sensibles, como: foto, números de contacto, correo personal, dirección, etc.
-* Diseñe la estructura del contenido de su repositorio, p.e.: decide el orden del contenido, los títulos y subtítulos de cada sección, imágenes de los proyectos, etc.
-* Genera el código `QR` del sitio en [QR Code Generator](https://br.qr-code-generator.com/) a partir del `URL`.
+1. Utilice la [respuesta](bard/guia01-bard01.pdf) `Bard` como referencia para comenzar con el repositorio personal en [Github](https://github.com/).
+2. Utiliza `ChatGPT` para decidir el contenido de tu repositorio personal, p.e.: tus proyectos, las tecnologías que has utilizado, el estado de tus proyectos, correo institucional, etc. Omite datos sensibles, como: foto, números de contacto, correo personal, dirección, etc.
+3. Diseñe la estructura del contenido de su repositorio, p.e.: decide el orden del contenido, los títulos y subtítulos de cada sección, imágenes de los proyectos, etc.
+4. Genera el código `QR` del sitio en [QR Code Generator](https://br.qr-code-generator.com/) a partir del `URL`.
 
 ### Documentación
 

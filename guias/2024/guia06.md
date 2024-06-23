@@ -39,8 +39,9 @@ theme: jekyll-theme-leap-day
 3. Personalice el contenido (texto e imágenes) de la plantilla de acuerdo con el objetivo de su _landing page_.
 4. Agregue una hoja de estilo externa para modificar el estilo de la plantilla.
 5. Realice los cambios para la versión para dispositivos móviles y para dispositivos de escritorio.
-6. Versiona local y remotamente el repositorio **landing**.
-7. Despliegue el sitio del repositorio **landing** utilizando GitHub Pages.
+6. (STOP 1) Compruebe el resultado en el navegador.
+7. Versiona local y remotamente el repositorio **landing**.
+8. Despliegue el sitio del repositorio **landing** utilizando GitHub Pages.
 
 ### Documentación
  

@@ -12,14 +12,14 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-* Clona localmente tu repositorio **landing**.
-* Sigue las instrucciones de [Gemini](gemini/guia07-gemini01.pdf), y:
+1. Clona localmente tu repositorio **landing**.
+2. Sigue las instrucciones de [Gemini](gemini/guia07-gemini01.pdf), y:
   - Cree, o utilice, una carpeta con scripts y agregue el archivo de código externo _'main.js'_.
   - Agregue la referencia con la ruta al archivo de código externo en el archivo _index.html_.
 
 #### DOMContentLoaded & Window API
 
-* Defina la `función flecha` _loaded_, con un parámetro _eventLoaded_. 
+1. Defina la `función flecha` _loaded_, con un parámetro _eventLoaded_. 
   + Del `API` del objeto `window`, use la función **alert** para mostrar un mensaje.
   + Use el objeto `console` para mostrar el contenido del parámetero. 
   + Detenga la ejecución del código con el objeto `debugger`.
@@ -34,7 +34,7 @@ let loaded = ( eventLoaded ) => {
 }
 ```
 
-* Del API del objeto window, use la función **addEventListener** para establecer la función _loaded_ como un callback que responda al `evento` **DOMContentLoaded**.  
+2. Del API del objeto window, use la función **addEventListener** para establecer la función _loaded_ como un callback que responda al `evento` **DOMContentLoaded**.  
 
 ```typescript
 let loaded = ( ... ) => {
@@ -46,13 +46,13 @@ let loaded = ( ... ) => {
 window.addEventListener("DOMContentLoaded", loaded);
 ```
 
-* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
+3. (STOP 1) Compruebe el resultado en el navegador.
+4. Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
 #### Document API
 
-* Asigne un identificador único al elemento formulario del documento HTML.
-
-* Dentro de la función flecha _loaded_:
+1. Asigne un identificador único al elemento formulario del documento HTML.
+2. Dentro de la función flecha _loaded_:
   + Del API del objeto `document`, use la función **getElementById** para obtener una referencia al elemento HTML de acuerdo con el argumento. 
 
 ```typescript
@@ -66,11 +66,12 @@ let loaded = ( eventLoaded ) => {
 window.addEventListener( ... ) 
 ```
 
-* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
+3. (STOP 2) Compruebe el resultado en el navegador.
+4. Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
 #### Evento predeterminado
 
-* Dentro de la función flecha _loaded_:
+1. Dentro de la función flecha _loaded_:
   + Al objeto con la referencia al formulario, agregue un callback que responda al evento _submit_ (con el parámetro _eventSubmit_). 
 
 ```typescript
@@ -88,12 +89,12 @@ let loaded = ( eventLoaded ) => {
 
 window.addEventListener( ... ) 
 ```
-
-* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
+2. (STOP 3) Compruebe el resultado en el navegador.
+3. Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
 #### Evento personalizado
 
-* Asigne un identificador único para cada elemento de ingreso de datos del formulario, p.e.:
+1. Asigne un identificador único para cada elemento de ingreso de datos del formulario, p.e.:
 
 ```html
 ...
@@ -101,7 +102,7 @@ window.addEventListener( ... )
 ...
 ```
 
-* Dentro de la función flecha _loaded_:
+2. Dentro de la función flecha _loaded_:
   + Del API del objeto _eventSubmit_, use la función **preventDefault** para detener el proceso predeterminado. 
   + Del API del objeto con la referencia al elemento HTML con identificador **element1**, use la propiedad **value** para extraer el contenido. 
   + Del API de la cadena de texto, use la propiedad **length** para contar las cantidad de letras en el texto.
@@ -139,13 +140,14 @@ let loaded = ( eventLoaded ) => {
 window.addEventListener( ... ) 
 ```
 
-* Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
+3. (STOP 4) Compruebe el resultado en el navegador.
+4. Habilite el inspector del navegador. Actualice su navegador e inspecione los objetos con el depurador.
 
 #### Validación del contenido del formulario
 
-* Continúe con la validación del resto de elementos HTML para el ingreso de datos en el formulario.
-
-* Versiona local y remotamente el repositorio **landing**.
+1. Continúe con la validación del resto de elementos HTML para el ingreso de datos en el formulario.
+2. (STOP 5) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio **landing**.
 
 ### Documentación
 

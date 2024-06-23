@@ -8,21 +8,21 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
-* Compruebe el acceso a la colección de datos mediante el patrón de URL:
+1. Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
+2. Compruebe el acceso a la colección de datos mediante el patrón de URL:
 
 ```
 https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 ```
 
-* Diseñe una estrategia para el procesamiento de datos, p.e.:
+3. Diseñe una estrategia para el procesamiento de datos, p.e.:
 	+ Utilice las estructuras [Map y Set](https://javascript.info/map-set) para obtener valores únicos con sus valores correspondientes.
 
 ### Actividades en clases
 
 #### Fetch - GET
 
-* Identifique la sección del documento HTML donde agregará el contenido dinámicamente, p.e.:
+1. Identifique la sección del documento HTML donde agregará el contenido dinámicamente, p.e.:
 
 ```html
 <div id="resultados" class="blog-section">
@@ -48,12 +48,12 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 </div>
 ```
 
-* Identifique el o los eventos en los que realizará la petición asíncrona de datos, p.e.:
+2. Identifique el o los eventos en los que realizará la petición asíncrona de datos, p.e.:
 
 	+ Inmediatamente después de cargar el documento HTML.
 	+ Luego de recibir una respuesta a la petición fetch - POST
 
-* Utilice las instrucciones de [Gemini](gemini/guia09-gemini01.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
+3. Utilice las instrucciones de [Gemini](gemini/guia09-gemini01.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
 	
 	+ Aplique la estrategia para el procesamiento de datos.
 	+ Diseñe una plantilla para rellenar con el contenido dinámico, p.e.:
@@ -66,8 +66,8 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 		</tr>
 	`
 ```
-
-* Acceda al URL de la colección de firebase para comprobar el resultado.
+4. (STOP 1) Compruebe el resultado en el navegador.
+5. Acceda al URL de la colección de firebase para comprobar el resultado.
 
 ### Documentación
 

@@ -23,8 +23,8 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
 
 ### Actividades en clases
 
-* Clona localmente tu repositorio **curriculum**. 
-* Modifica el archivo _index.html_ del repositorio **curriculum**.
+1. Clona localmente tu repositorio **curriculum**. 
+2. Modifica el archivo _index.html_ del repositorio **curriculum**.
   - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las `etiquetas contenedoras` _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. 
     
     _Algunas sugerencias según [Bard](bard/guia03-bard04.pdf)._
@@ -33,7 +33,8 @@ En caso de necesitar contenido de relleno, utilice los siguientes sitios:
     
     _Consulta con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
 
-* Versiona local y remotamente el repositorio **curriculum**.
+3. (STOP 1) Compruebe el resultado en el navegador.
+4. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 

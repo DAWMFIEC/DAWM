@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
 
 #### Firebase - Realtime Database
 
-* Siga el tutorial de [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database) para crear una colección de datos para su proyecto, en modo de prueba. 
+1. Siga el tutorial de [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database) para crear una colección de datos para su proyecto, en modo de prueba. 
 	+ Compruebe el acceso a la colección de datos mediante el patrón de URL:
 
 ```
@@ -23,7 +23,7 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 
 #### Fetch - POST
 
-* Coloque identificadores únicos al formulrio y a los elementos del formulario, p.e.:
+1. Coloque identificadores únicos al formulrio y a los elementos del formulario, p.e.:
 
 ```html
 <form id="formulario" ... >
@@ -35,7 +35,7 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 </form>	
 ```
 
-* Detenga el comportamiento predeterminado del formulario al evento submit, p.e.:
+2. Detenga el comportamiento predeterminado del formulario al evento submit, p.e.:
 
 ```javascript
 ...
@@ -47,7 +47,7 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 ...
 ```
 
-* Verifique la existencia de contenido válido en los elementos del formulario.  
+3. Verifique la existencia de contenido válido en los elementos del formulario.  
 
 ```javascript
 ...
@@ -67,8 +67,9 @@ https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 ...
 ```
 
-* Utilice las instrucciones de [Gemini](gemini/guia08-gemini01.pdf) para realizar un requerimiento `asíncrono` `HTTP - POST`, de los datos de un formulario, mediante `fetch`.
-* Acceda al URL de la colección de firebase para comprobar el resultado.
+4. Utilice las instrucciones de [Gemini](gemini/guia08-gemini01.pdf) para realizar un requerimiento `asíncrono` `HTTP - POST`, de los datos de un formulario, mediante `fetch`.
+5. (STOP 1) Compruebe el resultado en el navegador.
+6. Acceda al URL de la colección de firebase para comprobar el resultado.
 
 
 ### Documentación

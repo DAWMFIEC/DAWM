@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 #### Componente Indicador
 
-* Cree el archivo `src/components/Indicator.tsx` con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
+1. Cree el archivo `src/components/Indicator.tsx` con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
 
 ```jsx
 export default function Indicator() {
@@ -23,7 +23,8 @@ export default function Indicator() {
     )
 }
 ```
-* En `App.tsx` importe el componente **Indicator** y use en el contenido a renderizar:
+
+2. En `App.tsx` importe el componente **Indicator** y use en el contenido a renderizar:
 
 ```jsx
 import Indicator from './components/Indicator';
@@ -41,11 +42,11 @@ function App() {
 export default App
 ```
 
-* (STOP 1) Compruebe el resultado en el navegador.
+3. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Props
 
-* Agregue la interfaz `Config` al componente **Indicator**
+1. Agregue la interfaz `Config` al componente **Indicator**
 
 ```jsx
 ...
@@ -67,7 +68,7 @@ export default function Indicator(config: Config) {
 }
 ```
 
-* En `App.tsx`, agregue las propiedades y los valores del componente **Indicator**
+2. En `App.tsx`, agregue las propiedades y los valores del componente **Indicator**
 
 ```jsx
 import Indicator from './components/Indicator';
@@ -85,18 +86,18 @@ function App() {
 export default App
 ```
 
-* (STOP 2) Compruebe el resultado en el navegador.
+3. (STOP 2) Compruebe el resultado en el navegador.
 
 #### Componente MUI Paper y Typography
 
-* En `Indicator.tsx`, agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
+1. En `Indicator.tsx`, agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
 
 ```jsx
 import Typography from '@mui/material/Typography';
 import Paper from '@mui/material/Paper';
 ```
 
-* Use los componentes **Typography** y **Paper**
+2. Use los componentes **Typography** y **Paper**
 
 ```jsx
 ...
@@ -124,13 +125,12 @@ export default function Indicator(config: Config) {
 }
 ```
 
-* (STOP 3) Compruebe el resultado en el navegador.
+3. (STOP 3) Compruebe el resultado en el navegador.
 
 #### Componente MUI Card
 
-* Descargue la imagen [sunrise.jpeg](imagenes/sunrise.jpeg) dentro de la carpeta `assets` dentro del proyecto.
-
-* Cree el componente `src/components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
+1. Descargue la imagen [sunrise.jpeg](imagenes/sunrise.jpeg) dentro de la carpeta `assets` dentro del proyecto.
+2. Cree el componente `src/components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
 
 
 ```jsx
@@ -169,7 +169,7 @@ export default function Summary() {
 }
 ```
 
-* En `App.tsx`, importe el componente **Summary** y use en el contenido a renderizar:
+3. En `App.tsx`, importe el componente **Summary** y use en el contenido a renderizar:
 
 ```jsx
 import Summary from './components/Summary';
@@ -187,11 +187,11 @@ function App() {
 export default App
 ```
 
-* (STOP 4) Compruebe el resultado en el navegador.
+4. (STOP 4) Compruebe el resultado en el navegador.
 
 #### Componente MUI Table
 
-* Cree el componente `src/components/BasicTable.tsx`
+1. Cree el componente `src/components/BasicTable.tsx`
 * Del ejemplo [Basic Table](https://mui.com/material-ui/react-table/#basic-table) muestre y copie el código en el componente recién creado.
 * En `App.tsx`, importe el componente **BasicTable** y use en el contenido a renderizar:
 
@@ -211,10 +211,9 @@ function App() {
 export default App
 ```
 
-* (STOP 5) Compruebe el resultado en el navegador.
-
-* Versiona local y remotamente el repositorio **dashboard**.
-* Despliega la aplicación **dashboard**.
+2. (STOP 5) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio **dashboard**.
+4. Despliega la aplicación **dashboard**.
 
 ### Documentación
 
