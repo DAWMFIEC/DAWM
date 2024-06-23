@@ -41,7 +41,7 @@ function App() {
 export default App
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 1) Compruebe el resultado en el navegador.
 
 #### Props
 
@@ -85,7 +85,7 @@ function App() {
 export default App
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 2) Compruebe el resultado en el navegador.
 
 #### Componente MUI Paper y Typography
 
@@ -124,7 +124,7 @@ export default function Indicator(config: Config) {
 }
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 3) Compruebe el resultado en el navegador.
 
 #### Componente MUI Card
 
@@ -187,7 +187,7 @@ function App() {
 export default App
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 4) Compruebe el resultado en el navegador.
 
 #### Componente MUI Table
 
@@ -211,7 +211,8 @@ function App() {
 export default App
 ```
 
-* Compruebe el resultado en el navegador.
+* (STOP 5) Compruebe el resultado en el navegador.
+
 * Versiona local y remotamente el repositorio **dashboard**.
 * Despliega la aplicación **dashboard**.
 
