@@ -143,7 +143,7 @@ function App() {
 
 export default App
 ```
-* Compruebe el resultado en el navegador.
+* (STOP 1) Compruebe el resultado en el navegador.
 
 #### React MUI: Propiedades (Props)
 
@@ -158,7 +158,7 @@ export default App
     )
 ...
 ```
-* Compruebe el resultado en el navegador.
+* (STOP 2) Compruebe el resultado en el navegador.
 
 #### React MUI: Layout
 
@@ -179,7 +179,7 @@ export default App
 ...
 ```
 
-* Compruebe el resultado para los diferentes tamaños del navegador.
+* (STOP 3) Compruebe el resultado para los diferentes tamaños del navegador.
 
 #### Despliegue automático
 
