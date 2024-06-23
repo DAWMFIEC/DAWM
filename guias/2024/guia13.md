@@ -24,14 +24,14 @@ theme: jekyll-theme-leap-day
 
 1. Cree el componente `src/components/WeatherChart.tsx`
 
-* En `WeatherChart.tsx`, importe los componentes **Chart** y **Paper**:
+2. En `WeatherChart.tsx`, importe los componentes **Chart** y **Paper**:
 
 	```tsx
 	import { Chart } from "react-google-charts";
 	import Paper from '@mui/material/Paper';
 	``` 
 
-2. En `WeatherChart.tsx`, agregue el componente funcional:
+3. En `WeatherChart.tsx`, agregue el componente funcional:
 
 	```tsx
 	...
@@ -81,7 +81,7 @@ theme: jekyll-theme-leap-day
 	}	
 	```
 
-3. En `App.tsx`, importe y use el componente **WeatherChart**
+4. En `App.tsx`, importe y use el componente **WeatherChart**
 
 	```tsx
 	...
@@ -103,7 +103,7 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-4. (STOP 1) Compruebe el resultado en el navegador.
+5. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Componente Propio: ControlPanel
 
