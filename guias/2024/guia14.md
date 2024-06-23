@@ -2,6 +2,13 @@
 theme: jekyll-theme-leap-day
 ---
 
+<style>
+  code {
+    white-space : pre-wrap !important;
+    word-break: break-word;
+  }
+</style>
+
 ## Guía 14
 
 [DAWM](/DAWM/) / [Proyecto03](/DAWM/proyectos/2024/proyecto03)
