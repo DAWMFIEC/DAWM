@@ -300,7 +300,7 @@ theme: jekyll-theme-leap-day
 			1. Agregue la variable de estado (dataTable) y función de actualización (setDataTable).
 		*/}
 
-		let [dataTable, setDataTable] = useState([])
+		let [rowsTable, setRowsTable] = useState([])
 
 		...
 
@@ -314,7 +314,7 @@ theme: jekyll-theme-leap-day
 				Tome como referencia la estructura del documento XML. 
 			*/}
 
-			let dataToShow = Array.from( xml.getElementsByTagName("time") ).map( (timeElement) =>  {
+			let arrayObjects = Array.from( xml.getElementsByTagName("time") ).map( (timeElement) =>  {
 				
 				let rangeHours = timeElement.getAttribute("from").split("T")[1] + " - " + timeElement.getAttribute("to").split("T")[1]
 
@@ -324,11 +324,11 @@ theme: jekyll-theme-leap-day
 			
 			})
 
-			dataToShow = dataToShow.slice(0,8)
+			arrayObjects = arrayObjects.slice(0,8)
 		
 			{/* 3. Actualice de la variable de estado mediante la función de actualización */}
 
-			setDataTable(dataToShow)
+			setRowsTable(arrayObjects)
 
 		},[])
 
@@ -342,7 +342,7 @@ theme: jekyll-theme-leap-day
 
 				{/* 4. Envíe la variable de estado (dataTable) como prop (input) del componente (BasicTable) */}
 
-				<BasicTable input={dataTable}></BasicTable>
+				<BasicTable rows={rowsTable}></BasicTable>
 
 			</Grid>
 
@@ -378,7 +378,11 @@ theme: jekyll-theme-leap-day
 
 	{/* 3. Declare el prop input */}
 
-	export default function BasicTable( input:Array ) {
+	interface Config {
+		rows: Array
+	}
+
+	export default function BasicTable( data:Config ) {
 
 		{/* 
 			4. Declare la variable de estado (rows) y la función de actualización (setRows).
@@ -396,11 +400,11 @@ theme: jekyll-theme-leap-day
 
 			(()=> {
 
-				setRows(input.input)
+				setRows(data.rows)
 
 			})()
 
-		}, [input])
+		}, [rows])
 
 
 		{/* JSX */}
