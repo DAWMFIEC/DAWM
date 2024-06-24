@@ -384,6 +384,13 @@ theme: jekyll-theme-leap-day
 
 
 				{/* Muestra la descripción de la variable seleccionada */}
+
+				{/*<Typography mt={2} component="p" color="text.secondary">
+				{
+					(selected >= 0)?items[selected]["description"]:""
+				}
+				</Typography>*/}
+				
 				<Typography ref={descriptionRef} mt={2} component="p" color="text.secondary" />
 				
 
