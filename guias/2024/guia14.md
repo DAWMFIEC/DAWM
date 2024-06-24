@@ -286,8 +286,8 @@ theme: jekyll-theme-leap-day
 
 1. Defina:
 
-	+ Los datos a procesar y mostrar, p.e.: **rangeHours**, **windDirection**, **windSpeed** y **windGust**.
-	+ La estructura de datos para almacenar los datos, p.e.: Arreglo de objetos o Arreglo de arreglos.
+	+ Los datos a procesar y mostrar, p.e.: **rangeHours** y **windDirection**.
+	+ La estructura de datos para almacenar los datos, p.e.: Arreglo de objetos.
 
 2. En el componente `App.tsx`: 
 
@@ -379,7 +379,7 @@ theme: jekyll-theme-leap-day
 	{/* 3. Declare el prop input */}
 
 	interface Config {
-		rows: Array
+		rows: Array<object>;
 	}
 
 	export default function BasicTable( data:Config ) {
@@ -404,7 +404,7 @@ theme: jekyll-theme-leap-day
 
 			})()
 
-		}, [rows])
+		}, [data])
 
 
 		{/* JSX */}
