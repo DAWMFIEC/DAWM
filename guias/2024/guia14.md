@@ -110,7 +110,7 @@ theme: jekyll-theme-leap-day
 
 #### Indicadores: Análisis del XML
 
-1. En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
+1. En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar temporalmente los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**). Tome como referencia la estructura del documento XML.
 
 	```tsx
 		...
@@ -284,24 +284,24 @@ theme: jekyll-theme-leap-day
 
 #### BasicTable: Análisis del XML
 
-1. Defina los datos a mostrar
-2. En el componente `App.tsx`, agregue la variable de estado **dataTable** y la función de actualización **setDataTable**. El valor predeterminado de la variable de estado es un arreglo vacío.
+1. Defina:
+
+	+ Los datos a procesar y mostrar, p.e.: **rangeHours**, **windDirection**, **windSpeed** y **windGust**.
+	+ La estructura de datos para almacenar los datos, p.e.: Arreglo de objetos o Arreglo de arreglos.
+
+2. En el componente `App.tsx`: 
 
 	```tsx
 	function App() {
 
-		{/* Variable de estado y función de actualización */}
+		{/* 
+			1. Agregue la variable de estado (dataTable) y función de actualización (setDataTable).
+		*/}
 
 		...
+
 		let [dataTable, setDataTable] = useState([])
 
-		...
-	}
-	```
-
-3. En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**).
-
-	```tsx
 		...
 
 		{/* Hook: useEffect */}
@@ -314,69 +314,93 @@ theme: jekyll-theme-leap-day
 
 			...
 
-			{/* Arreglo con los resultados */}
+			{/* 
+				2. Procese los resultados de acuerdo con el diseño anterior.
+				Tome como referencia la estructura del documento XML. 
+			*/}
 
-			let dataToShow = Array.from(xml.getElementsByTagName("time")).map( (timeElement) =>  {
+			let dataToShow = Array.from( xml.getElementsByTagName("time") ).map( (timeElement) =>  {
 				
-				let dateTime = timeElement.getAttribute("from").split("T")[1] + " - " + timeElement.getAttribute("to").split("T")[1]
+				let rangeHours = timeElement.getAttribute("from").split("T")[1] + " - " + timeElement.getAttribute("to").split("T")[1]
 
 				let windDirection = timeElement.getElementsByTagName("windDirection")[0].getAttribute("deg") + " "+  timeElement.getElementsByTagName("windDirection")[0].getAttribute("code") 
 				
-				return { "dateTime": dateTime,"windDirection": windDirection }
+				return { "rangeHours": rangeHours,"windDirection": windDirection }
 			
 			})
 
-			dataToShow = dataToShow.slice(0,10)
+			dataToShow = dataToShow.slice(0,8)
 		
-			{/* Actualización de la variable de estado mediante la función de actualización */}
+			{/* 3. Actualice de la variable de estado mediante la función de actualización */}
 
-			setDataPlot(dataToShow)
+			setDataTable(dataToShow)
 
 
 		},[])
 
 		...
-	```
 
-4. Variable en el JSX en el `App.tsx`
+		{/* JSX */}
+		return (
 
-	```tsx
-		...
-		<Grid xs={12} lg={8}>
-			<BasicTable input={dataTable}></BasicTable>
-		</Grid>
-		...
-	```
+			...
 
-5. Prop en la clase BasicTable
+			<Grid xs={12} lg={8}>
 
-	```tsx
-	...
-	export default function BasicTable( input:Array ) {
-		...
+				{/* 4. Envíe la variable de estado (dataTable) como prop (input) del componente (BasicTable) */}
+
+				<BasicTable input={dataTable}></BasicTable>
+
+			</Grid>
+
+			...
+
+		)
 	}
 	```
 
-6. Comentar **function createData** y **rows**
 
+3. En el componente `BasicTable.tsx`. 
+
+	**NOTA:** Revise los comentarios numerados y adáptelos al código de su componente
+	
 	```tsx
-	```
+	{/* 1. Importe los hooks de estado y peticiones de  (useState y useState)  */}
+	
+	import { useState, useEffect } from 'react';
+	...
 
-7. Importar useState y useState en BasicTable
+	{/* 2. Comente la funciones de procesamiento de datos (createData) y las variables con valores estáticos (rows) */}
 
-	```tsx
-	import {useState, useEffect} from 'react';
-	```
+	/*
+		function createData(
+			...	
+		}
+	*/
 
-8. Variable de estado en BasicTable
+	/*
+		const rows = [
+		...
+		];
+	*/
 
-	```tsx
+	{/* 3. Declare el prop input */}
+
+	export default function BasicTable( input:Array ) {
+
+		{/* 
+			4. Declare la variable de estado (rows) y la función de actualización (setRows).
+			Use el mismo identificador con los valores estáticos
+		*/}
+
 		let [rows, setRows] = useState([])
-	```
+		...
 
-9. useState controlada por el prop donde usa la función de actualización
+		{/* 
+			5. Agregue el hook useEffect, controlado por el prop del componente, e
+			invoque al métdo de actualización con el valor del prop
+		*/}
 
-	```tsx
 		useEffect( () => {
 
 			(()=> {
@@ -386,12 +410,19 @@ theme: jekyll-theme-leap-day
 			})()
 
 		}, [input])
+
+
+		{/* JSX */}
+
+		return (
+
+		)
+	}
 	```
 
-10. Procesar en el JSX de BasicTable
-11. (STOP 4) Compruebe el resultado en el navegador.
-12. Versiona local y remotamente el repositorio **dashboard**.
-13. Despliega la aplicación **dashboard**.
+4. (STOP 4) Compruebe el resultado en el navegador.
+5. Versiona local y remotamente el repositorio **dashboard**.
+6. Despliega la aplicación **dashboard**.
 
 ### Documentación
 
