@@ -291,6 +291,8 @@ theme: jekyll-theme-leap-day
 
 2. En el componente `App.tsx`: 
 
+	**NOTA:** Revise los comentarios numerados y adáptelos al código de su componente
+
 	```tsx
 	function App() {
 
@@ -298,19 +300,12 @@ theme: jekyll-theme-leap-day
 			1. Agregue la variable de estado (dataTable) y función de actualización (setDataTable).
 		*/}
 
-		...
-
 		let [dataTable, setDataTable] = useState([])
 
 		...
 
-		{/* Hook: useEffect */}
-
+		
 		useEffect(()=>{
-
-			...
-
-			{/* Actualización de la variable de estado mediante la función de actualización */}
 
 			...
 
@@ -335,12 +330,10 @@ theme: jekyll-theme-leap-day
 
 			setDataTable(dataToShow)
 
-
 		},[])
 
 		...
 
-		{/* JSX */}
 		return (
 
 			...
@@ -368,8 +361,7 @@ theme: jekyll-theme-leap-day
 	{/* 1. Importe los hooks de estado y peticiones de  (useState y useState)  */}
 	
 	import { useState, useEffect } from 'react';
-	...
-
+	
 	{/* 2. Comente la funciones de procesamiento de datos (createData) y las variables con valores estáticos (rows) */}
 
 	/*
@@ -394,8 +386,7 @@ theme: jekyll-theme-leap-day
 		*/}
 
 		let [rows, setRows] = useState([])
-		...
-
+		
 		{/* 
 			5. Agregue el hook useEffect, controlado por el prop del componente, e
 			invoque al métdo de actualización con el valor del prop
@@ -415,6 +406,26 @@ theme: jekyll-theme-leap-day
 		{/* JSX */}
 
 		return (
+
+			...
+				{/* Modifique la cabecera de la tabla con los títulos adecuados */}
+
+				<TableCell>Rango de horas</TableCell>
+				<TableCell align="right">Dirección del viento</TableCell>
+            ...
+
+            	{/* Modifique las filas de la tabla con la clave del objeto  */}
+
+				<TableRow
+					key={row.rangeHours}
+					...
+				>
+					<TableCell component="th" scope="row">
+						{row.rangeHours}
+					</TableCell>
+					<TableCell align="right">{row.windDirection}</TableCell>
+				</TableRow>
+			...
 
 		)
 	}
