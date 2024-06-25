@@ -25,7 +25,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 02: Landing Page SPA - Bootstrap & Javascript](proyectos/2024/proyecto02)
   * [Guía 06: Bootstrap](guias/2024/guia06)
   * [Guía 07: Javascript - Introducción, DOM y Eventos](guias/2024/guia07)
-  * [Guía 08: Javascript - Firebase, JSON, HTTP POST y Cadena de Promesas](guias/2024/guia08)
+  * [Guía 08: Javascript - Firebase - Realtime Database, JSON, HTTP POST y Cadena de Promesas](guias/2024/guia08)
   * [Guía 09: Javascript - HTTP GET y Async/Await](guias/2024/guia09)
 * [Proyecto 03: Dashboard - React](proyectos/2024/proyecto03)
   * [Guía 10: Typescript - Introducción](guias/2024/guia10)
@@ -33,7 +33,9 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 12: React - Componentes, Interfaces y Props](guias/2024/guia12)
   * [Guía 13: React - Eventos y Hooks: useState y useRef](guias/2024/guia13)
   * [Guía 14: React - Hooks: useEffect y LocalStorage](guias/2024/guia14)
-  
+* [Proyecto 04: API REST - Express y Firebase - Firestore](proyectos/2024/proyecto04)
+* [Proyecto 05: MobileApp - Angular y Ionic](proyectos/2024/proyecto05)
+* [Proyecto 06: WebAdmin - Django y MySQL](proyectos/2024/proyecto06)
   
 ## Scripts
 
