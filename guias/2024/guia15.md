@@ -38,7 +38,7 @@ theme: jekyll-theme-leap-day
 1. Crea un repositorio en GitHub con el nombre **restapi**.
 2. Clona y accede a la carpeta en el directorio local.
 
-#### Express - Configuración y estructura base
+#### Express - Estructura base y configuración
 
 1. Inicializa un nuevo proyecto de Node.js, con:
 
@@ -61,8 +61,6 @@ theme: jekyll-theme-leap-day
   ```
 
 4. Crea la estructura base de archivos y carpetas:
-
-  **NOTA:** Mueva el archivo firebaseConfig.json dentro de la carpeta **config** 
   
   ```command
   restapi/
@@ -76,20 +74,132 @@ theme: jekyll-theme-leap-day
       └── itemController.js
   ```
 
-#### Express - Servidor
+5. Mueva el archivo **firebaseConfig.json** dentro de la carpeta _config_.
 
-#### Express - Enrutador
+#### Express - Servidor, enrutador y controlador
 
-#### Express - Controlador
+1. Edite el archivo `server.js` con el código del `servidor`:
 
-#### Express - Credenciales para firebase 
+  ```typescript
+  const express = require('express');
+  const bodyParser = require('body-parser');
+  const admin = require('firebase-admin');
+  const serviceAccount = require('./config/firebaseConfig.json');
 
-#### Verificación
+  admin.initializeApp({
+    credential: admin.credential.cert(serviceAccount)
+  });
 
-* Inicie el servidor, con:
+  const db = admin.firestore();
+  const app = express();
+  app.use(bodyParser.json());
+
+  const PORT = process.env.PORT || 5000;
+
+  app.listen(PORT, () => {
+    console.log(`Server is running on port ${PORT}`);
+  });
+
+  app.use('/api', require('./routes/api'));
+  ```
+
+2. Edite el archivo `routes/api.js` con el código del `enrutador`:
+
+```typescript
+const express = require('express');
+const router = express.Router();
+const itemController = require('../controllers/itemController');
+
+router.post('/items', itemController.createItem);
+router.get('/items', itemController.getAllItems);
+router.get('/items/:id', itemController.getItem);
+router.put('/items/:id', itemController.updateItem);
+router.delete('/items/:id', itemController.deleteItem);
+
+module.exports = router;
+```
+
+3. Edite el archivo `controllers/itemController.js` con el código del `controlador`:
+
+```typescript
+const admin = require('firebase-admin');
+const db = admin.firestore();
+
+exports.createItem = async (req, res) => {
+  try {
+    const data = req.body;
+    const itemRef = await db.collection('items').add(data);
+    res.status(201).send(`Created a new item: ${itemRef.id}`);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+};
+
+exports.getAllItems = async (req, res) => {
+  try {
+    const itemsSnapshot = await db.collection('items').get();
+    const items = [];
+    itemsSnapshot.forEach((doc) => items.push({ id: doc.id, ...doc.data() }));
+    res.status(200).json(items);
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+};
+
+exports.getItem = async (req, res) => {
+  try {
+    const itemId = req.params.id;
+    const itemDoc = await db.collection('items').doc(itemId).get();
+    if (!itemDoc.exists) {
+      res.status(404).send('Item not found');
+    } else {
+      res.status(200).json({ id: itemDoc.id, ...itemDoc.data() });
+    }
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+};
+
+exports.updateItem = async (req, res) => {
+  try {
+    const itemId = req.params.id;
+    const data = req.body;
+    const itemRef = db.collection('items').doc(itemId);
+    await itemRef.update(data);
+    res.status(200).send('Item updated');
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+};
+
+exports.deleteItem = async (req, res) => {
+  try {
+    const itemId = req.params.id;
+    await db.collection('items').doc(itemId).delete();
+    res.status(200).send('Item deleted');
+  } catch (error) {
+    res.status(400).send(error.message);
+  }
+};
+```
+
+#### Ejecución del código
+
+1. Agregue el siguiente script en `package.json` para usar nodemon.
+
+  ```typescript
+  ...
+  "scripts": {
+    "start": "nodemon server.js",
+    ...
+  }
+  ...
+  ```
+
+2. Desde la línea de comandos, inicie el servidor:
 
   ```command
-  SET DEBUG=rest_api:\* & npm start
+  npm start
   ```
 
 #### Postman
@@ -114,7 +224,7 @@ En [ExpressJS](https://expressjs.com/) se encuentra la referencia del API, guía
 
 ### Términos
 
-rest api, orm, crud, verbos HTTP, estados HTTP
+rest api, servidor, enrutador, controlador, orm, crud, verbos HTTP, estados HTTP
 
 ### Referencias
 
