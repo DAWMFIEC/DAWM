@@ -8,12 +8,10 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-#### Base de datos Relacional
+#### Firebase - Firestore
 
-* Copie el script (DDL y DML) SQL de [Northwind](https://en.wikiversity.org/wiki/Database_Examples/Northwind/MySQL).
-* Acceda al motor [MySQL Community Server](https://dev.mysql.com/downloads/mysql/) mediante la interfaz [MySQL Workbench](https://dev.mysql.com/downloads/workbench/).
-  + Identifique las credenciales de acceso: usuario y contraseña.
-  + Ejecute el script y acceda a schema **northwind**
+1. Configurar Firebase: Ve a [Firebase Console](https://firebase.google.com/), crea un nuevo proyecto o usa uno existente.
+2. Crear Servicio de Cuenta (Service Account): Ve a la configuración del proyecto, selecciona "Cuentas de servicio" y genera una nueva clave privada JSON. Descarga este archivo.
 
 #### Dependencias Globales
 
