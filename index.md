@@ -34,6 +34,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 13: React - Eventos y Hooks: useState y useRef](guias/2024/guia13)
   * [Guía 14: React - Hooks: useEffect y LocalStorage](guias/2024/guia14)
 * [Proyecto 04: API REST - Express y Firebase - Firestore](proyectos/2024/proyecto04)
+  * [Guía 15: Express - API de Datos - REST API](guias/2024/guia15)
+  * [Guía 16: Express - API de Datos - Swagger](guias/2024/guia16)
 * [Proyecto 05: MobileApp - Angular y Ionic](proyectos/2024/proyecto05)
 * [Proyecto 06: WebAdmin - Django y MySQL](proyectos/2024/proyecto06)
   
