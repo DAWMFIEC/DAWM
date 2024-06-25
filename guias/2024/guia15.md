@@ -64,7 +64,7 @@ theme: jekyll-theme-leap-day
 
   **NOTA:** Mueva el archivo firebaseConfig.json dentro de la carpeta **config** 
   
-  ```lua
+  ```command
   restapi/
   ├── package.json
   ├── server.js
