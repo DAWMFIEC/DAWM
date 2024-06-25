@@ -8,136 +8,80 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-#### Firebase - Firestore
+#### Entorno de desarrollo
 
-1. Configurar Firebase: Ve a [Firebase Console](https://firebase.google.com/), crea un nuevo proyecto o usa uno existente.
-2. Crear Servicio de Cuenta (Service Account): Ve a la configuración del proyecto, selecciona "Cuentas de servicio" y genera una nueva clave privada JSON. Descarga este archivo.
-
-#### Dependencias Globales
-
-* Instale los módulos Sequelize CLI, Sequelize Auto y Express Generator de forma global, con: 
+1. En el terminal, verifica que tengas instalado Node.js y npm, con:
 
   ```command
-  npm install -g sequelize-cli sequelize-auto express-generator mysql2
+  node -v
+  npm -v
   ```
+
+#### Firebase - Firestore
+
+1. Ve a [Firebase Console](https://firebase.google.com/) y crea un nuevo proyecto.
+2. En **Categorías de producto** > **Compilación**, seleccione _Firestore Database_.
+3. De click **Crear base de datos** y seleccione las opciones predeterminadas. 
+
+#### Firebase - Servicio de Cuenta (Service Account)
+
+1. En la Descripción general, selecciona **Configuración del proyecto**, 
+2. Selecciona **Cuentas de servicio**,
+3. Da clic en **Nueva clave privada**, y 
+4. Descarga el archivo JSON con **Generar clave**. 
 
 ### Actividades en clases
 
 #### Github
 
-* Crea un repositorio en GitHub con el nombre **rest_api**.
+1. Crea un repositorio en GitHub con el nombre **restapi**.
+2. Clona y accede a la carpeta en el directorio local.
 
-#### Express - Proyecto Base
+#### Express - Configuración y estructura base
 
-* Cree un proyecto en Express:
-  + Desde la línea de comandos, utilice el comando **express** con: 
+1. Inicializa un nuevo proyecto de Node.js, con:
 
-    ```command
-    express --view=ejs rest_api
-    ```
-
-  + Acceda a la carpeta del proyecto, instale las dependencias y levante el servidor, con:
-
-	```command
-	cd rest_api   
-	npm install   
-	SET DEBUG=rest_api:\* & npm start
-	```
-  
-  + En el navegador, acceda al URL `http://localhost:3000` y compruebe la respuesta predeterminada. 
-
-#### Dependencias Locales
-
-* Desde la línea de comandos en la carpeta del proyecto, instale Sequelize y el conector para MySQL para el proyecto, con: 
-
-  ```
-  npm install --save sequelize mysql2
+  ```command
+  npm init -y
   ```
 
-#### Sequelize
+2. Instala las dependencias **Express**, **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
 
-* Desde la línea de comandos en la carpeta del proyecto, genere los archivos de configuración de Sequelize, con: 
-
-  ```
-  sequelize init
-  ```
-
-#### Modelos
-
-* Desde la línea de comandos en la carpeta del proyecto, reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
-
-  ```
-  sequelize-auto -h 127.0.0.1 -d northwind -u root -x root -p 3306
+  ```command
+  npm install express
+  npm install --save-dev nodemon
+  npm install body-parser
   ```
 
-#### Credenciales de conexión
+3. Instala el SDK de administración de Firebase.
 
-* Modifique el archivo `config/config.json`, en el ambiente **development**, con los datos de conexión con el motor de bases de datos.
-
-  ```typescript
-  {
-    "development": {
-      "username": "root",
-      "password": "root",
-      "database": "northwind",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-    },
-    ...
+  ```command
+  npm install firebase-admin
   ```
 
-#### Manejador de ruta
+4. Crea la estructura base de archivos y carpetas:
 
-* Cree el archivo manejador de rutas `routes/suppliers.js` con los controladores para los verbos HTTP `GET`, `POST`, `PUT` y `DELETE`.
-
-  ```typescript
-  var express = require('express');
-  var router = express.Router();
-
-  const { Sequelize, Op } = require('sequelize');
-  const Suppliers = require('../models').suppliers;
-
-  router.get('/findAll', function(req, res, next) {
-      res.send("GET All")
-  });
-  router.get('/findById/:id', function(req, res, next) {
-      res.send("GET By Id")
-  });
-  router.post('/save', function(req, res, next) { 
-      res.send("POST")
-  });
-  router.put('/update/:id', function(req, res, next) { 
-      res.send("PUT")
-  });  
-  router.delete('/delete/:id', function(req, res, next) { 
-      res.send("DELETE")
-  });
-
-  module.exports = router;
-  ```
-
-#### Registro del manejador de rutas
-
-* Modifique el archivo `app.js` con el registro del archivo manejador de rutas `routes/suppliers.js` a la ruta `/suppliers`
-
-  ```typescript
-  ...
-  var suppliersRouter = require('./routes/suppliers');
-  
-  var app = express();
-
-  app.use('/users', ... );
-  app.use('/suppliers', suppliersRouter);
-  ...
+  ```lua
+  restapi/
+  ├── package.json
+  ├── server.js
+  ├── config/
+  │   └── firebaseConfig.json
+  ├── routes/
+  │   └── api.js
+  └── controllers/
+      └── itemController.js
   ```
 
 #### Verificación
 
-* Reinicie el servidor, con:
+* Inicie el servidor, con:
 
   ```command
   SET DEBUG=rest_api:\* & npm start
   ```
+
+#### Postman
 
 * Utilice el workspace público de [Postman](https://elements.getpostman.com/redirect?entityId=1898620-df625a84-2a04-44ef-9492-d31713c26330&entityType=collection) para comprobar la respuesta para cada tipo de petición.
 
@@ -145,60 +89,7 @@ theme: jekyll-theme-leap-day
   <img src="imagenes/postman.png">
 </p>
 
-#### ORM
-
-* Complete el controlador para el verbo **POST** con la ruta `save`:
-  
-  ```typescript
-  ...
-  router.post('/save', function(req, res, next) { 
-    let {SupplierName, ContactName, Address, City, PostalCode, Country, Phone} = req.body;
-        
-      Suppliers.create({
-          SupplierName: SupplierName, 
-          ContactName: ContactName, 
-          Address: Address, 
-          City: City, 
-          PostalCode: PostalCode, 
-          Country: Country, 
-          Phone: Phone
-      })
-      .then(data => {  
-        res.json(data);  
-    })  
-    .catch(error => res.status(400).send(error)) 
-  });
-  ...
-  ```
-
-* Complete el controlador para el verbo **GET** con la ruta `findById`:
-  
-  ```typescript
-  ...
-  router.get('/findById/:id', function(req, res, next) {
-
-    let id = parseInt(req.params.id);
-
-    Suppliers.findOne({  
-        where: { 
-          [Op.and]: [
-            {SupplierID: id}
-          ]
-        }
-    })  
-    .then(data => {  
-        res.json(data);  
-    })  
-    .catch(error => res.status(400).send(error)) 
-});
-  ...
-  ```
-
-* Complete todos controladores de acuerdo con el tutorial [Express - REST II](https://dawmfiec.github.io/DAWM/tutoriales/express_rest2).
-
-* Reinicie el servidor y compruebe la respuesta con Postman.
-
-* Versiona local y remotamente el repositorio **rest_api**.
+* Versiona local y remotamente el repositorio **restapi**.
 
 ### Documentación
 
