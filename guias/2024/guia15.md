@@ -28,7 +28,8 @@ theme: jekyll-theme-leap-day
 1. En la Descripción general, selecciona **Configuración del proyecto**, 
 2. Selecciona **Cuentas de servicio**,
 3. Da clic en **Nueva clave privada**, y 
-4. Descarga el archivo JSON con **Generar clave**. 
+4. Descargue el archivo JSON con **Generar clave**. 
+5. Cambie el nombre al archivo por **firebaseConfig.json**.
 
 ### Actividades en clases
 
@@ -61,6 +62,8 @@ theme: jekyll-theme-leap-day
 
 4. Crea la estructura base de archivos y carpetas:
 
+  **NOTA:** Mueva el archivo firebaseConfig.json dentro de la carpeta **config** 
+  
   ```lua
   restapi/
   ├── package.json
@@ -72,6 +75,14 @@ theme: jekyll-theme-leap-day
   └── controllers/
       └── itemController.js
   ```
+
+#### Express - Servidor
+
+#### Express - Enrutador
+
+#### Express - Controlador
+
+#### Express - Credenciales para firebase 
 
 #### Verificación
 
