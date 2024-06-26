@@ -70,11 +70,15 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 		useEffect(()=>{
 
-			{/* Request */}
+			(async ()=>{
 
-			let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
-			let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
-			savedTextXML = await response.text();
+				{/* Request */}
+
+				let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
+				let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
+				savedTextXML = await response.text();
+
+			})()
 
 		},[])
 
