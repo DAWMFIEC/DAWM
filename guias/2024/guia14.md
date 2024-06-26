@@ -12,29 +12,16 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Hook: useEffect - Componente Padre
+#### Hook: useEffect - Petición asíncrona de un XML
 
-1. En el componente `App.tsx`, agregue la referencia a los hooks **useState** y **useEffect**
+1. En el componente `App.tsx`, agregue la referencia al hook **useEffect**.
 
 	```tsx
-	import {useEffect, useState} from 'react';
+	import {useEffect} from 'react';
 	...
 	```
 
-2. En el componente `App.tsx`, agregue la variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío.
-
-	```tsx
-	function App() {
-
-		{/* Variable de estado y función de actualización */}
-
-		let [indicators, setIndicators] = useState([])
-
-		...
-	}
-	```
-
-3. En el componente `App.tsx`, agregue el hook **useEffect** para reaccionar después del primer renderizado ( `fase` de **Montaje** en el [`ciclo de vida`](https://www.reactjs.wiki/que-es-el-ciclo-de-vida-de-un-componente-en-react) ) en el DOM.
+2. En el componente `App.tsx`, agregue el hook **useEffect** para reaccionar después del primer renderizado ( `fase` de **Montaje** en el [`ciclo de vida`](https://www.reactjs.wiki/que-es-el-ciclo-de-vida-de-un-componente-en-react) ) en el DOM.
 
 	```tsx
 	function App() {
@@ -53,10 +40,9 @@ theme: jekyll-theme-leap-day
 		...
 	}
 	```
-
-#### Petición asíncrona de un XML
-
-1. En el hook useEffect del componente `App.tsx`, agregue una petición asíncrona con fetch
+2. En el hook useEffect del componente `App.tsx`
+	
+	+ Agregue una petición asíncrona con fetch
 
 	```tsx
 		...
@@ -76,9 +62,7 @@ theme: jekyll-theme-leap-day
 		...
 	```
 
-#### XML Parser
-
-1. En el hook useEffect del componente `App.tsx`, agregue el analizador (`parser`) de XML
+	+ Agregue el analizador (`parser`) de XML
 
 	```tsx
 		...
@@ -101,9 +85,7 @@ theme: jekyll-theme-leap-day
 		...
 	```
 
-#### Indicadores: Análisis del XML
-
-1. En el hook useEffect del componente `App.tsx`, agregue el arreglo para almacenar temporalmente los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**). Tome como referencia la estructura del documento XML.
+	+ Agregue el arreglo para almacenar temporalmente los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**). Tome como referencia la estructura del documento XML.
 
 	```tsx
 		...
@@ -147,7 +129,27 @@ theme: jekyll-theme-leap-day
 
 #### Renderización Dinámica con Map
 
-1. En el hook useEffect del componente `App.tsx`, renderice el resultado en un arreglo de elementos y modifique la variable de estado mediante la función de actualización.
+1. En el componente `App.tsx`, agregue la referencia al hook **useState**.
+
+	```tsx
+	import {useEffect, useState} from 'react';
+	...
+	```
+
+2. En el componente `App.tsx`, agregue la variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío.
+
+	```tsx
+	function App() {
+
+		{/* Variable de estado y función de actualización */}
+
+		let [indicators, setIndicators] = useState([])
+
+		...
+	}
+	```
+
+3. En el hook useEffect del componente `App.tsx`, renderice el resultado en un arreglo de elementos y modifique la variable de estado mediante la función de actualización.
 
 	```tsx
 		...
@@ -192,21 +194,27 @@ theme: jekyll-theme-leap-day
 			<Grid container spacing={5}>
 			
 				<Grid xs={6} lg={2}>
+
 					{indicators[0]}
 
 					{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+				
 				</Grid>
 				
 				<Grid xs={6} lg={2}>
+
 					{indicators[1]}
 					
 					{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+				
 				</Grid>
 				
 				<Grid xs={6} lg={2}>
+
 					{indicators[2]}
 					
 					{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+				
 				</Grid>
 
 			...
@@ -231,7 +239,7 @@ theme: jekyll-theme-leap-day
 		useEffect(()=>{
 
 
-			{/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime*/}
+			{/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime */}
 
 			let savedTextXML = localStorage.getItem("openWeatherMap")
 			let expiringTime = localStorage.getItem("expiringTime")
@@ -244,7 +252,7 @@ theme: jekyll-theme-leap-day
 			let nowTime = (new Date()).getTime();
 
 			{/* Realiza la petición asicrónica cuando: 
-				(1) La estampa de tiempo de expiración (expiringTime) es nulo   
+				(1) La estampa de tiempo de expiración (expiringTime) es nula, o  
 				(2) La estampa de tiempo actual es mayor al tiempo de expiración */}
 
 			if(expiringTime === null || nowTime > parseInt(expiringTime)) {
@@ -256,6 +264,7 @@ theme: jekyll-theme-leap-day
 				savedTextXML = await response.text();
 
 				{/* En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
+				
 				localStorage.setItem("openWeatherMap", savedTextXML)
 				localStorage.setItem("expiringTime", (nowTime + delay ).toString() )
 			}
