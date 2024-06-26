@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-Ver [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/) de los hooks en el ciclo de vida de los componentes.
+Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/) de los hooks en el ciclo de vida de los componentes.
 
 <div align="center">
     <img src="imagenes/react_lifecycle.jpg" alt="" width="60%">

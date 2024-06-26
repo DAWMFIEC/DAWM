@@ -8,6 +8,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+Revise la descripción del uso de Hooks en React, el sitio [Understanding React Hooks: A Comprehensive Guide](https://www.yourteaminindia.com/tech-insights/understanding-react-hooks).
+
 <div align="center">
     <img src="imagenes/react_render.png" alt="" width="60%">
     <p>Fuente: <a href="https://www.yourteaminindia.com/tech-insights/understanding-react-hooks">Understanding React Hooks: A Comprehensive Guide</a> </p>
