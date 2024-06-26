@@ -8,9 +8,15 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-1. Clona localmente tu repositorio **dashboard**.
+<div align="center">
+    <img src="imagenes/react_render.png" alt="" width="60%">
+    <p>Fuente: <a href="https://www.yourteaminindia.com/tech-insights/understanding-react-hooks">Understanding React Hooks: A Comprehensive Guide</a> </p>
+</div>
+
 
 ### Actividades en clases
+
+1. Clona localmente tu repositorio **dashboard**.
 
 #### React Google Charts
 

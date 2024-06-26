@@ -8,9 +8,16 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-1. Clona localmente tu repositorio **dashboard**.
+Ver [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/) de los hooks en el ciclo de vida de los componentes.
+
+<div align="center">
+    <img src="imagenes/react_lifecycle.jpg" alt="" width="60%">
+    <p>Fuente: <a href="https://github.com/Wavez/react-hooks-lifecycle">React Hooks Lifecycle Diagram</a> </p>
+</div>
 
 ### Actividades en clases
+
+1. Clona localmente tu repositorio **dashboard**.
 
 #### Hook: useEffect - Petición asíncrona de un XML
 
@@ -32,10 +39,22 @@ theme: jekyll-theme-leap-day
 
 		{/* Hook: useEffect */}
 		
-		useEffect(()=>{
+		useEffect(
+
+			{/* Efecto secundario a ejecutar */}
+
+			()=>{
 
 
-		},[])
+			}
+
+		, 
+
+			{/* Arreglo de dependencias */} 
+
+			[]
+
+		)
 
 		...
 	}
