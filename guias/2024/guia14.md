@@ -38,30 +38,35 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 		...
 
 		{/* Hook: useEffect */}
-		
-		useEffect(
 
-			{/* Efecto secundario a ejecutar */}
-
-			()=>{
+		{/* Efecto secundario a ejecutar y  Arreglo de dependencias */} 
 
 
-			}
-
-		, 
-
-			{/* Arreglo de dependencias */} 
-
-			[]
-
-		)
+		useEffect( ()=>{}, [] )
 
 		...
 	}
 	```
+
 3. En el hook useEffect del componente `App.tsx`
+
+	+ (1) Agregue una función de autoejecución
+
+	```tsx
+		...
+
+		{/* Hook: useEffect */}
+
+		useEffect(()=>{
+
+			(async ()=>{  })()
+
+		},[])
+
+		...
+	```
 	
-	+ (1) Agregue una petición asíncrona con fetch
+	+ (2) Agregue una petición asíncrona con fetch
 
 	```tsx
 		...
@@ -72,13 +77,11 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 			(async ()=>{
 
-				let savedTextXML = ''
-
 				{/* Request */}
 
 				let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
 				let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
-				savedTextXML = await response.text();
+				let savedTextXML = await response.text();
 
 			})()
 
@@ -87,7 +90,7 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 		...
 	```
 
-	+ (2) Agregue el analizador (`parser`) de XML
+	+ (3) Agregue el analizador (`parser`) de XML
 
 	```tsx
 		...
@@ -182,6 +185,10 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 		let [indicators, setIndicators] = useState([])
 
 		...
+
+		{/* Hook: useEffect */}
+
+		...
 	}
 	```
 
@@ -198,7 +205,14 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 				...
 
-				{/* Análisis del XML */}
+				{/* 
+					Análisis, extracción y almacenamiento del contenido del XML 
+					en el arreglo de resultados
+				*/}
+
+				...
+
+				// console.log( dataToIndicators )
 
 				... 
 
@@ -267,7 +281,7 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 3. (STOP 2) Compruebe el resultado en el navegador.
 
-#### LocalStorage 
+#### LocalStorage (OPCIONAL)
 
 1. En el hook useEffect del componente `App.tsx`, reorganice el código para usar el almacenamiento del navegador (`LocalStorage`) para guardar la respuesta de la petición asincrónica.
 
@@ -281,11 +295,17 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 			(async ()=>{
 
-				let savedTextXML = ''
+				
+				// {/* Request */ }
+
+				// let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
+				// let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
+				// let savedTextXML = await response.text();
+
 
 				{/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime */}
 
-				savedTextXML = localStorage.getItem("openWeatherMap")
+				let savedTextXML = localStorage.getItem("openWeatherMap")
 				let expiringTime = localStorage.getItem("expiringTime")
 
 				{/* Estampa de tiempo actual */}
@@ -369,7 +389,7 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 				{/* 
 					2. Procese los resultados de acuerdo con el diseño anterior.
-					Revise la estructura del documento XML para extraer los datos necesarios. 
+					   Revise la estructura del documento XML para extraer los datos necesarios. 
 				*/}
 
 				let arrayObjects = Array.from( xml.getElementsByTagName("time") ).map( (timeElement) =>  {
@@ -478,7 +498,7 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 				<TableCell align="right">Dirección del viento</TableCell>
             ...
 
-            	{/* Modifique las filas de la tabla con la clave del objeto  */}
+            	{/* Modifique las filas de la tabla con las claves rangeHours y windDirection del objeto  */}
 				{rows.map((row) => (
 					<TableRow
 						key={row.rangeHours}
