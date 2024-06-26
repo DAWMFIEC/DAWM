@@ -39,7 +39,7 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 		{/* Hook: useEffect */}
 
-		{/* Efecto secundario a ejecutar y  Arreglo de dependencias */} 
+		{/* Función para el efecto secundario a ejecutar y Arreglo de dependencias */} 
 
 
 		useEffect( ()=>{}, [] )
@@ -50,7 +50,7 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 3. En el hook useEffect del componente `App.tsx`
 
-	+ (1) Agregue una función de autoejecución
+	+ (1) Agregue una función de autoejecución **async** dentro de la función para el efecto secundario.
 
 	```tsx
 		...
@@ -66,7 +66,7 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 		...
 	```
 	
-	+ (2) Agregue una petición asíncrona con fetch
+	+ (2) Agregue una petición asíncrona con fetch dentro de la función de autoejecución **async**.
 
 	```tsx
 		...
@@ -296,6 +296,8 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 			(async ()=>{
 
 				
+				{/* 1. Comente el código anterior con el Request */}
+
 				// {/* Request */ }
 
 				// let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
@@ -303,35 +305,35 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 				// let savedTextXML = await response.text();
 
 
-				{/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime */}
+				{/* 2. Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime */}
 
 				let savedTextXML = localStorage.getItem("openWeatherMap")
 				let expiringTime = localStorage.getItem("expiringTime")
 
-				{/* Estampa de tiempo actual */}
+				{/* 3. Obtenga la estampa de tiempo actual */}
 
 				let nowTime = (new Date()).getTime();
 
-				{/* Realiza la petición asicrónica cuando: 
+				{/* 4. Realiza la petición asicrónica cuando: 
 					(1) La estampa de tiempo de expiración (expiringTime) es nula, o  
 					(2) La estampa de tiempo actual es mayor al tiempo de expiración */}
 
 				if(expiringTime === null || nowTime > parseInt(expiringTime)) {
 
-					{/* Request */}
+					{/* 5. Request */}
 
 					let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
 					let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
 					savedTextXML = await response.text();
 
 
-					{/* Diferencia de tiempo */}
+					{/* 6. Diferencia de tiempo */}
 
 					let hours = 1
 					let delay = hours * 3600000
 
 
-					{/* En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
+					{/* 7. En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
 
 					localStorage.setItem("openWeatherMap", savedTextXML)
 					localStorage.setItem("expiringTime", (nowTime + delay ).toString() )
