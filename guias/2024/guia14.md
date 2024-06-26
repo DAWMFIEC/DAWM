@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
 1. En el componente `App.tsx`, agregue la referencia al hook **useEffect**.
 
 	```tsx
-	import {useEffect} from 'react';
+	import { useEffect } from 'react';
 	...
 	```
 
@@ -40,9 +40,9 @@ theme: jekyll-theme-leap-day
 		...
 	}
 	```
-2. En el hook useEffect del componente `App.tsx`
+3. En el hook useEffect del componente `App.tsx`
 	
-	+ Agregue una petición asíncrona con fetch
+	+ (1) Agregue una petición asíncrona con fetch
 
 	```tsx
 		...
@@ -62,7 +62,7 @@ theme: jekyll-theme-leap-day
 		...
 	```
 
-	+ Agregue el analizador (`parser`) de XML
+	+ (2) Agregue el analizador (`parser`) de XML
 
 	```tsx
 		...
@@ -85,7 +85,7 @@ theme: jekyll-theme-leap-day
 		...
 	```
 
-	+ Agregue el arreglo para almacenar temporalmente los resultados y extraiga el contenido del xml mediante el DOM (métodos **getElementsByTagName** y **getAttribute**). Tome como referencia la estructura del documento XML.
+	+ (3) Agregue el arreglo para almacenar temporalmente los resultados, extraiga el contenido del xml mediante el API del DOM (métodos **getElementsByTagName** y **getAttribute**) y guarde los resultado en arreglo. Revise la estructura del documento XML para extraer los datos necesarios.
 
 	```tsx
 		...
@@ -100,11 +100,14 @@ theme: jekyll-theme-leap-day
 
 			...
 
-			{/* Arreglo con los resultados */}
+			{/* Arreglo para agregar los resultados */}
 
 			let dataToIndicators = new Array()
 
-			{/* Análisis del XML */}
+			{/* 
+				Análisis, extracción y almacenamiento del contenido del XML 
+				en el arreglo de resultados
+			*/}
 
 			let location = xml.getElementsByTagName("location")[1]
 
@@ -125,14 +128,14 @@ theme: jekyll-theme-leap-day
 		...
 	```
 
-2. (STOP 1) Compruebe el resultado en el navegador.
+4. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Renderización Dinámica con Map
 
 1. En el componente `App.tsx`, agregue la referencia al hook **useState**.
 
 	```tsx
-	import {useEffect, useState} from 'react';
+	import { useEffect, useState } from 'react';
 	...
 	```
 
@@ -149,7 +152,7 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-3. En el hook useEffect del componente `App.tsx`, renderice el resultado en un arreglo de elementos y modifique la variable de estado mediante la función de actualización.
+3. En el hook useEffect del componente `App.tsx`, renderice el arreglo temporal en un arreglo de elementos `<Indicator>` y modifique la variable de estado mediante la función de actualización.
 
 	```tsx
 		...
@@ -170,7 +173,7 @@ theme: jekyll-theme-leap-day
 				(element) => <Indicator title={element[0]} subtitle={element[1]} value={element[2]} />
 			)
 			
-			{/* Actualización de la variable de estado mediante la función de actualización */}
+			{/* Modificación de la variable de estado mediante la función de actualización */}
 
 			setIndicators(indicatorsElements)
 
@@ -179,7 +182,7 @@ theme: jekyll-theme-leap-day
 		...
 	```
 
-2. En el JSX del componente `App.tsx`, cambie los elementos **Indicator** por elementos de la variable de estado
+4. En el JSX del componente `App.tsx`, cambie los elementos **Indicator** por elementos de la variable de estado.
 
 	```tsx
 	...
@@ -229,7 +232,7 @@ theme: jekyll-theme-leap-day
 
 #### LocalStorage 
 
-1. En el hook useEffect del componente `App.tsx`, use el `LocalStorage` para almacenar la respuesta de la petición asincrónica.
+1. En el hook useEffect del componente `App.tsx`, reorganice el código para usar el almacenamiento del navegador (`LocalStorage`) para guardar la respuesta de la petición asincrónica.
 
 	```tsx
 		...
@@ -244,11 +247,8 @@ theme: jekyll-theme-leap-day
 			let savedTextXML = localStorage.getItem("openWeatherMap")
 			let expiringTime = localStorage.getItem("expiringTime")
 
-			{/* Diferencia de tiempo */}
-			let hours = 1
-			let delay = hours * 3600000
-
 			{/* Estampa de tiempo actual */}
+
 			let nowTime = (new Date()).getTime();
 
 			{/* Realiza la petición asicrónica cuando: 
@@ -263,8 +263,15 @@ theme: jekyll-theme-leap-day
 				let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
 				savedTextXML = await response.text();
 
+
+				{/* Diferencia de tiempo */}
+
+				let hours = 1
+				let delay = hours * 3600000
+
+
 				{/* En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
-				
+
 				localStorage.setItem("openWeatherMap", savedTextXML)
 				localStorage.setItem("expiringTime", (nowTime + delay ).toString() )
 			}
@@ -273,7 +280,7 @@ theme: jekyll-theme-leap-day
 
 			... 
 
-			{/* Arreglo con los resultados */}
+			{/* Arreglo para agregar los resultados */}
 
 			...
 
@@ -289,7 +296,7 @@ theme: jekyll-theme-leap-day
 1. Defina:
 
 	+ Los datos a procesar y mostrar, p.e.: **rangeHours** y **windDirection**.
-	+ La estructura de datos para almacenar los datos, p.e.: Arreglo de objetos.
+	+ La estructura de datos para almacenar los datos, p.e.: Arreglo de objetos `[{ ... }, { ... }]`.
 
 2. En el componente `App.tsx`: 
 
@@ -311,9 +318,13 @@ theme: jekyll-theme-leap-day
 
 			...
 
+			{/* Modificación de la variable de estado mediante la función de actualización */}
+
+			...
+
 			{/* 
 				2. Procese los resultados de acuerdo con el diseño anterior.
-				Tome como referencia la estructura del documento XML. 
+				Revise la estructura del documento XML para extraer los datos necesarios. 
 			*/}
 
 			let arrayObjects = Array.from( xml.getElementsByTagName("time") ).map( (timeElement) =>  {
@@ -360,11 +371,11 @@ theme: jekyll-theme-leap-day
 	**NOTA:** Revise los comentarios numerados y adáptelos al código de su componente
 	
 	```tsx
-	{/* 1. Importe los hooks de estado y peticiones de  (useState y useState)  */}
+	{/* 1. Importe los hooks de estado y ejecución en segundo plano (useState y useEffect)  */}
 	
 	import { useState, useEffect } from 'react';
 	
-	{/* 2. Comente la funciones de procesamiento de datos (createData) y las variables con valores estáticos (rows) */}
+	{/* 2. Comente la funciones de procesamiento de datos (createData) y las variables con valores fijos (rows) */}
 
 	/*
 		function createData(
@@ -378,7 +389,7 @@ theme: jekyll-theme-leap-day
 		];
 	*/
 
-	{/* 3. Declare el prop input */}
+	{/* 3. Declare la interfaz del prop de entrada */}
 
 	interface Config {
 		rows: Array<object>;
@@ -388,14 +399,14 @@ theme: jekyll-theme-leap-day
 
 		{/* 
 			4. Declare la variable de estado (rows) y la función de actualización (setRows).
-			Use el mismo identificador con los valores estáticos
+			Use el mismo identificador de la variable con valores fijos (rows)
 		*/}
 
 		let [rows, setRows] = useState([])
 		
 		{/* 
-			5. Agregue el hook useEffect, controlado por el prop del componente, e
-			invoque al métdo de actualización con el valor del prop
+			5. Agregue el hook useEffect, controlado por el prop del componente (data), y
+			Dentro del hook, invoque al métdo de actualización con el valor del prop (data.rows).
 		*/}
 
 		useEffect( () => {
@@ -406,7 +417,7 @@ theme: jekyll-theme-leap-day
 
 			})()
 
-		}, [data])
+		}, [data] )
 
 
 		{/* JSX */}
@@ -421,16 +432,17 @@ theme: jekyll-theme-leap-day
             ...
 
             	{/* Modifique las filas de la tabla con la clave del objeto  */}
-
-				<TableRow
-					key={row.rangeHours}
-					...
-				>
-					<TableCell component="th" scope="row">
-						{row.rangeHours}
-					</TableCell>
-					<TableCell align="right">{row.windDirection}</TableCell>
-				</TableRow>
+				{rows.map((row) => (
+					<TableRow
+						key={row.rangeHours}
+						...
+					>
+						<TableCell component="th" scope="row">
+							{row.rangeHours}
+						</TableCell>
+						<TableCell align="right">{row.windDirection}</TableCell>
+					</TableRow>
+				))}
 			...
 
 		)
