@@ -28,7 +28,7 @@ theme: jekyll-theme-leap-day
 1. En la Descripción general, selecciona **Configuración del proyecto**, 
 2. Selecciona **Cuentas de servicio**,
 3. Da clic en **Nueva clave privada**, y 
-4. Descargue el archivo JSON con **Generar clave**. 
+4. De clic en **Generar clave** para descargar el archivo JSON. 
 5. Cambie el nombre al archivo por **firebaseConfig.json**.
 
 ### Actividades en clases
@@ -67,14 +67,14 @@ theme: jekyll-theme-leap-day
   ├── package.json
   ├── server.js
   ├── config/
-  │   └── firebaseConfig.json
+  │      └── firebaseConfig.json
   ├── routes/
-  │   └── api.js
+  │      └── api.js
   └── controllers/
-      └── itemController.js
+         └── itemController.js
   ```
 
-5. Mueva el archivo **firebaseConfig.json** dentro de la carpeta _config_.
+5. Mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta _config_.
 
 #### Express - Servidor, enrutador y controlador
 
@@ -96,11 +96,11 @@ theme: jekyll-theme-leap-day
 
   const PORT = process.env.PORT || 5000;
 
+  app.use('/api', require('./routes/api'));
+
   app.listen(PORT, () => {
     console.log(`Server is running on port ${PORT}`);
   });
-
-  app.use('/api', require('./routes/api'));
   ```
 
 2. Edite el archivo `routes/api.js` con el código del `enrutador`:
@@ -185,7 +185,7 @@ exports.deleteItem = async (req, res) => {
 
 #### Ejecución del código
 
-1. Agregue el siguiente script en `package.json` para usar nodemon.
+1. Agregue el script **start** en `package.json`.
 
   ```typescript
   ...
@@ -236,3 +236,4 @@ rest api, servidor, enrutador, controlador, orm, crud, verbos HTTP, estados HTTP
 * orm, b., bagade, a., Panneerselvam, S., Grin, O., & OurBigBook.com, C. (2019). bulkUpdate in sequelize orm. Retrieved 24 December 2022, from https://stackoverflow.com/questions/54898994/bulkupdate-in-sequelize-orm
 * S., McConnell, H., & McConnell, H. (2020). Sequelize many-to-many M:N relationship not functioning. Error: 'SequelizeEagerLoadingError:${model1} is not associated to ${model2}'. Retrieved 24 December 2022, from https://stackoverflow.com/questions/64790882/sequelize-many-to-many-mn-relationship-not-functioning-error-sequelizeeagerl
 * expected, O., & Vidal, L. (2021). One To Many relationship using Sequelize creates more foreign keys than expected. Retrieved 24 December 2022, from https://stackoverflow.com/questions/66696143/one-to-many-relationship-using-sequelize-creates-more-foreign-keys-than-expected
+* Chatgpt (no date) ChatGPT. Available at: https://chatgpt.com/share/95b84ae7-7efb-4aa7-9a10-9d85a81a9fdb (Accessed: 25 June 2024). 
