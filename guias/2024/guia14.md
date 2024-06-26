@@ -72,6 +72,8 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 			(async ()=>{
 
+				let savedTextXML = ''
+
 				{/* Request */}
 
 				let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
@@ -94,14 +96,18 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 		useEffect(()=>{
 
-			{/* Request */}
+			(async ()=>{
 
-			...
+				{/* Request */}
 
-			{/* XML Parser */}
+				...
 
-			const parser = new DOMParser();
-			const xml = parser.parseFromString(savedTextXML, "application/xml");
+				{/* XML Parser */}
+
+				const parser = new DOMParser();
+				const xml = parser.parseFromString(savedTextXML, "application/xml");
+
+			})()
 
 		},[])
 
@@ -117,33 +123,37 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 		useEffect(()=>{
 
-			...
+			(async ()=>{
 
-			{/* XML Parser */}
+				...
 
-			...
+				{/* XML Parser */}
 
-			{/* Arreglo para agregar los resultados */}
+				...
 
-			let dataToIndicators = new Array()
+				{/* Arreglo para agregar los resultados */}
 
-			{/* 
-				Análisis, extracción y almacenamiento del contenido del XML 
-				en el arreglo de resultados
-			*/}
+				let dataToIndicators = new Array()
 
-			let location = xml.getElementsByTagName("location")[1]
+				{/* 
+					Análisis, extracción y almacenamiento del contenido del XML 
+					en el arreglo de resultados
+				*/}
 
-			let geobaseid = location.getAttribute("geobaseid")
-			dataToIndicators.push(["Location","geobaseid", geobaseid])
+				let location = xml.getElementsByTagName("location")[1]
 
-			let latitude = location.getAttribute("latitude")
-			dataToIndicators.push(["Location","Latitude", latitude])
+				let geobaseid = location.getAttribute("geobaseid")
+				dataToIndicators.push(["Location","geobaseid", geobaseid])
 
-			let longitude = location.getAttribute("longitude")
-			dataToIndicators.push(["Location","Longitude", longitude])
+				let latitude = location.getAttribute("latitude")
+				dataToIndicators.push(["Location","Latitude", latitude])
 
-			console.log( dataToIndicators )
+				let longitude = location.getAttribute("longitude")
+				dataToIndicators.push(["Location","Longitude", longitude])
+
+				console.log( dataToIndicators )
+
+			})()
 
 
 		},[])
@@ -184,21 +194,25 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 
 		useEffect(()=>{
 
-			...
+			(async ()=>{
 
-			{/* Análisis del XML */}
+				...
 
-			... 
+				{/* Análisis del XML */}
 
-			{/* Renderice el arreglo de resultados en un arreglo de elementos Indicator */}
+				... 
 
-			let indicatorsElements = Array.from(dataToIndicators).map(
-				(element) => <Indicator title={element[0]} subtitle={element[1]} value={element[2]} />
-			)
-			
-			{/* Modificación de la variable de estado mediante la función de actualización */}
+				{/* Renderice el arreglo de resultados en un arreglo de elementos Indicator */}
 
-			setIndicators(indicatorsElements)
+				let indicatorsElements = Array.from(dataToIndicators).map(
+					(element) => <Indicator title={element[0]} subtitle={element[1]} value={element[2]} />
+				)
+				
+				{/* Modificación de la variable de estado mediante la función de actualización */}
+
+				setIndicators(indicatorsElements)
+
+			})()
 
 		},[])
 
@@ -265,47 +279,53 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 		useEffect(()=>{
 
 
-			{/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime */}
+			(async ()=>{
 
-			let savedTextXML = localStorage.getItem("openWeatherMap")
-			let expiringTime = localStorage.getItem("expiringTime")
+				let savedTextXML = ''
 
-			{/* Estampa de tiempo actual */}
+				{/* Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime */}
 
-			let nowTime = (new Date()).getTime();
+				savedTextXML = localStorage.getItem("openWeatherMap")
+				let expiringTime = localStorage.getItem("expiringTime")
 
-			{/* Realiza la petición asicrónica cuando: 
-				(1) La estampa de tiempo de expiración (expiringTime) es nula, o  
-				(2) La estampa de tiempo actual es mayor al tiempo de expiración */}
+				{/* Estampa de tiempo actual */}
 
-			if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+				let nowTime = (new Date()).getTime();
 
-				{/* Request */}
+				{/* Realiza la petición asicrónica cuando: 
+					(1) La estampa de tiempo de expiración (expiringTime) es nula, o  
+					(2) La estampa de tiempo actual es mayor al tiempo de expiración */}
 
-				let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
-				let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
-				savedTextXML = await response.text();
+				if(expiringTime === null || nowTime > parseInt(expiringTime)) {
 
+					{/* Request */}
 
-				{/* Diferencia de tiempo */}
-
-				let hours = 1
-				let delay = hours * 3600000
+					let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
+					let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
+					savedTextXML = await response.text();
 
 
-				{/* En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
+					{/* Diferencia de tiempo */}
 
-				localStorage.setItem("openWeatherMap", savedTextXML)
-				localStorage.setItem("expiringTime", (nowTime + delay ).toString() )
-			}
+					let hours = 1
+					let delay = hours * 3600000
 
-			{/* XML Parser */}
 
-			... 
+					{/* En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
 
-			{/* Arreglo para agregar los resultados */}
+					localStorage.setItem("openWeatherMap", savedTextXML)
+					localStorage.setItem("expiringTime", (nowTime + delay ).toString() )
+				}
 
-			...
+				{/* XML Parser */}
+
+				... 
+
+				{/* Arreglo para agregar los resultados */}
+
+				...
+
+			})()
 
 		},[])
 
@@ -339,32 +359,36 @@ Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/)
 		
 		useEffect(()=>{
 
-			...
+			(async ()=>{
 
-			{/* Modificación de la variable de estado mediante la función de actualización */}
+				...
 
-			...
+				{/* Modificación de la variable de estado mediante la función de actualización */}
 
-			{/* 
-				2. Procese los resultados de acuerdo con el diseño anterior.
-				Revise la estructura del documento XML para extraer los datos necesarios. 
-			*/}
+				...
 
-			let arrayObjects = Array.from( xml.getElementsByTagName("time") ).map( (timeElement) =>  {
+				{/* 
+					2. Procese los resultados de acuerdo con el diseño anterior.
+					Revise la estructura del documento XML para extraer los datos necesarios. 
+				*/}
+
+				let arrayObjects = Array.from( xml.getElementsByTagName("time") ).map( (timeElement) =>  {
+					
+					let rangeHours = timeElement.getAttribute("from").split("T")[1] + " - " + timeElement.getAttribute("to").split("T")[1]
+
+					let windDirection = timeElement.getElementsByTagName("windDirection")[0].getAttribute("deg") + " "+  timeElement.getElementsByTagName("windDirection")[0].getAttribute("code") 
+					
+					return { "rangeHours": rangeHours,"windDirection": windDirection }
 				
-				let rangeHours = timeElement.getAttribute("from").split("T")[1] + " - " + timeElement.getAttribute("to").split("T")[1]
+				})
 
-				let windDirection = timeElement.getElementsByTagName("windDirection")[0].getAttribute("deg") + " "+  timeElement.getElementsByTagName("windDirection")[0].getAttribute("code") 
-				
-				return { "rangeHours": rangeHours,"windDirection": windDirection }
+				arrayObjects = arrayObjects.slice(0,8)
 			
-			})
+				{/* 3. Actualice de la variable de estado mediante la función de actualización */}
 
-			arrayObjects = arrayObjects.slice(0,8)
-		
-			{/* 3. Actualice de la variable de estado mediante la función de actualización */}
+				setRowsTable(arrayObjects)
 
-			setRowsTable(arrayObjects)
+			})()
 
 		},[])
 
