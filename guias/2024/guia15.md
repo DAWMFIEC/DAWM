@@ -6,7 +6,7 @@ theme: jekyll-theme-leap-day
   details {
     margin: 5% 0%;
     padding: 2%;
-    background-color: #b8f2d8;
+    background-color: #BBD1CD;
     border: dashed 2px black;
     border-radius: 11px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
