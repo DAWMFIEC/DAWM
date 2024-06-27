@@ -10,12 +10,12 @@ theme: jekyll-theme-leap-day
 
 #### Entorno de desarrollo
 
-1. En el terminal, verifica que tengas instalado Node.js y npm, con:
+1. En el terminal, verifica que tengas instalado Node.js y npm, con:        
 
-  ```command
-  node -v
-  npm -v
-  ```
+    ```command
+    node -v
+    npm -v
+    ```
 
 #### Firebase - Firestore
 
@@ -42,45 +42,31 @@ theme: jekyll-theme-leap-day
 
 1. Inicializa un nuevo proyecto de Node.js, con:
 
-  ```
-  npm init -y
-  ```
+    ```
+    npm init -y
+    ```
 
 2. Instala las dependencias **Express**, **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
 
-  ```
-  npm install express
-  npm install --save-dev nodemon
-  npm install body-parser
-  ```
+    ```
+    npm install express
+    npm install --save-dev nodemon
+    npm install body-parser
+    ```
 
 3. Instala el SDK de administración de Firebase.
 
-  ```
-  npm install firebase-admin
-  ```
+    ```
+    npm install firebase-admin
+    ```
 
-4. Crea la estructura base de archivos y carpetas:
-  
-  ```
-  restapi/
-  ├── package.json
-  ├── server.js
-  ├── config/
-  │      └── firebaseConfig.json
-  ├── routes/
-  │      └── api.js
-  └── controllers/
-         └── itemController.js
-  ```
-
-5. Mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta _config_.
+4. Cree la carpeta _config_ y mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta.
 
 #### Express - Servidor, enrutador y controlador
 
-1. Edite el archivo `server.js` con el código del `servidor`:
+1. Cree el archivo _./server.js_ con el código del `servidor`:
 
-  ```typescript
+    ```typescript
     const express = require('express');
     const bodyParser = require('body-parser');
     const admin = require('firebase-admin');
@@ -100,11 +86,11 @@ theme: jekyll-theme-leap-day
     app.listen(PORT, () => {
       console.log(`Server is running on port ${PORT}`);
     });
-  ```
+    ```
 
-2. Edite el archivo `routes/api.js` con el código del `enrutador`:
+2. Cree el archivo _routes/api.js_ con el código del `enrutador`:
 
-  ```typescript
+    ```typescript
     const express = require('express');
     const router = express.Router();
     const itemController = require('../controllers/itemController');
@@ -116,11 +102,11 @@ theme: jekyll-theme-leap-day
     router.delete('/items/:id', itemController.deleteItem);
 
     module.exports = router;
-  ```
+    ```
 
-3. Edite el archivo `controllers/itemController.js` con el código del `controlador`:
+3. Cree el archivo _controllers/itemController.js_ con el código del `controlador`:
 
-  ```typescript
+    ```typescript
     const admin = require('firebase-admin');
     const db = admin.firestore();
 
@@ -180,26 +166,26 @@ theme: jekyll-theme-leap-day
         res.status(400).send(error.message);
       }
     };
-  ```
+    ```
 
-#### Ejecución del código
+#### Script de ejecución y Ejecución del código
 
 1. Agregue el script **start** en `package.json`.
 
-  ```typescript
+    ```typescript
     ...
       "scripts": {
         "start": "nodemon server.js",
         ...
       }
     ...
-  ```
+    ```
 
 2. Desde la línea de comandos, inicie el servidor:
 
-  ```command
+    ```command
     npm start
-  ```
+    ```
 
 * Versiona local y remotamente el repositorio **restapi**.
 
