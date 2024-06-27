@@ -131,6 +131,13 @@ theme: jekyll-theme-leap-day
       }
     };
 
+    ```
+
+
+<details>
+  <summary><b>SOLUCIÓN</b></summary>
+  <p>
+  <pre><code>
     exports.getItem = async (req, res) => {
       try {
         const itemId = req.params.id;
@@ -166,7 +173,10 @@ theme: jekyll-theme-leap-day
         res.status(400).send(error.message);
       }
     };
-    ```
+  </code></pre>
+  </p>
+</details>
+
 
 #### Script de ejecución y Ejecución del código
 
