@@ -12,9 +12,10 @@ theme: jekyll-theme-leap-day
     text-align: center;
   }
 
-  a {
+  details div {
     color: lightseagreen;
     font-weight: bold;
+    cursor: pointer;
   }
 </style>
 
@@ -177,7 +178,7 @@ theme: jekyll-theme-leap-day
     ```
 
 <details>
-  <summary><a href="#">Haga click aquí para ver la solución</a></summary>
+  <summary><div>Haga click aquí para ver la solución</div></summary>
   <p>
   <pre><code lang="typescript">
     exports.getItem = async (req, res) => {
@@ -228,7 +229,7 @@ theme: jekyll-theme-leap-day
     ```
 
 <details>
-  <summary><a href="#">Haga click aquí para ver la solución</a></summary>
+  <summary><div>Haga click aquí para ver la solución</div></summary>
   <p>
     <pre><code lang="typescript">
       router.get('/items/:id', itemController.getItem);
