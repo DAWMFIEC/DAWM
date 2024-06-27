@@ -63,17 +63,17 @@ theme: jekyll-theme-leap-day
 4. Crea la estructura base de archivos y carpetas:
   
   ```command
-  restapi/
-  ├── package.json
-  ├── server.js
-  ├── config/
-  │      └── firebaseConfig.json
-  ├── routes/
-  │      └── api.js
-  └── controllers/
-         └── itemController.js
+    restapi/
+    ├── package.json
+    ├── server.js
+    ├── config/
+    │     └── firebaseConfig.json
+    ├── routes/
+    │     └── api.js
+    └── controllers/
+          └── itemController.js
   ```
-
+  
 5. Mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta _config_.
 
 #### Express - Servidor, enrutador y controlador
