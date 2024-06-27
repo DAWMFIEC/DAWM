@@ -170,6 +170,8 @@ theme: jekyll-theme-leap-day
 1. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
 
     ```typescript
+    ...
+
     exports.getItem = async (req, res) => { }
 
     exports.updateItem = async (req, res) => { }
@@ -223,6 +225,7 @@ theme: jekyll-theme-leap-day
 2. En el archivo _controllers/itemController.js_, agregue el código para relacionar los métodos HTTP (**get**, **put** y **delete**) con las funciones del controlador (**getItem**, **updateItem** y **deleteItem**).
 
     ```typescript
+    ...
     router.get(      ,     );
     router.put(      ,     );
     router.delete(   ,     );
