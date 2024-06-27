@@ -42,13 +42,13 @@ theme: jekyll-theme-leap-day
 
 1. Inicializa un nuevo proyecto de Node.js, con:
 
-  ```command
+  ```
   npm init -y
   ```
 
 2. Instala las dependencias **Express**, **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
 
-  ```command
+  ```
   npm install express
   npm install --save-dev nodemon
   npm install body-parser
@@ -56,13 +56,13 @@ theme: jekyll-theme-leap-day
 
 3. Instala el SDK de administración de Firebase.
 
-  ```command
+  ```
   npm install firebase-admin
   ```
 
 4. Crea la estructura base de archivos y carpetas:
   
-  ```command
+  ```
   restapi/
   ├── package.json
   ├── server.js
