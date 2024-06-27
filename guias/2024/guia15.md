@@ -49,15 +49,15 @@ theme: jekyll-theme-leap-day
 2. Instala las dependencias **Express**, **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
 
   ```command
-  npm install express
-  npm install --save-dev nodemon
-  npm install body-parser
+    npm install express
+    npm install --save-dev nodemon
+    npm install body-parser
   ```
 
 3. Instala el SDK de administración de Firebase.
 
   ```command
-  npm install firebase-admin
+    npm install firebase-admin
   ```
 
 4. Crea la estructura base de archivos y carpetas:
@@ -73,7 +73,7 @@ theme: jekyll-theme-leap-day
     └── controllers/
           └── itemController.js
   ```
-  
+
 5. Mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta _config_.
 
 #### Express - Servidor, enrutador y controlador
@@ -81,125 +81,125 @@ theme: jekyll-theme-leap-day
 1. Edite el archivo `server.js` con el código del `servidor`:
 
   ```typescript
-  const express = require('express');
-  const bodyParser = require('body-parser');
-  const admin = require('firebase-admin');
-  const serviceAccount = require('./config/firebaseConfig.json');
+    const express = require('express');
+    const bodyParser = require('body-parser');
+    const admin = require('firebase-admin');
+    const serviceAccount = require('./config/firebaseConfig.json');
 
-  admin.initializeApp({
-    credential: admin.credential.cert(serviceAccount)
-  });
+    admin.initializeApp({
+      credential: admin.credential.cert(serviceAccount)
+    });
 
-  const db = admin.firestore();
-  const app = express();
-  app.use(bodyParser.json());
+    const db = admin.firestore();
+    const app = express();
+    app.use(bodyParser.json());
 
-  const PORT = process.env.PORT || 5000;
+    const PORT = process.env.PORT || 5000;
 
-  app.use('/api', require('./routes/api'));
+    app.use('/api', require('./routes/api'));
 
-  app.listen(PORT, () => {
-    console.log(`Server is running on port ${PORT}`);
-  });
+    app.listen(PORT, () => {
+      console.log(`Server is running on port ${PORT}`);
+    });
   ```
 
 2. Edite el archivo `routes/api.js` con el código del `enrutador`:
 
-```typescript
-const express = require('express');
-const router = express.Router();
-const itemController = require('../controllers/itemController');
+  ```typescript
+    const express = require('express');
+    const router = express.Router();
+    const itemController = require('../controllers/itemController');
 
-router.post('/items', itemController.createItem);
-router.get('/items', itemController.getAllItems);
-router.get('/items/:id', itemController.getItem);
-router.put('/items/:id', itemController.updateItem);
-router.delete('/items/:id', itemController.deleteItem);
+    router.post('/items', itemController.createItem);
+    router.get('/items', itemController.getAllItems);
+    router.get('/items/:id', itemController.getItem);
+    router.put('/items/:id', itemController.updateItem);
+    router.delete('/items/:id', itemController.deleteItem);
 
-module.exports = router;
-```
+    module.exports = router;
+  ```
 
 3. Edite el archivo `controllers/itemController.js` con el código del `controlador`:
 
-```typescript
-const admin = require('firebase-admin');
-const db = admin.firestore();
+  ```typescript
+    const admin = require('firebase-admin');
+    const db = admin.firestore();
 
-exports.createItem = async (req, res) => {
-  try {
-    const data = req.body;
-    const itemRef = await db.collection('items').add(data);
-    res.status(201).send(`Created a new item: ${itemRef.id}`);
-  } catch (error) {
-    res.status(400).send(error.message);
-  }
-};
+    exports.createItem = async (req, res) => {
+      try {
+        const data = req.body;
+        const itemRef = await db.collection('items').add(data);
+        res.status(201).send(`Created a new item: ${itemRef.id}`);
+      } catch (error) {
+        res.status(400).send(error.message);
+      }
+    };
 
-exports.getAllItems = async (req, res) => {
-  try {
-    const itemsSnapshot = await db.collection('items').get();
-    const items = [];
-    itemsSnapshot.forEach((doc) => items.push({ id: doc.id, ...doc.data() }));
-    res.status(200).json(items);
-  } catch (error) {
-    res.status(400).send(error.message);
-  }
-};
+    exports.getAllItems = async (req, res) => {
+      try {
+        const itemsSnapshot = await db.collection('items').get();
+        const items = [];
+        itemsSnapshot.forEach((doc) => items.push({ id: doc.id, ...doc.data() }));
+        res.status(200).json(items);
+      } catch (error) {
+        res.status(400).send(error.message);
+      }
+    };
 
-exports.getItem = async (req, res) => {
-  try {
-    const itemId = req.params.id;
-    const itemDoc = await db.collection('items').doc(itemId).get();
-    if (!itemDoc.exists) {
-      res.status(404).send('Item not found');
-    } else {
-      res.status(200).json({ id: itemDoc.id, ...itemDoc.data() });
-    }
-  } catch (error) {
-    res.status(400).send(error.message);
-  }
-};
+    exports.getItem = async (req, res) => {
+      try {
+        const itemId = req.params.id;
+        const itemDoc = await db.collection('items').doc(itemId).get();
+        if (!itemDoc.exists) {
+          res.status(404).send('Item not found');
+        } else {
+          res.status(200).json({ id: itemDoc.id, ...itemDoc.data() });
+        }
+      } catch (error) {
+        res.status(400).send(error.message);
+      }
+    };
 
-exports.updateItem = async (req, res) => {
-  try {
-    const itemId = req.params.id;
-    const data = req.body;
-    const itemRef = db.collection('items').doc(itemId);
-    await itemRef.update(data);
-    res.status(200).send('Item updated');
-  } catch (error) {
-    res.status(400).send(error.message);
-  }
-};
+    exports.updateItem = async (req, res) => {
+      try {
+        const itemId = req.params.id;
+        const data = req.body;
+        const itemRef = db.collection('items').doc(itemId);
+        await itemRef.update(data);
+        res.status(200).send('Item updated');
+      } catch (error) {
+        res.status(400).send(error.message);
+      }
+    };
 
-exports.deleteItem = async (req, res) => {
-  try {
-    const itemId = req.params.id;
-    await db.collection('items').doc(itemId).delete();
-    res.status(200).send('Item deleted');
-  } catch (error) {
-    res.status(400).send(error.message);
-  }
-};
-```
+    exports.deleteItem = async (req, res) => {
+      try {
+        const itemId = req.params.id;
+        await db.collection('items').doc(itemId).delete();
+        res.status(200).send('Item deleted');
+      } catch (error) {
+        res.status(400).send(error.message);
+      }
+    };
+  ```
 
 #### Ejecución del código
 
 1. Agregue el script **start** en `package.json`.
 
   ```typescript
-  ...
-  "scripts": {
-    "start": "nodemon server.js",
     ...
-  }
-  ...
+      "scripts": {
+        "start": "nodemon server.js",
+        ...
+      }
+    ...
   ```
 
 2. Desde la línea de comandos, inicie el servidor:
 
   ```command
-  npm start
+    npm start
   ```
 
 #### Postman
