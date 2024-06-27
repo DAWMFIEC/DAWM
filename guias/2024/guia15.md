@@ -2,6 +2,13 @@
 theme: jekyll-theme-leap-day
 ---
 
+<style type="text/css" media="screen">
+  details {
+    border: double 1px black;
+    margin: 5% 2.5%;
+  }
+</style>
+
 ## Guía 15
 
 [DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2024/proyecto04)
@@ -133,9 +140,18 @@ theme: jekyll-theme-leap-day
 
     ```
 
+4. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
+
+    ```typescript
+    exports.getItem = async (req, res) => { }
+
+    exports.updateItem = async (req, res) => { }
+
+    exports.deleteItem = async (req, res) => { }
+    ```
 
 <details>
-  <summary><b>SOLUCIÓN</b></summary>
+  <summary><b> Ver la Solución</b></summary>
   <p>
   <pre><code>
     exports.getItem = async (req, res) => {
