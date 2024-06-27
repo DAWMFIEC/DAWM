@@ -189,12 +189,28 @@ theme: jekyll-theme-leap-day
 
     router.post('/items', itemController.createItem);
     router.get('/items', itemController.getAllItems);
-    router.get('/items/:id', itemController.getItem);
-    router.put('/items/:id', itemController.updateItem);
-    router.delete('/items/:id', itemController.deleteItem);
 
     module.exports = router;
     ```
+
+5. En el archivo _controllers/itemController.js_, agregue el código para los verbos **get**, **put** y **delete**.
+
+    ```typescript
+    router.get(      ,     );
+    router.put(      ,     );
+    router.delete(   ,     );
+    ```
+
+<details>
+  <summary>Dar click aquí para ver la <b>Solución</b></summary>
+  <p>
+    <pre><code lang="typescript">
+      router.get('/items/:id', itemController.getItem);
+      router.put('/items/:id', itemController.updateItem);
+      router.delete('/items/:id', itemController.deleteItem);
+    </code></pre>
+  </p>
+</details>
 
 #### Script de ejecución y Ejecución del código
 
