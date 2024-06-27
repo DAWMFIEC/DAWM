@@ -9,13 +9,13 @@ theme: jekyll-theme-leap-day
     border: dashed 2px black;
     border-radius: 11px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-    text-align: center;
   }
 
   details div {
     color: lightseagreen;
     font-weight: bold;
     cursor: pointer;
+    text-align: center;
   }
 </style>
 
