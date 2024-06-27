@@ -6,10 +6,15 @@ theme: jekyll-theme-leap-day
   details {
     margin: 5% 0%;
     padding: 2%;
-    background-color: #BBD1CD;
     border: dashed 2px black;
     border-radius: 11px;
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+  }
+
+  a {
+    color: lightseagreen;
+    font-weight: bold;
   }
 </style>
 
@@ -99,7 +104,7 @@ theme: jekyll-theme-leap-day
     });
     ```
 
-2. Cree el archivo _controllers/itemController.js_ con el código del `controlador`:
+2. Cree el archivo _controllers/itemController.js_ con las funciones del `controlador`:
 
     ```typescript
     const admin = require('firebase-admin');
@@ -127,7 +132,41 @@ theme: jekyll-theme-leap-day
     };
     ```
 
-3. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
+3. Cree el archivo _routes/api.js_ con el código del `enrutador`:
+
+    ```typescript
+    const express = require('express');
+    const router = express.Router();
+    const itemController = require('../controllers/itemController');
+
+    router.post('/items', itemController.createItem);
+    router.get('/items', itemController.getAllItems);
+
+    module.exports = router;
+    ```
+
+#### Script de ejecución y Ejecución del código
+
+1. Agregue el script **start** en `package.json`.
+
+    ```typescript
+    ...
+      "scripts": {
+        "start": "nodemon server.js",
+        ...
+      }
+    ...
+    ```
+
+2. (STOP 1) Desde la línea de comandos, inicie el servidor:
+
+    ```command
+    npm start
+    ```
+
+#### Reto
+
+1. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
 
     ```typescript
     exports.getItem = async (req, res) => { }
@@ -138,7 +177,7 @@ theme: jekyll-theme-leap-day
     ```
 
 <details>
-  <summary>Dar click aquí para ver la <b>Solución</b></summary>
+  <summary><a href="#">Haga click aquí para ver la solución</a></summary>
   <p>
   <pre><code lang="typescript">
     exports.getItem = async (req, res) => {
@@ -180,20 +219,7 @@ theme: jekyll-theme-leap-day
   </p>
 </details>
 
-4. Cree el archivo _routes/api.js_ con el código del `enrutador`:
-
-    ```typescript
-    const express = require('express');
-    const router = express.Router();
-    const itemController = require('../controllers/itemController');
-
-    router.post('/items', itemController.createItem);
-    router.get('/items', itemController.getAllItems);
-
-    module.exports = router;
-    ```
-
-5. En el archivo _controllers/itemController.js_, agregue el código para los verbos **get**, **put** y **delete**.
+2. En el archivo _controllers/itemController.js_, agregue el código para relacionar los métodos HTTP (**get**, **put** y **delete**) con las funciones del controlador (**getItem**, **updateItem** y **deleteItem**).
 
     ```typescript
     router.get(      ,     );
@@ -202,7 +228,7 @@ theme: jekyll-theme-leap-day
     ```
 
 <details>
-  <summary>Dar click aquí para ver la <b>Solución</b></summary>
+  <summary><a href="#">Haga click aquí para ver la solución</a></summary>
   <p>
     <pre><code lang="typescript">
       router.get('/items/:id', itemController.getItem);
@@ -211,25 +237,6 @@ theme: jekyll-theme-leap-day
     </code></pre>
   </p>
 </details>
-
-#### Script de ejecución y Ejecución del código
-
-1. Agregue el script **start** en `package.json`.
-
-    ```typescript
-    ...
-      "scripts": {
-        "start": "nodemon server.js",
-        ...
-      }
-    ...
-    ```
-
-2. Desde la línea de comandos, inicie el servidor:
-
-    ```command
-    npm start
-    ```
 
 * Versiona local y remotamente el repositorio **restapi**.
 
@@ -245,7 +252,7 @@ En [ExpressJS](https://expressjs.com/) se encuentra la referencia del API, guía
 
 ### Términos
 
-rest api, servidor, enrutador, controlador, orm, crud, verbos HTTP, estados HTTP
+rest api, servidor, enrutador, controlador, orm, crud, métodos HTTP, estados HTTP
 
 ### Referencias
 
