@@ -90,7 +90,6 @@ theme: jekyll-theme-leap-day
       credential: admin.credential.cert(serviceAccount)
     });
 
-    const db = admin.firestore();
     const app = express();
     app.use(bodyParser.json());
 
@@ -201,14 +200,6 @@ theme: jekyll-theme-leap-day
   ```command
     npm start
   ```
-
-#### Postman
-
-* Utilice el workspace público de [Postman](https://elements.getpostman.com/redirect?entityId=1898620-df625a84-2a04-44ef-9492-d31713c26330&entityType=collection) para comprobar la respuesta para cada tipo de petición.
-
-<p align="center">
-  <img src="imagenes/postman.png">
-</p>
 
 * Versiona local y remotamente el repositorio **restapi**.
 
