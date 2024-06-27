@@ -5,7 +5,9 @@ theme: jekyll-theme-leap-day
 <style type="text/css" media="screen">
   details {
     border: double 1px black;
-    margin: 5% 2.5%;
+    margin: 5% 0%;
+    padding: 2%;
+    background-color: #0bcc7b;
   }
 </style>
 
@@ -137,7 +139,6 @@ theme: jekyll-theme-leap-day
         res.status(400).send(error.message);
       }
     };
-
     ```
 
 4. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
