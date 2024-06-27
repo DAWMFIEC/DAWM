@@ -4,10 +4,12 @@ theme: jekyll-theme-leap-day
 
 <style type="text/css" media="screen">
   details {
-    border: double 1px black;
     margin: 5% 0%;
     padding: 2%;
-    background-color: #0bcc7b;
+    background-color: #b8f2d8;
+    border: dashed 2px black;
+    border-radius: 11px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
   }
 </style>
 
@@ -97,23 +99,7 @@ theme: jekyll-theme-leap-day
     });
     ```
 
-2. Cree el archivo _routes/api.js_ con el código del `enrutador`:
-
-    ```typescript
-    const express = require('express');
-    const router = express.Router();
-    const itemController = require('../controllers/itemController');
-
-    router.post('/items', itemController.createItem);
-    router.get('/items', itemController.getAllItems);
-    router.get('/items/:id', itemController.getItem);
-    router.put('/items/:id', itemController.updateItem);
-    router.delete('/items/:id', itemController.deleteItem);
-
-    module.exports = router;
-    ```
-
-3. Cree el archivo _controllers/itemController.js_ con el código del `controlador`:
+2. Cree el archivo _controllers/itemController.js_ con el código del `controlador`:
 
     ```typescript
     const admin = require('firebase-admin');
@@ -141,7 +127,7 @@ theme: jekyll-theme-leap-day
     };
     ```
 
-4. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
+3. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
 
     ```typescript
     exports.getItem = async (req, res) => { }
@@ -152,9 +138,9 @@ theme: jekyll-theme-leap-day
     ```
 
 <details>
-  <summary><b> Ver la Solución</b></summary>
+  <summary>Dar click aquí para ver la <b>Solución</b></summary>
   <p>
-  <pre><code>
+  <pre><code lang="typescript">
     exports.getItem = async (req, res) => {
       try {
         const itemId = req.params.id;
@@ -194,6 +180,21 @@ theme: jekyll-theme-leap-day
   </p>
 </details>
 
+4. Cree el archivo _routes/api.js_ con el código del `enrutador`:
+
+    ```typescript
+    const express = require('express');
+    const router = express.Router();
+    const itemController = require('../controllers/itemController');
+
+    router.post('/items', itemController.createItem);
+    router.get('/items', itemController.getAllItems);
+    router.get('/items/:id', itemController.getItem);
+    router.put('/items/:id', itemController.updateItem);
+    router.delete('/items/:id', itemController.deleteItem);
+
+    module.exports = router;
+    ```
 
 #### Script de ejecución y Ejecución del código
 
