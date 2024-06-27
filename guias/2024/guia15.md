@@ -49,29 +49,29 @@ theme: jekyll-theme-leap-day
 2. Instala las dependencias **Express**, **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
 
   ```command
-    npm install express
-    npm install --save-dev nodemon
-    npm install body-parser
+  npm install express
+  npm install --save-dev nodemon
+  npm install body-parser
   ```
 
 3. Instala el SDK de administración de Firebase.
 
   ```command
-    npm install firebase-admin
+  npm install firebase-admin
   ```
 
 4. Crea la estructura base de archivos y carpetas:
   
   ```command
-    restapi/
-    ├── package.json
-    ├── server.js
-    ├── config/
-    │     └── firebaseConfig.json
-    ├── routes/
-    │     └── api.js
-    └── controllers/
-          └── itemController.js
+  restapi/
+  ├── package.json
+  ├── server.js
+  ├── config/
+  │      └── firebaseConfig.json
+  ├── routes/
+  │      └── api.js
+  └── controllers/
+         └── itemController.js
   ```
 
 5. Mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta _config_.
