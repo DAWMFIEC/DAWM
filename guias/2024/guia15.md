@@ -146,7 +146,7 @@ theme: jekyll-theme-leap-day
     };
     ```
 
-#### Ejecución del REST API
+#### Ejecución del servidor
 
 1. Agregue el script **start** en `package.json`.
 
@@ -175,7 +175,7 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
     curl -X GET http://localhost:5000/api/items
     ```
 
-2. Petición **método POST**
+2. Petición **método HTTP POST**
 
     ```command
     curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"key1\":\"value1\",\"key2\":\"value2\"}"
