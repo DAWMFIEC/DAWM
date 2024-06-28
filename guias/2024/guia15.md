@@ -71,7 +71,7 @@ theme: jekyll-theme-leap-day
     npm install body-parser
     ```
 
-3. Instala el SDK de administración de [Firebase]().
+3. Instala el SDK de administración de [Firebase](https://firebase.google.com/docs/admin/setup?hl=es-419).
 
     ```
     npm install firebase-admin
@@ -175,14 +175,14 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
     curl -X GET http://localhost:5000/api/items
     ```
 
-    [!curl_get_all](imagenes/curl_get_all.png)
+    ![curl_get_all](imagenes/curl_get_all.png)
 
 2. Petición **método POST**
 
     ```command
     curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"key1\":\"value1\",\"key2\":\"value2\"}"
     ```
-    [!curl_post](imagenes/curl_post.png)
+    ![curl_post](imagenes/curl_post.png)
 
 #### Reto
 
@@ -266,7 +266,8 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
 
 ### Documentación
 
-En [ExpressJS](https://expressjs.com/) se encuentra la referencia del API, guías y tutoriales.
+* En [ExpressJS](https://expressjs.com/) se encuentra la referencia del API, guías y tutoriales.
+* [Firebase Admin](https://firebase.google.com/docs/admin/setup?hl=es-419) contiene la documentación del SDK de Admin.
 
 ### Fundamental
 
