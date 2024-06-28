@@ -182,7 +182,7 @@ theme: jekyll-theme-leap-day
 <details>
   <summary><div>Haga click aquí para ver la solución</div></summary>
   <p>
-  <pre><code lang="typescript">
+  <pre lang="typescript"><code>
     exports.getItem = async (req, res) => {
       try {
         const itemId = req.params.id;
@@ -234,7 +234,7 @@ theme: jekyll-theme-leap-day
 <details>
   <summary><div>Haga click aquí para ver la solución</div></summary>
   <p>
-    <pre><code lang="typescript">
+    <pre lang="typescript"><code>
       router.get('/items/:id', itemController.getItem);
       router.put('/items/:id', itemController.updateItem);
       router.delete('/items/:id', itemController.deleteItem);
