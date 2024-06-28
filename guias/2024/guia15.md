@@ -105,7 +105,20 @@ theme: jekyll-theme-leap-day
     });
     ```
 
-2. Cree el archivo _controllers/itemController.js_ con las funciones del `controlador`:
+2. Cree el archivo _routes/api.js_ con el código del `enrutador`:
+
+    ```typescript
+    const express = require('express');
+    const router = express.Router();
+    const itemController = require('../controllers/itemController');
+
+    router.post('/items', itemController.createItem);
+    router.get('/items', itemController.getAllItems);
+
+    module.exports = router;
+    ```
+
+3. Cree el archivo _controllers/itemController.js_ con las funciones del `controlador`:
 
     ```typescript
     const admin = require('firebase-admin');
@@ -133,19 +146,6 @@ theme: jekyll-theme-leap-day
     };
     ```
 
-3. Cree el archivo _routes/api.js_ con el código del `enrutador`:
-
-    ```typescript
-    const express = require('express');
-    const router = express.Router();
-    const itemController = require('../controllers/itemController');
-
-    router.post('/items', itemController.createItem);
-    router.get('/items', itemController.getAllItems);
-
-    module.exports = router;
-    ```
-
 #### Script de ejecución y Ejecución del código
 
 1. Agregue el script **start** en `package.json`.
@@ -165,9 +165,48 @@ theme: jekyll-theme-leap-day
     npm start
     ```
 
+#### cURL
+
+1. Petición GET - getAllItems
+
+    ```command
+    curl -X GET http://localhost:5000/api/items
+    ```
+
+2. Petición POST - createItem
+
+    ```command
+    curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"key1\":\"value1\",
+ \"key2\":\"value2\"}"
+    ```
+
+
 #### Reto
 
-1. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
+1. En el archivo _controllers/itemController.js_, agregue el código para relacionar los métodos HTTP (**get**, **put** y **delete**) con las funciones del controlador (**getItem**, **updateItem** y **deleteItem**).
+
+    ```typescript
+    ...
+    router.get(      ,     );
+    router.put(      ,     );
+    router.delete(   ,     );
+    ...
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <p>
+        <pre lang="typescript"><code>
+          ...
+          router.get('/items/:id', itemController.getItem);
+          router.put('/items/:id', itemController.updateItem);
+          router.delete('/items/:id', itemController.deleteItem);
+          ...
+        </code></pre>
+      </p>
+    </details>
+
+2. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
 
     ```typescript
     ...
@@ -217,29 +256,6 @@ theme: jekyll-theme-leap-day
         };
         ...
       </code></pre>
-      </p>
-    </details>
-
-2. En el archivo _controllers/itemController.js_, agregue el código para relacionar los métodos HTTP (**get**, **put** y **delete**) con las funciones del controlador (**getItem**, **updateItem** y **deleteItem**).
-
-    ```typescript
-    ...
-    router.get(      ,     );
-    router.put(      ,     );
-    router.delete(   ,     );
-    ...
-    ```
-
-    <details>
-      <summary><div>Haga click aquí para ver la solución</div></summary>
-      <p>
-        <pre lang="typescript"><code>
-          ...
-          router.get('/items/:id', itemController.getItem);
-          router.put('/items/:id', itemController.updateItem);
-          router.delete('/items/:id', itemController.deleteItem);
-          ...
-        </code></pre>
       </p>
     </details>
 
