@@ -71,17 +71,17 @@ theme: jekyll-theme-leap-day
         #swagger.description = 'Get an item entry'
         #swagger.summary = 'Get an item entry'
         #swagger.parameters['id'] = {
-          description: 'Item id',
-          required: true,
+            description: 'Item id',
+            required: true,
         }
         #swagger.responses[404] = {
-          description: 'Item not found',
+            description: 'Item not found',
         }
         #swagger.responses[400] = {
-          description: 'Bad request',
+            description: 'Bad request',
         }
         #swagger.responses[200] = {
-          description: 'Get an item by id',
+            description: 'Get an item by id',
         }
       */
       ...
@@ -94,10 +94,10 @@ theme: jekyll-theme-leap-day
         #swagger.description = 'Get all items entries'
         #swagger.summary = 'Get all items entries'
         #swagger.responses[200] = {
-          description: 'Items entries successfully obtained',
+            description: 'Items entries successfully obtained',
         }
         #swagger.responses[400] = {
-          description: 'Bad request',
+            description: 'Bad request',
         }
       */
       ...
@@ -110,15 +110,15 @@ theme: jekyll-theme-leap-day
         #swagger.description = 'Create an item'
         #swagger.summary = 'Create an item'
         #swagger.parameters['data'] = {
-          in: 'body',
-          description: 'Data to create an item',
-          required: true,
+            in: 'body',
+            description: 'Data to create an item',
+            required: true,
         }
         #swagger.responses[201] = {
-          description: 'Item successfully created',
+            description: 'Item successfully created',
         }
         #swagger.responses[400] = {
-          description: 'Bad request',
+            description: 'Bad request',
         }
       */
       ...
@@ -139,7 +139,7 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-6. Desde la línea de comandos, genere el archivo `./swagger_output.json` con el comando:
+6. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger, con el comando:
 
     ```command
     npm run swagger
@@ -183,20 +183,62 @@ theme: jekyll-theme-leap-day
 
 #### Reto
 
-1. Modifique la documentación del resto de métodos.
+1. Complete la documentación para los métodos **updateItem** y **deleteItem**.
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="typescript"><code>
         ...
-        
+        exports.updateItem = async (req, res) => {
+
+          /* 
+              #swagger.tags = ['Items']
+              #swagger.description = ''
+              #swagger.summary = ''
+              #swagger.parameters['id'] = {
+                  description: '',
+                  required: true,
+              }
+              #swagger.parameters['data'] = {
+                  in: 'body',
+                  description: '',
+                  required: true,
+              }
+              #swagger.responses[200] = {
+                  description: '',
+              }
+              #swagger.responses[400] = {
+                  description: '',
+              }
+          */
+        };
+
+        exports.deleteItem = async (req, res) => {
+
+          /* 
+            #swagger.tags = ['Items']
+            #swagger.description = ''
+            #swagger.summary = ''
+            #swagger.parameters['id'] = {
+                description: '',
+                required: true,
+            }
+
+            #swagger.responses[200] = {
+                description: '',
+            }
+            #swagger.responses[400] = {
+                description: '',
+            }
+          */
         ...
       </code></pre>
     </details>
 
-2. Ejecute el servidor.
-3. (STOP 3) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
-4. Versiona local y remotamente el repositorio **restapi**.
+2. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger
+3. Ejecute el servidor.
+4. (STOP 3) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
+5. Versiona local y remotamente el repositorio **restapi**.
 
 ### Documentación
 
