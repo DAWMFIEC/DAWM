@@ -35,29 +35,29 @@ theme: jekyll-theme-leap-day
 
 2. Desde la línea de comandos, dentro del proyecto instale los módulos **swagger-autogen** y **swagger-ui-express**
 
-  ```command
-  npm install swagger-autogen swagger-ui-express
-  ```
+    ```command
+    npm install swagger-autogen swagger-ui-express
+    ```
 
 3. En la raíz del proyecto, cree el archivo `./swagger.js` con el siguiente contenido: 
 
-  ```typescript
-  const swaggerAutogen = require('swagger-autogen')()
+    ```typescript
+    const swaggerAutogen = require('swagger-autogen')()
 
-  const doc = {
-    info: {
-      title: 'REST API',
-      description: 'REST API with Express and Firestore'
-    },
-    host: 'localhost:5000',
-    "basePath": "/api",
-  };
+    const doc = {
+      info: {
+        title: 'REST API',
+        description: 'REST API with Express and Firestore'
+      },
+      host: 'localhost:5000',
+      "basePath": "/api",
+    };
 
-  const outputFile = './swagger_output.json'
-  const endpointsFiles = ['./routes/*.js']
+    const outputFile = './swagger_output.json'
+    const endpointsFiles = ['./routes/*.js']
 
-  swaggerAutogen(outputFile, endpointsFiles, doc)
-  ```
+    swaggerAutogen(outputFile, endpointsFiles, doc)
+    ```
 
 4. Modifique el archivo `./controllers/itemControllers.js` con la descripción de cada función.
 
@@ -129,21 +129,21 @@ theme: jekyll-theme-leap-day
 
 5. Modifique el archivo `package.json` y agregue la entrada _swagger_.
 
-  ```typescript
-  ...
-  "scripts": {
+    ```typescript
     ...
-    "swagger": "node ./swagger.js"
+    "scripts": {
+      ...
+      "swagger": "node ./swagger.js"
+      ...
+    },
     ...
-  },
-  ...
-  ```
+    ```
 
 6. Desde la línea de comandos, genere el archivo `./swagger_output.json` con el comando:
 
-  ```
-  npm run swagger
-  ```
+    ```command
+    npm run swagger
+    ```
 
 7. Modifique el archivo generado **app.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
 
