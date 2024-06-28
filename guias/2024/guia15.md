@@ -171,18 +171,17 @@ theme: jekyll-theme-leap-day
 
     ```typescript
     ...
-
     exports.getItem = async (req, res) => { }
-
     exports.updateItem = async (req, res) => { }
-
     exports.deleteItem = async (req, res) => { }
+    ...
     ```
 
 <details>
   <summary><div>Haga click aquí para ver la solución</div></summary>
   <p>
   <pre lang="typescript"><code>
+    ...
     exports.getItem = async (req, res) => {
       try {
         const itemId = req.params.id;
@@ -196,7 +195,6 @@ theme: jekyll-theme-leap-day
         res.status(400).send(error.message);
       }
     };
-
     exports.updateItem = async (req, res) => {
       try {
         const itemId = req.params.id;
@@ -208,7 +206,6 @@ theme: jekyll-theme-leap-day
         res.status(400).send(error.message);
       }
     };
-
     exports.deleteItem = async (req, res) => {
       try {
         const itemId = req.params.id;
@@ -218,6 +215,7 @@ theme: jekyll-theme-leap-day
         res.status(400).send(error.message);
       }
     };
+    ...
   </code></pre>
   </p>
 </details>
@@ -229,15 +227,18 @@ theme: jekyll-theme-leap-day
     router.get(      ,     );
     router.put(      ,     );
     router.delete(   ,     );
+    ...
     ```
 
 <details>
   <summary><div>Haga click aquí para ver la solución</div></summary>
   <p>
     <pre lang="typescript"><code>
+      ...
       router.get('/items/:id', itemController.getItem);
       router.put('/items/:id', itemController.updateItem);
       router.delete('/items/:id', itemController.deleteItem);
+      ...
     </code></pre>
   </p>
 </details>
