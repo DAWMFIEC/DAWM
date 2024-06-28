@@ -41,7 +41,7 @@ theme: jekyll-theme-leap-day
 
 #### Swagger-config
 
-3. En la raíz del proyecto, cree el archivo `swagger.js`. 
+3. En la raíz del proyecto, cree el archivo `./swagger.js` con el siguiente contenido: 
 
   ```typescript
   const swaggerAutogen = require('swagger-autogen')()
@@ -63,7 +63,7 @@ theme: jekyll-theme-leap-day
 
 #### Documentación de callbacks
 
-4. Modifique el archivo `itemControllers.js` con la descripción de cada función.
+4. Modifique el archivo `controllers/itemControllers.js` con la descripción de cada función.
 
     ```typescript
     ...
@@ -112,7 +112,7 @@ theme: jekyll-theme-leap-day
       /* 
         #swagger.tags = ['Items']
         #swagger.description = 'Create an item'
-        #swagger.summary = 'Get all items entries'
+        #swagger.summary = 'Create an item'
         #swagger.parameters['data'] = {
           in: 'body',
           description: 'Data to create an item',
@@ -122,7 +122,7 @@ theme: jekyll-theme-leap-day
           description: 'Item successfully created',
         }
         #swagger.responses[400] = {
-          `description: 'Bad request',
+          description: 'Bad request',
         }
       */
       ...
@@ -157,37 +157,38 @@ theme: jekyll-theme-leap-day
 
 7. Modifique el archivo generado **app.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
 
+    ```typescript
+    const admin = require('firebase-admin');
+    ...
+    /* Referencia al módulo swagger-ui-express */
+    const swaggerUi = require('swagger-ui-express')
 
-  ```typescript
-  const admin = require('firebase-admin');
-  ...
-  /* Referencia al módulo swagger-ui-express */
-  const swaggerUi = require('swagger-ui-express')
+    /* Referencia al archivo con la descripción */
+    const swaggerFile = require('./swagger_output.json')
+    ...
 
-  /* Referencia al archivo con la descripción */
-  const swaggerFile = require('./swagger_output.json')
-  ...
+    const app = express();
 
-  const app = express();
+    ...
 
-  ...
+    /* Ruta Base -> Documentación */
+    app.use('/documentation', swaggerUi.serve, swaggerUi.setup(swaggerFile))
 
-  /* Ruta Base -> Documentación */
-  app.use('/documentation', swaggerUi.serve, swaggerUi.setup(swaggerFile))
+    app.use('/api', require('./routes/api'));
 
-  app.use('/api', require('./routes/api'));
-
-  ...
-  ```
+    ...
+    ```
 
 8. Ejecute el servidor, con:
 
-  ```
-  npm start
-  ```
+    ```
+    npm start
+    ```
 
 9. (STOP 1) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
 10. Versiona local y remotamente el repositorio **restapi**.
+
+#### Postman
 
 #### Reto
 
@@ -205,7 +206,7 @@ theme: jekyll-theme-leap-day
     </details>
 
 2. Ejecute el servidor.
-3. (STOP 1) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
+3. (STOP 3) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
 4. Versiona local y remotamente el repositorio **restapi**.
 
 ### Documentación
