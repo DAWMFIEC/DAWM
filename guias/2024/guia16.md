@@ -2,32 +2,48 @@
 theme: jekyll-theme-leap-day
 ---
 
+<style type="text/css" media="screen">
+  details {
+    margin: 5% 0%;
+    padding: 2%;
+    border: dashed 2px black;
+    border-radius: 11px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  details div {
+    color: lightseagreen;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+</style>
+
 ## Guía 16
 
-[DAWM](/DAWM/) / [Proyecto06](/DAWM/proyectos/2023/proyecto06)
+[DAWM](/DAWM/) / [Proyecto06](/DAWM/proyectos/2024/proyecto04)
 
 ### Actividades previas
 
-* Identifique el uso de Swagger en la [documentación oficial](https://swagger.io/).
+* Revise la [documentación oficial](https://swagger.io/) de Swagger.
 
 ### Actividades en clases
 
-* Clone localmente tu repositorio **restapi**.
-* Abra el proyecto en VSCode y levante el servidor.
+1. Clone localmente tu repositorio **restapi**.
 
 #### Dependencias Locales
 
-* Instale los módulos **swagger-autogen**, **swagger-ui-express** y **swagger-jsdoc**
+2. Instale los módulos **swagger-autogen** y **swagger-ui-express**
 
-  ```
-  npm install swagger-autogen swagger-ui-express swagger-jsdoc
+  ```command
+  npm install swagger-autogen swagger-ui-express
   ```
 
 #### Swagger-config
 
-* En la raíz del proyecto, cree el archivo **swagger.js**. En la variable **endpointsFiles** coloque las rutas a los controladores de los modelos.
+3. En la raíz del proyecto, cree el archivo `swagger.js`. 
 
-  ```text
+  ```typescript
   const swaggerAutogen = require('swagger-autogen')()
 
   const doc = {
@@ -45,11 +61,81 @@ theme: jekyll-theme-leap-day
   swaggerAutogen(outputFile, endpointsFiles, doc)
   ```
 
-#### Package.json - Script
+#### Documentación de callbacks
 
-* Modifique el archivo **package.json** y agregue la entrada _swagger-autogen_.
+4. Modifique el archivo `itemControllers.js` con la descripción de cada función.
 
-  ```text
+    ```typescript
+    ...
+    
+    exports.getItem = async (req, res) => {
+
+      /* 
+        #swagger.tags = ['Items']
+        #swagger.description = 'Get an item entry'
+        #swagger.summary = 'Get an item entry'
+        #swagger.parameters['id'] = {
+          description: 'Item id',
+          required: true,
+        }
+        #swagger.responses[404] = {
+          description: 'Item not found',
+        }
+        #swagger.responses[400] = {
+          description: 'Bad request',
+        }
+        #swagger.responses[200] = {
+          description: 'Get an item by id',
+        }
+      */
+      ...
+    }
+
+    exports.getAllItems = async (req, res) => {
+
+      /* 
+        #swagger.tags = ['Items']
+        #swagger.description = 'Get all items entries'
+        #swagger.summary = 'Get all items entries'
+        #swagger.responses[200] = {
+          description: 'Items entries successfully obtained',
+        }
+        #swagger.responses[400] = {
+          description: 'Bad request',
+        }
+      */
+      ...
+    }
+
+    exports.createItem = async (req, res) => {
+
+      /* 
+        #swagger.tags = ['Items']
+        #swagger.description = 'Create an item'
+        #swagger.summary = 'Get all items entries'
+        #swagger.parameters['data'] = {
+          in: 'body',
+          description: 'Data to create an item',
+          required: true,
+        }
+        #swagger.responses[201] = {
+          description: 'Item successfully created',
+        }
+        #swagger.responses[400] = {
+          `description: 'Bad request',
+        }
+      */
+      ...
+    }
+
+    ...
+    ```
+
+#### Script Swagger - Package.json 
+
+5. Modifique el archivo `package.json` y agregue la entrada _swagger_.
+
+  ```typescript
   ...
   "scripts": {
     ...
@@ -59,34 +145,17 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
-#### Esquema de salida: swagger_ouput
+#### Esquema de salida: swagger_ouput.json
 
-* Desde la línea de comandos, ejecute el comando:
+6. Desde la línea de comandos, ejecute el comando:
 
   ```
-  npm run swagge
-  ```
-
-* En el archivo **swagger_ouput.json**, modifique las URLs de cada endpoint (clave _paths_) de acuerdo con las rutas en la aplicación:
-
-  ```text
-    ...
-    "paths": {
-      "/items": {
-        "post": { ... },
-        "get": { ... },
-      },
-      "/items/{id}": {
-        "get": { ... },
-        ...
-      }
-    }
-    ...
+  npm run swagger
   ```
 
 #### Registro del manejador de rutas
 
-* Modifique el archivo generado **app.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
+7. Modifique el archivo generado **app.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
 
 
   ```typescript
@@ -111,19 +180,33 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
-* Ejecute el servidor, con:
+8. Ejecute el servidor, con:
 
   ```
   npm start
   ```
 
-* Compruebe los endpoints del manejador de ruta, con:
+9. (STOP 1) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
+10. Versiona local y remotamente el repositorio **restapi**.
 
-  ```
-  http://localhost:3000/documentation
-  ```
+#### Reto
 
-* Versiona local y remotamente el repositorio **restapi**.
+1. Modifique la documentación del resto de métodos.
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <p>
+      <pre lang="typescript"><code>
+        ...
+        
+        ...
+      </code></pre>
+      </p>
+    </details>
+
+2. Ejecute el servidor.
+3. (STOP 1) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
+4. Versiona local y remotamente el repositorio **restapi**.
 
 ### Documentación
 
