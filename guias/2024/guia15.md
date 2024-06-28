@@ -165,6 +165,8 @@ theme: jekyll-theme-leap-day
     npm start
     ```
 
+3. Versiona local y remotamente el repositorio **restapi**.
+
 #### Verificación
 
 Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realizar:
@@ -180,6 +182,8 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
     ```command
     curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"key1\":\"value1\",\"key2\":\"value2\"}"
     ```
+
+3. (STOP 2) Revise el resultado en la línea de comandos.
 
 #### Reto
 
@@ -259,7 +263,9 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
       </p>
     </details>
 
-* Versiona local y remotamente el repositorio **restapi**.
+3. Levante el servidor y realice peticiones con cURL.
+4. (STOP 3) Revise el resultado en la línea de comandos.
+5. Versiona local y remotamente el repositorio **restapi**.
 
 ### Documentación
 
