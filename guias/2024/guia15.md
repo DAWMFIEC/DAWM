@@ -71,7 +71,7 @@ theme: jekyll-theme-leap-day
     npm install body-parser
     ```
 
-3. Instala el SDK de administración de Firebase.
+3. Instala el SDK de administración de [Firebase]().
 
     ```
     npm install firebase-admin
@@ -146,7 +146,7 @@ theme: jekyll-theme-leap-day
     };
     ```
 
-#### Script de ejecución y Ejecución del código
+#### Ejecución del REST API
 
 1. Agregue el script **start** en `package.json`.
 
@@ -165,21 +165,24 @@ theme: jekyll-theme-leap-day
     npm start
     ```
 
-#### cURL
+#### Verificación
 
-1. Petición GET - getAllItems
+Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realizar:
+
+1. Petición **método HTTP GET**
 
     ```command
     curl -X GET http://localhost:5000/api/items
     ```
 
-2. Petición POST - createItem
+    [!curl_get_all](imagenes/curl_get_all.png)
+
+2. Petición **método POST**
 
     ```command
-    curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"key1\":\"value1\",
- \"key2\":\"value2\"}"
+    curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"key1\":\"value1\",\"key2\":\"value2\"}"
     ```
-
+    [!curl_post](imagenes/curl_post.png)
 
 #### Reto
 
