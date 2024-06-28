@@ -199,15 +199,13 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
-      <p>
-        <pre lang="typescript"><code>
-          ...
-          router.get('/items/:id', itemController.getItem);
-          router.put('/items/:id', itemController.updateItem);
-          router.delete('/items/:id', itemController.deleteItem);
-          ...
-        </code></pre>
-      </p>
+      <pre lang="typescript"><code>
+        ...
+        router.get('/items/:id', itemController.getItem);
+        router.put('/items/:id', itemController.updateItem);
+        router.delete('/items/:id', itemController.deleteItem);
+        ...
+      </code></pre>
     </details>
 
 2. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
@@ -222,7 +220,6 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
-      <p>
       <pre lang="typescript"><code>
         ...
         exports.getItem = async (req, res) => {
@@ -260,7 +257,6 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
         };
         ...
       </code></pre>
-      </p>
     </details>
 
 3. Levante el servidor y realice peticiones con cURL.
