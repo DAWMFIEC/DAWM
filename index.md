@@ -33,7 +33,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 12: React - Componentes, Interfaces y Props](guias/2024/guia12)
   * [Guía 13: React - Eventos y Hooks: useState y useRef](guias/2024/guia13)
   * [Guía 14: React - Hooks: useEffect y LocalStorage](guias/2024/guia14)
-* [Proyecto 04: API REST - Express y Firebase - Firestore](proyectos/2024/proyecto04)
+* [Proyecto 04: API REST - Express, SQL y noSQL](proyectos/2024/proyecto04)
   * [Guía 15: Express - API de Datos - REST API](guias/2024/guia15)
   * [Guía 16: Express - API de Datos - Swagger](guias/2024/guia16)
   * [Guía 17: Express - API de Datos - Autenticación y Autorización](guias/2023/guia17)

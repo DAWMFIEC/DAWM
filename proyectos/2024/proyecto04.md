@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 04: API REST - Express y Firebase - Firestore
+## Proyecto 04: API REST - Express, SQL y noSQL
 
 [DAWM](/DAWM/)
 
