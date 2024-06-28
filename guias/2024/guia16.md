@@ -29,17 +29,15 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+#### REST API
+
 1. Clone localmente tu repositorio **restapi**.
 
-#### Dependencias Locales
-
-2. Instale los módulos **swagger-autogen** y **swagger-ui-express**
+2. Desde la línea de comandos, dentro del proyecto instale los módulos **swagger-autogen** y **swagger-ui-express**
 
   ```command
   npm install swagger-autogen swagger-ui-express
   ```
-
-#### Swagger-config
 
 3. En la raíz del proyecto, cree el archivo `./swagger.js` con el siguiente contenido: 
 
@@ -61,9 +59,7 @@ theme: jekyll-theme-leap-day
   swaggerAutogen(outputFile, endpointsFiles, doc)
   ```
 
-#### Documentación de callbacks
-
-4. Modifique el archivo `controllers/itemControllers.js` con la descripción de cada función.
+4. Modifique el archivo `./controllers/itemControllers.js` con la descripción de cada función.
 
     ```typescript
     ...
@@ -131,8 +127,6 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-#### Script Swagger - Package.json 
-
 5. Modifique el archivo `package.json` y agregue la entrada _swagger_.
 
   ```typescript
@@ -145,15 +139,11 @@ theme: jekyll-theme-leap-day
   ...
   ```
 
-#### Esquema de salida: swagger_ouput.json
-
-6. Desde la línea de comandos, ejecute el comando:
+6. Desde la línea de comandos, genere el archivo `./swagger_output.json` con el comando:
 
   ```
   npm run swagger
   ```
-
-#### Registro del manejador de rutas
 
 7. Modifique el archivo generado **app.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
 
@@ -186,6 +176,7 @@ theme: jekyll-theme-leap-day
     ```
 
 9. (STOP 1) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
+
 10. Versiona local y remotamente el repositorio **restapi**.
 
 #### Postman
@@ -196,13 +187,11 @@ theme: jekyll-theme-leap-day
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
-      <p>
       <pre lang="typescript"><code>
         ...
         
         ...
       </code></pre>
-      </p>
     </details>
 
 2. Ejecute el servidor.
