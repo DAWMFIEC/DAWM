@@ -177,48 +177,48 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-<details>
-  <summary><div>Haga click aquí para ver la solución</div></summary>
-  <p>
-  <pre lang="typescript"><code>
-    ...
-    exports.getItem = async (req, res) => {
-      try {
-        const itemId = req.params.id;
-        const itemDoc = await db.collection('items').doc(itemId).get();
-        if (!itemDoc.exists) {
-          res.status(404).send('Item not found');
-        } else {
-          res.status(200).json({ id: itemDoc.id, ...itemDoc.data() });
-        }
-      } catch (error) {
-        res.status(400).send(error.message);
-      }
-    };
-    exports.updateItem = async (req, res) => {
-      try {
-        const itemId = req.params.id;
-        const data = req.body;
-        const itemRef = db.collection('items').doc(itemId);
-        await itemRef.update(data);
-        res.status(200).send('Item updated');
-      } catch (error) {
-        res.status(400).send(error.message);
-      }
-    };
-    exports.deleteItem = async (req, res) => {
-      try {
-        const itemId = req.params.id;
-        await db.collection('items').doc(itemId).delete();
-        res.status(200).send('Item deleted');
-      } catch (error) {
-        res.status(400).send(error.message);
-      }
-    };
-    ...
-  </code></pre>
-  </p>
-</details>
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <p>
+      <pre lang="typescript"><code>
+        ...
+        exports.getItem = async (req, res) => {
+          try {
+            const itemId = req.params.id;
+            const itemDoc = await db.collection('items').doc(itemId).get();
+            if (!itemDoc.exists) {
+              res.status(404).send('Item not found');
+            } else {
+              res.status(200).json({ id: itemDoc.id, ...itemDoc.data() });
+            }
+          } catch (error) {
+            res.status(400).send(error.message);
+          }
+        };
+        exports.updateItem = async (req, res) => {
+          try {
+            const itemId = req.params.id;
+            const data = req.body;
+            const itemRef = db.collection('items').doc(itemId);
+            await itemRef.update(data);
+            res.status(200).send('Item updated');
+          } catch (error) {
+            res.status(400).send(error.message);
+          }
+        };
+        exports.deleteItem = async (req, res) => {
+          try {
+            const itemId = req.params.id;
+            await db.collection('items').doc(itemId).delete();
+            res.status(200).send('Item deleted');
+          } catch (error) {
+            res.status(400).send(error.message);
+          }
+        };
+        ...
+      </code></pre>
+      </p>
+    </details>
 
 2. En el archivo _controllers/itemController.js_, agregue el código para relacionar los métodos HTTP (**get**, **put** y **delete**) con las funciones del controlador (**getItem**, **updateItem** y **deleteItem**).
 
@@ -230,18 +230,18 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-<details>
-  <summary><div>Haga click aquí para ver la solución</div></summary>
-  <p>
-    <pre lang="typescript"><code>
-      ...
-      router.get('/items/:id', itemController.getItem);
-      router.put('/items/:id', itemController.updateItem);
-      router.delete('/items/:id', itemController.deleteItem);
-      ...
-    </code></pre>
-  </p>
-</details>
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <p>
+        <pre lang="typescript"><code>
+          ...
+          router.get('/items/:id', itemController.getItem);
+          router.put('/items/:id', itemController.updateItem);
+          router.delete('/items/:id', itemController.deleteItem);
+          ...
+        </code></pre>
+      </p>
+    </details>
 
 * Versiona local y remotamente el repositorio **restapi**.
 
