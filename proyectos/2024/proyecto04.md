@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 04: API REST - Express, SQL y noSQL
+## Proyecto 04: API REST - Express
 
 [DAWM](/DAWM/)
 
