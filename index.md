@@ -6,6 +6,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 * [2023 - I](galeria/2023/i)
 * [2023 - II](galeria/2023/ii)
+* [2024 - I](galeria/2024/i)
 
 ## Enlaces
 
