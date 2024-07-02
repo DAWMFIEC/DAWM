@@ -2,23 +2,6 @@
 theme: jekyll-theme-leap-day
 ---
 
-<style type="text/css" media="screen">
-  details {
-    margin: 5% 0%;
-    padding: 2%;
-    border: dashed 2px black;
-    border-radius: 11px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  }
-
-  details div {
-    color: lightseagreen;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-  }
-</style>
-
 ## Guía 15
 
 [DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2024/proyecto04)
@@ -177,6 +160,9 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
 3. (STOP 2) Revise el resultado en la línea de comandos.
 4. Versiona local y remotamente el repositorio **restapi**.
 
+#### Actividad grupal
+
+* Realice la actividad [`REST API`](/DAWM/enclases/restapi) 
 
 ### Documentación
 
