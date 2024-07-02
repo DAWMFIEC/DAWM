@@ -2,14 +2,14 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Colocación de elementos
+## REST API
 
 [DAWM](/DAWM/)
 
 ### Actividades previas
 
 * Reúnanse en grupo de máximo 3 personas.
-* Acceda a su cuenta de LLM de su preferencia (ChatGPT o Gemini).
+* Acceda a su cuenta de LLM de su preferencia (ChatGPT, Gemini, etc).
 
 ### Actividades en clases
 
