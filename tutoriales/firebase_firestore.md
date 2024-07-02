@@ -48,7 +48,7 @@ Firebase - Firestore
 * Selecciona **Cuentas de servicio** y da clic en **Generar nueva clave privada**. 
 
 <p align="center">
-  <img width="550" src ="imagenes/firebase_firestore_newkey.png">
+  <img width="550" src ="imagenes/firebase_firestore_service.png">
 </p>
 
 * De clic en **Generar clave** para descargar el archivo JSON. 
