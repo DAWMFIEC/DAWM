@@ -36,17 +36,8 @@ theme: jekyll-theme-leap-day
 
 #### Firebase - Firestore
 
-1. Ve a [Firebase Console](https://firebase.google.com/) y crea un nuevo proyecto.
-2. En **Categorías de producto** > **Compilación**, seleccione _Firestore Database_.
-3. De click **Crear base de datos** y seleccione las opciones predeterminadas. 
-
-#### Firebase - Servicio de Cuenta (Service Account)
-
-1. En la Descripción general, selecciona **Configuración del proyecto**, 
-2. Selecciona **Cuentas de servicio**,
-3. Da clic en **Nueva clave privada**, y 
-4. De clic en **Generar clave** para descargar el archivo JSON. 
-5. Cambie el nombre al archivo por **firebaseConfig.json**.
+1. Siga el tutorial de [Firebase - Firestore](/DAWM/tutoriales/firebase_firestore) para habilitar el servicio en modo de producción y obtener la clave de acceso.
+2. Descarge el archivo con la clave y cambie el nombre del archivo por **firebaseConfig.json**.
 
 ### Actividades en clases
 
@@ -184,84 +175,8 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
     ```
 
 3. (STOP 2) Revise el resultado en la línea de comandos.
+4. Versiona local y remotamente el repositorio **restapi**.
 
-#### Reto
-
-1. En el archivo _controllers/itemController.js_, agregue el código para relacionar los métodos HTTP (**get**, **put** y **delete**) con las funciones del controlador (**getItem**, **updateItem** y **deleteItem**).
-
-    ```typescript
-    ...
-    router.get(      ,     );
-    router.put(      ,     );
-    router.delete(   ,     );
-    ...
-    ```
-
-    <details>
-      <summary><div>Haga click aquí para ver la solución</div></summary>
-      <pre lang="typescript"><code>
-        ...
-        router.get('/items/:id', itemController.getItem);
-        router.put('/items/:id', itemController.updateItem);
-        router.delete('/items/:id', itemController.deleteItem);
-        ...
-      </code></pre>
-    </details>
-
-2. En el archivo _controllers/itemController.js_, agregue el código para las funciones **getItem**, **updateItem** y **deleteItem**.
-
-    ```typescript
-    ...
-    exports.getItem = async (req, res) => { }
-    exports.updateItem = async (req, res) => { }
-    exports.deleteItem = async (req, res) => { }
-    ...
-    ```
-
-    <details>
-      <summary><div>Haga click aquí para ver la solución</div></summary>
-      <pre lang="typescript"><code>
-        ...
-        exports.getItem = async (req, res) => {
-          try {
-            const itemId = req.params.id;
-            const itemDoc = await db.collection('items').doc(itemId).get();
-            if (!itemDoc.exists) {
-              res.status(404).send('Item not found');
-            } else {
-              res.status(200).json({ id: itemDoc.id, ...itemDoc.data() });
-            }
-          } catch (error) {
-            res.status(400).send(error.message);
-          }
-        };
-        exports.updateItem = async (req, res) => {
-          try {
-            const itemId = req.params.id;
-            const data = req.body;
-            const itemRef = db.collection('items').doc(itemId);
-            await itemRef.update(data);
-            res.status(200).send('Item updated');
-          } catch (error) {
-            res.status(400).send(error.message);
-          }
-        };
-        exports.deleteItem = async (req, res) => {
-          try {
-            const itemId = req.params.id;
-            await db.collection('items').doc(itemId).delete();
-            res.status(200).send('Item deleted');
-          } catch (error) {
-            res.status(400).send(error.message);
-          }
-        };
-        ...
-      </code></pre>
-    </details>
-
-3. Levante el servidor y realice peticiones con cURL.
-4. (STOP 3) Revise el resultado en la línea de comandos.
-5. Versiona local y remotamente el repositorio **restapi**.
 
 ### Documentación
 
