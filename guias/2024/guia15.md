@@ -158,7 +158,6 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
     ```
 
 3. (STOP 2) Revise el resultado en la línea de comandos.
-4. Versiona local y remotamente el repositorio **restapi**.
 
 #### Actividad grupal
 
