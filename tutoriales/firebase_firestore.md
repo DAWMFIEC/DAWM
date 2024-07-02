@@ -38,17 +38,22 @@ Firebase - Firestore
 
 ## Clave de acceso
 
-* Desde la interfaz de **Firestore Database**, en la Descripción general, selecciona **Configuración del proyecto** 
+* Desde la interfaz de Firestore Database, acceda a **Descripción general** > **Configuración del proyecto** 
 
 <p align="center">
   <img width="49%" src ="imagenes/firebase_firestore_index.png">
   <img width="49%" src ="imagenes/firebase_firestore_gd.png">
 </p> 
 
-* Selecciona **Cuentas de servicio** y da clic en **Generar nueva clave privada**. De clic en **Generar clave** para descargar el archivo JSON. 
+* Selecciona **Cuentas de servicio** y da clic en **Generar nueva clave privada**. 
 
 <p align="center">
-  <img width="550" src ="imagenes/firebase_firestore_service.png">
+  <img width="550" src ="imagenes/firebase_firestore_newkey.png">
+</p>
+
+* De clic en **Generar clave** para descargar el archivo JSON. 
+
+<p align="center">
   <img width="550" src ="imagenes/firebase_firestore_newkey.png">
 </p>
 
