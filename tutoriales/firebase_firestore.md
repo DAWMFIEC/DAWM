@@ -29,25 +29,28 @@ Firebase - Firestore
   <img width="550" src ="imagenes/firebase_firestore_init.png">
 </p>
 
-  + Durante el proceso de creación de la base de datos no relacional, habilite el _test mode_ para la edición por 30 días. 
+  + Durante el proceso de creación de la base de datos no relacional, habilite el _production mode_. 
 
 <p align="center">
   <img width="550" src ="imagenes/firebase_firestore_name.png">
-  <img width="550" src ="imagenes/firebase_firestore_testing.png">
+  <img width="550" src ="imagenes/firebase_firestore_production.png">
 </p> 
 
-* En la interfaz de **Firestore Database**
+## Clave de acceso
+
+* Desde la interfaz de **Firestore Database**, en la Descripción general, selecciona **Configuración del proyecto** 
 
 <p align="center">
-  <img width="550" src ="imagenes/firebase_firestore_index.png">
+  <img width="49%" src ="imagenes/firebase_firestore_index.png">
+  <img width="49%" src ="imagenes/firebase_firestore_gd.png">
 </p> 
 
-  + Agregue un nombre a la colección y agregue un documento (con o sin campos). 
+* Selecciona **Cuentas de servicio** y da clic en **Generar nueva clave privada**. De clic en **Generar clave** para descargar el archivo JSON. 
 
 <p align="center">
-  <img width="49%" src ="imagenes/firebase_firestore_collectionid.png">
-  <img width="49%" src ="imagenes/firebase_firestore_collectionfirst.png">
-</p> 
+  <img width="550" src ="imagenes/firebase_firestore_service.png">
+  <img width="550" src ="imagenes/firebase_firestore_newkey.png">
+</p>
 
 
 Referencias 
