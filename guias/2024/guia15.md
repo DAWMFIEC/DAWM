@@ -162,7 +162,7 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
 
 #### Actividad grupal
 
-* Realice la actividad [`REST API`](/DAWM/enclases/restapi) 
+* Realice la actividad [REST API](/DAWM/enclases/restapi) 
 
 ### Documentación
 
