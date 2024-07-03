@@ -19,6 +19,7 @@ Elabore su respuesta a las siguientes preguntas:
 3. Considerando los endpoints del REST API que ejecutan las operaciones CRUD, ¿Cuáles otras funcionalidades podría sugerir para el API REST?
 4. Desglosa el proceso de implementación de una operación CRUD en Firestore a través de un API REST. ¿Qué pasos específicos están involucrados desde la solicitud HTTP hasta la actualización en la base de datos? 
 5. Evalúa la implementación del endpoint que crea un nuevo documento en Firestore. ¿Qué mejoras sugerirías para optimizar código?
+6. Evalúa la implementación del endpoint que elimina un documento en Firestore. ¿Qué mejoras sugerirías para optimizar código?
 
 ### Entregable
 
