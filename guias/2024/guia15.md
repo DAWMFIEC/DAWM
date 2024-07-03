@@ -2,6 +2,23 @@
 theme: jekyll-theme-leap-day
 ---
 
+<style type="text/css" media="screen">
+  details {
+    margin: 5% 0%;
+    padding: 2%;
+    border: dashed 2px black;
+    border-radius: 11px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  details div {
+    color: lightseagreen;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+</style>
+
 ## Guía 15
 
 [DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2024/proyecto04)
@@ -10,7 +27,7 @@ theme: jekyll-theme-leap-day
 
 #### Entorno de desarrollo
 
-1. En el terminal, verifica que tengas instalado Node.js y npm, con:        
+1. En el terminal, verifica que tengas instalado **NodeJS** y **NPM**, con:        
 
     ```command
     node -v
@@ -31,13 +48,13 @@ theme: jekyll-theme-leap-day
 
 #### Express - Estructura base y configuración
 
-1. Inicializa un nuevo proyecto de Node.js, con:
+1. Inicialice un nuevo proyecto de Node.js, con:
 
     ```
     npm init -y
     ```
 
-2. Instala las dependencias **Express** (`framework` de `backend`), **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
+2. Instale las dependencias **Express** (`framework` de `backend`), **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
 
     ```
     npm install express body-parser
@@ -50,8 +67,9 @@ theme: jekyll-theme-leap-day
     npm install firebase-admin
     ```
 
-4. Cree la carpeta _config_ y mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta.
-5. (STOP 1) Revise la estructura de archivos.
+4. Cree la carpeta _./config_. 
+5. Mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta _./config_.
+6. (STOP 1) Revise la estructura de archivos.
 
 #### Express - Servidor, enrutador y controlador
 
@@ -79,8 +97,7 @@ theme: jekyll-theme-leap-day
     });
     ```
 
-2. Cree el archivo _routes/api.js_ con el código del `enrutador`. 
-    + Relacione los `métodos HTTP` con las funciones del `CRUD`.
+2. Cree el archivo _./routes/api.js_ con el código del `enrutador`:
 
     ```typescript
     const express = require('express');
@@ -93,8 +110,7 @@ theme: jekyll-theme-leap-day
     module.exports = router;
     ```
 
-3. Cree el archivo _controllers/itemController.js_ con el código del `controlador`:
-    + Utilice el `SDK` de Firestore para acceder al `CRUD` de la colección de firestore.
+3. Cree el archivo _./controllers/itemController.js_ con el código del `controlador`:
 
     ```typescript
     const admin = require('firebase-admin');
@@ -121,11 +137,11 @@ theme: jekyll-theme-leap-day
       }
     };
     ```
-4. (STOP 2) Revise la estructura de archivos.
+4. (STOP 2) Verifica la estructura de carpetas y archivos.
 
 #### Ejecución del servidor
 
-1. Agregue el script **start** en _package.json_.
+1. Agregue el script **start** en _./package.json_.
 
     ```typescript
     ...
@@ -142,25 +158,102 @@ theme: jekyll-theme-leap-day
     npm start
     ```
 
-3. Versiona local y remotamente el repositorio **restapi**.
-
 #### Verificación
 
-Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realizar las peticiones al `rest api`:
+1. Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realizar las peticiones al `rest api`:
 
-1. Petición **método HTTP GET**
+    + Petición **método HTTP POST**
 
     ```command
-    curl -X GET http://localhost:5000/api/items
+    curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"tags\":[\"tag1\",\"tag2\"],\"question\":\"Which band?\",\"answers\":[{\"id\":\"a0\",\"answer\":\"Answer1\"},{\"id\":\"a1\",\"answer\":\"answer2\"}]}"
     ```
 
-2. Petición **método HTTP POST**
+    + Petición **método HTTP GET**
 
     ```command
-    curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"key1\":\"value1\",\"key2\":\"value2\"}"
+    curl -X GET -H "Accept: application/json" http://localhost:5000/api/items
     ```
 
 3. (STOP 4) Revise el resultado en la línea de comandos.
+4. Versiona local y remotamente el repositorio **restapi**.
+
+### Reto
+
+1. Complete el código del controlador _./controllers/itemController.js_ con las operaciones `CRUD` del SDK.
+
+    ```typescript
+    ...
+    exports.getItem = async (req, res) => { }
+    exports.updateItem = async (req, res) => { }
+    exports.deleteItem = async (req, res) => { }
+    ...
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="typescript"><code>
+        exports.getItem = async (req, res) => {
+
+            try {
+                const itemId = req.params.id;
+                const itemDoc = await db.collection('items').doc(itemId).get();
+                if (!itemDoc.exists) {
+                    res.status(404).send('Item not found');
+                } else {
+                    res.status(200).json({ id: itemDoc.id, ...itemDoc.data() });
+                }
+            } catch (error) {
+                res.status(400).send(error.message);
+            }
+
+        };
+
+        exports.updateItem = async (req, res) => {
+
+            try {
+                const itemId = req.params.id;
+                const data = req.body;
+                const itemRef = db.collection('items').doc(itemId);
+                await itemRef.update(data);
+                res.status(200).send('Item updated');
+            } catch (error) {
+                res.status(400).send(error.message);
+            }
+
+        };
+
+        exports.deleteItem = async (req, res) => {
+
+            try {
+                const itemId = req.params.id;
+                await db.collection('items').doc(itemId).delete();
+                res.status(200).send('Item deleted');
+            } catch (error) {
+                res.status(400).send(error.message);
+            }
+
+        };
+      </code></pre>
+    </details>
+
+2. Complete el código del enrutador _./routes/api.js_ con las relaciones de los `métodos HTTP` con las funciones del controlador:
+
+    ```typescript
+    ...
+    router.get(      ,     );
+    router.put(      ,     );
+    router.delete(   ,     );
+    ...
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="typescript"><code>
+        router.get('/items/:id', itemController.getItem);
+        router.put('/items/:id', itemController.updateItem);
+        router.delete('/items/:id', itemController.deleteItem);
+      </code></pre>
+    </details>
 
 #### Actividad grupal
 
