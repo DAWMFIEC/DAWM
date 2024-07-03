@@ -171,7 +171,7 @@ theme: jekyll-theme-leap-day
     + Petición **método HTTP GET**
 
     ```command
-    curl -X GET -H "Accept: application/json" http://localhost:5000/api/items
+    curl -X GET http://localhost:5000/api/items -H "Accept: application/json" 
     ```
 
 3. (STOP 4) Revise el resultado en la línea de comandos.
@@ -256,6 +256,22 @@ theme: jekyll-theme-leap-day
     </details>
 
 3. Verifique el correcto funcionamiento mediante peticiones [cURL](https://curl.se/)
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="typescript"><code>
+
+        set ID=#ID de un objeto almacenado#
+
+        curl -X GET http://localhost:5000/api/items/%ID% -H "Accept: application/json" 
+
+        curl -X PUT http://localhost:5000/api/items/%ID% -H "Content-Type: application/json" -d "{\"tags\":\"\",\"question\":\"\",\"answers\":\"\"}"
+
+        curl -X DELETE http://localhost:5000/api/items/%ID% -H "Accept: application/json" 
+      
+      </code></pre>
+    </details>
+
 4. (STOP 5) Revise el resultado en la línea de comandos.
 5. Versiona local y remotamente el repositorio **restapi**.
 
