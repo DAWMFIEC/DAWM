@@ -19,8 +19,8 @@ theme: jekyll-theme-leap-day
 
 #### Firebase - Firestore
 
-1. Complete el tutorial de [Firebase - Firestore](/DAWM/tutoriales/firebase_firestore).
-2. Descarge el archivo con la clave acceso y cambie el nombre del archivo por **firebaseConfig.json**.
+1. Realice el tutorial completo de [Firebase - Firestore](/DAWM/tutoriales/firebase_firestore).
+2. Descargue el archivo con la clave acceso y cambie el nombre del archivo por **firebaseConfig.json**.
 
 ### Actividades en clases
 
