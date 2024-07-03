@@ -2,25 +2,43 @@
 theme: jekyll-theme-leap-day
 ---
 
+<style type="text/css" media="screen">
+  details {
+    margin: 5% 0%;
+    padding: 2%;
+    border: dashed 2px black;
+    border-radius: 11px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  details div {
+    color: lightseagreen;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+</style>
+
+
 ## REST API
 
 [DAWM](/DAWM/)
 
 ### Actividades previas
 
-* Reúnanse en grupo de máximo 3 personas.
-* Acceda a su cuenta de LLM de su preferencia (ChatGPT, Gemini, etc).
+1. Reúnanse en grupo de 3 (máximo) personas.
+2. Acceda a su cuenta de LLM de su preferencia (ChatGPT, Gemini, etc).
 
 ### Actividades en clases
 
-#### Servidor, Controlador y Rutas
+#### Explicación de código
 
-* Consulte por la explicación detallada del código que se encuentra en los archivos _./server.js_, _controllers/itemController.js_ y _routes/api.js_.
-* Descargue y descomprima la respuesta en formato PDF. Asegúrese de incluir la instrucción para generar la pregunta. 
+1. Pregunte por la explicación detallada del código que se encuentra en los archivos _./server.js_, _controllers/itemController.js_ y _routes/api.js_.
+2. Descargue y descomprima la respuesta en formato PDF. Asegúrese de incluir la instrucción para generar la pregunta. 
 
-#### Controlador
+#### Generación de código
 
-* Consulte por el código para completar las funciones **getItem**, **updateItem** y **deleteItem** que se encuentran el archivo _controllers/itemController.js_.
+1. Pregunte por la explicación detallada del código para completar las funciones **getItem**, **updateItem** y **deleteItem** que se encuentran el archivo _controllers/itemController.js_.
 
     ```typescript
     ...
@@ -30,9 +48,7 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-#### Rutas
-
-* Consulte por el código para completar las relaciones de los métodos HTTP (**get**, **put** y **delete**) con las funciones del controlador (**getItem**, **updateItem** y **deleteItem**) que se encuentran en el archivo _routes/api.js_.
+2. Pregunte por la explicación detallada del código para completar las relaciones de los métodos HTTP (**get**, **put** y **delete**) con las funciones del controlador (**getItem**, **updateItem** y **deleteItem**) que se encuentran en el archivo _routes/api.js_.
 
     ```typescript
     ...
@@ -42,20 +58,78 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-* Desde la línea de comandos, inicie el servidor:
+3. Desde la línea de comandos, inicie el servidor:
 
     ```command
     npm start
     ```
 
-* Versiona local y remotamente el repositorio **restapi**.
+4. Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para verificar el funcionamiento de los nuevos enpoints.
+5. Compruebe el funcionamiento correcto y corrija los errores que se presenten.
+6. Versiona local y remotamente el repositorio **restapi**.
+7. Descargue y descomprima la respuesta en formato PDF. Asegúrese de incluir la instrucción para generar la pregunta. 
 
-#### Verificación
+### Solución
 
-* Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para verificar el funcionamiento de los nuevos enpoints.
-* Compruebe el funcionamiento correcto y corrija los errores que encuentren. 
-* Descargue y descomprima la respuesta en formato PDF. Asegúrese de incluir la instrucción para generar la pregunta.
-* Versiona local y remotamente el repositorio **restapi**.
+<details>
+  <summary><div>Haga click aquí para ver la solución del Enrutador <i>routes/api.js<i></div></summary>
+  <pre lang="typescript"><code>
+    ...
+    router.get('/items/:id', itemController.getItem);
+    router.put('/items/:id', itemController.updateItem);
+    router.delete('/items/:id', itemController.deleteItem);
+    ...
+  </code></pre>
+</details>
+
+<details>
+  <summary><div>Haga click aquí para ver la solución del Controlador <i>controllers/itemController.js<i></div></summary>
+  <pre lang="typescript"><code>
+    exports.getItem = async (req, res) => {
+
+        try {
+            const itemId = req.params.id;
+            const itemDoc = await db.collection('items').doc(itemId).get();
+            if (!itemDoc.exists) {
+                res.status(404).send('Item not found');
+            } else {
+                res.status(200).json({ id: itemDoc.id, ...itemDoc.data() });
+            }
+        } catch (error) {
+            res.status(400).send(error.message);
+        }
+        
+    };
+
+    exports.updateItem = async (req, res) => {
+
+        try {
+            const itemId = req.params.id;
+            const data = req.body;
+            const itemRef = db.collection('items').doc(itemId);
+            await itemRef.update(data);
+            res.status(200).send('Item updated');
+        } catch (error) {
+            res.status(400).send(error.message);
+        }
+
+    };
+
+    exports.deleteItem = async (req, res) => {
+
+        try {
+            const itemId = req.params.id;
+            await db.collection('items').doc(itemId).delete();
+            res.status(200).send('Item deleted');
+        } catch (error) {
+            res.status(400).send(error.message);
+        }
+
+    };
+  </code></pre>
+</details>
+
+
 
 ### Entregable
 
