@@ -26,7 +26,7 @@ Elabore su respuesta a las siguientes preguntas:
 
 ### Entregable
 
-* Responda a la actividad en el aulavirtual con los archivos PDF.
+* Responda a la actividad en el aulavirtual con un archivo PDF.
 
 ### Referencias
 
