@@ -19,15 +19,15 @@ theme: jekyll-theme-leap-day
 
 #### Firebase - Firestore
 
-1. Siga el tutorial de [Firebase - Firestore](/DAWM/tutoriales/firebase_firestore) para habilitar el servicio en modo de producción y obtener la clave de acceso.
-2. Descarge el archivo con la clave y cambie el nombre del archivo por **firebaseConfig.json**.
+1. Complete el tutorial de [Firebase - Firestore](/DAWM/tutoriales/firebase_firestore).
+2. Descarge el archivo con la clave acceso y cambie el nombre del archivo por **firebaseConfig.json**.
 
 ### Actividades en clases
 
 #### Github
 
-1. Crea un repositorio en GitHub con el nombre **restapi**.
-2. Clona y accede a la carpeta en el directorio local.
+1. Cree un repositorio en GitHub con el nombre **restapi**.
+2. Clone y acceda a la carpeta en el directorio local.
 
 #### Express - Estructura base y configuración
 
@@ -37,12 +37,11 @@ theme: jekyll-theme-leap-day
     npm init -y
     ```
 
-2. Instala las dependencias **Express**, **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
+2. Instala las dependencias **Express** (`framework` de `backend`), **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
 
     ```
-    npm install express
+    npm install express body-parser
     npm install --save-dev nodemon
-    npm install body-parser
     ```
 
 3. Instala el SDK de administración de [Firebase](https://firebase.google.com/docs/admin/setup?hl=es-419).
@@ -52,6 +51,7 @@ theme: jekyll-theme-leap-day
     ```
 
 4. Cree la carpeta _config_ y mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta.
+5. (STOP 1) Revise la estructura de archivos.
 
 #### Express - Servidor, enrutador y controlador
 
@@ -79,7 +79,8 @@ theme: jekyll-theme-leap-day
     });
     ```
 
-2. Cree el archivo _routes/api.js_ con el código del `enrutador`:
+2. Cree el archivo _routes/api.js_ con el código del `enrutador`. 
+    + Relacione los `métodos HTTP` con las funciones del `CRUD`.
 
     ```typescript
     const express = require('express');
@@ -92,7 +93,8 @@ theme: jekyll-theme-leap-day
     module.exports = router;
     ```
 
-3. Cree el archivo _controllers/itemController.js_ con las funciones del `controlador`:
+3. Cree el archivo _controllers/itemController.js_ con el código del `controlador`:
+    + Utilice el `SDK` de Firestore para acceder al `CRUD` de la colección de firestore.
 
     ```typescript
     const admin = require('firebase-admin');
@@ -119,10 +121,11 @@ theme: jekyll-theme-leap-day
       }
     };
     ```
+4. (STOP 2) Revise la estructura de archivos.
 
 #### Ejecución del servidor
 
-1. Agregue el script **start** en `package.json`.
+1. Agregue el script **start** en _package.json_.
 
     ```typescript
     ...
@@ -133,7 +136,7 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-2. (STOP 1) Desde la línea de comandos, inicie el servidor:
+2. (STOP 3) Desde la línea de comandos, inicie el servidor:
 
     ```command
     npm start
@@ -143,7 +146,7 @@ theme: jekyll-theme-leap-day
 
 #### Verificación
 
-Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realizar:
+Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realizar las peticiones al `rest api`:
 
 1. Petición **método HTTP GET**
 
@@ -157,7 +160,7 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
     curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"key1\":\"value1\",\"key2\":\"value2\"}"
     ```
 
-3. (STOP 2) Revise el resultado en la línea de comandos.
+3. (STOP 4) Revise el resultado en la línea de comandos.
 
 #### Actividad grupal
 
@@ -166,7 +169,8 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
 ### Documentación
 
 * En [ExpressJS](https://expressjs.com/) se encuentra la referencia del API, guías y tutoriales.
-* [Firebase Admin](https://firebase.google.com/docs/admin/setup?hl=es-419) contiene la documentación del SDK de Admin.
+* [Firebase Admin Node.js SDK](https://www.npmjs.com/package/firebase-admin) contiene la documentación del SDK de Admin.
+* En el [API de Admin Database](https://firebase.google.com/docs/database/admin/start?hl=es-419) se encuentra la documentación para acceder a la base de datos de Firestore.
 
 ### Fundamental
 
@@ -176,7 +180,7 @@ Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realiz
 
 ### Términos
 
-rest api, servidor, enrutador, controlador, orm, crud, métodos HTTP, estados HTTP
+framework, backend, servidor, enrutador, controlador, SDK, CRUD, métodos HTTP, estados HTTP
 
 ### Referencias
 
