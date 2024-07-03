@@ -61,7 +61,7 @@ theme: jekyll-theme-leap-day
     npm install --save-dev nodemon
     ```
 
-3. Instala el SDK de administración de [Firebase](https://firebase.google.com/docs/admin/setup?hl=es-419).
+3. Instale el [Firebase](https://firebase.google.com/docs/admin/setup?hl=es-419) Admin `SDK`.
 
     ```
     npm install firebase-admin
@@ -160,7 +160,7 @@ theme: jekyll-theme-leap-day
 
 #### Verificación
 
-1. Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realizar las peticiones al `rest api`:
+1. Desde una nueva línea de comandos, utilice [cURL](https://curl.se/) para realizar las peticiones al `REST API`:
 
     + Petición **método HTTP POST**
 
@@ -177,9 +177,9 @@ theme: jekyll-theme-leap-day
 3. (STOP 4) Revise el resultado en la línea de comandos.
 4. Versiona local y remotamente el repositorio **restapi**.
 
-### Reto
+#### Reto
 
-1. Complete el código del controlador _./controllers/itemController.js_ con las operaciones `CRUD` del SDK.
+1. Complete el código del controlador _./controllers/itemController.js_ con las operaciones `CRUD` con el Firebase Admin SDK. Según sea necesario, considere los `estados HTTP` (200, 400 y 404) como parte de su respuesta.
 
     ```typescript
     ...
@@ -254,6 +254,10 @@ theme: jekyll-theme-leap-day
         router.delete('/items/:id', itemController.deleteItem);
       </code></pre>
     </details>
+
+3. Verifique el correcto funcionamiento mediante peticiones [cURL](https://curl.se/)
+4. (STOP 5) Revise el resultado en la línea de comandos.
+5. Versiona local y remotamente el repositorio **restapi**.
 
 #### Actividad grupal
 
