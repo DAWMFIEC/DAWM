@@ -19,7 +19,7 @@
       https://<NOMBRE_BASE_DATOS>-default-rtdb.firebaseio.com/movies.json
       ```
 
-* Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/).
+* Descargue e instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/).
   + Obtenga una [cuenta gratuita](https://identity.getpostman.com/signup).
   + Cree la colección **Movies**,
     <p align="center">  
