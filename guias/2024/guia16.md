@@ -39,17 +39,17 @@ theme: jekyll-theme-leap-day
     npm install swagger-autogen swagger-ui-express
     ```
 
-3. En la raíz del proyecto, cree el archivo `./swagger.js` con el siguiente contenido: 
+3. En la raíz del proyecto, cree el archivo de configuración de `./swagger.js` con el siguiente contenido: 
 
     ```typescript
     const swaggerAutogen = require('swagger-autogen')()
 
     const doc = {
-      info: {
-        title: 'REST API',
-        description: 'REST API with Express and Firestore'
+      "info": {
+        "title": 'REST API',
+        "description": 'REST API with Express and Firestore'
       },
-      host: 'localhost:5000',
+      "host": 'localhost:5000',
       "basePath": "/api",
     };
 
@@ -59,7 +59,7 @@ theme: jekyll-theme-leap-day
     swaggerAutogen(outputFile, endpointsFiles, doc)
     ```
 
-4. Modifique el archivo `./controllers/itemControllers.js` con la descripción de cada función.
+4. Modifique el controlador `./controllers/itemControllers.js` con la descripción de cada función.
 
     ```typescript
     ...
@@ -145,7 +145,7 @@ theme: jekyll-theme-leap-day
     npm run swagger
     ```
 
-7. Modifique el archivo generado **app.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
+7. Modifique el archivo con el servidor **server.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
 
     ```typescript
     const admin = require('firebase-admin');
@@ -177,11 +177,15 @@ theme: jekyll-theme-leap-day
 
 9. (STOP 1) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
 
+![Swagger output](imagenes/swagger_output.png)
+
 10. Versiona local y remotamente el repositorio **restapi**.
 
 #### Postman
 
-#### Reto
+### Actividad en grupo
+
+En grupos de tres (3) personas, utilicen un LLM para las siguientes tareas:
 
 1. Complete la documentación para los métodos **updateItem** y **deleteItem**.
 
@@ -211,6 +215,8 @@ theme: jekyll-theme-leap-day
                   description: '',
               }
           */
+
+          ...
         };
 
         exports.deleteItem = async (req, res) => {
@@ -231,6 +237,9 @@ theme: jekyll-theme-leap-day
                 description: '',
             }
           */
+            ...
+        }
+
         ...
       </code></pre>
     </details>
