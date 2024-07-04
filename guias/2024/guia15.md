@@ -179,7 +179,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividad en grupo
 
-En grupos de tres (3) personas, utilicen un LLM para las siguientes tareas:
+En grupos de tres (3) personas, utilicen un LLM para completar las siguientes tareas:
 
 1. Complete el código del controlador _./controllers/itemController.js_ con las operaciones `CRUD` con el Firebase Admin SDK. Como parte de la respuesta, considere los `estados HTTP` (200, 400 y 404).
 
