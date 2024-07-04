@@ -104,8 +104,13 @@
 
     - Agregue el requerimiento _**DELETE**_ (método HTTP **DELETE**) para eliminar datos al elemento **579.json** mediante la URL de acceso. 
 
-      <p align="center">  
+      <p align="center" style="margin: 0 25%;">  
         <img width="40%" src="imagenes/DELETE.png">
+      </p>
+
+      Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del DELETE.
+
+      <p align="center" style="margin: 0 25%;">  
         <img width="40%" src="imagenes/firebase_DELETE.png">
       </p>
 
