@@ -30,21 +30,21 @@
   + Obtenga una [cuenta gratuita](https://identity.getpostman.com/signup).
   + Cree un _blank_ workspace con el nombre **DAWM**.
 
-    <p align="center">  
+    <p align="center" style="margin: 0 25%;">  
       <img width="50%" src="imagenes/create_workspace.png" style="margin-right: 5%;">
       <img width="45%" src="imagenes/workspace_dawm.png">
     </p>
 
   + Cree la colección **Movies** y agregue los requerimientos,
     
-    <p align="center">  
+    <p align="center" style="margin: 0 25%;">  
       <img width="30%" src="imagenes/collection.png" style="margin-right: 5%;"> 
       <img width="22%" src="imagenes/request.png">
     </p>
 
     - Agregue el requerimiento _**GET-all**_ (método HTTP **GET**) que recupera toda la colección mediante la URL de acceso. Así luce respuesta del requerimiento en _Postman_.
 
-      <p align="center">  
+      <p align="center" style="margin: 0 25%;">  
         <img width="40%" src="imagenes/GET-all.png">
       </p>
 
@@ -57,8 +57,8 @@
     - Agregue el requerimiento _**POST**_ (método HTTP **POST**) para enviar datos al elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
       
       <p>
-        <img width="40%" src="imagenes/POST.png">
-        <p width="40%">
+        <img width="40%" src="imagenes/POST.png" style="margin: 0 25%;">
+        <p width="40%" style="margin: 0 25%;">
           <pre><code>
             {
               "genre": "Adventure",
@@ -74,15 +74,15 @@
       
       Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del POST.
 
-      <p align="center">  
+      <p align="center" style="margin: 0 25%;">  
         <img width="47%" src="imagenes/firebase_POST.png">
       </p>
 
     - Agregue el requerimiento _**PUT**_ (método HTTP **PUT**) para modificar el elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
 
       <p>
-        <img width="40%" src="imagenes/PUT.png">
-        <p width="40%">
+        <img width="40%" src="imagenes/PUT.png" style="margin: 0 25%;">
+        <p width="40%" style="margin: 0 25%;">
           <pre><code>
             {
                 "genre": "Adventure",
