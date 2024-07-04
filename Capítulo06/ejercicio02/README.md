@@ -19,6 +19,12 @@
       https://<NOMBRE_BASE_DATOS>-default-rtdb.firebaseio.com/movies.json
       ```
 
+  + Compruebe el acceso público a la colección movies en el navegador.
+
+    <p align="center">  
+      <img width="20%" src="imagenes/collection_public.png">
+    </p>
+
 * Descargue e instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/).
   + Obtenga una [cuenta gratuita](https://identity.getpostman.com/signup).
   + Cree la colección **Movies**,
