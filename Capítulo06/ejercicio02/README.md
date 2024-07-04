@@ -56,21 +56,23 @@
 
     - Agregue el requerimiento _**POST**_ (método HTTP **POST**) para enviar datos al elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
       
-      ```
-      {
-          "genre": "Adventure",
-          "inflation_adjusted_gross": "",
-          "movie_title": "Red",
-          "mpaa_rating": "PG-13",
-          "release_date": "",
-          "total_gross": ""
-      }
-      ```
-
+      <p>
+        <img width="40%" src="imagenes/POST.png">
+        <pre><code>
+          {
+            "genre": "Adventure",
+            "inflation_adjusted_gross": "",
+            "movie_title": "Red",
+            "mpaa_rating": "PG-13",
+            "release_date": "",
+            "total_gross": ""
+          }      
+        </code></pre>
+      </p>
+      
       Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del POST.
 
       <p align="center">  
-        <img width="47%" src="imagenes/POST.png">
         <img width="47%" src="imagenes/firebase_POST.png">
       </p>
 
