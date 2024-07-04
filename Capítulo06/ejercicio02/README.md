@@ -13,16 +13,16 @@
   + Cree la colección: `movies`
   + Cargue el archivo **disney_movies.json** dentro de la colección movies.
   + Edite las reglas de acceso a los datos para permitir acceso completo.
-  + Obtenga el URL de acceso a la colección. Suele ser similar al siguiente patrón:
+  + Obtenga la **URL de acceso a la colección**. Similar al siguiente patrón:
       
       ```
       https://<NOMBRE_BASE_DATOS>-default-rtdb.firebaseio.com/movies.json
       ```
 
-  + Compruebe el acceso público a la colección movies en el navegador.
+  + Acceda a la URL de la colección y compruebe el resultado.
 
     <p align="center">  
-      <img width="20%" src="imagenes/collection_public.png">
+      <img width="60%" src="imagenes/collection_public.png">
     </p>
 
 * Descargue e instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/).
