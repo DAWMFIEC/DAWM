@@ -41,13 +41,13 @@
       <img width="22%" src="imagenes/request.png">
     </p>
 
-    - _**GET-all**_: Con el método **GET** para obtener todos los elementos de la colección, al URL: `https://nosql-63d27-default-rtdb.firebaseio.com/movies.json`. Así luce respuesta del requerimiento en _Postman_.
+    - Agregue el requerimiento _**GET-all**_ (método HTTP **GET**) al URL de acceso a la colección. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-all.png">
       </p>
 
-    - _**GET-one**_: Con el método **GET** para del elemento **150** de la colección, al URL: `https://nosql-63d27-default-rtdb.firebaseio.com/movies/150.json`. Así luce respuesta del requerimiento en _Postman_.
+    - Agregue el requerimiento _**GET-one**_ (método HTTP **GET**) al URL de acceso a la colección para el elemento **150**. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-one.png">
