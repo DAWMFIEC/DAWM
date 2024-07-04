@@ -10,7 +10,8 @@
 * Desde la línea de comandos, instale globalmente el módulo [csv2json](https://www.npmjs.com/package/csv2json).
   + Convierta el dataset de **.csv** a **.json**, con: `csv2json disney_movies.csv disney_movies.json`
 * Cree un proyecto en **Firebase** de acuerdo con el tutorial [Firebase - Realtime database](https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database.html).
-  + Cree la colección: `movies`
+  + Cree el proyecto: **DAWM**
+  + Cree la colección: **movies**
   + Cargue el archivo **disney_movies.json** dentro de la colección movies.
   + Edite las reglas de acceso a los datos para permitir acceso completo.
   + Obtenga la **URL de acceso a la colección**. Similar al siguiente patrón:
