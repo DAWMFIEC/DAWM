@@ -11,8 +11,14 @@
   + Convierta el dataset de **.csv** a **.json**, con: `csv2json disney_movies.csv disney_movies.json`
 * Cree un proyecto en **Firebase** de acuerdo con el tutorial [Firebase - Realtime database](https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database.html).
   + Cree la colección: `movies`
-  + Cargue el archivo **disney_movies.json** dentro de la colección **movies**
+  + Cargue el archivo **disney_movies.json** dentro de la colección movies.
   + Edite las reglas de acceso a los datos para permitir acceso completo.
+  + Obtenga el URL de acceso a la colección. Suele ser similar al siguiente patrón:
+      
+      ```
+      https://<NOMBRE_BASE_DATOS>-default-rtdb.firebaseio.com/movies.json
+      ```
+
 * Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/).
   + Obtenga una [cuenta gratuita](https://identity.getpostman.com/signup).
   + Cree la colección **Movies**,
