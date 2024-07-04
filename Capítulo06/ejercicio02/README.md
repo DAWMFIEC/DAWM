@@ -27,9 +27,16 @@
 
 * Acceda a [Postman](https://www.postman.com/).
   + Obtenga una [cuenta gratuita](https://identity.getpostman.com/signup).
+  + Cree un _blank_ workspace con el nombre **DAWM**.
+
+    <p align="center">  
+      <img width="20%" src="imagenes/create_workspace.png" style="margin-right: 5%;">
+      <img width="20%" src="imagenes/workspace_dawm.png">
+    </p>
+
   + Cree la colección **Movies** y agregue los requerimientos,
     <p align="center">  
-      <img width="20%" src="imagenes/collection.png">
+      <img width="20%" src="imagenes/collection.png" style="margin-right: 5%;"> 
       <img width="20%" src="imagenes/request.png">
     </p>
 
