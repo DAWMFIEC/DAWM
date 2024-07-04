@@ -177,9 +177,11 @@ theme: jekyll-theme-leap-day
 3. (STOP 4) Revise el resultado en la línea de comandos.
 4. Versiona local y remotamente el repositorio **restapi**.
 
-### Reto
+### Actividad en grupo
 
-1. Complete el código del controlador _./controllers/itemController.js_ con las operaciones `CRUD` con el Firebase Admin SDK. Según sea necesario, considere los `estados HTTP` (200, 400 y 404) como parte de su respuesta.
+En grupos de tres (3) personas, utilicen un LLM para las siguientes tareas:
+
+1. Complete el código del controlador _./controllers/itemController.js_ con las operaciones `CRUD` con el Firebase Admin SDK. Como parte de la respuesta, considere los `estados HTTP` (200, 400 y 404).
 
     ```typescript
     ...
@@ -275,11 +277,16 @@ theme: jekyll-theme-leap-day
 4. (STOP 5) Revise el resultado en la línea de comandos.
 5. Versiona local y remotamente el repositorio **restapi**.
 
-<!---
-#### Actividad grupal
+### Preguntas
 
-* Realice la actividad [REST API](/DAWM/enclases/restapi) 
--->
+Elabore su respuesta a las siguientes preguntas:
+
+1. ¿Para qué desarrollar un API rest en mi aplicación web?
+2. ¿Para qué utilizar Firestore en mi aplicación?
+3. Considerando los endpoints del REST API que ejecutan las operaciones CRUD, ¿Cuáles otras funcionalidades podría sugerir para el API REST?
+4. Desglosa el proceso de implementación de una operación CRUD en Firestore a través de un API REST. ¿Qué pasos específicos están involucrados desde la solicitud HTTP hasta la actualización en la base de datos? 
+5. Evalúa la implementación del endpoint que crea un nuevo o eliminar un documento en Firestore. ¿Qué mejoras sugerirías para optimizar código?
+
 
 ### Documentación
 
