@@ -30,14 +30,14 @@
   + Cree un _blank_ workspace con el nombre **DAWM**.
 
     <p align="center">  
-      <img width="20%" src="imagenes/create_workspace.png" style="margin-right: 5%;">
-      <img width="20%" src="imagenes/workspace_dawm.png">
+      <img width="50%" src="imagenes/create_workspace.png" style="margin-right: 5%;">
+      <img width="60%" src="imagenes/workspace_dawm.png">
     </p>
 
   + Cree la colección **Movies** y agregue los requerimientos,
     <p align="center">  
-      <img width="20%" src="imagenes/collection.png" style="margin-right: 5%;"> 
-      <img width="20%" src="imagenes/request.png">
+      <img width="30%" src="imagenes/collection.png" style="margin-right: 5%;"> 
+      <img width="22%" src="imagenes/request.png">
     </p>
 
     - _**GET-all**_: Con el método **GET** para obtener todos los elementos de la colección, al URL: `https://nosql-63d27-default-rtdb.firebaseio.com/movies.json`. Así luce respuesta del requerimiento en _Postman_.
