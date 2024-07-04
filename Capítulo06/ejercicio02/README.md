@@ -56,9 +56,9 @@
 
     - Agregue el requerimiento _**POST**_ (método HTTP **POST**) para enviar datos al elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
       
-      <p>
-        <img width="40%" src="imagenes/POST.png" style="margin: 0 25%;">
-        <p width="40%" style="margin: 0 25%;">
+      <p style="margin: 0 25%;">
+        <img width="40%" src="imagenes/POST.png">
+        <p width="40%">
           <pre><code>
             {
               "genre": "Adventure",
@@ -80,9 +80,9 @@
 
     - Agregue el requerimiento _**PUT**_ (método HTTP **PUT**) para modificar el elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
 
-      <p>
-        <img width="40%" src="imagenes/PUT.png" style="margin: 0 25%;">
-        <p width="40%" style="margin: 0 25%;">
+      <p style="margin: 0 25%;">
+        <img width="40%" src="imagenes/PUT.png">
+        <p width="40%">
           <pre><code>
             {
                 "genre": "Adventure",
