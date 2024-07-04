@@ -177,7 +177,7 @@ theme: jekyll-theme-leap-day
 3. (STOP 4) Revise el resultado en la línea de comandos.
 4. Versiona local y remotamente el repositorio **restapi**.
 
-#### Reto
+### Reto
 
 1. Complete el código del controlador _./controllers/itemController.js_ con las operaciones `CRUD` con el Firebase Admin SDK. Según sea necesario, considere los `estados HTTP` (200, 400 y 404) como parte de su respuesta.
 
