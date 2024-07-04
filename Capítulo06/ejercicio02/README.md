@@ -56,7 +56,7 @@
 
     - Agregue el requerimiento _**POST**_ (método HTTP **POST**) para enviar datos al elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
       
-      <p style="margin: 0 25%;">
+      <p style="margin: 0 25%; text-align: center;">
         <img width="40%" src="imagenes/POST.png">
         <p width="40%">
           <pre><code>
@@ -74,7 +74,7 @@
       
       Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del POST.
 
-      <p align="center" style="margin: 0 25%;">  
+      <p align="center" style="margin: 0 25%; text-align: center;">  
         <img width="47%" src="imagenes/firebase_POST.png">
       </p>
 
