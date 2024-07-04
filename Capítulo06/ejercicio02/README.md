@@ -58,7 +58,7 @@
       
       <p>
         <img width="40%" src="imagenes/POST.png">
-        <pre><code>
+        <pre width="40%"><code>
           {
             "genre": "Adventure",
             "inflation_adjusted_gross": "",
