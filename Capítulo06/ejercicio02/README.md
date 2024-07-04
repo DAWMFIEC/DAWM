@@ -48,13 +48,14 @@
         <img width="80%" src="imagenes/GET-all.png">
       </p>
 
-    - Agregue el requerimiento _**GET-one**_ (método HTTP **GET**) al elemento **150** mediane la URL de acceso. Así luce respuesta del requerimiento en _Postman_.
+    - Agregue el requerimiento _**GET-byId**_ (método HTTP **GET**) al elemento **150** mediane la URL de acceso. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
-        <img width="80%" src="imagenes/GET-one.png">
+        <img width="80%" src="imagenes/GET-byId.png">
       </p>
 
-    - Agregue el requerimiento _**Post**_ (método HTTP **POST**) para enviar datos al elemento **579** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
+    - Agregue el requerimiento _**POST**_ (método HTTP **POST**) para enviar datos al elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
+      
       ```
       {
           "genre": "Adventure",
