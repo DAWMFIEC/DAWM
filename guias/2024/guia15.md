@@ -275,9 +275,11 @@ theme: jekyll-theme-leap-day
 4. (STOP 5) Revise el resultado en la línea de comandos.
 5. Versiona local y remotamente el repositorio **restapi**.
 
+<!---
 #### Actividad grupal
 
 * Realice la actividad [REST API](/DAWM/enclases/restapi) 
+-->
 
 ### Documentación
 
