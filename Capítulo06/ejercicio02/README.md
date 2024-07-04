@@ -31,10 +31,11 @@
 
     <p align="center">  
       <img width="50%" src="imagenes/create_workspace.png" style="margin-right: 5%;">
-      <img width="60%" src="imagenes/workspace_dawm.png">
+      <img width="45%" src="imagenes/workspace_dawm.png">
     </p>
 
   + Cree la colección **Movies** y agregue los requerimientos,
+    
     <p align="center">  
       <img width="30%" src="imagenes/collection.png" style="margin-right: 5%;"> 
       <img width="22%" src="imagenes/request.png">
