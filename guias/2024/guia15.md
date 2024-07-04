@@ -285,9 +285,6 @@ Elabore su respuesta a las siguientes preguntas:
 2. ¿Para qué utilizar Firestore en mi aplicación?
 3. Considerando los endpoints del REST API que ejecutan las operaciones CRUD, ¿Cuáles otras funcionalidades podría sugerir para el API REST?
 4. Desglosa el proceso de implementación de una operación CRUD en Firestore a través de un API REST. ¿Qué pasos específicos (Arquitetura) están involucrados desde la solicitud HTTP hasta la actualización en la base de datos? 
-
-![Arquitectura de Express](https://developer.mozilla.org/en-US/docs/Learn/Server-side/Express_Nodejs/routes/mvc_express.png)
-
 5. Evalúa la implementación del endpoint que crea un nuevo o eliminar un documento en Firestore. ¿Qué mejoras sugerirías para optimizar código?
 
 
