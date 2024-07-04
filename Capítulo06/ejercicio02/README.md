@@ -54,11 +54,13 @@
         <img width="40%" src="imagenes/GET-byId.png">
       </p>
 
-    - Agregue el requerimiento _**POST**_ (método HTTP **POST**) para enviar datos al elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
+    - Agregue el requerimiento _**POST**_ (método HTTP **POST**) para enviar datos al elemento **579.json** mediante la URL de acceso. 
       
       <p align="center" style="margin: 0 25%; text-align: center;">
         <img width="40%" src="imagenes/POST.png">
       </p>
+
+      Modifique el **Body** del requerimiento de tipo **raw**.
 
       <pre><code>
         {
@@ -74,30 +76,32 @@
       Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del POST.
 
       <p align="center" style="margin: 0 25%; text-align: center;">  
-        <img width="47%" src="imagenes/firebase_POST.png">
+        <img width="50%" src="imagenes/firebase_POST.png">
       </p>
 
-    - Agregue el requerimiento _**PUT**_ (método HTTP **PUT**) para modificar el elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
+    - Agregue el requerimiento _**PUT**_ (método HTTP **PUT**) para modificar el elemento **579.json** mediante la URL de acceso. 
 
       <p align="center" style="margin: 0 25%;">
         <img width="40%" src="imagenes/PUT.png">
       </p>
 
+      Modifique el **Body** del requerimiento de tipo **raw**. 
+
       <pre><code>
-      {
+        {
           "genre": "Adventure",
           "inflation_adjusted_gross": "1800103",
           "movie_title": "Red",
           "mpaa_rating": "PG",
           "release_date": "2022-03-11",
           "total_gross": "19501533"
-      }    
+        }    
       </code></pre>
       
       Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del PUT.
 
       <p align="center">  
-        <img width="47%" src="imagenes/firebase_PUT.png">
+        <img width="50%" src="imagenes/firebase_PUT.png">
       </p>
 
     - Agregue el requerimiento _**DELETE**_ (método HTTP **DELETE**) para eliminar datos al elemento **579.json** mediante la URL de acceso. 
@@ -109,7 +113,7 @@
       Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del DELETE.
 
       <p align="center" style="margin: 0 25%;">  
-        <img width="40%" src="imagenes/firebase_DELETE.png">
+        <img width="50%" src="imagenes/firebase_DELETE.png">
       </p>
 
 
