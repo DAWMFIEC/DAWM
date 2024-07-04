@@ -138,7 +138,7 @@
   })
   ```
 
-  + Agregue los test _**GET-one**_ 
+  + Agregue los test _**GET-byId**_ 
   ```
   pm.test("Response is ok", ()=>{
       pm.response.to.have.status(200)
@@ -198,7 +198,7 @@
   });
   ```
 
-* Programe la ejecución de la colección, con:
+* Haga clic el botón **Run Movies** para ejecutar los tests:
 
   <p align="center">  
     <img width="47%" src="imagenes/run_collection.png">
