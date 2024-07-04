@@ -78,30 +78,35 @@
         <img width="47%" src="imagenes/firebase_POST.png">
       </p>
 
-    - _**PUT**_: Con el método **PUT** para enviar datos a la colección, al URL `https://nosql-63d27-default-rtdb.firebaseio.com/movies/579.json`.  Modifique el **Body** del requerimiento de tipo **raw**. 
-      ```
-      {
-          "genre": "Adventure",
-          "inflation_adjusted_gross": "1800103",
-          "movie_title": "Red",
-          "mpaa_rating": "PG",
-          "release_date": "2022-03-11",
-          "total_gross": "19501533"
-      }
-      ```
+    - Agregue el requerimiento _**PUT**_ (método HTTP **PUT**) para modificar el elemento **579.json** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
 
+      <p>
+        <img width="40%" src="imagenes/PUT.png">
+        <p width="40%">
+          <pre><code>
+            {
+                "genre": "Adventure",
+                "inflation_adjusted_gross": "1800103",
+                "movie_title": "Red",
+                "mpaa_rating": "PG",
+                "release_date": "2022-03-11",
+                "total_gross": "19501533"
+            }    
+          </code></pre>
+        </p>
+      </p>
+      
       Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del PUT.
 
       <p align="center">  
-        <img width="47%" src="imagenes/PUT.png">
         <img width="47%" src="imagenes/firebase_PUT.png">
       </p>
 
-    - _**DELETE**_: Con el método **DELETE** para enviar datos a la colección, al URL `https://nosql-63d27-default-rtdb.firebaseio.com/movies/579.json`. Envíe la petición. Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del DELETE.
+    - Agregue el requerimiento _**DELETE**_ (método HTTP **DELETE**) para eliminar datos al elemento **579.json** mediante la URL de acceso. 
 
       <p align="center">  
-        <img width="47%" src="imagenes/DELETE.png">
-        <img width="47%" src="imagenes/firebase_DELETE.png">
+        <img width="40%" src="imagenes/DELETE.png">
+        <img width="40%" src="imagenes/firebase_DELETE.png">
       </p>
 
 
