@@ -48,7 +48,7 @@
         <img width="40%" src="imagenes/GET-all.png">
       </p>
 
-    - Agregue el requerimiento _**GET-byId**_ (método HTTP **GET**) que recupera al elemento **150** mediane la URL de acceso. Así luce respuesta del requerimiento en _Postman_.
+    - Agregue el requerimiento _**GET-byId**_ (método HTTP **GET**) que recupera el elemento **150** mediane la URL de acceso. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-byId.png">
