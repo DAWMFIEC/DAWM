@@ -255,7 +255,7 @@ theme: jekyll-theme-leap-day
       </code></pre>
     </details>
 
-3. Verifique el correcto funcionamiento mediante peticiones [cURL](https://curl.se/)
+3. Utilice otra línea de comandos para verificar el funcionamiento de su REST API mediante peticiones [cURL](https://curl.se/).
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
