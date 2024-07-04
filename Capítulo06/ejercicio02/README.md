@@ -13,7 +13,7 @@
   + Cree la colección: `movies`
   + Cargue el archivo **disney_movies.json** dentro de la colección **movies**
   + Edite las reglas de acceso a los datos para permitir acceso completo.
-* Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/) en su máquina.
+* Instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/).
   + Obtenga una [cuenta gratuita](https://identity.getpostman.com/signup).
   + Cree la colección **Movies**,
     <p align="center">  
