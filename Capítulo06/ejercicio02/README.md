@@ -25,15 +25,11 @@
       <img width="60%" src="imagenes/collection_public.png">
     </p>
 
-* Descargue e instale [Postman](https://learning.postman.com/docs/getting-started/installation-and-updates/).
+* Acceda a [Postman](https://www.postman.com/).
   + Obtenga una [cuenta gratuita](https://identity.getpostman.com/signup).
-  + Cree la colección **Movies**,
+  + Cree la colección **Movies** y agregue los requerimientos,
     <p align="center">  
       <img width="20%" src="imagenes/collection.png">
-    </p>
-
-  + Y agregue los requerimientos:
-    <p align="center"> 
       <img width="20%" src="imagenes/request.png">
     </p>
 
