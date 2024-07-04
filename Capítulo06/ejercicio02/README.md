@@ -53,7 +53,7 @@
         <img width="80%" src="imagenes/GET-one.png">
       </p>
 
-    - Agregue el requerimiento _**POST**_ (método HTTP **POST**) para enviar datos a la colección mediante la URL de acceso. Así luce respuesta del requerimiento en _Postman_. Modifique el **Body** del requerimiento de tipo **raw**. 
+    - Agregue el requerimiento _**Post**_ (método HTTP **POST**) para enviar datos al elemento **579** mediante la URL de acceso. Modifique el **Body** del requerimiento de tipo **raw**. 
       ```
       {
           "genre": "Adventure",
