@@ -119,7 +119,12 @@
 
 ## Pruebas unitarias
 
-* Para cada requerimiento, en la sección **Tests**
+* Para cada requerimiento, en **Scripts** > **Post-res**:
+
+  <p align="center" style="margin: 0 25%;">  
+    <img width="50%" src="imagenes/postman_scripts.png">
+  </p>
+
   + Agregue los test _**GET-all**_ 
   ```
   pm.test("Response is ok", ()=>{
