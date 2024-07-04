@@ -54,7 +54,7 @@ theme: jekyll-theme-leap-day
     npm init -y
     ```
 
-2. Instale las dependencias **Express** (`framework` de `backend`), **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes POST).
+2. Instale las dependencias **Express** (`framework` de `backend`), **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes con datos en el cuerpo del requerimiento).
 
     ```
     npm install express body-parser
