@@ -279,7 +279,7 @@ En grupos de tres (3) personas, utilicen un LLM para las siguientes tareas:
 
 ### Preguntas
 
-Elabore su respuesta a las siguientes preguntas:
+Elabore sus respuestas a las siguientes preguntas:
 
 1. ¿Para qué desarrollar un API rest en mi aplicación web?
 2. ¿Para qué utilizar Firestore en mi aplicación?
