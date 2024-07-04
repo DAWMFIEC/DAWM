@@ -97,7 +97,7 @@ theme: jekyll-theme-leap-day
     });
     ```
 
-2. Cree el archivo _./routes/api.js_ con el código del `enrutador`:
+2. Cree el archivo _./routes/api.js_ con el código del `manejador de rutas` o `enrutador`:
 
     ```typescript
     const express = require('express');
