@@ -58,16 +58,18 @@
       
       <p>
         <img width="40%" src="imagenes/POST.png">
-        <pre width="40%"><code>
-          {
-            "genre": "Adventure",
-            "inflation_adjusted_gross": "",
-            "movie_title": "Red",
-            "mpaa_rating": "PG-13",
-            "release_date": "",
-            "total_gross": ""
-          }      
-        </code></pre>
+        <p width="40%">
+          <pre><code>
+            {
+              "genre": "Adventure",
+              "inflation_adjusted_gross": "",
+              "movie_title": "Red",
+              "mpaa_rating": "PG-13",
+              "release_date": "",
+              "total_gross": ""
+            }      
+          </code></pre>
+        </p>
       </p>
       
       Así luce respuesta del requerimiento en _Postman_ y la colección en firebase después del POST.
