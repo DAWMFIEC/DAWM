@@ -203,7 +203,7 @@ theme: jekyll-theme-leap-day
 
 5. (STOP 2) Modifique el URL del requerimiento **Get data**. Realice el requerimiento.
 
-    <img src="imagenes/postman_get_data.png" class="">
+    <img src="imagenes/postman_get_data.png" class="description">
 
 ### Actividad en grupo
 
