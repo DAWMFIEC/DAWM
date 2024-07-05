@@ -28,17 +28,22 @@
 
 * Acceda a [Postman](https://www.postman.com/).
   + Obtenga una [cuenta gratuita](https://identity.getpostman.com/signup).
-  + Cree un _blank_ workspace con el nombre **DAWM**.
+  + Crea un workspace con el nombre **DAWM**.
 
     <p align="center" style="margin: 0 25%;">  
       <img width="50%" src="imagenes/create_workspace.png" style="margin-right: 5%;">
       <img width="45%" src="imagenes/workspace_dawm.png">
     </p>
 
-  + Cree la colección **Movies** y agregue los requerimientos,
+  + Crea un _blank collection_ con el nombre **Movies**
     
     <p align="center" style="margin: 0 25%;">  
       <img width="30%" src="imagenes/collection.png" style="margin-right: 5%;"> 
+    </p>
+
+  + Agregue los requerimientos
+
+    <p align="center" style="margin: 0 25%;">  
       <img width="22%" src="imagenes/request.png">
     </p>
 
