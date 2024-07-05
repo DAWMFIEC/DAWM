@@ -201,7 +201,7 @@ theme: jekyll-theme-leap-day
 
     <img src="imagenes/postman_variables.png" class="">
 
-5. Modifique el URL del requerimiento **Get data**. Realice el requerimiento.
+5. (STOP 2) Modifique el URL del requerimiento **Get data**. Realice el requerimiento.
 
     <img src="imagenes/postman_get_data.png" class="">
 
@@ -266,10 +266,51 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
-2. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger
-3. Ejecute el servidor.
-4. (STOP 3) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
-5. Versiona local y remotamente el repositorio **restapi**.
+2. Modifique el URL de requerimientos **POST**, **PUT** y **DELETE** en Postman. En los requerimientos con datos en el cuerpo del mensaje HTTTP, acceda a la opción **Body** > **raw** y escriba el objeto JSON a enviar. 
+
+    ```json
+    //POST
+
+    {
+        "name": "Molecule Man",
+        "age": 29,
+        "secretIdentity": "Dan Jukes",
+        "powers": [
+            "Radiation resistance",
+            "Turning tiny",
+            "Radiation blast"
+        ]
+    }
+    ```
+
+    ```json
+    //PUT
+
+    {
+        "name": "Ant Man",
+        "age": 46,
+        "secretIdentity": "Scott Lang",
+        "powers": [
+            "Genius-level intellect",
+            "Size-shifting from nearly microscopic to ~100 feet gigantic (both at extremes)"
+        ]
+    }
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+
+      <img src="imagenes/postman_post_data.png" class=""><br/>
+      <img src="imagenes/postman_put_data.png" class=""><br/>
+      <img src="imagenes/postman_delete_data.png" class="">
+
+    </details>
+
+3. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger
+4. Ejecute el servidor.
+5. Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
+6. Compruebe los requerimientos y su resultado con Postman.
+7. (STOP 3) Versiona local y remotamente el repositorio **restapi**.
 
 ### Documentación
 
