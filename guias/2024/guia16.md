@@ -17,6 +17,12 @@ theme: jekyll-theme-leap-day
     cursor: pointer;
     text-align: center;
   }
+
+  img.description {
+    width: 50%;
+    text-align: center;
+    margin: 0 25%;
+  }
 </style>
 
 ## Guía 16
@@ -187,14 +193,13 @@ theme: jekyll-theme-leap-day
 2. Accede a tu _workspace_ con el nombre **DAWM**.
 3. Crea una colección desde la plantilla.
 
-![postman_collection_template](imagenes/postman_collection_template.png)
+<img src="imagenes/postman_collection_template.png" class="description">
 
 4. Acceda a la colección y a la opción **Variables**. 
     + Modifique la variable _base_url_ con la URL de su REST API. 
     + Guarde los cambios.
 
-![postman_variables](imagenes/postman_variables.png)
-
+<img src="imagenes/postman_variables.png" class="">
 
 
 ### Actividad en grupo
