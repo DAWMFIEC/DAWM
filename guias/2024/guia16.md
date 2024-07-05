@@ -183,7 +183,13 @@ theme: jekyll-theme-leap-day
 
 #### Postman
 
+1. Accede [Postman](https://www.postman.com/) o abre la aplicación e ingresa a tu [cuenta](https://identity.getpostman.com/signup).
+2. Accede a tu _workspace_ con el nombre **DAWM**.
+3. Crea una colección desde la plantilla.
 
+![postman_collection_template](imagenes/postman_collection_template.png)
+
+4. 
 
 ### Actividad en grupo
 
