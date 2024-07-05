@@ -41,25 +41,25 @@
       <img width="30%" src="imagenes/collection.png" style="margin-right: 5%;"> 
     </p>
 
-  + Agregue los requerimientos
+  + Dentro de la colección _Movies_, agregue los requerimientos
 
     <p align="center" style="margin: 0 25%;">  
       <img width="22%" src="imagenes/request.png">
     </p>
 
-    - Agregue el requerimiento _**GET-all**_ (método HTTP **GET**) que recupera toda la colección mediante la URL de acceso. Así luce respuesta del requerimiento en _Postman_.
+    - Con el nombre _**GET-all**_ (método HTTP **GET**) que recupera toda la colección mediante la URL de acceso. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center" style="margin: 0 25%;">  
         <img width="40%" src="imagenes/GET-all.png">
       </p>
 
-    - Agregue el requerimiento _**GET-byId**_ (método HTTP **GET**) que recupera el elemento **150** mediane la URL de acceso. Así luce respuesta del requerimiento en _Postman_.
+    - Con el nombre _**GET-byId**_ (método HTTP **GET**) que recupera el elemento **150** mediane la URL de acceso. Así luce respuesta del requerimiento en _Postman_.
 
       <p align="center">  
         <img width="40%" src="imagenes/GET-byId.png">
       </p>
 
-    - Agregue el requerimiento _**POST**_ (método HTTP **POST**) para enviar datos al elemento **579.json** mediante la URL de acceso. 
+    - Con el nombre _**POST**_ (método HTTP **POST**) para enviar datos al elemento **579.json** mediante la URL de acceso. 
       
       <p align="center" style="margin: 0 25%; text-align: center;">
         <img width="40%" src="imagenes/POST.png">
@@ -84,7 +84,7 @@
         <img width="50%" src="imagenes/firebase_POST.png">
       </p>
 
-    - Agregue el requerimiento _**PUT**_ (método HTTP **PUT**) para modificar el elemento **579.json** mediante la URL de acceso. 
+    - Con el nombre _**PUT**_ (método HTTP **PUT**) para modificar el elemento **579.json** mediante la URL de acceso. 
 
       <p align="center" style="margin: 0 25%;">
         <img width="40%" src="imagenes/PUT.png">
@@ -109,7 +109,7 @@
         <img width="50%" src="imagenes/firebase_PUT.png">
       </p>
 
-    - Agregue el requerimiento _**DELETE**_ (método HTTP **DELETE**) para eliminar datos al elemento **579.json** mediante la URL de acceso. 
+    - Con el nombre _**DELETE**_ (método HTTP **DELETE**) para eliminar datos al elemento **579.json** mediante la URL de acceso. 
 
       <p align="center" style="margin: 0 25%;">  
         <img width="40%" src="imagenes/DELETE.png">
