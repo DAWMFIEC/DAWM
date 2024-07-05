@@ -251,11 +251,6 @@ En grupos de tres (3) personas, utilicen un LLM para completar las siguientes ta
 4. (STOP 3) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
 5. Versiona local y remotamente el repositorio **restapi**.
 
-### Preguntas
-
-1. ¿Cuál es la utilidad de Swagger en un REST API?
-2. ¿Cuál es la utilidad de POSTMAN en un REST API?
-
 ### Documentación
 
 * Revise la documentación en [Swagger](https://swagger.io/) y [Swagger-Autogen](https://swagger-autogen.github.io/docs/).
