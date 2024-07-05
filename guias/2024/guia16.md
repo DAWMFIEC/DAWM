@@ -193,14 +193,17 @@ theme: jekyll-theme-leap-day
 2. Accede a tu _workspace_ con el nombre **DAWM**.
 3. Crea una colección desde la plantilla.
 
-<img src="imagenes/postman_collection_template.png" class="description">
+    <img src="imagenes/postman_collection_template.png" class="description">
 
 4. Acceda a la colección y a la opción **Variables**. 
     + Modifique la variable _base_url_ con la URL de su REST API. 
     + Guarde los cambios.
 
-<img src="imagenes/postman_variables.png" class="">
+    <img src="imagenes/postman_variables.png" class="">
 
+5. Modifique el URL del requerimiento **Get data**. Realice el requerimiento.
+
+    <img src="imagenes/postman_get_data.png" class="">
 
 ### Actividad en grupo
 
