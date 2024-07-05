@@ -268,8 +268,8 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 2. Modifique el URL de requerimientos **POST**, **PUT** y **DELETE** en Postman. En los requerimientos con datos en el cuerpo del mensaje HTTTP, acceda a la opción **Body** > **raw** y escriba el objeto JSON a enviar. 
 
-    ```json
-    //POST
+    ```javascript
+    /* POST */
 
     {
         "name": "Molecule Man",
@@ -283,8 +283,8 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     }
     ```
 
-    ```json
-    //PUT
+    ```javascript
+    /* PUT */
 
     {
         "name": "Ant Man",
@@ -300,9 +300,20 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
 
-      <img src="imagenes/postman_post_data.png" class=""><br/>
-      <img src="imagenes/postman_put_data.png" class=""><br/>
-      <img src="imagenes/postman_delete_data.png" class="">
+      <p>
+        <h3>POST</h3>
+        <img src="imagenes/postman_post_data.png" class="">
+      </p>
+
+      <p>
+        <h3>PUT</h3>
+        <img src="imagenes/postman_put_data.png" class="">
+      </p>
+
+      <p>
+        <h3>DELETE</h3>
+        <img src="imagenes/postman_delete_data.png" class="">
+      </p>
 
     </details>
 
