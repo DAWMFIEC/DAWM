@@ -49,12 +49,6 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 
 ## Tutoriales
 
-#### Postman
-
-* [Postman - Colección en blanco](tutoriales/postman_enblanco.md)
-* [Postman - Colección desde plantilla](tutoriales/postman_plantillas.md)
-* [Postman - Testing](tutoriales/postman_testing.md)
-
 #### Firebase (Servicios gratuitos)
 
 * [Firebase - Hosting / Sitio Estático](tutoriales/firebase_hosting_estatico.md)
