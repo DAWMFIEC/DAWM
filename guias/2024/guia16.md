@@ -189,7 +189,13 @@ theme: jekyll-theme-leap-day
 
 ![postman_collection_template](imagenes/postman_collection_template.png)
 
-4. 
+4. Acceda a la colección y a la opción **Variables**. 
+    + Modifique la variable _base_url_ con la URL de su REST API. 
+    + Guarde los cambios.
+
+![postman_variables](imagenes/postman_variables.png)
+
+
 
 ### Actividad en grupo
 
