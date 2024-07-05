@@ -187,7 +187,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividad en grupo
 
-En grupos de tres (3) personas, utilicen un LLM para completar las siguientes tareas:
+En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o un LLM.
 
 1. Complete la documentación para los métodos **updateItem** y **deleteItem**.
 
