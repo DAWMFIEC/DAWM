@@ -266,7 +266,11 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
-2. Modifique el URL de requerimientos **POST**, **PUT** y **DELETE** en Postman. En los requerimientos con datos en el cuerpo del mensaje HTTTP, acceda a la opción **Body** > **raw** y escriba el objeto JSON a enviar. 
+2. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger
+3. Ejecute el servidor.
+4. Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
+
+5. Modifique el URL de requerimientos **POST**, **PUT** y **DELETE** en Postman. En los requerimientos con datos en el cuerpo del mensaje HTTTP, acceda a la opción **Body** > **raw** y escriba el objeto JSON a enviar. 
 
     ```javascript
     /* POST */
@@ -317,10 +321,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
     </details>
 
-3. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger
-4. Ejecute el servidor.
-5. Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
-6. Compruebe los requerimientos y su resultado con Postman.
+6. Compruebe con Postman los requerimientos y su resultado.
 7. (STOP 3) Versiona local y remotamente el repositorio **restapi**.
 
 ### Documentación
