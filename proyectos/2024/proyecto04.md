@@ -25,7 +25,5 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 15: REST API - Express, Firebase - Firestore y cURL](/DAWM/guias/2024/guia15)
-* [Guía 16: REST API - Swagger y Postman](/DAWM/guias/2024/guia16)
-* [Guía 17: REST API - Autenticación y Autorización](/DAWM/guias/2023/guia17)
-* [Guía 18: REST API - Despliegue en producción con Railway](/DAWM/guias/2023/guia18)
+* [Guía 15: REST API (Datos) - Express, Firebase - Firestore y cURL](/DAWM/guias/2024/guia15)
+* [Guía 16: REST API (Datos) - Swagger y Postman](/DAWM/guias/2024/guia16)
