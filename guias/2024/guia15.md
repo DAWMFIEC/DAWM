@@ -69,13 +69,13 @@ theme: jekyll-theme-leap-day
     ```
 
 4. Cree el archivo para las variables de entorno del proyecto (_.env_), con la variable **FIREBASE_ADMIN_API**
-    ```json
+    ```typescript
     FIREBASE_ADMIN_API = ''
     ```
 
 5. Copie el contenido del archivo con la clave acceso con contenido de la variable _FIREBASE_ADMIN_API_:
 
-    ```json
+    ```typescript
     FIREBASE_ADMIN_API='{
       "type": "service_account",
       ...
