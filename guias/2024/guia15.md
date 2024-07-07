@@ -68,8 +68,10 @@ theme: jekyll-theme-leap-day
     npm install firebase-admin
     ```
 
-4. Cree el archivo para las variables de entorno del proyecto (_.env_), con la variable **FIREBASE_ADMIN_API**
+4. Cree el archivo para las variables de entorno del proyecto (_.env_), con las variables **PORT** y **FIREBASE_ADMIN_API**
+
     ```typescript
+    PORT=5500
     FIREBASE_ADMIN_API = ''
     ```
 
@@ -182,13 +184,13 @@ theme: jekyll-theme-leap-day
     + Petición **método HTTP POST**
 
     ```command
-    curl -X POST http://localhost:5000/api/items -H "Content-Type: application/json" -d "{\"tags\":[\"tag1\",\"tag2\"],\"question\":\"Which band?\",\"answers\":[{\"id\":\"a0\",\"answer\":\"Answer1\"},{\"id\":\"a1\",\"answer\":\"answer2\"}]}"
+    curl -X POST http://localhost:5500/api/items -H "Content-Type: application/json" -d "{\"tags\":[\"tag1\",\"tag2\"],\"question\":\"Which band?\",\"answers\":[{\"id\":\"a0\",\"answer\":\"Answer1\"},{\"id\":\"a1\",\"answer\":\"answer2\"}]}"
     ```
 
     + Petición **método HTTP GET**
 
     ```command
-    curl -X GET http://localhost:5000/api/items -H "Accept: application/json" 
+    curl -X GET http://localhost:5500/api/items -H "Accept: application/json" 
     ```
 
 3. (STOP 4) Revise el resultado en la línea de comandos.
@@ -281,11 +283,11 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
         set ID=#ID de un objeto almacenado#
 
-        curl -X GET http://localhost:5000/api/items/%ID% -H "Accept: application/json" 
+        curl -X GET http://localhost:5500/api/items/%ID% -H "Accept: application/json" 
 
-        curl -X PUT http://localhost:5000/api/items/%ID% -H "Content-Type: application/json" -d "{\"tags\":\"\",\"question\":\"\",\"answers\":\"\"}"
+        curl -X PUT http://localhost:5500/api/items/%ID% -H "Content-Type: application/json" -d "{\"tags\":\"\",\"question\":\"\",\"answers\":\"\"}"
 
-        curl -X DELETE http://localhost:5000/api/items/%ID% -H "Accept: application/json" 
+        curl -X DELETE http://localhost:5500/api/items/%ID% -H "Accept: application/json" 
       
       </code></pre>
     </details>
