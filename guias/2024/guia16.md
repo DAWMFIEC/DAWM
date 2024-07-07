@@ -61,7 +61,7 @@ theme: jekyll-theme-leap-day
         "title": 'REST API',
         "description": 'REST API with Express and Firestore'
       },
-      "host": 'localhost:5000',
+      "host": 'localhost:5500',
       "basePath": "/api",
     };
 
@@ -187,7 +187,7 @@ theme: jekyll-theme-leap-day
     npm start
     ```
 
-9. (STOP 1) Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
+9. (STOP 1) Compruebe los `endpoints` de la documentación [http://localhost:5500/documentation](http://localhost:5500/documentation)
 
 ![Swagger output](imagenes/swagger_output.png)
 
@@ -274,7 +274,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 2. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger
 3. Ejecute el servidor.
-4. Compruebe los `endpoints` de la documentación [http://localhost:5000/documentation](http://localhost:5000/documentation)
+4. Compruebe los `endpoints` de la documentación [http://localhost:5500/documentation](http://localhost:5500/documentation)
 
 5. Modifique el URL de requerimientos **POST**, **PUT** y **DELETE** en Postman. En los requerimientos con datos en el cuerpo del mensaje HTTTP, acceda a la opción **Body** > **raw** y escriba el objeto JSON a enviar. 
 
