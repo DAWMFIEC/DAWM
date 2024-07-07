@@ -23,6 +23,12 @@ theme: jekyll-theme-leap-day
     text-align: center;
     margin: 0 25%;
   }
+
+  h4 {
+    margin-top: 5%;
+    text-decoration: underline;
+    color: black;
+  }
 </style>
 
 ## Guía 16
