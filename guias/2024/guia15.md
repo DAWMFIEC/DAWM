@@ -37,14 +37,15 @@ theme: jekyll-theme-leap-day
 #### Firebase - Firestore
 
 1. Realice el tutorial completo de [Firebase - Firestore](/DAWM/tutoriales/firebase_firestore).
-2. Descargue el archivo con la clave acceso y cambie el nombre del archivo por **firebaseConfig.json**.
+2. Descargue el archivo con la clave acceso (con extensión _.json_).
 
 ### Actividades en clases
 
 #### Github
 
 1. Cree un repositorio en GitHub con el nombre **restapi**.
-2. Clone y acceda a la carpeta en el directorio local.
+2. Asegúrese de marcar la opción **Add .gitignore** y seleccione la opción **Node**.
+3. Clone y acceda a la carpeta en el directorio local.
 
 #### Express - Estructura base y configuración
 
@@ -54,11 +55,11 @@ theme: jekyll-theme-leap-day
     npm init -y
     ```
 
-2. Instale las dependencias **Express** (`framework` de `backend`), **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo) y **body-parser** (manejar solicitudes con datos en el cuerpo del requerimiento).
+2. Instale las dependencias **Express** (`framework` de `backend`), **nodemon** (para reiniciar el servidor automáticamente durante el desarrollo), **body-parser** (manejar solicitudes con datos en el cuerpo del requerimiento) y **dotenv** (variables de entorno del proyecto).
 
     ```
     npm install express body-parser
-    npm install --save-dev nodemon
+    npm install --save-dev nodemon dotenv 
     ```
 
 3. Instale el [Firebase](https://firebase.google.com/docs/admin/setup?hl=es-419) Admin `SDK`.
@@ -67,8 +68,21 @@ theme: jekyll-theme-leap-day
     npm install firebase-admin
     ```
 
-4. Cree la carpeta _./config_. 
-5. Mueva el archivo descargado previamente (**firebaseConfig.json**) dentro de la carpeta _./config_.
+4. Cree el archivo para las variables de entorno del proyecto (_.env_), con la variable **FIREBASE_ADMIN_API**
+    ```json
+    FIREBASE_ADMIN_API = ''
+    ```
+
+5. Copie el contenido del archivo con la clave acceso con contenido de la variable _FIREBASE_ADMIN_API_:
+
+    ```json
+    FIREBASE_ADMIN_API='{
+      "type": "service_account",
+      ...
+      "universe_domain": "googleapis.com"
+    }'
+    ```
+
 6. (STOP 1) Revise la estructura de archivos.
 
 #### Express - Servidor, enrutador y controlador
@@ -76,10 +90,12 @@ theme: jekyll-theme-leap-day
 1. Cree el archivo _./server.js_ con el código del `servidor`:
 
     ```typescript
+    require('dotenv').config()
+
     const express = require('express');
     const bodyParser = require('body-parser');
     const admin = require('firebase-admin');
-    const serviceAccount = require('./config/firebaseConfig.json');
+    const serviceAccount = JSON.parse(process.env.FIREBASE_ADMIN_API)
 
     admin.initializeApp({
       credential: admin.credential.cert(serviceAccount)
@@ -175,7 +191,6 @@ theme: jekyll-theme-leap-day
     ```
 
 3. (STOP 4) Revise el resultado en la línea de comandos.
-4. Versiona local y remotamente el repositorio **restapi**.
 
 ### Actividad en grupo
 
