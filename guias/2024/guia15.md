@@ -162,7 +162,8 @@ theme: jekyll-theme-leap-day
     ```typescript
     ...
       "scripts": {
-        "start": "nodemon server.js",
+        "start": "node server.js",
+        "autostart": "nodemon server.js",
         ...
       }
     ...
@@ -171,7 +172,7 @@ theme: jekyll-theme-leap-day
 2. (STOP 3) Desde la línea de comandos, inicie el servidor:
 
     ```command
-    npm start
+    npm autostart
     ```
 
 #### Verificación
