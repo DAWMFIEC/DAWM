@@ -38,7 +38,7 @@ Firebase - Firestore
 
 ## Clave de acceso
 
-* Desde la interfaz de Firestore Database, acceda a **Descripción general** > **Configuración del proyecto** 
+* Desde la interfaz de Firebase, acceda a **Descripción general** > **Configuración del proyecto** 
 
 <p align="center">
   <img width="49%" src ="imagenes/firebase_firestore_index.png">
