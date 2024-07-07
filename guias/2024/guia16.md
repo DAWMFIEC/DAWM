@@ -305,17 +305,17 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       <summary><div>Haga click aquí para ver la solución</div></summary>
 
       <p>
-        <h3>POST</h3>
+        <h4>POST</h4>
         <img src="imagenes/postman_post_data.png" class="">
       </p>
 
       <p>
-        <h3>PUT</h3>
+        <h4>PUT</h4>
         <img src="imagenes/postman_put_data.png" class="">
       </p>
 
       <p>
-        <h3>DELETE</h3>
+        <h4>DELETE</h4>
         <img src="imagenes/postman_delete_data.png" class="">
       </p>
 
