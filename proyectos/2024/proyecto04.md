@@ -28,3 +28,5 @@ La respuesta es:
 * [Guía 15: REST API (Datos) - Express, Firebase - Firestore y cURL](/DAWM/guias/2024/guia15)
 * [Guía 16: REST API (Datos) - Swagger y Postman](/DAWM/guias/2024/guia16)
 * [Guía 17: REST API (Datos) - Despliegue en Render](/DAWM/guias/2024/guia17)
+* [Guía 18: REST API (Seguridad) - MySQL](/DAWM/guias/2024/guia18)
+* [Guía 19: REST API (Seguridad) - JWT y Token](/DAWM/guias/2024/guia19)
