@@ -174,7 +174,7 @@ theme: jekyll-theme-leap-day
 2. (STOP 3) Desde la línea de comandos, inicie el servidor:
 
     ```command
-    npm autostart
+    npm run autostart
     ```
 
 #### Verificación
