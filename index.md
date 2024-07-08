@@ -56,7 +56,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Firebase - Realtime Database](tutoriales/firebase_realtime_database.md)
 * [Firebase - Firestore](tutoriales/firebase_firestore.md)
 
-### React
+#### React
 
 * [React - Bases](tutoriales/react_bases.md)
 * [React - Componentes Integrados](tutoriales/react_componentes_integrados.md)
@@ -67,7 +67,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [React - Hooks: useState II](tutoriales/react_hooks_usestate2.md)
 * [React - Hooks: useEffect](tutoriales/react_hooks_useeffect.md)
 
-### Angular
+#### Angular
 
 * [Angular - Local](tutoriales/angular_local.md)
 * [Angular - Bootstrap](tutoriales/angular_bootstrap.md)
@@ -78,7 +78,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Angular - PWA](tutoriales/angular_pwa.md)
 * [Angular - Cordova](tutoriales/angular_cordova.md)
 
-### Express
+#### Express
 
 * [Express - Bases](tutoriales/express_bases.md)
 * [Express - Bootstrap](tutoriales/express_bootstrap.md)
