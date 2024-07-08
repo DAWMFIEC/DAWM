@@ -47,56 +47,40 @@ theme: jekyll-theme-leap-day
     + Cambie el valor de _Start Command_ por **node server.js**
     + En _Instance Type_ seleccione la opción gratuita **Free**
     + En _Environment Variables_, haga clic en **Add from .env** y pegue todo el contenido el archivo `.env` del proyecto _restapi_ 
-4. 
-
-#### REST API - CORS
-
-1. Desde la línea de comandos, dentro del proyecto instale el módulo **CORS** (permite que se puedan solicitar recursos desde un dominio diferente del dominio del solicitado).
-
-    ```command
-    npm install cors
-    ```
-
-3. Edite el archivo _./server.js_ con el requerimiento del módulo y el uso del `middleware`.
-
-    ```typescript
-    require('dotenv').config()
-
-    /* Requerimiento del módulo CORS */
-
-    var cors = require('cors')
-    ...
-
-    const app = express();
-
-    /* Uso del middleware CORS */
-
-    app.use(cors())
-    ...
-    ```` 
-
+4. Haga click en **Deploy Web Service**.
+5. Acceda al servicio e inspeccione el proceso de despliegue en la opción **Event**.
+6. (STOP 1) Del _URL_ (`https://restapi-<ID>.onrender.com`) copie en solo el _host_ (`restapi-<ID>.onrender.com`).
 
 #### REST API - Swagger
 
-1. Modifique el valor **host** en el archivo de configuración de `./swagger.js`
+1. En el archivo de configuración de `./swagger.js`:
+    + Modifique el valor **host** por el valor de _host_ del servicio web. 
+    + Agregue la clave **schemes** con los valores **[http, https]**.
 
     ```typescript
     ...
 
     const doc = {
       ...
-      "host": 'localhost:5500',
+      //"host": 'localhost:5500',
+      "host": 'restapi-<ID>.onrender.com',
+      "schemes": [
+        "http", "https"
+      ],
       ...
     };
 
-    const outputFile = './swagger_output.json'
-    const endpointsFiles = ['./routes/*.js']
-
-    swaggerAutogen(outputFile, endpointsFiles, doc)
+    ...
     ```
 
-4. (STOP 2) Compruebe los `endpoints` de la documentación en Render.
+2. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger, con el comando:
 
+    ```command
+    npm run swagger
+    ```
+
+3. Acceda al servicio e inspeccione el proceso de despliegue en la opción **Event**.
+4. (STOP 2) Compruebe los endpoints de la documentación en Render. Agregue el `path` _/documentation_ al URL.
 
 ### Actividades en grupo
 
