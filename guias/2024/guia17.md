@@ -90,10 +90,9 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-CORS, despliegue, middleware
+despliegue, URL, host, path
 
 ### Referencias
 
-* Cors (no date) Express cors middleware. Available at: https://expressjs.com/en/resources/middleware/cors.html (Accessed: 07 July 2024). 
 * Deploy a Node Express App on Render. (n.d.). Retrieved from https://docs.render.com/deploy-node-express-app
 * Clinton, E. O. (2023). How to deploy a Node.js and PostgreSQL App on Render. Retrieved from https://mattermost.com/blog/deploy-nodejs-app-on-render/

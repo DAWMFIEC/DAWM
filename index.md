@@ -38,7 +38,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 04: REST API - Express](proyectos/2024/proyecto04)
   * [Guía 15: REST API (Datos) - Express, Firebase - Firestore y cURL](guias/2024/guia15)
   * [Guía 16: REST API (Datos) - Swagger y Postman](guias/2024/guia16)
-  * [Guía 17: REST API (Datos) - CORS y Despliegue en Render](guias/2024/guia17)
+  * [Guía 17: REST API (Datos) - Despliegue en Render](guias/2024/guia17)
 * [Proyecto 05: MobileApp - Angular y Ionic](proyectos/2024/proyecto05)
 * [Proyecto 06: WebAdmin - Django y MySQL](proyectos/2024/proyecto06)
   
