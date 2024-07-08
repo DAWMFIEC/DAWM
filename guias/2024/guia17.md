@@ -82,11 +82,15 @@ theme: jekyll-theme-leap-day
 3. Acceda al servicio e inspeccione el proceso de despliegue en la opción **Event**.
 4. (STOP 2) Compruebe los endpoints de la documentación en Render. Agregue el `path` _/documentation_ al URL.
 
-### Actividades en grupo
-
 ### Documentación
 
+* En [Render - docs](https://docs.render.com/) puedes encontrar la documentación necesaria para desplegar su aplicación web desarrollada en diferentes lenguajes y frameworks.
+
 ### Fundamental
+
+* Plataformas de hosting con planes gratuito
+
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">¡Oh no! HEROKU deja de ser GRATIS... 😱<br>¿Donde puedes DESPLEGAR tus PROYECTOS ahora?<br><br>5️⃣ PLATAFORMAS de HOSTING con plan GRATUITO 🧵⬇️</p>&mdash; Miguel Ángel Durán (@midudev) <a href="https://twitter.com/midudev/status/1562861949427523589?ref_src=twsrc%5Etfw">August 25, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
