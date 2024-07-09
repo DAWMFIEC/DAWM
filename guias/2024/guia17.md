@@ -47,28 +47,37 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/render_restapi.png">
     </div>
 
-4. En la configuración:
-    + Cambie el valor de _Start Command_ por **node server.js**
-    + En _Instance Type_ seleccione la opción gratuita **Free**
+4. En la configuración, cambie el valor de _Start Command_ por **node server.js**.
 
     <div align="center">
-      <img src="imagenes/render_config.png">
+      <img src="imagenes/render_config1.png">
     </div>
 
-5. En _Environment Variables_, haga clic en **Add from .env**. Pegue todo el contenido el archivo `.env` del proyecto _restapi_. Haga clic en **Add Variables**.
+5. En la sección _Instance Type_, seleccione la opción gratuita **Free**.
+
+    <div align="center">
+      <img src="imagenes/render_config2.png">
+    </div>
+
+6. En la sección _Environment Variables_:
+    + Haga clic en **Add from .env**. 
+    + Pegue todo el contenido el archivo `.env` del proyecto _restapi_. 
+    + Haga clic en **Add Variables**.
 
     <div align="center">
       <img src="imagenes/render_envs1.png" width="70%">
     </div>
 
-6. Haga click en **Deploy Web Service**.
-7. Acceda al servicio e revise el proceso de despliegue en la opción **Event**.
+7. Haga click en **Deploy Web Service**.
+8. Acceda a la opción **Event** e inspeccione el proceso de despliegue.
 
     <div align="center">
       <img src="imagenes/render_events.png">
     </div>
 
-8. (STOP 1) Utilice el URL del servicio
+9. (STOP 1) Utilice el URL del servicio para acceder:
+    + Página con la documentación en Swagger: `https://restapi-<ID>.onrender.com/documentation`
+    + Petición de datos desde el navegador: ``https://restapi-<ID>.onrender.com/api/items``
 
     <div align="center">
       <img src="imagenes/render_host.png" class="description">
