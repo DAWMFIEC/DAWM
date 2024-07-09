@@ -20,15 +20,18 @@
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
 || [Ver](imagenes_curriculum/.png) | [Ir]() |
+|| [Ver](imagenes_curriculum/.png) | [Ir]() |
 
 ## Proyecto 02: Landing Page SPA - Bootstrap & Javascript
 
 | Nombre |  Tema  | Vista  Previa | Sitio |
 | :----  | :----: | :----------: | :---: |
 || | [Ver](imagenes_landing/.png) | [Ir]() |
+|| | [Ver](imagenes_landing/.png) | [Ir]() |
 
 ## Proyecto 03: Dashboard - React
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
-|| [Ver](imagenes_dashboard/.png) | [Ir]() |
+|| | [Ver](imagenes_landing/.png) | [Ir]() |
+|| | [Ver](imagenes_landing/.png) | [Ir]() |
