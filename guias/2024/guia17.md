@@ -56,24 +56,20 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/render_config.png">
     </div>
 
-4. En _Environment Variables_, haga clic en **Add from .env** y pegue todo el contenido el archivo `.env` del proyecto _restapi_.
+4. En _Environment Variables_, haga clic en **Add from .env**. Pegue todo el contenido el archivo `.env` del proyecto _restapi_. Haga clic en **Add Variables**.
 
     <div align="center">
       <img src="imagenes/render_envs1.png" width="70%">
     </div>
 
-    <div align="center">
-      <img src="imagenes/render_envs2.png">
-    </div>
-
 5. Haga click en **Deploy Web Service**.
-6. Acceda al servicio e inspeccione el proceso de despliegue en la opción **Event**.
+6. Acceda al servicio e revise el proceso de despliegue en la opción **Event**.
 
     <div align="center">
       <img src="imagenes/render_events.png">
     </div>
 
-7. (STOP 1) Del _URL_ (`https://restapi-<ID>.onrender.com`) copie en solo el _host_ (`restapi-<ID>.onrender.com`).
+7. (STOP 1) Utilice el URL del servicio
 
     <div align="center">
       <img src="imagenes/render_host.png" class="description">
@@ -81,9 +77,10 @@ theme: jekyll-theme-leap-day
 
 #### REST API - Swagger
 
-1. En el archivo de configuración de `./swagger.js`:
-    + Modifique el valor **host** por el valor de _host_ del servicio web. 
-    + Agregue la clave **schemes** con los valores **[https]**.
+1. Del URL del servicio, copie en solo el _host_ (`restapi-<ID>.onrender.com`).
+2. En el archivo de configuración de `./swagger.js`:
+    + Modifique la clave **host** por el valor del _host_ (`restapi-<ID>.onrender.com`). 
+    + Agregue la clave **schemes** con el valor **[https]**.
 
     ```typescript
     ...
@@ -101,14 +98,18 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-2. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger, con el comando:
+3. Desde la línea de comandos, genere el archivo de configuración (`./swagger_output.json`) de Swagger, con el comando:
 
     ```command
     npm run swagger
     ```
 
-3. Acceda al servicio e inspeccione el proceso de despliegue en la opción **Event**.
-4. (STOP 2) Compruebe los endpoints de la documentación en Render. Agregue el `path` _/documentation_ al URL.
+4. Acceda al servicio e inspeccione el proceso de despliegue en la opción **Event**.
+5. (STOP 2) Agregue al URL del servicio el `path` _/documentation_. Compruebe los `endpoints` de la documentación.
+
+    ```
+    https://restapi-<ID>.onrender.com/documentation
+    ```
 
 ### Documentación
 
