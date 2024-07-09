@@ -162,6 +162,7 @@ theme: jekyll-theme-leap-day
     ```typescript
     const admin = require('firebase-admin');
     ...
+    
     /* Referencia al módulo swagger-ui-express */
     const swaggerUi = require('swagger-ui-express')
 
