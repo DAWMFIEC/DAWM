@@ -37,7 +37,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Render
+#### Render - despliegue
 
 1. Clone localmente tu repositorio **restapi**.
 2. En el [Dashboard Render](https://dashboard.render.com/), seleccione la opción **Web Services**.
@@ -69,26 +69,46 @@ theme: jekyll-theme-leap-day
     </div>
 
 7. Haga click en **Deploy Web Service**.
-8. Acceda a la opción **Event** e inspeccione el proceso de despliegue.
+8. (STOP 1) Acceda a la opción **Events** del servicio web e inspeccione el proceso de despliegue.
 
     <div align="center">
       <img src="imagenes/render_events.png">
     </div>
 
-9. (STOP 1) Utilice el URL del servicio para acceder:
-    + Página con la documentación en Swagger: `https://restapi-<ID>.onrender.com/documentation`
-    + Petición de datos desde el navegador: ``https://restapi-<ID>.onrender.com/api/items``
+#### Render - URL del servicio web
+
+1. Identifique el **URL del servicio web**. 
+
+    ```command
+    https://restapi-<ID>.onrender.com/
+    ``` 
 
     <div align="center">
       <img src="imagenes/render_host.png" class="description">
     </div>
 
-#### REST API - Swagger
+2. Agregue la `ruta`  _/documentation_ a la URL del servicio web y acceda a la página con la documentación en Swagger: 
+    
+    ```command
+    https://restapi-<ID>.onrender.com/documentation
+    ```
 
-1. Del URL del servicio, copie en solo el _host_ (`restapi-<ID>.onrender.com`).
+    <div align="center">
+      <img src="imagenes/render_swagger.png" class="description">
+    </div>
+
+3. (STOP 2) Compruebe el endpoint **GET** de la documentación en Swagger e identifique el error en la respuesta.
+
+    <div align="center">
+      <img src="imagenes/render_swagger_get_error.png" class="description">
+    </div>
+
+#### REST API - host
+
+1. Copie en solo el _host_ (`restapi-<ID>.onrender.com`) del URL del servicio web.
 2. En el archivo de configuración de `./swagger.js`:
-    + Modifique la clave **host** por el valor del _host_ (`restapi-<ID>.onrender.com`). 
-    + Agregue la clave **schemes** con el valor **[https]**.
+    + Modifique la clave _"host"_ coloque el _host_ del servicio web. 
+    + Agregue la clave _"schemes"_ coloque el valor _["https"]_.
 
     ```typescript
     ...
@@ -112,12 +132,13 @@ theme: jekyll-theme-leap-day
     npm run swagger
     ```
 
-4. Acceda al servicio e inspeccione el proceso de despliegue en la opción **Event**.
-5. (STOP 2) Agregue al URL del servicio el `path` _/documentation_. Compruebe los `endpoints` de la documentación.
+4. Acceda a la opción **Events** del servicio web e inspeccione el proceso de despliegue..
+5. (STOP 2) Compruebe el endpoint **GET** de la documentación en Swagger e identifique la respuesta exitosa.
 
-    ```
-    https://restapi-<ID>.onrender.com/documentation
-    ```
+    <div align="center">
+      <img src="imagenes/render_swagger_get_exito.png" class="description">
+    </div>
+    
 
 ### Documentación
 
