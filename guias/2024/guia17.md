@@ -37,10 +37,9 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-1. Clone localmente tu repositorio **restapi**.
-
 #### Render
 
+1. Clone localmente tu repositorio **restapi**.
 2. En el [Dashboard Render](https://dashboard.render.com/), seleccione la opción **Web Services**.
 3. Conecte el repositorio remoto **restapi** de GitHub.
 
