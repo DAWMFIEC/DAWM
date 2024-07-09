@@ -59,7 +59,11 @@ theme: jekyll-theme-leap-day
 4. En _Environment Variables_, haga clic en **Add from .env** y pegue todo el contenido el archivo `.env` del proyecto _restapi_.
 
     <div align="center">
-      <img src="imagenes/render_envs1.png">
+      <img src="imagenes/render_envs1.png" width="70%">
+    </div>
+
+    <div align="center">
+      <img src="imagenes/render_envs2.png">
     </div>
 
 5. Haga click en **Deploy Web Service**.
