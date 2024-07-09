@@ -83,7 +83,7 @@ theme: jekyll-theme-leap-day
 
 1. En el archivo de configuración de `./swagger.js`:
     + Modifique el valor **host** por el valor de _host_ del servicio web. 
-    + Agregue la clave **schemes** con los valores **[http, https]**.
+    + Agregue la clave **schemes** con los valores **[https]**.
 
     ```typescript
     ...
