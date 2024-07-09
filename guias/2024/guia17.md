@@ -132,8 +132,9 @@ theme: jekyll-theme-leap-day
     npm run swagger
     ```
 
-4. Acceda a la opción **Events** del servicio web e inspeccione el proceso de despliegue..
-5. (STOP 2) Compruebe el endpoint **GET** de la documentación en Swagger e identifique la respuesta exitosa.
+4. Versione local y remotamente el repositorio **restapi**
+5. Acceda a la opción **Events** del servicio web e inspeccione el proceso de despliegue.
+6. (STOP 3) Compruebe el endpoint **GET** de la documentación en Swagger e identifique la respuesta exitosa.
 
     <div align="center">
       <img src="imagenes/render_swagger_get_exito.png">
