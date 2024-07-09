@@ -94,13 +94,13 @@ theme: jekyll-theme-leap-day
     ```
 
     <div align="center">
-      <img src="imagenes/render_swagger.png" class="description">
+      <img src="imagenes/render_swagger.png">
     </div>
 
 3. (STOP 2) Compruebe el endpoint **GET** de la documentación en Swagger e identifique el error en la respuesta.
 
     <div align="center">
-      <img src="imagenes/render_swagger_get_error.png" class="description">
+      <img src="imagenes/render_swagger_get_error.png">
     </div>
 
 #### REST API - host
@@ -136,7 +136,7 @@ theme: jekyll-theme-leap-day
 5. (STOP 2) Compruebe el endpoint **GET** de la documentación en Swagger e identifique la respuesta exitosa.
 
     <div align="center">
-      <img src="imagenes/render_swagger_get_exito.png" class="description">
+      <img src="imagenes/render_swagger_get_exito.png">
     </div>
     
 
