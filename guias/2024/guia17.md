@@ -45,7 +45,7 @@ theme: jekyll-theme-leap-day
 2. Conecte el repositorio remoto **restapi** de GitHub.
 
 <div align="center">
-  <img src="imagenes/render_restapi.png" class="description">
+  <img src="imagenes/render_restapi.png">
 </div>
 
 3. En la configuración:
@@ -53,7 +53,7 @@ theme: jekyll-theme-leap-day
     + En _Instance Type_ seleccione la opción gratuita **Free**
 
 <div align="center">
-  <img src="imagenes/render_config.png" class="description">
+  <img src="imagenes/render_config.png">
 </div>
 
 4. En _Environment Variables_, haga clic en **Add from .env** y pegue todo el contenido el archivo `.env` del proyecto _restapi_.
@@ -63,14 +63,14 @@ theme: jekyll-theme-leap-day
 </div>
 
 <div align="center">
-  <img src="imagenes/render_envs2.png" class="description">
+  <img src="imagenes/render_envs2.png">
 </div>
 
 5. Haga click en **Deploy Web Service**.
 6. Acceda al servicio e inspeccione el proceso de despliegue en la opción **Event**.
 
 <div align="center">
-  <img src="imagenes/render_events.png" class="description">
+  <img src="imagenes/render_events.png">
 </div>
 
 7. (STOP 1) Del _URL_ (`https://restapi-<ID>.onrender.com`) copie en solo el _host_ (`restapi-<ID>.onrender.com`).
