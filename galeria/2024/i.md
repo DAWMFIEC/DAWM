@@ -19,14 +19,21 @@
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
-|| [Ver](imagenes_curriculum/.png) | [Ir]() |
+| Robespierre Triviño | [Ver](imagenes_curriculum/robtrivi.github.io.png) | [Ir](https://robtrivi.github.io/curriculum/) |
+| Michael Estrada | [Ver](imagenes_curriculum/bryanestrada003.github.io.png) | [Ir](https://bryanestrada003.github.io/curriculum/) |
+| Cristhian Santacruz | [Ver](imagenes_curriculum/cristhiansantacruz.github.io.png) | [Ir](https://cristhiansantacruz.github.io/curriculum-cristhian/) |
+| Andres Zambrano | [Ver](imagenes_curriculum/ajzambra.github.io.png) | [Ir](https://ajzambra.github.io/CurriculumHTML/) |
+| Juan Pablo Plúas Muñoz | [Ver](imagenes_curriculum/jppluas.github.io.png) | [Ir](https://jppluas.github.io/curriculum/) |
+| Savier Acosta | [Ver](imagenes_curriculum/savier018.github.io.png) | [Ir](https://savier018.github.io/curriculum/) |
+| Johann Ramírez | [Ver](imagenes_curriculum/johrespi.github.io.png) | [Ir](https://johrespi.github.io/Curriculum/) |
+| Luis Jara Sánchez | [Ver](imagenes_curriculum/luisenjs.github.io.png) | [Ir](https://luisenjs.github.io/curriculum/) |
 || [Ver](imagenes_curriculum/.png) | [Ir]() |
 
 ## Proyecto 02: Landing Page SPA - Bootstrap & Javascript
 
 | Nombre |  Tema  | Vista  Previa | Sitio |
 | :----  | :----: | :----------: | :---: |
-|| | [Ver](imagenes_landing/.png) | [Ir]() |
+| Savier Acosta | Silverhand Components | [Ver](imagenes_landing/savier018.png) | [Ir](https://savier018.github.io/landing-page/) |
 || | [Ver](imagenes_landing/.png) | [Ir]() |
 
 ## Proyecto 03: Dashboard - React
