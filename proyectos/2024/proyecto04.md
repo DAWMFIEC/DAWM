@@ -30,3 +30,5 @@ La respuesta es:
 * [Guía 17: REST API (Datos) - Despliegue en Render](/DAWM/guias/2024/guia17)
 * [Guía 18: REST API (Seguridad) - MySQL](/DAWM/guias/2024/guia18)
 * [Guía 19: REST API (Seguridad) - JWT y Token](/DAWM/guias/2024/guia19)
+* [Guía 20: REST API (Seguridad) - Despliegue en Railway](/DAWM/guias/2024/guia20)
+* [Guía 21: REST API (Datos y Seguridad) - Integración](/DAWM/guias/2024/guia21)
