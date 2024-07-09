@@ -93,7 +93,7 @@ theme: jekyll-theme-leap-day
       //"host": 'localhost:5500',
       "host": 'restapi-<ID>.onrender.com',
       "schemes": [
-        "http", "https"
+        "https"
       ],
       ...
     };
