@@ -41,43 +41,43 @@ theme: jekyll-theme-leap-day
 
 #### Render
 
-1. En el [Dashboard Render](https://dashboard.render.com/), seleccione la opción **Web Services**.
-2. Conecte el repositorio remoto **restapi** de GitHub.
+2. En el [Dashboard Render](https://dashboard.render.com/), seleccione la opción **Web Services**.
+3. Conecte el repositorio remoto **restapi** de GitHub.
 
-<div align="center">
-  <img src="imagenes/render_restapi.png">
-</div>
+    <div align="center">
+      <img src="imagenes/render_restapi.png">
+    </div>
 
 3. En la configuración:
     + Cambie el valor de _Start Command_ por **node server.js**
     + En _Instance Type_ seleccione la opción gratuita **Free**
 
-<div align="center">
-  <img src="imagenes/render_config.png">
-</div>
+    <div align="center">
+      <img src="imagenes/render_config.png">
+    </div>
 
 4. En _Environment Variables_, haga clic en **Add from .env** y pegue todo el contenido el archivo `.env` del proyecto _restapi_.
 
-<div align="center">
-  <img src="imagenes/render_envs1.png" class="description">
-</div>
+    <div align="center">
+      <img src="imagenes/render_envs1.png" class="description">
+    </div>
 
-<div align="center">
-  <img src="imagenes/render_envs2.png">
-</div>
+    <div align="center">
+      <img src="imagenes/render_envs2.png">
+    </div>
 
 5. Haga click en **Deploy Web Service**.
 6. Acceda al servicio e inspeccione el proceso de despliegue en la opción **Event**.
 
-<div align="center">
-  <img src="imagenes/render_events.png">
-</div>
+    <div align="center">
+      <img src="imagenes/render_events.png">
+    </div>
 
 7. (STOP 1) Del _URL_ (`https://restapi-<ID>.onrender.com`) copie en solo el _host_ (`restapi-<ID>.onrender.com`).
 
-<div align="center">
-  <img src="imagenes/render_host.png" class="description">
-</div>
+    <div align="center">
+      <img src="imagenes/render_host.png" class="description">
+    </div>
 
 #### REST API - Swagger
 
