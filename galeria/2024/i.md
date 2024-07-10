@@ -27,7 +27,12 @@
 | Savier Acosta | [Ver](imagenes_curriculum/savier018.github.io.png) | [Ir](https://savier018.github.io/curriculum/) |
 | Johann Ramírez | [Ver](imagenes_curriculum/johrespi.github.io.png) | [Ir](https://johrespi.github.io/Curriculum/) |
 | Luis Jara Sánchez | [Ver](imagenes_curriculum/luisenjs.github.io.png) | [Ir](https://luisenjs.github.io/curriculum/) |
-|| [Ver](imagenes_curriculum/.png) | [Ir]() |
+| Jair Ramírez | [Ver](imagenes_curriculum/jairrami06.github.io.png) | [Ir](https://jairrami06.github.io/curriculum/) |
+| Néstor Arias | [Ver](imagenes_curriculum/niariasve.github.io.png) | [Ir](https://niariasve.github.io/CurriculumVitae/) |
+| Moisés Álvarez| [Ver](imagenes_curriculum/mfalvarezd.github.io.png) | [Ir](https://mfalvarezd.github.io/curriculum/) |
+| Jair Chaguay | [Ver](imagenes_curriculum/jair-chaguay.github.io.png) | [Ir](https://jair-chaguay.github.io/CurriculumVitae/) |
+| Luis Luna | [Ver](imagenes_curriculum/luisluna2307.github.io.png) | [Ir](https://luisluna2307.github.io/curriculum/) |
+| Giovanni Sambonino | [Ver](imagenes_curriculum/giovannisambonino.github.io.png) | [Ir](https://giovannisambonino.github.io/curriculum/) |
 
 ## Proyecto 02: Landing Page SPA - Bootstrap & Javascript
 
