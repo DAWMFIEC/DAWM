@@ -37,7 +37,7 @@ const Users = require('../models').users;
 
 Para obtener TODOS los registros de una entidad en una base de datos relacional, implemente el controlador para el verbo **GET** con y el requerimiento al método **findAll** del modelo.
 
-* Cree el controlador para el verbo GET de la ruta **`/findAll/json`** que retorna un json con todos los fotos.
+* Cree el controlador para el verbo GET de la ruta **`/findAll/json`** que retorna un json con todos los usuarios.
 
   ```
   /* GET users listing. */
@@ -53,8 +53,7 @@ Para obtener TODOS los registros de una entidad en una base de datos relacional,
   ```
 
 * Reinicie el servidor para comprobar el funcionamiento del controlador.
-
-  + En postman, realice una petición GET al URL `http://localhost:3000/users`
+* En Postman, realice una petición GET al URL `http://localhost:3000/users/findAll/json`
 
 <p align="center">
   <img src="imagenes/postman_getall.png">
