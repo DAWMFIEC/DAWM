@@ -14,7 +14,8 @@ Base de datos original
 ======================
 * * *
 
-Ejecute el script [dbauth.sql](archivos/dbauth.sql) en el motor de la base de datos. Use el schema **dbauth**. La base de datos a considerar contiene las tablas **users**, **roles_users** y **roles**, como se muestra a continuación.
+1. Ejecute el script [dbauth.sql](archivos/dbauth.sql) en el motor de la base de datos. 
+2. Cree el schema **dbauth**. La base de datos a considerar contiene las tablas **users**, **roles_users** y **roles**, como se muestra a continuación.
 
 <p align="center">
   <img src="imagenes/modelEER.png">
@@ -26,28 +27,47 @@ ORM: Sequelize, Sequelize-cli y Sequelize-auto
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* Instale Sequelize CLI de forma global, con: **`npm install -g sequelize-cli`**
-* Instale Sequelize auto de forma global, con: **`npm install -g sequelize-auto`**
-* Instale Sequelize y el conector para MySQL para el proyecto, con: **`npm install --save sequelize mysql2`**
-* Genere los archivos de configuración de Sequelize, con: **`sequelize init`**  
+* Instale **Sequelize CLI** de forma global, con: 
+  
+    ```command
+    npm install -g sequelize-cli
+    ```
 
-<p align="center">
-  <img src="imagenes/sequelizeinit.JPG">
-</p>
+* Instale **Sequelize Auto** de forma global, con: 
+  
+    ```command
+    npm install -g sequelize-auto
+    ```
 
-* Modifique el archivo `config/config.json` con los datos para la conexión con el motor de bases de datos. En este caso, el ambiente a utilizar es **development**.
+* Instale **Sequelize** y el conector para **MySQL** en el proyecto, con: 
 
-<pre><code>
-{
-  "development": {
-    "username": "root",
-    "password": null,
-    "database": "database_development",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  ...
-</code></pre>
+    ```command
+    npm install --save sequelize mysql2
+    ```
+
+* Genere los archivos de configuración de Sequelize, con: 
+
+    ```command
+    sequelize init
+    ```  
+
+    <p align="center">
+      <img src="imagenes/sequelizeinit.JPG">
+    </p>
+
+* Modifique el archivo `config/config.json`, en el ambiente **development**. Modifique los datos para establecer la conexión con el motor de bases de datos.
+
+    ```typescript
+    {
+      "development": {
+        "username": "<USUARIO-DE-DB>",
+        "password": "<CONTRASEÑA-DE-DB>",
+        "database": "dbatuh",
+        "host": "127.0.0.1",
+        "dialect": "mysql"
+      },
+      ...
+    ````
 
 
 Modelos
@@ -56,26 +76,30 @@ Modelos
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* Reconstruya los modelos, con: `sequelize-auto -h 127.0.0.1 -d dbauth -u root -x root -p 3306`
-  + Especifique el nombre del usuario después de la bandera -u, la contraseña del usuario después de la bandera -x y el puerto después de la bandera -p.
+* Reconstruya los modelos a partir de las tablas. Escriba el **nombre del usuario** después de la bandera -u y la **contraseña del usuario** después de la bandera -x.
 
-<p align="center">
-  <img src="imagenes/sequelize_auto.png">
-</p>
+    ```command
+    sequelize-auto -h 127.0.0.1 -d dbauth -u <USUARIO-DE-DB> -x <CONTRASEÑA-DE-DB> -p 3306
+    ```
 
-* Los modelos reconstruidos son **users**, **roles_users** y **roles** en la carpeta `/models`. 
-  + Además se creó el archivo **`init-models.js`** con las relaciones entre los modelos. Los alias (**user_id_users**, **role_id_roles**, **roles_users**, **role** y **user**) son utilizadas para referirse a las relaciones entre los modelos.
+    <p align="center">
+      <img src="imagenes/sequelize_auto.png">
+    </p>
 
-<pre><code>
-roles.belongsToMany(users, { as: 'user_id_users', through: roles_users, foreignKey: "role_id", otherKey: "user_id" });
-users.belongsToMany(roles, { as: 'role_id_roles', through: roles_users, foreignKey: "user_id", otherKey: "role_id" });
+* Los modelos reconstruidos se encuentran en la carpeta: `/models` **users**, **roles_users** y **roles** . 
+  
+    + Además, el archivo **`init-models.js`** contiene las relaciones entre los modelos. Los alias (valores de las claves **as**) son utilizadas como referencia en las relaciones entre los modelos.
 
-roles_users.belongsTo(roles, { as: "role", foreignKey: "role_id"});
-roles.hasMany(roles_users, { as: "roles_users", foreignKey: "role_id"});
+    <pre><code>
+    roles.belongsToMany(users, { as: 'user_id_users', through: roles_users, foreignKey: "role_id", otherKey: "user_id" });
+    users.belongsToMany(roles, { as: 'role_id_roles', through: roles_users, foreignKey: "user_id", otherKey: "role_id" });
 
-roles_users.belongsTo(users, { as: "user", foreignKey: "user_id"});
-users.hasMany(roles_users, { as: "roles_users", foreignKey: "user_id"});
-</code></pre>
+    roles_users.belongsTo(roles, { as: "role", foreignKey: "role_id"});
+    roles.hasMany(roles_users, { as: "roles_users", foreignKey: "role_id"});
+
+    roles_users.belongsTo(users, { as: "user", foreignKey: "user_id"});
+    users.hasMany(roles_users, { as: "roles_users", foreignKey: "user_id"});
+    </code></pre>
 
 
 Referencias 
