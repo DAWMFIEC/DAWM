@@ -16,7 +16,7 @@
 
 ## Configuración
 
-* Modifique el archivo `config/config.json` para el ambiente "test" para los datos de conexión: username, password y database
+* Modifique el archivo **config/config.json**, con el ambiente **test**, con los datos de conexión con el motor de base de datos: username, password y database
 
 ## Pruebas unitarias
 
