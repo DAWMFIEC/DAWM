@@ -59,7 +59,7 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
       SET DEBUG=admin:\* & npm start
   </code></pre>
     
-* En caso de ser necesario, resuelva los problemas con las dependencias, con:
+  + En caso de ser necesario, resuelva los problemas con las dependencias, con:
   
   <pre><code>
     npm audit fix --force
