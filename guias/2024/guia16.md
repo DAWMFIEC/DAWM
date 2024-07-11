@@ -160,8 +160,8 @@ theme: jekyll-theme-leap-day
 7. Modifique el archivo con el servidor **server.js** con la referencia al módulo _swagger-ui-express_ y al archivo generado _swagger_output.json_. Además, agregue la ruta a la documentación.
 
     ```typescript
-    const admin = require('firebase-admin');
     ...
+    const admin = require('firebase-admin');
     
     /* Referencia al módulo swagger-ui-express */
     const swaggerUi = require('swagger-ui-express')
@@ -179,7 +179,9 @@ theme: jekyll-theme-leap-day
 
     app.use('/api', require('./routes/api'));
 
-    ...
+    app.listen(PORT, () => {
+        console.log(`Server is running on port ${PORT}`);
+    });
     ```
 
 8. Ejecute el servidor, con:
