@@ -50,21 +50,35 @@ Utilizaremos el [generador de aplicaciones de express](https://expressjs.com/en/
         └── index.ejs
   </code></pre>
 
-
 * Compruebe el funcionamiento del servidor, con:  
   
   <pre><code>
       cd admin   
       npm install   
-      SET DEBUG=admin:\* & npm start
   </code></pre>
     
-  + En caso de ser necesario, resuelva los problemas con las dependencias, con:
+* Instale nodemon, con:  
   
-  <pre><code>
-    npm audit fix --force
-  </code></pre>
-    
+  ```command
+  npm i nodemon
+  ```   
+
+* Modifique el archivo `package.json` con el script:
+
+  ```typescript
+  ...
+  "scripts": {
+    ...
+    "autostart": "nodemon ./bin/www"
+  },
+  ...
+  ```
+
+* Levante el servidor, con:  
+  
+  ```command
+  npm run autostart
+  ```   
 
 * Acceda al URL `http://localhost:3000/` 
 
