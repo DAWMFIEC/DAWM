@@ -86,20 +86,22 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
       <img src="imagenes/sequelize_auto.png">
     </p>
 
-* Los modelos reconstruidos se encuentran en la carpeta: `/models` **users**, **roles_users** y **roles** . 
-  
-    + Además, el archivo **`init-models.js`** contiene las relaciones entre los modelos. Los alias (valores de las claves **as**) son utilizadas como referencia en las relaciones entre los modelos.
+* En la carpeta `/models`:
 
-    <pre><code>
+    + Los archivos **users.js**, **roles_users.js** y **roles.js** contienen la información de los modelos reconstruidos. 
+
+    + El archivo **`init-models.js`** contiene las relaciones entre los modelos reconstruidos. Los alias (valores de las claves **as**) son utilizadas como referencia en las relaciones entre los modelos.
+
+    ```typescript
+    ...
     roles.belongsToMany(users, { as: 'user_id_users', through: roles_users, foreignKey: "role_id", otherKey: "user_id" });
     users.belongsToMany(roles, { as: 'role_id_roles', through: roles_users, foreignKey: "user_id", otherKey: "role_id" });
-
     roles_users.belongsTo(roles, { as: "role", foreignKey: "role_id"});
     roles.hasMany(roles_users, { as: "roles_users", foreignKey: "role_id"});
-
     roles_users.belongsTo(users, { as: "user", foreignKey: "user_id"});
     users.hasMany(roles_users, { as: "roles_users", foreignKey: "user_id"});
-    </code></pre>
+    ...
+    ```
 
 
 Referencias 
