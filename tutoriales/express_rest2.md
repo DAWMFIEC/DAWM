@@ -17,21 +17,65 @@ De [MySQL Community Downloads](https://dev.mysql.com/downloads/), descargue e in
 * Motor de base de datos: [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 * Interfaz gráfica: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
+## Variables de entorno
+
+* Desde la línea de comandos, en la raíz de la carpeta del proyecto. Instale **Dotenv**, con: 
+  
+    ```command
+    npm install --save-dev dotenv 
+    ```
+
+* En el archivo `app.js`, agregue el módulo `dotenv` y cargue los datos de configuración.
+
+    ```text
+    /* CARGA DE DATOS DE CONFIGURACION EN MEMORIA */
+    require('dotenv').config();
+
+    var createError = require('http-errors');
+    var express = require('express');
+    ...
+    ```
+
+## Bits aleatorios
+
+* Desde la línea de comandos, acceda a la interfaz de **nodeJS**, con:
+  
+  ```typescript
+  node
+  ```
+
+* Genere y copie la secuencia de datos aleatorios, con:
+
+  ```typescript
+  > let crypto = require('crypto');
+  > crypto.randomBytes(16).toString('base64');
+  ```
+
+* En la raíz del proyecto, cree el archivo `.env`. Agregue la variable **SALT** con la secuencia de datos aleatorios.
+
+  ```
+  SALT=...8uUYwT...
+  ```
 
 ## Manejador de rutas y registro en la aplicación
 
-Modifique el manejador de rutas **rest/users.js**.
+* Modifique el manejador de rutas **rest/users.js**, cargue:
 
-* Incluya los objetos `Sequelize` y `Op` del módulo **sequelize** y el modelo `Users` 
+    + El módulo **crypto**. 
+    + Los objetos `Sequelize` y `Op` del módulo **sequelize**, y 
+    + El modelo `Users` 
 
-```
-var express = require('express');
-var router = express.Router();
+    ```
+    var express = require('express');
+    var router = express.Router();
 
-const { Sequelize, Op } = require('sequelize');
-const Users = require('../models').users;
-...
-```
+    /* Módulo crypto */
+    let crypto = require('crypto');
+
+    const { Sequelize, Op } = require('sequelize');
+    const Users = require('../models').users;
+    ...
+    ```
 
 ### GET-All
 
@@ -107,11 +151,16 @@ Para guardar UN registro de una entidad en una base de datos relacional, impleme
   router.post('/save', function(req, res, next) {  
 
       let {email, username, password} = req.body;
+
+      // Encripte la contraseña con SALT
+      let salt = process.env.SALT
+      let hash = crypto.createHmac('sha512',salt).update(password).digest("base64");
+      let passwordHash = salt + "$" + hash
         
       Users.create({
         email: email,
         username: username,
-        password: password,
+        password: passwordHash,
         logins: 0,
         last_login: 0
       })
