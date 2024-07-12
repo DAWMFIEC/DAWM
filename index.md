@@ -44,7 +44,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 20: REST API (Seguridad) - Despliegue en Railway](guias/2024/guia20)
   * [Guía 21: REST API (Datos y Seguridad) - Integración](guias/2024/guia21)
 * [Proyecto 05: MobileApp - Angular y Ionic](proyectos/2024/proyecto05)
-* [Proyecto 06: WebAdmin - Django y MySQL](proyectos/2024/proyecto06)
+* [Proyecto 06: WebAdmin](proyectos/2024/proyecto06)
   
 ## Scripts
 
