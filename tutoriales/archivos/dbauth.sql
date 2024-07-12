@@ -81,7 +81,7 @@ CREATE TABLE `users` (
   `id` int unsigned NOT NULL AUTO_INCREMENT,
   `email` varchar(127) NOT NULL,
   `username` varchar(32) NOT NULL DEFAULT '',
-  `password` char(100) NOT NULL,
+  `password` char(255) NOT NULL,
   `logins` int unsigned NOT NULL DEFAULT '0',
   `last_login` int unsigned DEFAULT NULL,
   PRIMARY KEY (`id`),
