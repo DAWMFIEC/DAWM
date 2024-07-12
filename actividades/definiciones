@@ -1,0 +1,56 @@
+useState: Hook de React para manejar el estado en componentes funcionales.
+useEffect: Hook de React para manejar efectos secundarios en componentes funcionales.
+Typescript: Lenguaje de programación que extiende JavaScript con tipos estáticos.
+Javascript: Lenguaje de programación utilizado para crear comportamiento dinámico en páginas web.
+color: Propiedad CSS que define el color del texto.
+estructura semántica: Organización del contenido HTML utilizando etiquetas que describen su significado.
+estructura general: Organización básica y jerárquica de un documento HTML.
+<section>: Etiqueta HTML utilizada para definir secciones en un documento.
+href: Atributo HTML que especifica la URL de destino de un enlace.
+src: Atributo HTML que especifica la URL de una fuente, como una imagen o un script.
+.container: Clase CSS utilizada para definir un contenedor con estilos específicos.
+#nombre: Selector CSS utilizado para seleccionar un elemento con un ID específico.
+flex: Modelo de diseño CSS para distribuir elementos en una página.
+grid: Sistema de diseño CSS para crear interfaces basadas en una cuadrícula.
+HTTP POST: Método HTTP para enviar datos al servidor.
+HTTP GET: Método HTTP para solicitar datos del servidor.
+fetch: API de JavaScript para realizar solicitudes HTTP.
+padding: Espacio interior de un elemento, entre el contenido y el borde.
+margin: Espacio exterior de un elemento, fuera del borde.
+input: Etiqueta HTML para crear un campo de entrada de datos.
+select: Etiqueta HTML para crear un menú desplegable.
+DOMContentLoaded: Evento que se dispara cuando el HTML inicial ha sido completamente cargado y parseado.
+submit: Evento o botón que envía un formulario.
+preventDefault(): Método que previene el comportamiento predeterminado de un evento.
+git add: Comando para agregar cambios al área de preparación en Git.
+git commit: Comando para confirmar cambios en el repositorio local de Git.
+git clone: Comando para clonar un repositorio remoto.
+<p>: Etiqueta HTML para definir un párrafo.
+<div>: Etiqueta HTML para definir un contenedor genérico.
+getElementById: Método JavaScript para seleccionar un elemento por su ID.
+getElementsByTagName: Método JavaScript para seleccionar elementos por su nombre de etiqueta.
+DOM: Modelo de objetos del documento que representa la estructura HTML o XML.
+addEventListener: Método JavaScript para añadir un manejador de eventos a un elemento.
+innerHTML: Propiedad que define o retorna el HTML contenido dentro de un elemento.
+ChatGPT: Modelo de lenguaje desarrollado por OpenAI para generar texto y responder preguntas.
+Bard: Modelo de lenguaje desarrollado por Google.
+QR: Código de respuesta rápida utilizado para almacenar información que se puede escanear.
+URL: Localizador uniforme de recursos, dirección web.
+GIT: Sistema de control de versiones distribuido.
+Markdown: Lenguaje de marcado ligero para formatear texto.
+GitHub: Plataforma para hospedaje de repositorios Git y colaboración en proyectos.
+GitHub Actions: Servicio de automatización para flujos de trabajo en GitHub.
+HTML: Lenguaje de marcado para estructurar contenido en la web.
+W3C: Consorcio de la World Wide Web que desarrolla estándares web.
+estándar: Normas establecidas para asegurar la interoperabilidad y calidad.
+meta: Etiqueta HTML para definir metadatos sobre un documento.
+title: Etiqueta HTML para definir el título de un documento.
+link: Etiqueta HTML para definir la relación entre el documento actual y un recurso externo.
+función flecha: Sintaxis concisa para definir funciones en JavaScript.
+API: Interfaz de programación de aplicaciones, conjunto de funciones y procedimientos.
+asíncrona: Ejecución de operaciones sin bloquear el flujo del programa.
+sincronía: Ejecución de operaciones de manera secuencial y bloqueante.
+transpilación: Proceso de convertir código fuente de un lenguaje a otro.
+component: Unidad reutilizable y autónoma de código en frameworks como React.
+interface: Estructura que define contratos en TypeScript para la forma de los objetos.
+props: Propiedades pasadas a componentes en frameworks como React.
