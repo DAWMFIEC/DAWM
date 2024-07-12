@@ -199,11 +199,16 @@ Para actualizar UN registro de una entidad en una base de datos relacional, impl
   router.put('/update', function(req, res, next) {  
 
       let {id, email, username, password} = req.body;
+
+      // Encripte la contraseña con SALT
+      let salt = process.env.SALT
+      let hash = crypto.createHmac('sha512',salt).update(password).digest("base64");
+      let passwordHash = salt + "$" + hash
         
       Users.update({
         email: email,
         username: username,
-        password: password,
+        password: passwordHash,
         logins: 0,
         last_login: 0
       },
