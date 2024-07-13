@@ -38,17 +38,21 @@
 
 | Nombre |  Tema  | Vista  Previa | Sitio |
 | :----  | :----: | :----------: | :---: |
-|  | Pokémon | [Ver](imagenes_landing/cjmunozy.github.io.png) | [Ir](https://cjmunozy.github.io/landing/) |
-|  | CMCEC | [Ver](imagenes_landing/robtrivi.github.io.png) | [Ir](https://robtrivi.github.io/landing/index.html) |
-|  | Klashz | [Ver](imagenes_landing/savier018.github.io.png) | [Ir](https://savier018.github.io/landing-page/) |
-|  | Silverhand Components | [Ver](imagenes_landing/cristhiansantacruz.github.io.png) | [Ir](https://cristhiansantacruz.github.io/landing/index.html) |
-|  | Belleza Extrema | [Ver](imagenes_landing/jppluas.github.io.png) | [Ir](https://jppluas.github.io/landing/) |
-|  | Adogtame | [Ver](imagenes_landing/johrespi.github.io.png) | [Ir](https://johrespi.github.io/landing/) |
-|  | OhMyGames! | [Ver](imagenes_landing/leoparra03.github.io.png) | [Ir](https://leoparra03.github.io/landing/) |
-|  | VetStop | [Ver](imagenes_landing/noeliapasaca.github.io.png) | [Ir](https://noeliapasaca.github.io/landing/) |
-|  | Freelancer | [Ver](imagenes_landing/tingocarlos08.github.io.png) | [Ir](https://tingocarlos08.github.io/landing/) |
-|  | Hallyu Hub | [Ver](imagenes_landing/luisenjs.github.io.png) | [Ir](https://luisenjs.github.io/landing/) |
-|| | [Ver](imagenes_landing/.png) | [Ir]() |
+| Cristhian Muñoz | Pokémon | [Ver](imagenes_landing/cjmunozy.github.io.png) | [Ir](https://cjmunozy.github.io/landing/) |
+| Robespierre Triviño | CMCEC | [Ver](imagenes_landing/robtrivi.github.io.png) | [Ir](https://robtrivi.github.io/landing/index.html) |
+| Cristhian Santacruz | Klashz | [Ver](imagenes_landing/cristhiansantacruz.github.io.png) | [Ir](https://cristhiansantacruz.github.io/landing/index.html) |
+| Savier Acosta | Silverhand Components | [Ver](imagenes_landing/savier018.github.io.png) | [Ir](https://savier018.github.io/landing-page/) |
+| Juan Pablo Plúas Muñoz | Belleza Extrema | [Ver](imagenes_landing/jppluas.github.io.png) | [Ir](https://jppluas.github.io/landing/) |
+| Johann Ramírez | Adogtame | [Ver](imagenes_landing/johrespi.github.io.png) | [Ir](https://johrespi.github.io/landing/) |
+| Leonardo Parra | OhMyGames! | [Ver](imagenes_landing/leoparra03.github.io.png) | [Ir](https://leoparra03.github.io/landing/) |
+| Noelia Pasaca | VetStop | [Ver](imagenes_landing/noeliapasaca.github.io.png) | [Ir](https://noeliapasaca.github.io/landing/) |
+| Carlos Tingo | Freelancer | [Ver](imagenes_landing/tingocarlos08.github.io.png) | [Ir](https://tingocarlos08.github.io/landing/) |
+| Luis Jara Sánchez | Hallyu Hub | [Ver](imagenes_landing/luisenjs.github.io.png) | [Ir](https://luisenjs.github.io/landing/) |
+| Néstor Arias | Rick and Morty | [Ver](imagenes_landing/niariasve.github.io.png) | [Ir](https://niariasve.github.io/LandingPage/) |
+| Fernando Alvarez | The Simpsons | [Ver](imagenes_landing/mfalvarezd.github.io.png) | [Ir](https://mfalvarezd.github.io/landing/) |
+| Melissa Cruz | Nature's Essence | [Ver](imagenes_landing/angmcruz.github.io.png) | [Ir](https://angmcruz.github.io/) |
+| Luis Alberto Luna Arana | EmpowerSkills | [Ver](imagenes_landing/luisluna2307.github.io.png) | [Ir](https://luisluna2307.github.io/landingPage/joelorrala.github.io) |
+| Joel Orrala Yugla | AnimeUpdates | [Ver](imagenes_landing/joelorrala.github.io.png) | [Ir](https://joelorrala.github.io/landing/) |
 
 ## Proyecto 03: Dashboard - React
 
