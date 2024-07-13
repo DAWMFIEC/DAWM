@@ -38,7 +38,16 @@
 
 | Nombre |  Tema  | Vista  Previa | Sitio |
 | :----  | :----: | :----------: | :---: |
-| Savier Acosta | Silverhand Components | [Ver](imagenes_landing/savier018.png) | [Ir](https://savier018.github.io/landing-page/) |
+|  | Pokémon | [Ver](imagenes_landing/cjmunozy.github.io.png) | [Ir](https://cjmunozy.github.io/landing/) |
+|  | CMCEC | [Ver](imagenes_landing/robtrivi.github.io.png) | [Ir](https://robtrivi.github.io/landing/index.html) |
+|  | Klashz | [Ver](imagenes_landing/savier018.github.io.png) | [Ir](https://savier018.github.io/landing-page/) |
+|  | Silverhand Components | [Ver](imagenes_landing/cristhiansantacruz.github.io.png) | [Ir](https://cristhiansantacruz.github.io/landing/index.html) |
+|  | Belleza Extrema | [Ver](imagenes_landing/jppluas.github.io.png) | [Ir](https://jppluas.github.io/landing/) |
+|  | Adogtame | [Ver](imagenes_landing/johrespi.github.io.png) | [Ir](https://johrespi.github.io/landing/) |
+|  | OhMyGames! | [Ver](imagenes_landing/leoparra03.github.io.png) | [Ir](https://leoparra03.github.io/landing/) |
+|  | VetStop | [Ver](imagenes_landing/noeliapasaca.github.io.png) | [Ir](https://noeliapasaca.github.io/landing/) |
+|  | Freelancer | [Ver](imagenes_landing/tingocarlos08.github.io.png) | [Ir](https://tingocarlos08.github.io/landing/) |
+|  | Hallyu Hub | [Ver](imagenes_landing/luisenjs.github.io.png) | [Ir](https://luisenjs.github.io/landing/) |
 || | [Ver](imagenes_landing/.png) | [Ir]() |
 
 ## Proyecto 03: Dashboard - React
