@@ -161,6 +161,10 @@ theme: jekyll-theme-leap-day
     ```
 2. Edite la vista _security/views/crud.js_.
 
+    | Inline Code   | The `<br>` is stripped by highlight.js.   |
+    |-------------  |-----------------------------------------  |
+    | `a = 1`       | <pre><code>a = 1<br>b = 2</code></pre>    |
+
     + Reemplace
       ```html
       <div class="col-sm-6">
@@ -168,7 +172,7 @@ theme: jekyll-theme-leap-day
       </div>
       ```    
       por
-      
+
       ```xml
       <div class="col-sm-6">
         <h2><%= title %></h2>
