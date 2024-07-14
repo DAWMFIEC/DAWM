@@ -162,21 +162,25 @@ theme: jekyll-theme-leap-day
 2. Edite la vista _security/views/crud.js_.
 
     <div style="display: flex;">
-    <div style="flex: 1; margin-right: 5px;">
-        <!-- Código HTML de la primera porción -->
-        ```html
-        <h1>Ejemplo de código 1</h1>
-        <p>Este es el primer bloque de código.</p>
-        ```
+      <div style="flex: 1; margin-right: 5px;">
+          <!-- Código HTML de la primera porción -->
+
+          ```text
+          <h1>Ejemplo de código 1</h1>
+          <p>Este es el primer bloque de código.</p>
+          ```
+
+      </div>
+      <div style="flex: 1; margin-left: 5px;">
+          <!-- Código HTML de la segunda porción -->
+
+          ```text
+          <h1>Ejemplo de código 2</h1>
+          <p>Este es el segundo bloque de código.</p>
+          ```
+
+      </div>
     </div>
-    <div style="flex: 1; margin-left: 5px;">
-        <!-- Código HTML de la segunda porción -->
-        ```html
-        <h1>Ejemplo de código 2</h1>
-        <p>Este es el segundo bloque de código.</p>
-        ```
-    </div>
-</div>
 
 
 
