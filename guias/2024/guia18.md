@@ -173,7 +173,7 @@ theme: jekyll-theme-leap-day
         <tr>
           <td>
 
-            ```html
+            ```
             <div class="col-sm-6">
               <h2>Manage <b>Employees</b></h2>
             </div>
@@ -182,12 +182,12 @@ theme: jekyll-theme-leap-day
           </td>
           <td>
             
-            ```html
-              <div class="col-sm-6">
-                <h2><%= title %></h2>
-              </div>
             ```
-            
+            <div class="col-sm-6">
+              <h2><%= title %></h2>
+            </div>
+            ```
+
           </td>
         </tr>
       </tbody>
