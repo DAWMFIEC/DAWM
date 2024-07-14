@@ -84,13 +84,13 @@ theme: jekyll-theme-leap-day
 
 #### Express - Archivos estáticos y Vistas
 
-1. Copie los archivos:
-    + `crud-style` a _security/public/stylesheets_.
-    + `crud-javascript` a _security/public/javascripts_.
+1. Del archivo descargado:
+    + Mueva el archivo `crud-style.css` dentro de la carpeta _security/public/stylesheets_.
+    + Mueva el archivo `crud-javascript.js` dentro de la carpeta _security/public/javascripts_.
 
 2. Cree el archivo _security/views/crud.ejs_. Copie todo el contenido de _test.html_ dentro del archivo _crud.ejs_.
 
-3. Edite el enrutador _security/views/users.js_
+3. Edite el enrutador _security/views/users.js_ con la ruta a la carpeta pública.
 
     ```html
     ...
