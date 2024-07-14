@@ -119,7 +119,7 @@ theme: jekyll-theme-leap-day
     
       //res.send('respond with a resource');
 
-      /* Renderización de la vista */
+      /* 1. Renderización de la vista */
       res.render('crud');
     
     });
@@ -140,21 +140,21 @@ theme: jekyll-theme-leap-day
     var express = require('express');
     var router = express.Router();
 
-    /* Modelos y Operadores */
+    /* 1. Modelos y Operadores */
 
     const Users = require('../models').users;
 
     /* GET users listing. */
 
-    /* Callback asíncrono */
+    /* 2. Callback asíncrono */
     router.get('/', async function(req, res, next) {
 
       //res.send('respond with a resource');
 
-      /* Requerimiento a la BD mediante el modelo */
+      /* 3. Requerimiento a la BD mediante el modelo */
       let users = await Users.findAll({ })
 
-      /* Renderización de la respuesta en la vista */
+      /* 4. Renderización de la respuesta en la vista */
       res.render('crud', { title: 'CRUD of users', users: users });
 
     });
