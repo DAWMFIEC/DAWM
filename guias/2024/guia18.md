@@ -161,38 +161,21 @@ theme: jekyll-theme-leap-day
     ```
 2. Edite la vista _security/views/crud.js_.
 
-    <table>
-      <caption>Reemplazo de código</caption>
-      <thead>
-        <tr>
-          <th>Antes</th>
-          <th>Después</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>
+    + Reemplace
+      ```html
+      <div class="col-sm-6">
+        <h2>Manage <b>Employees</b></h2>
+      </div>
+      ```    
+      por
+      
+      ```xml
+      <div class="col-sm-6">
+        <h2><%= title %></h2>
+      </div>
+      ```
+
           
-            ```xml
-            <div class="col-sm-6">
-              <h2>Manage <b>Employees</b></h2>
-            </div>
-            ```
-          
-          </td>
-          <td>
-
-            ```xml
-            <div class="col-sm-6">
-              <h2><%= title %></h2>
-            </div>
-            ```
-
-          </td>
-        </tr>
-      </tbody>
-    </table>
-
 
 1. Versiona local y remotamente el repositorio **security**.
 
