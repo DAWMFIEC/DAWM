@@ -133,22 +133,16 @@ theme: jekyll-theme-leap-day
 
 #### Express - ORM
 
-1. Agregue la referencie el modelo autogenerado **Users**.
-
-  ```typescript
-  var express = require('express');
-  var router = express.Router();
-
-  /* Modelos y Operadores */
-  
-  const Users = require('../models').users;
-  ...
-  ```
-
-2. Edite el enrutador _security/routes/users.js_.
+1. Edite el enrutador _security/routes/users.js_.
     
     ```typescript
     ...
+    var express = require('express');
+    var router = express.Router();
+
+    /* Modelos y Operadores */
+
+    const Users = require('../models').users;
 
     /* GET users listing. */
 
@@ -165,7 +159,7 @@ theme: jekyll-theme-leap-day
 
     });
     ```
-3. Edite la vista _security/views/crud.js_.
+2. Edite la vista _security/views/crud.js_.
 
     <table>
       <caption>Reemplazo de código</caption>
@@ -178,18 +172,22 @@ theme: jekyll-theme-leap-day
       <tbody>
         <tr>
           <td>
-            <pre><code>
-              <div class="col-sm-6">
+
+            ```html
+            <div class="col-sm-6">
               <h2>Manage <b>Employees</b></h2>
-              </div>
-            </code></pre>
+            </div>
+            ```
+
           </td>
           <td>
-            <pre><code>
+            
+            ```html
               <div class="col-sm-6">
                 <h2><%= title %></h2>
               </div>
-            </code></pre>
+            ```
+            
           </td>
         </tr>
       </tbody>
