@@ -110,17 +110,16 @@ theme: jekyll-theme-leap-day
 1. Dentro de la carpeta de la carpeta _security/views_, cree el archivo _crud.ejs_.
 2. Copie el contenido de _test.html_ dentro del archivo _crud.ejs_.
 3. Edite el enrutador _security/routes/users.js_.
-    + Elimine, o comente, la respuesta predeterminada del controlador.
-    + Agregue la renderización de la vista, con: ```res.render('crud');```
-
+    
     ```typescript
-    var express = require('express');
-    var router = express.Router();
+    ...
 
     /* GET users listing. */
     router.get('/', function(req, res, next) {
     
       //res.send('respond with a resource');
+
+      /* Renderización de la vista */
       res.render('crud');
     
     });
@@ -134,6 +133,39 @@ theme: jekyll-theme-leap-day
 
 #### Express - ORM
 
+1. Agregue la referencie el modelo autogenerado **Users**.
+
+  ```typescript
+  var express = require('express');
+  var router = express.Router();
+
+  /* Modelos y Operadores */
+  
+  const Users = require('../models').users;
+  ...
+  ```
+
+2. Edite el enrutador _security/routes/users.js_.
+    
+    ```typescript
+    ...
+
+    /* GET users listing. */
+
+    /* Callback asíncrono */
+    router.get('/', async function(req, res, next) {
+
+      //res.send('respond with a resource');
+
+      /* Requerimiento a la BD mediante el modelo */
+      let users = await Users.findAll({ })
+
+      /* Renderización de la respuesta en la vista */
+      res.render('crud', { title: 'List of users', users: users });
+
+    });
+    ```
+
 1. Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
@@ -142,13 +174,17 @@ theme: jekyll-theme-leap-day
 
 ### Fundamental
 
+* Introduction to Sequelize: Simplifying Database Operations in Node.js en [X](https://x.com/prod42net/status/1806236123217158619)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Discover the power of Sequelize for simplifying database operations in Node.js with <a href="https://twitter.com/vaishnavirawool?ref_src=twsrc%5Etfw">@VaishnaviRawool</a>&#39;s insightful guide. From advantages to getting started, it&#39;s a must-read for developers. <a href="https://twitter.com/hashtag/NodeJS?src=hash&amp;ref_src=twsrc%5Etfw">#NodeJS</a> <a href="https://twitter.com/hashtag/Sequelize?src=hash&amp;ref_src=twsrc%5Etfw">#Sequelize</a> <a href="https://twitter.com/hashtag/DatabaseOps?src=hash&amp;ref_src=twsrc%5Etfw">#DatabaseOps</a> <a href="https://twitter.com/hashtag/ORM?src=hash&amp;ref_src=twsrc%5Etfw">#ORM</a>&quot; <a href="https://t.co/DvopupkfYV">https://t.co/DvopupkfYV</a></p>&mdash; prod42net (@prod42net) <a href="https://twitter.com/prod42net/status/1806236123217158619?ref_src=twsrc%5Etfw">June 27, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 * Encriptación de una contraseña con SALT en [X](https://twitter.com/El_Pop/status/1560356275774447618)
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="es" dir="ltr">Como almacenar passwords en una BD para que estos no estén expuestos en el caso de un acceso a esta base:<br><br>el truco es reconstruir el password a partir de su hash y el salt previamente generado y almacenado. <a href="https://t.co/sdESoBZOeg">pic.twitter.com/sdESoBZOeg</a></p>&mdash; Fernando Romo (@El_Pop) <a href="https://twitter.com/El_Pop/status/1560356275774447618?ref_src=twsrc%5Etfw">August 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
-vistas, encriptación
+vistas, orm, encriptación, salt
 
 ### Referencias
 
