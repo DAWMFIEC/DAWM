@@ -172,18 +172,18 @@ theme: jekyll-theme-leap-day
       <tbody>
         <tr>
           <td>
-            ```
+            {% raw %}
             <div class="col-sm-6">
               <h2>Manage <b>Employees</b></h2>
             </div>
-            ```
+            {% endraw %}
           </td>
           <td>
-            ```
+            {% raw %}
             <div class="col-sm-6">
               <h2><%= title %></h2>
             </div>
-            ```
+            {% endraw %}
           </td>
         </tr>
       </tbody>
