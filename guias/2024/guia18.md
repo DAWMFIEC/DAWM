@@ -39,9 +39,9 @@ theme: jekyll-theme-leap-day
 #### CRUD UI
 
 1. Acceda a [Bootstrap Crud Data Table for Database with Modal Form](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=crud-data-table-for-database-with-modal-form).
-2. Haga clic en **View Code**.
-3. Descargue el código en la opción **Download Source Code**
-4. Compruebe el funcionamiento de las ventanas modales con las **Add New Employee**, **Edit** y **Delete**.
+2. Haga clic en el botón **View Code**.
+3. Haga clic en el botón **Download Source Code** y descargue el archivo _test.html_.
+4. Acceda al archivo _test.html_ y compruebe el funcionamiento de las ventanas modales con las **Add New Employee**, **Edit** y **Delete**.
 
     <div align="center">
       <img src="imagenes/crud_base.png" width="70%">
@@ -57,7 +57,7 @@ theme: jekyll-theme-leap-day
 
 #### Express - Proyecto Base
 
-1. Desde la línea de comandos, en la carpeta _security_: 
+1. Dentro de la carpeta _security_, mediante la línea de comandos: 
     + Inicialice un proyecto en Express, con: `express --view=ejs .`
     + Instale los módulos **sequelize** (`ORM` para el acceso a la BD), **mysql2** (conector con MySQL), **dotenv** y **nodemon**. 
 
@@ -101,9 +101,38 @@ theme: jekyll-theme-leap-day
     npm run autostart
     ```
 
-7. (STOP 1) Compruebe la salida de las URLs [http://localhost:3002/](http://localhost:3002/) y [http://localhost:3002/users](http://localhost:3002/users)
+7. Compruebe la salida de las URLs [http://localhost:3002/](http://localhost:3002/) y [http://localhost:3002/users](http://localhost:3002/users)
 
+8. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
+#### Express - Vistas
+
+1. Dentro de la carpeta de la carpeta _security/views_, cree el archivo _crud.ejs_.
+2. Copie el contenido de _test.html_ dentro del archivo _crud.ejs_.
+3. Edite el enrutador _security/routes/users.js_.
+    + Elimine, o comente, la respuesta predeterminada del controlador.
+    + Agregue la renderización de la vista, con: ```res.render('crud');```
+
+    ```typescript
+    var express = require('express');
+    var router = express.Router();
+
+    /* GET users listing. */
+    router.get('/', function(req, res, next) {
+    
+      //res.send('respond with a resource');
+      res.render('crud');
+    
+    });
+
+    module.exports = router;
+
+    ```
+
+7. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
+8. (STOP 2) Versiona local y remotamente el repositorio **security**.
+
+#### Express - ORM
 
 1. Versiona local y remotamente el repositorio **security**.
 
