@@ -161,31 +161,71 @@ theme: jekyll-theme-leap-day
     ```
 2. Edite la vista _security/views/crud.js_.
 
-    + El título de la tabla
+    + El título de la tabla 
 
-    <table>
-      <caption>Etiquetas a buscar y reemplazar</caption>
-      <thead>
-        <tr>
-          <th>Buscar</th>
-          <th>Reemplazar</th>
-        </tr>
-      </thead>
+      Buscar
+
+      ```html
+      <h2>Manage <b>Employees</b></h2>
+      ```
+
+      Reemplazar por
+
+      ```html
+      <h2><%= title %></h2>
+      ```
+
+    + Cabeceras de la tabla
+
+      Buscar
+
+      ```html
+      <th>Name</th>
+      <th>Email</th>
+      <th>Address</th>
+      <th>Phone</th>
+      ```
+
+      Reemplazar por
+
+      ```html
+      <th>ID</th>
+      <th>Name</th>
+      <th>Role(s)</th>
+      ```
+
+    + Todo el contenido dentro de la etiqueta `<tbody>` por
+
+      ```html
       <tbody>
-        <tr>
-          <td>
-             ```text
-              <h2><%= title %></h2>
-             ```
-          </td>
-          <td>
-              <pre lang="html"><code>
-              <h2><%= title %></h2>
-              </code></pre>
-          </td>
-        </tr>
+          <% users.forEach(user => { %>
+              <tr>
+                  <td>
+                      <span class="custom-checkbox">
+                          <input type="checkbox" id="checkbox1"
+                              name="options[]" value="1">
+                          <label for="checkbox1"></label>
+                      </span>
+                  </td>
+                  <td><%= user.iduser %></td>
+                  <td><%= user.name %></td>
+                  <td></td>
+                  <td>
+                      <a href="#editEmployeeModal" class="edit"
+                          data-toggle="modal"><i
+                              class="material-icons"
+                              data-toggle="tooltip"
+                              title="Edit">&#xE254;</i></a>
+                      <a href="#deleteEmployeeModal"
+                          class="delete" data-toggle="modal"><i
+                              class="material-icons"
+                              data-toggle="tooltip"
+                              title="Delete">&#xE872;</i></a>
+                  </td>
+              </tr>
+          <% }) %>
       </tbody>
-    </table>
+      ```
 
 7. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
 8. (STOP 3) Versiona local y remotamente el repositorio **security**.
