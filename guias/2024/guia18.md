@@ -174,9 +174,10 @@ theme: jekyll-theme-leap-day
       <tbody>
         <tr>
           <td>
-             <pre lang="html"><code>
+
+             ```
               <h2><%= title %></h2>
-             </code></pre>
+             ```
           </td>
           <td>
               <pre lang="html"><code>
