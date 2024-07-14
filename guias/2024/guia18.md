@@ -38,10 +38,8 @@ theme: jekyll-theme-leap-day
 
 #### CRUD UI
 
-1. Acceda a [Bootstrap Crud Data Table for Database with Modal Form](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=crud-data-table-for-database-with-modal-form).
-2. Haga clic en el botón **View Code**.
-3. Haga clic en el botón **Download Source Code** y descargue el archivo _test.html_.
-4. Acceda al archivo _test.html_ y compruebe el funcionamiento de las ventanas modales con las **Add New Employee**, **Edit** y **Delete**.
+1. Descargue el archivo [crud](recursos/crud.zip).
+2. Compruebe el funcionamiento de las ventanas modales con las **Add New User**, **Edit** y **Delete**.
 
     <div align="center">
       <img src="imagenes/crud_base.png" width="70%">
@@ -64,27 +62,7 @@ theme: jekyll-theme-leap-day
     ```command
     npm install --save sequelize mysql2 dotenv nodemon
     ```
-2. Genere los archivos de configuración de Sequelize, con: `sequelize init`
-3. Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
-
-    ```command
-    sequelize-auto -h 127.0.0.1 -d security -u root -x root -p 3306
-    ```
-
-4. Modifique el archivo `config/config.json`, en el ambiente **development**, con los datos de conexión con el motor de bases de datos.
-
-    ```json
-    "development": {
-      "username": "root",
-      "password": "root",
-      "database": "security",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-    },
-    ...
-    ```
-
-5. Agregue el script **autostart** en _./package.json_.
+2. Agregue el script **autostart** en _./package.json_.
 
     ```typescript
     ...
@@ -95,21 +73,36 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-6. Desde la línea de comandos, inicie el servidor:
+3. Desde la línea de comandos, inicie el servidor:
 
     ```command
     npm run autostart
     ```
 
-7. Compruebe la salida de las URLs [http://localhost:3002/](http://localhost:3002/) y [http://localhost:3002/users](http://localhost:3002/users)
+4. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
+5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
-8. (STOP 1) Versiona local y remotamente el repositorio **security**.
+#### Express - Archivos estáticos y Vistas
 
-#### Express - Vistas
+1. Copie los archivos:
+    + `crud-style` a _security/public/stylesheets_.
+    + `crud-javascript` a _security/public/javascripts_.
 
-1. Dentro de la carpeta de la carpeta _security/views_, cree el archivo _crud.ejs_.
-2. Copie el contenido de _test.html_ dentro del archivo _crud.ejs_.
-3. Edite el enrutador _security/routes/users.js_.
+2. Cree el archivo _security/views/crud.ejs_. Copie todo el contenido de _test.html_ dentro del archivo _crud.ejs_.
+
+3. Edite el enrutador _security/views/users.js_
+
+    ```html
+    ...
+    <!-- 1. Referencia al archivo estático en public -->
+    <link rel="stylesheet" href="stylesheets/crud-style.css">
+    ...
+    <!-- 2. Referencia al archivo estático en public -->
+    <script src="javascripts/crud-javascript.js" defer></script>
+    ...
+    ```
+
+4. Edite el enrutador _security/routes/users.js_ con la renderización de la vista.
     
     ```typescript
     ...
@@ -128,12 +121,34 @@ theme: jekyll-theme-leap-day
 
     ```
 
-7. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
-8. (STOP 2) Versiona local y remotamente el repositorio **security**.
+5. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
+6. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
 #### Express - ORM
 
-1. Edite el enrutador _security/routes/users.js_.
+
+1. Desde la línea de comandos: 
+    + Genere los archivos de configuración de Sequelize, con: `sequelize init`
+    + Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
+
+      ```command
+      sequelize-auto -h 127.0.0.1 -d security -u <USUARIO_ADMIN> -x <CONTRASEÑA> -p 3306
+      ```
+
+2. Modifique el archivo `config/config.json`, en el ambiente **development**, con los datos de conexión con el motor de bases de datos.
+
+    ```json
+    "development": {
+      "username": "<USUARIO_ADMIN>",
+      "password": "<CONTRASEÑA>",
+      "database": "security",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    ...
+    ```
+
+3. Edite el enrutador _security/routes/users.js_.
     
     ```typescript
     ...
@@ -159,76 +174,56 @@ theme: jekyll-theme-leap-day
 
     });
     ```
-2. Edite la vista _security/views/crud.js_.
 
-    + El título de la tabla 
+4. Edite la vista _security/views/crud.js_.
 
-      Buscar
+    ```html
+    ...
+    <!-- 3. Título de la página -->
+    <title><%= title %></title>
+    ...
+    <!-- 4. Título de la tabla -->
+    <h2><%= title %></h2>
+    ...
+    <!-- 5. Cabecera de datos -->
+    <th>ID</th>
+    <th>Name</th>
+    <th>Role</th>
+    <th>Actions</th>
+    ...
+    <!-- 6. Arreglo de usuarios -->
+    <tbody>
+        <% users.forEach( user => { %>
+        <tr>
+            <td>
+                <span class="custom-checkbox">
+                    <input type="checkbox" id="checkbox1"
+                        name="options[]" value="1">
+                    <label for="checkbox1"></label>
+                </span>
+            </td>
+            <td><%= user.iduser %></td>
+            <td><%= user.name %></td>
+            <td></td>
+            <td>
+                <a href="#editEmployeeModal" class="edit"
+                    data-toggle="modal"><i
+                        class="material-icons"
+                        data-toggle="tooltip"
+                        title="Edit">&#xE254;</i></a>
+                <a href="#deleteEmployeeModal"
+                    class="delete" data-toggle="modal"><i
+                        class="material-icons"
+                        data-toggle="tooltip"
+                        title="Delete">&#xE872;</i></a>
+            </td>
+        </tr>
+        <% }) %>
+    </tbody>
+    ```
 
-      ```html
-      <h2>Manage <b>Employees</b></h2>
-      ```
-
-      Reemplazar por
-
-      ```html
-      <h2><%= title %></h2>
-      ```
-
-    + Cabeceras de la tabla
-
-      Buscar
-
-      ```html
-      <th>Name</th>
-      <th>Email</th>
-      <th>Address</th>
-      <th>Phone</th>
-      ```
-
-      Reemplazar por
-
-      ```html
-      <th>ID</th>
-      <th>Name</th>
-      <th>Role(s)</th>
-      ```
-
-    + Todo el contenido dentro de la etiqueta `<tbody>` por
-
-      ```html
-      <tbody>
-          <% users.forEach(user => { %>
-              <tr>
-                  <td>
-                      <span class="custom-checkbox">
-                          <input type="checkbox" id="checkbox1"
-                              name="options[]" value="1">
-                          <label for="checkbox1"></label>
-                      </span>
-                  </td>
-                  <td><%= user.iduser %></td>
-                  <td><%= user.name %></td>
-                  <td></td>
-                  <td>
-                      <a href="#editEmployeeModal" class="edit"
-                          data-toggle="modal"><i
-                              class="material-icons"
-                              data-toggle="tooltip"
-                              title="Edit">&#xE254;</i></a>
-                      <a href="#deleteEmployeeModal"
-                          class="delete" data-toggle="modal"><i
-                              class="material-icons"
-                              data-toggle="tooltip"
-                              title="Delete">&#xE872;</i></a>
-                  </td>
-              </tr>
-          <% }) %>
-      </tbody>
-      ```
-
-7. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
-8. (STOP 3) Versiona local y remotamente el repositorio **security**.
+5. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
+6. (STOP 3) Versiona local y remotamente el repositorio **security**.
 
 
 4. Versiona local y remotamente el repositorio **security**.
