@@ -173,20 +173,20 @@ theme: jekyll-theme-leap-day
         <tr>
           <td>
           
-            <pre code="html">
-              <div class="col-sm-6">
-                <h2>Manage <b>Employees</b></h2>
-              </div>
-            </pre>
+            ```xml
+            <div class="col-sm-6">
+              <h2>Manage <b>Employees</b></h2>
+            </div>
+            ```
           
           </td>
           <td>
 
-            <pre code="html">
-              <div class="col-sm-6">
-                <h2><%= title %></h2>
-              </div>
-            </pre>
+            ```xml
+            <div class="col-sm-6">
+              <h2><%= title %></h2>
+            </div>
+            ```
 
           </td>
         </tr>
