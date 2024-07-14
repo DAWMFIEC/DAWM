@@ -165,6 +165,36 @@ theme: jekyll-theme-leap-day
 
     });
     ```
+3. Edite la vista _security/views/crud.js_.
+
+    <table>
+      <caption>Reemplazo de código</caption>
+      <thead>
+        <tr>
+          <th>Antes</th>
+          <th>Después</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            <pre><code>
+              <div class="col-sm-6">
+              <h2>Manage <b>Employees</b></h2>
+              </div>
+            </code></pre>
+          </td>
+          <td>
+            <pre><code>
+              <div class="col-sm-6">
+                <h2><%= title %></h2>
+              </div>
+            </code></pre>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+
 
 1. Versiona local y remotamente el repositorio **security**.
 
