@@ -188,18 +188,14 @@ theme: jekyll-theme-leap-day
       <tbody>
         <tr>
           <td>
-            ```text
-            <div class="col-sm-6">
-               <h2>Manage <b>Employees</b></h2>
-            </div>
-            ```
+            &lt;div class="col-sm-6"&gt;<br>
+               &lt;h2&gt;Manage &lt;b&gt;Employees&lt;/b&gt;&lt;/h2&gt;<br>
+            &lt;/div&gt;
           </td>
           <td>
-            ```text
-            <div class="col-sm-6">
-              <h2><%= title %></h2>
-            </div>
-            ```
+            &lt;div class="col-sm-6"&gt;<br>
+              &lt;h2&gt;&lt;%= title %&gt;&lt;/h2&gt;<br>
+            &lt;/div&gt;
           </td>
         </tr>
       </tbody>
