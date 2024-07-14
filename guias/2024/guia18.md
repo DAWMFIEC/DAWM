@@ -174,8 +174,7 @@ theme: jekyll-theme-leap-day
       <tbody>
         <tr>
           <td>
-
-             ```
+             ```text
               <h2><%= title %></h2>
              ```
           </td>
