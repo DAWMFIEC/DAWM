@@ -161,6 +161,25 @@ theme: jekyll-theme-leap-day
     ```
 2. Edite la vista _security/views/crud.js_.
 
+    <div style="display: flex;">
+    <div style="flex: 1; margin-right: 5px;">
+        <!-- Código HTML de la primera porción -->
+        ```html
+        <h1>Ejemplo de código 1</h1>
+        <p>Este es el primer bloque de código.</p>
+        ```
+    </div>
+    <div style="flex: 1; margin-left: 5px;">
+        <!-- Código HTML de la segunda porción -->
+        ```html
+        <h1>Ejemplo de código 2</h1>
+        <p>Este es el segundo bloque de código.</p>
+        ```
+    </div>
+</div>
+
+
+
     <table>
       <caption>Etiquetas a buscar y reemplazar</caption>
       <thead>
@@ -185,7 +204,7 @@ theme: jekyll-theme-leap-day
       </tbody>
     </table>
 
-1. Versiona local y remotamente el repositorio **security**.
+4. Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 
