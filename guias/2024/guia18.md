@@ -161,6 +161,8 @@ theme: jekyll-theme-leap-day
     ```
 2. Edite la vista _security/views/crud.js_.
 
+    + El título de la tabla
+
     <table>
       <caption>Etiquetas a buscar y reemplazar</caption>
       <thead>
@@ -172,14 +174,22 @@ theme: jekyll-theme-leap-day
       <tbody>
         <tr>
           <td>
-            &lt;h2&gt;Manage &lt;b&gt;Employees&lt;/b&gt;&lt;/h2&gt;<br>
+             <pre lang="html"><code>
+              <h2><%= title %></h2>
+             </code></pre>
           </td>
           <td>
-            &lt;h2&gt;&lt;%= title %&gt;&lt;/h2&gt;<br>
+              <pre lang="html"><code>
+              <h2><%= title %></h2>
+              </code></pre>
           </td>
         </tr>
       </tbody>
     </table>
+
+7. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
+8. (STOP 3) Versiona local y remotamente el repositorio **security**.
+
 
 4. Versiona local y remotamente el repositorio **security**.
 
