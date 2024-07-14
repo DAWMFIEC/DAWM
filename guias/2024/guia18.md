@@ -161,25 +161,33 @@ theme: jekyll-theme-leap-day
     ```
 2. Edite la vista _security/views/crud.js_.
 
-    | Inline Code   | The `<br>` is stripped by highlight.js.   |
-    |-------------  |-----------------------------------------  |
-    | `a = 1`       | <pre><code>a = 1<br>b = 2</code></pre>    |
-
-    + Reemplace
-      ```html
-      <div class="col-sm-6">
-        <h2>Manage <b>Employees</b></h2>
-      </div>
-      ```    
-      por
-
-      ```xml
-      <div class="col-sm-6">
-        <h2><%= title %></h2>
-      </div>
-      ```
-
-          
+    <table>
+      <caption>Etiquetas a buscar y reemplazar</caption>
+      <thead>
+        <tr style="text-align: center;">
+          <th>Buscar</th>
+          <th>Reemplazar</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            ```html
+            <div class="col-sm-6">
+              <h2>Manage <b>Employees</b></h2>
+            </div>
+            ``` 
+          </td>
+          <td>
+            ```html
+            <div class="col-sm-6">
+              <h2><%= title %></h2>
+            </div>
+            ```
+          </td>
+        </tr>
+      </tbody>
+    </table>
 
 1. Versiona local y remotamente el repositorio **security**.
 
