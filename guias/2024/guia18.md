@@ -155,7 +155,7 @@ theme: jekyll-theme-leap-day
       let users = await Users.findAll({ })
 
       /* Renderización de la respuesta en la vista */
-      res.render('crud', { title: 'List of users', users: users });
+      res.render('crud', { title: 'CRUD of users', users: users });
 
     });
     ```
@@ -172,21 +172,21 @@ theme: jekyll-theme-leap-day
       <tbody>
         <tr>
           <td>
-
-            ```
-            <div class="col-sm-6">
-              <h2>Manage <b>Employees</b></h2>
-            </div>
-            ```
-
+          
+            <pre code="html">
+              <div class="col-sm-6">
+                <h2>Manage <b>Employees</b></h2>
+              </div>
+            </pre>
+          
           </td>
           <td>
-            
-            ```
-            <div class="col-sm-6">
-              <h2><%= title %></h2>
-            </div>
-            ```
+
+            <pre code="html">
+              <div class="col-sm-6">
+                <h2><%= title %></h2>
+              </div>
+            </pre>
 
           </td>
         </tr>
