@@ -279,25 +279,38 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="javascript"><code>
-          ```text
           <!-- 6. Arreglo de roles -->
-          <select name="idrole" class="form-control">
-              <option value="null" selected disabled
-                  class="form-control">Select an
-                  item</option>
-              <% roles.forEach( role => { %> 
-                  <option 
-                  value="<%=role.idrole%>"
-                  class="form-control"><%=role.name%></option>
-              <% }) %> 
-          </select>
-          ```
+          &lt;select name="idrole" class="form-control"&gt;
+              &lt;option value="null" selected disabled
+                  class="form-control"&gt;Select an
+                  item&lt;/option&gt;
+              &lt;% roles.forEach( role =&gt; { %&gt; 
+                  &lt;option 
+                  value="&lt;%=role.idrole%&gt;"
+                  class="form-control"&gt;&lt;%=role.name%&gt;&lt;/option&gt;
+              &lt;% }) %&gt; 
+          &lt;/select&gt;
       </code></pre>
     </details>
 
 #### Express - Users.create
 
+1. 
 
+    ```typescript
+    var express = require('express');
+    var router = express.Router();
+
+    /* Módulo crypto */
+    let crypto = require('crypto');
+
+    ...
+    ```
+
+2. 
+
+    ```typescript
+    ```
 
 4. Versiona local y remotamente el repositorio **security**.
 
