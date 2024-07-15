@@ -33,10 +33,10 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
     npm install -g sequelize-cli
     ```
 
-* Instale **Sequelize Auto** de forma global, con: 
+* Instale **Sequelize Auto** y **MySQL** de forma global, con: 
   
     ```command
-    npm install -g sequelize-auto
+    npm install -g sequelize-auto mysql2
     ```
 
 * Instale **Sequelize** y el conector para **MySQL** en el proyecto, con: 
