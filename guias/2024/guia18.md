@@ -279,7 +279,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="javascript"><code>
-          <!-- 6. Arreglo de roles -->
+          &lt;!-- 6. Arreglo de roles --&gt;
           &lt;select name="idrole" class="form-control"&gt;
               &lt;option value="null" selected disabled
                   class="form-control"&gt;Select an
@@ -293,26 +293,94 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
+#### SALT
+
+1. Desde la línea de comandos, acceda a la interfaz de **nodeJS**, con:
+  
+    ```typescript
+    node
+    ```
+
+2. Genere y copie la secuencia de caracteres aleatorios, con:
+
+    ```typescript
+    > require('crypto').randomBytes(16).toString('base64');
+    ```
+
+3. En la raíz del proyecto, cree el archivo `.env`. Agregue la variable **SALT** y asígnele la secuencia de caracteres aleatorios.
+
+    ```
+    SALT='...8uUYwT...'
+    ```
+
+4. En el archivo `app.js`, agregue el módulo `dotenv` y cargue los datos de configuración.
+
+    ```typescript
+    /* Carga de variables de entorno */
+    require('dotenv').config()
+
+    var createError = require('http-errors');
+    var express = require('express');
+    ```
+
 #### Express - Users.create
 
-1. 
+1. Edite el enrutador _security/routes/users.js_ con las operaciones para guardar un usuario.
 
     ```typescript
     var express = require('express');
     var router = express.Router();
 
-    /* Módulo crypto */
+    /* 1. Módulo crypto */
     let crypto = require('crypto');
 
     ...
+    
+    router.post('/', async (req, res) => {
+
+      /* 2. Parámetros en el cuerpo del requerimiento */
+      let { name, password, idrole } = req.body;
+
+      try {
+
+        /* 3. Encripte la contraseña con SALT */
+        let salt = process.env.SALT
+        let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
+        let passwordHash = salt + "$" + hash
+
+        /* 4. Guarde los datos del usuario */
+        await Users.create({ name: name, password: passwordHash })
+
+        /* 5. Redireccione a la vista principal */
+        res.redirect('/users')
+
+      } catch (error) {
+
+        res.status(400).send(error)
+
+      }
+
+    })
+
     ```
 
-2. 
+2. Edite la vista _security/views/crud.js_ con el método **post** para envío del formulario y la ruta **/users** que recibe los datos del requerimiento. 
 
-    ```typescript
+    ```html
+    ...
+    <form method="post" action="/users">
+    ...
     ```
+
+3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users) y complete el formulario para crear un nuevo usuario.
+
+    <div align="center">
+      <img src="imagenes/crud_post_create.png" width="70%">
+    </div>
 
 4. Versiona local y remotamente el repositorio **security**.
+ 
+1. Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 
