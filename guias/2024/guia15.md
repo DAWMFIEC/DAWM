@@ -2,6 +2,10 @@
 theme: jekyll-theme-leap-day
 ---
 
+## Guía 15
+
+[DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2024/proyecto04)
+
 <style type="text/css" media="screen">
   details {
     margin: 5% 0%;
@@ -18,10 +22,6 @@ theme: jekyll-theme-leap-day
     text-align: center;
   }
 </style>
-
-## Guía 15
-
-[DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2024/proyecto04)
 
 ### Actividades previas
 
