@@ -39,7 +39,7 @@ theme: jekyll-theme-leap-day
 #### CRUD UI
 
 1. Descargue el archivo [crud](recursos/crud.zip).
-2. Compruebe el funcionamiento de las ventanas modales con las **Add New User**, **Edit** y **Delete**.
+2. Compruebe el funcionamiento de las ventanas modales con las **Add User**, **Edit** y **Delete**.
 
     <div align="center">
       <img src="imagenes/crud_base.png" width="70%">
