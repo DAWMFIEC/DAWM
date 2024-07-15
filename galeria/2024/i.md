@@ -48,6 +48,7 @@
 | Noelia Pasaca | VetStop | [Ver](imagenes_landing/noeliapasaca.github.io.png) | [Ir](https://noeliapasaca.github.io/landing/) |
 | Carlos Tingo | Freelancer | [Ver](imagenes_landing/tingocarlos08.github.io.png) | [Ir](https://tingocarlos08.github.io/landing/) |
 | Luis Jara Sánchez | Hallyu Hub | [Ver](imagenes_landing/luisenjs.github.io.png) | [Ir](https://luisenjs.github.io/landing/) |
+| Jair Chaguay | Marvel | [Ver](imagenes_landing/jair-chaguay.github.io.png) | [Ir](https://jair-chaguay.github.io/landing_Page/) |
 | Néstor Arias | Rick and Morty | [Ver](imagenes_landing/niariasve.github.io.png) | [Ir](https://niariasve.github.io/LandingPage/) |
 | Fernando Alvarez | The Simpsons | [Ver](imagenes_landing/mfalvarezd.github.io.png) | [Ir](https://mfalvarezd.github.io/landing/) |
 | Melissa Cruz | Nature's Essence | [Ver](imagenes_landing/angmcruz.github.io.png) | [Ir](https://angmcruz.github.io/) |
