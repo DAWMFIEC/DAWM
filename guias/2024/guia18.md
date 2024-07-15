@@ -379,8 +379,6 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     </div>
 
 4. Versiona local y remotamente el repositorio **security**.
- 
-1. Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 

@@ -28,7 +28,7 @@ CREATE TABLE `roles` (
   `idrole` int NOT NULL AUTO_INCREMENT,
   `name` varchar(45) DEFAULT NULL,
   PRIMARY KEY (`idrole`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -53,8 +53,18 @@ CREATE TABLE `users` (
   `name` varchar(45) DEFAULT NULL,
   `password` varchar(250) DEFAULT NULL,
   PRIMARY KEY (`iduser`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `users`
+--
+
+LOCK TABLES `users` WRITE;
+/*!40000 ALTER TABLE `users` DISABLE KEYS */;
+INSERT INTO `users` VALUES (1,'Anonymous','Anonymous');
+/*!40000 ALTER TABLE `users` ENABLE KEYS */;
+UNLOCK TABLES;
 
 --
 -- Table structure for table `users_roles`
@@ -75,7 +85,14 @@ CREATE TABLE `users_roles` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb3;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
+--
+-- Dumping data for table `users_roles`
+--
 
+LOCK TABLES `users_roles` WRITE;
+/*!40000 ALTER TABLE `users_roles` DISABLE KEYS */;
+/*!40000 ALTER TABLE `users_roles` ENABLE KEYS */;
+UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 
 /*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
@@ -86,4 +103,4 @@ CREATE TABLE `users_roles` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2023-12-17 19:25:27
+-- Dump completed on 2024-07-15 15:50:14
