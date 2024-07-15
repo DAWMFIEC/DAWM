@@ -31,7 +31,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-1. Obtenga una cuenta en [Render](https://render.com/) con su cuentan en GitHub.
+1. Acceda a [Render](https://render.com/) y obtenga una cuenta con GitHub.
 2. Active su cuenta desde el enlace en el correo electrónico.
 3. Complete su perfil con su información básica.
 
