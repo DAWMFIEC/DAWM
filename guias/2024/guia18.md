@@ -57,11 +57,18 @@ theme: jekyll-theme-leap-day
 
 1. Dentro de la carpeta _security_, mediante la línea de comandos: 
     + Inicialice un proyecto en Express, con: `express --view=ejs .`
-    + Instale los módulos **sequelize** (`ORM` para el acceso a la BD), **mysql2** (conector con MySQL), **dotenv** y **nodemon**. 
+    + Instale los módulos **sequelize** (`ORM` para el acceso a la BD), **mysql2** (conector con MySQL), **dotenv** y **nodemon** de manera local. 
 
     ```command
     npm install --save sequelize mysql2 dotenv nodemon
     ```
+
+    + Instale el módulo **mysql2** (conector con MySQL) de manera global. 
+
+    ```command
+    npm i -g mysql2
+    ```
+
 2. Agregue el script **autostart** en _./package.json_.
 
     ```typescript
@@ -79,7 +86,7 @@ theme: jekyll-theme-leap-day
     npm run autostart
     ```
 
-4. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
+4. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
 #### Express - Archivos estáticos y Vistas
@@ -95,9 +102,15 @@ theme: jekyll-theme-leap-day
     ```html
     ...
     <!-- 1. Referencia al archivo estático en public -->
+
+    <!-- <link rel="stylesheet" href="./crud-style.css"> -->
     <link rel="stylesheet" href="stylesheets/crud-style.css">
+    
     ...
+    
     <!-- 2. Referencia al archivo estático en public -->
+
+    <!-- <script src="./crud-javascript.js" defer></script> -->
     <script src="javascripts/crud-javascript.js" defer></script>
     ...
     ```
@@ -110,8 +123,6 @@ theme: jekyll-theme-leap-day
     /* GET users listing. */
     router.get('/', function(req, res, next) {
     
-      //res.send('respond with a resource');
-
       /* 1. Renderización de la vista */
       res.render('crud');
     
@@ -121,13 +132,12 @@ theme: jekyll-theme-leap-day
 
     ```
 
-5. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
+5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
 6. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
-#### Express - ORM
+#### Express - Users.findAll
 
-
-1. Desde la línea de comandos: 
+1. Dentro de la carpeta _security_, mediante la línea de comandos: 
     + Genere los archivos de configuración de Sequelize, con: `sequelize init`
     + Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
 
@@ -156,7 +166,6 @@ theme: jekyll-theme-leap-day
     var router = express.Router();
 
     /* 1. Modelos y Operadores */
-
     const Users = require('../models').users;
 
     /* GET users listing. */
@@ -164,18 +173,16 @@ theme: jekyll-theme-leap-day
     /* 2. Callback asíncrono */
     router.get('/', async function(req, res, next) {
 
-      //res.send('respond with a resource');
-
       /* 3. Requerimiento a la BD mediante el modelo */
       let users = await Users.findAll({ })
 
-      /* 4. Renderización de la respuesta en la vista */
+      /* 4. Paso de la respuesta en la vista */
       res.render('crud', { title: 'CRUD of users', users: users });
 
     });
     ```
 
-4. Edite la vista _security/views/crud.js_.
+4. Edite la vista _security/views/crud.js_ con la `renderización` de las variables.
 
     ```html
     ...
@@ -185,13 +192,7 @@ theme: jekyll-theme-leap-day
     <!-- 4. Título de la tabla -->
     <h2><%= title %></h2>
     ...
-    <!-- 5. Cabecera de datos -->
-    <th>ID</th>
-    <th>Name</th>
-    <th>Role</th>
-    <th>Actions</th>
-    ...
-    <!-- 6. Arreglo de usuarios -->
+    <!-- 5. Arreglo de usuarios -->
     <tbody>
         <% users.forEach( user => { %>
         <tr>
@@ -222,8 +223,80 @@ theme: jekyll-theme-leap-day
     </tbody>
     ```
 
-5. Compruebe la salida de la URL [http://localhost:3002/users](http://localhost:3002/users)
+5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
+
+    <div align="center">
+      <img src="imagenes/crud_get_findAll.png" width="70%">
+    </div>
+
 6. (STOP 3) Versiona local y remotamente el repositorio **security**.
+
+### Actividad en grupo - Roles.findAll
+
+En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+
+1. Edite el enrutador _security/routes/users.js_.
+    + Importe el modelo roles
+    + Haga un requerimiento a la BD mediante el modelo Roles para traer todos los registros
+    + Pase la respuesta en la vista
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="typescript"><code>
+        ...
+        /* 1. Modelos y Operadores */
+        const Users = require('../models').users;
+        const Roles = require('../models').roles;
+
+        /* GET users listing. */
+
+        /* 2. Callback asíncrono */
+        router.get('/', async function(req, res, next) {
+          
+          /* 3. Requerimiento a la BD mediante el modelo */
+          let users = await Users.findAll({ })
+          let roles = await Roles.findAll({ })
+
+          /* 4. Paso de la respuesta en la vista */
+          res.render('crud', { title: 'CRUD of users', users: users, roles: roles });
+
+        });
+      </code></pre>
+    </details>
+
+2. Edite la vista _security/views/crud.js_ con la renderización de las variables.
+
+    ```html
+    ...
+    <!-- 6. Arreglo de roles -->
+    <select name="idrole" class="form-control">
+        <option value="null" selected disabled
+            class="form-control">Select an item</option>
+
+    </select>
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+          ```text
+          <!-- 6. Arreglo de roles -->
+          <select name="idrole" class="form-control">
+              <option value="null" selected disabled
+                  class="form-control">Select an
+                  item</option>
+              <% roles.forEach( role => { %> 
+                  <option 
+                  value="<%=role.idrole%>"
+                  class="form-control"><%=role.name%></option>
+              <% }) %> 
+          </select>
+          ```
+      </code></pre>
+    </details>
+
+#### Express - Users.create
+
 
 
 4. Versiona local y remotamente el repositorio **security**.
