@@ -65,7 +65,12 @@ theme: jekyll-theme-leap-day
 #### Express - Proyecto Base
 
 1. Dentro de la carpeta _security_, mediante la línea de comandos: 
-    + Inicialice un proyecto en Express, con: `express --view=ejs .`
+    + Inicialice un proyecto en Express, con: 
+
+    ```command
+    express --view=ejs .
+    ```
+
     + Instale los módulos **sequelize** (`ORM` para el acceso a la BD), **mysql2** (conector con MySQL), **dotenv** y **nodemon** de manera local. 
 
     ```command
@@ -141,7 +146,12 @@ theme: jekyll-theme-leap-day
 #### Express - Users.findAll
 
 1. Dentro de la carpeta _security_, mediante la línea de comandos: 
-    + Genere los archivos de configuración de Sequelize, con: `sequelize init`
+    + Genere los archivos de configuración de Sequelize, con: 
+
+    ```command
+    sequelize init
+    ```
+
     + Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
 
       ```command
@@ -182,7 +192,7 @@ theme: jekyll-theme-leap-day
       let users = await Users.findAll({ })
 
       /* 4. Paso de la respuesta en la vista */
-      res.render('crud', { title: 'CRUD of users', users: users });
+      res.render('crud', { title: 'CRUD with users', users: users });
 
     });
 
@@ -190,7 +200,7 @@ theme: jekyll-theme-leap-day
     ```
 
 4. Edite la vista _security/views/crud.ejs_, con:
-    + La `renderización` de las variables mediante las [etiquetas](https://ejs.co/#docs) `<%= %>` y `<% %>`, de EJS.
+    + La `renderización` de las variables mediante las [etiquetas](https://ejs.co/#docs) **<%= %>** y **<% %>**, de EJS.
 
     ```html
     ...
@@ -292,7 +302,11 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
-2. Edite la vista _security/views/crud.ejs_ con la renderización del arreglo roles. El valor del atributo _value_ es el atributo **idrole** y el texto del elemento es el atributo **name**.
+2. Edite la vista _security/views/crud.ejs_ con la renderización del arreglo roles. 
+    
+    En cada option, considere:
+    + Asigne el atributo _value_ es el atributo **idrole**, y 
+    + El texto del elemento es el atributo **name**.
 
     ```html
     ...
