@@ -339,13 +339,19 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     > require('crypto').randomBytes(16).toString('base64');
     ```
 
-3. En la raíz del proyecto, cree el archivo `.env`. Agregue la variable **SALT** y asígnele la secuencia de caracteres aleatorios.
+3. Salga de la consola, con:
+
+    ```typescript
+    > .exit
+    ```
+
+4. En la raíz del proyecto, cree el archivo `.env`. Agregue la variable **SALT** y asígnele la secuencia de caracteres aleatorios.
 
     ```
     SALT='...8uUYwT...'
     ```
 
-4. En el archivo `app.js`, agregue el módulo `dotenv` y cargue los datos de configuración.
+5. En el archivo `app.js`, agregue el módulo `dotenv` y cargue los datos de configuración.
 
     ```typescript
     /* Carga de variables de entorno */
