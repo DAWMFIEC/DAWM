@@ -171,27 +171,24 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-3. Edite el enrutador _security/routes/users.js_ con: 
-
-    + Importe el [modelo](https://sequelize.org/docs/v6/core-concepts/model-basics/) users e instance **Users**.
-    + Seleccione de todos los registros, mediante el método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
+3. Edite el enrutador _security/routes/users.js_ instancie el [modelo](https://sequelize.org/docs/v6/core-concepts/model-basics/) y use el método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries) del objeto.
     
     ```typescript
     ...
     var express = require('express');
     var router = express.Router();
 
-    /* 1. Modelos y Operadores */
+    /* 1. Instanciación de los modelos */
     const Users = require('../models').users;
 
     /* GET users listing. */
-    /* 2. Callback asíncrono */
+    /* 2. Convierta el callback en asíncrono */
     router.get('/', async function(req, res, next) {
 
-      /* 3. Requerimiento a la BD mediante la instancia */
+      /* 3. Uso del método findAll */
       let users = await Users.findAll({ })
 
-      /* 4. Paso de la respuesta en la vista */
+      /* 4. Renderización de las respuestas en la vista */
       res.render('crud', { title: 'CRUD with users', users: users });
 
     });
@@ -257,15 +254,15 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     
     ```typescript
     ...
-    /* 1. Modelos y Operadores */
+    /* 1. Instanciación de los modelos */
     const Users = require('../models').users;
     const Roles = /* Importe el modelo roles */
 
     /* GET users listing. */
-    /* 2. Callback asíncrono */
+    /* 2. Convierta el callback en asíncrono */
     router.get('/', async function(req, res, next) {
 
-      /* 3. Requerimiento a la BD mediante la instancia */
+      /* 3. Seleccione de todos los registros con el método findAll */
       let users = await Users.findAll({ })
       let roles = /* recupere de todos los registros mediante la instancia Roles. */
 
@@ -379,40 +376,37 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 1. Edite el enrutador **_security/routes/users.js_**, con:
 
-    + Importe el módulo **crypto**
-    + Cree la función asíncrona que responda al método **POST**.
-    + Utilice la variable **SALT** para encriptar la variable _password_.
-    + Guarde el registro mediante el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
-    + Redireccione a la ruta '/users'
+     Guarde el registro mediante el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
+     
 
     ```typescript
     var express = require('express');
     var router = express.Router();
 
-    /* 1. Módulo crypto */
+    /* 1. Importe el módulo crypto */
     let crypto = require('crypto');
 
     ...
     /* GET users listing. */
     router.get('/', async function(req, res, next) { ... });
     
-    /* POST user. */
+    /* 2. Cree el callback asíncrona que responda al método POST */
     router.post('/', async (req, res) => {
 
-      /* 2. Parámetros en el cuerpo del requerimiento */
+      /* 3. Desestructure los elementos en el cuerpo del requerimiento */
       let { name, password, idrole } = req.body;
 
       try {
 
-        /* 3. Encripte la contraseña con SALT */
+        /* 4. Utilice la variable SALT para encriptar la variable password. */
         let salt = process.env.SALT
         let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
         let passwordHash = salt + "$" + hash
 
-        /* 4. Guarde los datos del usuario */
+        /* 5. Guarde el registro mediante el método create */
         let user = await Users.create({ name: name, password: passwordHash })
 
-        /* 5. Redireccione a la vista principal */
+        /* 6. Redireccione a la ruta con la vista principal '/users' */
         res.redirect('/users')
 
       } catch (error) {
