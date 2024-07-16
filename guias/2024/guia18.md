@@ -100,7 +100,7 @@ theme: jekyll-theme-leap-day
 
 2. Cree el archivo _security/views/crud.ejs_. Copie todo el contenido de _test.html_ dentro del archivo _crud.ejs_.
 
-3. Edite el enrutador _security/views/users.js_ con la ruta a la carpeta con los archivos estáticos.
+3. Edite la vista _security/views/crud.ejs_ con la ruta a la carpeta con los archivos estáticos.
 
     ```html
     ...
@@ -172,7 +172,6 @@ theme: jekyll-theme-leap-day
     const Users = require('../models').users;
 
     /* GET users listing. */
-
     /* 2. Callback asíncrono */
     router.get('/', async function(req, res, next) {
 
@@ -183,9 +182,11 @@ theme: jekyll-theme-leap-day
       res.render('crud', { title: 'CRUD of users', users: users });
 
     });
+
+    module.exports = router;
     ```
 
-4. Edite la vista _security/views/crud.js_ con la `renderización` de las variables mediante los delimitadores de EJS.
+4. Edite la vista _security/views/crud.ejs_ con la `renderización` de las variables mediante los delimitadores de EJS.
 
     ```html
     ...
@@ -247,7 +248,6 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     const Roles = /* Importe el modelo roles */
 
     /* GET users listing. */
-
     /* 2. Callback asíncrono */
     router.get('/', async function(req, res, next) {
 
@@ -259,6 +259,8 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       res.render('crud', { title: 'CRUD of users', users: users, roles: /* Pase la respuesta en la vista */   });
 
     });
+
+    module.exports = router;
     ...
     ```
 
@@ -286,7 +288,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
-2. Edite la vista _security/views/crud.js_ con la renderización del arreglo roles. El valor del atributo _value_ es el atributo **idrole** y el texto del elemento es el atributo **name**.
+2. Edite la vista _security/views/crud.ejs_ con la renderización del arreglo roles. El valor del atributo _value_ es el atributo **idrole** y el texto del elemento es el atributo **name**.
 
     ```html
     ...
@@ -314,6 +316,10 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
           &lt;/select&gt;
       </code></pre>
     </details>
+
+3. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
+4. (STOP 4) Versiona local y remotamente el repositorio **security**.
+
 
 #### SALT
 
@@ -358,6 +364,8 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     let crypto = require('crypto');
 
     ...
+    /* GET users listing. */
+    router.get('/', async function(req, res, next) { ... });
     
     router.post('/', async (req, res) => {
 
@@ -385,6 +393,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
     })
 
+    module.exports = router;
     ```
 
 2. Edite la vista _security/views/crud.js_. 
@@ -414,7 +423,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       <img src="imagenes/crud_post_create.png" width="70%">
     </div>
 
-4. Versiona local y remotamente el repositorio **security**.
+4. (STOP 5) Versiona local y remotamente el repositorio **security**.
 
 ### Actividad en grupo - UsersRoles.create
 
