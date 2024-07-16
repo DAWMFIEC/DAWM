@@ -154,9 +154,9 @@ theme: jekyll-theme-leap-day
 
     + Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
 
-      ```command
-      sequelize-auto -h 127.0.0.1 -d security -u <USUARIO_ADMIN> -x <CONTRASEÑA> -p 3306
-      ```
+    ```command
+    sequelize-auto -h 127.0.0.1 -d security  -p 3306 -u <USUARIO_ADMIN> -x <CONTRASEÑA>
+    ```
 
 2. Modifique el archivo `config/config.json`, en el ambiente **development**, con los datos de conexión con el motor de bases de datos.
 
