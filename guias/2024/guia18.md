@@ -239,7 +239,7 @@ theme: jekyll-theme-leap-day
 
 6. (STOP 3) Versiona local y remotamente el repositorio **security**.
 
-### Actividad en grupo - Roles.findAll
+### Actividad en grupo
 
 En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
 
