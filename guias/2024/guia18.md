@@ -38,11 +38,11 @@ theme: jekyll-theme-leap-day
 
 #### CRUD UI
 
-1. Descargue el archivo [crud](recursos/crud.zip).
+1. Descargue el archivo [template_crud](recursos/template_crud.zip).
 2. Compruebe el funcionamiento de las ventanas modales con las **Add User**, **Edit** y **Delete**.
 
     <div align="center">
-      <img src="imagenes/crud_base.png" width="70%">
+      <img src="imagenes/crud_base.png">
     </div>
 
 ### Actividades en clases
@@ -56,7 +56,7 @@ theme: jekyll-theme-leap-day
 
 #### Módulos globales 
 
-1. Instale el módulo **mysql2** (conector con MySQL) de manera global. 
+1. Instale el módulo [**mysql2**](## "conector para MySQL") de manera global. 
 
     ```command
     npm i -g mysql2
@@ -65,19 +65,20 @@ theme: jekyll-theme-leap-day
 #### Express - Proyecto Base
 
 1. Dentro de la carpeta _security_, mediante la línea de comandos: 
+
     + Inicialice un proyecto en Express, con: 
 
     ```command
     express --view=ejs .
     ```
 
-    + Instale los módulos **sequelize** (`ORM` para el acceso a la BD), **mysql2** (conector con MySQL), **dotenv** y **nodemon** de manera local. 
+    + Instale localmente los módulos `sequelize` (`ORM` para acceder a la BD mediante Objetos), mysql2, dotenv y nodemon. 
 
     ```command
     npm install --save sequelize mysql2 dotenv nodemon
     ```
 
-2. Agregue el script **autostart** en _./package.json_.
+2. Agregue el script _autostart_ en _./package.json_.
 
     ```typescript
     ...
@@ -100,30 +101,34 @@ theme: jekyll-theme-leap-day
 #### Express - Archivos estáticos y Vistas
 
 1. Coloque los `archivos estáticos`:
-    + **_crud-style.css_** dentro de la carpeta **_security/public/stylesheets_**.
-    + **_crud-javascript.js_** dentro de la carpeta **_security/public/javascripts_**.
+    + _'crud-style.css'_ dentro de la carpeta _'security/public/stylesheets'_.
+    + _'crud-javascript.js'_ dentro de la carpeta _'security/public/javascripts'_.
 
-2. Cree el archivo **_security/views/crud.ejs_** y copie todo el contenido de _test.html_ dentro del archivo.
+2. Cree el archivo **_'security/views/crud.ejs'_**. Copie todo el contenido de _test.html_ dentro de _'security/views/crud.ejs'_.
 
-3. Edite la `vista` **_security/views/crud.ejs_** con la ruta a la carpeta con los archivos estáticos.
+3. Edite la `vista` _'security/views/crud.ejs'_, con:
+    
+    + Coloque la ruta a la carpeta con los archivos estáticos.
 
     ```html
     ...
-    <!-- 1. Referencia al archivo estático en public -->
+    <!-- 1. Referencia al archivo estático dentro de public -->
 
     <!-- <link rel="stylesheet" href="./crud-style.css"> -->
     <link rel="stylesheet" href="stylesheets/crud-style.css">
     
     ...
     
-    <!-- 2. Referencia al archivo estático en public -->
+    <!-- 2. Referencia al archivo estático dentro de public -->
 
     <!-- <script src="./crud-javascript.js" defer></script> -->
     <script src="javascripts/crud-javascript.js" defer></script>
     ...
     ```
 
-4. Edite el enrutador **_security/routes/users.js_** con la renderización de la vista.
+4. Edite el `enrutador` _'security/routes/users.js'_, con:
+    
+    + El nombre de la vista, sin la extensión _'ejs'_.
     
     ```typescript
     ...
@@ -131,7 +136,7 @@ theme: jekyll-theme-leap-day
     /* GET users listing. */
     router.get('/', function(req, res, next) {
     
-      /* 1. Renderización de la vista */
+      /* 1. Renderización de la vista crud.ejs */
       res.render('crud');
     
     });
@@ -146,19 +151,20 @@ theme: jekyll-theme-leap-day
 #### Express - Users.findAll
 
 1. Dentro de la carpeta _security_, mediante la línea de comandos: 
+
     + Genere los archivos de configuración de Sequelize, con: 
 
     ```command
     sequelize init
     ```
 
-    + Reconstruya los modelos con las credenciales de acceso y el esquema de la base de datos, con: 
+    + Reconstruya los modelos con las credenciales de acceso al motor de bases de datos, con: 
 
     ```command
     sequelize-auto -h 127.0.0.1 -d security  -p 3306 -u <USUARIO_ADMIN> -x <CONTRASEÑA>
     ```
 
-2. Modifique el archivo `config/config.json`, en el ambiente **development**, con los datos de conexión con el motor de bases de datos.
+2. Modifique el archivo _'config/config.json'_, en el ambiente **development**, con las credenciales de acceso al motor de bases de datos.
 
     ```json
     "development": {
@@ -171,14 +177,17 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-3. Edite el enrutador _security/routes/users.js_ instancie el [modelo](https://sequelize.org/docs/v6/core-concepts/model-basics/) y use el método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries) del objeto.
+3. Edite el enrutador _'security/routes/users.js'_, con: 
+    
+    + La instanciación del [`modelo`](https://sequelize.org/docs/v6/core-concepts/model-basics/), y 
+    + El uso del método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
     
     ```typescript
     ...
     var express = require('express');
     var router = express.Router();
 
-    /* 1. Instanciación de los modelos */
+    /* 1. Instanciación del modelo */
     const Users = require('../models').users;
 
     /* GET users listing. */
@@ -188,7 +197,7 @@ theme: jekyll-theme-leap-day
       /* 3. Uso del método findAll */
       let users = await Users.findAll({ })
 
-      /* 4. Renderización de las respuestas en la vista */
+      /* 4. Paso de parámetros a la vista */
       res.render('crud', { title: 'CRUD with users', users: users });
 
     });
@@ -196,7 +205,8 @@ theme: jekyll-theme-leap-day
     module.exports = router;
     ```
 
-4. Edite la vista _security/views/crud.ejs_, con:
+4. Edite la vista _'security/views/crud.ejs'_, con:
+
     + La `renderización` de las variables mediante las [etiquetas](https://ejs.co/#docs) **<%= %>** y **<% %>**, de EJS.
 
     ```html
@@ -241,7 +251,7 @@ theme: jekyll-theme-leap-day
 5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
 
     <div align="center">
-      <img src="imagenes/crud_get_findAll.png" width="70%">
+      <img src="imagenes/crud_get_findAll.png">
     </div>
 
 6. (STOP 3) Versiona local y remotamente el repositorio **security**.
@@ -250,24 +260,24 @@ theme: jekyll-theme-leap-day
 
 En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
 
-1. Edite el enrutador _security/routes/users.js_: 
+1. Edite el enrutador _'security/routes/users.js'_: 
     
     ```typescript
     ...
-    /* 1. Instanciación de los modelos */
+    /* 1. Instanciación del modelo */
     const Users = require('../models').users;
-    const Roles = /* Importe el modelo roles */
+    const Roles = /* Importe e instancie el modelo roles */
 
     /* GET users listing. */
     /* 2. Convierta el callback en asíncrono */
     router.get('/', async function(req, res, next) {
 
-      /* 3. Seleccione de todos los registros con el método findAll */
+      /* 3. Uso del método findAll */
       let users = await Users.findAll({ })
-      let roles = /* recupere de todos los registros mediante la instancia Roles. */
+      let roles = /* Recupere de todos los registros mediante la instancia Roles. */
 
-      /* 4. Paso de la respuesta en la vista */
-      res.render('crud', { title: 'CRUD of users', users: users, roles: /* Pase la respuesta en la vista */   });
+      /* 4. Paso de parámetros a la vista */
+      res.render('crud', { title: 'CRUD of users', users: users, roles: /* Arreglo roles */   });
 
     });
 
@@ -279,30 +289,29 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="typescript"><code>
         ...
-        /* 1. Modelos y Operadores */
+        /* 1. Instanciación del modelo */
         const Users = require('../models').users;
         const Roles = require('../models').roles;
 
         /* GET users listing. */
-
-        /* 2. Callback asíncrono */
+        /* 2. Convierta el callback en asíncrono */
         router.get('/', async function(req, res, next) {
           
-          /* 3. Requerimiento a la BD mediante la instancia */
+          /* 3. Uso del método findAll */
           let users = await Users.findAll({ })
           let roles = await Roles.findAll({ })
 
-          /* 4. Paso de la respuesta en la vista */
+          /* 4. Paso de parámetros a la vista */
           res.render('crud', { title: 'CRUD of users', users: users, roles: roles });
 
         });
       </code></pre>
     </details>
 
-2. Edite la vista _security/views/crud.ejs_ con la renderización de los elementos del arreglo roles. 
+2. Edite la vista _'security/views/crud.ejs'_, con: 
     
-    Por cada elemento del arreglo:
-    + Renderice en un elemento **&lt;option&gt;**, cuyo atributo _value_ tenga como valor **role.idrole**, y el texto sea **role.name**.
+    Por cada elemento (**role**) en el arreglo roles:
+    + Renderice en un elemento **&lt;option&gt;**, cuyo atributo _value_ sea **role.idrole**, y el texto del elemento sea **role.name**.
 
     ```html
     ...
@@ -337,7 +346,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### SALT
 
-1. Desde otra línea de comandos, acceda a la interfaz de **nodeJS**, con:
+1. Desde otra línea de comandos, acceda a la interfaz de NodeJS, con:
   
     ```typescript
     node
@@ -349,22 +358,24 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     > require('crypto').randomBytes(16).toString('base64');
     ```
 
-3. Salga de la consola, con:
+    + Para salir de la consola, utilice:
 
     ```typescript
     > .exit
     ```
 
-4. En la raíz del proyecto, cree el archivo `.env`. Agregue la variable **SALT** y asígnele la secuencia de caracteres aleatorios.
+3. En la raíz del proyecto, cree el archivo _'.env'_. Agregue la variable **SALT** y asígnele la secuencia de caracteres aleatorios.
 
     ```
     SALT='...8uUYwT...'
     ```
 
-5. En el archivo `app.js`, agregue el módulo `dotenv` y cargue los datos de configuración.
+5. Edite el `servidor` _'app.js'_, con: 
+    
+    + Carga las variables de entorno mediante el módulo **dotenv**.
 
     ```typescript
-    /* Carga de variables de entorno */
+    /* 1. Carga de variables de entorno */
     require('dotenv').config()
 
     var createError = require('http-errors');
@@ -374,9 +385,11 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### Express - Users.create
 
-1. Edite el enrutador **_security/routes/users.js_**, con:
+1. Edite el enrutador _'security/routes/users.js'_, con:
 
-     Guarde el registro mediante el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
+    + El callback para los requerimientos del método **POST**.
+    + Encripte la contraseña con la variable **SALT**.
+    + Utilice el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
      
 
     ```typescript
@@ -388,9 +401,10 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
     ...
     /* GET users listing. */
-    router.get('/', async function(req, res, next) { ... });
+    router.get( ... );
     
-    /* 2. Cree el callback asíncrona que responda al método POST */
+    /* POST user. */
+    /* 2. Cree el callback asíncrono que responda al método POST */
     router.post('/', async (req, res) => {
 
       /* 3. Desestructure los elementos en el cuerpo del requerimiento */
@@ -420,10 +434,10 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     module.exports = router;
     ```
 
-2. Edite la vista _security/views/crud.ejs_. 
+2. Edite la vista _'security/views/crud.ejs'_. 
 
-    + Identifique el modal con el id **addEmployeeModal**
-    + Modifique el formulario con el método (**post**) de envío de datos al servidor y la ruta (**'/users'**) que procesará los datos en el servidor. 
+    + Busque el modal con el identificador **addEmployeeModal**
+    + Agregue al formulario el método (**post**) de envío de datos al servidor y la ruta (**'/users'**) que procesará los datos en el servidor. 
 
     ```html
     ...
@@ -435,7 +449,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     ...
     ```
 
-3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users) y complete el formulario para crear un nuevo usuario con los siguientes datos:
+3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
     
     ```text
     Name: admin
@@ -522,7 +536,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 ### Términos
 
-vistas, orm, encriptación, salt
+ORM, vistas, modelo, Sequelize, encriptación, salt
 
 ### Referencias
 
