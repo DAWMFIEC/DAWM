@@ -421,7 +421,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     module.exports = router;
     ```
 
-2. Edite la vista _security/views/crud.js_. 
+2. Edite la vista _security/views/crud.ejs_. 
 
     + Identifique el modal con el id **addEmployeeModal**
     + Modifique el formulario con el método (**post**) de envío de datos al servidor y la ruta (**'/users'**) que procesará los datos en el servidor. 
