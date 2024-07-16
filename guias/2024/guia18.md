@@ -158,7 +158,7 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-3. Edite el enrutador _security/routes/users.js_.
+3. Edite el enrutador _security/routes/users.js_. En este caso, utilizaremos el método [findAll](https://sequelize.org/api/v6/class/src/model.js~model#static-method-findAll).
     
     ```typescript
     ...
@@ -182,7 +182,7 @@ theme: jekyll-theme-leap-day
     });
     ```
 
-4. Edite la vista _security/views/crud.js_ con la `renderización` de las variables.
+4. Edite la vista _security/views/crud.js_ con la `renderización` de las variables mediante los delimitadores de EJS.
 
     ```html
     ...
@@ -348,7 +348,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### Express - Users.create
 
-1. Edite el enrutador _security/routes/users.js_ con las operaciones para guardar un usuario.
+1. Edite el enrutador _security/routes/users.js_. En este caso, utilizaremos el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
 
     ```typescript
     var express = require('express');
@@ -398,6 +398,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     <div id="addEmployeeModal" class="modal fade">
       ...
       <form method="post" action="/users">
+      ...
     ...
     ```
 
@@ -408,12 +409,20 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     Password: admin
     Role: admin
     ```
-    
+
     <div align="center">
       <img src="imagenes/crud_post_create.png" width="70%">
     </div>
 
 4. Versiona local y remotamente el repositorio **security**.
+
+### Actividad en grupo - Users.destroy
+
+En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+
+1. Actualización de los datos de un usuario.
+2. Eliminación de un usuario.
+3. Eliminación de un grupo de usuarios.
 
 ### Documentación
 
