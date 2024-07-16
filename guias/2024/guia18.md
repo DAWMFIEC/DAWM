@@ -97,7 +97,7 @@ theme: jekyll-theme-leap-day
 
 2. Cree el archivo _security/views/crud.ejs_. Copie todo el contenido de _test.html_ dentro del archivo _crud.ejs_.
 
-3. Edite el enrutador _security/views/users.js_ con la ruta a la carpeta pública.
+3. Edite el enrutador _security/views/users.js_ con la ruta a la carpeta con los archivos estáticos.
 
     ```html
     ...
@@ -158,7 +158,7 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-3. Edite el enrutador _security/routes/users.js_. En este caso, utilizaremos el método [findAll](https://sequelize.org/api/v6/class/src/model.js~model#static-method-findAll).
+3. Edite el enrutador _security/routes/users.js_ con el proceso de selección de todos los registros, mediante el método [findAll](https://sequelize.org/api/v6/class/src/model.js~model#static-method-findAll).
     
     ```typescript
     ...
@@ -235,16 +235,13 @@ theme: jekyll-theme-leap-day
 
 En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
 
-1. Edite el enrutador _security/routes/users.js_.
-    + Importe el modelo roles
-    + Dentro del controlador de la ruta `/`: haga un requerimiento de todos los registos mediante modelo Roles.
-    + Pase la respuesta en la vista
-
+1. Edite el enrutador _security/routes/users.js_: 
+    
     ```typescript
     ...
     /* 1. Modelos y Operadores */
     const Users = require('../models').users;
-    const Roles = 
+    const Roles = /* Importe el modelo roles */
 
     /* GET users listing. */
 
@@ -253,10 +250,10 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
       /* 3. Requerimiento a la BD mediante el modelo */
       let users = await Users.findAll({ })
-      let roles = 
+      let roles = /* recupere de todos los registros mediante el modelo Roles. */
 
       /* 4. Paso de la respuesta en la vista */
-      res.render('crud', { title: 'CRUD of users', users: users, roles:    });
+      res.render('crud', { title: 'CRUD of users', users: users, roles: /* Pase la respuesta en la vista */   });
 
     });
     ...
@@ -286,7 +283,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
-2. Edite la vista _security/views/crud.js_ con la renderización del arreglo roles.
+2. Edite la vista _security/views/crud.js_ con la renderización del arreglo roles. El valor del atributo _value_ es el atributo **idrole** y el texto del elemento es el atributo **name**.
 
     ```html
     ...
@@ -348,7 +345,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### Express - Users.create
 
-1. Edite el enrutador _security/routes/users.js_. En este caso, utilizaremos el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
+1. Edite el enrutador _security/routes/users.js_ con la creación un registro, utilizaremos el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
 
     ```typescript
     var express = require('express');
@@ -390,7 +387,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 2. Edite la vista _security/views/crud.js_. 
 
     + Identifique el modal con el id **addEmployeeModal**
-    + Modifique el formulario con el método **post** (para enviar el formulario al servidor) y la ruta **/users** (que recibirá los datos del formulario). 
+    + Modifique el formulario con el método (**post**) de envío de datos al servidor y la ruta (**'/users'**) que procesará los datos en el servidor. 
 
     ```html
     ...
@@ -402,7 +399,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     ...
     ```
 
-3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users) y complete el formulario para crear un nuevo usuario:
+3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users) y complete el formulario para crear un nuevo usuario con los siguientes datos:
     
     ```text
     Name: admin
@@ -415,6 +412,14 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     </div>
 
 4. Versiona local y remotamente el repositorio **security**.
+
+### Actividad en grupo - UsersRoles.create
+
+En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+
+1. Complete el proceso de la creación de usuario en el enrutador _security/routes/users.js_:
+    + Importe el modelo user_roles
+    + Cree la relación entre Users y Roles con el id del usuario (iduser) y el id del rol (idrole). 
 
 ### Actividad en grupo - Users.destroy
 
