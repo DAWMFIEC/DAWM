@@ -53,6 +53,15 @@ theme: jekyll-theme-leap-day
 2. Asegúrese de marcar la opción **Add .gitignore** y seleccione la opción **Node**.
 3. Clone y acceda a la carpeta en el directorio local.
 
+
+#### Módulos globales 
+
+1. Instale el módulo **mysql2** (conector con MySQL) de manera global. 
+
+    ```command
+    npm i -g mysql2
+    ```
+
 #### Express - Proyecto Base
 
 1. Dentro de la carpeta _security_, mediante la línea de comandos: 
@@ -61,12 +70,6 @@ theme: jekyll-theme-leap-day
 
     ```command
     npm install --save sequelize mysql2 dotenv nodemon
-    ```
-
-    + Instale el módulo **mysql2** (conector con MySQL) de manera global. 
-
-    ```command
-    npm i -g mysql2
     ```
 
 2. Agregue el script **autostart** en _./package.json_.
@@ -420,6 +423,10 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 1. Complete el proceso de la creación de usuario en el enrutador _security/routes/users.js_:
     + Importe el modelo user_roles
     + Cree la relación entre Users y Roles con el id del usuario (iduser) y el id del rol (idrole). 
+
+### Actividad en grupo - UsersRoles.create
+
+En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
 
 ### Actividad en grupo - Users.destroy
 
