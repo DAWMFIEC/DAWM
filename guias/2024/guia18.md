@@ -237,8 +237,30 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 1. Edite el enrutador _security/routes/users.js_.
     + Importe el modelo roles
-    + Haga un requerimiento a la BD mediante el modelo Roles para traer todos los registros
+    + Dentro del controlador de la ruta `/`: haga un requerimiento de todos los registos mediante modelo Roles.
     + Pase la respuesta en la vista
+
+    ```typescript
+    ...
+    /* 1. Modelos y Operadores */
+    const Users = require('../models').users;
+    const Roles = 
+
+    /* GET users listing. */
+
+    /* 2. Callback asíncrono */
+    router.get('/', async function(req, res, next) {
+
+      /* 3. Requerimiento a la BD mediante el modelo */
+      let users = await Users.findAll({ })
+      let roles = 
+
+      /* 4. Paso de la respuesta en la vista */
+      res.render('crud', { title: 'CRUD of users', users: users, roles:    });
+
+    });
+    ...
+    ```
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
@@ -264,7 +286,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
-2. Edite la vista _security/views/crud.js_ con la renderización de las variables.
+2. Edite la vista _security/views/crud.js_ con la renderización del arreglo roles.
 
     ```html
     ...
@@ -321,6 +343,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
     var createError = require('http-errors');
     var express = require('express');
+    ...
     ```
 
 #### Express - Users.create
