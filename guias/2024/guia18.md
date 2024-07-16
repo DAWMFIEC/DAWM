@@ -387,16 +387,28 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
     ```
 
-2. Edite la vista _security/views/crud.js_ con el método **post** para envío del formulario y la ruta **/users** que recibe los datos del requerimiento. 
+2. Edite la vista _security/views/crud.js_. 
+
+    + Identifique el modal con el id **addEmployeeModal**
+    + Modifique el formulario con el método **post** (para enviar el formulario al servidor) y la ruta **/users** (que recibirá los datos del formulario). 
 
     ```html
     ...
-    <form method="post" action="/users">
+    <!-- Edit Modal HTML -->
+    <div id="addEmployeeModal" class="modal fade">
+      ...
+      <form method="post" action="/users">
     ...
     ```
 
-3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users) y complete el formulario para crear un nuevo usuario.
-
+3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users) y complete el formulario para crear un nuevo usuario:
+    
+    ```text
+    Name: admin
+    Password: admin
+    Role: admin
+    ```
+    
     <div align="center">
       <img src="imagenes/crud_post_create.png" width="70%">
     </div>
