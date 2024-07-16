@@ -302,11 +302,10 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
-2. Edite la vista _security/views/crud.ejs_ con la renderización del arreglo roles. 
+2. Edite la vista _security/views/crud.ejs_ con la renderización de los elementos del arreglo roles. 
     
-    En cada option, considere:
-    + Asigne el atributo _value_ es el atributo **idrole**, y 
-    + El texto del elemento es el atributo **name**.
+    Por cada elemento del arreglo:
+    + Renderice en un elemento **&lt;option&gt;**, cuyo atributo _value_ tenga como valor **role.idrole**, y el texto sea **role.name**.
 
     ```html
     ...
