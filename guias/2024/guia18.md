@@ -161,7 +161,10 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-3. Edite el enrutador _security/routes/users.js_ con el proceso de selección de todos los registros, mediante el método [findAll](https://sequelize.org/api/v6/class/src/model.js~model#static-method-findAll).
+3. Edite el enrutador _security/routes/users.js_ con: 
+
+    + Importe el [modelo](https://sequelize.org/docs/v6/core-concepts/model-basics/) Users.
+    + Seleccione de todos los registros, mediante el método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
     
     ```typescript
     ...
@@ -186,7 +189,8 @@ theme: jekyll-theme-leap-day
     module.exports = router;
     ```
 
-4. Edite la vista _security/views/crud.ejs_ con la `renderización` de las variables mediante los delimitadores de EJS.
+4. Edite la vista _security/views/crud.ejs_, con:
+    + La `renderización` de las variables mediante las [etiquetas](https://ejs.co/#docs) `<%= %>` y `<% %>`, de EJS.
 
     ```html
     ...
@@ -323,7 +327,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### SALT
 
-1. Desde la línea de comandos, acceda a la interfaz de **nodeJS**, con:
+1. Desde otra línea de comandos, acceda a la interfaz de **nodeJS**, con:
   
     ```typescript
     node
@@ -367,6 +371,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     /* GET users listing. */
     router.get('/', async function(req, res, next) { ... });
     
+    /* POST user. */
     router.post('/', async (req, res) => {
 
       /* 2. Parámetros en el cuerpo del requerimiento */
@@ -425,23 +430,26 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 4. (STOP 5) Versiona local y remotamente el repositorio **security**.
 
-### Actividad en grupo - UsersRoles.create
+### Actividad en grupo
 
 En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+
+#### UsersRoles.create
 
 1. Complete el proceso de la creación de usuario en el enrutador _security/routes/users.js_:
     + Importe el modelo user_roles
-    + Cree la relación entre Users y Roles con el id del usuario (iduser) y el id del rol (idrole). 
+    + Utilice el modelo para crear la relación entre Users (con el id del usuario en **user.iduser**) y Roles (el id del rol en **idrole**). 
 
-### Actividad en grupo - UsersRoles.create
+#### Roles.findOne
 
-En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+1. [findOne](https://sequelize.org/api/v6/class/src/model.js~model#static-method-findOne)
 
-### Actividad en grupo - Users.destroy
-
-En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+#### Roles.findOne
 
 1. Actualización de los datos de un usuario.
+
+#### Users.destroy
+
 2. Eliminación de un usuario.
 3. Eliminación de un grupo de usuarios.
 
