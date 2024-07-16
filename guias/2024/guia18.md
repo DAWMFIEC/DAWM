@@ -164,7 +164,7 @@ theme: jekyll-theme-leap-day
     sequelize-auto -h 127.0.0.1 -d security  -p 3306 -u <USUARIO_ADMIN> -x <CONTRASEÑA>
     ```
 
-2. Modifique el archivo _'config/config.json'_, en el ambiente **development**, con las credenciales de acceso al motor de bases de datos.
+2. Modifique el archivo _'config/config.json'_, en el `ambiente` **development**, con las credenciales de acceso al motor de bases de datos.
 
     ```json
     "development": {
@@ -530,13 +530,13 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Discover the power of Sequelize for simplifying database operations in Node.js with <a href="https://twitter.com/vaishnavirawool?ref_src=twsrc%5Etfw">@VaishnaviRawool</a>&#39;s insightful guide. From advantages to getting started, it&#39;s a must-read for developers. <a href="https://twitter.com/hashtag/NodeJS?src=hash&amp;ref_src=twsrc%5Etfw">#NodeJS</a> <a href="https://twitter.com/hashtag/Sequelize?src=hash&amp;ref_src=twsrc%5Etfw">#Sequelize</a> <a href="https://twitter.com/hashtag/DatabaseOps?src=hash&amp;ref_src=twsrc%5Etfw">#DatabaseOps</a> <a href="https://twitter.com/hashtag/ORM?src=hash&amp;ref_src=twsrc%5Etfw">#ORM</a>&quot; <a href="https://t.co/DvopupkfYV">https://t.co/DvopupkfYV</a></p>&mdash; prod42net (@prod42net) <a href="https://twitter.com/prod42net/status/1806236123217158619?ref_src=twsrc%5Etfw">June 27, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-* Encriptación de una contraseña con SALT en [X](https://twitter.com/El_Pop/status/1560356275774447618)
+* Encriptación de una contraseña, con SALT en [X](https://twitter.com/El_Pop/status/1560356275774447618)
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="es" dir="ltr">Como almacenar passwords en una BD para que estos no estén expuestos en el caso de un acceso a esta base:<br><br>el truco es reconstruir el password a partir de su hash y el salt previamente generado y almacenado. <a href="https://t.co/sdESoBZOeg">pic.twitter.com/sdESoBZOeg</a></p>&mdash; Fernando Romo (@El_Pop) <a href="https://twitter.com/El_Pop/status/1560356275774447618?ref_src=twsrc%5Etfw">August 18, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
-ORM, vistas, modelo, Sequelize, encriptación, salt
+Sequelize, ORM, archivos estáticos, vista, enrutador, modelo, renderización, encriptación, SALT
 
 ### Referencias
 
