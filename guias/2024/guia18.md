@@ -476,11 +476,12 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
             try {
 
                 ...
+                let user = ...
 
                 await UsersRoles.create({ users_iduser: user.iduser, roles_idrole: idrole })
 
                 /* 5. Redireccione a la vista principal */
-                res.redirect('/users')
+                ...
 
             } catch (error) {
 
@@ -495,16 +496,15 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### Roles.findOne
 
-1. [findOne](https://sequelize.org/api/v6/class/src/model.js~model#static-method-findOne)
+1. [findOne](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findone)
 
-#### Roles.findOne
+#### Users.update
 
-1. Actualización de los datos de un usuario.
+1. [update](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-update-queries)
 
 #### Users.destroy
 
-2. Eliminación de un usuario.
-3. Eliminación de un grupo de usuarios.
+1. [delete](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-delete-queries)
 
 ### Documentación
 
