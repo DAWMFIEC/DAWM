@@ -173,7 +173,7 @@ theme: jekyll-theme-leap-day
 
 3. Edite el enrutador _security/routes/users.js_ con: 
 
-    + Importe el [modelo](https://sequelize.org/docs/v6/core-concepts/model-basics/) Users.
+    + Importe el [modelo](https://sequelize.org/docs/v6/core-concepts/model-basics/) users e instance **Users**.
     + Seleccione de todos los registros, mediante el método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
     
     ```typescript
@@ -188,7 +188,7 @@ theme: jekyll-theme-leap-day
     /* 2. Callback asíncrono */
     router.get('/', async function(req, res, next) {
 
-      /* 3. Requerimiento a la BD mediante el modelo */
+      /* 3. Requerimiento a la BD mediante la instancia */
       let users = await Users.findAll({ })
 
       /* 4. Paso de la respuesta en la vista */
@@ -265,9 +265,9 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     /* 2. Callback asíncrono */
     router.get('/', async function(req, res, next) {
 
-      /* 3. Requerimiento a la BD mediante el modelo */
+      /* 3. Requerimiento a la BD mediante la instancia */
       let users = await Users.findAll({ })
-      let roles = /* recupere de todos los registros mediante el modelo Roles. */
+      let roles = /* recupere de todos los registros mediante la instancia Roles. */
 
       /* 4. Paso de la respuesta en la vista */
       res.render('crud', { title: 'CRUD of users', users: users, roles: /* Pase la respuesta en la vista */   });
@@ -291,7 +291,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
         /* 2. Callback asíncrono */
         router.get('/', async function(req, res, next) {
           
-          /* 3. Requerimiento a la BD mediante el modelo */
+          /* 3. Requerimiento a la BD mediante la instancia */
           let users = await Users.findAll({ })
           let roles = await Roles.findAll({ })
 
@@ -320,7 +320,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
-      <pre lang="javascript"><code>
+      <pre lang="html"><code>
           &lt;!-- 6. Arreglo de roles --&gt;
           &lt;select name="idrole" class="form-control"&gt;
               &lt;option value="null" selected disabled
@@ -405,7 +405,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
         let passwordHash = salt + "$" + hash
 
         /* 4. Guarde los datos del usuario */
-        await Users.create({ name: name, password: passwordHash })
+        let user = await Users.create({ name: name, password: passwordHash })
 
         /* 5. Redireccione a la vista principal */
         res.redirect('/users')
@@ -457,8 +457,41 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 #### UsersRoles.create
 
 1. Complete el proceso de la creación de usuario en el enrutador _security/routes/users.js_:
-    + Importe el modelo user_roles
-    + Utilice el modelo para crear la relación entre Users (con el id del usuario en **user.iduser**) y Roles (el id del rol en **idrole**). 
+    + Importe el modelo **user_roles**.
+    + Instancie **UsersRoles** para crear la relación entre Users (con el id del usuario en **user.iduser**) y Roles (el id del rol en **idrole**). 
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+        ...
+        /* 1. Modelos y Operadores */
+        ...
+        const UsersRoles = require('../models').users_roles;
+
+        /* POST user. */
+        router.post('/', async (req, res) => {
+
+            ...
+
+            try {
+
+                ...
+
+                await UsersRoles.create({ users_iduser: user.iduser, roles_idrole: idrole })
+
+                /* 5. Redireccione a la vista principal */
+                res.redirect('/users')
+
+            } catch (error) {
+
+                res.status(400).send(error)
+
+            }
+        })
+
+        module.exports = router;
+      </code></pre>
+    </details>
 
 #### Roles.findOne
 
