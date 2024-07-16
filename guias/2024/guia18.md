@@ -378,7 +378,13 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### Express - Users.create
 
-1. Edite el enrutador _security/routes/users.js_ con la creación un registro, utilizaremos el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
+1. Edite el enrutador **_security/routes/users.js_**, con:
+
+    + Importe el módulo **crypto**
+    + Cree la función asíncrona que responda al método **POST**.
+    + Utilice la variable **SALT** para encriptar la variable _password_.
+    + Guarde el registro mediante el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
+    + Redireccione a la ruta '/users'
 
     ```typescript
     var express = require('express');
@@ -456,9 +462,10 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### UsersRoles.create
 
-1. Complete el proceso de la creación de usuario en el enrutador _security/routes/users.js_:
-    + Importe el modelo **user_roles**.
-    + Instancie **UsersRoles** para crear la relación entre Users (con el id del usuario en **user.iduser**) y Roles (el id del rol en **idrole**). 
+* Complete el proceso de la creación de usuario en el enrutador _security/routes/users.js_, con:
+
+    + Importe el modelo **user_roles** e instancie **UsersRoles**
+    + Establezca la relación entre Users (con el id del usuario en **user.iduser**) y Roles (el id del rol en **idrole**) mediante el método create. 
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
@@ -496,15 +503,15 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### Roles.findOne
 
-1. [findOne](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findone)
+* [findOne](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findone)
 
 #### Users.update
 
-1. [update](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-update-queries)
+* [update](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-update-queries)
 
 #### Users.destroy
 
-1. [delete](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-delete-queries)
+* [delete](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-delete-queries)
 
 ### Documentación
 
