@@ -63,7 +63,7 @@ theme: jekyll-theme-leap-day
 
 #### Módulos globales 
 
-1. Instale los módulos [**mysql2**](## "conector para MySQL"), express-generator y express-cli de manera global. 
+1. Instale los módulos [**mysql2**](## "conector para MySQL"), express-generator, express-cli, sequelize, sequelize-cli y sequelize-auto de manera global. 
 
     ```command
     npm i -g mysql2 express-generator express-cli sequelize sequelize-cli sequelize-auto
