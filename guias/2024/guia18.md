@@ -179,8 +179,7 @@ theme: jekyll-theme-leap-day
       "database": "security",
       "host": "127.0.0.1",
       "dialect": "mysql"
-    },
-    ...
+    }
     ```
 
 3. Edite el enrutador _'security/routes/users.js'_, con: 
