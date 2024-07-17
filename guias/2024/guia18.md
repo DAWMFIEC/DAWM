@@ -66,13 +66,14 @@ theme: jekyll-theme-leap-day
 1. Instale los módulos [**mysql2**](## "conector para MySQL"), express-generator y express-cli de manera global. 
 
     ```command
-    npm i -g mysql2 express-generator express-cli
+    npm i -g mysql2 express-generator express-cli sequelize sequelize-cli sequelize-auto
     ```
 
 2. Compruebe el funcionamiento de los comandos, con:
 
     ```command
     express --help
+    sequelize-cli --help
     sequelize-auto --help
     ```
 
