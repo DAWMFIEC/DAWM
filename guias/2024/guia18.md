@@ -73,7 +73,7 @@ theme: jekyll-theme-leap-day
 
     ```command
     express --help
-    sequelize-cli --help
+    sequelize-auto --help
     ```
 
     **NOTA:** En caso de no obtener una respuesta de los comandos, consulte la sección de errores [**No se reconoce como comando**](https://dawmfiec.github.io/DAWM/paginas/errores.html#no-se-reconoce-como-comando).
