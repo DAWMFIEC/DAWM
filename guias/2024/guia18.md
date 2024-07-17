@@ -179,7 +179,9 @@ theme: jekyll-theme-leap-day
 
 3. Edite el enrutador _'security/routes/users.js'_, con: 
     
-    + Cargue los [modelos](https://sequelize.org/docs/v6/core-concepts/model-basics/) de _'models/init-models'_ de acuerdo con la configuración de conexión en _'models/index.js'_,
+    + Configuración de conexión (en _'models/index.js'_),
+    + Estructura de [modelos](https://sequelize.org/docs/v6/core-concepts/model-basics/) (de _'models/init-models'_),
+    + Carga los modelos de acuerdo con la configuración de la conexión,
     + Uso del método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
     
     ```typescript
