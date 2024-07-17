@@ -39,10 +39,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 15: REST API (Datos) - Express, Firebase - Firestore y cURL](guias/2024/guia15)
   * [Guía 16: REST API (Datos) - Swagger y Postman](guias/2024/guia16)
   * [Guía 17: REST API (Datos) - Despliegue con Render](guias/2024/guia17)
-  * [Guía 18: REST API (Seguridad) - Views y ORM](guias/2024/guia18)
-  * [Guía 19: REST API (Seguridad) - JWT y Token](guias/2024/guia19)
-  * [Guía 20: REST API (Seguridad) - Despliegue en Railway](guias/2024/guia20)
-  * [Guía 21: REST API (Datos y Seguridad) - Integración](guias/2024/guia21)
+  * [Guía 18: REST API (Seguridad) - Views y ORM - I](guias/2024/guia18)
+  * [Guía 19: REST API (Seguridad) - Views y ORM - II](guias/2024/guia19)
+  * [Guía 20: REST API (Seguridad) - JWT y Token](guias/2024/guia20)
+  * [Guía 21: REST API (Datos y Seguridad) - Despliegue en Railway e Integración](guias/2024/guia21)
 * [Proyecto 05: MobileApp - Angular y Ionic](proyectos/2024/proyecto05)
   
 ## Scripts
