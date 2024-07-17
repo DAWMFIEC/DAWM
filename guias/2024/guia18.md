@@ -179,15 +179,15 @@ theme: jekyll-theme-leap-day
 
 3. Edite el enrutador _'security/routes/users.js'_, con: 
     
-    + Importe el [modelo](https://sequelize.org/docs/v6/core-concepts/model-basics/), y 
-    + El uso del método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
+    + Cargue los [modelos](https://sequelize.org/docs/v6/core-concepts/model-basics/) de _'models/init-models'_ de acuerdo con la configuración de conexión en _'models/index.js'_,
+    + Uso del método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
     
     ```typescript
     ...
     var express = require('express');
     var router = express.Router();
 
-    /* 1. Instanciación del modelo */
+    /* 1. Cargue los modelos de acuerdo con la configuración de la conexión */
     const sequelize = require('../models/index.js').sequelize;
     var initModels = require("../models/init-models");
     var models = initModels( sequelize );  
