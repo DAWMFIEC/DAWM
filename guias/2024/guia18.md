@@ -268,7 +268,8 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     
     ```typescript
     ...
-    /* 1. Instanciación del modelo */
+
+    /* 1. Cargue los modelos de acuerdo con la configuración de la conexión */
     const sequelize = require('../models/index.js').sequelize;
     var initModels = require("../models/init-models");
     var models = initModels( sequelize );  
@@ -496,7 +497,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
                 await models.users_roles.create({ users_iduser: user.iduser, roles_idrole: idrole })
 
-                /* 5. Redireccione a la vista principal */
+                /* 6. Redireccione a la ruta con la vista principal '/users' */
                 ...
 
             } catch (error) {
@@ -510,18 +511,6 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
-#### Roles.findOne
-
-* Edite el enrutador _'security/routes/users.js'_ para listar los usuarios con su rol, con:
-    + [findOne](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findone)
-
-#### Users.update
-
-* [update](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-update-queries)
-
-#### Users.destroy
-
-* [delete](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-delete-queries)
 
 ### Documentación
 
