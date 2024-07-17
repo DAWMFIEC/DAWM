@@ -33,6 +33,334 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+#### SALT
+
+1. Desde otra línea de comandos, acceda a la interfaz de NodeJS, con:
+  
+    ```typescript
+    node
+    ```
+
+2. Genere y copie la secuencia de caracteres aleatorios, con:
+
+    ```typescript
+    > require('crypto').randomBytes(16).toString('base64');
+    ```
+
+    + Para salir de la consola, utilice:
+
+    ```typescript
+    > .exit
+    ```
+
+3. En la raíz del proyecto, cree el archivo _'.env'_. Agregue la variable **SALT** y asígnele la secuencia de caracteres aleatorios.
+
+    ```
+    SALT='...8uUYwT...'
+    ```
+
+5. Edite el `servidor` _'app.js'_, con: 
+    
+    + Carga las variables de entorno mediante el módulo **dotenv**.
+
+    ```typescript
+    /* 1. Carga de variables de entorno */
+    require('dotenv').config()
+
+    var createError = require('http-errors');
+    var express = require('express');
+    ...
+    ```
+
+#### Express - Users.create
+
+1. Edite el enrutador _'security/routes/users.js'_, con:
+
+    + El callback para los requerimientos del método **POST**.
+    + Encripte la contraseña con la variable **SALT**.
+    + Utilice el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
+     
+
+    ```typescript
+    var express = require('express');
+    var router = express.Router();
+
+    /* 1. Importe el módulo crypto */
+    let crypto = require('crypto');
+
+    ...
+    /* GET users listing. */
+    router.get( ... );
+    
+    /* POST user. */
+    /* 2. Cree el callback asíncrono que responda al método POST */
+    router.post('/', async (req, res) => {
+
+      /* 3. Desestructure los elementos en el cuerpo del requerimiento */
+      let { name, password, idrole } = req.body;
+
+      try {
+
+        /* 4. Utilice la variable SALT para encriptar la variable password. */
+        let salt = process.env.SALT
+        let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
+        let passwordHash = salt + "$" + hash
+
+        /* 5. Guarde el registro mediante el método create */
+        let user = await models.users.create({ name: name, password: passwordHash })
+
+        /* 6. Redireccione a la ruta con la vista principal '/users' */
+        res.redirect('/users')
+
+      } catch (error) {
+
+        res.status(400).send(error)
+
+      }
+
+    })
+
+    module.exports = router;
+    ```
+
+2. Edite la vista _'security/views/crud.ejs'_. 
+
+    + Busque el modal con el identificador **addEmployeeModal**
+    + Agregue al formulario el método (**post**) de envío de datos al servidor y la ruta (**'/users'**) que procesará los datos en el servidor. 
+
+    ```html
+    ...
+    <!-- Edit Modal HTML -->
+    <div id="addEmployeeModal" class="modal fade">
+      ...
+      <form method="post" action="/users">
+      ...
+    ...
+    ```
+
+3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
+    
+    ```text
+    Name: admin
+    Password: admin
+    ```
+
+    <div align="center">
+      <img src="imagenes/crud_post_create.png" width="70%">
+    </div>
+
+4. Versiona local y remotamente el repositorio **security**.
+5. (STOP 4) Descargue y complete el diagrama de secuencia para completar un requerimiento POST exitoso.
+
+    [Diagrama de secuencia](recursos/diagrama_guia18.pdf)
+
+### Actividad en grupo
+
+En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+
+#### Roles.findAll
+
+1. Edite el enrutador _'security/routes/users.js'_, con:
+    
+    + Cargar la colección de roles mediante el método findAll
+    + Pasar la colección de roles a la vista.
+    
+    ```typescript
+    ...
+
+    router.get('/', async function(req, res, next) {
+
+      /* 3. Uso del método findAll */
+      ...
+      let rolesCollection = /* Recupere de todos los registros mediante la instancia Roles. */
+
+      /* 4. Paso de parámetros a la vista */
+      res.render('crud', { ... rolesArray: /* Colección de roles */   });
+
+    });
+
+    module.exports = router;
+    ...
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="typescript"><code>
+        ...
+         /* 1. Instanciación del modelo */
+        const sequelize = require('../models/index.js').sequelize;
+        var initModels = require("../models/init-models");
+        var models = initModels( sequelize );
+
+        /* GET users listing. */
+        /* 2. Convierta el callback en asíncrono */
+        router.get('/', async function(req, res, next) {
+          
+          /* 3. Uso del método findAll */
+          let usersCollection = await models.users.findAll({ })
+          let rolesCollection = await models.roles.findAll({ })
+
+          /* 4. Paso de parámetros a la vista */
+          res.render('crud', { title: 'CRUD of users', usersArray: usersCollection, rolesArray: rolesCollection   });
+
+        });
+      </code></pre>
+    </details>
+
+2. Edite la vista _'security/views/crud.ejs'_, con: 
+    
+    + Por cada elemento (_role_) en el arreglo rolesArray:
+        - Renderice una etiqueta **&lt;option&gt;**, cuyo atributo _value_ sea **role.idrole**, y el texto del elemento sea **role.name**.
+
+    ```html
+    ...
+    <!-- 6. Arreglo de roles -->
+    <select name="idrole" class="form-control">
+        <option value="null" selected disabled
+            class="form-control">Select an item</option>
+
+    </select>
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="html"><code>
+          &lt;!-- 6. Arreglo de roles --&gt;
+          &lt;select name="idrole" class="form-control"&gt;
+              &lt;option value="null" selected disabled
+                  class="form-control"&gt;Select an
+                  item&lt;/option&gt;
+              &lt;% rolesArray.forEach( role =&gt; { %&gt; 
+                  &lt;option 
+                  value="&lt;%=role.idrole%&gt;"
+                  class="form-control"&gt;&lt;%=role.name%&gt;&lt;/option&gt;
+              &lt;% }) %&gt; 
+          &lt;/select&gt;
+      </code></pre>
+    </details>
+
+3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y verifique que se muestren los roles.
+4. (STOP 5) Versiona local y remotamente el repositorio **security**.
+
+#### UsersRoles.create
+
+1. Edite el enrutador _'security/routes/users.js'_, con:
+
+    + Utilice el modelo **user_roles** para crear la relación **user.iduser** (id del usuario) y **idrole** (id del rol). 
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+        ...
+        
+        /* POST user. */
+        router.post('/', async (req, res) => {
+
+            ...
+
+            try {
+
+                ...
+                let user = ...
+
+                await models.users_roles.create({ users_iduser: user.iduser, roles_idrole: idrole })
+
+                /* 6. Redireccione a la ruta con la vista principal '/users' */
+                ...
+
+            } catch (error) {
+
+                res.status(400).send(error)
+
+            }
+        })
+
+        module.exports = router;
+      </code></pre>
+    </details>
+
+2. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
+    
+    ```text
+    Name: user
+    Password: user
+    Role: user
+    ```
+
+3. (STOP 6) Versiona local y remotamente el repositorio **security**.
+
+#### Sequelize - Eager Loading
+
+1. Edite el enrutador _'security/routes/users.js'_: 
+
+    + [Eager Loading](https://sequelize.org/docs/v6/advanced-association-concepts/eager-loading/): Incluya los objetos relacionados del modelo **users_roles** (con el alias _'users_roles'_). A su vez, por cada objeto, incluya los objetos del modelo **roles** (con el alias _'roles_idrole_role'_),
+    + [Raw Queries](https://sequelize.org/docs/v6/core-concepts/raw-queries/): Configure que la respuesta solo contenga datos (_raw: true_) y el acceso sea anidado (_nest: true_).
+    
+    ```typescript
+    ...
+
+    
+    router.get('/', async function(req, res, next) {
+
+      /* 3. Uso del método findAll */
+      let usersCollection = await models.users.findAll({ 
+
+
+        include: [
+          {
+            model: models.users_roles,
+            as: 'users_roles',
+            include: [
+              {
+                model: models.roles,
+                as: 'roles_idrole_role',
+              }
+            ]
+          }
+        ],
+        raw: true,
+        nest: true,
+
+        
+        })
+
+      ...
+
+      res.render( ... );
+
+    });
+
+    module.exports = router;
+    ...
+    ```
+
+2. Edite la vista _'security/views/crud.ejs'_, con:
+
+    + Muestre el nombre del rol: **user.users_roles.roles_idrole_role.name**.
+
+    ```html
+    ...
+    <td>
+        
+        <!-- 
+            Dato relacionado
+
+            users->users_roles->roles.name
+         -->
+
+        <%= user.users_roles.roles_idrole_role.name %>
+     </td>
+    ...
+    ```
+
+5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
+
+    <div align="center">
+      <img src="imagenes/crud_get_final.jpg">
+    </div>
+
+6. (STOP 7) Versiona local y remotamente el repositorio **security**.
+
 ### Documentación
 
 ### Fundamental
