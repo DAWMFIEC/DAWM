@@ -38,7 +38,7 @@ theme: jekyll-theme-leap-day
 
 
     <div align="center">
-      <img src="imagenes/reverse_engineer.png">
+      <img src="imagenes/reverse_engineer.jpg">
     </div>
 
 
