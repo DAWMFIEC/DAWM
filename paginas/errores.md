@@ -50,7 +50,7 @@ theme: jekyll-theme-leap-day
 		npm config set https-proxy <URL-PROXY>
 		```
 
-### ng (Comando executable)
+### No se reconoce como comando
 * Al ejecutar desde la línea de comandos `ng`
 	+ **Problema:** no se reconoce el comando ng luego de instalar `npm install @angular/cli`
 	![ng not found](imagenes/ngnotfound.png)
