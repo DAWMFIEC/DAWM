@@ -179,7 +179,7 @@ theme: jekyll-theme-leap-day
 
 3. Edite el enrutador _'security/routes/users.js'_, con: 
     
-    + La instanciación del [`modelo`](https://sequelize.org/docs/v6/core-concepts/model-basics/), y 
+    + Importe el [modelo](https://sequelize.org/docs/v6/core-concepts/model-basics/), y 
     + El uso del método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
     
     ```typescript
@@ -188,17 +188,19 @@ theme: jekyll-theme-leap-day
     var router = express.Router();
 
     /* 1. Instanciación del modelo */
-    const Users = require('../models').users;
+    const sequelize = require('../models/index.js').sequelize;
+    var initModels = require("../models/init-models");
+    var models = initModels( sequelize );  
 
     /* GET users listing. */
     /* 2. Convierta el callback en asíncrono */
     router.get('/', async function(req, res, next) {
 
       /* 3. Uso del método findAll */
-      let users = await Users.findAll({ })
+      let usersCollection = await models.users.findAll({ })
 
       /* 4. Paso de parámetros a la vista */
-      res.render('crud', { title: 'CRUD with users', users: users });
+      res.render('crud', { title: 'CRUD with users', usersArray: usersCollection });
 
     });
 
@@ -219,7 +221,7 @@ theme: jekyll-theme-leap-day
     ...
     <!-- 5. Arreglo de usuarios -->
     <tbody>
-        <% users.forEach( user => { %>
+        <% usersArray.forEach( user => { %>
         <tr>
             <td>
                 <span class="custom-checkbox">
@@ -265,19 +267,20 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     ```typescript
     ...
     /* 1. Instanciación del modelo */
-    const Users = require('../models').users;
-    const Roles = /* Importe e instancie el modelo roles */
+    const sequelize = require('../models/index.js').sequelize;
+    var initModels = require("../models/init-models");
+    var models = initModels( sequelize );  
 
     /* GET users listing. */
     /* 2. Convierta el callback en asíncrono */
     router.get('/', async function(req, res, next) {
 
       /* 3. Uso del método findAll */
-      let users = await Users.findAll({ })
-      let roles = /* Recupere de todos los registros mediante la instancia Roles. */
+      let usersCollection = await models.users.findAll({ })
+      let rolesCollection = /* Recupere de todos los registros mediante la instancia Roles. */
 
       /* 4. Paso de parámetros a la vista */
-      res.render('crud', { title: 'CRUD of users', users: users, roles: /* Arreglo roles */   });
+      res.render('crud', { title: 'CRUD of users', usersArray: usersCollection, rolesArray: /* Colección de roles */   });
 
     });
 
@@ -289,20 +292,21 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="typescript"><code>
         ...
-        /* 1. Instanciación del modelo */
-        const Users = require('../models').users;
-        const Roles = require('../models').roles;
+         /* 1. Instanciación del modelo */
+        const sequelize = require('../models/index.js').sequelize;
+        var initModels = require("../models/init-models");
+        var models = initModels( sequelize );
 
         /* GET users listing. */
         /* 2. Convierta el callback en asíncrono */
         router.get('/', async function(req, res, next) {
           
           /* 3. Uso del método findAll */
-          let users = await Users.findAll({ })
-          let roles = await Roles.findAll({ })
+          let usersCollection = await models.users.findAll({ })
+          let rolesCollection = await models.roles.findAll({ })
 
           /* 4. Paso de parámetros a la vista */
-          res.render('crud', { title: 'CRUD of users', users: users, roles: roles });
+          res.render('crud', { title: 'CRUD of users', usersArray: usersCollection, rolesArray: rolesCollection   });
 
         });
       </code></pre>
@@ -331,7 +335,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
               &lt;option value="null" selected disabled
                   class="form-control"&gt;Select an
                   item&lt;/option&gt;
-              &lt;% roles.forEach( role =&gt; { %&gt; 
+              &lt;% rolesArray.forEach( role =&gt; { %&gt; 
                   &lt;option 
                   value="&lt;%=role.idrole%&gt;"
                   class="form-control"&gt;&lt;%=role.name%&gt;&lt;/option&gt;
@@ -418,7 +422,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
         let passwordHash = salt + "$" + hash
 
         /* 5. Guarde el registro mediante el método create */
-        let user = await Users.create({ name: name, password: passwordHash })
+        let user = await models.users.create({ name: name, password: passwordHash })
 
         /* 6. Redireccione a la ruta con la vista principal '/users' */
         res.redirect('/users')
@@ -469,19 +473,15 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### UsersRoles.create
 
-* Complete el proceso de la creación de usuario en el enrutador _security/routes/users.js_, con:
+* Edite el enrutador _'security/routes/users.js'_ para completar el proceso de creación de usuario con un rol, con:
 
-    + Importe el modelo **user_roles** e instancie **UsersRoles**
-    + Establezca la relación entre Users (con el id del usuario en **user.iduser**) y Roles (el id del rol en **idrole**) mediante el método create. 
+    + Con el modelo **user_roles**, establezca la relación entre Users (con el id del usuario en **user.iduser**) y Roles (el id del rol en **idrole**) mediante el método create. 
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="javascript"><code>
         ...
-        /* 1. Modelos y Operadores */
-        ...
-        const UsersRoles = require('../models').users_roles;
-
+        
         /* POST user. */
         router.post('/', async (req, res) => {
 
@@ -492,7 +492,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
                 ...
                 let user = ...
 
-                await UsersRoles.create({ users_iduser: user.iduser, roles_idrole: idrole })
+                await models.users_roles.create({ users_iduser: user.iduser, roles_idrole: idrole })
 
                 /* 5. Redireccione a la vista principal */
                 ...
@@ -510,7 +510,8 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### Roles.findOne
 
-* [findOne](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findone)
+* Edite el enrutador _'security/routes/users.js'_ para listar los usuarios con su rol, con:
+    + [findOne](https://sequelize.org/docs/v6/core-concepts/model-querying-finders/#findone)
 
 #### Users.update
 
