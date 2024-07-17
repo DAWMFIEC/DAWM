@@ -258,8 +258,8 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/crud_get_findAll.png">
     </div>
 
-6. (STOP 3) Versiona local y remotamente el repositorio **security**.
-7. Descargue y complete el diagrama de secuencia para completar un requerimiento GET exitoso.
+6. Versiona local y remotamente el repositorio **security**.
+7. (STOP 3) Descargue y complete el diagrama de secuencia para completar un requerimiento GET exitoso.
 
     [Diagrama de secuencia](recursos/diagrama_guia18.pdf)
 
@@ -471,8 +471,8 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       <img src="imagenes/crud_post_create.png" width="70%">
     </div>
 
-4. (STOP 5) Versiona local y remotamente el repositorio **security**.
-5. Descargue y complete el diagrama de secuencia para completar un requerimiento POST exitoso.
+4. Versiona local y remotamente el repositorio **security**.
+5. (STOP 5) Descargue y complete el diagrama de secuencia para completar un requerimiento POST exitoso.
 
     [Diagrama de secuencia](recursos/diagrama_guia18.pdf)
 
