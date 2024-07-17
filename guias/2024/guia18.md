@@ -259,6 +259,9 @@ theme: jekyll-theme-leap-day
     </div>
 
 6. (STOP 3) Versiona local y remotamente el repositorio **security**.
+7. Descargue y complete el diagrama de secuencia para completar un requerimiento GET exitoso.
+
+    [Diagrama de secuencia](recursos/diagrama_guia18.pdf)
 
 ### Actividad en grupo - Roles.findAll
 
@@ -469,6 +472,9 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     </div>
 
 4. (STOP 5) Versiona local y remotamente el repositorio **security**.
+5. Descargue y complete el diagrama de secuencia para completar un requerimiento POST exitoso.
+
+    [Diagrama de secuencia](recursos/diagrama_guia18.pdf)
 
 ### Actividad en grupo - CRUD
 
