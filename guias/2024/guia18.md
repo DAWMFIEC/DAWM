@@ -69,6 +69,15 @@ theme: jekyll-theme-leap-day
     npm i -g mysql2 express-generator express-cli
     ```
 
+2. Compruebe el funcionamiento de los comandos, con:
+
+    ```command
+    express --help
+    sequelize-cli --help
+    ```
+
+    **NOTA:** En caso de no obtener una respuesta de los comandos, consulte la sección de errores [**No se reconoce como comando**](https://dawmfiec.github.io/DAWM/paginas/errores.html#no-se-reconoce-como-comando).
+ 
 #### Express - Proyecto Base
 
 1. Dentro de la carpeta _security_, mediante la línea de comandos: 
