@@ -35,6 +35,7 @@ theme: jekyll-theme-leap-day
 
 1. Descargue el archivo [security](recursos/security.sql).
 2. Acceda a MySQL Workbench y ejecute el script.
+3. Obtenga el diagrama entidad-relación de la base en la opción: **Database** > **Reverse engineer**
 
 
     <div align="center">
