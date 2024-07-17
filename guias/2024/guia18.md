@@ -578,7 +578,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 2. Edite la vista _'security/views/crud.ejs'_, con:
 
-    + .
+    + Muestre el nombre del rol: **user.users_roles.roles_idrole_role.name**.
 
     ```html
     ...
@@ -598,7 +598,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
 
     <div align="center">
-      <img src="imagenes/crud_get_findAll.png">
+      <img src="imagenes/crud_get_final.jpg">
     </div>
 
 6. (STOP 7) Versiona local y remotamente el repositorio **security**.
