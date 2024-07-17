@@ -36,6 +36,12 @@ theme: jekyll-theme-leap-day
 1. Descargue el archivo [security](recursos/security.sql).
 2. Acceda a MySQL Workbench y ejecute el script.
 
+
+    <div align="center">
+      <img src="imagenes/reverse_engineer.png">
+    </div>
+
+
 #### CRUD UI
 
 1. Descargue el archivo [template_crud](recursos/template_crud.zip).
@@ -234,7 +240,13 @@ theme: jekyll-theme-leap-day
             </td>
             <td><%= user.iduser %></td>
             <td><%= user.name %></td>
-            <td></td>
+            <td>
+                <!-- 
+                    Dato relacionado
+
+                    users->users_roles->roles.name
+                 -->
+            </td>
             <td>
                 <a href="#editEmployeeModal" class="edit"
                     data-toggle="modal"><i
@@ -526,6 +538,78 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     ```
 
 3. (STOP 5) Versiona local y remotamente el repositorio **security**.
+
+#### Sequelize - Eager Loading
+
+1. Edite el enrutador _'security/routes/users.js'_: 
+
+    + [Eager Loading](https://sequelize.org/docs/v6/advanced-association-concepts/eager-loading/): Incluya los objetos relacionados del modelo **users_roles** (con el alias _'users_roles'_). A su vez, por cada objeto, incluya los objetos del modelo **roles** (con el alias _'roles_idrole_role'_),
+    + [Raw Queries](https://sequelize.org/docs/v6/core-concepts/raw-queries/): Configure que la respuesta solo contenga datos (_raw: true_) y el acceso sea anidado (_nest: true_).
+    
+    ```typescript
+    ...
+
+    
+    router.get('/', async function(req, res, next) {
+
+      /* 3. Uso del método findAll */
+      let usersCollection = await models.users.findAll({ 
+
+
+        include: [
+          {
+            model: models.users_roles,
+            as: 'users_roles',
+            include: [
+              {
+                model: models.roles,
+                as: 'roles_idrole_role',
+              }
+            ]
+          }
+        ],
+        raw: true,
+        nest: true,
+
+        
+        })
+
+      ...
+
+      res.render( ... );
+
+    });
+
+    module.exports = router;
+    ...
+    ```
+
+2. Edite la vista _'security/views/crud.ejs'_, con:
+
+    + .
+
+    ```html
+    ...
+    <td>
+        
+        <!-- 
+            Dato relacionado
+
+            users->users_roles->roles.name
+         -->
+
+        <%= user.users_roles.roles_idrole_role.name %>
+     </td>
+    ...
+    ```
+
+5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
+
+    <div align="center">
+      <img src="imagenes/crud_get_findAll.png">
+    </div>
+
+6. Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 
