@@ -476,7 +476,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### UsersRoles.create
 
-* Edite el enrutador _'security/routes/users.js'_ para completar el proceso de creación de usuario con un rol, con:
+1. Edite el enrutador _'security/routes/users.js'_ para completar el proceso de creación de usuario con un rol, con:
 
     + Con el modelo **user_roles**, establezca la relación entre Users (con el id del usuario en **user.iduser**) y Roles (el id del rol en **idrole**) mediante el método create. 
 
@@ -511,6 +511,15 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       </code></pre>
     </details>
 
+2. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
+    
+    ```text
+    Name: user
+    Password: user
+    Role: user
+    ```
+
+3. (STOP 5) Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 
