@@ -188,7 +188,8 @@ theme: jekyll-theme-leap-day
     + Configuración de conexión (en _'models/index.js'_),
     + Estructura de [modelos](https://sequelize.org/docs/v6/core-concepts/model-basics/) (de _'models/init-models'_),
     + Carga los modelos de acuerdo con la configuración de la conexión,
-    + Uso del método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
+    + Cargar la colección de usuarios mediante el método [findAll](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#simple-select-queries).
+    + Pasar la colección de usuarios a la vista.
     
     ```typescript
     ...
@@ -274,97 +275,6 @@ theme: jekyll-theme-leap-day
 7. (STOP 3) Descargue y complete el diagrama de secuencia para completar un requerimiento GET exitoso.
 
     [Diagrama de secuencia](recursos/diagrama_guia18.pdf)
-
-### Actividad en grupo - Roles.findAll
-
-En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
-
-1. Edite el enrutador _'security/routes/users.js'_: 
-    
-    ```typescript
-    ...
-
-    /* 1. Cargue los modelos de acuerdo con la configuración de la conexión */
-    const sequelize = require('../models/index.js').sequelize;
-    var initModels = require("../models/init-models");
-    var models = initModels( sequelize );  
-
-    /* GET users listing. */
-    /* 2. Convierta el callback en asíncrono */
-    router.get('/', async function(req, res, next) {
-
-      /* 3. Uso del método findAll */
-      let usersCollection = await models.users.findAll({ })
-      let rolesCollection = /* Recupere de todos los registros mediante la instancia Roles. */
-
-      /* 4. Paso de parámetros a la vista */
-      res.render('crud', { title: 'CRUD of users', usersArray: usersCollection, rolesArray: /* Colección de roles */   });
-
-    });
-
-    module.exports = router;
-    ...
-    ```
-
-    <details>
-      <summary><div>Haga click aquí para ver la solución</div></summary>
-      <pre lang="typescript"><code>
-        ...
-         /* 1. Instanciación del modelo */
-        const sequelize = require('../models/index.js').sequelize;
-        var initModels = require("../models/init-models");
-        var models = initModels( sequelize );
-
-        /* GET users listing. */
-        /* 2. Convierta el callback en asíncrono */
-        router.get('/', async function(req, res, next) {
-          
-          /* 3. Uso del método findAll */
-          let usersCollection = await models.users.findAll({ })
-          let rolesCollection = await models.roles.findAll({ })
-
-          /* 4. Paso de parámetros a la vista */
-          res.render('crud', { title: 'CRUD of users', usersArray: usersCollection, rolesArray: rolesCollection   });
-
-        });
-      </code></pre>
-    </details>
-
-2. Edite la vista _'security/views/crud.ejs'_, con: 
-    
-    Por cada elemento (**role**) en el arreglo roles:
-    + Renderice en un elemento **&lt;option&gt;**, cuyo atributo _value_ sea **role.idrole**, y el texto del elemento sea **role.name**.
-
-    ```html
-    ...
-    <!-- 6. Arreglo de roles -->
-    <select name="idrole" class="form-control">
-        <option value="null" selected disabled
-            class="form-control">Select an item</option>
-
-    </select>
-    ```
-
-    <details>
-      <summary><div>Haga click aquí para ver la solución</div></summary>
-      <pre lang="html"><code>
-          &lt;!-- 6. Arreglo de roles --&gt;
-          &lt;select name="idrole" class="form-control"&gt;
-              &lt;option value="null" selected disabled
-                  class="form-control"&gt;Select an
-                  item&lt;/option&gt;
-              &lt;% rolesArray.forEach( role =&gt; { %&gt; 
-                  &lt;option 
-                  value="&lt;%=role.idrole%&gt;"
-                  class="form-control"&gt;&lt;%=role.name%&gt;&lt;/option&gt;
-              &lt;% }) %&gt; 
-          &lt;/select&gt;
-      </code></pre>
-    </details>
-
-3. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
-4. (STOP 4) Versiona local y remotamente el repositorio **security**.
-
 
 #### SALT
 
@@ -476,7 +386,6 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     ```text
     Name: admin
     Password: admin
-    Role: admin
     ```
 
     <div align="center">
@@ -484,19 +393,103 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     </div>
 
 4. Versiona local y remotamente el repositorio **security**.
-5. (STOP 5) Descargue y complete el diagrama de secuencia para completar un requerimiento POST exitoso.
+5. (STOP 4) Descargue y complete el diagrama de secuencia para completar un requerimiento POST exitoso.
 
     [Diagrama de secuencia](recursos/diagrama_guia18.pdf)
 
-### Actividad en grupo - CRUD
+### Actividad en grupo
 
 En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
 
+#### Roles.findAll
+
+1. Edite el enrutador _'security/routes/users.js'_, con:
+    
+    + Cargar la colección de roles mediante el método findAll
+    + Pasar la colección de roles a la vista.
+    
+    ```typescript
+    ...
+
+    router.get('/', async function(req, res, next) {
+
+      /* 3. Uso del método findAll */
+      ...
+      let rolesCollection = /* Recupere de todos los registros mediante la instancia Roles. */
+
+      /* 4. Paso de parámetros a la vista */
+      res.render('crud', { ... rolesArray: /* Colección de roles */   });
+
+    });
+
+    module.exports = router;
+    ...
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="typescript"><code>
+        ...
+         /* 1. Instanciación del modelo */
+        const sequelize = require('../models/index.js').sequelize;
+        var initModels = require("../models/init-models");
+        var models = initModels( sequelize );
+
+        /* GET users listing. */
+        /* 2. Convierta el callback en asíncrono */
+        router.get('/', async function(req, res, next) {
+          
+          /* 3. Uso del método findAll */
+          let usersCollection = await models.users.findAll({ })
+          let rolesCollection = await models.roles.findAll({ })
+
+          /* 4. Paso de parámetros a la vista */
+          res.render('crud', { title: 'CRUD of users', usersArray: usersCollection, rolesArray: rolesCollection   });
+
+        });
+      </code></pre>
+    </details>
+
+2. Edite la vista _'security/views/crud.ejs'_, con: 
+    
+    + Por cada elemento (_role_) en el arreglo rolesArray:
+        - Renderice una etiqueta **&lt;option&gt;**, cuyo atributo _value_ sea **role.idrole**, y el texto del elemento sea **role.name**.
+
+    ```html
+    ...
+    <!-- 6. Arreglo de roles -->
+    <select name="idrole" class="form-control">
+        <option value="null" selected disabled
+            class="form-control">Select an item</option>
+
+    </select>
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="html"><code>
+          &lt;!-- 6. Arreglo de roles --&gt;
+          &lt;select name="idrole" class="form-control"&gt;
+              &lt;option value="null" selected disabled
+                  class="form-control"&gt;Select an
+                  item&lt;/option&gt;
+              &lt;% rolesArray.forEach( role =&gt; { %&gt; 
+                  &lt;option 
+                  value="&lt;%=role.idrole%&gt;"
+                  class="form-control"&gt;&lt;%=role.name%&gt;&lt;/option&gt;
+              &lt;% }) %&gt; 
+          &lt;/select&gt;
+      </code></pre>
+    </details>
+
+3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y verifique que se muestren los roles.
+4. (STOP 5) Versiona local y remotamente el repositorio **security**.
+
 #### UsersRoles.create
 
-1. Edite el enrutador _'security/routes/users.js'_ para completar el proceso de creación de usuario con un rol, con:
+1. Edite el enrutador _'security/routes/users.js'_, con:
 
-    + Con el modelo **user_roles**, establezca la relación entre Users (con el id del usuario en **user.iduser**) y Roles (el id del rol en **idrole**) mediante el método create. 
+    + Utilice el modelo **user_roles** para crear la relación **user.iduser** (id del usuario) y **idrole** (id del rol). 
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
@@ -537,7 +530,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     Role: user
     ```
 
-3. (STOP 5) Versiona local y remotamente el repositorio **security**.
+3. (STOP 6) Versiona local y remotamente el repositorio **security**.
 
 #### Sequelize - Eager Loading
 
@@ -609,7 +602,7 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       <img src="imagenes/crud_get_findAll.png">
     </div>
 
-6. Versiona local y remotamente el repositorio **security**.
+6. (STOP 7) Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 
