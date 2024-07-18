@@ -281,10 +281,11 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/crud_get_findAll.png">
     </div>
 
-6. Versiona local y remotamente el repositorio **security**.
-7. (STOP 3) Descargue y complete el diagrama de secuencia para completar un requerimiento GET exitoso.
+6. (STOP 3) Versiona local y remotamente el repositorio **security**.
 
-    [Diagrama de secuencia](recursos/diagrama_guia18.pdf)
+### Actividad en grupo
+
+En grupos de tres (3) personas, completen el [diagrama de secuencia](recursos/diagrama_guia18.pdf) de un requerimiento GET exitoso.
 
 
 ### Documentación
