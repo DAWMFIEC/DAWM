@@ -31,11 +31,38 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### Módulos globales 
+
+1. Instale los módulos mysql2, express-generator, express-cli, sequelize, sequelize-cli y sequelize-auto de manera global. 
+
+    ```command
+    npm i -g mysql2 express-generator express-cli sequelize sequelize-cli sequelize-auto
+    ```
+
+2. Compruebe el funcionamiento de los comandos, con:
+
+    ```command
+    express --help
+    sequelize-cli --help
+    sequelize-auto --help
+    ```
+
+    **NOTA:** En caso de no obtener una respuesta de los comandos, consulte la sección de errores [**No se reconoce como comando**](https://dawmfiec.github.io/DAWM/paginas/errores.html#no-se-reconoce-como-comando).
+
 ### Actividades en clases
+
+#### Security
+
+1. Clone localmente tu repositorio **security**.
+2. Desde la línea de comandos, inicie el servidor:
+
+    ```command
+    npm run autostart
+    ```
 
 #### SALT
 
-1. Desde otra línea de comandos, acceda a la interfaz de NodeJS, con:
+1. Desde la línea de comandos, acceda a la interfaz de NodeJS, con:
   
     ```typescript
     node
@@ -149,16 +176,19 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/crud_post_create.png" width="70%">
     </div>
 
-4. Versiona local y remotamente el repositorio **security**.
-5. (STOP 4) Descargue y complete el diagrama de secuencia para completar un requerimiento POST exitoso.
-
-    [Diagrama de secuencia](recursos/diagrama_guia18.pdf)
+4. (STOP 4) Versiona local y remotamente el repositorio **security**.
 
 ### Actividad en grupo
 
-En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+En grupos de tres (3) personas:
+
+#### Diagrama de secuencia
+
+* Completen el [diagrama de secuencia](recursos/diagrama_guia19.pdf) de un requerimiento POST exitoso.
 
 #### Roles.findAll
+
+Completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
 
 1. Edite el enrutador _'security/routes/users.js'_, con:
     
@@ -240,19 +270,20 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     </details>
 
 3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y verifique que se muestren los roles.
+
 4. (STOP 5) Versiona local y remotamente el repositorio **security**.
 
 #### UsersRoles.create
+
+Completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
 
 1. Edite el enrutador _'security/routes/users.js'_, con:
 
     + Utilice el modelo **user_roles** para crear la relación **user.iduser** (id del usuario) y **idrole** (id del rol). 
 
-    <details>
-      <summary><div>Haga click aquí para ver la solución</div></summary>
-      <pre lang="javascript"><code>
+        ```typescript
         ...
-        
+
         /* POST user. */
         router.post('/', async (req, res) => {
 
@@ -263,7 +294,9 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
                 ...
                 let user = ...
 
-                await models.users_roles.create({ users_iduser: user.iduser, roles_idrole: idrole })
+                /* model.user_roles crea la relación ( user.iduser , idrole) */
+
+
 
                 /* 6. Redireccione a la ruta con la vista principal '/users' */
                 ...
@@ -276,8 +309,39 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
         })
 
         module.exports = router;
-      </code></pre>
-    </details>
+        ```
+
+        <details>
+          <summary><div>Haga click aquí para ver la solución</div></summary>
+          <pre lang="javascript"><code>
+            ...
+            
+            /* POST user. */
+            router.post('/', async (req, res) => {
+
+                ...
+
+                try {
+
+                    ...
+                    let user = ...
+
+                    /* model.user_roles crea la relación ( user.iduser , idrole) */
+                    await models.users_roles.create({ users_iduser: user.iduser, roles_idrole: idrole })
+
+                    /* 6. Redireccione a la ruta con la vista principal '/users' */
+                    ...
+
+                } catch (error) {
+
+                    res.status(400).send(error)
+
+                }
+            })
+
+            module.exports = router;
+          </code></pre>
+        </details>
 
 2. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
     
@@ -291,6 +355,8 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
 
 #### Sequelize - Eager Loading
 
+Completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+
 1. Edite el enrutador _'security/routes/users.js'_: 
 
     + [Eager Loading](https://sequelize.org/docs/v6/advanced-association-concepts/eager-loading/): Incluya los objetos relacionados del modelo **users_roles** (con el alias _'users_roles'_). A su vez, por cada objeto, incluya los objetos del modelo **roles** (con el alias _'roles_idrole_role'_),
@@ -299,28 +365,15 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     ```typescript
     ...
 
-    
     router.get('/', async function(req, res, next) {
 
       /* 3. Uso del método findAll */
       let usersCollection = await models.users.findAll({ 
 
+        /* Eager Loading */
 
-        include: [
-          {
-            model: models.users_roles,
-            as: 'users_roles',
-            include: [
-              {
-                model: models.roles,
-                as: 'roles_idrole_role',
-              }
-            ]
-          }
-        ],
-        raw: true,
-        nest: true,
-
+        /* Raw Queries */
+        
         
         })
 
@@ -333,6 +386,47 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
     module.exports = router;
     ...
     ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+        ...
+        
+        router.get('/', async function(req, res, next) {
+
+          /* 3. Uso del método findAll */
+          let usersCollection = await models.users.findAll({ 
+
+            /* Eager Loading */
+            include: [
+              {
+                model: models.users_roles,
+                as: 'users_roles',
+                include: [
+                  {
+                    model: models.roles,
+                    as: 'roles_idrole_role',
+                  }
+                ]
+              }
+            ],
+            
+            /* Raw Queries */
+            raw: true,
+            nest: true,
+            
+            
+            })
+
+          ...
+
+          res.render( ... );
+
+        });
+
+        module.exports = router;
+      </code></pre>
+    </details>
 
 2. Edite la vista _'security/views/crud.ejs'_, con:
 
