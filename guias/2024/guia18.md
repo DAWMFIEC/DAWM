@@ -287,7 +287,6 @@ theme: jekyll-theme-leap-day
 
 En grupos de tres (3) personas, completen el [diagrama de secuencia](recursos/diagrama_guia18.pdf) de un requerimiento GET exitoso.
 
-
 ### Documentación
 
 * Documentación de [Express](https://expressjs.com/) y [Sequelize](https://sequelize.org/docs/v6/getting-started/).
