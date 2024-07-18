@@ -52,15 +52,6 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/crud_base.png">
     </div>
 
-### Actividades en clases
-
-#### Github
-
-1. Cree un repositorio en GitHub con el nombre **security**.
-2. Asegúrese de marcar la opción **Add .gitignore** y seleccione la opción **Node**.
-3. Clone y acceda a la carpeta en el directorio local.
-
-
 #### Módulos globales 
 
 1. Instale los módulos [**mysql2**](## "conector para MySQL"), express-generator, express-cli, sequelize, sequelize-cli y sequelize-auto de manera global. 
@@ -78,7 +69,16 @@ theme: jekyll-theme-leap-day
     ```
 
     **NOTA:** En caso de no obtener una respuesta de los comandos, consulte la sección de errores [**No se reconoce como comando**](https://dawmfiec.github.io/DAWM/paginas/errores.html#no-se-reconoce-como-comando).
- 
+
+### Actividades en clases
+
+#### Github
+
+1. Cree un repositorio en GitHub con el nombre **security**.
+2. Asegúrese de marcar la opción **Add .gitignore** y seleccione la opción **Node**.
+3. Clone y acceda a la carpeta en el directorio local.
+
+
 #### Express - Proyecto Base
 
 1. Dentro de la carpeta _security_, mediante la línea de comandos: 
