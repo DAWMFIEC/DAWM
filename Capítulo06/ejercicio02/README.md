@@ -1,4 +1,4 @@
-# Ejercicio 01
+# Ejercicio 02
 
 <p align="center">  
   <img width="60%" src="imagenes/ejercicio01.png">
