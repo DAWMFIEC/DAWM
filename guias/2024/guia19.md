@@ -294,7 +294,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
                 ...
                 let user = ...
 
-                /* model.user_roles crea la relación ( user.iduser , idrole) */
+                /* Utilice el model.user_roles para crear la relación ( user.iduser , idrole) */
 
 
 
@@ -426,7 +426,6 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
         ```html
         ...
         <td>
-            Muestre el nombre del rol: **user.users_roles.roles_idrole_role.name**.
             <!-- 
                 Dato relacionado
 
@@ -440,7 +439,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
           <pre lang="javascript"><code>
 
             ...
-            
+
             &lt;td&gt;
 
                 &lt;!-- 
