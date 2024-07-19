@@ -359,15 +359,9 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
 1. Edite el enrutador _'security/routes/users.js'_, con: 
 
-    Revise la documentación de [Fetching an Aliased association](https://sequelize.org/docs/v6/advanced-association-concepts/eager-loading/#fetching-an-aliased-association).
+    + Incluya todos los modelos asociados con el modelo **users** y sus asociaciones anidadas (recursivamente). Revise [Including everything](https://sequelize.org/docs/v6/advanced-association-concepts/eager-loading/#including-everything)
 
-    + Para el modelo **models.users**: Incluya el modelo **models.users_roles** con el alias _'users_roles'_.
-    + Para el modelo **models.users_roles**: Incluya el modelo **models.roles** con el alias _'roles_idrole_role'_.
-        
-    [Raw Queries](https://sequelize.org/docs/v6/core-concepts/raw-queries/)
-
-    + Agregue la clave _raw_ para que la respuesta solo contenga datos (_raw: true_).
-    + Agregue la clave _nest_ para habilitar el acceso anidado (_nest: true_).
+    + Agregue la clave _raw_ para que la respuesta solo contenga datos (_raw: true_) y la clave _nest_ para habilitar el acceso anidado (_nest: true_). Revise [Raw Queries](https://sequelize.org/docs/v6/core-concepts/raw-queries/)
     
     ```typescript
     ...
@@ -377,7 +371,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
       /* 3. Uso del método findAll */
       let usersCollection = await models.users.findAll({ 
 
-        /* Fetching an Aliased association */
+        /* Including everything */
 
 
         /* Raw Queries */
@@ -405,19 +399,8 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
           /* 3. Uso del método findAll */
           let usersCollection = await models.users.findAll({ 
 
-            /* Fetching an Aliased association */
-            include: [
-              {
-                model: models.users_roles,
-                as: 'users_roles',
-                include: [
-                  {
-                    model: models.roles,
-                    as: 'roles_idrole_role',
-                  }
-                ]
-              }
-            ],
+            /* Including everything */
+            include: { all: true, nested: true }
             
             /* Raw Queries */
             raw: true,
@@ -438,22 +421,40 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
 2. Edite la vista _'security/views/crud.ejs'_, con:
 
-    + Muestre el nombre del rol: **user.users_roles.roles_idrole_role.name**.
+    + Muestre el nombre del rol `user.users_roles.roles_idrole_role.name`
 
-    ```html
-    ...
-    <td>
-        
-        <!-- 
-            Dato relacionado
+        ```html
+        ...
+        <td>
+            Muestre el nombre del rol: **user.users_roles.roles_idrole_role.name**.
+            <!-- 
+                Dato relacionado
 
-            users->users_roles->roles.name
-         -->
+                users->users_roles->roles.name
+             -->
+         </td>
+        ...
+        ```
+        <details>
+          <summary><div>Haga click aquí para ver la solución</div></summary>
+          <pre lang="javascript"><code>
 
-        <%= user.users_roles.roles_idrole_role.name %>
-     </td>
-    ...
-    ```
+            ...
+            
+            &lt;td&gt;
+
+                &lt;!-- 
+                Dato relacionado
+
+                users-&gt;users_roles-&gt;roles.name
+                --&gt;
+
+                &lt;%= user.users_roles.roles_idrole_role.name %&gt;
+
+            &lt;/td&gt;
+
+          </code></pre>
+        </details>
 
 5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
 
