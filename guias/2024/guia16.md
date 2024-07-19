@@ -28,7 +28,7 @@ theme: jekyll-theme-leap-day
     margin: 0 25%;
   }
 
-  h4 {
+  h4.inner {
     margin-top: 5%;
     text-decoration: underline;
     color: black;
@@ -314,17 +314,17 @@ En grupos de tres (3) personas, completen las siguientes tareas. Pueden utilizar
       <summary><div>Haga click aquí para ver la solución</div></summary>
 
       <p>
-        <h4>POST</h4>
+        <h4 class="inner">POST</h4>
         <img src="imagenes/postman_post_data.png" class="">
       </p>
 
       <p>
-        <h4>PUT</h4>
+        <h4 class="inner">PUT</h4>
         <img src="imagenes/postman_put_data.png" class="">
       </p>
 
       <p>
-        <h4>DELETE</h4>
+        <h4 class="inner">DELETE</h4>
         <img src="imagenes/postman_delete_data.png" class="">
       </p>
 
