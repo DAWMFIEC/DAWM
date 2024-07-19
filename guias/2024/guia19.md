@@ -51,7 +51,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Security
+#### Github
 
 1. Clone localmente tu repositorio **security**.
 2. Desde la línea de comandos, inicie el servidor:
@@ -192,8 +192,8 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
 1. Edite el enrutador _'security/routes/users.js'_, con:
     
-    + Cargar la colección de roles mediante el método findAll
-    + Pasar la colección de roles a la vista.
+    + La colección de roles mediante el método findAll
+    + Pase la colección de roles a la vista.
     
     ```typescript
     ...
@@ -357,10 +357,17 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
 Completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
 
-1. Edite el enrutador _'security/routes/users.js'_: 
+1. Edite el enrutador _'security/routes/users.js'_, con: 
 
-    + [Eager Loading](https://sequelize.org/docs/v6/advanced-association-concepts/eager-loading/): Incluya los objetos relacionados del modelo **users_roles** (con el alias _'users_roles'_). A su vez, por cada objeto, incluya los objetos del modelo **roles** (con el alias _'roles_idrole_role'_),
-    + [Raw Queries](https://sequelize.org/docs/v6/core-concepts/raw-queries/): Configure que la respuesta solo contenga datos (_raw: true_) y el acceso sea anidado (_nest: true_).
+    Revise la documentación de [Fetching an Aliased association](https://sequelize.org/docs/v6/advanced-association-concepts/eager-loading/#fetching-an-aliased-association).
+
+    + Para el modelo **models.users**: Incluya el modelo **models.users_roles** con el alias _'users_roles'_.
+    + Para el modelo **models.users_roles**: Incluya el modelo **models.roles** con el alias _'roles_idrole_role'_.
+        
+    [Raw Queries](https://sequelize.org/docs/v6/core-concepts/raw-queries/)
+
+    + Agregue la clave _raw_ para que la respuesta solo contenga datos (_raw: true_).
+    + Agregue la clave _nest_ para habilitar el acceso anidado (_nest: true_).
     
     ```typescript
     ...
@@ -370,7 +377,8 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
       /* 3. Uso del método findAll */
       let usersCollection = await models.users.findAll({ 
 
-        /* Eager Loading */
+        /* Fetching an Aliased association */
+
 
         /* Raw Queries */
         
@@ -397,7 +405,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
           /* 3. Uso del método findAll */
           let usersCollection = await models.users.findAll({ 
 
-            /* Eager Loading */
+            /* Fetching an Aliased association */
             include: [
               {
                 model: models.users_roles,
