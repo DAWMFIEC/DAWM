@@ -68,6 +68,38 @@ theme: jekyll-theme-leap-day
     npm run autostart
     ```
 
+#### Express - Partials
+
+1. Cree el archivo **_'security/views/partials/navbar.ejs'_**. Copie todo el contenido de _navbar.html_ dentro de _'security/views/partials/navbar.ejs'_.
+
+3. Edite la `vista` _'security/views/crud.ejs'_, con:
+
+    + Coloque la ruta a la carpeta con los archivos estáticos.
+
+    ```html
+    ...
+    <div class="container-xl">
+            
+            <!-- 1. Navbar -->
+            <%- include('partials/navbar.ejs') %>
+            
+
+            <div class="table-responsive">
+            ...
+            </div>
+    </div>
+    ...
+    ```
+
+5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
+    
+    <div align="center">
+      <img src="imagenes/crud_partials.png" width="70%">
+    </div>
+
+6. (STOP 1) Versiona local y remotamente el repositorio **security**.
+
+
 #### SALT
 
 1. Desde la línea de comandos, acceda a la interfaz de NodeJS, con:
@@ -184,7 +216,7 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/crud_post_create.png" width="70%">
     </div>
 
-4. (STOP 4) Versiona local y remotamente el repositorio **security**.
+4. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
 ### Actividad en grupo
 
@@ -279,7 +311,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
 3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y verifique que se muestren los roles.
 
-4. (STOP 5) Versiona local y remotamente el repositorio **security**.
+4. (STOP 3) Versiona local y remotamente el repositorio **security**.
 
 #### UsersRoles.create
 
@@ -359,7 +391,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
     Role: user
     ```
 
-3. (STOP 6) Versiona local y remotamente el repositorio **security**.
+3. (STOP 4) Versiona local y remotamente el repositorio **security**.
 
 #### Sequelize - Eager Loading
 
@@ -469,7 +501,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
       <img src="imagenes/crud_get_final.jpg">
     </div>
 
-6. (STOP 7) Versiona local y remotamente el repositorio **security**.
+6. (STOP 5) Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 
