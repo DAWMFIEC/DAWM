@@ -29,6 +29,6 @@ La respuesta es:
 * [Guía 16: REST API (Datos) - Swagger y Postman](/DAWM/guias/2024/guia16)
 * [Guía 17: REST API (Datos) - Despliegue con Render](/DAWM/guias/2024/guia17)
 * [Guía 18: REST API (Seguridad) - Views y ORM - I](/DAWM/guias/2024/guia18)
-* [Guía 19: REST API (Seguridad) - Views y ORM - II](/DAWM/guias/2024/guia19)
+* [Guía 19: REST API (Seguridad) - Partials y ORM - II](/DAWM/guias/2024/guia19)
 * [Guía 20: REST API (Seguridad) - JWT y Token](/DAWM/guias/2024/guia20)
 * [Guía 21: REST API (Datos y Seguridad) - Despliegue en Railway e Integración](/DAWM/guias/2024/guia21)
