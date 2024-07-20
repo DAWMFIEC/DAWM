@@ -31,6 +31,14 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### Navbar UI
+
+1. Descargue el archivo [template_navbar](recursos/template_navbar.zip). Fuente: [Tutorial Republic - Snippets](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=all-in-one-navbar)
+
+    <div align="center">
+      <img src="imagenes/navbar_base.png">
+    </div>
+
 #### Módulos globales 
 
 1. Instale los módulos mysql2, express-generator, express-cli, sequelize, sequelize-cli y sequelize-auto de manera global. 
