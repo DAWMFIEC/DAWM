@@ -461,17 +461,13 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
 2. Edite la vista _'security/views/crud.ejs'_, con:
 
-    + Muestre el nombre del rol `user.users_roles.roles_idrole_role.name`
+    + Acceda a los objetos y la relación: **users->users_roles->(alias de la relación)->roles.name**
 
     ```html
     ...
     <td>
-        <!-- 
-            Dato relacionado
-
-            users->users_roles->roles.name
-         -->
-     </td>
+        <!-- Muestre users->users_roles->(alias de la relación)->roles.name -->
+    </td>
     ...
     ```
     <details>
@@ -482,11 +478,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
         &lt;td&gt;
 
-            &lt;!-- 
-            Dato relacionado
-
-            users-&gt;users_roles-&gt;roles.name
-            --&gt;
+            &lt;!-- Muestre users->users_roles->(alias de la relación)->roles.name --&gt;
 
             &lt;%= user.users_roles.roles_idrole_role.name %&gt;
 
