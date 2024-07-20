@@ -31,6 +31,14 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### Login UI
+
+1. Descargue el archivo [template_login](recursos/template_login.zip). Fuente: [Tutorial Republic - Snippets](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=simple-login-form)
+
+    <div align="center">
+      <img src="imagenes/login_base.jpg">
+    </div>
+
 ### Actividades en clases
 
 ### Documentación
