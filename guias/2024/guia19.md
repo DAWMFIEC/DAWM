@@ -143,8 +143,9 @@ theme: jekyll-theme-leap-day
 
 1. Edite el enrutador _'security/routes/users.js'_, con:
 
-    + El callback para los requerimientos del método **POST**.
-    + Encripte la contraseña con la variable **SALT**.
+    + Importe el módulo **crypto**,
+    + El callback para los requerimientos del método **POST**,
+    + Encripte la contraseña con la variable **SALT**, y 
     + Utilice el método [create](https://sequelize.org/docs/v6/core-concepts/model-instances/#a-very-useful-shortcut-the-create-method).
      
 
