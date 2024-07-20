@@ -335,7 +335,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
             ...
             let user = ...
 
-            /* Utilice el model.user_roles para crear la relación ( user.iduser , idrole) */
+            /* 5.1. Utilice el model.user_roles para crear la relación ( user.iduser , idrole) */
 
 
 
@@ -367,7 +367,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
                 ...
                 let user = ...
 
-                /* model.user_roles crea la relación ( user.iduser , idrole) */
+                /* 5.1. Utilice el model.user_roles para crear la relación ( user.iduser , idrole) */
                 await models.users_roles.create({ users_iduser: user.iduser, roles_idrole: idrole })
 
                 /* 6. Redireccione a la ruta con la vista principal '/users' */
@@ -412,10 +412,10 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
       /* 3. Uso del método findAll */
       let usersCollection = await models.users.findAll({ 
 
-        /* Including everything */
+        /* 3.1. Including everything */
 
 
-        /* Raw Queries */
+        /* 3.2. Raw Queries */
         
         
         })
@@ -440,10 +440,10 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
           /* 3. Uso del método findAll */
           let usersCollection = await models.users.findAll({ 
 
-            /* Including everything */
+            /* 3.1. Including everything */
             include: { all: true, nested: true }
             
-            /* Raw Queries */
+            /* 3.2. Raw Queries */
             raw: true,
             nest: true,
             
@@ -467,7 +467,11 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
     ```html
     ...
     <td>
-        <!-- Muestre users->users_roles->(alias de la relación)->roles.name -->
+        <!-- 
+            Dato relacionado
+
+            users->users_roles->roles.name
+        -->
     </td>
     ...
     ```
@@ -479,7 +483,11 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
         &lt;td&gt;
 
-            &lt;!-- Muestre users->users_roles->(alias de la relación)->roles.name --&gt;
+            &lt;!-- 
+                Dato relacionado
+
+                users->users_roles->roles.name
+            --&gt;
 
             &lt;%= user.users_roles.roles_idrole_role.name %&gt;
 
