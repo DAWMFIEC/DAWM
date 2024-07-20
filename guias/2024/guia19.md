@@ -281,9 +281,41 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
     + Utilice el modelo **user_roles** para crear la relación **user.iduser** (id del usuario) y **idrole** (id del rol). 
 
-        ```typescript
+    ```typescript
+    ...
+
+    /* POST user. */
+    router.post('/', async (req, res) => {
+
         ...
 
+        try {
+
+            ...
+            let user = ...
+
+            /* Utilice el model.user_roles para crear la relación ( user.iduser , idrole) */
+
+
+
+            /* 6. Redireccione a la ruta con la vista principal '/users' */
+            ...
+
+        } catch (error) {
+
+            res.status(400).send(error)
+
+        }
+    })
+
+    module.exports = router;
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+        ...
+        
         /* POST user. */
         router.post('/', async (req, res) => {
 
@@ -294,9 +326,8 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
                 ...
                 let user = ...
 
-                /* Utilice el model.user_roles para crear la relación ( user.iduser , idrole) */
-
-
+                /* model.user_roles crea la relación ( user.iduser , idrole) */
+                await models.users_roles.create({ users_iduser: user.iduser, roles_idrole: idrole })
 
                 /* 6. Redireccione a la ruta con la vista principal '/users' */
                 ...
@@ -309,39 +340,8 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
         })
 
         module.exports = router;
-        ```
-
-        <details>
-          <summary><div>Haga click aquí para ver la solución</div></summary>
-          <pre lang="javascript"><code>
-            ...
-            
-            /* POST user. */
-            router.post('/', async (req, res) => {
-
-                ...
-
-                try {
-
-                    ...
-                    let user = ...
-
-                    /* model.user_roles crea la relación ( user.iduser , idrole) */
-                    await models.users_roles.create({ users_iduser: user.iduser, roles_idrole: idrole })
-
-                    /* 6. Redireccione a la ruta con la vista principal '/users' */
-                    ...
-
-                } catch (error) {
-
-                    res.status(400).send(error)
-
-                }
-            })
-
-            module.exports = router;
-          </code></pre>
-        </details>
+      </code></pre>
+    </details>
 
 2. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
     
@@ -423,37 +423,37 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
     + Muestre el nombre del rol `user.users_roles.roles_idrole_role.name`
 
-        ```html
+    ```html
+    ...
+    <td>
+        <!-- 
+            Dato relacionado
+
+            users->users_roles->roles.name
+         -->
+     </td>
+    ...
+    ```
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+
         ...
-        <td>
-            <!-- 
-                Dato relacionado
 
-                users->users_roles->roles.name
-             -->
-         </td>
-        ...
-        ```
-        <details>
-          <summary><div>Haga click aquí para ver la solución</div></summary>
-          <pre lang="javascript"><code>
+        &lt;td&gt;
 
-            ...
+            &lt;!-- 
+            Dato relacionado
 
-            &lt;td&gt;
+            users-&gt;users_roles-&gt;roles.name
+            --&gt;
 
-                &lt;!-- 
-                Dato relacionado
+            &lt;%= user.users_roles.roles_idrole_role.name %&gt;
 
-                users-&gt;users_roles-&gt;roles.name
-                --&gt;
+        &lt;/td&gt;
 
-                &lt;%= user.users_roles.roles_idrole_role.name %&gt;
-
-            &lt;/td&gt;
-
-          </code></pre>
-        </details>
+      </code></pre>
+    </details>
 
 5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
 
@@ -468,10 +468,6 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 * Documentación de [Express](https://expressjs.com/) y [Sequelize](https://sequelize.org/docs/v6/getting-started/).
 
 ### Fundamental
-
-* Introduction to Sequelize: Simplifying Database Operations in Node.js en [X](https://x.com/prod42net/status/1806236123217158619)
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">&quot;Discover the power of Sequelize for simplifying database operations in Node.js with <a href="https://twitter.com/vaishnavirawool?ref_src=twsrc%5Etfw">@VaishnaviRawool</a>&#39;s insightful guide. From advantages to getting started, it&#39;s a must-read for developers. <a href="https://twitter.com/hashtag/NodeJS?src=hash&amp;ref_src=twsrc%5Etfw">#NodeJS</a> <a href="https://twitter.com/hashtag/Sequelize?src=hash&amp;ref_src=twsrc%5Etfw">#Sequelize</a> <a href="https://twitter.com/hashtag/DatabaseOps?src=hash&amp;ref_src=twsrc%5Etfw">#DatabaseOps</a> <a href="https://twitter.com/hashtag/ORM?src=hash&amp;ref_src=twsrc%5Etfw">#ORM</a>&quot; <a href="https://t.co/DvopupkfYV">https://t.co/DvopupkfYV</a></p>&mdash; prod42net (@prod42net) <a href="https://twitter.com/prod42net/status/1806236123217158619?ref_src=twsrc%5Etfw">June 27, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 * Encriptación de una contraseña, con SALT en [X](https://twitter.com/El_Pop/status/1560356275774447618)
 
