@@ -36,7 +36,7 @@ theme: jekyll-theme-leap-day
 1. Descargue el archivo [template_navbar](recursos/template_navbar.zip). Fuente: [Tutorial Republic - Snippets](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=all-in-one-navbar)
 
     <div align="center">
-      <img src="imagenes/navbar_base.png">
+      <img src="imagenes/navbar_base.jpg">
     </div>
 
 #### Módulos globales 
@@ -94,7 +94,7 @@ theme: jekyll-theme-leap-day
 5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
     
     <div align="center">
-      <img src="imagenes/crud_partials.png" width="70%">
+      <img src="imagenes/crud_partials.jpg" width="70%">
     </div>
 
 6. (STOP 1) Versiona local y remotamente el repositorio **security**.
