@@ -96,34 +96,38 @@ theme: jekyll-theme-leap-day
 
       let { username, password } = req.body
 
-      try {
+      if (username && password) {
 
-        let salt = process.env.SALT
-        let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
-        let passwordHash = salt + "$" + hash
+        try {
 
-        /* 3. Uso del método findOne con el usuario y la contraseña encriptada */
-        let usersData = await models.users.findOne({
-          where: {
-            [Op.and]: {
-              name: username,
-              password: passwordHash
+          /* 3. Utilice la variable SALT para encriptar la variable password. */
+          let salt = process.env.SALT
+          let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
+          let passwordHash = salt + "$" + hash
+
+          /* 4. Uso del método findOne */
+          let usersData = await models.users.findOne({
+            where: {
+              [Op.and]: {
+                name: username,
+                password: passwordHash
+              }
+
             }
-            
+          })
+
+          if (usersData != null) {
+            res.redirect('/users');
+          } else {
+            res.redirect('/');
           }
-        })
 
-        /* 4. Verificación si existe o no el usuario 
-        para redirigir a la ruta correspondiente */
-
-        if(usersData!=null){
-          res.redirect('/users');
-        } else {
-          res.redirect('/');
+        } catch (error) {
+          res.status(400).send(error)
         }
-
-      } catch (error) {
-        res.status(400).send(error)
+        
+      } else {
+        res.redirect('/');
       }
 
     });
