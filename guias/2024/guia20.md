@@ -35,6 +35,10 @@ theme: jekyll-theme-leap-day
 
 1. Descargue el archivo [template_login](recursos/template_login.zip). Fuente: [Tutorial Republic - Snippets](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=simple-login-form)
 
+    <div align="center">
+      <img src="imagenes/login_base.jpg" class="description">
+    </div>
+
 ### Actividades en clases
 
 #### Express - GET '/'
@@ -50,11 +54,6 @@ theme: jekyll-theme-leap-day
     ```
 
 4. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-
-    <div align="center">
-      <img src="imagenes/login_base.jpg" class="description">
-    </div>
-
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
 #### Express - POST '/login'
