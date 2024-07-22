@@ -61,28 +61,32 @@ theme: jekyll-theme-leap-day
 
 1. Edite la vista _'security/views/index.js'_, con:
 
-    + El método de envío y la ruta que procesará los datos del formulario
-    + El atributo **name** para ambos elementos _input_.
+    + El método de envío (_'post'_) y la ruta (_'login'_) que procesará los datos del formulario
+    + El atributo **name** para todos elementos _input_.
 
     ```typescript
     ...
     <form action="/login" method="post">
       ...
       <input name="username" 
-            type="text" 
-            class="form-control" 
+            ...
             placeholder="Username"
-            required="required">
+            ...>
       ...
       <input 
             name="password" 
-            type="password" 
-            class="form-control" 
+            ... 
             placeholder="Password"
-            required="required">
+            ...>
     ```
 
 2. Edite el enrutador _'security/routes/index.js'_, con:
+
+    + Importe el módulo **crypto**,
+    + Configuración de conexión (en _'models/index.js'_),
+    + Estructura de [modelos](https://sequelize.org/docs/v6/core-concepts/model-basics/) (de _'models/init-models'_),
+    + Carga los modelos de acuerdo con la configuración de la conexión,
+    + El callback para los requerimientos del método **POST**,
 
     ```typescript
     /* 1. Importe el módulo crypto y el objeto Op de sequelize */
@@ -94,6 +98,7 @@ theme: jekyll-theme-leap-day
     var models = initModels(sequelize);
 
     ...
+
     router.post('/login', async function (req, res, next) {
 
       let { username, password } = req.body
@@ -102,24 +107,30 @@ theme: jekyll-theme-leap-day
 
         try {
 
-          /* 3. Utilice la variable SALT para encriptar la variable password. */
-          let salt = process.env.SALT
-          let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
-          let passwordHash = salt + "$" + hash
-
-          /* 4. Uso del método findOne */
-          let usersData = await models.users.findOne({
+          /* 3. Uso del método findOne */
+          let userData = await models.users.findOne({
+            include: { all: true, nested: true },
+            raw: true,
+            nest: true,
             where: {
-              [Op.and]: {
-                name: username,
-                password: passwordHash
-              }
-
+              name: username,
             }
           })
 
-          if (usersData != null) {
-            res.redirect('/users');
+          /* 4. Verifica si existe, o no, el usuario y si tiene, o no, contraseña. */
+          if (userData != null && userData.password != null) {
+
+            /* 5. Utilice la SALT para encriptar la variable password. */
+            let salt = userData.password.split("$")[0]
+            let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
+            let passwordHash = salt + "$" + hash
+
+            /* 6. Compare la contraseña encriptada con la contraseña almacenada. */
+            if (passwordHash === userData.password) {
+              res.redirect('/users');
+            } else {
+              res.redirect('/');
+            }
           } else {
             res.redirect('/');
           }
@@ -127,7 +138,6 @@ theme: jekyll-theme-leap-day
         } catch (error) {
           res.status(400).send(error)
         }
-
       } else {
         res.redirect('/');
       }
@@ -141,11 +151,15 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
+* Documentación de [Express](https://expressjs.com/) y [Sequelize](https://sequelize.org/docs/v6/getting-started/).
+
 ### Fundamental
 
-### Términos
+* Data Association in MongoDB with Express.js en [X](https://x.com/SinghYadav58685/status/1797660631501561956?ref_src=twsrc%5Etfw)
 
-Operador
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🚀 Mini-Project: Data Association in MongoDB with Express.js!<br><br>1️⃣ Create userSchema<br>2️⃣ User Registration Functionality<br>3️⃣ LogIn LogOut Functionality<br>4️⃣ isLoggedIn Middleware<br>5️⃣ Profile Route Setup<br>6️⃣ Like Edit Functionality<br>7️⃣ Update Post<a href="https://twitter.com/hashtag/MongoDB?src=hash&amp;ref_src=twsrc%5Etfw">#MongoDB</a> <a href="https://twitter.com/hashtag/ExpressJS?src=hash&amp;ref_src=twsrc%5Etfw">#ExpressJS</a> <a href="https://twitter.com/hashtag/WebDev?src=hash&amp;ref_src=twsrc%5Etfw">#WebDev</a> <a href="https://t.co/yRyAK1hDM6">pic.twitter.com/yRyAK1hDM6</a></p>&mdash; Ayushmaan Singh Yadav (@SinghYadav58685) <a href="https://twitter.com/SinghYadav58685/status/1797660631501561956?ref_src=twsrc%5Etfw">June 3, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+### Términos
 
 ### Referencias
 
