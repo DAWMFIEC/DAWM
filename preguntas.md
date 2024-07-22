@@ -8,3 +8,4 @@ Elabore sus respuestas a las siguientes preguntas:
 4. Compara los esquemas de documentación generados automáticamente por Swagger con los escritos manualmente. ¿Qué diferencias encuentras en términos de detalle y precisión?
 5. Evalúa una documentación de API generada con Swagger. ¿Qué tan clara y completa es la información presentada? ¿Qué mejoras sugerirías?
 6. Evalúa la efectividad de las pruebas automatizadas realizadas con Postman. ¿Qué tan bien cubren los diferentes casos de uso y escenarios posibles? ¿Qué mejoras sugerirías?
+7. seguridad del config.json 
