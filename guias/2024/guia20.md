@@ -47,11 +47,6 @@ theme: jekyll-theme-leap-day
 2. Reemplace el contenido de _'security/views/index.ejs'_ por todo el contenido de _template_login.html_.
 3. Edite la vista _'security/views/index.ejs'_ con la ruta a la carpeta con los archivos estáticos.
 4. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-
-    <div align="center">
-      <img src="imagenes/login_base.jpg" class="description">
-    </div>
-
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
 #### Express - POST '/login'
@@ -81,7 +76,7 @@ theme: jekyll-theme-leap-day
 
 2. Edite el enrutador _'security/routes/index.js'_, con:
 
-    + Operador [Op.and](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#logical-combinations-with-operators) de Sequelize.
+    + `Operador` [Op.and](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#logical-combinations-with-operators) de Sequelize.
 
     ```typescript
     /* 1. Importe el módulo crypto y el objeto Op de sequelize */
@@ -139,10 +134,89 @@ theme: jekyll-theme-leap-day
 3. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 4. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
+#### Cookies
+
+const options = {
+  expires: new Date(
+    Date.now() + (60 * 1000)
+  )
+}
+
+res.cookie("username", username, options)
+
+<a href="#" class="nav-link user-action"> <%= username %> </a>
+
+Revisar la consola
+
+#### Session
+
+node
+require('crypto').randomBytes(64).toString('base64');
+TOKEN_SECRET='...9udMMwr...'
+
+npm install express-session --save
+
+const session = require('express-session');
+
+app.use(session({
+  secret: process.env.TOKEN_SECRET,
+  name: 'session.security', 
+  resave: false,
+  saveUninitialized: false,
+}));
+
+request.session.loggedin = true;
+request.session.username = username;
+
+<a href="/logout" class="nav-item nav-link messages"><i class="fa fa-power-off"></i> Logout</a></a>
+
+#### Autenticación
+
+/middleware/authentication_session.js
+
+/* Autenticación */
+
+var authenticateSession = (req, res, next) => {
+    if(req.session.loggedin) {
+        return next()
+    } else{
+        return res.redirect("/")
+    }
+}
+
+module.exports = authenticateSession;
+
+app.use('/users', authenticateSession,  usersRouter);
+
+#### Autorización
+
+/middleware/authorization_session.js
+
+/* Autorización */
+
+var authorizationSession = (req, res, next) => {
+    if(req.session.role === 'admin') {
+        return next()
+    } else{
+        return res.redirect("/")
+    }
+}
+
+module.exports = authorizationSession;
+
+app.use('/users', authenticateSession, authorizationSession, usersRouter);
+
 ### Documentación
 
 ### Fundamental
 
 ### Términos
 
+Operador
+
 ### Referencias
+
+* Autenticación y autorización en node.js mediante Express.js. (n.d.). Retrieved from https://ull-esit-pl-1617.github.io/estudiar-cookies-y-sessions-en-expressjs-victor-pamela-jesus/cookies/chapter6.html
+* Adams, D. (2024). Basic Login System with Node.js, Express, and MySQL. Retrieved from https://codeshack.io/basic-login-system-nodejs-express-mysql/
+* Ram, P. (2021). Difference between Session Cookies vs. JWT (JSON Web Tokens), for session management. Retrieved from https://medium.com/@prashantramnyc/difference-between-session-cookies-vs-jwt-json-web-tokens-for-session-management-4be67d2f066e
+* Chan, A. (2021). Cookie and Session (II) - How session works in express-session. Retrieved from https://medium.com/@alysachan830/cookie-and-session-ii-how-session-works-in-express-session-7e08d102deb8
