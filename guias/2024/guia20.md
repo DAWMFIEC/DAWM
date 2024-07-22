@@ -81,6 +81,8 @@ theme: jekyll-theme-leap-day
 
 2. Edite el enrutador _'security/routes/index.js'_, con:
 
+    + Operador [Op.and](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#logical-combinations-with-operators) de Sequelize.
+
     ```typescript
     /* 1. Importe el módulo crypto y el objeto Op de sequelize */
     let crypto = require('crypto');
@@ -125,7 +127,7 @@ theme: jekyll-theme-leap-day
         } catch (error) {
           res.status(400).send(error)
         }
-        
+
       } else {
         res.redirect('/');
       }
