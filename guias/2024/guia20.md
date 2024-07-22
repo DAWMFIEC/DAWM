@@ -35,10 +35,6 @@ theme: jekyll-theme-leap-day
 
 1. Descargue el archivo [template_login](recursos/template_login.zip). Fuente: [Tutorial Republic - Snippets](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=simple-login-form)
 
-    <div align="center">
-      <img src="imagenes/login_base.jpg" class="description">
-    </div>
-
 ### Actividades en clases
 
 #### Express - GET '/'
@@ -46,7 +42,19 @@ theme: jekyll-theme-leap-day
 1. Coloque el archivo estático _login-style.css_ dentro de la _'security/public/stylesheets'_.
 2. Reemplace el contenido de _'security/views/index.ejs'_ por todo el contenido de _template_login.html_.
 3. Edite la vista _'security/views/index.ejs'_ con la ruta a la carpeta con los archivos estáticos.
+    
+    ```html
+    ...
+    <link rel="stylesheet" href="stylesheets/login-style.css">
+    ...
+    ```
+
 4. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
+
+    <div align="center">
+      <img src="imagenes/login_base.jpg" class="description">
+    </div>
+
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
 #### Express - POST '/login'
@@ -76,13 +84,10 @@ theme: jekyll-theme-leap-day
 
 2. Edite el enrutador _'security/routes/index.js'_, con:
 
-    + `Operador` [Op.and](https://sequelize.org/docs/v6/core-concepts/model-querying-basics/#logical-combinations-with-operators) de Sequelize.
-
     ```typescript
     /* 1. Importe el módulo crypto y el objeto Op de sequelize */
     let crypto = require('crypto');
-    const { Op } = require("sequelize");
-
+    
     /* 2. Cargue los modelos de acuerdo con la configuración de la conexión */
     const sequelize = require('../models/index.js').sequelize;
     var initModels = require("../models/init-models");
@@ -133,78 +138,6 @@ theme: jekyll-theme-leap-day
 
 3. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 4. (STOP 2) Versiona local y remotamente el repositorio **security**.
-
-#### Cookies
-
-const options = {
-  expires: new Date(
-    Date.now() + (60 * 1000)
-  )
-}
-
-res.cookie("username", username, options)
-
-<a href="#" class="nav-link user-action"> <%= username %> </a>
-
-Revisar la consola
-
-#### Session
-
-node
-require('crypto').randomBytes(64).toString('base64');
-TOKEN_SECRET='...9udMMwr...'
-
-npm install express-session --save
-
-const session = require('express-session');
-
-app.use(session({
-  secret: process.env.TOKEN_SECRET,
-  name: 'session.security', 
-  resave: false,
-  saveUninitialized: false,
-}));
-
-request.session.loggedin = true;
-request.session.username = username;
-
-<a href="/logout" class="nav-item nav-link messages"><i class="fa fa-power-off"></i> Logout</a></a>
-
-#### Autenticación
-
-/middleware/authentication_session.js
-
-/* Autenticación */
-
-var authenticateSession = (req, res, next) => {
-    if(req.session.loggedin) {
-        return next()
-    } else{
-        return res.redirect("/")
-    }
-}
-
-module.exports = authenticateSession;
-
-app.use('/users', authenticateSession,  usersRouter);
-
-#### Autorización
-
-/middleware/authorization_session.js
-
-/* Autorización */
-
-var authorizationSession = (req, res, next) => {
-    if(req.session.role === 'admin') {
-        return next()
-    } else{
-        return res.redirect("/")
-    }
-}
-
-module.exports = authorizationSession;
-
-app.use('/users', authenticateSession, authorizationSession, usersRouter);
 
 ### Documentación
 
