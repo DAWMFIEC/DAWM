@@ -108,9 +108,6 @@ theme: jekyll-theme-leap-day
 
           /* 3. Uso del método findOne */
           let userData = await models.users.findOne({
-            include: { all: true, nested: true },
-            raw: true,
-            nest: true,
             where: {
               name: username,
             }
