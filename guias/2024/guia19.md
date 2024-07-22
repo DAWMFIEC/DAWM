@@ -94,7 +94,7 @@ theme: jekyll-theme-leap-day
 5. Compruebe la salida de la URL [http://localhost:3000/users](http://localhost:3000/users)
     
     <div align="center">
-      <img src="imagenes/crud_partials.jpg" width="70%">
+      <img src="imagenes/crud_partials.jpg">
     </div>
 
 6. (STOP 1) Versiona local y remotamente el repositorio **security**.
@@ -214,7 +214,7 @@ theme: jekyll-theme-leap-day
     ```
 
     <div align="center">
-      <img src="imagenes/crud_post_create.png" width="70%">
+      <img src="imagenes/crud_post_create.jpg">
     </div>
 
 4. (STOP 2) Versiona local y remotamente el repositorio **security**.
