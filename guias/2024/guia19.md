@@ -441,7 +441,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
           let usersCollection = await models.users.findAll({ 
 
             /* 3.1. Including everything */
-            include: { all: true, nested: true }
+            include: { all: true, nested: true },
             
             /* 3.2. Raw Queries */
             raw: true,
