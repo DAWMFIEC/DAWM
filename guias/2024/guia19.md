@@ -206,7 +206,7 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
+3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **Add User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
     
     ```text
     Name: admin
@@ -310,7 +310,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
       </code></pre>
     </details>
 
-3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y verifique que se muestren los roles.
+3. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **Add User** y verifique que se muestren los roles.
 
 4. (STOP 3) Versiona local y remotamente el repositorio **security**.
 
@@ -384,7 +384,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
       </code></pre>
     </details>
 
-2. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **New User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
+2. Acceda a URL [http://localhost:3000/users](http://localhost:3000/users), acceda al botón **Add User** y complete el formulario para crear un nuevo usuario con los siguientes datos:
     
     ```text
     Name: user
