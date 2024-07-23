@@ -46,7 +46,7 @@ theme: jekyll-theme-leap-day
     |   Usuario  | Contraseña |   Rol   |
     | :--------: | :--------: | :-----: |
     | superadmin | superadmin |  admin  |
-    | superuser  | superuser  |  user   | 
+    | someuser   | someuser   |  user   | 
 
 ### Actividades en clases
 
@@ -211,7 +211,7 @@ theme: jekyll-theme-leap-day
     | :----------------------------------------------: | :-----------------: |
     | usuario: superadmin <br/> contraseña: superadmin | Redirije a '/users' |
     | usuario: superadmin <br/> contraseña: abc        | Redirije a '/'      |
-    | usuario: superuser <br/> contraseña: superuser   | Redirije a '/users' |
+    | usuario: someuser <br/> contraseña: someuser     | Redirije a '/users' |
     | usuario: abc <br/> contraseña: abc               | Redirije a '/users' |
 
 ### Documentación
