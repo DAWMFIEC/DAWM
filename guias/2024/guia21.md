@@ -84,18 +84,11 @@ theme: jekyll-theme-leap-day
 3. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 4. Verifique el resultado de los siguientes escenarios:
 
-    + **Usuario:** superadmin, **Contraseña:** superadmin
+    |   Usuario  | Contraseña |   Resultado   |
+    | :--------: | :--------: | :-----------: |
+    | superadmin | superadmin |  <div align="center"><img src="imagenes/user_superadmin.jpg" class="description"></div>  |
+    | someuser   | someuser   |  <div align="center"><img src="imagenes/user_someuser.jpg" class="description"></div>    |
 
-    <div align="center">
-      <img src="imagenes/user_superadmin.jpg" class="description">
-    </div>
-
-    + **Usuario:** someuser, **Contraseña:** someuser
-
-    <div align="center">
-      <img src="imagenes/user_someuser.jpg" class="description">
-    </div>
-    
    
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
