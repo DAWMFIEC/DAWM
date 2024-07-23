@@ -99,45 +99,133 @@ theme: jekyll-theme-leap-day
    
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
+#### TOKEN_SECRET
+
+1. Genere y copie la secuencia de caracteres aleatorios, con:
+  
+    ```typescript
+    node
+    > require('crypto').randomBytes(64).toString('base64');
+    ```
+
+2. En la raíz del proyecto, agregue la variable **TOKEN_SECRET** y asigne la secuencia de caracteres aleatorios.
+
+    ```
+    TOKEN_SECRET='...9udMMwr...'
+    ```
+
 #### Session
 
-node
-require('crypto').randomBytes(64).toString('base64');
-TOKEN_SECRET='...9udMMwr...'
+1. Instale localmente el módulo **express-session**. 
 
-npm install express-session --save
+    ```command
+    npm install --save express-session
+    ```
 
-const session = require('express-session');
+2. Edite el servidor _'app.js'_, con: 
 
-app.use(session({
-  secret: process.env.TOKEN_SECRET,
-  name: 'session.security', 
-  resave: false,
-  saveUninitialized: false,
-}));
+    + La configuración el _middleware_ 
+      - Con el secreto (**secret**) para encriptar los datos, 
+      - El nombre (**name**) de la sesión,
+      - Evita que la sesión se vuelva a guardar en el almacén de sesiones si no se ha modificado durante la solicitud (**resave**), y
+      - Impide que las sesiones sin inicializar (nuevas pero no modificadas) se guarden en el almacén de sesiones (**saveUninitialized**).
+    
+    ```typescript
+    ...
+    var logger = require('morgan');
 
-request.session.loggedin = true;
-request.session.username = username;
+    /* 1. Módulo express-session */
+    const session = require('express-session');
+    ...
+    app.use(logger('dev'));
 
-<a href="/logout" class="nav-item nav-link messages"><i class="fa fa-power-off"></i> Logout</a></a>
+    /* 2. Configuración del middleware */
+    app.use(session({
+      secret: process.env.TOKEN_SECRET,
+      name: 'session.security', 
+      resave: false,
+      saveUninitialized: false,
+    }));
+    app.use(express.json());
+    ...
+    ```
+
+2. Edite el enrutador _'security/routes/index.js'_, con:
+
+    ```typescript
+    ...
+    router.post('/login', async function (req, res, next) {
+      ...
+      if (passwordHash === userData.password) {
+
+        ...
+        res.cookie("username", ... )
+
+        /* 1. Habilite la sesión */
+        req.session.loggedin = true;
+        req.session.username = username;
+
+        ...
+      }
+      ...
+    });
+
+    /* GET logout. */
+    /* 2. Método para terminar la sesión */
+    router.get('/logout', function (req, res, next) {
+      req.session.destroy();
+      res.render('index');
+    });
+    ...
+    ````
 
 #### Autenticación
 
-/middleware/authentication_session.js
+1. Cree el archivo _'/middleware/authentication_session.js'_.
+2. Edite el middleware _'/middleware/authentication_session.js'_, con:
 
-/* Autenticación */
+    ```typescript
+    /* Autenticación */
 
-var authenticateSession = (req, res, next) => {
-    if(req.session.loggedin) {
-        return next()
-    } else{
-        return res.redirect("/")
+    var authenticateSession = (req, res, next) => {
+        if(req.session.loggedin) {
+            return next()
+        } else{
+            return res.redirect("/")
+        }
     }
-}
 
-module.exports = authenticateSession;
+    module.exports = authenticateSession;
+    ```
 
-app.use('/users', authenticateSession,  usersRouter);
+3. Edite el servidor _'app.js'_, con: 
+  
+    + Agregue 
+
+    ```typescript
+    ...
+    const session = require('express-session');
+
+    /* 1. Referencia a los middlewares */
+    var authenticateSession = require('./middleware/authentication_session');
+
+    ...
+    /* 2. Agregue el middleware al router */
+    app.use('/users', authenticateSession, usersRouter);
+    ...
+    ```
+4. Edite el partial _'security/views/partials/navbar.ejs'_, con:
+
+    ```html
+    ...
+    <div class="navbar-nav ml-auto">
+      <a href="#" class="nav-link user-action"> {% raw %} <%= {% endraw %}  username {% raw %}  %> {% endraw %}  </a>
+      <a href="/logout" class="nav-item nav-link messages"><i class="fa fa-power-off"></i> Logout</a></a>
+    </div>
+    ...
+    ```
+
+5. [http://localhost:3000/users](http://localhost:3000/users)
 
 #### Autorización
 
@@ -162,6 +250,8 @@ app.use('/users', authenticateSession, authorizationSession, usersRouter);
 ### Fundamental
 
 ### Términos
+
+middleware
 
 ### Referencias
 
