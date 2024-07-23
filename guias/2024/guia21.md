@@ -81,16 +81,20 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-3. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-4. Verifique el resultado de los siguientes escenarios:
 
-    |   Usuario  | Contraseña |   Resultado   |
-    | :--------: | :--------: | :-----------: |
-    | superadmin | superadmin |  <img src="imagenes/user_superadmin.jpg" class="description"> |
-    | someuser   | someuser   |  <img src="imagenes/user_someuser.jpg" class="description">   |
+#### Verificación
 
+1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
+2. Verifique el resultado de los siguientes escenarios:
+
+    + Se muestran el nombre del usuario debido a que las credenciales son correctas
+
+    |            Credenciales                          |      Resultado      |
+    | :----------------------------------------------: | :-----------------: |
+    | usuario: superadmin <br/> contraseña: superadmin | <img src="imagenes/user_superadmin.jpg" class="description"> |
+    | usuario: someuser <br/> contraseña: someuser     | <img src="imagenes/user_someuser.jpg" class="description">   |
    
-5. (STOP 1) Versiona local y remotamente el repositorio **security**.
+3. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
 #### TOKEN_SECRET
 
@@ -225,7 +229,20 @@ theme: jekyll-theme-leap-day
     app.use('/users', authenticateSession, usersRouter);
     ...
     ```
-4. (STOP 2) [http://localhost:3000/users](http://localhost:3000/users)
+    
+#### Verificación
+
+1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
+2. Verifique el resultado de los siguientes escenarios:
+
+    + Se muestran el nombre del usuario debido a que las credenciales son correctas
+
+    |            Credenciales                          |      Resultado      |
+    | :----------------------------------------------: | :-----------------: |
+    | usuario: superadmin <br/> contraseña: superadmin | <img src="imagenes/user_superadmin.jpg" class="description"> |
+    | usuario: someuser <br/> contraseña: someuser     | <img src="imagenes/user_someuser.jpg" class="description">   |
+   
+3. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
 #### Autorización
 
