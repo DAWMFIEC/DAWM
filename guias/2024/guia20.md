@@ -236,26 +236,21 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
       </code></pre>
     </details>
 
-#### `Verificación`
+#### `Pruebas`
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-2. Verifique el resultado de los siguientes escenarios:
+2. `Verificación` del proceso de `autenticación` de usuarios y la redirección basada en las credenciales.
 
-    + Ingreso exitoso debido a que las credenciales son correctas
+    + `Criterio de aceptación`: Con credenciales correctas, el usuario es redirigido a _'/users'_.
+      - usuario: superadmin <br/> contraseña: superadmin
+      - usuario: someuser <br/> contraseña: someuser 
 
-    |            Credenciales                          |      Resultado      |
-    | :----------------------------------------------: | :-----------------: |
-    | usuario: superadmin <br/> contraseña: superadmin | Redirije a '/users' |
-    | usuario: someuser <br/> contraseña: someuser     | Redirije a '/users' |
+    + Criterio de aceptación: Con credenciales incorrectas, el usuario es redirigido a _'/'_.
+      - usuario: superadmin <br/> contraseña: evil
+      - usuario: hacker <br/> contraseña: evil 
 
-    + Ingreso fallido debido a que las credenciales son incorrectas
-
-    |            Credenciales                          |      Resultado      |
-    | :----------------------------------------------: | :-----------------: |
-    | usuario: superadmin <br/> contraseña: evil       | Redirije a '/'      |
-    | usuario: hacker <br/> contraseña: evil           | Redirije a '/' |
-
-3. (STOP 2) Versiona local y remotamente el repositorio **security**.
+3. Corrija los errores y aplique las pruebas.
+4. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 
@@ -269,7 +264,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
 ### Términos
 
-verificación
+Pruebas, verificación, autenticación, criterios de aceptación
 
 ### Referencias
 
