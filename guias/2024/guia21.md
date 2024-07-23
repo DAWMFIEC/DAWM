@@ -341,7 +341,7 @@ theme: jekyll-theme-leap-day
     + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
 
 3. Corrija los errores y aplique las pruebas.
-4. (STOP 2) Versiona local y remotamente el repositorio **security**.
+4. (STOP 3) Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 
