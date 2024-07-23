@@ -205,7 +205,14 @@ theme: jekyll-theme-leap-day
 
 #### `Verificación` y `Validación`
 
-1.  
+1. Verifique los siguientes escenarios:
+
+    |                  Escenario                       |      Resultado      |
+    | :----------------------------------------------: | :-----------------: |
+    | usuario: superadmin <br/> contraseña: superadmin | Redirije a '/users' |
+    | usuario: superadmin <br/> contraseña: abc        | Redirije a '/'      |
+    | usuario: superuser <br/> contraseña: superuser   | Redirije a '/users' |
+    | usuario: abc <br/> contraseña: abc               | Redirije a '/users' |
 
 ### Documentación
 
