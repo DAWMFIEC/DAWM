@@ -241,11 +241,18 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 2. Verifique el resultado de los siguientes escenarios:
 
-    |                  Escenario                       |      Resultado      |
+    + Ingreso exitoso debido a que las credenciales son correctas
+
+    |            Credenciales                          |      Resultado      |
     | :----------------------------------------------: | :-----------------: |
     | usuario: superadmin <br/> contraseña: superadmin | Redirije a '/users' |
-    | usuario: superadmin <br/> contraseña: evil       | Redirije a '/'      |
     | usuario: someuser <br/> contraseña: someuser     | Redirije a '/users' |
+
+    + Ingreso fallido debido a que las credenciales son incorrectas
+
+    |            Credenciales                          |      Resultado      |
+    | :----------------------------------------------: | :-----------------: |
+    | usuario: superadmin <br/> contraseña: evil       | Redirije a '/'      |
     | usuario: hacker <br/> contraseña: evil           | Redirije a '/' |
 
 3. (STOP 2) Versiona local y remotamente el repositorio **security**.
