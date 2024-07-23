@@ -239,7 +239,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 #### `Pruebas`
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-2. Verifique la `autenticación` de usuarios y la redirección basada en las credenciales.
+2. Verifique la `control de acceso` de usuarios y la redirección basada en las credenciales.
 
     + `Criterio de aceptación`: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_.
       - usuario: superadmin <br/> contraseña: superadmin
@@ -264,7 +264,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
 ### Términos
 
-Pruebas, autenticación, criterios de aceptación
+Pruebas, control de acceso, criterios de aceptación
 
 ### Referencias
 
