@@ -120,13 +120,13 @@ theme: jekyll-theme-leap-day
     > .exit
     ```
 
-3. En la raíz del proyecto, cree el archivo _'.env'_. Agregue la variable **SALT** y asígnele la secuencia de caracteres aleatorios.
+3. En la raíz del proyecto, cree el archivo _'.env'_. Agregue la variable **SALT** y asigne la secuencia de caracteres aleatorios.
 
     ```
     SALT='...8uUYwT...'
     ```
 
-5. Edite el `servidor` _'app.js'_, con: 
+4. Edite el `servidor` _'app.js'_, con: 
     
     + Carga las variables de entorno mediante el módulo **dotenv**.
 
