@@ -73,6 +73,8 @@ theme: jekyll-theme-leap-day
     ```html
     ...
     <div class="navbar-nav ml-auto">
+
+      <!-- 1. Muestre el username  -->
       <a href="#" class="nav-link user-action"> {% raw %} <%= {% endraw %}  username {% raw %}  %> {% endraw %}  </a>
       ...
     </div>
@@ -149,6 +151,8 @@ theme: jekyll-theme-leap-day
       resave: false,
       saveUninitialized: false,
     }));
+
+
     app.use(express.json());
     ...
     ```
@@ -192,8 +196,12 @@ theme: jekyll-theme-leap-day
     ```html
     ...
     <div class="navbar-nav ml-auto">
+      
       <a href="#" class="nav-link user-action"> {% raw %} <%= {% endraw %}  username {% raw %}  %> {% endraw %}  </a>
+
+      <!-- 1. Enlace para realizar una petición GET a la ruta '/logout' -->
       <a href="/logout" class="nav-item nav-link messages"><i class="fa fa-power-off"></i> Logout</a></a>
+    
     </div>
     ...
     ```
@@ -270,7 +278,37 @@ theme: jekyll-theme-leap-day
     module.exports = authorizationSession;
     ```
 
-3. Edite el servidor _'app.js'_, con: 
+3. Edite el enrutador _'security/routes/index.js'_, con:
+
+    + Incluya todos los modelos asociados, solo con datos y que los objetos estén anidados. 
+
+    ```typescript
+    ...
+
+      let userData = await models.users.findOne({
+        where: {
+          name: username
+        },
+
+        /*1. Incluya todos los modelos asociados */
+        include: { all: true, nested: true },
+        raw: true,
+        nest: true
+
+      })
+
+    ...
+
+      req.session.loggedin = true;
+      req.session.username = username;
+
+      /* 1. Habilite el rol del usuario */
+      req.session.role = userData.users_roles.roles_idrole_role.name
+
+    ...
+    ```
+
+4. Edite el servidor _'app.js'_, con: 
   
     + Incluya la referencia al middleware
     + Agregue el middleware antes del ruteador.
