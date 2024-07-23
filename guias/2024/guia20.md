@@ -86,6 +86,12 @@ theme: jekyll-theme-leap-day
 4. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
+### Actividad en grupo
+
+En grupos de tres (3) personas:
+
+Completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
+
 #### Express - POST '/login'
 
 1. Edite el enrutador _'security/routes/index.js'_, con:
@@ -224,7 +230,7 @@ theme: jekyll-theme-leap-day
 #### `Verificación` y `Validación`
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-2. Verifique los siguientes escenarios:
+2. Replique los siguientes escenarios:
 
     |                  Escenario                       |      Resultado      |
     | :----------------------------------------------: | :-----------------: |
