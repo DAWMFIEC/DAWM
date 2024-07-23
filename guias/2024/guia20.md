@@ -237,7 +237,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
     | usuario: superadmin <br/> contraseña: superadmin | Redirije a '/users' |
     | usuario: superadmin <br/> contraseña: evil       | Redirije a '/'      |
     | usuario: someuser <br/> contraseña: someuser     | Redirije a '/users' |
-    | usuario: hacker <br/> contraseña: evil           | Redirije a '/users' |
+    | usuario: hacker <br/> contraseña: evil           | Redirije a '/' |
 
 3. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
