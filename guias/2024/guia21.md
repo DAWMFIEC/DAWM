@@ -117,11 +117,12 @@ theme: jekyll-theme-leap-day
 
 2. Edite el servidor _'app.js'_, con: 
 
-    + La configuración el _middleware_ 
+    + Use el módulo **express-session**
+    + Aplique la configuración el _middleware_:
       - Con el secreto (**secret**) para encriptar los datos, 
       - El nombre (**name**) de la sesión,
-      - Evita que la sesión se vuelva a guardar en el almacén de sesiones si no se ha modificado durante la solicitud (**resave**), y
-      - Impide que las sesiones sin inicializar (nuevas pero no modificadas) se guarden en el almacén de sesiones (**saveUninitialized**).
+      - Evitar que la sesión se vuelva a guardar si no se ha modificado (**resave**), y
+      - Impide que las sesiones sin inicializar sean guardadas (**saveUninitialized**).
     
     ```typescript
     ...
@@ -144,6 +145,9 @@ theme: jekyll-theme-leap-day
     ```
 
 2. Edite el enrutador _'security/routes/index.js'_, con:
+
+    + El callback asincrónico para atender las peticiones **POST** en la ruta **/login**. 
+    + El callback para atender las peticiones **GET** en la ruta **/logout**.
 
     ```typescript
     ...
@@ -171,6 +175,19 @@ theme: jekyll-theme-leap-day
     });
     ...
     ````
+
+3. Edite el partial _'security/views/partials/navbar.ejs'_, con:
+
+    + El enlace para terminar la sesión.
+
+    ```html
+    ...
+    <div class="navbar-nav ml-auto">
+      <a href="#" class="nav-link user-action"> {% raw %} <%= {% endraw %}  username {% raw %}  %> {% endraw %}  </a>
+      <a href="/logout" class="nav-item nav-link messages"><i class="fa fa-power-off"></i> Logout</a></a>
+    </div>
+    ...
+    ```
 
 #### Autenticación
 
@@ -207,18 +224,7 @@ theme: jekyll-theme-leap-day
     app.use('/users', authenticateSession, usersRouter);
     ...
     ```
-4. Edite el partial _'security/views/partials/navbar.ejs'_, con:
-
-    ```html
-    ...
-    <div class="navbar-nav ml-auto">
-      <a href="#" class="nav-link user-action"> {% raw %} <%= {% endraw %}  username {% raw %}  %> {% endraw %}  </a>
-      <a href="/logout" class="nav-item nav-link messages"><i class="fa fa-power-off"></i> Logout</a></a>
-    </div>
-    ...
-    ```
-
-5. [http://localhost:3000/users](http://localhost:3000/users)
+4. (STOP 2) [http://localhost:3000/users](http://localhost:3000/users)
 
 #### Autorización
 
