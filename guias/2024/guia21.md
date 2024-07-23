@@ -238,13 +238,13 @@ theme: jekyll-theme-leap-day
 #### Pruebas
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-2. Verifique del control de acceso y la redirección basada en las credenciales.
+2. Verifique del `autenticación` y la redirección basada en las credenciales.
 
     + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_.
       - usuario: superadmin <br/> contraseña: superadmin
       - usuario: someuser <br/> contraseña: someuser 
 
-    + Criterio de aceptación: El usuario intenta acceder a _'/users'_ sin ingresar las credendiales y es redirigido a _'/'_.
+    + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
 
 3. Corrija los errores y aplique las pruebas.
 4. (STOP 2) Versiona local y remotamente el repositorio **security**.
@@ -267,13 +267,33 @@ module.exports = authorizationSession;
 
 app.use('/users', authenticateSession, authorizationSession, usersRouter);
 
+#### Pruebas
+
+1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
+2. Verifique del `autenticación` y la redirección basada en las credenciales.
+
+    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_.
+      - usuario: superadmin <br/> contraseña: superadmin
+      - usuario: someuser <br/> contraseña: someuser 
+
+    + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
+
+3. Corrija los errores y aplique las pruebas.
+4. (STOP 2) Versiona local y remotamente el repositorio **security**.
+
 ### Documentación
+
+* [Middleware](https://expressjs.com/es/guide/using-middleware.html) en ExpressJS.
 
 ### Fundamental
 
+* Métodos de autenticación en [X](https://twitter.com/alexxubyte/status/1737151765097951544)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Authentication in REST APIs acts as the crucial gateway, ensuring that solely authorized users or applications gain access to the API&#39;s resources.<br><br>Some popular authentication methods for REST APIs include:<br><br>1. Basic Authentication: <br>Involves sending a username and password with… <a href="https://t.co/Y4CKqZUhBF">pic.twitter.com/Y4CKqZUhBF</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1737151765097951544?ref_src=twsrc%5Etfw">December 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Términos
 
-middleware
+middleware, cookies, session, autenticación, autorización
 
 ### Referencias
 
