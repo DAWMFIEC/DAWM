@@ -210,9 +210,9 @@ theme: jekyll-theme-leap-day
     |                  Escenario                       |      Resultado      |
     | :----------------------------------------------: | :-----------------: |
     | usuario: superadmin <br/> contraseña: superadmin | Redirije a '/users' |
-    | usuario: superadmin <br/> contraseña: abc        | Redirije a '/'      |
+    | usuario: superadmin <br/> contraseña: evil       | Redirije a '/'      |
     | usuario: someuser <br/> contraseña: someuser     | Redirije a '/users' |
-    | usuario: abc <br/> contraseña: abc               | Redirije a '/users' |
+    | usuario: hacker <br/> contraseña: evil           | Redirije a '/users' |
 
 ### Documentación
 
