@@ -95,12 +95,6 @@ theme: jekyll-theme-leap-day
 4. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
-### Actividad en grupo
-
-En grupos de tres (3) personas:
-
-Completen las siguientes tareas. Pueden utilizar la documentación oficial o los servicios de un LLM.
-
 #### Express - POST '/login'
 
 1. Edite el enrutador _'security/routes/index.js'_, con:
@@ -108,71 +102,6 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
     ```typescript
     ...
     /* 1. Importe el módulo crypto */
-    
-
-    /* 2. Cargue los modelos de acuerdo con la configuración de la conexión */
-    
-    ...
-
-    /* POST user. */
-    /* 3. Cree el callback asíncrono que responda al método POST */
-    router.post('/login',           function (req, res, next) {
-
-      /* 4. Desestructure los elementos en el cuerpo del requerimiento */
-      let { ,  } = req.body
-
-      /* 5. Verifique que username sea diferente de null, y que password sea diferente de null. */
-      if (username != null &&     ) {
-
-        try {
-
-          /* 6. 
-            Del modelo users, use el método findOne para encontrar un registro
-            cuyo campo name sea igual que username
-          */
-          let userData = await models.users.findOne({
-            where: {
-                  : 
-            }
-          })
-
-          /* 7. Verifique que userData sea diferente de null, y que userData.password sea diferente de null. */
-          if ( && ) {
-
-            /* 8. Divida userData.password por el símbolo "$", y use el primer elemento como SALT. */
-            let salt = 
-            let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
-            let passwordHash = salt + "$" + hash
-
-            /* 9. Compare passwordHash y userData.password que sean iguales. */
-            if (   ) {
-              /* 10. En caso de éxito, redirija a '/users' */
-              
-            } else {
-              /* 11. En caso de fallo, redirija a '/' */
-              
-            }
-          } else {
-            res.redirect('/');
-          }
-
-        } catch (error) {
-          /* 12. En caso de error, retorne el estado 400 y el objeto error */
-          
-        }
-      } else {
-        res.redirect('/');
-      }
-
-    });
-    ...
-    ```
-
-    <details>
-      <summary><div>Haga click aquí para ver la solución</div></summary>
-      <pre lang="typescript"><code>
-        ...
-        /* 1. Importe el módulo crypto */
         let crypto = require('crypto');
 
         /* 2. Cargue los modelos de acuerdo con la configuración de la conexión */
@@ -232,9 +161,8 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
           }
 
         });
-        ...
-      </code></pre>
-    </details>
+    ...
+    ```
 
 #### `Pruebas`
 
