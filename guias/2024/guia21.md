@@ -86,8 +86,8 @@ theme: jekyll-theme-leap-day
 
     |   Usuario  | Contraseña |   Resultado   |
     | :--------: | :--------: | :-----------: |
-    | superadmin | superadmin |  <div align="center"><img src="imagenes/user_superadmin.jpg" class="description"></div>  |
-    | someuser   | someuser   |  <div align="center"><img src="imagenes/user_someuser.jpg" class="description"></div>    |
+    | superadmin | superadmin |  <img src="imagenes/user_superadmin.jpg" class="description"> |
+    | someuser   | someuser   |  <img src="imagenes/user_someuser.jpg" class="description">   |
 
    
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
@@ -118,7 +118,7 @@ theme: jekyll-theme-leap-day
 2. Edite el servidor _'app.js'_, con: 
 
     + Use el módulo **express-session**
-    + Aplique la configuración el _middleware_:
+    + Aplique la configuración el `middleware`:
       - Con el secreto (**secret**) para encriptar los datos, 
       - El nombre (**name**) de la sesión,
       - Evitar que la sesión se vuelva a guardar si no se ha modificado (**resave**), y
@@ -210,7 +210,8 @@ theme: jekyll-theme-leap-day
 
 3. Edite el servidor _'app.js'_, con: 
   
-    + Agregue 
+    + Incluya la referencia al middleware
+    + Agregue el middleware antes del ruteador.
 
     ```typescript
     ...
