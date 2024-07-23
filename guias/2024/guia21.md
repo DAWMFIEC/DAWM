@@ -240,8 +240,10 @@ theme: jekyll-theme-leap-day
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 2. Verifique del `autenticación` y la redirección basada en las credenciales.
 
-    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_.
+    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
       - usuario: superadmin <br/> contraseña: superadmin
+    
+    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
       - usuario: someuser <br/> contraseña: someuser 
 
     + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
@@ -251,29 +253,51 @@ theme: jekyll-theme-leap-day
 
 #### Autorización
 
-/middleware/authorization_session.js
+1. Cree el archivo _'/middleware/authorization_session.js'_.
+2. Edite el middleware _'/middleware/authorization_session.js'_, con:
 
-/* Autorización */
+    ```typescript
+    /* Autorización */
 
-var authorizationSession = (req, res, next) => {
-    if(req.session.role === 'admin') {
-        return next()
-    } else{
-        return res.redirect("/")
+    var authorizationSession = (req, res, next) => {
+        if(req.session.role === 'admin') {
+            return next()
+        } else{
+            return res.redirect("/")
+        }
     }
-}
 
-module.exports = authorizationSession;
+    module.exports = authorizationSession;
+    ```
 
-app.use('/users', authenticateSession, authorizationSession, usersRouter);
+3. Edite el servidor _'app.js'_, con: 
+  
+    + Incluya la referencia al middleware
+    + Agregue el middleware antes del ruteador.
+
+    ```typescript
+    ...
+    const session = require('express-session');
+
+    /* 1. Referencia a los middlewares */
+    var authenticateSession = require('./middleware/authentication_session');
+    var authorizationSession = require('./middleware/authorization_session');
+
+    ...
+    /* 2. Agregue el middleware al router */
+    app.use('/users', authenticateSession, authorizationSession, usersRouter);
+    ...
+    ```
 
 #### Pruebas
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 2. Verifique del `autenticación` y la redirección basada en las credenciales.
 
-    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_.
+    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
       - usuario: superadmin <br/> contraseña: superadmin
+    
+    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/'_.
       - usuario: someuser <br/> contraseña: someuser 
 
     + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
