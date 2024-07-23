@@ -71,63 +71,64 @@ theme: jekyll-theme-leap-day
 
     ```typescript
     ...
-
-    /* 1. Importe el módulo crypto y el objeto Op de sequelize */
+    /* 1. Importe el módulo crypto */
     
 
     /* 2. Cargue los modelos de acuerdo con la configuración de la conexión */
     
-
     ...
 
     /* POST user. */
     /* 3. Cree el callback asíncrono que responda al método POST */
-    router.post('/login',    function (req, res, next) {
+    router.post('/login',           function (req, res, next) {
 
       /* 4. Desestructure los elementos en el cuerpo del requerimiento */
-      let {   ,   } = req.
+      let { ,  } = req.body
 
-      /* 5. Valide los elementos en el cuerpo del requerimiento */
-      if (username && password) {
+      /* 5. Verifique que username sea diferente de null, y que password sea diferente de null. */
+      if (username != null &&     ) {
 
         try {
 
-          /* 6. Uso del método findOne para encontrar el registro por name */
+          /* 6. 
+            Del modelo users, use el método findOne para encontrar un registro
+            cuyo campo name sea igual que username
+          */
           let userData = await models.users.findOne({
             where: {
-                    :    ,
+                  : 
             }
           })
 
-          /* 7. Verifica si existe, o no, el usuario y si tiene, o no, contraseña. */
-          if (userData != null && userData.password != null) {
+          /* 7. Verifique que userData sea diferente de null, y que userData.password sea diferente de null. */
+          if ( && ) {
 
-            /* 5. 
-              De userData.password divida por el símbolo "$", y 
-              Use el primer valor como SALT para encriptar la variable password. */
+            /* 8. Divida userData.password por el símbolo "$", y use el primer elemento como SALT. */
             let salt = 
             let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
             let passwordHash = salt + "$" + hash
 
-            /* 6. Compare la contraseña encriptada con la contraseña almacenada. */
-            if (passwordHash === userData.password) {
-              res.redirect('/users');
+            /* 9. Compare passwordHash y userData.password que sean iguales. */
+            if (   ) {
+              /* 10. En caso de éxito, redirija a '/users' */
+              
             } else {
-              res.redirect('/');
+              /* 11. En caso de fallo, redirija a '/' */
+              
             }
           } else {
             res.redirect('/');
           }
 
         } catch (error) {
-          res.status(400).send(error)
+          /* 12. En caso de error, retorne el estado 400 y el objeto error */
+          
         }
       } else {
         res.redirect('/');
       }
 
     });
-
     ...
     ```
 
@@ -135,15 +136,13 @@ theme: jekyll-theme-leap-day
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="typescript"><code>
         ...
-
-        /* 1. Importe el módulo crypto y el objeto Op de sequelize */
+        /* 1. Importe el módulo crypto */
         let crypto = require('crypto');
 
         /* 2. Cargue los modelos de acuerdo con la configuración de la conexión */
         const sequelize = require('../models/index.js').sequelize;
         var initModels = require("../models/init-models");
         var models = initModels(sequelize);
-
         ...
 
         /* POST user. */
@@ -153,32 +152,35 @@ theme: jekyll-theme-leap-day
           /* 4. Desestructure los elementos en el cuerpo del requerimiento */
           let { username, password } = req.body
 
-          /* 5. Valide los elementos en el cuerpo del requerimiento */
-          if (username && password) {
+          /* 5. Verifique que username sea diferente de null, y que password sea diferente de null. */
+          if (username != null && password != null) {
 
             try {
 
-              /* 6. Uso del método findOne para encontrar el registro por name */
+              /* 6. 
+                Del modelo users, use el método findOne para encontrar un registro
+                cuyo campo name sea igual que username
+              */
               let userData = await models.users.findOne({
                 where: {
-                  name: username,
+                  name: username
                 }
               })
 
-              /* 7. Verifica si existe, o no, el usuario y si tiene, o no, contraseña. */
+              /* 7. Verifique que userData sea diferente de null, y que userData.password sea diferente de null. */
               if (userData != null && userData.password != null) {
 
-                /* 5. 
-                  De userData.password divida por el símbolo "$", y 
-                  Use el primer valor como SALT para encriptar la variable password. */
+                /* 8. Divida userData.password por el símbolo "$", y use el primer elemento como SALT. */
                 let salt = userData.password.split("$")[0]
                 let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
                 let passwordHash = salt + "$" + hash
 
-                /* 6. Compare la contraseña encriptada con la contraseña almacenada. */
+                /* 9. Compare passwordHash y userData.password que sean iguales. */
                 if (passwordHash === userData.password) {
+                  /* 10. En caso de éxito, redirija a '/users' */
                   res.redirect('/users');
                 } else {
+                  /* 11. En caso de fallo, redirija a '/' */
                   res.redirect('/');
                 }
               } else {
@@ -186,6 +188,7 @@ theme: jekyll-theme-leap-day
               }
 
             } catch (error) {
+              /* 12. En caso de error, retorne el estado 400 y el objeto error */
               res.status(400).send(error)
             }
           } else {
