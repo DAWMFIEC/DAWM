@@ -31,21 +31,73 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+??
+
 ### Actividades en clases
+
+#### Github
+
+1. Clone localmente tu repositorio **security**.
+2. Desde la línea de comandos, inicie el servidor:
+
+    ```command
+    npm run autostart
+    ```
 
 #### Cookies
 
-const options = {
-  expires: new Date(
-    Date.now() + (60 * 1000)
-  )
-}
+1. Edite el enrutador _'security/routes/index.js'_, con:
 
-res.cookie("username", username, options)
+    ```typescript
+    ...
+    router.post('/login', async function (req, res, next) {
+      ...
+      if (passwordHash === userData.password) {
 
-<a href="#" class="nav-link user-action"> <%= username %> </a>
+        /* 1. Configuración de la expiración de la cookie */
+        const options = {
+          expires: new Date(
+            Date.now() + (60 * 1000)
+          )
+        }
 
-Revisar la consola
+        /* 2. Cree la cookie 'username' con la variable user y la configuración de options  */
+        res.cookie("username", username, options)
+
+        ...
+      }
+      ...
+    });
+    ...
+    ````
+2. Edite el partial _'security/views/partials/navbar.ejs'_, con:
+
+    ```html
+    ...
+    <div class="navbar-nav ml-auto">
+      <a href="#" class="nav-link user-action"> {% raw %} <%= {% endraw %}  username {% raw %}  %> {% endraw %}  </a>
+      ...
+    </div>
+    ...
+    ```
+
+3. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
+4. Verifique el resultado de los siguientes escenarios:
+
+    + **Usuario:** superadmin, **Contraseña:** superadmin
+
+    <div align="center">
+      <img src="imagenes/user_superadmin.jpg" class="description">
+    </div>
+
+    + **Usuario:** someuser, **Contraseña:** someuser
+
+    <div align="center">
+      <img src="imagenes/user_someuser.jpg" class="description">
+    </div>
+    
+   
+5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
 #### Session
 
@@ -110,8 +162,6 @@ app.use('/users', authenticateSession, authorizationSession, usersRouter);
 ### Fundamental
 
 ### Términos
-
-Operador
 
 ### Referencias
 
