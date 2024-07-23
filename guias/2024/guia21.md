@@ -31,8 +31,6 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-??
-
 ### Actividades en clases
 
 #### Github
@@ -81,20 +79,27 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-
-#### Verificación
+#### Pruebas
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-2. Verifique el resultado de los siguientes escenarios:
+2. Verifique la identificación del usuario en la aplicación.
 
-    + Se muestran el nombre del usuario debido a que las credenciales son correctas
+    + Criterio de aceptación: Con credenciales correctas de _superadmin_, el usuario es redirigido a _'/users'_ y muestra el texto "superadmin".
+      - usuario: superadmin <br/> contraseña: superadmin
 
-    |            Credenciales                          |      Resultado      |
-    | :----------------------------------------------: | :-----------------: |
-    | usuario: superadmin <br/> contraseña: superadmin | <img src="imagenes/user_superadmin.jpg" class="description"> |
-    | usuario: someuser <br/> contraseña: someuser     | <img src="imagenes/user_someuser.jpg" class="description">   |
-   
-3. (STOP 1) Versiona local y remotamente el repositorio **security**.
+    <div align="center">
+      <img src="imagenes/user_superadmin.jpg" class="description">
+    </div>
+
+    + Criterio de aceptación: Con credenciales correctas de _someuser_, el usuario es redirigido a _'/users'_ y muestra el texto "someuser".
+      - usuario: someuser <br/> contraseña: someuser 
+
+    <div align="center">
+      <img src="imagenes/user_someuser.jpg" class="description">
+    </div>
+
+3. Corrija los errores y aplique las pruebas.
+4. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
 #### TOKEN_SECRET
 
@@ -229,20 +234,20 @@ theme: jekyll-theme-leap-day
     app.use('/users', authenticateSession, usersRouter);
     ...
     ```
-    
-#### Verificación
+
+#### Pruebas
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-2. Verifique el resultado de los siguientes escenarios:
+2. Verifique del control de acceso y la redirección basada en las credenciales.
 
-    + Se muestran el nombre del usuario debido a que las credenciales son correctas
+    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_.
+      - usuario: superadmin <br/> contraseña: superadmin
+      - usuario: someuser <br/> contraseña: someuser 
 
-    |            Credenciales                          |      Resultado      |
-    | :----------------------------------------------: | :-----------------: |
-    | usuario: superadmin <br/> contraseña: superadmin | <img src="imagenes/user_superadmin.jpg" class="description"> |
-    | usuario: someuser <br/> contraseña: someuser     | <img src="imagenes/user_someuser.jpg" class="description">   |
-   
-3. (STOP 1) Versiona local y remotamente el repositorio **security**.
+    + Criterio de aceptación: El usuario intenta acceder a _'/users'_ sin ingresar las credendiales y es redirigido a _'/'_.
+
+3. Corrija los errores y aplique las pruebas.
+4. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
 #### Autorización
 
