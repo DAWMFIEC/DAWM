@@ -39,6 +39,17 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/login_base.jpg" class="description">
     </div>
 
+### Actividades en clases
+
+#### Github
+
+1. Clone localmente tu repositorio **security**.
+2. Desde la línea de comandos, inicie el servidor:
+
+    ```command
+    npm run autostart
+    ```
+
 #### Usuarios y Roles
 
 1. Ingrese los siguientes usuarios con los roles:
@@ -47,8 +58,6 @@ theme: jekyll-theme-leap-day
     | :--------: | :--------: | :-----: |
     | superadmin | superadmin |  admin  |
     | someuser   | someuser   |  user   | 
-
-### Actividades en clases
 
 #### Express - GET '/'
 
@@ -227,10 +236,10 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
       </code></pre>
     </details>
 
-#### `Verificación` y `Validación`
+#### `Verificación`
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-2. Replique los siguientes escenarios:
+2. Verifique el resultado de los siguientes escenarios:
 
     |                  Escenario                       |      Resultado      |
     | :----------------------------------------------: | :-----------------: |
@@ -253,7 +262,7 @@ Completen las siguientes tareas. Pueden utilizar la documentación oficial o los
 
 ### Términos
 
-verificación, validación
+verificación
 
 ### Referencias
 
