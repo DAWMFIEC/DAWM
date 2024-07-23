@@ -54,11 +54,32 @@ theme: jekyll-theme-leap-day
 
 1. Coloque el archivo estático _login-style.css_ dentro de la _'security/public/stylesheets'_.
 2. Reemplace el contenido de _'security/views/index.ejs'_ por todo el contenido de _template_login.html_.
-3. Edite la vista _'security/views/index.ejs'_ con la ruta a la carpeta con los archivos estáticos.
+3. Edite la vista _'security/views/index.ejs'_ 
+    + Con la ruta a la carpeta con los archivos estáticos.
     
     ```html
     ...
     <link rel="stylesheet" href="stylesheets/login-style.css">
+    ...
+    ```
+
+    + Con el método de envío de datos y el nombre en cada elemento del formulario
+
+    ```html
+    ...
+    <form action="/login" method="post">
+      ...
+      <input type="text" 
+            name="username" 
+            class="form-control" 
+            placeholder="Username"
+            required="required">
+      ...
+      <input type="password" 
+            name="password" 
+            class="form-control" 
+            placeholder="Password"
+            required="required">
     ...
     ```
 
@@ -200,12 +221,10 @@ theme: jekyll-theme-leap-day
       </code></pre>
     </details>
 
-2. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-3. (STOP 2) Versiona local y remotamente el repositorio **security**.
-
 #### `Verificación` y `Validación`
 
-1. Verifique los siguientes escenarios:
+1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
+2. Verifique los siguientes escenarios:
 
     |                  Escenario                       |      Resultado      |
     | :----------------------------------------------: | :-----------------: |
@@ -213,6 +232,8 @@ theme: jekyll-theme-leap-day
     | usuario: superadmin <br/> contraseña: evil       | Redirije a '/'      |
     | usuario: someuser <br/> contraseña: someuser     | Redirije a '/users' |
     | usuario: hacker <br/> contraseña: evil           | Redirije a '/users' |
+
+3. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
 ### Documentación
 
