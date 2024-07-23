@@ -39,6 +39,15 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/login_base.jpg" class="description">
     </div>
 
+#### Usuarios y Roles
+
+1. Ingrese los siguientes usuarios con los roles:
+
+    |   Usuario  | Contraseña |   Rol   |
+    | :--------: | :--------: | :-----: |
+    | superadmin | superadmin |  admin  |
+    | superuser  | superuser  |  user   | 
+
 ### Actividades en clases
 
 #### Express - GET '/'
@@ -58,66 +67,45 @@ theme: jekyll-theme-leap-day
 
 #### Express - POST '/login'
 
-1. Edite la vista _'security/views/index.js'_, con:
-
-    + El método de envío (_'post'_) y la ruta (_'login'_) que procesará los datos del formulario
-    + El atributo **name** para todos elementos _input_.
+1. Edite el enrutador _'security/routes/index.js'_, con:
 
     ```typescript
     ...
-    <form action="/login" method="post">
-      ...
-      <input name="username" 
-            ...
-            placeholder="Username"
-            ...>
-      ...
-      <input 
-            name="password" 
-            ... 
-            placeholder="Password"
-            ...>
-    ```
 
-2. Edite el enrutador _'security/routes/index.js'_, con:
-
-    + Importe el módulo **crypto**,
-    + Configuración de conexión (en _'models/index.js'_),
-    + Estructura de [modelos](https://sequelize.org/docs/v6/core-concepts/model-basics/) (de _'models/init-models'_),
-    + Carga los modelos de acuerdo con la configuración de la conexión,
-    + El callback para los requerimientos del método **POST**,
-
-    ```typescript
     /* 1. Importe el módulo crypto y el objeto Op de sequelize */
-    let crypto = require('crypto');
     
+
     /* 2. Cargue los modelos de acuerdo con la configuración de la conexión */
-    const sequelize = require('../models/index.js').sequelize;
-    var initModels = require("../models/init-models");
-    var models = initModels(sequelize);
+    
 
     ...
 
-    router.post('/login', async function (req, res, next) {
+    /* POST user. */
+    /* 3. Cree el callback asíncrono que responda al método POST */
+    router.post('/login',    function (req, res, next) {
 
-      let { username, password } = req.body
+      /* 4. Desestructure los elementos en el cuerpo del requerimiento */
+      let {   ,   } = req.
 
+      /* 5. Valide los elementos en el cuerpo del requerimiento */
       if (username && password) {
 
         try {
 
-          /* 3. Uso del método findOne */
+          /* 6. Uso del método findOne para encontrar el registro por name */
           let userData = await models.users.findOne({
             where: {
-              name: username,
+                    :    ,
             }
           })
 
-          /* 4. Verifica si existe, o no, el usuario y si tiene, o no, contraseña. */
+          /* 7. Verifica si existe, o no, el usuario y si tiene, o no, contraseña. */
           if (userData != null && userData.password != null) {
 
-            /* 5. Utilice la SALT para encriptar la variable password. */
-            let salt = userData.password.split("$")[0]
+            /* 5. 
+              De userData.password divida por el símbolo "$", y 
+              Use el primer valor como SALT para encriptar la variable password. */
+            let salt = 
             let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
             let passwordHash = salt + "$" + hash
 
@@ -139,11 +127,82 @@ theme: jekyll-theme-leap-day
       }
 
     });
+
     ...
     ```
 
-3. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-4. (STOP 2) Versiona local y remotamente el repositorio **security**.
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="typescript"><code>
+        ...
+
+        /* 1. Importe el módulo crypto y el objeto Op de sequelize */
+        let crypto = require('crypto');
+
+        /* 2. Cargue los modelos de acuerdo con la configuración de la conexión */
+        const sequelize = require('../models/index.js').sequelize;
+        var initModels = require("../models/init-models");
+        var models = initModels(sequelize);
+
+        ...
+
+        /* POST user. */
+        /* 3. Cree el callback asíncrono que responda al método POST */
+        router.post('/login', async function (req, res, next) {
+
+          /* 4. Desestructure los elementos en el cuerpo del requerimiento */
+          let { username, password } = req.body
+
+          /* 5. Valide los elementos en el cuerpo del requerimiento */
+          if (username && password) {
+
+            try {
+
+              /* 6. Uso del método findOne para encontrar el registro por name */
+              let userData = await models.users.findOne({
+                where: {
+                  name: username,
+                }
+              })
+
+              /* 7. Verifica si existe, o no, el usuario y si tiene, o no, contraseña. */
+              if (userData != null && userData.password != null) {
+
+                /* 5. 
+                  De userData.password divida por el símbolo "$", y 
+                  Use el primer valor como SALT para encriptar la variable password. */
+                let salt = userData.password.split("$")[0]
+                let hash = crypto.createHmac('sha512', salt).update(password).digest("base64");
+                let passwordHash = salt + "$" + hash
+
+                /* 6. Compare la contraseña encriptada con la contraseña almacenada. */
+                if (passwordHash === userData.password) {
+                  res.redirect('/users');
+                } else {
+                  res.redirect('/');
+                }
+              } else {
+                res.redirect('/');
+              }
+
+            } catch (error) {
+              res.status(400).send(error)
+            }
+          } else {
+            res.redirect('/');
+          }
+
+        });
+        ...
+      </code></pre>
+    </details>
+
+2. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
+3. (STOP 2) Versiona local y remotamente el repositorio **security**.
+
+#### `Verificación` y `Validación`
+
+1.  
 
 ### Documentación
 
@@ -156,6 +215,8 @@ theme: jekyll-theme-leap-day
 <blockquote class="twitter-tweet"><p lang="en" dir="ltr">🚀 Mini-Project: Data Association in MongoDB with Express.js!<br><br>1️⃣ Create userSchema<br>2️⃣ User Registration Functionality<br>3️⃣ LogIn LogOut Functionality<br>4️⃣ isLoggedIn Middleware<br>5️⃣ Profile Route Setup<br>6️⃣ Like Edit Functionality<br>7️⃣ Update Post<a href="https://twitter.com/hashtag/MongoDB?src=hash&amp;ref_src=twsrc%5Etfw">#MongoDB</a> <a href="https://twitter.com/hashtag/ExpressJS?src=hash&amp;ref_src=twsrc%5Etfw">#ExpressJS</a> <a href="https://twitter.com/hashtag/WebDev?src=hash&amp;ref_src=twsrc%5Etfw">#WebDev</a> <a href="https://t.co/yRyAK1hDM6">pic.twitter.com/yRyAK1hDM6</a></p>&mdash; Ayushmaan Singh Yadav (@SinghYadav58685) <a href="https://twitter.com/SinghYadav58685/status/1797660631501561956?ref_src=twsrc%5Etfw">June 3, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
+
+verificación, validación
 
 ### Referencias
 
