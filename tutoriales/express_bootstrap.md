@@ -11,65 +11,12 @@ Express - Bootstrap
   <img src="imagenes/node_express_bootstrap.webp">
 </p>
 
-Proyecto en Express
-===================
-
-* * *
-
-Crea un nuevo proyecto, según [Express - Bases](https://dawmfiec.github.io/DAWM/tutoriales/express_bases.html).
-
-* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/admin**
-    - Para el hito: **`hito1-admin`**
-
-* Instala las dependencias, con: `npm install`
-* Establezca la variable de entorno DEBUG para el proyecto, con: `SET DEBUG=admin:\*`
-* Verifique el funcionamiento al levantar los servicios, con: `npm start`
-
-
-
-Detección de cambios y reinicio del servidor
-============================================
-
-* * *
-
-Desde la línea de comandos del proyecto:
-
-* Agregue nodemon como módulo del proyecto, con: `npm install --save-dev nodemon`
-  + Con esta instrucción se agregará la clave **devDependencies** en el package.json
-
-	<pre><code>
-	"devDependencies": {  
-	     "nodemon": "X.Y.Z"  
-	}
-	</code></pre>
-
-* En el `package.json`, dentro de la clave **scripts**, agregue la clave **devstart**:
-
-	<pre><code>
-	"scripts": {  
-	  ...
-	  <b style="color:red">
-	  "devstart": "nodemon ./bin/www"
-		</b>
-		...
-	}  
-	</code></pre>
-
-* En adelante, levante el servidor, con: **`npm run devstart`**
-  + Con este script, ya no será necesario reiniciar el servidor para ver los cambios en el navegador.
-
-  <p align="center">
-    <img width="405" height="220" src="imagenes/nodemon.png">
-  </p>
-
-
 Bootstrap - Dashboard example
 =============================
 
 * * *
 
-* Descargue y descomprima los [ejemplos de Bootstrap](https://getbootstrap.com/docs/5.2/examples/)
-* Utilice el ejemplo **Dashboard**.
+* Descargue y descomprima la plantilla [dashboard](archivos/dashboard.zip).
 
 ### Archivos estáticos
 
