@@ -1,4 +1,4 @@
----
+  ---
 theme: jekyll-theme-leap-day
 ---
 
@@ -179,6 +179,18 @@ theme: jekyll-theme-leap-day
 
 3. Corrija los errores y aplique las pruebas.
 4. (STOP 2) Versiona local y remotamente el repositorio **security**.
+
+#### Diagrama de flujo
+
+Analice: 
+
+  + La explicación del código con [ChatGPT](https://chatgpt.com/share/de8e9c13-34af-48e9-80e0-aad3d57d7c3c), o
+  + El diagrama de flujo, generador en [https://codetoflow.com/](https://codetoflow.com/).
+  
+  <div align="center">
+    <img src="imagenes/login_diagrama_flujo.jpg" class="description">
+  </div>
+
 
 ### Documentación
 
