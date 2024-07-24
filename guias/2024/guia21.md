@@ -261,14 +261,23 @@ theme: jekyll-theme-leap-day
 
 #### Autorización
 
-1. Cree el archivo _'/middleware/authorization_session.js'_.
-2. Edite el middleware _'/middleware/authorization_session.js'_, con:
+1. Edite el archivo _'.env'_, con:
+    + La clave **ALL_GRANTED**
+
+    ```
+    ...
+    ALL_GRANTED="admin"
+    ```
+
+
+2. Cree el archivo _'/middleware/authorization_session.js'_.
+3. Edite el middleware _'/middleware/authorization_session.js'_, con:
 
     ```typescript
     /* Autorización */
 
     var authorizationSession = (req, res, next) => {
-        if(req.session.role === 'admin') {
+        if(process.env.ALL_GRANTED.includes(req.session.role)) {
             return next()
         } else{
             return res.redirect("/")
