@@ -188,7 +188,7 @@ Analice:
   + El diagrama de flujo, generador en [https://codetoflow.com/](https://codetoflow.com/).
   
   <div align="center">
-    <img src="imagenes/login_diagrama_flujo.jpg" class="description">
+    <img src="imagenes/login_diagrama_flujo.jpg">
   </div>
 
 
