@@ -1,4 +1,4 @@
-  ---
+---
 theme: jekyll-theme-leap-day
 ---
 
