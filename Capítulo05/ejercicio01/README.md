@@ -9,10 +9,12 @@
 
 ## Pruebas unitarias
 
+* Descargue y descomprima [C05E01.zip](../../zips/C05E01.zip)
+  + Copie la carpeta **tests** en el directorio raíz su proyecto.
+
 * En su proyecto de Express 
   + Instale las dependencias a **Jest**, **SuperTest** y **cross-env**
     - Desde otra instancia de la línea de comandos, ejecute: `npm install --save-dev jest supertest cross-env`
-  + Copie la carpeta **tests** de este repositorio a su proyecto.
   + Modifique el archivo **package.json**
     - Agregue los pares/valores: **test** y **jest**
 
