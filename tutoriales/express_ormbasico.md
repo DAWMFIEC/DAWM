@@ -121,12 +121,7 @@ Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 	<p align="center">
 	  <img width="30%" src="imagenes/mysql_sequelizemeta.png">
 	</p>
-  + Si intenta ejecutar el mismo comando nuevamente, no ejecutará ninguna migración que se encuentre en la tabla **sequelizemeta**.
 
-* Es posible revertir las migraciones, con:
-  + La última: **sequelize db:migrate:undo**
-  + Todas las anteriores: **sequelize db:migrate:undo:all**
-  + O, alguna migración específica, según como aparezca dentro de la carpeta **migrations**: **`sequelize db:migrate:undo --to XXXXXXXXXXXXXX-create-TABLE.js`**
 
 Generadores (Seeders)
 =====================
