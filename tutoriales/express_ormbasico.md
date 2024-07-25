@@ -18,56 +18,53 @@ De [MySQL Community Downloads](https://dev.mysql.com/downloads/), descargue e in
 * Motor de base de datos: [MySQL Community Server](https://dev.mysql.com/downloads/mysql/)
 * Interfaz gráfica: [MySQL Workbench](https://dev.mysql.com/downloads/workbench/)
 
-
-Proyecto en Express
-===================
-
-* * *
-
-Crea un nuevo proyecto, según [Express - Bases](https://dawfiec.github.io/DAWM/tutoriales/express_bases.html).
-
-* O, Clone el proyecto con las [aplicaciones del curso](https://github.com/DAWFIEC/DAWM-apps) para la aplicación **album/api**
-    - Para el hito: **`hito1-api`**
-
-
-Nodemon
-=======
-
-* Agregue el módulo `nodemon` al proyecto 
-* Agregue el *script* `devstart` al archivo `package.json`
-
-
 ORM: Sequelize
 ==============
 * * *
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* Instale Sequelize CLI de forma global, con: **`npm install -g sequelize-cli`**
-* Instale Sequelize y el conector para MySQL para el proyecto, con: **`npm install --save sequelize mysql2`**
-* Genere los archivos de configuración de Sequelize, con: **`sequelize init`**  
+* Instale Sequelize CLI de forma global, con: 
+  
+  ```command
+  npm install -g sequelize-cli
+  ```
+
+* Instale Sequelize y el conector para MySQL para el proyecto, con: 
+
+  ```command
+  npm install --save sequelize mysql2
+  ```
+
+* Genere los archivos de configuración de Sequelize, con: 
+  
+  ```command
+  sequelize init
+  ```
+
   + El archivo `config/config.json` contiene la configuración para la conexión con la base de datos relacional.
   + La carpeta `models` contendrá las clases correspondientes a las entidades de la base de datos relacional.
   + La carpeta `migrations` contendrá los scripts a ejecutar en la base de datos relacional y en la aplicación. Estos scripts actúan como registros históricos de los cambios.
   + La carpeta `seeders` contendrá los scripts para generar datos para las entidades de la base datos relacional.
 
-<p align="center">
-  <img src="imagenes/sequelizeinit.JPG">
-</p>
+  <p align="center">
+    <img src="imagenes/sequelizeinit.JPG">
+  </p>
 
 * Modifique el archivo `config/config.json` con los datos para la conexión con el motor de bases de datos. En este caso, el ambiente a utilizar es **development**.
 
-<pre><code>
-{
-  "development": {
-    "username": "root",
-    "password": "root",
-    "database": "album",
-    "host": "127.0.0.1",
-    "dialect": "mysql"
-  },
-  ...
-</code></pre>
+  <pre><code>
+  {
+    "development": {
+      "username": "root",
+      "password": "root",
+      "database": "album",
+      "host": "127.0.0.1",
+      "dialect": "mysql"
+    },
+    ...
+  </code></pre>
+
 
 MySQL
 =====
@@ -83,16 +80,18 @@ El modelo es una representación abstracta, mediante clases (atributos y método
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* Cree el modelo: `foto`, con: 
+* Cree el modelo `foto`, con: 
   
-  `sequelize model:create --name foto --attributes titulo:string,descripcion:string,calificacion:float,ruta:string`
+  ```command
+  sequelize model:create --name foto --attributes titulo:string,descripcion:string,calificacion:float,ruta:string
+  ```
 
   + En la carpeta `models` se agregó la clase **foto.js**, con la configuración predeterminada para la clase foto con los atributos especificados.
   + En la carpeta `migrations` se agregó el script **YYYYMMDDHHMMSS\-create-foto.js** para crear la tabla en la base de datos.
 
-<p align="center">
-  <img src="imagenes/sequelize_foto.png">
-</p>
+  <p align="center">
+    <img src="imagenes/sequelize_foto.png">
+  </p>
 
 
 Migraciones
@@ -103,7 +102,13 @@ Las migraciones contienen un registro histórico de los cambios realizados en lo
 
 Desde la línea de comandos, en la raíz de la carpeta del proyecto.
 
-* Ejecute TODAS las migraciones, con: **`sequelize db:migrate`**
+* Ejecute TODAS las migraciones, con: 
+  
+
+  ```command
+  sequelize db:migrate
+  ```
+  
   <p align="center">
 	   <img src="imagenes/foto_migrate.png">
   </p>
