@@ -101,7 +101,8 @@ theme: jekyll-theme-leap-day
 #### Pruebas
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-2. Verifique la identificación del usuario en la aplicación.
+2. Habilite el inspector en la pestaña **Application**, en la sección **Storage**, en la opción **Cookies**.
+3. Verifique la identificación del usuario en la aplicación.
 
     + Criterio de aceptación: Con credenciales correctas de _superadmin_, el usuario es redirigido a _'/users'_ y muestra el texto "superadmin".
       - usuario: superadmin <br/> contraseña: superadmin
@@ -117,8 +118,15 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/user_someuser.jpg" class="description">
     </div>
 
-3. Corrija los errores y aplique las pruebas.
-4. (STOP 1) Versiona local y remotamente el repositorio **security**.
+    + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y muestra sin texto.
+
+    <div align="center">
+      <img src="imagenes/user_emptyuser.jpg" class="description">
+    </div>
+
+
+4. Corrija los errores y aplique las pruebas.
+5. (STOP 1) Versiona local y remotamente el repositorio **security**.
 
 #### TOKEN_SECRET
 
@@ -155,12 +163,16 @@ theme: jekyll-theme-leap-day
     
     ```typescript
     ...
-    var logger = require('morgan');
+    var logger = require('...');
 
     /* 1. Módulo express-session */
     const session = require('express-session');
-    ...
+
+    var indexRouter = require(...);
     
+    ...
+
+    app.use(logger('...'));
 
     /* 2. Configuración del middleware */
     app.use(session({
@@ -170,8 +182,7 @@ theme: jekyll-theme-leap-day
       saveUninitialized: false,
     }));
 
-
-    app.use(express.json());
+    app.use(express. ... ());
     ...
     ```
 
@@ -216,11 +227,13 @@ theme: jekyll-theme-leap-day
     ```html
     ...
     <div class="navbar-nav ml-auto">
+
+      ...
       
       <a href="#" class="nav-link user-action"> {% raw %} <%= {% endraw %}  username {% raw %}  %> {% endraw %}  </a>
 
       <!-- 1. Enlace para realizar una petición GET a la ruta '/logout' -->
-      <a href="/logout" class="nav-item nav-link messages"><i class="fa fa-power-off"></i> Logout</a></a>
+      <a href="/logout" class="nav-item nav-link messages"><i class="fa fa-power-off"></i> Logout</a>
     
     </div>
     ...
@@ -252,38 +265,42 @@ theme: jekyll-theme-leap-day
 
     ```typescript
     ...
-    const session = require('express-session');
+    
+    const session = require(...);
 
     /* 1. Referencia a los middlewares */
     var authenticateSession = require('./middleware/authentication_session');
 
+    var indexRouter = require(...);
+
     ...
+
     /* 2. Agregue el middleware al router */
     app.use('/users', authenticateSession, usersRouter);
+    
     ...
     ```
 
 #### Pruebas
 
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
-2. Verifique del `autenticación` y la redirección basada en las credenciales.
+2. Habilite el inspector en la pestaña **Application**, en la sección **Storage**, en la opción **Cookies**.
+3. Verifique del `autenticación` y la redirección basada en las credenciales.
 
-    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
-      - usuario: superadmin <br/> contraseña: superadmin
+    + Criterio de aceptación: El usuario **superadmin** ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
     
-    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
-      - usuario: someuser <br/> contraseña: someuser 
+    + Criterio de aceptación: El usuario **someuser** ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**.  
 
     + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
 
-3. Corrija los errores y aplique las pruebas.
-4. (STOP 2) Versiona local y remotamente el repositorio **security**.
+4. Corrija los errores y aplique las pruebas.
+5. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
 #### Autorización
 
 1. Edite el enrutador _'security/routes/index.js'_, con:
 
-    + Al traer al usuario, incluya todos los modelos asociados. 
+    + Todos los modelos asociados al usuario buscado. 
     + Agregue el rol del usuario en la sesión
 
     ```typescript
@@ -361,11 +378,9 @@ theme: jekyll-theme-leap-day
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 2. Verifique del `autenticación` y la redirección basada en las credenciales.
 
-    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
-      - usuario: superadmin <br/> contraseña: superadmin
+    + Criterio de aceptación: El usuario **superadmin** ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
     
-    + Criterio de aceptación: El usuario ingresa las credenciales correctas y es redirigido a _'/'_.
-      - usuario: someuser <br/> contraseña: someuser 
+    + Criterio de aceptación: El usuario **someuser** ingresa las credenciales correctas y es redirigido a _'/'_.
 
     + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
 
