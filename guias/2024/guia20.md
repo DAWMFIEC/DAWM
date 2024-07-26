@@ -72,7 +72,7 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-    + Con el método de envío de datos y el nombre en cada elemento del formulario
+    + Con el método (**method**) de envío de datos y la ruta (**/login**) de procesamiento de datos. Además, del nombre (atributo **name**) en cada elemento del formulario
 
     ```html
     ...
