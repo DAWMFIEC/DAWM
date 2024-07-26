@@ -77,6 +77,8 @@ theme: jekyll-theme-leap-day
 
 2. Edite el enrutador _'security/routes/users.js'_, con:
 
+    + Use **username** como nombre del parámetro y la clave de la cookie.
+
     ```typescript
     ...
     router.get('/', async function (req, res, next) {
