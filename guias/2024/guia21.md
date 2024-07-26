@@ -79,7 +79,10 @@ theme: jekyll-theme-leap-day
 
     ```typescript
     ...
-    res.render('crud', { username: req.cookies['username'], title: ... })
+    router.get('/', async function (req, res, next) {
+        ...
+        res.render('crud', { username: req.cookies['username'], title: ... })
+    })
     ```
 
 3. Edite el partial _'security/views/partials/navbar.ejs'_, con:
