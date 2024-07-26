@@ -132,6 +132,7 @@ theme: jekyll-theme-leap-day
 2. En la raíz del proyecto, agregue la variable **TOKEN_SECRET** y asigne la secuencia de caracteres aleatorios.
 
     ```
+    SALT=...
     TOKEN_SECRET='...9udMMwr...'
     ```
 
@@ -159,7 +160,7 @@ theme: jekyll-theme-leap-day
     /* 1. Módulo express-session */
     const session = require('express-session');
     ...
-    app.use(logger('dev'));
+    
 
     /* 2. Configuración del middleware */
     app.use(session({
@@ -193,6 +194,7 @@ theme: jekyll-theme-leap-day
         req.session.username = username;
 
         ...
+        res.redirect('/users');
       }
       ...
     });
@@ -203,7 +205,8 @@ theme: jekyll-theme-leap-day
       req.session.destroy();
       res.render('index');
     });
-    ...
+
+    module.exports = router;
     ````
 
 3. Edite el partial _'security/views/partials/navbar.ejs'_, con:
@@ -278,35 +281,10 @@ theme: jekyll-theme-leap-day
 
 #### Autorización
 
-1. Edite el archivo _'.env'_, con:
-    + La clave **ALL_GRANTED**
+1. Edite el enrutador _'security/routes/index.js'_, con:
 
-    ```
-    ...
-    ALL_GRANTED="admin"
-    ```
-
-
-2. Cree el archivo _'/middleware/authorization_session.js'_.
-3. Edite el middleware _'/middleware/authorization_session.js'_, con:
-
-    ```typescript
-    /* Autorización */
-
-    var authorizationSession = (req, res, next) => {
-        if(process.env.ALL_GRANTED.includes(req.session.role)) {
-            return next()
-        } else{
-            return res.redirect("/")
-        }
-    }
-
-    module.exports = authorizationSession;
-    ```
-
-3. Edite el enrutador _'security/routes/index.js'_, con:
-
-    + Incluya todos los modelos asociados, solo con datos y que los objetos estén anidados. 
+    + Al traer al usuario, incluya todos los modelos asociados. 
+    + Agregue el rol del usuario en la sesión
 
     ```typescript
     ...
@@ -328,10 +306,35 @@ theme: jekyll-theme-leap-day
       req.session.loggedin = true;
       req.session.username = username;
 
-      /* 1. Habilite el rol del usuario */
+      /* 2. Agregue el rol del usuario en la sesión */
       req.session.role = userData.users_roles.roles_idrole_role.name
 
     ...
+    ```
+
+2. Edite el archivo _'.env'_, con:
+    + La clave **ALL_GRANTED**
+
+    ```
+    ...
+    ALL_GRANTED="admin"
+    ```
+
+
+3. Cree el archivo _'/middleware/authorization_session.js'_. Edite el middleware _'/middleware/authorization_session.js'_, con:
+
+    ```typescript
+    /* Autorización */
+
+    var authorizationSession = (req, res, next) => {
+        if(process.env.ALL_GRANTED.includes(req.session.role)) {
+            return next()
+        } else{
+            return res.redirect("/")
+        }
+    }
+
+    module.exports = authorizationSession;
     ```
 
 4. Edite el servidor _'app.js'_, con: 
