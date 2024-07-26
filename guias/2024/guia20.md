@@ -99,9 +99,13 @@ theme: jekyll-theme-leap-day
 
 1. Edite el enrutador _'security/routes/index.js'_, con:
 
+    + La referencia al módulo crypto.
+    + Carga de los modelos
+    + Método POST.
+
     ```typescript
     ...
-    /* 1. Importe el módulo crypto */
+        /* 1. Importe el módulo crypto */
         let crypto = require('crypto');
 
         /* 2. Cargue los modelos de acuerdo con la configuración de la conexión */
