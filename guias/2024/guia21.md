@@ -31,10 +31,12 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-#### Variables de entorno
+#### Diagrama de secuencia
 
-1. Verifique, o cree, el archivo _.env_.
-2. En caso de ser necesario, genere y agregue la variable _SALT_ en el archivo _.env_.
+Analice: 
+
+  + El [diagrama de secuencia](https://www.mermaidchart.com/raw/99d1502f-3bd4-4fe3-8b36-799cab48834c?theme=light&version=v0.1&format=svg), generador en [https://codetoflow.com/](https://codetoflow.com/).
+  + La explicación del código con [ChatGPT](https://chatgpt.com/share/98a68c66-cfd8-48d3-9389-9e4dbda9a0a0), o
 
 ### Actividades en clases
 
@@ -46,6 +48,11 @@ theme: jekyll-theme-leap-day
     ```command
     npm run autostart
     ```
+
+#### Variables de entorno
+
+1. Verifique, o cree, el archivo _.env_.
+2. En caso de ser necesario, genere y agregue la variable _SALT_ en el archivo _.env_.
 
 #### Cookies
 
@@ -380,7 +387,7 @@ theme: jekyll-theme-leap-day
 2. Verifique del `autenticación` y la redirección basada en las credenciales.
 
     + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
-    
+
     + Criterio de aceptación: El usuario **superadmin** ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
     
     + Criterio de aceptación: El usuario **someuser** ingresa las credenciales correctas y es redirigido a _'/'_.
