@@ -240,7 +240,7 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-#### Autenticación
+#### Middleware - Autenticación
 
 1. Cree el archivo _'/middleware/authentication_session.js'_.
 2. Edite el middleware _'/middleware/authentication_session.js'_, con:
@@ -297,7 +297,7 @@ theme: jekyll-theme-leap-day
 4. Corrija los errores y aplique las pruebas.
 5. (STOP 2) Versiona local y remotamente el repositorio **security**.
 
-#### Autorización
+#### Middleware - Autorización
 
 1. Edite el enrutador _'security/routes/index.js'_, con:
 
