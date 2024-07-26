@@ -34,7 +34,7 @@ theme: jekyll-theme-leap-day
 #### Variables de entorno
 
 1. Verifique, o cree, el archivo _.env_.
-2. En caso de ser necesario, agregue la variable _SALT_ en el archivo _.env_.
+2. En caso de ser necesario, genere y agregue la variable _SALT_ en el archivo _.env_.
 
 ### Actividades en clases
 
