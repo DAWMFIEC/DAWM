@@ -288,11 +288,11 @@ theme: jekyll-theme-leap-day
 2. Habilite el inspector en la pestaña **Application**, en la sección **Storage**, en la opción **Cookies**.
 3. Verifique del `autenticación` y la redirección basada en las credenciales.
 
+    + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
+
     + Criterio de aceptación: El usuario **superadmin** ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
     
     + Criterio de aceptación: El usuario **someuser** ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**.  
-
-    + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
 
 4. Corrija los errores y aplique las pruebas.
 5. (STOP 2) Versiona local y remotamente el repositorio **security**.
@@ -379,11 +379,11 @@ theme: jekyll-theme-leap-day
 1. Compruebe la salida de la URL [http://localhost:3000/](http://localhost:3000/)
 2. Verifique del `autenticación` y la redirección basada en las credenciales.
 
+    + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
+    
     + Criterio de aceptación: El usuario **superadmin** ingresa las credenciales correctas y es redirigido a _'/users'_. Cierre la sesión desde el enlace **logout**. 
     
     + Criterio de aceptación: El usuario **someuser** ingresa las credenciales correctas y es redirigido a _'/'_.
-
-    + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y es redirigido a _'/'_.
 
 3. Corrija los errores y aplique las pruebas.
 4. (STOP 3) Versiona local y remotamente el repositorio **security**.
