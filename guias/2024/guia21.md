@@ -68,12 +68,21 @@ theme: jekyll-theme-leap-day
         res.cookie("username", username, options)
 
         ...
+        res.redirect('/users');
       }
       ...
     });
     ...
     ````
-2. Edite el partial _'security/views/partials/navbar.ejs'_, con:
+
+2. Edite el enrutador _'security/routes/users.js'_, con:
+
+    ```typescript
+    ...
+    res.render('crud', { username: req.cookies['username'], title: ... })
+    ```
+
+3. Edite el partial _'security/views/partials/navbar.ejs'_, con:
 
     ```html
     ...
