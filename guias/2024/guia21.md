@@ -33,10 +33,7 @@ theme: jekyll-theme-leap-day
 
 #### Diagrama de secuencia
 
-Analice: 
-
-  + El [diagrama de secuencia](https://www.mermaidchart.com/raw/99d1502f-3bd4-4fe3-8b36-799cab48834c?theme=light&version=v0.1&format=svg), generador en [https://codetoflow.com/](https://codetoflow.com/).
-  + La explicación del código con [ChatGPT](https://chatgpt.com/share/98a68c66-cfd8-48d3-9389-9e4dbda9a0a0), o
+Analice el [diagrama de secuencia](https://www.mermaidchart.com/raw/99d1502f-3bd4-4fe3-8b36-799cab48834c?theme=light&version=v0.1&format=svg) y la [explicación del código](https://chatgpt.com/share/98a68c66-cfd8-48d3-9389-9e4dbda9a0a0) del proceso de Login.
 
 ### Actividades en clases
 
