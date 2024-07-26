@@ -106,6 +106,12 @@ theme: jekyll-theme-leap-day
 2. Habilite el inspector en la pestaña **Application**, en la sección **Storage**, en la opción **Cookies**.
 3. Verifique la identificación del usuario en la aplicación.
 
+    + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y muestra sin texto.
+
+    <div align="center">
+      <img src="imagenes/user_emptyuser.jpg" class="description">
+    </div>
+
     + Criterio de aceptación: Con credenciales correctas de _superadmin_, el usuario es redirigido a _'/users'_ y muestra el texto "superadmin".
       - usuario: superadmin <br/> contraseña: superadmin
 
@@ -119,13 +125,6 @@ theme: jekyll-theme-leap-day
     <div align="center">
       <img src="imagenes/user_someuser.jpg" class="description">
     </div>
-
-    + Criterio de aceptación: El usuario intenta acceder a [http://localhost:3000/users](http://localhost:3000/users) sin ingresar las credendiales y muestra sin texto.
-
-    <div align="center">
-      <img src="imagenes/user_emptyuser.jpg" class="description">
-    </div>
-
 
 4. Corrija los errores y aplique las pruebas.
 5. (STOP 1) Versiona local y remotamente el repositorio **security**.
