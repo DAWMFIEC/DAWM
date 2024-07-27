@@ -85,18 +85,21 @@ theme: jekyll-theme-leap-day
     </div>
 
 2. Seleccione el repositorio de GitHub.
-3. En la opción **Settings** > **Networking**, genere un dominio aleatorio para la aplicación en la opción **Generate Domain**.
-4. En la opción **Variables**, 
+3. En la opción **Variables**, 
     - Agregue las variables de entorno que se encuentran en el archivo **.env**.
     - Agregue la variable de entorno `NODE_ENV` con el valor `production`.
 
     <p style="text-align: center;">
-      <img src="imagenes/rest_api_vars.png" width="80%">
+      <img src="imagenes/railway_raw_env.png" width="80%">
     </p>
 
+4. En la opción **Settings** > **Networking**, genere un dominio aleatorio para la aplicación en la opción **Generate Domain**.
+
     <p style="text-align: center;">
-      <img src="imagenes/security_vars.png" width="80%">
+      <img src="imagenes/railway_generate_domain.png" width="80%">
     </p>
+
+
 
 ### Documentación
 
