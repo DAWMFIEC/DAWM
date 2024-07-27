@@ -40,14 +40,40 @@ theme: jekyll-theme-leap-day
 #### Railway - Servicio MySQL
 
 * Cree un proyecto de Railway con el servicio MySQL, con: `New Project` > `Deploy MySQL`.
-* Copie las **credenciales de conexión** que se encuentran en la opción `Variables`: 
+* Copie las credenciales de conexión que se encuentran en la opción `Variables`: 
     _MYSQLDATABASE_, _MYSQLHOST_, _MYSQLPASSWORD_, _MYSQLPORT_ y _MYSQLUSER_.
 
    <div align="center">
     <img src="imagenes/railway_credentials.jpg">
    </div>
 
+* Copie el datos de conexión que se encuentran en la opción `Settings`: 
+    _DOMAIN_ y _PORT_.
+
+   <div align="center">
+    <img src="imagenes/railway_networking.jpg">
+   </div>
+
 #### MySQL Workbench - Migración
+
+* En conexión local:
+  + Cree una nueva conexión local
+  + Haga clic en la opción **Server** > **Data Export**.
+  + Seleccione el esquema con las tablas.
+  + Seleccione la opción **Export to Self-Contained File**. 
+  + Haga clic en la opción **Start Export**.
+
+* En la conexión de Railway:
+  + Cree una nueva conexión con los datos de _DOMAIN_, _PORT_, _MYSQLPORT_ y _MYSQLUSER_.
+
+  <div align="center">
+    <img src="imagenes/railway_workbench.jpg">
+  </div>
+
+  + Haga clic en la opción **Server** > **Data Import**.
+  + Seleccione la opción **Import from Self-Contained File**. 
+  + Seleccione en la opción _Default Target Schema_: **railway**.
+  + Haga clic en la opción **Start Import**.
 
 #### Railway - Despliegue desde GitHub
 
