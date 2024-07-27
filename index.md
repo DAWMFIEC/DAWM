@@ -44,7 +44,6 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 20: REST API (Seguridad) - Login](guias/2024/guia20)
   * [Guía 21: REST API (Seguridad) - Cookies y Session](guias/2024/guia21)
   * [Guía 22: REST API (Seguridad) - Despliegue en Railway](guias/2024/guia22)
-  * [Guía 23: REST API (Datos y Seguridad) - JWT Token e Integración](guias/2024/guia23)
 * [Proyecto 05: MobileApp - Angular y Ionic](proyectos/2024/proyecto05)
   
 ## Scripts
