@@ -41,7 +41,7 @@ theme: jekyll-theme-leap-day
 
 1. Cree un proyecto de Railway con el servicio MySQL, con: `New Project` > `Deploy MySQL`.
 2. Copie las credenciales de conexión que se encuentran en la opción `Variables`: 
-    + _MYSQLDATABASE_, _MYSQLPASSWORD_, _MYSQLPORT_ y _MYSQLUSER_.
+    + _MYSQLDATABASE_, _MYSQLPASSWORD_ y _MYSQLUSER_.
 
    <div align="center">
     <img src="imagenes/railway_credentials.jpg">
@@ -65,7 +65,7 @@ theme: jekyll-theme-leap-day
   + Haga clic en la opción **Start Export**.
 
 2. (STOP 2) En la conexión a Railway:
-  + Establezca una nueva conexión con los datos de _DOMAIN_, _PORT_, _MYSQLPORT_, _MYSQLUSER_, _MYSQLPASSWORD_ y _MYSQLDATABASE_.
+  + Establezca una nueva conexión con los datos _DOMAIN_ (host), _PORT_, _MYSQLPORT_, _MYSQLUSER_, _MYSQLPASSWORD_ y _MYSQLDATABASE_.
 
   <div align="center">
     <img src="imagenes/railway_workbench.jpg">
@@ -73,7 +73,7 @@ theme: jekyll-theme-leap-day
 
   + Haga clic en la opción **Server** > **Data Import**.
   + Seleccione la opción **Import from Self-Contained File** y escoja el script previamente creado. 
-  + Seleccione en la opción _Default Target Schema_: **railway**.
+  + Seleccione en la opción **Default Target Schema**: _railway_.
   + Haga clic en la opción **Start Import**.
 
 #### Railway - Despliegue desde GitHub
@@ -85,19 +85,18 @@ theme: jekyll-theme-leap-day
     </div>
 
 2. Seleccione el repositorio de GitHub.
-3. En la opción `Settings` > `Networking`, genere un dominio aleatorio para la aplicación en la opción `Generate Domain`.
-    - Por ejemplo: para el proyecto **security**, el URL de acceso es `security-production-WXYZ.up.railway.app`
-4. En la opción `Variables`, 
+3. En la opción **Settings** > **Networking**, genere un dominio aleatorio para la aplicación en la opción **Generate Domain**.
+4. En la opción **Variables**, 
     - Agregue las variables de entorno que se encuentran en el archivo **.env**.
     - Agregue la variable de entorno `NODE_ENV` con el valor `production`.
 
-<p style="text-align: center;">
-  <img src="imagenes/rest_api_vars.png" width="80%">
-</p>
+    <p style="text-align: center;">
+      <img src="imagenes/rest_api_vars.png" width="80%">
+    </p>
 
-<p style="text-align: center;">
-  <img src="imagenes/security_vars.png" width="80%">
-</p>
+    <p style="text-align: center;">
+      <img src="imagenes/security_vars.png" width="80%">
+    </p>
 
 ### Documentación
 
