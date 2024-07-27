@@ -152,16 +152,16 @@ theme: jekyll-theme-leap-day
 
 * Versiona local y remotamente el repositorio **hybrid**.
 
+### Documentación
+
+* Ionic Icons en la [página oficial](https://ionic.io/ionicons)
+* Ionic Components en la [página oficial](https://ionicframework.com/docs/components)
+
 ### Fundamental
 
 * Estructura de componentes de Ionic en [X](https://twitter.com/93alan/status/1512587338962116611)
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">This is why I love <a href="https://twitter.com/Ionicframework?ref_src=twsrc%5Etfw">@Ionicframework</a>. We can build essentially any UI, sometimes even like this iOS Twitter settings screen with UI Components out of the box. 👨🏼‍🔧<br><br>Everything you see here is from Ionic, <a href="https://twitter.com/ionicons?ref_src=twsrc%5Etfw">@ionicons</a> and styled using Ionic&#39;s theme application colors. <a href="https://t.co/ZocsDvBShH">pic.twitter.com/ZocsDvBShH</a></p>&mdash; Alan Montgomery (@93alan) <a href="https://twitter.com/93alan/status/1512587338962116611?ref_src=twsrc%5Etfw">April 9, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-### Documentación
-
-* Ionic Icons en la [página oficial](https://ionic.io/ionicons)
-* Ionic Components en la [página oficial](https://ionicframework.com/docs/components)
 
 ### Términos
 

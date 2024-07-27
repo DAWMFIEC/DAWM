@@ -301,16 +301,16 @@ theme: jekyll-theme-leap-day
 
 * Versiona local y remotamente el repositorio **hybrid**.
 
+### Documentación
+
+* Ionic Icons en la [página oficial](https://ionic.io/ionicons)
+* Ionic Components en la [página oficial](https://ionicframework.com/docs/components)
+
 ### Fundamental
 
 * Formularios de Angular en [X](https://twitter.com/GoThinkster/status/1301592772999143424) 
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Making good forms in <a href="https://twitter.com/hashtag/angular?src=hash&amp;ref_src=twsrc%5Etfw">#angular</a> can be easier than you think!<br><br>1/5 🧵 <a href="https://t.co/TYlWq00MHV">pic.twitter.com/TYlWq00MHV</a></p>&mdash; Thinkster (@GoThinkster) <a href="https://twitter.com/GoThinkster/status/1301592772999143424?ref_src=twsrc%5Etfw">September 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-### Documentación
-
-* Ionic Icons en la [página oficial](https://ionic.io/ionicons)
-* Ionic Components en la [página oficial](https://ionicframework.com/docs/components)
 
 ### Términos
 
