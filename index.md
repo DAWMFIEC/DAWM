@@ -44,7 +44,13 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 20: REST API (Seguridad) - Login](guias/2024/guia20)
   * [Guía 21: REST API (Seguridad) - Cookies y Session](guias/2024/guia21)
   * [Guía 22: REST API (Seguridad) - Despliegue en Railway](guias/2024/guia22)
+  * [Guía 23: REST API (Datos y Seguridad) - JWT Token](guias/2024/guia23)
 * [Proyecto 05: MobileApp - Angular y Ionic](proyectos/2024/proyecto05)
+  * [Guía 24: Ionic - Introducción](/DAWM/guias/2024/guia24)
+  * [Guía 25: Ionic - Componentes](/DAWM/guias/2024/guia25)
+  * [Guía 26: Ionic - Funcionalidad nativa](/DAWM/guias/2024/guia26)
+  * [Guía 27: Ionic - Interacción con Firebase](/DAWM/guias/2024/guia27)
+  * [Guía 28: Ionic - Generación del apk](/DAWM/guias/2024/guia28)
   
 ## Scripts
 
