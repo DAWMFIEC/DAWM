@@ -32,5 +32,5 @@ La respuesta es:
 * [Guía 19: REST API (Seguridad) - Partials y ORM - II](/DAWM/guias/2024/guia19)
 * [Guía 20: REST API (Seguridad) - Login](/DAWM/guias/2024/guia20)
 * [Guía 21: REST API (Seguridad) - Cookies y Session](/DAWM/guias/2024/guia21)
-* [Guía 22: REST API (Datos y Seguridad) - JWT y Token](/DAWM/guias/2024/guia22)
-* [Guía 23: REST API (Seguridad) - Despliegue en Railway e Integración](/DAWM/guias/2024/guia23)
+* [Guía 22: REST API (Seguridad) - Despliegue en Railway](/DAWM/guias/2024/guia22)
+* [Guía 23: REST API (Datos y Seguridad) - JWT Token e Integración](/DAWM/guias/2024/guia23)
