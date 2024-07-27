@@ -39,6 +39,14 @@ theme: jekyll-theme-leap-day
 
 #### Railway - Servicio MySQL
 
+* Cree un proyecto de Railway con el servicio MySQL, con: `New Project` > `Deploy MySQL`.
+* Copie las **credenciales de conexión** que se encuentran en la opción `Variables`: 
+    _MYSQLDATABASE_, _MYSQLHOST_, _MYSQLPASSWORD_, _MYSQLPORT_ y _MYSQLUSER_.
+
+   <div align="center">
+    <img src="imagenes/railway_credentials.jpg">
+   </div>
+
 #### MySQL Workbench - Migración
 
 #### Railway - Despliegue desde GitHub
