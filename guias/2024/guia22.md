@@ -64,8 +64,8 @@ theme: jekyll-theme-leap-day
   + Seleccione la opción **Export to Self-Contained File**. 
   + Haga clic en la opción **Start Export**.
 
-2. (STOP 2) En la conexión a Railway:
-  + Establezca una nueva conexión con los datos _DOMAIN_ (host), _PORT_, _MYSQLPORT_, _MYSQLUSER_, _MYSQLPASSWORD_ y _MYSQLDATABASE_.
+2. En la conexión a Railway:
+  + Establezca una nueva conexión con los datos _DOMAIN_ (en hostname), _MYSQLPORT_ (en Port), _MYSQLUSER_ (en Username), _MYSQLPASSWORD_(en Store in Vault) y _MYSQLDATABASE_ (en Default schema).
 
   <div align="center">
     <img src="imagenes/railway_workbench.jpg">
@@ -75,6 +75,31 @@ theme: jekyll-theme-leap-day
   + Seleccione la opción **Import from Self-Contained File** y escoja el script previamente creado. 
   + Seleccione en la opción **Default Target Schema**: _railway_.
   + Haga clic en la opción **Start Import**.
+
+3. (STOP 2) En Railway, verifique las tablas y registros exportados.
+
+    <div align="center">
+      <img src="imagenes/railway_data_exported.jpg">
+    </div>
+
+#### Express - Credenciales de conexión
+
+1. Modifique el archivo _config/config.json_, con las credenciales de conexión, en el ambiente de producción (clave `production`), p.e.: 
+  
+    ```typescript
+    ...
+    "production": {
+      "username": "root",
+      "password": "TwLyrUxFDntKosRbDJntUzFpcbeElwjs",
+      "database": "railway",
+      "host": "monorail.proxy.rlwy.net",
+      "dialect": "mysql",
+      "port": "18740"
+    }
+    ...
+    ```
+
+2. Versione los cambios en el repositorio local y remoto.
 
 #### Railway - Despliegue desde GitHub
 
