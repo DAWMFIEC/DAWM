@@ -90,13 +90,13 @@ theme: jekyll-theme-leap-day
     - Agregue la variable de entorno `NODE_ENV` con el valor `production`.
 
     <p style="text-align: center;">
-      <img src="imagenes/railway_raw_env.png" width="80%">
+      <img src="imagenes/railway_raw_env.jpg" width="80%">
     </p>
 
 4. En la opción **Settings** > **Networking**, genere un dominio aleatorio para la aplicación en la opción **Generate Domain**.
 
     <p style="text-align: center;">
-      <img src="imagenes/railway_generate_domain.png" width="80%">
+      <img src="imagenes/railway_generate_domain.jpg" width="80%">
     </p>
 
 
