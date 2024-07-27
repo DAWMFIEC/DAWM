@@ -31,41 +31,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-#### Github - RestAPI
-
-1. Clone localmente tu repositorio **restapi**.
-2. Desde la línea de comandos, inicie el servidor:
-
-    ```command
-    npm run autostart
-    ```
-
-3. Cree el archivo _.env_, con las variables:
-    
-    ```text
-    PORT=5500
-    FIREBASE_ADMIN_API = ''
-    ```
-
-#### Github - Security
-
-1. Clone localmente tu repositorio **security**.
-2. Desde la línea de comandos, inicie el servidor:
-
-    ```command
-    npm run autostart
-    ```
-
-3. Cree el archivo _.env_, con las variables:
-    
-    ```text
-    SALT='...=='
-    TOKEN_SECRET='ly...FNWW/...+yg=='
-    ALL_GRANTED="admin"
-    ```
-
 ### Actividades en clases
-
 
 ### Documentación
 
