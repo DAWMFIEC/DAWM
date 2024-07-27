@@ -84,7 +84,7 @@ theme: jekyll-theme-leap-day
 
 #### Express - Credenciales de conexión
 
-1. Modifique el archivo _config/config.json_, con las credenciales de conexión, en el ambiente de producción (clave `production`), p.e.: 
+1. Modifique el archivo _config/config.json_ con las credenciales de conexión en el ambiente de producción (clave `production`), p.e.: 
   
     ```typescript
     ...
@@ -123,8 +123,6 @@ theme: jekyll-theme-leap-day
     <p style="text-align: center;">
       <img src="imagenes/railway_generate_domain.jpg" width="80%">
     </p>
-
-
 
 ### Documentación
 
