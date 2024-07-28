@@ -46,7 +46,7 @@ theme: jekyll-theme-leap-day
 2. Acceda a la carpeta del proyecto y levante el servidor, con:
 
     ```command
-    cd <NOMBRE_DE_LA_APLICACION> 
+    cd hybrid
     ionic serve
     ```
 
