@@ -26,7 +26,7 @@ theme: jekyll-theme-leap-day
     ionic g interface interfaces/UserPhoto
     ```
 
-2. Modifique el archivo `interfaces/user-photo.ts`
+2. Modifique el archivo _hybrid/src/app/interfaces/user-photo.ts_
 
     ```typescript
     export interface UserPhoto {
@@ -35,13 +35,13 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-3. Cree el servicio `services/photo`
+3. Cree el servicio _hybrid/src/app/services/photo_
 
     ```command
     ionic g service services/photo
     ```
 
-4. Modifique el archivo `services/photo.service.ts`
+4. Modifique el archivo _hybrid/src/app/services/photo.service.ts_
 
     ```typescript
     ...
@@ -80,7 +80,7 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-5. Edite el archivo `tab2/tab2.page.ts`, con:
+5. Edite el archivo _hybrid/src/app/tab2/tab2.page.ts_, con:
 
     ```typescript
     ...
@@ -112,7 +112,7 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-6. Edite el archivo `tab2/tab2.page.html`, con:
+6. Edite el archivo _hybrid/src/app/tab2/tab2.page.html_, con:
 
     ```html
     ...
