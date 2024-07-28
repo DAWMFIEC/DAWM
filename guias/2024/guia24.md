@@ -52,20 +52,23 @@ theme: jekyll-theme-leap-day
 
 #### Github
 
-* Crea un repositorio en GitHub con el nombre **hybrid**.
-* Desde la línea de comandos:
+1. Crea un repositorio en GitHub con el nombre **hybrid**.
+2. Desde la línea de comandos:
   
-  + Agregue la rama **main**, con: 
+  + Agregue la rama **main** y el tag **origin**:
+  
   ```command
   git branch -M main
-  ```
-
-  + Agregue el tag **origin**
-  ```command
   git remote add origin https://github.com/aavendan/hybrid.git
   ```
 
-* Versiona local y remotamente el repositorio **hybrid**.
+3. Versiona local y remotamente el repositorio **hybrid**.
+
+    ```command
+    git add .
+    git commit -m "first"
+    git push origin main --force
+    ```
 
 ### Documentación
 
