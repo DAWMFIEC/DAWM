@@ -8,337 +8,296 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+* Cree una base de datos no relacional según [Firebase - Realtime Database](https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database)
+
 ### Actividades en clases
 
 * Clone localmente tu repositorio **hybrid**.
 * Abra el proyecto en VSCode y levante el servidor.
-* Instale los módulos con la funcionalidad nativa
 
-  ```command
-  npm install @capacitor/camera @capacitor/preferences @capacitor/filesystem
-  ```
+#### Interfaz de Tipo de Datos
 
-#### Camera API
+* Cree una interfaz de Angular, con:
 
-* Cree la interfaz `interfaces/UserPhoto`
+	```
+	ionic g interface interfaces/<NOMBRE_INTERFAZ>
+	```
 
-  ```command
-  ionic g interface interfaces/UserPhoto
-  ```
+* Coloque la interfaz generada en lugar de la interfaz creada. 
 
-* Modifique el archivo `interfaces/user-photo.ts`
+#### Servicio Proveedor de Datos
 
-  ```typescript
-  export interface UserPhoto {
-    filepath: string;
-    webviewPath?: string;
-}
-  ```
+* Cree el servicio proveedor de datos, con:
 
-* Cree el servicio `services/photo`
+	```
+	ionic g service services/<NOMBRE_SERVICIO>
+	```
 
-  ```command
-  ionic g service services/photo
-  ```
+#### Providers/Servicio
 
-* Modifique el archivo `services/photo.service.ts`
+* Importe el cliente `HttpClient` en el servicio proveedor de datos.
 
-  ```typescript
-  ...
+	```typescript
+	import { Injectable } from '@angular/core';
 
-  //Importe los módulos con la funcionalidad nativa
-  import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
-  import { Filesystem, Directory } from '@capacitor/filesystem';
-  
+	//Importación del HttpClient
+	import { HttpClient } from '@angular/common/http';
+	```
+* Agregue un atributo con el URL de referencia al servicio.
 
-  //Importe la interfaz
-  import { UserPhoto } from '../interfaces/user-photo';
+	```typescript
+	...
+	export class <NOMBRE_SERVICIO>Service {
 
+		//Atributo URL
+		private URL: string = 'https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json';
 
-  export class PhotoService {
-
-    //Atributo para almacenar las fotos
-    public photos: UserPhoto[] = [];
-
-    constructor() { }
-
-    public async addNewToGallery() {
-
-      // Tome una foto
-      const capturedPhoto = await Camera.getPhoto({
-        resultType: CameraResultType.Uri,
-        source: CameraSource.Camera,
-        quality: 100
-      });
-
-      // Agregue el archivo al inicio del arreglo
-      this.photos.unshift({
-        filepath: "soon...",
-        webviewPath: capturedPhoto.webPath!
-      });
-    }
-  }
-  ```
-
-* Edite el archivo `tab2/tab2.page.ts`, con:
-
-  ```typescript
-  ...
-  // Importe el módulo con la directiva @ngFor
-  import { CommonModule } from '@angular/common'
-
-  // Importe los componentes de la UI
-  import { ... , IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid } from '@ionic/angular/standalone';
-
-  //Importe el servicio
-  import { PhotoService } from '../services/photo.service';
-  ...
-  
-  @Component({
-  	...
-  	// Registre los módulos
-	imports: [ ... , CommonModule, IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid]
-  })
-  export class Tab2Page {
-
-  	//Inyecte la dependencia del servicio
-  	constructor(public photoService: PhotoService) {}
-
-  	//Método a invocar
-  	addPhotoToGallery() {
-  		this.photoService.addNewToGallery();
-  	}
-
-  }
-  ```
-
-* Edite el archivo `tab2/tab2.page.html`, con:
-
-  ```html
-  ...
-  <ion-content>
-  	<!-- Muestra los elementos -->
-  	<ion-grid>
-  		<ion-row>
-  			<ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
-  				<ion-img [src]="photo.webviewPath"></ion-img>
-  				<p>filepath: {{photo.filepath}}</p>
-  			</ion-col>
-  		</ion-row>
-  	</ion-grid>
-
-
-  	<!-- Muestra el obtón y habilita el servicio de la cámara --> 
-  	<ion-fab vertical="bottom" horizontal="center" slot="fixed">
-  		<ion-fab-button (click)="addPhotoToGallery()">
-  			<ion-icon name="camera"></ion-icon>
-		</ion-fab-button>
-	</ion-fab>
-  </ion-content>
-  ```
-
-* Revise los cambios en el navegador, con:
-
-  ```command
-  ionic serve
-  ```
-
-#### Filesystem API
-
-* Modifique el método **addNewToGallery**, en el archivo `services/photo.service.ts`
-
-  ```typescript
-  ...
-  // Importa el módulo Platform y Capacitor
-  import { Platform } from '@ionic/angular';
-  import { Capacitor } from '@capacitor/core';
-
-  ...
-  export class PhotoService {
-
-  	...
-
-  	//Referencia local a la plataforma utilizada 'hybrid' o 'web'
-  	private platform: Platform;
-
-  	//Referencia en la inyección de dependencias
-  	constructor(platform: Platform) {
-  		this.platform = platform;
-  	}
-
-  	public async addNewToGallery() {
-  		...
-
-  		// Agregue el archivo al inicio del arreglo
-  		const savedImageFile = await this.savePicture(capturedPhoto);
-  		this.photos.unshift(savedImageFile);
-
-  		// Agregue el archivo al inicio del arreglo
-		    // this.photos.unshift({
-		    //   filepath: "soon...",
-		    //   webviewPath: capturedPhoto.webPath!
-		    // });
-  	}
-
-  }
-  ```
-
-* Agregue los métodos **savePicture**, **readAsBase64** y **convertBlobToBase64**, en el archivo `services/photo.service.ts`
-
-  ```typescript
-  ...
-  export class PhotoService {
-  	...
-
-	  private async savePicture(photo: Photo) {
-	    // Convierta la foto al formato base64, requerido por el API para guardar en el sistema de archivos
-	    const base64Data = await this.readAsBase64(photo);
-
-	    // Escriba el archivo en el directorio de datos.
-	    const fileName = Date.now() + '.jpeg';
-	    const savedFile = await Filesystem.writeFile({
-	      path: fileName,
-	      data: base64Data,
-	      directory: Directory.Data
-	    });
-
-
-	    if (this.platform.is('hybrid')) {
-	      // Muestre la nueva imagen reescribiendo la ruta 'file://' a HTTP
-	      // Detalles: https://ionicframework.com/docs/building/webview#file-protocol
-	      return {
-	        filepath: savedFile.uri,
-	        webviewPath: Capacitor.convertFileSrc(savedFile.uri),
-	      };
-	    }
-	    else {
-
-	      // Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que 
-	      // ya está cargada en la memoria
-	      return {
-	        filepath: fileName,
-	        webviewPath: photo.webPath
-	      };
-
-	    }
-	  }
-
-	  private async readAsBase64(photo: Photo) {
-
-	    // "hybrid" detecta si es Cordova o Capacitor
-	    if (this.platform.is('hybrid')) {
-	      // Lee el archivo en formato base64
-	      const file = await Filesystem.readFile({
-	        path: photo.path!
-	      });
-
-	      return file.data;
-	    }
-	    else {
-	      // Obtenga la foto, léala como un blob y luego conviértala al formato base64.
-	      const response = await fetch(photo.webPath!);
-	      const blob = await response.blob();
-
-	      return await this.convertBlobToBase64(blob) as string;
-	    }
-	  }
-
-	  private convertBlobToBase64 = (blob: Blob) => new Promise((resolve, reject) => {
-	    const reader = new FileReader();
-	    reader.onerror = reject;
-	    reader.onload = () => {
-	      resolve(reader.result);
-	    };
-	    reader.readAsDataURL(blob);
-	  });
-  }
-  ```
-
-* Revise los cambios en el navegador, con:
-
-  ```command
-  ionic serve
-  ```
-
-#### Preferences API
-
-* Modifique el archivo `services/photo.service.ts`
-
-  ```typescript
-  ...
-  export class PhotoService {
-
-	  //Clave para el almacenamiento
-	  private PHOTO_STORAGE: string = 'photos';
-
-
-	  public async addNewToGallery() {
-
-	    ...
-
-	    Preferences.set({
-	      key: this.PHOTO_STORAGE,
-	      value: JSON.stringify(this.photos),
-	    });
-
-	    // Agregue el archivo al inicio del arreglo
-	    // this.photos.unshift({
-	    //   filepath: "soon...",
-	    //   webviewPath: capturedPhoto.webPath!
-	    // });
-	  }
-
-	  ...
-
-	  public async loadSaved() {
-
-	    // Recuperar datos del arreglo de fotografías en caché
-	    const { value } = await Preferences.get({ key: this.PHOTO_STORAGE });
-	    this.photos = (value ? JSON.parse(value) : []) as UserPhoto[];
-
-
-	    // La forma más sencilla de detectar cuando se ejecuta en la web:
-		// “cuando la plataforma NO sea híbrida, haz esto”
-	    if (!this.platform.is('hybrid')) {
-
-	      // Muestra la foto leyendo en formato base64
-	      for (let photo of this.photos) {
-
-	        // Lee los datos de cada foto guardada desde el sistema de archivos
-	        const readFile = await Filesystem.readFile({
-	          path: photo.filepath,
-	          directory: Directory.Data
-	        });
-
-	        // Solo plataforma web: carga la foto como datos base64
-	        photo.webviewPath = `data:image/jpeg;base64,${readFile.data}`;
-	      }
-	    }
-	  }
-  }
-  ```
-
-* Edite el archivo `tab2/tab2.page.ts`, con:
-
-  ```typescript
-  ...
-  export class Tab2Page {
-
-	  ...
-	  
-	  async ngOnInit() {
-	    await this.photoService.loadSaved();
-	  }
-	 
+		...
 
 	}
-  ```
+	```
 
-* Revise los cambios en el navegador, con:
+* Inyecte el cliente `HttpClient` en el constructor del servicio proveedor de datos.
 
-  ```command
-  ionic serve
-  ```
+	```typescript
+	...
+	export class <NOMBRE_SERVICIO>Service {
+
+		//Atributo URL
+		private URL: string ...
+
+		//Inyección de dependencia del HttpClient
+		constructor(private http:HttpClient) { }
+
+	}
+	```
+
+* Agregue un método para hacer una petición HTTP GET y un método para enviar una petición HTTP POST. 
+
+	```typescript
+	...
+	export class <NOMBRE_SERVICIO>Service {
+
+		//Atributo URL
+		private URL: string ...
+
+		//Inyección de dependencia del HttpClient
+		constructor( ... ) { }
+
+		//Método con la petición HTTP
+		getResponse() {
+			return this.http.get(this.URL);
+		}
+
+		//Método con la petición HTTP
+		postResponse(data: any) {
+		    return this.http.post(this.URL, data);
+		}
+
+	}
+	```
+
+#### Componente.ts - Consumo de Servicio
+
+* Modifique el archivo `tab1/tab1.page.ts`
+* Importe el módulo `HttpClientModule`, la interfaz `<NOMBRE_INTERFAZ>` y el servicio `<NOMBRE_SERVICIO>Service`. 
+
+	```typescript
+	...
+
+	// Importe el módulo con la directiva @ngFor
+	import { CommonModule } from '@angular/common'
+
+	import {
+	  ...
+	  //Importe los componentes
+	  IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
+	  IonInput, IonButton,
+	  IonLabel, IonList, IonItem
+	} from '@ionic/angular/standalone';
+
+	//Importación del método http
+	import { HttpClientModule } from  '@angular/common/http';
+
+	//Importación de la interfaz
+	import { <NOMBRE_INTERFAZ> } from '<RUTA>/interfaces/<NOMBRE_INTERFAZ>';
+
+	//Importación del servicio
+	import { <NOMBRE_SERVICIO>Service } from '<RUTA>/providers/<NOMBRE_SERVICIO>.service'
+
+	//Importación de los constructores del formulario
+	import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
+
+
+	@Component({
+	...
+	````
+
+* Registre los módulos en la clave _imports_ y el servicio `<NOMBRE_SERVICIO>Service` en la clave _providers_.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	  standalone: true,
+	  imports: [
+	  	...
+	  	
+	  	//Registre los componentes
+	    HttpClientModule, ReactiveFormsModule,
+
+	    CommonModule, 
+	    IonLabel, IonList,IonItem,
+	    IonInput, IonButton,
+
+	    IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent
+	  ],
+	  providers: [<NOMBRE_SERVICIO>Service],
+	  ...
+	})
+	...
+	````
+
+* Agregue un atributo para almacenar la respuesta a la petición y el constructor del formulario.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	  //Atributo con el tipo de dato de la interfaz
+	  public data : <NOMBRE_INTERFAZ>[] = [];
+
+	  checkoutForm = this.formBuilder.group({
+	    texto: ''
+	  });
+	  
+	  ...
+	}
+	...
+	```
+
+* Inyecte la dependencia al servicio y al constructor del formulario en el constructor del componente seleccionado para mostrar los datos.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	   public data : <NOMBRE_INTERFAZ>[] ...
+
+	   checkoutForm = ...
+	  
+	  //Inyección de dependencia del servicio
+	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service , private formBuilder: FormBuilder) { }
+	}
+	...
+	```
+
+* Agregue un método que realice la petición y que se suscriba a la respuesta de la petición. Extraiga una muestra de los datos en el atributo a renderizar en la vista.
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	  ...
+
+	  constructor( ... ) { }
+
+	  //Ejecución de la petición y suscripción de la respuesta
+
+	  ngOnInit() {
+	    this.loadData()
+	  }
+
+	  loadData() {
+	    this.dataProvider.getResponse().subscribe( response => {
+	      if( response != null) {
+	        this.data = Object.values(response) as Data[]
+	      }
+	        
+	    })
+	  }
+	}
+	...
+	```
+
+* Agregue un método que envíe la petición con los datos del formulario
+
+
+	```typescript
+	...
+	@Component({
+	  ...
+	})
+	export class <COMPONENTE_SELECCIONADO>Component {
+
+	  ...
+
+	  onSubmit(): void {
+	  	// Proceso para enviar los datos
+		this.dataProvider.postResponse(this.checkoutForm.value).subscribe( (response) => {
+				this.checkoutForm.reset();
+				this.loadData()
+			})
+		}
+
+	}
+	...
+	```
+
+#### Componente.ts - Formulario y Renderización del resultado
+
+* Utilice la directiva `*ngFor` para recorrer el arreglo `data` en la vista (html) del componente seleccionado. 
+
+	```
+	...
+	<ion-content [fullscreen]="true">
+
+	  <ion-card class="ion-padding-bottom ion-margin-bottom">
+	    
+	    <ion-card-header>
+	      <ion-card-title>Memorias</ion-card-title>
+	    </ion-card-header>
+
+	    <ion-card-content class="ion-text-center">
+	      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
+	        <ion-input formControlName="texto"
+	          placeholder="Ingresa tu memoria"></ion-input>
+	        <ion-button type="submit">Enviar</ion-button>
+	      </form>
+	    </ion-card-content>
+	  </ion-card>
+	  
+
+	  <ion-card>
+	    <ion-card-header>
+	      <ion-card-title>Lista de Memorias</ion-card-title>
+	    </ion-card-header>
+
+	    <ion-card-content>
+
+	      <!-- Muestra los elementos -->
+	      <ion-list>
+	        <ion-item *ngFor="let datum of data">
+	          <ion-label>{{datum.texto}}</ion-label>
+	        </ion-item>
+	      </ion-list>
+
+	    </ion-card-content>
+	  </ion-card>
+
+	  
+	</ion-content>
+	```
+
 
 * Versiona local y remotamente el repositorio **hybrid**.
 
@@ -347,16 +306,17 @@ theme: jekyll-theme-leap-day
 * Ionic Icons en la [página oficial](https://ionic.io/ionicons)
 * Ionic Components en la [página oficial](https://ionicframework.com/docs/components)
 
-
 ### Fundamental
 
-* UI template en [X](https://twitter.com/aashudubey_ad/status/1488243707472416770)
+* Formularios de Angular en [X](https://twitter.com/GoThinkster/status/1301592772999143424) 
 
-<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">I&#39;ve created a UI template in <a href="https://twitter.com/Ionicframework?ref_src=twsrc%5Etfw">@Ionicframework</a> using <a href="https://twitter.com/capacitorjs?ref_src=twsrc%5Etfw">@capacitorjs</a> with some cool UI and Animations, Do check it out. <br><br>I will continue adding more designs and UI templates to this repo👨🏽‍💻.<a href="https://twitter.com/hashtag/Ionic?src=hash&amp;ref_src=twsrc%5Etfw">#Ionic</a> <a href="https://twitter.com/hashtag/Angular?src=hash&amp;ref_src=twsrc%5Etfw">#Angular</a> <a href="https://twitter.com/hashtag/Templates?src=hash&amp;ref_src=twsrc%5Etfw">#Templates</a> <a href="https://twitter.com/hashtag/Github?src=hash&amp;ref_src=twsrc%5Etfw">#Github</a> <a href="https://twitter.com/hashtag/OpenSource?src=hash&amp;ref_src=twsrc%5Etfw">#OpenSource</a> <a href="https://twitter.com/hashtag/Android?src=hash&amp;ref_src=twsrc%5Etfw">#Android</a> <a href="https://twitter.com/hashtag/iOS?src=hash&amp;ref_src=twsrc%5Etfw">#iOS</a><a href="https://t.co/zGnaxSKwew">https://t.co/zGnaxSKwew</a></p>&mdash; Ashu (@aashudubey_ad) <a href="https://twitter.com/aashudubey_ad/status/1488243707472416770?ref_src=twsrc%5Etfw">January 31, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Making good forms in <a href="https://twitter.com/hashtag/angular?src=hash&amp;ref_src=twsrc%5Etfw">#angular</a> can be easier than you think!<br><br>1/5 🧵 <a href="https://t.co/TYlWq00MHV">pic.twitter.com/TYlWq00MHV</a></p>&mdash; Thinkster (@GoThinkster) <a href="https://twitter.com/GoThinkster/status/1301592772999143424?ref_src=twsrc%5Etfw">September 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
+
+reactform
 
 ### Referencias
 
 * Ionicframework. (n.d.). Your First Ionic App: Angular: Ionic Documentation. Retrieved from https://ionicframework.com/docs/angular/your-first-app
-* Ionicframework. (n.d.). Taking Photos with the Camera: Ionic Documentation. Retrieved from https://ionicframework.com/docs/angular/your-first-app/taking-photos
+* (N.d.). Retrieved from https://angular.io/start/start-forms
