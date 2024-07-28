@@ -48,7 +48,7 @@ theme: jekyll-theme-leap-day
 
 #### Camera API
 
-1. Modifique el archivo _hybrid/src/app/services/photo.service.ts_
+1. Modifique el archivo _hybrid/src/app/services/photo.service.ts_.
 
     ```typescript
     ...
@@ -415,7 +415,7 @@ theme: jekyll-theme-leap-day
         }
       }
 
-      ...
+
     }
     ```
 
@@ -426,6 +426,8 @@ theme: jekyll-theme-leap-day
     export class Tab2Page {
 
       ...
+
+      addPhotoToGallery() { ... }
       
       async ngOnInit() {
         await this.photoService.loadSaved();
@@ -435,11 +437,17 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-2. (STOP 3) Revise los cambios en el navegador, con:
+2. Revise los cambios en el navegador, con:
 
     ```command
     ionic serve
     ```
+
+3. (STOP 4) Compruebe la aplicación en el navegador.
+
+    <div align="center">
+      <img src="imagenes/ionic_savedinmemory.jpg">
+    </div>
 
 * Versiona local y remotamente el repositorio **hybrid**.
 
