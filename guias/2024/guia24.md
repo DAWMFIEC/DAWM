@@ -145,6 +145,8 @@ theme: jekyll-theme-leap-day
 
 2. Edite el archivo _hybrid/src/app/tab3/tab3.page.html_, con:
 
+    + Todo el contenido
+
     ```html
     <ion-header [translucent]="true">
       <ion-toolbar>
