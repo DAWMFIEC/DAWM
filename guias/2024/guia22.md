@@ -124,6 +124,9 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/railway_generate_domain.jpg" width="80%">
     </p>
 
+
+5. (STOP 3) Versiona local y remotamente el repositorio **security**.
+
 ### Documentación
 
 * Documentación de [Docs - Railway](https://docs.railway.app/)
