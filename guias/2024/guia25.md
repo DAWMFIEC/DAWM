@@ -207,11 +207,13 @@ theme: jekyll-theme-leap-day
     </ion-tabs>
     ```
 
-9. (STOP 1) Revise los cambios en el navegador, con:
+9. Revise los cambios en el navegador, con:
 
     ```command
     ionic serve
     ```
+
+10. (STOP 1) Compruebe la aplicación en el navegador.
 
     <div align="center">
       <img src="imagenes/ionic_localfiles.jpg">
@@ -339,11 +341,17 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-3. (STOP 2) Revise los cambios en el navegador, con:
+3. Revise los cambios en el navegador, con:
 
     ```command
     ionic serve
     ```
+
+4. (STOP 2) Compruebe la aplicación en el navegador.
+
+    <div align="center">
+      <img src="imagenes/ionic_localfiles.jpg">
+    </div>
 
 #### Preferences API
 
