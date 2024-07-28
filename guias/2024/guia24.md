@@ -50,6 +50,13 @@ theme: jekyll-theme-leap-day
     ionic serve
     ```
 
+3. (STOP 1) Revise los cambios en el navegador
+
+    <div align="center">
+      <img src="imagenes/ionic_base.jpg">
+    </div>
+
+
 #### IonTab
 
 1. Edite el archivo `tabs/tabs.page.ts`, con:
