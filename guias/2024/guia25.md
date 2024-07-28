@@ -8,6 +8,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+* Revise la documentación oficial de Ionic Docs con las instrucciones de [Taking Photos with the Camera](https://ionicframework.com/docs/angular/your-first-app/taking-photos)
+
 ### Actividades en clases
 
 * Clone localmente tu repositorio **hybrid**.
