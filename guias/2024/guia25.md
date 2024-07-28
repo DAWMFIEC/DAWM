@@ -220,7 +220,9 @@ theme: jekyll-theme-leap-day
 
 #### Filesystem API
 
-1. Modifique el método **addNewToGallery**, en el archivo _hybrid/src/app/services/photo.service.ts_, con:
+1. Edite el servicio _hybrid/src/app/services/photo.service.ts_, con:
+
+    + El método **addNewToGallery**, en el archivo
 
     ```typescript
     ...
@@ -248,24 +250,31 @@ theme: jekyll-theme-leap-day
         const savedImageFile = await this.savePicture(capturedPhoto);
         this.photos.unshift(savedImageFile);
 
-        // Agregue el archivo al inicio del arreglo
-          // this.photos.unshift({
-          //   filepath: "soon...",
-          //   webviewPath: capturedPhoto.webPath!
-          // });
+        /* Agregue el archivo al inicio del arreglo */
+        /* 
+        this.photos.unshift({
+          filepath: "soon...",
+          webviewPath: capturedPhoto.webPath!
+        }); 
+        */
       }
 
     }
     ```
 
-2. Agregue los métodos **savePicture**, **readAsBase64** y **convertBlobToBase64**, en el archivo _hybrid/src/app/services/photo.service.ts_, con:
+2. Edite el servicio _hybrid/src/app/services/photo.service.ts_, con:
+
+    + Los métodos **savePicture**, **readAsBase64** y **convertBlobToBase64**, en el 
 
     ```typescript
     ...
     export class PhotoService {
-      ...
+      
+
+      public async addNewToGallery() { ... }
 
       private async savePicture(photo: Photo) {
+
         /* 1. Convierta la foto al formato base64, requerido por el API para guardar en el sistema de archivos */
         const base64Data = await this.readAsBase64(photo);
 
@@ -279,6 +288,7 @@ theme: jekyll-theme-leap-day
 
 
         if (this.platform.is('hybrid')) {
+
           /* 3. Muestre la nueva imagen reescribiendo la ruta 'file://' a HTTP */
           /* Más detalles en: https://ionicframework.com/docs/building/webview#file-protocol */
           return {
@@ -301,20 +311,23 @@ theme: jekyll-theme-leap-day
 
         /* 5. "hybrid" detecta si es Cordova o Capacitor */
         if (this.platform.is('hybrid')) {
+
           /* 6. Lee el archivo en formato base64 */
           const file = await Filesystem.readFile({
             path: photo.path!
           });
 
           return file.data;
-        }
-        else {
+
+        } else {
+
           /* 7. Obtenga la foto, léala como un blob y luego conviértala al formato base64. */
           const response = await fetch(photo.webPath!);
           const blob = await response.blob();
 
           return await this.convertBlobToBase64(blob) as string;
         }
+
       }
 
       private convertBlobToBase64 = (blob: Blob) => new Promise((resolve, reject) => {
@@ -325,6 +338,7 @@ theme: jekyll-theme-leap-day
         };
         reader.readAsDataURL(blob);
       });
+
     }
     ```
 
