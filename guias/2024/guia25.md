@@ -263,7 +263,7 @@ theme: jekyll-theme-leap-day
 
 2. Edite el servicio _hybrid/src/app/services/photo.service.ts_, con:
 
-    + Los métodos **savePicture**, **readAsBase64** y **convertBlobToBase64**, en el 
+    + Agregue los métodos **savePicture**, **readAsBase64** y **convertBlobToBase64**.
 
     ```typescript
     ...
