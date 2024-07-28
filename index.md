@@ -46,7 +46,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 22: REST API (Seguridad) - Despliegue en Railway](guias/2024/guia22)
 * [Proyecto 05: MobileApp - Angular y Ionic](proyectos/2024/proyecto05)
   * [Guía 24: Ionic - Introducción y Componentes](guias/2024/guia24)
-  * [Guía 25: Ionic - Funcionalidad nativa](guias/2024/guia25)
+  * [Guía 25: Ionic - Funcionalidad nativa: Cámara](guias/2024/guia25)
   * [Guía 26: Ionic - Servicios y Firebase](guias/2024/guia26)
   * [Guía 27: Ionic - Generación del apk](guias/2024/guia27)
   
