@@ -59,14 +59,14 @@ theme: jekyll-theme-leap-day
 
 #### IonTab
 
-1. Edite el archivo `tabs/tabs.page.ts`, con:
+1. Edite el archivo _hybrid/src/app/tabs/tabs.page.ts_, con:
 
     + El ícono **peopleCirle** de [Ionicons](https://ionic.io/ionicons)
 
     ```typescript
     ...
 
-    /* 1. Importe la referencia al ícono peopleCircle */ 
+    /* 1. Agregue la referencia al ícono peopleCircle */ 
     import { ... , peopleCircle } from 'ionicons/icons';
 
     ...
@@ -83,7 +83,7 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-2. Edite el archivo `tabs/tabs.page.html`, con:
+2. Edite el archivo _hybrid/src/app/tabs/tabs.page.html_, con:
 
     ```html
     <ion-tabs>
@@ -103,13 +103,17 @@ theme: jekyll-theme-leap-day
     </ion-tabs>
     ```
 
-3. Revise los cambios en el navegador
+3. (STOP 2) Revise los cambios en el navegador
+
+    <div align="center">
+      <img src="imagenes/ionic_icon.jpg">
+    </div>
 
 #### IonCard
 
-1. Edite el archivo `tab3/tab3.page.ts`, con:
+1. Edite el archivo _hybrid/src/app/tab3/tab3.page.ts_, con:
 
-    + La importación de los componentes [IonCard](https://ionicframework.com/docs/api/card)
+    + Importe el componente [Card](https://ionicframework.com/docs/api/card) y sus asociados.
   
     ```typescript
     ...
@@ -118,7 +122,7 @@ theme: jekyll-theme-leap-day
     import { 
       ...  
 
-      //Importe los componentes
+      /* 1. Importe los componentes */
       IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
       
       ... 
@@ -129,7 +133,7 @@ theme: jekyll-theme-leap-day
       imports: [
         ... 
 
-        //Registre los componentes
+        /* 2. Registre los componentes */
         IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
         
         ...],
@@ -139,7 +143,7 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-2. Edite el archivo `tab3/tab3.page.html`, con:
+2. Edite el archivo _hybrid/src/app/tab3/tab3.page.html_, con:
 
     ```html
     <ion-header [translucent]="true">
@@ -155,7 +159,7 @@ theme: jekyll-theme-leap-day
       <ion-card>
         <ion-card-header>
 
-          <ion-card-title class="titulo">Mi aplicación</ion-card-title>
+          <ion-card-title class="titulo">Descripción</ion-card-title>
         
         </ion-card-header>
       
@@ -170,7 +174,7 @@ theme: jekyll-theme-leap-day
     </ion-content>
     ```
 
-* Edite el archivo `tab3/tab3.page.scss`, con:
+3. Edite el archivo _hybrid/src/app/tab3/tab3.page.scss_, con:
 
     ```css
     .titulo {
@@ -184,6 +188,11 @@ theme: jekyll-theme-leap-day
     }
     ```
 
+4. (STOP 3) Revise los cambios en el navegador
+
+    <div align="center">
+      <img src="imagenes/ionic_acercade.jpg">
+    </div>
 
 #### Github
 
