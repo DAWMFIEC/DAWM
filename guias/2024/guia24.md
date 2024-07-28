@@ -8,19 +8,19 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* En grupo, identifiquen un problema que deseen resolver con una aplicación móvil.
-* Diseñe un prototipo con las interfaces de su aplicación móvil, con al menos cuatro (4) vistas:
+1. En grupo, identifiquen un problema que deseen resolver con una aplicación móvil.
+2. Diseñe un prototipo con las interfaces de su aplicación móvil, con al menos cuatro (4) vistas:
   + **Principal** muestra la funcionalidad principal de la aplicación (por ejemplo, feed de noticias, catálogo de productos, resumen de cuentas, album de fotos, etc.). Opcionalmente, puede incluir herramientas de búsqueda y filtros si es necesario.
   + **Detalles de un elemento** en una vista individual muestra los detalles un elemento (por ejemplo, detalles de una publicación, detalles de un producto, total de cuentas por tipo, etc.).
   + **Ingreso de un elemento** contiene las funcionalidades para agregar, ver y gestionar un elemento.
   + **Acerca de** con la información del proyecto y de las personas que intervienen en el proyecto.
-* Seleccione un diseño que se ajuste a su prototipo. Puede considerar alguna de las siguientes fuentes: [Mobbin](https://mobbin.com/browse/android/apps) o [Scrnshts](https://scrnshts.club/) 
+3. Seleccione un diseño que se ajuste a su prototipo. Puede considerar alguna de las siguientes fuentes: [Mobbin](https://mobbin.com/browse/android/apps) o [Scrnshts](https://scrnshts.club/) 
 
 ### Actividades en clases
 
 #### Dependencias Globales
 
-* Instale los módulos Ionic CLI, native-run (para ejecutar binarios nativos en dispositivos y simuladores/emuladores) y cordova-res (para generar íconos de aplicaciones nativas y pantallas de presentación), con: 
+1. Instale los módulos Ionic CLI, native-run (para ejecutar binarios nativos en dispositivos y simuladores/emuladores) y cordova-res (para generar íconos de aplicaciones nativas y pantallas de presentación), con: 
 
     ```command
     npm install -g @ionic/cli native-run cordova-res
@@ -36,18 +36,18 @@ theme: jekyll-theme-leap-day
 
   + Seleccione el tipo componente Standalone para construir la aplicación
 
-  	```command
-  	? Would you like to build your app with NgModules or Standalone Components?
-  	...
-  	> Standalone
-  	```
+    ```command
+    ? Would you like to build your app with NgModules or Standalone Components?
+    ...
+    > Standalone
+    ```
 
 2. Acceda a la carpeta del proyecto y levante el servidor, con:
 
-  	```command
-  	cd <NOMBRE_DE_LA_APLICACION> 
-  	ionic serve
-  	```
+    ```command
+    cd <NOMBRE_DE_LA_APLICACION> 
+    ionic serve
+    ```
 
 #### IonTab
 
@@ -64,35 +64,36 @@ theme: jekyll-theme-leap-day
     ...
 
     export class TabsPage {
-      ...
+    ...
 
-      constructor() {
+    constructor() {
 
         /* 2. Agregue el ícono peopleCircle */
         addIcons({ ... , peopleCircle });
+
       }
     }
     ```
 
 2. Edite el archivo `tabs/tabs.page.html`, con:
 
-  ```html
-  <ion-tabs>
-    <ion-tab-bar slot="bottom">
-      
-      ...
+    ```html
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        
+        ...
 
-      <ion-tab-button tab="tab3" href="/tabs/tab3">
-         
-         <!-- 1. Ícono y nombre del tab -->
-         <ion-icon name="people-circle"></ion-icon>
-         <ion-label>Acerca de</ion-label>
+        <ion-tab-button tab="tab3" href="/tabs/tab3">
+           
+           <!-- 1. Ícono y nombre del tab -->
+           <ion-icon name="people-circle"></ion-icon>
+           <ion-label>Acerca de</ion-label>
 
-      </ion-tab-button>
+        </ion-tab-button>
 
-    </ion-tab-bar>
-  </ion-tabs>
-  ```
+      </ion-tab-bar>
+    </ion-tabs>
+    ```
 
 3. Revise los cambios en el navegador
 
@@ -136,7 +137,7 @@ theme: jekyll-theme-leap-day
     <ion-header [translucent]="true">
       <ion-toolbar>
         <ion-title>
-          Tab 3
+          Acerca de
         </ion-title>
       </ion-toolbar>
     </ion-header>
