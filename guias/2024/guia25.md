@@ -20,7 +20,7 @@ theme: jekyll-theme-leap-day
   npm install @capacitor/camera @capacitor/preferences @capacitor/filesystem
   ```
 
-#### Camera API
+#### Interfaz
 
 1. Desde la línea de comandos, cree la interfaz _hybrid/src/app/interfaces/UserPhoto_
 
@@ -37,13 +37,18 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-3. Cree el servicio _hybrid/src/app/services/photo_
+
+#### Servicio
+
+1. Cree el servicio _hybrid/src/app/services/photo_
 
     ```command
     ionic g service services/photo
     ```
 
-4. Modifique el archivo _hybrid/src/app/services/photo.service.ts_
+#### Camera API
+
+1. Modifique el archivo _hybrid/src/app/services/photo.service.ts_
 
     ```typescript
     ...
