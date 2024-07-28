@@ -115,14 +115,25 @@ theme: jekyll-theme-leap-day
 6. Edite el archivo _hybrid/src/app/tab2/tab2.page.html_, con:
 
     ```html
-    ...
+    <ion-header [translucent]="true">
+      <ion-toolbar>
+
+        <!-- 1. Título de la vista -->
+        <ion-title>
+          Pictures
+        </ion-title>
+
+      </ion-toolbar>
+    </ion-header>
+
+
     <ion-content [fullscreen]="true">
 
       <ion-header collapse="condense">
       ...
       </ion-header>
 
-      <!-- 1. Muestra los elementos -->
+      <!-- 2. Muestra los elementos -->
       <ion-grid>
         <ion-row>
           <ion-col size="4" *ngFor="let photo of photoService.photos; index as position">
@@ -133,7 +144,7 @@ theme: jekyll-theme-leap-day
       </ion-grid>
 
 
-      <!-- 2. Muestra el obtón y habilita el servicio de la cámara --> 
+      <!-- 3. Muestra el obtón y habilita el servicio de la cámara --> 
       <ion-fab vertical="bottom" horizontal="center" slot="fixed">
         <ion-fab-button (click)="addPhotoToGallery()">
           <ion-icon name="camera"></ion-icon>
