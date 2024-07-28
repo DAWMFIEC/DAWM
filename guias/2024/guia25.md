@@ -20,7 +20,7 @@ theme: jekyll-theme-leap-day
 
 #### Camera API
 
-1. Cree la interfaz _hybrid/src/app/interfaces/UserPhoto_
+1. Desde la línea de comandos, cree la interfaz _hybrid/src/app/interfaces/UserPhoto_
 
     ```command
     ionic g interface interfaces/UserPhoto
@@ -46,32 +46,32 @@ theme: jekyll-theme-leap-day
     ```typescript
     ...
 
-    //Importe los módulos con la funcionalidad nativa
+    /* 1. Importe los módulos con la funcionalidad nativa */
     import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
     import { Filesystem, Directory } from '@capacitor/filesystem';
 
 
-    //Importe la interfaz
+    /* 2. Importe la interfaz */
     import { UserPhoto } from '../interfaces/user-photo';
 
-
+    ...
     export class PhotoService {
 
-      //Atributo para almacenar las fotos
+      /* 3. Atributo para almacenar las fotos */
       public photos: UserPhoto[] = [];
 
       constructor() { }
 
       public async addNewToGallery() {
 
-        // Tome una foto
+        /* 4. Tome una foto */
         const capturedPhoto = await Camera.getPhoto({
           resultType: CameraResultType.Uri,
           source: CameraSource.Camera,
           quality: 100
         });
 
-        // Agregue el archivo al inicio del arreglo
+        /* 5. Agregue el archivo al inicio del arreglo */
         this.photos.unshift({
           filepath: "soon...",
           webviewPath: capturedPhoto.webPath!
