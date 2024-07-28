@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 	ionic serve
 	```
 
-#### Interfaz de Tipo de Datos y Servicio Proveedor de Datos
+#### Interfaz de Tipo de Datos y 
 
 1. Cree una interfaz de Angular, con:
 
@@ -31,15 +31,23 @@ theme: jekyll-theme-leap-day
 	ionic g interface interfaces/data
 	```
 
-2. Cree el servicio proveedor de datos, con:
+2. Modifique _hybrid/src/app/interfaces/data.ts_, con:
+
+	```typescript
+	export interface Data {
+	    texto: string;
+	}
+	```
+
+#### Servicio Proveedor de Datos
+
+1. Cree el servicio proveedor de datos, con:
 
 	```command
 	ionic g service services/provider
 	```
 
-#### Providers
-
-1. Edite el servicio _hybrid/src/app/services/provider.service.ts_, con:
+2. Edite el servicio _hybrid/src/app/services/provider.service.ts_, con:
 
 	```typescript
 	import { Injectable } from '@angular/core';
@@ -254,7 +262,7 @@ theme: jekyll-theme-leap-day
 	      <!-- Muestra los elementos -->
 	      <ion-list>
 	        <ion-item *ngFor="let datum of data">
-	          <ion-label>{{datum.texto}}</ion-label>
+	          <ion-label>{{datum?.texto}}</ion-label>
 	        </ion-item>
 	      </ion-list>
 
