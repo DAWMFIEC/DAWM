@@ -30,17 +30,17 @@ theme: jekyll-theme-leap-day
 * Cree un proyecto en Ionic:
   + Desde la línea de comandos, utilice el comando **ionic** con: 
 
-    ```command
-    ionic start <NOMBRE_DE_LA_APLICACION> tabs --type=angular --capacitor
+  ```command
+  ionic start hybrid tabs --type=angular --capacitor
     ```
 
   + Seleccione el tipo componente Standalone para construir la aplicación
 
-  	```
-  	? Would you like to build your app with NgModules or Standalone Components?
-  	...
-  	> Standalone
-  	```
+	```
+	? Would you like to build your app with NgModules or Standalone Components?
+	...
+	> Standalone
+	```
 
   + Acceda a la carpeta del proyecto y levante el servidor, con:
 
@@ -53,6 +53,18 @@ theme: jekyll-theme-leap-day
 #### Github
 
 * Crea un repositorio en GitHub con el nombre **hybrid**.
+* Desde la línea de comandos:
+  
+  + Agregue la rama **main**, con: 
+  ```command
+  git branch -M main
+  ```
+
+  + Agregue el tag **origin**
+  ```command
+  git remote add origin https://github.com/aavendan/hybrid.git
+  ```
+
 * Versiona local y remotamente el repositorio **hybrid**.
 
 ### Documentación
