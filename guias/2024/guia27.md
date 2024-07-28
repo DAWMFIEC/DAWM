@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 * Cree una base de datos no relacional según [Firebase - Realtime Database](https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database)
 
-### Actividades
+### Actividades en clases
 
 * Clone localmente tu repositorio **hybrid**.
 * Abra el proyecto en VSCode y levante el servidor.

@@ -8,6 +8,16 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+* Diseñe un prototipo con las interfaces de su aplicación móvil, con las siguientes páginas:
+  + **Contenido principal** muestra la funcionalidad principal de la aplicación (por ejemplo, feed de noticias, catálogo de productos, etc.). Opcionalmente, puede incluir herramientas de búsqueda y filtros si es necesario.
+  + **Detalles de un elemento** en una página individual muestra los detalles un elemento (por ejemplo, detalles de una publicación, detalles de un producto, etc.).
+  + **Ingreso de un elemento** contiene las funcionalidades para agregar, ver y gestionar un elemento.
+  + **Acerca de** con la información del proyecto y de las personas que intervienen en el proyecto.
+
+* Seleccione un diseño que se ajuste a su prototipo. Puede considerar alguna de las siguientes fuentes: [Mobbin](https://mobbin.com/browse/android/apps) o [Scrnshts](https://scrnshts.club/) 
+
+### Actividades en clases
+
 #### Dependencias Globales
 
 * Instale los módulos Ionic CLI, native-run (para ejecutar binarios nativos en dispositivos y simuladores/emuladores) y cordova-res (para generar íconos de aplicaciones nativas y pantallas de presentación), con: 
@@ -15,8 +25,6 @@ theme: jekyll-theme-leap-day
   ```command
   npm install -g @ionic/cli native-run cordova-res
   ```
-
-### Actividades
 
 #### Github
 

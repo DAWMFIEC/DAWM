@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-### Actividades
+### Actividades en clases
 
 * Clone localmente tu repositorio **hybrid**.
 * Abra el proyecto en VSCode y levante el servidor.

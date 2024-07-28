@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 * Instale Android Studio desde su [página oficial](https://developer.android.com/studio).
 
-### Actividades
+### Actividades en clases
 
 * Clone localmente tu repositorio **hybrid**.
 * Abra el proyecto en VSCode y levante el servidor.
