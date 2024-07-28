@@ -125,7 +125,7 @@ theme: jekyll-theme-leap-day
       <!-- 1. Muestra los elementos -->
       <ion-grid>
         <ion-row>
-          <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+          <ion-col size="4" *ngFor="let photo of photoService.photos; index as position">
             <ion-img [src]="photo.webviewPath"></ion-img>
             <p>filepath: {% raw %} {{ {% endraw %}photo.filepath{% raw %} }} {% endraw %}</p>
           </ion-col>
@@ -155,7 +155,7 @@ theme: jekyll-theme-leap-day
 
     ```typescript
     ...
-    // Importa el módulo Platform y Capacitor
+    /* 1. Importa el módulo Platform y Capacitor */
     import { Platform } from '@ionic/angular';
     import { Capacitor } from '@capacitor/core';
 
@@ -164,10 +164,10 @@ theme: jekyll-theme-leap-day
 
       ...
 
-      //Referencia local a la plataforma utilizada 'hybrid' o 'web'
+      /* 2. Referencia local a la plataforma utilizada 'hybrid' o 'web' */
       private platform: Platform;
 
-      //Referencia en la inyección de dependencias
+      /* 3. Referencia en la inyección de dependencias */
       constructor(platform: Platform) {
         this.platform = platform;
       }
@@ -175,7 +175,7 @@ theme: jekyll-theme-leap-day
       public async addNewToGallery() {
         ...
 
-        // Agregue el archivo al inicio del arreglo
+        /* 4. Agregue el archivo al inicio del arreglo */
         const savedImageFile = await this.savePicture(capturedPhoto);
         this.photos.unshift(savedImageFile);
 
@@ -197,10 +197,10 @@ theme: jekyll-theme-leap-day
       ...
 
       private async savePicture(photo: Photo) {
-        // Convierta la foto al formato base64, requerido por el API para guardar en el sistema de archivos
+        /* 1. Convierta la foto al formato base64, requerido por el API para guardar en el sistema de archivos */
         const base64Data = await this.readAsBase64(photo);
 
-        // Escriba el archivo en el directorio de datos.
+        /* 2. Escriba el archivo en el directorio de datos. */
         const fileName = Date.now() + '.jpeg';
         const savedFile = await Filesystem.writeFile({
           path: fileName,
@@ -210,8 +210,8 @@ theme: jekyll-theme-leap-day
 
 
         if (this.platform.is('hybrid')) {
-          // Muestre la nueva imagen reescribiendo la ruta 'file://' a HTTP
-          // Detalles: https://ionicframework.com/docs/building/webview#file-protocol
+          /* 3. Muestre la nueva imagen reescribiendo la ruta 'file://' a HTTP */
+          /* Más detalles en: https://ionicframework.com/docs/building/webview#file-protocol */
           return {
             filepath: savedFile.uri,
             webviewPath: Capacitor.convertFileSrc(savedFile.uri),
@@ -219,8 +219,7 @@ theme: jekyll-theme-leap-day
         }
         else {
 
-          // Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que 
-          // ya está cargada en la memoria
+          /* 4. Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que está cargada en la memoria */
           return {
             filepath: fileName,
             webviewPath: photo.webPath
@@ -231,9 +230,9 @@ theme: jekyll-theme-leap-day
 
       private async readAsBase64(photo: Photo) {
 
-        // "hybrid" detecta si es Cordova o Capacitor
+        /* 5. "hybrid" detecta si es Cordova o Capacitor */
         if (this.platform.is('hybrid')) {
-          // Lee el archivo en formato base64
+          /* 6. Lee el archivo en formato base64 */
           const file = await Filesystem.readFile({
             path: photo.path!
           });
@@ -241,7 +240,7 @@ theme: jekyll-theme-leap-day
           return file.data;
         }
         else {
-          // Obtenga la foto, léala como un blob y luego conviértala al formato base64.
+          /* 7. Obtenga la foto, léala como un blob y luego conviértala al formato base64. */
           const response = await fetch(photo.webPath!);
           const blob = await response.blob();
 
