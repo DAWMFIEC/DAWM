@@ -248,7 +248,7 @@ theme: jekyll-theme-leap-day
       public async addNewToGallery() {
         ...
 
-        /* 4. Agregue el archivo al inicio del arreglo */
+        /* 5. Agregue el archivo al inicio del arreglo */
         const savedImageFile = await this.savePicture(capturedPhoto);
         this.photos.unshift(savedImageFile);
 
@@ -375,6 +375,8 @@ theme: jekyll-theme-leap-day
 
         ...
 
+        this.photos.unshift(...);
+
         /* 3. Ruta de almacenamiento */
         Preferences.set({
           key: this.PHOTO_STORAGE,
@@ -390,27 +392,24 @@ theme: jekyll-theme-leap-day
 
       ...
 
+      /* 1. La función loadSaved recupera y carga fotos guardadas previamente, 
+      adaptando el proceso según la plataforma en la que se ejecuta la aplicación (híbrida o web). */
+
       public async loadSaved() {
 
-        /* 1. Recuperar datos del arreglo de fotografías en caché */
         const { value } = await Preferences.get({ key: this.PHOTO_STORAGE });
         this.photos = (value ? JSON.parse(value) : []) as UserPhoto[];
 
 
-        /* 2. La forma más sencilla de detectar cuando se ejecuta en la web:
-          "cuando la plataforma NO sea híbrida, haz esto" */
         if (!this.platform.is('hybrid')) {
 
-          /* 2.1 Muestra la foto leyendo en formato base64 */
           for (let photo of this.photos) {
 
-            /* 2.2 Lee los datos de cada foto guardada desde el sistema de archivos */
             const readFile = await Filesystem.readFile({
               path: photo.filepath,
               directory: Directory.Data
             });
 
-            /* 2.3 Solo plataforma web: carga la foto como datos base64 */
             photo.webviewPath = `data:image/jpeg;base64,${readFile.data}`;
           }
         }
