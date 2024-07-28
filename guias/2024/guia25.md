@@ -116,13 +116,18 @@ theme: jekyll-theme-leap-day
 
     ```html
     ...
-    <ion-content>
+    <ion-content [fullscreen]="true">
+
+      <ion-header collapse="condense">
+      ...
+      </ion-header>
+
       <!-- 1. Muestra los elementos -->
       <ion-grid>
         <ion-row>
           <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
             <ion-img [src]="photo.webviewPath"></ion-img>
-            <p>filepath: {{photo.filepath}}</p>
+            <p>filepath: {% raw %} {{ {% endraw %}photo.filepath{% raw %} }} {% endraw %}</p>
           </ion-col>
         </ion-row>
       </ion-grid>
@@ -134,7 +139,7 @@ theme: jekyll-theme-leap-day
           <ion-icon name="camera"></ion-icon>
         </ion-fab-button>
       </ion-fab>
-      
+
     </ion-content>
     ```
 
@@ -146,116 +151,116 @@ theme: jekyll-theme-leap-day
 
 #### Filesystem API
 
-* Modifique el método **addNewToGallery**, en el archivo `services/photo.service.ts`
+1. Modifique el método **addNewToGallery**, en el archivo _hybrid/src/app/services/photo.service.ts_, con:
 
-  ```typescript
-  ...
-  // Importa el módulo Platform y Capacitor
-  import { Platform } from '@ionic/angular';
-  import { Capacitor } from '@capacitor/core';
-
-  ...
-  export class PhotoService {
+    ```typescript
+    ...
+    // Importa el módulo Platform y Capacitor
+    import { Platform } from '@ionic/angular';
+    import { Capacitor } from '@capacitor/core';
 
     ...
+    export class PhotoService {
 
-    //Referencia local a la plataforma utilizada 'hybrid' o 'web'
-    private platform: Platform;
-
-    //Referencia en la inyección de dependencias
-    constructor(platform: Platform) {
-      this.platform = platform;
-    }
-
-    public async addNewToGallery() {
       ...
 
-      // Agregue el archivo al inicio del arreglo
-      const savedImageFile = await this.savePicture(capturedPhoto);
-      this.photos.unshift(savedImageFile);
+      //Referencia local a la plataforma utilizada 'hybrid' o 'web'
+      private platform: Platform;
 
-      // Agregue el archivo al inicio del arreglo
-        // this.photos.unshift({
-        //   filepath: "soon...",
-        //   webviewPath: capturedPhoto.webPath!
-        // });
+      //Referencia en la inyección de dependencias
+      constructor(platform: Platform) {
+        this.platform = platform;
+      }
+
+      public async addNewToGallery() {
+        ...
+
+        // Agregue el archivo al inicio del arreglo
+        const savedImageFile = await this.savePicture(capturedPhoto);
+        this.photos.unshift(savedImageFile);
+
+        // Agregue el archivo al inicio del arreglo
+          // this.photos.unshift({
+          //   filepath: "soon...",
+          //   webviewPath: capturedPhoto.webPath!
+          // });
+      }
+
     }
+    ```
 
-  }
-  ```
+2. Agregue los métodos **savePicture**, **readAsBase64** y **convertBlobToBase64**, en el archivo _hybrid/src/app/services/photo.service.ts_, con:
 
-* Agregue los métodos **savePicture**, **readAsBase64** y **convertBlobToBase64**, en el archivo `services/photo.service.ts`
-
-  ```typescript
-  ...
-  export class PhotoService {
+    ```typescript
     ...
+    export class PhotoService {
+      ...
 
-    private async savePicture(photo: Photo) {
-      // Convierta la foto al formato base64, requerido por el API para guardar en el sistema de archivos
-      const base64Data = await this.readAsBase64(photo);
+      private async savePicture(photo: Photo) {
+        // Convierta la foto al formato base64, requerido por el API para guardar en el sistema de archivos
+        const base64Data = await this.readAsBase64(photo);
 
-      // Escriba el archivo en el directorio de datos.
-      const fileName = Date.now() + '.jpeg';
-      const savedFile = await Filesystem.writeFile({
-        path: fileName,
-        data: base64Data,
-        directory: Directory.Data
-      });
-
-
-      if (this.platform.is('hybrid')) {
-        // Muestre la nueva imagen reescribiendo la ruta 'file://' a HTTP
-        // Detalles: https://ionicframework.com/docs/building/webview#file-protocol
-        return {
-          filepath: savedFile.uri,
-          webviewPath: Capacitor.convertFileSrc(savedFile.uri),
-        };
-      }
-      else {
-
-        // Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que 
-        // ya está cargada en la memoria
-        return {
-          filepath: fileName,
-          webviewPath: photo.webPath
-        };
-
-      }
-    }
-
-    private async readAsBase64(photo: Photo) {
-
-      // "hybrid" detecta si es Cordova o Capacitor
-      if (this.platform.is('hybrid')) {
-        // Lee el archivo en formato base64
-        const file = await Filesystem.readFile({
-          path: photo.path!
+        // Escriba el archivo en el directorio de datos.
+        const fileName = Date.now() + '.jpeg';
+        const savedFile = await Filesystem.writeFile({
+          path: fileName,
+          data: base64Data,
+          directory: Directory.Data
         });
 
-        return file.data;
-      }
-      else {
-        // Obtenga la foto, léala como un blob y luego conviértala al formato base64.
-        const response = await fetch(photo.webPath!);
-        const blob = await response.blob();
 
-        return await this.convertBlobToBase64(blob) as string;
+        if (this.platform.is('hybrid')) {
+          // Muestre la nueva imagen reescribiendo la ruta 'file://' a HTTP
+          // Detalles: https://ionicframework.com/docs/building/webview#file-protocol
+          return {
+            filepath: savedFile.uri,
+            webviewPath: Capacitor.convertFileSrc(savedFile.uri),
+          };
+        }
+        else {
+
+          // Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que 
+          // ya está cargada en la memoria
+          return {
+            filepath: fileName,
+            webviewPath: photo.webPath
+          };
+
+        }
       }
+
+      private async readAsBase64(photo: Photo) {
+
+        // "hybrid" detecta si es Cordova o Capacitor
+        if (this.platform.is('hybrid')) {
+          // Lee el archivo en formato base64
+          const file = await Filesystem.readFile({
+            path: photo.path!
+          });
+
+          return file.data;
+        }
+        else {
+          // Obtenga la foto, léala como un blob y luego conviértala al formato base64.
+          const response = await fetch(photo.webPath!);
+          const blob = await response.blob();
+
+          return await this.convertBlobToBase64(blob) as string;
+        }
+      }
+
+      private convertBlobToBase64 = (blob: Blob) => new Promise((resolve, reject) => {
+        const reader = new FileReader();
+        reader.onerror = reject;
+        reader.onload = () => {
+          resolve(reader.result);
+        };
+        reader.readAsDataURL(blob);
+      });
     }
+    ```
 
-    private convertBlobToBase64 = (blob: Blob) => new Promise((resolve, reject) => {
-      const reader = new FileReader();
-      reader.onerror = reject;
-      reader.onload = () => {
-        resolve(reader.result);
-      };
-      reader.readAsDataURL(blob);
-    });
-  }
-  ```
-
-* Revise los cambios en el navegador, con:
+3. (STOP 2) Revise los cambios en el navegador, con:
 
   ```command
   ionic serve
@@ -263,63 +268,63 @@ theme: jekyll-theme-leap-day
 
 #### Preferences API
 
-* Modifique el archivo `services/photo.service.ts`
+1. Modifique el archivo _hybrid/src/app/services/photo.service.ts_, con:
 
-  ```typescript
-  ...
-  export class PhotoService {
+    ```typescript
+    ...
+    export class PhotoService {
 
-    //Clave para el almacenamiento
-    private PHOTO_STORAGE: string = 'photos';
+      //Clave para el almacenamiento
+      private PHOTO_STORAGE: string = 'photos';
 
 
-    public async addNewToGallery() {
+      public async addNewToGallery() {
+
+        ...
+
+        Preferences.set({
+          key: this.PHOTO_STORAGE,
+          value: JSON.stringify(this.photos),
+        });
+
+        // Agregue el archivo al inicio del arreglo
+        // this.photos.unshift({
+        //   filepath: "soon...",
+        //   webviewPath: capturedPhoto.webPath!
+        // });
+      }
 
       ...
 
-      Preferences.set({
-        key: this.PHOTO_STORAGE,
-        value: JSON.stringify(this.photos),
-      });
+      public async loadSaved() {
 
-      // Agregue el archivo al inicio del arreglo
-      // this.photos.unshift({
-      //   filepath: "soon...",
-      //   webviewPath: capturedPhoto.webPath!
-      // });
-    }
-
-    ...
-
-    public async loadSaved() {
-
-      // Recuperar datos del arreglo de fotografías en caché
-      const { value } = await Preferences.get({ key: this.PHOTO_STORAGE });
-      this.photos = (value ? JSON.parse(value) : []) as UserPhoto[];
+        // Recuperar datos del arreglo de fotografías en caché
+        const { value } = await Preferences.get({ key: this.PHOTO_STORAGE });
+        this.photos = (value ? JSON.parse(value) : []) as UserPhoto[];
 
 
-      // La forma más sencilla de detectar cuando se ejecuta en la web:
-    // “cuando la plataforma NO sea híbrida, haz esto”
-      if (!this.platform.is('hybrid')) {
+        // La forma más sencilla de detectar cuando se ejecuta en la web:
+      // “cuando la plataforma NO sea híbrida, haz esto”
+        if (!this.platform.is('hybrid')) {
 
-        // Muestra la foto leyendo en formato base64
-        for (let photo of this.photos) {
+          // Muestra la foto leyendo en formato base64
+          for (let photo of this.photos) {
 
-          // Lee los datos de cada foto guardada desde el sistema de archivos
-          const readFile = await Filesystem.readFile({
-            path: photo.filepath,
-            directory: Directory.Data
-          });
+            // Lee los datos de cada foto guardada desde el sistema de archivos
+            const readFile = await Filesystem.readFile({
+              path: photo.filepath,
+              directory: Directory.Data
+            });
 
-          // Solo plataforma web: carga la foto como datos base64
-          photo.webviewPath = `data:image/jpeg;base64,${readFile.data}`;
+            // Solo plataforma web: carga la foto como datos base64
+            photo.webviewPath = `data:image/jpeg;base64,${readFile.data}`;
+          }
         }
       }
     }
-  }
-  ```
+    ```
 
-* Edite el archivo `tab2/tab2.page.ts`, con:
+2. Edite el archivo _hybrid/src/app/tab2/tab2.page.ts_, con:
 
   ```typescript
   ...
@@ -335,7 +340,7 @@ theme: jekyll-theme-leap-day
   }
   ```
 
-* Revise los cambios en el navegador, con:
+2. (STOP 3) Revise los cambios en el navegador, con:
 
   ```command
   ionic serve
@@ -347,7 +352,6 @@ theme: jekyll-theme-leap-day
 
 * Ionic Icons en la [página oficial](https://ionic.io/ionicons)
 * Ionic Components en la [página oficial](https://ionicframework.com/docs/components)
-
 
 ### Fundamental
 
