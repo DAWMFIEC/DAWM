@@ -345,7 +345,6 @@ theme: jekyll-theme-leap-day
         ...
 
         /* 3. Ruta de almacenamiento */
-
         Preferences.set({
           key: this.PHOTO_STORAGE,
           value: JSON.stringify(this.photos),
@@ -385,6 +384,8 @@ theme: jekyll-theme-leap-day
           }
         }
       }
+
+      ...
     }
     ```
 
