@@ -9,12 +9,12 @@ theme: jekyll-theme-leap-day
 ### Actividades previas
 
 * En grupo, identifiquen un problema que deseen resolver con una aplicación móvil.
-* Seleccione un diseño que se ajuste a su prototipo. Puede considerar alguna de las siguientes fuentes: [Mobbin](https://mobbin.com/browse/android/apps) o [Scrnshts](https://scrnshts.club/) 
-* Diseñe un prototipo con las interfaces de su aplicación móvil, con las siguientes vistas:
-  + **Contenido principal** muestra la funcionalidad principal de la aplicación (por ejemplo, feed de noticias, catálogo de productos, etc.). Opcionalmente, puede incluir herramientas de búsqueda y filtros si es necesario.
-  + **Detalles de un elemento** en una página individual muestra los detalles un elemento (por ejemplo, detalles de una publicación, detalles de un producto, etc.).
+* Diseñe un prototipo con las interfaces de su aplicación móvil, con al menos cuatro (4) vistas:
+  + **Principal** muestra la funcionalidad principal de la aplicación (por ejemplo, feed de noticias, catálogo de productos, resumen de cuentas, album de fotos, etc.). Opcionalmente, puede incluir herramientas de búsqueda y filtros si es necesario.
+  + **Detalles de un elemento** en una vista individual muestra los detalles un elemento (por ejemplo, detalles de una publicación, detalles de un producto, total de cuentas por tipo, etc.).
   + **Ingreso de un elemento** contiene las funcionalidades para agregar, ver y gestionar un elemento.
   + **Acerca de** con la información del proyecto y de las personas que intervienen en el proyecto.
+* Seleccione un diseño que se ajuste a su prototipo. Puede considerar alguna de las siguientes fuentes: [Mobbin](https://mobbin.com/browse/android/apps) o [Scrnshts](https://scrnshts.club/) 
 
 ### Actividades en clases
 
