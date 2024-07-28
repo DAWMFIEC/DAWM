@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
   ```typescript
   ...
 
-  //Importe la referencia al ícono peopleCircle
+  /* 1. Importe la referencia al ícono peopleCircle */ 
   import { ... , peopleCircle } from 'ionicons/icons';
 
   ...
@@ -33,7 +33,7 @@ theme: jekyll-theme-leap-day
 
     constructor() {
 
-      //Iconos a utilizar
+      /* 2. Agregue el ícono peopleCircle */
       addIcons({ ... , peopleCircle });
     }
   }
@@ -47,10 +47,12 @@ theme: jekyll-theme-leap-day
   		
       ...
 
-      <!-- Ícono y nombre del tab -->
 	    <ion-tab-button tab="tab3" href="/tabs/tab3">
+         
+         <!-- 1. Ícono y nombre del tab -->
 	       <ion-icon name="people-circle"></ion-icon>
 	       <ion-label>Acerca de</ion-label>
+
 	    </ion-tab-button>
 
 	  </ion-tab-bar>
