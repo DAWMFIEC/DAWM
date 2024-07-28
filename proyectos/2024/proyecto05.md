@@ -34,8 +34,7 @@ La respuesta es:
 
 ### Guías
 
-* [Guía 24: Ionic - Introducción](/DAWM/guias/2024/guia24)
-* [Guía 25: Ionic - Componentes](/DAWM/guias/2024/guia25)
-* [Guía 26: Ionic - Funcionalidad nativa](/DAWM/guias/2024/guia26)
-* [Guía 27: Ionic - Interacción con Firebase](/DAWM/guias/2024/guia27)
-* [Guía 28: Ionic - Generación del apk](/DAWM/guias/2024/guia28)
+* [Guía 24: Ionic - Introducción y Componentes](/DAWM/guias/2024/guia24)
+* [Guía 25: Ionic - Funcionalidad nativa](/DAWM/guias/2024/guia25)
+* [Guía 26: Ionic - Servicios y Firebase](/DAWM/guias/2024/guia26)
+* [Guía 27: Ionic - Generación del apk](/DAWM/guias/2024/guia27)
