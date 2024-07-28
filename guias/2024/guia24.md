@@ -8,7 +8,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-1. En grupo, identifiquen un problema que deseen resolver con una aplicación móvil.
+1. En grupo de tres (3) personas, identifiquen un problema que deseen resolver con una aplicación móvil.
 2. Diseñe un prototipo con las interfaces de su aplicación móvil, con al menos cuatro (4) vistas:
   + **Principal** muestra la funcionalidad principal de la aplicación (por ejemplo, feed de noticias, catálogo de productos, resumen de cuentas, album de fotos, etc.). Opcionalmente, puede incluir herramientas de búsqueda y filtros si es necesario.
   + **Detalles de un elemento** en una vista individual muestra los detalles un elemento (por ejemplo, detalles de una publicación, detalles de un producto, total de cuentas por tipo, etc.).
@@ -28,13 +28,14 @@ theme: jekyll-theme-leap-day
 #### Ionic Angular - Plantilla inicial
 
 1. Cree un proyecto en Ionic:
-  + Desde la línea de comandos, utilice el comando **ionic** con: 
+  
+    + Desde la línea de comandos, utilice el comando **ionic** con: 
 
     ```command
     ionic start hybrid tabs --type=angular --capacitor
     ```
 
-  + Seleccione el tipo componente Standalone para construir la aplicación
+    + Seleccione el tipo componente Standalone para construir la aplicación
 
     ```command
     ? Would you like to build your app with NgModules or Standalone Components?
