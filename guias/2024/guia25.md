@@ -327,10 +327,14 @@ theme: jekyll-theme-leap-day
 1. Modifique el archivo _hybrid/src/app/services/photo.service.ts_, con:
 
     ```typescript
+    
+    /* 1. Importe las preferencias del dispositivo */
+    import { Preferences } from '@capacitor/preferences';
+
     ...
     export class PhotoService {
 
-      /* 1. Clave para el almacenamiento */
+      /* 2. Clave para el almacenamiento */
       private PHOTO_STORAGE: string = 'photos';
 
       constructor(platform: Platform) { ... }
@@ -340,7 +344,7 @@ theme: jekyll-theme-leap-day
 
         ...
 
-        /* 2. Ruta de almacenamiento */
+        /* 3. Ruta de almacenamiento */
 
         Preferences.set({
           key: this.PHOTO_STORAGE,
