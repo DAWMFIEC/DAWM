@@ -84,27 +84,27 @@ theme: jekyll-theme-leap-day
 
     ```typescript
     ...
-    // Importe el módulo con la directiva @ngFor
+    /* 1. Importe el módulo con la directiva @ngFor */
     import { CommonModule } from '@angular/common'
 
-    // Importe los componentes de la UI
+    /* 2. Importe los componentes de la UI */
     import { ... , IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid } from '@ionic/angular/standalone';
 
-    //Importe el servicio
+    /* 3. Importe el servicio */
     import { PhotoService } from '../services/photo.service';
     ...
     
     @Component({
       ...
-      // Registre los módulos
+      /* 4. Registre los módulos */
     imports: [ ... , CommonModule, IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid]
     })
     export class Tab2Page {
 
-      //Inyecte la dependencia del servicio
+      /* 5. Inyecte la dependencia del servicio */
       constructor(public photoService: PhotoService) {}
 
-      //Método a invocar
+      /* 6. Método a invocar */
       addPhotoToGallery() {
         this.photoService.addNewToGallery();
       }
@@ -117,7 +117,7 @@ theme: jekyll-theme-leap-day
     ```html
     ...
     <ion-content>
-      <!-- Muestra los elementos -->
+      <!-- 1. Muestra los elementos -->
       <ion-grid>
         <ion-row>
           <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
@@ -128,12 +128,13 @@ theme: jekyll-theme-leap-day
       </ion-grid>
 
 
-      <!-- Muestra el obtón y habilita el servicio de la cámara --> 
+      <!-- 2. Muestra el obtón y habilita el servicio de la cámara --> 
       <ion-fab vertical="bottom" horizontal="center" slot="fixed">
         <ion-fab-button (click)="addPhotoToGallery()">
           <ion-icon name="camera"></ion-icon>
-      </ion-fab-button>
-    </ion-fab>
+        </ion-fab-button>
+      </ion-fab>
+      
     </ion-content>
     ```
 
