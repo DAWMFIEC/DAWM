@@ -350,7 +350,7 @@ theme: jekyll-theme-leap-day
 4. (STOP 2) Compruebe la aplicación en el navegador.
 
     <div align="center">
-      <img src="imagenes/ionic_localfiles.jpg">
+      <img src="imagenes/ionic_base64.jpg">
     </div>
 
 #### Preferences API
