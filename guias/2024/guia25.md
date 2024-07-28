@@ -168,7 +168,7 @@ theme: jekyll-theme-leap-day
     ```typescript
     ...
 
-    /* 1. Agregue la referencia al ícono peopleCircle */ 
+    /* 1. Agregue la referencia al ícono camera  */ 
     import { ... , camera } from 'ionicons/icons';
 
     ...
@@ -178,7 +178,7 @@ theme: jekyll-theme-leap-day
 
     constructor() {
 
-        /* 2. Agregue el ícono peopleCircle */
+        /* 2. Agregue el ícono camera  */
         addIcons({ ... , camera });
 
       }
@@ -212,6 +212,11 @@ theme: jekyll-theme-leap-day
     ```command
     ionic serve
     ```
+
+    <div align="center">
+      <img src="imagenes/ionic_localfiles.jpg">
+    </div>
+    
 
 #### Filesystem API
 
