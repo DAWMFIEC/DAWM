@@ -20,128 +20,128 @@ theme: jekyll-theme-leap-day
 
 #### Camera API
 
-* Cree la interfaz `interfaces/UserPhoto`
+1. Cree la interfaz _hybrid/src/app/interfaces/UserPhoto_
 
-  ```command
-  ionic g interface interfaces/UserPhoto
-  ```
+    ```command
+    ionic g interface interfaces/UserPhoto
+    ```
 
-* Modifique el archivo `interfaces/user-photo.ts`
+2. Modifique el archivo `interfaces/user-photo.ts`
 
-  ```typescript
-  export interface UserPhoto {
-    filepath: string;
-    webviewPath?: string;
-}
-  ```
-
-* Cree el servicio `services/photo`
-
-  ```command
-  ionic g service services/photo
-  ```
-
-* Modifique el archivo `services/photo.service.ts`
-
-  ```typescript
-  ...
-
-  //Importe los módulos con la funcionalidad nativa
-  import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
-  import { Filesystem, Directory } from '@capacitor/filesystem';
-  
-
-  //Importe la interfaz
-  import { UserPhoto } from '../interfaces/user-photo';
-
-
-  export class PhotoService {
-
-    //Atributo para almacenar las fotos
-    public photos: UserPhoto[] = [];
-
-    constructor() { }
-
-    public async addNewToGallery() {
-
-      // Tome una foto
-      const capturedPhoto = await Camera.getPhoto({
-        resultType: CameraResultType.Uri,
-        source: CameraSource.Camera,
-        quality: 100
-      });
-
-      // Agregue el archivo al inicio del arreglo
-      this.photos.unshift({
-        filepath: "soon...",
-        webviewPath: capturedPhoto.webPath!
-      });
+    ```typescript
+    export interface UserPhoto {
+      filepath: string;
+      webviewPath?: string;
     }
-  }
-  ```
+    ```
 
-* Edite el archivo `tab2/tab2.page.ts`, con:
+3. Cree el servicio `services/photo`
 
-  ```typescript
-  ...
-  // Importe el módulo con la directiva @ngFor
-  import { CommonModule } from '@angular/common'
+    ```command
+    ionic g service services/photo
+    ```
 
-  // Importe los componentes de la UI
-  import { ... , IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid } from '@ionic/angular/standalone';
+4. Modifique el archivo `services/photo.service.ts`
 
-  //Importe el servicio
-  import { PhotoService } from '../services/photo.service';
-  ...
-  
-  @Component({
+    ```typescript
     ...
-    // Registre los módulos
-  imports: [ ... , CommonModule, IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid]
-  })
-  export class Tab2Page {
 
-    //Inyecte la dependencia del servicio
-    constructor(public photoService: PhotoService) {}
+    //Importe los módulos con la funcionalidad nativa
+    import { Camera, CameraResultType, CameraSource, Photo } from '@capacitor/camera';
+    import { Filesystem, Directory } from '@capacitor/filesystem';
 
-    //Método a invocar
-    addPhotoToGallery() {
-      this.photoService.addNewToGallery();
+
+    //Importe la interfaz
+    import { UserPhoto } from '../interfaces/user-photo';
+
+
+    export class PhotoService {
+
+      //Atributo para almacenar las fotos
+      public photos: UserPhoto[] = [];
+
+      constructor() { }
+
+      public async addNewToGallery() {
+
+        // Tome una foto
+        const capturedPhoto = await Camera.getPhoto({
+          resultType: CameraResultType.Uri,
+          source: CameraSource.Camera,
+          quality: 100
+        });
+
+        // Agregue el archivo al inicio del arreglo
+        this.photos.unshift({
+          filepath: "soon...",
+          webviewPath: capturedPhoto.webPath!
+        });
+      }
     }
+    ```
 
-  }
-  ```
+5. Edite el archivo `tab2/tab2.page.ts`, con:
 
-* Edite el archivo `tab2/tab2.page.html`, con:
+    ```typescript
+    ...
+    // Importe el módulo con la directiva @ngFor
+    import { CommonModule } from '@angular/common'
 
-  ```html
-  ...
-  <ion-content>
-    <!-- Muestra los elementos -->
-    <ion-grid>
-      <ion-row>
-        <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
-          <ion-img [src]="photo.webviewPath"></ion-img>
-          <p>filepath: {{photo.filepath}}</p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
+    // Importe los componentes de la UI
+    import { ... , IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid } from '@ionic/angular/standalone';
+
+    //Importe el servicio
+    import { PhotoService } from '../services/photo.service';
+    ...
+    
+    @Component({
+      ...
+      // Registre los módulos
+    imports: [ ... , CommonModule, IonFab, IonFabButton, IonIcon, IonImg, IonCol, IonRow, IonGrid]
+    })
+    export class Tab2Page {
+
+      //Inyecte la dependencia del servicio
+      constructor(public photoService: PhotoService) {}
+
+      //Método a invocar
+      addPhotoToGallery() {
+        this.photoService.addNewToGallery();
+      }
+
+    }
+    ```
+
+6. Edite el archivo `tab2/tab2.page.html`, con:
+
+    ```html
+    ...
+    <ion-content>
+      <!-- Muestra los elementos -->
+      <ion-grid>
+        <ion-row>
+          <ion-col size="6" *ngFor="let photo of photoService.photos; index as position">
+            <ion-img [src]="photo.webviewPath"></ion-img>
+            <p>filepath: {{photo.filepath}}</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
 
 
-    <!-- Muestra el obtón y habilita el servicio de la cámara --> 
-    <ion-fab vertical="bottom" horizontal="center" slot="fixed">
-      <ion-fab-button (click)="addPhotoToGallery()">
-        <ion-icon name="camera"></ion-icon>
-    </ion-fab-button>
-  </ion-fab>
-  </ion-content>
-  ```
+      <!-- Muestra el obtón y habilita el servicio de la cámara --> 
+      <ion-fab vertical="bottom" horizontal="center" slot="fixed">
+        <ion-fab-button (click)="addPhotoToGallery()">
+          <ion-icon name="camera"></ion-icon>
+      </ion-fab-button>
+    </ion-fab>
+    </ion-content>
+    ```
 
-* Revise los cambios en el navegador, con:
+7. (STOP 1) Revise los cambios en el navegador, con:
 
-  ```command
-  ionic serve
-  ```
+    ```command
+    ionic serve
+    ```
 
 #### Filesystem API
 
