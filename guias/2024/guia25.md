@@ -143,7 +143,53 @@ theme: jekyll-theme-leap-day
     </ion-content>
     ```
 
-7. (STOP 1) Revise los cambios en el navegador, con:
+7. Edite el archivo _hybrid/src/app/tabs/tabs.page.ts_, con:
+
+    + El ícono **camera** de [Ionicons](https://ionic.io/ionicons)
+
+    ```typescript
+    ...
+
+    /* 1. Agregue la referencia al ícono peopleCircle */ 
+    import { ... , camera } from 'ionicons/icons';
+
+    ...
+
+    export class TabsPage {
+    ...
+
+    constructor() {
+
+        /* 2. Agregue el ícono peopleCircle */
+        addIcons({ ... , camera });
+
+      }
+    }
+    ```
+
+8. Edite el archivo _hybrid/src/app/tabs/tabs.page.html_, con:
+
+    ```html
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        
+        ...
+
+        <ion-tab-button tab="tab2" href="/tabs/tab2">
+           
+           <!-- 1. Ícono y nombre del tab -->
+           <ion-icon name="camera"></ion-icon>
+           <ion-label>Pictures</ion-label>
+
+        </ion-tab-button>
+
+        ...
+
+      </ion-tab-bar>
+    </ion-tabs>
+    ```
+
+9. (STOP 1) Revise los cambios en el navegador, con:
 
     ```command
     ionic serve
