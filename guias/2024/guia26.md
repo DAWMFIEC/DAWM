@@ -8,88 +8,60 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Cree una base de datos no relacional según [Firebase - Realtime Database](https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database)
+1. En Firebase, cree el proyecto **hybrid** 
+2. Agregue el servicio [Realtime Database](https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database)
+3. Agregue la clave **collection**
+4. Modifique las reglas de acceso para el acceso permanente.
+5. Verifique el _endpoint_ de la colección, p.e.: [https://hybrid-ff472-default-rtdb.firebaseio.com/collection.json](https://hybrid-ff472-default-rtdb.firebaseio.com/collection.json)
 
 ### Actividades en clases
 
-* Clone localmente tu repositorio **hybrid**.
-* Abra el proyecto en VSCode y levante el servidor.
-
-#### Interfaz de Tipo de Datos
-
-* Cree una interfaz de Angular, con:
-
-	```
-	ionic g interface interfaces/<NOMBRE_INTERFAZ>
+1. Clone localmente tu repositorio **hybrid**.
+2. Abra el proyecto en VSCode y levante el servidor.
+	
+	```command
+	ionic serve
 	```
 
-* Coloque la interfaz generada en lugar de la interfaz creada. 
+#### Interfaz de Tipo de Datos y Servicio Proveedor de Datos
 
-#### Servicio Proveedor de Datos
+1. Cree una interfaz de Angular, con:
 
-* Cree el servicio proveedor de datos, con:
-
-	```
-	ionic g service services/<NOMBRE_SERVICIO>
+	```command
+	ionic g interface interfaces/data
 	```
 
-#### Providers/Servicio
+2. Cree el servicio proveedor de datos, con:
 
-* Importe el cliente `HttpClient` en el servicio proveedor de datos.
+	```command
+	ionic g service services/provider
+	```
+
+#### Providers
+
+1. Edite el servicio _hybrid/src/app/services/provider.service.ts_, con:
 
 	```typescript
 	import { Injectable } from '@angular/core';
 
-	//Importación del HttpClient
+	/* 1. Importe el módulo del HttpClient */
 	import { HttpClient } from '@angular/common/http';
-	```
-* Agregue un atributo con el URL de referencia al servicio.
-
-	```typescript
+	
 	...
-	export class <NOMBRE_SERVICIO>Service {
+	export class ProviderService {
 
-		//Atributo URL
+		/* 2.Atributo URL */
 		private URL: string = 'https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json';
 
-		...
-
-	}
-	```
-
-* Inyecte el cliente `HttpClient` en el constructor del servicio proveedor de datos.
-
-	```typescript
-	...
-	export class <NOMBRE_SERVICIO>Service {
-
-		//Atributo URL
-		private URL: string ...
-
-		//Inyección de dependencia del HttpClient
+		/* 3. Inyección de dependencia del HttpClient */
 		constructor(private http:HttpClient) { }
 
-	}
-	```
-
-* Agregue un método para hacer una petición HTTP GET y un método para enviar una petición HTTP POST. 
-
-	```typescript
-	...
-	export class <NOMBRE_SERVICIO>Service {
-
-		//Atributo URL
-		private URL: string ...
-
-		//Inyección de dependencia del HttpClient
-		constructor( ... ) { }
-
-		//Método con la petición HTTP
+		/* 4. Método con la petición HTTP */
 		getResponse() {
 			return this.http.get(this.URL);
 		}
 
-		//Método con la petición HTTP
+		/* 5. Método con la petición HTTP */ 
 		postResponse(data: any) {
 		    return this.http.post(this.URL, data);
 		}
@@ -97,43 +69,43 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-#### Componente.ts - Consumo de Servicio
+#### Consumo de Servicio
 
-* Modifique el archivo `tab1/tab1.page.ts`
-* Importe el módulo `HttpClientModule`, la interfaz `<NOMBRE_INTERFAZ>` y el servicio `<NOMBRE_SERVICIO>Service`. 
+* Modifique el archivo _hybrid/src/app/tab1/tab1.page.ts_, con:
+
+	+ Importe los módulos
 
 	```typescript
 	...
 
-	// Importe el módulo con la directiva @ngFor
+	/* 1. Importe el módulo con la directiva @ngFor */
 	import { CommonModule } from '@angular/common'
 
+	/* 2. Importe los componentes de la UI */
 	import {
 	  ...
-	  //Importe los componentes
 	  IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
 	  IonInput, IonButton,
 	  IonLabel, IonList, IonItem
 	} from '@ionic/angular/standalone';
 
-	//Importación del método http
+	/* 3. Importe del método http */
 	import { HttpClientModule } from  '@angular/common/http';
 
-	//Importación de la interfaz
-	import { <NOMBRE_INTERFAZ> } from '<RUTA>/interfaces/<NOMBRE_INTERFAZ>';
+	/* 4. Importe de la interfaz */
+	import { Data } from '../interfaces/data';
 
-	//Importación del servicio
-	import { <NOMBRE_SERVICIO>Service } from '<RUTA>/providers/<NOMBRE_SERVICIO>.service'
+	/* 5. Importe del servicio */
+	import { ProviderService } from '../services/provider.service';
 
-	//Importación de los constructores del formulario
+	/* 6. Importe lo constructores de formulario */
 	import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
-
-	@Component({
+	@Component({ ... })
 	...
-	````
+	```
 
-* Registre los módulos en la clave _imports_ y el servicio `<NOMBRE_SERVICIO>Service` en la clave _providers_.
+	+ Registre los módulos importados y el proveedor de servicios.
 
 	```typescript
 	...
@@ -143,33 +115,32 @@ theme: jekyll-theme-leap-day
 	  imports: [
 	  	...
 	  	
-	  	//Registre los componentes
+
+		/* 7. Registre todos los componentes importados */
 	    HttpClientModule, ReactiveFormsModule,
-
 	    CommonModule, 
-	    IonLabel, IonList,IonItem,
+	    IonLabel, IonList, IonItem,
 	    IonInput, IonButton,
-
 	    IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent
 	  ],
-	  providers: [<NOMBRE_SERVICIO>Service],
+
+	  /* 8. Proveedor de servicios */
+	  providers: [ProviderService],
 	  ...
 	})
-	...
-	````
+	export class Tab1Page { ... }
+	```
 
-* Agregue un atributo para almacenar la respuesta a la petición y el constructor del formulario.
+	+ Defina el atributo **data** y el formulario **checkoutForm**.
 
 	```typescript
 	...
-	@Component({
-	  ...
-	})
-	export class <COMPONENTE_SELECCIONADO>Component {
+	export class Tab1Page {
 
-	  //Atributo con el tipo de dato de la interfaz
-	  public data : <NOMBRE_INTERFAZ>[] = [];
+	  /* 9. Atributo con el tipo de dato de la interfaz */
+	  public data : Data[] = [];
 
+	  /* 10. Formulario reactivo */
 	  checkoutForm = this.formBuilder.group({
 	    texto: ''
 	  });
@@ -179,40 +150,31 @@ theme: jekyll-theme-leap-day
 	...
 	```
 
-* Inyecte la dependencia al servicio y al constructor del formulario en el constructor del componente seleccionado para mostrar los datos.
+	+ Inyecte la dependencia al servicio y al constructor del formulario en el constructor del componente seleccionado para mostrar los datos.
 
 	```typescript
 	...
-	@Component({
-	  ...
-	})
-	export class <COMPONENTE_SELECCIONADO>Component {
+	export class Tab1Page {
 
-	   public data : <NOMBRE_INTERFAZ>[] ...
-
-	   checkoutForm = ...
+	   ...
 	  
-	  //Inyección de dependencia del servicio
-	  constructor(private dataProvider: <NOMBRE_SERVICIO>Service , private formBuilder: FormBuilder) { }
+		/* 11. Inyección de dependencia del servicio */
+		constructor(private dataProvider: ProviderService , private formBuilder: FormBuilder) { }
 	}
 	...
 	```
 
-* Agregue un método que realice la petición y que se suscriba a la respuesta de la petición. Extraiga una muestra de los datos en el atributo a renderizar en la vista.
+	+ Agregue el método **ngOnInit** para que realice la petición y que se suscriba a la respuesta de la petición. Extraiga una muestra de los datos en el atributo a renderizar en la vista.
 
 	```typescript
 	...
-	@Component({
-	  ...
-	})
-	export class <COMPONENTE_SELECCIONADO>Component {
+	export class Tab1Page {
 
 	  ...
 
 	  constructor( ... ) { }
 
-	  //Ejecución de la petición y suscripción de la respuesta
-
+	  /* 12. Ejecución de la petición y suscripción de la respuesta */
 	  ngOnInit() {
 	    this.loadData()
 	  }
@@ -225,11 +187,12 @@ theme: jekyll-theme-leap-day
 	        
 	    })
 	  }
+
 	}
 	...
 	```
 
-* Agregue un método que envíe la petición con los datos del formulario
+	+ Agregue el callback **onSubmit** que envía los datos del formulario
 
 
 	```typescript
@@ -237,17 +200,19 @@ theme: jekyll-theme-leap-day
 	@Component({
 	  ...
 	})
-	export class <COMPONENTE_SELECCIONADO>Component {
+	export class Tab1Page {
 
 	  ...
 
+	  loadData() { ... }
+
+	  /* 13. Callback para el envío de datos */
 	  onSubmit(): void {
-	  	// Proceso para enviar los datos
-		this.dataProvider.postResponse(this.checkoutForm.value).subscribe( (response) => {
+	  	this.dataProvider.postResponse(this.checkoutForm.value).subscribe( (response) => {
 				this.checkoutForm.reset();
 				this.loadData()
-			})
-		}
+		})
+	  }
 
 	}
 	...
@@ -255,9 +220,11 @@ theme: jekyll-theme-leap-day
 
 #### Componente.ts - Formulario y Renderización del resultado
 
-* Utilice la directiva `*ngFor` para recorrer el arreglo `data` en la vista (html) del componente seleccionado. 
+1. Modifique el archivo _hybrid/src/app/tab1/tab1.page.html_, con:
 
-	```
+	+ Utilice la directiva `*ngFor` para recorrer el arreglo `data` en la vista (html) del componente seleccionado. 
+
+	```html
 	...
 	<ion-content [fullscreen]="true">
 
