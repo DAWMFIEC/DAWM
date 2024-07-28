@@ -22,32 +22,32 @@ theme: jekyll-theme-leap-day
 
 * Instale los módulos Ionic CLI, native-run (para ejecutar binarios nativos en dispositivos y simuladores/emuladores) y cordova-res (para generar íconos de aplicaciones nativas y pantallas de presentación), con: 
 
-  ```command
-  npm install -g @ionic/cli native-run cordova-res
-  ```
+    ```command
+    npm install -g @ionic/cli native-run cordova-res
+    ```
 #### Ionic Angular - Plantilla inicial
 
 * Cree un proyecto en Ionic:
   + Desde la línea de comandos, utilice el comando **ionic** con: 
 
-  ```command
-  ionic start hybrid tabs --type=angular --capacitor
+    ```command
+    ionic start hybrid tabs --type=angular --capacitor
     ```
 
   + Seleccione el tipo componente Standalone para construir la aplicación
 
-	```
-	? Would you like to build your app with NgModules or Standalone Components?
-	...
-	> Standalone
-	```
+  	```command
+  	? Would you like to build your app with NgModules or Standalone Components?
+  	...
+  	> Standalone
+  	```
 
   + Acceda a la carpeta del proyecto y levante el servidor, con:
 
-	```command
-	cd <NOMBRE_DE_LA_APLICACION> 
-	ionic serve
-	```
+  	```command
+  	cd <NOMBRE_DE_LA_APLICACION> 
+  	ionic serve
+  	```
 
 
 #### Github
