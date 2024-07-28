@@ -250,7 +250,6 @@ theme: jekyll-theme-leap-day
         const savedImageFile = await this.savePicture(capturedPhoto);
         this.photos.unshift(savedImageFile);
 
-        /* Agregue el archivo al inicio del arreglo */
         /* 
         this.photos.unshift({
           filepath: "soon...",
@@ -273,12 +272,12 @@ theme: jekyll-theme-leap-day
 
       public async addNewToGallery() { ... }
 
+      /* 1. La función savePicture guarda una foto en el sistema de archivos y gestiona cómo se debe mostrar la imagen dependiendo de si la aplicación está en un entorno híbrido (Cordova o Capacitor) o en la web.*/
+
       private async savePicture(photo: Photo) {
 
-        /* 1. Convierta la foto al formato base64, requerido por el API para guardar en el sistema de archivos */
         const base64Data = await this.readAsBase64(photo);
 
-        /* 2. Escriba el archivo en el directorio de datos. */
         const fileName = Date.now() + '.jpeg';
         const savedFile = await Filesystem.writeFile({
           path: fileName,
@@ -286,11 +285,8 @@ theme: jekyll-theme-leap-day
           directory: Directory.Data
         });
 
-
         if (this.platform.is('hybrid')) {
 
-          /* 3. Muestre la nueva imagen reescribiendo la ruta 'file://' a HTTP */
-          /* Más detalles en: https://ionicframework.com/docs/building/webview#file-protocol */
           return {
             filepath: savedFile.uri,
             webviewPath: Capacitor.convertFileSrc(savedFile.uri),
@@ -298,7 +294,6 @@ theme: jekyll-theme-leap-day
         }
         else {
 
-          /* 4. Utilice webPath para mostrar la nueva imagen en lugar de base64 ya que está cargada en la memoria */
           return {
             filepath: fileName,
             webviewPath: photo.webPath
@@ -307,12 +302,13 @@ theme: jekyll-theme-leap-day
         }
       }
 
+
+      /* 2. La función readAsBase64 convierte una foto a formato base64, ajustando el proceso según la plataforma. */
+
       private async readAsBase64(photo: Photo) {
 
-        /* 5. "hybrid" detecta si es Cordova o Capacitor */
         if (this.platform.is('hybrid')) {
 
-          /* 6. Lee el archivo en formato base64 */
           const file = await Filesystem.readFile({
             path: photo.path!
           });
@@ -321,7 +317,6 @@ theme: jekyll-theme-leap-day
 
         } else {
 
-          /* 7. Obtenga la foto, léala como un blob y luego conviértala al formato base64. */
           const response = await fetch(photo.webPath!);
           const blob = await response.blob();
 
@@ -329,6 +324,8 @@ theme: jekyll-theme-leap-day
         }
 
       }
+
+      /* 3. La función convertBlobToBase64 convierte un blob a formato base64. */
 
       private convertBlobToBase64 = (blob: Blob) => new Promise((resolve, reject) => {
         const reader = new FileReader();
