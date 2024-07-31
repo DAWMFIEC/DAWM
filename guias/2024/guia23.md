@@ -93,7 +93,7 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
-* Documentación del estándar [RFC 7519](https://jwt.io/) para JWT.
+* Documentación del módulo [jsonwebtoken](https://www.npmjs.com/package/jsonwebtoken) para NodeJS y del estándar [RFC 7519](https://jwt.io/) para JWT.
 
 ### Fundamental
 
