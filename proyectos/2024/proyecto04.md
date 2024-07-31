@@ -33,3 +33,4 @@ La respuesta es:
 * [Guía 20: REST API (Seguridad) - Login](/DAWM/guias/2024/guia20)
 * [Guía 21: REST API (Seguridad) - Cookies y Session](/DAWM/guias/2024/guia21)
 * [Guía 22: REST API (Seguridad) - Despliegue en Railway](/DAWM/guias/2024/guia22)
+* [Guía 23: REST API (Seguridad y Datos) - JWT](/DAWM/guias/2024/guia23)

@@ -44,6 +44,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 20: REST API (Seguridad) - Login](guias/2024/guia20)
   * [Guía 21: REST API (Seguridad) - Cookies y Session](guias/2024/guia21)
   * [Guía 22: REST API (Seguridad) - Despliegue en Railway](guias/2024/guia22)
+  * [Guía 23: REST API (Seguridad y Datos) - JWT](guias/2024/guia23)
 * [Proyecto 05: MobileApp - Angular y Ionic](proyectos/2024/proyecto05)
   * [Guía 24: Ionic - Introducción y Componentes](guias/2024/guia24)
   * [Guía 25: Ionic - Funcionalidad nativa: Cámara](guias/2024/guia25)
