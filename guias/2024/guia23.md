@@ -34,29 +34,25 @@ theme: jekyll-theme-leap-day
 #### Github - RestAPI
 
 1. Clone localmente tu repositorio **restapi**.
-2. Desde la línea de comandos, inicie el servidor:
-
-    ```command
-    npm run autostart
-    ```
-
-3. Cree el archivo _.env_, con las variables:
+2. Cree el archivo _.env_, con las variables:
     
     ```text
     PORT=5500
     FIREBASE_ADMIN_API = ''
     ```
 
-#### Github - Security
-
-1. Clone localmente tu repositorio **security**.
-2. Desde la línea de comandos, inicie el servidor:
+3. Desde la línea de comandos, inicie el servidor:
 
     ```command
     npm run autostart
     ```
 
-3. Cree el archivo _.env_, con las variables:
+4. Compruebe el funcionamiento del REST API
+
+#### Github - Security
+
+1. Clone localmente tu repositorio **security**.
+2. Cree el archivo _.env_, con las variables:
     
     ```text
     SALT='...=='
@@ -64,13 +60,33 @@ theme: jekyll-theme-leap-day
     ALL_GRANTED="admin"
     ```
 
+3. Desde la línea de comandos, inicie el servidor:
+
+    ```command
+    npm run autostart
+    ```
+
+4. Compruebe el funcionamiento del REST API
+
 ### Actividades en clases
 
-#### Security
+**Contexto:** Has desarrollando una API REST de **datos** y una aplicación de **seguridad**. 
+
+**Objetivo:** Implemente un mecanismo de acceso entre aplicaciones mediante JSON Web Tokens (JWT).
+
+**Requisitos:**
+
+1. En la aplicación **seguridad**: 
+    
+    + Implemente la ruta `/token` al que solo accedan los usuarios autenticados con el rol **user**. En la página debe mostrar un JWT que sea válido por 1 hora.
+
+2. En la aplicación **datos**:
+
+    + Implemente un middleware que verifique la validez del JWT en cada solicitud a la ruta `/api`. Si el token es válido, permite el acceso; de lo contrario, devuelve un error 401 (No Autorizado). Los usuarios deben enviar el JWT en el encabezado de autorización de sus solicitudes.
+
 
 [Fuente](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=subscribe-newsletter-form-inside-modal)
 
-#### RestAPI
 
 ### Documentación
 
