@@ -78,7 +78,11 @@ theme: jekyll-theme-leap-day
 
 1. En la aplicación **seguridad**: 
     
-    + Implemente la ruta `/token` al que solo accedan los usuarios autenticados con el rol **user**. En la página debe mostrar un JWT que sea válido por 1 hora.
+    + Implemente la ruta `/token` a la que solo accedan los usuarios autenticados con el rol **user**. En la página debe mostrar un JWT que sea válido por 1 hora.
+
+    <div align="center">
+        <img src="imagenes/jwt_token.jpg">
+    </div>
 
 2. En la aplicación **datos**:
 
@@ -86,7 +90,6 @@ theme: jekyll-theme-leap-day
 
 
 [Fuente](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=subscribe-newsletter-form-inside-modal)
-
 
 ### Documentación
 
