@@ -90,6 +90,18 @@ theme: jekyll-theme-leap-day
 
     + Implemente un middleware que verifique la validez del JWT en cada solicitud a la ruta `/api`. Si el token es válido, permite el acceso; de lo contrario, devuelve un error 408 (Request Timeout). Los usuarios deben enviar el JWT en el encabezado de autorización de sus solicitudes.
 
+    JWT inválido
+
+    <div align="center">
+        <img src="imagenes/jwt_invalid.jpg">
+    </div>
+
+    JWT válido
+
+    <div align="center">
+        <img src="imagenes/jwt_valid.jpg">
+    </div>
+
 
 ### Documentación
 
