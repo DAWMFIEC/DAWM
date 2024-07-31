@@ -80,6 +80,8 @@ theme: jekyll-theme-leap-day
     
     + Implemente la ruta `/token` a la que solo accedan los usuarios autenticados con el rol **user**. En la página debe mostrar un JWT que sea válido por 1 hora.
 
+    Utilice la [template_jwt](recursos/template_jwt.zip). Fuente: [Tutorial Republic - Snippets](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=subscribe-newsletter-form-inside-modal)
+
     <div align="center">
         <img src="imagenes/jwt_token.jpg">
     </div>
@@ -88,8 +90,6 @@ theme: jekyll-theme-leap-day
 
     + Implemente un middleware que verifique la validez del JWT en cada solicitud a la ruta `/api`. Si el token es válido, permite el acceso; de lo contrario, devuelve un error 401 (No Autorizado). Los usuarios deben enviar el JWT en el encabezado de autorización de sus solicitudes.
 
-
-[Fuente](https://www.tutorialrepublic.com/snippets/preview.php?topic=bootstrap&file=subscribe-newsletter-form-inside-modal)
 
 ### Documentación
 
