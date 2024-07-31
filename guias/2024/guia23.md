@@ -97,7 +97,12 @@ theme: jekyll-theme-leap-day
 
 ### Fundamental
 
-* Estructura de JSON Web Tokens (JWT) en [X](https://twitter.com/ProgressiveCod2/status/1734893719290319143)
+* JWT para el intercambio de información en [X](https://x.com/AmigosCode/status/1724060365196059019)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">🌐 Decoding JWT (JSON Web Tokens) 🗝️<br><br>JWTs are compact data formats used for secure information exchange. They consist of three parts: Header, Payload, and Signature.<br><br>🔑 Format:<br>- Header: Describes the token (encoded JSON).<br>- Payload: Contains claims (encoded).<br>- Signature:… <a href="https://t.co/GZyorWZICK">pic.twitter.com/GZyorWZICK</a></p>&mdash; Nelson Djalo | Amigoscode (@AmigosCode) <a href="https://twitter.com/AmigosCode/status/1724060365196059019?ref_src=twsrc%5Etfw">November 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+* JWT para la autenticación en [X](https://twitter.com/ProgressiveCod2/status/1734893719290319143)
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">What&#39;s the most scalable solution to authentication?<br><br>JSON Web Tokens or JWT.<br><br>A single JWT can contain all the required information about an entity, making it an ideal candidate for authentication.<br><br>There are 3 main components of a JWT.<br><br>Here&#39;s the structure of JWT:<br><br>[1] Header… <a href="https://t.co/gwbX8UJU7l">pic.twitter.com/gwbX8UJU7l</a></p>&mdash; Saurabh Dashora (@ProgressiveCod2) <a href="https://twitter.com/ProgressiveCod2/status/1734893719290319143?ref_src=twsrc%5Etfw">December 13, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
