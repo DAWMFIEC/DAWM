@@ -47,7 +47,7 @@ theme: jekyll-theme-leap-day
     npm run autostart
     ```
 
-4. Compruebe el funcionamiento del REST API
+4. Compruebe el funcionamiento de la aplicación
 
 #### Github - Security
 
@@ -66,13 +66,13 @@ theme: jekyll-theme-leap-day
     npm run autostart
     ```
 
-4. Compruebe el funcionamiento del REST API
+4. Compruebe el funcionamiento de la aplicación
 
 ### Actividades en clases
 
-**Contexto:** Has desarrollando una API REST de **datos** y una aplicación de **seguridad**. 
+**Contexto:** En grupo de tres (3) personas han desarrollando las aplicaciones **restapi** y **seguridad**. 
 
-**Objetivo:** Implemente un mecanismo de acceso entre aplicaciones mediante JSON Web Tokens (JWT).
+**Objetivo:** Implementen un mecanismo de acceso entre aplicaciones mediante JSON Web Tokens (JWT).
 
 **Requisitos:**
 
@@ -86,9 +86,9 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/jwt_token.jpg">
     </div>
 
-2. En la aplicación **datos**:
+2. En la aplicación **restapi**:
 
-    + Implemente un middleware que verifique la validez del JWT en cada solicitud a la ruta `/api`. Si el token es válido, permite el acceso; de lo contrario, devuelve un error 401 (No Autorizado). Los usuarios deben enviar el JWT en el encabezado de autorización de sus solicitudes.
+    + Implemente un middleware que verifique la validez del JWT en cada solicitud a la ruta `/api`. Si el token es válido, permite el acceso; de lo contrario, devuelve un error 408 (Request Timeout). Los usuarios deben enviar el JWT en el encabezado de autorización de sus solicitudes.
 
 
 ### Documentación
