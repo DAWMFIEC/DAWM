@@ -69,18 +69,39 @@
 			
 		</ul>
 		```
-* En **app.component.html**
-
-	+ Reemplace las etiquetas html `<h1>` y `<p>` (subsiguiente) con selector del componente **Cabecera** y el selector del componente **Redes**
+* Para el componente **app**
+	+ Importe los componentes **Cabecera** y **Redes**.
+  	+ En **app.component.html**, reemplace
 
 	```html
-    <main>
+ 	<main>
+	  <section class="py-5 text-center container">
+	    <div class="row py-lg-5">
+	      <div class="col-lg-6 col-md-8 mx-auto">
+	        <h1 class="fw-light">Album example</h1>
+        	<p class="lead text-body-secondary">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
+	        <p>
+	          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+	          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+	        </p>
+	      </div>
+	    </div>
+	  </section>
+	</main>
+ 	```
+  	por:
+
+	```html
+    	<main>
 	  <section class="py-5 text-center container">
 	    <div class="row py-lg-5">
 	      <div class="col-lg-6 col-md-8 mx-auto">
 	        <app-cabecera></app-cabecera>
 	        <app-redes></app-redes>
-	        ...
+	        <p>
+	          <a href="#" class="btn btn-primary my-2">Main call to action</a>
+	          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+	        </p>
 	      </div>
 	    </div>
 	  </section>
@@ -91,7 +112,7 @@
 
 ## Pruebas unitarias
 
-* Descargue y descomprima [C04E05.zip](../../zips/C04E10.zip)
+* Descargue y descomprima [C04E10.zip](../../zips/C04E10.zip)
 * Copie cada archivo **.spec.ts** y reemplace con el archivo **.spec.ts** a cada componente del proyecto.
 	+ `specs/app.component.spec.ts` -> `src/app/app.component.spec.ts`
 	+ `specs/cabecera.component.spec.ts` -> `src/app/cabecera/cabecera.component.spec.ts`
