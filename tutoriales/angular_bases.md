@@ -138,7 +138,7 @@ Una de las ventajas de usar un framework como Angular es que ofrece soluciones i
 Para resolver este problema, Angular utiliza bloques de flujo de control integrados, que le indican al framework cuándo y cómo se deben renderizar las plantillas.
 
 <p align="center">
-  <img width="328" src="https://miro.medium.com/v2/resize:fit:4068/format:webp/1*McDLKuGNV8JHk56pfr7V4g.jpeg">
+  <img width="328" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwIoH7Nw-ViUjqNhBClf9wKmkzg1jr4wxICw&s">
 </p>
 
 
