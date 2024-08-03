@@ -118,7 +118,7 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
   
     + Reemplace el contenido
     ```
-      <h4 class="text-white">Contáctame</h4>
+      <h4 class="text-white">Contact</h4>
     ```
     por
     ```
@@ -130,24 +130,26 @@ La interpolación se refiere a incrustar expresiones en texto marcado. De forma 
 
     ![angular componente contacto salida3](imagenes/angular_componente_contacto_salida3.png)
     
-Directivas 
+Control de flujo 
 ==========
 
-Las directivas sirven para extender la vista y usar lógica que será ejecutada en el DOM (Document Object Model). Existen [tres tipos de directivas](https://ngchallenges.gitbook.io/project/directivas): directivas de atributo, directivas estructurales y componentes.
+Una de las ventajas de usar un framework como Angular es que ofrece soluciones integradas para problemas comunes que encuentran los desarrolladores. Algunos ejemplos de esto incluyen: mostrar contenido en función de una determinada condición, renderizar una lista de elementos en función de los datos de la aplicación, etc.
+
+Para resolver este problema, Angular utiliza bloques de flujo de control integrados, que le indican al framework cuándo y cómo se deben renderizar las plantillas.
 
 <p align="center">
   <img width="328" src="https://miro.medium.com/v2/resize:fit:4068/format:webp/1*McDLKuGNV8JHk56pfr7V4g.jpeg">
 </p>
 
 
-Directivas estructurales - (\*ngFor)
+Renderizando una lista - (bloque @for)
 ------------------------------------
 
-Con esta directiva estructural [@for](https://blog.angular.io/introducing-angular-v17-4d7033312e4b#7e46), o [\*ngFor](https://angular.io/api/common/NgForOf), podemos repetir n veces un bloque de etiquetas.
+Con el bloque de control de control de flujo [@for](https://blog.angular.io/introducing-angular-v17-4d7033312e4b#7e46) podemos repetir n veces un bloque de etiquetas.
 
 * En el _.ts_ (el controlador) del componente **contacto**
 
-    + Agregue el atributo *mecanismos*, dentro de la clase
+    + Agregue el atributo *medios*, dentro de la clase
     ```javascript
     ...
     export class ContactoComponent {
@@ -162,34 +164,6 @@ Con esta directiva estructural [@for](https://blog.angular.io/introducing-angula
 
 * En el _html_ (la vista) del componente **contacto**
   
-    + Reemplace el contenido
-    
-    ```html
-    ...
-    <ul class="list-unstyled">
-      <li><a href="#" class="text-white">Follow on Twitter</a></li>
-      <li><a href="#" class="text-white">Like on Facebook</a></li>
-      <li><a href="#" class="text-white">Email me</a></li>
-    </ul>
-    ...
-    ```
-    
-    por
-
-    **&lt;V17:**
-
-    ```html
-    <ul class="list-unstyled">
-      <li *ngFor="let medio of medios">
-        <a href="#" class="text-white">
-          {% raw %} {{medio.texto}} {% endraw %}
-        </a>
-      </li>
-    </ul>
-    ```
-
-    **&lte;V17:**
-    
     ```html
     <ul class="list-unstyled">
       @for (medio of medios; track medio.texto) {
@@ -220,5 +194,5 @@ Referencias
 * Angular. (2021). Retrieved 1 December 2021, from [https://angular.io/](https://angular.io/)
 * Introduction to Angular Components and How to Implement It? (20202) https://www.simplilearn.com/tutorials/angular-tutorial/angular-components
 * Guía de iniciación al data binding en Angular Qué es y cómo se utiliza. (2019). Retrieved 13 July 2022, from https://www.acontracorrientech.com/guia-practica-del-databinding-en-angular/
-* 🧑‍🎨Directivas🧑‍🎨 - Aprendiendo Angular. (2022). Retrieved 15 July 2022, from https://ngchallenges.gitbook.io/project/directivas
-* Introducción a las directivas y tipos de directivas en Angular - Java desde 0. (2020). Retrieved 15 July 2022, from https://javadesde0.com/introduccion-a-las-directivas-y-tipos-de-directivas-en-angular/
+* Angular. (n.d.). Retrieved from https://angular.dev/essentials/conditionals-and-loops
+* Angular. (n.d.). Retrieved from https://angular.dev/guide/templates/control-flow
