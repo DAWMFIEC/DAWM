@@ -443,7 +443,7 @@ theme: jekyll-theme-leap-day
     ionic serve
     ```
 
-3. (STOP 4) Compruebe la aplicación en el navegador.
+3. (STOP 3) Compruebe la aplicación en el navegador.
 
     <div align="center">
       <img src="imagenes/ionic_savedinmemory.jpg">
