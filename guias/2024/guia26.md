@@ -262,7 +262,7 @@ theme: jekyll-theme-leap-day
 	      <!-- Muestra los elementos -->
 	      <ion-list>
 	        <ion-item *ngFor="let datum of data">
-	          <ion-label>{{datum?.texto}}</ion-label>
+	          <ion-label>{% raw %} {{ {% endraw %}datum?.texto{% raw %} }} {% endraw %}</ion-label>
 	        </ion-item>
 	      </ion-list>
 
