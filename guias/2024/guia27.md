@@ -185,13 +185,13 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 
 	```typescript
 	...
-	import { Component, OnInit, input } from '@angular/core';
+	import { ... , input } from '@angular/core';
 	import { IonContent, IonHeader, IonTitle, IonToolbar, IonNavLink, IonButton, IonButtons, IonBackButton } from '@ionic/angular/standalone';
 	
 	@Component({
 		...
 		standalone: true,
- 		imports: [IonContent, IonHeader, IonTitle, IonToolbar, IonNavLink, IonButton, IonButtons, IonBackButton],
+		imports: [IonContent, IonHeader, IonTitle, IonToolbar, IonNavLink, IonButton, IonButtons, IonBackButton],
 	})
 	export class MainComponent  implements OnInit {
 
@@ -215,7 +215,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	</ion-header>
 	<ion-content class="ion-padding">
 	  <h1>Value</h1>
-	  {{ data() }}
+	  {% raw %} {{ {% endraw %} data() {% raw %} }} {% endraw %}
 	</ion-content>
 	```
 
