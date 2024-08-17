@@ -63,22 +63,21 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 
 	```typescript
 	...
-
 	export const routes: Routes = [
-	  {
-	    ...
-	    children: [
-	      ...
-	      {
-	        path: 'tab4',
-	        loadComponent: () =>
-	          import('../tab4/tab4.page').then((m) => m.Tab4Page),
-	      },
-		  ...
-	    ],
-	  },
-	  ...
-  	];
+		{
+			...
+			children: [
+				...
+				{
+					path: 'tab4',
+					loadComponent: () =>
+					import('../tab4/tab4.page').then((m) => m.Tab4Page),
+				},
+				...
+			],
+		},
+		...
+	];
 	```
 
 4. (STOP 1) Revise los cambios en el navegador
