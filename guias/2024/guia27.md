@@ -46,16 +46,16 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 
 	```html
 	<ion-tabs>
-			<ion-tab-bar slot="bottom">
+		<ion-tab-bar slot="bottom">
 			
 			...
 
-			<ion-tab-button tab="tab4" href="/tabs/tab4">
+		<ion-tab-button tab="tab4" href="/tabs/tab4">
 	      <ion-icon aria-hidden="true" name="albums"></ion-icon>
 	      <ion-label>Tab 4</ion-label>
 	    </ion-tab-button>
 
-	  </ion-tab-bar>
+	  	</ion-tab-bar>
 	</ion-tabs>
 	```
 
@@ -88,18 +88,150 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	];
 	```
 
-4. (STOP 2) Revise los cambios en el navegador
+4. (STOP 1) Revise los cambios en el navegador
 
     <div align="center">
       <img src="imagenes/ionic_tab4.jpg">
     </div>
 
 
-#### Ionic Component
+#### Ionic Componente y Modal
+
+1. Genere el componente **main** y **modal**, con:
+
+	```command
+	ionic generate component tab4/main 
+	ionic generate component tab4/modal
+	```
+
+#### Tab4 - MainComponent
+
+2. Modifique _hybrid/src/app/tab4/tab4.page.ts_, con:
+
+	```typescript
+	...
+	import { MainComponent } from './main/main.component';
+	
+	@Component({ ... })
+	export class Tab4Page implements OnInit {
+
+	  component = MainComponent
+
+	  ...
+	
+	}
+	```
+
+3. Reemplace todo el contenido de _hybrid/src/app/tab4/tab4.page.html_, con:
+
+	```html
+	<ion-nav [root]="component"></ion-nav>
+	```
+
+#### MainComponent - ModalComponent
+
+4. Modifique _hybrid/src/app/tab4/main/main.page.ts_, con:
+
+	```typescript
+	...
+	import { IonNav, IonContent, IonHeader, IonTitle, IonToolbar, IonNavLink, IonButton, IonButtons, IonBackButton } from '@ionic/angular/standalone';
+	import { ModalComponent } from '../modal/modal.component';
+	
+	@Component({
+		...
+		standalone: true,
+  		imports: [IonNav, IonContent, IonHeader, IonTitle, IonToolbar, IonNavLink, IonButton, IonButtons, IonBackButton]
+	})
+	export class MainComponent  implements OnInit {
+
+	  modal = ModalComponent
+
+	  ...
+	
+	}
+	```
+
+5. Reemplace todo el contenido de _hybrid/src/app/tab4/main/main.page.html_, con:
+
+	```html
+	<ion-header>
+	  <ion-toolbar>
+	    <ion-title>Tab4</ion-title>
+	  </ion-toolbar>
+	</ion-header>
+	<ion-content class="ion-padding">
+	  <h1>Tab4</h1>
+	  @for (item of [1,2,3,4]; track $index) {
+		  <ion-nav-link router-direction="forward" [component]="modal"
+		    [componentProps]="{data: item}">
+		    <ion-button>Launch Modal {{item}}</ion-button>
+		  </ion-nav-link>
+	  }
+	</ion-content>
+	```
+
+#### ModalComponent
+
+6. Modifique _hybrid/src/app/tab4/modal/modal.page.ts_, con:
+
+	```typescript
+	...
+	import { Component, OnInit, input } from '@angular/core';
+	import { IonContent, IonHeader, IonTitle, IonToolbar, IonNavLink, IonButton, IonButtons, IonBackButton } from '@ionic/angular/standalone';
+	
+	@Component({
+		...
+		standalone: true,
+ 		imports: [IonContent, IonHeader, IonTitle, IonToolbar, IonNavLink, IonButton, IonButtons, IonBackButton],
+	})
+	export class MainComponent  implements OnInit {
+
+	  data = input(0)
+
+	  ...
+	
+	}
+	```
+
+7. Reemplace todo el contenido de _hybrid/src/app/tab4/modal/modal.page.html_, con:
+
+	```html
+	<ion-header>
+	  <ion-toolbar>
+	    <ion-buttons slot="start">
+	      <ion-back-button></ion-back-button>
+	    </ion-buttons>
+	    <ion-title>Modal</ion-title>
+	  </ion-toolbar>
+	</ion-header>
+	<ion-content class="ion-padding">
+	  <h1>Value</h1>
+	  {{ data() }}
+	</ion-content>
+	```
 
 #### Angular Signal
 
+8. Modifique _hybrid/src/main.ts_, con:
 
+	```typescript
+	...
+
+	bootstrapApplication(AppComponent, {
+	  providers: [
+	    ...
+	    provideIonicAngular({ useSetInputAPI: true }),
+	    ...
+	  ],
+	});
+	```
+
+9. (STOP 2) Revise los cambios en el navegador
+
+    <div align="center">
+      <img src="imagenes/ionic_modal.jpg">
+    </div>
+    
 ### Documentación
 
 [Ion-nav throws error when using input signals](https://github.com/ionic-team/ionic-framework/issues/29555)
