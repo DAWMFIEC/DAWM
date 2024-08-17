@@ -164,7 +164,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	</ion-header>
 	<ion-content class="ion-padding">
 	  <h1>Tab4</h1>
-	  @for (item of [1,2,3,4]; track $index) {
+	  @for (item of [1,2,3,4,5,6]; track $index) {
 		  <ion-nav-link router-direction="forward" [component]="modal"
 		    [componentProps]="{data: item}">
 		    <ion-button>Modal {% raw %} {{ {% endraw %} item {% raw %} }} {% endraw %}</ion-button>
