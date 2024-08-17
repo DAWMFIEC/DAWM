@@ -19,6 +19,76 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	ionic serve
 	```
 
+#### Ionic Page
+
+1. Genere una página nueva, con:
+
+	```command
+	ionic generate page tab4
+	```
+
+2. Modifique _hybrid/src/app/tabs/page.ts_, con:
+
+	```typescript
+	import { ..., albums  } from 'ionicons/icons';
+	...
+
+	export class TabsPage {
+	  ...
+
+	  constructor() {
+	    addIcons({ ..., albums });
+	  }
+	}
+	```
+
+2. Modifique _hybrid/src/app/tabs/page.hml_, con:
+
+	```html
+	<ion-tabs>
+  		<ion-tab-bar slot="bottom">
+  		
+  		...
+
+  		<ion-tab-button tab="tab4" href="/tabs/tab4">
+	      <ion-icon aria-hidden="true" name="albums"></ion-icon>
+	      <ion-label>Tab 4</ion-label>
+	    </ion-tab-button>
+
+	  </ion-tab-bar>
+	</ion-tabs>
+	```
+
+3. 2. Modifique _hybrid/src/app/tabs/tabs.routes.ts_, con:
+
+	```typescript
+	...
+
+	export const routes: Routes = [
+	  {
+	    ...
+	    children: [
+	      ...
+	      {
+	        path: 'tab4',
+	        loadComponent: () =>
+	          import('../tab4/tab4.page').then((m) => m.Tab4Page),
+	      }
+	];
+	```
+
+4. (STOP 2) Revise los cambios en el navegador
+
+    <div align="center">
+      <img src="imagenes/ionic_tab4.jpg">
+    </div>
+
+
+#### Ionic Component
+
+#### Angular Signal
+
+
 ### Documentación
 
 [Ion-nav throws error when using input signals](https://github.com/ionic-team/ionic-framework/issues/29555)
@@ -31,7 +101,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 
 ### Términos
 
-signals
+suscripción, eventos, signals
 
 ### Referencias
 
