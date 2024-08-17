@@ -78,14 +78,13 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	      },
 
 
-	      {
-        	...
-      	  },
-      },
-  	  {
-  	  	...
+	      { ... },
+
+     	],
+     	
 	  },
-	];
+	  { ... },
+  	];
 	```
 
 4. (STOP 1) Revise los cambios en el navegador
@@ -231,7 +230,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
     <div align="center">
       <img src="imagenes/ionic_modal.jpg">
     </div>
-    
+
 ### Documentación
 
 [Ion-nav throws error when using input signals](https://github.com/ionic-team/ionic-framework/issues/29555)
