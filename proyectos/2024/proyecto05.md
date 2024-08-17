@@ -37,5 +37,5 @@ La respuesta es:
 * [Guía 24: Ionic - Introducción y Componentes](/DAWM/guias/2024/guia24)
 * [Guía 25: Ionic - Funcionalidad nativa: Cámara](/DAWM/guias/2024/guia25)
 * [Guía 26: Ionic - Servicios y Firebase](/DAWM/guias/2024/guia26)
-* [Guía 27: Ionic - Modales y Comunicación entre componentes](/DAWM/guias/2024/guia27)
+* [Guía 27: Ionic - Modales y Signals](/DAWM/guias/2024/guia27)
 * [Guía 28: Ionic - Generación del apk](/DAWM/guias/2024/guia28)
