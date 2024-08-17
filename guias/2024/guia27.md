@@ -46,11 +46,11 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 
 	```html
 	<ion-tabs>
-  		<ion-tab-bar slot="bottom">
-  		
-  		...
+			<ion-tab-bar slot="bottom">
+			
+			...
 
-  		<ion-tab-button tab="tab4" href="/tabs/tab4">
+			<ion-tab-button tab="tab4" href="/tabs/tab4">
 	      <ion-icon aria-hidden="true" name="albums"></ion-icon>
 	      <ion-label>Tab 4</ion-label>
 	    </ion-tab-button>
@@ -59,7 +59,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	</ion-tabs>
 	```
 
-3. 2. Modifique _hybrid/src/app/tabs/tabs.routes.ts_, con:
+3. Modifique _hybrid/src/app/tabs/tabs.routes.ts_, con:
 
 	```typescript
 	...
@@ -79,15 +79,11 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 
 
 	      {
-        	path: '',
         	...
-        	pathMatch: 'full',
       	  },
       },
   	  {
-  	  	path: '',
-	    ...
-	    pathMatch: 'full',
+  	  	...
 	  },
 	];
 	```
