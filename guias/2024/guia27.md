@@ -50,10 +50,10 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 			
 			...
 
-		<ion-tab-button tab="tab4" href="/tabs/tab4">
-	      <ion-icon aria-hidden="true" name="albums"></ion-icon>
-	      <ion-label>Tab 4</ion-label>
-	    </ion-tab-button>
+			<ion-tab-button tab="tab4" href="/tabs/tab4">
+		      <ion-icon aria-hidden="true" name="albums"></ion-icon>
+		      <ion-label>Tab 4</ion-label>
+		    </ion-tab-button>
 
 	  	</ion-tab-bar>
 	</ion-tabs>
@@ -102,9 +102,13 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 
 	```typescript
 	...
+	import { ... , IonNav } from '@ionic/angular/standalone';
 	import { MainComponent } from './main/main.component';
 	
-	@Component({ ... })
+	@Component({
+		...
+		imports: [ ... , IonNav] 
+	})
 	export class Tab4Page implements OnInit {
 
 	  component = MainComponent
@@ -120,9 +124,16 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	<ion-nav [root]="component"></ion-nav>
 	```
 
+4. (STOP 2) Revise los cambios en el navegador
+
+    <div align="center">
+      <img src="imagenes/ionic_maincomponent.jpg">
+    </div>
+
+
 #### MainComponent - ModalComponent
 
-4. Modifique _hybrid/src/app/tab4/main/main.page.ts_, con:
+1. Modifique _hybrid/src/app/tab4/main/main.page.ts_, con:
 
 	```typescript
 	...
@@ -132,7 +143,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	@Component({
 		...
 		standalone: true,
-  		imports: [IonNav, IonContent, IonHeader, IonTitle, IonToolbar, IonNavLink, IonButton, IonButtons, IonBackButton]
+		imports: [IonNav, IonContent, IonHeader, IonTitle, IonToolbar, IonNavLink, IonButton, IonButtons, IonBackButton]
 	})
 	export class MainComponent  implements OnInit {
 
@@ -143,7 +154,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	}
 	```
 
-5. Reemplace todo el contenido de _hybrid/src/app/tab4/main/main.page.html_, con:
+2. Reemplace todo el contenido de _hybrid/src/app/tab4/main/main.page.html_, con:
 
 	```html
 	<ion-header>
@@ -156,15 +167,21 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	  @for (item of [1,2,3,4]; track $index) {
 		  <ion-nav-link router-direction="forward" [component]="modal"
 		    [componentProps]="{data: item}">
-		    <ion-button>Launch Modal {{item}}</ion-button>
+		    <ion-button>Modal {% raw %} {{ {% endraw %} item {% raw %} }} {% endraw %}</ion-button>
 		  </ion-nav-link>
 	  }
 	</ion-content>
 	```
 
+3. (STOP 3) Revise los cambios en el navegador
+
+    <div align="center">
+      <img src="imagenes/ionic_buttons.jpg">
+    </div>
+
 #### ModalComponent
 
-6. Modifique _hybrid/src/app/tab4/modal/modal.page.ts_, con:
+1. Modifique _hybrid/src/app/tab4/modal/modal.page.ts_, con:
 
 	```typescript
 	...
@@ -185,7 +202,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	}
 	```
 
-7. Reemplace todo el contenido de _hybrid/src/app/tab4/modal/modal.page.html_, con:
+2. Reemplace todo el contenido de _hybrid/src/app/tab4/modal/modal.page.html_, con:
 
 	```html
 	<ion-header>
@@ -202,9 +219,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	</ion-content>
 	```
 
-#### Angular Signal
-
-8. Modifique _hybrid/src/main.ts_, con:
+3. Modifique _hybrid/src/main.ts_, con:
 
 	```typescript
 	...
@@ -218,7 +233,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	});
 	```
 
-9. (STOP 2) Revise los cambios en el navegador
+4. (STOP 4) Revise los cambios en el navegador
 
     <div align="center">
       <img src="imagenes/ionic_modal.jpg">
