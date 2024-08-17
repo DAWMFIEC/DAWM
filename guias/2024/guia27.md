@@ -55,6 +55,10 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 		      <ion-label>Tab 4</ion-label>
 		    </ion-tab-button>
 
+		    <ion-tab-button tab="tab2" href="/tabs/tab2">
+		    	...
+		    </ion-tab-button>
+
 	  	</ion-tab-bar>
 	</ion-tabs>
 	```
@@ -68,6 +72,10 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 			...
 			children: [
 				...
+				{
+					path: 'tab3'
+					...
+				},
 				{
 					path: 'tab4',
 					loadComponent: () =>
@@ -236,7 +244,7 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 4. (STOP 4) Revise los cambios en el navegador
 
     <div align="center">
-      <img src="imagenes/ionic_modal.jpg">
+      <img src="imagenes/ionic_modalsworking.gif">
     </div>
 
 ### Documentación
