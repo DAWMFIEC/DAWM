@@ -23,7 +23,7 @@ theme: jekyll-theme-leap-day
 	ionic serve
 	```
 
-#### Interfaz de Tipo de Datos y 
+#### Interfaz de Tipo de Datos
 
 1. Cree una interfaz de Angular, con:
 
