@@ -68,12 +68,27 @@ Revise [Angular y Signals: Transformando el desarrollo web](https://www.viewnext
 	  {
 	    ...
 	    children: [
+	      
 	      ...
+	      
 	      {
 	        path: 'tab4',
 	        loadComponent: () =>
 	          import('../tab4/tab4.page').then((m) => m.Tab4Page),
-	      }
+	      },
+
+
+	      {
+        	path: '',
+        	...
+        	pathMatch: 'full',
+      	  },
+      },
+  	  {
+  	  	path: '',
+	    ...
+	    pathMatch: 'full',
+	  },
 	];
 	```
 
