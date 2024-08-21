@@ -1,4 +1,10 @@
-### Preguntas
+---
+theme: jekyll-theme-leap-day
+---
+
+[Regresar](/DAWM/)
+
+## Preguntas
 
 Elabore sus respuestas a las siguientes preguntas:
 
