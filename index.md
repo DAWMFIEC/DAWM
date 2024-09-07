@@ -25,6 +25,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 03: HTML - Etiquetas contenedoras, formularios y multimedia](guias/2024/guia03)
   * [Guía 04: CSS - Selectores, propiedades y valores. Modelo de caja](guias/2024/guia04)
   * [Guía 05: CSS - Grid vs Flexbox](guias/2024/guia05)
+<!--- This is an HTML comment in Markdown 
 * [Proyecto 02: Landing Page SPA - Bootstrap & Javascript](proyectos/2024/proyecto02)
   * [Guía 06: Bootstrap](guias/2024/guia06)
   * [Guía 07: Javascript - Introducción, DOM y Eventos](guias/2024/guia07)
@@ -51,7 +52,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 25: Ionic - Funcionalidad nativa: Cámara](guias/2024/guia25)
   * [Guía 26: Ionic - Servicios y Firebase](guias/2024/guia26)
   * [Guía 27: Ionic - Ventanas Modales y Signals](guias/2024/guia27)
-  * [Guía 28: Ionic - Generación del apk](guias/2024/guia28)
+  * [Guía 28: Ionic - Generación del apk](guias/2024/guia28)-->
   
 ## Scripts
 
