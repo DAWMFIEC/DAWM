@@ -22,18 +22,17 @@ theme: jekyll-theme-leap-day
 1. Clona localmente tu repositorio **curriculum**. 
 2. Dentro del directorio de tu proyecto, crea el documento `HTML`: _index.html_
 3. Utiliza `VSCode` para editar el documento index.html, con:
-  - La `estructura general` [sugerida](bard/guia02-bard02.pdf) por Bard. 
+    - La `estructura general` [sugerida](bard/guia02-bard02.pdf) por Bard. 
 
       **Mínimo:** agrega la etiqueta &lt;title&gt; con su contenido; y las etiquetas &lt;meta&gt; con los nombres _keywords_, _description_ y _author_. 
 
-  - La `estructura semántica` [sugerida](bard/guia02-bard03.pdf) por Bard.
+    - La `estructura semántica` [sugerida](bard/guia02-bard03.pdf) por Bard.
       
       **Mínimo:** agrega dentro de la etiqueta body 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. 
 
 4. (STOP 1) Compruebe el resultado en el navegador.
-
 5. Versiona local y remotamente el repositorio **curriculum**.
-6. Utilice la [respuesta](bard/guia02-bard04.pdf) de Bard para desplegar el sitio del repositorio **curriculum** utilizando GitHub Pages.
+6. (STOP 2) Utilice la [respuesta](bard/guia02-bard04.pdf) de Bard para desplegar el sitio del repositorio **curriculum** utilizando GitHub Pages.
 
 ### Documentación
 
