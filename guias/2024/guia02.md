@@ -20,8 +20,11 @@ theme: jekyll-theme-leap-day
 ### Actividades en clases
 
 1. Clona localmente tu repositorio **curriculum**. 
-2. Dentro del directorio de tu proyecto, crea el documento `HTML`: _index.html_
-3. Utiliza `VSCode` para editar el documento index.html, con:
+
+#### Etiquetas HTML
+
+1. Dentro del directorio de tu proyecto, crea el documento `HTML`: _index.html_
+2. Utiliza `VSCode` para editar el documento index.html, con:
 
     - La `estructura general` [sugerida](bard/guia02-bard02.pdf) por Bard. 
 
@@ -31,9 +34,13 @@ theme: jekyll-theme-leap-day
 
       **Obligatorio:** Utilice 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. 
 
-4. (STOP 1) Compruebe el resultado en el navegador.
-5. Versiona local y remotamente el repositorio **curriculum**.
-6. (STOP 2) Utilice la [respuesta](bard/guia02-bard04.pdf) de Bard para desplegar el sitio del repositorio **curriculum** utilizando GitHub Pages.
+3. (STOP 1) Compruebe el resultado en el navegador.
+4. Versiona local y remotamente el repositorio **curriculum**.
+
+#### Despliegue en GitHub
+
+1. Despliegue el sitio del repositorio **curriculum** de acuerdo con la [referencia](bard/guia02-bard04.pdf) de Bard.
+2. (STOP 2) Compruebe el resultado en el navegador.
 
 ### Documentación
 
