@@ -21,7 +21,7 @@ theme: jekyll-theme-leap-day
 
 1. Clona localmente tu repositorio **curriculum**. 
 
-#### Etiquetas HTML
+#### Estructura general y semántica
 
 1. Dentro del directorio de tu proyecto, crea el documento `HTML`: _index.html_
 2. Utiliza `VSCode` para editar el documento index.html, con:
@@ -36,6 +36,17 @@ theme: jekyll-theme-leap-day
 
 3. (STOP 1) Compruebe el resultado en el navegador.
 4. Versiona local y remotamente el repositorio **curriculum**.
+
+#### Etiquetas de semántica de texto
+
+1. Edite las secciones pertinentes del documento index.html, con:
+  
+    - Organice y agregue el contenido de las `etiquetas de semántica de texto` _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_, de acuerdo con la [sugerencia](gemini/guia02-gemini02.pdf) de Gemini. 
+      
+      **Obligatorio:** Utilice cada etiqueta al menos una vez.
+
+2. (STOP 2) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Despliegue en GitHub
 
@@ -68,7 +79,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-HTML, hipertexto, VSCode, etiquetas, W3C, estándar, estructura general, estructura semántica, meta, title, link
+HTML, hipertexto, VSCode, etiquetas, W3C, estándar, estructura general, estructura semántica, meta, title, link, etiquetas de semántica de texto.
 
 ### Referencias
 
