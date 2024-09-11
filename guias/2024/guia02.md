@@ -24,7 +24,9 @@ theme: jekyll-theme-leap-day
 3. Utiliza `VSCode` para editar el documento index.html, con:
 
     - La `estructura general` [sugerida](bard/guia02-bard02.pdf) por Bard. 
-    - El uso de la etiqueta &lt;title&gt; y las etiquetas &lt;meta&gt; (para _keywords_, _description_ y _author_), [sugerida](gemini/guia02-gemini01.pdf) por Gemini.
+
+      **Obligatorio:** Use de la etiqueta &lt;title&gt; y las etiquetas &lt;meta&gt; (para _keywords_, _description_ y _author_), de acuerdo con la [sugerencia](gemini/guia02-gemini01.pdf) de Gemini.
+    
     - La `estructura semántica` [sugerida](bard/guia02-bard03.pdf) por Bard.
 
       **Obligatorio:** Utilice 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. 
