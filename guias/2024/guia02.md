@@ -44,10 +44,14 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
-* `Estándar` de HTML en [HTML Living Standard](https://html.spec.whatwg.org/multipage/) de la `W3C`, [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML) o [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png).
-    * Soporte de los grupos de `etiquetas` de `hipertexto` en su navegador, en [HTML5 Test](https://html5test.com/).
-    * Soporte de cada etiqueta en diversos navegadores por versión, en [Can I Use](https://caniuse.com/).
-    * Verificación en el anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
+* Descripción del `estándar` de HTML:
+    - Completa en el [HTML Living Standard](https://html.spec.whatwg.org/multipage/) de la `W3C`,
+    - Resumida en [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML), y
+    - Específica con las etiquetas más utilizadas en [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png).
+* Soporte dinámico para el uso de `etiquetas` de `hipertexto`:
+    - En el navegador actual, en [HTML5 Test](https://html5test.co/).
+    * Para diversas versiones de navegadores, en [Can I Use](https://caniuse.com/).
+    * Anidamiento de etiquetas, en [Can I Include](https://caninclude.glitch.me/).
 
 ### Fundamental
 
