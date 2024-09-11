@@ -41,7 +41,7 @@ theme: jekyll-theme-leap-day
 
 1. Edite las secciones pertinentes del documento index.html, con:
   
-    - Organice y agregue el contenido de las `etiquetas de semántica de texto` _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_, de acuerdo con la [sugerencia](gemini/guia02-gemini02.pdf) de Gemini. 
+    - Las `etiquetas de semántica de texto` _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_, de acuerdo con la [sugerencia](gemini/guia02-gemini02.pdf) de Gemini. 
       
       **Obligatorio:** Utilice cada etiqueta al menos una vez.
 
@@ -51,7 +51,7 @@ theme: jekyll-theme-leap-day
 #### Despliegue en GitHub
 
 1. Despliegue el sitio del repositorio **curriculum** de acuerdo con la [referencia](bard/guia02-bard04.pdf) de Bard.
-2. (STOP 2) Compruebe el resultado en el navegador.
+2. (STOP 3) Compruebe el resultado en el navegador.
 
 ### Documentación
 
