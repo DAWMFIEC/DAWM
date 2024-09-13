@@ -26,18 +26,32 @@ En caso de necesitar contenido de relleno temporal, considere:
 
 1. Clona localmente tu repositorio **curriculum**. 
 
-#### Etiquetas HTML
+#### Etiquetas para contenido de texto
 
-1. Modifica el archivo _index.html_ del repositorio **curriculum**.
+1. Modifica el archivo _index.html_.
     
-      - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las `etiquetas contenedoras` _&lt;div&gt;_, _&lt;span&gt;_, _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_. 
+      - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_. 
       _Algunas sugerencias según [Bard](bard/guia03-bard04.pdf)._
+
+2. (STOP 1) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio **curriculum**.
+
+#### Etiquetas multimedia
+
+1. Modifica el archivo _index.html_.
 
     - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, `multimedia` (una `imagen` y un `video`) y un `mapa`.
       _Consulta con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
 
-3. (STOP 1) Compruebe el resultado en el navegador.
-4. Versiona local y remotamente el repositorio **curriculum**.
+2. (STOP 2) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio **curriculum**.
+
+#### Etiquetas de formularios
+
+1. Modifica el archivo _index.html_.
+
+2. (STOP 3) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 
