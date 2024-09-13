@@ -26,11 +26,11 @@ En caso de necesitar contenido de relleno temporal, considere:
 
 1. Clona localmente tu repositorio **curriculum**. 
 
-#### Etiquetas para contenido de texto
+#### Etiquetas contenedoras
 
 1. Modifica el archivo _index.html_.
     
-      - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_. 
+    - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_. 
       _Algunas sugerencias según [Bard](bard/guia03-bard04.pdf)._
 
 2. (STOP 1) Compruebe el resultado en el navegador.

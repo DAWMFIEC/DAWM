@@ -22,7 +22,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 01: Git + GitHub](guias/2024/guia01)
 * [Proyecto 01: Curriculum Vitae - HTML & CSS](proyectos/2024/proyecto01)
   * [Guía 02: HTML - Estructura global, estructura semántica y etiquetas semánticas de texto](guias/2024/guia02)
-  * [Guía 03: HTML - Etiquetas contenedoras, formularios y multimedia](guias/2024/guia03)
+  * [Guía 03: HTML - Etiquetas contenedoras, multimedia y formulario](guias/2024/guia03)
   * [Guía 04: CSS - Selectores, propiedades y valores. Modelo de caja](guias/2024/guia04)
   * [Guía 05: CSS - Grid vs Flexbox](guias/2024/guia05)
 
