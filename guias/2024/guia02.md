@@ -10,21 +10,21 @@ theme: jekyll-theme-leap-day
 
 #### Diseño
 
-* Decide el contenido de su CV, puede considerar la [recomendación](chatgpt/guia02-recomendacion01.png) de ChatGPT o la [recomendación](bard/guia02-bard01.pdf) de Bard.
-* Diseña la estructura del contenido de su CV, p.e.: el orden de las secciones, título de cada sección, uso de listas numeradas o listas no numeradas de elementos, etc.
+* Decida el contenido de su CV, puede considerar la [recomendación](chatgpt/guia02-recomendacion01.png) de ChatGPT o la [recomendación](bard/guia02-bard01.pdf) de Bard.
+* Diseñe la estructura del contenido de su CV, p.e.: el orden de las secciones, título de cada sección, uso de listas numeradas o listas no numeradas de elementos, etc.
 
 #### Github
 
-* Crea un repositorio en GitHub con el nombre **curriculum**.
+* Cree un repositorio en GitHub con el nombre **curriculum**.
 
 ### Actividades en clases
 
-1. Clona localmente tu repositorio **curriculum**. 
+1. Clone localmente tu repositorio **curriculum**. 
 
 #### Estructura general y semántica
 
-1. Dentro del directorio de tu proyecto, crea el documento `HTML`: _index.html_
-2. Utiliza `VSCode` para editar el documento index.html, con:
+1. Cree el documento `HTML` _index.html_ dentro del directorio de tu proyecto.
+2. Utilice `VSCode` para editar el documento index.html, con:
 
     - La `estructura general` [sugerida](bard/guia02-bard02.pdf) por Bard. 
 
@@ -35,7 +35,7 @@ theme: jekyll-theme-leap-day
       **Obligatorio:** Utilice 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. 
 
 3. (STOP 1) Compruebe el resultado en el navegador.
-4. Versiona local y remotamente el repositorio **curriculum**.
+4. Versione local y remotamente el repositorio **curriculum**.
 
 #### Etiquetas de semántica de texto
 
@@ -46,7 +46,7 @@ theme: jekyll-theme-leap-day
       **Obligatorio:** Utilice cada etiqueta al menos una vez en alguna de las secciones previamente desarrolladas.
 
 2. (STOP 2) Compruebe el resultado en el navegador.
-3. Versiona local y remotamente el repositorio **curriculum**.
+3. Versione local y remotamente el repositorio **curriculum**.
 
 #### Despliegue en GitHub
 
