@@ -8,19 +8,11 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-#### Diseño
+#### Diseño y Contenido
 
-* Diseña el contenido de su CV para incorporar:
-  - Un formulario, de acuerdo con las [sugerencias](bard/guia03-bard01.pdf) de contenido, según Bard,
-  - Una imagen o un video, acorde con las [sugerencias](bard/guia03-bard02.pdf) de Bard, y
-  - Un mapa, siguiendo las [sugerencias](bard/guia03-bard03.pdf) de Bard.
+* Diseña el contenido de su CV para incorporar un formulario ([sugerencias](bard/guia03-bard01.pdf)), una imagen o un video ([sugerencias](bard/guia03-bard02.pdf)), y un mapa ([sugerencias](bard/guia03-bard03.pdf)).
 
-#### Contenido
-
-En caso de necesitar contenido de relleno temporal, considere:
-
-* [Lorem Ipsum](https://www.lipsum.com/) para texto de relleno, y
-* [Placehold](https://placehold.co/) para marcadores de posición de imágenes.
+* En caso de necesitar contenido de relleno temporal, considere [Lorem Ipsum](https://www.lipsum.com/) para texto de relleno, y [Placehold](https://placehold.co/) para marcadores de posición de imágenes.
 
 ### Actividades en clases
 
