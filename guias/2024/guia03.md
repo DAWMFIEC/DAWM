@@ -10,40 +10,40 @@ theme: jekyll-theme-leap-day
 
 #### Diseño y Contenido
 
-* Diseña el contenido de su CV para incorporar un formulario ([sugerencias](bard/guia03-bard01.pdf)), una imagen o un video ([sugerencias](bard/guia03-bard02.pdf)), y un mapa ([sugerencias](bard/guia03-bard03.pdf)).
+* Diseñe el contenido de su CV en el que incorpore un formulario ([sugerencias](bard/guia03-bard01.pdf)), una imagen o un video ([sugerencias](bard/guia03-bard02.pdf)), y un mapa ([sugerencias](bard/guia03-bard03.pdf)).
 
-* En caso de necesitar contenido de relleno temporal, considere [Lorem Ipsum](https://www.lipsum.com/) para texto de relleno, y [Placehold](https://placehold.co/) para marcadores de posición de imágenes.
+* En caso de necesitar contenido de relleno temporal, considere [Lorem Ipsum](https://www.lipsum.com/) para texto de relleno, y [Placehold](https://placehold.co/) con marcadores de posición de imágenes.
 
 ### Actividades en clases
 
-1. Clona localmente tu repositorio **curriculum**. 
+1. Clone localmente tu repositorio **curriculum**. 
 
 #### Etiquetas contenedoras
 
-1. Modifica el archivo _index.html_.
+1. Modifique el archivo _index.html_.
     
     - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_. 
       _Algunas sugerencias según [Bard](bard/guia03-bard04.pdf)._
 
 2. (STOP 1) Compruebe el resultado en el navegador.
-3. Versiona local y remotamente el repositorio **curriculum**.
+3. Versione local y remotamente el repositorio **curriculum**.
 
 #### Etiquetas multimedia
 
-1. Modifica el archivo _index.html_.
+1. Modifique el archivo _index.html_.
 
     - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, `multimedia` (una `imagen` y un `video`) y un `mapa`.
       _Consulta con [ChatGPT](https://chat.openai.com/) o [Bard](https://bard.google.com/) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
 
 2. (STOP 2) Compruebe el resultado en el navegador.
-3. Versiona local y remotamente el repositorio **curriculum**.
+3. Versione local y remotamente el repositorio **curriculum**.
 
 #### Etiquetas de formularios
 
-1. Modifica el archivo _index.html_.
+1. Modifique el archivo _index.html_.
 
 2. (STOP 3) Compruebe el resultado en el navegador.
-3. Versiona local y remotamente el repositorio **curriculum**.
+3. Versione local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 
