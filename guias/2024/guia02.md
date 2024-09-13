@@ -58,7 +58,7 @@ theme: jekyll-theme-leap-day
 * Descripción del `estándar` de HTML:
     - Completa en el [HTML Living Standard](https://html.spec.whatwg.org/multipage/) de la `W3C`,
     - Resumida en [Mozilla Developer Network](https://developer.mozilla.org/es/docs/Web/HTML), y
-    - Específica con las etiquetas más utilizadas en [Cheat sheet](https://html.com/wp-content/uploads/html5_cheat_sheet_tags.png).
+    - Específica con las etiquetas más utilizadas en [Cheat sheet](https://lenguajehtml.com/assets/html5-cheatsheet-2019.pdf).
 * Soporte dinámico para el uso de `etiquetas` de `hipertexto`:
     - En el navegador actual, en [HTML5 Test](https://html5test.co/).
     * Para diversas versiones de navegadores, en [Can I Use](https://caniuse.com/).
