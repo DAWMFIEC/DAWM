@@ -43,7 +43,7 @@ theme: jekyll-theme-leap-day
   
     - Las `etiquetas de semántica de texto` _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_, de acuerdo con la [sugerencia](gemini/guia02-gemini02.pdf) de Gemini. 
       
-      **Obligatorio:** Utilice cada etiqueta al menos una vez.
+      **Obligatorio:** Utilice cada etiqueta al menos una vez en alguna de las secciones previamente desarrolladas.
 
 2. (STOP 2) Compruebe el resultado en el navegador.
 3. Versiona local y remotamente el repositorio **curriculum**.
