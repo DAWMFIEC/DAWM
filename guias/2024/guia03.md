@@ -41,7 +41,7 @@ theme: jekyll-theme-leap-day
 
 1. Modifique el archivo _index.html_.
 
-    - Diseñe y modifique un formulario de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
+    - Agregue un formulario de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
 
 2. (STOP 3) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
