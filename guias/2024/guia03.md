@@ -32,8 +32,7 @@ theme: jekyll-theme-leap-day
 
 1. Modifique el archivo _index.html_.
 
-    - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, `multimedia` (una `imagen` y un `video`) y un `mapa`.
-      _Consulta con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
+    - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, `multimedia` (una `imagen` y un `video`) y un `mapa`. _Consulta con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
 
 2. (STOP 2) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
@@ -41,6 +40,8 @@ theme: jekyll-theme-leap-day
 #### Etiquetas de formularios
 
 1. Modifique el archivo _index.html_.
+
+    - Diseñe y modifique un formulario de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
 
 2. (STOP 3) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
