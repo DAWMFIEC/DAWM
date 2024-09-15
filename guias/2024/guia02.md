@@ -32,7 +32,7 @@ theme: jekyll-theme-leap-day
     
     - La `estructura semántica` [sugerida](bard/guia02-bard03.pdf) por Bard.
 
-      **Obligatorio:** Utilice 1 etiqueta &lt;header&gt;, 4 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. 
+      **Obligatorio:** Utilice 1 etiqueta &lt;header&gt;, 5 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. 
 
 3. (STOP 1) Compruebe el resultado en el navegador.
 4. Versione local y remotamente el repositorio **curriculum**.
