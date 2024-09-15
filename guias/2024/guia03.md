@@ -41,7 +41,7 @@ theme: jekyll-theme-leap-day
 
 1. Modifique el archivo _index.html_.
 
-    - Agregue la etiqueta de un formulario (_&lt;div&gt;_), campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), etiquetas (_&lt;label&gt;_) y botones (_&lt;button&gt;_) de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
+    - Agregue la etiqueta de un formulario (_&lt;form&gt;_), campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), etiquetas (_&lt;label&gt;_) y botones (_&lt;button&gt;_) de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
 
 2. (STOP 3) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
