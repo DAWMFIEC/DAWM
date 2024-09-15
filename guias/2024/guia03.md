@@ -25,6 +25,8 @@ theme: jekyll-theme-leap-day
     - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_. 
       _Algunas sugerencias según [Bard](bard/guia03-bard04.pdf)._
 
+      **Obligatorio:** Utilice al menos una (1) etiqueta &lt;div&gt; y al menos una (1) etiqueta &lt;span&gt;.
+
 2. (STOP 1) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
 
@@ -32,7 +34,9 @@ theme: jekyll-theme-leap-day
 
 1. Modifique el archivo _index.html_.
 
-    - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea `formulario`, `multimedia` (una `imagen` y un `video`) y un `mapa`. _Consulta con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
+    - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea un elemento `multimedia` (una `imagen` y un `video`) y un `mapa`. _Consulta con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._ 
+
+    **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa.
 
 2. (STOP 2) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
@@ -42,6 +46,8 @@ theme: jekyll-theme-leap-day
 1. Modifique el archivo _index.html_.
 
     - Agregue la etiqueta de un formulario (_&lt;form&gt;_), campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), etiquetas (_&lt;label&gt;_) y botones (_&lt;button&gt;_) de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
+
+    **Obligatorio:** Utilice al menos un (1) formulario, con los elementos necesarios.
 
 2. (STOP 3) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
