@@ -25,38 +25,44 @@ theme: jekyll-theme-leap-day
 
 1. Levante un `servidor HTTP` con Python en la `ruta de la aplicación` de acuerdo con el [tutorial](/DAWM/tutoriales/python).
 2. En el navegador, acceda a la URL [http:\\localhost:8079](http:\\localhost:8079) que responde el servidor HTTP.
-3. (STOP 1) Compruebe el resultado en el navegador.
+3. (STOP 1) Actualice el navegador y compruebe los cambios.
 
-#### `Selectores`, `estilo en cascada` y `familia tipográfica`
+#### Selectores, estilo en cascada y familia tipográfica
 
-Compruebe la [sugerencia](bard/guia04-bard02.pdf) de Bard para las siguientes actividades:
+Tome como referencia la [sugerencia](bard/guia04-bard02.pdf) de Bard para las siguientes actividades:
 
-1. Use un _selector universal_ para asignar la familia tipográfica _Arial, sans-serif_ para todo el documento. 
-2. Utilice un _selector por clase_ para fijar la familia tipográfica _Times New Roman, serif_ para todos los títulos de las secciones (&lt;h2&gt;). 
-3. Emplee un _selector por elemento_ para establecer la familia tipográfica _Georgia, serif_ para el título principal (&lt;h1&gt;). 
-4. (STOP 2) Compruebe el resultado en el navegador.
+1. Use un _`selector` universal_ para asignar la `familia tipográfica` _'Arial, sans-serif'_ para todo el documento. 
+2. Utilice un _selector por clase_ para fijar la familia tipográfica _'Times New Roman, serif'_ para todos los títulos de las secciones (&lt;h2&gt;). 
+  
+    - En el documento _index.html_, agregue el nombre de la clase a todas las etiqueta con los títulos de las secciones.  
+
+3. Emplee un _selector por elemento_ para establecer la familia tipográfica _'Georgia, serif'_ para el título principal (&lt;h1&gt;). 
+  
+    - En el documento _index.html_, agruegue el identificador a la etiqueta con el título principal.
+
+4. (STOP 2) Actualice el navegador y compruebe los cambios.
 
 #### Familias tipográficas de Google Fonts
 
-Compruebe la [sugerencia](bard/guia04-bard03.pdf) de Bard para las siguientes actividades:
+Tome como referencia la [sugerencia](bard/guia04-bard03.pdf) de Bard para las siguientes actividades:
 
 1. En Google Fonts, genere la referencia a las familias tipográficas escogidas previamente de Fontjoy.
 2. Al inicio de la hoja de estilo, agregue la referencia a las familias tipográficas de Google Fonts.
 3. Asigne a su gusto las familias tipográficas a las `reglas CSS`.
-4. (STOP 3) Compruebe el resultado en el navegador.
+4. (STOP 3) Actualice el navegador y compruebe los cambios.
 
 #### Color de texto y color de fondo
 
-Compruebe la [sugerencia](bard/guia04-bard04.pdf) de Bard para las siguientes actividades:
+Tome como referencia la [sugerencia](bard/guia04-bard04.pdf) de Bard para las siguientes actividades:
 
 1. Tome como referencia la combinación de colores previamente seleccionada a partir de Happy Hues, Huemint o ColorMagic.
 2. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
 3. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
-4. (STOP 4) Compruebe el resultado en el navegador.
+4. (STOP 4) Actualice el navegador y compruebe los cambios.
 
 #### Modelo de caja
 
-Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes actividades:
+Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes actividades:
 
 1. Utilice alguno de los _selectores_ para acceder a una sección (&lt;section&gt;) de su página web.
 2. Aplique a su gusto las `reglas CSS` (las `propiedades CSS` y los `valores CSS`) para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
@@ -85,7 +91,7 @@ Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes ac
    }   
    ```
 
-4. (STOP 5) Compruebe el resultado en el navegador.
+4. (STOP 5) Actualice el navegador y compruebe los cambios.
 5. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
