@@ -23,9 +23,9 @@ theme: jekyll-theme-leap-day
 
 #### Servidor HTTP 
 
-1. Levante un [`servidor HTTP` con Python](/DAWM/tutoriales/python) en la `ruta de la aplicación`.
+1. Siga el [tutorial](/DAWM/tutoriales/python) para levantar un `servidor HTTP` con Python en la `ruta de la aplicación`.
 2. Acceda desde el navegador con el URL del servidor HTTP en Python, y
-3. En adelante, compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el navegador.
+3. (STOP 1) En adelante, compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el navegador.
 
 #### `Selectores`, `estilo en cascada` y `familia tipográfica`
 
@@ -34,7 +34,7 @@ Compruebe la [sugerencia](bard/guia04-bard02.pdf) de Bard para las siguientes ac
 1. Use un _selector universal_ para asignar la familia tipográfica _Arial, sans-serif_ para todo el documento. 
 2. Utilice un _selector por clase_ para fijar la familia tipográfica _Times New Roman, serif_ para todos los títulos de las secciones (&lt;h2&gt;). 
 3. Emplee un _selector por elemento_ para establecer la familia tipográfica _Georgia, serif_ para el título principal (&lt;h1&gt;). 
-4. (STOP 1) Compruebe el resultado en el navegador.
+4. (STOP 2) Compruebe el resultado en el navegador.
 
 #### Familias tipográficas de Google Fonts
 
@@ -43,7 +43,7 @@ Compruebe la [sugerencia](bard/guia04-bard03.pdf) de Bard para las siguientes ac
 1. En Google Fonts, genere la referencia a las familias tipográficas escogidas previamente de Fontjoy.
 2. Al inicio de la hoja de estilo, agregue la referencia a las familias tipográficas de Google Fonts.
 3. Asigne a su gusto las familias tipográficas a las `reglas CSS`.
-4. (STOP 2) Compruebe el resultado en el navegador.
+4. (STOP 3) Compruebe el resultado en el navegador.
 
 #### Color de texto y color de fondo
 
@@ -52,7 +52,7 @@ Compruebe la [sugerencia](bard/guia04-bard04.pdf) de Bard para las siguientes ac
 1. Tome como referencia la combinación de colores previamente seleccionada a partir de Happy Hues, Huemint o ColorMagic.
 2. Utilice un _selector por identificador_ para fijar el color de fondo para cada sección.
 3. Utilice un _selector anidado_ para asignar el color del texto para el contenido de cada sección.
-4. (STOP 3) Compruebe el resultado en el navegador.
+4. (STOP 4) Compruebe el resultado en el navegador.
 
 #### Modelo de caja
 
@@ -85,7 +85,7 @@ Compruebe la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes ac
    }   
    ```
 
-4. (STOP 4) Compruebe el resultado en el navegador.
+4. (STOP 5) Compruebe el resultado en el navegador.
 5. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
