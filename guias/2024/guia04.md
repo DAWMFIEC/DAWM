@@ -23,9 +23,9 @@ theme: jekyll-theme-leap-day
 
 #### Servidor HTTP 
 
-1. Siga el [tutorial](/DAWM/tutoriales/python) para levantar un `servidor HTTP` con Python en la `ruta de la aplicación`.
-2. Acceda desde el navegador con el URL del servidor HTTP en Python, y
-3. (STOP 1) En adelante, compruebe cada uno de los cambios en la hoja de estilo CSS al actualizar el navegador.
+1. Levante un `servidor HTTP` con Python en la `ruta de la aplicación` de acuerdo con el [tutorial](/DAWM/tutoriales/python).
+2. En el navegador, acceda a la URL [http:\\localhost:8079](http:\\localhost:8079) que responde el servidor HTTP.
+3. (STOP 1) Compruebe el resultado en el navegador.
 
 #### `Selectores`, `estilo en cascada` y `familia tipográfica`
 
