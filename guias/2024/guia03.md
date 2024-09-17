@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 * Diseñe el contenido de su CV en el que incorpore un formulario ([sugerencias](bard/guia03-bard01.pdf)), una imagen o un video ([sugerencias](bard/guia03-bard02.pdf)), y un mapa ([sugerencias](bard/guia03-bard03.pdf)).
 
-* En caso de necesitar contenido de relleno temporal, considere [Lorem Ipsum](https://www.lipsum.com/) para texto de relleno, y [Placehold](https://placehold.co/) con marcadores de posición de imágenes.
+* Revise [Lorem Ipsum](https://www.lipsum.com/) (texto de relleno) y [Placehold](https://placehold.co/) (marcadores de posición de imágenes) en caso de necesitar contenido temporal de relleno.
 
 ### Actividades en clases
 
