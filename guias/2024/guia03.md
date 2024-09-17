@@ -44,7 +44,7 @@ theme: jekyll-theme-leap-day
 
 1. Modifique el archivo _index.html_.
 
-    - Agregue la etiqueta de un formulario (_&lt;form&gt;_), campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), etiquetas (_&lt;label&gt;_) y botones (_&lt;button&gt;_) de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
+    - Diseñe un formulario (_&lt;form&gt;_), con campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), con etiquetas (_&lt;label&gt;_) y con botones (_&lt;button&gt;_) de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
 
         **Obligatorio:** Utilice al menos un (1) formulario, con los elementos necesarios.
 
@@ -57,10 +57,10 @@ theme: jekyll-theme-leap-day
 	- Lista de atributos en [W3Docs - HTML Attributes](https://www.w3docs.com/learn-html/html-attributes.html).
 
 * Soporte para elementos HTML:
-  - [Formularios](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) y sus elementos.
-  - [Imágenes](https://developer.mozilla.org/es/docs/Web/HTML/Element/img) y sus atributos.
-  - Archivos videos en formato [mp3](https://www.labnol.org/internet/google-drive-mp3-embed/2232/) o enlaces a [videos](https://www.desarrollolibre.net/blog/html/como-insertar-videos-de-youtube-en-nuestra-web-html#.XtccmDr0k2w) en Youtube.
-  - Mapas en [Google](https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/) o [Leaflet](https://mappinggis.com/2013/06/como-crear-un-mapa-con-leaflet/).
+    - [Formularios](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/form) y sus elementos.
+    - [Imágenes](https://developer.mozilla.org/es/docs/Web/HTML/Element/img) y sus atributos.
+    - Archivos videos en formato [mp3](https://www.labnol.org/internet/google-drive-mp3-embed/2232/) o enlaces a [videos](https://www.desarrollolibre.net/blog/html/como-insertar-videos-de-youtube-en-nuestra-web-html#.XtccmDr0k2w) en Youtube.
+    - Mapas en [Google](https://mappinggis.com/2012/05/como-insertar-un-mapa-de-google-maps-en-tu-web/) o [Leaflet](https://mappinggis.com/2013/06/como-crear-un-mapa-con-leaflet/).
 
 ### Fundamental
 
