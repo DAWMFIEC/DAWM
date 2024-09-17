@@ -22,8 +22,7 @@ theme: jekyll-theme-leap-day
 
 1. Modifique el archivo _index.html_.
     
-    - Organiza y agrega contenido a cada una de las secciones (etiquetas semánticas) de su CV mediante las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_. 
-      A continuación, algunas [sugerencias](bard/guia03-bard04.pdf) de Bard.
+    - Agregue las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_ dentro de las secciones de su página HTML. Considere las [sugerencias](bard/guia03-bard04.pdf) de Bard.
 
         **Obligatorio:** Utilice al menos una (1) etiqueta &lt;div&gt; y al menos una (1) etiqueta &lt;span&gt;.
 
