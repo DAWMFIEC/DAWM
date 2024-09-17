@@ -33,7 +33,7 @@ theme: jekyll-theme-leap-day
 
 1. Modifique el archivo _index.html_.
 
-    - Diseñe y modifique, o agregue, secciones (etiquetas semánticas) de su CV, que cuyo contenido sea un elemento `multimedia` (una `imagen` y un `video`) y un `mapa`. _Consulta con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio._
+    - Diseñe y agregue las etiquetas `multimedia` (una `imagen` y un `video`) y un `mapa` en las secciones de su página HTML. Consulte con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio.
 
         **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa.
 
