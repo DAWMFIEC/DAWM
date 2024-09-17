@@ -32,7 +32,7 @@ theme: jekyll-theme-leap-day
     
     - La `estructura semántica` [sugerida](bard/guia02-bard03.pdf) por Bard.
 
-      **Obligatorio:** Utilice 1 etiqueta &lt;header&gt;, 5 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. El documento debe contener un título (&lt;h1&gt;). Cada sección debe contener un título (&lt;h2&gt;). 
+      **Obligatorio:** Utilice 1 etiqueta &lt;header&gt;, 5 etiquetas &lt;section&gt;, 1 etiqueta &lt;nav&gt; y 1 etiqueta &lt;footer&gt;. El documento HTML debe contener un título (&lt;h1&gt;). Cada sección debe contener un título (&lt;h2&gt;). 
 
 3. (STOP 1) Compruebe el resultado en el navegador.
 4. Versione local y remotamente el repositorio **curriculum**.
@@ -43,7 +43,7 @@ theme: jekyll-theme-leap-day
   
     - Las `etiquetas de semántica de texto` _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_, de acuerdo con la [sugerencia](gemini/guia02-gemini02.pdf) de Gemini. 
       
-      **Obligatorio:** Utilice cada etiqueta al menos una vez en alguna de las secciones previamente desarrolladas.
+      **Obligatorio:** Utilice las etiquetas de semántica de texto al menos una vez en las secciones del documento HTML.
 
 2. (STOP 2) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
