@@ -23,8 +23,8 @@ theme: jekyll-theme-leap-day
 
 #### Servidor HTTP 
 
-1. Levante un `servidor HTTP` con Python en la `ruta de la aplicación` de acuerdo con el [tutorial](/DAWM/tutoriales/python).
-2. En el navegador, acceda a la URL [http:\\localhost:8079](http:\\localhost:8079) que responde el servidor HTTP.
+1. Siguiendo las instrucciones del [tutorial](/DAWM/tutoriales/python), levante un `servidor HTTP` con Python en la `ruta de la aplicación`.
+2. En el navegador, acceda a la URL [http:\\localhost:8079](http:\\localhost:8079) quen el que responde el servidor HTTP.
 3. (STOP 1) Actualice el navegador y compruebe los cambios.
 
 #### Selectores, propiedades y reglas CSS
@@ -36,7 +36,9 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
 
     | Selector CSS | Propiedad CSS | Valor CSS | Otros posibles valores |
     | :----------: | :-----------: | :-------: | :--------------------: |
-    | a            |               |           |                        | 
+    | Universal (`*`)   | **font-familiy**  | `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;`           | [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)                       | 
+    | | | | |
+    | | | | |
 
 2. (STOP 1) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
