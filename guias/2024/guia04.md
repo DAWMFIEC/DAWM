@@ -12,7 +12,15 @@ theme: jekyll-theme-leap-day
     background-color: #e4eaef;
     border-radius: 5px;
   }
-  
+
+  summary {
+    list-style-type: '⬇ ';
+  }
+
+  details[open] > summary {
+    list-style-type: '⬆ ';
+  }
+
   /*details {
     margin: 5% 0%;
     padding: 2%;
