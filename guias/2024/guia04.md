@@ -40,12 +40,12 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 2. Aplique las reglas CSS para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
 
    ```css
-  section {
-    margin: 2px 1px 1.5px;
-    margin-top: 1.2rem;
-    border: 0.2pt solid #cedddd;
-    padding: 2% 1.2%;   
-  }
+    section {
+      margin: 2px 1px 1.5px;
+      margin-top: 1.2rem;
+      border: 0.2pt solid #cedddd;
+      padding: 2% 1.2%;   
+    }
    ```
 
 3. (STOP 2) Actualice el navegador y compruebe los cambios.
@@ -57,16 +57,16 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 2. Agregue la propiedad **box-shadow** con los siguientes valores:
    
    ```css
-   ... {
-     ...
-     padding: ...
+    section {
+      ...
+      padding: ...
 
-     box-shadow: 
-      -webkit-box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.75);
-      -moz-box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.75);
-      box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.75);
+      box-shadow: 
+        -webkit-box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.75);
+        -moz-box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.75);
+        box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.75);
 
-   }   
+    }   
    ```
 
 3. (STOP 3) Actualice el navegador y compruebe los cambios.
