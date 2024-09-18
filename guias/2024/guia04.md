@@ -27,11 +27,11 @@ theme: jekyll-theme-leap-day
 2. En el navegador, acceda a la URL [http:\\localhost:8079](http:\\localhost:8079) que responde el servidor HTTP.
 3. (STOP 1) Actualice el navegador y compruebe los cambios.
 
-#### Selectores, propiedades y reglas
+#### Selectores, propiedades y reglas CSS
 
 Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para las siguientes actividades:
 
-1. Coloque las siguientes `reglas CSS` (`selector CSS`,`propiedad CSS` y `valor CC`) en la hoja de estilo externa:
+1. Coloque las siguientes `reglas CSS` (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
 
 
     | Selector CSS | Propiedad CSS | Valor CSS | Otros posibles valores |
