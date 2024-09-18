@@ -37,7 +37,7 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
       <caption>Reglas CSS</caption>
       <thead>
         <tr>
-          <th>Selector CSS</th>
+          <th colspan="2">Selector CSS</th>
           <th>Propiedad CSS</th>
           <th>Valor CSS</th>
           <th>Documentación</th>
@@ -45,7 +45,8 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
       </thead>
       <tbody>
         <tr>
-          <td rowspan="2">* - Universal</td>
+          <td rowspan="2">Universal</td>
+          <td rowspan="2">*</td>
           <td> <b>font-family</b> </td>
           <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
@@ -56,7 +57,8 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
         </tr>
         <tr>
-          <td rowspan="2">h1 - Por elemento</td>
+          <td rowspan="2">Por elemento</td>
+          <td rowspan="2">h1</td>
           <td> <b>text-align</b> </td>
           <td> <i>center</i> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
