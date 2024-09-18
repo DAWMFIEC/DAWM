@@ -37,5 +37,9 @@ details[open] summary {border-radius: 5px 5px 0 0;}
 
 details {
   border-radius: 5px;
-  margin-bottom: 7px;
+  margin-bottom: 10px;
+}
+
+details:hover {
+    cursor: pointer;
 }
