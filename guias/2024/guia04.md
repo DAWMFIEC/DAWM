@@ -53,18 +53,16 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
 #### Efectos CSS
 
-1. Utilice el selector por elemento para acceder a las etiquetas &lt;section&gt;.
-2. Agregue la propiedad **box-shadow** con los siguientes valores:
+1. Utilice el servicio de [CSSmatic](https://www.cssmatic.com/es/box-shadow) para generar los valores de la propiedad **box-shadow**, p.e.:
    
    ```css
     section {
       ...
-      padding: ...
 
       box-shadow: 
-        -webkit-box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.75);
-        -moz-box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.75);
-        box-shadow: 6px 6px 12px -5px rgba(0,0,0,0.75);
+        -webkit-box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);
+        -moz-box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);
+        box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);
 
     }   
    ```
@@ -102,3 +100,4 @@ servidor HTTP, ruta de la aplicación, CSS, reglas CSS, selectores CSS, propieda
 * CSS: centering things. (2023). Retrieved 23 May 2023, from https://www.w3.org/Style/Examples/007/center.en.html
 * CSS Box Model. (2023). Retrieved 23 May 2023, from https://www.w3schools.com/css/css_boxmodel.asp
 * Beautiful CSS box-shadow examples - CSS Scan. (n.d.). Retrieved from https://getcssscan.com/css-box-shadow-examples
+* Editor Sombras. (n.d.). Retrieved from https://www.cssmatic.com/es/box-shadow
