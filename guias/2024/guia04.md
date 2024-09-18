@@ -7,40 +7,45 @@ theme: jekyll-theme-leap-day
 [DAWM](/DAWM/) / [Proyecto01](/DAWM/proyectos/2024/proyecto01)
 
 <style type="text/css" media="screen">
-  details {
+
+  summary {
+    list-style: none;
+    display: inline-flex;
+    align-items: center;
     padding: 10px;
-    background-color: #e4eaef;
-    border-radius: 5px;
+    font-weight: bold;
+  }
+
+  summary::after {
+    content: '';
+    width: 18px;
+    height: 10px;
+    background: url('https://uploads.sitepoint.com/wp-content/uploads/2023/10/1697699669arrow.svg') no-repeat;
+    background-size: cover;
+    margin-left: .75em;
+    transition: 0.2s;
+  }
+
+  details[open] > summary::after {
+    transform: rotate(180deg);
+  }
+
+  summary::-webkit-details-marker {
+    display: none;
   }
 
   summary {
-    list-style-type: '⬇ ';
+    background-color: #FFCC00;
+    color: #30353b;
+    border-radius: 5px;
   }
 
-  details[open] > summary {
-    list-style-type: '⬆ ';
+  details[open] summary {border-radius: 5px 5px 0 0;}
+
+  details {
+    border-radius: 5px;
   }
 
-  /*details {
-    margin: 5% 0%;
-    padding: 2%;
-    border: dashed 2px black;
-    border-radius: 11px;
-    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
-  }
-
-  details div {
-    color: lightseagreen;
-    font-weight: bold;
-    cursor: pointer;
-    text-align: center;
-  }
-
-  img.description {
-    width: 50%;
-    text-align: center;
-    margin: 0 25%;
-  }*/
 </style>
 
 ### Actividades previas
