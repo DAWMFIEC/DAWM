@@ -33,13 +33,36 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
 
 1. Coloque las siguientes `reglas CSS` (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
 
-
-    | Selector CSS | Propiedad CSS | Valor CSS | Otros posibles valores |
-    | :----------: | :-----------: | :-------: | :--------------------: |
-    | Universal (`*`)   | **font-familiy**  | _'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;_           | [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)                       | 
-    |                   | **font-weight**   | _200_                                                        | [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) |
-    | | | | |
-    | | | | |
+    <table>
+      <caption>Reglas CSS</caption>
+      <thead>
+        <tr>
+          <th>Selector CSS</th>
+          <th>Propiedad CSS</th>
+          <th>Valor CSS</th>
+          <th>Documentación</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Universal (`*`)</td>
+          <td> <b>font-family</b> </td>
+          <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+        </tr>
+        <tr>
+          <td> <b>font-weight</b> </td>
+          <td> <i>200</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
 
 2. (STOP 1) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
