@@ -45,7 +45,7 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
       </thead>
       <tbody>
         <tr>
-          <td rowspan="2">Universal (`*`)</td>
+          <td rowspan="2">* - Universal</td>
           <td> <b>font-family</b> </td>
           <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
@@ -54,6 +54,24 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
           <td> <b>font-weight</b> </td>
           <td> <i>200</i> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+        </tr>
+        <tr>
+          <td rowspan="2">h1 - Por elemento</td>
+          <td> <b>text-align</b> </td>
+          <td> <i>center</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
         </tr>
         <tr>
           <td></td>
