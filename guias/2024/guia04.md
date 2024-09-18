@@ -29,15 +29,23 @@ theme: jekyll-theme-leap-day
 
 #### Selectores, propiedades y reglas
 
-3. (STOP 3) Actualice el navegador y compruebe los cambios.
-4. Versiona local y remotamente el repositorio **curriculum**.
+Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para las siguientes actividades:
+
+1. Coloque las siguientes `reglas CSS` (`selector CSS`,`propiedad CSS` y `valor CC`) en la hoja de estilo externa:
+
+
+    | Selector CSS | Propiedad CSS | Valor CSS | Otros posibles valores |
+    | :----------: | :-----------: | :-------: | :--------------------: |
+    | a            |               |           |                        | 
+
+2. (STOP 1) Actualice el navegador y compruebe los cambios.
+3. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Modelo de caja
 
 Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes actividades:
 
-1. Utilice el selector por elemento para acceder a las etiquetas &lt;section&gt;.
-2. Aplique las reglas CSS para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
+1. Utilice el selector por elemento para acceder a las etiquetas &lt;section&gt; y aplique las reglas CSS para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
 
    ```css
     section {
@@ -48,8 +56,8 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
     }
    ```
 
-3. (STOP 2) Actualice el navegador y compruebe los cambios.
-4. Versiona local y remotamente el repositorio **curriculum**.
+2. (STOP 2) Actualice el navegador y compruebe los cambios.
+3. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Efectos CSS
 
