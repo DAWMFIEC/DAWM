@@ -6,6 +6,29 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto01](/DAWM/proyectos/2024/proyecto01)
 
+<style type="text/css" media="screen">
+  details {
+    margin: 5% 0%;
+    padding: 2%;
+    border: dashed 2px black;
+    border-radius: 11px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+  }
+
+  details div {
+    color: lightseagreen;
+    font-weight: bold;
+    cursor: pointer;
+    text-align: center;
+  }
+
+  img.description {
+    width: 50%;
+    text-align: center;
+    margin: 0 25%;
+  }
+</style>
+
 ### Actividades previas
 
 #### Diseño
@@ -69,6 +92,22 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
         </tr>
       </tbody>
     </table>
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="css"><code>
+        * {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 200;
+        }
+
+        h1 {
+          text-align: center;
+          font-weight: bold;
+        }
+      </code></pre>
+    </details>
+
 
 2. (STOP 1) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
