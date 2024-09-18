@@ -8,6 +8,12 @@ theme: jekyll-theme-leap-day
 
 <style type="text/css" media="screen">
   details {
+    padding: 10px;
+    background-color: #e4eaef;
+    border-radius: 5px;
+  }
+  
+  /*details {
     margin: 5% 0%;
     padding: 2%;
     border: dashed 2px black;
@@ -26,7 +32,7 @@ theme: jekyll-theme-leap-day
     width: 50%;
     text-align: center;
     margin: 0 25%;
-  }
+  }*/
 </style>
 
 ### Actividades previas
