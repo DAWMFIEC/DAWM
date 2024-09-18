@@ -1,9 +1,12 @@
 summary {
   list-style: none;
-  display: inline-flex;
+/*  display: inline-flex;*/
   align-items: center;
   padding: 10px;
   font-weight: bold;
+
+  display: flex;
+  justify-content: space-between;
 }
 
 summary::after {
