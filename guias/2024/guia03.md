@@ -18,17 +18,6 @@ theme: jekyll-theme-leap-day
 
 1. Clone localmente tu repositorio **curriculum**. 
 
-#### Etiquetas contenedoras
-
-1. Modifique el archivo _index.html_.
-    
-    - Agregue las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_ dentro de las secciones de su página HTML. Considere las [sugerencias](bard/guia03-bard04.pdf) de Bard.
-
-        **Obligatorio:** Utilice al menos una (1) etiqueta &lt;div&gt; y al menos una (1) etiqueta &lt;span&gt;.
-
-2. (STOP 1) Compruebe el resultado en el navegador.
-3. Versione local y remotamente el repositorio **curriculum**.
-
 #### Etiquetas multimedia
 
 1. Modifique el archivo _index.html_.
@@ -37,7 +26,7 @@ theme: jekyll-theme-leap-day
 
         **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa.
 
-2. (STOP 2) Compruebe el resultado en el navegador.
+2. (STOP 1) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
 
 #### Etiquetas de formularios
@@ -47,6 +36,17 @@ theme: jekyll-theme-leap-day
     - Diseñe un formulario (_&lt;form&gt;_), con campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), con etiquetas (_&lt;label&gt;_) y con botones (_&lt;button&gt;_) de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
 
         **Obligatorio:** Utilice al menos un (1) formulario, con un (1) input, un (1) select y un (1) radiobutton.
+
+2. (STOP 2) Compruebe el resultado en el navegador.
+3. Versione local y remotamente el repositorio **curriculum**.
+
+#### Etiquetas contenedoras
+
+1. Modifique el archivo _index.html_.
+    
+    - Dentro de las secciones de su página HTML, agregue las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_ de acuerdo con las [sugerencias](bard/guia03-bard04.pdf) de Bard.
+
+        **Obligatorio:** Utilice al menos una (1) etiqueta &lt;div&gt; y al menos una (1) etiqueta &lt;span&gt;.
 
 2. (STOP 3) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
