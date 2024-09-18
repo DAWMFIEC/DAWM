@@ -46,7 +46,7 @@ theme: jekyll-theme-leap-day
 
     - Diseñe un formulario (_&lt;form&gt;_), con campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), con etiquetas (_&lt;label&gt;_) y con botones (_&lt;button&gt;_) de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
 
-        **Obligatorio:** Utilice al menos un (1) formulario, con los elementos necesarios.
+        **Obligatorio:** Utilice al menos un (1) formulario, con un (1) input, un (1) select y un (1) radiobutton.
 
 2. (STOP 3) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
