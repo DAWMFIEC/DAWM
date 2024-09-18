@@ -36,7 +36,8 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
 
     | Selector CSS | Propiedad CSS | Valor CSS | Otros posibles valores |
     | :----------: | :-----------: | :-------: | :--------------------: |
-    | Universal (`*`)   | **font-familiy**  | `'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;`           | [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)                       | 
+    | Universal (`*`)   | **font-familiy**  | _'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;_           | [font-family](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)                       | 
+    |                   | **font-weight**   | _200_                                                        | [font-weight](https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight) |
     | | | | |
     | | | | |
 
