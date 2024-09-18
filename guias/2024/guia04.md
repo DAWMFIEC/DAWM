@@ -55,17 +55,27 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
 1. Utilice el servicio de [CSSmatic](https://www.cssmatic.com/es/box-shadow) para generar los valores de la propiedad **box-shadow**, p.e.:
    
-   ```css
-    section {
-      ...
-
-      box-shadow: 
+    ```css
+      section {
+        ...
+        
         -webkit-box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);
         -moz-box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);
-        box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);
+        box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);   
+      }
+    ```
 
-    }   
-   ```
+2. Utilice el servicio de [Border Radius](https://border-radius.com/) para generar los valores de la propiedad **border-radius**, p.e.:
+
+    ```css
+      section {
+        ...
+
+        -webkit-border-radius: 5px;
+        -moz-border-radius: 5px;
+        border-radius: 5px;
+      }
+    ```
 
 3. (STOP 3) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
@@ -101,3 +111,4 @@ servidor HTTP, ruta de la aplicación, CSS, reglas CSS, selectores CSS, propieda
 * CSS Box Model. (2023). Retrieved 23 May 2023, from https://www.w3schools.com/css/css_boxmodel.asp
 * Beautiful CSS box-shadow examples - CSS Scan. (n.d.). Retrieved from https://getcssscan.com/css-box-shadow-examples
 * Editor Sombras. (n.d.). Retrieved from https://www.cssmatic.com/es/box-shadow
+* (N.d.). Retrieved from https://border-radius.com/
