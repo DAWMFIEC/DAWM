@@ -40,7 +40,7 @@ details {
   margin-bottom: 10px;
 }
 
-details:hover {
+summary:hover {
     cursor: pointer;
 }
 
@@ -51,5 +51,9 @@ h4.inner {
 }
 
 details pre, details pre code {
-  background-color: #333333e3;
+/*  background-color: #333333e3;*/
+
+  border-color: #ff5f00;
+  border-width: 2px;
+
 }
