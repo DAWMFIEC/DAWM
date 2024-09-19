@@ -29,9 +29,7 @@ theme: jekyll-theme-leap-day
 2. En el navegador, acceda a la URL [http:\\localhost:8079](http:\\localhost:8079) quen el que responde el servidor HTTP.
 3. (STOP 1) Actualice el navegador y compruebe los cambios.
 
-#### Reglas CSS (selector + propiedad + valor)
-
-Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para las siguientes actividades:
+#### Reglas CSS - I (selector + propiedad + valor)
 
 1. Coloque las siguientes `reglas CSS` (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
 
@@ -91,6 +89,65 @@ Tome como referencia la [sugerencia](gemini/guia04-gemini01.pdf) de Gemini para 
 2. (STOP 1) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
 
+#### Reglas CSS - II
+
+1. Coloque las siguientes reglas CSS en la hoja de estilo externa:
+
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Selector CSS</th>
+          <th>Propiedad CSS</th>
+          <th>Valor CSS</th>
+          <th>MDN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Universal</td>
+          <td rowspan="2">*</td>
+          <td> <b>font-family</b> </td>
+          <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+        </tr>
+        <tr>
+          <td> <b>font-weight</b> </td>
+          <td> <i>200</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+        </tr>
+        <tr>
+          <td rowspan="3">Por elemento</td>
+          <td rowspan="2">h1</td>
+          <td> <b>text-align</b> </td>
+          <td> <i>center</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
+        </tr>
+        <tr>
+          <td> <b>font-weight</b> </td>
+          <td> <i>bold</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+        </tr>
+      </tbody>
+    </table>
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="css"><code>
+        * {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 200;
+        }
+
+        h1 {
+          text-align: center;
+          font-weight: bold;
+        }
+      </code></pre>
+    </details>
+
+2. (STOP 2) Actualice el navegador y compruebe los cambios.
+3. Versiona local y remotamente el repositorio **curriculum**.
+
 #### Modelo de caja
 
 Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes actividades:
@@ -106,7 +163,7 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
     }
    ```
 
-2. (STOP 2) Actualice el navegador y compruebe los cambios.
+2. (STOP 5) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Efectos CSS
@@ -135,7 +192,7 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
       }
     ```
 
-3. (STOP 3) Actualice el navegador y compruebe los cambios.
+3. (STOP 6) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
