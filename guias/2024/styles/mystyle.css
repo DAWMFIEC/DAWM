@@ -43,3 +43,9 @@ details {
 details:hover {
     cursor: pointer;
 }
+
+h4.inner {
+  margin-top: 5%;
+  text-decoration: underline;
+  color: black;
+}
