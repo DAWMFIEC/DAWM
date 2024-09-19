@@ -29,7 +29,7 @@ theme: jekyll-theme-leap-day
 2. En el navegador, acceda a la URL [http:\\localhost:8079](http:\\localhost:8079) quen el que responde el servidor HTTP.
 3. (STOP 1) Actualice el navegador y compruebe los cambios.
 
-#### Reglas CSS - I (selector + propiedad + valor)
+#### Reglas CSS - I
 
 1. Coloque las siguientes `reglas CSS` (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
 
