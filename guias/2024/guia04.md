@@ -171,14 +171,6 @@ theme: jekyll-theme-leap-day
 3. (STOP 3) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
 
-#### CSS Avanzado
-
-1. Utiliza [ChatGPT]() o [Gemini][] para generar las siguientes reglas CSS:
-
-
-
-2. (STOP 4) Actualice el navegador y compruebe los cambios.
-3. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Modelo de caja
 
@@ -195,7 +187,7 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
     }
    ```
 
-2. (STOP 5) Actualice el navegador y compruebe los cambios.
+2. (STOP 4) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Efectos CSS
@@ -224,8 +216,17 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
       }
     ```
 
-3. (STOP 6) Actualice el navegador y compruebe los cambios.
+3. (STOP 5) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
+
+#### CSS Avanzado
+
+1. Utiliza [ChatGPT]() o [Gemini][] para generar las siguientes reglas CSS:
+
+
+
+2. (STOP 6) Actualice el navegador y compruebe los cambios.
+3. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 
