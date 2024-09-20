@@ -22,7 +22,6 @@ theme: jekyll-theme-leap-day
 2. Sigue las instrucciones de [Bard](bard/guia04-bard01.pdf), y:
     - Cree la carpeta _'stylesheets'_, y dentro la hoja de estilo externa `CSS` _'style.css'_.
     - Agregue la referencia con la ruta a la hoja de estilo externa en el archivo _index.html_.
-3. En adelante, tome como referencia la [guía](gemini/guia04-gemini01.pdf) de Gemini para escribir las `reglas CSS`. 
 
 #### Servidor HTTP 
 
@@ -32,7 +31,8 @@ theme: jekyll-theme-leap-day
 
 #### Reglas CSS - I
 
-1. Coloque las siguientes reglas CSS (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
+1. Tome como referencia la [guía](gemini/guia04-gemini01.pdf) de Gemini para escribir las `reglas CSS`. 
+2. Coloque las siguientes reglas CSS (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
 
     <table>
       <thead>
@@ -84,13 +84,13 @@ theme: jekyll-theme-leap-day
           text-align: center;
           font-weight: bold;
         }
-        
+
       </code></pre>
     </details>
 
 
-2. (STOP 1) Actualice el navegador y compruebe los cambios.
-3. Versiona local y remotamente el repositorio **curriculum**.
+3. (STOP 1) Actualice el navegador y compruebe los cambios.
+4. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Reglas CSS - II
 
