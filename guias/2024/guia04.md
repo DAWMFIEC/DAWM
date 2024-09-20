@@ -20,8 +20,9 @@ theme: jekyll-theme-leap-day
 
 1. Clona localmente tu repositorio **curriculum**.
 2. Sigue las instrucciones de [Bard](bard/guia04-bard01.pdf), y:
-  - Cree la carpeta _'stylesheets'_, y dentro la hoja de estilo externa `CSS` _'style.css'_.
-  - Agregue la referencia con la ruta a la hoja de estilo externa en el archivo _index.html_.
+    - Cree la carpeta _'stylesheets'_, y dentro la hoja de estilo externa `CSS` _'style.css'_.
+    - Agregue la referencia con la ruta a la hoja de estilo externa en el archivo _index.html_.
+3. En adelante, tome como referencia la [guía](gemini/guia04-gemini01.pdf) de Gemini para escribir las `reglas CSS`. 
 
 #### Servidor HTTP 
 
@@ -31,7 +32,7 @@ theme: jekyll-theme-leap-day
 
 #### Reglas CSS - I
 
-1. Coloque las siguientes `reglas CSS` (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
+1. Coloque las siguientes reglas CSS (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
 
     <table>
       <thead>
@@ -73,6 +74,7 @@ theme: jekyll-theme-leap-day
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="css"><code>
+
         * {
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
           font-weight: 200;
@@ -82,6 +84,7 @@ theme: jekyll-theme-leap-day
           text-align: center;
           font-weight: bold;
         }
+        
       </code></pre>
     </details>
 
@@ -91,7 +94,25 @@ theme: jekyll-theme-leap-day
 
 #### Reglas CSS - II
 
-1. Coloque las siguientes reglas CSS en la hoja de estilo externa:
+1. Edite el archivo _index.html_:
+
+    - Modifique la etiqueta &lt;img&gt; con el atributo _id_ y el valor _photo_.
+
+    ```html
+    <img id="photo" src="https://placehold.co/600x400" alt="photo">
+    ```
+
+    - Modifique todas las etiquetas &lt;h2&gt; con el atributo _class_ y el valor _subtitle_.
+
+    ```html
+    ...
+    <h2 class="subtitle">Educación</h2>
+    ...
+    <h2 class="subtitle">Experiencia Laboral</h2>
+    ...
+    ```
+
+2. Coloque las siguientes reglas CSS en la hoja de estilo externa:
 
     <table>
       <thead>
@@ -104,28 +125,28 @@ theme: jekyll-theme-leap-day
       </thead>
       <tbody>
         <tr>
-          <td rowspan="2">Universal</td>
-          <td rowspan="2">*</td>
-          <td> <b>font-family</b> </td>
-          <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+          <td rowspan="2">Por identificador</td>
+          <td rowspan="2">#foto</td>
+          <td> <b>width</b> </td>
+          <td> <i>200px</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>font-weight</b> </td>
-          <td> <i>200</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+          <td> <b>height</b> </td>
+          <td> <i>auto</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">Ir</a> </td>
         </tr>
         <tr>
-          <td rowspan="3">Por elemento</td>
-          <td rowspan="2">h1</td>
-          <td> <b>text-align</b> </td>
-          <td> <i>center</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
+          <td rowspan="2">Por clase</td>
+          <td rowspan="2">.subtitle</td>
+          <td> <b>color</b> </td>
+          <td> <i>rgb(107 114 128 / 0.89)</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Applying_color">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>font-weight</b> </td>
-          <td> <i>bold</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+          <td> <b>text-transform</b> </td>
+          <td> <i>uppercase</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">Ir</a> </td>
         </tr>
       </tbody>
     </table>
@@ -133,20 +154,22 @@ theme: jekyll-theme-leap-day
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="css"><code>
-        * {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          font-weight: 200;
+
+        #photo {
+          width: 200px;
+          height: auto;
         }
 
-        h1 {
-          text-align: center;
-          font-weight: bold;
+        .subtitle {
+          color: rgb(107 114 128 / 0.89);
+          text-transform: uppercase;
         }
+
       </code></pre>
     </details>
 
-2. (STOP 2) Actualice el navegador y compruebe los cambios.
-3. Versiona local y remotamente el repositorio **curriculum**.
+3. (STOP 2) Actualice el navegador y compruebe los cambios.
+4. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Modelo de caja
 
@@ -168,19 +191,7 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
 #### Efectos CSS
 
-1. Utilice el servicio de [CSSmatic](https://www.cssmatic.com/es/box-shadow) para generar los valores de la propiedad **box-shadow**, p.e.:
-   
-    ```css
-      section {
-        ...
-        
-        -webkit-box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);
-        -moz-box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);
-        box-shadow: 5px 5px 5px 0px rgba(194,194,194,0.56);   
-      }
-    ```
-
-2. Utilice el servicio de [Border Radius](https://border-radius.com/) para generar los valores de la propiedad **border-radius**, p.e.:
+1. Utilice el servicio de [Border Radius](https://border-radius.com/) para generar los valores de la propiedad **border-radius**, p.e.:
 
     ```css
       section {
@@ -189,6 +200,18 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
         -webkit-border-radius: 5px;
         -moz-border-radius: 5px;
         border-radius: 5px;
+      }
+    ```
+
+2. Utilice el servicio de [CSSmatic](https://www.cssmatic.com/es/box-shadow) para generar los valores de la propiedad **box-shadow**, p.e.:
+   
+    ```css
+      section {
+        ...
+        
+        -webkit-box-shadow: 5px 5px 0.2px 0px rgba(235, 234, 234, 0.60);
+        -moz-box-shadow: 5px 5px 0.2px 0px rgba(235, 234, 234, 0.60);
+        box-shadow: 5px 5px 0.2px 0px rgba(235, 234, 234, 0.60);
       }
     ```
 
