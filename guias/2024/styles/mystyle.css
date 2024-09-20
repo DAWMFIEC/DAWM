@@ -28,7 +28,7 @@ summary::-webkit-details-marker {
 }
 
 summary {
-  background-color: #ff5f00;
+  background-color: #4dff6d;
   color: #30353b;
   border-radius: 5px;
 }
@@ -53,7 +53,7 @@ h4.inner {
 details pre, details pre code {
 /*  background-color: #333333e3;*/
 
-  border-color: #ff5f00;
+  border-color: #4dff6d;
   border-width: 2px;
 
   white-space: pre-wrap;       /* Since CSS 2.1 */
