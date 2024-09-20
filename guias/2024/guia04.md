@@ -221,9 +221,9 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
 #### CSS Avanzado
 
-1. Utiliza [ChatGPT]() o [Gemini][] para generar las siguientes reglas CSS:
+1. Utiliza [ChatGPT](https://chatgpt.com/) o [Gemini](https://gemini.google.com/app) para generar las siguientes reglas CSS:
 
-
+    
 
 2. (STOP 6) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
