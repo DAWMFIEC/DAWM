@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
 
 #### Servidor HTTP 
 
-1. Siguiendo las instrucciones del [tutorial](/DAWM/tutoriales/python), levante un `servidor HTTP` con Python en la `ruta de la aplicación`.
+1. Siguiendo las instrucciones del [tutorial](/DAWM/tutoriales/python), levante un `servidor HTTP` con Python desde la `ruta de la aplicación`.
 2. En el navegador, acceda a la URL [http:\\localhost:8079](http:\\localhost:8079) quen el que responde el servidor HTTP.
 3. (STOP 1) Actualice el navegador y compruebe los cambios.
 
