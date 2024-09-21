@@ -223,7 +223,24 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
 1. Utiliza [ChatGPT](https://chatgpt.com/) o [Gemini](https://gemini.google.com/app) para generar las siguientes reglas CSS:
 
-    
+    <pre style="text-align: justify; white-space: pre-line;">
+      Como desarrollador de aplicaciones web, genera la regla CSS para <ins>efecto CSS</ins> en <ins>forma de desea acceder a la etiqueta</ins>.
+    </pre>
+
+    <table>
+      <thead>
+        <tr>
+          <th>Efecto CSS</th>
+          <th>Forma de acceder</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Eliminar el subrayado</td>
+          <td>todas las etiquetas &lt;a&gt;</td>
+        </tr>
+      </tbody>
+    </table>
 
 2. (STOP 6) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
