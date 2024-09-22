@@ -63,3 +63,8 @@ details pre, details pre code {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 
 }
+
+
+pre.prompt {
+  background-color: #f9f6f6;
+}
