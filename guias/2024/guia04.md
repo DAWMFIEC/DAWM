@@ -223,8 +223,7 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
 1. Utiliza [ChatGPT](https://chatgpt.com/) o [Gemini](https://gemini.google.com/app) para generar las siguientes reglas CSS:
 
-    <pre class="prompt">
-      Como desarrollador de aplicaciones web, genera la regla CSS para <ins>efecto CSS</ins> en <ins>forma de acceso a la(s) etiqueta(s)</ins>.
+    <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>efecto CSS</ins> en <ins>forma de acceso a la(s) etiqueta(s)</ins>.
     </pre>
 
     <table>
