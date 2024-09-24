@@ -235,8 +235,16 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
       </thead>
       <tbody>
         <tr>
-          <td>Eliminar el subrayado</td>
+          <td>centrar</td>
+          <td>una &lt;div&gt; respecto con su contenedor</td>
+        </tr>
+        <tr>
+          <td>eliminar el subrayado</td>
           <td>todas las etiquetas &lt;a&gt;</td>
+        </tr>
+        <tr>
+          <td>eliminar las viñetas</td>
+          <td>todas las etiquetas &lt;li&gt;</td>
         </tr>
       </tbody>
     </table>
