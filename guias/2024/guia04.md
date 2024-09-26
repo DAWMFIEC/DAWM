@@ -223,21 +223,17 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
 1. Utiliza [ChatGPT](https://chatgpt.com/) o [Gemini](https://gemini.google.com/app) para generar las siguientes reglas CSS:
 
-    <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>efecto CSS</ins> en <ins>forma de acceso a la(s) etiqueta(s)</ins>.
+    <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>[Efecto CSS]</ins> <ins>[Selector de etiqueta(s)]</ins>.
     </pre>
 
     <table>
       <thead>
         <tr>
-          <th>Efecto CSS</th>
-          <th>Forma de acceder</th>
+          <th>[Efecto CSS]</th>
+          <th>[Selector de etiqueta(s)]</th>
         </tr>
       </thead>
       <tbody>
-        <tr>
-          <td>centrar</td>
-          <td>una &lt;div&gt; respecto con su contenedor</td>
-        </tr>
         <tr>
           <td>eliminar el subrayado</td>
           <td>todas las etiquetas &lt;a&gt;</td>
@@ -245,6 +241,14 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
         <tr>
           <td>eliminar las viñetas</td>
           <td>todas las etiquetas &lt;li&gt;</td>
+        </tr>
+        <tr>
+          <td>centrar</td>
+          <td>solo la etiqueta &lt;ul&gt; que se encuentra dentro &lt;footer&gt;</td>
+        </tr>
+        <tr>
+          <td>aplicar la familia de fuentes https://fonts.google.com/specimen/Poppins </td>
+          <td>en todas las etiquetas</td>
         </tr>
       </tbody>
     </table>
@@ -277,6 +281,7 @@ servidor HTTP, ruta de la aplicación, CSS, reglas CSS, selectores CSS, propieda
 * CSS Selectors Reference. (2023). Retrieved 22 May 2023, from https://www.w3schools.com/cssref/css_selectors.php
 * ColorMagic  AI Color Palette Generator. (2023). Retrieved 22 May 2023, from https://colormagic.app/
 * Happy Hues - Curated colors in context. (2023). Retrieved 22 May 2023, from https://www.happyhues.co/
+* CSS Nivel avanzado Archives. (2023). Retrieved from https://www.eniun.com/secciones/css-sass/css-nivel-avanzado/
 * Fontjoy - Generate font pairings in one click. (2023). Retrieved 22 May 2023, from https://fontjoy.com/
 * The W3C Markup Validation Service. (2022). Retrieved 24 May 2022, from https://validator.w3.org/
 * CSS: centering things. (2023). Retrieved 23 May 2023, from https://www.w3.org/Style/Examples/007/center.en.html
