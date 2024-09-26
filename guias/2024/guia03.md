@@ -25,6 +25,9 @@ theme: jekyll-theme-leap-day
 
         **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa.
 
+        <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar una imagen en un documento HTML. Utiliza un placeholder de https://placehold.co/ como URL.
+    </pre>
+
 2. (STOP 1) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
 
