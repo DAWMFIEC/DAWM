@@ -21,17 +21,11 @@ theme: jekyll-theme-leap-day
 
 #### Etiquetas multimedia
 
-1. Consulte con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) por alguna recomendación para el uso de estas etiquetas en el contexto de su sitio.
+1. Consulte con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) con alguna recomendación para el uso de etiquetas `multimedia` (una `imagen` y un `video`) y un `mapa` a incluir en alguna de las secciones de su página HTML.
 
     <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar una imagen en un documento HTML. Utiliza un placeholder de <a href="https://placehold.co/">https://placehold.co/</a> como URL.</pre>
 
-1. Modifique el archivo _index.html_.
-
-    - Diseñe y agregue las etiquetas `multimedia` (una `imagen` y un `video`) y un `mapa` en las secciones de su página HTML. 
-        
-        **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa.
-
-    - 
+    **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa.
 
 2. (STOP 1) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
