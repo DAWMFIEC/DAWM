@@ -6,6 +6,8 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto01](/DAWM/proyectos/2024/proyecto01)
 
+<link href="styles/mystyle.css" rel="stylesheet" />
+
 ### Actividades previas
 
 #### Diseño y Contenido
