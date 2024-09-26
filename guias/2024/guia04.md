@@ -223,7 +223,7 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
 1. Utiliza [ChatGPT](https://chatgpt.com/) o [Gemini](https://gemini.google.com/app) para generar las siguientes reglas CSS:
 
-    <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>[Efecto CSS]</ins> <ins>[Selector de etiqueta(s)]</ins>.
+    <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>[Efecto CSS]</ins> en <ins>[Selector de etiqueta(s)]</ins>.
     </pre>
 
     <table>
@@ -244,11 +244,11 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
         </tr>
         <tr>
           <td>centrar</td>
-          <td>solo la etiqueta &lt;ul&gt; que se encuentra dentro &lt;footer&gt;</td>
+          <td>la etiqueta &lt;ul&gt; que se encuentra dentro &lt;footer&gt;</td>
         </tr>
         <tr>
           <td>aplicar la familia de fuentes https://fonts.google.com/specimen/Poppins </td>
-          <td>en todas las etiquetas</td>
+          <td>todas las etiquetas</td>
         </tr>
       </tbody>
     </table>
