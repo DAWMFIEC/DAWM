@@ -235,6 +235,14 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
       </thead>
       <tbody>
         <tr>
+          <td>aplicar la familia de fuentes https://fonts.google.com/specimen/Poppins </td>
+          <td>todas las etiquetas</td>
+        </tr>
+        <tr>
+          <td>cambiar el color del fondo de un elemento &lt;section&gt; al pasar el mouse por encima</td>
+          <td>elementos &lt;section&gt; con ciertos identificadores</td>
+        </tr>
+        <tr>
           <td>eliminar el subrayado</td>
           <td>todas las etiquetas &lt;a&gt;</td>
         </tr>
@@ -245,10 +253,6 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
         <tr>
           <td>centrar</td>
           <td>la etiqueta &lt;ul&gt; que se encuentra dentro &lt;footer&gt;</td>
-        </tr>
-        <tr>
-          <td>aplicar la familia de fuentes https://fonts.google.com/specimen/Poppins </td>
-          <td>todas las etiquetas</td>
         </tr>
       </tbody>
     </table>
