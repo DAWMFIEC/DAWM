@@ -184,7 +184,7 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
       border: 0.2pt solid #cedddd;
 
-      padding: 0.2% 0.6%;
+      padding: 0.2% 1.2%;
       padding-left: 1.2%;
       padding-right: 1.2%; 
     }
