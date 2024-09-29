@@ -238,7 +238,7 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
       </thead>
       <tbody>
         <tr>
-          <td>aplicar la familia de fuentes https://fonts.google.com/specimen/Poppins </td>
+          <td>aplicar la familia de fuentes <a href="https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</a> </td>
           <td>todas las etiquetas</td>
         </tr>
         <tr>
