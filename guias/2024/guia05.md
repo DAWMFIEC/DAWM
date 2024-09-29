@@ -10,7 +10,21 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+1. Clona localmente tu repositorio **curriculum**.
+2. Edite la hoja de estilo externa _'stylesheets/style.css'_.
+
 #### Flex
+
+1. Agregue la regla CSS al final de la hoja de estilos.
+
+		```css
+		nav ul {
+			display: flex;
+			justify-content: space-evenly;
+		}
+		```
+2. (STOP 3) Actualice el navegador y compruebe los cambios.
+3. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Grid
 
