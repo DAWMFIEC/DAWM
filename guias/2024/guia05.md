@@ -23,7 +23,8 @@ theme: jekyll-theme-leap-day
 			justify-content: space-evenly;
 		}
 		```
-2. (STOP 3) Actualice el navegador y compruebe los cambios.
+
+2. (STOP 1) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Grid
