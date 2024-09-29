@@ -180,10 +180,13 @@ Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las si
 
    ```css
     section {
-      margin: 2px 1px 1.5px;
-      margin-top: 1.2rem;
+      margin: 2px 1px 1.5px 1px;
+
       border: 0.2pt solid #cedddd;
-      padding: 2% 1.2%;   
+
+      padding: 0.2% 0.6%;
+      padding-left: 1.2%;
+      padding-right: 1.2%; 
     }
    ```
 
