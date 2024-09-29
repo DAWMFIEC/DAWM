@@ -8,22 +8,11 @@ theme: jekyll-theme-leap-day
 
 <link href="styles/mystyle.css" rel="stylesheet" />
 
-### Actividades previas
-
-* [Colocación de elementos](/DAWM/enclases/colocacion)
-
 ### Actividades en clases
 
-#### Diseño
+#### Flex
 
-1. Elige la colocación de elementos del sitio. Toma como referencia los ejemplos de [Frontend Practice](https://www.frontendpractice.com/projects).
-	
-	**Mínimo:** Al menos, una fila debe contener dos elementos y una fila debe contener tres elementos.
-
-2. Clona localmente tu repositorio **curriculum**.
-3. Aplica flexbox o grid de acuerdo con la colocación de elementos del sitio.
-4. (STOP 1) Compruebe el resultado en el navegador.
-5. Versiona local y remotamente el repositorio **curriculum**.
+#### Grid
 
 ### Documentación
 
