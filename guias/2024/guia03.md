@@ -23,11 +23,7 @@ theme: jekyll-theme-leap-day
 
 1. Consulte con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) con alguna recomendación para el uso de etiquetas `multimedia` (una `imagen` y un `video`) y un `mapa` a incluir en alguna de las secciones de su página HTML.
 
-    <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar una imagen en un documento HTML. Utiliza un placeholder de <a href="https://placehold.co/">https://placehold.co/</a> como URL.</pre>
-
-    <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar un video local o un video de Youtube en un documento HTML.</pre>
-
-    <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar un mapa en un documento HTML.</pre>
+    <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar una imagen en un documento HTML. Utiliza un placeholder de <a href="https://placehold.co/">https://placehold.co/</a> como URL. Genera la etiqueta multimedia para incrustar un video local o un video de Youtube en un documento HTML. Genera la etiqueta para incrustar un mapa con <a href="https://leafletjs.com/">Leaflet - https://leafletjs.com/</a> en un documento HTML.</pre>
 
 
 2. Modifique el archivo _index.html_.
