@@ -35,7 +35,7 @@ La respuesta es:
 ### Guías
 
 * [Guía 02: HTML - Estructura global, estructura semántica y etiquetas semánticas de texto](/DAWM/guias/2024/guia02)
-* [Guía 03: HTML - Etiquetas contenedoras, multimedia y formulario](/DAWM/guias/2024/guia03)
+* [Guía 03: HTML - Etiquetas multimedia y formularios](/DAWM/guias/2024/guia03)
 * [Guía 04: CSS - Reglas CSS y Modelo de caja](/DAWM/guias/2024/guia04)
 * [Guía 05: CSS - Diseño](/DAWM/guias/2024/guia05)
 

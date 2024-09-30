@@ -41,7 +41,7 @@ theme: jekyll-theme-leap-day
 2. (STOP 2) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
 
-#### Layout
+#### Diseño CSS y etiquetas contenedoras
 
 
 
