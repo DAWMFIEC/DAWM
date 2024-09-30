@@ -29,6 +29,17 @@ theme: jekyll-theme-leap-day
 
 #### Grid
 
+1. Agregue la regla CSS al final de la hoja de estilos.
+
+		```css
+		section#contactanos form {
+			display: grid;
+		}
+		```
+
+2. (STOP 2) Actualice el navegador y compruebe los cambios.
+3. Versiona local y remotamente el repositorio **curriculum**.
+
 ### Documentación
 
 * En [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) existe una explicación extensa del uso de Grid.
