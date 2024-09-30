@@ -49,6 +49,17 @@ Usar etiquetas HTML en contenido interactivo y multimedia mediante el desarrollo
 3. (STOP 2) Compruebe el resultado en el navegador.
 4. Versione local y remotamente el repositorio **curriculum**.
 
+#### Etiquetas de semántica de texto
+
+1. Edite las secciones pertinentes del documento index.html, con:
+  
+    - Las `etiquetas de semántica de texto` _&lt;p&gt;_, _&lt;ul&gt;_, _&lt;ol&gt;_, _&lt;table&gt;_ y _&lt;a&gt;_, de acuerdo con la [sugerencia](gemini/guia02-gemini02.pdf) de Gemini. 
+      
+      **Obligatorio:** Utilice las etiquetas de semántica de texto al menos una vez en las secciones del documento HTML.
+
+2. (STOP 3) Compruebe el resultado en el navegador.
+3. Versione local y remotamente el repositorio **curriculum**.
+
 
 ### Documentación
 

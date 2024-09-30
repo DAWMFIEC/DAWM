@@ -83,6 +83,12 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 2. (STOP 3) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
 
+#### Layout
+
+1. En el archivo _index.html_, utilice:
+2. (STOP 3) Actualice el navegador y compruebe los cambios.
+3. Versiona local y remotamente el repositorio **curriculum**.
+
 ### Documentación
 
 * En [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) existe una explicación extensa del uso de Grid.
