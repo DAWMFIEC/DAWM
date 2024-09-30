@@ -34,23 +34,13 @@ theme: jekyll-theme-leap-day
 
 1. Modifique el archivo _index.html_.
 
-    - Diseñe un formulario (_&lt;form&gt;_), con campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), con etiquetas (_&lt;label&gt;_) y con botones (_&lt;button&gt;_) de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
+    - Diseñe un formulario (_&lt;form&gt;_), con campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), con etiquetas (_&lt;label&gt;_) y con botones (_&lt;button&gt;_) de acuerdo con las [indicaciones](gemini/guia03-gemini01.pdf) de Gemini.
 
         **Obligatorio:** Utilice al menos un (1) formulario, con un (1) input, un (1) select y un (1) radiobutton. No utilice la etiqueta _&lt;br&gt;_.
 
 2. (STOP 2) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
 
-#### Etiquetas contenedoras
-
-1. Modifique el archivo _index.html_.
-    
-    - Dentro de las secciones de su página HTML, agregue las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_ de acuerdo con las [sugerencias](bard/guia03-bard04.pdf) de Bard.
-
-        **Obligatorio:** Utilice al menos una (1) etiqueta &lt;div&gt; y al menos una (1) etiqueta &lt;span&gt;. No utilice la etiqueta _&lt;br&gt;_.
-
-2. (STOP 3) Compruebe el resultado en el navegador.
-3. Versione local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 
