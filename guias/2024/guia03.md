@@ -25,21 +25,28 @@ theme: jekyll-theme-leap-day
 
     <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar una imagen en un documento HTML. Utiliza un placeholder de <a href="https://placehold.co/">https://placehold.co/</a> como URL.</pre>
 
+    <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar un video local o un video de Youtube en un documento HTML.</pre>
+
+    <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar un mapa en un documento HTML.</pre>
+
+
+2. Modifique el archivo _index.html_.
+
     **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa. No utilice la etiqueta _&lt;br&gt;_. 
 
-2. (STOP 1) Compruebe el resultado en el navegador.
-3. Versione local y remotamente el repositorio **curriculum**.
+3. (STOP 1) Compruebe el resultado en el navegador.
+4. Versione local y remotamente el repositorio **curriculum**.
 
 #### Etiquetas de formularios
 
-1. Modifique el archivo _index.html_.
+1. Diseñe un formulario (_&lt;form&gt;_), con campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), con etiquetas (_&lt;label&gt;_) y con botones (_&lt;button&gt;_) de acuerdo con las [indicaciones](gemini/guia03-gemini01.pdf) de Gemini.
 
-    - Diseñe un formulario (_&lt;form&gt;_), con campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), con etiquetas (_&lt;label&gt;_) y con botones (_&lt;button&gt;_) de acuerdo con las [indicaciones](gemini/guia03-gemini01.pdf) de Gemini.
+2. Modifique el archivo _index.html_.
 
-        **Obligatorio:** Utilice al menos un (1) formulario, con un (1) input, un (1) select y un (1) radiobutton. No utilice la etiqueta _&lt;br&gt;_.
+    **Obligatorio:** Utilice al menos un (1) formulario, con un (1) input, un (1) select y un (1) radiobutton. No utilice la etiqueta _&lt;br&gt;_.
 
-2. (STOP 2) Compruebe el resultado en el navegador.
-3. Versione local y remotamente el repositorio **curriculum**.
+3. (STOP 2) Compruebe el resultado en el navegador.
+4. Versione local y remotamente el repositorio **curriculum**.
 
 
 ### Documentación
