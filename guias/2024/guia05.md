@@ -47,13 +47,13 @@ theme: jekyll-theme-leap-day
 1. Modifique el archivo _index.html_:
 
 	```html
-	<input type="checkbox" name="habilidades[]" value="HTML">HTML
+	<input type="checkbox" name="habilidades" value="HTML">HTML
 	```
 
 	a
 
 	```html
-	<div><input type="checkbox" name="habilidades[]" value="HTML"> <span>HTML</span></div>
+	<div><input type="checkbox" name="habilidades" value="HTML"> <span>HTML</span></div>
 	``` 
 
 3. (STOP 3) Actualice el navegador y compruebe los cambios.
