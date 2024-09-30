@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
 
     <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar una imagen en un documento HTML. Utiliza un placeholder de <a href="https://placehold.co/">https://placehold.co/</a> como URL.</pre>
 
-    **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa.
+    **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa. No utilice la etiqueta _&lt;br&gt;_. 
 
 2. (STOP 1) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
@@ -36,7 +36,7 @@ theme: jekyll-theme-leap-day
 
     - Diseñe un formulario (_&lt;form&gt;_), con campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), con etiquetas (_&lt;label&gt;_) y con botones (_&lt;button&gt;_) de acuerdo con las indicaciones de [Gemini](gemini/guia03-gemini01.pdf).
 
-        **Obligatorio:** Utilice al menos un (1) formulario, con un (1) input, un (1) select y un (1) radiobutton.
+        **Obligatorio:** Utilice al menos un (1) formulario, con un (1) input, un (1) select y un (1) radiobutton. No utilice la etiqueta _&lt;br&gt;_.
 
 2. (STOP 2) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
@@ -47,7 +47,7 @@ theme: jekyll-theme-leap-day
     
     - Dentro de las secciones de su página HTML, agregue las `etiquetas contenedoras` _&lt;div&gt;_ y _&lt;span&gt;_ de acuerdo con las [sugerencias](bard/guia03-bard04.pdf) de Bard.
 
-        **Obligatorio:** Utilice al menos una (1) etiqueta &lt;div&gt; y al menos una (1) etiqueta &lt;span&gt;.
+        **Obligatorio:** Utilice al menos una (1) etiqueta &lt;div&gt; y al menos una (1) etiqueta &lt;span&gt;. No utilice la etiqueta _&lt;br&gt;_.
 
 2. (STOP 3) Compruebe el resultado en el navegador.
 3. Versione local y remotamente el repositorio **curriculum**.
