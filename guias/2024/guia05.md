@@ -8,6 +8,12 @@ theme: jekyll-theme-leap-day
 
 <link href="styles/mystyle.css" rel="stylesheet" />
 
+### Objetivo general
+
+<pre class="objective">
+Utilizar mediante el desarrollo de un currículum vitae digital para la  presentación de información profesional de manera organizada y accesible en línea.
+</pre>
+
 ### Actividades en clases
 
 1. Clona localmente tu repositorio **curriculum**.
@@ -46,8 +52,8 @@ theme: jekyll-theme-leap-day
 
 1. En el archivo _index.html_, utilice:
 
-	- La etiqueta &lt;div&gt; para contener varios elementos (etiquetas y texto), y 
-	- La etiqueta &lt;span&gt; para contener texto. 
+	- La etiqueta &lt;div&gt; para contener varios elementos (como etiquetas y texto asociado), y 
+	- La etiqueta &lt;span&gt; para contener solo texto. 
 
 	<table>
 		<caption>Etiquetas contenedoras</caption>

@@ -6,6 +6,14 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto00](/DAWM/proyectos/2024/proyecto00)
 
+<link href="styles/mystyle.css" rel="stylesheet" />
+
+### Objetivo general
+
+<pre class="objective">
+Evaluar el uso de etiquetas de marcado mediante la estructuración de un repositorio personal en GitHub para la creación una identidad digital que facilite la presentación de sus habilidades y proyectos de manera clara y accesible
+</pre>
+
 ### Actividades en clases
 
 1. Utilice la [respuesta](bard/guia01-bard01.pdf) `Bard` como referencia para comenzar con el repositorio personal en [Github](https://github.com/).
