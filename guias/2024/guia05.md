@@ -52,7 +52,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. En el archivo _index.html_, utilice:
 
-	- La etiqueta &lt;div&gt; para contener varios elementos (como etiquetas y texto asociado), y 
+	- La etiqueta &lt;div&gt; para agrupar varios elementos (como etiquetas y su texto), y 
 	- La etiqueta &lt;span&gt; para contener solo texto. 
 
 	<table>
