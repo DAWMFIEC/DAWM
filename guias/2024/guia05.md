@@ -54,7 +54,8 @@ theme: jekyll-theme-leap-day
 
 	```html
 	<div>
-		<input type="checkbox" name="habilidades" value="HTML"> <span>HTML</span>
+		<input type="checkbox" name="habilidades" value="HTML"> 
+		<span>HTML</span>
 	</div>
 	``` 
 
