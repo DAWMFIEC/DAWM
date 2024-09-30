@@ -23,10 +23,9 @@ theme: jekyll-theme-leap-day
 
 1. Consulte con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) con alguna recomendación para el uso de etiquetas `multimedia` (una `imagen` y un `video`) y un `mapa` a incluir en alguna de las secciones de su página HTML.
 
-    <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar una imagen en un documento HTML. Utiliza un placeholder de <a href="https://placehold.co/">https://placehold.co/</a> como URL. Genera la etiqueta multimedia para incrustar un video local o un video de Youtube en un documento HTML. Genera la etiqueta para incrustar un mapa con <a href="https://leafletjs.com/">Leaflet - https://leafletjs.com/</a> en un documento HTML.</pre>
+    <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar una imagen en un documento HTML. Utiliza un placeholder de <a href="https://placehold.co/">https://placehold.co/</a> como URL. Genera la etiqueta multimedia para incrustar un video local o un video de Youtube en un documento HTML. Genera la etiqueta para incrustar un mapa con <a href="https://leafletjs.com/">Leaflet - https://leafletjs.com/</a> y un mapa de Google en un documento HTML.</pre>
 
-
-2. Modifique el archivo _index.html_.
+2. Modifique las secciones (_&lt;section&gt;_) del archivo _index.html_ con las sugerencias del paso anterior.
 
     **Obligatorio:** Utilice al menos un (1) elemento multimedia y al menos un (1) mapa. No utilice la etiqueta _&lt;br&gt;_. 
 
@@ -37,7 +36,7 @@ theme: jekyll-theme-leap-day
 
 1. Diseñe un formulario (_&lt;form&gt;_), con campos de entrada (_&lt;input&gt;_, _&lt;select&gt;_ y _&lt;textarea&gt;_), con etiquetas (_&lt;label&gt;_) y con botones (_&lt;button&gt;_) de acuerdo con las [indicaciones](gemini/guia03-gemini01.pdf) de Gemini.
 
-2. Modifique el archivo _index.html_.
+2. Modifique las secciones (_&lt;section&gt;_) del archivo _index.html_ con las sugerencias del paso anterior.
 
     **Obligatorio:** Utilice al menos un (1) formulario, con un (1) input, un (1) select y un (1) radiobutton. No utilice la etiqueta _&lt;br&gt;_.
 
