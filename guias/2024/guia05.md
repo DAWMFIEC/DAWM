@@ -60,17 +60,15 @@ theme: jekyll-theme-leap-day
 		<tbody>
 			<tr>
 				<td>
-<pre>&lt;input type="checkbox" 
-	name="habilidades" value="HTML"&gt; HTML</pre>
+&lt;input type="checkbox" 
+	name="habilidades" value="HTML"&gt; HTML
 				</td>
 				<td>
-					<pre>
 &lt;div&gt;
 		&lt;input type="checkbox" 
 			name="habilidades" value="HTML"&gt;
 		&lt;span&gt;HTML&lt;/span&gt;
 &lt;/div&gt;
-					</pre>
 				</td>
 			</tr>
 		</tbody>
