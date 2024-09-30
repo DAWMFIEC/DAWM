@@ -11,7 +11,7 @@ theme: jekyll-theme-leap-day
 ### Objetivo general
 
 <pre class="objective">
-Utilizar mediante el desarrollo de un currículum vitae digital para la  presentación de información profesional de manera organizada y accesible en línea.
+Aplicar reglas CSS en la personalización de efectos visuales mediante el desarrollo de un currículum vitae digital para la presentación de información profesional de manera organizada y accesible en línea.
 </pre>
 
 ### Actividades previas
