@@ -6,6 +6,14 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto02](/DAWM/proyectos/2024/proyecto02)
 
+<link href="styles/mystyle.css" rel="stylesheet" />
+
+### Objetivo general
+
+<pre class="objective">
+
+</pre>
+
 ### Actividades previas
 
 1. Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
