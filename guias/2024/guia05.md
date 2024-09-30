@@ -32,7 +32,7 @@ theme: jekyll-theme-leap-day
 1. Agregue la regla CSS al final de la hoja de estilos.
 
 	```css
-	section#contactanos form {
+	section form {
 		display: grid;
 		grid-template-columns: repeat(1, 1fr);
 		row-gap: 0.5rem;
@@ -59,8 +59,8 @@ theme: jekyll-theme-leap-day
 	</div>
 	``` 
 
-3. (STOP 3) Actualice el navegador y compruebe los cambios.
-4. Versiona local y remotamente el repositorio **curriculum**.
+2. (STOP 3) Actualice el navegador y compruebe los cambios.
+3. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 
