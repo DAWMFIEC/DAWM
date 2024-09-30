@@ -17,12 +17,12 @@ theme: jekyll-theme-leap-day
 
 1. Agregue la regla CSS al final de la hoja de estilos.
 
-		```css
-		nav ul {
-			display: flex;
-			justify-content: space-evenly;
-		}
-		```
+	```css
+	nav ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	```
 
 2. (STOP 1) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
@@ -31,14 +31,18 @@ theme: jekyll-theme-leap-day
 
 1. Agregue la regla CSS al final de la hoja de estilos.
 
-		```css
-		section#contactanos form {
-			display: grid;
-		}
-		```
+	```css
+	section#contactanos form {
+		display: grid;
+	}
+	```
 
 2. (STOP 2) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
+
+#### Layout
+
+
 
 ### Documentación
 
