@@ -34,16 +34,30 @@ theme: jekyll-theme-leap-day
 	```css
 	section#contactanos form {
 		display: grid;
-		grid-template-columns: repeat(1, 1fr); 
+		grid-template-columns: repeat(1, 1fr);
+		row-gap: 0.5rem;
 	}
 	```
 
 2. (STOP 2) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
 
-#### Diseño CSS y etiquetas contenedoras
+#### Etiquetas contenedoras
 
+1. Modifique el archivo _index.html_:
 
+	```html
+	<input type="checkbox" name="habilidades[]" value="HTML">HTML
+	```
+
+	a
+
+	```html
+	<div><input type="checkbox" name="habilidades[]" value="HTML"> <span>HTML</span></div>
+	``` 
+
+3. (STOP 3) Actualice el navegador y compruebe los cambios.
+4. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
 
