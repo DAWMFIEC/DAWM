@@ -44,20 +44,37 @@ theme: jekyll-theme-leap-day
 
 #### Etiquetas contenedoras
 
-1. Modifique el archivo _index.html_:
+1. En el archivo _index.html_, utilice:
 
-	```html
-	<input type="checkbox" name="habilidades" value="HTML"> HTML
-	```
+	- La etiqueta &lt;div&gt; para contener varios elementos (etiquetas y texto), y 
+	- La etiqueta &lt;span&gt; para contener texto. 
 
-	a
-
-	```html
-	<div>
-		<input type="checkbox" name="habilidades" value="HTML"> 
-		<span>HTML</span>
-	</div>
-	``` 
+	<table>
+		<caption>Etiquetas contenedoras</caption>
+		<thead>
+			<tr>
+				<th>Antes</th>
+				<th>Después</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+<pre>&lt;input type="checkbox" 
+	name="habilidades" value="HTML"&gt; HTML</pre>
+				</td>
+				<td>
+					<pre>
+&lt;div&gt;
+		&lt;input type="checkbox" 
+			name="habilidades" value="HTML"&gt;
+		&lt;span&gt;HTML&lt;/span&gt;
+&lt;/div&gt;
+					</pre>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 
 2. (STOP 3) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
