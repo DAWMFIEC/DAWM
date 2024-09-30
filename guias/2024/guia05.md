@@ -34,6 +34,7 @@ theme: jekyll-theme-leap-day
 	```css
 	section#contactanos form {
 		display: grid;
+		grid-template-columns: repeat(1, 1fr); 
 	}
 	```
 
