@@ -40,7 +40,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	```css
 	section form {
 		display: grid;
-		grid-template-columns: repeat(1, 1fr);
 		row-gap: 0.5rem;
 	}
 	```
