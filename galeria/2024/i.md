@@ -59,10 +59,10 @@
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
-| Julio Guerrero | [Ver](imagenes_landing/julioguerrero131.github.io.png) | [Ir](https://julioguerrero131.github.io/dashboard_dawm/) |
-| Diego Contreras | [Ver](imagenes_landing/itsdiegotbg.github.io.png) | [Ir](https://itsdiegotbg.github.io/dashboard/) |
-| Luis Jara | [Ver](imagenes_landing/luisenjs.github.io.png) | [Ir](https://luisenjs.github.io/dashboard/) |
-| Robespierre Triviño | [Ver](imagenes_landing/robtrivi.github.io.png) | [Ir](https://robtrivi.github.io/dashboard/) |
+| Julio Guerrero | [Ver](imagenes_dashboard/julioguerrero131.github.io.png) | [Ir](https://julioguerrero131.github.io/dashboard_dawm/) |
+| Diego Contreras | [Ver](imagenes_dashboard/itsdiegotbg.github.io.png) | [Ir](https://itsdiegotbg.github.io/dashboard/) |
+| Luis Jara | [Ver](imagenes_dashboard/luisenjs.github.io.png) | [Ir](https://luisenjs.github.io/dashboard/) |
+| Robespierre Triviño | [Ver](imagenes_dashboard/robtrivi.github.io.png) | [Ir](https://robtrivi.github.io/dashboard/) |
 
 
 ## Proyecto 04: MobileApp - Angular y Ionic
