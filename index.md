@@ -7,7 +7,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 |   Año   |   PAO   |
 | :-----: | :-----: |
 |   2023  | [PAO I](galeria/2023/i) - [PAO II](galeria/2023/ii) |
-|   2024  | [PAO I](galeria/2024/i)  |
+|   2024  | [PAO I](galeria/2024/i) - [PAO II](galeria/2024/ii)  |
 
 ## Enlaces
 
