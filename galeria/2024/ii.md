@@ -22,10 +22,10 @@
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
-|  | [Ver](imagenes_landing/.github.io.png) | [Ir](https://.github.io//) |
+|  | [Ver](imagenes_dashboard/.github.io.png) | [Ir](https://.github.io//) |
 
 ## Proyecto 04: MobileApp - Angular y Ionic
 
-| Nombres |  Tema  | Vista  Previa |
-| :-----  | :----: | :-----------: | 
-|  | | [Ver](imagenes_mobile/.github.io.png) |
+| Nombres |  Tema  | Documentación | Vista  Previa |
+| :-----  | :----: | :-----------: | :-----------: |
+|  | | [Ir](imagenes_mobile/.pdf) | [Ver](imagenes_mobile/.github.io.png) |
