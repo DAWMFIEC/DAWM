@@ -48,7 +48,7 @@ Justificar el uso de etiquetas HTML en la estructura general y de etiquetas sem√
 #### Despliegue en GitHub
 
 1. Despliegue el sitio del repositorio **curriculum** de acuerdo con la [referencia](bard/guia02-bard04.pdf) de Bard.
-2. (STOP 3) Compruebe el resultado en el navegador.
+2. (STOP 2) Compruebe el resultado en el navegador.
 
 ### Documentaci√≥n
 
