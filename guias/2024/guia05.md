@@ -73,11 +73,11 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	name="habilidades" value="HTML"&gt; HTML
 				</td>
 				<td>
-&lt;div&gt;
+<b>&lt;div&gt;</b>
 		&lt;input type="checkbox" 
 			name="habilidades" value="HTML"&gt;
-		&lt;span&gt;HTML&lt;/span&gt;
-&lt;/div&gt;
+		<b>&lt;span&gt;</b>HTML<b>&lt;/span&gt;</b>
+<b>&lt;/div&gt;</b>
 				</td>
 			</tr>
 		</tbody>
