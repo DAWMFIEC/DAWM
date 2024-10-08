@@ -91,4 +91,6 @@ pre.objective {
 
 img.focus {
   border: 1pt solid #4dff6d;
+  margin: 0 15%;
+  width: 70%;
 }
