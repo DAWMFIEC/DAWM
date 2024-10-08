@@ -88,3 +88,7 @@ pre.objective {
   white-space: -o-pre-wrap;    /* Opera 7 */
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
+
+img.focus {
+  border: 1pt solid #4dff6d;
+}

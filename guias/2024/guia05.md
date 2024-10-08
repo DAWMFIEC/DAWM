@@ -51,8 +51,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. En el archivo _index.html_, reorganice los elementos desalineados:
 
-
-	![elementos desalineados](imagenes/elementos_desalineados.png)
+	<img src="./imagenes/elementos_desalineados.png" alt="elementos_desalineados" class="focus">
 
 	Utilice:
 
