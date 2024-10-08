@@ -180,7 +180,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 #### Modelo de caja
 
-Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes actividades:
+<!-- Tome como referencia la [sugerencia](bard/guia04-bard05.pdf) de Bard para las siguientes actividades: -->
 
 1. Utilice el selector por elemento para acceder a las etiquetas &lt;section&gt; y aplique las reglas CSS para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
 
