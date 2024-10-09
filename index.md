@@ -12,7 +12,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 ## Enlaces
 
 * [Repositorio](https://github.com/DAWFIEC/DAWM)
-* [Diapositivas](https://espolec-my.sharepoint.com/:f:/g/personal/aavendan_espol_edu_ec/ErXieD191LpMimWk129PcmcBcjKXdMxXe3ECZ2PedWPKJA?e=RGgzOc)
+<!-- * [Diapositivas](https://espolec-my.sharepoint.com/:f:/g/personal/aavendan_espol_edu_ec/ErXieD191LpMimWk129PcmcBcjKXdMxXe3ECZ2PedWPKJA?e=RGgzOc) -->
+* [Fundamental](paginas/fundamental.md)
 * [Errores](paginas/errores.md)
 * [Preguntas](paginas/preguntas.md)
 
