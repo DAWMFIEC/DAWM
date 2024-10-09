@@ -27,7 +27,7 @@ Usar etiquetas HTML en contenido interactivo y multimedia mediante el desarrollo
 
 #### Etiquetas multimedia
 
-1. Consulte con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) con alguna recomendación para el uso de etiquetas `multimedia` (una `imagen` y un `video`) y un `mapa` a incluir en alguna de las secciones de su página HTML.
+1. Consulte con [ChatGPT](https://chat.openai.com/) o [Gemini](https://gemini.google.com/app) con alguna recomendación para el uso de etiquetas `multimedia` (una `imagen` y un `video`) y un `mapa` a incluir en alguna de las secciones de su página HTML. Considere el siguiente prompt:
 
     <pre class="prompt">Como desarrollador de aplicaciones web, genera la etiqueta multimedia para incrustar una imagen en un documento HTML. Utiliza un placeholder de <a href="https://placehold.co/">https://placehold.co/</a> como URL. Genera la etiqueta multimedia para incrustar un video local o un video de Youtube en un documento HTML. Genera la etiqueta para incrustar un mapa con <a href="https://leafletjs.com/">Leaflet - https://leafletjs.com/</a> y un mapa de Google en un documento HTML.</pre>
 
