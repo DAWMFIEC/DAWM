@@ -89,6 +89,16 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 #### Diseño
 
 1. En el archivo _index.html_, utilice:
+
+	<tablist>
+	  <tab>Tab 1</tab>
+	  <tab>Tab 2</tab>
+	  <tab>Tab 3</tab>
+	  <tabpanel>this is a panel</tabpanel>
+	  <tabpanel>this is a panel</tabpanel>
+	  <tabpanel>this is a panel</tabpanel>
+	</tablist>
+
 2. (STOP 3) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
 
