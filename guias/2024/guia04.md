@@ -232,7 +232,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 1. Utiliza [ChatGPT](https://chatgpt.com/) o [Gemini](https://gemini.google.com/app) para generar las siguientes reglas CSS:
 
-    <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>[Efecto CSS]</ins> en <ins>[Selector de etiqueta(s)]</ins>.
+    <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>[Efecto CSS]</ins> a <ins>[Selector de etiqueta(s)]</ins>.
     </pre>
 
     <table>
@@ -249,7 +249,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
         </tr>
         <tr>
           <td>cambiar el color del fondo de un elemento &lt;section&gt; al pasar el mouse por encima</td>
-          <td>elementos &lt;section&gt; con ciertos identificadores</td>
+          <td>los elementos &lt;section&gt; con ciertos identificadores</td>
         </tr>
         <tr>
           <td>eliminar el subrayado</td>
