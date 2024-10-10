@@ -8,35 +8,31 @@ theme: jekyll-theme-leap-day
 
 ### Internet
 
-Historia de Internet: ¿cómo nació y cuál fue su evolución?. (2022). Retrieved 18 May 2022, from https://marketing4ecommerce.net/historia-de-internet/
+* **Historia de Internet: ¿cómo nació y cuál fue su evolución?.** (2022). Retrieved 18 May 2022, from [https://marketing4ecommerce.net/historia-de-internet/](https://marketing4ecommerce.net/historia-de-internet/)
+* **HTTP** MozDevNet. (n.d.). Generalidades del protocolo HTTP - HTTP: MDN. Retrieved from [https://developer.mozilla.org/es/docs/Web/HTTP/Overview](https://developer.mozilla.org/es/docs/Web/HTTP/Overview)
+* **Berners-Lee, T**. (2022). Tim Berners-Lee  Speaker  TED. Retrieved 18 May 2022, from [https://www.ted.com/speakers/tim_berners_lee](https://www.ted.com/speakers/tim_berners_lee)
 
-Berners-Lee, T. (2022). Tim Berners-Lee  Speaker  TED. Retrieved 18 May 2022, from https://www.ted.com/speakers/tim_berners_lee
 
 ### Web
 
-Cómo funciona la web - Aprende sobre desarrollo web  MDN. (2021). Retrieved 18 May 2022, from https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works
+* **Cómo funciona la web - Aprende sobre desarrollo web  MDN.** (2021). Retrieved 18 May 2022, from [https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
 
 ### Navegador
 
-Inside look at modern web browser (part 1) - Chrome Developers. (2018). Retrieved 18 May 2022, from https://developer.chrome.com/blog/inside-browser-part1/
+* **Inside look at modern web browser (part 1) - Chrome Developers.** (2018). Retrieved 18 May 2022, from [https://developer.chrome.com/blog/inside-browser-part1/](https://developer.chrome.com/blog/inside-browser-part1/S)
 
 ### Historia de HTML
 
-HTML Standard. (2023). Retrieved 20 May 2023, from https://html.spec.whatwg.org/multipage/introduction.html#history-2
+**HTML Standard.** (2023). Retrieved 20 May 2023, from [https://html.spec.whatwg.org/multipage/introduction.html#history-2](https://html.spec.whatwg.org/multipage/introduction.html#history-2)
 
 ## Tweets
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Avoid these 8 common UX/UI mistakes<br><br>Small thread <a href="https://t.co/BgGutQ2oGP">pic.twitter.com/BgGutQ2oGP</a></p>&mdash; George Moller (@_georgemoller) <a href="https://twitter.com/_georgemoller/status/1531295126785605632?ref_src=twsrc%5Etfw">May 30, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+* **UX/UI mistakes** x.com. (n.d.). Retrieved from https://x.com/_georgemoller/status/1531295126785605632?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1531295126785605632%7Ctwgr%5E57850f66cf37b1bfca21aa209147ec99f7e8374d%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fdawmfiec.github.io%2FDAWM%2Fpaginas%2Ffundamental.html
 
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Si estás empezando en la programación web, te recomiendo Code Guide 📘. <br><br>Es una guía con buenas prácticas para escribir código HTML y CSS. 👍 <br><br>Te ayuda a crear proyectos más mantenibles, mejorar tu semántica y otras ideas interesantes.<br><br>➡️ <a href="https://t.co/OT46UhuwuL">https://t.co/OT46UhuwuL</a> <a href="https://t.co/k5rpak7JBI">pic.twitter.com/k5rpak7JBI</a></p>&mdash; Miguel Ángel Durán (@midudev) <a href="https://twitter.com/midudev/status/1533739014259359744?ref_src=twsrc%5Etfw">June 6, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+* **Guía con buenas prácticas para escribir código HTML y CSS** x.com. (n.d.). Retrieved from https://x.com/midudev/status/1533739014259359744?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1533739014259359744%7Ctwgr%5E57850f66cf37b1bfca21aa209147ec99f7e8374d%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fdawmfiec.github.io%2FDAWM%2Fpaginas%2Ffundamental.html
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">BEST HTML &amp; CSS Template Providers For Developers! 🆓<br><br>A thread 🧵↓</p>&mdash; Amit (@Amit_T18) <a href="https://twitter.com/Amit_T18/status/1534513606154498048?ref_src=twsrc%5Etfw">June 8, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+* **Build your own ...** x.com. (n.d.). Retrieved from https://x.com/MoureDev/status/1537786164874297346?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1537786169416622080%7Ctwgr%5E57850f66cf37b1bfca21aa209147ec99f7e8374d%7Ctwcon%5Es2_&ref_url=https%3A%2F%2Fdawmfiec.github.io%2FDAWM%2Fpaginas%2Ffundamental.html
 
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">JavaScript Loops Quick Guide ✨ <a href="https://t.co/vUyc3zaXL2">pic.twitter.com/vUyc3zaXL2</a></p>&mdash; Adarsh Gupta ⚡ (@adarsh____gupta) <a href="https://twitter.com/adarsh____gupta/status/1535147585148981248?ref_src=twsrc%5Etfw">June 10, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Useful CSS Grid Use Cases<br><br>🧵 Small Thread 👇 <a href="https://t.co/NCZc5WNUoh">pic.twitter.com/NCZc5WNUoh</a></p>&mdash; George Moller (@_georgemoller) <a href="https://twitter.com/_georgemoller/status/1535281913358843905?ref_src=twsrc%5Etfw">June 10, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
-<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Este repositorio está lleno de guías de proyectos desde cero agrupados por lenguaje de programación o tecnología utilizada:<br><br>🔗 <a href="https://t.co/Pzfq4YhatZ">https://t.co/Pzfq4YhatZ</a><br><br>Python, JavaScript, Node, Kotlin, C#, Go, Java, C, Ruby, Swift, TypeScript, PHP, C++, Rust...<br><br>No tengo palabras. <a href="https://t.co/0ysaVIi6t8">pic.twitter.com/0ysaVIi6t8</a></p>&mdash; 🔴 LIVE twitch.tv/mouredev (@MoureDev) <a href="https://twitter.com/MoureDev/status/1537786169416622080?ref_src=twsrc%5Etfw">June 17, 2022</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ## Videos
 
