@@ -8,30 +8,30 @@ theme: jekyll-theme-leap-day
 
 ### Internet
 
-* **Historia de Internet: ¿cómo nació y cuál fue su evolución?.** (2022). Retrieved 18 May 2022, from [https://marketing4ecommerce.net/historia-de-internet/](https://marketing4ecommerce.net/historia-de-internet/)
-* **HTTP** MozDevNet. (n.d.). Generalidades del protocolo HTTP - HTTP: MDN. Retrieved from [https://developer.mozilla.org/es/docs/Web/HTTP/Overview](https://developer.mozilla.org/es/docs/Web/HTTP/Overview)
-* **Berners-Lee, T**. (2022). Tim Berners-Lee  Speaker  TED. Retrieved 18 May 2022, from [https://www.ted.com/speakers/tim_berners_lee](https://www.ted.com/speakers/tim_berners_lee)
+* **Historia de Internet: ¿cómo nació y cuál fue su evolución?.** (2022). Retrieved 18 May 2022, from [URL](https://marketing4ecommerce.net/historia-de-internet/)
+* **HTTP** MozDevNet. (n.d.). Generalidades del protocolo HTTP - HTTP: MDN. Retrieved from [URL](https://developer.mozilla.org/es/docs/Web/HTTP/Overview)
+* **Berners-Lee, T**. (2022). Tim Berners-Lee  Speaker  TED. Retrieved 18 May 2022, from [URL](https://www.ted.com/speakers/tim_berners_lee)
 
 
 ### Web
 
-* **Cómo funciona la web - Aprende sobre desarrollo web  MDN.** (2021). Retrieved 18 May 2022, from [https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
+* **Cómo funciona la web - Aprende sobre desarrollo web  MDN.** (2021). Retrieved 18 May 2022, from [URL](https://developer.mozilla.org/es/docs/Learn/Getting_started_with_the_web/How_the_Web_works)
 
 ### Navegador
 
-* **Inside look at modern web browser (part 1) - Chrome Developers.** (2018). Retrieved 18 May 2022, from [https://developer.chrome.com/blog/inside-browser-part1/](https://developer.chrome.com/blog/inside-browser-part1/S)
+* **Inside look at modern web browser (part 1) - Chrome Developers.** (2018). Retrieved 18 May 2022, from [URL](https://developer.chrome.com/blog/inside-browser-part1/S)
 
 ### Historia de HTML
 
-**HTML Standard.** (2023). Retrieved 20 May 2023, from [https://html.spec.whatwg.org/multipage/introduction.html#history-2](https://html.spec.whatwg.org/multipage/introduction.html#history-2)
+**HTML Standard.** (2023). Retrieved 20 May 2023, from [URL](https://html.spec.whatwg.org/multipage/introduction.html#history-2)
 
 ## Tweets
 
-* **UX/UI mistakes** x.com. (n.d.). Retrieved from https://x.com/_georgemoller/status/1531295126785605632?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1531295126785605632%7Ctwgr%5E57850f66cf37b1bfca21aa209147ec99f7e8374d%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fdawmfiec.github.io%2FDAWM%2Fpaginas%2Ffundamental.html
+* **UX/UI mistakes** x.com. (n.d.). Retrieved from [URL](https://x.com/_georgemoller/status/1531295126785605632?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1531295126785605632%7Ctwgr%5E57850f66cf37b1bfca21aa209147ec99f7e8374d%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fdawmfiec.github.io%2FDAWM%2Fpaginas%2Ffundamental.html)
 
-* **Guía con buenas prácticas para escribir código HTML y CSS** x.com. (n.d.). Retrieved from https://x.com/midudev/status/1533739014259359744?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1533739014259359744%7Ctwgr%5E57850f66cf37b1bfca21aa209147ec99f7e8374d%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fdawmfiec.github.io%2FDAWM%2Fpaginas%2Ffundamental.html
+* **Guía con buenas prácticas para escribir código HTML y CSS** x.com. (n.d.). Retrieved from [URL](https://x.com/midudev/status/1533739014259359744?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1533739014259359744%7Ctwgr%5E57850f66cf37b1bfca21aa209147ec99f7e8374d%7Ctwcon%5Es1_&ref_url=https%3A%2F%2Fdawmfiec.github.io%2FDAWM%2Fpaginas%2Ffundamental.html)
 
-* **Build your own ...** x.com. (n.d.). Retrieved from https://x.com/MoureDev/status/1537786164874297346?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1537786169416622080%7Ctwgr%5E57850f66cf37b1bfca21aa209147ec99f7e8374d%7Ctwcon%5Es2_&ref_url=https%3A%2F%2Fdawmfiec.github.io%2FDAWM%2Fpaginas%2Ffundamental.html
+* **Build your own ...** x.com. (n.d.). Retrieved from [URL](https://x.com/MoureDev/status/1537786164874297346?ref_src=twsrc%5Etfw%7Ctwcamp%5Etweetembed%7Ctwterm%5E1537786169416622080%7Ctwgr%5E57850f66cf37b1bfca21aa209147ec99f7e8374d%7Ctwcon%5Es2_&ref_url=https%3A%2F%2Fdawmfiec.github.io%2FDAWM%2Fpaginas%2Ffundamental.html)
 
 
 ## Videos
