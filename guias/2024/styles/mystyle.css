@@ -133,7 +133,7 @@ img.focus {
   margin-top: 0;
   border-width: 2px;
   border-top-width: 6px;
-  border-top-color: rgb(36 116 214);
+  border-top-color: #4dff6d;
   border-bottom-color: hsl(220deg 43% 99%);
   background: hsl(220deg 43% 99%);
 }
@@ -152,7 +152,7 @@ img.focus {
 [role="tab"]:focus span.focus,
 [role="tab"]:active span.focus {
   padding: 2px 4px;
-  border: 2px solid rgb(36 116 214);
+  border: 2px solid #4dff6d;
   border-radius: 3px;
 }
 
