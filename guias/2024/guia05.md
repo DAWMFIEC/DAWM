@@ -66,7 +66,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	```css
 	nav ul {
 		display: flex;
-		justify-content: space-evenly;
+		justify-content: space-around;
 	}
 	```
 
@@ -93,7 +93,9 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 
 	<div class="tabs">
-	  <h3 id="tablist-1">Opciones</h3>
+
+	  <h3 id="tablist-1">Flex vs Grid</h3>
+
 	  <div role="tablist" aria-labelledby="tablist-1" class="manual">
 
 	    <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
