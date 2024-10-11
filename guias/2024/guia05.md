@@ -19,36 +19,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. Clona localmente tu repositorio **curriculum**.
 
-#### Flex
-
-1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
-2. Agregue la regla CSS al final de la hoja de estilos.
-
-	```css
-	nav ul {
-		display: flex;
-		justify-content: space-evenly;
-	}
-	```
-
-3. (STOP 1) Actualice el navegador y compruebe los cambios.
-4. Versiona local y remotamente el repositorio **curriculum**.
-
-#### Grid
-
-1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
-2. Agregue la regla CSS al final de la hoja de estilos.
-
-	```css
-	section form {
-		display: grid;
-		row-gap: 0.5rem;
-	}
-	```
-
-3. (STOP 2) Actualice el navegador y compruebe los cambios.
-4. Versiona local y remotamente el repositorio **curriculum**.
-
 #### Etiquetas contenedoras
 
 1. En el archivo _index.html_, identifique los elementos desalineados:
@@ -76,20 +46,47 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 				</td>
 				<td>
 <b>&lt;div&gt;</b>
-		
 		&lt;input type="checkbox" 
 			name="habilidades" value="HTML"&gt;
-		
 		<b>&lt;span&gt;</b>HTML<b>&lt;/span&gt;</b>
-
 <b>&lt;/div&gt;</b>
 				</td>
 			</tr>
 		</tbody>
 	</table>
 
-2. (STOP 3) Actualice el navegador y compruebe los cambios.
+2. (STOP 1) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
+
+#### Flex
+
+1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
+2. Agregue la regla CSS al final de la hoja de estilos.
+
+	```css
+	nav ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+	```
+
+3. Actualice el navegador y compruebe los cambios.
+4. Versiona local y remotamente el repositorio **curriculum**.
+
+#### Grid
+
+1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
+2. Agregue la regla CSS al final de la hoja de estilos.
+
+	```css
+	section form {
+		display: grid;
+		row-gap: 0.5rem;
+	}
+	```
+
+3. (STOP 2) Actualice el navegador y compruebe los cambios.
+4. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Diseño
 
