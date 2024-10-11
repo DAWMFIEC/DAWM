@@ -23,37 +23,37 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. En el navegador, identifique los elementos desalineados:
 
-		<img src="./imagenes/guia05_elementos_desalineados.png" alt="elementos_desalineados" class="focus">
+	<img src="./imagenes/guia05_elementos_desalineados.png" alt="elementos_desalineados" class="focus">
 
 2. Edite el archivo _index.html_ con las etiqueta contenedoras:
 
-		- &lt;div&gt; para agrupar varios elementos (como etiquetas y el texto relacionado), y 
-		- &lt;span&gt; para contener solo texto. 
+	- &lt;div&gt; para agrupar varios elementos (como etiquetas y el texto relacionado), y 
+	- &lt;span&gt; para contener solo texto. 
 
-		<table>
-			<caption>Etiquetas contenedoras</caption>
-			<thead>
-				<tr>
-					<th>Antes</th>
-					<th>Después</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td>
-	&lt;input type="checkbox" 
-		name="habilidades" value="HTML"&gt; HTML
-					</td>
-					<td>
-	<b>&lt;div&gt;</b>
-			&lt;input type="checkbox" 
-				name="habilidades" value="HTML"&gt;
-			<b>&lt;span&gt;</b>HTML<b>&lt;/span&gt;</b>
-	<b>&lt;/div&gt;</b>
-					</td>
-				</tr>
-			</tbody>
-		</table>
+	<table>
+		<caption>Etiquetas contenedoras</caption>
+		<thead>
+			<tr>
+				<th>Antes</th>
+				<th>Después</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+&lt;input type="checkbox" 
+	name="habilidades" value="HTML"&gt; HTML
+				</td>
+				<td>
+<b>&lt;div&gt;</b>
+		&lt;input type="checkbox" 
+			name="habilidades" value="HTML"&gt;
+		<b>&lt;span&gt;</b>HTML<b>&lt;/span&gt;</b>
+<b>&lt;/div&gt;</b>
+				</td>
+			</tr>
+		</tbody>
+	</table>
 
 2. (STOP 1) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
@@ -90,9 +90,9 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 #### Diseño
 
-1. En el navegador, identifique los elementos desalineados:
+1. En el navegador, identifique los elementos:
 
-		<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="focus">
+	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="focus">
 
 2. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 3. (STOP 3) Actualice el navegador y compruebe los cambios.
