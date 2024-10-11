@@ -7,7 +7,6 @@ theme: jekyll-theme-leap-day
 [DAWM](/DAWM/) / [Proyecto01](/DAWM/proyectos/2024/proyecto01)
 
 <link href="styles/mystyle.css" rel="stylesheet" />
-<link href="styles/tabs.css" rel="stylesheet" />
 <script src="javascripts/tabs.js" type="text/javascript"></script>
 
 ### Objetivo general
