@@ -18,11 +18,11 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 ### Actividades en clases
 
 1. Clona localmente tu repositorio **curriculum**.
-2. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 
 #### Flex
 
-1. Agregue la regla CSS al final de la hoja de estilos.
+1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
+2. Agregue la regla CSS al final de la hoja de estilos.
 
 	```css
 	nav ul {
@@ -31,12 +31,13 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	}
 	```
 
-2. (STOP 1) Actualice el navegador y compruebe los cambios.
-3. Versiona local y remotamente el repositorio **curriculum**.
+3. (STOP 1) Actualice el navegador y compruebe los cambios.
+4. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Grid
 
-1. Agregue la regla CSS al final de la hoja de estilos.
+1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
+2. Agregue la regla CSS al final de la hoja de estilos.
 
 	```css
 	section form {
@@ -45,8 +46,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	}
 	```
 
-2. (STOP 2) Actualice el navegador y compruebe los cambios.
-3. Versiona local y remotamente el repositorio **curriculum**.
+3. (STOP 2) Actualice el navegador y compruebe los cambios.
+4. Versiona local y remotamente el repositorio **curriculum**.
 
 #### Etiquetas contenedoras
 
@@ -54,10 +55,10 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	<img src="./imagenes/elementos_desalineados.png" alt="elementos_desalineados" class="focus">
 
-2. En el archivo _index.html_, utilice:
+2. Edite el archivo _index.html_, utilice las etiqueta contenedoras:
 
-	- La etiqueta &lt;div&gt; para agrupar varios elementos (como etiquetas y su texto), y 
-	- La etiqueta &lt;span&gt; para contener solo texto. 
+	- &lt;div&gt; para agrupar varios elementos (como etiquetas y su texto), y 
+	- &lt;span&gt; para contener solo texto. 
 
 	<table>
 		<caption>Etiquetas contenedoras</caption>
@@ -89,7 +90,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 #### Diseño
 
-1. En el archivo _index.html_, utilice:   
+1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 
 	<div class="tabs">
 	  <h3 id="tablist-1">Opciones</h3>
