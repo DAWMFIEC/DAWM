@@ -21,9 +21,9 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 #### Etiquetas contenedoras
 
-1. En el archivo _index.html_, identifique los elementos desalineados:
+1. En el navegador, identifique los elementos desalineados:
 
-	<img src="./imagenes/elementos_desalineados.png" alt="elementos_desalineados" class="focus">
+	<img src="./imagenes/guia05_elementos_desalineados.png" alt="elementos_desalineados" class="focus">
 
 2. Edite el archivo _index.html_ con las etiqueta contenedoras:
 
@@ -90,109 +90,13 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 #### Diseño
 
-1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
+1. En el navegador, identifique los elementos desalineados:
 
-	<div class="tabs">
+	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="focus">
 
-	  <h3 id="tablist-1">Flex vs Grid</h3>
+2. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 
-	  <div role="tablist" aria-labelledby="tablist-1" class="manual">
-
-	    <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
-	      <span class="focus">Flex - filas</span>
-	    </button>
-
-	    <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
-	      <span class="focus">Flex - columnas</span>
-	    </button>
-
-	    <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1">
-	      <span class="focus">Grid - area</span>
-	    </button>
-
-	    <button id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-4" tabindex="-1">
-	      <span class="focus">Grid - columnas</span>
-	    </button>
-
-	  </div>
-
-	  <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
-				<details>
-					<summary><div>Haga click aquí para ver la solución</div></summary>
-					<pre lang="css"><code>
-
-						#photo {
-							width: 200px;
-							height: auto;
-						}
-
-						.subtitle {
-							color: rgb(107 114 128 / 0.89);
-							text-transform: uppercase;
-						}
-
-					</code></pre>
-				</details>
-	  </div>
-
-	  <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
-				<details>
-					<summary><div>Haga click aquí para ver la solución</div></summary>
-					<pre lang="css"><code>
-
-						#photo {
-							width: 200px;
-							height: auto;
-						}
-
-						.subtitle {
-							color: rgb(107 114 128 / 0.89);
-							text-transform: uppercase;
-						}
-
-					</code></pre>
-				</details>
-	  </div>
-
-	  <div id="tabpanel-3" role="tabpanel" aria-labelledby="tab-3" class="is-hidden">
-				<details>
-					<summary><div>Haga click aquí para ver la solución</div></summary>
-					<pre lang="css"><code>
-
-						#photo {
-							width: 200px;
-							height: auto;
-						}
-
-						.subtitle {
-							color: rgb(107 114 128 / 0.89);
-							text-transform: uppercase;
-						}
-
-					</code></pre>
-				</details>
-	  </div>
-
-	  <div id="tabpanel-4" role="tabpanel" aria-labelledby="tab-4" class="is-hidden">
-				<details>
-					<summary><div>Haga click aquí para ver la solución</div></summary>
-					<pre lang="css"><code>
-
-						#photo {
-							width: 200px;
-							height: auto;
-						}
-
-						.subtitle {
-							color: rgb(107 114 128 / 0.89);
-							text-transform: uppercase;
-						}
-
-					</code></pre>
-				</details>
-	  </div>
-
-	</div>
+	
 
 2. (STOP 3) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
