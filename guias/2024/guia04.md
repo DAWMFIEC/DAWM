@@ -40,59 +40,59 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 1. Tome como referencia la [guía](gemini/guia04-gemini01.pdf) de Gemini para escribir las `reglas CSS`. 
 2. Coloque las siguientes reglas CSS (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
 
-  <table>
-    <thead>
-      <tr>
-        <th colspan="2">Selector CSS</th>
-        <th>Propiedad CSS</th>
-        <th>Valor CSS</th>
-        <th>MDN</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td rowspan="2">Universal</td>
-        <td rowspan="2">*</td>
-        <td> <b>font-family</b> </td>
-        <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-      </tr>
-      <tr>
-        <td> <b>font-weight</b> </td>
-        <td> <i>200</i> </td>
-        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
-      </tr>
-      <tr>
-        <td rowspan="3">Por elemento</td>
-        <td rowspan="2">h1</td>
-        <td> <b>text-align</b> </td>
-        <td> <i>center</i> </td>
-        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
-      </tr>
-      <tr>
-        <td> <b>font-weight</b> </td>
-        <td> <i>bold</i> </td>
-        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
-      </tr>
-    </tbody>
-  </table>
+    <table>
+      <thead>
+        <tr>
+          <th colspan="2">Selector CSS</th>
+          <th>Propiedad CSS</th>
+          <th>Valor CSS</th>
+          <th>MDN</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td rowspan="2">Universal</td>
+          <td rowspan="2">*</td>
+          <td> <b>font-family</b> </td>
+          <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+        </tr>
+        <tr>
+          <td> <b>font-weight</b> </td>
+          <td> <i>200</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+        </tr>
+        <tr>
+          <td rowspan="3">Por elemento</td>
+          <td rowspan="2">h1</td>
+          <td> <b>text-align</b> </td>
+          <td> <i>center</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
+        </tr>
+        <tr>
+          <td> <b>font-weight</b> </td>
+          <td> <i>bold</i> </td>
+          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+        </tr>
+      </tbody>
+    </table>
 
-  <details>
-    <summary><div>Haga click aquí para ver la solución</div></summary>
-    <pre lang="css"><code>
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="css"><code>
 
-      * {
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        font-weight: 200;
-      }
+        * {
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+          font-weight: 200;
+        }
 
-      h1 {
-        text-align: center;
-        font-weight: bold;
-      }
+        h1 {
+          text-align: center;
+          font-weight: bold;
+        }
 
-    </code></pre>
-  </details>
+      </code></pre>
+    </details>
 
 
 3. (STOP 2) Actualice el navegador y compruebe los cambios.
