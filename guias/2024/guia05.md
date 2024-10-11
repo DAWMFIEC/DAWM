@@ -96,16 +96,16 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	  <h3 id="tablist-1">Opciones</h3>
 	  <div role="tablist" aria-labelledby="tablist-1" class="manual">
 	    <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
-	      <span class="focus">Maria Ahlefeldt</span>
+	      <span class="focus">Flex - filas</span>
 	    </button>
 	    <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
-	      <span class="focus">Carl Andersen</span>
+	      <span class="focus">Flex - columnas</span>
 	    </button>
 	    <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1">
-	      <span class="focus">Ida da Fonseca</span>
+	      <span class="focus">Grid - area</span>
 	    </button>
 	    <button id="tab-4" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-4" tabindex="-1">
-	      <span class="focus">Peter Müller</span>
+	      <span class="focus">Grid - columnas</span>
 	    </button>
 	  </div>
 
@@ -178,3 +178,5 @@ Colocación de elementos, flexbox, grid
 * A Complete Guide to Grid CSS-Tricks. (2021). Retrieved 31 May 2022, from https://css-tricks.com/snippets/css/complete-guide-grid/
 * Layoutit Grid: Learning CSS Grid Visually With a Generator CSS-Tricks. (2020). Retrieved 1 June 2022, from https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/
 * Simple HTTP server in Python - Anurag Kumar. (2022). Retrieved 1 June 2022, from https://www.hackerearth.com/practice/notes/simple-http-server-in-python/
+* (WAI), W. W. A. I. (n.d.). Example of Tabs with Manual Activation. Retrieved from https://www.w3.org/WAI/ARIA/apg/patterns/tabs/examples/tabs-manual/
+* Olo, oloolo 5, Ethan VuEthan Vu 2, symlinksymlink 12.2k77 gold badges3030 silver badges5454 bronze badges, Dean WilsonDean Wilson 6155 bronze badges, & lucidlipslucidlips 4622 bronze badges. (1964). CSS flex-wrap how to make the height do not stretch. Retrieved from https://stackoverflow.com/questions/56999956/css-flex-wrap-how-to-make-the-height-do-not-stretch
