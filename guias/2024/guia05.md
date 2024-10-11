@@ -63,12 +63,12 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 2. Agregue la regla CSS al final de la hoja de estilos.
 
-		```css
-		nav ul {
-			display: flex;
-			justify-content: space-around;
-		}
-		```
+	```css
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+	```
 
 3. Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
@@ -78,12 +78,12 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 2. Agregue la regla CSS al final de la hoja de estilos.
 
-		```css
-		section form {
-			display: grid;
-			row-gap: 0.5rem;
-		}
-		```
+	```css
+	section form {
+		display: grid;
+		row-gap: 0.5rem;
+	}
+	```
 
 3. (STOP 2) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
@@ -92,10 +92,17 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. En el navegador, identifique los elementos:
 
-	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="focus">
+	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="focus">
 
 2. Edite la hoja de estilo externa _'stylesheets/style.css'_.
+
+	
+
+
 3. (STOP 3) Actualice el navegador y compruebe los cambios.
+
+	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="focus">
+
 4. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
