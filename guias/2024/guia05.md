@@ -25,7 +25,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	<img src="./imagenes/elementos_desalineados.png" alt="elementos_desalineados" class="focus">
 
-2. Edite el archivo _index.html_, utilice las etiqueta contenedoras:
+2. Edite el archivo _index.html_ con las etiqueta contenedoras:
 
 	- &lt;div&gt; para agrupar varios elementos (como etiquetas y el texto relacionado), y 
 	- &lt;span&gt; para contener solo texto. 
