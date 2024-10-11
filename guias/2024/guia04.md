@@ -186,11 +186,11 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
    ```css
     section {
-      margin: 2px 1px 1.5px 1px;
+      margin: 4px 2px 8px 2px;
 
       border: 0.2pt solid #cedddd;
 
-      padding: 0.2% 1.2%;
+      padding: 1.5% 0.8%;
       padding-left: 1.2%;
       padding-right: 1.2%; 
     }
@@ -219,9 +219,9 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
       section {
         ...
         
-        -webkit-box-shadow: 5px 5px 0.2px 0px rgba(235, 234, 234, 0.60);
-        -moz-box-shadow: 5px 5px 0.2px 0px rgba(235, 234, 234, 0.60);
-        box-shadow: 5px 5px 0.2px 0px rgba(235, 234, 234, 0.60);
+        -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+        -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+        box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
       }
     ```
 
