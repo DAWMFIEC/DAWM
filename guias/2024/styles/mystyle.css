@@ -90,10 +90,13 @@ pre.objective {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-img.focus {
-  border: 1pt solid #4dff6d;
+img.img-centered {
   margin: 0 15%;
   width: 70%;
+}
+
+img.img-focus {
+  border: 1pt solid #4dff6d; 
 }
 
 /*TABS*/

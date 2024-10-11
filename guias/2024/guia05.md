@@ -23,7 +23,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. En el navegador, identifique los elementos desalineados:
 
-	<img src="./imagenes/guia05_elementos_desalineados.png" alt="elementos_desalineados" class="focus">
+	<img src="./imagenes/guia05_elementos_desalineados.png" alt="elementos_desalineados" class="img-centered img-focus">
 
 2. Edite el archivo _index.html_ con las etiqueta contenedoras:
 
@@ -92,16 +92,16 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. En el navegador, identifique los elementos:
 
-	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="focus">
+	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
 2. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 
-	
+
 
 
 3. (STOP 3) Actualice el navegador y compruebe los cambios.
 
-	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="focus">
+	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
 
 4. Versiona local y remotamente el repositorio **curriculum**.
 
