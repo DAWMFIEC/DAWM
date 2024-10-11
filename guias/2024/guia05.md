@@ -110,7 +110,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	  </div>
 
 	  <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
-	    <p>
 	      
 				<details>
 					<summary><div>Haga click aquí para ver la solución</div></summary>
@@ -129,7 +128,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					</code></pre>
 				</details>
 
-	    </p>
 	  </div>
 	  <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
 
