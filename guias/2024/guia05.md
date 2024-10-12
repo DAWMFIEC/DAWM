@@ -100,7 +100,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 		</section>
 		```
 
-		<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
+	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
 2. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 
