@@ -154,8 +154,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 		</tbody>
 	</table>
 
-4. (STOP 3) Actualice el navegador y compruebe los cambios.
-
 	  <div class="tabs">
 
 		  <h3 id="tablist-1">Solución</h3>
@@ -212,6 +210,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 		</div>
 
+4. (STOP 3) Actualice el navegador y compruebe los cambios.
 5. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
