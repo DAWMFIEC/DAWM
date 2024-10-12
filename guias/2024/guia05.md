@@ -117,42 +117,42 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 3. En la hoja de estilo externa _'stylesheets/style.css'_ agregue el **diseño temporal**:
 
-		<table>
-			<thead>
-				<tr>
-					<th colspan="2">Selector CSS</th>
-					<th>Propiedad CSS</th>
-					<th>Valor CSS</th>
-					<th>MDN</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td rowspan="2">Universal</td>
-					<td rowspan="2">*</td>
-					<td> <b>font-family</b> </td>
-					<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-					<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-				</tr>
-				<tr>
-					<td> <b>font-weight</b> </td>
-					<td> <i>200</i> </td>
-					<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
-				</tr>
-				<tr>
-					<td rowspan="3">Por elemento</td>
-					<td rowspan="2">h1</td>
-					<td> <b>text-align</b> </td>
-					<td> <i>center</i> </td>
-					<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
-				</tr>
-				<tr>
-					<td> <b>font-weight</b> </td>
-					<td> <i>bold</i> </td>
-					<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
-				</tr>
-			</tbody>
-		</table>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">Selector CSS</th>
+				<th>Propiedad CSS</th>
+				<th>Valor CSS</th>
+				<th>MDN</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="2">Universal</td>
+				<td rowspan="2">*</td>
+				<td> <b>font-family</b> </td>
+				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+			</tr>
+			<tr>
+				<td> <b>font-weight</b> </td>
+				<td> <i>200</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+			</tr>
+			<tr>
+				<td rowspan="3">Por elemento</td>
+				<td rowspan="2">h1</td>
+				<td> <b>text-align</b> </td>
+				<td> <i>center</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
+			</tr>
+			<tr>
+				<td> <b>font-weight</b> </td>
+				<td> <i>bold</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+			</tr>
+		</tbody>
+	</table>
 
 4. (STOP 3) Actualice el navegador y compruebe los cambios.
 
