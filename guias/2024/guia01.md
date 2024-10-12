@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 ### Objetivo general
 
-<pre class="objective">
+<pre class="purpose">
 Evaluar el uso de etiquetas de marcado mediante la estructuración de un repositorio personal en GitHub para la creación una identidad digital que facilite la presentación de sus habilidades y proyectos de manera clara y accesible
 </pre>
 

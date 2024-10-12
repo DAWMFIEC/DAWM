@@ -11,7 +11,7 @@ theme: jekyll-theme-leap-day
 
 ### Objetivo general
 
-<pre class="objective">
+<pre class="purpose">
 Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante el desarrollo de un currículum vitae digital para la presentación de información profesional de manera organizada y accesible en línea.
 </pre>
 
@@ -92,8 +92,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. En el navegador, identifique los elementos:
 
-	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
-		
 		```html
 		...
 		<section id="resumen">
@@ -104,6 +102,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 		...
 		```
 
+	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
 2. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 

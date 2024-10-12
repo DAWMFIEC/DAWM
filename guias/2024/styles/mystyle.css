@@ -65,6 +65,7 @@ details pre, details pre code {
 
 }
 
+/* PRE-PROMPT */
 
 pre.prompt {
   background-color: #f9f6f6;
@@ -78,7 +79,9 @@ pre.prompt {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-pre.objective {
+/* PRE-PURPOSE */
+
+pre.purpose {
   background-color: #ffffff;
 
   text-align: justify;
@@ -90,7 +93,7 @@ pre.objective {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
-/*IMG*/
+/* IMG */
 
 img.img-centered {
   margin: 0 15%;
@@ -101,7 +104,7 @@ img.img-focus {
   border: 1pt solid #4dff6d; 
 }
 
-/*TABS*/
+/* TABS */
 
 .tabs {
   font-family: "lucida grande", sans-serif;

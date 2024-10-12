@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 ### Objetivo general
 
-<pre class="objective">
+<pre class="purpose">
 
 </pre>
 
