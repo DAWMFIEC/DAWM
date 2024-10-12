@@ -91,39 +91,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 #### Diseño: Flex vs Grid
 
 1. En el navegador, identifique los elementos:
-		
-		```html
-		<section id="resumen">
-			<h2 class="subtitle">Resumen</h2>
-			<p>Breve descripción de tus habilidades y experiencia.</p>
-			<img id="photo" src="https://placehold.co/300x200" alt="Placeholder de imagen">
-		</section>
-		```
-
-1. Identifique la sección del documento HTML donde agregará el contenido dinámicamente, p.e.:
 
 	```html
-	<div id="resultados" class="blog-section">
-		<div class="container">
-			...
-			<div class="row">
-				<div class="p-3 p-lg-5 border bg-white">
-					<table class="table site-block-order-table mb-5">
-						<thead>
-							<th>Categoría</th>
-							<th>Conteo</th>
-						</thead>
-						<tbody id="tablebody">
-
-						<!-- Filas dinámicas -->
-						
-						</tbody>
-					</table>
-				</div>
-			</div>
-			...
-		</div>
-	</div>
 	<section id="resumen">
 		<h2 class="subtitle">Resumen</h2>
 		<p>Breve descripción de tus habilidades y experiencia.</p>
