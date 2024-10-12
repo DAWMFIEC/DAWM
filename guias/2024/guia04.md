@@ -184,17 +184,17 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 1. Utilice el selector por elemento para acceder a las etiquetas &lt;section&gt; y aplique las reglas CSS para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
 
-  ```css
-  section {
-    margin: 4px 2px 8px 2px;
+    ```css
+    section {
+      margin: 4px 2px 8px 2px;
 
-    border: 0.2pt solid #cedddd;
+      border: 0.2pt solid #cedddd;
 
-    padding: 1.5% 0.8%;
-    padding-left: 1.2%;
-    padding-right: 1.2%; 
-  }
-  ```
+      padding: 1.5% 0.8%;
+      padding-left: 1.2%;
+      padding-right: 1.2%; 
+    }
+    ```
 
 2. (STOP 4) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
@@ -203,27 +203,27 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 1. Utilice el servicio de [Border Radius](https://border-radius.com/) para generar los valores de la propiedad **border-radius**, p.e.:
 
-  ```css
-  section {
-    ...
+    ```css
+    section {
+      ...
 
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-  }
-  ```
+      -webkit-border-radius: 5px;
+      -moz-border-radius: 5px;
+      border-radius: 5px;
+    }
+    ```
 
 2. Utilice el servicio de [CSSmatic](https://www.cssmatic.com/es/box-shadow) para generar los valores de la propiedad **box-shadow**, p.e.:
    
-  ```css
-  section {
-    ...
-    
-    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-  }
-  ```
+    ```css
+    section {
+      ...
+      
+      -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+      -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+      box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    }
+    ```
 
 3. (STOP 5) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
