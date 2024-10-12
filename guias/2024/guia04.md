@@ -40,59 +40,59 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 1. Tome como referencia la [guía](gemini/guia04-gemini01.pdf) de Gemini para escribir las `reglas CSS`. 
 2. Coloque las siguientes reglas CSS (`selector CSS`,`propiedad CSS` y `valor CSS`) en la hoja de estilo externa:
 
-    <table>
-      <thead>
-        <tr>
-          <th colspan="2">Selector CSS</th>
-          <th>Propiedad CSS</th>
-          <th>Valor CSS</th>
-          <th>MDN</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td rowspan="2">Universal</td>
-          <td rowspan="2">*</td>
-          <td> <b>font-family</b> </td>
-          <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-        </tr>
-        <tr>
-          <td> <b>font-weight</b> </td>
-          <td> <i>200</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
-        </tr>
-        <tr>
-          <td rowspan="3">Por elemento</td>
-          <td rowspan="2">h1</td>
-          <td> <b>text-align</b> </td>
-          <td> <i>center</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
-        </tr>
-        <tr>
-          <td> <b>font-weight</b> </td>
-          <td> <i>bold</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
-        </tr>
-      </tbody>
-    </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Selector CSS</th>
+        <th>Propiedad CSS</th>
+        <th>Valor CSS</th>
+        <th>MDN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Universal</td>
+        <td rowspan="2">*</td>
+        <td> <b>font-family</b> </td>
+        <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+      </tr>
+      <tr>
+        <td> <b>font-weight</b> </td>
+        <td> <i>200</i> </td>
+        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+      </tr>
+      <tr>
+        <td rowspan="3">Por elemento</td>
+        <td rowspan="2">h1</td>
+        <td> <b>text-align</b> </td>
+        <td> <i>center</i> </td>
+        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
+      </tr>
+      <tr>
+        <td> <b>font-weight</b> </td>
+        <td> <i>bold</i> </td>
+        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+      </tr>
+    </tbody>
+  </table>
 
-    <details>
-      <summary><div>Haga click aquí para ver la solución</div></summary>
-      <pre lang="css"><code>
+  <details>
+    <summary><div>Haga click aquí para ver la solución</div></summary>
+    <pre lang="css"><code>
 
-        * {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-          font-weight: 200;
-        }
+      * {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: 200;
+      }
 
-        h1 {
-          text-align: center;
-          font-weight: bold;
-        }
+      h1 {
+        text-align: center;
+        font-weight: bold;
+      }
 
-      </code></pre>
-    </details>
+    </code></pre>
+  </details>
 
 
 3. (STOP 2) Actualice el navegador y compruebe los cambios.
@@ -120,59 +120,59 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 2. Coloque las siguientes reglas CSS en la hoja de estilo externa:
 
-    <table>
-      <thead>
-        <tr>
-          <th colspan="2">Selector CSS</th>
-          <th>Propiedad CSS</th>
-          <th>Valor CSS</th>
-          <th>MDN</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td rowspan="2">Por identificador</td>
-          <td rowspan="2">#foto</td>
-          <td> <b>width</b> </td>
-          <td> <i>200px</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">Ir</a> </td>
-        </tr>
-        <tr>
-          <td> <b>height</b> </td>
-          <td> <i>auto</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">Ir</a> </td>
-        </tr>
-        <tr>
-          <td rowspan="2">Por clase</td>
-          <td rowspan="2">.subtitle</td>
-          <td> <b>color</b> </td>
-          <td> <i>rgb(107 114 128 / 0.89)</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Applying_color">Ir</a> </td>
-        </tr>
-        <tr>
-          <td> <b>text-transform</b> </td>
-          <td> <i>uppercase</i> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">Ir</a> </td>
-        </tr>
-      </tbody>
-    </table>
+  <table>
+    <thead>
+      <tr>
+        <th colspan="2">Selector CSS</th>
+        <th>Propiedad CSS</th>
+        <th>Valor CSS</th>
+        <th>MDN</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td rowspan="2">Por identificador</td>
+        <td rowspan="2">#foto</td>
+        <td> <b>width</b> </td>
+        <td> <i>200px</i> </td>
+        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">Ir</a> </td>
+      </tr>
+      <tr>
+        <td> <b>height</b> </td>
+        <td> <i>auto</i> </td>
+        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">Ir</a> </td>
+      </tr>
+      <tr>
+        <td rowspan="2">Por clase</td>
+        <td rowspan="2">.subtitle</td>
+        <td> <b>color</b> </td>
+        <td> <i>rgb(107 114 128 / 0.89)</i> </td>
+        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Applying_color">Ir</a> </td>
+      </tr>
+      <tr>
+        <td> <b>text-transform</b> </td>
+        <td> <i>uppercase</i> </td>
+        <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">Ir</a> </td>
+      </tr>
+    </tbody>
+  </table>
 
-    <details>
-      <summary><div>Haga click aquí para ver la solución</div></summary>
-      <pre lang="css"><code>
+  <details>
+    <summary><div>Haga click aquí para ver la solución</div></summary>
+    <pre lang="css"><code>
 
-        #photo {
-          width: 200px;
-          height: auto;
-        }
+      #photo {
+        width: 200px;
+        height: auto;
+      }
 
-        .subtitle {
-          color: rgb(107 114 128 / 0.89);
-          text-transform: uppercase;
-        }
+      .subtitle {
+        color: rgb(107 114 128 / 0.89);
+        text-transform: uppercase;
+      }
 
-      </code></pre>
-    </details>
+    </code></pre>
+  </details>
 
 3. (STOP 3) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
@@ -184,17 +184,17 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 1. Utilice el selector por elemento para acceder a las etiquetas &lt;section&gt; y aplique las reglas CSS para el `modelo de caja`: _margin_, _border_ y _padding_, por ejemplo:
 
-   ```css
-    section {
-      margin: 4px 2px 8px 2px;
+  ```css
+  section {
+    margin: 4px 2px 8px 2px;
 
-      border: 0.2pt solid #cedddd;
+    border: 0.2pt solid #cedddd;
 
-      padding: 1.5% 0.8%;
-      padding-left: 1.2%;
-      padding-right: 1.2%; 
-    }
-   ```
+    padding: 1.5% 0.8%;
+    padding-left: 1.2%;
+    padding-right: 1.2%; 
+  }
+  ```
 
 2. (STOP 4) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
@@ -203,27 +203,27 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 1. Utilice el servicio de [Border Radius](https://border-radius.com/) para generar los valores de la propiedad **border-radius**, p.e.:
 
-    ```css
-      section {
-        ...
+  ```css
+  section {
+    ...
 
-        -webkit-border-radius: 5px;
-        -moz-border-radius: 5px;
-        border-radius: 5px;
-      }
-    ```
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+  }
+  ```
 
 2. Utilice el servicio de [CSSmatic](https://www.cssmatic.com/es/box-shadow) para generar los valores de la propiedad **box-shadow**, p.e.:
    
-    ```css
-      section {
-        ...
-        
-        -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-        -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-        box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
-      }
-    ```
+  ```css
+  section {
+    ...
+    
+    -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+    box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
+  }
+  ```
 
 3. (STOP 5) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
@@ -232,39 +232,39 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 1. Utiliza [ChatGPT](https://chatgpt.com/) o [Gemini](https://gemini.google.com/app) para generar las siguientes reglas CSS:
 
-    <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>[Efecto CSS]</ins> a <ins>[Selector de etiqueta(s)]</ins>.
-    </pre>
+  <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>[Efecto CSS]</ins> a <ins>[Selector de etiqueta(s)]</ins>.
+  </pre>
 
-    <table>
-      <thead>
-        <tr>
-          <th>[Efecto CSS]</th>
-          <th>[Selector de etiqueta(s)]</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>aplicar la familia de fuentes <a href="https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</a> </td>
-          <td>todas las etiquetas</td>
-        </tr>
-        <tr>
-          <td>cambiar el color del fondo de un elemento &lt;section&gt; al pasar el mouse por encima</td>
-          <td>los elementos &lt;section&gt; con ciertos identificadores</td>
-        </tr>
-        <tr>
-          <td>eliminar el subrayado</td>
-          <td>todas las etiquetas &lt;a&gt;</td>
-        </tr>
-        <tr>
-          <td>eliminar las viñetas</td>
-          <td>todas las etiquetas &lt;li&gt;</td>
-        </tr>
-        <tr>
-          <td>centrar</td>
-          <td>la etiqueta &lt;ul&gt; que se encuentra dentro &lt;footer&gt;</td>
-        </tr>
-      </tbody>
-    </table>
+  <table>
+    <thead>
+      <tr>
+        <th>[Efecto CSS]</th>
+        <th>[Selector de etiqueta(s)]</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>aplicar la familia de fuentes <a href="https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</a> </td>
+        <td>todas las etiquetas</td>
+      </tr>
+      <tr>
+        <td>cambiar el color del fondo de un elemento &lt;section&gt; al pasar el mouse por encima</td>
+        <td>los elementos &lt;section&gt; con ciertos identificadores</td>
+      </tr>
+      <tr>
+        <td>eliminar el subrayado</td>
+        <td>todas las etiquetas &lt;a&gt;</td>
+      </tr>
+      <tr>
+        <td>eliminar las viñetas</td>
+        <td>todas las etiquetas &lt;li&gt;</td>
+      </tr>
+      <tr>
+        <td>centrar</td>
+        <td>la etiqueta &lt;ul&gt; que se encuentra dentro &lt;footer&gt;</td>
+      </tr>
+    </tbody>
+  </table>
 
 2. (STOP 6) Actualice el navegador y compruebe los cambios.
 3. Versiona local y remotamente el repositorio **curriculum**.
