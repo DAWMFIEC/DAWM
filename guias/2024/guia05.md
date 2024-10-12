@@ -154,23 +154,19 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
     </tbody>
   </table>
 
+4. (STOP 3) Actualice el navegador y compruebe los cambios.
+
   <div class="tabs">
-
 	  <h3 id="tablist-1">Flex vs Grid</h3>
-
 	  <div role="tablist" aria-labelledby="tablist-1" class="manual">
-
 	    <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
 	      <span class="focus">Flex - columnas</span>
 	    </button>
-
 	    <button id="tab-3" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-3" tabindex="-1">
 	      <span class="focus">Grid - area</span>
 	    </button>
-
 	  </div>
-
-	  <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
+	  <div id="tabpanel-3" role="tabpanel" aria-labelledby="tab-3" class="is-hidden">
 			<details>
 				<summary><div>Haga click aquí para ver la solución</div></summary>
 				<pre lang="css"><code>
@@ -188,8 +184,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 				</code></pre>
 			</details>
 	  </div>
-
-	  <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
+	  <div id="tabpanel-4" role="tabpanel" aria-labelledby="tab-4" class="is-hidden">
 			<details>
 				<summary><div>Haga click aquí para ver la solución</div></summary>
 				<pre lang="css"><code>
@@ -207,10 +202,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 				</code></pre>
 			</details>
 	  </div>
-
 	</div>
-
-4. (STOP 3) Actualice el navegador y compruebe los cambios.
 5. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
