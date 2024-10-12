@@ -63,12 +63,12 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 2. Agregue la regla CSS al final de la hoja de estilos.
 
-		```css
-		nav ul {
-			display: flex;
-			justify-content: space-around;
-		}
-		```
+	```css
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+	```
 
 3. Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
@@ -78,12 +78,12 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 2. Agregue la regla CSS al final de la hoja de estilos.
 
-		```css
-		section form {
-			display: grid;
-			row-gap: 0.5rem;
-		}
-		```
+	```css
+	section form {
+		display: grid;
+		row-gap: 0.5rem;
+	}
+	```
 
 3. (STOP 2) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
@@ -105,11 +105,11 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 2. En la hoja de estilo externa _'stylesheets/style.css'_ utilice el **estilo temporal**:
 
-		```css
-		#resumen {
-			margin: 1.2% 33%;
-		}
-		```
+	```css
+	#resumen {
+		margin: 1.2% 33%;
+	}
+	```
 
 3. En la hoja de estilo externa _'stylesheets/style.css'_ utilice el **diseño temporal**:
 
@@ -123,10 +123,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 ### Documentación
 
-* En [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) existe una explicación extensa del uso de Grid.
-  - Otras opciones: [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/) y [grid.layoutit](https://grid.layoutit.com/).
-* En [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) existe una explicación extensa del uso de Flexbox.
-  - Otras opciones: [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/) y [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/).
+* En [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) existe una explicación extensa del uso de Grid. Otras opciones: [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/) y [grid.layoutit](https://grid.layoutit.com/).
+* En [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) existe una explicación extensa del uso de Flexbox. Otras opciones: [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/) y [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/).
 
 ### Fundamental
 
