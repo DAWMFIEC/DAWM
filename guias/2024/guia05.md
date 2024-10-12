@@ -96,7 +96,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	<section id="resumen">
 		<h2 class="subtitle">Resumen</h2>
 		<p>Breve descripción de tus habilidades y experiencia.</p>
-		<img id="photo" src="https://placehold.co/300x200" alt="Placeholder de imagen">
+		<img id="photo" src="https://placehold.co/300x200" 
+				 alt="Placeholder de imagen">
 	</section>
 	```
 
