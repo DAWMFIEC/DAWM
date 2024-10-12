@@ -93,16 +93,17 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 1. En el navegador, identifique los elementos:
 
 	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
+		
+		```html
+		...
+		<section id="resumen">
+	    <h2 class="subtitle">Resumen</h2>
+	    <p>Breve descripción de tus habilidades y experiencia.</p>
+	    <img id="photo" src="https://placehold.co/300x200" alt="Placeholder de imagen">
+	  </section>
+		...
+		```
 
-	```html
-	...
-	<section id="resumen">
-    <h2 class="subtitle">Resumen</h2>
-    <p>Breve descripción de tus habilidades y experiencia.</p>
-    <img id="photo" src="https://placehold.co/300x200" alt="Placeholder de imagen">
-  </section>
-	...
-	```
 
 2. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 
