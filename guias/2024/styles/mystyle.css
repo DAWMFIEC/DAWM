@@ -90,9 +90,11 @@ pre.objective {
   word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+/*IMG*/
+
 img.img-centered {
   margin: 0 15%;
-  width: 70%;
+  width: 55%;
 }
 
 img.img-focus {
