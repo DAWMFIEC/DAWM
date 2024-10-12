@@ -90,9 +90,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 #### Diseño: Flex vs Grid
 
-1. Utilice:
-
-	- Los elementos en el archivo _index.html_:
+1. Considere los elementos en el archivo _index.html_ y su vista previa en el navegador:
 
 	```html
 	<section id="resumen">
@@ -102,8 +100,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 				 alt="Placeholder de imagen">
 	</section>
 	```
-
-	- Con su vista previa en el navegador:
 
 	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
@@ -117,7 +113,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 3. En la hoja de estilo externa _'stylesheets/style.css'_ utilice el **diseño temporal**:
 
-	
+
 
 4. (STOP 3) Actualice el navegador y compruebe los cambios.
 
