@@ -175,14 +175,23 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<summary><div>Haga click aquí para ver la solución</div></summary>
 					<pre lang="css"><code>
 
-						#photo {
-							width: 200px;
-							height: auto;
+						#resumen {
+						  display: flex;
+						  flex-direction: column;
+						  flex-wrap: wrap; 
+
+						  height: 160px;
+
+						  align-content: space-evenly;
+						  justify-content: space-around;
+
 						}
 
-						.subtitle {
-							color: rgb(107 114 128 / 0.89);
-							text-transform: uppercase;
+						#resumen h2 {
+						  width: 50%;
+						}
+						#resumen p {
+						  width: 50%;
 						}
 
 					</code></pre>
@@ -194,14 +203,24 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<summary><div>Haga click aquí para ver la solución</div></summary>
 					<pre lang="css"><code>
 
-						#photo {
-							width: 200px;
-							height: auto;
+						#resumen {
+						  display: grid;
+						  grid-template-areas: "A D"
+						                       "B D";
+
+						  align-items: center;
 						}
 
-						.subtitle {
-							color: rgb(107 114 128 / 0.89);
-							text-transform: uppercase;
+						#resumen h2 {
+						  grid-area: A;
+						}
+
+						#resumen p {
+						  grid-area: B;
+						}
+
+						#resumen img {
+						  grid-area: D;
 						}
 
 					</code></pre>
