@@ -219,10 +219,12 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
       /* borde redondeado con un radio de 5 píxeles */
 
-      /* en navegadores basados en WebKit, como versiones antiguas de Safari y Chrome. */
+      /* en navegadores basados en WebKit, 
+      como versiones antiguas de Safari y Chrome. */
       -webkit-border-radius: 5px; 
 
-      /* en navegadores antiguos de Mozilla, como Firefox.  */
+      /* en navegadores antiguos de Mozilla, 
+      como Firefox.  */
       -moz-border-radius: 5px;    
 
       /* en navegadores modernos. */
