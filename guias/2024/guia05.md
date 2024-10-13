@@ -25,12 +25,12 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 2. Agregue la regla CSS al final de la hoja de estilos.
 
-		```css
-		nav ul {
-			display: flex;
-			justify-content: space-around;
-		}
-		```
+	```css
+	nav ul {
+		display: flex;
+		justify-content: space-around;
+	}
+	```
 
 3. Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
@@ -40,12 +40,12 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 1. Edite la hoja de estilo externa _'stylesheets/style.css'_.
 2. Agregue la regla CSS al final de la hoja de estilos.
 
-		```css
-		section form {
-			display: grid;
-			row-gap: 0.5rem;
-		}
-		```
+	```css
+	section form {
+		display: grid;
+		row-gap: 0.5rem;
+	}
+	```
 
 3. (STOP 1) Actualice el navegador y compruebe los cambios.
 4. Versiona local y remotamente el repositorio **curriculum**.
@@ -54,142 +54,142 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. Considere los elementos en el archivo _index.html_ y su vista previa en el navegador:
 
-		```html
-		<section id="resumen">
-			<h2 class="subtitle">Resumen</h2>
-			<p>Breve descripción de tus habilidades y experiencia.</p>
-			<img id="photo" src="https://placehold.co/300x200" 
-					 alt="Placeholder de imagen">
-		</section>
-		```
+	```html
+	<section id="resumen">
+		<h2 class="subtitle">Resumen</h2>
+		<p>Breve descripción de tus habilidades y experiencia.</p>
+		<img id="photo" src="https://placehold.co/300x200" 
+				 alt="Placeholder de imagen">
+	</section>
+	```
 
-		<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
+	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
 2. Observe el diseño final de los elementos: 
 
-		<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
+	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
 
 2. En la hoja de estilo externa _'stylesheets/style.css'_ utilice el **estilo temporal**:
 
-		```css
-		#resumen {
-			margin: 1.2% 33%;
-		}
-		```
+	```css
+	#resumen {
+		margin: 1.2% 33%;
+	}
+	```
 
 3. En la hoja de estilo externa _'stylesheets/style.css'_ agregue el **diseño temporal**:
 
-		<table>
-			<thead>
-				<tr>
-					<th colspan="2">Selector CSS</th>
-					<th>Propiedad CSS</th>
-					<th>Valor CSS</th>
-					<th>MDN</th>
-				</tr>
-			</thead>
-			<tbody>
-				<tr>
-					<td rowspan="2">Universal</td>
-					<td rowspan="2">*</td>
-					<td> <b>font-family</b> </td>
-					<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-					<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-				</tr>
-				<tr>
-					<td> <b>font-weight</b> </td>
-					<td> <i>200</i> </td>
-					<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
-				</tr>
-				<tr>
-					<td rowspan="3">Por elemento</td>
-					<td rowspan="2">h1</td>
-					<td> <b>text-align</b> </td>
-					<td> <i>center</i> </td>
-					<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
-				</tr>
-				<tr>
-					<td> <b>font-weight</b> </td>
-					<td> <i>bold</i> </td>
-					<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
-				</tr>
-			</tbody>
-		</table>
+	<table>
+		<thead>
+			<tr>
+				<th colspan="2">Selector CSS</th>
+				<th>Propiedad CSS</th>
+				<th>Valor CSS</th>
+				<th>MDN</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td rowspan="2">Universal</td>
+				<td rowspan="2">*</td>
+				<td> <b>font-family</b> </td>
+				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+			</tr>
+			<tr>
+				<td> <b>font-weight</b> </td>
+				<td> <i>200</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+			</tr>
+			<tr>
+				<td rowspan="3">Por elemento</td>
+				<td rowspan="2">h1</td>
+				<td> <b>text-align</b> </td>
+				<td> <i>center</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
+			</tr>
+			<tr>
+				<td> <b>font-weight</b> </td>
+				<td> <i>bold</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
+			</tr>
+		</tbody>
+	</table>
 
-		  <div class="tabs">
+	  <div class="tabs">
 
-			  <h3 id="tablist-1">Solución</h3>
+		  <h3 id="tablist-1">Solución</h3>
 
-			  <div role="tablist" aria-labelledby="tablist-1" class="manual">
+		  <div role="tablist" aria-labelledby="tablist-1" class="manual">
 
-			    <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
-			      <span class="focus">Flex - columnas</span>
-			    </button>
+		    <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
+		      <span class="focus">Flex - columnas</span>
+		    </button>
 
-			    <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
-			      <span class="focus">Grid - areas</span>
-			    </button>
+		    <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
+		      <span class="focus">Grid - areas</span>
+		    </button>
 
-			  </div>
+		  </div>
 
-			  <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
-					<details>
-						<summary><div>Haga click aquí para ver la solución</div></summary>
-						<pre lang="css"><code>
+		  <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
+				<details>
+					<summary><div>Haga click aquí para ver la solución</div></summary>
+					<pre lang="css"><code>
 
-							#resumen {
-							  display: flex;
-							  flex-direction: column;
-							  flex-wrap: wrap; 
+						#resumen {
+						  display: flex;
+						  flex-direction: column;
+						  flex-wrap: wrap; 
 
-							  height: 160px;
+						  height: 160px;
 
-							  align-content: space-evenly;
-							  justify-content: space-around;
+						  align-content: space-evenly;
+						  justify-content: space-around;
 
-							}
+						}
 
-							#resumen h2 {
-							  width: 50%;
-							}
-							#resumen p {
-							  width: 50%;
-							}
+						#resumen h2 {
+						  width: 50%;
+						}
+						#resumen p {
+						  width: 50%;
+						}
 
-						</code></pre>
-					</details>
-			  </div>
+					</code></pre>
+				</details>
+		  </div>
 
-			  <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
-					<details>
-						<summary><div>Haga click aquí para ver la solución</div></summary>
-						<pre lang="css"><code>
+		  <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
+				<details>
+					<summary><div>Haga click aquí para ver la solución</div></summary>
+					<pre lang="css"><code>
 
-							#resumen {
-							  display: grid;
-							  grid-template-areas: "A D"
-							                       "B D";
+						#resumen {
+						  display: grid;
+						  grid-template-areas: "A D"
+						                       "B D";
 
-							  align-items: center;
-							}
+						  align-items: center;
+						}
 
-							#resumen h2 {
-							  grid-area: A;
-							}
+						#resumen h2 {
+						  grid-area: A;
+						}
 
-							#resumen p {
-							  grid-area: B;
-							}
+						#resumen p {
+						  grid-area: B;
+						}
 
-							#resumen img {
-							  grid-area: D;
-							}
+						#resumen img {
+						  grid-area: D;
+						}
 
-						</code></pre>
-					</details>
-			  </div>
+					</code></pre>
+				</details>
+		  </div>
 
-			</div>
+		</div>
 
 4. (STOP 3) Actualice el navegador y compruebe los cambios.
 5. Versiona local y remotamente el repositorio **curriculum**.
