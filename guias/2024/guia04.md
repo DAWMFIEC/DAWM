@@ -43,7 +43,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
     <table>
       <thead>
         <tr>
-          <th colspan="2">Selector CSS</th>
+          <th colspan="2" class="th-center">Selector CSS</th>
           <th>Propiedad y Valor CSS</th>
           <th>MDN</th>
         </tr>
@@ -129,7 +129,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
     <table>
       <thead>
         <tr>
-          <th colspan="2">Selector CSS</th>
+          <th colspan="2" class="th-center">Selector CSS</th>
           <th>Propiedad y Valor CSS</th>
           <th>MDN</th>
         </tr>

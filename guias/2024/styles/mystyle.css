@@ -65,6 +65,12 @@ details pre, details pre code {
 
 }
 
+/* STYLING */
+
+th.th-center {
+  text-align: center;
+}
+
 span.explanation {
   font-size: 0.8rem;
 }
