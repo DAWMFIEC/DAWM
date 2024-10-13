@@ -44,7 +44,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
       <thead>
         <tr>
           <th colspan="2" class="th-center">Selector CSS</th>
-          <th>Efecto CSS</th>
+          <th>Propiedad y Valor CSS</th>
           <th>MDN</th>
         </tr>
       </thead>
@@ -53,13 +53,13 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
           <td rowspan="2">Universal</td>
           <td rowspan="2">*</td>
           <td> 
-            Familia de fuentes <span class="explanation">'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</span> 
+            <b>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</b>
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
         </tr>
         <tr>
           <td> 
-            Grosor de la fuente <span class="explanation">200</span>
+            <b>font-weight: 200;</b>
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
         </tr>
@@ -67,13 +67,13 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
           <td rowspan="3">Por elemento</td>
           <td rowspan="2">h1</td>
           <td> 
-            Alineación del texto <span class="explanation">centrado</span>
+            <b>text-align: center;</b>
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
         </tr>
         <tr>
           <td> 
-            Grosor de la fuente <span class="explanation">negrita</span>
+            <b>font-weight: bold;</b>
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
         </tr>
@@ -165,8 +165,8 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
         }
 
         .subtitle {
-          color: rgb(107 114 128 / 0.89); /* Color del texto */
-          text-transform: uppercase; /* Transformación del texto */
+          color: rgb(107 114 128 / 0.89); /* Color del texto en rgba */
+          text-transform: uppercase; /* Transformación del texto a mayúsculas */
         }
 
       </code></pre>
@@ -184,12 +184,12 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
     ```css
     section {
-      margin: 4px 2px 8px 2px;
+      margin: 4px 2px 8px 2px; /* margen (espacio externo) superior, derecho, abajo e izquierda */
 
-      border: 0.2pt solid #cedddd;
+      border: 0.2pt solid #cedddd; /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
 
-      padding: 1.5% 0.8%;
-      padding-left: 1.2%;
+      padding: 1.5% 0.8%; /* relleno (espacio interno) de 1.5% en la parte superior e inferior y 0.8% a los lados derecho e izquierdo. */
+      padding-left: 1.2%; /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, dándoles un valor específico de 1.2% para esos lados. */
       padding-right: 1.2%; 
     }
     ```
@@ -205,9 +205,12 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
     section {
       ...
 
-      -webkit-border-radius: 5px;
-      -moz-border-radius: 5px;
-      border-radius: 5px;
+
+      /* borde redondeado con un radio de 5 píxeles */
+      
+      -webkit-border-radius: 5px; /* en navegadores basados en WebKit, como versiones antiguas de Safari y Chrome. */
+      -moz-border-radius: 5px;    /* en navegadores antiguos de Mozilla, como Firefox.  */
+      border-radius: 5px;         /* en navegadores modernos. */
     }
     ```
 
@@ -217,6 +220,9 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
     section {
       ...
       
+
+      /* sombra a un elemento */
+
       -webkit-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
       -moz-box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
       box-shadow: 3px 3px 1px 0px rgba(235, 234, 234, 0.60);
