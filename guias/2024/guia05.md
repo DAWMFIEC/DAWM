@@ -130,13 +130,13 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						</tr>
 						<tr>
 							<td>
-								<b>justify-content: space-around;</b><br> <span class="explanation">/* Ajuste del eje principal */</span>
+								<b>justify-content: space-around;</b><br> <span class="explanation">/* Ajuste respecto con el eje principal */</span>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
-								<b>align-content: space-evenly;</b><br> <span class="explanation">/* Ajuste del eje transversal */</span>
+								<b>align-content: space-evenly;</b><br> <span class="explanation">/* Ajuste respecto con el eje transversal */</span>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
 						</tr>
