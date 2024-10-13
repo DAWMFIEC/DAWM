@@ -52,7 +52,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 #### Diseño: Flex vs Grid
 
-1. Considere los elementos en el archivo _index.html_ y su vista previa en el navegador:
+1. Identifique los elementos en el archivo _index.html_ y su vista previa en el navegador:
 
 	```html
 	<section id="resumen">
@@ -95,31 +95,33 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							<th>Elemento</th>
 							<th>Selector</th>
 							<th>Propiedad y Valor</th>
-							<th>MDN</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>contenedor</td>
 							<td>  <b>#resumen</b> </td>
-							<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+							<td> 
+								<i>  
+									display: flex; <br>
+								  flex-direction: column;<br>
+								  flex-wrap: wrap; <br>
+
+								  height: 160px;<br>
+
+								  align-content: space-evenly;<br>
+								  justify-content: space-around;
+							  </i>
+						  </td>
 						</tr>
 						<tr>
-							<td rowspan="3">contenido</td>
-							<td>  <b>#resumen h2</b> </td>
-							<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-						</tr>
-						<tr>
-							<td> <b>#resumen p</b> </td>
-							<td> <i>200</i> </td>
-							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+							<td rowspan="2">contenido</td>
+							<td>  <b>#resumen h2</b> y <b>#resumen p</b> </td>
+							<td> <i>width: 50%;</i> </td>
 						</tr>
 						<tr>
 							<td> <b>#resumen img</b> </td>
-							<td> <i>200</i> </td>
-							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+							<td> <i>max-width: 50%;</i> </td>
 						</tr>
 					</tbody>
 				</table>
@@ -140,10 +142,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 						}
 
-						#resumen h2 {
-						  width: 50%;
-						}
-						#resumen p {
+						#resumen h2, #resumen p {
 						  width: 50%;
 						}
 
@@ -163,31 +162,35 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							<th>Elemento</th>
 							<th>Selector</th>
 							<th>Propiedad y Valor</th>
-							<th>MDN</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
 							<td>contenedor</td>
 							<td>  <b>#resumen</b> </td>
-							<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+							<td>
+								<i>
+									display: grid; <br>
+								  grid-template-areas: "A D" <br>
+								                       "B D";<br>
+
+								  align-items: center; <br>
+								  justify-content: space-around;
+								</i> 
+						  </td>
 						</tr>
 						<tr>
 							<td rowspan="3">contenido</td>
 							<td>  <b>#resumen h2</b> </td>
-							<td> <i>center</i> </td>
-							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+							<td> <i>grid-area: A;</i> </td>
 						</tr>
 						<tr>
 							<td> <b>#resumen p</b> </td>
-							<td> <i>200</i> </td>
-							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+							<td> <i>grid-area: B;</i> </td>
 						</tr>
 						<tr>
 							<td> <b>#resumen img</b> </td>
-							<td> <i>200</i> </td>
-							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+							<td> <i>grid-area: D;</i> </td>
 						</tr>
 					</tbody>
 				</table>
