@@ -44,8 +44,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
       <thead>
         <tr>
           <th colspan="2">Selector CSS</th>
-          <th>Propiedad CSS</th>
-          <th>Valor CSS</th>
+          <th>Propiedad y Valor CSS</th>
           <th>MDN</th>
         </tr>
       </thead>
@@ -53,25 +52,32 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
         <tr>
           <td rowspan="2">Universal</td>
           <td rowspan="2">*</td>
-          <td> <b>font-family</b><br>Familia de fuentes </td>
-          <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+          <td> 
+            <b>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</b>
+            <br> <span class="explanation">Familia de fuentes</span> 
+          </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>font-weight</b><br>Grosor de la fuentes </td>
-          <td> <i>200</i> </td>
+          <td> 
+            <b>font-weight: 200</b>
+            <br> <span class="explanation">Grosor de la fuentes</span>
+          </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
         </tr>
         <tr>
           <td rowspan="3">Por elemento</td>
           <td rowspan="2">h1</td>
-          <td> <b>text-align</b><br>Alineación del texto </td>
-          <td> <i>center</i> </td>
+          <td> 
+            <b>text-align: center</b>
+            <br> <span class="explanation">Alineación del texto</span>
+          </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>font-weight</b> </td>
-          <td> <i>bold</i> </td>
+          <td> 
+            <b>font-weight: bold</b> 
+          </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
         </tr>
       </tbody>
@@ -124,8 +130,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
       <thead>
         <tr>
           <th colspan="2">Selector CSS</th>
-          <th>Propiedad CSS</th>
-          <th>Valor CSS</th>
+          <th>Propiedad y Valor CSS</th>
           <th>MDN</th>
         </tr>
       </thead>
@@ -133,25 +138,21 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
         <tr>
           <td rowspan="2">Por identificador</td>
           <td rowspan="2">#foto</td>
-          <td> <b>width</b> </td>
-          <td> <i>200px</i> </td>
+          <td> <b>width: 200px</b> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>height</b> </td>
-          <td> <i>auto</i> </td>
+          <td> <b>height: auto</b> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">Ir</a> </td>
         </tr>
         <tr>
           <td rowspan="2">Por clase</td>
           <td rowspan="2">.subtitle</td>
-          <td> <b>color</b> </td>
-          <td> <i>rgb(107 114 128 / 0.89)</i> </td>
+          <td> <b>color: rgb(107 114 128 / 0.89)</b> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Applying_color">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>text-transform</b> </td>
-          <td> <i>uppercase</i> </td>
+          <td> <b>text-transform: uppercase</b> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">Ir</a> </td>
         </tr>
       </tbody>

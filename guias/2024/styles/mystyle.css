@@ -65,6 +65,10 @@ details pre, details pre code {
 
 }
 
+span.explanation {
+  font-size: 0.8rem;
+}
+
 /* PRE-PROMPT */
 
 pre.prompt {
