@@ -44,7 +44,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
       <thead>
         <tr>
           <th colspan="2" class="th-center">Selector CSS</th>
-          <th>Propiedad y Valor CSS</th>
+          <th>Efecto CSS</th>
           <th>MDN</th>
         </tr>
       </thead>
@@ -53,13 +53,13 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
           <td rowspan="2">Universal</td>
           <td rowspan="2">*</td>
           <td> 
-            <b>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</b> <span class="explanation">/* Familia de fuentes */</span> 
+            Familia de fuentes <span class="explanation">'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</span> 
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
         </tr>
         <tr>
           <td> 
-            <b>font-weight: 200</b> <span class="explanation">/* Grosor de la fuentes */</span>
+            Grosor de la fuente <span class="explanation">200</span>
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
         </tr>
@@ -67,13 +67,13 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
           <td rowspan="3">Por elemento</td>
           <td rowspan="2">h1</td>
           <td> 
-            <b>text-align: center</b> <span class="explanation">/* Alineación del texto */</span>
+            Alineación del texto <span class="explanation">centrado</span>
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
         </tr>
         <tr>
           <td> 
-            <b>font-weight: bold</b> 
+            Grosor de la fuente <span class="explanation">negrita</span>
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
         </tr>
@@ -86,12 +86,12 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
         * {
           font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia de fuentes */
-          font-weight: 200; /* Grosor de la fuentes */
+          font-weight: 200; /* Grosor de la fuente 200 */
         }
 
         h1 {
           text-align: center; /* Alineación del texto */
-          font-weight: bold;
+          font-weight: bold; /* Grosor de la fuente negrita */
         }
 
       </code></pre>
@@ -127,7 +127,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
       <thead>
         <tr>
           <th colspan="2" class="th-center">Selector CSS</th>
-          <th>Propiedad y Valor CSS</th>
+          <th>Efecto CSS</th>
           <th>MDN</th>
         </tr>
       </thead>
@@ -135,21 +135,21 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
         <tr>
           <td rowspan="2">Por identificador</td>
           <td rowspan="2">#foto</td>
-          <td> <b>width: 200px</b> <span class="explanation">/* Ancho del elemento */</span> </td>
+          <td> Ancho del elemento <span class="explanation">200px</span> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>height: auto</b> <span class="explanation">/* Alto del elemento */</span> </td>
+          <td> Alto del elemento <span class="explanation">automático</span> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">Ir</a> </td>
         </tr>
         <tr>
           <td rowspan="2">Por clase</td>
           <td rowspan="2">.subtitle</td>
-          <td> <b>color: rgb(107 114 128 / 0.89)</b> <span class="explanation">/* Color del texto */</span> </td>
+          <td> Color del texto <span class="explanation">color: rgb(107 114 128 / 0.89)</span> </td>
           <td> <a href="https://developer.mozilla.org/es/docs/Web/CSS/color">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>text-transform: uppercase</b> <span class="explanation">/* Transformación del texto */</span> </td>
+          <td> Transformación del texto a <span class="explanation">mayúsculas</span> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">Ir</a> </td>
         </tr>
       </tbody>
