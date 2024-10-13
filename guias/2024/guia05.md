@@ -92,11 +92,13 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 				<td>contenedor</td>
 				<td>  <b>#resumen</b> </td>
 				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
-				<td rowspan="3">contenido</td>
+				<td rowspan="4">contenido</td>
 				<td>  <b>#resumen</b> </td>
 				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
 				<td> <b>#resumen h2</b> </td>
@@ -117,9 +119,10 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 				<td>contenedor</td>
 				<td>  <b>#resumen</b> </td>
 				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
-				<td rowspan="3">contenido</td>
+				<td rowspan="4">contenido</td>
 				<td>  <b>#resumen</b> </td>
 				<td> <i>center</i> </td>
 				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
