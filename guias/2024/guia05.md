@@ -54,16 +54,30 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. Considere los elementos en el archivo _index.html_ y su vista previa en el navegador:
 
-	```html
-	<section id="resumen">
-		<h2 class="subtitle">Resumen</h2>
-		<p>Breve descripción de tus habilidades y experiencia.</p>
-		<img id="photo" src="https://placehold.co/300x200" 
-				 alt="Placeholder de imagen">
-	</section>
-	```
-
-	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
+	<table>
+		<caption>table title and/or explanatory text</caption>
+		<thead>
+			<tr>
+				<th>HTML</th>
+				<th>Vista Previa</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>
+					&lt;section id="resumen"&gt;
+						&lt;h2 class="subtitle"&gt;Resumen&lt;/h2&gt;
+						&lt;p&gt;Breve descripción de tus habilidades y experiencia.&lt;/p&gt;
+						&lt;img id="photo" src="https://placehold.co/300x200" 
+								 alt="Placeholder de imagen"&gt;
+					&lt;/section&gt;
+				</td>
+				<td>
+					<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
+				</td>
+			</tr>
+		</tbody>
+	</table>
 
 2. En la hoja de estilo externa _'stylesheets/style.css'_, utilice el **regla CSS temporal**:
 
