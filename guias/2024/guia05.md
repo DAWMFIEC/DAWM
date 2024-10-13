@@ -94,24 +94,42 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<thead>
 						<tr>
 							<th>Selector</th>
+							<th>Efecto</th>
 							<th>Propiedad y Valor</th>
+							<th>MDN</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>  <b>#resumen</b> </td>
-							<td> 
-								<i>  
-									display: flex; <br>
-								  flex-direction: column;<br>
-								  flex-wrap: wrap; <br>
-
-								  height: 20vh;<br>
-
-								  align-content: space-evenly;<br>
-								  justify-content: space-around;
-							  </i>
-						  </td>
+							<td rowspan="6">  <b>#resumen</b> </td>
+							<td>1 dirección</td>
+							<td><i>display: flex;</i></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex">Ir</a></td>
+						</tr>
+						<tr>
+							<td>Por columna</td>
+							<td><i>flex-direction: column;</i></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
+						</tr>
+						<tr>
+							<td>Apilamiento</td>
+							<td><i>flex-wrap: wrap;</i></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
+						</tr>
+						<tr>
+							<td>Altura</td>
+							<td><i>height: 20vh;</i></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height">Ir</a></td>
+						</tr>
+						<tr>
+							<td>Ajuste eje transversal</td>
+							<td><i>align-content: space-evenly;</i></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
+						</tr>
+						<tr>
+							<td>Ajuste eje principal</td>
+							<td><i>justify-content: space-around;</i></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
 						</tr>
 					</tbody>
 				</table>
