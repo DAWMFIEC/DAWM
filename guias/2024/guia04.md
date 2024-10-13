@@ -285,12 +285,12 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
           <td>todas las etiquetas</td>
         </tr>
         <tr>
-          <td>al pasar el mouse por encima subrayar</td>
-          <td>los elementos &lt;a&gt;</td>
-        </tr>
-        <tr>
           <td>eliminar el subrayado</td>
           <td>todas las etiquetas &lt;a&gt;</td>
+        </tr>
+        <tr>
+          <td>al pasar el mouse por encima subrayar</td>
+          <td>todos los elementos &lt;a&gt; dentro del elemento &lt;nav&gt;</td>
         </tr>
         <tr>
           <td>eliminar las viñetas</td>
