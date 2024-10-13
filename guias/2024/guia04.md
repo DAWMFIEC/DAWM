@@ -269,7 +269,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 #### CSS Avanzado
 
-1. Utiliza [ChatGPT](https://chatgpt.com/) o [Gemini](https://gemini.google.com/app) para generar las siguientes reglas CSS:
+1. Utilice [ChatGPT](https://chatgpt.com/) o [Gemini](https://gemini.google.com/app) para generar las siguientes reglas CSS:
 
     <pre class="prompt">Como desarrollador de aplicaciones web, genera la regla CSS para <ins>[Efecto CSS]</ins> a <ins>[Selector de etiqueta(s)]</ins>.
     </pre>
