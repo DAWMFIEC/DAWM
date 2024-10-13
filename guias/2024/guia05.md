@@ -159,35 +159,20 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					</thead>
 					<tbody>
 						<tr>
-							<td>  <b>#resumen h2</b> </td>
-							<td> <i>width: 50%;</i> </td>
+							<td><b>#resumen h2</b></td>
+							<td><b>width: 50%;</b></td>
+							<td></td>
 						</tr>
 						<tr>
-							<td>  <b>#resumen p</b> </td>
-							<td> <i>width: 50%;</i> </td>
+							<td><b>#resumen p</b></td>
+							<td><b>width: 50%;</b></td>
+							<td></td>
 						</tr>
 						<tr>
-							<td> <b>#resumen img</b> </td>
-							<td> <i>max-width: 50%;</i> </td>
+							<td><b>#resumen img</b></td>
+							<td><b>max-width: 50%;</b></td>
+							<td><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/max-width">Ir</a></td>
 						</tr>
-
-						<tr>
-							<td rowspan="6">  <b>#resumen</b> </td>
-							<td>1 dirección</td>
-							<td><i>display: flex;</i></td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex">Ir</a></td>
-						</tr>
-						<tr>
-							<td>Por columna</td>
-							<td><i>flex-direction: column;</i></td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
-						</tr>
-						<tr>
-							<td>Apilamiento</td>
-							<td><i>flex-wrap: wrap;</i></td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
-						</tr>
-
 					</tbody>
 				</table>
 
