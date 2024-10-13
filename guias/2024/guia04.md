@@ -53,15 +53,13 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
           <td rowspan="2">Universal</td>
           <td rowspan="2">*</td>
           <td> 
-            <b>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</b>
-            <br> <span class="explanation">Familia de fuentes</span> 
+            <b>font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</b> <span class="explanation">/* Familia de fuentes */</span> 
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
         </tr>
         <tr>
           <td> 
-            <b>font-weight: 200</b>
-            <br> <span class="explanation">Grosor de la fuentes</span>
+            <b>font-weight: 200</b> <span class="explanation">/* Grosor de la fuentes */</span>
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
         </tr>
@@ -69,8 +67,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
           <td rowspan="3">Por elemento</td>
           <td rowspan="2">h1</td>
           <td> 
-            <b>text-align: center</b>
-            <br> <span class="explanation">Alineación del texto</span>
+            <b>text-align: center</b> <span class="explanation">/* Alineación del texto */</span>
           </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
         </tr>
@@ -138,21 +135,21 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
         <tr>
           <td rowspan="2">Por identificador</td>
           <td rowspan="2">#foto</td>
-          <td> <b>width: 200px</b> </td>
+          <td> <b>width: 200px</b> <span class="explanation">/* Ancho del elemento */</span> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/width">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>height: auto</b> </td>
+          <td> <b>height: auto</b> <span class="explanation">/* Alto del elemento */</span> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/height">Ir</a> </td>
         </tr>
         <tr>
           <td rowspan="2">Por clase</td>
           <td rowspan="2">.subtitle</td>
-          <td> <b>color: rgb(107 114 128 / 0.89)</b> </td>
+          <td> <b>color: rgb(107 114 128 / 0.89)</b> <span class="explanation">/* Color del texto */</span> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Applying_color">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>text-transform: uppercase</b> </td>
+          <td> <b>text-transform: uppercase</b> <span class="explanation">/* Transformación del texto */</span> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform">Ir</a> </td>
         </tr>
       </tbody>

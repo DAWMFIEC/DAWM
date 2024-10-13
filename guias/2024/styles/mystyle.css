@@ -73,6 +73,7 @@ th.th-center {
 
 span.explanation {
   font-size: 0.8rem;
+  font-style: italic;
 }
 
 /* PRE-PROMPT */
