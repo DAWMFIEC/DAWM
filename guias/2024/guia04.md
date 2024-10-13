@@ -85,13 +85,21 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
       <pre lang="css"><code>
 
         * {
-          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Familia de fuentes */
-          font-weight: 200; /* Grosor de la fuente 200 */
+
+          /* Familia de fuentes */
+          font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+          /* Grosor de la fuente 200 */
+          font-weight: 200; 
         }
 
         h1 {
-          text-align: center; /* Alineación del texto */
-          font-weight: bold; /* Grosor de la fuente negrita */
+
+          /* Alineación del texto */
+          text-align: center;
+
+          /* Grosor de la fuente negrita */ 
+          font-weight: bold; 
         }
 
       </code></pre>
@@ -160,13 +168,21 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
       <pre lang="css"><code>
 
         #photo {
-          width: 200px; /* Ancho del elemento */
-          height: auto; /* Alto del elemento */
+
+          /* Ancho del elemento */
+          width: 200px; 
+
+          /* Alto del elemento */
+          height: auto; 
         }
 
         .subtitle {
-          color: rgb(107 114 128 / 0.89); /* Color del texto en rgba */
-          text-transform: uppercase; /* Transformación del texto a mayúsculas */
+
+          /* Color del texto en rgba */
+          color: rgb(107 114 128 / 0.89);
+
+          /* Transformación del texto a mayúsculas */ 
+          text-transform: uppercase; 
         }
 
       </code></pre>
