@@ -83,6 +83,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 				<th>Opción</th>
 				<th>Elemento</th>
 				<th>Propiedad y Valor</th>
+				<th>MDN</th>
 			</tr>
 		</thead>
 		<tbody>
@@ -94,31 +95,38 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 			<tr>
 				<td> contenido <b>#resumen h2</b> </td>
 				<td> <i>200</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
 				<td> contenido <b>#resumen p</b> </td>
 				<td> <i>200</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
 				<td> contenido <b>#resumen img</b> </td>
 				<td> <i>200</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
 				<td rowspan="3">Grid - areas</td>
 				<td> contenedor <b>#resumen</b> </td>
 				<td> <i>center</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
 				<td> contenido <b>#resumen h2</b> </td>
 				<td> <i>200</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
 				<td> contenido <b>#resumen p</b> </td>
 				<td> <i>200</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
 				<td> contenido <b>#resumen img</b> </td>
 				<td> <i>200</i> </td>
+				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 		</tbody>
 	</table>
