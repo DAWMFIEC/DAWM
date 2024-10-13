@@ -77,156 +77,156 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
 
-  <div class="tabs">
+	  <div class="tabs">
 
-	  <h3 id="tablist-1">Opciones</h3>
+		  <h3 id="tablist-1">Opciones</h3>
 
-	  <div role="tablist" aria-labelledby="tablist-1" class="manual">
+		  <div role="tablist" aria-labelledby="tablist-1" class="manual">
 
-	    <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
-	      <span class="focus">Flex - columnas</span>
-	    </button>
+		    <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
+		      <span class="focus">Flex - columnas</span>
+		    </button>
 
-	    <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
-	      <span class="focus">Grid - areas</span>
-	    </button>
+		    <button id="tab-2" type="button" role="tab" aria-selected="false" aria-controls="tabpanel-2" tabindex="-1">
+		      <span class="focus">Grid - areas</span>
+		    </button>
 
-	  </div>
+		  </div>
 
-	  <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
+		  <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
 
-	  	<table>
-				<thead>
-					<tr>
-						<th>Elemento</th>
-						<th>Selector</th>
-						<th>Propiedad y Valor</th>
-						<th>MDN</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>contenedor</td>
-						<td>  <b>#resumen</b> </td>
-						<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-						<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-					</tr>
-					<tr>
-						<td rowspan="3">contenido</td>
-						<td>  <b>#resumen h2</b> </td>
-						<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-						<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-					</tr>
-					<tr>
-						<td> <b>#resumen p</b> </td>
-						<td> <i>200</i> </td>
-						<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-					</tr>
-					<tr>
-						<td> <b>#resumen img</b> </td>
-						<td> <i>200</i> </td>
-						<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-					</tr>
-				</tbody>
-			</table>
+		  	<table>
+					<thead>
+						<tr>
+							<th>Elemento</th>
+							<th>Selector</th>
+							<th>Propiedad y Valor</th>
+							<th>MDN</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>contenedor</td>
+							<td>  <b>#resumen</b> </td>
+							<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td rowspan="3">contenido</td>
+							<td>  <b>#resumen h2</b> </td>
+							<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td> <b>#resumen p</b> </td>
+							<td> <i>200</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td> <b>#resumen img</b> </td>
+							<td> <i>200</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+					</tbody>
+				</table>
 
-			<details>
-				<summary><div>Haga click aquí para ver la solución</div></summary>
-				<pre lang="css"><code>
+				<details>
+					<summary><div>Haga click aquí para ver la solución</div></summary>
+					<pre lang="css"><code>
 
-					#resumen {
-					  display: flex;
-					  flex-direction: column;
-					  flex-wrap: wrap; 
+						#resumen {
+						  display: flex;
+						  flex-direction: column;
+						  flex-wrap: wrap; 
 
-					  height: 160px;
+						  height: 160px;
 
-					  align-content: space-evenly;
-					  justify-content: space-around;
+						  align-content: space-evenly;
+						  justify-content: space-around;
 
-					}
+						}
 
-					#resumen h2 {
-					  width: 50%;
-					}
-					#resumen p {
-					  width: 50%;
-					}
+						#resumen h2 {
+						  width: 50%;
+						}
+						#resumen p {
+						  width: 50%;
+						}
 
-					#resumen img {
-						width: 50%;
-					}
+						#resumen img {
+							width: 50%;
+						}
 
-				</code></pre>
-			</details>
-	  </div>
+					</code></pre>
+				</details>
+		  </div>
 
-	  <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
+		  <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
 
-	  	<table>
-				<thead>
-					<tr>
-						<th>Elemento</th>
-						<th>Selector</th>
-						<th>Propiedad y Valor</th>
-						<th>MDN</th>
-					</tr>
-				</thead>
-				<tbody>
-					<tr>
-						<td>contenedor</td>
-						<td>  <b>#resumen</b> </td>
-						<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-						<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-					</tr>
-					<tr>
-						<td rowspan="3">contenido</td>
-						<td>  <b>#resumen h2</b> </td>
-						<td> <i>center</i> </td>
-						<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-					</tr>
-					<tr>
-						<td> <b>#resumen p</b> </td>
-						<td> <i>200</i> </td>
-						<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-					</tr>
-					<tr>
-						<td> <b>#resumen img</b> </td>
-						<td> <i>200</i> </td>
-						<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-					</tr>
-				</tbody>
-			</table>
+		  	<table>
+					<thead>
+						<tr>
+							<th>Elemento</th>
+							<th>Selector</th>
+							<th>Propiedad y Valor</th>
+							<th>MDN</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>contenedor</td>
+							<td>  <b>#resumen</b> </td>
+							<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td rowspan="3">contenido</td>
+							<td>  <b>#resumen h2</b> </td>
+							<td> <i>center</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td> <b>#resumen p</b> </td>
+							<td> <i>200</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td> <b>#resumen img</b> </td>
+							<td> <i>200</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+					</tbody>
+				</table>
 
-			<details>
-				<summary><div>Haga click aquí para ver la solución</div></summary>
-				<pre lang="css"><code>
+				<details>
+					<summary><div>Haga click aquí para ver la solución</div></summary>
+					<pre lang="css"><code>
 
-					#resumen {
-					  display: grid;
-					  grid-template-areas: "A D"
-					                       "B D";
+						#resumen {
+						  display: grid;
+						  grid-template-areas: "A D"
+						                       "B D";
 
-					  align-items: center;
-					}
+						  align-items: center;
+						}
 
-					#resumen h2 {
-					  grid-area: A;
-					}
+						#resumen h2 {
+						  grid-area: A;
+						}
 
-					#resumen p {
-					  grid-area: B;
-					}
+						#resumen p {
+						  grid-area: B;
+						}
 
-					#resumen img {
-					  grid-area: D;
-					}
+						#resumen img {
+						  grid-area: D;
+						}
 
-				</code></pre>
-			</details>
-	  </div>
+					</code></pre>
+				</details>
+		  </div>
 
-	</div>
+		</div>
 
 4. (STOP 3) Actualice el navegador y compruebe los cambios.
 5. Versiona local y remotamente el repositorio **curriculum**.
