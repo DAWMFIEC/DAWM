@@ -65,7 +65,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
-2. En la hoja de estilo externa _'stylesheets/style.css'_ utilice el **estilo temporal**:
+2. En la hoja de estilo externa _'stylesheets/style.css'_, utilice el **regla CSS temporal**:
 
 	```css
 	#resumen {
@@ -80,36 +80,29 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	<table>
 		<thead>
 			<tr>
-				<th colspan="2">Selector CSS</th>
-				<th>Propiedad CSS</th>
-				<th>Valor CSS</th>
-				<th>MDN</th>
+				<th>Opción</th>
+				<th>Elemento</th>
+				<th>Propiedad y Valor</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td rowspan="2">Universal</td>
-				<td rowspan="2">*</td>
-				<td> <b>font-family</b> </td>
+				<td rowspan="2">Flex - columnas</td>
+				<td> <b>contenedor</b> </td>
 				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
-				<td> <b>font-weight</b> </td>
+				<td> <b>contenido</b> </td>
 				<td> <i>200</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
 			</tr>
 			<tr>
-				<td rowspan="3">Por elemento</td>
-				<td rowspan="2">h1</td>
-				<td> <b>text-align</b> </td>
+				<td rowspan="3">Grid - areas</td>
+				<td> <b>contenedor</b> </td>
 				<td> <i>center</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
 			</tr>
 			<tr>
-				<td> <b>font-weight</b> </td>
+				<td> <b>contenido</b> </td>
 				<td> <i>bold</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
 			</tr>
 		</tbody>
 	</table>
