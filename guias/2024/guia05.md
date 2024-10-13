@@ -185,7 +185,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						  flex-direction: column;
 						  flex-wrap: wrap; 
 
-						  height: 20vh;
+						  height: 24vh;
 
 						  align-content: space-evenly;
 						  justify-content: space-around;
