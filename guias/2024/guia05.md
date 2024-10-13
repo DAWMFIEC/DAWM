@@ -18,6 +18,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 ### Actividades en clases
 
 1. Clona localmente tu repositorio **curriculum**.
+2. Levanta el servidor HTTP con Python, desde la ruta de la aplicación.
 
 #### Flex
 
