@@ -65,17 +65,11 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
-2. En la hoja de estilo externa _'stylesheets/style.css'_, utilice el **regla CSS temporal**:
-
-	```css
-	#resumen {
-		margin: 1.2% 33%;
-	}
-	```
-
-3. Considere el siguiente diseño objetivo para crear las reglas CSS:
+2. Considere el siguiente diseño objetivo:
 
 	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
+
+3. Coloque las siguientes reglas CSS en la hoja de estilo externa:
 
 	  <div class="tabs">
 
@@ -154,7 +148,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						}
 
 						#resumen img {
-							width: 50%;
+							max-width: 50%;
 						}
 
 					</code></pre>
@@ -208,6 +202,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						                       "B D";
 
 						  align-items: center;
+						  justify-content: space-around;
 						}
 
 						#resumen h2 {
