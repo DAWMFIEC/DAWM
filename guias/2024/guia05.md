@@ -69,7 +69,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
 
-3. Coloque las siguientes reglas CSS en la hoja de estilo externa:
+3. Coloque una a una las siguientes reglas CSS en la hoja de estilo externa y verifique el resultado en el navegador.
 
 	  <div class="tabs">
 
