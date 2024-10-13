@@ -146,7 +146,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
           <td rowspan="2">Por clase</td>
           <td rowspan="2">.subtitle</td>
           <td> <b>color: rgb(107 114 128 / 0.89)</b> <span class="explanation">/* Color del texto */</span> </td>
-          <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_colors/Applying_color">Ir</a> </td>
+          <td> <a href="https://developer.mozilla.org/es/docs/Web/CSS/color">Ir</a> </td>
         </tr>
         <tr>
           <td> <b>text-transform: uppercase</b> <span class="explanation">/* Transformación del texto */</span> </td>
