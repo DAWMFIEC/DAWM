@@ -27,7 +27,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	```css
 	nav ul {
-		display: flex;
+		display: flex;									/* Modelo de diseño flexible */
 		justify-content: space-around;
 	}
 	```
@@ -42,7 +42,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	```css
 	section form {
-		display: grid;
+		display: grid;									/* Modelo de diseño en cuadrícula */
 		row-gap: 0.5rem;
 	}
 	```
@@ -102,35 +102,37 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						<tr>
 							<td rowspan="6">  <b>#resumen</b> </td>
 							<td>
-								<i>display: flex;</i>
-								<br> <span class="explanation">1 dirección</span>
+								<b>display: flex;</b> <span class="explanation">/* Modelo de diseño flexible */</span>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex">Ir</a></td>
 						</tr>
 						<tr>
-							<td>Por columna</td>
-							<td><i>flex-direction: column;</i></td>
+							<td>
+								<b>flex-direction: column;</b> <span class="explanation">/* Dirección por columna */</span>
+							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
 						</tr>
 						<tr>
-							<td>Apilamiento</td>
-							<td><i>flex-wrap: wrap;</i></td>
+							<td>
+								<b>flex-wrap: wrap;</b> <span class="explanation">/* Apilamiento de elementos */</span>
+							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
 						</tr>
 						<tr>
-							<td>Altura</td>
-							<td><i>height: 20vh;</i></td>
+							<td><b>height: 20vh;</b></td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height">Ir</a></td>
 						</tr>
 						<tr>
-							<td>Ajuste eje transversal</td>
-							<td><i>align-content: space-evenly;</i></td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
+							<td>
+								<b>justify-content: space-around;</b><span class="explanation">/* Ajuste del eje principal */</span>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
 						</tr>
 						<tr>
-							<td>Ajuste eje principal</td>
-							<td><i>justify-content: space-around;</i></td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
+							<td>
+								<b>align-content: space-evenly;</b> <span class="explanation">/* Ajuste del eje transversal */</span>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
 						</tr>
 					</tbody>
 				</table>
