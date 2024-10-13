@@ -53,19 +53,19 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
         <tr>
           <td rowspan="2">Universal</td>
           <td rowspan="2">*</td>
-          <td> <b>font-family</b> </td>
+          <td> <b>font-family</b><br>Familia de fuentes </td>
           <td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
         </tr>
         <tr>
-          <td> <b>font-weight</b> </td>
+          <td> <b>font-weight</b><br>Grosor de la fuentes </td>
           <td> <i>200</i> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight">Ir</a> </td>
         </tr>
         <tr>
           <td rowspan="3">Por elemento</td>
           <td rowspan="2">h1</td>
-          <td> <b>text-align</b> </td>
+          <td> <b>text-align</b><br>Alineación del texto </td>
           <td> <i>center</i> </td>
           <td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/text-align">Ir</a> </td>
         </tr>
