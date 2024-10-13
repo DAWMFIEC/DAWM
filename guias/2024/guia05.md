@@ -87,22 +87,38 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 		</thead>
 		<tbody>
 			<tr>
-				<td rowspan="2">Flex - columnas</td>
-				<td> <b>contenedor</b> </td>
+				<td rowspan="3">Flex - columnas</td>
+				<td> contenedor <b>#resumen</b> </td>
 				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
 			</tr>
 			<tr>
-				<td> <b>contenido</b> </td>
+				<td> contenido <b>#resumen h2</b> </td>
+				<td> <i>200</i> </td>
+			</tr>
+			<tr>
+				<td> contenido <b>#resumen p</b> </td>
+				<td> <i>200</i> </td>
+			</tr>
+			<tr>
+				<td> contenido <b>#resumen img</b> </td>
 				<td> <i>200</i> </td>
 			</tr>
 			<tr>
 				<td rowspan="3">Grid - areas</td>
-				<td> <b>contenedor</b> </td>
+				<td> contenedor <b>#resumen</b> </td>
 				<td> <i>center</i> </td>
 			</tr>
 			<tr>
-				<td> <b>contenido</b> </td>
-				<td> <i>bold</i> </td>
+				<td> contenido <b>#resumen h2</b> </td>
+				<td> <i>200</i> </td>
+			</tr>
+			<tr>
+				<td> contenido <b>#resumen p</b> </td>
+				<td> <i>200</i> </td>
+			</tr>
+			<tr>
+				<td> contenido <b>#resumen img</b> </td>
+				<td> <i>200</i> </td>
 			</tr>
 		</tbody>
 	</table>
@@ -145,6 +161,10 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						}
 						#resumen p {
 						  width: 50%;
+						}
+
+						#resumen img {
+							width: 50%;
 						}
 
 					</code></pre>
