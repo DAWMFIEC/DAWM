@@ -95,7 +95,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						<tr>
 							<th>Selector</th>
 							<th>Efecto</th>
-							<th>Propiedad y Valor</th>
+							<th>Propiedad y Valor CSS</th>
 							<th>MDN</th>
 						</tr>
 					</thead>
@@ -114,7 +114,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						<tr>
 							<td>Apilamiento</td>
 							<td><i>flex-wrap: wrap;</i></td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
 						</tr>
 						<tr>
 							<td>Altura</td>
@@ -139,7 +139,9 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<thead>
 						<tr>
 							<th>Selector</th>
+							<th>Efecto</th>
 							<th>Propiedad y Valor</th>
+							<th>MDN</th>
 						</tr>
 					</thead>
 					<tbody>
@@ -155,6 +157,24 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							<td> <b>#resumen img</b> </td>
 							<td> <i>max-width: 50%;</i> </td>
 						</tr>
+
+						<tr>
+							<td rowspan="6">  <b>#resumen</b> </td>
+							<td>1 dirección</td>
+							<td><i>display: flex;</i></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex">Ir</a></td>
+						</tr>
+						<tr>
+							<td>Por columna</td>
+							<td><i>flex-direction: column;</i></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
+						</tr>
+						<tr>
+							<td>Apilamiento</td>
+							<td><i>flex-wrap: wrap;</i></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
+						</tr>
+
 					</tbody>
 				</table>
 
