@@ -265,9 +265,6 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
     </table>
 
 3. (STOP 6) Actualice el navegador y compruebe los cambios.
-
-    <img src="./imagenes/guia04_elementos_alineados.png" alt="elementos_desalineados" class="img-centered img-focus">
-
 4. Versiona local y remotamente el repositorio **curriculum**.
 
 #### CSS Avanzado
