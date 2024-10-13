@@ -287,10 +287,10 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
           <td>aplicar la familia de fuentes <a href="https://fonts.google.com/specimen/Poppins">https://fonts.google.com/specimen/Poppins</a> </td>
           <td>todas las etiquetas</td>
         </tr>
-        <!-- <tr>
-          <td>cambiar el color del fondo de un elemento &lt;section&gt; al pasar el mouse por encima</td>
-          <td>los elementos &lt;section&gt; los identificadores #resumen</td>
-        </tr> -->
+        <tr>
+          <td>al pasar el mouse por encima subrayar</td>
+          <td>los elementos &lt;a&gt;</td>
+        </tr>
         <tr>
           <td>eliminar el subrayado</td>
           <td>todas las etiquetas &lt;a&gt;</td>
