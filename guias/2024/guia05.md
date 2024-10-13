@@ -54,30 +54,16 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 1. Considere los elementos en el archivo _index.html_ y su vista previa en el navegador:
 
-	<table>
-		<caption>table title and/or explanatory text</caption>
-		<thead>
-			<tr>
-				<th>HTML</th>
-				<th>Vista Previa</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>
-					&lt;section id="resumen"&gt;
-						&lt;h2 class="subtitle"&gt;Resumen&lt;/h2&gt;
-						&lt;p&gt;Breve descripción de tus habilidades y experiencia.&lt;/p&gt;
-						&lt;img id="photo" src="https://placehold.co/300x200" 
-								 alt="Placeholder de imagen"&gt;
-					&lt;/section&gt;
-				</td>
-				<td>
-					<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
-				</td>
-			</tr>
-		</tbody>
-	</table>
+	```html
+	<section id="resumen">
+		<h2 class="subtitle">Resumen</h2>
+		<p>Breve descripción de tus habilidades y experiencia.</p>
+		<img id="photo" src="https://placehold.co/300x200" 
+				 alt="Placeholder de imagen">
+	</section>
+	```
+
+	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
 2. En la hoja de estilo externa _'stylesheets/style.css'_, utilice el **regla CSS temporal**:
 
@@ -87,58 +73,69 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	}
 	```
 
-3. Considere el siguiente diseño para crear las reglas CSS:
+3. Considere el siguiente diseño objetivo para crear las reglas CSS:
 
 	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
 
 	<table>
+		<caption>Flex - por columnas</caption>
 		<thead>
 			<tr>
-				<th>Opción</th>
 				<th>Elemento</th>
+				<th>Selector</th>
 				<th>Propiedad y Valor</th>
 				<th>MDN</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td rowspan="3">Flex - columnas</td>
-				<td> contenedor <b>#resumen</b> </td>
+				<td>contenedor</td>
+				<td>  <b>#resumen</b> </td>
 				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
 			</tr>
 			<tr>
-				<td> contenido <b>#resumen h2</b> </td>
+				<td rowspan="3">contenido</td>
+				<td>  <b>#resumen</b> </td>
+				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+			</tr>
+			<tr>
+				<td> <b>#resumen h2</b> </td>
 				<td> <i>200</i> </td>
 				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
-				<td> contenido <b>#resumen p</b> </td>
+				<td> <b>#resumen p</b> </td>
 				<td> <i>200</i> </td>
 				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
-				<td> contenido <b>#resumen img</b> </td>
+				<td> <b>#resumen img</b> </td>
 				<td> <i>200</i> </td>
 				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
-				<td rowspan="3">Grid - areas</td>
-				<td> contenedor <b>#resumen</b> </td>
+				<td>contenedor</td>
+				<td>  <b>#resumen</b> </td>
+				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+			</tr>
+			<tr>
+				<td rowspan="3">contenido</td>
+				<td>  <b>#resumen</b> </td>
 				<td> <i>center</i> </td>
 				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
-				<td> contenido <b>#resumen h2</b> </td>
+				<td> <b>#resumen h2</b> </td>
 				<td> <i>200</i> </td>
 				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
-				<td> contenido <b>#resumen p</b> </td>
+				<td> <b>#resumen p</b> </td>
 				<td> <i>200</i> </td>
 				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
 			<tr>
-				<td> contenido <b>#resumen img</b> </td>
+				<td> <b>#resumen img</b> </td>
 				<td> <i>200</i> </td>
 				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
 			</tr>
