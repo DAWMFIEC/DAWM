@@ -184,12 +184,23 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
     ```css
     section {
-      margin: 4px 2px 8px 2px; /* margen (espacio externo) superior, derecho, abajo e izquierda */
 
-      border: 0.2pt solid #cedddd; /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+      /* margen (espacio externo) superior, derecho, abajo e izquierda */
+      margin: 4px 2px 8px 2px; 
 
-      padding: 1.5% 0.8%; /* relleno (espacio interno) de 1.5% en la parte superior e inferior y 0.8% a los lados derecho e izquierdo. */
-      padding-left: 1.2%; /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, dándoles un valor específico de 1.2% para esos lados. */
+      /* borde de grosor 0.2 en puntos, estilo sólido y color hexadecimal #cedddd  */
+      border: 0.2pt solid #cedddd; 
+
+      /* relleno (espacio interno) de 
+      1.5% en la parte superior e inferior y 
+      0.8% a los lados derecho e izquierdo. */
+
+      padding: 1.5% 0.8%; 
+
+      /* reemplazan el 0.8% inicial en el relleno izquierdo y derecho, 
+      dándoles un valor específico de 1.2% para esos lados. */
+
+      padding-left: 1.2%; 
       padding-right: 1.2%; 
     }
     ```
@@ -207,10 +218,15 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 
       /* borde redondeado con un radio de 5 píxeles */
-      
-      -webkit-border-radius: 5px; /* en navegadores basados en WebKit, como versiones antiguas de Safari y Chrome. */
-      -moz-border-radius: 5px;    /* en navegadores antiguos de Mozilla, como Firefox.  */
-      border-radius: 5px;         /* en navegadores modernos. */
+
+      /* en navegadores basados en WebKit, como versiones antiguas de Safari y Chrome. */
+      -webkit-border-radius: 5px; 
+
+      /* en navegadores antiguos de Mozilla, como Firefox.  */
+      -moz-border-radius: 5px;    
+
+      /* en navegadores modernos. */
+      border-radius: 5px;         
     }
     ```
 
