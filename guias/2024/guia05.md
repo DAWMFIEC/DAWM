@@ -90,16 +90,15 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 		  <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
 
 		  	<table>
+		  		<caption>Contenedor</caption>
 					<thead>
 						<tr>
-							<th>Elemento</th>
 							<th>Selector</th>
 							<th>Propiedad y Valor</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>contenedor</td>
 							<td>  <b>#resumen</b> </td>
 							<td> 
 								<i>  
@@ -114,8 +113,19 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							  </i>
 						  </td>
 						</tr>
+					</tbody>
+				</table>
+
+				<table>
+					<caption>Contenido</caption>
+					<thead>
 						<tr>
-							<td rowspan="3">contenido</td>
+							<th>Selector</th>
+							<th>Propiedad y Valor</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
 							<td>  <b>#resumen h2</b> </td>
 							<td> <i>width: 50%;</i> </td>
 						</tr>
