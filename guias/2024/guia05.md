@@ -77,64 +77,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
 
-	<table>
-		<caption>Flex - por columnas</caption>
-		<thead>
-			<tr>
-				<th>Elemento</th>
-				<th>Selector</th>
-				<th>Propiedad y Valor</th>
-				<th>MDN</th>
-			</tr>
-		</thead>
-		<tbody>
-			<tr>
-				<td>contenedor</td>
-				<td>  <b>#resumen</b> </td>
-				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-			</tr>
-			<tr>
-				<td rowspan="3">contenido</td>
-				<td>  <b>#resumen h2</b> </td>
-				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-			</tr>
-			<tr>
-				<td> <b>#resumen p</b> </td>
-				<td> <i>200</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-			</tr>
-			<tr>
-				<td> <b>#resumen img</b> </td>
-				<td> <i>200</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-			</tr>
-			<tr>
-				<td>contenedor</td>
-				<td>  <b>#resumen</b> </td>
-				<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-			</tr>
-			<tr>
-				<td rowspan="3">contenido</td>
-				<td>  <b>#resumen h2</b> </td>
-				<td> <i>center</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-			</tr>
-			<tr>
-				<td> <b>#resumen p</b> </td>
-				<td> <i>200</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-			</tr>
-			<tr>
-				<td> <b>#resumen img</b> </td>
-				<td> <i>200</i> </td>
-				<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
-			</tr>
-		</tbody>
-	</table>
-
 	  <div class="tabs">
 
 		  <h3 id="tablist-1">Solución</h3>
@@ -152,6 +94,42 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 		  </div>
 
 		  <div id="tabpanel-1" role="tabpanel" aria-labelledby="tab-1">
+
+		  	<table>
+					<thead>
+						<tr>
+							<th>Elemento</th>
+							<th>Selector</th>
+							<th>Propiedad y Valor</th>
+							<th>MDN</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>contenedor</td>
+							<td>  <b>#resumen</b> </td>
+							<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td rowspan="3">contenido</td>
+							<td>  <b>#resumen h2</b> </td>
+							<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td> <b>#resumen p</b> </td>
+							<td> <i>200</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td> <b>#resumen img</b> </td>
+							<td> <i>200</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+					</tbody>
+				</table>
+
 				<details>
 					<summary><div>Haga click aquí para ver la solución</div></summary>
 					<pre lang="css"><code>
@@ -184,6 +162,42 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 		  </div>
 
 		  <div id="tabpanel-2" role="tabpanel" aria-labelledby="tab-2" class="is-hidden">
+
+		  	<table>
+					<thead>
+						<tr>
+							<th>Elemento</th>
+							<th>Selector</th>
+							<th>Propiedad y Valor</th>
+							<th>MDN</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>contenedor</td>
+							<td>  <b>#resumen</b> </td>
+							<td> <i>'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td rowspan="3">contenido</td>
+							<td>  <b>#resumen h2</b> </td>
+							<td> <i>center</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td> <b>#resumen p</b> </td>
+							<td> <i>200</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+						<tr>
+							<td> <b>#resumen img</b> </td>
+							<td> <i>200</i> </td>
+							<td> <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/font-family">Ir</a> </td>
+						</tr>
+					</tbody>
+				</table>
+
 				<details>
 					<summary><div>Haga click aquí para ver la solución</div></summary>
 					<pre lang="css"><code>
