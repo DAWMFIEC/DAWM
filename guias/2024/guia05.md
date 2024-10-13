@@ -108,19 +108,22 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						<tr>
 							<td rowspan="6">  <b>#resumen</b> </td>
 							<td>
-								<b>display: flex;</b><br> <span class="explanation">/* Modelo de diseño flexible */</span>
+								<span class="explanation">/* Modelo de diseño flexible */</span><br>
+								<b>display: flex;</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
-								<b>flex-direction: column;</b><br> <span class="explanation">/* Dirección por columna */</span>
+								<span class="explanation">/* Dirección por columna */</span><br>
+								<b>flex-direction: column;</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
-								<b>flex-wrap: wrap;</b><br> <span class="explanation">/* Apilamiento de elementos */</span>
+								<span class="explanation">/* Apilamiento de elementos */</span><br>
+								<b>flex-wrap: wrap;</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
 						</tr>
@@ -130,13 +133,15 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						</tr>
 						<tr>
 							<td>
-								<b>justify-content: space-around;</b><br> <span class="explanation">/* Ajuste respecto con el eje principal */</span>
+								<span class="explanation">/* Ajuste respecto con el eje principal */</span><br>
+								<b>justify-content: space-around;</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
-								<b>align-content: space-evenly;</b><br> <span class="explanation">/* Ajuste respecto con el eje transversal */</span>
+								<span class="explanation">/* Ajuste respecto con el eje transversal */</span><br>
+								<b>align-content: space-evenly;</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
 						</tr>
@@ -148,8 +153,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<thead>
 						<tr>
 							<th>Selector</th>
-							<th>Efecto</th>
-							<th>Propiedad y Valor</th>
+							<th>Propiedad y Valor CSS</th>
 							<th>MDN</th>
 						</tr>
 					</thead>
