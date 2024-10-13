@@ -94,7 +94,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<thead>
 						<tr>
 							<th>Selector</th>
-							<th>Efecto</th>
 							<th>Propiedad y Valor CSS</th>
 							<th>MDN</th>
 						</tr>
@@ -102,8 +101,10 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<tbody>
 						<tr>
 							<td rowspan="6">  <b>#resumen</b> </td>
-							<td>1 dirección</td>
-							<td><i>display: flex;</i></td>
+							<td>
+								<i>display: flex;</i>
+								<br> <span class="explanation">1 dirección</span>
+							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex">Ir</a></td>
 						</tr>
 						<tr>
