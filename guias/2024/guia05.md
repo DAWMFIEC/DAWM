@@ -107,7 +107,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 								  flex-direction: column;<br>
 								  flex-wrap: wrap; <br>
 
-								  height: 160px;<br>
+								  height: 20vh;<br>
 
 								  align-content: space-evenly;<br>
 								  justify-content: space-around;
@@ -135,7 +135,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						  flex-direction: column;
 						  flex-wrap: wrap; 
 
-						  height: 160px;
+						  height: 20vh;
 
 						  align-content: space-evenly;
 						  justify-content: space-around;
