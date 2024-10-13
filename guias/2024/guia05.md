@@ -65,10 +65,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
-2. Observe el diseño final de los elementos: 
-
-	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
-
 2. En la hoja de estilo externa _'stylesheets/style.css'_ utilice el **estilo temporal**:
 
 	```css
@@ -77,7 +73,9 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 	}
 	```
 
-3. En la hoja de estilo externa _'stylesheets/style.css'_ agregue el **diseño temporal**:
+3. Considere el siguiente diseño para crear las reglas CSS:
+
+	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
 
 	<table>
 		<thead>
