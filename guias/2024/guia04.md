@@ -32,7 +32,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 #### Servidor HTTP 
 
 1. Siguiendo las instrucciones del [tutorial](/DAWM/tutoriales/python), levante un `servidor HTTP` con Python desde la `ruta de la aplicación`.
-2. En el navegador, acceda a la URL [http:\\\\localhost:8079](http:\\localhost:8079) quen el que responde el servidor HTTP.
+2. En el navegador, acceda a la URL [http:\\\\localhost:8079](http:\\localhost:8079) a la que responde el servidor HTTP.
 3. (STOP 1) Actualice el navegador y compruebe los cambios.
 
 #### Reglas CSS - I
@@ -232,7 +232,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 1. En el navegador, identifique los elementos desalineados:
 
-    <img src="./imagenes/guia05_elementos_desalineados.png" alt="elementos_desalineados" class="img-centered img-focus">
+    <img src="./imagenes/guia04_elementos_desalineados.png" alt="elementos_desalineados" class="img-centered img-focus">
 
 2. Edite el archivo _index.html_ con las etiqueta contenedoras:
 
@@ -265,6 +265,9 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
     </table>
 
 3. (STOP 6) Actualice el navegador y compruebe los cambios.
+
+    <img src="./imagenes/guia04_elementos_alineados.png" alt="elementos_desalineados" class="img-centered img-focus">
+
 4. Versiona local y remotamente el repositorio **curriculum**.
 
 #### CSS Avanzado
@@ -288,7 +291,7 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
         </tr>
         <tr>
           <td>cambiar el color del fondo de un elemento &lt;section&gt; al pasar el mouse por encima</td>
-          <td>los elementos &lt;section&gt; con ciertos identificadores</td>
+          <td>los elementos &lt;section&gt; los identificadores #resumen</td>
         </tr>
         <tr>
           <td>eliminar el subrayado</td>
