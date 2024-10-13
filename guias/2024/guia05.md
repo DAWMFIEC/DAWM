@@ -115,8 +115,12 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						  </td>
 						</tr>
 						<tr>
-							<td rowspan="2">contenido</td>
-							<td>  <b>#resumen h2</b> y <b>#resumen p</b> </td>
+							<td rowspan="3">contenido</td>
+							<td>  <b>#resumen h2</b> </td>
+							<td> <i>width: 50%;</i> </td>
+						</tr>
+						<tr>
+							<td>  <b>#resumen p</b> </td>
 							<td> <i>width: 50%;</i> </td>
 						</tr>
 						<tr>
