@@ -126,7 +126,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
 						</tr>
 						<tr>
-							<td><b>height: 20vh;</b></td>
+							<td><b>height: 24vh;</b></td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height">Ir</a></td>
 						</tr>
 						<tr>
