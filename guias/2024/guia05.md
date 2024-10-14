@@ -79,8 +79,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	  <div class="tabs">
 
-		  <h3 id="tablist-1">Opciones</h3>
-
 		  <div role="tablist" aria-labelledby="tablist-1" class="manual">
 
 		    <button id="tab-1" type="button" role="tab" aria-selected="true" aria-controls="tabpanel-1">
