@@ -109,7 +109,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 								<span class="explanation">/* Modelo de diseño flexible */</span><br>
 								<b>display: flex;</b>
 							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex">Ir</a></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/display">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
@@ -251,7 +251,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 								<span class="explanation">/* Modelo de diseño en cuadrícula */</span><br>
 								<b>display: grid;</b>
 							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/grid">Ir</a></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/display">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
