@@ -240,8 +240,10 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
 						</tr>
 						<tr>
-							<span class="explanation">/* Ajuste respecto con el eje transversal */</span><br>
-							<td><b>justify-content: space-around;</b></td>
+							<td>
+								<span class="explanation">/* Ajuste respecto con el eje transversal */</span><br>
+								<b>justify-content: space-around;</b>
+							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height">Ir</a></td>
 						</tr>
 					</tbody>
