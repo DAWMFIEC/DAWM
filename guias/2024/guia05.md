@@ -114,6 +114,16 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						<tr>
 							<td>
 								<span class="explanation">
+								/* Distribuye el espacio entre y alrededor<br>
+									 de los items en el eje principal */
+								</span><br>
+								<b>justify-content: space-evenly;</b>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
+						</tr>
+						<tr>
+							<td>
+								<span class="explanation">
 								/* Alineación de un elemento dentro del bloque <br>
 								que lo contiene, considerando el eje transversal */
 							  </span><br>
@@ -123,32 +133,28 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						</tr>
 						<tr>
 							<td>
-								<span class="explanation">/* Dirección por columna */</span><br>
+								<span class="explanation">/* Eje principal: por columna */</span><br>
 								<b>flex-direction: column;</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
 						</tr>
 						<tr>
-							<td><b>height: 24vh;</b></td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height">Ir</a></td>
-						</tr>
-						<tr>
 							<td>
-								<span class="explanation">/* Apilamiento de elementos */</span><br>
-								<b>flex-wrap: wrap;</b>
+								<span class="explanation">/* Altura de 24% del área de visualización */</span><br>
+								<b>height: 24vh;</b>
 							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Learn/CSS/Building_blocks/Sizing_items_in_CSS#unidades_de_ventana_gr%C3%A1fica">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
 								<span class="explanation">
-								/* Distribuye el espacio entre y alrededor<br>
-									 de los items en el eje principal */
+								/* Apilamiento de elementos: ajustado hasta ocupar el máximo */
 								</span><br>
-								<b>justify-content: space-evenly;</b>
+								<b>flex-wrap: wrap;</b>
 							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
 						</tr>
+
 					</tbody>
 				</table>
 
@@ -185,18 +191,27 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<pre lang="css"><code>
 
 						#resumen {
+
+							/* Modelo de diseño flexible */
 						  display: flex;
 
+						  /* Distribuye el espacio entre y alrededor
+									 de los items en el eje principal */
+						  justify-content: space-evenly;
+
+
+						  /* Alineación de un elemento dentro del bloque
+								que lo contiene, considerando el eje transversal */
 						  align-items: center;
 
+						  /* Eje principal: por columna */
 						  flex-direction: column;
 
+						  /* Altura de 24% del área de visualización */
 						  height: 24vh;
 
+						  /* Apilamiento de elementos: ajustado hasta ocupar el máximo */
 						  flex-wrap: wrap; 
-
-						  justify-content: space-evenly;
-						  
 
 						}
 
