@@ -129,7 +129,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							  </span><br>
 								<b>align-items: center;</b>
 							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-items">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
@@ -255,7 +255,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						</tr>
 						<tr>
 							<td>
-								/* Distribuye el espacio entre y alrededor<br>
+								<span class="explanation">
+									/* Distribuye el espacio entre y alrededor<br>
 									 de los items en el eje principal */
 								</span><br>
 								<b>justify-content: space-around;</b>
@@ -270,7 +271,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							  </span><br>
 								<b>align-items: stretch;</b>
 							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-items">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
@@ -298,6 +299,9 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						<tr>
 							<td>  <b>#resumen h2</b> </td>
 							<td> <i>grid-area: A;</i> </td>
+							<td rowspan="3">
+								<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area">Ir</a>
+							</td>
 						</tr>
 						<tr>
 							<td> <b>#resumen p</b> </td>
