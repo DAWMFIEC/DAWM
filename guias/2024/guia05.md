@@ -255,27 +255,32 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						</tr>
 						<tr>
 							<td>
+								/* Distribuye el espacio entre y alrededor<br>
+									 de los items en el eje principal */
+								</span><br>
+								<b>justify-content: space-around;</b>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
+						</tr>
+						<tr>
+							<td>
+								<span class="explanation">
+								/* Alineación de un elemento dentro del bloque <br>
+								que lo contiene, considerando el eje transversal */
+							  </span><br>
+								<b>align-items: stretch;</b>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
+						</tr>
+						<tr>
+							<td>
 								<span class="explanation">/* Plantilla con áreas en la cuadrícula */</span><br>
 								<b>
 									grid-template-areas: "A D"<br>
 									                     "B D";
 								</b>
 							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
-						</tr>
-						<tr>
-							<td>
-								<span class="explanation">/* Ajuste respecto con el eje transversal */</span><br>
-								<b>align-items: center;</b>
-							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
-						</tr>
-						<tr>
-							<td>
-								<span class="explanation">/* Ajuste respecto con el eje transversal */</span><br>
-								<b>justify-content: space-around;</b>
-							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height">Ir</a></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas">Ir</a></td>
 						</tr>
 					</tbody>
 				</table>
@@ -310,12 +315,21 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<pre lang="css"><code>
 
 						#resumen {
-						  display: grid;
-						  grid-template-areas: "A D"
-						                       "B D";
 
-						  align-items: center;
-						  justify-content: space-around;
+							/* Modelo de diseño en cuadrícula */
+						  display: grid;
+
+						  /* Distribuye el espacio entre y alrededor
+									 de los items en el eje principal */
+							justify-content: space-around;
+
+							/* Alineación de un elemento dentro del bloque
+								que lo contiene, considerando el eje transversal */
+							align-items: stretch;
+
+							/* Plantilla con áreas en la cuadrícula */
+							grid-template-areas: "A D"
+							     								 "B D";
 						}
 
 						#resumen h2 {
