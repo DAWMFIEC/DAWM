@@ -113,10 +113,24 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						</tr>
 						<tr>
 							<td>
+								<span class="explanation">
+								/* Alineación de un elemento dentro del bloque <br>
+								que lo contiene, considerando el eje transversal */
+							  </span><br>
+								<b>align-items: center;</b>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
+						</tr>
+						<tr>
+							<td>
 								<span class="explanation">/* Dirección por columna */</span><br>
 								<b>flex-direction: column;</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
+						</tr>
+						<tr>
+							<td><b>height: 24vh;</b></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height">Ir</a></td>
 						</tr>
 						<tr>
 							<td>
@@ -126,22 +140,14 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
 						</tr>
 						<tr>
-							<td><b>height: 24vh;</b></td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height">Ir</a></td>
-						</tr>
-						<tr>
 							<td>
-								<span class="explanation">/* Ajuste respecto con el eje principal */</span><br>
-								<b>justify-content: space-around;</b>
+								<span class="explanation">
+								/* Distribuye el espacio entre y alrededor<br>
+									 de los items en el eje principal */
+								</span><br>
+								<b>justify-content: space-evenly;</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
-						</tr>
-						<tr>
-							<td>
-								<span class="explanation">/* Ajuste respecto con el eje transversal */</span><br>
-								<b>align-content: space-evenly;</b>
-							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/align-content">Ir</a></td>
 						</tr>
 					</tbody>
 				</table>
@@ -180,13 +186,17 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 						#resumen {
 						  display: flex;
+
+						  align-items: center;
+
 						  flex-direction: column;
-						  flex-wrap: wrap; 
 
 						  height: 24vh;
 
-						  align-content: space-evenly;
-						  justify-content: space-around;
+						  flex-wrap: wrap; 
+
+						  justify-content: space-evenly;
+						  
 
 						}
 
