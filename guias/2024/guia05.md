@@ -209,22 +209,40 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<thead>
 						<tr>
 							<th>Selector</th>
-							<th>Propiedad y Valor</th>
+							<th>Propiedad y Valor CSS</th>
+							<th>MDN</th>
 						</tr>
 					</thead>
 					<tbody>
 						<tr>
-							<td>  <b>#resumen</b> </td>
+							<td rowspan="4">  <b>#resumen</b> </td>
 							<td>
-								<i>
-									display: grid; <br>
-								  grid-template-areas: "A D" <br>
-								                       "B D";<br>
-
-								  align-items: center; <br>
-								  justify-content: space-around;
-								</i> 
-						  </td>
+								<span class="explanation">/* Modelo de diseño en cuadrícula */</span><br>
+								<b>display: grid;</b>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/grid">Ir</a></td>
+						</tr>
+						<tr>
+							<td>
+								<span class="explanation">/* Plantilla con áreas en la cuadrícula */</span><br>
+								<b>
+									grid-template-areas: "A D"<br>
+									                     "B D";
+								</b>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">Ir</a></td>
+						</tr>
+						<tr>
+							<td>
+								<span class="explanation">/* Ajuste respecto con el eje transversal */</span><br>
+								<b>align-items: center;</b>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
+						</tr>
+						<tr>
+							<span class="explanation">/* Ajuste respecto con el eje transversal */</span><br>
+							<td><b>justify-content: space-around;</b></td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/height">Ir</a></td>
 						</tr>
 					</tbody>
 				</table>
@@ -234,7 +252,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 					<thead>
 						<tr>
 							<th>Selector</th>
-							<th>Propiedad y Valor</th>
+							<th>Propiedad y Valor CSS</th>
+							<th>MDN</th>
 						</tr>
 					</thead>
 					<tbody>
