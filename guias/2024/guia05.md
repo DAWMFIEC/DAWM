@@ -18,7 +18,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 ### Actividades en clases
 
 1. Clona localmente tu repositorio **curriculum**.
-2. Levanta el servidor HTTP con Python, desde la ruta de la aplicación.
+2. Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
 
 #### Flex
 
