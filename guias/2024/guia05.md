@@ -75,7 +75,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 	<img src="./imagenes/guia05_diseno01.png" alt="diseño 01" class="img-centered">
 
-3. Coloque una a una las siguientes reglas CSS en la hoja de estilo externa y verifique el resultado en el navegador.
+3. Coloque una a una las siguientes propiedades CSS en la hoja de estilo externa y compruebe el resultado en el navegador.
 
 	  <div class="tabs">
 
@@ -114,16 +114,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						<tr>
 							<td>
 								<span class="explanation">
-								/* Distribuye el espacio entre y alrededor<br>
-									 de los items en el eje principal */
-								</span><br>
-								<b>justify-content: space-evenly;</b>
-							</td>
-							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
-						</tr>
-						<tr>
-							<td>
-								<span class="explanation">
 								/* Alineación de un elemento dentro del bloque <br>
 								que lo contiene, considerando el eje transversal */
 							  </span><br>
@@ -158,6 +148,16 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 								<b>flex-wrap: wrap;</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">Ir</a></td>
+						</tr>
+						<tr>
+							<td>
+								<span class="explanation">
+								/* Distribuye el espacio entre y alrededor<br>
+									 de los items en el eje principal */
+								</span><br>
+								<b>justify-content: space-evenly;</b>
+							</td>
+							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">Ir</a></td>
 						</tr>
 
 					</tbody>
@@ -200,11 +200,6 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							/* Modelo de diseño flexible */
 						  display: flex;
 
-						  /* Distribuye el espacio entre y alrededor
-							de los items en el eje principal */
-						  justify-content: space-evenly;
-
-
 						  /* Alineación de un elemento dentro del bloque
 							que lo contiene, considerando el eje transversal */
 						  align-items: center;
@@ -218,6 +213,10 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						  /* Apilamiento de elementos: ajustado 
 						  hasta ocupar el máximo */
 						  flex-wrap: wrap; 
+
+						  /* Distribuye el espacio entre y alrededor
+							de los items en el eje principal */
+						  justify-content: space-evenly;
 
 						}
 
