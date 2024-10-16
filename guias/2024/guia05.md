@@ -356,7 +356,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 		</div>
 
-4. (STOP 3) Actualice el navegador y compruebe los cambios.
+4. (STOP 2) Actualice el navegador y compruebe los cambios.
 5. Versiona local y remotamente el repositorio **curriculum**.
 
 ### Documentación
