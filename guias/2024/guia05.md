@@ -58,7 +58,7 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 
 #### Diseño: Flex vs Grid
 
-1. Identifique los elementos en el archivo _index.html_ y su vista previa en el navegador:
+1. Identifique y use la estructura de elementos en el archivo _index.html_
 
 	```html
 	<section id="resumen">
@@ -68,6 +68,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 				 alt="Placeholder de imagen">
 	</section>
 	```
+
+	- Cuya vista previa en el navegador es:
 
 	<img src="./imagenes/guia05_diseno00.png" alt="diseño 00" class="img-centered">
 
