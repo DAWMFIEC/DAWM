@@ -19,96 +19,34 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+#### Modelo de diseño Flexbox - por fila 
+
+1. Modifique la hoja de estilos _css/flexbox.css_.
+2. Agregue las reglas CSS y verifique los cambios en el navegador:
+	- Contenedor
+	- Contenido
+
+#### Modelo de diseño Grid - por area
+
+1. Modifique la hoja de estilos _css/grid_areas.css_.
+2. Agregue las reglas CSS y verifique los cambios en el navegador:
+	- Contenedor
+		- Modelo de diseño en cuadrícula (<a href="https://developer.mozilla.org/es/docs/Web/CSS/display">display</a>).
+		- Separación (<a href="https://developer.mozilla.org/es/docs/Web/CSS/gap">gap</a>) de **0.5rem** entre filas y de **0.5rem** entre columnas.
+		- Plantilla (<a href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas">grid-template-areas</a>) de **8** areas.
+	- Contenido
+		- Ubicación por areas (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area">grid-column</a>), p.e.: <i>El elemento con el identificador datosgenerales se extiende por **solo** una área.</i>
+
 #### Modelo de diseño Grid - por columnas 
 
 1. Modifique la hoja de estilos _css/grid_columnas.css_.
 2. Agregue las reglas CSS y verifique los cambios en el navegador:
-	
-	- Modelo de diseño en cuadrícula. [<a href="https://developer.mozilla.org/es/docs/Web/CSS/display">Pista</a>]
-	- 0.5rem como espacio de separación entre filas y entre columnas. [<a href="https://developer.mozilla.org/es/docs/Web/CSS/gap">Pista</a>]
-	- Plantilla de 6 columnas. [<a href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-columns">Pista</a>]
-	
-
-#### Modelo de diseño Grid - por area
-
-* Modifique la hoja de estilos _css/grid_areas.css_.
-* Utilice el selector CSS de su preferencia para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
-
-	```
-
-		/* Modo de colocar los elementos internos en una rejilla */
-		display: grid; 
-
-		/* Separación entre filas */
-		row-gap: 0.5rem; 
-
-		/* Separación entre columnas */
-		column-gap: 0.5rem; 
-
-		/* Nombres de las áreas*/
-		grid-template-areas: "A A A A A A"
-	                         "B B B Q Q Q"
-	                         "D D E E F F"
-	                         "M M M T T T"
-
-	```
-
-* Para cada elemento **&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
-	+ Acceda al elemento con el selector CSS de su preferencia. 
-	+ Para la propiedad **grid-area**, en lugar **nombre_area** coloque el nombre del área de acuerdo con la plantilla.
-	
-		```
-
-			grid-area: nombre_area;
-
-		```
-	+ Verifique los cambios en el navegador
-
-
-#### Modelo de diseño Flexbox - por fila 
-
-* Modifique la hoja de estilos _css/flexbox.css_.
-* Utilice el selector CSS de su preferencia para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
-
-	```
-
-		/* Modo de colocar los elementos internos de manera flexible */
-	  display: flex; 
-
-	  /* Eje primario con la dirección de los elementos */
-	  flex-direction: row;
-
-	  /* Separación entre filas */
-	  row-gap: 0.5rem; 
-
-	  /* Separación entre columnas */
-	  column-gap: 0.5rem; 
-
-	  /* Los elementos ocupan el espacio de acuerdo a su tamaño */
-	  flex-wrap: wrap;
-
-	  /* Los elementos están distribuidos uniformemente en el eje primario  */
-	  justify-content: space-between;
-
-	  /* Los elementos se estiran para llenar el eje transversal */
-	  align-items: stretch;
-
-	```
-
-* Para cada elemento **&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
-	+ Acceda con el selector CSS de su preferencia. 
-	+ Para la propiedad **flex-basis**, reemplace **porcentaje** por el valor que crea conveniente. 
-	
-		```
-			flex-basis: porcentaje%;
-
-			/* El espacio restante en el contenedor se distribuirá 
-			equitativamente entre todos los elementos internos */
-			
-			flex-grow: 1;
-		```
-
-    + Verifique los cambios en el navegador
+	- Contenedor
+		- Modelo de diseño en cuadrícula (<a href="https://developer.mozilla.org/es/docs/Web/CSS/display">display</a>).
+		- Separación (<a href="https://developer.mozilla.org/es/docs/Web/CSS/gap">gap</a>) de **0.5rem** entre filas y de **0.5rem** entre columnas.
+		- Plantilla (<a href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-columns">grid-template-columns</a>) de **6** columnas.
+	- Contenido
+		- Ubicación por columnas (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-column">grid-column</a>) y por filas (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-row">grid-row</a>), p.e.: <i>El elemento con el identificador datosgenerales se extiende desde la columna **1** hasta incluir a la columna **6**; y ocupa solo la fila **1**.</i>
 
 ### Entregable
 
