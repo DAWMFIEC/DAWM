@@ -6,54 +6,30 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/)
 
+<!-- <link href="../guias/2024/styles/mystyle.css" rel="stylesheet" /> -->
+
 ### Actividades previas
 
-* Descargue y descomprima el ejercicio de [colocación](/DAWM/ejercicios/colocacion.zip). 
-* Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
-* En el navegador, habilite el inspector para visualizar los cambios en vivo.
-
-### Actividades en clases
-
-#### Grid vs Flexbox
-
-* Considere el siguiente diseño para la `colocación de elementos` mediante `flexbox` y `grid` .
+1. Descargue y descomprima el ejercicio de [colocación](/DAWM/ejercicios/colocacion.zip). 
+2. Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
+3. En el navegador, habilite el inspector para visualizar los cambios en vivo.
+4. Considere la siguiente imagen como referencia para escribir las reglas CSS de cada modelo de diseño en la hoja de estilos correspondiente.
 
 <img src="imagenes/diseno.png" alt="diseño">
 
-#### Grid por columnas 
+### Actividades en clases
 
-* Modifique la hoja de estilos _css/grid_columnas.css_.
-* Utilice el selector CSS de su preferencia para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
+#### Modelo de diseño Grid - por columnas 
 
-	```
-
-		/* Modo de colocar los elementos internos en una rejilla */
-		display: grid; 
-
-		/* Separación entre filas */
-		row-gap: 0.5rem; 
-
-		/* Separación entre columnas */
-		column-gap: 0.5rem; 
-
-		/* Número de columnas: 6 x 1fr */
-		grid-template-columns: repeat(6, 1fr); 
-
-	```
-
-* Para cada elemento **&lt;section&gt;** que se encuentran dentro de la etiqueta **&lt;main&gt;**
-	+ Acceda al elemento con el selector CSS de su preferencia. 
-	+ Para las propiedades **grid-column** y **grid-row**, en lugar de **columna_inicio**, **columna_final**, **fila_inicio** y **fila_final** reemplace por los valores que considere necesarios.
+1. Modifique la hoja de estilos _css/grid_columnas.css_.
+2. Agregue las reglas CSS y verifique los cambios en el navegador:
 	
-		```
+	- Modelo de diseño en cuadrícula. [<a href="https://developer.mozilla.org/es/docs/Web/CSS/display">Pista</a>]
+	- 0.5rem como espacio de separación entre filas y entre columnas. [<a href="https://developer.mozilla.org/es/docs/Web/CSS/gap">Pista</a>]
+	- Plantilla de 6 columnas. [<a href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-columns">Pista</a>]
+	
 
-			grid-column: columna_inicio / columna_final;
-			grid-row: fila_inicio / fila_final;
-
-		```
-    + Verifique los cambios en el navegador
-
-#### Grid por area
+#### Modelo de diseño Grid - por area
 
 * Modifique la hoja de estilos _css/grid_areas.css_.
 * Utilice el selector CSS de su preferencia para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
@@ -89,7 +65,7 @@ theme: jekyll-theme-leap-day
 	+ Verifique los cambios en el navegador
 
 
-#### Flexbox
+#### Modelo de diseño Flexbox - por fila 
 
 * Modifique la hoja de estilos _css/flexbox.css_.
 * Utilice el selector CSS de su preferencia para acceder a la etiqueta &lt;main&gt;. Aplique cada una de las siguientes propiedades y valores. Verifique los cambios en el navegador.
@@ -137,6 +113,11 @@ theme: jekyll-theme-leap-day
 ### Entregable
 
 * Comprima todos los archivos en formato .zip, o .rar, y responda a la actividad en el aulavirtual.
+
+#### Documentación
+
+* En [A Complete Guide to Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) existe una explicación extensa del uso de Grid. Otras opciones: [Layoutit Grid: Learning CSS Grid Visually With a Generator](https://css-tricks.com/layoutit-grid-learning-css-grid-visually-with-a-generator/) y [grid.layoutit](https://grid.layoutit.com/).
+* En [A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) existe una explicación extensa del uso de Flexbox. Otras opciones: [Don’t Overthink It (Flexbox) Grids](https://css-tricks.com/dont-overthink-flexbox-grids/) y [An Interactive Guide to Flexbox](https://www.joshwcomeau.com/css/interactive-guide-to-flexbox/).
 
 ### Referencias
 
