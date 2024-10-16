@@ -19,14 +19,22 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Modelo de diseño Flexbox - por fila 
+#### Modelo de diseño Flexbox - por filas
 
 1. Modifique la hoja de estilos _css/flexbox.css_.
 2. Agregue las reglas CSS y verifique los cambios en el navegador:
 	- Contenedor
+		- Modelo de diseño flexible (<a href="https://developer.mozilla.org/es/docs/Web/CSS/display">display</a>).
+		- Separación (<a href="https://developer.mozilla.org/es/docs/Web/CSS/gap">gap</a>) de **0.5rem** entre filas y de **0.5rem** entre columnas.
+		- Dirección (<a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-direction">flex-direction</a>) por filas.
+		- Ajustar los elementos (<a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-wrap">flex-wrap</a>) hasta ocupar la capacidad máxima.
+		- Distribuya el espacio (<a href="https://developer.mozilla.org/es/docs/Web/CSS/justify-content">justify-content</a>) en medio de los items en el eje principal.
+		- Estire los elementos (<a href="https://developer.mozilla.org/es/docs/Web/CSS/align-items">align-items</a>) dentro del bloque respecto con el eje transversal.
 	- Contenido
+		- Defina el tamaño predeterminado (<a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-basis">flex-basis</a>) de cada elemento, p.e.: <i>El elemento con el identificador datosgenerales se extiende el **100%**.</i>
+		- Distribuya equitativamente (<a href="https://developer.mozilla.org/es/docs/Web/CSS/flex-grow">flex-grow</a>) el espacio restante entre todos los elementos. Use el valor **1**.
 
-#### Modelo de diseño Grid - por area
+#### Modelo de diseño Grid - por areas
 
 1. Modifique la hoja de estilos _css/grid_areas.css_.
 2. Agregue las reglas CSS y verifique los cambios en el navegador:
@@ -35,7 +43,7 @@ theme: jekyll-theme-leap-day
 		- Separación (<a href="https://developer.mozilla.org/es/docs/Web/CSS/gap">gap</a>) de **0.5rem** entre filas y de **0.5rem** entre columnas.
 		- Plantilla (<a href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas">grid-template-areas</a>) de **8** areas.
 	- Contenido
-		- Ubicación por areas (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area">grid-column</a>), p.e.: <i>El elemento con el identificador datosgenerales se extiende por **solo** una área.</i>
+		- Ubicación por areas (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area">grid-column</a>), p.e.: <i>El elemento con el identificador datosgenerales se extiende por **solo** un área.</i>
 
 #### Modelo de diseño Grid - por columnas 
 
