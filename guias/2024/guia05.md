@@ -279,7 +279,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							<td>
 								<span class="explanation">/* Plantilla con áreas en la cuadrícula */</span><br>
 								<b>
-									grid-template-areas: "A D" "B D";
+									grid-template-areas: "A D" 
+									                     "B D";
 								</b>
 							</td>
 							<td><a href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas">Ir</a></td>
@@ -333,7 +334,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 							align-items: stretch;
 
 							/* Plantilla con áreas en la cuadrícula */
-							grid-template-areas: "A D" "B D";
+							grid-template-areas: "A D" 
+							                     "B D";
 						}
 
 						#resumen h2 {
