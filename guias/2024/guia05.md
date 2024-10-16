@@ -126,8 +126,8 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						<tr>
 							<td>
 								<span class="explanation">
-								/* Alineación de un elemento dentro del bloque <br>
-								que lo contiene, considerando el eje transversal */
+								/* Alinea los elementos al centro dentro<br>
+								del bloque respecto con el eje transversal */
 							  </span><br>
 								<b>align-items: center;</b>
 							</td>
@@ -203,12 +203,12 @@ Utlizar reglas CSS en la presentación y la accesibilidad del contenido mediante
 						  display: flex;
 
 						  /* Distribuye el espacio entre y alrededor
-							de los items en el eje principal */
+							 de los items en el eje principal */
 						  justify-content: space-evenly;
 
 
-						  /* Alineación de un elemento dentro del bloque
-							que lo contiene, considerando el eje transversal */
+						  /* Alinea los elementos al centro dentro
+							 del bloque respecto con el eje transversal */
 						  align-items: center;
 
 						  /* Eje principal: por columna */
