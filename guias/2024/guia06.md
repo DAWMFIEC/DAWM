@@ -11,7 +11,7 @@ theme: jekyll-theme-leap-day
 ### Objetivo general
 
 <pre class="purpose">
-Identificar el uso de componentes web mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap.
+Reconocer el uso de componentes web mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap.
 </pre>
 
 ### Actividades previas
