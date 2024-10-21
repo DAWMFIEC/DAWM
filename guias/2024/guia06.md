@@ -33,15 +33,71 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
 
 1. Descargue [Elearning ](https://themewagon.com/themes/elearning-free-bootstrap-5-css3-education-website-template/) de ThemeWagon o del [recurso local](recursos/elearning-1.0.0.zip).
 2. Descomprima y mueva todos los archivos en el repositorio local **landing**. 
-3. **Solo** las modificaciones en el archivo _index.html_.
+3. Modifique **únicamente** el archivo _index.html_. De ser necesario, use las secciones de las otras páginas en la plantilla para incorporar a la página _index.html_.
 4. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
 5. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Bootstrap - Navbar
 
-Considere la documentación de [Bootstrap](https://getbootstrap.com/)
+1. Revise la jerarquía de etiquetas HTML del componente `<nav>` en el _index.html_.
+    
+    ```html
+    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+      ...
+    </nav>
+    ```
 
-1.  
+2. Considere la siguiente tabla con las clases utilizadas en el componente y el enlace a la documentación de Bootstrap.
+
+    <table>
+        <caption>Documentación del componente <a href="https://getbootstrap.com/docs/5.3/components/navbar/">Navbar</a></caption>
+        <thead>
+            <tr>
+                <th>Clase de Bootstrap</th>
+                <th>Explicación</th>
+                <th>Enlace a la documentación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><code>navbar</code></td>
+                <td>Clase principal que define una barra de navegación.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/components/navbar/#how-it-works">How it works</a></td>
+            </tr>
+            <tr>
+                <td><code>navbar-expand-lg</code></td>
+                <td>Hace que la barra de navegación se expanda en pantallas grandes (tamaño <code>lg</code> o superior).</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/components/navbar/#responsive-behaviors">Responsive behaviors</a></td>
+            </tr>
+            <tr>
+                <td><code>bg-white</code></td>
+                <td>Aplica un fondo blanco al contenedor.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/utilities/background/#background-color">Background color</a></td>
+            </tr>
+            <tr>
+                <td><code>navbar-light</code></td>
+                <td>Configura el texto y los elementos interactivos del navbar para usarse en fondos claros.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/components/navbar/#color-schemes">Color schemes</a></td>
+            </tr>
+            <tr>
+                <td><code>shadow</code></td>
+                <td>Agrega una sombra alrededor del contenedor para crear profundidad.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/utilities/shadows/">Shadows</a></td>
+            </tr>
+            <tr>
+                <td><code>sticky-top</code></td>
+                <td>Fija la barra de navegación en la parte superior cuando se hace scroll en la página.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/helpers/position/#sticky-top">Sticky top</a></td>
+            </tr>
+            <tr>
+                <td><code>p-0</code></td>
+                <td>Elimina el padding en todos los lados del elemento.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/utilities/spacing/#margin-and-padding">Margin and padding</a></td>
+            </tr>
+        </tbody>
+    </table>
+
+
 
 ### Documentación
  
