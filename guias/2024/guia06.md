@@ -270,7 +270,7 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
 3. Revise las diferencias al cambiar el ancho del dispositivo entre **767** y **768**.  
 
     <table>
-      <caption>Responsivo <b>sm</b> </caption>
+      <caption>Responsivo <b>md</b> </caption>
       <thead>
         <tr>
           <th> < 767px </th>
