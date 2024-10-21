@@ -53,7 +53,7 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
         <caption>Documentación del componente <a href="https://getbootstrap.com/docs/5.3/components/navbar/">Navbar</a></caption>
         <thead>
             <tr>
-                <th width="20%">Clase de Bootstrap</th>
+                <th width="25%">Clase de Bootstrap</th>
                 <th>Explicación</th>
                 <th>Enlace a la documentación</th>
             </tr>
@@ -100,6 +100,91 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
         </tbody>
     </table>
 
+3. Realiza las modificaciones sobre el componente **Navbar**
+
+#### Bootstrap - Layout
+
+1. Revise la sección servicio marcada entre `<!-- Service Start -->` y `<!-- Service End -->`.
+    
+    ```html
+    <!-- Service Start -->
+    <div class="container-xxl py-5">
+      <div class="container">
+            <div class="row g-4">
+              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s"> ... </div>
+              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s"> ... </div>
+              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s"> ... </div>
+              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s"> ... </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+    ```
+
+2. Considere la siguiente tabla con las clases utilizadas en el componente y el enlace a la documentación de Bootstrap.
+
+    <table>
+        <thead>
+            <tr>
+                <th width="25%">Clase de Bootstrap</th>
+                <th>Explicación</th>
+                <th>Enlace a la documentación</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td><i>container-xxl</i></td>
+                <td>Un contenedor responsivo que ocupa el ancho máximo en pantallas extra grandes y ajusta su tamaño en pantallas más pequeñas.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/layout/containers/#how-they-work">How they work</a></td>
+            </tr>
+            <tr>
+                <td><i>container</i></td>
+                <td>Contenedor predeterminado, adaptable y de ancho fijo, lo que significa que su ancho máximo cambia en cada punto de interrupción.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/layout/containers/#default-container">Default container</a></td>
+            </tr>
+            <tr>
+                <td><i>row</i></td>
+                <td>Se utiliza para crear una fila dentro del sistema de cuadrícula de Bootstrap, agrupando las columnas.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/layout/grid/">Grid system</a></td>
+            </tr>
+            <tr>
+                <td><i>col-lg-3</i></td>
+                <td>Define una columna que ocupa 3 unidades de un total de 12 en pantallas grandes (tamaño <i>lg</i> o superior).</td>
+                <td rowspan="2"><a href="https://getbootstrap.com/docs/5.0/layout/grid/#grid-options">Grid options</a></td>
+            </tr>
+            <tr>
+                <td><i>col-sm-6</i></td>
+                <td>Define una columna que ocupa 6 unidades de un total de 12 en pantallas pequeñas (tamaño <i>sm</i> o superior).</td>
+            </tr>
+            <tr>
+                <td><i>mb-4</i></td>
+                <td>Aplica un margen en la parte inferior (margin-bottom) de 1.5 rem al encabezado del servicio.</td>
+                <td rowspan="4"><a href="https://getbootstrap.com/docs/5.0/utilities/spacing/#margin-and-padding">Margin and padding</a></td>
+            </tr>
+            <tr>
+                <td><i>p-4</i></td>
+                <td>Aplica un padding de 2 rem en todas las direcciones (arriba, abajo, izquierda, derecha) al contenedor del servicio.</td>
+            </tr>
+            <tr>
+                <td><i>py-5</i></td>
+                <td>Aplica un padding vertical (arriba y abajo) de 3 rem (padding-y) al contenedor.</td>
+            </tr>
+            <tr>
+                <td><i>pt-3</i></td>
+                <td>Aplica un padding en la parte superior (padding-top) de 1 rem al elemento.</td>
+            </tr>
+            <tr>
+                <td><i>g-4</i></td>
+                <td>Aplica un margen de 1.5 rem (gutters) entre las columnas en la fila, permitiendo espacio entre los elementos.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/layout/gutters/">Gutters</a></td>
+            </tr>
+            <tr>
+                <td><i>text-center</i></td>
+                <td>Aplica una alineación centrada al texto dentro del elemento.</td>
+                <td><a href="https://getbootstrap.com/docs/5.0/utilities/text/#text-alignment">Text alignment</a></td>
+            </tr>            
+        </tbody>
+    </table>
 
 
 ### Documentación
