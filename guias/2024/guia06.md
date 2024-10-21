@@ -18,7 +18,7 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
 
 #### Landing Page
 
-* Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc; excepto: _venta de muebles_.
+* Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc; excepto: _e-learning_ o cualquier tema cercano a educación.
 * Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Bard.
 * Decida los colores, la tipografía y los elementos visuales que refuercen el mensaje del sitio. Considere la paleta de colores de [Tintmint](https://tintmint.net/), imágenes de [DevianArt](http://www.deviantart.com) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
   
@@ -31,14 +31,17 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
 
 #### Plantilla
 
-1. Descargue [Furni](https://themewagon.com/themes/furni-online-store/) de ThemeWagon o del [recurso local](recursos/furni-1.0.0.zip).
-2. Descomprima los archivos en el repositorio local **landing**.
-3. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
-4. (STOP 1) Compruebe el resultado en el navegador.
+1. Descargue [Elearning ](https://themewagon.com/themes/elearning-free-bootstrap-5-css3-education-website-template/) de ThemeWagon o del [recurso local](recursos/elearning-1.0.0.zip).
+2. Descomprima y mueva todos los archivos en el repositorio local **landing**. 
+3. **Solo** las modificaciones en el archivo _index.html_.
+4. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
+5. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Bootstrap
+#### Bootstrap - Navbar
 
+Considere la documentación de [Bootstrap](https://getbootstrap.com/)
 
+1.  
 
 ### Documentación
  
