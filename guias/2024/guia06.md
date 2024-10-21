@@ -11,14 +11,14 @@ theme: jekyll-theme-leap-day
 ### Objetivo general
 
 <pre class="purpose">
-mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap.
+Identificar el uso de componentes web mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap.
 </pre>
 
 ### Actividades previas
 
 #### Landing Page
 
-* Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc; excepto: _e-learning_ o cualquier tema cercano a educación.
+* Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc; excepto: _lavandería_ o cualquier tema cercano.
 * Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Bard.
 * Decida los colores, la tipografía y los elementos visuales que refuercen el mensaje del sitio. Considere la paleta de colores de [Tintmint](https://tintmint.net/), imágenes de [DevianArt](http://www.deviantart.com) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
   
@@ -31,13 +31,17 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
 
 #### Plantilla
 
-1. Descargue [Elearning ](https://themewagon.com/themes/elearning-free-bootstrap-5-css3-education-website-template/) de ThemeWagon o del [recurso local](recursos/elearning-1.0.0.zip).
+1. Descargue [Freshen](https://themewagon.com/themes/freshen/) de ThemeWagon o del [recurso local](recursos/Freshen-1.0.0.zip).
 2. Descomprima y mueva todos los archivos en el repositorio local **landing**. 
 3. Modifique **únicamente** el archivo _index.html_. De ser necesario, use las secciones de las otras páginas en la plantilla para incorporar a la página _index.html_.
 4. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
 5. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Bootstrap - Navbar
+#### Bootstrap
+
+1. Identifique la referencia a la hoja de estilo y 
+
+#### Navbar
 
 1. Revise el componente `<nav>` en el _index.html_.
     
@@ -103,7 +107,7 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
 3. Realiza las modificaciones sobre el componente **Navbar**.
 4. Revise los cambios en el navegador.
 
-#### Bootstrap - Layout
+#### Layout
 
 1. Revise la sección servicio marcada entre `<!-- Service Start -->` y `<!-- Service End -->`.
     
