@@ -261,8 +261,8 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
       </thead>
       <tbody>
         <tr>
-          <td><img src="./imagenes/guia06_575.png.png" alt="diseño 00" class="img-centered"></td>
-          <td><img src="./imagenes/guia06_576.png.png" alt="diseño 00" class="img-centered"></td>
+          <td><img src="./imagenes/guia06_575.png" alt="diseño 00" class="img-centered"></td>
+          <td><img src="./imagenes/guia06_576.png" alt="diseño 00" class="img-centered"></td>
         </tr>
       </tbody>
     </table>
@@ -279,8 +279,8 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
       </thead>
       <tbody>
         <tr>
-          <td><img src="./imagenes/guia06_767.png.png" alt="diseño 00" class="img-centered"></td>
-          <td><img src="./imagenes/guia06_768.png.png" alt="diseño 00" class="img-centered"></td>
+          <td><img src="./imagenes/guia06_767.png" alt="diseño 00" class="img-centered"></td>
+          <td><img src="./imagenes/guia06_768.png" alt="diseño 00" class="img-centered"></td>
         </tr>
       </tbody>
     </table>
