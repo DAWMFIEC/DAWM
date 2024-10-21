@@ -73,49 +73,49 @@ Identificar el uso de componentes web mediante el desarrollo de una <i>landing p
     <table class="table">
       <thead>
           <tr>
-              <th width="25%">Clase</th>
+              <th width="30%">Clase</th>
               <th>Descripción</th>
               <th>Enlace a la Documentación</th>
           </tr>
       </thead>
       <tbody>
           <tr>
-              <td><code>navbar</code></td>
+              <td><i>navbar</i></td>
               <td>Clase base para crear una barra de navegación.</td>
               <td><a href="https://getbootstrap.com/docs/5.3/components/navbar/">Documentación Navbar</a></td>
           </tr>
           <tr>
-              <td><code>navbar-expand-lg</code></td>
+              <td><i>navbar-expand-lg</i></td>
               <td>Establece que la barra de navegación se expanda en dispositivos grandes (pantallas grandes).</td>
               <td><a href="https://getbootstrap.com/docs/5.3/components/navbar/#responsive-behavior">Documentación Navbar</a></td>
           </tr>
           <tr>
-              <td><code>bg-light</code></td>
+              <td><i>bg-light</i></td>
               <td>Aplica un fondo claro a la barra de navegación.</td>
               <td><a href="https://getbootstrap.com/docs/5.3/utilities/colors/#background-color">Documentación Background</a></td>
           </tr>
           <tr>
-              <td><code>text-uppercase</code></td>
+              <td><i>text-uppercase</i></td>
               <td>Transforma el texto a mayúsculas.</td>
               <td><a href="https://getbootstrap.com/docs/5.3/utilities/typography/#text-transform">Documentación Text</a></td>
           </tr>
           <tr>
-              <td><code>fs-6</code></td>
+              <td><i>fs-6</i></td>
               <td>Establece el tamaño de fuente a un tamaño específico (6).</td>
               <td><a href="https://getbootstrap.com/docs/5.3/utilities/typography/#font-size">Documentación Font Size</a></td>
           </tr>
           <tr>
-              <td><code>p-3</code></td>
+              <td><i>p-3</i></td>
               <td>Aplica un padding de 1.5 rem a todos los lados del elemento.</td>
               <td><a href="https://getbootstrap.com/docs/5.3/utilities/spacing/#padding">Documentación Spacing</a></td>
           </tr>
           <tr>
-              <td><code>border-bottom</code></td>
+              <td><i>border-bottom</i></td>
               <td>Añade un borde en la parte inferior del elemento.</td>
               <td><a href="https://getbootstrap.com/docs/5.3/utilities/borders/#border-utility">Documentación Borders</a></td>
           </tr>
           <tr>
-              <td><code>align-items-center</code></td>
+              <td><i>align-items-center</i></td>
               <td>Alinea los elementos en el centro a lo largo del eje transversal (eje Y) en un contenedor flex.</td>
               <td><a href="https://getbootstrap.com/docs/5.3/utilities/flex/#align-items">Documentación Flex</a></td>
           </tr>
@@ -128,87 +128,121 @@ Identificar el uso de componentes web mediante el desarrollo de una <i>landing p
 
 #### Layout
 
-1. Revise la sección servicio marcada entre `<!-- Service Start -->` y `<!-- Service End -->`.
+1. Revise la sección servicio **Instagram**.
     
     ```html
-    <!-- Service Start -->
-    <div class="container-xxl py-5">
-      <div class="container">
-            <div class="row g-4">
-              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.1s"> ... </div>
-              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.3s"> ... </div>
-              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.5s"> ... </div>
-              <div class="col-lg-3 col-sm-6 wow fadeInUp" data-wow-delay="0.7s"> ... </div>
-            </div>
-        </div>
-    </div>
-    <!-- Service End -->
+    
     ```
 
 2. Considere la siguiente tabla con las clases utilizadas en el componente y el enlace a la documentación de Bootstrap.
 
-    <table>
-        <thead>
-            <tr>
-                <th width="25%">Clase de Bootstrap</th>
-                <th>Explicación</th>
-                <th>Enlace a la documentación</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><i>container-xxl</i></td>
-                <td>Un contenedor responsivo que ocupa el ancho máximo en pantallas extra grandes y ajusta su tamaño en pantallas más pequeñas.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/layout/containers/#how-they-work">How they work</a></td>
-            </tr>
-            <tr>
-                <td><i>container</i></td>
-                <td>Contenedor predeterminado, adaptable y de ancho fijo, lo que significa que su ancho máximo cambia en cada punto de interrupción.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/layout/containers/#default-container">Default container</a></td>
-            </tr>
-            <tr>
-                <td><i>row</i></td>
-                <td>Se utiliza para crear una fila dentro del sistema de cuadrícula de Bootstrap, agrupando las columnas.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/layout/grid/">Grid system</a></td>
-            </tr>
-            <tr>
-                <td><i>col-lg-3</i></td>
-                <td>Define una columna que ocupa 3 unidades de un total de 12 en pantallas grandes (tamaño <i>lg</i> o superior).</td>
-                <td rowspan="2"><a href="https://getbootstrap.com/docs/5.0/layout/grid/#grid-options">Grid options</a></td>
-            </tr>
-            <tr>
-                <td><i>col-sm-6</i></td>
-                <td>Define una columna que ocupa 6 unidades de un total de 12 en pantallas pequeñas (tamaño <i>sm</i> o superior).</td>
-            </tr>
-            <tr>
-                <td><i>mb-4</i></td>
-                <td>Aplica un margen en la parte inferior (margin-bottom) de 1.5 rem al encabezado del servicio.</td>
-                <td rowspan="4"><a href="https://getbootstrap.com/docs/5.0/utilities/spacing/#margin-and-padding">Margin and padding</a></td>
-            </tr>
-            <tr>
-                <td><i>p-4</i></td>
-                <td>Aplica un padding de 2 rem en todas las direcciones (arriba, abajo, izquierda, derecha) al contenedor del servicio.</td>
-            </tr>
-            <tr>
-                <td><i>py-5</i></td>
-                <td>Aplica un padding vertical (arriba y abajo) de 3 rem (padding-y) al contenedor.</td>
-            </tr>
-            <tr>
-                <td><i>pt-3</i></td>
-                <td>Aplica un padding en la parte superior (padding-top) de 1 rem al elemento.</td>
-            </tr>
-            <tr>
-                <td><i>g-4</i></td>
-                <td>Aplica un margen de 1.5 rem (gutters) entre las columnas en la fila, permitiendo espacio entre los elementos.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/layout/gutters/">Gutters</a></td>
-            </tr>
-            <tr>
-                <td><i>text-center</i></td>
-                <td>Aplica una alineación centrada al texto dentro del elemento.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/utilities/text/#text-alignment">Text alignment</a></td>
-            </tr>            
-        </tbody>
+    <table class="table">
+      <thead>
+          <tr>
+              <th width="30%">Clase</th>
+              <th>Descripción</th>
+              <th>Enlace a la Documentación</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td><i>instagram</i></td>
+              <td>Clase personalizada que se puede usar para estilizar la sección de Instagram. No es una clase de Bootstrap por defecto.</td>
+              <td>N/A</td>
+          </tr>
+          <tr>
+              <td><i>position-relative</i></td>
+              <td>Establece la posición relativa del elemento, permitiendo posicionar elementos hijos de manera absoluta dentro de él.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/position/#position">Documentación Position</a></td>
+          </tr>
+          <tr>
+              <td><i>d-flex</i></td>
+              <td>Aplica el estilo de diseño flex al elemento.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/flex/#display">Documentación Flex</a></td>
+          </tr>
+          <tr>
+              <td><i>justify-content-center</i></td>
+              <td>Alinea los elementos en el centro a lo largo del eje principal (eje X).</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/flex/#justify-content">Documentación Flex</a></td>
+          </tr>
+          <tr>
+              <td><i>w-100</i></td>
+              <td>Establece el ancho del elemento al 100% del contenedor padre.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/sizing/#width">Documentación Sizing</a></td>
+          </tr>
+          <tr>
+              <td><i>position-absolute</i></td>
+              <td>Establece la posición absoluta del elemento en relación con el elemento padre más cercano que tenga una posición relativa.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/position/#position">Documentación Position</a></td>
+          </tr>
+          <tr>
+              <td><i>bottom-0</i></td>
+              <td>Establece la posición inferior del elemento a 0, alineándolo al fondo del contenedor padre.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/position/#position">Documentación Position</a></td>
+          </tr>
+          <tr>
+              <td><i>z-1</i></td>
+              <td>Establece el índice Z del elemento a -1, moviéndolo detrás de otros elementos.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/position/#z-index">Documentación Z-index</a></td>
+          </tr>
+          <tr>
+              <td><i>row</i></td>
+              <td>Define una fila para el sistema de grid de Bootstrap.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/layout/grid/#rows">Documentación Grid</a></td>
+          </tr>
+          <tr>
+              <td><i>g-0</i></td>
+              <td>Elimina el espaciado entre las columnas.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/layout/gutters/#gutter-spacing">Documentación Gutters</a></td>
+          </tr>
+          <tr>
+              <td><i>col-6</i></td>
+              <td>Define una columna que ocupará 6 de 12 partes del ancho en todos los tamaños de pantalla.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/layout/grid/#grid-options">Documentación Grid</a></td>
+          </tr>
+          <tr>
+              <td><i>col-sm-4</i></td>
+              <td>Define una columna que ocupará 4 de 12 partes del ancho en dispositivos pequeños y más grandes.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/layout/grid/#grid-options">Documentación Grid</a></td>
+          </tr>
+          <tr>
+              <td><i>col-md-2</i></td>
+              <td>Define una columna que ocupará 2 de 12 partes del ancho en dispositivos medianos y más grandes.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/layout/grid/#grid-options">Documentación Grid</a></td>
+          </tr>
+          <tr>
+              <td><i>insta-item</i></td>
+              <td>Clase personalizada que se puede usar para estilizar los elementos de Instagram. No es una clase de Bootstrap por defecto.</td>
+              <td>N/A</td>
+          </tr>
+          <tr>
+              <td><i>insta-image</i></td>
+              <td>Clase personalizada que se puede usar para estilizar las imágenes de Instagram. No es una clase de Bootstrap por defecto.</td>
+              <td>N/A</td>
+          </tr>
+          <tr>
+              <td><i>img-fluid</i></td>
+              <td>Aplica una propiedad de CSS que hace que la imagen sea responsiva y se ajuste al contenedor.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/content/images/#responsive-images">Documentación Images</a></td>
+          </tr>
+          <tr>
+              <td><i>btn</i></td>
+              <td>Clase base para crear un botón de Bootstrap.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/components/buttons/#buttons">Documentación Buttons</a></td>
+          </tr>
+          <tr>
+              <td><i>btn-dark</i></td>
+              <td>Aplica un estilo de botón con fondo oscuro y texto claro.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/components/buttons/#button-styles">Documentación Buttons</a></td>
+          </tr>
+          <tr>
+              <td><i>px-5</i></td>
+              <td>Aplica un padding horizontal de 3 rem a los lados del botón.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/spacing/#padding">Documentación Spacing</a></td>
+          </tr>
+      </tbody>
     </table>
+
 
 3. Utilice el inspector para comprobar el cambio en el diseño
 
