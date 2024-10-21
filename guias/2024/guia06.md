@@ -18,45 +18,32 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
 
 #### Landing Page
 
-* Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc. 
-
-  **NOTA:** No puede utilizar el tema _venta de muebles_.
-
+* Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc; excepto: _venta de muebles_.
 * Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Bard.
-  
-  **Contenido Mínimo:** 
-  - 3 secciones con información (mediante listas, imágenes y texto) del sitio, <br>
-  - 1 sección con un formulario de contacto, suscripción o registro, <br>
-    + Debe incluir al menos un _&lt;input&gt;_, un _&lt;select&gt;_ y un _&lt;button&gt;_ para el envío. <br>
-  - 1 sección para interactuar con los datos ingresados mediante el formulario, <br>
-  - 1 menú para desplazarse entre las secciones de la landing page, no entre páginas.
-
-* Descargue y use la plantilla [Furni](https://themewagon.com/themes/furni-online-store/) de ThemeWagon o del [recurso local](recursos/furni-1.0.0.zip).
 * Decida los colores, la tipografía y los elementos visuales que refuercen el mensaje del sitio. Considere la paleta de colores de [Tintmint](https://tintmint.net/), imágenes de [DevianArt](http://www.deviantart.com) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
   
 ### Actividades en clases
 
 #### Github
 
-* Crea un repositorio en GitHub con el nombre **landing**.
+1. Crea un repositorio en GitHub con el nombre **landing**.
+2. Clone localmente tu repositorio **landing**.
 
 #### Plantilla
 
-1. Revise la estructura de carpetas: HTML, CSS, JavaScript, imágenes, fuentes y otros recursos. 
-2. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
-3. Personalice el contenido (texto e imágenes) de la plantilla de acuerdo con el objetivo de su _landing page_.
-4. Agregue una hoja de estilo externa para modificar el estilo de la plantilla.
-5. Realice los cambios para la versión para dispositivos móviles y para dispositivos de escritorio.
-6. (STOP 1) Compruebe el resultado en el navegador.
-7. Versiona local y remotamente el repositorio **landing**.
-8. Despliegue el sitio del repositorio **landing** utilizando GitHub Pages.
+1. Descargue [Furni](https://themewagon.com/themes/furni-online-store/) de ThemeWagon o del [recurso local](recursos/furni-1.0.0.zip).
+2. Descomprima los archivos en el repositorio local **landing**.
+3. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
+4. (STOP 1) Compruebe el resultado en el navegador.
+
+#### Bootstrap
+
+
 
 ### Documentación
  
 * [Bootstrap](https://getbootstrap.com/) es un `kit de herramientas` para `front-end` potente, ampliable y repleto de funciones. Con el cual puedes crear y personalizar con Sass, utilizar el sistema de grillas y los `componentes` prediseñados.
   - Algunas características distintivas de la versión 5 se encuentran en la [documentación oficial](https://getbootstrap.com/docs/5.0/migration/) y en [Web3canvas](https://web3canvas.com/convert-bootstrap-4-to-5-migration-guide/).
-
-
 * Sitios con `plantillas` básicas (HTML, CSS y JS) gratuita con Bootstrap, p.e.: [Start Bootstrap](https://startbootstrap.com/?showAngular=false&showVue=false&showPro=false), [BootstrapMade](https://bootstrapmade.com/), [Creative Tim](https://www.creative-tim.com/bootstrap-themes/free) o [Theme Wagon](https://themewagon.com/theme-price/free/).
 
 
