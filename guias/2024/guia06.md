@@ -18,7 +18,7 @@ Identificar el uso de componentes web mediante el desarrollo de una <i>landing p
 
 #### Landing Page
 
-* Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc; excepto: _lavandería_ o cualquier tema cercano.
+* Defina el objetivo de su  `landing page`, p.e.: venta de productos de belleza, información de un grupo estudiantil, datos de una veterinaria, noticias de KPOP, etc; excepto: _servicios de tienda de moda online_ o parecidos.
 * Decida las secciones y el contenido que serán parte de la landing page. Tome como referencia la [recomendación](bard/guia06-bard02.pdf) de Bard.
 * Decida los colores, la tipografía y los elementos visuales que refuercen el mensaje del sitio. Considere la paleta de colores de [Tintmint](https://tintmint.net/), imágenes de [DevianArt](http://www.deviantart.com) y familia de fuentes de [Google Fonts](https://fonts.google.com/).
   
@@ -31,7 +31,7 @@ Identificar el uso de componentes web mediante el desarrollo de una <i>landing p
 
 #### Plantilla
 
-1. Descargue [Freshen](https://themewagon.com/themes/freshen/) de ThemeWagon o del [recurso local](recursos/Freshen-1.0.0.zip).
+1. Descargue [Kaira](https://themewagon.com/themes/kaira/) de ThemeWagon o del [recurso local](recursos/kaira-1.0.0.zip).
 2. Descomprima y mueva todos los archivos en el repositorio local **landing**. 
 3. Modifique **únicamente** el archivo _index.html_. De ser necesario, use las secciones de las otras páginas en la plantilla para incorporar a la página _index.html_.
 4. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
@@ -39,70 +39,89 @@ Identificar el uso de componentes web mediante el desarrollo de una <i>landing p
 
 #### Bootstrap
 
-1. Identifique la referencia a la hoja de estilo y 
+1. En _index.html_, identifique la referencia a la hoja de estilo y a la hoja de scripts.
+
+    ```html
+    <head>
+      ...
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" 
+        rel="stylesheet"
+        integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" 
+        crossorigin="anonymous">
+      ...
+    </head>
+    <body>
+      ...
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+        crossorigin="anonymous"></script>
+    </body>
+    ``` 
 
 #### Navbar
 
 1. Revise el componente `<nav>` en el _index.html_.
     
     ```html
-    <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
+    <nav class="navbar navbar-expand-lg bg-light text-uppercase fs-6 p-3 border-bottom align-items-center">
       ...
     </nav>
     ```
 
 2. Considere la siguiente tabla con las clases utilizadas en el componente y el enlace a la documentación de Bootstrap.
 
-    <table>
-        <caption>Documentación del componente <a href="https://getbootstrap.com/docs/5.3/components/navbar/">Navbar</a></caption>
-        <thead>
-            <tr>
-                <th width="25%">Clase de Bootstrap</th>
-                <th>Explicación</th>
-                <th>Enlace a la documentación</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td><i>navbar</i></td>
-                <td>Clase principal que define una barra de navegación.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/components/navbar/#how-it-works">How it works</a></td>
-            </tr>
-            <tr>
-                <td><i>navbar-expand-lg</i></td>
-                <td>Hace que la barra de navegación se expanda en pantallas grandes (tamaño <i>lg</i> o superior).</td>
-                <td>
-                  <a href="https://getbootstrap.com/docs/5.0/components/navbar/#responsive-behaviors">Responsive behaviors</a> y <br>
-                  <a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints">Available breakpoints</a>
-                </td>
-            </tr>
-            <tr>
-                <td><i>bg-white</i></td>
-                <td>Aplica un fondo blanco al contenedor.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/utilities/background/#background-color">Background color</a></td>
-            </tr>
-            <tr>
-                <td><i>navbar-light</i></td>
-                <td>Configura el texto y los elementos interactivos del navbar para usarse en fondos claros.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/components/navbar/#color-schemes">Color schemes</a></td>
-            </tr>
-            <tr>
-                <td><i>shadow</i></td>
-                <td>Agrega una sombra alrededor del contenedor para crear profundidad.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/utilities/shadows/">Shadows</a></td>
-            </tr>
-            <tr>
-                <td><i>sticky-top</i></td>
-                <td>Fija la barra de navegación en la parte superior cuando se hace scroll en la página.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/helpers/position/#sticky-top">Sticky top</a></td>
-            </tr>
-            <tr>
-                <td><i>p-0</i></td>
-                <td>Elimina el padding en todos los lados del elemento.</td>
-                <td><a href="https://getbootstrap.com/docs/5.0/utilities/spacing/#margin-and-padding">Margin and padding</a></td>
-            </tr>
-        </tbody>
+    <table class="table">
+      <thead>
+          <tr>
+              <th width="25%">Clase</th>
+              <th>Descripción</th>
+              <th>Enlace a la Documentación</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td><code>navbar</code></td>
+              <td>Clase base para crear una barra de navegación.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/components/navbar/">Documentación Navbar</a></td>
+          </tr>
+          <tr>
+              <td><code>navbar-expand-lg</code></td>
+              <td>Establece que la barra de navegación se expanda en dispositivos grandes (pantallas grandes).</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/components/navbar/#responsive-behavior">Documentación Navbar</a></td>
+          </tr>
+          <tr>
+              <td><code>bg-light</code></td>
+              <td>Aplica un fondo claro a la barra de navegación.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/colors/#background-color">Documentación Background</a></td>
+          </tr>
+          <tr>
+              <td><code>text-uppercase</code></td>
+              <td>Transforma el texto a mayúsculas.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/typography/#text-transform">Documentación Text</a></td>
+          </tr>
+          <tr>
+              <td><code>fs-6</code></td>
+              <td>Establece el tamaño de fuente a un tamaño específico (6).</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/typography/#font-size">Documentación Font Size</a></td>
+          </tr>
+          <tr>
+              <td><code>p-3</code></td>
+              <td>Aplica un padding de 1.5 rem a todos los lados del elemento.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/spacing/#padding">Documentación Spacing</a></td>
+          </tr>
+          <tr>
+              <td><code>border-bottom</code></td>
+              <td>Añade un borde en la parte inferior del elemento.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/borders/#border-utility">Documentación Borders</a></td>
+          </tr>
+          <tr>
+              <td><code>align-items-center</code></td>
+              <td>Alinea los elementos en el centro a lo largo del eje transversal (eje Y) en un contenedor flex.</td>
+              <td><a href="https://getbootstrap.com/docs/5.3/utilities/flex/#align-items">Documentación Flex</a></td>
+          </tr>
+      </tbody>
     </table>
+
 
 3. Realiza las modificaciones sobre el componente **Navbar**.
 4. Revise los cambios en el navegador.
