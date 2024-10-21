@@ -100,7 +100,8 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
         </tbody>
     </table>
 
-3. Realiza las modificaciones sobre el componente **Navbar**
+3. Realiza las modificaciones sobre el componente **Navbar**.
+4. Revise los cambios en el navegador.
 
 #### Bootstrap - Layout
 
@@ -186,6 +187,13 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
         </tbody>
     </table>
 
+3. Utilice el inspector para comprobar el cambio en el diseño
+
+    - Habilite la opción _Toggle device toolbar_, 
+    - Escoja la opción _Responsive_,
+    - Cambie el ancho del dispositivo entre **575**, **576**, **991** y **992**.  
+
+4. Revise los cambios en el navegador.
 
 ### Documentación
  
