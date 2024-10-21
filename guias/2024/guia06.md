@@ -49,6 +49,11 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
         crossorigin="anonymous">
       ...
     </head>
+    ```
+
+2. En _index.html_, identifique la referencia a la la hoja de scripts. 
+
+    ```html
     <body>
       ...
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
@@ -56,8 +61,6 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
         crossorigin="anonymous"></script>
     </body>
     ```
-
-2. En _index.html_, identifique la referencia a la la hoja de scripts. 
 
 #### Navbar
 
@@ -68,6 +71,8 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
       ...
     </nav>
     ```
+
+    <img src="./imagenes/guia06_navbar.png" alt="diseño 00" class="img-centered">
 
 2. Considere la siguiente tabla con las clases utilizadas en el componente y el enlace a la documentación de Bootstrap.
 
@@ -159,6 +164,8 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
     </footer>
     ```
 
+    <img src="./imagenes/guia06_footer.png" alt="diseño 00" class="img-centered">
+
 2. Considere la siguiente tabla con las clases utilizadas en el componente y el enlace a la documentación de Bootstrap.
 
     <table class="table">
@@ -232,15 +239,53 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
       </tbody>
     </table>
 
+3. Revise los cambios en el navegador.
 
 
-3. Utilice el inspector para comprobar el cambio en el diseño
+#### Responsivo
+
+1. Utilice el inspector para comprobar el cambio en el diseño
 
     - Habilite la opción _Toggle device toolbar_, 
     - Escoja la opción _Responsive_,
-    - Cambie el ancho del dispositivo entre **575**, **576**, **768** y **769**.  
 
-4. Revise los cambios en el navegador.
+2. Revise las diferencias al cambiar el ancho del dispositivo entre **575** y **576**. 
+
+    <table>
+      <caption>Responsivo <b>sm</b> </caption>
+      <thead>
+        <tr>
+          <th> < 576px </th>
+          <th> ≥ 576px </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./imagenes/guia06_575.png.png" alt="diseño 00" class="img-centered"></td>
+          <td><img src="./imagenes/guia06_576.png.png" alt="diseño 00" class="img-centered"></td>
+        </tr>
+      </tbody>
+    </table>
+
+3. Revise las diferencias al cambiar el ancho del dispositivo entre **767** y **768**.  
+
+    <table>
+      <caption>Responsivo <b>sm</b> </caption>
+      <thead>
+        <tr>
+          <th> < 767px </th>
+          <th> ≥ 768px </th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img src="./imagenes/guia06_767.png.png" alt="diseño 00" class="img-centered"></td>
+          <td><img src="./imagenes/guia06_768.png.png" alt="diseño 00" class="img-centered"></td>
+        </tr>
+      </tbody>
+    </table>
+
+
 
 ### Documentación
  
