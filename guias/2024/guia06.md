@@ -38,7 +38,7 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
 
 #### Bootstrap
 
-1. En _index.html_, identifique la referencia a la hoja de estilo y a la hoja de scripts.
+1. En _index.html_, identifique la referencia a la hoja de estilo.
 
     ```html
     <head>
@@ -55,7 +55,9 @@ Evaluar el uso de componentes y utilidades mediante el desarrollo de una <i>land
         integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
         crossorigin="anonymous"></script>
     </body>
-    ``` 
+    ```
+
+2. En _index.html_, identifique la referencia a la la hoja de scripts. 
 
 #### Navbar
 
