@@ -33,9 +33,8 @@ Reconocer el uso de componentes web mediante el desarrollo de una <i>landing pag
 
 1. Descargue [Kaira](https://themewagon.com/themes/kaira/) de ThemeWagon o del [recurso local](recursos/kaira-1.0.0.zip).
 2. Descomprima y mueva todos los archivos en el repositorio local **landing**. 
-3. Modifique **únicamente** el archivo _index.html_. De ser necesario, use las secciones de las otras páginas en la plantilla para incorporar a la página _index.html_.
-4. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
-5. (STOP 1) Compruebe el resultado en el navegador.
+3. Abra su proyecto con VSCode y utilice el Live Server para identificar los cambios. 
+4. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Bootstrap
 
