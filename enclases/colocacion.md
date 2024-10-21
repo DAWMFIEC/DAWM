@@ -43,7 +43,7 @@ theme: jekyll-theme-leap-day
 		- Separación (<a href="https://developer.mozilla.org/es/docs/Web/CSS/gap">gap</a>) de **0.5rem** entre filas y de **0.5rem** entre columnas.
 		- Plantilla (<a href="https://developer.mozilla.org/es/docs/Web/CSS/grid-template-areas">grid-template-areas</a>) de **8** areas.
 	- Contenido
-		- Ubicación por areas (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area">grid-column</a>), p.e.: <i>El elemento con el identificador datosgenerales se extiende por **solo** un área.</i>
+		- Ubicación por areas (<a href="https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area">grid-area</a>), p.e.: <i>El elemento con el identificador datosgenerales se extiende por **solo** un área.</i>
 
 #### Modelo de diseño Grid - por columnas 
 
