@@ -39,7 +39,7 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
 
 #### Bootstrap - Navbar
 
-1. Revise la jerarquía de etiquetas HTML del componente `<nav>` en el _index.html_.
+1. Revise el componente `<nav>` en el _index.html_.
     
     ```html
     <nav class="navbar navbar-expand-lg bg-white navbar-light shadow sticky-top p-0">
