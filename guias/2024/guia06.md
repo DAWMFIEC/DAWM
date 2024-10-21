@@ -53,47 +53,47 @@ mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizan
         <caption>Documentación del componente <a href="https://getbootstrap.com/docs/5.3/components/navbar/">Navbar</a></caption>
         <thead>
             <tr>
-                <th>Clase de Bootstrap</th>
+                <th width="20%">Clase de Bootstrap</th>
                 <th>Explicación</th>
                 <th>Enlace a la documentación</th>
             </tr>
         </thead>
         <tbody>
             <tr>
-                <td>navbar</td>
+                <td><i>navbar</i></td>
                 <td>Clase principal que define una barra de navegación.</td>
                 <td><a href="https://getbootstrap.com/docs/5.0/components/navbar/#how-it-works">How it works</a></td>
             </tr>
             <tr>
-                <td>navbar-expand-lg</td>
-                <td>Hace que la barra de navegación se expanda en pantallas grandes (tamaño <code>lg</code> o superior).</td>
+                <td><i>navbar-expand-lg</i></td>
+                <td>Hace que la barra de navegación se expanda en pantallas grandes (tamaño <i>lg</i> o superior).</td>
                 <td>
-                  <a href="https://getbootstrap.com/docs/5.0/components/navbar/#responsive-behaviors">Responsive behaviors</a><br>
+                  <a href="https://getbootstrap.com/docs/5.0/components/navbar/#responsive-behaviors">Responsive behaviors</a> y <br>
                   <a href="https://getbootstrap.com/docs/5.0/layout/breakpoints/#available-breakpoints">Available breakpoints</a>
                 </td>
             </tr>
             <tr>
-                <td>bg-white</td>
+                <td><i>bg-white</i></td>
                 <td>Aplica un fondo blanco al contenedor.</td>
                 <td><a href="https://getbootstrap.com/docs/5.0/utilities/background/#background-color">Background color</a></td>
             </tr>
             <tr>
-                <td>navbar-light</td>
+                <td><i>navbar-light</i></td>
                 <td>Configura el texto y los elementos interactivos del navbar para usarse en fondos claros.</td>
                 <td><a href="https://getbootstrap.com/docs/5.0/components/navbar/#color-schemes">Color schemes</a></td>
             </tr>
             <tr>
-                <td>shadow</td>
+                <td><i>shadow</i></td>
                 <td>Agrega una sombra alrededor del contenedor para crear profundidad.</td>
                 <td><a href="https://getbootstrap.com/docs/5.0/utilities/shadows/">Shadows</a></td>
             </tr>
             <tr>
-                <td>sticky-top</td>
+                <td><i>sticky-top</i></td>
                 <td>Fija la barra de navegación en la parte superior cuando se hace scroll en la página.</td>
                 <td><a href="https://getbootstrap.com/docs/5.0/helpers/position/#sticky-top">Sticky top</a></td>
             </tr>
             <tr>
-                <td>p-0</td>
+                <td><i>p-0</i></td>
                 <td>Elimina el padding en todos los lados del elemento.</td>
                 <td><a href="https://getbootstrap.com/docs/5.0/utilities/spacing/#margin-and-padding">Margin and padding</a></td>
             </tr>
