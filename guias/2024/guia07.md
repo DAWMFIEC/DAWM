@@ -42,9 +42,8 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 3. Use método **addEventListener** del `API` del objeto `window`.
 
-    - Cuando se produzca el `evento` **DOMContentLoaded** se ejecutará la función _ready_ .
-    - Cuando se produzca el evento **load** se ejecutará la función _loaded_ .
-
+    - Cuando se produzca el `evento` **DOMContentLoaded** se ejecutará la función _ready_.
+    - Cuando se produzca el evento **load** se ejecutará la función _loaded_.
 
     ```javascript
     let ready = () => { ... }
@@ -88,3 +87,4 @@ Javascript, función flecha, API, console, debugger, window, evento, document, p
 * JavaScript Tutorial. (2022). Retrieved 9 June 2022, from https://www.w3schools.com/js/
 * Free JavaScript Resources Java5cript.com. (2022). Retrieved 9 June 2022, from https://www.java5cript.com/
 * ¿Qué diferencia async y defer en JavaScript? (2019). Retrieved from https://cybmeta.com/diferencia-async-y-defer
+* Página: DOMContentLoaded, load, beforeunload, unload. (n.d.). Retrieved from https://es.javascript.info/onload-ondomcontentloaded
