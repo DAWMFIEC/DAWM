@@ -25,6 +25,37 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 #### Ciclo de vida de una página HTML 
 
+1. Edite el archivo de código externo _js/main.js_
+2. Defina las `funciones flecha` _ready_ y _loaded_, con: 
+
+    ```js
+    let ready = () => {
+        console.log('DOM está listo')
+        debugger
+    }
+
+    let loaded = () => {
+        debugger
+        console.log('Iframes e Images cargadas')
+    }
+    ```
+
+3. Use método **addEventListener** del `API` del objeto `window`.
+
+    - Cuando se produzca el `evento` **DOMContentLoaded** se ejecutará la función _ready_ .
+    - Cuando se produzca el evento **load** se ejecutará la función _loaded_ .
+
+
+    ```javascript
+    let ready = () => { ... }
+    let loaded = () => { ... }
+
+    window.addEventListener("DOMContentLoaded", ready);
+    window.addEventListener("load", load)
+    ```
+
+4. Habilite el inspector y recargue la página.
+5. (STOP 1) Compruebe el resultado en el navegador.
 
 
 ### Documentación
