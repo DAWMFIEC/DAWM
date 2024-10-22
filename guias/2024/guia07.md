@@ -54,8 +54,8 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
     window.addEventListener("load", load)
     ```
 
-4. Habilite el inspector y recargue la página.
-5. (STOP 1) Compruebe el resultado en el navegador.
+4. Compruebe el resultado en el navegador.
+5. (STOP 1) Habilite el inspector y recargue la página.
 
 
 ### Documentación
