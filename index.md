@@ -29,8 +29,6 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 02: Landing Page SPA - Bootstrap & Javascript](proyectos/2024/proyecto02)
   * [Guía 06: Bootstrap](guias/2024/guia06)
   * [Guía 07: Javascript - Introducción, DOM y Eventos](guias/2024/guia07)
-  * [Guía 08: Javascript - Firebase - Realtime Database, JSON, HTTP POST y Cadena de Promesas](guias/2024/guia08)
-  * [Guía 09: Javascript - HTTP GET y Async/Await](guias/2024/guia09)
 
   
 ## Scripts
