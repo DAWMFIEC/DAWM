@@ -24,8 +24,8 @@ Aplicar reglas CSS en la personalización de efectos visuales mediante el desarr
 
 ### Actividades en clases
 
-1. Clona localmente tu repositorio **curriculum**.
-2. Sigue las instrucciones de [Bard](bard/guia04-bard01.pdf), y:
+1. Clone localmente tu repositorio **curriculum**.
+2. Siga las instrucciones de [Bard](bard/guia04-bard01.pdf), y:
     - Cree la carpeta _'stylesheets'_, y dentro la hoja de estilo externa `CSS` _'style.css'_.
     - Agregue la referencia con la ruta a la hoja de estilo externa en el archivo _index.html_.
 
