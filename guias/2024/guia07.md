@@ -18,8 +18,10 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 1. Clone localmente tu repositorio **landing**.
 2. Siga las instrucciones de [Gemini](gemini/guia07-gemini01.pdf), y:
-    - Cree la carpeta con _scripts_ y agregue el archivo de código externo _'main.js'_.
+    - Cree la carpeta con _scripts_ y agregue el archivo de código externo _'scriptjs.js'_.
     - Agregue la referencia con la ruta al archivo de código externo en el archivo _index.html_.
+
+#### DOMContentLoaded & Window API
 
 ### Documentación
 
