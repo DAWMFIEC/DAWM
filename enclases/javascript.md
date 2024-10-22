@@ -14,8 +14,9 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-1. Siga las instrucciones que se encuentran en los comentarios de los archivos HTML y JS.
-2. Para la comprobación de su código, utilice el inspector - opción **Sources** para agregar puntos de interrupción.
+1. Agregue las hojas de scripting _forecast.js_ y _weathertoday.js_ al documento _index.html_.
+2. Complete el código de ambas hojas de scripting _forecast.js_ y _weathertoday.js_ de acuerdo con los comentarios.
+3. Agregue los puntos de interrupción para comprobar el funcionamiento de su solución.
 
 ### Entregable
 
