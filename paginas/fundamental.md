@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 ### Navegador
 
-* **Inside look at modern web browser (part 1) - Chrome Developers.** (2018). Retrieved 18 May 2022, from [URL](https://developer.chrome.com/blog/inside-browser-part1/S)
+* **Inside look at modern web browser (part 1) - Chrome Developers.** (2018). Retrieved 18 May 2022, from [URL](https://developer.chrome.com/blog/inside-browser-part1)
 
 ### Historia de HTML
 
