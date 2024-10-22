@@ -8,14 +8,14 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Descargue y descomprima el ejercicio de [javascript](/DAWM/ejercicios/javascript.zip). 
+* Descargue y descomprima el ejercicio de [javascript](/DAWM/ejercicios/javascript101.zip). 
 * Utilice VSCode y habilite el [Live Server](https://www.geeksforgeeks.org/how-to-enable-live-server-on-visual-studio-code/).
 * En el navegador, habilite el inspector para visualizar los cambios en vivo.
 
 ### Actividades en clases
 
-1. Agregue las hojas de scripting _forecast.js_ y _weathertoday.js_ al documento _index.html_.
-2. Complete el código de ambas hojas de scripting _forecast.js_ y _weathertoday.js_ de acuerdo con los comentarios.
+1. Agregue la referencia a las hojas de scripting _forecast.js_ y _weathertoday.js_ al documento _index.html_.
+2. Complete el código de ambas hojas de scripting de acuerdo con las instrucciones en los comentarios.
 3. Agregue los puntos de interrupción para comprobar el funcionamiento de su solución.
 
 ### Entregable
