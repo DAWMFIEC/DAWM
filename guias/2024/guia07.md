@@ -58,7 +58,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 #### Document API
 
-1. Identifique el elemento `<form>` con id **form** en el documento _index.html_.
+1. Identifique el elemento &lt;form&gt; con id **form** en el documento _index.html_.
 
     ```html
     <form id="form" class="d-flex flex-wrap gap-2">
