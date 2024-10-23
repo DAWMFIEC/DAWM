@@ -80,9 +80,33 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
       debugger;
 
     }
+
+    window.addEventListener( ... ) 
     ```
 
 4. (STOP 1) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
+
+#### Evento submit
+
+1. Comente los puntos de interrupción **debugger**.
+2. Dentro de la función flecha _loaded_:
+
+    + Use método **addEventListener** del API del objeto **myform** para agregar un callback (función flecha con el parámetro _eventSubmit_) que responda al evento _submit_. 
+
+    ```typescript
+    let loaded = ( eventLoaded ) => {
+
+      let myform = document.getElementById('form');
+      
+      myform.addEventListener('submit', (eventSubmit) => {
+          debugger;
+      })
+
+    }
+
+    window.addEventListener( ... ) 
+    ```
+3. (STOP 1) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
 
 ### Documentación
 
