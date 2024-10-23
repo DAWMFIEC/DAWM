@@ -73,7 +73,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 3. Dentro de la función flecha _loaded_:
     
-    + Asigne a la variable _myform_ la referencia a partir del objeto `document` y el método **getElementById**. El formulario tiene id _'form'_.
+    + Asigne a la variable _myform_ la referencia al elemento HTML a partir del objeto `document` con el método **getElementById**. El formulario tiene id _'form'_.
     + Agregue un punto de interrupción. 
 
     <details>
@@ -95,7 +95,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Elimine los puntos de interrupción **debugger**.
 2. Dentro de la función flecha _loaded_:
 
-    + Use la variable _myform_, con el método **addEventListener** para relacionar el evento **submit** con una función flecha (incluya el parámetro _eventSubmit_).
+    + Use la variable _myform_ mediante con el método **addEventListener** para relacionar el evento **submit** con una función flecha (incluya el parámetro _eventSubmit_).
     + Agregue un punto de interrupción. 
 
     <details>
