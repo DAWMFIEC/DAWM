@@ -76,6 +76,14 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
     + Asigne a la variable _myform_ la referencia al elemento HTML a partir del objeto `document` con el método **getElementById**. El formulario tiene id _'form'_.
     + Agregue un punto de interrupción. 
 
+    ```typescript
+    let loaded = () => {
+
+      //Coloque aquí el código
+
+    }
+    ```
+
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="javascript"><code>
@@ -97,7 +105,17 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
     + Use la variable _myform_ mediante con el método **addEventListener** para relacionar el evento **submit** con un callback (incluya el parámetro _eventSubmit_).
     + Dentro del callback, use el parámetro _eventSubmit_ para evitar el comportamiento por defecto del formulario    
-    + Agregue un punto de interrupción. 
+    + Agregue un punto de interrupción.
+
+    ```typescript
+    let loaded = () => {
+
+      let myform = document.getElementById('form');
+      
+      //Coloque aquí el código
+
+    }
+    ```
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
