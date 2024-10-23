@@ -41,17 +41,16 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
     }
     ```
 
-3. Use método **addEventListener** del `API` del objeto `window`.
-
-    - Cuando se produzca el `evento` **DOMContentLoaded** se ejecutará la función _ready_.
-    - Cuando se produzca el evento **load** se ejecutará la función _loaded_.
+3. Agregue:
+    - El objeto `window` que use el método **addEventListener**, del `API`, para relacionar el `evento` **DOMContentLoaded** con la función _ready_.
+    - El objeto window que use el método **addEventListener** para relacionar el evento **load** con la función _loaded_.
 
     ```javascript
     let ready = () => { ... }
     let loaded = () => { ... }
 
     window.addEventListener("DOMContentLoaded", ready);
-    window.addEventListener("load", load)
+    window.addEventListener("load", loaded)
     ```
 
 4. (STOP 2) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
@@ -72,9 +71,8 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 3. Dentro de la función flecha _loaded_:
     
-    + Use método **getElementById** del API del objeto `document` para obtener una referencia al elemento HTML de acuerdo con el argumento.
+    + Asigne a la variable _myform_ la referencia al elemento HTML con el ID _'form'_ mediante el objeto `document` y método **getElementById** del API.
     + Agregue un punto de interrupción. 
-
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
@@ -95,44 +93,25 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Elimine los puntos de interrupción **debugger**.
 2. Dentro de la función flecha _loaded_:
 
-    + Use método **addEventListener** del API del objeto **myform** para agregar un callback (función flecha con el parámetro _eventSubmit_) que responda al evento _submit_. 
+    + Para la variable _myform_, use el método **addEventListener** para relacionar el evento **submit** con una función flecha (incluya el parámetro _eventSubmit_).
+    + Agregue un punto de interrupción. 
 
-    ```typescript
-    let loaded = ( eventLoaded ) => {
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+        let loaded = ( eventLoaded ) => {
 
-      let myform = document.getElementById('form');
-      
-      myform.addEventListener('submit', (eventSubmit) => {
-          debugger;
-      })
+          let myform = document.getElementById('form');
+          
+          myform.addEventListener('submit', (eventSubmit) => {
+              debugger;
+          })
 
-    }
+        }
+      </code></pre>
+    </details> 
 
-    window.addEventListener( ... ) 
-    ```
 3. (STOP 4) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
-
-#### Evento submit
-
-1. Elimine los puntos de interrupción **debugger**.
-2. Dentro de la función flecha _loaded_:
-
-    + Use método **addEventListener** del API del objeto **myform** para agregar un callback (función flecha con el parámetro _eventSubmit_) que responda al evento _submit_. 
-
-    ```typescript
-    let loaded = ( eventLoaded ) => {
-
-      let myform = document.getElementById('form');
-      
-      myform.addEventListener('submit', (eventSubmit) => {
-          debugger;
-      })
-
-    }
-
-    window.addEventListener( ... ) 
-    ```
-3. (STOP 1) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
 
 ### Documentación
 
