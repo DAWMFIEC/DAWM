@@ -7,6 +7,7 @@ theme: jekyll-theme-leap-day
 [DAWM](/DAWM/) / [Proyecto02](/DAWM/proyectos/2024/proyecto02)
 
 <link href="styles/mystyle.css" rel="stylesheet" />
+<script src="javascripts/tabs.js" type="text/javascript"></script>
 
 ### Objetivo general
 
@@ -53,11 +54,11 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
     window.addEventListener("load", load)
     ```
 
-4. (STOP 1) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
+4. (STOP 2) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
 
 #### Document API
 
-1. Comente los puntos de interrupción **debugger**.
+1. Elimine los puntos de interrupción **debugger**.
 2. Identifique el elemento &lt;form&gt; con id **form** en el documento _index.html_.
 
     ```html
@@ -67,28 +68,53 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
     </form>
     ```
 
-    <img src="./imagenes/guia07_formulario.png" alt="formulario" class="img-centered">
+    <img src="./imagenes/guia07_formulario.png" alt="formulario">
 
 3. Dentro de la función flecha _loaded_:
     
-    + Use método **getElementById** del API del objeto `document` para obtener una referencia al elemento HTML de acuerdo con el argumento. 
+    + Use método **getElementById** del API del objeto `document` para obtener una referencia al elemento HTML de acuerdo con el argumento.
+    + Agregue un punto de interrupción. 
+
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+        let loaded = () => {
+
+          let myform = document.getElementById('form');
+          debugger;
+
+        }
+      </code></pre>
+    </details>
+
+4. (STOP 3) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
+
+#### Evento submit
+
+1. Elimine los puntos de interrupción **debugger**.
+2. Dentro de la función flecha _loaded_:
+
+    + Use método **addEventListener** del API del objeto **myform** para agregar un callback (función flecha con el parámetro _eventSubmit_) que responda al evento _submit_. 
 
     ```typescript
-    let loaded = () => {
+    let loaded = ( eventLoaded ) => {
 
       let myform = document.getElementById('form');
-      debugger;
+      
+      myform.addEventListener('submit', (eventSubmit) => {
+          debugger;
+      })
 
     }
 
     window.addEventListener( ... ) 
     ```
-
-4. (STOP 1) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
+3. (STOP 4) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
 
 #### Evento submit
 
-1. Comente los puntos de interrupción **debugger**.
+1. Elimine los puntos de interrupción **debugger**.
 2. Dentro de la función flecha _loaded_:
 
     + Use método **addEventListener** del API del objeto **myform** para agregar un callback (función flecha con el parámetro _eventSubmit_) que responda al evento _submit_. 
