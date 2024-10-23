@@ -42,8 +42,8 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
     ```
 
 3. Agregue:
-    - El objeto `window` que use el método **addEventListener**, del `API`, para relacionar el `evento` **DOMContentLoaded** con la función _ready_.
-    - El objeto window que use el método **addEventListener** para relacionar el evento **load** con la función _loaded_.
+    - El objeto `window` con el método **addEventListener**, del `API`, para relacionar el `evento` **DOMContentLoaded** con la función _ready_.
+    - El objeto window con el método **addEventListener** para relacionar el evento **load** con la función _loaded_.
 
     ```javascript
     let ready = () => { ... }
@@ -71,7 +71,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 3. Dentro de la función flecha _loaded_:
     
-    + Asigne a la variable _myform_ la referencia al elemento HTML con el ID _'form'_ mediante el objeto `document` y método **getElementById** del API.
+    + Asigne a la variable _myform_ la referencia a partir del objeto `document` y el método **getElementById**. El formulario tiene id _'form'_.
     + Agregue un punto de interrupción. 
 
     <details>
@@ -93,7 +93,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Elimine los puntos de interrupción **debugger**.
 2. Dentro de la función flecha _loaded_:
 
-    + Para la variable _myform_, use el método **addEventListener** para relacionar el evento **submit** con una función flecha (incluya el parámetro _eventSubmit_).
+    + Use la variable _myform_, con el método **addEventListener** para relacionar el evento **submit** con una función flecha (incluya el parámetro _eventSubmit_).
     + Agregue un punto de interrupción. 
 
     <details>
