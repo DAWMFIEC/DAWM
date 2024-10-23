@@ -56,6 +56,31 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 4. Compruebe el resultado en el navegador.
 5. (STOP 1) Habilite el inspector y recargue la página.
 
+#### Document API
+
+1. Identifique el elemento `<form>` con id **form** en el documento _index.html_.
+
+    ```html
+    <form id="form" class="d-flex flex-wrap gap-2">
+      <input type="text" name="email" placeholder="Your Email Addresss" class="form-control form-control-lg">
+      <button class="btn btn-dark btn-lg text-uppercase w-100">Sign Up</button>
+    </form>
+    ```
+
+    <img src="./imagenes/guia07_formulario.png" alt="formulario" class="img-centered">
+
+2. Dentro de la función flecha _loaded_:
+    
+    + Use método **getElementById** del API del objeto `document` para obtener una referencia al elemento HTML de acuerdo con el argumento. 
+
+    ```typescript
+    let loaded = ( eventLoaded ) => {
+
+      let myform = document.getElementById('form');
+      debugger;
+
+    }
+    ```
 
 ### Documentación
 
