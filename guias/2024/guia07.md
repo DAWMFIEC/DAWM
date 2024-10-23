@@ -95,7 +95,8 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Elimine los puntos de interrupción **debugger**.
 2. Dentro de la función flecha _loaded_:
 
-    + Use la variable _myform_ mediante con el método **addEventListener** para relacionar el evento **submit** con una función flecha (incluya el parámetro _eventSubmit_).
+    + Use la variable _myform_ mediante con el método **addEventListener** para relacionar el evento **submit** con un callback (incluya el parámetro _eventSubmit_).
+    + Dentro del callback, use el parámetro _eventSubmit_ para evitar el comportamiento por defecto del formulario    
     + Agregue un punto de interrupción. 
 
     <details>
@@ -106,6 +107,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
           let myform = document.getElementById('form');
           
           myform.addEventListener('submit', (eventSubmit) => {
+              eventSubmit.preventDefault(); 
               debugger;
           })
 
