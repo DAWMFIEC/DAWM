@@ -62,7 +62,9 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
     ```html
     <form id="form" class="d-flex flex-wrap gap-2">
-      <input type="text" name="email" placeholder="Your Email Addresss" class="form-control form-control-lg">
+      <input type="text" name="email" 
+             placeholder="Your Email Addresss" 
+             class="form-control form-control-lg">
       <button class="btn btn-dark btn-lg text-uppercase w-100">Sign Up</button>
     </form>
     ```
