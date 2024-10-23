@@ -71,7 +71,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
     <img src="./imagenes/guia07_formulario.png" alt="formulario">
 
-3. Dentro de la función flecha _loaded_:
+3. Escriba el código o genere el código:
     
     + Asigne a la variable _myform_ la referencia al elemento HTML a partir del objeto `document` con el método **getElementById**. El formulario tiene id _'form'_.
     + Agregue un punto de interrupción. 
@@ -101,7 +101,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 #### Evento submit
 
 1. Elimine los puntos de interrupción **debugger**.
-2. Dentro de la función flecha _loaded_:
+2. Escriba el código o genere el código:
 
     + Use la variable _myform_ mediante con el método **addEventListener** para relacionar el evento **submit** con un callback (incluya el parámetro _eventSubmit_).
     + Dentro del callback, use el parámetro _eventSubmit_ para evitar el comportamiento por defecto del formulario    
@@ -111,7 +111,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
     let loaded = () => {
 
       let myform = document.getElementById('form');
-      
+
       //Coloque aquí el código
 
     }
@@ -134,6 +134,81 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
     </details> 
 
 3. (STOP 4) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
+
+#### Validación de campos
+
+1. Elimine los puntos de interrupción **debugger**.
+2. Escriba el código o genere el código:
+
+    + Asigne a la variable _emailElement_ la referencia al elemento HTML a partir del objeto document con el método **querySelector**. El elemento tiene la clase _'form-control-lg'_.
+    + Asigne a la variable _emailText_ a partir del objeto _emailElement_ con la propiedad **value**.
+    + Use la variable _emailText_ mediante la propiedad **length** para verificar la longitud. En caso que la longitud sea igual que 0, use la variable _emailElement_ mediante con el método **focus** para llevar el enfoque al elemento.
+
+    ```typescript
+    let loaded = () => {
+
+      let myform = document.getElementById('form');
+      
+      myform.addEventListener('submit', (eventSubmit) => {
+          eventSubmit.preventDefault(); 
+          
+          //Coloque aquí el código
+
+      })
+
+    }
+    ```
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+        let loaded = ( eventLoaded ) => {
+
+          let myform = document.getElementById('form');
+          
+          myform.addEventListener('submit', (eventSubmit) => {
+              eventSubmit.preventDefault(); 
+              
+              const emailElement = document.querySelector('.form-control-lg');
+              const emailText = emailElement.value;
+
+              if (emailText.length === 0) {
+                emailElement.focus()
+              }
+          })
+
+        }
+      </code></pre>
+    </details> 
+
+3. (STOP 5) Compruebe el resultado en el navegador.
+
+#### Animate API
+
+1. Revise la documentación de [Web Animations API Concepts](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Web_Animations_API_Concepts) y [Web Animation API](https://blog.carbonteq.com/web-animation-api/)
+2. Escriba el código o genere el código:
+
+    + Además de llevar el enfoque al elemento _emailElement_: Use el _Animate API_ para que elemento _emailElement_ se mueva de 0 a 50px y de -50px a 0, con una duración de 400 milisegundos. 
+
+    <details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+        emailElement.animate(
+            [
+                { transform: "translateX(0)" },
+                { transform: "translateX(50px)" },
+                { transform: "translateX(-50px)" },
+                { transform: "translateX(0)" }
+            ],
+            {
+                duration: 400,
+                easing: "linear",
+            }
+        )
+      </code></pre>
+    </details> 
+
+3. (STOP 6) Compruebe el resultado en el navegador. 
 
 ### Documentación
 
@@ -166,3 +241,4 @@ Javascript, función flecha, API, console, debugger, window, evento, document, p
 * Free JavaScript Resources Java5cript.com. (2022). Retrieved 9 June 2022, from https://www.java5cript.com/
 * ¿Qué diferencia async y defer en JavaScript? (2019). Retrieved from https://cybmeta.com/diferencia-async-y-defer
 * Página: DOMContentLoaded, load, beforeunload, unload. (n.d.). Retrieved from https://es.javascript.info/onload-ondomcontentloaded
+* Nick Schot  @nickschot on Twitter, & Schot, N. (2021). An intro to animating with the Web Animations API. Retrieved from https://mainmatter.com/blog/2021/01/29/web-animations-intro/
