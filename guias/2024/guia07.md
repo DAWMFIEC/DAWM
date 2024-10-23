@@ -53,12 +53,12 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
     window.addEventListener("load", load)
     ```
 
-4. Compruebe el resultado en el navegador.
-5. (STOP 1) Habilite el inspector y recargue la página.
+4. (STOP 1) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
 
 #### Document API
 
-1. Identifique el elemento &lt;form&gt; con id **form** en el documento _index.html_.
+1. Comente los puntos de interrupción **debugger**.
+2. Identifique el elemento &lt;form&gt; con id **form** en el documento _index.html_.
 
     ```html
     <form id="form" class="d-flex flex-wrap gap-2">
@@ -69,18 +69,20 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
     <img src="./imagenes/guia07_formulario.png" alt="formulario" class="img-centered">
 
-2. Dentro de la función flecha _loaded_:
+3. Dentro de la función flecha _loaded_:
     
     + Use método **getElementById** del API del objeto `document` para obtener una referencia al elemento HTML de acuerdo con el argumento. 
 
     ```typescript
-    let loaded = ( eventLoaded ) => {
+    let loaded = () => {
 
       let myform = document.getElementById('form');
       debugger;
 
     }
     ```
+
+4. (STOP 1) Compruebe el resultado en el navegador. Habilite el inspector y recargue la página.
 
 ### Documentación
 
