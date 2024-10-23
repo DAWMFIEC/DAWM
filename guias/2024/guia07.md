@@ -71,7 +71,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
     <img src="./imagenes/guia07_formulario.png" alt="formulario">
 
-3. Escriba el código o genere el código:
+3. Escriba o genere el código:
     
     + Asigne a la variable _myform_ la referencia al elemento HTML a partir del objeto `document` con el método **getElementById**. El formulario tiene id _'form'_.
     + Agregue un punto de interrupción. 
@@ -101,7 +101,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 #### Evento submit
 
 1. Elimine los puntos de interrupción **debugger**.
-2. Escriba el código o genere el código:
+2. Escriba o genere el código:
 
     + Use la variable _myform_ mediante con el método **addEventListener** para relacionar el evento **submit** con un callback (incluya el parámetro _eventSubmit_).
     + Dentro del callback, use el parámetro _eventSubmit_ para evitar el comportamiento por defecto del formulario    
@@ -138,7 +138,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 #### Validación de campos
 
 1. Elimine los puntos de interrupción **debugger**.
-2. Escriba el código o genere el código:
+2. Escriba o genere el código:
 
     + Asigne a la variable _emailElement_ la referencia al elemento HTML a partir del objeto document con el método **querySelector**. El elemento tiene la clase _'form-control-lg'_.
     + Asigne a la variable _emailText_ a partir del objeto _emailElement_ con la propiedad **value**.
@@ -186,7 +186,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 #### Animate API
 
 1. Revise la documentación de [Web Animations API Concepts](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Web_Animations_API_Concepts) y [Web Animation API](https://blog.carbonteq.com/web-animation-api/)
-2. Escriba el código o genere el código:
+2. Escriba o genere el código:
 
     + Además de llevar el enfoque al elemento _emailElement_: Use el _Animate API_ para que elemento _emailElement_ se mueva de 0 a 50px y de -50px a 0, con una duración de 400 milisegundos. 
 
