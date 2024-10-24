@@ -74,7 +74,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 3. Escriba o genere el código:
     
     <pre class="prompt">
-    Asigne a la variable _myform_ la referencia al elemento HTML a partir del objeto `document` con el método **getElementById**. El formulario tiene id _'form'_.<br>
+    Asigne a la variable <i>myform</i> la referencia al elemento HTML a partir del objeto document con el método <b>getElementById</b>. El formulario tiene id <i>'form'</i>.<br>
     Agregue un punto de interrupción.
     </pre> 
 
@@ -106,8 +106,8 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 2. Escriba o genere el código:
 
     <pre class="prompt">
-    Use la variable _myform_ mediante con el método **addEventListener** para relacionar el evento **submit** con un callback (incluya el parámetro _eventSubmit_).<br>
-    Dentro del callback, use el parámetro _eventSubmit_ para evitar el comportamiento por defecto del formulario.<br>
+    Use la variable <i>myform</i> mediante con el método <b>addEventListener</b> para relacionar el evento <b>submit</b> con un callback (incluya el parámetro <i>eventSubmit</i>).<br>
+    Dentro del callback, use el parámetro <i>eventSubmit</i> para evitar el comportamiento por defecto del formulario.<br>
     Agregue un punto de interrupción.
     </pre>
 
@@ -145,9 +145,9 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 2. Escriba o genere el código:
 
     <pre class="prompt">
-    Asigne a la variable _emailElement_ la referencia al elemento HTML a partir del objeto document con el método **querySelector**. El elemento tiene la clase _'form-control-lg'_.<br>
-    Asigne a la variable _emailText_ a partir del objeto _emailElement_ con la propiedad **value**.<br>
-    Use la variable _emailText_ mediante la propiedad **length** para verificar la longitud. En caso que la longitud sea igual que 0, use la variable _emailElement_ mediante con el método **focus** para llevar el enfoque al elemento.
+    Asigne a la variable <i>emailElement</i> la referencia al elemento HTML a partir del objeto document con el método <b>querySelector</b>. El elemento tiene la clase <i>'form-control-lg'</i>.<br>
+    Asigne a la variable <i>emailText</i> a partir del objeto <i>emailElement</i> con la propiedad <b>value</b>.<br>
+    Use la variable <i>emailText</i> mediante la propiedad <b>length</b> para verificar la longitud. En caso que la longitud sea igual que 0, use la variable <i>emailElement</i> mediante con el método <b>focus</b> para llevar el enfoque al elemento.
     </pre>
 
     ```typescript
@@ -195,7 +195,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 2. Escriba o genere el código:
 
     <pre class="prompt">
-    Además de llevar el enfoque al elemento _emailElement_: Use el _Animate API_ para que elemento _emailElement_ se mueva de 0 a 50px y de -50px a 0, con una duración de 400 milisegundos. 
+    Además de llevar el enfoque al elemento <i>emailElement</i>: Use el <i>Animate API</i> para que elemento <i>emailElement</i> se mueva de 0 a 50px y de -50px a 0, con una duración de 400 milisegundos. 
     </pre>
 
     <details>
