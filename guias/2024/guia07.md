@@ -73,8 +73,10 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 3. Escriba o genere el código:
     
-    + Asigne a la variable _myform_ la referencia al elemento HTML a partir del objeto `document` con el método **getElementById**. El formulario tiene id _'form'_.
-    + Agregue un punto de interrupción. 
+    <pre class="prompt">
+    Asigne a la variable _myform_ la referencia al elemento HTML a partir del objeto `document` con el método **getElementById**. El formulario tiene id _'form'_.<br>
+    Agregue un punto de interrupción.
+    </pre> 
 
     ```typescript
     let loaded = () => {
@@ -103,9 +105,11 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Elimine los puntos de interrupción **debugger**.
 2. Escriba o genere el código:
 
-    + Use la variable _myform_ mediante con el método **addEventListener** para relacionar el evento **submit** con un callback (incluya el parámetro _eventSubmit_).
-    + Dentro del callback, use el parámetro _eventSubmit_ para evitar el comportamiento por defecto del formulario    
-    + Agregue un punto de interrupción.
+    <pre class="prompt">
+    Use la variable _myform_ mediante con el método **addEventListener** para relacionar el evento **submit** con un callback (incluya el parámetro _eventSubmit_).<br>
+    Dentro del callback, use el parámetro _eventSubmit_ para evitar el comportamiento por defecto del formulario.<br>
+    Agregue un punto de interrupción.
+    </pre>
 
     ```typescript
     let loaded = () => {
@@ -140,9 +144,11 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Elimine los puntos de interrupción **debugger**.
 2. Escriba o genere el código:
 
-    + Asigne a la variable _emailElement_ la referencia al elemento HTML a partir del objeto document con el método **querySelector**. El elemento tiene la clase _'form-control-lg'_.
-    + Asigne a la variable _emailText_ a partir del objeto _emailElement_ con la propiedad **value**.
-    + Use la variable _emailText_ mediante la propiedad **length** para verificar la longitud. En caso que la longitud sea igual que 0, use la variable _emailElement_ mediante con el método **focus** para llevar el enfoque al elemento.
+    <pre class="prompt">
+    Asigne a la variable _emailElement_ la referencia al elemento HTML a partir del objeto document con el método **querySelector**. El elemento tiene la clase _'form-control-lg'_.<br>
+    Asigne a la variable _emailText_ a partir del objeto _emailElement_ con la propiedad **value**.<br>
+    Use la variable _emailText_ mediante la propiedad **length** para verificar la longitud. En caso que la longitud sea igual que 0, use la variable _emailElement_ mediante con el método **focus** para llevar el enfoque al elemento.
+    </pre>
 
     ```typescript
     let loaded = () => {
@@ -188,7 +194,9 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Revise la documentación de [Web Animations API Concepts](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Web_Animations_API_Concepts) y [Web Animation API](https://blog.carbonteq.com/web-animation-api/)
 2. Escriba o genere el código:
 
-    + Además de llevar el enfoque al elemento _emailElement_: Use el _Animate API_ para que elemento _emailElement_ se mueva de 0 a 50px y de -50px a 0, con una duración de 400 milisegundos. 
+    <pre class="prompt">
+    Además de llevar el enfoque al elemento _emailElement_: Use el _Animate API_ para que elemento _emailElement_ se mueva de 0 a 50px y de -50px a 0, con una duración de 400 milisegundos. 
+    </pre>
 
     <details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
