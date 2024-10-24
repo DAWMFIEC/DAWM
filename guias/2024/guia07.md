@@ -73,9 +73,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 3. Escriba o genere el código:
     
-    <pre class="prompt">
-    Asigne a la variable <i>myform</i> la referencia al elemento HTML a partir del objeto document con el método <b>getElementById</b>. El formulario tiene id <i>'form'</i>.<br>
-    Agregue un punto de interrupción.
+    <pre class="prompt">Asigne a la variable <i>myform</i> la referencia al elemento HTML a partir del objeto document con el método <b>getElementById</b>. El formulario tiene id <i>'form'</i>.<br>Agregue un punto de interrupción.
     </pre> 
 
     ```typescript
@@ -105,10 +103,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Elimine los puntos de interrupción **debugger**.
 2. Escriba o genere el código:
 
-    <pre class="prompt">
-    Use la variable <i>myform</i> mediante con el método <b>addEventListener</b> para relacionar el evento <b>submit</b> con un callback (incluya el parámetro <i>eventSubmit</i>).<br>
-    Dentro del callback, use el parámetro <i>eventSubmit</i> para evitar el comportamiento por defecto del formulario.<br>
-    Agregue un punto de interrupción.
+    <pre class="prompt">Use la variable <i>myform</i> mediante con el método <b>addEventListener</b> para relacionar el evento <b>submit</b> con un callback (incluya el parámetro <i>eventSubmit</i>).<br>Dentro del callback, use el parámetro <i>eventSubmit</i> para evitar el comportamiento por defecto del formulario.<br>Agregue un punto de interrupción.
     </pre>
 
     ```typescript
@@ -144,9 +139,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Elimine los puntos de interrupción **debugger**.
 2. Escriba o genere el código:
 
-    <pre class="prompt">
-    Asigne a la variable <i>emailElement</i> la referencia al elemento HTML a partir del objeto document con el método <b>querySelector</b>. El elemento tiene la clase <i>'form-control-lg'</i>.<br>
-    Asigne a la variable <i>emailText</i> a partir del objeto <i>emailElement</i> con la propiedad <b>value</b>.<br>
+    <pre class="prompt">Asigne a la variable <i>emailElement</i> la referencia al elemento HTML a partir del objeto document con el método <b>querySelector</b>. El elemento tiene la clase <i>'form-control-lg'</i>.<br>Asigne a la variable <i>emailText</i> a partir del objeto <i>emailElement</i> con la propiedad <b>value</b>.<br>
     Use la variable <i>emailText</i> mediante la propiedad <b>length</b> para verificar la longitud. En caso que la longitud sea igual que 0, use la variable <i>emailElement</i> mediante con el método <b>focus</b> para llevar el enfoque al elemento.
     </pre>
 
@@ -194,8 +187,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 1. Revise la documentación de [Web Animations API Concepts](https://developer.mozilla.org/en-US/docs/Web/API/Web_Animations_API/Web_Animations_API_Concepts) y [Web Animation API](https://blog.carbonteq.com/web-animation-api/)
 2. Escriba o genere el código:
 
-    <pre class="prompt">
-    Además de llevar el enfoque al elemento <i>emailElement</i>: Use el <i>Animate API</i> para que elemento <i>emailElement</i> se mueva de 0 a 50px y de -50px a 0, con una duración de 400 milisegundos. 
+    <pre class="prompt">Además de llevar el enfoque al elemento <i>emailElement</i>: Use el <i>Animate API</i> para que elemento <i>emailElement</i> se mueva de 0 a 50px y de -50px a 0, con una duración de 400 milisegundos. 
     </pre>
 
     <details>
