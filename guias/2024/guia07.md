@@ -73,11 +73,7 @@ Proponer código de scripting para el manejo de datos desde el cliente mediante 
 
 3. Escriba o genere el código:
     
-    <pre class="prompt">
-      <ul>
-        <li>Asigne a la variable <i>myform</i> la referencia al elemento HTML a partir del objeto document con el método <b>getElementById</b>. El formulario tiene id <i>'form'</i>.</li>
-        <li>Agregue un punto de interrupción.</li>
-      </ul>
+    <pre class="prompt">Asigne a la variable <i>myform</i> la referencia al elemento HTML a partir del objeto document con el método <b>getElementById</b>. El formulario tiene id <i>'form'</i>.<br>Agregue un punto de interrupción.
     </pre> 
 
     ```typescript
