@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 ### Objetivo general
 
 <pre class="purpose">
-Proponer código de scripting para el manejo de datos desde el cliente mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap para la adecuación a los requerimientos específicos.
+Proponer código de scripting para el manejo de la interfaz del cliente mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap para la adecuación a los requerimientos específicos.
 </pre>
 
 ### Actividades en clases
