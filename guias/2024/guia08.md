@@ -11,23 +11,30 @@ theme: jekyll-theme-leap-day
 ### Objetivo general
 
 <pre class="purpose">
-Proponer código de scripting para el manejo de datos mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap para la adecuación a los requerimientos específicos.
+Proponer código de scripting para el manejo de datos en una base de datos alojada en la nube mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap para la adecuación a los requerimientos específicos.
 </pre>
 
 ### Actividades en clases
 
 #### Firebase - Realtime Database
 
-1. Siga el tutorial de [Firebase - Realtime Database](/DAWM/tutoriales/firebase_realtime_database) para crear una colección de datos para su proyecto, en modo de prueba. 
-	+ Compruebe el acceso a la colección de datos mediante el patrón de URL:
+1. Acceda a la consola de [Firebase](https://console.firebase.google.com/u/0/), inicie sesión y cree un proyecto, p.e.: **landing**.
+2. Dentro del proyecto, en el menú de navegación:
+	+ Seleccione la categoría **Build**,
+	+ Escoja la opción **Realtime Database**,
+	+ Haga clic en **Create Database**.
+3. Selecciona la ubicación y selecciona el **Modo de prueba** para permitir lecturas/escrituras sin restricciones por autenticación (para uso en desarrollo).
+4. Copie la URL para acceder al _API REST_ de Firebase. La URL tiene el siguiente patrón:
 
 	```
 	https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 	```
 
-#### Fetch - POST
+	Aquí, ```<nombre-de-la-coleccion>``` es el nombre de la colección con la que se interactuará.
 
-1. Coloque identificadores únicos al formulrio y a los elementos del formulario, p.e.:
+#### Envío de datos - Fetch POST
+
+1. Verifique que su formulario, y los elementos del formulario, tengan valores de identificadores únicos, p.e.:
 
 	```html
 	<form id="formulario" ... >
@@ -36,45 +43,57 @@ Proponer código de scripting para el manejo de datos mediante el desarrollo de 
 		...
 		<select id="form_products"> ... </select>
 		...
+		<input id="form_option1" type="radio">
 	</form>	
 	```
 
-2. Detenga el comportamiento predeterminado del formulario al evento submit, p.e.:
+2. Edite el archivo de código externo _js/main.js_.
 
-	```javascript
-	...
-		myform.addEventListener('submit', (eventSubmit) => {
-			
-			eventSubmit.preventDefault() 
-			...
-		})
-	...
-	```
+	+ Agregue un **return** en los bloques de código con validación en el caso que sea fallida, p.e.:
 
-3. Verifique la existencia de contenido válido en los elementos del formulario.  
+	<pre><code>
+	let loaded = ( eventLoaded ) => {
 
-	```javascript
-	...
-		myform.addEventListener('submit', (eventSubmit) => {
+          let myform = document.getElementById('form');
+          
+          myform.addEventListener('submit', (eventSubmit) => {
+              eventSubmit.preventDefault(); 
+              
+              const emailElement = document.querySelector('.form-control-lg');
+              const emailText = emailElement.value;
 
-		        eventSubmit.preventDefault()
+              if (emailText.length === 0) {
+                emailElement.focus()
 
-		        if (form_name.value.length == 0) {
-		            alert("Nombre requerido")
-		            form_name.focus()
-		            return;
-		        }
+                <b>return</b>
+              }
+          })
 
-		        ...
+        }
+	</code></pre>
 
-		})
-	...
-	```
+	+ Agregue la constante _databaseURL_:
 
-4. Utilice las instrucciones de [Gemini](gemini/guia08-gemini01.pdf) para realizar un requerimiento `asíncrono` `HTTP - POST`, de los datos de un formulario, mediante `fetch`.
-5. (STOP 1) Compruebe el resultado en el navegador.
-6. Acceda al URL de la colección de firebase para comprobar el resultado.
+	<pre><code>
+	// Reemplaza con tu URL
+	const databaseURL = 'https://&lt;nombre-del-proyecto&gt;.firebaseio.com/&lt;nombre-de-la-coleccion&gt;.json'; 
 
+	let ready = () => { ... }
+    let loaded = () => { ... }
+	</code></pre>
+
+	+ Agregue la función flecha _sendData_.
+
+
+	<pre><code>
+	function sendData() { 
+	}
+	</code></pre>
+		
+
+
+4. Compruebe el resultado en el navegador.
+5. (STOP 1) Acceda al URL de la colección de firebase para comprobar el resultado.
 
 ### Documentación
 
