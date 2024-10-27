@@ -15,6 +15,8 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 
 ### Actividades previas
 
+#### Firebase - Realtime Database
+
 1. Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
 2. Verifique el acceso a la colección de datos y compruebe que contenga datos:
 
@@ -26,6 +28,218 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 
 ### Actividades en clases
 
+#### Tabla de datos
+
+1. Agregue la jerarquía de etiquetas `<!-- Suscribers - START -->` y `<!-- Suscribers - END -->` en el archivo _index.html_.
+
+	```html
+	<section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
+		<div class="container">
+			<div class="row justify-content-center">
+	        	
+	        	<div class="col-md-8 py-5 my-5"> ... </div>
+
+		        <!-- Suscribers - START -->
+		        <div class="col-md-4 py-5 my-5">
+		          <h4 class="element-title text-capitalize my-3">Subscribers per Day</h4>
+		          <table class="table table-hover table-light table-borderless">
+		            <thead>
+		              <tr>
+		                <th scope="col">#</th>
+		                <th scope="col">Day</th>
+		                <th scope="col">Subscribers</th>
+		              </tr>
+		            </thead>
+		            <tbody id="subscribers">
+		            
+		            </tbody>
+		          </table>
+		        </div>
+		        <!-- Suscribers - END -->
+
+			</div>
+		</div>
+	</section>
+	```
+
+#### Recuperación de datos - Fetch GET
+
+1. Edite el archivo de código externo _js/main.js_.
+
+	+ Agregue la función flecha _getData_ asíncrona:
+
+	```js
+	const databaseURL = ... 
+
+	let sendData = () => { ... }
+
+	let getData = async () => { }
+
+	let ready = () => { ... }
+    let loaded = () => { ... }
+
+    ...
+	```
+
+	+ Dentro de _sendData_, agregue una petición asíncrona utilizando `fetch` para recibir los datos de la URL _databaseURL_.
+
+	```js
+	const databaseURL = ...; 
+
+	let sendData = () => { ... }
+
+	let getData = async () => {  
+
+		try {
+
+		    // Realiza la petición fetch a la URL de la base de datos
+		    const response = await fetch(databaseURL);
+
+		    // Verifica si la respuesta es exitosa
+		    if (!response.ok) {
+		      alert('Hemos experimentado un error. ¡Vuelve pronto!'); // Maneja el error con un mensaje
+		    }
+
+		    // Convierte la respuesta en formato JSON
+		    const data = await response.json();
+
+		    // Cuenta el número de suscriptores registrados por fecha a partir del objeto data
+
+		    // Genera y agrega filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas 
+
+		  } catch (error) {
+		    // Muestra cualquier error que ocurra durante la petición
+		    alert('Hemos experimentado un error. ¡Vuelve pronto!'); // Maneja el error con un mensaje
+		  }
+
+	}
+
+	let ready = () => { ... }
+    let loaded = () => { ... }
+
+    ...
+	```
+
+	+ Dentro de _sendData_, itere sobre el objeto **data** y utilice el mapa **countSuscribers** para procesar los datos por fecha.
+
+	```js
+	const databaseURL = ...; 
+
+	let sendData = () => { ... }
+
+	let getData = async () => {  
+
+		try {
+
+		    ...
+		    const data = ...
+
+		    // Cuenta el número de suscriptores registrados por fecha a partir del objeto data
+	        let countSuscribers = new Map()
+
+	        if (Object.keys(data).length > 0) {
+	            for (let key in data) {
+
+	                let { email, saved } = data[key]
+	                
+	                let date = saved.split(",")[0]
+	                
+	                let count = countSuscribers.get(date) || 0;
+	                countSuscribers.set(date, count + 1)
+	            }
+	        }
+		   
+		    // Genera y agrega filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
+		    
+
+		  } catch (error) {
+		    ...
+		  }
+
+	}
+
+	let ready = () => { ... }
+    let loaded = () => { ... }
+
+    ...
+	```
+
+	+ Dentro de _sendData_, itere sobre el mapa **countSuscribers**, renderice la plantilla **rowTemplate** y agregue al cuerpo de la tabla de datoscon el id **subscribers**.
+
+	```js
+	const databaseURL = ...; 
+
+	let sendData = () => { ... }
+
+	let getData = async () => {  
+
+		try {
+
+		    ...
+		    const data = ...
+
+		    // Cuenta el número de suscriptores registrados por fecha a partir del objeto data
+	        ...
+		   
+		    // Genera y agrega filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
+		    
+		    if (countSuscribers.size > 0) {
+	            for (let [date, count] of countSuscribers) {
+	                let rowTemplate = `
+	                    <tr>
+	                        <th scope="row">1</th>
+	                        <td>${date}</td>
+	                        <td>${count}</td>
+	                    </tr>`
+	                subscribers.innerHTML += rowTemplate
+	            }
+	        }
+
+		  } catch (error) {
+		    ...
+		  }
+
+	}
+
+	let ready = () => { ... }
+    let loaded = () => { ... }
+
+    ...
+	```
+
+	+ Llame a la función _getData_ al cargar la página y después de enviar los datos.
+
+	```js
+
+	const databaseURL = ...; 
+
+	let sendData = ( ) => {  ... }
+	let getData = ( ) => {  ... }
+
+	let ready = () => { 
+		
+		console.log('DOM está listo')
+
+		// Recuperación de datos
+	    getData();
+	}
+
+    let loaded = () => {
+    	
+
+    	myform.addEventListener('submit', function (eventSubmit) {
+    		...
+	    	
+    		sendData();
+
+    		// Recuperación de datos
+	    	getData();
+
+    	});
+    }
+
+    ...
+	````
 
 ### Documentación
 
