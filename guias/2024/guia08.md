@@ -118,8 +118,8 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
 		...
 		const data = ...
 
-	    // MM/DD/YYYY
-	    data['saved'] = new Date().toLocaleDateString();
+	    // new Date().toLocaleString( locales, options )
+	    data['saved'] = new Date().toLocaleString('es-CO', { timeZone: 'America/Guayaquil' })
 
 	}
 
@@ -154,10 +154,11 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
 	        return response.json(); // Procesa la respuesta como JSON
 	    })
 	    .then(result => {
-	        alert('Gracias por suscripción'); // Maneja la respuesta con un mensaje
+	        alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
+	        form.reset()
 	    })
 	    .catch(error => {
-	        alert('Hemos experimentado un error. Vuelve pronto'); // Maneja el error con un mensaje
+	        alert('Hemos experimentado un error. ¡Vuelve pronto!'); // Maneja el error con un mensaje
 	    });
 
 	}
@@ -168,8 +169,8 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
     ...
 	```
 
-2. Compruebe el resultado en el navegador.
-3. (STOP 1) Acceda al URL de la colección de firebase para comprobar el resultado.
+2. Compruebe el envío de datos desde el formulario.
+3. (STOP 1) Acceda a Firebase - Realtime Database para comprobar el resultado.
 
 ### Documentación
 
@@ -197,3 +198,5 @@ fetch, sincronía, asíncrona, firebase, json, xml, HTTP - GET
 * Joubran, J., & Joubran, J. (2022). How to fetch XML in JavaScript Code to go. Retrieved 15 June 2022, from https://codetogo.io/how-to-fetch-xml-in-javascript/
 * Chart.js. (n.d.). Retrieved from https://www.chartjs.org/
 * freeCodeCamp. (2022). JavaScript Get Current Date – Today’s Date in JS. Retrieved from https://www.freecodecamp.org/news/javascript-get-current-date-todays-date-in-js/
+* W3Schools.com. (n.d.). Retrieved from https://www.w3schools.com/jsref/jsref_tolocalestring.asp
+* (N.d.). Retrieved from https://www.localeplanet.com/java/es-EC/index.html
