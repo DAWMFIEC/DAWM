@@ -107,7 +107,11 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 
 		    	// Cuente el número de suscriptores registrados por fecha a partir del objeto data
 
+		    	// END
+
 			    // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas 
+
+			    // END
 
 		    }
 
@@ -154,8 +158,11 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 		                countSuscribers.set(date, count + 1)
 		            }
 		        }
+		        // END
 			   
 			    // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
+
+			    // END
 			
 			}    
 
@@ -189,9 +196,9 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 
 			    // Cuente el número de suscriptores registrados por fecha a partir del objeto data
 		        ...
+		        // END
 			   
 			    // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
-			    
 			    if (countSuscribers.size > 0) {
 
 			    	subscribers.innerHTML = ''
@@ -206,6 +213,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 		                subscribers.innerHTML += rowTemplate
 		            }
 		        }
+		        // END
 
 		    }
 
