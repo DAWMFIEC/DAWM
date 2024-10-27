@@ -169,6 +169,34 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
     ...
 	```
 
+	+ Llame a la función _sendData_ después de la validación de campos del formulario.
+
+	```js
+
+	const databaseURL = ...; 
+
+	let sendData = ( ) => {  ... }
+
+	let ready = () => { ... }
+    let loaded = () => {
+    	
+
+    	myform.addEventListener('submit', function (eventSubmit) {
+    		...
+	    	if (emailText.length === 0) {
+	    		...
+	    		return;
+	    	}
+
+	    	//Llame a la función sendData()
+	    	sendData();
+
+    	});
+    }
+
+    ...
+	````
+
 2. Compruebe el envío de datos desde el formulario.
 3. (STOP 1) Acceda a Firebase - Realtime Database para comprobar el resultado.
 
