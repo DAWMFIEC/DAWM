@@ -26,7 +26,7 @@ Proponer código de scripting para el manejo de la interfaz del cliente mediante
 
 #### Ciclo de vida de una página HTML 
 
-1. Edite el archivo de código externo _js/main.js_
+1. Edite el archivo de código externo _js/main.js_.
 2. Defina las `funciones flecha` _ready_ y _loaded_, con: 
 
     ```js
