@@ -115,7 +115,6 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 		    // Muestra cualquier error que ocurra durante la petición
 		    alert('Hemos experimentado un error. ¡Vuelve pronto!'); // Maneja el error con un mensaje
 		  }
-		    }
 
 	}
 
