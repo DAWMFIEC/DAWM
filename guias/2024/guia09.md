@@ -11,71 +11,21 @@ theme: jekyll-theme-leap-day
 ### Objetivo general
 
 <pre class="purpose">
-mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap.
-</pre>
+Proponer código de scripting para la recuperación de datos de una base de datos alojada en la nube mediante el desarrollo de una <i>landing page</i> funcional y atractiva utilizando una plantilla de Bootstrap para la adecuación a los requerimientos específicos.</pre>
 
 ### Actividades previas
 
 1. Complete la funcionalidad el envío de datos mediante fetch - HTTP POST.
-2. Compruebe el acceso a la colección de datos mediante el patrón de URL:
+2. Verifique el acceso a la colección de datos y compruebe que contenga datos:
 
 	```
 	https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json
 	```
 
-3. Diseñe una estrategia para el procesamiento de datos, p.e.:
-	+ Utilice las estructuras [Map y Set](https://javascript.info/map-set) para obtener valores únicos con sus valores correspondientes.
+3. Identifique una estrategia para el procesamiento de datos utilizando alguna de las estructuras [Map y Set](https://javascript.info/map-set) de Javascript.
 
 ### Actividades en clases
 
-#### Fetch - GET
-
-1. Identifique la sección del documento HTML donde agregará el contenido dinámicamente, p.e.:
-
-	```html
-	<div id="resultados" class="blog-section">
-		<div class="container">
-			...
-			<div class="row">
-				<div class="p-3 p-lg-5 border bg-white">
-					<table class="table site-block-order-table mb-5">
-						<thead>
-							<th>Categoría</th>
-							<th>Conteo</th>
-						</thead>
-						<tbody id="tablebody">
-
-						<!-- Filas dinámicas -->
-						
-						</tbody>
-					</table>
-				</div>
-			</div>
-			...
-		</div>
-	</div>
-	```
-
-2. Identifique el o los eventos en los que realizará la petición asíncrona de datos, p.e.:
-
-	+ Inmediatamente después de cargar el documento HTML.
-	+ Luego de recibir una respuesta a la petición fetch - POST
-
-3. Utilice las instrucciones de [Gemini](gemini/guia09-gemini01.pdf) para realizar un requerimiento asíncrono `HTTP - GET`, de la colección de datos en `firebase`, mediante fetch.
-	
-	+ Aplique la estrategia para el procesamiento de datos.
-	+ Diseñe una plantilla para rellenar con el contenido dinámico, p.e.:
-
-	```javascript
-	let template = `
-		<tr>
-			<td>${categoria}</td>
-			<td>${conteo}</td>
-		</tr>
-	`
-	```
-4. (STOP 1) Compruebe el resultado en el navegador.
-5. Acceda al URL de la colección de firebase para comprobar el resultado.
 
 ### Documentación
 
