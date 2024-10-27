@@ -37,7 +37,7 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
 1. Verifique que su formulario, y los elementos del formulario, tengan identificadores únicos, p.e.:
 
 	```html
-	<form id="formulario" ... >
+	<form id="form" ... >
 		...
 		<input id="form_name" type="text" ... >
 		...
@@ -89,10 +89,62 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
     ...
 	```
 
-	+ Dentro de _sendData_, agregue una petición asíncrona utilizando `fetch` para enviar datos de un formulario a la URL _databaseURL_.
-
+	+ Dentro de _sendData_, Obtenga la referencia al formulario mediante el objeto creado a partir del id, p.e.: **form**.
 
 	```js
+	const databaseURL = ...; 
+
+	let sendData = ( ) => {  
+
+		// Obtén los datos del formulario
+	    const formData = new FormData(form);
+	    const data = Object.fromEntries(formData.entries()); // Convierte FormData a objeto
+
+	}
+
+	let ready = () => { ... }
+    let loaded = () => { ... }
+
+    ...
+	```
+
+	+ Dentro de _sendData_, agregue una petición asíncrona utilizando `fetch` para enviar datos de un formulario a la URL _databaseURL_.
+
+	```js
+	const databaseURL = ...; 
+
+	let sendData = ( ) => {  
+
+		...
+		const data = ...
+
+	    // Realiza la petición POST con fetch
+	    fetch(databaseURL, {
+	        method: 'POST', // Método de la solicitud
+	        headers: {
+	            'Content-Type': 'application/json' // Especifica que los datos están en formato JSON
+	        },
+	        body: JSON.stringify(data) // Convierte los datos a JSON
+	    })
+	    .then(response => {
+	        if (!response.ok) {
+	            throw new Error(`Error en la solicitud: ${response.statusText}`);
+	        }
+	        return response.json(); // Procesa la respuesta como JSON
+	    })
+	    .then(result => {
+	        console.log('Respuesta recibida:', result); // Maneja la respuesta como desees
+	    })
+	    .catch(error => {
+	        console.error('Error:', error); // Maneja el error
+	    });
+
+	}
+
+	let ready = () => { ... }
+    let loaded = () => { ... }
+
+    ...
 	```
 
 2. Compruebe el resultado en el navegador.
