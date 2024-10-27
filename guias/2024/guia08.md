@@ -34,7 +34,7 @@ Proponer código de scripting para el envío de datos a una base de datos alojad
 
 #### Preparación de formulario y validación de campos
 
-1. Verifique que su formulario, y los elementos del formulario, tengan identificadores únicos, p.e.:
+1. Modifique su formulario, y los elementos del formulario, con identificadores únicos, p.e.:
 
 	```html
 	<form id="form" ... >
