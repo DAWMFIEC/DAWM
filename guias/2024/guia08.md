@@ -188,7 +188,7 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
 	    		return;
 	    	}
 
-	    	//Llame a la función sendData()
+	    	//Llamada a la función sendData()
 	    	sendData();
 
     	});
