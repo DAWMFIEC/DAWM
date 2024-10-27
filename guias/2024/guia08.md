@@ -89,7 +89,7 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
     ...
 	```
 
-	+ Dentro de _sendData_, Obtenga la referencia al formulario mediante el objeto creado a partir del id, p.e.: **form**.
+	+ Dentro de _sendData_, obtenga la referencia al formulario mediante el objeto creado a partir del id, p.e.: **form**.
 
 	```js
 	const databaseURL = ...; 
@@ -108,7 +108,7 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
     ...
 	```
 
-	+ Dentro de _sendData_, agregue una petición asíncrona utilizando `fetch` para enviar datos de un formulario a la URL _databaseURL_.
+	+ Dentro de _sendData_, agregue la fecha actual al objeto **data** mediante el _Date API_ de Javascript.
 
 	```js
 	const databaseURL = ...; 
@@ -117,6 +117,27 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
 
 		...
 		const data = ...
+
+	    // MM/DD/YYYY
+	    data['saved'] = new Date().toLocaleDateString();
+
+	}
+
+	let ready = () => { ... }
+    let loaded = () => { ... }
+
+    ...
+	```
+
+	+ Dentro de _sendData_, agregue una petición asíncrona utilizando `fetch` para enviar datos de un formulario a la URL _databaseURL_.
+
+	```js
+	const databaseURL = ...; 
+
+	let sendData = ( ) => {  
+
+		...
+		data['saved'] = ...
 
 	    // Realiza la petición POST con fetch
 	    fetch(databaseURL, {
@@ -133,10 +154,10 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
 	        return response.json(); // Procesa la respuesta como JSON
 	    })
 	    .then(result => {
-	        console.log('Respuesta recibida:', result); // Maneja la respuesta como desees
+	        alert('Gracias por suscripción'); // Maneja la respuesta con un mensaje
 	    })
 	    .catch(error => {
-	        console.error('Error:', error); // Maneja el error
+	        alert('Hemos experimentado un error. Vuelve pronto'); // Maneja el error con un mensaje
 	    });
 
 	}
@@ -175,3 +196,4 @@ fetch, sincronía, asíncrona, firebase, json, xml, HTTP - GET
 * Joubran, J., & Joubran, J. (2022). How to fetch json in JavaScript Code to go. Retrieved 15 June 2022, from https://codetogo.io/how-to-fetch-json-in-javascript/
 * Joubran, J., & Joubran, J. (2022). How to fetch XML in JavaScript Code to go. Retrieved 15 June 2022, from https://codetogo.io/how-to-fetch-xml-in-javascript/
 * Chart.js. (n.d.). Retrieved from https://www.chartjs.org/
+* freeCodeCamp. (2022). JavaScript Get Current Date – Today’s Date in JS. Retrieved from https://www.freecodecamp.org/news/javascript-get-current-date-todays-date-in-js/
