@@ -32,9 +32,9 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
 
 	Aquí, ```<nombre-de-la-coleccion>``` es el nombre de la colección con la que se interactuará.
 
-#### Envío de datos - Fetch POST
+#### Preparación de formulario y validación de campos
 
-1. Verifique que su formulario, y los elementos del formulario, tengan valores de identificadores únicos, p.e.:
+1. Verifique que su formulario, y los elementos del formulario, tengan identificadores únicos, p.e.:
 
 	```html
 	<form id="formulario" ... >
@@ -47,9 +47,7 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
 	</form>	
 	```
 
-2. Edite el archivo de código externo _js/main.js_.
-
-	+ Agregue **return;** al finalizar los bloques de código de validación fallida, p.e.:
+2. En el archivo de código externo _js/main.js_, agregue **return;** para terminar con la ejecución del código en caso de una validación fallida, p.e.:
 
 	```js
 	let loaded = ( eventLoaded ) => {
@@ -59,41 +57,46 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
           myform.addEventListener('submit', (eventSubmit) => {
               eventSubmit.preventDefault(); 
               
-              const emailElement = document.querySelector('.form-control-lg');
-              const emailText = emailElement.value;
+              ...
 
               if (emailText.length === 0) {
+                emailElement.animate( ... )
                 emailElement.focus()
 
                 return;
+
               }
           })
 
         }
 	```
 
-	+ Agregue la constante _databaseURL_:
+#### Envío de datos - Fetch POST
+
+1. Edite el archivo de código externo _js/main.js_.
+
+	+ Agregue la constante _databaseURL_ y la función flecha _sendData_:
 
 	```js
 	// Reemplaza con tu URL
 	const databaseURL = 'https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json'; 
 
+	let sendData = () => {  }
+
 	let ready = () => { ... }
     let loaded = () => { ... }
+
+    ...
 	```
 
-	+ Agregue la función flecha _sendData_.
+	+ Dentro de _sendData_, agregue una petición asíncrona utilizando `fetch` para enviar datos de un formulario a la URL _databaseURL_.
 
 
 	```js
-	function sendData() { 
-	}
 	```
-		
 
-
-4. Compruebe el resultado en el navegador.
-5. (STOP 1) Acceda al URL de la colección de firebase para comprobar el resultado.
+2. Compruebe el resultado en el navegador.
+3. (STOP 1) Acceda al URL de la colección de firebase para comprobar el resultado.
 
 ### Documentación
 
