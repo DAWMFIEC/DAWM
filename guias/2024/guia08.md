@@ -49,9 +49,9 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
 
 2. Edite el archivo de código externo _js/main.js_.
 
-	+ Agregue un **return** en los bloques de código con validación en el caso que sea fallida, p.e.:
+	+ Agregue **return;** al finalizar los bloques de código de validación fallida, p.e.:
 
-	<pre><code>
+	```js
 	let loaded = ( eventLoaded ) => {
 
           let myform = document.getElementById('form');
@@ -65,30 +65,30 @@ Proponer código de scripting para el manejo de datos en una base de datos aloja
               if (emailText.length === 0) {
                 emailElement.focus()
 
-                <b>return</b>
+                return;
               }
           })
 
         }
-	</code></pre>
+	```
 
 	+ Agregue la constante _databaseURL_:
 
-	<pre><code>
+	```js
 	// Reemplaza con tu URL
-	const databaseURL = 'https://&lt;nombre-del-proyecto&gt;.firebaseio.com/&lt;nombre-de-la-coleccion&gt;.json'; 
+	const databaseURL = 'https://<nombre-del-proyecto>.firebaseio.com/<nombre-de-la-coleccion>.json'; 
 
 	let ready = () => { ... }
     let loaded = () => { ... }
-	</code></pre>
+	```
 
 	+ Agregue la función flecha _sendData_.
 
 
-	<pre><code>
+	```js
 	function sendData() { 
 	}
-	</code></pre>
+	```
 		
 
 
