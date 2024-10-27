@@ -222,13 +222,27 @@ Proponer código de scripting para la recuperación de datos de una base de dato
     ...
 	```
 
-	+ Llame a la función _getData_ al cargar la página y después de enviar los datos.
+	+ Llame a la función _getData_ después de reiniciar el formulario y cuando el DOM esté listo.
 
 	```js
 
 	const databaseURL = ...; 
 
-	let sendData = ( ) => {  ... }
+	let sendData = ( ) => { 
+		
+		fetch( ... )
+		.then(response => { .. })
+		.then(result => {
+            alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
+            form.reset()
+
+            // Recuperación de datos
+            getData()
+        })
+
+	}
+
+
 	let getData = ( ) => {  ... }
 
 	let ready = () => { 
@@ -239,19 +253,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 	    getData();
 	}
 
-    let loaded = () => {
-    	
-
-    	myform.addEventListener('submit', function (eventSubmit) {
-    		...
-	    	
-    		sendData();
-
-    		// Recuperación de datos
-	    	getData();
-
-    	});
-    }
+    let loaded = () => { ...  }
 
     ...
 	````
