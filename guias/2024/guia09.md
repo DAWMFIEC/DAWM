@@ -103,14 +103,19 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 		    // Convierte la respuesta en formato JSON
 		    const data = await response.json();
 
-		    // Cuenta el número de suscriptores registrados por fecha a partir del objeto data
+		    if(data != null) {
 
-		    // Genera y agrega filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas 
+		    	// Cuente el número de suscriptores registrados por fecha a partir del objeto data
+
+			    // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas 
+
+		    }
 
 		  } catch (error) {
 		    // Muestra cualquier error que ocurra durante la petición
 		    alert('Hemos experimentado un error. ¡Vuelve pronto!'); // Maneja el error con un mensaje
 		  }
+		    }
 
 	}
 
@@ -134,23 +139,26 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 		    ...
 		    const data = ...
 
-		    // Cuenta el número de suscriptores registrados por fecha a partir del objeto data
-	        let countSuscribers = new Map()
+		    if(data != null) {
 
-	        if (Object.keys(data).length > 0) {
-	            for (let key in data) {
+			    // Cuente el número de suscriptores registrados por fecha a partir del objeto data
+		        let countSuscribers = new Map()
 
-	                let { email, saved } = data[key]
-	                
-	                let date = saved.split(",")[0]
-	                
-	                let count = countSuscribers.get(date) || 0;
-	                countSuscribers.set(date, count + 1)
-	            }
-	        }
-		   
-		    // Genera y agrega filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
-		    
+		        if (Object.keys(data).length > 0) {
+		            for (let key in data) {
+
+		                let { email, saved } = data[key]
+		                
+		                let date = saved.split(",")[0]
+		                
+		                let count = countSuscribers.get(date) || 0;
+		                countSuscribers.set(date, count + 1)
+		            }
+		        }
+			   
+			    // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
+			
+			}    
 
 		  } catch (error) {
 		    ...
@@ -178,22 +186,29 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 		    ...
 		    const data = ...
 
-		    // Cuenta el número de suscriptores registrados por fecha a partir del objeto data
-	        ...
-		   
-		    // Genera y agrega filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
-		    
-		    if (countSuscribers.size > 0) {
-	            for (let [date, count] of countSuscribers) {
-	                let rowTemplate = `
-	                    <tr>
-	                        <th scope="row">1</th>
-	                        <td>${date}</td>
-	                        <td>${count}</td>
-	                    </tr>`
-	                subscribers.innerHTML += rowTemplate
-	            }
-	        }
+		    if(data != null) {
+
+			    // Cuente el número de suscriptores registrados por fecha a partir del objeto data
+		        ...
+			   
+			    // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
+			    
+			    if (countSuscribers.size > 0) {
+
+			    	subscribers.innerHTML = ''
+
+		            for (let [date, count] of countSuscribers) {
+		                let rowTemplate = `
+		                    <tr>
+		                        <th scope="row">1</th>
+		                        <td>${date}</td>
+		                        <td>${count}</td>
+		                    </tr>`
+		                subscribers.innerHTML += rowTemplate
+		            }
+		        }
+
+		    }
 
 		  } catch (error) {
 		    ...
