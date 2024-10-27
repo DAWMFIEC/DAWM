@@ -144,7 +144,7 @@ Proponer código de scripting para el manejo de la interfaz del cliente mediante
 
     <pre class="prompt">Asigne a la variable <i>emailElement</i> la referencia al elemento HTML a partir del objeto document con el método <b>querySelector</b>. El elemento tiene la clase <i>'form-control-lg'</i>.<br>
     Asigne a la variable <i>emailText</i> a partir del objeto <i>emailElement</i> con la propiedad <b>value</b>.<br>
-    Use la variable <i>emailText</i> mediante la propiedad <b>length</b> para verificar la longitud. En caso que la longitud sea igual que 0, use la variable <i>emailElement</i> mediante con el método <b>focus</b> para llevar el enfoque al elemento.
+    Use la variable <i>emailText</i> mediante la propiedad <b>length</b> para verificar la longitud. En caso que la longitud sea igual que 0, use la variable <i>emailElement</i> mediante con el método <b>focus</b> para llevar el enfoque al elemento.<br>Y, agregue un return.
     </pre>
 
     ```typescript
