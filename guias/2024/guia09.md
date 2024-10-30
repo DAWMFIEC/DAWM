@@ -253,6 +253,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 	      </code></pre>
 	    </details>
 
+2. (STOP 1) Compruebe la petición de datos en el navegador.
 
 ### Documentación
 
