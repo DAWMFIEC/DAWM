@@ -214,42 +214,45 @@ Proponer código de scripting para la recuperación de datos de una base de dato
       </code></pre>
     </details>
 
-	+ Llame a la función _getData_ después de reiniciar el formulario y cuando el DOM esté listo.
+	+ Llame a la función _getData_:
 
-	```js
+		- Después de reiniciar el formulario, y 
 
-	const databaseURL = ...; 
-
-	let sendData = ( ) => { 
+		<details>
+	      <summary><div>Haga click aquí para ver la solución</div></summary>
+	      <pre lang="javascript"><code>
+			let sendData = ( ) => { 
 		
-		fetch( ... )
-		.then(response => { ... })
-		.then(result => {
-            alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
-            form.reset()
+				fetch( ... )
+				.then(response => { ... })
+				.then(result => {
+		            alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
+		            form.reset()
 
-            // Recuperación de datos
-            getData()
-        })
-        .catch(error => { ... });
+		            // Recuperación de datos
+		            getData()
+		        })
+		        .catch(error => { ... });
 
-	}
+			}
+	      </code></pre>
+	    </details>
 
+		- Cuando el DOM esté listo.
 
-	let getData = ( ) => {  ... }
-
-	let ready = () => { 
+		<details>
+	      <summary><div>Haga click aquí para ver la solución</div></summary>
+	      <pre lang="javascript"><code>
+			let ready = () => { 
 		
-		console.log('DOM está listo')
+				console.log('DOM está listo')
 
-		// Recuperación de datos
-	    getData();
-	}
+				// Recuperación de datos
+			    getData();
+			}
+	      </code></pre>
+	    </details>
 
-    let loaded = () => { ...  }
-
-    ...
-	````
 
 ### Documentación
 
