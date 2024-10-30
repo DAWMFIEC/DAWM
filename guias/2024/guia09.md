@@ -85,7 +85,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
     ...
 	```
 
-	+ Dentro de _sendData_, agregue una petición asíncrona utilizando `fetch` para recibir los datos de la URL _databaseURL_.
+	+ Dentro de _getData_, agregue una petición asíncrona utilizando `fetch` para recibir los datos de la URL _databaseURL_.
 
 	```js
 	const databaseURL = ...; 
@@ -132,7 +132,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
     ...
 	```
 
-	+ Dentro de _sendData_, itere sobre el objeto **data** y utilice el mapa **countSuscribers** para procesar los datos por fecha.
+	+ Dentro de _getData_, itere sobre el objeto **data** y utilice el mapa **countSuscribers** para procesar los datos por fecha.
 
 	```js
 	const databaseURL = ...; 
@@ -182,7 +182,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
     ...
 	```
 
-	+ Dentro de _sendData_, itere sobre el mapa **countSuscribers**, renderice la plantilla **rowTemplate** y agregue al cuerpo de la tabla de datoscon el id **subscribers**.
+	+ Dentro de _getData_, itere sobre el mapa **countSuscribers**, renderice la plantilla **rowTemplate** y agregue al cuerpo de la tabla de datoscon el id **subscribers**.
 
 	```js
 	const databaseURL = ...; 
