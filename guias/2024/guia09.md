@@ -37,25 +37,29 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 		<div class="container">
 			<div class="row justify-content-center">
 	        	
-	        	<div class="col-md-8 py-5 my-5"> ... </div>
+	        	<!-- DIV contenedor del fomrulario -->
+	        	<div class="col-md-8 py-5 my-5">
+	        		<div class="subscribe-header text-center pb-3">...</div>
+	        		<form id="form" class="d-flex flex-wrap gap-2">...</form>
+	        	</div>
 
-		        <!-- Suscribers - START -->
-		        <div class="col-md-4 py-5 my-5">
-		          <h4 class="element-title text-capitalize my-3">Subscribers per Day</h4>
-		          <table class="table table-hover table-light table-borderless">
-		            <thead>
-		              <tr>
-		                <th scope="col">#</th>
-		                <th scope="col">Day</th>
-		                <th scope="col">Subscribers</th>
-		              </tr>
-		            </thead>
-		            <tbody id="subscribers">
-		            
-		            </tbody>
-		          </table>
-		        </div>
-		        <!-- Suscribers - END -->
+			        <!-- Suscribers - START -->
+			        <div class="col-md-4 py-5 my-5">
+			          <h4 class="element-title text-capitalize my-3">Subscribers per Day</h4>
+			          <table class="table table-hover table-light table-borderless">
+			            <thead>
+			              <tr>
+			                <th scope="col">#</th>
+			                <th scope="col">Day</th>
+			                <th scope="col">Subscribers</th>
+			              </tr>
+			            </thead>
+			            <tbody id="subscribers">
+			            
+			            </tbody>
+			          </table>
+			        </div>
+			        <!-- Suscribers - END -->
 
 			</div>
 		</div>
