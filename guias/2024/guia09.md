@@ -202,11 +202,11 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 			let index = 1;
 		    for (let [date, count] of countSuscribers) {
 		        let rowTemplate = `
-		            <tr>
-		                <th>${index}</th>
-		                <td>${date}</td>
-		                <td>${count}</td>
-		            </tr>`
+		            &lt;tr&gt;
+		                &lt;th&gt;${index}&lt;/th&gt;
+		                &lt;td&gt;${date}&lt;/td&gt;
+		                &lt;td&gt;${count}&lt;/td&gt;
+		            &lt;/tr&gt;`
 		        subscribers.innerHTML += rowTemplate
 		        index++;
 		    }
