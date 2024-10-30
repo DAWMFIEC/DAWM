@@ -214,10 +214,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
       </code></pre>
     </details>
 
-	+ Llame a la función _getData_:
-
-		- Después de reiniciar el formulario, y 
-
+	+ Llame a la función _getData_ después de reiniciar el formulario y cuando el DOM esté listo.
 
 	<details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
@@ -239,10 +236,6 @@ Proponer código de scripting para la recuperación de datos de una base de dato
       </code></pre>
     </details>
 
-
-		- Cuando el DOM esté listo.
-
-		
 	<details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
       <pre lang="javascript"><code>
