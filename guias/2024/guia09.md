@@ -7,6 +7,7 @@ theme: jekyll-theme-leap-day
 [DAWM](/DAWM/) / [Proyecto02](/DAWM/proyectos/2024/proyecto02)
 
 <link href="styles/mystyle.css" rel="stylesheet" />
+<script src="javascripts/tabs.js" type="text/javascript"></script>
 
 ### Objetivo general
 
@@ -137,103 +138,81 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 	+ Dentro de _getData_, itere sobre el objeto **data** y utilice el mapa **countSuscribers** para procesar los datos por fecha.
 
 	```js
-	const databaseURL = ...; 
+	if(data != null) {
 
-	let sendData = () => { ... }
+		    // Cuente el número de suscriptores registrados por fecha a partir del objeto data
 
-	let getData = async () => {  
-
-		try {
-
-		    ...
-		    const data = ...
-
-		    if(data != null) {
-
-			    // Cuente el número de suscriptores registrados por fecha a partir del objeto data
-		        let countSuscribers = new Map()
-
-		        if (Object.keys(data).length > 0) {
-		            for (let key in data) {
-
-		                let { email, saved } = data[key]
-		                
-		                let date = saved.split(",")[0]
-		                
-		                let count = countSuscribers.get(date) || 0;
-		                countSuscribers.set(date, count + 1)
-		            }
-		        }
-		        // END
-			   
-			    // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
-
-			    // END
-			
-			}    
-
-		  } catch (error) {
-		    ...
-		  }
-
-	}
-
-	let ready = () => { ... }
-    let loaded = () => { ... }
-
-    ...
+	        // END		
+	}    
 	```
+
+	<details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+        let countSuscribers = new Map()
+
+        if (Object.keys(data).length > 0) {
+            for (let key in data) {
+
+                let { email, saved } = data[key]
+                
+                let date = saved.split(",")[0]
+                
+                let count = countSuscribers.get(date) || 0;
+                countSuscribers.set(date, count + 1)
+            }
+        }
+      </code></pre>
+    </details> 
 
 	+ Dentro de _getData_, itere sobre el mapa **countSuscribers**, renderice la plantilla **rowTemplate** y agregue al cuerpo de la tabla de datoscon el id **subscribers**.
 
+	Plantilla **rowTemplate**
+
 	```js
-	const databaseURL = ...; 
-
-	let sendData = () => { ... }
-
-	let getData = async () => {  
-
-		try {
-
-		    ...
-		    const data = ...
-
-		    if(data != null) {
-
-			    // Cuente el número de suscriptores registrados por fecha a partir del objeto data
-		        ...
-		        // END
-			   
-			    // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
-			    if (countSuscribers.size > 0) {
-
-			    	subscribers.innerHTML = ''
-
-		            for (let [date, count] of countSuscribers) {
-		                let rowTemplate = `
-		                    <tr>
-		                        <th scope="row">1</th>
-		                        <td>${date}</td>
-		                        <td>${count}</td>
-		                    </tr>`
-		                subscribers.innerHTML += rowTemplate
-		            }
-		        }
-		        // END
-
-		    }
-
-		  } catch (error) {
-		    ...
-		  }
-
-	}
-
-	let ready = () => { ... }
-    let loaded = () => { ... }
-
-    ...
+	let rowTemplate = `
+    <tr>
+        <th>${index}</th>
+        <td>${date}</td>
+        <td>${count}</td>
+    </tr>`
 	```
+
+	```js
+	if(data != null) {
+
+	    // Cuente el número de suscriptores registrados por fecha a partir del objeto data
+        ...
+        // END
+	   
+	    // Genere y agregue filas de una tabla HTML para mostrar fechas y cantidades de suscriptores almacenadas
+
+        // END
+
+    }
+	```
+
+	<details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+		if (countSuscribers.size > 0) {
+
+			subscribers.innerHTML = ''
+
+			let index = 1;
+		    for (let [date, count] of countSuscribers) {
+		        let rowTemplate = `
+		            <tr>
+		                <th>${index}</th>
+		                <td>${date}</td>
+		                <td>${count}</td>
+		            </tr>`
+		        subscribers.innerHTML += rowTemplate
+		        index++;
+		    }
+		}
+      </code></pre>
+    </details>
 
 	+ Llame a la función _getData_ después de reiniciar el formulario y cuando el DOM esté listo.
 
