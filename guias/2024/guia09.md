@@ -273,6 +273,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 ### Documentación
 
 * El [API-fetch](https://www.javascripttutorial.net/web-apis/javascript-fetch-api/) tiene una explicación clara de la estructura para requerimientos asíncronos cuya respuesta viene en formato [JSON](https://codetogo.io/how-to-fetch-json-in-javascript/) o [XML](https://codetogo.io/how-to-fetch-xml-in-javascript/).
+* El [REST API de Firebase Realtime Database](https://firebase.google.com/docs/database/rest/start?hl=es).
 
 ### Fundamental
 
