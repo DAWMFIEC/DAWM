@@ -97,7 +97,9 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 		try {
 
 		    // Realiza la petición fetch a la URL de la base de datos
-		    const response = await fetch(databaseURL);
+		    const response = await fetch(databaseURL, {
+		    	method: 'GET'
+		    }});
 
 		    // Verifica si la respuesta es exitosa
 		    if (!response.ok) {
