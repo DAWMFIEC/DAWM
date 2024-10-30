@@ -30,14 +30,14 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 
 #### Tabla de datos
 
-1. Agregue la jerarquía de etiquetas `<!-- Suscribers - START -->` y `<!-- Suscribers - END -->` en el archivo _index.html_.
+1. Agregue al archivo _index.html_ la jerarquía de etiquetas `<!-- Suscribers - START -->` y `<!-- Suscribers - END -->`. Tome como referencia el `<!-- DIV contenedor del formulario -->`
 
 	```html
 	<section class="newsletter bg-light" style="background: url(images/pattern-bg.png) no-repeat;">
 		<div class="container">
 			<div class="row justify-content-center">
 	        	
-	        	<!-- DIV contenedor del fomrulario -->
+	        	<!-- DIV contenedor del formulario -->
 	        	<div class="col-md-8 py-5 my-5">
 	        		<div class="subscribe-header text-center pb-3">...</div>
 	        		<form id="form" class="d-flex flex-wrap gap-2">...</form>
@@ -242,7 +242,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 	let sendData = ( ) => { 
 		
 		fetch( ... )
-		.then(response => { .. })
+		.then(response => { ... })
 		.then(result => {
             alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
             form.reset()
@@ -250,6 +250,7 @@ Proponer código de scripting para la recuperación de datos de una base de dato
             // Recuperación de datos
             getData()
         })
+        .catch(error => { ... });
 
 	}
 
