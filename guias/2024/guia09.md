@@ -218,40 +218,40 @@ Proponer código de scripting para la recuperación de datos de una base de dato
 
 		- Después de reiniciar el formulario, y 
 
-		<details>
-	      <summary><div>Haga click aquí para ver la solución</div></summary>
-	      <pre lang="javascript"><code>
-			let sendData = ( ) => { 
-		
-				fetch( ... )
-				.then(response => { ... })
-				.then(result => {
-		            alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
-		            form.reset()
+	<details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+		let sendData = ( ) => { 
+	
+			fetch( ... )
+			.then(response => { ... })
+			.then(result => {
+	            alert('Agradeciendo tu preferencia, nos mantenemos actualizados y enfocados en atenderte como mereces'); // Maneja la respuesta con un mensaje
+	            form.reset()
 
-		            // Recuperación de datos
-		            getData()
-		        })
-		        .catch(error => { ... });
+	            // Recuperación de datos
+	            getData()
+	        })
+	        .catch(error => { ... });
 
-			}
-	      </code></pre>
-	    </details>
+		}
+      </code></pre>
+    </details>
 
 		- Cuando el DOM esté listo.
 
-		<details>
-	      <summary><div>Haga click aquí para ver la solución</div></summary>
-	      <pre lang="javascript"><code>
-			let ready = () => { 
-		
-				console.log('DOM está listo')
+	<details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="javascript"><code>
+		let ready = () => { 
+	
+			console.log('DOM está listo')
 
-				// Recuperación de datos
-			    getData();
-			}
-	      </code></pre>
-	    </details>
+			// Recuperación de datos
+		    getData();
+		}
+      </code></pre>
+    </details>
 
 2. (STOP 1) Compruebe la petición de datos en el navegador.
 
