@@ -6,6 +6,8 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto03](/DAWM/proyectos/2024/proyecto03)
 
+<link href="styles/mystyle.css" rel="stylesheet" />
+
 ### Actividades en clases
 
 #### OpenWeatherMap (OBLIGATORIO)
@@ -15,9 +17,10 @@ theme: jekyll-theme-leap-day
 3. Acceda a la documentación de [Call 5 day / 3 hour forecast data](https://openweathermap.org/forecast5).
 4. Compruebe la respuesta en su navegador del siguiente endpoint.
 
-```
-https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQUI-EL-API-KEY>
-```
+
+<pre class="url">
+		https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=&lt;AQUI-EL-API-KEY&gt;
+</pre>
 
 **NOTA:** Para mejorar la visualización del XML utilice el [XMLviewer](https://codebeautify.org/xmlviewer).
 
@@ -29,7 +32,9 @@ https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=<AQU
 2. En la sección _API Response_, recargue el gráfico.
 3. En _API URL_, copie la URL en una pestaña nueva, p.e.:
 
-[https://api.open-meteo.com/v1/forecast?latitude=-2.1454&longitude=-79.9671&hourly=temperature_2m,precipitation_probability,rain,cloud_cover](https://api.open-meteo.com/v1/forecast?latitude=-2.1454&longitude=-79.9671&hourly=temperature_2m,precipitation_probability,rain,cloud_cover) 
+<pre class="url">
+https://api.open-meteo.com/v1/forecast?latitude=-2.1454&longitude=-79.9671&hourly=temperature_2m,precipitation_probability,rain,cloud_cover
+</pre>
 
 #### Diseño del Dashboard
 
