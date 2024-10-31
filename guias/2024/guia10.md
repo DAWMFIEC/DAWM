@@ -11,7 +11,7 @@ theme: jekyll-theme-leap-day
 ### Objetivo general
 
 <pre class="purpose">
-Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnologías web modernas, como React, que permita a los usuarios monitorear en tiempo real métricas clave del clima.</pre>
+Explorar Typescript para el desarrollo de un dashboard interactivo y visualmente intuitivo utilizando tecnologías web modernas, como React, que permita a los usuarios monitorear en tiempo real métricas clave del clima.</pre>
 
 ### Actividades en clases
 
