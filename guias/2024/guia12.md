@@ -6,6 +6,13 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto03](/DAWM/proyectos/2024/proyecto03)
 
+<link href="styles/mystyle.css" rel="stylesheet" />
+
+### Objetivo general
+
+<pre class="purpose">
+Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnologías web modernas, como React, que permita a los usuarios monitorear en tiempo real métricas clave del clima.</pre>
+
 ### Actividades en clases
 
 * Clona localmente tu repositorio **dashboard**.
