@@ -19,7 +19,7 @@ theme: jekyll-theme-leap-day
 
 
 <pre class="url">
-		https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=&lt;AQUI-EL-API-KEY&gt;
+https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=&lt;AQUI-SU-API-KEY&gt;
 </pre>
 
 **NOTA:** Para mejorar la visualización del XML utilice el [XMLviewer](https://codebeautify.org/xmlviewer).
