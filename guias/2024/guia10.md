@@ -6,10 +6,6 @@ theme: jekyll-theme-leap-day
 
 [DAWM](/DAWM/) / [Proyecto03](/DAWM/proyectos/2024/proyecto03)
 
-### Actividades previas
-
-* Realice la actividad [Intro a `Typescript`](/DAWM/enclases/typescript) 
-
 ### Actividades en clases
 
 #### OpenWeatherMap (OBLIGATORIO)
