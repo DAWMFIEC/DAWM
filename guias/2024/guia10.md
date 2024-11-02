@@ -30,7 +30,7 @@ Para cada proyecto:
 
 ### Documentación
 
-* [Typescript](https://www.typescriptlang.org/) es JavaScript con tipos de datos, detección de errores incluso y POO.
+* [Typescript](https://www.typescriptlang.org/) es JavaScript con tipos de datos, detección de errores y POO.
 	+ En el tutorial [TypeScript Tutorial](https://www.typescripttutorial.net/) explica los conocimientos fundamentales, tipos básicos, estructural de control, funciones, clases, interfaces, tipos avanzados, genéricos, módulos y su uso en NodeJS.
 
 ### Fundamental
