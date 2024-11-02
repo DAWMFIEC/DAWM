@@ -30,7 +30,7 @@ Para cada proyecto:
 
 ### Documentación
 
-* [Typescript](https://www.typescriptlang.org/) es JavaScript escrito. TypeScript agrega tipos a JavaScript para ayudarlo a acelerar el desarrollo al detectar errores incluso antes de ejecutar el código JavaScript.
+* [Typescript](https://www.typescriptlang.org/) es JavaScript con tipos de datos, detección de errores incluso y POO.
 	+ En el tutorial [TypeScript Tutorial](https://www.typescripttutorial.net/) explica los conocimientos fundamentales, tipos básicos, estructural de control, funciones, clases, interfaces, tipos avanzados, genéricos, módulos y su uso en NodeJS.
 
 ### Fundamental
