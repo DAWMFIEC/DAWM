@@ -11,6 +11,7 @@
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
+| Silvia Saquisili | [Ver](imagenes_curriculum/ssaquisi.github.io.png) | [Ir](https://ssaquisi.github.io/curriculum/) |
 | Justyn Roldán | [Ver](imagenes_curriculum/jjroldev.github.io.png) | [Ir](https://jjroldev.github.io/curriculum/) |
 | Dhamar Quishpe | [Ver](imagenes_curriculum/dquishpe.github.io.png) | [Ir](https://dquishpe.github.io/curriculum/) |
 | Luis F. Romero | [Ver](imagenes_curriculum/lromeror.github.io.png) | [Ir](https://lromeror.github.io/curriculum/) |
@@ -20,6 +21,7 @@
 | Paulette Maldonado | [Ver](imagenes_curriculum/paulettemal.github.io.png) | [Ir](https://paulettemal.github.io/curriculum/) |
 | Ariana Gonzabay | [Ver](imagenes_curriculum/arianagonzabay.github.io.png)  | [Ir](https://arianagonzabay.github.io/curriculum/)      				|
 | Matías Collaguazo | [Ver](imagenes_curriculum/matiascollaguazo.github.io.png)  | [Ir](https://matiascollaguazo.github.io/curriculum/)      				|
+|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 
