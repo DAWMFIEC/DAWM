@@ -16,6 +16,9 @@
 | Paulette Maldonado | [Ver](imagenes_curriculum/paulettemal.github.io.png) | [Ir](https://paulettemal.github.io/curriculum/) |
 | Ariana Gonzabay | [Ver](imagenes_curriculum/arianagonzabay.github.io.png)  | [Ir](https://arianagonzabay.github.io/curriculum/)      				|
 | Matías Collaguazo | [Ver](imagenes_curriculum/matiascollaguazo.github.io.png)  | [Ir](https://matiascollaguazo.github.io/curriculum/)      				|
+| Michael Poveda | [Ver](imagenes_curriculum/mcpoveda2.github.io.png) | [Ir](https://mcpoveda2.github.io/curriculum/) |
+|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
+|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
