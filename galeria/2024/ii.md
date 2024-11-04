@@ -11,15 +11,15 @@
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
+| Justyn Roldán | [Ver](imagenes_curriculum/jjroldev.github.io.png) | [Ir](https://jjroldev.github.io/curriculum/) |
+| Dhamar Quishpe | [Ver](imagenes_curriculum/dquishpe.github.io.png) | [Ir](https://dquishpe.github.io/curriculum/) |
+| Luis F. Romero | [Ver](imagenes_curriculum/lromeror.github.io.png) | [Ir](https://lromeror.github.io/curriculum/) |
+| Michael Poveda | [Ver](imagenes_curriculum/mcpoveda2.github.io.png) | [Ir](https://mcpoveda2.github.io/curriculum/) |
 | Cristhian Joseph Barragan Guillin | [Ver](imagenes_curriculum/xhianx.github.io.png)  | [Ir](https://xhianx.github.io/curriculum/)      				|
 | José Marin Molina | [Ver](imagenes_curriculum/josem0lina.github.io.png) | [Ir](https://josem0lina.github.io/curriculum/) |
 | Paulette Maldonado | [Ver](imagenes_curriculum/paulettemal.github.io.png) | [Ir](https://paulettemal.github.io/curriculum/) |
 | Ariana Gonzabay | [Ver](imagenes_curriculum/arianagonzabay.github.io.png)  | [Ir](https://arianagonzabay.github.io/curriculum/)      				|
 | Matías Collaguazo | [Ver](imagenes_curriculum/matiascollaguazo.github.io.png)  | [Ir](https://matiascollaguazo.github.io/curriculum/)      				|
-| Michael Poveda | [Ver](imagenes_curriculum/mcpoveda2.github.io.png) | [Ir](https://mcpoveda2.github.io/curriculum/) |
-|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
-|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
-|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 
