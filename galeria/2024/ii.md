@@ -6,10 +6,18 @@
 | :----  | :----------: | :---: |
 |  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
 
+
 ## Proyecto 01: Curriculum Vitae - HTML & CSS
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
+| Cristhian Joseph Barragan Guillin - CV | [Ver](imagenes_curriculum/xhianx.github.io.png)  | [Ir](https://xhianx.github.io/curriculum/)      				|
+| Ariana Gonzabay | [Ver](imagenes_curriculum/arianagonzabay.github.io.png)  | [Ir](https://arianagonzabay.github.io/curriculum/)      				|
+| Matías Collaguazo | [Ver](imagenes_curriculum/matiascollaguazo.github.io.png)  | [Ir](https://matiascollaguazo.github.io/curriculum/)      				|
+|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
+|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
+|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
+|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 
 ## Proyecto 02: Landing Page SPA - Bootstrap & Javascript
