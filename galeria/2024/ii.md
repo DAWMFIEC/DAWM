@@ -14,7 +14,11 @@
 | Silvia Saquisili | [Ver](imagenes_curriculum/ssaquisi.github.io.png) | [Ir](https://ssaquisi.github.io/curriculum/) |
 | Justyn Roldán | [Ver](imagenes_curriculum/jjroldev.github.io.png) | [Ir](https://jjroldev.github.io/curriculum/) |
 | Dhamar Quishpe | [Ver](imagenes_curriculum/dquishpe.github.io.png) | [Ir](https://dquishpe.github.io/curriculum/) |
+| Joel Guamaní Herrera | [Ver](imagenes_curriculum/isaiasgh.github.io.png) | [Ir](https://isaiasgh.github.io/curriculum/) |
+| Brian Mite Guillén | [Ver](imagenes_curriculum/bmitegui.github.io.png) | [Ir](https://bmitegui.github.io/curriculum/) |
+| Alexandre Icaza González | [Ver](imagenes_curriculum/aledicaz.github.io.png) | [Ir](https://aledicaz.github.io/curriculum/) |
 | José Luis Chong | [Ver](imagenes_curriculum/jlchong3.github.io.png) | [Ir](https://jlchong3.github.io/curriculum/) |
+| Kevin Mejía | [Ver](imagenes_curriculum/electrokevo.github.io.png) | [Ir](https://electrokevo.github.io/curriculum/) |
 | Paulette Tandazo | [Ver](imagenes_curriculum/paulethtandazo.github.io.png) | [Ir](https://paulethtandazo.github.io/curriculum/) |
 | Diego Araujo | [Ver](imagenes_curriculum/diegoa00.github.io.png) | [Ir](https://diegoa00.github.io/curriculum/) |
 | Luis F. Romero | [Ver](imagenes_curriculum/lromeror.github.io.png) | [Ir](https://lromeror.github.io/curriculum/) |
@@ -26,9 +30,6 @@
 | Matías Collaguazo | [Ver](imagenes_curriculum/matiascollaguazo.github.io.png)  | [Ir](https://matiascollaguazo.github.io/curriculum/)      				|
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
-|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
-|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
-
 
 
 
