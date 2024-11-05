@@ -14,7 +14,9 @@
 | Silvia Saquisili | [Ver](imagenes_curriculum/ssaquisi.github.io.png) | [Ir](https://ssaquisi.github.io/curriculum/) |
 | Justyn Roldán | [Ver](imagenes_curriculum/jjroldev.github.io.png) | [Ir](https://jjroldev.github.io/curriculum/) |
 | Dhamar Quishpe | [Ver](imagenes_curriculum/dquishpe.github.io.png) | [Ir](https://dquishpe.github.io/curriculum/) |
+| José Luis Chong | [Ver](imagenes_curriculum/jlchong3.github.io.png) | [Ir](https://jlchong3.github.io/curriculum/) |
 | Paulette Tandazo | [Ver](imagenes_curriculum/paulethtandazo.github.io.png) | [Ir](https://paulethtandazo.github.io/curriculum/) |
+| Diego Araujo | [Ver](imagenes_curriculum/diegoa00.github.io.png) | [Ir](https://diegoa00.github.io/curriculum/) |
 | Luis F. Romero | [Ver](imagenes_curriculum/lromeror.github.io.png) | [Ir](https://lromeror.github.io/curriculum/) |
 | Michael Poveda | [Ver](imagenes_curriculum/mcpoveda2.github.io.png) | [Ir](https://mcpoveda2.github.io/curriculum/) |
 | Cristhian Joseph Barragan Guillin | [Ver](imagenes_curriculum/xhianx.github.io.png)  | [Ir](https://xhianx.github.io/curriculum/)      				|
@@ -24,6 +26,11 @@
 | Matías Collaguazo | [Ver](imagenes_curriculum/matiascollaguazo.github.io.png)  | [Ir](https://matiascollaguazo.github.io/curriculum/)      				|
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
 |  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
+|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
+|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
+
+
+
 
 ## Proyecto 02: Landing Page SPA - Bootstrap & Javascript
 
