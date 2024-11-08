@@ -99,11 +99,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 1. En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
 
 	```typescript
-	import { useState } from 'react'
-	import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+	import { ... } from 'react'
+
+	// Grid version 2
+	import Grid from '@mui/material/Unstable_Grid2'; 
 	```
 
-2. En `App.tsx`, reemplace el contenido a renderizar por:
+2. En `App.tsx`, reemplace el contenido a renderizar en el **return**:
 
 	```jsx
 	...
@@ -119,7 +121,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		      <Grid>4</Grid>
 		      <Grid>5</Grid>
 		      <Grid>6</Grid>
-		    </Grid>
+		  </Grid>
 	    )
 	}
 
@@ -135,8 +137,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	...
 		return (
 		  <Grid container spacing={5}>
-			...
-			</Grid>
+			<Grid>1</Grid>
+	      		...
+			<Grid>6</Grid>
+		  </Grid>
 	    )
 	...
 	```
