@@ -23,31 +23,42 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Github
 
 1. Crea un repositorio en GitHub con el nombre **dashboard**.
+2. Clone su repositorio localmente.
 
 #### Proyecto Base
 
 1. Desde la línea de comandos, cree un nuevo sitio con Vite:
 
 	```prompt
-	npm create vite@latest <NOMBRE_DEL_REPOSITORIO>
+	npm create vite@latest .
 	```
 
-   - Seleccione **React** como framework: `√ Select a framework: » React`
-   - Seleccione **Typescript** como variante: `√ Select a variant: » Typescript`
+	- En caso de ser necesario, ingrese **y** a la instalación del paquete `create-vite`: 
 
-2. Ingrese a la carpeta del repositorio:
-
-	```prompt
-	cd <NOMBRE_DEL_REPOSITORIO>
+	```
+	Need to install the following packages:  
+	create-vite@5.5.5
+	Ok to proceed? (y) y
 	```
 
-3. Instale las dependencias
+	- En caso de ser necesario, seleccione **Ignore files and continue** a crear la estructura de archivos en un repositorio con README.md: 
+
+	```
+	Need to install the following packages:  
+	create-vite@5.5.5
+	Ok to proceed? (y) y
+	```
+
+	- Seleccione **React** como framework: `√ Select a framework: » React`
+	- Seleccione **Typescript** como variante: `√ Select a variant: » Typescript`
+
+2. Instale las dependencias
 
 	```prompt
 	npm install
 	```
 
-4. Inicie el servidor.
+3. Inicie el servidor.
 
 	```prompt
 	npm run dev
@@ -74,43 +85,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     + **src/main.tsx** punto de entrada de la página
     + **src/App.tsx** función componente principal
     + **src/App.css** estilo de la función componente principal
-
-#### Configuración para el despliegue
-
-1. Desde la línea de comandos, acceda a la ruta del proyecto.
-2. Instale el paquete `gh-pages`
-
-	```prompt
-	npm install gh-pages --save-dev
-	```
-
-3. En el archivo `package.json` agregue las siguientes líneas antes de la entrada **build**:
-
-	```typescript
-	    ...
-	    "predeploy": "npm run build",
-	    "deploy": "gh-pages -d dist",
-	    ...
-	```
-
-4. En el archivo `vite.config.js` agregue esta línea antes de: **plugins: [react()],**:
-
-	```typescript
-	    base: "/<NOMBRE_DEL_REPOSITORIO>",
-	    ...
-	```
-
-5. Versiona local y remotamente el repositorio **dashboard**.
-
-6. Desde la línea de comandos:
-	+ Ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
-	+ De ser necesario, corrija o comente las secciones de código identificadas por el transpilador.
-	+ Levante un servidor HTTP en la carpeta `dist`, para comprobar el funcionamiento del sitio web transpilado.
-
-7. En GitHub:
-	+ En _Settings_ > _Code and automation_ > _Pages_ > _Build and deployment_ seleccione la rama **gh-pages**
-	+ Verifique que exista la rama **gh-pages** y que contenga el sitio web transpilado.
-	+ Revise el URL del sitio web desplegado, que se encuentra en _Settings_ > _Code and automation_ > _Pages_ > _GitHub Pages_: `https://<NOMBRE_DE_USUARIO>.github.io/<NOMBRE_DEL_REPOSITORIO>/`. 
 
 #### React MUI: Instalación
 
