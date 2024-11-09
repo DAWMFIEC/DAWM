@@ -155,7 +155,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 1. En _App.tsx_, a los elementos Grid descendientes (con los textos del 1 al 6) aplique el atributo **size** ([múltiples puntos de interrupción](https://mui.com/material-ui/react-grid2/#multiple-breakpoints)).
 
 	<table>
-		<caption>Cantidad de columnas por tamaño</caption>
 		<thead>
 			<tr>
 				<th>Clave (Tamaño)</th>
@@ -191,12 +190,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     </details>
 
 2. (STOP 3) Compruebe el resultado para los diferentes tamaños del navegador.
-
-#### Despliegue automático
-
-1. Agregue los elementos necesarios, para cada uno de los tamaños de dispositivos, de acuerdo con el diseño de su dashboard responsivo. 
-2. Versiona local y remotamente el repositorio **dashboard**.
-3. Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
 
 ### Documentación
 
