@@ -134,12 +134,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 		return (
 		  <Grid>
-		      <Grid>1</Grid>
-		      <Grid>2</Grid>
-		      <Grid>3</Grid>
-		      <Grid>4</Grid>
-		      <Grid>5</Grid>
-		      <Grid>6</Grid>
+		      <Grid>Elemento: Indicador 1</Grid>
+		      <Grid>Elemento: Indicador 2</Grid>
+		      <Grid>Elemento: Indicador 3</Grid>
+		      <Grid>Elemento: Indicador 4</Grid>
+		      <Grid>Elemento: Tabla</Grid>
+		      <Grid>Elemento: Gráfico 1</Grid>
+		      <Grid>Elemento: Gráfico 2</Grid>
 		  </Grid>
 	    )
 	}
@@ -161,9 +162,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	return (
 	  <Grid container spacing={5}>
 
-		<Grid>1</Grid>
+		<Grid>Elemento: Indicador 1</Grid>
       		...
-		<Grid>6</Grid>
+		<Grid>Elemento: Gráfico 2</Grid>
 
 	  </Grid>
     )
@@ -182,24 +183,35 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 			<tr>
 				<th>Clave (Tamaño)</th>
 				<th>Cantidad de columnas</th>
+				<th>Elemento</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
 				<td>xs (extra-small)</td>
 				<td>12</td>
+				<td>Indicadores, Tabla y Gráficos</td>
 			</tr>
-			<tr>
+			<!-- <tr>
 				<td>sm (small)</td>
 				<td>6</td>
 			</tr>
 			<tr>
 				<td>md (medium)</td>
 				<td>4</td>
+			</tr> -->
+			<tr>
+				<td rowspan="3">xl (extra-large)</td>
+				<td>3</td>
+				<td>Indicadores</td>
 			</tr>
 			<tr>
-				<td>xl (extra-large)</td>
-				<td>2</td>
+				<td>3</td>
+				<td>Gráficos</td>
+			</tr>
+			<tr>
+				<td>6</td>
+				<td>Tabla</td>
 			</tr>
 		</tbody>
 	</table>
@@ -209,12 +221,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
       <pre lang="jsx"><code>
       	return (
 		    &lt;Grid container spacing={5}&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;1&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;2&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;3&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;4&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;5&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;6&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 1&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 2&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 3&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 4&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 6 {% raw %}}}{% endraw %}&gt;Elemento: Tabla&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
 		    &lt;/Grid&gt;
 		)
       </code></pre>
