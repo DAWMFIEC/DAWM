@@ -263,6 +263,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	```typescript
 	{
 		...
+		"type": "...",
 		"scripts": {
 		    ...
 		    "predeploy": "npm run build",
