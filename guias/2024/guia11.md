@@ -178,12 +178,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
       <pre lang="jsx"><code>
       	return (
 		    &lt;Grid container spacing={5}&gt;
-		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;1&lt;/Grid&gt;
-		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;2&lt;/Grid&gt;
-		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;3&lt;/Grid&gt;
-		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;4&lt;/Grid&gt;
-		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;5&lt;/Grid&gt;
-		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;6&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;1&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;2&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;3&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;4&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;5&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;6&lt;/Grid&gt;
 		    &lt;/Grid&gt;
 		)
       </code></pre>
