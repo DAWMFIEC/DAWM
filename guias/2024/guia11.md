@@ -30,7 +30,15 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Proyecto Base
 
-1. Desde la línea de comandos, cree un nuevo sitio con Vite:
+1. Desde la línea de comandos, 
+
+	- Acceda a la carpeta de su proyecto.
+	
+	```prompt
+	cd dashboard
+	```
+
+	- Cree un nuevo sitio con Vite:
 
 	```prompt
 	npm create vite@latest .
@@ -51,8 +59,17 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	Please choose how to proceed: » Ignore files and continue
 	```
 
-	- Seleccione **React** como framework: `√ Select a framework: » React`
-	- Seleccione **Typescript** como variante: `√ Select a variant: » Typescript`
+	- Seleccione **React** como framework: 
+
+	```
+	√ Select a framework: » React
+	```
+
+	- Seleccione **Typescript** como variante: 
+
+	```
+	√ Select a variant: » Typescript
+	```
 
 2. Instale las dependencias
 
