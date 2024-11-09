@@ -26,24 +26,29 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     export default function Indicator() {
         return (
             <>
-                Indicator
+                Componente Indicator
             </> 
         )
     }
     ```
 
-2. En `App.tsx` importe el componente **Indicator** y use en el contenido a renderizar:
+2. En _App.tsx_:
+    
+    - Importe el componente **Indicator**, y 
+    - Reemplace el texto 'Elemento: Indicador X' por el elemento `<Indicador />`
 
     ```jsx
     import Indicator from './components/Indicator';
 
     function App() {
         return (
-            ...
-            <Grid xs={6} md={4} lg={2}>
-                <Indicator />
-            </Grid>       
-            ...
+            <Grid container spacing={5}>
+                <Grid size={{ xs: 12, xl: 3 }}><Indicator /></Grid>
+                <Grid size={{ xs: 12, xl: 3 }}><Indicator /></Grid>
+                <Grid size={{ xs: 12, xl: 3 }}><Indicator /></Grid>
+                <Grid size={{ xs: 12, xl: 3 }}><Indicator /></Grid>
+                ...
+            </Grid>
         )
     }
 
