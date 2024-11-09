@@ -7,6 +7,7 @@ theme: jekyll-theme-leap-day
 [DAWM](/DAWM/) / [Proyecto03](/DAWM/proyectos/2024/proyecto03)
 
 <link href="styles/mystyle.css" rel="stylesheet" />
+<script src="javascripts/tabs.js" type="text/javascript"></script>
 
 ### Objetivo general
 
@@ -35,7 +36,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 	- En caso de ser necesario, ingrese **y** a la instalación del paquete `create-vite`: 
 
-	```
+	```prompt
 	Need to install the following packages:  
 	create-vite@5.5.5
 	Ok to proceed? (y) y
@@ -43,8 +44,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 	- En caso de ser necesario, seleccione **Ignore files and continue** a crear la estructura de archivos en un repositorio con README.md: 
 
-	```
-	Current directory is not empty. Please choose how to proceed: » Ignore files and continue
+	```prompt
+	Current directory is not empty. 
+	Please choose how to proceed: » Ignore files and continue
 	```
 
 	- Seleccione **React** como framework: `√ Select a framework: » React`
@@ -74,15 +76,15 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Estructura de archivos del proyecto en Vite - React.
 
 * Archivos de configuración
-    + **./vite.config.js** contiene la información al ejecutar el servidor de Vite.
-    + **./package.json** contiene la lista de los paquetes instalados
+    + _./vite.config.js_ contiene la información al ejecutar el servidor de Vite.
+    + _./package.json_ contiene la lista de los paquetes instalados
 
 * Código fuente
-    + **./index.html** página de inicio
-    + **src/index.css** estilo global de la página
-    + **src/main.tsx** punto de entrada de la página
-    + **src/App.tsx** función componente principal
-    + **src/App.css** estilo de la función componente principal
+    + _./index.html_ página de inicio
+    + _src/index.css_ estilo global de la página
+    + _src/main.tsx_ punto de entrada de la página
+    + _src/App.tsx_ función componente principal
+    + _src/App.css_ estilo de la función componente principal
 
 #### React MUI: Instalación
 
@@ -94,7 +96,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### React MUI: Componente Grid version 2
 
-1. En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
+1. En el componente _App.tsx_, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
 
 	```typescript
 	import { ... } from 'react'
@@ -103,7 +105,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	import Grid from '@mui/material/Grid2' 
 	```
 
-2. En `App.tsx`, reemplace el contenido a renderizar en el **return** por:
+2. En _App.tsx_, reemplace el contenido a renderizar en el **return** por:
 
 	```jsx
 	...
@@ -129,7 +131,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### React MUI: Propiedades (Props)
 
-1. En `App.tsx`, aplique al elemento Grid contenedor: 
+1. En _App.tsx_, aplique al elemento Grid contenedor: 
 
 	- El atributo **container** para convertir una [cuadrícula fluida](https://mui.com/material-ui/react-grid2/#fluid-grids).
 	- El atributo **spacing** para crear un [espaciado](https://mui.com/material-ui/react-grid2/#spacing).
@@ -150,26 +152,29 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### React MUI: Layout
 
-1. En `App.tsx`, aplique a los elementos Grid descendientes:
+1. En _App.tsx_, aplique a los elementos Grid descendientes (con los textos del 1 al 6):
 
-	- El atributo **size** [](https://mui.com/material-ui/react-grid2/#multiple-breakpoints) 
+	- El atributo **size** para aplicar el estilo de [múltiples puntos de interrupción](https://mui.com/material-ui/react-grid2/#multiple-breakpoints) 
 
-1. Agregue las propiedades **xs**, **sm**, **md** y **lg** a los elementos internos.
-
-	```jsx
-	...
-		return (
-		  <Grid container spacing={5}>
-		      <Grid xs={12} sm={4} md={3} lg={2}>1</Grid>
-		      <Grid xs={6} sm={4} md={3} lg={2}>2</Grid>
-		      <Grid xs={6} sm={4} md={3} lg={2}>3</Grid>
-		      <Grid xs={12} sm={4} md={3} lg={2}>4</Grid>
-		      <Grid xs={6} sm={4} md={6} lg={2}>5</Grid>
-		      <Grid xs={6} sm={4} md={6} lg={2}>6</Grid>
-		    </Grid>
-		)
-	...
 	```
+	size={{ xs: 12, xl: 2 }}
+	```
+
+	<details>
+      <summary><div>Haga click aquí para ver la solución</div></summary>
+      <pre lang="jsx"><code>
+      	return (
+		    &lt;Grid container spacing={5}&gt;
+		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;1&lt;/Grid&gt;
+		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;2&lt;/Grid&gt;
+		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;3&lt;/Grid&gt;
+		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;4&lt;/Grid&gt;
+		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;5&lt;/Grid&gt;
+		        &lt;Grid size={{ xs: 12, xl: 2 }}&gt;6&lt;/Grid&gt;
+		    &lt;/Grid&gt;
+		)
+      </code></pre>
+    </details>
 
 2. (STOP 3) Compruebe el resultado para los diferentes tamaños del navegador.
 
