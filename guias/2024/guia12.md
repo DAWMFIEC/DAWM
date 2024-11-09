@@ -159,6 +159,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 2. Cree el archivo _src/components/BasicTable.tsx_.
 3. En _components/BasicTable.tsx_: 
     - Coloque el código copiado en el componente.
+    - Elimine la referencia `import * as React from 'react';`
+    - Elimine el estilo embebido `sx={{ minWidth: 650 }}` en el elemento `<Table />`
 4. En _App.tsx_:
 
     - Importe el componente **BasicTable**, y 
@@ -171,7 +173,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     	return (
             <Grid container spacing={5}>
                 ...
-                <Grid size={{ xs: 12, xl: 7 }}><BasicTable/></Grid>
+                <Grid size={{ xs: 12, xl: 6 }}><BasicTable/></Grid>
                 ...
             </Grid>
     	)
