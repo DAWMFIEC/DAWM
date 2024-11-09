@@ -7,6 +7,7 @@ theme: jekyll-theme-leap-day
 [DAWM](/DAWM/) / [Proyecto03](/DAWM/proyectos/2024/proyecto03)
 
 <link href="styles/mystyle.css" rel="stylesheet" />
+<script src="javascripts/tabs.js" type="text/javascript"></script>
 
 ### Objetivo general
 
@@ -19,12 +20,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Componente Indicador
 
-1. Cree el archivo `src/components/Indicator.tsx` con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
+1. Cree el archivo _src/components/Indicator.tsx_ con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
 
     ```jsx
     export default function Indicator() {
         return (
-           	<>
+            <>
                 Indicator
             </> 
         )
@@ -37,13 +38,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import Indicator from './components/Indicator';
 
     function App() {
-    	return (
-    		...
-    		<Grid xs={6} md={4} lg={2}>
-    	        <Indicator />
-    	    </Grid>       
-    		...
-    	)
+        return (
+            ...
+            <Grid xs={6} md={4} lg={2}>
+                <Indicator />
+            </Grid>       
+            ...
+        )
     }
 
     export default App
@@ -84,7 +85,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     	return (
     		...
     		<Grid xs={6} md={4} lg={2}>
-    	        <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} />
+    	        <Indicator title={'Precipitación'} subtitle={'Probabilidad'} value={0.13} />
     	    </Grid>       
     		...
     	)
