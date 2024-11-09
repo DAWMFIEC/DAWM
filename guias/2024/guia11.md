@@ -24,6 +24,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Github
 
 1. Crea un repositorio en GitHub con el nombre **dashboard**.
+	- Incluya el archivo _README.md_.
+	- Agregue _.gitignore_ con la plantilla **Node**.
 2. Clone su repositorio localmente.
 
 #### Proyecto Base
