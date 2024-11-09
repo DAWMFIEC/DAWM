@@ -152,13 +152,27 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### React MUI: Layout
 
-1. En _App.tsx_, aplique a los elementos Grid descendientes (con los textos del 1 al 6):
+1. En _App.tsx_, a los elementos Grid descendientes (con los textos del 1 al 6) aplique el atributo **size** ([múltiples puntos de interrupción](https://mui.com/material-ui/react-grid2/#multiple-breakpoints)).
 
-	- El atributo **size** para aplicar el estilo de [múltiples puntos de interrupción](https://mui.com/material-ui/react-grid2/#multiple-breakpoints) 
-
-	```
-	size={{ xs: 12, xl: 2 }}
-	```
+	<table>
+		<caption>Cantidad de columnas por tamaño</caption>
+		<thead>
+			<tr>
+				<th>Tamaño</th>
+				<th>Número de columnas</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>extra-small</td>
+				<td>12</td>
+			</tr>
+			<tr>
+				<td>extra-large</td>
+				<td>2</td>
+			</tr>
+		</tbody>
+	</table>
 
 	<details>
       <summary><div>Haga click aquí para ver la solución</div></summary>
