@@ -158,17 +158,17 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		<caption>Cantidad de columnas por tamaño</caption>
 		<thead>
 			<tr>
-				<th>Tamaño</th>
-				<th>Número de columnas</th>
+				<th>Clave (Tamaño)</th>
+				<th>Cantidad de columnas</th>
 			</tr>
 		</thead>
 		<tbody>
 			<tr>
-				<td>extra-small</td>
+				<td>xs (extra-small)</td>
 				<td>12</td>
 			</tr>
 			<tr>
-				<td>extra-large</td>
+				<td>xl (extra-large)</td>
 				<td>2</td>
 			</tr>
 		</tbody>
