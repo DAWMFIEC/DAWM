@@ -174,9 +174,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### React MUI: Layout
 
-1. En _App.tsx_, a los elementos Grid descendientes (con los textos del 1 al 6) aplique el atributo **size** ([múltiples puntos de interrupción](https://mui.com/material-ui/react-grid2/#multiple-breakpoints)) con las [claves predeterminadas](https://mui.com/material-ui/customization/breakpoints/#default-breakpoints).
+1. En _App.tsx_, aplique a todos los elementos Grid descendientes (con los textos del 1 al 6) los [puntos de interrupción](https://mui.com/material-ui/react-grid2/#multiple-breakpoints) (atributo **size**) con las [claves predeterminadas](https://mui.com/material-ui/customization/breakpoints/#default-breakpoints) y valores de acuerdo con la siguiente tabla:
 
 	<table>
+		<caption>Diseño con puntos de interrupción</caption>
 		<thead>
 			<tr>
 				<th>Clave (Tamaño)</th>
@@ -244,7 +245,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-	- Agregue los comando en la entrada **scripts**:
+	- Agregue los comandos **predeploy** y **deploy** a la entrada scripts:
 
 	```typescript
 	{
@@ -270,6 +271,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 5. Versiona local y remotamente el repositorio.
 6. Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
 	+ De ser necesario, corrija o comente las secciones de código identificadas por el transpilador.
+	+ Vuelva a ejecutar el comando de transpilación y despliegue.
 
 ### Documentación
 
