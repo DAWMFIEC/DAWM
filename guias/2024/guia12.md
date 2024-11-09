@@ -59,7 +59,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     export default App
     ```
 
-3. (STOP 1) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio.
+4. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Props
 
@@ -110,19 +111,21 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     export default App
     ```
 
-3. (STOP 2) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio.
+4. (STOP 2) Compruebe el resultado en el navegador.
 
 #### Componente MUI Paper y Typography
 
 1. En _components/Indicator.tsx_:
 
     - Agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
-    - Use los componentes **Typography** y **Paper**
+    - Renderice el prop dentro de los componentes **Typography** y **Paper**
 
     ```jsx
     import Typography from '@mui/material/Typography';
     import Paper from '@mui/material/Paper';
-    ...
+    
+    interface Config { ... }
 
     export default function Indicator(config: Config) {
         return (
@@ -147,95 +150,39 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     }
     ```
 
-3. (STOP 3) Compruebe el resultado en el navegador.
-
-#### Componente MUI Card
-
-1. Descargue la imagen [sunrise.jpeg](imagenes/sunrise.jpeg) dentro de la carpeta `assets` dentro del proyecto.
-2. Cree el componente `src/components/Summary.tsx`, importe y use los componentes [Card](https://mui.com/material-ui/react-card/) y los componentes relacionados:
-
-
-    ```jsx
-    import Typography from '@mui/material/Typography';
-    import Card from '@mui/material/Card';
-    import CardContent from '@mui/material/CardContent';
-    import CardMedia from '@mui/material/CardMedia';
-    import { CardActionArea } from '@mui/material';
-
-    import sunrise from '../assets/sunrise.jpeg'
-
-    export default function Summary() {
-        return (
-            <Card sx={% raw %}{{{% endraw %} maxWidth: 345 {% raw %}}}{% endraw %}>
-                <CardActionArea>
-                    <CardMedia
-                        component="img"
-                        height="140"
-                        image={sunrise}
-                        alt="Amanecer"
-                    />
-                    <CardContent>
-                        <Typography gutterBottom component="h2" variant="h6" color="primary">
-                            Amanecer
-                        </Typography>
-                        <Typography component="p" variant="h4">
-                            05:19:08
-                        </Typography>
-                        <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
-                        	en 17 Junio, 2024
-                        </Typography>
-                    </CardContent>
-                </CardActionArea>
-            </Card>
-        )
-    }
-    ```
-
-3. En `App.tsx`, importe el componente **Summary** y use en el contenido a renderizar:
-
-    ```jsx
-    import Summary from './components/Summary';
-
-    function App() {
-    	return (
-    		...
-    		<Grid xs={6} sm={4} md={3} lg={2}>
-    	        <Summary></Summary>
-    	    </Grid>        
-    		...
-    	)
-    }
-
-    export default App
-    ```
-
-4. (STOP 4) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio.
+4. (STOP 3) Compruebe el resultado en el navegador.
 
 #### Componente MUI Table
 
-1. Cree el componente `src/components/BasicTable.tsx`
-* Del ejemplo [Basic Table](https://mui.com/material-ui/react-table/#basic-table) muestre y copie el código en el componente recién creado.
-* En `App.tsx`, importe el componente **BasicTable** y use en el contenido a renderizar:
+1. Copie el código [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx)
+2. Cree el archivo _src/components/BasicTable.tsx_.
+3. En _components/BasicTable.tsx_: 
+    - Coloque el código copiado en el componente.
+4. En _App.tsx_:
+
+    - Importe el componente **BasicTable**, y 
+    - Coloque la referencia al componente `<BasicTable />` en el Grid. 
 
     ```jsx
     import BasicTable from './components/BasicTable';
 
     function App() {
     	return (
-    		...
-    		<Grid xs={12} md={6} lg={9} >
-    	       <BasicTable />
-    	    </Grid>        
-    		...
+            <Grid container spacing={5}>
+                ...
+                <Grid size={{ xs: 12, xl: 7 }}><BasicTable/></Grid>
+                ...
+            </Grid>
     	)
     }
 
     export default App
     ```
 
-2. (STOP 5) Compruebe el resultado en el navegador.
-3. Versiona local y remotamente el repositorio **dashboard**.
-4. Despliega la aplicación **dashboard**.
+3. Versiona local y remotamente el repositorio.
+4. (STOP 4) Compruebe el resultado en el navegador.
+
 
 ### Documentación
 
