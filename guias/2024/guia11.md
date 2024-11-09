@@ -44,9 +44,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	- En caso de ser necesario, seleccione **Ignore files and continue** a crear la estructura de archivos en un repositorio con README.md: 
 
 	```
-	Need to install the following packages:  
-	create-vite@5.5.5
-	Ok to proceed? (y) y
+	Current directory is not empty. Please choose how to proceed: » Ignore files and continue
 	```
 
 	- Seleccione **React** como framework: `√ Select a framework: » React`
@@ -94,7 +92,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	npm install @mui/material @emotion/react @emotion/styled
 	```
 
-#### React MUI: Componente Grid v2
+#### React MUI: Componente Grid version 2
 
 1. En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
 
@@ -102,10 +100,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	import { ... } from 'react'
 
 	// Grid version 2
-	import Grid from '@mui/material/Unstable_Grid2'; 
+	import Grid from '@mui/material/Grid2' 
 	```
 
-2. En `App.tsx`, reemplace el contenido a renderizar en el **return**:
+2. En `App.tsx`, reemplace el contenido a renderizar en el **return** por:
 
 	```jsx
 	...
@@ -131,22 +129,30 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### React MUI: Propiedades (Props)
 
-1. En `App.tsx`, convierta el primer Grid en contenedor con el atributo **container** y asigne un espacio entre elementos con **spacing**.
+1. En `App.tsx`, aplique al elemento Grid contenedor: 
+
+	- El atributo **container** para convertir una [cuadrícula fluida](https://mui.com/material-ui/react-grid2/#fluid-grids).
+	- El atributo **spacing** para crear un [espaciado](https://mui.com/material-ui/react-grid2/#spacing).
 
 	```jsx
-	...
-		return (
-		  <Grid container spacing={5}>
-			<Grid>1</Grid>
-	      		...
-			<Grid>6</Grid>
-		  </Grid>
-	    )
-	...
+	return (
+	  <Grid container spacing={5}>
+
+		<Grid>1</Grid>
+      		...
+		<Grid>6</Grid>
+
+	  </Grid>
+    )
 	```
+
 2. (STOP 2) Compruebe el resultado en el navegador.
 
 #### React MUI: Layout
+
+1. En `App.tsx`, aplique a los elementos Grid descendientes:
+
+	- El atributo **size** [](https://mui.com/material-ui/react-grid2/#multiple-breakpoints) 
 
 1. Agregue las propiedades **xs**, **sm**, **md** y **lg** a los elementos internos.
 
