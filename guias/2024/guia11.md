@@ -152,7 +152,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### React MUI: Layout
 
-1. En _App.tsx_, a los elementos Grid descendientes (con los textos del 1 al 6) aplique el atributo **size** ([múltiples puntos de interrupción](https://mui.com/material-ui/react-grid2/#multiple-breakpoints)).
+1. En _App.tsx_, a los elementos Grid descendientes (con los textos del 1 al 6) aplique el atributo **size** ([múltiples puntos de interrupción](https://mui.com/material-ui/react-grid2/#multiple-breakpoints)) con las [claves predeterminadas](https://mui.com/material-ui/customization/breakpoints/#default-breakpoints).
 
 	<table>
 		<thead>
@@ -167,6 +167,14 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				<td>12</td>
 			</tr>
 			<tr>
+				<td>sm (small)</td>
+				<td>6</td>
+			</tr>
+			<tr>
+				<td>md (medium)</td>
+				<td>4</td>
+			</tr>
+			<tr>
 				<td>xl (extra-large)</td>
 				<td>2</td>
 			</tr>
@@ -178,12 +186,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
       <pre lang="jsx"><code>
       	return (
 		    &lt;Grid container spacing={5}&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;1&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;2&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;3&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;4&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;5&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 2 {% raw %}}}{% endraw %}&gt;6&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;1&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;2&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;3&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;4&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;5&lt;/Grid&gt;
+		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md: 4, xl: 2 {% raw %}}}{% endraw %}&gt;6&lt;/Grid&gt;
 		    &lt;/Grid&gt;
 		)
       </code></pre>
