@@ -20,7 +20,11 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Componente Indicador
 
-1. Cree el archivo _src/components/Indicator.tsx_ con el componente [Fragment](https://es.react.dev/reference/react/Fragment#fragment):
+1. Cree el archivo _src/components/Indicator.tsx_.
+2. En _components/Indicator.tsx_: 
+    
+    - Agregue el componente **Indicator**,
+    - Renderice un mensaje dentro de un elemento vacío ([Fragment](https://es.react.dev/reference/react/Fragment#fragment)).
 
     ```jsx
     export default function Indicator() {
@@ -35,7 +39,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 2. En _App.tsx_:
     
     - Importe el componente **Indicator**, y 
-    - Reemplace el texto 'Elemento: Indicador X' por el elemento `<Indicador />`
+    - Coloque la referencia al componente `<Indicador />` en el Grid. 
 
     ```jsx
     import Indicator from './components/Indicator';
@@ -59,7 +63,11 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Props
 
-1. Agregue la interfaz `Config` al componente **Indicator**
+1. En _components/Indicador.tsx_:
+
+    - Agregue la interfaz **Config** con las claves title, subtitle y value,
+    - Defina **config** como [props](https://react.dev/learn/passing-props-to-a-component) del componente, y
+    - Renderice las claves title, subtitle y value
 
     ```jsx
     ...
@@ -75,24 +83,27 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 {config.title}<br/>
                 {config.value.toString()}<br/>
                 {config.subtitle}
-                
             </>
         )
     }
     ```
 
-2. En `App.tsx`, agregue las propiedades y los valores del componente **Indicator**
+2. En _App.tsx_:
+
+    - A cada componente **Indicator**, agregue las propiedades y los valores correspondientes. 
 
     ```jsx
     import Indicator from './components/Indicator';
 
     function App() {
     	return (
-    		...
-    		<Grid xs={6} md={4} lg={2}>
-    	        <Indicator title={'Precipitación'} subtitle={'Probabilidad'} value={0.13} />
-    	    </Grid>       
-    		...
+            <Grid container spacing={5}>
+                <Grid size={{ xs: 12, xl: 3 }}><Indicator title={'Indicador 1'} subtitle={'Unidad 1'} value={1.23} /></Grid>
+                <Grid size={{ xs: 12, xl: 3 }}><Indicator title={'Indicador 2'} subtitle={'Unidad 2'} value={3.12} /></Grid>
+                <Grid size={{ xs: 12, xl: 3 }}><Indicator title={'Indicador 3'} subtitle={'Unidad 3'} value={2.31} /></Grid>
+                <Grid size={{ xs: 12, xl: 3 }}><Indicator title={'Indicador 4'} subtitle={'Unidad 4'} value={3.21} /></Grid>
+            ...
+            </Grid>
     	)
     }
 
@@ -103,16 +114,14 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Componente MUI Paper y Typography
 
-1. En `Indicator.tsx`, agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
+1. En _components/Indicator.tsx_:
+
+    - Agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
+    - Use los componentes **Typography** y **Paper**
 
     ```jsx
     import Typography from '@mui/material/Typography';
     import Paper from '@mui/material/Paper';
-    ```
-
-2. Use los componentes **Typography** y **Paper**
-
-    ```jsx
     ...
 
     export default function Indicator(config: Config) {
