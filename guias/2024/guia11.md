@@ -127,7 +127,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 	export default App
 	```
-3. (STOP 1) Compruebe el resultado en el navegador.
+3. (STOP 2) Compruebe el resultado en el navegador.
 
 #### React MUI: Propiedades (Props)
 
@@ -148,7 +148,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     )
 	```
 
-2. (STOP 2) Compruebe el resultado en el navegador.
+2. (STOP 3) Compruebe el resultado en el navegador.
 
 #### React MUI: Layout
 
@@ -197,7 +197,57 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
       </code></pre>
     </details>
 
-2. (STOP 3) Compruebe el resultado para los diferentes tamaños del navegador.
+2. (STOP 4) Compruebe el resultado para los diferentes tamaños del navegador.
+
+#### Configuración para el despliegue
+
+1. Desde la línea de comandos, acceda a la ruta del proyecto.
+2. Instale el paquete `gh-pages`
+
+	```prompt
+	npm install gh-pages --save-dev
+	```
+
+3. En el archivo `package.json` 
+
+	- Agregue la entrada **homepage** en el formato: `https://{username}.github.io/dashboard`:
+
+	```typescript
+	{
+		...
+		"homepage": "https://{username}.github.io/dashboard",
+		"type": "...",
+		"scripts": { ... }
+	}
+	```
+
+	- Agregue los comando en la entrada **scripts**:
+
+	```typescript
+	{
+		...
+		"scripts": {
+		    ...
+		    "predeploy": "npm run build",
+		    "deploy": "gh-pages -d dist",
+		    ...
+		}
+	}
+	```
+
+4. En el archivo `vite.config.js` agregue la ruta al repositorio remoto `/dashboard`:
+
+	```typescript
+	export default defineConfig({
+	  base: "/dashboard",
+	  plugins: [react()],
+	})
+	```
+
+5. Versiona local y remotamente el repositorio **dashboard**.
+
+6. Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
+	+ De ser necesario, corrija o comente las secciones de código identificadas por el transpilador.
 
 ### Documentación
 
