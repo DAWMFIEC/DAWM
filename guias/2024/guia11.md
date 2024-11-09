@@ -71,7 +71,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     <img src="imagenes/default_site_react_vite.png" alt="">
 </div>
 
-7. Versiona local y remotamente el repositorio **dashboard**.
+7. Versiona local y remotamente el repositorio.
 
 #### Estructura de archivos del proyecto en Vite - React.
 
@@ -127,7 +127,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 	export default App
 	```
-3. (STOP 2) Compruebe el resultado en el navegador.
+
+3. Versiona local y remotamente el repositorio.
+4. (STOP 2) Compruebe el resultado en el navegador.
 
 #### React MUI: Propiedades (Props)
 
@@ -148,7 +150,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     )
 	```
 
-2. (STOP 3) Compruebe el resultado en el navegador.
+2. Versiona local y remotamente el repositorio.
+3. (STOP 3) Compruebe el resultado en el navegador.
 
 #### React MUI: Layout
 
@@ -197,7 +200,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
       </code></pre>
     </details>
 
-2. (STOP 4) Compruebe el resultado para los diferentes tamaños del navegador.
+2. Versiona local y remotamente el repositorio.
+3. (STOP 4) Compruebe el resultado para los diferentes tamaños del navegador.
 
 #### Configuración para el despliegue
 
@@ -244,8 +248,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	})
 	```
 
-5. Versiona local y remotamente el repositorio **dashboard**.
-
+5. Versiona local y remotamente el repositorio.
 6. Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
 	+ De ser necesario, corrija o comente las secciones de código identificadas por el transpilador.
 
@@ -277,3 +280,4 @@ librería, ui, ui material
 * Shamloo, R. (2023). Deploying Vite / React App to GitHub Pages. Retrieved from https://dev.to/rashidshamloo/deploying-vite-react-app-to-github-pages-35hf
 * The React component library you always wanted. (n.d.). Retrieved from https://mui.com/
 * Khaled, A. (2024). TypeScript vs. TypeScript SWC in Vite: Understanding the Differences. Retrieved from https://medium.com/@amirakhaled2027/typescript-vs-typescript-swc-in-vite-understanding-the-differences-7240e7309ca7
+* Gitname. (n.d.). gitname/react-gh-pages: Deploying a React App (created using create-react-app) to GitHub Pages. Retrieved from https://github.com/gitname/react-gh-pages
