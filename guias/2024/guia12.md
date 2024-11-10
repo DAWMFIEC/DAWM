@@ -182,7 +182,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. En _components/BasicTable.tsx_: 
     - Copie el código del componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx)
     - Elimine la referencia `import * as React from 'react';`
-    - Elimine el estilo embebido `sx={{ minWidth: 650 }}` en el elemento `<Table />`
+    - Elimine la propiedad del estilo embebido `sx` en el elemento `<Table />`
 
 4. En _App.tsx_:
 
