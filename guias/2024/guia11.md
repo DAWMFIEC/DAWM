@@ -157,10 +157,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 2) Compruebe el resultado en el navegador.
 
-<div align="center">
-    <img src="imagenes/dashboard00.png" alt="">
-</div>
-
 #### React MUI: Propiedades (Props)
 
 1. En _App.tsx_, aplique al elemento Grid contenedor: 
@@ -186,10 +182,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. Versiona local y remotamente el repositorio.
 3. (STOP 3) Compruebe el resultado en el navegador.
-
-<div align="center">
-    <img src="imagenes/dashboard01.png" alt="">
-</div>
 
 #### React MUI: Layout
 
@@ -259,11 +251,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. Versiona local y remotamente el repositorio.
 3. (STOP 4) Compruebe el resultado para los diferentes tamaños del navegador.
-
-<div align="center">
-    <img src="imagenes/dashboard02.png" alt="" width="49%">
-    <img src="imagenes/dashboard03.png" alt="" width="49%">
-</div>
 
 #### Configuración para el despliegue
 
