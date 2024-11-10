@@ -48,7 +48,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
         return (
             <Grid container spacing={5}>
 
-                /* Indicadores */
+                {/* Indicadores  */}
                 <Grid size={ ... }> <Indicator /> </Grid>
                 <Grid size={ ... }> <Indicator /> </Grid>
                 <Grid size={ ... }> <Indicator /> </Grid>
@@ -104,7 +104,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     	return (
             <Grid container spacing={5}>
                 
-                /* Indicadores */
+                {/* Indicadores  */}
                 <Grid size={ ... }>
                     <Indicator title={'Indicador 1'} subtitle={'Unidad 1'} value={1.23} /> 
                 </Grid>
@@ -198,7 +198,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 
                 ...
                 
-                /* Tabla */
+                {/* Tabla */}
                 <Grid size={ ... }> <BasicTable/> </Grid>
 
                 ...
@@ -221,21 +221,17 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     npm install @mui/x-charts
     ```
 
-2. Cree los componentes _src/components/SimpleBarChart.tsx_ y _src/components/SimpleLineChart.tsx_.
-3. En _components/SimpleBarChart.tsx_:
-    - Copie el código del componente [SimpleBarChart](https://github.com/mui/mui-x/blob/v7.22.2/docs/data/charts/bar-demo/SimpleBarChart.tsx)
-    - Elimine la referencia `import * as React from 'react';`
-    - Reemplace el `width={500} height={300}` por `width={280} height={200}`
+2. Cree el componente _src/components/SimpleLineChart.tsx_.
 
-4. En _components/SimpleLineChart.tsx_:
+3. En _components/SimpleLineChart.tsx_:
     - Copie el código del componente [SimpleLineChart](https://github.com/mui/mui-x/blob/v7.22.2/docs/data/charts/line-demo/SimpleLineChart.tsx)
     - Elimine la referencia `import * as React from 'react';`
     - Reemplace el `width={500} height={300}` por `width={280} height={200}`
 
-5. En _App.tsx_:
+4. En _App.tsx_:
 
-    - Importe los componentes **SimpleBarChart** y **SimpleLineChart**, y 
-    - Coloque la referencia a los componentes `<SimpleBarChart />` y `<SimpleLineChart />` en el Grid. 
+    - Importe los componentes **SimpleLineChart**, y 
+    - Coloque la referencia a los componentes `<SimpleLineChart />` en el Grid. 
 
     ```jsx
     import BasicTable from './components/BasicTable';
@@ -246,8 +242,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 
                 ...
                 
-                /* Gráficos */
-                <Grid size={ ... }> <SimpleBarChart/> </Grid>
+                {/* Gráfico */}
                 <Grid size={ ... }> <SimpleLineChart/> </Grid>
 
             </Grid>
