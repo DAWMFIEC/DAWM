@@ -83,7 +83,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     }
 
     export default function Indicator(config: Config) {
-    	return (
+        return (
             <>
                 {config.title}<br/>
                 {config.value.toString()}<br/>
@@ -101,7 +101,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import Indicator from './components/Indicator';
 
     function App() {
-    	return (
+        return (
             <Grid container spacing={5}>
                 
                 {/* Indicadores  */}
@@ -124,7 +124,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 ...
 
             </Grid>
-    	)
+        )
     }
 
     export default App
@@ -175,14 +175,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### React MUI: Componente Table
 
-1. .
+1. Copie el código del componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx).
 
-2. Cree el archivo _src/components/BasicTable.tsx_.
+2. Cree el archivo _src/components/BasicTable.tsx_, y:
 
-3. En _components/BasicTable.tsx_: 
-    - Copie el código del componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx)
+    - Pegue el código del componente BasicTable. 
     - Elimine la referencia `import * as React from 'react';`
-    - Elimine la propiedad del estilo embebido `sx` en el elemento `<Table />`
+    - Elimine la propiedad con el estilo embebido `sx` en el elemento `<Table />`
 
 4. En _App.tsx_:
 
@@ -193,7 +192,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import BasicTable from './components/BasicTable';
 
     function App() {
-    	return (
+        return (
             <Grid container spacing={5}>
                 
                 ...
@@ -204,7 +203,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 ...
 
             </Grid>
-    	)
+        )
     }
 
     export default App
@@ -221,12 +220,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     npm install @mui/x-charts
     ```
 
-2. Cree el componente _src/components/SimpleLineChart.tsx_.
+2. Copie el código del componente [SimpleLineChart](https://github.com/mui/mui-x/blob/v7.22.2/docs/data/charts/line-demo/SimpleLineChart.tsx).
 
-3. En _components/SimpleLineChart.tsx_:
-    - Copie el código del componente [SimpleLineChart](https://github.com/mui/mui-x/blob/v7.22.2/docs/data/charts/line-demo/SimpleLineChart.tsx)
+3. Cree el componente _src/components/SimpleLineChart.tsx_, y:
+
+    - Pegue el código del componente BasicTable. 
     - Elimine la referencia `import * as React from 'react';`
-    - Reemplace el `width={500} height={300}` por `width={280} height={200}`
+    - Aplique `width={400} height={250}`
 
 4. En _App.tsx_:
 
