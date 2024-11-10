@@ -252,6 +252,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 2. Versiona local y remotamente el repositorio.
 3. (STOP 4) Compruebe el resultado para los diferentes tamaños del navegador.
 
+
+<div align="center">
+    <img src="imagenes/dashboard-guia11-sm.png" alt="">
+    <img src="imagenes/dashboard-guia11-xl.png" alt="">
+</div>
+
 #### Configuración para el despliegue
 
 1. Desde la línea de comandos, acceda a la ruta del proyecto.
