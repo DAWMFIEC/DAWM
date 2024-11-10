@@ -47,10 +47,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     function App() {
         return (
             <Grid container spacing={5}>
-                <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}><Indicator /></Grid>
-                <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}><Indicator /></Grid>
-                <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}><Indicator /></Grid>
-                <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}><Indicator /></Grid>
+                <Grid size={ ... }> <Indicator /> </Grid>
+                <Grid size={ ... }> <Indicator /> </Grid>
+                <Grid size={ ... }> <Indicator /> </Grid>
+                <Grid size={ ... }> <Indicator /> </Grid>
                 ...
             </Grid>
         )
@@ -99,11 +99,24 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     function App() {
     	return (
             <Grid container spacing={5}>
-                <Grid size={{ xs: 12, xl: 3 }}><Indicator title={'Indicador 1'} subtitle={'Unidad 1'} value={1.23} /></Grid>
-                <Grid size={{ xs: 12, xl: 3 }}><Indicator title={'Indicador 2'} subtitle={'Unidad 2'} value={3.12} /></Grid>
-                <Grid size={{ xs: 12, xl: 3 }}><Indicator title={'Indicador 3'} subtitle={'Unidad 3'} value={2.31} /></Grid>
-                <Grid size={{ xs: 12, xl: 3 }}><Indicator title={'Indicador 4'} subtitle={'Unidad 4'} value={3.21} /></Grid>
-            ...
+                
+                <Grid size={ ... }>
+                    <Indicator title={'Indicador 1'} subtitle={'Unidad 1'} value={1.23} /> 
+                </Grid>
+
+                <Grid size={ ... }>
+                    <Indicator title={'Indicador 2'} subtitle={'Unidad 2'} value={3.12} />
+                </Grid>
+                
+                <Grid size={ ... }>
+                    <Indicator title={'Indicador 3'} subtitle={'Unidad 3'} value={2.31} />
+                </Grid>
+                
+                <Grid size={ ... }>
+                    <Indicator title={'Indicador 4'} subtitle={'Unidad 4'} value={3.21} />
+                </Grid>
+                
+                ...
             </Grid>
     	)
     }
@@ -136,7 +149,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                   flexDirection: 'column'
                 {% raw %}}}{% endraw %}
               >
-                <Typography component="h2" variant="h6" color="primary" gutterBottom>
+                <Typography component="h2" variant="h6" 
+                            color="primary" gutterBottom>
                     {config.title} 
                 </Typography>
                 <Typography component="p" variant="h4">
@@ -155,13 +169,16 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Componente MUI Table
 
-1. Copie el código [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx)
-2. Cree el archivo _src/components/BasicTable.tsx_.
-3. En _components/BasicTable.tsx_: 
+Utilice el componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx) que aparece como ejemplo en la documentación.
+
+1. Cree el archivo _src/components/BasicTable.tsx_.
+
+2. En _components/BasicTable.tsx_: 
     - Coloque el código copiado en el componente.
     - Elimine la referencia `import * as React from 'react';`
     - Elimine el estilo embebido `sx={{ minWidth: 650 }}` en el elemento `<Table />`
-4. En _App.tsx_:
+
+3. En _App.tsx_:
 
     - Importe el componente **BasicTable**, y 
     - Coloque la referencia al componente `<BasicTable />` en el Grid. 
@@ -173,7 +190,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     	return (
             <Grid container spacing={5}>
                 ...
-                <Grid size={{ xs: 12, xl: 6 }}><BasicTable/></Grid>
+                <Grid size={ ... }> <BasicTable/> </Grid>
                 ...
             </Grid>
     	)
@@ -182,8 +199,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     export default App
     ```
 
-3. Versiona local y remotamente el repositorio.
-4. (STOP 4) Compruebe el resultado en el navegador.
+4. Versiona local y remotamente el repositorio.
+5. (STOP 4) Compruebe el resultado en el navegador.
+
+#### Componente MUI Table
 
 
 ### Documentación
