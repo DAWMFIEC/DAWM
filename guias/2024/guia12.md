@@ -47,10 +47,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     function App() {
         return (
             <Grid container spacing={5}>
-                <Grid size={{ xs: 12, xl: 3 }}><Indicator /></Grid>
-                <Grid size={{ xs: 12, xl: 3 }}><Indicator /></Grid>
-                <Grid size={{ xs: 12, xl: 3 }}><Indicator /></Grid>
-                <Grid size={{ xs: 12, xl: 3 }}><Indicator /></Grid>
+                <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}><Indicator /></Grid>
+                <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}><Indicator /></Grid>
+                <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}><Indicator /></Grid>
+                <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}><Indicator /></Grid>
                 ...
             </Grid>
         )
