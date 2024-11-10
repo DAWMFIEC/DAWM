@@ -134,13 +134,20 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 		return (
 		  <Grid>
+
+		  	  /* Indicadores */
 		      <Grid>Elemento: Indicador 1</Grid>
 		      <Grid>Elemento: Indicador 2</Grid>
 		      <Grid>Elemento: Indicador 3</Grid>
 		      <Grid>Elemento: Indicador 4</Grid>
+		      
+		      /* Tabla */
 		      <Grid>Elemento: Tabla</Grid>
+		      
+		      /* Gráficos */
 		      <Grid>Elemento: Gráfico 1</Grid>
 		      <Grid>Elemento: Gráfico 2</Grid>
+		  
 		  </Grid>
 	    )
 	}
@@ -162,8 +169,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	return (
 	  <Grid container spacing={5}>
 
+	  	/* Indicadores */
 		<Grid>Elemento: Indicador 1</Grid>
-      		...
+      	
+      	...
+
+      	/* Gráficos */
 		<Grid>Elemento: Gráfico 2</Grid>
 
 	  </Grid>
@@ -221,13 +232,20 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
       <pre lang="jsx"><code>
       	return (
 		    &lt;Grid container spacing={5}&gt;
+
+		    	/* Indicadores */
 		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 1&lt;/Grid&gt;
 		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 2&lt;/Grid&gt;
 		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 3&lt;/Grid&gt;
 		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 4&lt;/Grid&gt;
+
+		        /* Tabla */
 		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 6 {% raw %}}}{% endraw %}&gt;Elemento: Tabla&lt;/Grid&gt;
+
+		        /* Gráficos */
 		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
 		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
+		        
 		    &lt;/Grid&gt;
 		)
       </code></pre>
