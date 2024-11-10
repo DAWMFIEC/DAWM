@@ -135,16 +135,16 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		return (
 		  <Grid>
 
-		  	  /* Indicadores */
+		  	  {/* Indicadores */}
 		      <Grid>Elemento: Indicador 1</Grid>
 		      <Grid>Elemento: Indicador 2</Grid>
 		      <Grid>Elemento: Indicador 3</Grid>
 		      <Grid>Elemento: Indicador 4</Grid>
 		      
-		      /* Tabla */
+		      {/* Tabla */}
 		      <Grid>Elemento: Tabla</Grid>
 		      
-		      /* Gráfico */
+		      {/* Gráfico */}
 		      <Grid>Elemento: Gráfico 1</Grid>
 		  
 		  </Grid>
@@ -172,12 +172,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	return (
 	  <Grid container spacing={5}>
 
-	  	/* Indicadores */
+	  	{/* Indicadores */}
 		<Grid>Elemento: Indicador 1</Grid>
       	
       	...
 
-      	/* Gráfico */
+      	{/* Gráfico */}
 		<Grid>Elemento: Gráfico 1</Grid>
 
 	  </Grid>
@@ -240,16 +240,16 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
       	return (
 		    &lt;Grid container spacing={5}&gt;
 
-				/* Indicadores */
+				{/* Indicadores */}
 				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 1&lt;/Grid&gt;
 				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 2&lt;/Grid&gt;
 				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 3&lt;/Grid&gt;
 				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 4&lt;/Grid&gt;
 
-				/* Tabla */
+				{/* Tabla */}
 				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 8 {% raw %}}}{% endraw %}&gt;Elemento: Tabla&lt;/Grid&gt;
 
-				/* Gráfico */
+				{/* Gráfico */}
 				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 4 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
 		        
 		    &lt;/Grid&gt;
@@ -261,7 +261,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. (STOP 4) Compruebe el resultado para los diferentes tamaños del navegador.
 
 <div align="center">
-    <img src="imagenes/dashboard02.png" alt="">
+    <img src="imagenes/dashboard02.png" alt="" width="49%">
+    <img src="imagenes/dashboard03.png" alt="" width="49%">
 </div>
 
 #### Configuración para el despliegue
