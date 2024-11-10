@@ -233,18 +233,18 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
       	return (
 		    &lt;Grid container spacing={5}&gt;
 
-		    	/* Indicadores */
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 1&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 2&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 3&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 4&lt;/Grid&gt;
+				/* Indicadores */
+				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 1&lt;/Grid&gt;
+				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 2&lt;/Grid&gt;
+				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 3&lt;/Grid&gt;
+				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 4&lt;/Grid&gt;
 
-		        /* Tabla */
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 6 {% raw %}}}{% endraw %}&gt;Elemento: Tabla&lt;/Grid&gt;
+				/* Tabla */
+				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 6 {% raw %}}}{% endraw %}&gt;Elemento: Tabla&lt;/Grid&gt;
 
-		        /* Gráficos */
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
-		        &lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
+				/* Gráficos */
+				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
+				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
 		        
 		    &lt;/Grid&gt;
 		)
