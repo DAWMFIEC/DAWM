@@ -157,6 +157,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 2) Compruebe el resultado en el navegador.
 
+<div align="center">
+    <img src="imagenes/dashboard00.png" alt="">
+</div>
+
 #### React MUI: Propiedades (Props)
 
 1. En _App.tsx_, aplique al elemento Grid contenedor: 
@@ -182,6 +186,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. Versiona local y remotamente el repositorio.
 3. (STOP 3) Compruebe el resultado en el navegador.
+
+<div align="center">
+    <img src="imagenes/dashboard01.png" alt="">
+</div>
 
 #### React MUI: Layout
 
@@ -252,6 +260,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 2. Versiona local y remotamente el repositorio.
 3. (STOP 4) Compruebe el resultado para los diferentes tamaños del navegador.
 
+<div align="center">
+    <img src="imagenes/dashboard02.png" alt="">
+</div>
+
 #### Configuración para el despliegue
 
 1. Desde la línea de comandos, acceda a la ruta del proyecto.
@@ -300,7 +312,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 5. Versiona local y remotamente el repositorio.
 6. Desde la línea de comandos, ejecute el comando de transpilación y despliegue del sitio web, con: `npm run deploy`
-	+ De ser necesario, corrija o comente las secciones de código identificadas por el transpilador.
+	+ De ser necesario, elimine, corrija o comente las secciones de código identificadas por el transpilador.
 	+ Vuelva a ejecutar el comando de transpilación y despliegue.
 
 ### Documentación
