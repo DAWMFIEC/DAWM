@@ -66,7 +66,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Props
+#### Propiedades (Props)
 
 1. En _components/Indicador.tsx_:
 
@@ -133,7 +133,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 2) Compruebe el resultado en el navegador.
 
-#### Componente MUI Paper y Typography
+#### React MUI: Componente MUI Paper y Typography
 
 1. En _components/Indicator.tsx_:
 
@@ -173,18 +173,18 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 3) Compruebe el resultado en el navegador.
 
-#### Componente MUI Table
+#### React MUI: Componente Table
 
-Utilice el componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx) que aparece como ejemplo en la documentación.
+1. Copie el código del componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx).
 
-1. Cree el archivo _src/components/BasicTable.tsx_.
+2. Cree el archivo _src/components/BasicTable.tsx_.
 
-2. En _components/BasicTable.tsx_: 
+3. En _components/BasicTable.tsx_: 
     - Coloque el código copiado en el componente.
     - Elimine la referencia `import * as React from 'react';`
     - Elimine el estilo embebido `sx={{ minWidth: 650 }}` en el elemento `<Table />`
 
-3. En _App.tsx_:
+4. En _App.tsx_:
 
     - Importe el componente **BasicTable**, y 
     - Coloque la referencia al componente `<BasicTable />` en el Grid. 
@@ -210,10 +210,16 @@ Utilice el componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.
     export default App
     ```
 
-4. Versiona local y remotamente el repositorio.
-5. (STOP 4) Compruebe el resultado en el navegador.
+5. Versiona local y remotamente el repositorio.
+6. (STOP 4) Compruebe el resultado en el navegador.
 
-#### Componente MUI Table
+#### React MUI X: Instalación
+
+1. Desde la línea de comandos, instale [React MUI X](https://mui.com/x/react-charts/getting-started/#installation) con:
+
+    ```prompt
+    npm install @mui/x-charts
+    ```
 
 
 ### Documentación
