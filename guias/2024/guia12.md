@@ -255,6 +255,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 5. Versiona local y remotamente el repositorio.
 6. (STOP 4) Compruebe el resultado en el navegador.
 
+<div align="center">
+    <img src="imagenes/dashboard-guia12.png" alt="">
+</div>
+
 ### Documentación
 
 * En [mui.com](https://mui.com/) se encuentra la documentación de la librería de componentes visuales para React.
