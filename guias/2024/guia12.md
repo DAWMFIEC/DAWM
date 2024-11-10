@@ -175,12 +175,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### React MUI: Componente Table
 
-1. Copie el código del componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx).
+1. .
 
 2. Cree el archivo _src/components/BasicTable.tsx_.
 
 3. En _components/BasicTable.tsx_: 
-    - Coloque el código copiado en el componente.
+    - Copie el código del componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx)
     - Elimine la referencia `import * as React from 'react';`
     - Elimine el estilo embebido `sx={{ minWidth: 650 }}` en el elemento `<Table />`
 
@@ -221,6 +221,44 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     npm install @mui/x-charts
     ```
 
+2. Cree los componentes _src/components/SimpleBarChart.tsx_ y _src/components/SimpleLineChart.tsx_.
+3. En _components/SimpleBarChart.tsx_:
+    - Copie el código del componente [SimpleBarChart](https://github.com/mui/mui-x/blob/v7.22.2/docs/data/charts/bar-demo/SimpleBarChart.tsx)
+    - Elimine la referencia `import * as React from 'react';`
+    - Reemplace el `width={500} height={300}` por `width={280} height={200}`
+
+4. En _components/SimpleLineChart.tsx_:
+    - Copie el código del componente [SimpleLineChart](https://github.com/mui/mui-x/blob/v7.22.2/docs/data/charts/line-demo/SimpleLineChart.tsx)
+    - Elimine la referencia `import * as React from 'react';`
+    - Reemplace el `width={500} height={300}` por `width={280} height={200}`
+
+5. En _App.tsx_:
+
+    - Importe los componentes **SimpleBarChart** y **SimpleLineChart**, y 
+    - Coloque la referencia a los componentes `<SimpleBarChart />` y `<SimpleLineChart />` en el Grid. 
+
+    ```jsx
+    import BasicTable from './components/BasicTable';
+
+    function App() {
+        return (
+            <Grid container spacing={5}>
+                
+                ...
+                
+                /* Gráficos */
+                <Grid size={ ... }> <SimpleBarChart/> </Grid>
+                <Grid size={ ... }> <SimpleLineChart/> </Grid>
+
+            </Grid>
+        )
+    }
+
+    export default App
+    ```
+
+5. Versiona local y remotamente el repositorio.
+6. (STOP 4) Compruebe el resultado en el navegador.
 
 ### Documentación
 
