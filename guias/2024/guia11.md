@@ -216,12 +216,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				<td>Indicadores</td>
 			</tr>
 			<tr>
-				<td>3</td>
-				<td>Gráficos</td>
+				<td>8</td>
+				<td>Tabla</td>
 			</tr>
 			<tr>
-				<td>6</td>
-				<td>Tabla</td>
+				<td>4</td>
+				<td>Gráfico</td>
 			</tr>
 		</tbody>
 	</table>
@@ -239,10 +239,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Indicador 4&lt;/Grid&gt;
 
 				/* Tabla */
-				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 6 {% raw %}}}{% endraw %}&gt;Elemento: Tabla&lt;/Grid&gt;
+				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 8 {% raw %}}}{% endraw %}&gt;Elemento: Tabla&lt;/Grid&gt;
 
 				/* Gráfico */
-				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
+				&lt;Grid size={% raw %}{{{% endraw %} xs: 12, xl: 4 {% raw %}}}{% endraw %}&gt;Elemento: Gráfico 1&lt;/Grid&gt;
 		        
 		    &lt;/Grid&gt;
 		)
