@@ -54,10 +54,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 <Grid size={ ... }> <Indicator /> </Grid>
                 <Grid size={ ... }> <Indicator /> </Grid>
 
-                /* Tabla */
-                ...
-
-                /* Gráficos */
                 ...
 
             </Grid>
@@ -125,10 +121,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                     <Indicator title={'Indicador 4'} subtitle={'Unidad 4'} value={3.21} />
                 </Grid>
                 
-                /* Tabla */
-                ...
-
-                /* Gráficos */
                 ...
 
             </Grid>
@@ -204,13 +196,11 @@ Utilice el componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.
     	return (
             <Grid container spacing={5}>
                 
-                /* Indicadores */
                 ...
-
+                
                 /* Tabla */
                 <Grid size={ ... }> <BasicTable/> </Grid>
-                
-                /* Gráficos */
+
                 ...
 
             </Grid>
