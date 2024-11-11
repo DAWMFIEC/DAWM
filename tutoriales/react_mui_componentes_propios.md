@@ -93,7 +93,7 @@ Componente MUI: Grid v2
 * En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
 
 ```typescript
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from '@mui/material/Grid2'; // Grid version 2
 ...
 import './App.css'
 ```
@@ -119,13 +119,13 @@ function App() {
 
 	return (
 		<Grid container spacing={5}>
-			<Grid xs={12} sm={12} md={12} lg={12}>
+			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:12, md:12, lg: 12 {% raw %}}}>
 				<Calculator/>
 			</Grid>
-			<Grid xs={12} sm={6} md={6} lg={6}>
+			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md:6, lg: 6 {% raw %}}}>
 				<Plan />
 			</Grid>
-			<Grid xs={12} sm={6} md={6} lg={6}>
+			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md:6, lg: 6 {% raw %}}}>
 				<Result/>
 			</Grid>
 		</Grid>
