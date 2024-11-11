@@ -93,7 +93,7 @@ Componente MUI: Grid v2
 * En el componente `App.tsx`, agregue la referencia al componente [Grid 2](https://mui.com/material-ui/react-grid2/).
 
 ```typescript
-import Grid from '@mui/material/Grid2'; // Grid version 2
+import Grid from '@mui/material/Grid2'; // Grid version - 2
 ...
 import './App.css'
 ```
