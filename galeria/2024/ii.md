@@ -16,6 +16,9 @@
 | Dhamar Quishpe | [Ver](imagenes_curriculum/dquishpe.github.io.png) | [Ir](https://dquishpe.github.io/curriculum/) |
 | Joel Guamaní Herrera | [Ver](imagenes_curriculum/isaiasgh.github.io.png) | [Ir](https://isaiasgh.github.io/curriculum/) |
 | Brian Mite Guillén | [Ver](imagenes_curriculum/bmitegui.github.io.png) | [Ir](https://bmitegui.github.io/curriculum/) |
+| Angelo Zurita | [Ver](imagenes_curriculum/aszurita.github.io.png) | [Ir](https://aszurita.github.io/curriculum/) |
+| Alfredo Porras | [Ver](imagenes_curriculum/porrasmdz.github.io.png) | [Ir](https://porrasmdz.github.io/curriculum/) |
+| Braulio Rivas | [Ver](imagenes_curriculum/brauliorivas.github.io.png) | [Ir](https://brauliorivas.github.io/curriculum/) |
 | Alexandre Icaza González | [Ver](imagenes_curriculum/aledicaz.github.io.png) | [Ir](https://aledicaz.github.io/curriculum/) |
 | José Luis Chong | [Ver](imagenes_curriculum/jlchong3.github.io.png) | [Ir](https://jlchong3.github.io/curriculum/) |
 | Kevin Mejía | [Ver](imagenes_curriculum/electrokevo.github.io.png) | [Ir](https://electrokevo.github.io/curriculum/) |
@@ -28,9 +31,8 @@
 | Paulette Maldonado | [Ver](imagenes_curriculum/paulettemal.github.io.png) | [Ir](https://paulettemal.github.io/curriculum/) |
 | Ariana Gonzabay | [Ver](imagenes_curriculum/arianagonzabay.github.io.png)  | [Ir](https://arianagonzabay.github.io/curriculum/)      				|
 | Matías Collaguazo | [Ver](imagenes_curriculum/matiascollaguazo.github.io.png)  | [Ir](https://matiascollaguazo.github.io/curriculum/)      				|
-|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
-|  | [Ver](imagenes_curriculum/.github.io.png) | [Ir](https://.github.io/curriculum/) |
-
+| Noelia Saltos | [Ver](imagenes_curriculum/noesaltos.github.io.png) | [Ir](https://noesaltos.github.io/curriculum/) |
+| Owuen Yagual | [Ver](imagenes_curriculum/owuenyagual.github.io.png) | [Ir](https://owuenyagual.github.io/curriculum/) |
 
 
 ## Proyecto 02: Landing Page SPA - Bootstrap & Javascript
