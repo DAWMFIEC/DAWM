@@ -119,13 +119,13 @@ function App() {
 
 	return (
 		<Grid container spacing={5}>
-			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:12, md:12, lg: 12 {% raw %}}}>
+			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:12, md:12, lg: 12 {% raw %}}}{% endraw %}>
 				<Calculator/>
 			</Grid>
-			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md:6, lg: 6 {% raw %}}}>
+			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md:6, lg: 6 {% raw %}}}{% endraw %}>
 				<Plan />
 			</Grid>
-			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md:6, lg: 6 {% raw %}}}>
+			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:6, md:6, lg: 6 {% raw %}}}{% endraw %}>
 				<Result/>
 			</Grid>
 		</Grid>
