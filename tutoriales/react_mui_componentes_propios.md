@@ -118,7 +118,7 @@ function App() {
 	...
 
 	return (
-		<Grid container spacing={6}>
+		<Grid container spacing={5}>
 			<Grid size={% raw %}{{{% endraw %} xs: 12, sm:12, md:12, lg: 12 {% raw %}}}>
 				<Calculator/>
 			</Grid>
