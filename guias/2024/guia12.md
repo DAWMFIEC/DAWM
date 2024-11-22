@@ -18,7 +18,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 * Clona localmente tu repositorio **dashboard**.
 
-#### Componente Indicador
+#### Componente Indicador: Estructura básica
 
 1. Cree el archivo _src/components/Indicator.tsx_.
 2. En _components/Indicator.tsx_: 
@@ -66,7 +66,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Propiedades (Props)
+#### Componente Indicador: Propiedades (Props)
 
 1. En _components/Indicador.tsx_:
 
@@ -133,7 +133,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 2) Compruebe el resultado en el navegador.
 
-#### React MUI: Componente MUI Paper y Typography
+#### Componente Indicador: Componente MUI Paper y Typography
 
 1. En _components/Indicator.tsx_:
 
@@ -173,10 +173,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 2. Versiona local y remotamente el repositorio.
 3. (STOP 3) Compruebe el resultado en el navegador.
 
-#### Componente ControlPanel
+#### Componente Control: Estructura básica
 
-1. Cree el componente `src/components/ControlPanel.tsx`
-2. En `ControlPanel.tsx`, importe los componentes:
+1. Cree el componente `src/components/Control.tsx`
+2. En `Control.tsx`, importe los componentes:
 
     ```tsx
     import Paper from '@mui/material/Paper';
@@ -188,11 +188,11 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import Select from '@mui/material/Select';
     ``` 
 
-3. En `ControlPanel.tsx`, agregue el componente funcional:
+3. En `Control.tsx`, agregue el componente funcional:
 
     ```tsx
     ...
-    export default function ControlPanel() {
+    export default function Control() {
 
         {/* Datos de los elementos del Select */}
 
@@ -246,16 +246,16 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     }
     ```
 
-#### React MUI: Componente Table
+#### Componente Tabla: Componente MUI BasicTable 
 
-1. Copie el código del componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx).
-2. Cree el archivo _src/components/BasicTable.tsx_, y:
+1. Acceda al componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx) y copie el código.
+2. Cree el archivo _src/components/Tabla.tsx_, y:
 
     - Pegue el código del componente BasicTable. 
     - Elimine la referencia `import * as React from 'react';`
-    - Elimine la propiedad con el estilo embebido `sx` en el elemento `<Table />`
+    - Elimine la propiedad con el estilo embebido `sx` en el elemento `<Table />`.
 
-#### React MUI: Nested Grid
+#### Componente Grid: Anidado
 
 1. En _App.tsx_:
 
@@ -276,7 +276,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 {/* Tabla */}
                 <Grid size={ ... }>
                     
-                    {/* Tabla */}
+                    {/* Anidado */}
                     <Grid container spacing={2}>
                         <Grid size={{ xs: 12, xl: 3 }}>
                             <ControlPanel/>
