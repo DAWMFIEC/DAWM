@@ -306,20 +306,54 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     npm install @mui/x-charts
     ```
 
-2. Copie el código del componente [SimpleLineChart](https://github.com/mui/mui-x/blob/v7.22.2/docs/data/charts/line-demo/SimpleLineChart.tsx).
+2. Cree el componente _src/components/GraficoLinea.tsx_, copie el código:
 
-3. Cree el componente _src/components/GraficoLinea.tsx_, y:
+    ```jsx
+    import Paper from '@mui/material/Paper';
+    import { LineChart } from '@mui/x-charts/LineChart';
 
-    - Pegue el código del componente SimpleLineChart. 
-    - Elimine la referencia `import * as React from 'react';`
-    - Aplique `width={400} height={250}`
+    const uData = [4000, 3000, 2000, 2780, 1890, 2390, 3490];
+    const pData = [2400, 1398, 9800, 3908, 4800, 3800, 4300];
+    const xLabels = [
+        'Page A',
+        'Page B',
+        'Page C',
+        'Page D',
+        'Page E',
+        'Page F',
+        'Page G',
+    ];
 
-4. En _App.tsx_:
+    export default function GraficoLinea() {
+        return (
+            <Paper
+                sx={{
+                    p: 2,
+                    display: 'flex',
+                    flexDirection: 'column'
+                }}
+            >
+                <LineChart
+                    width={400}
+                    height={250}
+                    series={[
+                        { data: pData, label: 'pv' },
+                        { data: uData, label: 'uv' },
+                    ]}
+                    xAxis={[{ scaleType: 'point', data: xLabels }]}
+                />
+            </Paper>
+        );
+    }
+    ```
+
+3. En _App.tsx_:
 
     - Importe los componentes **GraficoLinea**, y 
     - Coloque la referencia a los componentes `<GraficoLinea />` en el Grid. 
 
     ```jsx
+    ...
     import GraficoLinea from './components/GraficoLinea';
 
     function App() {
@@ -338,8 +372,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     export default App
     ```
 
-5. Versiona local y remotamente el repositorio.
-6. (STOP 5) Compruebe el resultado en el navegador.
+4. Versiona local y remotamente el repositorio.
+5. (STOP 5) Compruebe el resultado en el navegador.
 
 <div align="center">
     <img src="imagenes/dashboard-guia12.png" alt="">
