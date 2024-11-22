@@ -74,40 +74,31 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 
 #### Hook: useState - Componente Hijo
 
-1. En `ControlPanel.tsx`, importe la función **useState**.
+1. En _src/components/Control.tsx_:
+	
+	- Importe la función **useState**.
+	- Agregue la `variable de estado` **selected** y la `función de actualización` **setSelected**. El valor predeterminado de la variable de estado es -1.
+	- Use la función de actualización en el manejador **handleChange** 
+	- Renderice el contenido del elemento seleccionado.
 
 	```tsx
 	import { useState } from 'react';
+
+	{/* Componentes MUI */ }
 	import Paper from '@mui/material/Paper';
 	...
-	```
-
-2. En `ControlPanel.tsx`, agregue la `variable de estado` **selected** y la `función de actualización` **setSelected**. El valor predeterminado de la variable de estado es una cadena de caracteres vacío.
-
-	```tsx
-	...
+	
 	export default function ControlPanel() {
 		
 		{/* Variable de estado y función de actualización */}
 
 		let [selected, setSelected] = useState(-1)
 
-		{/* Datos de los elementos del Select */}
+		{/* Arreglo de objetos */ }
 
 		...
-	}
-	```
-
-3. En `ControlPanel.tsx`, use la función de actualización en el manejador **handleChange** 
-
-	```tsx
-	...
-
-	export default function ControlPanel() {
-
-		...
-
-	    {/* Manejador de eventos */}
+		
+		{/* Manejador de eventos */}
 
 		const handleChange = (event: SelectChangeEvent) => {
 
@@ -116,29 +107,17 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 
 		};
 
-	    ...
-	}
-	```
-
-4. En `ControlPanel.tsx`, renderice el contenido del elemento seleccionado.
-
-	```tsx
-	...
-	export default function ControlPanel() {
-
-		...
-
-		{/* JSX */}	
+	    {/* JSX */}	
 
 		return (
-
 			<Paper>
 
-				...
+				<Typography ... > ... </Typography>
 
-				</Box>
+				<Box ... > ... </Box>
 
 				{/* Muestra la descripción de la variable seleccionada */}
+
 				<Typography mt={2} component="p" color="text.secondary">
 				{
 					(selected >= 0)?items[selected]["description"]:""
@@ -152,7 +131,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	}
 	```
 
-4. (STOP 4) Compruebe el resultado en el navegador.
+2. (STOP 2) Compruebe el resultado en el navegador.
 
 #### Hook: useRef - Componente Hijo
 
