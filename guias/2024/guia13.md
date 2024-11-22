@@ -29,19 +29,18 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 
 #### Evento: onChange
 
-1. En `ControlPanel.tsx`, importe la interfaz **ChangeEvent**.
+1. En _src/components/Control.tsx_:
+
+	- Importe la interfaz **SelectChangeEvent**.
+	- Agregue la función flecha **handleChange**.
+	- En el componente _Select_, relacione el evento **onChange** con el manejador de eventos _handleChange_.
 
 	```tsx
 	...
 	import Select, { SelectChangeEvent } from '@mui/material/Select';
+	
 	...
-	```
-
-2. En `ControlPanel.tsx`, agregue el manejador **handleChange** para el evento _ChangeEvent_.
-
-	```tsx
-	...
-	export default function ControlPanel() {
+	export default function Control() {
 
 		...
 
@@ -55,28 +54,23 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 		};
 
 		{/* JSX */}
+		return (
 
-		...
+			...
 
+			<Select
+				labelId="simple-select-label"
+				id="simple-select"
+				label="Variables"
+				defaultValue='-1'
+				onChange={handleChange}
+			>
+
+			...
+		)
 	}
 	```
-
-3. En `ControlPanel.tsx`, agregue el manejador _handleChange_ al prop **onChange** del componente _Select_.
-
-	```tsx
-		...
-		
-		<Select
-			labelId="simple-select-label"
-			id="simple-select"
-			label="Variables"
-			defaultValue='-1'
-			onChange={handleChange}
-		>
-	    ...
-	```
-
-4. (STOP 3) Compruebe el resultado en el navegador.
+2. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Hook: useState - Componente Hijo
 
