@@ -21,7 +21,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Componente Indicador: Estructura básica
 
 1. Cree el archivo _src/components/Indicator.tsx_.
-2. En _src/components/Indicator.tsx_, agregue:
+2. En _src/components/Indicator.tsx_, con el siguiente código:
 
     - Un elemento vacío ([Fragment](https://es.react.dev/reference/react/Fragment#fragment)) con el texto `Componente Indicator`:
 
@@ -137,7 +137,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 1. En _src/components/Indicator.tsx_:
 
     - Agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
-    - Reemplace el código existente por los componentes **Typography** y **Paper**
+    - Reemplace el código renderizado con los componentes **Typography** y **Paper**
 
     ```jsx
     import Typography from '@mui/material/Typography';
@@ -175,7 +175,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Componente Control: Estructura básica
 
 1. Cree el componente _src/components/Control.tsx_
-2. En _src/components/Control.tsx_, copie el código: 
+2. En _src/components/Control.tsx_, con el siguiente código: 
 
     ```tsx
     {/* Componentes MUI */}
@@ -306,7 +306,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     npm install @mui/x-charts
     ```
 
-2. Cree el componente _src/components/GraficoLinea.tsx_, copie el código:
+2. Cree el componente _src/components/GraficoLinea.tsx_, con el siguiente código:
 
     ```jsx
     import Paper from '@mui/material/Paper';
@@ -363,7 +363,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 ...
                 
                 {/* Gráfico */}
-                <Grid size={ ... }> <GraficoLinea/> </Grid>
+                
+                <Grid size={ ... }>
+                    <GraficoLinea/>
+                </Grid>
 
             </Grid>
         )
