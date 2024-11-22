@@ -69,13 +69,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 1. En _src/components/Control.tsx_:
 	
-	- Importe la función **useState**.
+	- Importe el hook **useState**.
 	- Agregue la `variable de estado` **selected** y la `función de actualización` **setSelected**. El valor predeterminado de la variable de estado es -1.
 	- Use la función de actualización en el manejador **handleChange** 
 	- Renderice el contenido del elemento seleccionado.
 
 	```tsx
-	{/* funciones de hooks */ }
+	{/* Hooks */ }
 	
 	import { useState } from 'react';
 
@@ -130,20 +130,20 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 1. En _src/components/Control.tsx_:
 
-	- Importe la función **useRef**.
+	- Importe el hook **useRef**.
 	- Agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
-	- En el manejador de eventos, modifique de la referencia al elemento con **descriptionRef**.
-	- En el componente Typography, agregue el prop ref con la referencia **descriptionRef**. 
+	- En el manejador de eventos, use la referencia **descriptionRef** para modificar su contenido. 
+	- Reemplace el elemento Typography y use el prop ref con la referencia **descriptionRef**. 
 
 	```tsx
-	{/* funciones de hooks */ }
+	{/* Hooks */ }
 
 	import { useState, useRef } from 'react';
 	...
 	
 	export default function ControlPanel() {
 
-		{/* Variable de referencia a un elemento */ }
+		{/* Constante de referencia a un elemento HTML */ }
 
 	    const descriptionRef = useRef<HTMLDivElement>(null);
 		
@@ -175,12 +175,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 				{/* Muestra la descripción de la variable seleccionada */}
 
-				{/* <Typography mt={2} component="p" color="text.secondary">
-				{
-					(selected >= 0)?items[selected]["description"]:""
-				}
-				</Typography>*/}
-				
 				<Typography ref={descriptionRef} mt={2} component="p" color="text.secondary" />
 				
 
