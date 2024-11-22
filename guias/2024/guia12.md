@@ -21,10 +21,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Componente Indicador: Estructura básica
 
 1. Cree el archivo _src/components/Indicator.tsx_.
-2. En _components/Indicator.tsx_: 
-    
-    - Agregue el componente **Indicator**,
-    - Renderice un mensaje dentro de un elemento vacío ([Fragment](https://es.react.dev/reference/react/Fragment#fragment)).
+2. En _src/components/Indicator.tsx_, agregue:
+
+    - Un elemento vacío ([Fragment](https://es.react.dev/reference/react/Fragment#fragment)) con el texto `Componente Indicator`:
 
     ```jsx
     export default function Indicator() {
@@ -68,10 +67,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Componente Indicador: Propiedades (Props)
 
-1. En _components/Indicador.tsx_:
+1. En _src/components/Indicador.tsx_:
 
     - Agregue la interfaz **Config** con las claves title, subtitle y value,
-    - Defina **config** como [props](https://react.dev/learn/passing-props-to-a-component) del componente, y
+    - Defina **config** del tipo Config, como [props](https://react.dev/learn/passing-props-to-a-component) del componente, y
     - Renderice las claves title, subtitle y value
 
     ```jsx
@@ -135,10 +134,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Componente Indicador: Componente MUI Paper y Typography
 
-1. En _components/Indicator.tsx_:
+1. En _src/components/Indicator.tsx_:
 
     - Agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
-    - Renderice el prop dentro de los componentes **Typography** y **Paper**
+    - Reemplace el código existente por los componentes **Typography** y **Paper**
 
     ```jsx
     import Typography from '@mui/material/Typography';
@@ -175,8 +174,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Componente Control: Estructura básica
 
-1. Cree el componente `src/components/Control.tsx`
-2. En `Control.tsx`, importe los componentes:
+1. Cree el componente _src/components/Control.tsx_
+2. En _src/components/Control.tsx_, 
+
+    - Importe los componentes de MUI
+    - El arreglo objetos **items**
+    - El arreglo de elementos JSX **options**
 
     ```tsx
     import Paper from '@mui/material/Paper';
@@ -186,11 +189,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import MenuItem from '@mui/material/MenuItem';
     import FormControl from '@mui/material/FormControl';
     import Select from '@mui/material/Select';
-    ``` 
-
-3. En `Control.tsx`, agregue el componente funcional:
-
-    ```tsx
+    
     ...
     export default function Control() {
 
