@@ -175,13 +175,11 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Componente Control: Estructura básica
 
 1. Cree el componente _src/components/Control.tsx_
-2. En _src/components/Control.tsx_, 
-
-    - Importe los componentes de MUI
-    - El arreglo objetos **items**
-    - El arreglo de elementos JSX **options**
+2. En _src/components/Control.tsx_, copie el código: 
 
     ```tsx
+    {/* Componentes MUI */}
+    
     import Paper from '@mui/material/Paper';
     import Typography from '@mui/material/Typography';
     import Box from '@mui/material/Box';
@@ -193,13 +191,15 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     ...
     export default function Control() {
 
-        {/* Datos de los elementos del Select */}
+        {/* Arreglo de objetos */}
 
         let items = [
             {"name":"Precipitación", "description":"Cantidad de agua, en forma de lluvia, nieve o granizo, que cae sobre una superficie en un período específico."}, 
             {"name": "Humedad", "description":"Cantidad de vapor de agua presente en el aire, generalmente expresada como un porcentaje."}, 
             {"name":"Nubosidad", "description":"Grado de cobertura del cielo por nubes, afectando la visibilidad y la cantidad de luz solar recibida."}
         ]
+
+        {/* Arreglo de elementos JSX */}
 
         let options = items.map( (item, key) => <MenuItem key={key} value={key}>{item["name"]}</MenuItem> )
         
