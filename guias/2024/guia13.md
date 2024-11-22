@@ -75,7 +75,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	- Renderice el contenido del elemento seleccionado.
 
 	```tsx
-	{/* función useState */ }
+	{/* funciones de hooks */ }
 	
 	import { useState } from 'react';
 
@@ -128,78 +128,26 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Hook: useRef - Componente Hijo
 
-1. En `ControlPanel.tsx`, importe la función **useRef**.
+1. En _src/components/Control.tsx_:
+
+	- Importe la función **useRef**.
+	- Agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
+	- Agregue la modificación de la referencia en el manejador de eventos
+	- Establezca la referencia al elemento con la descripción de la variable seleccionada. 
 
 	```tsx
+	{/* funciones de hooks */ }
+
 	import { useState, useRef } from 'react';
-	import Paper from '@mui/material/Paper';
 	...
-	```
-
-2. En `ControlPanel.tsx`, agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
-
-	```tsx
-	...
+	
 	export default function ControlPanel() {
-		
-		{/* Variable de estado y función de actualización */}
-
-		...
 
 		{/* Variable de referencia a un elemento */ }
 
 	    const descriptionRef = useRef<HTMLDivElement>(null);
-
-		...
-	}
-	```
-
-3. En `ControlPanel.tsx`, establezca la referencia al elemento con la descripción de la variable seleccionada. 
-
-	```tsx
-	...
-	export default function ControlPanel() {
-
-		...
-
-		{/* JSX */}	
-
-		return (
-
-			<Paper>
-
-				...
-
-				</Box>
-
-
-				{/* Muestra la descripción de la variable seleccionada */}
-
-				{/*<Typography mt={2} component="p" color="text.secondary">
-				{
-					(selected >= 0)?items[selected]["description"]:""
-				}
-				</Typography>*/}
-				
-				<Typography ref={descriptionRef} mt={2} component="p" color="text.secondary" />
-				
-
-			</Paper>
-		)
-
-	}
-	```
-
-4. En `ControlPanel.tsx`, agregue la modificación de la referencia en el manejador de eventos.
-
-	```tsx
-	...
-
-	export default function ControlPanel() {
-
-		...
-
-	    {/* Manejador de eventos */}
+		
+		{/* Manejador de eventos */}
 
 		const handleChange = (event: SelectChangeEvent) => {
 
@@ -214,13 +162,37 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 		};
 
-	    ...
+		{/* JSX */}	
+
+		return (
+
+			<Paper>
+
+				...
+
+				<Box ... > ... </Box>
+
+
+				{/* Muestra la descripción de la variable seleccionada */}
+
+				{/* <Typography mt={2} component="p" color="text.secondary">
+				{
+					(selected >= 0)?items[selected]["description"]:""
+				}
+				</Typography>*/}
+				
+				<Typography ref={descriptionRef} mt={2} component="p" color="text.secondary" />
+				
+
+			</Paper>
+		)
+
 	}
 	```
 
-5. (STOP 5) Compruebe el resultado en el navegador.
-6. Versiona local y remotamente el repositorio **dashboard**.
-7. Despliega la aplicación **dashboard**.
+2. (STOP 3) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio **dashboard**.
+4. Despliega la aplicación **dashboard**.
 
 ### Documentación
 
