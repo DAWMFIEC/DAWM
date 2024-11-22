@@ -170,26 +170,102 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     }
     ```
 
-3. Versiona local y remotamente el repositorio.
-4. (STOP 3) Compruebe el resultado en el navegador.
+2. Versiona local y remotamente el repositorio.
+3. (STOP 3) Compruebe el resultado en el navegador.
+
+#### Componente ControlPanel
+
+1. Cree el componente `src/components/ControlPanel.tsx`
+2. En `ControlPanel.tsx`, importe los componentes:
+
+    ```tsx
+    import Paper from '@mui/material/Paper';
+    import Typography from '@mui/material/Typography';
+    import Box from '@mui/material/Box';
+    import InputLabel from '@mui/material/InputLabel';
+    import MenuItem from '@mui/material/MenuItem';
+    import FormControl from '@mui/material/FormControl';
+    import Select from '@mui/material/Select';
+    ``` 
+
+3. En `ControlPanel.tsx`, agregue el componente funcional:
+
+    ```tsx
+    ...
+    export default function ControlPanel() {
+
+        {/* Datos de los elementos del Select */}
+
+        let items = [
+            {"name":"Precipitación", "description":"Cantidad de agua, en forma de lluvia, nieve o granizo, que cae sobre una superficie en un período específico."}, 
+            {"name": "Humedad", "description":"Cantidad de vapor de agua presente en el aire, generalmente expresada como un porcentaje."}, 
+            {"name":"Nubosidad", "description":"Grado de cobertura del cielo por nubes, afectando la visibilidad y la cantidad de luz solar recibida."}
+        ]
+
+        let options = items.map( (item, key) => <MenuItem key={key} value={key}>{item["name"]}</MenuItem> )
+        
+        {/* JSX */}
+
+        return (
+            <Paper
+                sx={% raw %}{{{% endraw %}
+                    p: 2,
+                    display: 'flex',
+                    flexDirection: 'column'
+                {% raw %}}}{% endraw %}
+            >
+
+                <Typography mb={2} component="h3" variant="h6" color="primary">
+                    Variables Meteorológicas
+                </Typography>
+
+                <Box sx={% raw %}{{{% endraw %} minWidth: 120 {% raw %}}}{% endraw %}>
+                    
+                    <FormControl fullWidth>
+                        <InputLabel id="simple-select-label">Variables</InputLabel>
+                        <Select
+                            labelId="simple-select-label"
+                            id="simple-select"
+                            label="Variables"
+                            defaultValue='-1'
+                        >
+                            <MenuItem key="-1" value="-1" disabled>Seleccione una variable</MenuItem>
+
+                            {options}
+
+                        </Select>
+                    </FormControl>
+
+                </Box>
+
+
+            </Paper>
+
+
+        )
+    }
+    ```
 
 #### React MUI: Componente Table
 
 1. Copie el código del componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx).
-
 2. Cree el archivo _src/components/BasicTable.tsx_, y:
 
     - Pegue el código del componente BasicTable. 
     - Elimine la referencia `import * as React from 'react';`
     - Elimine la propiedad con el estilo embebido `sx` en el elemento `<Table />`
 
-4. En _App.tsx_:
+#### React MUI: Nested Grid
 
-    - Importe el componente **BasicTable**, y 
-    - Coloque la referencia al componente `<BasicTable />` en el Grid. 
+1. En _App.tsx_:
+
+    - Importe el componente **BasicTable** y **ControlPanel**, y 
+    - Coloque la referencia a los componentes `<ControlPanel/>` y `<BasicTable />` en el Grid. 
 
     ```jsx
+    ...
     import BasicTable from './components/BasicTable';
+    import ControlPanel from './components/ControlPanel';
 
     function App() {
         return (
@@ -198,7 +274,19 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 ...
                 
                 {/* Tabla */}
-                <Grid size={ ... }> <BasicTable/> </Grid>
+                <Grid size={ ... }>
+                    
+                    {/* Tabla */}
+                    <Grid container spacing={2}>
+                        <Grid size={{ xs: 12, xl: 3 }}>
+                            <ControlPanel/>
+                        </Grid>
+                        <Grid size={{ xs: 12, xl: 9 }}>
+                            <BasicTable/>
+                        </Grid>
+                    </Grid>
+
+                </Grid>
 
                 ...
 
@@ -209,8 +297,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     export default App
     ```
 
-5. Versiona local y remotamente el repositorio.
-6. (STOP 4) Compruebe el resultado en el navegador.
+2. Versiona local y remotamente el repositorio.
+3. (STOP 4) Compruebe el resultado en el navegador.
 
 #### React MUI X: Instalación
 
@@ -253,7 +341,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     ```
 
 5. Versiona local y remotamente el repositorio.
-6. (STOP 4) Compruebe el resultado en el navegador.
+6. (STOP 5) Compruebe el resultado en el navegador.
 
 <div align="center">
     <img src="imagenes/dashboard-guia12.png" alt="">
