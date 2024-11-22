@@ -27,6 +27,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 	```tsx
 	...
+	
+	{/* Interfaz SelectChangeEvent */}
+
 	import Select, { SelectChangeEvent } from '@mui/material/Select';
 	
 	...
@@ -77,7 +80,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	import { useState } from 'react';
 
 	{/* Componentes MUI */ }
-	
+
 	...
 	
 	export default function ControlPanel() {
@@ -85,8 +88,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		{/* Variable de estado y función de actualización */}
 
 		let [selected, setSelected] = useState(-1)
-
-		{/* Arreglo de objetos */ }
 
 		...
 		
