@@ -13,16 +13,6 @@ theme: jekyll-theme-leap-day
 <pre class="purpose">
 Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnologías web modernas, como React, que permita a los usuarios monitorear en tiempo real métricas clave del clima.</pre>
 
-### Actividades previas
-
-Revise la descripción del uso de Hooks en React, el sitio [Understanding React Hooks: A Comprehensive Guide](https://www.yourteaminindia.com/tech-insights/understanding-react-hooks).
-
-<div align="center">
-    <img src="imagenes/react_render.png" alt="" width="60%">
-    <p>Fuente: <a href="https://www.yourteaminindia.com/tech-insights/understanding-react-hooks">Understanding React Hooks: A Comprehensive Guide</a> </p>
-</div>
-
-
 ### Actividades en clases
 
 1. Clona localmente tu repositorio **dashboard**.
@@ -82,10 +72,12 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	- Renderice el contenido del elemento seleccionado.
 
 	```tsx
+	{/* función useState */ }
+	
 	import { useState } from 'react';
 
 	{/* Componentes MUI */ }
-	import Paper from '@mui/material/Paper';
+	
 	...
 	
 	export default function ControlPanel() {
