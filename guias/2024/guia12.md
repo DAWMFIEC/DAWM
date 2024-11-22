@@ -262,8 +262,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
     ```jsx
     ...
-    import BasicTable from './components/BasicTable';
-    import ControlPanel from './components/ControlPanel';
+    import Tabla from './components/Tabla';
+    import Control from './components/Control';
 
     function App() {
         return (
@@ -274,13 +274,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 {/* Tabla */}
                 <Grid size={ ... }>
                     
-                    {/* Anidado */}
+                    {/* Grid Anidado */}
                     <Grid container spacing={2}>
                         <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}>
-                            <ControlPanel/>
+                            <Control/>
                         </Grid>
                         <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 9 {% raw %}}}{% endraw %}>
-                            <BasicTable/>
+                            <Tabla/>
                         </Grid>
                     </Grid>
 
