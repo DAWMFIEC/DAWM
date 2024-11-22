@@ -132,8 +132,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 	- Importe la función **useRef**.
 	- Agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
-	- Agregue la modificación de la referencia en el manejador de eventos
-	- Establezca la referencia al elemento con la descripción de la variable seleccionada. 
+	- En el manejador de eventos, modifique de la referencia al elemento con **descriptionRef**.
+	- En el componente Typography, agregue el prop ref con la referencia **descriptionRef**. 
 
 	```tsx
 	{/* funciones de hooks */ }
