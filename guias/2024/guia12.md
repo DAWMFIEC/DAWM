@@ -308,19 +308,19 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. Copie el código del componente [SimpleLineChart](https://github.com/mui/mui-x/blob/v7.22.2/docs/data/charts/line-demo/SimpleLineChart.tsx).
 
-3. Cree el componente _src/components/SimpleLineChart.tsx_, y:
+3. Cree el componente _src/components/GraficoLinea.tsx_, y:
 
-    - Pegue el código del componente BasicTable. 
+    - Pegue el código del componente SimpleLineChart. 
     - Elimine la referencia `import * as React from 'react';`
     - Aplique `width={400} height={250}`
 
 4. En _App.tsx_:
 
-    - Importe los componentes **SimpleLineChart**, y 
-    - Coloque la referencia a los componentes `<SimpleLineChart />` en el Grid. 
+    - Importe los componentes **GraficoLinea**, y 
+    - Coloque la referencia a los componentes `<GraficoLinea />` en el Grid. 
 
     ```jsx
-    import BasicTable from './components/BasicTable';
+    import GraficoLinea from './components/GraficoLinea';
 
     function App() {
         return (
@@ -329,7 +329,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 ...
                 
                 {/* Gráfico */}
-                <Grid size={ ... }> <SimpleLineChart/> </Grid>
+                <Grid size={ ... }> <GraficoLinea/> </Grid>
 
             </Grid>
         )
