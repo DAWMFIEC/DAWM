@@ -196,7 +196,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 ### Documentación
 
-* En [React Google Charts](https://www.react-google-charts.com/) se encuentra la documentación de la biblioteca React Google Charts.
+* En [Hooks integrados en React](https://es.react.dev/reference/react/hooks) se encuentra la documentación para usar las características de los componentes de React.
 
 ### Fundamental
 
