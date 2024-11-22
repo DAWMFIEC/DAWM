@@ -201,7 +201,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 ### Términos
 
-hooks, variable de estaddo, función de actualización
+hooks, variable de estado, función de actualización
 
 ### Referencias
 
