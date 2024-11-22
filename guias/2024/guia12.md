@@ -179,7 +179,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
     ```tsx
     {/* Componentes MUI */}
-    
+
     import Paper from '@mui/material/Paper';
     import Typography from '@mui/material/Typography';
     import Box from '@mui/material/Box';
@@ -188,7 +188,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import FormControl from '@mui/material/FormControl';
     import Select from '@mui/material/Select';
     
-    ...
     export default function Control() {
 
         {/* Arreglo de objetos */}
@@ -248,7 +247,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Componente Tabla: Componente MUI BasicTable 
 
 1. Acceda al componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx) y copie el código.
-2. Cree el archivo _src/components/Tabla.tsx_, y:
+2. Cree el componente _src/components/Tabla.tsx_, y:
 
     - Pegue el código del componente BasicTable. 
     - Elimine la referencia `import * as React from 'react';`
@@ -277,10 +276,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                     
                     {/* Anidado */}
                     <Grid container spacing={2}>
-                        <Grid size={{ xs: 12, xl: 3 }}>
+                        <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}>
                             <ControlPanel/>
                         </Grid>
-                        <Grid size={{ xs: 12, xl: 9 }}>
+                        <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 9 {% raw %}}}{% endraw %}>
                             <BasicTable/>
                         </Grid>
                     </Grid>
