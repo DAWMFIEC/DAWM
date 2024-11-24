@@ -185,7 +185,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import Box from '@mui/material/Box';
     import InputLabel from '@mui/material/InputLabel';
     import MenuItem from '@mui/material/MenuItem';
-    import FormControlWeather from '@mui/material/FormControlWeather';
+    import FormControl from '@mui/material/FormControl';
     import Select from '@mui/material/Select';
     
     export default function ControlWeather() {
@@ -216,7 +216,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
                 <Box sx={% raw %}{{{% endraw %} minWidth: 120 {% raw %}}}{% endraw %}>
                     
-                    <FormControlWeather fullWidth>
+                    <FormControl fullWidth>
                         <InputLabel id="simple-select-label">Variables</InputLabel>
                         <Select
                             labelId="simple-select-label"
@@ -229,7 +229,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                             {options}
 
                         </Select>
-                    </FormControlWeather>
+                    </FormControl>
 
                 </Box>
 
