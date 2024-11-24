@@ -18,7 +18,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 1. Clona localmente tu repositorio **dashboard**.
 
 #### Componente App: hook - useEffect
-##### Petición asíncrona de un XML
 
 1. En el componente `App.tsx`, agregue:
 
@@ -187,7 +186,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 4. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Componente App: hook - useState
-##### Renderización Dinámica
 
 1. En el componente `App.tsx`, agregue: 
 
