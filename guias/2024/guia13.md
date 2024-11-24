@@ -22,21 +22,21 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 1. En _src/components/Control.tsx_:
 
 	- Importe la interfaz **SelectChangeEvent**.
-	- Agregue la función flecha **handleChange**.
-	- En el componente _Select_, relacione el evento **onChange** con el manejador de eventos _handleChange_.
 
 	```tsx
 	...
 	
 	{/* Interfaz SelectChangeEvent */}
-
 	import Select, { SelectChangeEvent } from '@mui/material/Select';
+	```
+
+	- Agregue la función flecha **handleChange**.
 	
+	```tsx
 	...
 	export default function Control() {
 
 		...
-
 		{/* Manejador de eventos */}
 		
 		const handleChange = (event: SelectChangeEvent) => {
@@ -45,6 +45,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 			alert( idx );
 
 		};
+		...
+	}
+	```
+
+	- En el componente _Select_, relacione el evento **onChange** con el manejador de eventos _handleChange_.
+	
+	```tsx
 
 		{/* JSX */}
 		return (
