@@ -264,11 +264,11 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 				{indicators
 					.map(
-						
 						(indicator, idx) => (
-						<Grid key={idx} size={{ xs: 12, xl: 3 }}>
+							<Grid key={idx} size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}>
 							<IndicatorWeather title={indicator["title"]} subtitle={indicator["subtitle"]} value={indicator["value"]} />
-						</Grid>)
+							</Grid>
+						)
 					)
 				}
 				
