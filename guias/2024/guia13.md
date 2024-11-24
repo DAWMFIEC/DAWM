@@ -26,7 +26,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 
 1. Clona localmente tu repositorio **dashboard**.
 
-#### Componente -Funcional- Control: evento onChange
+#### Componente Control: evento onChange
 
 1. En _src/components/Control.tsx_:
 
@@ -80,7 +80,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	```
 2. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Componente -De clase- Control: hook - useState
+#### Componente Control: hook - useState
 
 1. En _src/components/Control.tsx_:
 	
@@ -158,7 +158,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 
 2. (STOP 2) Compruebe el resultado en el navegador.
 
-#### Componente -De clase- Control: hook - useRef
+#### Componente Control: hook - useRef
 
 1. En _src/components/Control.tsx_:
 
@@ -260,3 +260,4 @@ hooks, variable de estado, función de actualización
 * Rakannimer. (n.d.). rakannimer/react-google-charts: A thin, typed, React wrapper over Google Charts Visualization and Charts API. Retrieved from https://github.com/RakanNimer/react-google-charts?tab=readme-ov-file
 * Yosami. "Creating a Weather Dashboard Using HTML, CSS, and JavaScript." Medium, 8 Jul. 2020, https://medium.com/@yosami14/creating-a-weather-dashboard-using-html-css-and-javascript-217f80229fb.
 * (N.d.). Retrieved from https://www.react-google-charts.com/
+* Geekster. (2024). Functional Components Vs Class Components in React JS. Retrieved from https://blog.geekster.in/functional-components-vs-class-components/#:~:text=Ans%3A%20React%20class%20components%20are,suitable%20for%20smaller%2C%20presentational%20components.
