@@ -18,7 +18,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 * Clona localmente tu repositorio **dashboard**.
 
-#### Componente -Elemental- Indicador: Estructura básica
+#### Componente Indicador: Estructura básica
 
 1. Cree el archivo _src/components/Indicator.tsx_.
 2. En _src/components/Indicator.tsx_, con el siguiente código:
@@ -65,7 +65,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Componente -Funcional- Indicador: Propiedades (Props)
+#### Componente Indicador: Propiedades (Props)
 
 1. En _src/components/Indicador.tsx_:
 
@@ -172,7 +172,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 2. Versiona local y remotamente el repositorio.
 3. (STOP 3) Compruebe el resultado en el navegador.
 
-#### Componente -Elemental- Control: Estructura básica
+#### Componente Control: Estructura básica
 
 1. Cree el componente _src/components/Control.tsx_
 2. En _src/components/Control.tsx_, con el siguiente código: 
