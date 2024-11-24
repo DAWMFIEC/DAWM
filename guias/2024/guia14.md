@@ -27,7 +27,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	```tsx
 	{/* Hooks */ }
 	import { useEffect } from 'react';
-	
 	```
 
 	- La interfaz _Config_:
@@ -59,7 +58,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-3. En el hook useEffect del componente `App.tsx`
+2. En el hook useEffect del componente `App.tsx`
 
 	+ (1) Agregue y ejecute la función asíncrona **request** dentro de la función para el efecto secundario.
 
@@ -76,7 +75,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		},[])
 
 		return ( ... )
-
 	}
 	```
 	
@@ -102,7 +100,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		},[])
 
 		return ( ... )
-
 	}
 	```
 
@@ -131,11 +128,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		},[])
 
 		return ( ... )
-
 	}	
 	```
 
-	+ (3) Agregue el arreglo para almacenar temporalmente los resultados, extraiga el contenido del xml mediante el API del DOM (métodos **getElementsByTagName** y **getAttribute**) y guarde los resultado en arreglo. Revise la estructura del documento XML para extraer los datos necesarios.
+	+ (4) Agregue el arreglo para almacenar temporalmente los resultados, extraiga el contenido del xml mediante el API del DOM (métodos **getElementsByTagName** y **getAttribute**) y guarde los resultado en arreglo. Revise la estructura del documento XML para extraer los datos necesarios.
 
 	```tsx
 	function App() {
@@ -184,7 +180,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 		},[])
 
-		...
+		return ( ... )
+	}
 	```
 
 4. (STOP 1) Compruebe el resultado en el navegador.
@@ -192,37 +189,35 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Componente App: hook - useState
 #### Renderización Dinámica
 
-1. En el componente `App.tsx`, agregue la referencia al hook **useState**.
+1. En el componente `App.tsx`, agregue: 
+
+	- La referencia al hook **useState**.
 
 	```tsx
 	import { useEffect, useState } from 'react';
-	...
 	```
 
-2. En el componente `App.tsx`, agregue la variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío.
+	- La variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío del tipo _Config_.
 
 	```tsx
 	function App() {
 
 		{/* Variable de estado y función de actualización */}
-
 		let [indicators, setIndicators] = useState<Config[]>([])
 
-		...
-
 		{/* Hook: useEffect */}
-
 		...
+
+		return ( ... )
 	}
 	```
 
-3. En el hook useEffect del componente `App.tsx`, renderice el arreglo temporal en un arreglo de elementos `<Indicator>` y modifique la variable de estado mediante la función de actualización.
+2. En el hook useEffect del componente `App.tsx`, modifique la variable de estado mediante la función de actualización.
 
 	```tsx
-		...
+	function App() {
 
 		{/* Hook: useEffect */}
-
 		useEffect(()=>{
 
 			(async ()=>{
@@ -235,75 +230,58 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				*/}
 
 				...
-
+ 
 				// console.log( dataToIndicators )
 
-				... 
-
-				{/* Renderice el arreglo de resultados en un arreglo de elementos Indicator */}
-
-				let indicatorsElements = Array.from(dataToIndicators).map(
-					(element) => <Indicator title={element[0]} subtitle={element[1]} value={element[2]} />
-				)
-				
 				{/* Modificación de la variable de estado mediante la función de actualización */}
-
 				setIndicators(indicatorsElements)
 
 			})()
 
 		},[])
 
-		...
+		return ( ... )
+
+	}
 	```
 
-4. En el JSX del componente `App.tsx`, cambie los elementos **Indicator** por elementos de la variable de estado.
+3. En el componente `App.tsx`, itere la variable de estado.
 
 	```tsx
 	...
 
 	function App() {
 
+		...
 
 		{/* JSX */}
-
 		return (
 
 			<Grid container spacing={5}>
-			
-				<Grid xs={6} lg={2}>
-
-					{indicators[0]}
-
-					{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
 				
-				</Grid>
-				
-				<Grid xs={6} lg={2}>
+				{/* Indicadores */}
+				{/* <Grid size={{ xs: 12, xl: 3 }}> ... </Grid> */}
 
-					{indicators[1]}
-					
-					{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
+				{indicators
+					.map(
+						
+						(indicator, idx) => (
+						<Grid key={idx} size={{ xs: 12, xl: 3 }}>
+							<IndicatorWeather title={indicator["title"]} 
+											  subtitle={indicator["subtitle"]} 
+											  value={indicator["value"]} />
+						</Grid>)
+					)
+				}
 				
-				</Grid>
-				
-				<Grid xs={6} lg={2}>
-
-					{indicators[2]}
-					
-					{/* <Indicator title='Precipitación' subtitle='Probabilidad' value={0.13} /> */}
-				
-				</Grid>
-
-			...
-
 			</Grid>
 
+			...
 		)
 	}
 	```
 
-3. (STOP 2) Compruebe el resultado en el navegador.
+4. (STOP 2) Compruebe el resultado en el navegador.
 
 #### LocalStorage (OPCIONAL)
 
