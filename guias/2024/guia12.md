@@ -191,7 +191,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     export default function Control() {
 
         {/* Arreglo de objetos */}
-
         let items = [
             {"name":"Precipitación", "description":"Cantidad de agua que cae sobre una superficie en un período específico."}, 
             {"name": "Humedad", "description":"Cantidad de vapor de agua presente en el aire, generalmente expresada como un porcentaje."}, 
@@ -199,11 +198,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
         ]
 
         {/* Arreglo de elementos JSX */}
-
         let options = items.map( (item, key) => <MenuItem key={key} value={key}>{item["name"]}</MenuItem> )
         
         {/* JSX */}
-
         return (
             <Paper
                 sx={% raw %}{{{% endraw %}
@@ -333,6 +330,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                     flexDirection: 'column'
                 {% raw %}}}{% endraw %}
             >
+
+                {/* Componente para un gráfico de líneas */}
                 <LineChart
                     width={400}
                     height={250}
@@ -363,7 +362,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 ...
                 
                 {/* Gráfico */}
-                
                 <Grid size={ ... }>
                     <GraficoLinea/>
                 </Grid>
