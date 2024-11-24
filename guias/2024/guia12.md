@@ -193,7 +193,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
         {/* Arreglo de objetos */}
 
         let items = [
-            {"name":"Precipitación", "description":"Cantidad de agua, en forma de lluvia, nieve o granizo, que cae sobre una superficie en un período específico."}, 
+            {"name":"Precipitación", "description":"Cantidad de agua que cae sobre una superficie en un período específico."}, 
             {"name": "Humedad", "description":"Cantidad de vapor de agua presente en el aire, generalmente expresada como un porcentaje."}, 
             {"name":"Nubosidad", "description":"Grado de cobertura del cielo por nubes, afectando la visibilidad y la cantidad de luz solar recibida."}
         ]
