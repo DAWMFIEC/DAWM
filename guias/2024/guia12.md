@@ -18,18 +18,18 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 * Clona localmente tu repositorio **dashboard**.
 
-#### Componente Indicador: Estructura básica
+#### Componente wIndicator: Estructura básica
 
-1. Cree el archivo _src/components/Indicator.tsx_.
-2. En _src/components/Indicator.tsx_, con el siguiente código:
+1. Cree el archivo _src/components/wIndicator.tsx_.
+2. En _src/components/wIndicator.tsx_, con el siguiente código:
 
-    - Un elemento vacío ([Fragment](https://es.react.dev/reference/react/Fragment#fragment)) con el texto `Componente Indicator`:
+    - Un elemento vacío ([Fragment](https://es.react.dev/reference/react/Fragment#fragment)) con el texto `Componente wIndicator`:
 
     ```jsx
-    export default function Indicator() {
+    export default function wIndicator() {
         return (
             <>
-                Componente Indicator
+                Componente wIndicator
             </> 
         )
     }
@@ -37,21 +37,21 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. En _App.tsx_:
     
-    - Importe el componente **Indicator**, y 
-    - Coloque la referencia al componente `<Indicador />` en el Grid. 
+    - Importe el componente **wIndicator**, y 
+    - Coloque la referencia al componente `<wIndicator />` en el Grid. 
 
     ```jsx
-    import Indicator from './components/Indicator';
+    import wIndicator from './components/wIndicator';
 
     function App() {
         return (
             <Grid container spacing={5}>
 
                 {/* Indicadores  */}
-                <Grid size={ ... }> <Indicator /> </Grid>
-                <Grid size={ ... }> <Indicator /> </Grid>
-                <Grid size={ ... }> <Indicator /> </Grid>
-                <Grid size={ ... }> <Indicator /> </Grid>
+                <Grid size={ ... }> <wIndicator /> </Grid>
+                <Grid size={ ... }> <wIndicator /> </Grid>
+                <Grid size={ ... }> <wIndicator /> </Grid>
+                <Grid size={ ... }> <wIndicator /> </Grid>
 
                 ...
 
@@ -65,9 +65,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Componente Indicador: Propiedades (Props)
+#### Componente wIndicator: Propiedades (Props)
 
-1. En _src/components/Indicador.tsx_:
+1. En _src/components/wIndicator.tsx_:
 
     - Agregue la interfaz **Config** con las claves title, subtitle y value,
     - Defina **config** del tipo Config, como [props](https://react.dev/learn/passing-props-to-a-component) del componente, y
@@ -81,7 +81,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
         value: Number;
     }
 
-    export default function Indicator(config: Config) {
+    export default function wIndicator(config: Config) {
         return (
             <>
                 {config.title}<br/>
@@ -94,10 +94,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. En _App.tsx_:
 
-    - A cada componente **Indicator**, agregue las propiedades y los valores correspondientes. 
+    - A cada componente **wIndicator**, agregue las propiedades y los valores correspondientes. 
 
     ```jsx
-    import Indicator from './components/Indicator';
+    import wIndicator from './components/wIndicator';
 
     function App() {
         return (
@@ -105,19 +105,19 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 
                 {/* Indicadores  */}
                 <Grid size={ ... }>
-                    <Indicator title={'Indicador 1'} subtitle={'Unidad 1'} value={1.23} /> 
+                    <wIndicator title={'wIndicator 1'} subtitle={'Unidad 1'} value={1.23} /> 
                 </Grid>
 
                 <Grid size={ ... }>
-                    <Indicator title={'Indicador 2'} subtitle={'Unidad 2'} value={3.12} />
+                    <wIndicator title={'wIndicator 2'} subtitle={'Unidad 2'} value={3.12} />
                 </Grid>
                 
                 <Grid size={ ... }>
-                    <Indicator title={'Indicador 3'} subtitle={'Unidad 3'} value={2.31} />
+                    <wIndicator title={'wIndicator 3'} subtitle={'Unidad 3'} value={2.31} />
                 </Grid>
                 
                 <Grid size={ ... }>
-                    <Indicator title={'Indicador 4'} subtitle={'Unidad 4'} value={3.21} />
+                    <wIndicator title={'wIndicator 4'} subtitle={'Unidad 4'} value={3.21} />
                 </Grid>
                 
                 ...
@@ -132,9 +132,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 2) Compruebe el resultado en el navegador.
 
-#### Componente Indicador: Componente MUI Paper y Typography
+#### Componente wIndicator: Componente MUI Paper y Typography
 
-1. En _src/components/Indicator.tsx_:
+1. En _src/components/wIndicator.tsx_:
 
     - Agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
     - Reemplace el código renderizado con los componentes **Typography** y **Paper**
@@ -145,7 +145,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     
     interface Config { ... }
 
-    export default function Indicator(config: Config) {
+    export default function wIndicator(config: Config) {
         return (
             <Paper
                 sx={% raw %}{{{% endraw %}
@@ -172,10 +172,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 2. Versiona local y remotamente el repositorio.
 3. (STOP 3) Compruebe el resultado en el navegador.
 
-#### Componente Control: Estructura básica
+#### Componente wControl: Estructura básica
 
-1. Cree el componente _src/components/Control.tsx_
-2. En _src/components/Control.tsx_, con el siguiente código: 
+1. Cree el componente _src/components/wControl.tsx_
+2. En _src/components/wControl.tsx_, con el siguiente código: 
 
     ```tsx
     {/* Componentes MUI */}
@@ -185,10 +185,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import Box from '@mui/material/Box';
     import InputLabel from '@mui/material/InputLabel';
     import MenuItem from '@mui/material/MenuItem';
-    import FormControl from '@mui/material/FormControl';
+    import FormwControl from '@mui/material/FormwControl';
     import Select from '@mui/material/Select';
     
-    export default function Control() {
+    export default function wControl() {
 
         {/* Arreglo de objetos */}
         let items = [
@@ -216,7 +216,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
                 <Box sx={% raw %}{{{% endraw %} minWidth: 120 {% raw %}}}{% endraw %}>
                     
-                    <FormControl fullWidth>
+                    <FormwControl fullWidth>
                         <InputLabel id="simple-select-label">Variables</InputLabel>
                         <Select
                             labelId="simple-select-label"
@@ -229,7 +229,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                             {options}
 
                         </Select>
-                    </FormControl>
+                    </FormwControl>
 
                 </Box>
 
@@ -241,10 +241,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     }
     ```
 
-#### Componente Tabla: Componente MUI BasicTable 
+#### Componente wTable: Componente MUI BasicTable 
 
 1. Acceda al componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx) y copie el código.
-2. Cree el componente _src/components/Tabla.tsx_, y:
+2. Cree el componente _src/components/wTable.tsx_, y:
 
     - Pegue el código del componente BasicTable. 
     - Elimine la referencia `import * as React from 'react';`
@@ -254,13 +254,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 1. En _App.tsx_:
 
-    - Importe el componente **BasicTable** y **ControlPanel**, y 
-    - Coloque la referencia a los componentes `<ControlPanel/>` y `<BasicTable />` en el Grid. 
+    - Importe el componente **wTable** y **wControl**, y 
+    - Coloque la referencia a los componentes `<wTable/>` y `<wControl />` en el Grid. 
 
     ```jsx
     ...
-    import Tabla from './components/Tabla';
-    import Control from './components/Control';
+    import wTable from './components/wTable';
+    import wControl from './components/wControl';
 
     function App() {
         return (
@@ -274,10 +274,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                     {/* Grid Anidado */}
                     <Grid container spacing={2}>
                         <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}>
-                            <Control/>
+                            <wControl/>
                         </Grid>
                         <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 9 {% raw %}}}{% endraw %}>
-                            <Tabla/>
+                            <wTable/>
                         </Grid>
                     </Grid>
 
@@ -303,7 +303,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     npm install @mui/x-charts
     ```
 
-2. Cree el componente _src/components/GraficoLinea.tsx_, con el siguiente código:
+2. Cree el componente _src/components/wLineChart.tsx_, con el siguiente código:
 
     ```jsx
     import Paper from '@mui/material/Paper';
@@ -321,7 +321,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
         'Page G',
     ];
 
-    export default function GraficoLinea() {
+    export default function wLineChart() {
         return (
             <Paper
                 sx={% raw %}{{{% endraw %}
@@ -348,12 +348,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 3. En _App.tsx_:
 
-    - Importe los componentes **GraficoLinea**, y 
-    - Coloque la referencia a los componentes `<GraficoLinea />` en el Grid. 
+    - Importe los componentes **wLineChart**, y 
+    - Coloque la referencia a los componentes `<wLineChart />` en el Grid. 
 
     ```jsx
     ...
-    import GraficoLinea from './components/GraficoLinea';
+    import wLineChart from './components/wLineChart';
 
     function App() {
         return (
@@ -363,7 +363,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 
                 {/* Gráfico */}
                 <Grid size={ ... }>
-                    <GraficoLinea/>
+                    <wLineChart/>
                 </Grid>
 
             </Grid>
