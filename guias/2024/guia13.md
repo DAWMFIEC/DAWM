@@ -13,6 +13,15 @@ theme: jekyll-theme-leap-day
 <pre class="purpose">
 Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnologías web modernas, como React, que permita a los usuarios monitorear en tiempo real métricas clave del clima.</pre>
 
+### Actividades previas
+
+Revise la explicación en [React Hooks – Tutorial](https://adictosaltrabajo.com/2020/02/06/react-hooks-tutorial/).
+
+<div align="center">
+    <img src="https://adictosaltrabajo.com/wp-content/uploads/2020/01/Captura-de-pantalla-2020-01-21-a-las-15.56.21-1536x894.png" alt="" width="60%">
+    <p>Fuente: <a href="https://adictosaltrabajo.com/2020/02/06/react-hooks-tutorial/">React Hooks – Tutorial</a> </p>
+</div>
+
 ### Actividades en clases
 
 1. Clona localmente tu repositorio **dashboard**.
