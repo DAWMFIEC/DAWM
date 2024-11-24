@@ -299,10 +299,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 2. En el componente _src/App.tsx_, agregue: 
 
 	- (1) La interfaz **ConfigRow** con la descripción de los datos (claves: "from", "to" y "windDirection", de tipo String).
-	- (2) La variable de estado (dataTable) y función de actualización (setDataTable).
-	- (3) El código para extracción y almacenamiento del contenido del XML en un arreglo de resultados
-	- (4) Actualice de la variable de estado mediante la función de actualización (setDataTable).
-	- (5) Envíe la variable de estado (dataTable) como prop del componente (TableWeather)
+	- (2) La variable de estado (dataTable) y función de actualización (setDataTable). El valor predeterminado es un arreglo vacío del tipo **ConfigRow**.
+	- (3) Dentro del hook - useEffect: El código para extracción y almacenamiento del contenido del XML en un arreglo de resultados
+	- (4) Dentro del hook - useEffect: Actualice de la variable de estado mediante la función de actualización (setDataTable).
+	- (5) En el JSX: Envíe la variable de estado (dataTable) como prop del componente (TableWeather)
 	
 3. En el componente _src/components/TableWeather.tsx_, agregue: 
 
