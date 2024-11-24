@@ -42,6 +42,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 			alert( idx );
 
 		};
+
+		{/* JSX */}
 		...
 	}
 	```
@@ -77,7 +79,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 	```tsx
 	{/* Hooks */ }
-	
 	import { useState } from 'react';
 
 	{/* Componentes MUI */ }
@@ -93,8 +94,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		{/* Variable de estado y función de actualización */}
 		let [selected, setSelected] = useState(-1)
 
-
-		{/* Manejador de eventos */}
 		...
 	}
 	```
@@ -104,7 +103,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	```tsx
 	export default function ControlPanel() {
 
-		{/* Variable de estado y función de actualización */}
 		...
 
 		{/* Manejador de eventos */}
@@ -193,6 +191,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 			}
 
 		};
+
+		...
 	}
 	```
 
