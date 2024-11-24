@@ -78,14 +78,14 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     interface Config {
         title?: String;
         subtitle?: String;
-        value: Number;
+        value?: String;
     }
 
     export default function IndicatorWeather(config: Config) {
         return (
             <>
                 {config.title}<br/>
-                {config.value.toString()}<br/>
+                {config.value}<br/>
                 {config.subtitle}
             </>
         )
@@ -105,19 +105,19 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 
                 {/* Indicadores  */}
                 <Grid size={ ... }>
-                    <IndicatorWeather title={'IndicatorWeather 1'} subtitle={'Unidad 1'} value={1.23} /> 
+                    <IndicatorWeather title={'IndicatorWeather 1'} subtitle={'Unidad 1'} value={"1.23"} /> 
                 </Grid>
 
                 <Grid size={ ... }>
-                    <IndicatorWeather title={'IndicatorWeather 2'} subtitle={'Unidad 2'} value={3.12} />
+                    <IndicatorWeather title={'IndicatorWeather 2'} subtitle={'Unidad 2'} value={"3.12"} />
                 </Grid>
                 
                 <Grid size={ ... }>
-                    <IndicatorWeather title={'IndicatorWeather 3'} subtitle={'Unidad 3'} value={2.31} />
+                    <IndicatorWeather title={'IndicatorWeather 3'} subtitle={'Unidad 3'} value={"2.31"} />
                 </Grid>
                 
                 <Grid size={ ... }>
-                    <IndicatorWeather title={'IndicatorWeather 4'} subtitle={'Unidad 4'} value={3.21} />
+                    <IndicatorWeather title={'IndicatorWeather 4'} subtitle={'Unidad 4'} value={"3.21"} />
                 </Grid>
                 
                 ...
