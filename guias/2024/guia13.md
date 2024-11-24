@@ -26,9 +26,9 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 
 1. Clona localmente tu repositorio **dashboard**.
 
-#### Componente Control: evento onChange
+#### Componente ControlWeather: evento onChange
 
-1. En _src/components/Control.tsx_:
+1. En _src/components/ControlWeather.tsx_:
 
 	- Importe la interfaz **SelectChangeEvent**.
 
@@ -40,7 +40,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	- Agregue la función flecha **handleChange**.
 	
 	```tsx
-	export default function Control() {
+	export default function ControlWeather() {
 
 		...
 
@@ -80,9 +80,9 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	```
 2. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Componente Control: hook - useState
+#### Componente ControlWeather: hook - useState
 
-1. En _src/components/Control.tsx_:
+1. En _src/components/ControlWeather.tsx_:
 	
 	- Importe el hook **useState**.
 
@@ -98,7 +98,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	
 	```tsx
 	
-	export default function ControlPanel() {
+	export default function ControlWeather() {
 		
 		{/* Variable de estado y función de actualización */}
 		let [selected, setSelected] = useState(-1)
@@ -110,7 +110,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	- Use la función de actualización en el manejador **handleChange** en lugar de la función alert.
 	
 	```tsx
-	export default function ControlPanel() {
+	export default function ControlWeather() {
 
 		...
 
@@ -130,7 +130,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	- Use la variable de estado para renderizar el item elemento seleccionado.
 
 	```tsx
-	export default function ControlPanel() {
+	export default function ControlWeather() {
 
 		...
 	    
@@ -158,9 +158,9 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 
 2. (STOP 2) Compruebe el resultado en el navegador.
 
-#### Componente Control: hook - useRef
+#### Componente ControlWeather: hook - useRef
 
-1. En _src/components/Control.tsx_:
+1. En _src/components/ControlWeather.tsx_:
 
 	- Importe el hook **useRef**.
 
@@ -172,7 +172,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	- Agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
 
 	```tsx
-	export default function ControlPanel() {
+	export default function ControlWeather() {
 
 		{/* Constante de referencia a un elemento HTML */ }
 	    const descriptionRef = useRef<HTMLDivElement>(null);
@@ -183,7 +183,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	- En el manejador de eventos, use la referencia **descriptionRef** para modificar su contenido. 
 	
 	```tsx
-	export default function ControlPanel() {
+	export default function ControlWeather() {
 
 		...
 		
@@ -208,7 +208,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	- Reemplace el elemento Typography y use el prop ref con la referencia **descriptionRef**. 
 
 	```tsx
-	export default function ControlPanel() {
+	export default function ControlWeather() {
 
 		{/* JSX */}	
 		return (
