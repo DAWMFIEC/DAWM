@@ -327,11 +327,11 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     export default function GraficoLinea() {
         return (
             <Paper
-                sx={{
+                sx={% raw %}{{{% endraw %}
                     p: 2,
                     display: 'flex',
                     flexDirection: 'column'
-                }}
+                {% raw %}}}{% endraw %}
             >
                 <LineChart
                     width={400}
