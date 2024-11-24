@@ -24,8 +24,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	- Importe la interfaz **SelectChangeEvent**.
 
 	```tsx
-	...
-	
 	{/* Interfaz SelectChangeEvent */}
 	import Select, { SelectChangeEvent } from '@mui/material/Select';
 	```
@@ -33,10 +31,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	- Agregue la función flecha **handleChange**.
 	
 	```tsx
-	...
 	export default function Control() {
 
-		...
 		{/* Manejador de eventos */}
 		
 		const handleChange = (event: SelectChangeEvent) => {
@@ -77,9 +73,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 1. En _src/components/Control.tsx_:
 	
 	- Importe el hook **useState**.
-	- Agregue la `variable de estado` **selected** y la `función de actualización` **setSelected**. El valor predeterminado de la variable de estado es -1.
-	- Use la función de actualización en el manejador **handleChange** 
-	- Renderice el contenido del elemento seleccionado.
 
 	```tsx
 	{/* Hooks */ }
@@ -87,19 +80,33 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	import { useState } from 'react';
 
 	{/* Componentes MUI */ }
-
 	...
+	```
+
+	- Agregue la `variable de estado` **selected** y la `función de actualización` **setSelected**. El valor predeterminado de la variable de estado es -1.
+	
+	```tsx
 	
 	export default function ControlPanel() {
 		
 		{/* Variable de estado y función de actualización */}
-
 		let [selected, setSelected] = useState(-1)
 
-		...
-		
-		{/* Manejador de eventos */}
 
+		{/* Manejador de eventos */}
+		...
+	}
+	```
+
+	- Use la función de actualización en el manejador **handleChange** 
+	
+	```tsx
+	export default function ControlPanel() {
+
+		{/* Variable de estado y función de actualización */}
+		...
+
+		{/* Manejador de eventos */}
 		const handleChange = (event: SelectChangeEvent) => {
 
 			let idx = parseInt(event.target.value)
@@ -107,8 +114,18 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 		};
 
-	    {/* JSX */}	
+		...
+	}
+	```
 
+	- Use la variable de estado para renderizar el item elemento seleccionado.
+
+	```tsx
+	export default function ControlPanel() {
+
+		...
+	    
+	    {/* JSX */}	
 		return (
 			<Paper>
 
@@ -116,8 +133,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 				<Box ... > ... </Box>
 
-				{/* Muestra la descripción de la variable seleccionada */}
-
+				{/* Use la variable de estado para renderizar del item seleccionado */}
 				<Typography mt={2} component="p" color="text.secondary">
 				{
 					(selected >= 0)?items[selected]["description"]:""
