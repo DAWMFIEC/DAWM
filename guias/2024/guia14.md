@@ -298,7 +298,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. En el componente _src/App.tsx_, agregue: 
 
-	- (1) Una interfaz con la descripción de los datos.
+	- (1) La interfaz **ConfigRow** con la descripción de los datos (claves: "from", "to" y "windDirection", de tipo String).
 	- (2) La variable de estado (dataTable) y función de actualización (setDataTable).
 	- (3) El código para extracción y almacenamiento del contenido del XML en un arreglo de resultados
 	- (4) Actualice de la variable de estado mediante la función de actualización (setDataTable).
@@ -306,86 +306,14 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	
 3. En el componente _src/components/TableWeather.tsx_, agregue: 
 
-	**NOTA:** Revise los comentarios numerados y adáptelos al código de su componente
-	
-	```tsx
-	{/* 1. Importe los hooks de estado y ejecución en segundo plano (useState y useEffect)  */}
-	
-	import { useState, useEffect } from 'react';
-	
-	{/* 2. Comente la funciones de procesamiento de datos (createData) y las variables con valores fijos (rows) */}
-
-	/*
-		function createData(
-			...	
-		}
-	*/
-
-	/*
-		const rows = [
-		...
-		];
-	*/
-
-	{/* 3. Declare la interfaz del prop de entrada */}
-
-	interface Config {
-		rows: Array<object>;
-	}
-
-	export default function BasicTable( data:Config ) {
-
-		{/* 
-			4. Declare la variable de estado (rows) y la función de actualización (setRows).
-			Use el mismo identificador de la variable con valores fijos (rows)
-		*/}
-
-		let [rows, setRows] = useState([])
-		
-		{/* 
-			5. Agregue el hook useEffect, controlado por el prop del componente (data), y
-			Dentro del hook, invoque al métdo de actualización con el valor del prop (data.rows).
-		*/}
-
-		useEffect( () => {
-
-			(()=> {
-
-				setRows(data.rows)
-
-			})()
-
-		}, [data] )
-
-
-		{/* JSX */}
-
-		return (
-
-			...
-				{/* Modifique la cabecera de la tabla con los títulos adecuados */}
-
-				<TableCell>Rango de horas</TableCell>
-				<TableCell align="right">Dirección del viento</TableCell>
-            ...
-
-            	{/* Modifique las filas de la tabla con las claves rangeHours y windDirection del objeto  */}
-				{rows.map((row) => (
-					<TableRow
-						key={row.rangeHours}
-						...
-					>
-						<TableCell component="th" scope="row">
-							{row.rangeHours}
-						</TableCell>
-						<TableCell align="right">{row.windDirection}</TableCell>
-					</TableRow>
-				))}
-			...
-
-		)
-	}
-	```
+	- (1) Importe los hooks de estado y ejecución en segundo plano (useState y useEffect) 
+	- (2) Comente la funciones de procesamiento de datos (createData) y las variables con valores fijos (rows)
+	- (3) La interfaz **ConfigRow** con la descripción de los datos (claves: "rows", de tipo Array{% raw %}<{% endraw %}object{% raw %}>{% endraw %}).
+	- (4) Declare un prop **data** del tipo **ConfigRow**.
+	- (5) Declare la variable de estado (rows) y la función de actualización (setRows). Use el mismo identificador de la variable con valores fijos (**rows**)
+	- (6) Agregue el hook useEffect, controlado por el prop del componente (data). Dentro del hook, invoque al método de actualización con el valor del prop (data.rows).
+	- (7) Modifique la cabecera de la tabla con los títulos adecuados
+	- (8) Modifique el cuerpo de la tabla al iterar la variable de estado (rows)
 
 4. (STOP 4) Compruebe el resultado en el navegador.
 5. Versiona local y remotamente el repositorio **dashboard**.
