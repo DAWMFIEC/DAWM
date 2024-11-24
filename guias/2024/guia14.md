@@ -17,7 +17,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 1. Clona localmente tu repositorio **dashboard**.
 
-#### Hook: useEffect - Petición asíncrona de un XML
+#### Componente App: hook - useEffect
+##### Petición asíncrona de un XML
 
 1. En el componente `App.tsx`, agregue la referencia al hook **useEffect**.
 
@@ -31,15 +32,11 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	```tsx
 	function App() {
 
-		{/* Variable de estado y función de actualización */}
-
 		...
 
 		{/* Hook: useEffect */}
-
-		{/* Función para el efecto secundario a ejecutar y Arreglo de dependencias */} 
-
-
+		
+		{/* Función para el efecto secundario a ejecutar y arreglo de dependencias */} 
 		useEffect( ()=>{}, [] )
 
 		...
@@ -164,7 +161,8 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 4. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Renderización Dinámica con Map
+#### Componente App: hook - useState
+#### Renderización Dinámica
 
 1. En el componente `App.tsx`, agregue la referencia al hook **useState**.
 
