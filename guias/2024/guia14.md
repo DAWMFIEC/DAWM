@@ -13,15 +13,6 @@ theme: jekyll-theme-leap-day
 <pre class="purpose">
 Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnologías web modernas, como React, que permita a los usuarios monitorear en tiempo real métricas clave del clima.</pre>
 
-### Actividades previas
-
-Revise el [diagrama interactivo](https://wavez.github.io/react-hooks-lifecycle/) de los hooks en el ciclo de vida de los componentes.
-
-<div align="center">
-    <img src="imagenes/react_lifecycle.jpg" alt="" width="60%">
-    <p>Fuente: <a href="https://github.com/Wavez/react-hooks-lifecycle">React Hooks Lifecycle Diagram</a> </p>
-</div>
-
 ### Actividades en clases
 
 1. Clona localmente tu repositorio **dashboard**.
