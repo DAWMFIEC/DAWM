@@ -18,18 +18,18 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 * Clona localmente tu repositorio **dashboard**.
 
-#### Componente wIndicator: Estructura básica
+#### Componente IndicatorWeather: Estructura básica
 
-1. Cree el archivo _src/components/wIndicator.tsx_.
-2. En _src/components/wIndicator.tsx_, con el siguiente código:
+1. Cree el archivo _src/components/IndicatorWeather.tsx_.
+2. En _src/components/IndicatorWeather.tsx_, con el siguiente código:
 
-    - Un elemento vacío ([Fragment](https://es.react.dev/reference/react/Fragment#fragment)) con el texto `Componente wIndicator`:
+    - Un elemento vacío ([Fragment](https://es.react.dev/reference/react/Fragment#fragment)) con el texto `Componente IndicatorWeather`:
 
     ```jsx
-    export default function wIndicator() {
+    export default function IndicatorWeather() {
         return (
             <>
-                Componente wIndicator
+                Componente IndicatorWeather
             </> 
         )
     }
@@ -37,21 +37,21 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. En _App.tsx_:
     
-    - Importe el componente **wIndicator**, y 
-    - Coloque la referencia al componente `<wIndicator />` en el Grid. 
+    - Importe el componente **IndicatorWeather**, y 
+    - Coloque la referencia al componente `<IndicatorWeather />` en el Grid. 
 
     ```jsx
-    import wIndicator from './components/wIndicator';
+    import IndicatorWeather from './components/IndicatorWeather';
 
     function App() {
         return (
             <Grid container spacing={5}>
 
                 {/* Indicadores  */}
-                <Grid size={ ... }> <wIndicator /> </Grid>
-                <Grid size={ ... }> <wIndicator /> </Grid>
-                <Grid size={ ... }> <wIndicator /> </Grid>
-                <Grid size={ ... }> <wIndicator /> </Grid>
+                <Grid size={ ... }> <IndicatorWeather /> </Grid>
+                <Grid size={ ... }> <IndicatorWeather /> </Grid>
+                <Grid size={ ... }> <IndicatorWeather /> </Grid>
+                <Grid size={ ... }> <IndicatorWeather /> </Grid>
 
                 ...
 
@@ -65,9 +65,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Componente wIndicator: Propiedades (Props)
+#### Componente IndicatorWeather: Propiedades (Props)
 
-1. En _src/components/wIndicator.tsx_:
+1. En _src/components/IndicatorWeather.tsx_:
 
     - Agregue la interfaz **Config** con las claves title, subtitle y value,
     - Defina **config** del tipo Config, como [props](https://react.dev/learn/passing-props-to-a-component) del componente, y
@@ -81,7 +81,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
         value: Number;
     }
 
-    export default function wIndicator(config: Config) {
+    export default function IndicatorWeather(config: Config) {
         return (
             <>
                 {config.title}<br/>
@@ -94,10 +94,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. En _App.tsx_:
 
-    - A cada componente **wIndicator**, agregue las propiedades y los valores correspondientes. 
+    - A cada componente **IndicatorWeather**, agregue las propiedades y los valores correspondientes. 
 
     ```jsx
-    import wIndicator from './components/wIndicator';
+    import IndicatorWeather from './components/IndicatorWeather';
 
     function App() {
         return (
@@ -105,19 +105,19 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 
                 {/* Indicadores  */}
                 <Grid size={ ... }>
-                    <wIndicator title={'wIndicator 1'} subtitle={'Unidad 1'} value={1.23} /> 
+                    <IndicatorWeather title={'IndicatorWeather 1'} subtitle={'Unidad 1'} value={1.23} /> 
                 </Grid>
 
                 <Grid size={ ... }>
-                    <wIndicator title={'wIndicator 2'} subtitle={'Unidad 2'} value={3.12} />
+                    <IndicatorWeather title={'IndicatorWeather 2'} subtitle={'Unidad 2'} value={3.12} />
                 </Grid>
                 
                 <Grid size={ ... }>
-                    <wIndicator title={'wIndicator 3'} subtitle={'Unidad 3'} value={2.31} />
+                    <IndicatorWeather title={'IndicatorWeather 3'} subtitle={'Unidad 3'} value={2.31} />
                 </Grid>
                 
                 <Grid size={ ... }>
-                    <wIndicator title={'wIndicator 4'} subtitle={'Unidad 4'} value={3.21} />
+                    <IndicatorWeather title={'IndicatorWeather 4'} subtitle={'Unidad 4'} value={3.21} />
                 </Grid>
                 
                 ...
@@ -132,9 +132,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 3. Versiona local y remotamente el repositorio.
 4. (STOP 2) Compruebe el resultado en el navegador.
 
-#### Componente wIndicator: Componente MUI Paper y Typography
+#### Componente IndicatorWeather: Componente MUI Paper y Typography
 
-1. En _src/components/wIndicator.tsx_:
+1. En _src/components/IndicatorWeather.tsx_:
 
     - Agregue la referencia a los componentes [Typography](https://mui.com/material-ui/react-typography/) y [Paper](https://mui.com/material-ui/react-paper/)
     - Reemplace el código renderizado con los componentes **Typography** y **Paper**
@@ -145,7 +145,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     
     interface Config { ... }
 
-    export default function wIndicator(config: Config) {
+    export default function IndicatorWeather(config: Config) {
         return (
             <Paper
                 sx={% raw %}{{{% endraw %}
@@ -172,10 +172,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 2. Versiona local y remotamente el repositorio.
 3. (STOP 3) Compruebe el resultado en el navegador.
 
-#### Componente wControl: Estructura básica
+#### Componente ControlWeather: Estructura básica
 
-1. Cree el componente _src/components/wControl.tsx_
-2. En _src/components/wControl.tsx_, con el siguiente código: 
+1. Cree el componente _src/components/ControlWeather.tsx_
+2. En _src/components/ControlWeather.tsx_, con el siguiente código: 
 
     ```tsx
     {/* Componentes MUI */}
@@ -185,10 +185,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import Box from '@mui/material/Box';
     import InputLabel from '@mui/material/InputLabel';
     import MenuItem from '@mui/material/MenuItem';
-    import FormwControl from '@mui/material/FormwControl';
+    import FormControlWeather from '@mui/material/FormControlWeather';
     import Select from '@mui/material/Select';
     
-    export default function wControl() {
+    export default function ControlWeather() {
 
         {/* Arreglo de objetos */}
         let items = [
@@ -216,7 +216,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
                 <Box sx={% raw %}{{{% endraw %} minWidth: 120 {% raw %}}}{% endraw %}>
                     
-                    <FormwControl fullWidth>
+                    <FormControlWeather fullWidth>
                         <InputLabel id="simple-select-label">Variables</InputLabel>
                         <Select
                             labelId="simple-select-label"
@@ -229,7 +229,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                             {options}
 
                         </Select>
-                    </FormwControl>
+                    </FormControlWeather>
 
                 </Box>
 
@@ -241,10 +241,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     }
     ```
 
-#### Componente wTable: Componente MUI BasicTable 
+#### Componente TableWeather: Componente MUI BasicTable 
 
 1. Acceda al componente [BasicTable](https://github.com/mui/material-ui/blob/v6.1.6/docs/data/material/components/table/BasicTable.tsx) y copie el código.
-2. Cree el componente _src/components/wTable.tsx_, y:
+2. Cree el componente _src/components/TableWeather.tsx_, y:
 
     - Pegue el código del componente BasicTable. 
     - Elimine la referencia `import * as React from 'react';`
@@ -254,13 +254,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 1. En _App.tsx_:
 
-    - Importe el componente **wTable** y **wControl**, y 
-    - Coloque la referencia a los componentes `<wTable/>` y `<wControl />` en el Grid. 
+    - Importe el componente **TableWeather** y **ControlWeather**, y 
+    - Coloque la referencia a los componentes `<TableWeather/>` y `<ControlWeather />` en el Grid. 
 
     ```jsx
     ...
-    import wTable from './components/wTable';
-    import wControl from './components/wControl';
+    import TableWeather from './components/TableWeather';
+    import ControlWeather from './components/ControlWeather';
 
     function App() {
         return (
@@ -274,10 +274,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                     {/* Grid Anidado */}
                     <Grid container spacing={2}>
                         <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}>
-                            <wControl/>
+                            <ControlWeather/>
                         </Grid>
                         <Grid size={% raw %}{{{% endraw %} xs: 12, xl: 9 {% raw %}}}{% endraw %}>
-                            <wTable/>
+                            <TableWeather/>
                         </Grid>
                     </Grid>
 
@@ -303,7 +303,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     npm install @mui/x-charts
     ```
 
-2. Cree el componente _src/components/wLineChart.tsx_, con el siguiente código:
+2. Cree el componente _src/components/LineChartWeather.tsx_, con el siguiente código:
 
     ```jsx
     import Paper from '@mui/material/Paper';
@@ -321,7 +321,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
         'Page G',
     ];
 
-    export default function wLineChart() {
+    export default function LineChartWeather() {
         return (
             <Paper
                 sx={% raw %}{{{% endraw %}
@@ -348,12 +348,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 3. En _App.tsx_:
 
-    - Importe los componentes **wLineChart**, y 
-    - Coloque la referencia a los componentes `<wLineChart />` en el Grid. 
+    - Importe los componentes **LineChartWeather**, y 
+    - Coloque la referencia a los componentes `<LineChartWeather />` en el Grid. 
 
     ```jsx
     ...
-    import wLineChart from './components/wLineChart';
+    import LineChartWeather from './components/LineChartWeather';
 
     function App() {
         return (
@@ -363,7 +363,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                 
                 {/* Gráfico */}
                 <Grid size={ ... }>
-                    <wLineChart/>
+                    <LineChartWeather/>
                 </Grid>
 
             </Grid>
