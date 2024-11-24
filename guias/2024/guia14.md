@@ -20,108 +20,131 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 #### Componente App: hook - useEffect
 ##### Petición asíncrona de un XML
 
-1. En el componente `App.tsx`, agregue la referencia al hook **useEffect**.
+1. En el componente `App.tsx`, agregue:
+
+	- La referencia al hook **useEffect**.
 
 	```tsx
+	{/* Hooks */ }
 	import { useEffect } from 'react';
-	...
+	
 	```
 
-2. En el componente `App.tsx`, agregue el hook **useEffect** para reaccionar después del primer renderizado ( `fase` de **Montaje** en el [`ciclo de vida`](https://www.reactjs.wiki/que-es-el-ciclo-de-vida-de-un-componente-en-react) ) en el DOM.
+	- La interfaz _Config_:
 
 	```tsx
+	{/* Hooks */ }
+	...
+
+	interface Config {
+	  title?: String;
+	  subtitle?: String;
+	  value?: String;
+	}
+
+	function App() { ... }
+	```
+
+	- El hook **useEffect** para reaccionar únicamente después del renderizado ( `fase` de **Montaje** en el [`ciclo de vida`](https://www.reactjs.wiki/que-es-el-ciclo-de-vida-de-un-componente-en-react) ) en el DOM.
+
+	```tsx
+	...
+
 	function App() {
 
-		...
-
 		{/* Hook: useEffect */}
-		
-		{/* Función para el efecto secundario a ejecutar y arreglo de dependencias */} 
 		useEffect( ()=>{}, [] )
 
-		...
+		return ( ... )
 	}
 	```
 
 3. En el hook useEffect del componente `App.tsx`
 
-	+ (1) Agregue una función de autoejecución **async** dentro de la función para el efecto secundario.
+	+ (1) Agregue y ejecute la función asíncrona **request** dentro de la función para el efecto secundario.
 
 	```tsx
-		...
+	function App() {
 
 		{/* Hook: useEffect */}
-
 		useEffect(()=>{
 
-			(async ()=>{  })()
+			let request = async () => { }
+
+			request();
 
 		},[])
 
-		...
+		return ( ... )
+
+	}
 	```
 	
 	+ (2) Agregue una petición asíncrona con fetch dentro de la función de autoejecución **async**.
 
 	```tsx
-		...
+	function App() {
 
 		{/* Hook: useEffect */}
-
 		useEffect(()=>{
 
-			(async ()=>{
+			let request = async () => {
 
 				{/* Request */}
-
-				let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
+				let API_KEY = "OPENWEATHERMAP' API KEY"
 				let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
 				let savedTextXML = await response.text();
 
-			})()
+			}
+
+			request();
 
 		},[])
 
-		...
+		return ( ... )
+
+	}
 	```
 
 	+ (3) Agregue el analizador (`parser`) de XML
 
 	```tsx
-		...
+	function App() {
 
 		{/* Hook: useEffect */}
-
 		useEffect(()=>{
 
-			(async ()=>{
+			let request = async () => {
 
 				{/* Request */}
 
 				...
 
 				{/* XML Parser */}
-
 				const parser = new DOMParser();
 				const xml = parser.parseFromString(savedTextXML, "application/xml");
 
-			})()
+			}
+
+			request();
 
 		},[])
 
-		...
+		return ( ... )
+
+	}	
 	```
 
 	+ (3) Agregue el arreglo para almacenar temporalmente los resultados, extraiga el contenido del xml mediante el API del DOM (métodos **getElementsByTagName** y **getAttribute**) y guarde los resultado en arreglo. Revise la estructura del documento XML para extraer los datos necesarios.
 
 	```tsx
-		...
+	function App() {
 
 		{/* Hook: useEffect */}
 
 		useEffect(()=>{
 
-			(async ()=>{
+			let request = async () => {
 
 				...
 
@@ -131,27 +154,32 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 				{/* Arreglo para agregar los resultados */}
 
-				let dataToIndicators = new Array()
+				let dataToIndicators : Config[] = new Array<Config>();
 
 				{/* 
 					Análisis, extracción y almacenamiento del contenido del XML 
 					en el arreglo de resultados
 				*/}
 
+				let name = xml.getElementsByTagName("name")[0].innerHTML || ""
+				dataToIndicators.push({"title":"Location", "subtitle": "City", "value": name})
+
 				let location = xml.getElementsByTagName("location")[1]
 
-				let geobaseid = location.getAttribute("geobaseid")
-				dataToIndicators.push(["Location","geobaseid", geobaseid])
+				let latitude = location.getAttribute("latitude") || ""
+				dataToIndicators.push({"title":"Location", "subtitle": "Latitud", "value":latitude})
 
-				let latitude = location.getAttribute("latitude")
-				dataToIndicators.push(["Location","Latitude", latitude])
+				let longitude = location.getAttribute("longitude") || ""
+				dataToIndicators.push({"title":"Location", "subtitle": "Longitude", "value":longitude})
 
-				let longitude = location.getAttribute("longitude")
-				dataToIndicators.push(["Location","Longitude", longitude])
+				let geobaseid = location.getAttribute("geobaseid") || ""
+				dataToIndicators.push({"title":"Location", "subtitle": "geobaseid", "value": geobaseid})
 
 				console.log( dataToIndicators )
 
-			})()
+			}
+
+			request();
 
 
 		},[])
@@ -178,7 +206,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 		{/* Variable de estado y función de actualización */}
 
-		let [indicators, setIndicators] = useState([])
+		let [indicators, setIndicators] = useState<Config[]>([])
 
 		...
 
