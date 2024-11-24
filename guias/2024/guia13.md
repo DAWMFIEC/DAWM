@@ -26,7 +26,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 
 1. Clona localmente tu repositorio **dashboard**.
 
-#### Evento: onChange
+#### Componente -Funcional- Control: evento onChange
 
 1. En _src/components/Control.tsx_:
 
@@ -80,7 +80,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 	```
 2. (STOP 1) Compruebe el resultado en el navegador.
 
-#### Hook: useState - Componente Hijo
+#### Componente -De clase- Control: hook - useState
 
 1. En _src/components/Control.tsx_:
 	
@@ -158,7 +158,7 @@ Revise la descripción del uso de Hooks en React, el sitio [Understanding React 
 
 2. (STOP 2) Compruebe el resultado en el navegador.
 
-#### Hook: useRef - Componente Hijo
+#### Componente -De clase- Control: hook - useRef
 
 1. En _src/components/Control.tsx_:
 
