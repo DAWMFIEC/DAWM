@@ -19,7 +19,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Componente App: hook - useEffect
 
-1. En el componente `App.tsx`, agregue:
+1. En el componente _src/App.tsx_, agregue:
 
 	- La referencia al hook **useEffect**.
 
@@ -57,7 +57,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-2. En el hook useEffect del componente `App.tsx`
+2. En el hook useEffect del componente _src/App.tsx_
 
 	+ (1) Agregue y ejecute la función asíncrona **request** dentro de la función para el efecto secundario.
 
@@ -162,13 +162,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				let location = xml.getElementsByTagName("location")[1]
 
 				let latitude = location.getAttribute("latitude") || ""
-				dataToIndicators.push({"title":"Location", "subtitle": "Latitud", "value":latitude})
+				dataToIndicators.push({ "title": "Location", "subtitle": "Latitude", "value": latitude })
 
 				let longitude = location.getAttribute("longitude") || ""
-				dataToIndicators.push({"title":"Location", "subtitle": "Longitude", "value":longitude})
+				dataToIndicators.push({ "title": "Location", "subtitle": "Longitude", "value": longitude })
 
-				let geobaseid = location.getAttribute("geobaseid") || ""
-				dataToIndicators.push({"title":"Location", "subtitle": "geobaseid", "value": geobaseid})
+				let altitude = location.getAttribute("altitude") || ""
+				dataToIndicators.push({ "title": "Location", "subtitle": "Altitude", "value": altitude })
 
 				console.log( dataToIndicators )
 
@@ -187,7 +187,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 #### Componente App: hook - useState
 
-1. En el componente `App.tsx`, agregue: 
+1. En el componente _src/App.tsx_, agregue: 
 
 	- La referencia al hook **useState**.
 
@@ -210,7 +210,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-2. En el hook useEffect del componente `App.tsx`, modifique la variable de estado mediante la función de actualización.
+2. En el hook useEffect del componente _src/App.tsx_, modifique la variable de estado mediante la función de actualización.
 
 	```tsx
 	function App() {
@@ -238,7 +238,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-3. En el componente `App.tsx`, itere la variable de estado.
+3. En el componente _src/App.tsx_, itere la variable de estado.
 
 	```tsx
 	...
@@ -278,86 +278,33 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 4. (STOP 2) Compruebe el resultado en el navegador.
 
-#### BasicTable: Análisis del XML
+#### Componente TableWeather: hook - useState
 
 1. Defina:
 
-	+ Los datos a procesar y mostrar, p.e.: **rangeHours** y **windDirection**.
-	+ La estructura de datos para almacenar los datos, p.e.: Arreglo de objetos `[{ ... }, { ... }]`.
-
-2. En el componente `App.tsx`: 
-
-	**NOTA:** Revise los comentarios numerados y adáptelos al código de su componente
-
-	```tsx
-	function App() {
-
-		{/* 
-			1. Agregue la variable de estado (dataTable) y función de actualización (setDataTable).
-		*/}
-
-		let [rowsTable, setRowsTable] = useState([])
-
-		...
-
+	+ Los datos a procesar y mostrar en una fila de la Tabla, p.e.: **time@from**, **time@to** y **windDirection**.
+	+ La estructura de datos para almacenar los datos, p.e.: Arreglo de objetos 
 		
-		useEffect(()=>{
-
-			(async ()=>{
-
-				...
-
-				{/* Modificación de la variable de estado mediante la función de actualización */}
-
-				...
-
-				{/* 
-					2. Procese los resultados de acuerdo con el diseño anterior.
-					   Revise la estructura del documento XML para extraer los datos necesarios. 
-				*/}
-
-				let arrayObjects = Array.from( xml.getElementsByTagName("time") ).map( (timeElement) =>  {
-					
-					let rangeHours = timeElement.getAttribute("from").split("T")[1] + " - " + timeElement.getAttribute("to").split("T")[1]
-
-					let windDirection = timeElement.getElementsByTagName("windDirection")[0].getAttribute("deg") + " "+  timeElement.getElementsByTagName("windDirection")[0].getAttribute("code") 
-					
-					return { "rangeHours": rangeHours,"windDirection": windDirection }
-				
-				})
-
-				arrayObjects = arrayObjects.slice(0,8)
-			
-				{/* 3. Actualice de la variable de estado mediante la función de actualización */}
-
-				setRowsTable(arrayObjects)
-
-			})()
-
-		},[])
-
+		```json
+		[
+			{
+				"from": "21:00:00",
+				"to": "00:00:00",
+				"windDirection": "225 SW"
+			},  
 		...
+		]
+		```
 
-		return (
+2. En el componente _src/App.tsx_, agregue: 
 
-			...
-
-			<Grid xs={12} lg={8}>
-
-				{/* 4. Envíe la variable de estado (dataTable) como prop (input) del componente (BasicTable) */}
-
-				<BasicTable rows={rowsTable}></BasicTable>
-
-			</Grid>
-
-			...
-
-		)
-	}
-	```
-
-
-3. En el componente `BasicTable.tsx`. 
+	- (1) Una interfaz con la descripción de los datos.
+	- (2) La variable de estado (dataTable) y función de actualización (setDataTable).
+	- (3) El código para extracción y almacenamiento del contenido del XML en un arreglo de resultados
+	- (4) Actualice de la variable de estado mediante la función de actualización (setDataTable).
+	- (5) Envíe la variable de estado (dataTable) como prop del componente (TableWeather)
+	
+3. En el componente _src/components/TableWeather.tsx_, agregue: 
 
 	**NOTA:** Revise los comentarios numerados y adáptelos al código de su componente
 	
