@@ -187,7 +187,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 4. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Componente App: hook - useState
-#### Renderización Dinámica
+##### Renderización Dinámica
 
 1. En el componente `App.tsx`, agregue: 
 
