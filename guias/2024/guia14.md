@@ -220,23 +220,18 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		{/* Hook: useEffect */}
 		useEffect(()=>{
 
-			(async ()=>{
-
-				...
-
-				{/* 
-					Análisis, extracción y almacenamiento del contenido del XML 
-					en el arreglo de resultados
-				*/}
+			let request = async () => {
 
 				...
  
 				// console.log( dataToIndicators )
 
 				{/* Modificación de la variable de estado mediante la función de actualización */}
-				setIndicators(indicatorsElements)
+				setIndicators( dataToIndicators )
 
-			})()
+			}
+
+			request()
 
 		},[])
 
