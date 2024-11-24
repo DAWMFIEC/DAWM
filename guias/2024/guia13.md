@@ -33,8 +33,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	```tsx
 	export default function Control() {
 
+		...
+
 		{/* Manejador de eventos */}
-		
 		const handleChange = (event: SelectChangeEvent) => {
 			
 			let idx = parseInt(event.target.value)
@@ -98,7 +99,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-	- Use la función de actualización en el manejador **handleChange** 
+	- Use la función de actualización en el manejador **handleChange** en lugar de la función alert.
 	
 	```tsx
 	export default function ControlPanel() {
@@ -110,6 +111,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 		const handleChange = (event: SelectChangeEvent) => {
 
 			let idx = parseInt(event.target.value)
+			// alert( idx );
 			setSelected( idx );
 
 		};
@@ -154,39 +156,52 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 1. En _src/components/Control.tsx_:
 
 	- Importe el hook **useRef**.
-	- Agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
-	- En el manejador de eventos, use la referencia **descriptionRef** para modificar su contenido. 
-	- Reemplace el elemento Typography y use el prop ref con la referencia **descriptionRef**. 
 
 	```tsx
 	{/* Hooks */ }
-
 	import { useState, useRef } from 'react';
-	...
-	
+	```
+
+	- Agregue la constante **descriptionRef** que servirá como referencia a un elemento HTML.
+
+	```tsx
 	export default function ControlPanel() {
 
 		{/* Constante de referencia a un elemento HTML */ }
-
 	    const descriptionRef = useRef<HTMLDivElement>(null);
+
+	    ...
+	```
+
+	- En el manejador de eventos, use la referencia **descriptionRef** para modificar su contenido. 
+	
+	```tsx
+	export default function ControlPanel() {
+
+		...
 		
 		{/* Manejador de eventos */}
-
 		const handleChange = (event: SelectChangeEvent) => {
 
 			let idx = parseInt(event.target.value)
+			// alert( idx );
 			setSelected( idx );
 
-			{/* Modificación de la referencia */}
-
+			{/* Modificación de la referencia descriptionRef */}
 			if (descriptionRef.current !== null) {
 				descriptionRef.current.innerHTML = (idx >= 0) ? items[idx]["description"] : ""
 			}
 
 		};
+	}
+	```
+
+	- Reemplace el elemento Typography y use el prop ref con la referencia **descriptionRef**. 
+
+	```tsx
+	export default function ControlPanel() {
 
 		{/* JSX */}	
-
 		return (
 
 			<Paper>
@@ -196,7 +211,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				<Box ... > ... </Box>
 
 
-				{/* Muestra la descripción de la variable seleccionada */}
+				{/* Use la variable de estado para renderizar del item seleccionado */}
+				{/*<Typography mt={2} component="p" color="text.secondary">
+				{
+					(selected >= 0)?items[selected]["description"]:""
+				}
+				</Typography>*/}
 
 				<Typography ref={descriptionRef} mt={2} component="p" color="text.secondary" />
 				
