@@ -267,9 +267,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 						
 						(indicator, idx) => (
 						<Grid key={idx} size={{ xs: 12, xl: 3 }}>
-							<IndicatorWeather title={indicator["title"]} 
-											  subtitle={indicator["subtitle"]} 
-											  value={indicator["value"]} />
+							<IndicatorWeather title={indicator["title"]} subtitle={indicator["subtitle"]} value={indicator["value"]} />
 						</Grid>)
 					)
 				}
@@ -282,81 +280,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	```
 
 4. (STOP 2) Compruebe el resultado en el navegador.
-
-#### LocalStorage (OPCIONAL)
-
-1. En el hook useEffect del componente `App.tsx`, reorganice el código para usar el almacenamiento del navegador (`LocalStorage`) para guardar la respuesta de la petición asincrónica.
-
-	```tsx
-		...
-
-		{/* Hook: useEffect */}
-
-		useEffect(()=>{
-
-
-			(async ()=>{
-
-				
-				{/* 1. Comente el código anterior con el Request */}
-
-				// {/* Request */ }
-
-				// let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
-				// let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
-				// let savedTextXML = await response.text();
-
-
-				{/* 2. Del LocalStorage, obtiene el valor de las claves openWeatherMap y expiringTime */}
-
-				let savedTextXML = localStorage.getItem("openWeatherMap")
-				let expiringTime = localStorage.getItem("expiringTime")
-
-				{/* 3. Obtenga la estampa de tiempo actual */}
-
-				let nowTime = (new Date()).getTime();
-
-				{/* 4. Realiza la petición asicrónica cuando: 
-					(1) La estampa de tiempo de expiración (expiringTime) es nula, o  
-					(2) La estampa de tiempo actual es mayor al tiempo de expiración */}
-
-				if(expiringTime === null || nowTime > parseInt(expiringTime)) {
-
-					{/* 5. Request */}
-
-					let API_KEY = "AQUÍ VA SU API KEY DE OPENWEATHERMAP"
-					let response = await fetch(`https://api.openweathermap.org/data/2.5/forecast?q=Guayaquil&mode=xml&appid=${API_KEY}`)
-					savedTextXML = await response.text();
-
-
-					{/* 6. Diferencia de tiempo */}
-
-					let hours = 1
-					let delay = hours * 3600000
-
-
-					{/* 7. En el LocalStorage, almacena texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
-
-					localStorage.setItem("openWeatherMap", savedTextXML)
-					localStorage.setItem("expiringTime", (nowTime + delay ).toString() )
-				}
-
-				{/* XML Parser */}
-
-				... 
-
-				{/* Arreglo para agregar los resultados */}
-
-				...
-
-			})()
-
-		},[])
-
-		...
-	```
-
-2. (STOP 3) Compruebe el resultado en el navegador.
 
 #### BasicTable: Análisis del XML
 
