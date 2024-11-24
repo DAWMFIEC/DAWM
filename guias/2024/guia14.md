@@ -262,11 +262,15 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				{/* Indicadores */}
 				{/* <Grid size={{ xs: 12, xl: 3 }}> ... </Grid> */}
 
-				{indicators
+				{
+					indicators
 					.map(
 						(indicator, idx) => (
 							<Grid key={idx} size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}>
-							<IndicatorWeather title={indicator["title"]} subtitle={indicator["subtitle"]} value={indicator["value"]} />
+								<IndicatorWeather 
+									title={indicator["title"]} 
+									subtitle={indicator["subtitle"]} 
+									value={indicator["value"]} />
 							</Grid>
 						)
 					)
