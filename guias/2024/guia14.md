@@ -550,3 +550,4 @@ React Lifecycle, React Lifecycle phases, parser
 * How to fetch XML in JavaScript (no date) Code to go. Available at: https://codetogo.io/how-to-fetch-xml-in-javascript/ (Accessed: 22 June 2024). 
 * diego.coder26 (2024) Ciclo de Vida en react.js (hook useeffect), Medium. Available at: https://medium.com/@diego.coder/ciclo-de-vida-en-react-js-hook-useeffect-68d35cf287cf (Accessed: 22 June 2024). 
 * Matharu, M. (2024). A Practical Guide to Using Local Storage in Web and React.js. Retrieved from https://meenumatharu.medium.com/a-practical-guide-to-using-local-storage-in-web-and-react-js-6d163a000c3a
+* Renard, G. (2023). Under the Hood of React useEffect Dependencies. Retrieved from https://blog.bitsrc.io/understanding-dependencies-in-useeffect-7afd4df37c96
