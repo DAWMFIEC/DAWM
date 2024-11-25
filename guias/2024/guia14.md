@@ -280,8 +280,249 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	```
 
 4. (STOP 2) Compruebe el resultado en el navegador.
-5. Versiona local y remotamente el repositorio **dashboard**.
-6. Despliega la aplicación **dashboard**.
+
+#### LocalStorage
+
+1. En el componente _src/App.tsx_, agregue: 
+	
+	- La variable de estado **owm** y la función de actualización **setOWM**. El valor predeterminado de la variable de estado es el valor en localStorage _openWeatherMap_.
+
+	```tsx
+	function App() {
+
+		{/* Variable de estado y función de actualización */}
+		let [indicators, setIndicators] = useState<Indicator[]>([])
+		let [owm, setOWM] = useState(localStorage.getItem("openWeatherMap"))
+
+		{/* Hook: useEffect */}
+		...
+
+		return ( ... )
+	}
+	```
+
+2. En el hook useEffect del componente _src/App.tsx_, agregue: 
+	
+	- La referencia a las claves del **LocalStorage**: `openWeatherMap` y `expiringTime`
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				{/* Referencia a las claves del LocalStorage: openWeatherMap y expiringTime */}
+				let savedTextXML = localStorage.getItem("openWeatherMap") || "";
+                let expiringTime = localStorage.getItem("expiringTime");
+
+				{/* Request */}
+				...
+
+				{/* XML Parser */}
+                ...
+			}
+
+	    	request();
+
+    	}, [])
+	}
+	```
+
+	- Obtenga la estampa de tiempo actual
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				{/* Referencia a las claves del LocalStorage: openWeatherMap y expiringTime */}
+				...
+
+				{/* Obtenga la estampa de tiempo actual */}
+                let nowTime = (new Date()).getTime();
+
+				{/* Request */}
+				...
+
+				{/* XML Parser */}
+                ...
+			}
+
+	    	request();
+
+    	}, [])
+	}
+	```
+
+	- Verifique si es que no existe la clave `expiringTime` o si la estampa de tiempo actual supera el tiempo de expiración para realizar la petición asincrónica
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				{/* Referencia a las claves del LocalStorage: openWeatherMap y expiringTime */}
+				...
+
+				{/* Obtenga la estampa de tiempo actual */}
+                ...
+
+                {/* Verifique si es que no existe la clave expiringTime o si la estampa de tiempo actual supera el tiempo de expiración */}
+                if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+
+					{/* Request */}
+					...
+				
+				}
+
+				{/* XML Parser */}
+                ...
+			}
+
+	    	request();
+
+    	}, [])
+	}
+	```
+
+	- Luego de realizar la petición asincrónica, calcule y almacene el tiempo de expiración, almacene el texto en la clave openWeatherMap y use la función de actualización con el resultado de la petición.
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				{/* Referencia a las claves del LocalStorage: openWeatherMap y expiringTime */}
+				...
+
+				{/* Obtenga la estampa de tiempo actual */}
+                ...
+
+                {/* Verifique si es que no existe la clave expiringTime o si la estampa de tiempo actual supera el tiempo de expiración */}
+                if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+
+					{/* Request */}
+					...
+
+					{/* Tiempo de expiración */}
+                    let hours = 0.01
+                    let delay = hours * 3600000
+                    let expiringTime = nowTime + delay
+
+
+					{/* En el LocalStorage, almacene el texto en la clave openWeatherMap, estampa actual y estampa de tiempo de expiración */}
+					localStorage.setItem("openWeatherMap", savedTextXML)
+					localStorage.setItem("expiringTime", expiringTime.toString())
+					localStorage.setItem("nowTime", nowTime.toString())
+
+					{/* DateTime */}
+					localStorage.setItem("expiringDateTime", new Date(expiringTime).toString())
+					localStorage.setItem("nowDateTime", new Date(nowTime).toString())
+
+			        {/* Modificación de la variable de estado mediante la función de actualización */ }
+			        setOWM( savedTextXML )
+				}
+
+				{/* XML Parser */}
+                ...
+			}
+
+	    	request();
+
+    	}, [])
+	}
+	```
+
+	- Valide el procesamiento con el valor de savedTextXML.
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				{/* Referencia a las claves del LocalStorage: openWeatherMap y expiringTime */}
+				...
+
+				{/* Obtenga la estampa de tiempo actual */}
+                ...
+
+                {/* Verifique si es que no existe la clave expiringTime o si la estampa de tiempo actual supera el tiempo de expiración */}
+                if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+
+					...
+				}
+
+				{/* Valide el procesamiento con el valor de savedTextXML */}
+				if( savedTextXML ) {
+
+					{/* XML Parser */}
+                	...
+
+                	{/* Arreglo para agregar los resultados */ }
+                	...
+
+                	{/* 
+			           Análisis, extracción y almacenamiento del contenido del XML 
+			           en el arreglo de resultados
+			       */}
+                	...
+
+                	{/* Modificación de la variable de estado mediante la función de actualización */ }
+                	...
+
+				}
+
+				
+			}
+
+	    	request();
+
+    	}, [])
+	}
+	```
+
+	- Habilite la ejecución cada vez que cambie la variable de estado **owm**.
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				...
+			}
+
+	    	request();
+
+    	}, [owm])
+	}
+	```
+
+3. (STOP 3) Compruebe el resultado en el navegador.
+4. Versiona local y remotamente el repositorio **dashboard**.
+5. Despliega la aplicación **dashboard**.
 
 ### Documentación
 
@@ -308,3 +549,4 @@ React Lifecycle, React Lifecycle phases, parser
 * Jamal, T. (2023) How to use google charts with react for Dynamic Data Visualization, Ably Realtime. Available at: https://ably.com/blog/how-to-use-google-charts-with-react (Accessed: 22 June 2024). 
 * How to fetch XML in JavaScript (no date) Code to go. Available at: https://codetogo.io/how-to-fetch-xml-in-javascript/ (Accessed: 22 June 2024). 
 * diego.coder26 (2024) Ciclo de Vida en react.js (hook useeffect), Medium. Available at: https://medium.com/@diego.coder/ciclo-de-vida-en-react-js-hook-useeffect-68d35cf287cf (Accessed: 22 June 2024). 
+* Matharu, M. (2024). A Practical Guide to Using Local Storage in Web and React.js. Retrieved from https://meenumatharu.medium.com/a-practical-guide-to-using-local-storage-in-web-and-react-js-6d163a000c3a
