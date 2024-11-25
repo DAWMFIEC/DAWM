@@ -59,7 +59,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 2. En el hook useEffect del componente _src/App.tsx_
 
-	+ (1) Agregue y ejecute la función asíncrona **request** dentro de la función para el efecto secundario.
+	+ Agregue y ejecute la función asíncrona **request** dentro de la función para el efecto secundario.
 
 	```tsx
 	function App() {
@@ -77,7 +77,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 	
-	+ (2) Agregue una petición asíncrona con fetch dentro de la función de autoejecución **async**.
+	+ Agregue una petición asíncrona con fetch dentro de la función de autoejecución **async**.
 
 	```tsx
 	function App() {
@@ -102,7 +102,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-	+ (3) Agregue el analizador (`parser`) de XML
+	+ Agregue el analizador (`parser`) de XML
 
 	```tsx
 	function App() {
@@ -130,7 +130,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}	
 	```
 
-	+ (4) Agregue el arreglo para almacenar temporalmente los resultados, extraiga el contenido del xml mediante el API del DOM (métodos **getElementsByTagName** y **getAttribute**) y guarde los resultado en arreglo. Revise la estructura del documento XML para extraer los datos necesarios.
+	+ Agregue el arreglo para almacenar temporalmente los resultados, extraiga el contenido del xml mediante el API del DOM (métodos **getElementsByTagName** y **getAttribute**) y guarde los resultado en arreglo. Revise la estructura del documento XML para extraer los datos necesarios.
 
 	```tsx
 	function App() {
@@ -238,7 +238,10 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-3. En el componente _src/App.tsx_, comente el grid anterior e itere la variable de estado.
+3. En el componente _src/App.tsx_:
+	
+	- Comente el grid de indicadores
+	- Itere la variable de estado **indicators** usando la plantilla de elementos `<Grid>` e `<IndicatorWeather>`.
 
 	```tsx
 	...
@@ -277,6 +280,151 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	```
 
 4. (STOP 2) Compruebe el resultado en el navegador.
+
+#### LocalStorage (OPCIONAL)
+
+1. En el hook useEffect del componente _src/App.tsx_, agregue: 
+	
+	- La referencia a las claves del **LocalStorage**: `openWeatherMap` y `expiringTime`
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				{/* Referencia a las claves del LocalStorage: openWeatherMap y expiringTime */}
+				let savedTextXML = localStorage.getItem("openWeatherMap")
+                let expiringTime = localStorage.getItem("expiringTime")
+
+				{/* Request */}
+				...
+
+				{/* XML Parser */}
+                ...
+			}
+
+	    	request();
+
+    	}, [])
+	}
+	```
+
+	- Obtenga la estampa de tiempo actual
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				{/* Referencia a las claves del LocalStorage: openWeatherMap y expiringTime */}
+				...
+
+				{/* Obtenga la estampa de tiempo actual */}
+                let nowTime = (new Date()).getTime();
+
+				{/* Request */}
+				...
+
+				{/* XML Parser */}
+                ...
+			}
+
+	    	request();
+
+    	}, [])
+	}
+	```
+
+	- Verifique si es que no existe la clave `expiringTime` o si la estampa de tiempo actual supera el tiempo de expiración para realizar la petición asincrónica
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				{/* Referencia a las claves del LocalStorage: openWeatherMap y expiringTime */}
+				...
+
+				{/* Obtenga la estampa de tiempo actual */}
+                ...
+
+                {/* Verifique si es que no existe la clave expiringTime o si la estampa de tiempo actual supera el tiempo de expiración */}
+                if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+
+					{/* Request */}
+					...
+				
+				}
+
+				{/* XML Parser */}
+                ...
+			}
+
+	    	request();
+
+    	}, [])
+	}
+	```
+
+	- Luego de realizar la petición asincrónica, calcule y almacene el tiempo de expiración; y almacene el texto en la clave openWeatherMap.
+
+	```jsx
+	...
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(() => {
+
+			let request = async () => {
+
+				{/* Referencia a las claves del LocalStorage: openWeatherMap y expiringTime */}
+				...
+
+				{/* Obtenga la estampa de tiempo actual */}
+                ...
+
+                {/* Verifique si es que no existe la clave expiringTime o si la estampa de tiempo actual supera el tiempo de expiración */}
+                if(expiringTime === null || nowTime > parseInt(expiringTime)) {
+
+					{/* Request */}
+					...
+
+					{/* Tiempo de expiración */}
+
+                    let hours = 1
+                    let delay = hours * 3600000
+                    let expiringTime = nowTime + delay
+
+
+                    {/* En el LocalStorage, almacene el texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
+
+                    localStorage.setItem("openWeatherMap", savedTextXML)
+                    localStorage.setItem("expiringTime", expiringTime.toString() )
+				
+				}
+
+				{/* XML Parser */}
+                ...
+			}
+
+	    	request();
+
+    	}, [])
+	}
+	```
+
 5. Versiona local y remotamente el repositorio **dashboard**.
 6. Despliega la aplicación **dashboard**.
 
