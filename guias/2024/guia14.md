@@ -361,7 +361,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-	- Verifique si es que no existe la clave `expiringTime` o si la estampa de tiempo actual supera el tiempo de expiración para realizar la petición asincrónica
+	- Verifique si no existe la clave `expiringTime` o si la estampa de tiempo actual supera el tiempo de expiración para realizar la petición asincrónica
 
 	```jsx
 	...
@@ -474,20 +474,20 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				{/* Valide el procesamiento con el valor de savedTextXML */}
 				if( savedTextXML ) {
 
-					{/* XML Parser */}
-                	...
+						{/* XML Parser */}
+	                	...
 
-                	{/* Arreglo para agregar los resultados */ }
-                	...
+	                	{/* Arreglo para agregar los resultados */ }
+	                	...
 
-                	{/* 
-			           Análisis, extracción y almacenamiento del contenido del XML 
-			           en el arreglo de resultados
-			       */}
-                	...
+	                	{/* 
+				           Análisis, extracción y almacenamiento del contenido del XML 
+				           en el arreglo de resultados
+				        */}
+	                	...
 
-                	{/* Modificación de la variable de estado mediante la función de actualización */ }
-                	...
+	                	{/* Modificación de la variable de estado mediante la función de actualización */ }
+	                	...
 
 				}
 
