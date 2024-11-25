@@ -407,14 +407,14 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                     let expiringTime = nowTime + delay
 
 
-                    {/* En el LocalStorage, almacene el texto en la clave openWeatherMap, estampa actual y estampa de tiempo de expiración */}
-                    localStorage.setItem("openWeatherMap", savedTextXML)
-                    localStorage.setItem("expiringTime", expiringTime.toString())
-        			localStorage.setItem("nowTime", nowTime.toString())
+					{/* En el LocalStorage, almacene el texto en la clave openWeatherMap, estampa actual y estampa de tiempo de expiración */}
+					localStorage.setItem("openWeatherMap", savedTextXML)
+					localStorage.setItem("expiringTime", expiringTime.toString())
+					localStorage.setItem("nowTime", nowTime.toString())
 
-        			{/* DateTime */}
-			        localStorage.setItem("expiringDateTime", new Date(expiringTime).toString())
-			        localStorage.setItem("nowDateTime", new Date(nowTime).toString())
+					{/* DateTime */}
+					localStorage.setItem("expiringDateTime", new Date(expiringTime).toString())
+					localStorage.setItem("nowDateTime", new Date(nowTime).toString())
 				
 				}
 
