@@ -402,14 +402,12 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 					...
 
 					{/* Tiempo de expiración */}
-
                     let hours = 1
                     let delay = hours * 3600000
                     let expiringTime = nowTime + delay
 
 
                     {/* En el LocalStorage, almacene el texto en la clave openWeatherMap y la estampa de tiempo de expiración */}
-
                     localStorage.setItem("openWeatherMap", savedTextXML)
                     localStorage.setItem("expiringTime", expiringTime.toString() )
 				
