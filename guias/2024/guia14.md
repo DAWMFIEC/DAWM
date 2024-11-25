@@ -475,23 +475,17 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				if( savedTextXML ) {
 
 						{/* XML Parser */}
-	                	...
 
 	                	{/* Arreglo para agregar los resultados */ }
-	                	...
 
 	                	{/* 
 				           Análisis, extracción y almacenamiento del contenido del XML 
 				           en el arreglo de resultados
 				        */}
-	                	...
 
 	                	{/* Modificación de la variable de estado mediante la función de actualización */ }
-	                	...
 
 				}
-
-				
 			}
 
 	    	request();
