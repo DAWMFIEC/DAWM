@@ -28,13 +28,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	import { useEffect } from 'react';
 	```
 
-	- La interfaz _Config_:
+	- La interfaz _Indicator_:
 
 	```tsx
 	{/* Hooks */ }
 	...
 
-	interface Config {
+	interface Indicator {
 	  title?: String;
 	  subtitle?: String;
 	  value?: String;
@@ -149,7 +149,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 				{/* Arreglo para agregar los resultados */}
 
-				let dataToIndicators : Config[] = new Array<Config>();
+				let dataToIndicators : Indicator[] = new Array<Indicator>();
 
 				{/* 
 					Análisis, extracción y almacenamiento del contenido del XML 
@@ -195,13 +195,13 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	import { useEffect, useState } from 'react';
 	```
 
-	- La variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío del tipo _Config_.
+	- La variable de estado **indicators** y la función de actualización **setIndicators**. El valor predeterminado de la variable de estado es un arreglo vacío del tipo _Indicator_.
 
 	```tsx
 	function App() {
 
 		{/* Variable de estado y función de actualización */}
-		let [indicators, setIndicators] = useState<Config[]>([])
+		let [indicators, setIndicators] = useState<Indicator[]>([])
 
 		{/* Hook: useEffect */}
 		...
