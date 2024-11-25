@@ -281,7 +281,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 4. (STOP 2) Compruebe el resultado en el navegador.
 
-#### LocalStorage (OPCIONAL)
+#### LocalStorage
 
 1. En el hook useEffect del componente _src/App.tsx_, agregue: 
 	
@@ -423,8 +423,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-5. Versiona local y remotamente el repositorio **dashboard**.
-6. Despliega la aplicación **dashboard**.
+2. (STOP 3) Compruebe el resultado en el navegador.
+3. Versiona local y remotamente el repositorio **dashboard**.
+4. Despliega la aplicación **dashboard**.
 
 ### Documentación
 
