@@ -2,35 +2,40 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 04: REST API - Express
+## Proyecto 04: Aplicación Híbrida - Angular y Ionic
 
 [DAWM](/DAWM/)
 
-### Como desarrollador de aplicaciones web, ¿Qué es un REST API?
+### ¿Cuáles son los pasos en el proceso para el desarrollo de aplicaciones móviles?
 
 ### Antecedentes
 
-Como desarrollador de aplicaciones web, necesitas desarrollar una solución basada en datos en modelos no relacionales y que pueda ser administrada desde múltiplices interfaces.
+El desarrollo de una aplicación móvil exitosa requiere una cuidadosa consideración de diversos antecedentes para asegurar su viabilidad y relevancia en el mercado actual. Antes de comenzar, es esencial tener en cuenta los siguientes factores clave: análisis de Mercado, plataforma y dispositivos Compatibles, desarrollo ágil y pruebas rigurosas y soporte continuo y actualizaciones.
 
 ### ChatGPT
 
 Para el prompt: 
 
 ```
-Como desarrollador de aplicaciones web, ¿Qué es un REST API? 
+Como desarrollador de aplicaciones móviles, explica los pasos del proceso para crear una aplicación móvil.
 ```
 La respuesta es:
 
-![respuesta](archivos/proyecto04-pregunta.png)
+![respuesta](archivos/proyecto05-pregunta1.png)
+
+Para el prompt: 
+
+```
+Redacta posibles problemas cuya solución implique el desarrollo y uso de una aplicación móvil.
+```
+La respuesta es:
+
+![respuesta](archivos/proyecto05-pregunta2.png)
 
 ### Guías
 
-* [Guía 15: REST API (Datos) - Express, Firebase - Firestore y cURL](/DAWM/guias/2024/guia15)
-* [Guía 16: REST API (Datos) - Swagger y Postman](/DAWM/guias/2024/guia16)
-* [Guía 17: REST API (Datos) - Despliegue en Render](/DAWM/guias/2024/guia17)
-* [Guía 18: REST API (Seguridad) - Views y ORM - I](/DAWM/guias/2024/guia18)
-* [Guía 19: REST API (Seguridad) - Partials y ORM - II](/DAWM/guias/2024/guia19)
-* [Guía 20: REST API (Seguridad) - Login](/DAWM/guias/2024/guia20)
-* [Guía 21: REST API (Seguridad) - Cookies y Session](/DAWM/guias/2024/guia21)
-* [Guía 22: REST API (Seguridad) - Despliegue en Railway](/DAWM/guias/2024/guia22)
-* [Guía 23: REST API (Seguridad y Datos) - JWT](/DAWM/guias/2024/guia23)
+* [Guía 15: Angular y Ionic - Introducción y Componentes](/DAWM/guias/2024/guia15)
+* [Guía 16: Angular y Ionic - TeachableMachine](/DAWM/guias/2024/guia16)
+* [Guía 17: Angular y Ionic - Servicios y Firebase](/DAWM/guias/2024/guia17)
+* [Guía 18: Angular y Ionic - Ventanas Modales y Signals](/DAWM/guias/2024/guia18)
+* [Guía 19: Angular y Ionic - Generación del apk](/DAWM/guias/2024/guia19)

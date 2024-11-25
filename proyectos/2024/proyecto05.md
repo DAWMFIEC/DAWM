@@ -2,40 +2,35 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Proyecto 05: Móvil - Ionic y Firebase
+## Proyecto 04: REST API - Express
 
 [DAWM](/DAWM/)
 
-### ¿Cuáles son los pasos en el proceso para el desarrollo de aplicaciones móviles?
+### Como desarrollador de aplicaciones web, ¿Qué es un REST API?
 
 ### Antecedentes
 
-El desarrollo de una aplicación móvil exitosa requiere una cuidadosa consideración de diversos antecedentes para asegurar su viabilidad y relevancia en el mercado actual. Antes de comenzar, es esencial tener en cuenta los siguientes factores clave: análisis de Mercado, plataforma y dispositivos Compatibles, desarrollo ágil y pruebas rigurosas y soporte continuo y actualizaciones.
+Como desarrollador de aplicaciones web, necesitas desarrollar una solución basada en datos en modelos no relacionales y que pueda ser administrada desde múltiplices interfaces.
 
 ### ChatGPT
 
 Para el prompt: 
 
 ```
-Como desarrollador de aplicaciones móviles, explica los pasos del proceso para crear una aplicación móvil.
+Como desarrollador de aplicaciones web, ¿Qué es un REST API? 
 ```
 La respuesta es:
 
-![respuesta](archivos/proyecto05-pregunta1.png)
-
-Para el prompt: 
-
-```
-Redacta posibles problemas cuya solución implique el desarrollo y uso de una aplicación móvil.
-```
-La respuesta es:
-
-![respuesta](archivos/proyecto05-pregunta2.png)
+![respuesta](archivos/proyecto04-pregunta.png)
 
 ### Guías
 
-* [Guía 24: Ionic - Introducción y Componentes](/DAWM/guias/2024/guia24)
-* [Guía 25: Ionic - Funcionalidad nativa: Cámara](/DAWM/guias/2024/guia25)
-* [Guía 26: Ionic - Servicios y Firebase](/DAWM/guias/2024/guia26)
-* [Guía 27: Ionic - Ventanas Modales y Signals](/DAWM/guias/2024/guia27)
-* [Guía 28: Ionic - Generación del apk](/DAWM/guias/2024/guia28)
+* [Guía 15: REST API (Datos) - Express, Firebase - Firestore y cURL](/DAWM/guias/2024/guia15)
+* [Guía 16: REST API (Datos) - Swagger y Postman](/DAWM/guias/2024/guia16)
+* [Guía 17: REST API (Datos) - Despliegue en Render](/DAWM/guias/2024/guia17)
+* [Guía 18: REST API (Seguridad) - Views y ORM - I](/DAWM/guias/2024/guia18)
+* [Guía 19: REST API (Seguridad) - Partials y ORM - II](/DAWM/guias/2024/guia19)
+* [Guía 20: REST API (Seguridad) - Login](/DAWM/guias/2024/guia20)
+* [Guía 21: REST API (Seguridad) - Cookies y Session](/DAWM/guias/2024/guia21)
+* [Guía 22: REST API (Seguridad) - Despliegue en Railway](/DAWM/guias/2024/guia22)
+* [Guía 23: REST API (Seguridad y Datos) - JWT](/DAWM/guias/2024/guia23)
