@@ -402,7 +402,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 					...
 
 					{/* Tiempo de expiración */}
-                    let hours = 0.25
+                    let hours = 0.01
                     let delay = hours * 3600000
                     let expiringTime = nowTime + delay
 
