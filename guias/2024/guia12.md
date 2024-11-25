@@ -69,19 +69,19 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 
 1. En _src/components/IndicatorWeather.tsx_:
 
-    - Agregue la interfaz **Config** con las claves title, subtitle y value,
-    - Defina **config** del tipo Config, como [props](https://react.dev/learn/passing-props-to-a-component) del componente, y
+    - Agregue la interfaz **Indicator** con las claves title, subtitle y value,
+    - Defina **config** del tipo Indicator, como [props](https://react.dev/learn/passing-props-to-a-component) del componente, y
     - Renderice las claves title, subtitle y value
 
     ```jsx
     ...
-    interface Config {
+    interface Indicator {
         title?: String;
         subtitle?: String;
         value?: String;
     }
 
-    export default function IndicatorWeather(config: Config) {
+    export default function IndicatorWeather(config: Indicator) {
         return (
             <>
                 {config.title}<br/>
@@ -143,9 +143,9 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
     import Typography from '@mui/material/Typography';
     import Paper from '@mui/material/Paper';
     
-    interface Config { ... }
+    interface Indicator { ... }
 
-    export default function IndicatorWeather(config: Config) {
+    export default function IndicatorWeather(config: Indicator) {
         return (
             <Paper
                 sx={% raw %}{{{% endraw %}
