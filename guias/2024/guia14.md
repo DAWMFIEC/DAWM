@@ -238,7 +238,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-3. En el componente _src/App.tsx_, itere la variable de estado.
+3. En el componente _src/App.tsx_, comente el grid anterior e itere la variable de estado.
 
 	```tsx
 	...
