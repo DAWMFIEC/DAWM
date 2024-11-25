@@ -47,7 +47,7 @@ import CardContent from '@mui/material/CardContent';
 import { CardActionArea } from '@mui/material';
 
 //Grid v2
-import Grid from '@mui/material/Unstable_Grid2'; // Grid version 2
+import Grid from '@mui/material/Grid2'; // Grid version 2
 
 //Radio Group
 import Radio from '@mui/material/Radio';
