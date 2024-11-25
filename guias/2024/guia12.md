@@ -159,7 +159,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
                     {config.title} 
                 </Typography>
                 <Typography component="p" variant="h4">
-                    {config.value.toString()}
+                    {config.value}
                 </Typography>
                 <Typography color="text.secondary" sx={% raw %}{{{% endraw %} flex: 1 {% raw %}}}{% endraw %}>
                     {config.subtitle}
