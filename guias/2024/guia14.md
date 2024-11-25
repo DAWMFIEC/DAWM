@@ -277,47 +277,6 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	```
 
 4. (STOP 2) Compruebe el resultado en el navegador.
-
-#### Componente TableWeather: hook - useState
-
-1. Defina:
-
-	+ Los datos a procesar y mostrar en una fila de la Tabla, p.e.: **time@from**, **time@to** y **windDirection**.
-	+ La estructura de datos para almacenar los datos, p.e.: Arreglo de objetos 
-		
-		```json
-		[
-			{
-				"from": "21:00:00",
-				"to": "00:00:00",
-				"windDirection": "225 SW"
-			},  
-		...
-		]
-		```
-
-2. En el componente _src/App.tsx_, agregue: 
-
-	+ (1) La interfaz **Row** con la descripción de los datos (claves: "from", "to" y "windDirection", de tipo String).
-	+ (2) La variable de estado (dataTable) y función de actualización (setDataTable). El valor predeterminado es un arreglo vacío del tipo **ConfigRow**.
-	+ (3) Dentro del hook - useEffect: 
-		- Cree un arreglo temporal del tipo **ConfigRow**.
-		- El código para extraer y almacenar del contenido del XML en un arreglo temporal del tipo **Row**.
-		- Actualice de la variable de estado mediante la función de actualización (setDataTable).
-	+ (4) En el JSX: Envíe la variable de estado (dataTable) como prop (data) del componente TableWeather.
-	
-3. En el componente _src/components/TableWeather.tsx_, agregue: 
-
-	- (1) Importe los hooks de estado y ejecución en segundo plano (useState y useEffect) 
-	- (2) Comente la funciones de procesamiento de datos (createData) y las variables con valores fijos (rows)
-	- (3) La interfaz **Row** con la descripción de los datos (claves: "rows", de tipo Array<object>).
-	- (4) Declare un prop **data** del tipo **Row**.
-	- (5) Declare la variable de estado (rows) y la función de actualización (setRows). Use el mismo identificador de la variable con valores fijos (**rows**)
-	- (6) Agregue el hook useEffect, controlado por el prop del componente (data). Dentro del hook, invoque al método de actualización con el valor del prop (data.rows).
-	- (7) Modifique la cabecera de la tabla con los títulos adecuados
-	- (8) Modifique el cuerpo de la tabla al iterar la variable de estado (rows)
-
-4. (STOP 4) Compruebe el resultado en el navegador.
 5. Versiona local y remotamente el repositorio **dashboard**.
 6. Despliega la aplicación **dashboard**.
 
