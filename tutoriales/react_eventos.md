@@ -85,7 +85,7 @@ export default function Calculator() {
 
 		        <Grid container spacing={5}>
 
-		            <Grid xs={12} xl={6} >
+		            <Grid {% raw %}{{{% endraw %} xs: 12, xl: 6 {% raw %}}}{% endraw %} >
 		              <Typography gutterBottom component="h4" color="secondary">
 		                Tipos de promociones 
 		              </Typography>
@@ -94,7 +94,7 @@ export default function Calculator() {
 
 		            </Grid>
 
-		            <Grid xs={12} xl={6}>
+		            <Grid {% raw %}{{{% endraw %} xs: 12, xl: 6 {% raw %}}}{% endraw %}>
 		              <Typography gutterBottom component="h4" color="secondary">
 		                Tiempo de aplicación 
 		              </Typography>
