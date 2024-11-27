@@ -238,10 +238,39 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-3. En el componente _src/App.tsx_:
+4. Agregue la función **renderIndicators** encargada de iterar la variable de estado **indicators** usando la plantilla de elementos `<Grid>` e `<IndicatorWeather>`
 	
-	- Comente el grid de indicadores
-	- Itere la variable de estado **indicators** usando la plantilla de elementos `<Grid>` e `<IndicatorWeather>`.
+	```tsx
+	function App() {
+
+		{/* Hook: useEffect */}
+		useEffect(()=>{ ... },[])
+
+		let renderIndicators = () => {
+
+			return indicators
+					.map(
+						(indicator, idx) => (
+							<Grid key={idx} size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}>
+								<IndicatorWeather 
+									title={indicator["title"]} 
+									subtitle={indicator["subtitle"]} 
+									value={indicator["value"]} />
+							</Grid>
+						)
+					)
+					
+		}
+
+		{/* JSX */}
+		return ( ... )
+	}
+	```
+
+5. En el componente _src/App.tsx_:
+	
+	- Comente el grid de indicadores previo.
+	- Llame a la función **renderIndicators**.
 
 	```tsx
 	...
@@ -258,19 +287,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 				{/* Indicadores */}
 				{/* <Grid size={{ xs: 12, xl: 3 }}> ... </Grid> */}
 
-				{
-					indicators
-					.map(
-						(indicator, idx) => (
-							<Grid key={idx} size={% raw %}{{{% endraw %} xs: 12, xl: 3 {% raw %}}}{% endraw %}>
-								<IndicatorWeather 
-									title={indicator["title"]} 
-									subtitle={indicator["subtitle"]} 
-									value={indicator["value"]} />
-							</Grid>
-						)
-					)
-				}
+				{renderIndicators()}
 				
 			</Grid>
 
@@ -279,7 +296,7 @@ Desarrollar un dashboard interactivo y visualmente intuitivo utilizando tecnolog
 	}
 	```
 
-4. (STOP 2) Compruebe el resultado en el navegador.
+6. (STOP 2) Compruebe el resultado en el navegador.
 
 #### LocalStorage
 
