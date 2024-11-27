@@ -56,7 +56,7 @@ theme: jekyll-theme-leap-day
 
 #### IonTab
 
-1. Edite el archivo _hybrid/src/app/tabs/tabs.page.ts_, con:
+1. Edite el archivo _src/app/tabs/tabs.page.ts_, con:
 
     + El ícono **peopleCirle** de [Ionicons](https://ionic.io/ionicons)
 
@@ -80,7 +80,7 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-2. Edite el archivo _hybrid/src/app/tabs/tabs.page.html_, con:
+2. Edite el archivo _src/app/tabs/tabs.page.html_, con:
 
     ```html
     <ion-tabs>
@@ -108,7 +108,7 @@ theme: jekyll-theme-leap-day
 
 #### IonCard
 
-1. Edite el archivo _hybrid/src/app/tab3/tab3.page.ts_, con:
+1. Edite el archivo _src/app/tab3/tab3.page.ts_, con:
 
     + Importe el componente [Card](https://ionicframework.com/docs/api/card) y sus asociados.
   
@@ -140,7 +140,7 @@ theme: jekyll-theme-leap-day
     }
     ```
 
-2. Edite el archivo _hybrid/src/app/tab3/tab3.page.html_, con:
+2. Edite el archivo _src/app/tab3/tab3.page.html_, con:
 
     + Todo el contenido
 
@@ -173,7 +173,7 @@ theme: jekyll-theme-leap-day
     </ion-content>
     ```
 
-3. Edite el archivo _hybrid/src/app/tab3/tab3.page.scss_, con:
+3. Edite el archivo _src/app/tab3/tab3.page.scss_, con:
 
     ```css
     .titulo {
@@ -195,17 +195,17 @@ theme: jekyll-theme-leap-day
 
 #### Github
 
-1. Crea un repositorio en GitHub con el nombre **hybrid**.
+1. Crea un repositorio en GitHub con el nombre **.**.
 2. Desde la línea de comandos:
   
   + Agregue la rama **main** y el tag **origin**:
   
     ```command
     git branch -M main
-    git remote add origin https://github.com/aavendan/hybrid.git
+    git remote add origin https://github.com/aavendan/..git
     ```
 
-3. Versiona local y remotamente el repositorio **hybrid**.
+3. Versiona local y remotamente el repositorio **.**.
 
     ```command
     git add .
