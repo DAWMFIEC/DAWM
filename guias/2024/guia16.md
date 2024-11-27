@@ -2,19 +2,15 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 24
+## Guía 16
 
-[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2024/proyecto05)
+[DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2024/proyecto04)
 
-### Actividades previas
+<link href="styles/mystyle.css" rel="stylesheet" />
 
-1. En grupo de tres (3) personas, identifiquen un problema que deseen resolver con una aplicación móvil.
-2. Diseñe un prototipo con las interfaces de su aplicación móvil, con al menos cuatro (4) vistas:
-  + **Principal** muestra la funcionalidad principal de la aplicación (por ejemplo, feed de noticias, catálogo de productos, resumen de cuentas, album de fotos, etc.). Opcionalmente, puede incluir herramientas de búsqueda y filtros si es necesario.
-  + **Detalles de un elemento** en una vista individual muestra los detalles un elemento (por ejemplo, detalles de una publicación, detalles de un producto, total de cuentas por tipo, etc.).
-  + **Ingreso de un elemento** contiene las funcionalidades para agregar, ver y gestionar un elemento.
-  + **Acerca de** con la información del proyecto y de las personas que intervienen en el proyecto.
-3. Seleccione un diseño que se ajuste a su prototipo. Puede considerar alguna de las siguientes fuentes: [Mobbin](https://mobbin.com/browse/android/apps) o [Scrnshts](https://scrnshts.club/) 
+### Objetivo general
+
+<pre class="purpose">Desarrollar una aplicación híbrida utilizando tecnologías que integren modelos de aprendizaje automático previamente entrenados en un entorno funcional y accesible para resolver problemas específicos mediante el reconocimiento de patrones, objetos o sonidos fomentando habilidades prácticas en el desarrollo de aplicaciones móviles con tecnologías modernas y la implementación de inteligencia artificial.</pre>
 
 ### Actividades en clases
 
