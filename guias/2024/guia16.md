@@ -21,6 +21,7 @@ theme: jekyll-theme-leap-day
     ```command
     npm install -g @ionic/cli native-run cordova-res
     ```
+
 #### Ionic Angular - Plantilla inicial
 
 1. Cree un proyecto en Ionic:
@@ -28,7 +29,7 @@ theme: jekyll-theme-leap-day
     + Desde la línea de comandos, utilice el comando **ionic** con: 
 
     ```command
-    ionic start hybrid tabs --type=angular --capacitor
+    ionic start <NOMBRE-PROYECTO> tabs --type=angular --capacitor
     ```
 
     + Seleccione el tipo componente Standalone para construir la aplicación
@@ -42,7 +43,7 @@ theme: jekyll-theme-leap-day
 2. Acceda a la carpeta del proyecto y levante el servidor, con:
 
     ```command
-    cd hybrid
+    cd <NOMBRE-PROYECTO>
     ionic serve
     ```
 
