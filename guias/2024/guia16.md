@@ -14,6 +14,13 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+#### Github
+
+1. Crea un repositorio en GitHub con el nombre **hibrido**.
+  - Incluya el archivo _README.md_.
+  - Agregue _.gitignore_ con la plantilla **Node**.
+2. Clone su repositorio localmente.
+
 #### Dependencias Globales
 
 1. Instale los módulos Ionic CLI, native-run (para ejecutar binarios nativos en dispositivos y simuladores/emuladores) y cordova-res (para generar íconos de aplicaciones nativas y pantallas de presentación), con: 
@@ -29,7 +36,7 @@ theme: jekyll-theme-leap-day
     + Desde la línea de comandos, utilice el comando **ionic** con: 
 
     ```command
-    ionic start <NOMBRE-PROYECTO> tabs --type=angular --capacitor
+    ionic start . tabs --type=angular --capacitor
     ```
 
     + Seleccione el tipo componente Standalone para construir la aplicación
@@ -43,7 +50,6 @@ theme: jekyll-theme-leap-day
 2. Acceda a la carpeta del proyecto y levante el servidor, con:
 
     ```command
-    cd <NOMBRE-PROYECTO>
     ionic serve
     ```
 
