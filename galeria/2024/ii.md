@@ -4,6 +4,29 @@
 
 | Nombre | Vista  Previa | Sitio |
 | :----  | :----------: | :---: |
+| David Aragundy | [Ver](imagenes_repositorio/waldaara.github.io.png)  | [Ir](https://waldaara.github.io/waldaara/)      				|
+| Génesis López | [Ver](imagenes_repositorio/gennalop.github.io.png)  | [Ir](https://gennalop.github.io/Gennalop/)      				|
+| Angelo Zurita | [Ver](imagenes_repositorio/aszurita.github.io.png)  | [Ir](https://aszurita.github.io/aszurita/)      				|
+| Mariu Andrade Veloz | [Ver](imagenes_repositorio/mariuandradev.github.io.png)  | [Ir](https://mariuandradev.github.io/MariuAndradeV/)      				|
+| Carlos Flores | [Ver](imagenes_repositorio/darloscode.github.io.png)  | [Ir](https://darloscode.github.io/darloscode/)      				|
+| Joel Guamaní | [Ver](imagenes_repositorio/isaiasgh.github.io.png)  | [Ir](https://isaiasgh.github.io/isaiasgh/)      				|
+| Alexandre Icaza | [Ver](imagenes_repositorio/aledicaz.github.io.png)  | [Ir](https://aledicaz.github.io/aledicaz/)      				|
+| Jaren Pazmiño | [Ver](imagenes_repositorio/jarenpol1015.github.io.png)  | [Ir](https://jarenpol1015.github.io/JarenPOL1015/)      				|
+| Carlos Salazar | [Ver](imagenes_repositorio/carlossv03.github.io.png)  | [Ir](https://carlossv03.github.io/Carlossv03/)      				|
+| Braulio Rivas | [Ver](imagenes_repositorio/brauliorivas.github.io.png)  | [Ir](https://brauliorivas.github.io/brauliorivas/)      				|
+| Gabriela Jiménez | [Ver](imagenes_repositorio/gabsjimz.github.io.png)  | [Ir](https://gabsjimz.github.io/gabsjimz/)      				|
+| Adrian Salamea | [Ver](imagenes_repositorio/adrianlsq2000.github.io.png)  | [Ir](https://adrianlsq2000.github.io/Adrianlsq2000/)      				|
+| Noelia Saltos | [Ver](imagenes_repositorio/noesaltos.github.io.png)  | [Ir](https://noesaltos.github.io/NoeSaltos/)      				|
+| Christopher Villon  | [Ver](imagenes_repositorio/chrvillon.github.io.png)  | [Ir](https://chrvillon.github.io/ChrVillon/)      				|
+| Diego Araujo | [Ver](imagenes_repositorio/diegoa00.github.io.png)  | [Ir](https://diegoa00.github.io/DiegoA00/)      				|
+|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
+|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
+|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
+|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
+|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
+|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
+|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
+|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
 |  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
 
 
