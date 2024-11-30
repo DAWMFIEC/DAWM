@@ -19,15 +19,21 @@
 | Noelia Saltos | [Ver](imagenes_repositorio/noesaltos.github.io.png)  | [Ir](https://noesaltos.github.io/NoeSaltos/)      				|
 | Christopher Villon  | [Ver](imagenes_repositorio/chrvillon.github.io.png)  | [Ir](https://chrvillon.github.io/ChrVillon/)      				|
 | Diego Araujo | [Ver](imagenes_repositorio/diegoa00.github.io.png)  | [Ir](https://diegoa00.github.io/DiegoA00/)      				|
-|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
-|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
-|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
-|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
-|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
-|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
-|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
-|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
-|  | [Ver](imagenes_repositorio/.png)  | [Ir](https://.github.io//)      				|
+| Isaac Criollo | [Ver](imagenes_repositorio/izaako04.github.io.png)  | [Ir](https://izaako04.github.io/Izaako04/)      				|
+| Matías Collaguazo | [Ver](imagenes_repositorio/matiascollaguazo.github.io.png)  | [Ir](https://matiascollaguazo.github.io/RepositorioPersonal/)      				|
+| Alejandro Diez | [Ver](imagenes_repositorio/alexdiez10.github.io.png)  | [Ir](https://alexdiez10.github.io/AlexDiez10/)      				|
+| Alex Benites | [Ver](imagenes_repositorio/alex-benites.github.io.png)  | [Ir](https://alex-benites.github.io/Alex-Benites/)      				|
+| Ariana Gonzabay | [Ver](imagenes_repositorio/arianagonzabay.github.io.png)  | [Ir](https://arianagonzabay.github.io/ArianaGonzabay/)      				|
+| Nehemias Lindao | [Ver](imagenes_repositorio/nlindao2004.github.io.png)  | [Ir](https://nlindao2004.github.io/NLindao2004/)      				|
+| Steven Lino | [Ver](imagenes_repositorio/stevenlino.github.io.png)  | [Ir](https://stevenlino.github.io/StevenLino/)      				|
+| Dhamar Quishpe | [Ver](imagenes_repositorio/dquishpe.github.io.png)  | [Ir](https://dquishpe.github.io/dquishpe/)      				|
+| José Marin | [Ver](imagenes_repositorio/josem0lina.github.io.png)  | [Ir](https://josem0lina.github.io/JoseM0lina/)      				|
+| Piero Pazmiño | [Ver](imagenes_repositorio/pieropazmino.github.io.png)  | [Ir](https://pieropazmino.github.io/PieroPazmino/)      				|
+| Justyn Roldán | [Ver](imagenes_repositorio/jjroldev.github.io.png)  | [Ir]https://jjroldev.github.io/jjroldev/)      				|
+| Paulette Maldonado | [Ver](imagenes_repositorio/paulettemal.github.io.png)  | [Ir](https://paulettemal.github.io/paulettemald/)      				|
+| Pauleth Tandazo | [Ver](imagenes_repositorio/paulethtandazo.github.io.png)  | [Ir](https://paulethtandazo.github.io/paulethTandazo/)      				|
+| Silvia Saquisilí | [Ver](imagenes_repositorio/ssaquisi.github.io.png)  | [Ir](https://ssaquisi.github.io/ssaquisi/)      				|
+| Steeven Gómez | [Ver](imagenes_repositorio/steevengd.github.io.png)  | [Ir](https://steevengd.github.io/SteevenGD/)      				|
 
 
 ## Proyecto 01: Curriculum Vitae - HTML & CSS
