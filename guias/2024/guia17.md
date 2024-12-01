@@ -37,13 +37,13 @@ theme: jekyll-theme-leap-day
 1. Desde la línea de comandos, cree una interfaz de Angular, con:
 
 	```command
-	ionic g interface interfaces/data
+	ionic g interface interfaces/datum
 	```
 
-2. Modifique _hibrido/src/app/interfaces/data.ts_, con:
+2. Modifique _hibrido/src/app/interfaces/datum.ts_, con:
 
 	```typescript
-	export interface Data {
+	export interface Datum {
 	    text: string;
 	}
 	```
@@ -140,7 +140,7 @@ theme: jekyll-theme-leap-day
 	} from '@ionic/angular/standalone';
 
 	/* 2. Importe de la interfaz */
-	import { Data } from '../interfaces/data';
+	import { Datum } from '../interfaces/datum';
 
 	/* 3. Importe del servicio */
 	import { ProviderService } from '../services/provider.service';
@@ -184,7 +184,7 @@ theme: jekyll-theme-leap-day
 	export class Tab1Page {
 
 	  /* 9. Atributo con el tipo de dato de la interfaz */
-	  public data : Data[] = [];
+	  public data : Datum[] = [];
 
 	  /* 10. Formulario reactivo */
 	  checkoutForm = this.formBuilder.group({
@@ -228,7 +228,7 @@ theme: jekyll-theme-leap-day
 	  loadData() {
 	    this.dataProvider.getResponse().subscribe( response => {
 	      if( response != null) {
-	        this.data = Object.values(response) as Data[]
+	        this.data = Object.values(response) as Datum[]
 	      }
 	    })
 	  }
