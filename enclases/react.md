@@ -105,10 +105,13 @@ theme: jekyll-theme-leap-day
 	</div>
 
 
+#### _LineChartWeather.tsx_
+
+Ajuste y repita el proceso para el componente LineChartWeather.
 
 ### Entregable
 
-* Comprima todos los archivos **TableWeather.tsx**  en formato .zip, o .rar, y responda a la actividad en el aulavirtual.
+* Comprima todos los archivos **TableWeather.tsx** y **LineChartWeather.tsx**  en formato .zip, o .rar, y responda a la actividad en el aulavirtual.
 
 ### Referencias
 
