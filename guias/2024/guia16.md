@@ -113,7 +113,8 @@ theme: jekyll-theme-leap-day
 
 1. Edite el archivo _src/app/tab3/tab3.page.ts_, con:
 
-    + Importe el componente [Card](https://ionicframework.com/docs/api/card) y sus asociados.
+    + Importe el componente [IonCard](https://ionicframework.com/docs/api/card) y sus asociados (onCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent).
+    + Agregue los componentes al decorador _@Component_ de la clase _Tab3Page_.
   
     ```typescript
     ...
@@ -145,7 +146,7 @@ theme: jekyll-theme-leap-day
 
 2. Edite el archivo _src/app/tab3/tab3.page.html_, con:
 
-    + Todo el contenido
+    + Reemplace todo el contenido por los siguientes componentes.
 
     ```html
     <ion-header [translucent]="true">
