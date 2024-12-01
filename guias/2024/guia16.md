@@ -46,7 +46,7 @@ theme: jekyll-theme-leap-day
     ionic serve
     ```
 
-3. (STOP 1) Revise los cambios en el navegador
+3. (STOP 1) Revise los cambios en el navegador, activando el **Toggle device toolbar**
 
     <div align="center">
       <img src="imagenes/ionic_base.jpg">
