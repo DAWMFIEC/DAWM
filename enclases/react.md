@@ -72,19 +72,19 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-2. Defina un prop del tipo de la interfaz 
+3. Defina un prop del tipo de la interfaz 
 
 	```typescript
 	export default function BasicTable(arrayIn: MyProp) { ... }
 	```
 
-3. Cree una variable de estado y función de actualización para un arreglo del tipo **Item**.
-4. Use un useEffect, que: 
+4. Cree una variable de estado (sugerencia **rows**) y función de actualización (sugerencia **setRows**) para un arreglo del tipo **Item**.
+5. Use un useEffect, que: 
 	
 	- El callback llame la función de actualización con la clave **itemsIn** del prop **arrayIn**.
 	- Dependiente del prop **arrayIn**.
 
-5. En el _JSX_:
+6. En el _JSX_:
 
 	- Dentro de la etiqueta `<TableBody>`, itere en la variable de estado (arreglo del tipo **Item**)
 
@@ -106,7 +106,7 @@ theme: jekyll-theme-leap-day
 
 	- Muestre las otras claves de los elementos
 
-6. Cambie los nombres de las cabeceras de la tabla
+7. Cambie los nombres de las cabeceras de la tabla
 
 	```jsx
 	<TableRow>
@@ -118,7 +118,7 @@ theme: jekyll-theme-leap-day
 	</TableRow>
 	```
 
-7. Verifique la salida en el navegador
+8. Verifique la salida en el navegador
 
 
 	<div align="center">
