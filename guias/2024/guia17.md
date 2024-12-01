@@ -316,8 +316,8 @@ theme: jekyll-theme-leap-day
 	</ion-content>
 	```
 
-
-* Versiona local y remotamente el repositorio **hibrido**.
+2. (STOP 1) Revise los cambios en el navegador.
+3. Versiona local y remotamente el repositorio **hibrido**.
 
 ### Documentación
 
