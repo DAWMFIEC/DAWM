@@ -19,27 +19,36 @@ theme: jekyll-theme-leap-day
 	- Las claves **dateStart**, **dateEnd**, **precipitation**, **humidity** y **clouds**. 
 	- Todas las claves son de tipo _String_.
 
+	```jsx
+	export default interface Item {
+		dateStart: String;
+		...
+	}
+	```
+
 #### _App.tsx_
 
 1. Importe la interfaz **Item**
 2. Cree una variable de estado y función de actualización para un arreglo del tipo **Item**.
 3. En el callback del hook _useEffect_:
 
-	- Cree un arreglo del tipo **Item**.
+	+ Cree un arreglo temporalmente del tipo **Item** para almacenar los valores del XML.
 	
 	```typescript
 	let dataToItems: Item[] = new Array<Item>();
 	```
-	- De las etiquetas `<time>`, extraiga los atributos **@from**, **@to**
-	- De las etiquetas `<precipitacion>`, extraiga el atributo **probability**
-	- De las etiquetas `<humidity>`, extraiga el atributo **value**
-	- De las etiquetas `<clouds>`, extraiga el atributo **all** 
+	
+	+ Obtenga la referencia a los primeros 6 elementos `<time>`:
+		- De la etiqueta `<time>`, extraiga los atributos **@from**, **@to**
+		- De la etiqueta `<time> > <precipitacion>`, extraiga el atributo **probability**
+		- De la etiqueta `<time> > <humidity>`, extraiga el atributo **value**
+		- De la etiqueta `<time> > <clouds>`, extraiga el atributo **all** 
 
 	<div align="center">
 	    <img src="imagenes/time.png">
 	</div>
 
-	- Modifique de la variable de estado mediante la función de actualización para el arreglo del tipo **Item**.
+	+ Modifique de la variable de estado mediante la función de actualización para el arreglo del tipo **Item**.
 
 4. En el _JSX_:
 
@@ -72,7 +81,7 @@ theme: jekyll-theme-leap-day
 3. Cree una variable de estado y función de actualización para un arreglo del tipo **Item**.
 4. Use un useEffect, que: 
 	
-	- El callback que llame la función de actualización con la clave **itemsIn** del prop **arrayIn**.
+	- El callback llame la función de actualización con la clave **itemsIn** del prop **arrayIn**.
 	- Dependiente del prop **arrayIn**.
 
 5. En el _JSX_:
@@ -84,7 +93,7 @@ theme: jekyll-theme-leap-day
       {rows.map((row, idx) => (
         <TableRow
           key={idx}
-          sx=={% raw %}{{{% endraw %} '&:last-child td, &:last-child th': { border: 0 } ={% raw %}}}{% endraw %}
+          sx={% raw %}{{{% endraw %} '&:last-child td, &:last-child th': { border: 0 } {% raw %}}}{% endraw %}
         >
           <TableCell component="th" scope="row">
             {row.dateStart}
