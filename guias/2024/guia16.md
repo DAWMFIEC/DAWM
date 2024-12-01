@@ -14,13 +14,6 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Github
-
-1. Crea un repositorio en GitHub con el nombre **hibrido**.
-  - Incluya el archivo _README.md_.
-  - Agregue _.gitignore_ con la plantilla **Node**.
-2. Clone su repositorio localmente.
-
 #### Dependencias Globales
 
 1. Instale los módulos Ionic CLI, native-run (para ejecutar binarios nativos en dispositivos y simuladores/emuladores) y cordova-res (para generar íconos de aplicaciones nativas y pantallas de presentación), con: 
@@ -36,7 +29,7 @@ theme: jekyll-theme-leap-day
     + Desde la línea de comandos, utilice el comando **ionic** con: 
 
     ```command
-    ionic start . tabs --type=angular --capacitor
+    ionic start hibrido tabs --type=angular --capacitor
     ```
 
     + Seleccione el tipo componente Standalone para construir la aplicación
@@ -201,14 +194,17 @@ theme: jekyll-theme-leap-day
 
 #### Github
 
-1. Crea un repositorio en GitHub con el nombre **.**.
+1. Crea un repositorio en GitHub con el nombre **hibrido**.
+  - Incluya el archivo _README.md_.
+  - Agregue _.gitignore_ con la plantilla **Node**.
+
 2. Desde la línea de comandos:
   
   + Agregue la rama **main** y el tag **origin**:
   
     ```command
     git branch -M main
-    git remote add origin https://github.com/aavendan/..git
+    git remote add origin https://github.com/<SU-USUARIO>/hibrido.git
     ```
 
 3. Versiona local y remotamente el repositorio **.**.
