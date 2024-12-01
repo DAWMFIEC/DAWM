@@ -269,7 +269,7 @@ theme: jekyll-theme-leap-day
 
 1. Modifique el archivo _hibrido/src/app/tab1/tab1.page.html_, con:
 
-	+ Utilice la directiva `*ngFor` para recorrer el arreglo `data` en la vista (html) del componente seleccionado. 
+	+ Reemplace el contenido completo del componente `<ion-content>`, en el que utiliza el bloque de control `@for` para recorrer el arreglo `data` en la vista (html) del componente seleccionado. 
 
 	```html
 	...
