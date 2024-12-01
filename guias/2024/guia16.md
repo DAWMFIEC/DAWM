@@ -200,12 +200,11 @@ theme: jekyll-theme-leap-day
 #### Github
 
 1. Crea un repositorio en GitHub con el nombre **hibrido**.
-  - Incluya el archivo _README.md_.
-  - Agregue _.gitignore_ con la plantilla **Node**.
+    - No incluya el archivo _README.md_, ni el_.gitignore_.
 
 2. Desde la línea de comandos:
   
-  + Agregue la rama **main** y el tag **origin**:
+    + Agregue la rama **main** y el tag **origin**:
   
     ```command
     git branch -M main
