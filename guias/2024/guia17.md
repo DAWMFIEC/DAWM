@@ -14,15 +14,14 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-1. En Firebase, cree el proyecto **hybrid** 
+1. En Firebase, cree el proyecto **hibrido** 
 2. Agregue el servicio [Realtime Database](https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database)
-3. Agregue la clave **collection**
-4. Modifique las reglas de acceso para el acceso permanente.
-5. Verifique el _endpoint_ de la colección, p.e.: [https://hybrid-ff472-default-rtdb.firebaseio.com/collection.json](https://hybrid-ff472-default-rtdb.firebaseio.com/collection.json)
+3. Modifique las reglas de acceso para el acceso permanente.
+4. Verifique el _endpoint_ de la colección.
 
 ### Actividades en clases
 
-1. Clone localmente tu repositorio **hybrid**.
+1. Clone localmente tu repositorio **hibrido**.
 2. Abra el proyecto en VSCode y levante el servidor.
 	
 	```command
