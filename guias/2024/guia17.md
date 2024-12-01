@@ -17,7 +17,11 @@ theme: jekyll-theme-leap-day
 1. En Firebase, cree el proyecto **hibrido** 
 2. Agregue el servicio [Realtime Database](https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database)
 3. Modifique las reglas de acceso para el acceso permanente.
-4. Verifique el _endpoint_ de la colección.
+4. Verifique el acceso al _endpoint_ de la colección:
+
+	```
+	https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json
+	```
 
 ### Actividades en clases
 
@@ -30,29 +34,34 @@ theme: jekyll-theme-leap-day
 
 #### Interfaz de Tipo de Datos
 
-1. Cree una interfaz de Angular, con:
+1. Desde la línea de comandos, cree una interfaz de Angular, con:
 
 	```command
 	ionic g interface interfaces/data
 	```
 
-2. Modifique _hybrid/src/app/interfaces/data.ts_, con:
+2. Modifique _hibrido/src/app/interfaces/data.ts_, con:
 
 	```typescript
 	export interface Data {
-	    texto: string;
+	    text: string;
 	}
 	```
 
 #### Servicio Proveedor de Datos
 
-1. Cree el servicio proveedor de datos, con:
+1. Desde la línea de comandos, cree el servicio proveedor de datos, con:
 
 	```command
 	ionic g service services/provider
 	```
 
-2. Edite el servicio _hybrid/src/app/services/provider.service.ts_, con:
+2. Edite el servicio _hibrido/src/app/services/provider.service.ts_, con:
+
+	- Importe el módulo HttpClient
+	- Agregue el atributo URL
+	- Inyecte la dependencia HttpClient en el constructor.
+	- Los métodos accesores **postResponse** y **getResponse** al endpoint.
 
 	```typescript
 	import { Injectable } from '@angular/core';
@@ -75,7 +84,7 @@ theme: jekyll-theme-leap-day
 		}
 
 		/* 5. Método con la petición HTTP */ 
-		postResponse(data: any) {
+		postResponse(data: Object) {
 		    return this.http.post(this.URL, data);
 		}
 
@@ -84,34 +93,28 @@ theme: jekyll-theme-leap-day
 
 #### Consumo de Servicio
 
-* Modifique el archivo _hybrid/src/app/tab1/tab1.page.ts_, con:
+* Modifique el archivo _hibrido/src/app/tab1/tab1.page.ts_, con:
 
-	+ Importe los módulos
+	+ Importe los módulos de la UI, la interfaz de datos, el proveedor de servicios y los constructores del formulario
 
 	```typescript
 	...
 
-	/* 1. Importe el módulo con la directiva @ngFor */
-	import { CommonModule } from '@angular/common'
-
-	/* 2. Importe los componentes de la UI */
+	/* 1. Importe los componentes de la UI */
 	import {
 	  ...
-	  IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
+	  IonCard, IonCardHeader, IonCardTitle, IonCardContent,
 	  IonInput, IonButton,
 	  IonLabel, IonList, IonItem
 	} from '@ionic/angular/standalone';
 
-	/* 3. Importe del método http */
-	import { HttpClientModule } from  '@angular/common/http';
-
-	/* 4. Importe de la interfaz */
+	/* 2. Importe de la interfaz */
 	import { Data } from '../interfaces/data';
 
-	/* 5. Importe del servicio */
+	/* 3. Importe del servicio */
 	import { ProviderService } from '../services/provider.service';
 
-	/* 6. Importe lo constructores de formulario */
+	/* 4. Importe los constructores del formulario */
 	import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
 
 	@Component({ ... })
@@ -130,11 +133,10 @@ theme: jekyll-theme-leap-day
 	  	
 
 		/* 7. Registre todos los componentes importados */
-	    HttpClientModule, ReactiveFormsModule,
-	    CommonModule, 
+	    ReactiveFormsModule,
 	    IonLabel, IonList, IonItem,
 	    IonInput, IonButton,
-	    IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent
+	    IonCard, IonCardHeader, IonCardTitle, IonCardContent
 	  ],
 
 	  /* 8. Proveedor de servicios */
@@ -144,7 +146,7 @@ theme: jekyll-theme-leap-day
 	export class Tab1Page { ... }
 	```
 
-	+ Defina el atributo **data** y el formulario **checkoutForm**.
+	+ Defina el atributo **data** y contruya el formulario **checkoutForm**.
 
 	```typescript
 	...
@@ -233,7 +235,7 @@ theme: jekyll-theme-leap-day
 
 #### Componente.ts - Formulario y Renderización del resultado
 
-1. Modifique el archivo _hybrid/src/app/tab1/tab1.page.html_, con:
+1. Modifique el archivo _hibrido/src/app/tab1/tab1.page.html_, con:
 
 	+ Utilice la directiva `*ngFor` para recorrer el arreglo `data` en la vista (html) del componente seleccionado. 
 
@@ -244,14 +246,14 @@ theme: jekyll-theme-leap-day
 	  <ion-card class="ion-padding-bottom ion-margin-bottom">
 	    
 	    <ion-card-header>
-	      <ion-card-title>Memorias</ion-card-title>
+	      <ion-card-title>Data</ion-card-title>
 	    </ion-card-header>
 
 	    <ion-card-content class="ion-text-center">
 	      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
 	        <ion-input formControlName="texto"
 	          placeholder="Ingresa tu memoria"></ion-input>
-	        <ion-button type="submit">Enviar</ion-button>
+	        <ion-button type="submit">Send</ion-button>
 	      </form>
 	    </ion-card-content>
 	  </ion-card>
@@ -259,7 +261,7 @@ theme: jekyll-theme-leap-day
 
 	  <ion-card>
 	    <ion-card-header>
-	      <ion-card-title>Lista de Memorias</ion-card-title>
+	      <ion-card-title>Datum</ion-card-title>
 	    </ion-card-header>
 
 	    <ion-card-content>
@@ -269,10 +271,10 @@ theme: jekyll-theme-leap-day
 	        
 	        @for (datum of data; track $index) {
 		        <ion-item>
-		          <ion-label> {% raw %} {{ {% endraw %}datum?.texto{% raw %} }} {% endraw %} </ion-label>
+		          <ion-label> {% raw %} {{ {% endraw %} datum?.text {% raw %} }} {% endraw %} </ion-label>
 		        </ion-item>
 	        }
-	        
+
 	      </ion-list>
 
 	    </ion-card-content>
@@ -283,7 +285,7 @@ theme: jekyll-theme-leap-day
 	```
 
 
-* Versiona local y remotamente el repositorio **hybrid**.
+* Versiona local y remotamente el repositorio **hibrido**.
 
 ### Documentación
 
