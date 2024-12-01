@@ -57,12 +57,13 @@ theme: jekyll-theme-leap-day
 
 1. Edite el archivo _src/app/tabs/tabs.page.ts_, con:
 
-    + El ícono **peopleCirle** de [Ionicons](https://ionic.io/ionicons)
+    + Importe la referencia al ícono **peopleCirle** de [Ionicons](https://ionic.io/ionicons)
+    + Agregue la referencia peopleCirle dentro de la función addIcons.
 
     ```typescript
     ...
 
-    /* 1. Agregue la referencia al ícono peopleCircle */ 
+    /* 1. Importe la referencia al ícono peopleCircle */ 
     import { ... , peopleCircle } from 'ionicons/icons';
 
     ...
@@ -80,6 +81,9 @@ theme: jekyll-theme-leap-day
     ```
 
 2. Edite el archivo _src/app/tabs/tabs.page.html_, con:
+
+    - El nombre del ícono "people-circle"
+    - El texto del ícono "Acerca de"
 
     ```html
     <ion-tabs>
