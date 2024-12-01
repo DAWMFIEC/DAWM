@@ -55,7 +55,7 @@ theme: jekyll-theme-leap-day
 	- Pase la variable de estado (el arreglo del tipo **Item**) como prop del componente _TableWeather_. 
 
 	```jsx
-	<TableWeather itemsIn={% raw %}{{{% endraw %} items {% raw %}}}{% endraw %} />
+	<TableWeather itemsIn={ items } />
 	```
 
 #### _TableWeather.tsx_
