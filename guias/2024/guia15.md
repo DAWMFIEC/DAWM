@@ -19,6 +19,8 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+#### Teachable Machine: Modelo 
+
 1. Acceda a un proyecto Teachable Machine [basado en imágenes](https://teachablemachine.withgoogle.com/train/image).
 2. Cree diferentes categorías o clases para crear el modelo.
 
@@ -62,19 +64,45 @@ theme: jekyll-theme-leap-day
 	    <img src="imagenes/tm_export.png" alt="" width="60%">
 	</div>
 
-	- Copie el URL para realizar los requerimientos al modelo.
+	- Copie la **URL del modelo**.
 
 	<div align="center">
 	    <img src="imagenes/tm_link.png" alt="" width="60%">
 	</div>
 
+#### Teachable Machine: Aplicación de prueba
 
+1. Abra la aplicación de prueba con VSCode
+2. Modifique el archivo _javascript/app.js_ con la **URL del modelo**
+
+	<div align="center">
+	    <img src="imagenes/tm_appjs.png" alt="" width="60%">
+	</div>
+
+3. Levante un servidor http, con:
+
+	```script
+	python -m http.server 80
+	```
+
+4. Abra la aplicación en su navegador y compruebe el funcionamiento con imágenes de la carpeta **test**.
+
+	<div align="center">
+	    <img src="imagenes/tm_test.png" alt="" width="60%">
+	</div>
+	
 
 ### Documentación
 
+- Información del proyecto [Teachable Machine](https://teachablemachine.withgoogle.com/)
+
 ### Fundamental
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Excited to launch a Teachable Machine plugin for TouchDesigner!<br>- Train lightweight Pose Detection, Image Recognition, and Audio Classification models ⁰- Embed them into TouchDesigner to run offline without an internet connection<br>⁰Link 🔗 to the tutorial:… <a href="https://t.co/qnFq0UdJfQ">pic.twitter.com/qnFq0UdJfQ</a></p>&mdash; Torin Blankensmith (@blankensmithing) <a href="https://twitter.com/blankensmithing/status/1802834407847337990?ref_src=twsrc%5Etfw">June 17, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Términos
+
+modelo, machine learning, teachable machine, google
 
 ### Referencias
 
