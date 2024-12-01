@@ -85,9 +85,6 @@ theme: jekyll-theme-leap-day
 2. Edite el servicio _hibrido/src/app/services/provider.service.ts_, con:
 
 	- Importe el módulo HttpClient
-	- Agregue el atributo URL
-	- Inyecte la dependencia HttpClient en el constructor.
-	- Los métodos accesores **postResponse** y **getResponse** al endpoint.
 
 	```typescript
 	import { Injectable } from '@angular/core';
@@ -96,6 +93,14 @@ theme: jekyll-theme-leap-day
 	import { HttpClient } from '@angular/common/http';
 	
 	...
+	export class ProviderService { ... }
+	```
+
+	- Agregue el atributo URL
+	- Inyecte la dependencia HttpClient en el constructor.
+	- Los métodos accesores **postResponse** y **getResponse** al endpoint.
+
+	```typescript
 	export class ProviderService {
 
 		/* 2.Atributo URL */
@@ -225,9 +230,10 @@ theme: jekyll-theme-leap-day
 	      if( response != null) {
 	        this.data = Object.values(response) as Data[]
 	      }
-	        
 	    })
 	  }
+
+
 
 	}
 	...
@@ -277,8 +283,8 @@ theme: jekyll-theme-leap-day
 
 	    <ion-card-content class="ion-text-center">
 	      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-	        <ion-input formControlName="texto"
-	          placeholder="Ingresa tu memoria"></ion-input>
+	        <ion-input formControlName="text"
+	          placeholder="Add your data"></ion-input>
 	        <ion-button type="submit">Send</ion-button>
 	      </form>
 	    </ion-card-content>
