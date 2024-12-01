@@ -14,10 +14,10 @@ theme: jekyll-theme-leap-day
 
 #### Interfaz de datos
 
-1. Cree la interfaz _src/interface/Item.tsx_ con:
-
-	- Las claves **dateStart**, **dateEnd**, **precipitation**, **humidity** y **clouds**. 
-	- Todas las claves son de tipo _String_.
+1. Cree la interfaz _src/interface/Item.tsx_:
+	
+	+ Con las claves **dateStart**, **dateEnd**, **precipitation**, **humidity** y **clouds**. 
+	+ Todas las claves son de tipo _String_.
 
 	```jsx
 	export default interface Item {
@@ -29,30 +29,27 @@ theme: jekyll-theme-leap-day
 #### _App.tsx_
 
 1. Importe la interfaz **Item**
-2. Cree una variable de estado y función de actualización para un arreglo del tipo **Item**.
+2. Cree una variable de estado y función de actualización para un arreglo del tipo _Item_, p.e.: **items** y **setItems**.
 3. En el callback del hook _useEffect_:
 
-	+ Cree un arreglo temporalmente del tipo **Item** para almacenar los valores del XML.
-	
-	```typescript
-	let dataToItems: Item[] = new Array<Item>();
-	```
-	
-	+ Obtenga la referencia a los primeros 6 elementos `<time>`:
-		- De la etiqueta `<time>`, extraiga los atributos **@from**, **@to**
-		- De la etiqueta `<time> > <precipitacion>`, extraiga el atributo **probability**
-		- De la etiqueta `<time> > <humidity>`, extraiga el atributo **value**
-		- De la etiqueta `<time> > <clouds>`, extraiga el atributo **all** 
+	+ Cree un arreglo temporal del tipo **Item** para almacenar los valores del XML, p.e.: dataToItems.
+
+	+ Analice el XML y utilice el DOM API obtener la referencia:
+		- A la etiqueta `<time>` y extraiga los atributos **@from**, **@to**
+		- A la etiqueta `<time> > <precipitacion>` y extraiga el atributo **probability**
+		- A la etiqueta `<time> > <humidity>` y extraiga el atributo **value**
+		- A la etiqueta `<time> > <clouds>` y extraiga el atributo **all** 	
 
 	<div align="center">
 	    <img src="imagenes/time.png">
 	</div>
 
-	+ Modifique de la variable de estado mediante la función de actualización para el arreglo del tipo **Item**.
+	+ Por el ajuste visual, solo almacene los 6 primeros objetos (de tipo _Item_) en el arreglo temporal.
+	+ Use la función de actualización para asignar el arreglo temporal.
 
 4. En el _JSX_:
 
-	- Pase la variable de estado (el arreglo del tipo **Item**) como prop del componente _TableWeather_. 
+	+ Pase la variable de estado al prop del componente _TableWeather_, p.e.: **itemsIn** 
 
 	```jsx
 	<TableWeather itemsIn={ items } />
@@ -61,10 +58,10 @@ theme: jekyll-theme-leap-day
 #### _TableWeather.tsx_
 
 1. Importe la interfaz **Item**
-2. Cree una interfaz, con: 
+2. Cree la interfaz _MyProp_: 
 	
-	- Clave(s) con los mismos identificadores del _prop_
-	- Valores como arreglos de valores del tipo **Item**
+	+ Con la clave igual que el identificador del prop: _itemsIn_.
+	+ El tipo de datos es un arreglo del tipo _Item_.
 
 	```typescript
 	interface MyProp {
@@ -72,17 +69,23 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-3. Defina un prop del tipo de la interfaz 
+3. Defina el prop **props** del tipo _MyProp_
 
 	```typescript
-	export default function BasicTable(arrayIn: MyProp) { ... }
+	export default function BasicTable(props: MyProp) { ... }
 	```
 
-4. Cree una variable de estado (sugerencia **rows**) y función de actualización (sugerencia **setRows**) para un arreglo del tipo **Item**.
+4. Cree una variable de estado y función de actualización para un arreglo del tipo _Item_, p.e.: **rows** y **setRows**
 5. Use un useEffect, que: 
 	
-	- El callback llame la función de actualización con la clave **itemsIn** del prop **arrayIn**.
-	- Dependiente del prop **arrayIn**.
+	+ En el callback llame a la función de actualización, con el valor del prop en la clave: **props.itemsIn**.
+	+ Dependiente de los cambios del prop: **props**.
+
+	```tsx
+	useEffect( ()=> {
+		setRows(props.itemsIn)
+	}, [props])
+	```
 
 6. En el _JSX_:
 
@@ -126,13 +129,9 @@ theme: jekyll-theme-leap-day
 	</div>
 
 
-#### _LineChartWeather.tsx_
-
-Ajuste y repita el proceso para el componente LineChartWeather.
-
 ### Entregable
 
-* Comprima todos los archivos **TableWeather.tsx** y **LineChartWeather.tsx**  en formato .zip, o .rar, y responda a la actividad en el aulavirtual.
+* Responda a la actividad en el aulavirtual con el archivo **TableWeather.tsx**.
 
 ### Referencias
 
