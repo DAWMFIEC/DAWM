@@ -76,7 +76,7 @@ theme: jekyll-theme-leap-day
 2. Modifique el archivo _javascript/app.js_ con la **URL del modelo**
 
 	<div align="center">
-	    <img src="imagenes/tm_appjs.png" alt="" width="60%">
+	    <img src="imagenes/tm_appjs.png" alt="">
 	</div>
 
 3. Levante un servidor http, con:
