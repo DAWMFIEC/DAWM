@@ -8,11 +8,16 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Complete el uso de hooks (useState, useRef y useEfffect) en el dashboard.
+* Complete las guías con el uso de hooks (useState, useRef y useEfffect) en el proyecto.
 
 ### Actividades en clases
 
-### Interfaz _Item_
+#### Interfaz de datos
+
+1. Cree la interfaz _src/interface/Item.tsx_ con:
+
+	- Las claves **dateStart**, **dateEnd**, **precipitation**, **humidity** y **clouds**. 
+	- Todas las claves son de tipo _String_.
 
 #### _App.tsx_
 
