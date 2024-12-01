@@ -43,15 +43,16 @@ theme: jekyll-theme-leap-day
 	- Seleccione **Archivo** como la opción de entrada,
 
 	<div align="center">
-	    <img src="imagenes/tm_testing01.png.png" alt="" width="60%">
+	    <img src="imagenes/tm_testing01.png" alt="" width="60%">
 	</div>
 
 	- Seleccione una imagen de la carpeta **test** para probar el funcionamiento del modelo.
 
 	<div align="center">
-	    <img src="imagenes/tm_testing02.png.png" alt="" width="60%">
+	    <img src="imagenes/tm_testing02.png" alt="" width="60%">
 	</div>
 
+6. Exporte el modelo 
 
 ### Documentación
 
