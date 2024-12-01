@@ -35,10 +35,10 @@ theme: jekyll-theme-leap-day
 	+ Cree un arreglo temporal del tipo **Item** para almacenar los valores del XML, p.e.: dataToItems.
 
 	+ Analice el XML y utilice el DOM API obtener la referencia:
-		- A la etiqueta `<time>` y extraiga los atributos **@from**, **@to**
-		- A la etiqueta `<time> > <precipitacion>` y extraiga el atributo **probability**
-		- A la etiqueta `<time> > <humidity>` y extraiga el atributo **value**
-		- A la etiqueta `<time> > <clouds>` y extraiga el atributo **all** 	
+		- A la etiqueta `time` y extraiga los atributos **@from**, **@to**
+		- A la etiqueta `time > precipitacion` y extraiga el atributo **probability**
+		- A la etiqueta `time > humidity` y extraiga el atributo **value**
+		- A la etiqueta `time > clouds` y extraiga el atributo **all** 	
 
 	<div align="center">
 	    <img src="imagenes/time.png">
