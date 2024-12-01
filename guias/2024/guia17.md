@@ -278,13 +278,13 @@ theme: jekyll-theme-leap-day
 	  <ion-card class="ion-padding-bottom ion-margin-bottom">
 	    
 	    <ion-card-header>
-	      <ion-card-title>Data</ion-card-title>
+	      <ion-card-title>Datum</ion-card-title>
 	    </ion-card-header>
 
 	    <ion-card-content class="ion-text-center">
 	      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
 	        <ion-input formControlName="text"
-	          placeholder="Add your data"></ion-input>
+	          placeholder="Add your datum"></ion-input>
 	        <ion-button type="submit">Send</ion-button>
 	      </form>
 	    </ion-card-content>
@@ -293,7 +293,7 @@ theme: jekyll-theme-leap-day
 
 	  <ion-card>
 	    <ion-card-header>
-	      <ion-card-title>Datum</ion-card-title>
+	      <ion-card-title>Data</ion-card-title>
 	    </ion-card-header>
 
 	    <ion-card-content>
