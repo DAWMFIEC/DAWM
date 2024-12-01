@@ -97,7 +97,19 @@ theme: jekyll-theme-leap-day
 
 	- Muestre las otras claves de los elementos
 
-6. Verifique la salida en el navegador
+6. Cambie los nombres de las cabeceras de la tabla
+
+	```jsx
+	<TableRow>
+		<TableCell>Hora de inicio</TableCell>
+		<TableCell align="right">Hora de fin</TableCell>
+		<TableCell align="right">Precipitación</TableCell>
+		<TableCell align="right">Humedad</TableCell>
+		<TableCell align="right">Nubosidad</TableCell>
+	</TableRow>
+	```
+
+7. Verifique la salida en el navegador
 
 
 	<div align="center">
