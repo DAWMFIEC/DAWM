@@ -266,9 +266,13 @@ theme: jekyll-theme-leap-day
 
 	      <!-- Muestra los elementos -->
 	      <ion-list>
-	        <ion-item *ngFor="let datum of data">
-	          <ion-label>{% raw %} {{ {% endraw %}datum?.texto{% raw %} }} {% endraw %}</ion-label>
-	        </ion-item>
+	        
+	        @for (datum of data; track $index) {
+		        <ion-item>
+		          <ion-label> {% raw %} {{ {% endraw %}datum?.texto{% raw %} }} {% endraw %} </ion-label>
+		        </ion-item>
+	        }
+	        
 	      </ion-list>
 
 	    </ion-card-content>
