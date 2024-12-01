@@ -48,6 +48,32 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
+#### Cliente HTTP
+
+1. Edite el servicio _hibrido/main.ts_, con:
+
+	- Importe el módulo **provideHttpClient** 
+
+	```typescript
+	...
+
+	/* 1. Importe el módulo provideHttpClient */
+	import { provideHttpClient } from '@angular/common/http';
+
+	bootstrapApplication(AppComponent, { ... });
+	```
+
+	- Inyecte **provideHttpClient()** en el arreglo de proveedores
+
+	```typescript
+	bootstrapApplication(AppComponent, {
+	  providers: [
+	    ...
+	    provideHttpClient()
+	  ],
+	});
+	```
+
 #### Servicio Proveedor de Datos
 
 1. Desde la línea de comandos, cree el servicio proveedor de datos, con:
@@ -157,7 +183,7 @@ theme: jekyll-theme-leap-day
 
 	  /* 10. Formulario reactivo */
 	  checkoutForm = this.formBuilder.group({
-	    texto: ''
+	    text: ''
 	  });
 	  
 	  ...
