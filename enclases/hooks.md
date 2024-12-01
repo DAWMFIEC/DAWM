@@ -12,9 +12,49 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+### Interfaz _Item_
+
+#### _App.tsx_
+
+1. En el callback del hook _useEffect_:
+
+	- Analice y extraiga los datos de las etiquetas `<time>`.
+
+	<div align="center">
+	    <img src="imagenes/time.png">
+	</div>
+
+	- Almacenane del contenido del XML en los arreglos correspondientes.
+
+	```typescript
+	let dataToItems: Item[] = new Array<Item>();
+	```
+
+#### _TableWeather.tsx_
+
+1. Cree una interfaz, con: 
+	
+	- Claves sean los identificadores de los _props_
+	- Valores sean arreglos de valores
+
+	```typescript
+	interface MyProp {
+	  itemsIn: Item[];
+	}
+	```
+
+2. Utilice un prop del tipo de la interfaz
+
+	```typescript
+	export default function BasicTable(arrayIn: MyProp) { ... }
+	```
+
+
+
+
 ### Entregable
 
-* Comprima todos los archivos en formato .zip, o .rar, y responda a la actividad en el aulavirtual.
+* Comprima todos los archivos **TableWeather.tsx**  en formato .zip, o .rar, y responda a la actividad en el aulavirtual.
 
 ### Referencias
 
