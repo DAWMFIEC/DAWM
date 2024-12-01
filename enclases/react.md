@@ -2,7 +2,7 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Hooks
+## React
 
 [DAWM](/DAWM/)
 
@@ -21,26 +21,41 @@ theme: jekyll-theme-leap-day
 
 #### _App.tsx_
 
-1. En el callback del hook _useEffect_:
+1. Importe la interfaz **Item**
+2. Cree una variable de estado y función de actualización para un arreglo del tipo **Item**.
+3. En el callback del hook _useEffect_:
 
-	- Analice y extraiga los datos de las etiquetas `<time>`.
+	- Cree un arreglo del tipo **Item**.
+	
+	```typescript
+	let dataToItems: Item[] = new Array<Item>();
+	```
+	- De las etiquetas `<time>`, extraiga los atributos **@from**, **@to**
+	- De las etiquetas `<precipitacion>`, extraiga el atributo **probability**
+	- De las etiquetas `<humidity>`, extraiga el atributo **value**
+	- De las etiquetas `<clouds>`, extraiga el atributo **all** 
 
 	<div align="center">
 	    <img src="imagenes/time.png">
 	</div>
 
-	- Almacenane del contenido del XML en los arreglos correspondientes.
+	- Modifique de la variable de estado mediante la función de actualización para el arreglo del tipo **Item**.
 
-	```typescript
-	let dataToItems: Item[] = new Array<Item>();
+4. En el _JSX_:
+
+	- Pase la variable de estado (el arreglo del tipo **Item**) como prop del componente _TableWeather_. 
+
+	```jsx
+	<TableWeather itemsIn={% raw %}{{{% endraw %} items {% raw %}}}{% endraw %} />
 	```
 
 #### _TableWeather.tsx_
 
-1. Cree una interfaz, con: 
+1. Importe la interfaz **Item**
+2. Cree una interfaz, con: 
 	
-	- Claves sean los identificadores de los _props_
-	- Valores sean arreglos de valores
+	- Clave(s) con los mismos identificadores del _prop_
+	- Valores como arreglos de valores del tipo **Item**
 
 	```typescript
 	interface MyProp {
@@ -48,12 +63,46 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-2. Utilice un prop del tipo de la interfaz
+2. Defina un prop del tipo de la interfaz 
 
 	```typescript
 	export default function BasicTable(arrayIn: MyProp) { ... }
 	```
 
+3. Cree una variable de estado y función de actualización para un arreglo del tipo **Item**.
+4. Use un useEffect, que: 
+	
+	- El callback que llame la función de actualización con la clave **itemsIn** del prop **arrayIn**.
+	- Dependiente del prop **arrayIn**.
+
+5. En el _JSX_:
+
+	- Dentro de la etiqueta `<TableBody>`, itere en la variable de estado (arreglo del tipo **Item**)
+
+	```jsx
+	<TableBody>
+      {rows.map((row, idx) => (
+        <TableRow
+          key={idx}
+          sx=={% raw %}{{{% endraw %} '&:last-child td, &:last-child th': { border: 0 } ={% raw %}}}{% endraw %}
+        >
+          <TableCell component="th" scope="row">
+            {row.dateStart}
+          </TableCell>
+          ...
+        </TableRow>
+      ))}
+    </TableBody>
+	```
+
+	- Muestre las otras claves de los elementos
+
+6. Verifique la salida en el navegador
+
+
+	<div align="center">
+	    <img src="imagenes/table.png">
+	</div>
 
 
 
