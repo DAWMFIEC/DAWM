@@ -22,13 +22,13 @@ theme: jekyll-theme-leap-day
 #### Teachable Machine: Modelo 
 
 1. Acceda a un proyecto Teachable Machine [basado en imágenes](https://teachablemachine.withgoogle.com/train/image).
-2. Cree diferentes categorías o clases para crear el modelo.
+2. Cree las categorías _Perro_ y _Gato_ para crear el modelo.
 
 	<div align="center">
 	    <img src="imagenes/tm_classes.png" alt="" width="60%">
 	</div>
 
-3. Cargue las imágenes de la carpeta **train** para cada clase.
+3. Cargue las imágenes de la carpeta **train** en cada clase.
 
 	<div align="center">
 	    <img src="imagenes/tm_train_cats.png" alt="" width="60%">
@@ -61,13 +61,13 @@ theme: jekyll-theme-leap-day
 	- Suba el modelo. Revise la información del FAQ [¿Quién puede usar mi modelo después de que lo haya publicado?](https://teachablemachine.withgoogle.com/faq#Saving-&-Exporting)
 
 	<div align="center">
-	    <img src="imagenes/tm_export.png" alt="" width="60%">
+	    <img src="imagenes/tm_export.png" alt="">
 	</div>
 
 	- Copie la **URL del modelo**.
 
 	<div align="center">
-	    <img src="imagenes/tm_link.png" alt="" width="60%">
+	    <img src="imagenes/tm_link.png" alt="">
 	</div>
 
 #### Teachable Machine: Aplicación de prueba
