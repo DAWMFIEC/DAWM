@@ -128,10 +128,9 @@ theme: jekyll-theme-leap-day
 	    <img src="imagenes/table.png">
 	</div>
 
-
 ### Entregable
 
-* Responda a la actividad en el aulavirtual con el archivo **TableWeather.tsx**.
+* Responda a la actividad en el aulavirtual con el URL del repositorio remoto en GitHub.
 
 ### Referencias
 
