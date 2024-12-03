@@ -29,7 +29,7 @@ theme: jekyll-theme-leap-day
     + Desde la línea de comandos, utilice el comando **ionic** con: 
 
     ```command
-    ionic start hibrido tabs --type=angular --capacitor
+    ionic start hibrida tabs --type=angular --capacitor
     ```
 
     + Seleccione el tipo componente Standalone para construir la aplicación
@@ -199,8 +199,8 @@ theme: jekyll-theme-leap-day
 
 #### Github
 
-1. Crea un repositorio en GitHub con el nombre **hibrido**.
-    - No incluya el archivo _README.md_, ni el_.gitignore_.
+1. Crea un repositorio en GitHub con el nombre **hibrida**.
+    - No incluya el archivo _README.md_, ni el _.gitignore_.
 
 2. Desde la línea de comandos:
   
@@ -208,7 +208,7 @@ theme: jekyll-theme-leap-day
   
     ```command
     git branch -M main
-    git remote add origin https://github.com/<SU-USUARIO>/hibrido.git
+    git remote add origin https://github.com/<SU-USUARIO>/hibrida.git
     ```
 
 3. Versiona local y remotamente el repositorio **.**.
