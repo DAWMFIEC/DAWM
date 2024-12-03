@@ -58,7 +58,7 @@ theme: jekyll-theme-leap-day
 1. Edite el archivo _src/app/tabs/tabs.page.ts_, con:
 
     + Importe la referencia al ícono **peopleCirle** de [Ionicons](https://ionic.io/ionicons)
-    + Agregue la referencia peopleCirle dentro de la función addIcons.
+    + Agregue la referencia peopleCirle en la función addIcons.
 
     ```typescript
     ...
@@ -82,8 +82,7 @@ theme: jekyll-theme-leap-day
 
 2. Edite el archivo _src/app/tabs/tabs.page.html_, con:
 
-    - El nombre del ícono "people-circle"
-    - El texto del ícono "Acerca de"
+    - En el **tab3** el nombre del ícono "people-circle" y el texto del ícono "Acerca de"
 
     ```html
     <ion-tabs>
@@ -113,8 +112,8 @@ theme: jekyll-theme-leap-day
 
 1. Edite el archivo _src/app/tab3/tab3.page.ts_, con:
 
-    + Importe el componente [IonCard](https://ionicframework.com/docs/api/card) y sus asociados (onCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent).
-    + Agregue los componentes al decorador _@Component_ de la clase _Tab3Page_.
+    + Importe el componente [IonCard](https://ionicframework.com/docs/api/card) y sus componentes asociados (IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent).
+    + Registre los componentes mediante el decorador _@Component_ de la clase _Tab3Page_.
   
     ```typescript
     ...
@@ -146,7 +145,7 @@ theme: jekyll-theme-leap-day
 
 2. Edite el archivo _src/app/tab3/tab3.page.html_, con:
 
-    + Reemplace todo el contenido por los siguientes componentes.
+    + Reemplace todo el contenido por la siguiente jerarquía de componentes.
 
     ```html
     <ion-header [translucent]="true">
