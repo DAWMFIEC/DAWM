@@ -36,6 +36,6 @@ La respuesta es:
 
 * [Guía 15: Angular y Ionic - TeachableMachine](/DAWM/guias/2024/guia15)
 * [Guía 16: Angular y Ionic - Introducción y Componentes](/DAWM/guias/2024/guia16)
-* [Guía 17: Angular y Ionic - Servicios y Firebase](/DAWM/guias/2024/guia17)
+* [Guía 17: Angular y Ionic - Formularios, Servicios y Firebase](/DAWM/guias/2024/guia17)
 * [Guía 18: Angular y Ionic - Ventanas Modales y Signals](/DAWM/guias/2024/guia18)
 * [Guía 19: Angular y Ionic - Generación del apk](/DAWM/guias/2024/guia19)
