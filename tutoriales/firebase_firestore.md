@@ -36,7 +36,32 @@ Firebase - Firestore
   <img width="550" src ="imagenes/firebase_firestore_testing.png">
 </p> 
 
+## Acceso mediante el SDK
 
+* Desde la interfaz de Firebase, acceda a **Descripción general** > **Configuración del proyecto** 
+
+<p align="center">
+  <img width="49%" src ="imagenes/firebase_firestore_index.png">
+  <img width="49%" src ="imagenes/firebase_firestore_gd.png">
+</p> 
+
+* Selecciona **General** y selecciona **Web App**. 
+
+<p align="center">
+  <img width="49%" src ="imagenes/firebase_web_app.png">
+</p>
+
+* Registra el nombre de la web app. 
+
+<p align="center">
+  <img width="49%" src ="imagenes/firebase_registry_web_app.png">
+</p>
+
+* Copie el JSON de configuración
+
+<p align="center">
+  <img width="49%" src ="imagenes/firebase_config.png">
+</p>
 
 
 Referencias 
