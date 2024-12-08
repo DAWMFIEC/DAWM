@@ -37,23 +37,23 @@ theme: jekyll-theme-leap-day
 
 	```typescript
 	...
-	import { ... , 
-
-		/* 1. Importe los componentes de la UI */
+	import {  
+		/* Importe los componentes de la UI */
 		IonCard, IonCardHeader, IonCardTitle, IonCardContent,
 		IonSelect, IonSelectOption, IonTextarea,IonButton,
 		IonList, IonItem, IonLabel,
-
+		... 
 	} from '@ionic/angular/standalone';
 	
 	@Component({
 		...
 		imports: [
-			...
-			/* 2. Registre los componentes de la UI */
+
+			/* Registre los componentes de la UI */
 			IonCard, IonCardHeader, IonCardTitle, IonCardContent,
 			IonSelect, IonSelectOption, IonTextarea,IonButton,
 			IonList, IonItem, IonLabel,
+			...
 		]
 	})
 	export class Tab2Page { ... }
@@ -97,6 +97,25 @@ theme: jekyll-theme-leap-day
 	    </ion-card-content>
 	  </ion-card>
 
+	  <ion-card class="ion-padding-bottom ion-margin-bottom">
+
+			<ion-card-header>
+				<ion-card-title>Opiniones</ion-card-title>
+			</ion-card-header>
+
+			<ion-card-content>
+
+			<ion-list>
+
+				<!-- CARGA DE DATOS - INICIO -->
+				
+				<!-- CARGA DE DATOS - FIN -->
+
+			</ion-list>
+
+			</ion-card-content>
+		</ion-card>
+
 	</ion-content>
 	```
 
@@ -110,14 +129,14 @@ theme: jekyll-theme-leap-day
 
 	```typescript
 	...
-	/* 3. Importe el módulo para formularios reactivos */
+	/* Importe el módulo para formularios reactivos */
 	import { ReactiveFormsModule } from '@angular/forms';
 	
 	@Component({
 		...
 		imports: [
 			...
-			/* 4. Registre el módulo para formularios reactivos */
+			/* Registre el módulo para formularios reactivos */
     		ReactiveFormsModule,
 		]
 	})
@@ -128,12 +147,12 @@ theme: jekyll-theme-leap-day
 
 	```typescript
 	...
-	/* 5. Importe los constructores del formulario */
+	/* Importe los constructores del formulario */
 	import { FormGroup, FormControl, Validators } from '@angular/forms';
 	
 	export class Tab2Page {
 
-		  /* 6. Instancie un formulario */
+		  /* Instancie un formulario */
 		  myForm: FormGroup = new FormGroup({
 		    score: new FormControl("", Validators.required),
 		    opinion: new FormControl("", Validators.required)
@@ -215,7 +234,7 @@ theme: jekyll-theme-leap-day
 	};
 	```
 
-4. Edite el servicio _main.ts_, con:
+4. Edite _main.ts_, con:
 
 	- Importe las variables de ambiente con las credenciales de Firebase
 	- Importe e inyecte los módulos de _AngularFire_ 
@@ -223,10 +242,10 @@ theme: jekyll-theme-leap-day
 	```typescript
 	...
 
-	/* 1. Importe las variables de ambiente */
+	/* Importe las variables de ambiente */
 	import { environment } from './environments/environment';
 
-	/* 2. Importe los módulos */
+	/* Importe los módulos de AngularFire */
 	import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
 	import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
@@ -235,7 +254,7 @@ theme: jekyll-theme-leap-day
 	    
 	    ...
 
-	    /* 3. Inyecte los módulos */
+	    /* Inyecte los módulos de AngularFire */
 	    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
 	    provideFirestore(() => getFirestore())
 	  ],
@@ -259,14 +278,14 @@ theme: jekyll-theme-leap-day
 	```typescript
 	import { Injectable } from '@angular/core';
 
-	/* 1. Importe los módulos de Firestore */
+	/* Importe los módulos de AngularFire */
 	import { Firestore, collection, addDoc, collectionData } from '@angular/fire/firestore';
 	import { Observable } from 'rxjs';
 	
 	...
 	export class ProviderService { 
 
-		/* 2. Inyecte de dependencia Firestore */
+		/* Inyecte de dependencia AngularFire */
 		constructor(private firestoreService: Firestore) { }
 	}
 	```
@@ -279,7 +298,7 @@ theme: jekyll-theme-leap-day
 
 		constructor(...) { }
 
-		/* 3. Método para crear un documento en la colección */
+		/* Método para crear un documento en la colección */
 		createDocument(collectionName: string, data: any): Promise<any> {
 			const colRef = collection(this.firestoreService, collectionName);
 			return addDoc(colRef, data);
@@ -288,19 +307,30 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-3. Edite el servicio _src/app/tab2/tab2.page.ts_, con:
+3. Edite _src/app/tab2/tab2.page.ts_, con:
 
-	- El nombre de la colección.
+	- Importe e inyecte el servicio _ProviderService_ en el constructor.
+	- Defina una variable con el nombre de la colección.
 	- Modifique el método _onSubmit_ para enviar los datos del formulario mediante el servicio.
 
 	```typescript
 	...
+
+	/* Importe el servicio */
+	import { ProviderService } from '../services/provider.service';
+
+	@Component({ ... })
 	export class Tab2Page {
+
+		...
 		
-		/* 7. Nombre de la colección*/
+		/* Nombre de la colección */
 		collectionName = 'reviews';
 
-		/* 8. El método onSubmit para enviar los datos del formulario mediante el servicio */
+		/* Inyecte la dependencia a Firestore */
+		constructor(private providerService: ProviderService) { }
+
+		/* El método onSubmit para enviar los datos del formulario mediante el servicio */
 		onSubmit() {
 			this.providerService.createDocument(this.collectionName, this.myForm.value).then(() => {
 				this.myForm.reset()
@@ -314,7 +344,7 @@ theme: jekyll-theme-leap-day
 
 #### Servicio Proveedor de Datos / Lectura
 
-1. Edite el servicio _src/app/services/provider.service.ts_, con:
+1. Edite _src/app/services/provider.service.ts_, con:
 
 	- Agregue el método para leer (**readCollection**) una colección de Firestore.
 
@@ -326,6 +356,7 @@ theme: jekyll-theme-leap-day
 
 		createDocument(...): Promise<any> { ... }
 
+		/* Método para leer una colección */
 		readCollection(collectionName: string): Observable<any[]> {
 			const colRef = collection(this.firestoreService, collectionName);
 			return collectionData(colRef, { idField: 'id' });
@@ -334,26 +365,27 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-2. Edite el servicio _src/app/tab2/tab2.page.ts_, con:
+2. Edite _src/app/tab2/tab2.page.ts_, con:
 
-	- Arreglo con los datos a mostrar.
-	- Agregue el método _loadData_ para cargar la colección de documentos mediante el servicio.
+	- Arreglo para cargar los datos en el componente.
+	- Agregue los métodos _ngOnInit_ y _loadData_ para cargar la colección de documentos mediante el servicio.
 
 	```typescript
 	...
 	export class Tab2Page {
 		
-		/* 9. Arreglo con datos locales */
+		/* Arreglo con datos locales */
 		dataList: any[] = [];
 
-		...
+		constructor( ... ) { }
+
 		onSubmit() { ... }
 
+		/* Al inicializar, carga los datos  */
 		ngOnInit() {
 			this.loadData();
 		}
 
-		/* 10. El método loadData para leer la colección mediante el servicio */
 		loadData() {
 			this.providerService.readCollection(this.collectionName).subscribe((data) => {
 				this.dataList = data;
@@ -363,9 +395,9 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-3. Edite el servicio _src/app/tab2/tab2.page.html_, con:
+3. Edite _src/app/tab2/tab2.page.html_, con:
 
-	- 
+	- Agregue la tarjeta **CARGA DE DATOS**.
 
 	```html
 	<ion-header [translucent]="true">
@@ -377,7 +409,7 @@ theme: jekyll-theme-leap-day
 	  	<ion-card class="ion-padding-bottom ion-margin-bottom">
 	  		...
 	  	</ion-card>
-
+	  	
 		<ion-card class="ion-padding-bottom ion-margin-bottom">
 
 			<ion-card-header>
@@ -388,20 +420,20 @@ theme: jekyll-theme-leap-day
 
 			<ion-list>
 
-				<!-- Itera en la lista de elemenos -->
-
+				<!-- CARGA DE DATOS - INICIO -->
 				@for (datum of dataList; track $index) {
 					<ion-item>
 					  <ion-label> {% raw %} {{ {% endraw %} datum?.score {% raw %} }} {% endraw %} </ion-label>
 					  <ion-label> {% raw %} {{ {% endraw %} datum?.opinion {% raw %} }} {% endraw %} </ion-label>
 					</ion-item>
 				}
+				<!-- CARGA DE DATOS - FIN -->
 
 			</ion-list>
 
 			</ion-card-content>
 		</ion-card>
-
+		
 	</ion-content>
 	```
 
