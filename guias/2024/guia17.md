@@ -59,7 +59,7 @@ theme: jekyll-theme-leap-day
 	export class Tab2Page { ... }
 	```
 
-2. Edite el archivo _src/app/tab2/tab2.page.html_, reemplace por:
+2. Reemplace todo el contenido en el archivo _src/app/tab2/tab2.page.html_, por:
 
 	```html
 	<ion-header [translucent]="true">
@@ -152,6 +152,7 @@ theme: jekyll-theme-leap-day
 	/* Importe los constructores del formulario */
 	import { FormGroup, FormControl, Validators } from '@angular/forms';
 	
+	@Component({ ... })
 	export class Tab2Page {
 
 		  /* Instancie un formulario */
@@ -276,10 +277,12 @@ theme: jekyll-theme-leap-day
 
 2. Edite el servicio _src/app/services/provider.service.ts_, con:
 
-	- Importe el módulo _Firestore_ e inyecte la dependencia en el constructor.
+	- Agregue la función _inject_
+	- Importe el módulo _Firestore_ e inyecte la dependencia.
 
 	```typescript
-	import { Injectable } from '@angular/core';
+	/* Agregue la función inject */
+	import { Injectable, inject } from '@angular/core';
 
 	/* Importe los módulos de AngularFire */
 	import { Firestore, collection, addDoc, collectionData } from '@angular/fire/firestore';
@@ -289,7 +292,9 @@ theme: jekyll-theme-leap-day
 	export class ProviderService { 
 
 		/* Inyecte de dependencia AngularFire */
-		constructor(private firestoreService: Firestore) { }
+		firestoreService = inject(Firestore);
+
+		constructor() { }
 	}
 	```
 
@@ -376,6 +381,8 @@ theme: jekyll-theme-leap-day
 	```typescript
 	...
 	export class Tab2Page {
+
+		...
 		
 		/* Arreglo con datos locales */
 		dataList: any[] = [];
@@ -442,6 +449,19 @@ theme: jekyll-theme-leap-day
 
 4. (STOP 6) Compruebe el funcionamiento en el navegador.
 
+#### Versionamiento
+
+1. Edite el _.gitignore_, con:
+	
+	+ Agregue la referencia a _/src/environments/environments.ts_
+
+	```text
+	...
+
+	/src/environments/environments.ts
+	```
+
+2. Versione local y remotamente el repositorio **hibrida**.
 
 ### Documentación
 
