@@ -135,9 +135,11 @@ theme: jekyll-theme-leap-day
 	@Component({
 		...
 		imports: [
-			...
+
 			/* Registre el módulo para formularios reactivos */
     		ReactiveFormsModule,
+			
+			...
 		]
 	})
 	export class Tab2Page { ... }
