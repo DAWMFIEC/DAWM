@@ -64,7 +64,7 @@ theme: jekyll-theme-leap-day
     ...
 
     /* 1. Importe la referencia al ícono peopleCircle */ 
-    import { ... , peopleCircle } from 'ionicons/icons';
+    import { peopleCircle, ... } from 'ionicons/icons';
 
     ...
 
@@ -74,7 +74,7 @@ theme: jekyll-theme-leap-day
     constructor() {
 
         /* 2. Agregue el ícono peopleCircle */
-        addIcons({ ... , peopleCircle });
+        addIcons({ peopleCircle, ... });
 
       }
     }
@@ -120,9 +120,8 @@ theme: jekyll-theme-leap-day
 
     
     import { 
-      ...  
-
-      /* 1. Importe los componentes */
+      
+      /* Importe los componentes */
       IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
       
       ... 
@@ -131,9 +130,8 @@ theme: jekyll-theme-leap-day
     @Component({
       ...
       imports: [
-        ... 
-
-        /* 2. Registre los componentes */
+        
+        /* Registre los componentes */
         IonCard, IonCardHeader, IonCardSubtitle, IonCardTitle, IonCardContent,
         
         ...],
