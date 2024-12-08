@@ -12,69 +12,233 @@ theme: jekyll-theme-leap-day
 
 <pre class="purpose">Desarrollar una aplicación híbrida utilizando tecnologías que integren modelos de aprendizaje automático previamente entrenados en un entorno funcional y accesible para resolver problemas específicos mediante el reconocimiento de patrones, objetos o sonidos fomentando habilidades prácticas en el desarrollo de aplicaciones móviles con tecnologías modernas y la implementación de inteligencia artificial.</pre>
 
-### Actividades previas
-
-1. En Firebase, cree el proyecto **hibrido** 
-2. Agregue el servicio [Realtime Database](https://dawmfiec.github.io/DAWM/tutoriales/firebase_realtime_database)
-3. Modifique las reglas de acceso para el acceso permanente.
-4. Verifique el acceso al _endpoint_ de la colección:
-
-	```
-	https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json
-	```
-
 ### Actividades en clases
 
-1. Clone localmente tu repositorio **hibrido**.
-2. Abra el proyecto en VSCode y levante el servidor.
-	
-	```command
-	ionic serve
-	```
+#### Hibrida
 
-#### Interfaz de Tipo de Datos
-
-1. Desde la línea de comandos, cree una interfaz de Angular, con:
+1. Clona localmente tu repositorio **hibrida**.
+2. Instale los módulos **firebase** y **@angular/fire**, con:
 
 	```command
-	ionic g interface interfaces/datum
+	npm install firebase @angular/fire
 	```
 
-2. Modifique _hibrido/src/app/interfaces/datum.ts_, con:
+#### Formulario
+
+1. Edite el archivo _src/app/tab2/tab2.page.ts_, con:
+
+	+ Importe y registre los componentes visuales mediante el decorador de la clase.
 
 	```typescript
-	export interface Datum {
-	    text: string;
+	...
+	import { ... , 
+
+		/* 1. Importe los componentes de la UI */
+		IonCard, IonCardHeader, IonCardTitle, IonCardContent,
+		IonSelect, IonSelectOption, IonTextarea,IonButton,
+		IonList, IonItem, IonLabel,
+
+	} from '@ionic/angular/standalone';
+	
+	@Component({
+		...
+		imports: [
+			...
+			/* 2. Registre los componentes de la UI */
+			IonCard, IonCardHeader, IonCardTitle, IonCardContent,
+			IonSelect, IonSelectOption, IonTextarea,IonButton,
+			IonList, IonItem, IonLabel,
+		]
+	})
+	export class Tab2Page { ... }
+	```
+
+2. Edite el archivo _src/app/tab2/tab2.page.html_, reemplace por:
+
+	```html
+	<ion-header [translucent]="true">
+	  <ion-toolbar>
+	    <ion-title>
+	      Retroalimentación
+	    </ion-title>
+	  </ion-toolbar>
+	</ion-header>
+
+	<ion-content [fullscreen]="true">
+
+	  <ion-card class="ion-padding-bottom ion-margin-bottom">
+
+	    <ion-card-header>
+	      <ion-card-title>Su opinión es importante</ion-card-title>
+	    </ion-card-header>
+
+	    <ion-card-content class="ion-text-center">
+
+	      <form>
+	        
+	        <ion-select label="Calificación" placeholder="Seleccione un valor">
+	          <ion-select-option value="bueno">Bueno</ion-select-option>
+	          <ion-select-option value="regular">Regular</ion-select-option>
+	          <ion-select-option value="malo">Malo</ion-select-option>
+	        </ion-select>
+
+	        <ion-textarea label="Opinión" placeholder="Agregue aquí su descripción"></ion-textarea>
+	        
+	        <ion-button type="submit">Enviar</ion-button>
+	        
+	      </form>
+
+	    </ion-card-content>
+	  </ion-card>
+
+	</ion-content>
+	```
+
+3. (STOP 1) Compruebe el resultado en el navegador.
+
+#### Formulario Reactivo
+
+1. Edite el archivo _src/app/tab2/tab2.page.ts_, con:
+
+	+ Importe y registre ReactiveFormsModule mediante el decorador de la clase.
+
+	```typescript
+	...
+	/* 3. Importe el módulo para formularios reactivos */
+	import { ReactiveFormsModule } from '@angular/forms';
+	
+	@Component({
+		...
+		imports: [
+			...
+			/* 4. Registre el módulo para formularios reactivos */
+    		ReactiveFormsModule,
+		]
+	})
+	export class Tab2Page { ... }
+	```
+
+	+ Importe los módulos FormGroup, FormControl y Validators. Instancie un formulario del tipo _FormGroup_.
+
+	```typescript
+	...
+	/* 5. Importe los constructores del formulario */
+	import { FormGroup, FormControl, Validators } from '@angular/forms';
+	
+	export class Tab2Page {
+
+		  /* 6. Instancie un formulario */
+		  myForm: FormGroup = new FormGroup({
+		    score: new FormControl("", Validators.required),
+		    opinion: new FormControl("", Validators.required)
+		  });
+
 	}
 	```
 
-#### Cliente HTTP
+2. Edite el archivo _src/app/tab2/tab2.page.html_, con:
 
-1. Edite el servicio _hibrido/main.ts_, con:
+	+ Asocie el modelo con la vista mediante las **directivas** _formGroup_ y _formControlName_.
+	+ Condicione la disponibilidad del botón mediante la directiva _disabled_.
 
-	- Importe el módulo **provideHttpClient** 
+	```html
+	...
+	<form [formGroup]="myForm">
+
+		<ion-select formControlName="score" ... > ... </ion-select>
+		<ion-textarea formControlName="opinion" ... > ... </ion-textarea>
+		<ion-button type="submit" [disabled]="!myForm.valid"> ... </ion-button>
+
+	</form>
+	...
+	```
+
+3. (STOP 2) Compruebe el resultado en el navegador.
+
+#### Eventos
+
+1. Edite el archivo _src/app/tab2/tab2.page.ts_, con:
+
+	+ Agregue el callback onSubmit.
+
+	```typescript
+	...
+	export class Tab2Page {
+
+		...
+
+		onSubmit() {
+			console.log(this.myForm.value);
+			alert(this.myForm.controls["score"].value)
+			this.myForm.reset()
+		}
+
+	}
+	```
+
+2. Edite el archivo _src/app/tab2/tab2.page.html_, con:
+
+	+ Agregue la directiva _ngSubmit_ con el nombre del callback a ejecutar.
+
+	```html
+	...
+	<form ... (ngSubmit)="onSubmit()">
+		...
+	</form>
+	```
+
+3. (STOP 3) Compruebe el resultado en el navegador.
+
+#### Firebase SDK
+
+1. En Firebase, cree el proyecto **hibrida** 
+2. Agregue el servicio [Firebase - Firestore](https://dawmfiec.github.io/DAWM/tutoriales/firebase_firestore)
+3. Edite el archivo _src/environments/environment.ts_, con:
+
+	+ Agregue la entrada _firebase_ con el JSON de configuración:
+
+	```typescript
+	export const environment = {
+	  firebase:
+	  {
+	    apiKey: ...,
+	    ...
+	    appId: ...
+	  },
+	  production: false
+	};
+	```
+
+4. Edite el servicio _main.ts_, con:
+
+	- Importe las variables de ambiente con las credenciales de Firebase
+	- Importe e inyecte los módulos de _AngularFire_ 
 
 	```typescript
 	...
 
-	/* 1. Importe el módulo provideHttpClient */
-	import { provideHttpClient } from '@angular/common/http';
+	/* 1. Importe las variables de ambiente */
+	import { environment } from './environments/environment';
 
-	bootstrapApplication(AppComponent, { ... });
-	```
+	/* 2. Importe los módulos */
+	import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+	import { provideFirestore, getFirestore } from '@angular/fire/firestore';
 
-	- Inyecte **provideHttpClient()** en el arreglo de proveedores
-
-	```typescript
 	bootstrapApplication(AppComponent, {
 	  providers: [
+	    
 	    ...
-	    provideHttpClient()
+
+	    /* 3. Inyecte los módulos */
+	    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+	    provideFirestore(() => getFirestore())
 	  ],
 	});
 	```
 
-#### Servicio Proveedor de Datos
+5. (STOP 4) Compruebe la importación de los paquetes en el _package.json_.
+
+#### Servicio Proveedor de Datos / Escritura
 
 1. Desde la línea de comandos, cree el servicio proveedor de datos, con:
 
@@ -82,242 +246,160 @@ theme: jekyll-theme-leap-day
 	ionic g service services/provider
 	```
 
-2. Edite el servicio _hibrido/src/app/services/provider.service.ts_, con:
+2. Edite el servicio _src/app/services/provider.service.ts_, con:
 
-	- Importe el módulo HttpClient
+	- Importe el módulo _Firestore_ e inyecte la dependencia en el constructor.
 
 	```typescript
 	import { Injectable } from '@angular/core';
 
-	/* 1. Importe el módulo del HttpClient */
-	import { HttpClient } from '@angular/common/http';
+	/* 1. Importe los módulos de Firestore */
+	import { Firestore, collection, addDoc, collectionData } from '@angular/fire/firestore';
+	import { Observable } from 'rxjs';
 	
 	...
-	export class ProviderService { ... }
+	export class ProviderService { 
+
+		/* 2. Inyecte de dependencia del HttpClient */
+		constructor(private firestoreService: Firestore) { }
+	}
 	```
 
-	- Agregue el atributo URL
-	- Inyecte la dependencia HttpClient en el constructor.
-	- Los métodos accesores **postResponse** y **getResponse** al endpoint.
+	- Agregue el método para escribir (**createDocument**) un documento en una colección de Firestore.
 
 	```typescript
-	export class ProviderService {
+	...
+	export class ProviderService { 
 
-		/* 2.Atributo URL */
-		private URL: string = 'https://<NOMBRE_DEL_PROYECTO>.firebaseio.com/collection.json';
+		constructor(...) { }
 
-		/* 3. Inyección de dependencia del HttpClient */
-		constructor(private http:HttpClient) { }
-
-		/* 4. Método con la petición HTTP */
-		getResponse() {
-			return this.http.get(this.URL);
-		}
-
-		/* 5. Método con la petición HTTP */ 
-		postResponse(data: Object) {
-		    return this.http.post(this.URL, data);
+		createDocument(collectionName: string, data: any): Promise<any> {
+			const colRef = collection(this.firestoreService, collectionName);
+			return addDoc(colRef, data);
 		}
 
 	}
 	```
 
-#### Consumo de Servicio
+3. Edite el servicio _src/app/tab2/tab2.page.ts_, con:
 
-* Modifique el archivo _hibrido/src/app/tab1/tab1.page.ts_, con:
-
-	+ Importe los módulos de la UI, la interfaz de datos, el proveedor de servicios y los constructores del formulario
-
-	```typescript
-	...
-
-	/* 1. Importe los componentes de la UI */
-	import {
-	  ...
-	  IonCard, IonCardHeader, IonCardTitle, IonCardContent,
-	  IonInput, IonButton,
-	  IonLabel, IonList, IonItem
-	} from '@ionic/angular/standalone';
-
-	/* 2. Importe de la interfaz */
-	import { Datum } from '../interfaces/datum';
-
-	/* 3. Importe del servicio */
-	import { ProviderService } from '../services/provider.service';
-
-	/* 4. Importe los constructores del formulario */
-	import { FormBuilder, ReactiveFormsModule } from '@angular/forms';
-
-	@Component({ ... })
-	...
-	```
-
-	+ Registre los módulos importados y el proveedor de servicios.
+	- El nombre de la colección.
+	- Modifique el método _onSubmit_ para enviar los datos del formulario mediante el servicio.
 
 	```typescript
 	...
-	@Component({
-	  ...
-	  standalone: true,
-	  imports: [
-	  	...
-	  	
+	export class Tab2Page {
+		
+		/* 7. Nombre de la colección*/
+		collectionName = 'reviews';
 
-		/* 7. Registre todos los componentes importados */
-	    ReactiveFormsModule,
-	    IonLabel, IonList, IonItem,
-	    IonInput, IonButton,
-	    IonCard, IonCardHeader, IonCardTitle, IonCardContent
-	  ],
-
-	  /* 8. Proveedor de servicios */
-	  providers: [ProviderService],
-	  ...
-	})
-	export class Tab1Page { ... }
-	```
-
-	+ Defina el atributo **data** y contruya el formulario **checkoutForm**.
-
-	```typescript
-	...
-	export class Tab1Page {
-
-	  /* 9. Atributo con el tipo de dato de la interfaz */
-	  public data : Datum[] = [];
-
-	  /* 10. Formulario reactivo */
-	  checkoutForm = this.formBuilder.group({
-	    text: ''
-	  });
-	  
-	  ...
-	}
-	...
-	```
-
-	+ Inyecte la dependencia al servicio y al constructor del formulario en el constructor del componente seleccionado para mostrar los datos.
-
-	```typescript
-	...
-	export class Tab1Page {
-
-	   ...
-	  
-		/* 11. Inyección de dependencia del servicio */
-		constructor(private dataProvider: ProviderService , private formBuilder: FormBuilder) { }
-	}
-	...
-	```
-
-	+ Agregue el método **ngOnInit** para que realice la petición y que se suscriba a la respuesta de la petición. Extraiga una muestra de los datos en el atributo a renderizar en la vista.
-
-	```typescript
-	...
-	export class Tab1Page {
-
-	  ...
-
-	  constructor( ... ) { }
-
-	  /* 12. Ejecución de la petición y suscripción de la respuesta */
-	  ngOnInit() {
-	    this.loadData()
-	  }
-
-	  loadData() {
-	    this.dataProvider.getResponse().subscribe( response => {
-	      if( response != null) {
-	        this.data = Object.values(response) as Datum[]
-	      }
-	    })
-	  }
-
-
+		/* 8. El método onSubmit para enviar los datos del formulario mediante el servicio */
+		onSubmit() {
+			this.providerService.createDocument(this.collectionName, this.myForm.value).then(() => {
+				this.myForm.reset()
+			});
+		}
 
 	}
-	...
 	```
 
-	+ Agregue el callback **onSubmit** que envía los datos del formulario
+4. (STOP 5) Compruebe el funcionamiento en el navegador y el resultado en Firestore.
 
+#### Servicio Proveedor de Datos / Lectura
+
+1. Edite el servicio _src/app/services/provider.service.ts_, con:
+
+	- Agregue el método para leer (**readCollection**) una colección de Firestore.
 
 	```typescript
 	...
-	@Component({
-	  ...
-	})
-	export class Tab1Page {
+	export class ProviderService { 
 
-	  ...
+		constructor(...) { }
 
-	  loadData() { ... }
+		createDocument(...): Promise<any> { ... }
 
-	  /* 13. Callback para el envío de datos */
-	  onSubmit(): void {
-	  	this.dataProvider.postResponse(this.checkoutForm.value).subscribe( (response) => {
-				this.checkoutForm.reset();
-				this.loadData()
-		})
-	  }
+		readCollection(collectionName: string): Observable<any[]> {
+			const colRef = collection(this.firestoreService, collectionName);
+			return collectionData(colRef, { idField: 'id' });
+		}
 
 	}
-	...
 	```
 
-#### Componente.ts - Formulario y Renderización del resultado
+2. Edite el servicio _src/app/tab2/tab2.page.ts_, con:
 
-1. Modifique el archivo _hibrido/src/app/tab1/tab1.page.html_, con:
+	- Arreglo con los datos a mostrar.
+	- Agregue el método _loadData_ para cargar la colección de documentos mediante el servicio.
 
-	+ Reemplace el contenido completo del componente `<ion-content>`, en el que utiliza el bloque de control `@for` para recorrer el arreglo `data` en la vista (html) del componente seleccionado. 
+	```typescript
+	...
+	export class Tab2Page {
+		
+		/* 9. Arreglo con datos locales */
+		dataList: any[] = [];
+
+		...
+		onSubmit() { ... }
+
+		ngOnInit() {
+			this.loadData();
+		}
+
+		/* 10. El método loadData para leer la colección mediante el servicio */
+		loadData() {
+			this.providerService.readCollection(this.collectionName).subscribe((data) => {
+				this.dataList = data;
+			});
+		}
+
+	}
+	```
+
+3. Edite el servicio _src/app/tab2/tab2.page.html_, con:
+
+	- 
 
 	```html
-	...
+	<ion-header [translucent]="true">
+		...
+	</ion-header>
+
 	<ion-content [fullscreen]="true">
 
-	  <ion-card class="ion-padding-bottom ion-margin-bottom">
-	    
-	    <ion-card-header>
-	      <ion-card-title>Datum</ion-card-title>
-	    </ion-card-header>
+	  	<ion-card class="ion-padding-bottom ion-margin-bottom">
+	  		...
+	  	</ion-card>
 
-	    <ion-card-content class="ion-text-center">
-	      <form [formGroup]="checkoutForm" (ngSubmit)="onSubmit()">
-	        <ion-input formControlName="text"
-	          placeholder="Add your datum"></ion-input>
-	        <ion-button type="submit">Send</ion-button>
-	      </form>
-	    </ion-card-content>
-	  </ion-card>
-	  
+		<ion-card class="ion-padding-bottom ion-margin-bottom">
 
-	  <ion-card>
-	    <ion-card-header>
-	      <ion-card-title>Data</ion-card-title>
-	    </ion-card-header>
+			<ion-card-header>
+				<ion-card-title>Opiniones</ion-card-title>
+			</ion-card-header>
 
-	    <ion-card-content>
+			<ion-card-content>
 
-	      <!-- Muestra los elementos -->
-	      <ion-list>
-	        
-	        @for (datum of data; track $index) {
-		        <ion-item>
-		          <ion-label> {% raw %} {{ {% endraw %} datum?.text {% raw %} }} {% endraw %} </ion-label>
-		        </ion-item>
-	        }
+			<ion-list>
 
-	      </ion-list>
+				<!-- Itera en la lista de elemenos -->
 
-	    </ion-card-content>
-	  </ion-card>
+				@for (datum of dataList; track $index) {
+					<ion-item>
+					  <ion-label> {% raw %} {{ {% endraw %} datum?.score {% raw %} }} {% endraw %} </ion-label>
+					  <ion-label> {% raw %} {{ {% endraw %} datum?.opinion {% raw %} }} {% endraw %} </ion-label>
+					</ion-item>
+				}
 
-	  
+			</ion-list>
+
+			</ion-card-content>
+		</ion-card>
+
 	</ion-content>
 	```
 
-2. (STOP 1) Revise los cambios en el navegador.
-3. Versiona local y remotamente el repositorio **hibrido**.
+4. (STOP 6) Compruebe el funcionamiento en el navegador.
+
 
 ### Documentación
 
@@ -326,15 +408,20 @@ theme: jekyll-theme-leap-day
 
 ### Fundamental
 
-* Formularios de Angular en [X](https://twitter.com/GoThinkster/status/1301592772999143424) 
+* Patrones de diseño en Angular, via [X](https://x.com/brolag/status/1392120744365207559)
+
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">🧵<a href="https://twitter.com/hashtag/HowToAngular?src=hash&amp;ref_src=twsrc%5Etfw">#HowToAngular</a><br><br>¿Cuáles son los patrones de diseño que te van a ayudar a entender <a href="https://twitter.com/hashtag/Angular?src=hash&amp;ref_src=twsrc%5Etfw">#Angular</a> a profundidad?<br><br>- Module <br>- Observer <br>- Dependency Injection <br>- Singleton <br>- Decorator <br>- Factory<br>- Adapter <br>- Facade<br><br>Exacto. Está no es una guía &quot;Convierte en Angular Dev en 30 min&quot; 😉 <a href="https://t.co/pZh1wJiI5t">pic.twitter.com/pZh1wJiI5t</a></p>&mdash; Alfredo (@brolag) <a href="https://twitter.com/brolag/status/1392120744365207559?ref_src=twsrc%5Etfw">May 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+* Formularios de Angular, via [X](https://twitter.com/GoThinkster/status/1301592772999143424) 
 
 <blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Making good forms in <a href="https://twitter.com/hashtag/angular?src=hash&amp;ref_src=twsrc%5Etfw">#angular</a> can be easier than you think!<br><br>1/5 🧵 <a href="https://t.co/TYlWq00MHV">pic.twitter.com/TYlWq00MHV</a></p>&mdash; Thinkster (@GoThinkster) <a href="https://twitter.com/GoThinkster/status/1301592772999143424?ref_src=twsrc%5Etfw">September 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
-reactform
+formularios reactivos, directivas, servicios
 
 ### Referencias
 
-* Ionicframework. (n.d.). Your First Ionic App: Angular: Ionic Documentation. Retrieved from https://ionicframework.com/docs/angular/your-first-app
-* (N.d.). Retrieved from https://angular.io/start/start-forms
+* Reactive forms Angular. (n.d.). Retrieved from https://angular.dev/guide/forms/reactive-forms
+* Bastidas, W. (2023). Most Common Design Patterns in Angular: What They Are and How to Apply Them. Retrieved from https://medium.com/williambastidasblog/most-common-design-patterns-in-angular-what-they-are-and-how-to-apply-them-f0193b85e500
+* GeeksforGeeks. (2024). Reactive Forms vs Template Driven Forms. Retrieved from https://www.geeksforgeeks.org/reactive-forms-vs-template-driven-forms/
