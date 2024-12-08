@@ -266,7 +266,7 @@ theme: jekyll-theme-leap-day
 	...
 	export class ProviderService { 
 
-		/* 2. Inyecte de dependencia del HttpClient */
+		/* 2. Inyecte de dependencia Firestore */
 		constructor(private firestoreService: Firestore) { }
 	}
 	```
@@ -279,6 +279,7 @@ theme: jekyll-theme-leap-day
 
 		constructor(...) { }
 
+		/* 3. Método para crear un documento en la colección */
 		createDocument(collectionName: string, data: any): Promise<any> {
 			const colRef = collection(this.firestoreService, collectionName);
 			return addDoc(colRef, data);
