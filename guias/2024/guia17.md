@@ -194,6 +194,7 @@ theme: jekyll-theme-leap-day
 
 		...
 
+		/* El método onSubmit para enviar los datos del formulario mediante el servicio */
 		onSubmit() {
 			console.log(this.myForm.value);
 			alert(this.myForm.controls["score"].value)
@@ -253,12 +254,12 @@ theme: jekyll-theme-leap-day
 
 	bootstrapApplication(AppComponent, {
 	  providers: [
-	    
 	    ...
 
 	    /* Inyecte los módulos de AngularFire */
 	    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
-	    provideFirestore(() => getFirestore())
+	    provideFirestore(() => getFirestore()),
+
 	  ],
 	});
 	```
