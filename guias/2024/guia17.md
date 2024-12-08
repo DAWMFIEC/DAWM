@@ -454,10 +454,6 @@ theme: jekyll-theme-leap-day
 
 <blockquote class="twitter-tweet"><p lang="es" dir="ltr">🧵<a href="https://twitter.com/hashtag/HowToAngular?src=hash&amp;ref_src=twsrc%5Etfw">#HowToAngular</a><br><br>¿Cuáles son los patrones de diseño que te van a ayudar a entender <a href="https://twitter.com/hashtag/Angular?src=hash&amp;ref_src=twsrc%5Etfw">#Angular</a> a profundidad?<br><br>- Module <br>- Observer <br>- Dependency Injection <br>- Singleton <br>- Decorator <br>- Factory<br>- Adapter <br>- Facade<br><br>Exacto. Está no es una guía &quot;Convierte en Angular Dev en 30 min&quot; 😉 <a href="https://t.co/pZh1wJiI5t">pic.twitter.com/pZh1wJiI5t</a></p>&mdash; Alfredo (@brolag) <a href="https://twitter.com/brolag/status/1392120744365207559?ref_src=twsrc%5Etfw">May 11, 2021</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
-* Formularios de Angular, via [X](https://twitter.com/GoThinkster/status/1301592772999143424) 
-
-<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Making good forms in <a href="https://twitter.com/hashtag/angular?src=hash&amp;ref_src=twsrc%5Etfw">#angular</a> can be easier than you think!<br><br>1/5 🧵 <a href="https://t.co/TYlWq00MHV">pic.twitter.com/TYlWq00MHV</a></p>&mdash; Thinkster (@GoThinkster) <a href="https://twitter.com/GoThinkster/status/1301592772999143424?ref_src=twsrc%5Etfw">September 3, 2020</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-
 ### Términos
 
 formularios reactivos, directivas, servicios
