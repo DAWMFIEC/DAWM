@@ -23,6 +23,12 @@ theme: jekyll-theme-leap-day
 	npm install firebase @angular/fire
 	```
 
+3. Levante los servicios, con:
+
+	```command
+	ionic serve
+	```
+
 #### Formulario
 
 1. Edite el archivo _src/app/tab2/tab2.page.ts_, con:
