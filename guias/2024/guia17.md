@@ -14,16 +14,16 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+#### Firestore
+
+1. En Firebase, cree el proyecto **hibrida** 
+2. Agregue el servicio [Firebase - Firestore](https://dawmfiec.github.io/DAWM/tutoriales/firebase_firestore)
+3. Copie el objeto **firebaseConfig**.
+
 #### Hibrida
 
 1. Clona localmente tu repositorio **hibrida**.
-2. Instale los módulos **firebase** y **@angular/fire**, con:
-
-	```command
-	npm install firebase @angular/fire
-	```
-
-3. Levante los servicios, con:
+2. Levante los servicios, con:
 
 	```command
 	ionic serve
@@ -220,22 +220,35 @@ theme: jekyll-theme-leap-day
 
 #### Firebase SDK
 
-1. En Firebase, cree el proyecto **hibrida** 
-2. Agregue el servicio [Firebase - Firestore](https://dawmfiec.github.io/DAWM/tutoriales/firebase_firestore)
-3. Edite el archivo _src/environments/environment.ts_, con:
+1. Cree el archivo _src/credentials.ts_, con:
 
-	+ Agregue la entrada _firebase_ con el JSON de configuración:
+	- Exporte la constante **firebaseConfig**.
 
 	```typescript
-	export const environment = {
-	  firebase:
-	  {
-	    apiKey: ...,
-	    ...
-	    appId: ...
-	  },
-	  production: false
+	export const firebaseConfig = {
+		apiKey: "<APIKEY>",
+		authDomain: "<AUTHDOMAIN>",
+		projectId: "<PROJECTID>",
+		storageBucket: "<STORAGEBUCKET>",
+		messagingSenderId: "<MESSAGINGSENDERID>",
+		appId: "<APPID>"
 	};
+	```
+
+2. Edite el _.gitignore_, con:
+	
+	+ Agregue la referencia a _/src/credentials.ts_
+
+	```text
+	...
+
+	/src/credentials.ts
+	```
+
+3. Instale los módulos **firebase** y **@angular/fire**, con:
+
+	```command
+	npm install firebase @angular/fire
 	```
 
 4. Edite _main.ts_, con:
@@ -246,8 +259,8 @@ theme: jekyll-theme-leap-day
 	```typescript
 	...
 
-	/* Importe las variables de ambiente */
-	import { environment } from './environments/environment';
+	/* Importe las credenciales */
+	import { firebaseConfig } from './credentials';
 
 	/* Importe los módulos de AngularFire */
 	import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
@@ -258,14 +271,14 @@ theme: jekyll-theme-leap-day
 	    ...
 
 	    /* Inyecte los módulos de AngularFire */
-	    provideFirebaseApp(() => initializeApp(environment.firebaseConfig)),
+	    provideFirebaseApp(() => initializeApp(firebaseConfig)),
 	    provideFirestore(() => getFirestore()),
 
 	  ],
 	});
 	```
 
-5. (STOP 4) Compruebe la importación de los paquetes en el _package.json_.
+5. (STOP 4) Compruebe la importación de los paquetes en el _package.json_ y que el archivo _credentials_ no se encuentre versionado.
 
 #### Servicio Proveedor de Datos / Escritura
 
@@ -448,20 +461,6 @@ theme: jekyll-theme-leap-day
 	```
 
 4. (STOP 6) Compruebe el funcionamiento en el navegador.
-
-#### Versionamiento
-
-1. Edite el _.gitignore_, con:
-	
-	+ Agregue la referencia a _/src/environments/environments.ts_
-
-	```text
-	...
-
-	/src/environments/environments.ts
-	```
-
-2. Versione local y remotamente el repositorio **hibrida**.
 
 ### Documentación
 
