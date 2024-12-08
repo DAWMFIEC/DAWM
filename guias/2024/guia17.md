@@ -481,4 +481,5 @@ formularios reactivos, directivas, servicios
 
 * Reactive forms Angular. (n.d.). Retrieved from https://angular.dev/guide/forms/reactive-forms
 * Bastidas, W. (2023). Most Common Design Patterns in Angular: What They Are and How to Apply Them. Retrieved from https://medium.com/williambastidasblog/most-common-design-patterns-in-angular-what-they-are-and-how-to-apply-them-f0193b85e500
+* Vergara, J. (2020). Building Ionic Apps with Firestore. Retrieved from https://ionic.io/blog/building-ionic-apps-with-firestore
 * GeeksforGeeks. (2024). Reactive Forms vs Template Driven Forms. Retrieved from https://www.geeksforgeeks.org/reactive-forms-vs-template-driven-forms/
