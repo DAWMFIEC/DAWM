@@ -59,7 +59,7 @@ theme: jekyll-theme-leap-day
 
 2. Edite el archivo _src/app/tabs/tabs.page.html_, con:
 
-    - En el **tab3** el nombre del ícono "people-circle" y el texto del ícono "Acerca de"
+    - En el **tab2** el nombre del ícono "clipboard-outline" y el texto del ícono "Opinión"
 
     ```html
     <ion-tabs>
