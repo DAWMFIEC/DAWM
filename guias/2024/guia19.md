@@ -27,9 +27,9 @@ theme: jekyll-theme-leap-day
 
 3. Desde la línea de comandos, construya la aplicación a partir de los recursos web más recientes en el proyecto nativo:
 
-  ```command
-  ionic cap build android --prod
-  ```
+    ```command
+    ionic cap build android --prod
+    ```
 
 4. En **Android Studio**, genere el APK al hacer clic en la ruta `Build` **>** `Build Bundle(s) / APK(s)` **>** `Build APK`
 
