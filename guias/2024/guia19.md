@@ -18,18 +18,22 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-* Clone localmente tu repositorio **hybrid**.
-* Abra el proyecto en VSCode y levante el servidor.
+1. Clone localmente tu repositorio **hibrida**.
+2. Instale los módulos native-run (para ejecutar binarios nativos en dispositivos y simuladores/emuladores) y cordova-res (para generar íconos de aplicaciones nativas y pantallas de presentación), con: 
 
-* Desde la línea de comandos, construimos nuestra aplicación a partir de los recursos web más recientes en el proyecto nativo:
+    ```command
+    npm install -g native-run cordova-res
+    ```
+
+3. Desde la línea de comandos, construya la aplicación a partir de los recursos web más recientes en el proyecto nativo:
 
   ```command
   ionic cap build android --prod
   ```
 
-* En **Android Studio**, genere el APK al hacer clic en la ruta `Build` **>** `Build Bundle(s) / APK(s)` **>** `Build APK`
+4. En **Android Studio**, genere el APK al hacer clic en la ruta `Build` **>** `Build Bundle(s) / APK(s)` **>** `Build APK`
 
-* Si la generación del APK resulta exitosa, transfiera y compruebe el funcionamiento del archivo generado en `android/app/build/outputs/apk/debug/app-debug.apk` en su dispositivo móvil
+5. Si la generación del APK resulta exitosa, transfiera y compruebe el funcionamiento del archivo generado en `android/app/build/outputs/apk/debug/app-debug.apk` en su dispositivo móvil
 
 ### Documentación
 
