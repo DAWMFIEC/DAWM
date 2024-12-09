@@ -12,7 +12,7 @@ theme: jekyll-theme-leap-day
 
 <pre class="purpose">Desarrollar una aplicación híbrida utilizando tecnologías que integren modelos de aprendizaje automático previamente entrenados en un entorno funcional y accesible para resolver problemas específicos mediante el reconocimiento de patrones, objetos o sonidos fomentando habilidades prácticas en el desarrollo de aplicaciones móviles con tecnologías modernas y la implementación de inteligencia artificial.</pre>
 
-### Actividades en clases
+### Actividades previas
 
 #### Firestore
 
@@ -28,6 +28,58 @@ theme: jekyll-theme-leap-day
 	```command
 	ionic serve
 	```
+
+### Actividades en clases
+
+#### IonTab
+
+1. Edite el archivo _src/app/tabs/tabs.page.ts_, con:
+
+    + Importe y agregue la referencia al ícono _clipboardOutline_ en la función addIcons.
+
+    ```typescript
+    ...
+
+    /* 1. Importe la referencia al ícono peopleCircle */ 
+    import { clipboardOutline, ... } from 'ionicons/icons';
+
+    ...
+
+    export class TabsPage {
+    ...
+
+    constructor() {
+
+        /* 2. Agregue el ícono peopleCircle */
+        addIcons({ clipboardOutline, ... });
+
+      }
+    }
+    ```
+
+2. Edite el archivo _src/app/tabs/tabs.page.html_, con:
+
+    - En el **tab3** el nombre del ícono "people-circle" y el texto del ícono "Acerca de"
+
+    ```html
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        
+        ...
+
+        <ion-tab-button tab="tab2" href="/tabs/tab2">
+           
+           <!-- 1. Ícono y nombre del tab -->
+           <ion-icon name="clipboard-outline"></ion-icon>
+           <ion-label>Opinión</ion-label>
+
+        </ion-tab-button>
+
+      </ion-tab-bar>
+    </ion-tabs>
+    ```
+
+3. (STOP 1) Compruebe el resultado en el navegador.
 
 #### Formulario
 
@@ -119,7 +171,7 @@ theme: jekyll-theme-leap-day
 	</ion-content>
 	```
 
-3. (STOP 1) Compruebe el resultado en el navegador.
+3. (STOP 2) Compruebe el resultado en el navegador.
 
 #### Formulario Reactivo
 
@@ -181,7 +233,7 @@ theme: jekyll-theme-leap-day
 	...
 	```
 
-3. (STOP 2) Compruebe el resultado en el navegador.
+3. (STOP 3) Compruebe el resultado en el navegador.
 
 #### Eventos
 
@@ -216,7 +268,7 @@ theme: jekyll-theme-leap-day
 	</form>
 	```
 
-3. (STOP 3) Compruebe el resultado en el navegador.
+3. (STOP 4) Compruebe el resultado en el navegador.
 
 #### Firebase SDK
 
@@ -278,7 +330,7 @@ theme: jekyll-theme-leap-day
 	});
 	```
 
-5. (STOP 4) Compruebe la importación de los paquetes en el _package.json_ y que el archivo _credentials_ no se encuentre versionado.
+5. (STOP 5) Compruebe la importación de los paquetes en el _package.json_ y que el archivo _credentials_ no se encuentre versionado.
 
 #### Servicio Proveedor de Datos / Escritura
 
@@ -361,7 +413,7 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-4. (STOP 5) Compruebe el funcionamiento en el navegador y el resultado en Firestore.
+4. (STOP 6) Compruebe el funcionamiento en el navegador y el resultado en Firestore.
 
 #### Servicio Proveedor de Datos / Lectura
 
@@ -460,7 +512,7 @@ theme: jekyll-theme-leap-day
 	</ion-content>
 	```
 
-4. (STOP 6) Compruebe el funcionamiento en el navegador.
+4. (STOP 7) Compruebe el funcionamiento en el navegador.
 
 ### Documentación
 
