@@ -310,6 +310,5 @@ signals
 
 ### Referencias
 
-* @teachablemachine/image. (n.d.). Retrieved from https://www.npmjs.com/package/@teachablemachine/image
 * Angular Signals. (n.d.). Retrieved from https://angular.dev/essentials/signals#
 * Angular Pipe. (n.d.). Retrieved from https://angular.dev/api/common/PercentPipe
