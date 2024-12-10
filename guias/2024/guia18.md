@@ -97,7 +97,7 @@ theme: jekyll-theme-leap-day
 	        <ion-button>
 	          <ion-label id="label" >Seleccione un archivo</ion-label><ion-icon name="cloud-upload"></ion-icon>
 	        </ion-button>
-	        <input accept="image/*" type="file" />
+	        <input type="file" accept="image/*" />
 
 	      </ion-col>
 	    </ion-row>
