@@ -38,11 +38,12 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 13: React - Eventos y Hooks: useState y useRef](guias/2024/guia13)
   * [Guía 14: React - Hooks: useEffect y LocalStorage](guias/2024/guia14)
 * [Proyecto 04: Aplicación Híbrida - Angular y Ionic](proyectos/2024/proyecto04)
-  * [Guía 15: Angular y Ionic - TeachableMachine](guias/2024/guia15)
+  * [Guía 15: TeachableMachine con JS](guias/2024/guia15)
   * [Guía 16: Angular y Ionic - Introducción y Componentes](guias/2024/guia16)
   * [Guía 17: Angular y Ionic - Formularios, Servicios y Firebase](guias/2024/guia17)
-  * [Guía 18: Angular y Ionic - Ventanas Modales y Signals](guias/2024/guia18)
-  * [Guía 19: Angular y Ionic - Generación del apk](guias/2024/guia19)
+  * [Guía 18: Angular y Ionic - Signals](guias/2024/guia18)
+  * [Guía 19: Angular y Ionic - TeachableMachine](guias/2024/guia19)
+  * [Guía 20: Angular y Ionic - Generación del apk](guias/2024/guia20)
 
   
 ## Scripts
