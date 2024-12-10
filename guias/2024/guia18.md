@@ -256,12 +256,11 @@ theme: jekyll-theme-leap-day
 
 		/* El método onSubmit para enviar los datos del formulario mediante el servicio */
 		onFileSelected(event: Event): void {
-			const input = event.target as HTMLInputElement;
+			...
 
-			if (input.files && input.files.length > 0) {
-				const file = input.files[0];
+			if ( ... ) {
 				
-				const reader = new FileReader();
+				...
 
 				// Convertir el archivo a una URL base64 para mostrarlo en el html
 				reader.onload = () => {
@@ -269,7 +268,7 @@ theme: jekyll-theme-leap-day
 			        this.imageReady.set(true)
 				};
 
-				reader.readAsDataURL(file); // Leer el archivo como base64
+				...
 			}
 		}
 
