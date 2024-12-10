@@ -30,7 +30,7 @@ theme: jekyll-theme-leap-day
 
 2. Edite el archivo _src/app/tabs/tabs.page.html_, con:
 
-    - En el **tab1** el nombre del ícono "rocket" y el texto del ícono "TeachableMachine"
+    - En el **tab1** el nombre del ícono "rocket" y el texto del ícono "Teachable Machine"
 
 3. (STOP 1) Compruebe el resultado en el navegador.
 
@@ -97,7 +97,7 @@ theme: jekyll-theme-leap-day
 	        <ion-button>
 	          <ion-label id="label" >Seleccione un archivo</ion-label><ion-icon name="cloud-upload"></ion-icon>
 	        </ion-button>
-	        <input accept="image/*" hidden />
+	        <input accept="image/*" type="file" />
 
 	      </ion-col>
 	    </ion-row>
