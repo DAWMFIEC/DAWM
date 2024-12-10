@@ -36,7 +36,7 @@ theme: jekyll-theme-leap-day
 
 #### Interfaz gráfica
 
-1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
+1. Edite el archivo _src/app/tab1/tab1.page.ts_, con:
 
 	+ Importe y registre los componentes visuales mediante el decorador de la clase.
 	+ Importe la función _addIcons_ y la imagen _cloudUpload_ para llamar en el constructor.
@@ -76,7 +76,7 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-2. Reemplace todo el contenido en el archivo _src/app/tab2/tab1.page.html_, por:
+2. Reemplace todo el contenido en el archivo _src/app/tab1/tab1.page.html_, por:
 
 	```html
 	<ion-header [translucent]="true">
@@ -122,7 +122,7 @@ theme: jekyll-theme-leap-day
 
 	```
 
-3. Edite el archivo _src/app/tab2/tab1.page.scss_, con:
+3. Edite el archivo _src/app/tab1/tab1.page.scss_, con:
 
 	```css
 	.image-preview {
@@ -154,7 +154,7 @@ theme: jekyll-theme-leap-day
 
 #### Eventos
 
-1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
+1. Edite el archivo _src/app/tab1/tab1.page.ts_, con:
 
 	+ Agregue el callback onFileSelected.
 
@@ -177,7 +177,7 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-2. Edite el archivo _src/app/tab2/tab1.page.html_, con:
+2. Edite el archivo _src/app/tab1/tab1.page.html_, con:
 
 	- Agregue al elemento _&lt;input&gt;_:
 		- La referencia en plantilla **#fileInput**, 
@@ -202,7 +202,7 @@ theme: jekyll-theme-leap-day
 
 #### Carga de imagen (Base64)
 
-1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
+1. Edite el archivo _src/app/tab1/tab1.page.ts_, con:
 
 	+ Agregue el código asincrónico para leer la imagen en Base64.
 
@@ -237,7 +237,7 @@ theme: jekyll-theme-leap-day
 
 #### Signals
 
-1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
+1. Edite el archivo _src/app/tab1/tab1.page.ts_, con:
 
 	+ Importe la función **signal**.
 	+ Declare las señales **imageReady** e **imageURL**
@@ -274,7 +274,7 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-2. Edite el archivo _src/app/tab2/tab1.page.html_, con:
+2. Edite el archivo _src/app/tab1/tab1.page.html_, con:
 
 	```html
 	...
