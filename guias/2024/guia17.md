@@ -23,7 +23,13 @@ theme: jekyll-theme-leap-day
 #### Hibrida
 
 1. Clona localmente tu repositorio **hibrida**.
-2. Levante los servicios, con:
+2. Instale los paquetes de su proyecto con: 
+
+	```command
+	npm i
+	```
+
+3. Levante los servicios, con:
 
 	```command
 	ionic serve
