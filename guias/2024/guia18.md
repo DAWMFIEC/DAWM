@@ -17,17 +17,8 @@ theme: jekyll-theme-leap-day
 #### Hibrida
 
 1. Clona localmente tu repositorio **hibrida**.
-2. Instale los paquetes de su proyecto con: 
-
-	```command
-	npm i
-	```
-
-3. Levante los servicios, con:
-
-	```command
-	ionic serve
-	```
+2. Instale los paquetes de su proyecto.
+3. Levante los servicios.
 
 ### Actividades en clases
 
@@ -37,47 +28,9 @@ theme: jekyll-theme-leap-day
 
     + Importe y agregue la referencia al ícono _rocket_ en la función addIcons.
 
-    ```typescript
-    ...
-
-    /* 1. Importe la referencia al ícono peopleCircle */ 
-    import { rocket, ... } from 'ionicons/icons';
-
-    ...
-
-    export class TabsPage {
-    ...
-
-    constructor() {
-
-        /* 2. Agregue el ícono peopleCircle */
-        addIcons({ rocket, ... });
-
-      }
-    }
-    ```
-
 2. Edite el archivo _src/app/tabs/tabs.page.html_, con:
 
     - En el **tab1** el nombre del ícono "rocket" y el texto del ícono "TeachableMachine"
-
-    ```html
-    <ion-tabs>
-      <ion-tab-bar slot="bottom">
-        
-        <ion-tab-button tab="tab1" href="/tabs/tab1">
-           
-           <!-- 1. Ícono y nombre del tab -->
-           <ion-icon name="rocket"></ion-icon>
-           <ion-label>Teachable Machine</ion-label>
-
-        </ion-tab-button>
-
-        ...
-
-      </ion-tab-bar>
-    </ion-tabs>
-    ```
 
 3. (STOP 1) Compruebe el resultado en el navegador.
 
@@ -236,7 +189,42 @@ theme: jekyll-theme-leap-day
 
 3. (STOP 2) Compruebe el resultado en el navegador.
 
-#### Carga de archivos
+#### Carga de imagen (Base64)
+
+1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
+
+	+ Agregue el código asincrónico para leer la imagen en Base64.
+
+	```typescript
+	...
+	export class Tab1Page {
+
+		...
+
+		/* El método onSubmit para enviar los datos del formulario mediante el servicio */
+		onFileSelected(event: Event): void {
+			const input = event.target as HTMLInputElement;
+
+			if (input.files && input.files.length > 0) {
+				const file = input.files[0];
+				
+				const reader = new FileReader();
+
+				// Convertir el archivo a una URL base64 para mostrarlo en el html
+				reader.onload = () => {
+					console.log(reader.result as string)
+				};
+
+				reader.readAsDataURL(file); // Leer el archivo como base64
+			}
+		}
+
+	}
+	```
+
+2. (STOP 3) Compruebe el resultado en el navegador.
+
+#### Signals
 
 ### Documentación
 
