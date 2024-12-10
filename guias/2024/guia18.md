@@ -34,7 +34,7 @@ theme: jekyll-theme-leap-day
 
 3. (STOP 1) Compruebe el resultado en el navegador.
 
-#### UI
+#### Interfaz gráfica
 
 1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
 
