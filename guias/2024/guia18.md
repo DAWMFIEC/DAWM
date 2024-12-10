@@ -265,7 +265,8 @@ theme: jekyll-theme-leap-day
 
 				// Convertir el archivo a una URL base64 para mostrarlo en el html
 				reader.onload = () => {
-					console.log(reader.result as string)
+			        this.imageUrl.set(reader.result as string)
+			        this.imageReady.set(true)
 				};
 
 				reader.readAsDataURL(file); // Leer el archivo como base64
@@ -276,6 +277,23 @@ theme: jekyll-theme-leap-day
 	```
 
 2. Edite el archivo _src/app/tab2/tab1.page.html_, con:
+
+	```html
+	...
+	<ion-col size="12">
+	        
+	        <!-- CARGA DE IMAGEN - INICIO -->
+	        @if(imageReady()) {
+	          <div class="image-preview">
+	            <img [src]="imageUrl()" alt="Imagen seleccionada" />
+	          </div>
+	        }
+	        <!-- CARGA DE IMAGEN - FIN -->       
+
+	</ion-col>
+	...
+	```
+
 3. (STOP 5) Compruebe el resultado en el navegador.
 
 ### Documentación
