@@ -39,6 +39,7 @@ theme: jekyll-theme-leap-day
 1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
 
 	+ Importe y registre los componentes visuales mediante el decorador de la clase.
+	+ Importe la función _addIcons_ y la imagen _cloudUpload_ para llamar en el constructor.
 
 	```typescript
 	...
@@ -50,6 +51,10 @@ theme: jekyll-theme-leap-day
 
 		... 
 	} from '@ionic/angular/standalone';
+
+	/* Importe la función y el ícono */
+	import { addIcons } from 'ionicons';
+	import { cloudUpload } from 'ionicons/icons';
 	
 	@Component({
 		...
@@ -62,7 +67,14 @@ theme: jekyll-theme-leap-day
 			...
 		]
 	})
-	export class Tab1Page { ... }
+	export class Tab1Page {
+
+		constructor() {
+
+			/* Registre el ícono */
+			addIcons({ cloudUpload });
+		}
+	}
 	```
 
 2. Reemplace todo el contenido en el archivo _src/app/tab2/tab1.page.html_, por:
@@ -187,7 +199,7 @@ theme: jekyll-theme-leap-day
     ...
 	```
 
-3. (STOP 2) Compruebe el resultado en el navegador.
+3. (STOP 3) Compruebe el resultado en el navegador.
 
 #### Carga de imagen (Base64)
 
@@ -222,9 +234,49 @@ theme: jekyll-theme-leap-day
 	}
 	```
 
-2. (STOP 3) Compruebe el resultado en el navegador.
+2. (STOP 4) Compruebe el resultado en el navegador.
 
 #### Signals
+
+1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
+
+	+ Importe la función **signal**.
+	+ Declare las señales **imageReady** e **imageURL**
+
+	```typescript
+	/* Importe la función signal */
+	import { Component, signal } from '@angular/core';
+	...
+	export class Tab1Page {
+
+		imageReady = signal(false)
+  		imageUrl = signal("")
+
+		...
+
+		/* El método onSubmit para enviar los datos del formulario mediante el servicio */
+		onFileSelected(event: Event): void {
+			const input = event.target as HTMLInputElement;
+
+			if (input.files && input.files.length > 0) {
+				const file = input.files[0];
+				
+				const reader = new FileReader();
+
+				// Convertir el archivo a una URL base64 para mostrarlo en el html
+				reader.onload = () => {
+					console.log(reader.result as string)
+				};
+
+				reader.readAsDataURL(file); // Leer el archivo como base64
+			}
+		}
+
+	}
+	```
+
+2. Edite el archivo _src/app/tab2/tab1.page.html_, con:
+3. (STOP 5) Compruebe el resultado en el navegador.
 
 ### Documentación
 
