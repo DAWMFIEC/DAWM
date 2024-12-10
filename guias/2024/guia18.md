@@ -14,19 +14,246 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### Hibrida
+
+1. Clona localmente tu repositorio **hibrida**.
+2. Instale los paquetes de su proyecto con: 
+
+	```command
+	npm i
+	```
+
+3. Levante los servicios, con:
+
+	```command
+	ionic serve
+	```
 
 ### Actividades en clases
 
+#### IonTab
 
+1. Edite el archivo _src/app/tabs/tabs.page.ts_, con:
+
+    + Importe y agregue la referencia al ícono _rocket_ en la función addIcons.
+
+    ```typescript
+    ...
+
+    /* 1. Importe la referencia al ícono peopleCircle */ 
+    import { rocket, ... } from 'ionicons/icons';
+
+    ...
+
+    export class TabsPage {
+    ...
+
+    constructor() {
+
+        /* 2. Agregue el ícono peopleCircle */
+        addIcons({ rocket, ... });
+
+      }
+    }
+    ```
+
+2. Edite el archivo _src/app/tabs/tabs.page.html_, con:
+
+    - En el **tab1** el nombre del ícono "rocket" y el texto del ícono "TeachableMachine"
+
+    ```html
+    <ion-tabs>
+      <ion-tab-bar slot="bottom">
+        
+        <ion-tab-button tab="tab1" href="/tabs/tab1">
+           
+           <!-- 1. Ícono y nombre del tab -->
+           <ion-icon name="rocket"></ion-icon>
+           <ion-label>Teachable Machine</ion-label>
+
+        </ion-tab-button>
+
+        ...
+
+      </ion-tab-bar>
+    </ion-tabs>
+    ```
+
+3. (STOP 1) Compruebe el resultado en el navegador.
+
+#### UI
+
+1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
+
+	+ Importe y registre los componentes visuales mediante el decorador de la clase.
+
+	```typescript
+	...
+	import {  
+
+		/* Importe los componentes de la UI */
+		IonGrid, IonCol, IonRow,
+		IonLabel,IonButton, IonInput, IonIcon,
+
+		... 
+	} from '@ionic/angular/standalone';
+	
+	@Component({
+		...
+		imports: [
+
+			/* Registre los componentes de la UI */
+			IonGrid, IonCol, IonRow,
+    		IonLabel,IonButton, IonInput, IonIcon,
+
+			...
+		]
+	})
+	export class Tab1Page { ... }
+	```
+
+2. Reemplace todo el contenido en el archivo _src/app/tab2/tab1.page.html_, por:
+
+	```html
+	<ion-header [translucent]="true">
+	  <ion-toolbar>
+	    <ion-title>
+	      Teachable Machine
+	    </ion-title>
+	  </ion-toolbar>
+	</ion-header>
+
+	<ion-content [fullscreen]="true">
+
+	  <ion-grid [fixed]="true">
+	    <ion-row>
+	      <ion-col>
+
+	        <ion-button>
+	          <ion-label id="label" >Seleccione un archivo</ion-label><ion-icon name="cloud-upload"></ion-icon>
+	        </ion-button>
+	        <input accept="image/*" hidden />
+
+	      </ion-col>
+	    </ion-row>
+	    <ion-row>
+	      <ion-col size="12">
+	        
+	        <!-- CARGA DE IMAGEN - INICIO -->
+	        
+	        <!-- CARGA DE IMAGEN - FIN -->       
+
+	      </ion-col>
+	      <ion-col size="12">
+	        
+	        <!-- CARGA DE PREDICCIÓN - INICIO -->
+
+	        <!-- CARGA DE PREDICCIÓN - FIN -->
+
+	      </ion-col>
+	    </ion-row>
+	  </ion-grid> 
+
+	</ion-content>
+
+	```
+
+3. Edite el archivo _src/app/tab2/tab1.page.scss_, con:
+
+	```css
+	.image-preview {
+	  margin-top: 20px;
+
+	  img {
+	    max-width: 100%;
+	    height: auto;
+	    border-radius: 10px;
+	    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+	  }
+	}
+
+	ion-col {
+	  text-align: center;
+	}
+
+	#label {
+	  padding-right: 0.5rem;
+	}
+
+	.file-input {
+	  display: none;
+	}
+	```
+
+
+4. (STOP 2) Compruebe el resultado en el navegador.
+
+#### Eventos
+
+1. Edite el archivo _src/app/tab2/tab1.page.ts_, con:
+
+	+ Agregue el callback onFileSelected.
+
+	```typescript
+	...
+	export class Tab1Page {
+
+		...
+
+		/* El método onSubmit para enviar los datos del formulario mediante el servicio */
+		onFileSelected(event: Event): void {
+			const input = event.target as HTMLInputElement;
+
+			if (input.files && input.files.length > 0) {
+				const file = input.files[0];
+				console.log(file)
+			}
+		}
+
+	}
+	```
+
+2. Edite el archivo _src/app/tab2/tab1.page.html_, con:
+
+	- Agregue al elemento _<input>_:
+		- La referencia en plantilla **#fileInput**, 
+		- El callback _onFileSelected_ para el evento _change_ con el objeto _event_, y 
+		- Oculte el elemento (hidden).
+	- Agregue al elemento _<ion-button>_ el disparo del evento click de _fileInput_.
+
+	```html
+	...
+
+	<!-- Disparo del evento click de fileInput -->
+	<ion-button (click)="fileInput.click()">
+      <ion-label id="label" >Seleccione un archivo</ion-label><ion-icon name="cloud-upload"></ion-icon>
+    </ion-button>
+
+    <!-- Referencia en plantilla #fileInput, callback para el evento change y oculte el elemento -->
+    <input #fileInput type="file" accept="image/*" (change)="onFileSelected($event)" hidden />
+    ...
+	```
+
+3. (STOP 2) Compruebe el resultado en el navegador.
+
+#### Carga de archivos
 
 ### Documentación
 
+* Documentación de [signals](https://angular.dev/essentials/signals) en Angular
 
 ### Fundamental
 
+* Angular Signals en [X](https://x.com/AngularTrends/status/1824058459781836802)
+
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Signals in Angular: deep dive for busy developers <a href="https://twitter.com/hashtag/angular?src=hash&amp;ref_src=twsrc%5Etfw">#angular</a> <a href="https://twitter.com/hashtag/javascript?src=hash&amp;ref_src=twsrc%5Etfw">#javascript</a> <a href="https://twitter.com/hashtag/frontend?src=hash&amp;ref_src=twsrc%5Etfw">#frontend</a> <a href="https://twitter.com/hashtag/webdev?src=hash&amp;ref_src=twsrc%5Etfw">#webdev</a> <a href="https://twitter.com/hashtag/dormosheio?src=hash&amp;ref_src=twsrc%5Etfw">#dormosheio</a> <a href="https://twitter.com/hashtag/frontenddev?src=hash&amp;ref_src=twsrc%5Etfw">#frontenddev</a> <a href="https://t.co/wTz8qybA3W">https://t.co/wTz8qybA3W</a></p>&mdash; AngularTrends (@AngularTrends) <a href="https://twitter.com/AngularTrends/status/1824058459781836802?ref_src=twsrc%5Etfw">August 15, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
+signals
 
 ### Referencias
 
+* @teachablemachine/image. (n.d.). Retrieved from https://www.npmjs.com/package/@teachablemachine/image
+* Angular Signals. (n.d.). Retrieved from https://angular.dev/essentials/signals#
+* Angular Pipe. (n.d.). Retrieved from https://angular.dev/api/common/PercentPipe
