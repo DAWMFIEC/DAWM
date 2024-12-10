@@ -180,11 +180,11 @@ theme: jekyll-theme-leap-day
 
 2. Edite el archivo _src/app/tab2/tab1.page.html_, con:
 
-	- Agregue al elemento _<input>_:
+	- Agregue al elemento _&lt;input&gt;_:
 		- La referencia en plantilla **#fileInput**, 
 		- El callback _onFileSelected_ para el evento _change_ con el objeto _event_, y 
 		- Oculte el elemento (hidden).
-	- Agregue al elemento _<ion-button>_ el disparo del evento click de _fileInput_.
+	- Agregue al elemento _&lt;ion-button&gt;_ el disparo del evento click de _fileInput_.
 
 	```html
 	...
