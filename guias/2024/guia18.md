@@ -250,7 +250,7 @@ theme: jekyll-theme-leap-day
 	export class Tab1Page {
 
 		imageReady = signal(false)
-  		imageUrl = signal("")
+		imageUrl = signal("")
 
 		...
 
