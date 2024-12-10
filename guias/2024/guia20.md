@@ -1,0 +1,54 @@
+---
+theme: jekyll-theme-leap-day
+---
+
+## Guía 19
+
+[DAWM](/DAWM/) / [Proyecto04](/DAWM/proyectos/2024/proyecto04)
+
+<link href="styles/mystyle.css" rel="stylesheet" />
+
+### Objetivo general
+
+<pre class="purpose">Desarrollar una aplicación híbrida utilizando tecnologías que integren modelos de aprendizaje automático previamente entrenados en un entorno funcional y accesible para resolver problemas específicos mediante el reconocimiento de patrones, objetos o sonidos fomentando habilidades prácticas en el desarrollo de aplicaciones móviles con tecnologías modernas y la implementación de inteligencia artificial.</pre>
+
+### Actividades previas
+
+* Instale Android Studio desde su [página oficial](https://developer.android.com/studio).
+
+### Actividades en clases
+
+1. Clone localmente tu repositorio **hibrida**.
+2. Instale los módulos native-run (para ejecutar binarios nativos en dispositivos y simuladores/emuladores) y cordova-res (para generar íconos de aplicaciones nativas y pantallas de presentación), con: 
+
+    ```command
+    npm install -g native-run cordova-res
+    ```
+
+3. Desde la línea de comandos, construya la aplicación a partir de los recursos web más recientes en el proyecto nativo:
+
+    ```command
+    ionic cap build android --prod
+    ```
+
+4. En **Android Studio**, genere el APK al hacer clic en la ruta `Build` **>** `Build Bundle(s) / APK(s)` **>** `Build APK`
+
+5. Si la generación del APK resulta exitosa, transfiera y compruebe el funcionamiento del archivo generado en `android/app/build/outputs/apk/debug/app-debug.apk` en su dispositivo móvil
+
+### Documentación
+
+* De una aplicación en Ionic a liberar una aplicación de Android en [Building And Releasing Your Capacitor Android App](https://ionic.io/blog/building-and-releasing-your-capacitor-android-app)
+
+### Fundamental
+
+* Android Studio Giraffe UI en [x](https://twitter.com/androidstudio/status/1707774273543102821)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">The new Android Studio Giraffe UI is now fully supported with the Intelli.J 2022.3 platform update!<br><br>Some design changes include:<br>⚙️ Simplified main toolbar<br>❇️ Redesigned tool windows<br>⚡️ And more! <a href="https://t.co/rJoaHlGL5B">pic.twitter.com/rJoaHlGL5B</a></p>&mdash; Android Studio (@androidstudio) <a href="https://twitter.com/androidstudio/status/1707774273543102821?ref_src=twsrc%5Etfw">September 29, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+### Términos
+
+APK
+
+### Referencias
+
+* Grimm, S. (2023). Building And Releasing Your Capacitor Android App. Retrieved from https://ionic.io/blog/building-and-releasing-your-capacitor-android-app
