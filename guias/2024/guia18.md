@@ -62,7 +62,7 @@ theme: jekyll-theme-leap-day
 
 			/* Registre los componentes de la UI */
 			IonGrid, IonCol, IonRow,
-    		IonLabel,IonButton, IonInput, IonIcon,
+			IonLabel,IonButton, IonInput, IonIcon,
 
 			...
 		]
@@ -70,7 +70,6 @@ theme: jekyll-theme-leap-day
 	export class Tab1Page {
 
 		constructor() {
-
 			/* Registre el ícono */
 			addIcons({ cloudUpload });
 		}
