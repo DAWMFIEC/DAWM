@@ -39,30 +39,30 @@ theme: jekyll-theme-leap-day
 1. Edite el archivo _src/app/tab1/tab1.page.ts_, con:
 
 	+ Importe y registre los componentes visuales mediante el decorador de la clase.
-	+ Importe la función _addIcons_ y la imagen _cloudUpload_ para llamar en el constructor.
+	+ Importe la función _addIcons_ y la imagen _cloudUploadOutline_ para llamar en el constructor.
 
 	```typescript
 	...
 	import {  
 
-		/* Importe los componentes de la UI */
-		IonGrid, IonCol, IonRow,
-		IonLabel,IonButton, IonInput, IonIcon,
+		  /* Importe los componentes de la UI */
+		  IonFab, IonFabButton, IonIcon,
+		  IonCard,
 
 		... 
 	} from '@ionic/angular/standalone';
 
 	/* Importe la función y el ícono */
 	import { addIcons } from 'ionicons';
-	import { cloudUpload } from 'ionicons/icons';
+	import { cloudUploadOutline } from 'ionicons/icons';
 	
 	@Component({
 		...
 		imports: [
 
-			/* Registre los componentes de la UI */
-			IonGrid, IonCol, IonRow,
-			IonLabel,IonButton, IonInput, IonIcon,
+		    /* Registre los componentes de la UI */
+		    IonFab, IonFabButton, IonIcon,
+		    IonCard, 
 
 			...
 		]
@@ -71,7 +71,7 @@ theme: jekyll-theme-leap-day
 
 		constructor() {
 			/* Registre el ícono */
-			addIcons({ cloudUpload });
+			addIcons({ cloudUploadOutline });
 		}
 	}
 	```
@@ -88,64 +88,38 @@ theme: jekyll-theme-leap-day
 	</ion-header>
 
 	<ion-content [fullscreen]="true">
+	  <ion-header collapse="condense">
+	    <ion-toolbar>
+	      <ion-title size="large">Teachable Machine</ion-title>
+	    </ion-toolbar>
+	  </ion-header>
 
-	  <ion-grid [fixed]="true">
-	    <ion-row>
-	      <ion-col>
+	  <!-- CARGA DE IMAGEN - INICIO -->
+	  
+	  <!-- CARGA DE IMAGEN - FIN -->
 
-	        <ion-button>
-	          <ion-label id="label" >Seleccione un archivo</ion-label><ion-icon name="cloud-upload"></ion-icon>
-	        </ion-button>
-	        <input type="file" accept="image/*" />
+	  <input type="file" accept="image/*" />
 
-	      </ion-col>
-	    </ion-row>
-	    <ion-row>
-	      <ion-col size="12">
-	        
-	        <!-- CARGA DE IMAGEN - INICIO -->
-	        
-	        <!-- CARGA DE IMAGEN - FIN -->       
-
-	      </ion-col>
-	      <ion-col size="12">
-	        
-	        <!-- CARGA DE PREDICCIÓN - INICIO -->
-
-	        <!-- CARGA DE PREDICCIÓN - FIN -->
-
-	      </ion-col>
-	    </ion-row>
-	  </ion-grid> 
+	  <ion-fab slot="fixed" vertical="bottom" horizontal="center">
+	    <ion-fab-button>
+	      <ion-icon name="cloud-upload-outline"></ion-icon>
+	    </ion-fab-button>
+	  </ion-fab>
 
 	</ion-content>
-
 	```
 
 3. Edite el archivo _src/app/tab1/tab1.page.scss_, con:
 
 	```css
-	.image-preview {
-	  margin-top: 20px;
-
-	  img {
-	    max-width: 100%;
-	    height: auto;
-	    border-radius: 10px;
-	    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-	  }
+	img {
+	    width: 100vw;
+	    height: 30vh;
+	    object-fit: cover;
 	}
 
-	ion-col {
-	  text-align: center;
-	}
-
-	#label {
-	  padding-right: 0.5rem;
-	}
-
-	.file-input {
-	  display: none;
+	ion-button {
+	    margin: 0 auto;
 	}
 	```
 
@@ -187,14 +161,15 @@ theme: jekyll-theme-leap-day
 
 	```html
 	...
-
-	<!-- Disparo del evento click de fileInput -->
-	<ion-button (click)="fileInput.click()">
-      <ion-label id="label" >Seleccione un archivo</ion-label><ion-icon name="cloud-upload"></ion-icon>
-    </ion-button>
-
-    <!-- Referencia en plantilla #fileInput, callback para el evento change y oculte el elemento -->
+	<!-- Referencia en plantilla #fileInput, callback para el evento change y oculte el elemento -->
     <input #fileInput type="file" accept="image/*" (change)="onFileSelected($event)" hidden />
+
+    <!-- Disparo del evento click de fileInput -->
+	<ion-fab slot="fixed" vertical="bottom" horizontal="center">
+		<ion-fab-button (click)="fileInput.click()">
+			<ion-icon name="cloud-upload-outline"></ion-icon>
+		</ion-fab-button>
+	</ion-fab>
     ...
 	```
 
@@ -278,17 +253,23 @@ theme: jekyll-theme-leap-day
 
 	```html
 	...
-	<ion-col size="12">
+	<ion-content [fullscreen]="true">
 	        
 	        <!-- CARGA DE IMAGEN - INICIO -->
 	        @if(imageReady()) {
-	          <div class="image-preview">
-	            <img [src]="imageUrl()" alt="Imagen seleccionada" />
-	          </div>
-	        }
+		      <ion-card>
+
+		        <img [src]="imageUrl()" alt="Imagen seleccionada" />
+		        
+		        <!-- CARGA DE PREDICCIÓN - INICIO -->
+		        
+		        <!-- CARGA DE PREDICCIÓN - FIN -->
+
+		      </ion-card>
+		    }
 	        <!-- CARGA DE IMAGEN - FIN -->       
 
-	</ion-col>
+	</ion-content>
 	...
 	```
 
