@@ -49,7 +49,7 @@ theme: jekyll-theme-leap-day
 4. Reinicie el servidor.
 5. (STOP 1) Inspeccione en el navegador y compruebe la carga de los archivos en la opción **Network**, en el archivo **scripts.js**.
 
-#### Servicio de Teacheable Machine
+#### Servicio de Teacheable Machine - Cargar el modelo y clases
 
 1. Desde la línea de comandos, cree el servicio proveedor de datos, con:
 
@@ -97,11 +97,192 @@ theme: jekyll-theme-leap-day
 
 3. Edite _src/app/tab1/tab1.page.ts_, con:
 
+	+ Importe y registre los componentes visuales mediante el decorador de la clase.
+	+ Importe y registre el servicio en el constructor.
+	+ Declare los atributos _modelLoaded_ y _classLabels_ para almacenar el modelo y la lista de clases, respectivamente.
+	+ Agregue el método _ngOnInit_ con el que carga el modelo y las clases
+
 	```typescript
+	...
+	import {  
+
+		  /* Importe los componentes de la UI */
+		  IonCardContent, IonButton, IonList, IonItem, IonLabel,
+
+		... 
+	} from '@ionic/angular/standalone';
+
+	/* Importe el servicio */
+	import { TeachablemachineService } from '../services/teachablemachine.service';
 	
+	@Component({
+		...
+		imports: [
+
+		    /* Registre los componentes de la UI */
+		    IonCardContent, IonButton, IonList, IonItem, IonLabel,
+
+			...
+		]
+	})
+	export class Tab1Page {
+
+		...
+
+		/* Declare los atributos para almacenar el modelo y la lista de clases */
+		modelLoaded = signal(false);
+  		classLabels: string[] = [];
+
+  		/* Registre el servicio en el constructor */
+		constructor(private teachablemachine: TeachablemachineService) { ... }
+
+		/* Método ngOnInit para cargar el modelo y las clases */
+		async ngOnInit() {
+			await this.teachablemachine.loadModel()
+			this.classLabels = this.teachablemachine.getClassLabels()
+			this.modelLoaded.set(true)
+		}
+	}
 	```
 
+4. Edite el archivo _src/app/tab1/tab1.page.html_, con:
+
+	```html
+	...
+	<!-- CARGA DE PREDICCIÓN - INICIO -->
+    @if(modelLoaded()) {
+
+      <div class="ion-text-center ion-padding-top ion-padding-bottom">
+        <ion-button fill="outline" color="success">Predecir</ion-button>
+      </div>
+
+      <ion-list>
+        <ion-item>
+          <ion-label>Clases: {{classLabels}}</ion-label>
+        </ion-item>
+      </ion-list>
+
+    }
+    <!-- CARGA DE PREDICCIÓN - FIN -->
+	...
+	```
+
+5. (STOP 2) Compruebe el resultado en el navegador.
+
+<p style="text-align: center;">
+	<img src="imagenes/guia19_loadModel.png"  width="80%">
+</p>
+
+#### Servicio de Teacheable Machine - Predicción
+
+1. Edite el servicio _src/app/services/teachablemachine.service.ts_, con:
+
+	- Agregue el método _predict_.
+
+	```typescript
+	...
+	export class TeachablemachineService {
+
+		...
+
+		getClassLabels(): string[] { ... }
+
+		/* Método para la predicción a partir de la imagen */
+		async predict(imageElement: HTMLImageElement): Promise<any[]> {
+
+			if (!this.model) {
+				throw new Error('El modelo no está cargado.');
+			}
+
+			return await this.model.predict(imageElement);
+		}
+
+	}
+	```
+
+3. Edite _src/app/tab1/tab1.page.ts_, con:
+
+	+ Importe los componentes **@ViewChild** y **ElementRef** 
+	+ Declare la referencia al elemento con el id image.
+	+ Declare el atributo _predictions_ para almacenar la lista de predicciones.
+	+ Agregue el método _predict_ para obtener la predicción a partir de la imagen
+
+	```typescript
+	/* Importe los componentes */
+	import { ViewChild, ElementRef, ... } from '@angular/core';
+	...
+	
+	@Component({ ... })
+	export class Tab1Page {
+
+		/* Declare la referencia al elemento con el id image */
+		@ViewChild('image', { static: false }) imageElement!: ElementRef<HTMLImageElement>;
+
+		...
+
+		/* Lista de predicciones */
+  		predictions: any[] = [];
+
+
+		/* Método para obtener la predicción a partir de la imagen */
+		async predict() {
+			try {
+				const image = this.imageElement.nativeElement;
+				this.predictions = await this.teachablemachine.predict(image);
+			} catch (error) {
+				console.error(error);
+				alert('Error al realizar la predicción.');
+			}
+		}
+	}
+	```
+
+4. Edite el archivo _src/app/tab1/tab1.page.html_, con:
+
+	+ Agregue el identificador **#image** al elemento _&lt;img&gt;_
+	+ Registro de la función **predict()** para el evento **click**, en el elemento _&lt;ion-button&gt;_
+	+ Itere sobre la lista de predicciones
+
+	```html
+	...
+
+	<!-- Identificador #image -->
+	<img #image ... />
+
+	<!-- CARGA DE PREDICCIÓN - INICIO -->
+	@if(modelLoaded()) {
+
+		<div ... >
+
+			<!-- Registro de la función predict para el evento click -->
+			<ion-button ... (click)="predict()">Predecir</ion-button>
+
+		</div>
+
+		<ion-list>
+			...
+
+			<!-- Itere sobre la lista de predicciones -->
+			@for (item of predictions; track $index) {
+		    	<ion-item>
+		        	<ion-label>{{item?.className}}: {{item?.probability}}</ion-label>
+		      	</ion-item>
+		    }
+
+		</ion-list>
+	}
+	...
+	```
+
+5. (STOP 3) Compruebe el resultado en el navegador.
+
+<p style="text-align: center;">
+	<img src="imagenes/guia19_prediction.png"  width="80%">
+</p>
+
 ### Documentación
+
+* Paquete de [Teachable Machine](https://www.npmjs.com/package/@teachablemachine/image)
 
 ### Fundamental
 
