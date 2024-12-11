@@ -249,8 +249,7 @@ theme: jekyll-theme-leap-day
 	<!-- Identificador #image -->
 	<img #image ... />
 
-	<!-- CARGA DE PREDICCIÓN - INICIO -->
-	@if(modelLoaded()) {
+	@if( ... ) {
 
 		<div ... >
 
@@ -286,11 +285,13 @@ theme: jekyll-theme-leap-day
 
 ### Fundamental
 
+* Proyectos educativos de [Teachable Machine](https://x.com/TheEduTools/status/1788870128852984159)
 
+<blockquote class="twitter-tweet"><p lang="en" dir="ltr">Unlock the potential of AI in your classroom! Join me in exploring image, sound, and pose recognition with Teachable Machine. 🍚🔓 Equip the next generation with vital tech skills.<br><br>Know more about Teachable Machine:<a href="https://t.co/dw8QJHd6kZ">https://t.co/dw8QJHd6kZ</a><a href="https://twitter.com/hashtag/teachablemachine?src=hash&amp;ref_src=twsrc%5Etfw">#teachablemachine</a> <a href="https://twitter.com/hashtag/AIProjects?src=hash&amp;ref_src=twsrc%5Etfw">#AIProjects</a>… <a href="https://t.co/C36s1POeOF">pic.twitter.com/C36s1POeOF</a></p>&mdash; The Educational Tools (@TheEduTools) <a href="https://twitter.com/TheEduTools/status/1788870128852984159?ref_src=twsrc%5Etfw">May 10, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
-tensorflow
+tensorflow, teachable machine
 
 ### Referencias
 
