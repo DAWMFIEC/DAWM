@@ -103,7 +103,45 @@ theme: jekyll-theme-leap-day
 	+ Agregue el método _ngOnInit_ con el que carga el modelo y las clases
 
 	```typescript
-	here
+	import {  
+
+		/* Importe los componentes de la UI */
+		IonCardContent, IonButton, IonList, IonItem, IonLabel,
+		... 
+		
+	} from '@ionic/angular/standalone';
+
+	/* Importe el servicio */
+	import { TeachablemachineService } from '../services/teachablemachine.service';
+
+	@Component({
+		...
+		imports: [
+
+			/* Registre los componentes de la UI */
+			IonCardContent, IonButton, IonList, IonItem, IonLabel,
+
+			...
+		]
+	})
+	export class Tab1Page {
+
+		...
+
+		/* Declare los atributos para almacenar el modelo y la lista de clases */
+		modelLoaded = signal(false);
+		classLabels: string[] = [];
+
+		/* Registre el servicio en el constructor */
+		constructor(private teachablemachine: TeachablemachineService) { ... }
+
+		/* Método ngOnInit para cargar el modelo y las clases */
+		async ngOnInit() {
+			await this.teachablemachine.loadModel()
+			this.classLabels = this.teachablemachine.getClassLabels()
+			this.modelLoaded.set(true)
+		}
+	}
 	```
 
 4. Edite el archivo _src/app/tab1/tab1.page.html_, con:
