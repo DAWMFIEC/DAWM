@@ -159,7 +159,7 @@ theme: jekyll-theme-leap-day
 
       <ion-list>
         <ion-item>
-          <ion-label>Clases: {{classLabels}}</ion-label>
+          <ion-label>Clases: {% raw %} {{ {% endraw %}classLabels {% raw %} }} {% endraw %}</ion-label>
         </ion-item>
       </ion-list>
 
@@ -265,7 +265,7 @@ theme: jekyll-theme-leap-day
 			<!-- Itere sobre la lista de predicciones -->
 			@for (item of predictions; track $index) {
 		    	<ion-item>
-		        	<ion-label>{{item?.className}}: {{item?.probability}}</ion-label>
+		        	<ion-label>{% raw %} {{ {% endraw %} item?.className {% raw %} }} {% endraw %}: {% raw %} {{ {% endraw %} item?.probability {% raw %} }} {% endraw %}</ion-label>
 		      	</ion-item>
 		    }
 
