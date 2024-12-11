@@ -103,6 +103,7 @@ theme: jekyll-theme-leap-day
 	+ Agregue el método _ngOnInit_ con el que carga el modelo y las clases
 
 	```typescript
+	
 	...
 	import {  
 
