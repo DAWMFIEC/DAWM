@@ -46,8 +46,7 @@ theme: jekyll-theme-leap-day
 	import {  
 
 		  /* Importe los componentes de la UI */
-		  IonFab, IonFabButton, IonIcon,
-		  IonCard,
+		  IonFab, IonFabButton, IonIcon, IonCard,
 
 		... 
 	} from '@ionic/angular/standalone';
@@ -61,8 +60,7 @@ theme: jekyll-theme-leap-day
 		imports: [
 
 		    /* Registre los componentes de la UI */
-		    IonFab, IonFabButton, IonIcon,
-		    IonCard, 
+		    IonFab, IonFabButton, IonIcon, IonCard, 
 
 			...
 		]
