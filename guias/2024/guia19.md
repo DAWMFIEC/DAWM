@@ -108,7 +108,7 @@ theme: jekyll-theme-leap-day
 		/* Importe los componentes de la UI */
 		IonCardContent, IonButton, IonList, IonItem, IonLabel,
 		... 
-		
+
 	} from '@ionic/angular/standalone';
 
 	/* Importe el servicio */
@@ -202,6 +202,7 @@ theme: jekyll-theme-leap-day
 3. Edite _src/app/tab1/tab1.page.ts_, con:
 
 	+ Importe los componentes **@ViewChild** y **ElementRef** 
+	+ Importe y registre el pipe **PercentPipe**
 	+ Declare la referencia al elemento con el id image.
 	+ Declare el atributo _predictions_ para almacenar la lista de predicciones.
 	+ Agregue el método _predict_ para obtener la predicción a partir de la imagen
@@ -209,9 +210,23 @@ theme: jekyll-theme-leap-day
 	```typescript
 	/* Importe los componentes */
 	import { ViewChild, ElementRef, ... } from '@angular/core';
+
+	/* Importe el pipe */
+	import { PercentPipe } from '@angular/common';
 	...
 	
-	@Component({ ... })
+	@Component({ 
+
+		...
+		imports: [
+
+			/* Registre el pipe */
+			PercentPipe,
+
+			...
+
+		]
+	})
 	export class Tab1Page {
 
 		/* Declare la referencia al elemento con el id image */
@@ -258,12 +273,13 @@ theme: jekyll-theme-leap-day
 		</div>
 
 		<ion-list>
-			...
+
+			<ion-item> ... </ion-item>
 
 			<!-- Itere sobre la lista de predicciones -->
 			@for (item of predictions; track $index) {
 		    	<ion-item>
-		        	<ion-label>{% raw %} {{ {% endraw %} item?.className {% raw %} }} {% endraw %}: {% raw %} {{ {% endraw %} item?.probability {% raw %} }} {% endraw %}</ion-label>
+		        	<ion-label>{% raw %} {{ {% endraw %} item?.className {% raw %} }} {% endraw %}: {% raw %} {{ {% endraw %} item?.probability | percent {% raw %} }} {% endraw %}</ion-label>
 		      	</ion-item>
 		    }
 
