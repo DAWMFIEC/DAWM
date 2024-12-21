@@ -36,7 +36,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Proyecto Backend
+#### Proyecto: Backend
 
 1. Desde la línea de comandos
 	
@@ -63,6 +63,89 @@ theme: jekyll-theme-leap-day
 
     <div align="center">
       <img src="imagenes/django_starter.png">
+    </div>
+
+#### Aplicación: main
+
+1. Desde la línea de comandos
+	
+	+ Cree la aplicación **main**, con:
+
+	```command
+	python manage.py startapp main
+	```
+
+2. Edite el archivo _backend/settings.py_
+
+	+ Registre la aplicación, con:
+
+	```python
+	INSTALLED_APPS = [
+	    ...
+	    'main',
+	]
+	```
+
+3. Edite el archivo _backend/urls.py_
+
+	+ Asocie la ruta **raíz** ('') con las rutas de la aplicación main, con:
+
+	```python
+	from django.urls import ... , include
+
+	urlpatterns = [
+	    ...
+	    path('', include('main.urls')),
+	]
+	```
+
+4. Cree el archivo _main/urls.py_
+	
+	+ Asocie la ruta **raíz** ('') con el controlador **index**, con:
+
+	```python
+	from django.urls import path
+	from . import views
+
+	urlpatterns = [
+	    path('', views.index, name='main_index'),
+	]
+	```
+
+5. Edite el archivo _main/views.py_
+
+	+ Agregue el controlador **index**, con:
+
+	```python 
+	...
+
+
+	from django.http import HttpResponse
+
+	def index(request):
+	    return HttpResponse("Hello, World!")
+    ```
+
+6. Desde la línea de comandos
+	
+	+ Levante el servidor, con:
+
+	```command
+	python manage.py runserver
+	```
+
+7. (STOP 2) Revise los cambios en el navegador para las URLs: 
+
+	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
+
+    <div align="center">
+      <img src="imagenes/django_index_hello_world.png">
+    </div>
+
+    + En la ruta del admin [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+
+    <div align="center">
+      <img src="imagenes/django_admin.png">
     </div>
 
 ### Documentación
