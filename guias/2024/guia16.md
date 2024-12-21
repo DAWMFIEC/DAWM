@@ -63,14 +63,16 @@ theme: jekyll-theme-leap-day
 * Archivos importantes
     + _src/main.ts_ punto de entrada principal de la aplicación, que inicializa el módulo de Angular.
     + _src/global.scss_ archivo de estilos global para la aplicación.
-    + _src/index.html_ archivo HTML principal que actúa como punto de entrada para la aplicación.
-        Contiene el selector **&lt;app-root&gt;** del componente **AppComponent**.
+    + _src/app/app.routes.ts_ configuración de las rutas de la aplicación.
+    + _src/index.html_ archivo HTML principal que actúa como punto de entrada para la aplicación. Contiene el selector **&lt;app-root&gt;** del componente **AppComponent**.
     
-* Código fuente (AppComponent)
-    + _src/app/app.component.html_
-    + _src/app/app.component.ts_
-    + _src/app/app.component.spec.ts_
-    + _src/app/app.component.scss_
+* Código fuente (por componente)
+    
+    Por ejemplo, el componente **AppComponent** contiene los archivos:
+    + _src/app/app.component.html_ estructura HTML.
+    + _src/app/app.component.ts_ lógica de la página.
+    + _src/app/app.component.spec.ts_ pruebas unitarias
+    + _src/app/app.component.scss_ estilos específicos.
 
 #### IonTab
 
