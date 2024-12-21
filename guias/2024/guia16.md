@@ -52,6 +52,25 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/ionic_base.jpg">
     </div>
 
+#### Estructura de archivos del proyecto en Angular + Ionic.
+
+* Archivos de configuración
+    + _./angular.json_ configuración de Angular CLI, incluyendo opciones de compilación, pruebas y distribución.
+    + _./ionic.config.json_ configuración específica del framework Ionic, como el nombre del proyecto y las plataformas.
+    + _./tsconfig.json_ configuración del compilador TypeScript, como los objetivos de compilación y las rutas.
+    + _./package.json_ contiene la lista de los paquetes instalados.
+
+* Archivos importantes
+    + _src/main.ts_ punto de entrada principal de la aplicación, que inicializa el módulo de Angular.
+    + _src/global.scss_ archivo de estilos global para la aplicación.
+    + _src/index.html_ archivo HTML principal que actúa como punto de entrada para la aplicación.
+        Contiene el selector **&lt;app-root&gt;** del componente **AppComponent**.
+    
+* Código fuente (AppComponent)
+    + _src/app/app.component.html_
+    + _src/app/app.component.ts_
+    + _src/app/app.component.spec.ts_
+    + _src/app/app.component.scss_
 
 #### IonTab
 
