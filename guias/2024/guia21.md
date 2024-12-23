@@ -254,6 +254,13 @@ theme: jekyll-theme-leap-day
     return render(request, 'home.html')
 	```
 
+5. (STOP 3) Revise los cambios en el navegador para las URLs: 
+
+	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
+
+    <div align="center">
+      <img src="imagenes/django_index_home.png">
+    </div>
 
 #### Estructura de carpetas adicionales
 
