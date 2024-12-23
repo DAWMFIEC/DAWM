@@ -178,7 +178,7 @@ theme: jekyll-theme-leap-day
 
 1. Crea una carpeta en el directorio raíz de la aplicación (_backend/templates_), con:
 	
-	+ La plantilla del resto de elementos en _backend/templates/base.html_ 
+	+ El archivo _backend/templates/base.html_ con la plantilla.
 
 	```html
 	<!DOCTYPE html>
@@ -213,7 +213,7 @@ theme: jekyll-theme-leap-day
 
 	```
 
-	+ La página principal en _backend/templates/home.html_
+	+ El archivo _backend/templates/home.html_ con los elementos para la página principal.
 
 	```html
 	{% extends "base.html" %}
