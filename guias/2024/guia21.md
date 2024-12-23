@@ -148,12 +148,51 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/django_admin.png">
     </div>
 
+#### Versionamiento local y remoto
+
+1. Crea un repositorio en GitHub con el nombre **backend**.
+
+2. Desde la línea de comandos:
+
+		+ Inicialice el repositorio local
+
+		```command
+		git init .
+		``` 
+
+		+ Agregue la rama **main** y el tag **origin**:
+
+    ```command
+    git branch -M main
+    git remote add origin https://github.com/<SU-USUARIO>/backend.git
+    ```
+
+    + Incorpore los cambios del repositorio remoto en el repositorio local:
+
+    ```command
+    git pull origin main
+    ```
+
+3. Versiona local y remotamente el repositorio **.**.
+
+    ```command
+    git add .
+    git commit -m "init"
+    git push -f origin main 
+    ```
+
 ### Documentación
 
+* Documentación de [Django](https://docs.djangoproject.com/en/5.1/)
+
 ### Fundamental
+
+
 
 ### Términos
 
 django, mvc
 
 ### Referencias
+
+* Django documentation: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/
