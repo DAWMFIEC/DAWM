@@ -67,8 +67,15 @@ theme: jekyll-theme-leap-day
 
 #### Estructura de archivos del proyecto en Django.
 
-* 
-	+ 
+* Archivos de configuración
+	+ _manage.py_ es un script principal para interactuar con el proyecto Django.
+
+* Carpeta del proyecto 
+	+ _\_\_init\_\_.py_ Archivo vacío que indica a Python que esta carpeta es un paquete.
+	+ _asgi.py_ Configuración para el servidor ASGI (Asynchronous Server Gateway Interface), usado en aplicaciones asíncronas.
+	+ _settings.py_ Archivo de configuración global del proyecto, donde se definen ajustes como la base de datos, aplicaciones instaladas, configuraciones de seguridad, plantillas, etc.
+	+ _urls.py_ Archivo donde se definen las rutas principales del proyecto. Estas rutas pueden incluir otras definidas en las aplicaciones.
+	+ _wsgi.py_ Configuración para el servidor WSGI (Web Server Gateway Interface), usado en el despliegue de aplicaciones Django.
 
 #### Aplicación: main
 
@@ -180,11 +187,11 @@ theme: jekyll-theme-leap-day
 
 3. Versiona local y remotamente el repositorio **.**.
 
-  ```command
-  git add .
-  git commit -m "init"
-  git push -f origin main 
-  ```
+	```command
+	git add .
+	git commit -m "init"
+	git push -f origin main 
+	```
 
 ### Documentación
 
@@ -192,11 +199,13 @@ theme: jekyll-theme-leap-day
 
 ### Fundamental
 
+* Comparación de frameworks de backend, en Python
 
+<blockquote class="twitter-tweet"><p lang="es" dir="ltr">Si te gusta Python, en este artículo se comparan pros y contras de algunos de los frameworks de desarrollo web más potentes.<br><br>Reflex vs Django vs Flask vs Gradio vs Streamlit vs Dash vs FastAPI<br><br>→ <a href="https://t.co/PiQFOqWWEx">https://t.co/PiQFOqWWEx</a> <a href="https://t.co/3zXjrKsVa4">pic.twitter.com/3zXjrKsVa4</a></p>&mdash; Brais Moure (@MoureDev) <a href="https://twitter.com/MoureDev/status/1870839215161840071?ref_src=twsrc%5Etfw">December 22, 2024</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
-django, mvc
+django, proyecto y aplicaciones
 
 ### Referencias
 
