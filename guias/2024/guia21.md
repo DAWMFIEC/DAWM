@@ -180,7 +180,7 @@ theme: jekyll-theme-leap-day
 	
 	+ El archivo _backend/templates/base.html_ con la plantilla.
 
-	```html
+	```text
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
@@ -215,7 +215,7 @@ theme: jekyll-theme-leap-day
 
 	+ El archivo _backend/templates/home.html_ con los elementos para la página principal.
 
-	```html
+	```text
 	{% extends "base.html" %}
 
 	{% block title %} Inicio {% endblock %}
