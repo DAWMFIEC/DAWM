@@ -180,14 +180,14 @@ theme: jekyll-theme-leap-day
 	
 	+ El archivo _backend/templates/base.html_ con la plantilla.
 
-	```text
+	```html
 	<!DOCTYPE html>
 	<html lang="en">
 	<head>
 	    <meta charset="UTF-8">
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	    
-	    <title> {% block title %} Backend Django {% endblock %} </title>
+	    <title> {% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Backend Django {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} </title>
 	    
 	    <!-- Incluir Tailwind CSS desde el CDN -->
 	    <script src="https://cdn.tailwindcss.com"></script>
@@ -200,9 +200,9 @@ theme: jekyll-theme-leap-day
 	    
 	    <main class="container mx-auto py-8">
 	        
-	        {% block content %}
+	        {% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 	        <!-- Contenido específico de cada vista -->
-	        {% endblock %}
+	        {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
 	    
 	    </main>
 	    <footer class="bg-gray-800 text-white text-center p-4">
@@ -216,16 +216,16 @@ theme: jekyll-theme-leap-day
 	+ El archivo _backend/templates/home.html_ con los elementos para la página principal.
 
 	```text
-	{% extends "base.html" %}
+	{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
 
-	{% block title %} Inicio {% endblock %}
+	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Inicio {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
 
-	{% block content %}
+	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 	<div class="text-center">
 	    <h2 class="text-4xl font-semibold text-gray-700">¡Bienvenido a mi aplicación Django!</h2>
 	    <p class="mt-4 text-gray-500">Esta es una página de ejemplo utilizando Tailwind CSS.</p>
 	</div>
-	{% endblock %}
+	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
 	```
 
 3. Edite el archivo _backend/settings.py_, con:
