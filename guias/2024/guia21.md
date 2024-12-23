@@ -65,17 +65,21 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/django_starter.png">
     </div>
 
-#### Estructura de archivos del proyecto en Django.
+#### Estructura de archivos del proyecto (backend) en Django.
 
 * Archivos de configuración
-	+ _manage.py_ es un script principal para interactuar con el proyecto Django.
+	+ _manage.py_ es un script principal para interactuar con el proyecto Django, mediante comandos:
+		- _runserver_ Inicia el servidor de desarrollo.
+		- _migrate_ Aplica migraciones a la base de datos.
+		- _createsuperuser_ Crea un usuario administrador para el panel de control.
+		- _startapp_ Crea una nueva aplicación dentro del proyecto.
 
 * Carpeta del proyecto 
 	+ _\_\_init\_\_.py_ Archivo vacío que indica a Python que esta carpeta es un paquete.
+	+ _wsgi.py_ Configuración para el servidor WSGI (Web Server Gateway Interface), usado en el despliegue de aplicaciones Django.
 	+ _asgi.py_ Configuración para el servidor ASGI (Asynchronous Server Gateway Interface), usado en aplicaciones asíncronas.
 	+ _settings.py_ Archivo de configuración global del proyecto, donde se definen ajustes como la base de datos, aplicaciones instaladas, configuraciones de seguridad, plantillas, etc.
 	+ _urls.py_ Archivo donde se definen las rutas principales del proyecto. Estas rutas pueden incluir otras definidas en las aplicaciones.
-	+ _wsgi.py_ Configuración para el servidor WSGI (Web Server Gateway Interface), usado en el despliegue de aplicaciones Django.
 
 #### Aplicación: main
 
@@ -159,6 +163,11 @@ theme: jekyll-theme-leap-day
     <div align="center">
       <img src="imagenes/django_admin.png">
     </div>
+
+#### Estructura de archivos de una aplicación (main) en Django.
+
+* Archivos de configuración
+	+ _manage.py_ es un script principal para interactuar con el proyecto Django.
 
 #### Versionamiento local y remoto
 
