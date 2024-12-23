@@ -22,7 +22,7 @@ Como desarrollador, ¿Qué es una landing page?
 
 La respuesta es:
 
-![proyecto3](archivos/proyecto02-pregunta1.png)
+![proyecto3](imagenes/proyecto02-pregunta1.png)
 
 ### Guías
 

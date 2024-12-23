@@ -21,7 +21,7 @@ Como desarrollador de aplicaciones móviles, explica los pasos del proceso para 
 ```
 La respuesta es:
 
-![respuesta](archivos/proyecto05-pregunta1.png)
+![respuesta](imagenes/proyecto04-pregunta1.png)
 
 Para el prompt: 
 
@@ -30,7 +30,7 @@ Redacta posibles problemas cuya solución implique el desarrollo y uso de una ap
 ```
 La respuesta es:
 
-![respuesta](archivos/proyecto05-pregunta2.png)
+![respuesta](imagenes/proyecto04-pregunta2.png)
 
 ### Guías
 
