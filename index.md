@@ -44,7 +44,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 18: Angular y Ionic - Signals](guias/2024/guia18)
   * [Guía 19: Angular y Ionic - TeachableMachine](guias/2024/guia19)
   * [Guía 20: Angular y Ionic - Generación del apk](guias/2024/guia20)
-* [Proyecto 05: Backen - Django](proyectos/2024/proyecto05)
+* [Proyecto 05: Backend - Django](proyectos/2024/proyecto05)
   * [Guía 21: Introducción, Proyecto, Aplicaciones y Despliegue - Django](guias/2024/guia21)
   * [Guía 22: REST API, Swagger y Postman - Django](guias/2024/guia22)
 
