@@ -26,5 +26,5 @@ La respuesta es:
 ### Guías
 
 
-* [Guía 21: Introducción, Proyecto, Aplicaciones y Despliegue - Django](/DAWM/guias/2024/guia21)
+* [Guía 21: Introducción - Django](/DAWM/guias/2024/guia21)
 * [Guía 22: REST API, Swagger y Postman - Django](/DAWM/guias/2024/guia22)
