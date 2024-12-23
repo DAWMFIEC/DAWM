@@ -65,6 +65,11 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/django_starter.png">
     </div>
 
+#### Estructura de archivos del proyecto en Django.
+
+* 
+	+ 
+
 #### Aplicación: main
 
 1. Desde la línea de comandos
@@ -154,32 +159,32 @@ theme: jekyll-theme-leap-day
 
 2. Desde la línea de comandos:
 
-		+ Inicialice el repositorio local
+	+ Inicialice el repositorio local
 
-		```command
-		git init .
-		``` 
+	```command
+	git init .
+	```
 
-		+ Agregue la rama **main** y el tag **origin**:
+	+ Agregue la rama **main** y el tag **origin**:
 
-    ```command
-    git branch -M main
-    git remote add origin https://github.com/<SU-USUARIO>/backend.git
-    ```
+	```command
+	git branch -M main
+	git remote add origin https://github.com/<SU-USUARIO>/backend.git
+	```
 
-    + Incorpore los cambios del repositorio remoto en el repositorio local:
+	+ Incorpore los cambios del repositorio remoto en el repositorio local:
 
-    ```command
-    git pull origin main
-    ```
+	```command
+	git pull origin main
+	```
 
 3. Versiona local y remotamente el repositorio **.**.
 
-    ```command
-    git add .
-    git commit -m "init"
-    git push -f origin main 
-    ```
+  ```command
+  git add .
+  git commit -m "init"
+  git push -f origin main 
+  ```
 
 ### Documentación
 
