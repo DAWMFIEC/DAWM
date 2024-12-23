@@ -166,8 +166,23 @@ theme: jekyll-theme-leap-day
 
 #### Estructura de archivos de una aplicación (main) en Django.
 
-* Archivos de configuración
-	+ _manage.py_ es un script principal para interactuar con el proyecto Django.
+* Archivos de la aplicación
+	+ _\_\_init\_\_.py_ Indica que esta carpeta es un paquete de Python.
+	+ _admin.py_ Archivo donde se registran los modelos para que sean visibles y gestionables desde el panel de administración de Django.
+	+ _apps.py_ Archivo que contiene la configuración de la aplicación, como su nombre y metadatos.
+	+ _models.py_ Archivo donde se definen las clases que representan las tablas de la base de datos. Cada clase corresponde a un modelo.
+	+ _tests.py_ Archivo para escribir pruebas unitarias de la aplicación.
+	+ _views.py_ Archivo donde se definen las funciones o clases que gestionan las solicitudes HTTP y devuelven respuestas (por ejemplo, renderizar páginas HTML o devolver datos JSON).
+
+#### Plantillas y archivos estáticos
+
+
+
+#### Estructura de carpetas adicionales
+
+* Carpetas adicionales
+	+ _templates/_ Carpeta donde se almacenan las plantillas HTML. Puede estar en el directorio raíz del proyecto o dentro de cada aplicación.
+	+ _static/_ Carpeta donde se almacenan archivos estáticos como CSS, JavaScript e imágenes. Puede ser compartida entre todas las aplicaciones o específica para cada una.
 
 #### Versionamiento local y remoto
 
