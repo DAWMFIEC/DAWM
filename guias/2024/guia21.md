@@ -176,6 +176,84 @@ theme: jekyll-theme-leap-day
 
 #### Plantillas y archivos estáticos
 
+1. Crea una carpeta en la raíz directorio de la aplicación (_backend/templates_)
+2. Cree los archivos html.
+
+	+ La plantilla del resto de elementos en _templates/base.html_ 
+
+	```html
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+	    <meta charset="UTF-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	    
+	    <title> {% block title %} Backend Django {% endblock %} </title>
+	    
+	    <!-- Incluir Tailwind CSS desde el CDN -->
+	    <script src="https://cdn.tailwindcss.com"></script>
+	
+	</head>
+	<body>
+	    <header class="bg-blue-500 text-white p-4">
+	        <h1 class="text-2xl font-bold">Backend Django</h1>
+	    </header>
+	    
+	    <main class="container mx-auto py-8">
+	        
+	        {% block content %}
+	        <!-- Contenido específico de cada vista -->
+	        {% endblock %}
+	    
+	    </main>
+	    <footer class="bg-gray-800 text-white text-center p-4">
+	        <p>&copy; 2024 - Backend Django</p>
+	    </footer>
+	</body>
+	</html>
+
+	```
+
+	+ La página principal en _templates/home.html_
+
+	```html
+	{% extends "base.html" %}
+
+	{% block title %} Inicio {% endblock %}
+
+	{% block content %}
+	<div class="text-center">
+	    <h2 class="text-4xl font-semibold text-gray-700">¡Bienvenido a mi aplicación Django!</h2>
+	    <p class="mt-4 text-gray-500">Esta es una página de ejemplo utilizando Tailwind CSS.</p>
+	</div>
+	{% endblock %}
+	```
+
+3. Edite el archivo _backend/settings.py_, con:
+
+	+ En el arreglo _TEMPLATES_, en la entrada _'DIRS'_, agregue la ruta _'templates'_:
+
+	```python
+	TEMPLATES = [
+    {
+        ...
+        'DIRS': ['templates'],
+        ...
+    }
+  ]
+	```
+
+4. Edite el archivo _main/views.py_, con:
+
+	+ Agregue la renderización de la plantilla _home.html_:
+
+	```python
+	...
+
+	def index(request):
+    # return HttpResponse("Hello, World!")
+    return render(request, 'home.html')
+	```
 
 
 #### Estructura de carpetas adicionales
