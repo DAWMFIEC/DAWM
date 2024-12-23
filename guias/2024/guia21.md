@@ -176,9 +176,8 @@ theme: jekyll-theme-leap-day
 
 #### Plantillas y archivos estáticos
 
-1. Crea la carpeta para plantillas html (_backend/templates_) y para archivos estáticos (_backend/static_) en el directorio raíz del proyecto.
-2. Descargue y descomprima el archivo [base_django.zip](recursos/base_django.zip) en las carpeta correspondientes.
-3. Edite el archivo _backend/settings.py_, con:
+1. Descargue y descomprima el archivo [base_django.zip](recursos/base_django.zip) en el directorio raíz del proyecto.
+2. Edite el archivo _backend/settings.py_, con:
 
 	+ En el arreglo _TEMPLATES_, en la entrada _'DIRS'_, agregue la ruta _'templates'_:
 
@@ -192,7 +191,7 @@ theme: jekyll-theme-leap-day
   ]
 	```
 
-4. Edite el archivo _main/views.py_, con:
+3. Edite el archivo _main/views.py_, con:
 
 	+ Agregue la renderización de la plantilla _home.html_:
 
@@ -204,7 +203,7 @@ theme: jekyll-theme-leap-day
 		return render(request, 'base.html')
 	```
 
-5. (STOP 3) Revise los cambios en el navegador para las URLs: 
+4. (STOP 3) Revise los cambios en el navegador para las URLs: 
 
 	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
 
@@ -212,11 +211,11 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/django_index_home.png">
     </div>
 
+5. 
+
 6. 
 
-7. 
-
-8. (STOP 4) Revise los cambios en el navegador para las URLs: 
+7. (STOP 4) Revise los cambios en el navegador para las URLs: 
 
 	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
 
