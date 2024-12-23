@@ -250,8 +250,8 @@ theme: jekyll-theme-leap-day
 	...
 
 	def index(request):
-    # return HttpResponse("Hello, World!")
-    return render(request, 'home.html')
+		# return HttpResponse("Hello, World!")
+		return render(request, 'home.html')
 	```
 
 5. (STOP 3) Revise los cambios en el navegador para las URLs: 
