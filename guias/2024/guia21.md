@@ -176,10 +176,9 @@ theme: jekyll-theme-leap-day
 
 #### Plantillas y archivos estáticos
 
-1. Crea una carpeta en la raíz directorio de la aplicación (_backend/templates_)
-2. Cree los archivos html.
-
-	+ La plantilla del resto de elementos en _templates/base.html_ 
+1. Crea una carpeta en el directorio raíz de la aplicación (_backend/templates_), con:
+	
+	+ La plantilla del resto de elementos en _backend/templates/base.html_ 
 
 	```html
 	<!DOCTYPE html>
@@ -214,7 +213,7 @@ theme: jekyll-theme-leap-day
 
 	```
 
-	+ La página principal en _templates/home.html_
+	+ La página principal en _backend/templates/home.html_
 
 	```html
 	{% extends "base.html" %}
