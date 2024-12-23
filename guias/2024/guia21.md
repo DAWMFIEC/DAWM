@@ -176,58 +176,8 @@ theme: jekyll-theme-leap-day
 
 #### Plantillas y archivos estáticos
 
-1. Crea una carpeta en el directorio raíz de la aplicación (_backend/templates_), con:
-	
-	+ El archivo _backend/templates/base.html_ con la plantilla.
-
-	```html
-	<!DOCTYPE html>
-	<html lang="en">
-	<head>
-	    <meta charset="UTF-8">
-	    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-	    
-	    <title> {% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Backend Django {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} </title>
-	    
-	    <!-- Incluir Tailwind CSS desde el CDN -->
-	    <script src="https://cdn.tailwindcss.com"></script>
-	
-	</head>
-	<body>
-	    <header class="bg-blue-500 text-white p-4">
-	        <h1 class="text-2xl font-bold">Backend Django</h1>
-	    </header>
-	    
-	    <main class="container mx-auto py-8">
-	        
-	        {% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
-	        <!-- Contenido específico de cada vista -->
-	        {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
-	    
-	    </main>
-	    <footer class="bg-gray-800 text-white text-center p-4">
-	        <p>&copy; 2024 - Backend Django</p>
-	    </footer>
-	</body>
-	</html>
-
-	```
-
-	+ El archivo _backend/templates/home.html_ con los elementos para la página principal.
-
-	```text
-	{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
-
-	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Inicio {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
-
-	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
-	<div class="text-center">
-	    <h2 class="text-4xl font-semibold text-gray-700">¡Bienvenido a mi aplicación Django!</h2>
-	    <p class="mt-4 text-gray-500">Esta es una página de ejemplo utilizando Tailwind CSS.</p>
-	</div>
-	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
-	```
-
+1. Crea la carpeta para plantillas html (_backend/templates_) y para archivos estáticos (_backend/static_) en el directorio raíz del proyecto.
+2. Descargue y descomprima el archivo [base_django.zip](recursos/base_django.zip) en las carpeta correspondientes.
 3. Edite el archivo _backend/settings.py_, con:
 
 	+ En el arreglo _TEMPLATES_, en la entrada _'DIRS'_, agregue la ruta _'templates'_:
@@ -251,7 +201,7 @@ theme: jekyll-theme-leap-day
 
 	def index(request):
 		# return HttpResponse("Hello, World!")
-		return render(request, 'home.html')
+		return render(request, 'base.html')
 	```
 
 5. (STOP 3) Revise los cambios en el navegador para las URLs: 
@@ -261,6 +211,19 @@ theme: jekyll-theme-leap-day
     <div align="center">
       <img src="imagenes/django_index_home.png">
     </div>
+
+6. 
+
+7. 
+
+8. (STOP 4) Revise los cambios en el navegador para las URLs: 
+
+	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
+
+    <div align="center">
+      <img src="imagenes/django_index_static.png">
+    </div>
+
 
 #### Estructura de carpetas adicionales
 
@@ -318,3 +281,4 @@ django, proyecto y aplicaciones
 ### Referencias
 
 * Django documentation: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/
+* Davidgrzyb. (n.d.). davidgrzyb/tailwind-admin-template: An admin dashboard template built with Tailwind and Alpine.js. Retrieved from https://github.com/davidgrzyb/tailwind-admin-template
