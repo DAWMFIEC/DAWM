@@ -106,7 +106,7 @@ INSTALLED_APPS = [
 
 	+ Importe el módulo **include** y asocie la ruta **raíz** ('') con las rutas de la aplicación main
 
-	```python
+```python
 from django.urls import ... , include
 
 urlpatterns = [
