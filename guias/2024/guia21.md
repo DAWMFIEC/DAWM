@@ -183,10 +183,10 @@ theme: jekyll-theme-leap-day
 	├── backend/ 
 	├── main/ (aplicación)
 	├── static/ (archivos estáticos)
-	│   └──css/
-	│   └──js/
+	│   	└──css/
+	│   	└──js/
 	└── templates/ (plantillas)
-	    └──base.html
+	    	└──base.html
 	```
 
 2. Edite el archivo _backend/settings.py_, con:
