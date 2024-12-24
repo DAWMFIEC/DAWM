@@ -2,9 +2,9 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 2X
+## Guía 22
 
-[DAWM](/DAWM/) / [Proyecto0Y](/DAWM/proyectos/2024/proyecto0Y)
+[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2024/proyecto05)
 
 <link href="styles/mystyle.css" rel="stylesheet" />
 
