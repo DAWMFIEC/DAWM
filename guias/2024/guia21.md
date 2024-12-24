@@ -47,7 +47,7 @@ theme: jekyll-theme-leap-day
 	cd backend
 	```
 
-	+ Abra el proyecto con VSCode.
+	+ Abra el proyecto con VSCode, con:
 
 	```command
 	code .
@@ -91,9 +91,9 @@ theme: jekyll-theme-leap-day
 	python manage.py startapp main
 	```
 
-2. Edite el archivo _backend/settings.py_
+2. Edite el archivo _backend/settings.py_, con:
 
-	+ Registre la aplicación, con:
+	+ Registre la aplicación
 
 	```python
 	INSTALLED_APPS = [
@@ -102,10 +102,9 @@ theme: jekyll-theme-leap-day
 	]
 	```
 
-3. Edite el archivo _backend/urls.py_
+3. Edite el archivo _backend/urls.py_, con:
 
-	+ Importe el módulo **include**, y 
-	+ Asocie la ruta **raíz** ('') con las rutas de la aplicación main, con:
+	+ Importe el módulo **include** y asocie la ruta **raíz** ('') con las rutas de la aplicación main
 
 	```python
 	from django.urls import ... , include
@@ -116,9 +115,9 @@ theme: jekyll-theme-leap-day
 	]
 	```
 
-4. Cree el archivo _main/urls.py_
+4. Cree y modifique el archivo _main/urls.py_, con:
 	
-	+ Asocie la ruta **raíz** ('') con el controlador **index**, con:
+	+ Asocie la ruta **raíz** ('') con el controlador **index** (con el alias **main_index**)
 
 	```python
 	from django.urls import path
@@ -129,9 +128,9 @@ theme: jekyll-theme-leap-day
 	]
 	```
 
-5. Edite el archivo _main/views.py_
+5. Edite el archivo _main/views.py_, con:
 
-	+ Agregue el controlador **index**, con:
+	+ Agregue el controlador **index**
 
 	```python 
 	...
@@ -192,7 +191,7 @@ theme: jekyll-theme-leap-day
 
 2. Edite el archivo _backend/settings.py_, con:
 
-	+ En el arreglo _TEMPLATES_, en la entrada _'DIRS'_, agregue la ruta _'templates'_:
+	+ En el arreglo _TEMPLATES_, en la entrada _'DIRS'_, agregue la ruta _'templates'_
 
 	```python
 	TEMPLATES = [
@@ -206,7 +205,7 @@ theme: jekyll-theme-leap-day
 
 3. Edite el archivo _main/views.py_, con:
 
-	+ Agregue la renderización de la plantilla _base.html_:
+	+ Agregue la renderización de la plantilla _base.html_
 
 	```python
 	...
@@ -226,7 +225,7 @@ theme: jekyll-theme-leap-day
 
 #### Archivos estáticos
 
-1. Edite el archivo _backend/settings.py_, con:
+1. En el archivo _backend/settings.py_:
 
 	+ Verifique la carga de la aplicación _django.contrib.staticfiles_ en la lista _INSTALLED_APPS_.
 
@@ -238,7 +237,7 @@ theme: jekyll-theme-leap-day
 	]
 	```
 
-	+ Agregue la ruta relativa a los archivos estáticos con _STATICFILES_DIRS_
+	+ Agregue el arreglo de rutas _STATICFILES_DIRS_, con la ruta relativa a los archivos estáticos _BASE\_DIR / STATIC\_URL_
 
 	```python
 	...
@@ -258,7 +257,7 @@ theme: jekyll-theme-leap-day
 
 2. Modifique el archivo _templates/base.html_, con:
 
-	+ Use el **tag library** _static_.
+	+ Use el **tag library** _static_
 
 	```html
 	{% raw %}{%{% endraw %} load static {% raw %}%}{% endraw %}
