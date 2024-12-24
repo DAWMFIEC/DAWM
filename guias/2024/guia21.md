@@ -180,14 +180,14 @@ theme: jekyll-theme-leap-day
 1. Descargue y descomprima los archivos [**static_django.zip**](recursos/static_django.zip) y [**templates_django.zip**](recursos/templates_django.zip) en la raíz del proyecto.
 
 	```text
-	backend/
-	├── backend/
-	├── main/
-	├── static/
-			│   └──css/
-			│   └──js/
-	├── templates/
-			├── base.html
+	backend/ (proyecto)
+	├── backend/ 
+	├── main/ (aplicación)
+	├── static/ (archivos estáticos)
+	│   └──css/
+	│   └──js/
+	└── templates/ (plantillas)
+	    └──base.html
 	```
 
 2. Edite el archivo _backend/settings.py_, con:
