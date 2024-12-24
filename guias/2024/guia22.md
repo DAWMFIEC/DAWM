@@ -10,7 +10,7 @@ theme: jekyll-theme-leap-day
 
 ### Objetivo general
 
-<pre class="purpose"></pre>
+<pre class="purpose">Desarrollar una aplicación backend robusta y escalable utilizando Django que integre una interfaz de administrador intuitiva para la gestión eficiente de datos y funcionalidades junto con un REST API completo que facilite la comunicación con las aplicaciones cliente de tal forma que garantice la seguridad, el rendimiento y la extensibilidad del sistema.</pre>
 
 ### Actividades previas
 
