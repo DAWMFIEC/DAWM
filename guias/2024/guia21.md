@@ -174,9 +174,18 @@ theme: jekyll-theme-leap-day
 	+ _tests.py_ Archivo para escribir pruebas unitarias de la aplicación.
 	+ _views.py_ Archivo donde se definen las funciones o clases que gestionan las solicitudes HTTP y devuelven respuestas (por ejemplo, renderizar páginas HTML o devolver datos JSON).
 
-#### Plantillas y archivos estáticos
+#### Plantillas
 
-1. Descargue y descomprima el archivo [base_django.zip](recursos/base_django.zip) en el directorio raíz del proyecto.
+1. Descargue y descomprima el archivo [base_django.zip](recursos/base_django.zip) en la **raíz del proyecto**.
+
+	```python
+	backend/
+	|------backend/
+	|------main/
+	|------static/
+	|------templates/
+	```
+
 2. Edite el archivo _backend/settings.py_, con:
 
 	+ En el arreglo _TEMPLATES_, en la entrada _'DIRS'_, agregue la ruta _'templates'_:
@@ -211,11 +220,64 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/django_index_home.png">
     </div>
 
-5. 
+#### Archivos estáticos
 
-6. 
+1. Edite el archivo _backend/settings.py_, con:
 
-7. (STOP 4) Revise los cambios en el navegador para las URLs: 
+	+ Verifique que la aplicación _django.contrib.staticfiles_ esté cargada
+
+	```python
+	INSTALLED_APPS = [
+		...
+		'django.contrib.staticfiles',
+		'main',
+	]
+	```
+
+	+ Agregue la ruta relativa a los archivos estáticos con _STATICFILES_DIRS_
+
+	```python
+	...
+
+	# Static files (CSS, JavaScript, Images)
+	# https://docs.djangoproject.com/en/5.1/howto/static-files/
+
+	STATIC_URL = ...
+
+	# Directorios adicionales donde buscar archivos estáticos
+	STATICFILES_DIRS = [
+	   BASE_DIR / STATIC_URL,
+	]
+
+	...
+	```
+
+2. Modifique el archivo _templates/base.html_, con:
+
+	+ Use el **tag library** _static_.
+
+	```html
+	{% raw %}{%{% endraw %} load static {% raw %}%}{% endraw %}
+
+	<!DOCTYPE html>
+	...
+	```
+	+ Utilice la etiqueta _static_ para construir la URLs que apuntan a los archivos estáticos del proyecto.
+
+	```html
+	<head>
+		...
+		<!-- Local stylesheets -->
+		<link rel="stylesheet" href="{% raw %}{%{% endraw %} static 'css/base_style.css' {% raw %}%}{% endraw %}">
+	</head>
+	<body>
+		...
+		<!-- Local script files -->
+		<script src="{% raw %}{%{% endraw %} static 'js/base_script.js' {% raw %}%}{% endraw %}"></script>
+	</body>
+	```
+
+3. (STOP 4) Revise los cambios en el navegador para las URLs: 
 
 	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
 
@@ -281,3 +343,4 @@ django, proyecto y aplicaciones
 
 * Django documentation: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/
 * Davidgrzyb. (n.d.). davidgrzyb/tailwind-admin-template: An admin dashboard template built with Tailwind and Alpine.js. Retrieved from https://github.com/davidgrzyb/tailwind-admin-template
+* Built-in template tags and filters: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/ref/templates/builtins/
