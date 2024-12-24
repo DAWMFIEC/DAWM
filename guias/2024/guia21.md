@@ -179,12 +179,15 @@ theme: jekyll-theme-leap-day
 
 1. Descargue y descomprima los archivos [static.zip](recursos/static.zip) y [templates.zip](recursos/templates.zip) en la **raíz del proyecto**.
 
-	```python
+	```text
 	backend/
-	|------backend/
-	|------main/
-	|------static/
-	|------templates/
+	├── backend/
+	├── main/
+	├── static/
+			│   └──css/
+			│   └──js/
+	├── templates/
+			├── base.html
 	```
 
 2. Edite el archivo _backend/settings.py_, con:
@@ -225,7 +228,7 @@ theme: jekyll-theme-leap-day
 
 1. Edite el archivo _backend/settings.py_, con:
 
-	+ Verifique que la aplicación _django.contrib.staticfiles_ esté cargada
+	+ Verifique la carga de la aplicación _django.contrib.staticfiles_ en la lista _INSTALLED_APPS_.
 
 	```python
 	INSTALLED_APPS = [
@@ -288,43 +291,14 @@ theme: jekyll-theme-leap-day
 
 #### Plantillas
 
-1. Modifique el archivo _templates/base.html_, con:
-
-	+ Defina los bloques _title_ y _content_
-
-	```html
-	<head>
-	...
-		<title> {% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Tailwind Admin Template {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} </title>
-	...
-	</head>
-
-	<body class="bg-gray-100 font-family-karla flex">
-		...
-
-		{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
-
-	    <!-- Start Content -->
-
-	    Base content
-	    
-	    <!-- End Content -->
-
-    {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
-
-	</body>
-	...
-	```
-
-
-2. Descargue y descomprima [index.zip](recursos/index.zip) dentro de _templates_.
-
-3. Edite el archivo _templates/index.html_, con:
+1. Descargue y descomprima [index.zip](recursos/index.zip) dentro de _templates_.
+2. Edite el archivo _templates/index.html_, con:
 
 	+ Extienda de la plantilla _base.html_.
 	+ Defina los bloques _title_ y _content_
 
   ```html
+
 	{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
 	
 	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Inicio {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
@@ -336,6 +310,35 @@ theme: jekyll-theme-leap-day
 	</div>
 	
 	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+	
+	```
+
+3. Modifique el archivo _templates/base.html_, con:
+
+	+ Defina los bloques _title_ y _content_
+
+	```html
+	<head>
+	...
+		<title> {% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Tailwind Admin Template {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} </title>
+	...
+	</head>
+
+	<body class="bg-gray-100 font-family-karla flex">
+	...
+
+		{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
+
+		<!-- Start Base content -->
+
+		...
+
+		<!-- End Base content -->
+
+		{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+
+	</body>
+	...
 	```
 
 4. Edite el archivo _main/views.py_, con:
