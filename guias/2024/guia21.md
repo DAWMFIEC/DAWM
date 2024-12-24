@@ -61,9 +61,9 @@ theme: jekyll-theme-leap-day
 
 2. (STOP 1) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-    <div align="center">
-      <img src="imagenes/django_starter.png">
-    </div>
+	<div align="center">
+		<img src="imagenes/django_starter.png">
+	</div>
 
 #### Estructura de archivos del proyecto (backend) en Django.
 
@@ -140,7 +140,7 @@ theme: jekyll-theme-leap-day
 
 	def index(request):
 	    return HttpResponse("Hello, World!")
-    ```
+	```
 
 6. Desde la línea de comandos
 	
@@ -154,15 +154,15 @@ theme: jekyll-theme-leap-day
 
 	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
 
-    <div align="center">
-      <img src="imagenes/django_index_hello_world.png">
-    </div>
+	<div align="center">
+		<img src="imagenes/django_index_hello_world.png">
+	</div>
 
-    + En la ruta del admin [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+	+ En la ruta del admin [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 
-    <div align="center">
-      <img src="imagenes/django_admin.png">
-    </div>
+	<div align="center">
+		<img src="imagenes/django_admin.png">
+	</div>
 
 #### Estructura de archivos de una aplicación (main) en Django.
 
@@ -174,9 +174,9 @@ theme: jekyll-theme-leap-day
 	+ _tests.py_ Archivo para escribir pruebas unitarias de la aplicación.
 	+ _views.py_ Archivo donde se definen las funciones o clases que gestionan las solicitudes HTTP y devuelven respuestas (por ejemplo, renderizar páginas HTML o devolver datos JSON).
 
-#### Plantillas
+#### Vistas
 
-1. Descargue y descomprima el archivo [base_django.zip](recursos/base_django.zip) en la **raíz del proyecto**.
+1. Descargue y descomprima los archivos [static.zip](recursos/static.zip) y [templates.zip](recursos/templates.zip) en la **raíz del proyecto**.
 
 	```python
 	backend/
@@ -192,17 +192,17 @@ theme: jekyll-theme-leap-day
 
 	```python
 	TEMPLATES = [
-    {
-        ...
-        'DIRS': ['templates'],
-        ...
-    }
-  ]
+		{
+			...
+			'DIRS': ['templates'],
+			...
+		}
+	]
 	```
 
 3. Edite el archivo _main/views.py_, con:
 
-	+ Agregue la renderización de la plantilla _home.html_:
+	+ Agregue la renderización de la plantilla _base.html_:
 
 	```python
 	...
@@ -285,6 +285,77 @@ theme: jekyll-theme-leap-day
       <img src="imagenes/django_index_static.png">
     </div>
 
+#### Plantillas
+
+1. Modifique el archivo _templates/base.html_, con:
+
+	+ Defina los bloques _title_ y _content_
+
+	```html
+	<head>
+	...
+		<title> {% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Tailwind Admin Template {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} </title>
+	...
+	</head>
+
+	<body class="bg-gray-100 font-family-karla flex">
+		...
+
+		{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
+
+	    <!-- Start Content -->
+
+	    Base content
+	    
+	    <!-- End Content -->
+
+    {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+
+	</body>
+	...
+	```
+
+
+2. Descargue y descomprima [index.zip](recursos/index.zip) dentro de _templates_.
+
+3. Edite el archivo _templates/index.html_, con:
+
+	+ Extienda de la plantilla _base.html_.
+	+ Defina los bloques _title_ y _content_
+
+  ```html
+	{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
+	
+	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Inicio {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+	
+	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
+
+	<div class="w-full flex flex-col h-screen overflow-y-hidden">
+		...
+	</div>
+	
+	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+	```
+
+4. Edite el archivo _main/views.py_, con:
+
+	+ Cambie por la renderización de la plantilla _index.html_:
+
+	```python
+	...
+
+	def index(request):
+		# return HttpResponse("Hello, World!")
+		return render(request, 'index.html')
+	```
+
+5. (STOP 5) Revise los cambios en el navegador para las URLs: 
+
+	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
+
+  <div align="center">
+    <img src="imagenes/django_index_extended.png">
+  </div>
 
 #### Estructura de carpetas adicionales
 
