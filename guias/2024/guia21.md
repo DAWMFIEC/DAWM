@@ -270,14 +270,18 @@ theme: jekyll-theme-leap-day
 
 	```html
 	<head>
+		
 		...
 		<!-- Local stylesheets -->
 		<link rel="stylesheet" href="{% raw %}{%{% endraw %} static 'css/base_style.css' {% raw %}%}{% endraw %}">
+
 	</head>
 	<body>
+		
 		...
 		<!-- Local script files -->
 		<script src="{% raw %}{%{% endraw %} static 'js/base_script.js' {% raw %}%}{% endraw %}"></script>
+
 	</body>
 	```
 
@@ -298,16 +302,23 @@ theme: jekyll-theme-leap-day
 	+ Defina los bloques _title_ y _content_
 
 	```html
+	<!-- Extend "base.html" -->
 	{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
 
-	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Inicio {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
+	<!-- START - Block title -->
+
+	Inicio 
+	
+	<!-- END - Block title -->
+	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
 
 	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
+	<!-- START - Block content -->
 
-		<div class="w-full flex flex-col h-screen overflow-y-hidden">
-		...
-		</div>
+		<div> ... </div>
 
+	<!-- END - Block content -->
 	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
 	```
 
@@ -318,7 +329,15 @@ theme: jekyll-theme-leap-day
 	```html
 	<head>
 	...
-		<title> {% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Tailwind Admin Template {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} </title>
+		<title> 
+
+			{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
+
+			Tailwind Admin Template 
+			
+			{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} 
+
+	  </title>
 	...
 	</head>
 
@@ -326,13 +345,11 @@ theme: jekyll-theme-leap-day
 	...
 
 		{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
-
 		<!-- START - Block content -->
 
-		...
+		<div> ... </div>
 
 		<!-- END - Block content -->
-
 		{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
 
 	</body>
@@ -348,6 +365,7 @@ theme: jekyll-theme-leap-day
 
 	def index(request):
 		# return HttpResponse("Hello, World!")
+		# return render(request, 'base.html')
 		return render(request, 'index.html')
 	```
 
