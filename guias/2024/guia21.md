@@ -104,6 +104,7 @@ theme: jekyll-theme-leap-day
 
 3. Edite el archivo _backend/urls.py_
 
+	+ Importe el módulo **include**, y 
 	+ Asocie la ruta **raíz** ('') con las rutas de la aplicación main, con:
 
 	```python
