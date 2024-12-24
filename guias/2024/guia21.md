@@ -19,19 +19,19 @@ theme: jekyll-theme-leap-day
 	+ Cree un ambiente de desarrollo, con:
 
 	```command
-	python -m venv environment
+python -m venv environment
 	```
 
 	+ Habilite el ambiente de desarrollo, con:
 
 	```command
-	environment\Scripts\activate
+environment\Scripts\activate
 	```
 
 	+ Instale **django**, con:
 
 	```command
-	pip install django 
+pip install django 
 	```
 
 ### Actividades en clases
