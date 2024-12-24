@@ -113,7 +113,7 @@ urlpatterns = [
     ...
     path('', include('main.urls')),
 ]
-	```
+```
 
 4. Cree y modifique el archivo _main/urls.py_, con:
 	
@@ -133,11 +133,13 @@ urlpatterns = [
 	+ Agregue el controlador **index**
 
 	```python 
-# Create your views here.
-from django.http import HttpResponse
+	...
 
-def index(request):
-    return HttpResponse("Hello, World!")
+	# Create your views here.
+	from django.http import HttpResponse
+
+	def index(request):
+	    return HttpResponse("Hello, World!")
 	```
 
 6. Desde la línea de comandos
