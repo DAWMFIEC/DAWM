@@ -176,7 +176,7 @@ theme: jekyll-theme-leap-day
 
 #### Vistas
 
-1. Descargue y descomprima los archivos [**static_django.zip**](recursos/static_django.zip) y [**templates_django.zip**](recursos/templates_django.zip) en la raíz del proyecto.
+1. Descargue y descomprima los archivos [static_django.zip](recursos/static_django.zip) y [templates_django.zip](recursos/templates_django.zip) en la raíz del proyecto.
 
 	```text
 	backend/ (proyecto)
@@ -294,7 +294,7 @@ theme: jekyll-theme-leap-day
 
 #### Plantillas
 
-1. Descargue y descomprima [**index_django.zip**](recursos/index_django.zip) dentro de _templates_.
+1. Descargue y descomprima [index_django.zip](recursos/index_django.zip) dentro de _templates_.
 2. Edite el archivo _templates/index.html_, con:
 
 	+ Extienda de la plantilla _base.html_.
