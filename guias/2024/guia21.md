@@ -304,21 +304,21 @@ theme: jekyll-theme-leap-day
 	<!-- Extend "base.html" -->
 	{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
 
-	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
 	<!-- START - Block title -->
+	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
 
 	Inicio 
 	
-	<!-- END - Block title -->
 	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+	<!-- END - Block title -->
 
-	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 	<!-- START - Block content -->
+	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 
 		<div> ... </div>
 
-	<!-- END - Block content -->
 	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+	<!-- END - Block content -->
 	```
 
 3. Modifique el archivo _templates/base.html_, con:
@@ -343,13 +343,13 @@ theme: jekyll-theme-leap-day
 	<body class="bg-gray-100 font-family-karla flex">
 	...
 
-		{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 		<!-- START - Block content -->
+		{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 
 		<div> ... </div>
 
-		<!-- END - Block content -->
 		{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+		<!-- END - Block content -->
 
 	</body>
 	...
@@ -401,7 +401,7 @@ theme: jekyll-theme-leap-day
 	git remote add origin https://github.com/<SU-USUARIO>/backend.git
 	```
 
-	+ Incorpore los cambios del repositorio remoto en el repositorio local:
+	+ De ser necesario, incorpore los cambios del repositorio remoto en el repositorio local:
 
 	```command
 	git pull origin main
