@@ -43,20 +43,20 @@ pip install django
 	+ Cree y acceda a la carpeta del proyecto **backend**, con:
 
 	```command
-	django-admin startproject backend
-	cd backend
+django-admin startproject backend
+cd backend
 	```
 
 	+ Abra el proyecto con VSCode, con:
 
 	```command
-	code .
+code .	
 	```
 
 	+ Levante el servidor, con:
 
 	```command
-	python manage.py runserver
+python manage.py runserver
 	```
 
 2. (STOP 1) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
@@ -88,7 +88,7 @@ pip install django
 	+ Cree la aplicación **main**, con:
 
 	```command
-	python manage.py startapp main
+python manage.py startapp main
 	```
 
 2. Edite el archivo _backend/settings.py_, con:
@@ -96,10 +96,10 @@ pip install django
 	+ Registre la aplicación
 
 	```python
-	INSTALLED_APPS = [
-	    ...
-	    'main',
-	]
+INSTALLED_APPS = [
+    ...
+    'main',
+]
 	```
 
 3. Edite el archivo _backend/urls.py_, con:
@@ -107,12 +107,12 @@ pip install django
 	+ Importe el módulo **include** y asocie la ruta **raíz** ('') con las rutas de la aplicación main
 
 	```python
-	from django.urls import ... , include
+from django.urls import ... , include
 
-	urlpatterns = [
-	    ...
-	    path('', include('main.urls')),
-	]
+urlpatterns = [
+    ...
+    path('', include('main.urls')),
+]
 	```
 
 4. Cree y modifique el archivo _main/urls.py_, con:
@@ -120,12 +120,12 @@ pip install django
 	+ Asocie la ruta **raíz** ('') con el controlador **index** (con el alias **main_index**)
 
 	```python
-	from django.urls import path
-	from . import views
+from django.urls import path
+from . import views
 
-	urlpatterns = [
-	    path('', views.index, name='main_index'),
-	]
+urlpatterns = [
+    path('', views.index, name='main_index'),
+]
 	```
 
 5. Edite el archivo _main/views.py_, con:
@@ -133,13 +133,13 @@ pip install django
 	+ Agregue el controlador **index**
 
 	```python 
-	...
+...
 
-	# Create your views here.
-	from django.http import HttpResponse
+# Create your views here.
+from django.http import HttpResponse
 
-	def index(request):
-	    return HttpResponse("Hello, World!")
+def index(request):
+    return HttpResponse("Hello, World!")
 	```
 
 6. Desde la línea de comandos
@@ -147,7 +147,7 @@ pip install django
 	+ Levante el servidor, con:
 
 	```command
-	python manage.py runserver
+python manage.py runserver
 	```
 
 7. (STOP 2) Revise los cambios en el navegador para las URLs: 
@@ -194,13 +194,13 @@ pip install django
 	+ En el arreglo _TEMPLATES_, en la entrada _'DIRS'_, agregue la ruta _'templates'_
 
 	```python
-	TEMPLATES = [
-		{
-			...
-			'DIRS': ['templates'],
-			...
-		}
-	]
+TEMPLATES = [
+	{
+		...
+		'DIRS': ['templates'],
+		...
+	}
+]
 	```
 
 3. Edite el archivo _main/views.py_, con:
@@ -208,11 +208,11 @@ pip install django
 	+ Agregue la renderización de la plantilla _base.html_
 
 	```python
-	...
+...
 
-	def index(request):
-		# return HttpResponse("Hello, World!")
-		return render(request, 'base.html')
+def index(request):
+	# return HttpResponse("Hello, World!")
+	return render(request, 'base.html')
 	```
 
 4. (STOP 3) Revise los cambios en el navegador para las URLs: 
@@ -230,29 +230,29 @@ pip install django
 	+ Verifique la carga de la aplicación _django.contrib.staticfiles_ en la lista _INSTALLED_APPS_.
 
 	```python
-	INSTALLED_APPS = [
-		...
-		'django.contrib.staticfiles',
-		'main',
-	]
+INSTALLED_APPS = [
+	...
+	'django.contrib.staticfiles',
+	'main',
+]
 	```
 
 	+ Agregue el arreglo de rutas _STATICFILES_DIRS_, con la ruta relativa a los archivos estáticos _BASE\_DIR / STATIC\_URL_
 
 	```python
-	...
+...
 
-	# Static files (CSS, JavaScript, Images)
-	# https://docs.djangoproject.com/en/5.1/howto/static-files/
+# Static files (CSS, JavaScript, Images)
+# https://docs.djangoproject.com/en/5.1/howto/static-files/
 
-	STATIC_URL = ...
+STATIC_URL = ...
 
-	# Directorios adicionales donde buscar archivos estáticos
-	STATICFILES_DIRS = [
-	   BASE_DIR / STATIC_URL,
-	]
+# Directorios adicionales donde buscar archivos estáticos
+STATICFILES_DIRS = [
+   BASE_DIR / STATIC_URL,
+]
 
-	...
+...
 	```
 
 2. Modifique el archivo _templates/base.html_, con:
@@ -260,28 +260,28 @@ pip install django
 	+ Use el **tag library** _static_
 
 	```html
-	{% raw %}{%{% endraw %} load static {% raw %}%}{% endraw %}
+{% raw %}{%{% endraw %} load static {% raw %}%}{% endraw %}
 
-	<!DOCTYPE html>
-	...
+<!DOCTYPE html>
+...
 	```
 	+ Utilice la etiqueta _static_ para construir la URLs que apuntan a los archivos estáticos del proyecto.
 
 	```html
-	<head>
-		
-		...
-		<!-- Local stylesheets -->
-		<link rel="stylesheet" href="{% raw %}{%{% endraw %} static 'css/base_style.css' {% raw %}%}{% endraw %}">
+<head>
+	
+	...
+	<!-- Local stylesheets -->
+	<link rel="stylesheet" href="{% raw %}{%{% endraw %} static 'css/base_style.css' {% raw %}%}{% endraw %}">
 
-	</head>
-	<body>
-		
-		...
-		<!-- Local script files -->
-		<script src="{% raw %}{%{% endraw %} static 'js/base_script.js' {% raw %}%}{% endraw %}"></script>
+</head>
+<body>
+	
+	...
+	<!-- Local script files -->
+	<script src="{% raw %}{%{% endraw %} static 'js/base_script.js' {% raw %}%}{% endraw %}"></script>
 
-	</body>
+</body>
 	```
 
 3. (STOP 4) Revise los cambios en el navegador para las URLs: 
@@ -301,24 +301,24 @@ pip install django
 	+ Defina los bloques _title_ y _content_
 
 	```html
-	<!-- Extend "base.html" -->
-	{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
+<!-- Extend "base.html" -->
+{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
 
-	<!-- START - Block title -->
-	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
+<!-- START - Block title -->
+{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
 
-	Inicio 
-	
-	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
-	<!-- END - Block title -->
+Inicio 
 
-	<!-- START - Block content -->
-	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
+{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+<!-- END - Block title -->
 
-		<div> ... </div>
+<!-- START - Block content -->
+{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 
-	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
-	<!-- END - Block content -->
+	<div> ... </div>
+
+{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+<!-- END - Block content -->
 	```
 
 3. Modifique el archivo _templates/base.html_, con:
@@ -326,33 +326,33 @@ pip install django
 	+ Defina los bloques _title_ y _content_
 
 	```html
-	<head>
-	...
-		<title> 
+<head>
+...
+	<title> 
 
-			{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
+		{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
 
-			Tailwind Admin Template 
-			
-			{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} 
+		Tailwind Admin Template 
+		
+		{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} 
 
-	  </title>
-	...
-	</head>
+  </title>
+...
+</head>
 
-	<body class="bg-gray-100 font-family-karla flex">
-	...
+<body class="bg-gray-100 font-family-karla flex">
+...
 
-		<!-- START - Block content -->
-		{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
+	<!-- START - Block content -->
+	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 
-		<div> ... </div>
+	<div> ... </div>
 
-		{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
-		<!-- END - Block content -->
+	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
+	<!-- END - Block content -->
 
-	</body>
-	...
+</body>
+...
 	```
 
 4. Edite el archivo _main/views.py_, con:
@@ -360,12 +360,12 @@ pip install django
 	+ Cambie por la renderización de la plantilla _index.html_:
 
 	```python
-	...
+...
 
-	def index(request):
-		# return HttpResponse("Hello, World!")
-		# return render(request, 'base.html')
-		return render(request, 'index.html')
+def index(request):
+	# return HttpResponse("Hello, World!")
+	# return render(request, 'base.html')
+	return render(request, 'index.html')
 	```
 
 5. (STOP 5) Revise los cambios en el navegador para las URLs: 
@@ -391,28 +391,28 @@ pip install django
 	+ Inicialice el repositorio local
 
 	```command
-	git init .
+git init .
 	```
 
 	+ Agregue la rama **main** y el tag **origin**:
 
 	```command
-	git branch -M main
-	git remote add origin https://github.com/<SU-USUARIO>/backend.git
+git branch -M main
+git remote add origin https://github.com/<SU-USUARIO>/backend.git
 	```
 
 	+ De ser necesario, incorpore los cambios del repositorio remoto en el repositorio local:
 
 	```command
-	git pull origin main
+git pull origin main
 	```
 
 3. Versiona local y remotamente el repositorio **.**.
 
 	```command
-	git add .
-	git commit -m "init"
-	git push -f origin main 
+git add .
+git commit -m "init"
+git push -f origin main 
 	```
 
 ### Documentación
