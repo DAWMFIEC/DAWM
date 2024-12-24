@@ -297,20 +297,18 @@ theme: jekyll-theme-leap-day
 	+ Extienda de la plantilla _base.html_.
 	+ Defina los bloques _title_ y _content_
 
-  ```html
-
+	```html
 	{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
-	
+
 	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} Inicio {% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
-	
+
 	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 
-	<div class="w-full flex flex-col h-screen overflow-y-hidden">
+		<div class="w-full flex flex-col h-screen overflow-y-hidden">
 		...
-	</div>
-	
+		</div>
+
 	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
-	
 	```
 
 3. Modifique el archivo _templates/base.html_, con:
