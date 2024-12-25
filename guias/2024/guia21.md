@@ -379,6 +379,14 @@ theme: jekyll-theme-leap-day
 	+ _templates/_ Carpeta donde se almacenan las plantillas HTML. Puede estar en el directorio raíz del proyecto o dentro de cada aplicación.
 	+ _static/_ Carpeta donde se almacenan archivos estáticos como CSS, JavaScript e imágenes. Puede ser compartida entre todas las aplicaciones o específica para cada una.
 
+#### Paquetes instalados
+
+1. En la línea de comandos, genere el archivo **requirements.txt** con la lista de paquetes utilizados.
+
+	```command
+	pip freeze > requirements.txt
+	```
+
 #### Versionamiento local y remoto
 
 1. Crea un repositorio en GitHub con el nombre **backend**.
