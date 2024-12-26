@@ -260,7 +260,7 @@ theme: jekyll-theme-leap-day
 
 2. Modifique el archivo _templates/base.html_, con:
 
-	+ Importe el **tag library** _static_ y utilice la etiqueta _static_ para construir la URLs que apuntan a los archivos estáticos del proyecto.
+	+ Cargue y utilice las etiquetas de plantilla  _static_ para construir las URLs de los archivos estáticos del proyecto.
 
 	```html
 	{% raw %}{%{% endraw %} load static {% raw %}%}{% endraw %}
