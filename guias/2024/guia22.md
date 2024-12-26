@@ -62,10 +62,10 @@ INSTALLED_APPS = [
     'restapi',
 ]
 
-# Ruta al archivo JSON de credenciales
+#### Ruta al archivo JSON de credenciales
 FIREBASE_CRED = credentials.Certificate("landing-8e71d-firebase-adminsdk-pehj8-4cdce9020b.json")
 
-# Inicializa Firebase
+#### Inicializa Firebase
 firebase_admin.initialize_app(FIREBASE_CRED, {
     'databaseURL': 'https://landing-8e71d-default-rtdb.firebaseio.com/'
 })
@@ -87,7 +87,7 @@ urlpatterns = [
 	path('coleccion/', views.ColeccionAPI.as_view(), name='firebase_resources' ),
 ]
 
-# GET
+#### GET
 
 edite _restapi/views.py_
 
@@ -113,7 +113,7 @@ en consola y pruebe
 
 curl -X GET http://127.0.0.1:8000/restapi/coleccion/ 
 
-# POST
+#### POST
 
 edite _restapi/views.py_
 
