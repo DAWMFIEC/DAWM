@@ -188,7 +188,7 @@ theme: jekyll-theme-leap-day
 	├── static/				<!-- archivos estáticos -->
 	│   	└──css/
 	│   	└──js/
-	└── templates/				<!-- plantillas -->
+	└── templates/			<!-- plantillas -->
 	    	└──base.html
 	```
 
