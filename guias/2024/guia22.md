@@ -14,12 +14,113 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+clone el proyecto 
+
+instale las librerías 
+pip install -r requirements.txt
+
+obtenga las credenciales con realtime database
+
+pip install firebase-admin djangorestframework
+
 ### Actividades en clases
 
+Cree la aplicación `restapi`
+
+registre la aplicación en _backend/settings.py_
+
+INSTALLED_APPS = [
+    ...
+    'main',
+    'rest_framework',
+    'restapi',
+]
+
+# Ruta al archivo JSON de credenciales
+FIREBASE_CRED = credentials.Certificate("landing-8e71d-firebase-adminsdk-pehj8-4cdce9020b.json")
+
+# Inicializa Firebase
+firebase_admin.initialize_app(FIREBASE_CRED, {
+    'databaseURL': 'https://landing-8e71d-default-rtdb.firebaseio.com/'
+})
+
+registre la url de la aplicación 
+
+... 
+urlpatterns = [
+    ...
+    path('restapi/', include('restapi.urls')),
+]
+
+cree _restapi/urls.py_
+
+from django.urls import path
+from . import views
+
+urlpatterns = [
+	path('coleccion/', views.ColeccionAPI.as_view(), name='firebase_resources' ),
+]
+
+# GET
+
+edite _restapi/views.py_
+
+from rest_framework.views import APIView
+from rest_framework.response import Response
+from rest_framework import status
+from firebase_admin import db
+
+class ColeccionAPI(APIView):
+    
+    collection = 'coleccion'
+    
+    def get(self, request):
+        ref = db.reference(self.collection)
+        data = ref.get()
+        return Response(data, status=status.HTTP_200_OK)
+
+
+python manage.py runserver
+
+navegador http://127.0.0.1:8000/restapi/coleccion/ y pruebe
+en consola y pruebe
+
+curl -X GET http://127.0.0.1:8000/restapi/coleccion/ 
+
+# POST
+
+edite _restapi/views.py_
+
+...
+
+class ColeccionAPI(APIView):
+
+	...
+
+	def post(self, request):
+        ref = db.reference(self.collection)
+        data = request.data
+        new_resource = ref.push(data)
+        return Response({"id": new_resource.key}, status=status.HTTP_201_CREATED)
+
+
+navegador http://127.0.0.1:8000/restapi/coleccion/ y pruebe con { "email": "correo@gmail.com" }
+
+en consola y pruebe
+
+curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"correo@gmail.com\"}" http://127.0.0.1:8000/restapi/api/coleccion/
+
 ### Documentación
+
+* [Django REST framework](https://www.django-rest-framework.org/) es un conjunto de herramientas potente y flexible para crear API web.
 
 ### Fundamental
 
 ### Términos
 
+rest, models, views
+
 ### Referencias
+
+* Christie, T. (n.d.). Django REST Framework. Retrieved from https://www.django-rest-framework.org/
+* Django REST Framework (DRF): Crea una REST API (GET, POST, PUT, DELETE) | Tutorial desde Cero ✅ (2024). Retrieved from https://www.youtube.com/watch?v=Xts8NmyAc8c
