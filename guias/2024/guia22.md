@@ -14,16 +14,42 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-clone el proyecto 
+#### Ambiente de desarrollo
 
-instale las librerías 
-pip install -r requirements.txt
+1. Desde la línea de comandos
+	
+	+ Cree y habilite el ambiente de desarrollo, con:
 
-obtenga las credenciales con realtime database
+	```command
+	python -m venv environment
+	environment\Scripts\activate
+	```
 
-pip install firebase-admin djangorestframework
+#### Instalación de librerías
+
+1. Clone localmente tu repositorio **backend**.
+
+2. Desde la línea de comandos
+
+	+  Acceda a la carpeta del proyecto **backend** e instale las librerías , con:
+
+	```command
+	cd backend
+	pip install -r requirements.txt
+	```
+
+#### SDK Firebase Admin: Clave privada
+
+1. En la [consola de Firebase](https://console.firebase.google.com/)
+
+	+ Acceda a la **Configuración de proyecto** > **Cuentas de servicio** > **SDK de Firebase Admin**.
+	+ **Genera una clave privada** JSON y descárguela.
+
+2. Guarde la clave privada en la carpeta del proyecto.
 
 ### Actividades en clases
+
+pip install firebase-admin djangorestframework
 
 Cree la aplicación `restapi`
 
