@@ -14,20 +14,23 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+#### Ambiente de desarrollo
+
 1. Desde la línea de comandos
-	
-	+ Cree un ambiente de desarrollo, con:
+
+	+ Cree y habilite el ambiente de desarrollo, con:
 
 	```command
 	python -m venv environment
-	```
-
-	+ Habilite el ambiente de desarrollo, con:
-
-	```command
 	environment\Scripts\activate
 	```
 
+#### Repositorio remoto
+
+1. Crea un repositorio en GitHub con el nombre **backend**.
+2. Desde la línea de comandos
+	
+	+ Clone localmente y acceda al repositorio _backend_.
 	+ Instale **django**, con:
 
 	```command
@@ -43,7 +46,7 @@ theme: jekyll-theme-leap-day
 	+ Cree y acceda a la carpeta del proyecto **backend**, con:
 
 	```command
-	django-admin startproject backend
+	django-admin startproject backend .
 	cd backend
 	```
 
@@ -379,7 +382,7 @@ theme: jekyll-theme-leap-day
 	+ _templates/_ Carpeta donde se almacenan las plantillas HTML. Puede estar en el directorio raíz del proyecto o dentro de cada aplicación.
 	+ _static/_ Carpeta donde se almacenan archivos estáticos como CSS, JavaScript e imágenes. Puede ser compartida entre todas las aplicaciones o específica para cada una.
 
-#### Paquetes instalados
+#### Versionamiento local y remoto
 
 1. En la línea de comandos, genere el archivo **requirements.txt** con la lista de paquetes utilizados.
 
@@ -387,38 +390,7 @@ theme: jekyll-theme-leap-day
 	pip freeze > requirements.txt
 	```
 
-#### Versionamiento local y remoto
-
-1. Crea un repositorio en GitHub con el nombre **backend**.
-
-2. Desde la línea de comandos:
-
-	+ Inicialice el repositorio local
-
-	```command
-	git init .
-	```
-
-	+ Agregue la rama **main** y el tag **origin**:
-
-	```command
-	git branch -M main
-	git remote add origin https://github.com/<SU-USUARIO>/backend.git
-	```
-
-	+ De ser necesario, incorpore los cambios del repositorio remoto en el repositorio local:
-
-	```command
-	git pull origin main
-	```
-
-3. Versiona local y remotamente el repositorio **.**.
-
-	```command
-	git add .
-	git commit -m "init"
-	git push -f origin main 
-	```
+2. Versione local y remotamente.
 
 ### Documentación
 
