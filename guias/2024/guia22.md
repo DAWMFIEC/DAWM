@@ -43,15 +43,16 @@ theme: jekyll-theme-leap-day
 
 #### SDK Firebase Admin: Clave privada
 
-1. En la [consola de Firebase](https://console.firebase.google.com/)
-
+1. Acceda a la [consola de Firebase](https://console.firebase.google.com/)
+2. Ingrese al proyecto **landing**
 	+ Acceda a la **Configuración de proyecto** > **Cuentas de servicio** > **SDK de Firebase Admin**.
 	+ **Genera una clave privada** JSON y descárguela.
 
-2. Guarde la clave privada en la carpeta del proyecto.
+3. Guarde la clave privada en el directorio raíz del proyecto.
 
 ### Actividades en clases
 
+#### Aplicación: REST
 
 
 Cree la aplicación `restapi`
@@ -162,6 +163,10 @@ curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"correo@gmail.c
 * [Django REST framework](https://www.django-rest-framework.org/) es un conjunto de herramientas potente y flexible para crear API web.
 
 ### Fundamental
+
+* What is REST API? en [X](https://twitter.com/Terrasoft_ltd/status/1732354546528067738)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr"><a href="https://twitter.com/hashtag/REST?src=hash&amp;ref_src=twsrc%5Etfw">#REST</a> <a href="https://twitter.com/hashtag/API?src=hash&amp;ref_src=twsrc%5Etfw">#API</a> what is it?<br>Representational State Transfer<br>This means that when a <a href="https://twitter.com/hashtag/client?src=hash&amp;ref_src=twsrc%5Etfw">#client</a> requests a resource using a REST API, the <a href="https://twitter.com/hashtag/server?src=hash&amp;ref_src=twsrc%5Etfw">#server</a> transfers back the current state of the resource in a standardized representation <a href="https://t.co/xCFXw9cQFZ">pic.twitter.com/xCFXw9cQFZ</a></p>&mdash; Terrasoft Ltd (@Terrasoft_ltd) <a href="https://twitter.com/Terrasoft_ltd/status/1732354546528067738?ref_src=twsrc%5Etfw">December 6, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 
 ### Términos
 
