@@ -35,6 +35,11 @@ theme: jekyll-theme-leap-day
 	```command
 	pip install -r requirements.txt
 	```
+	+ Instale **firebase-admin** y **djangorestframework**, con:
+
+	```command
+	pip install firebase-admin djangorestframework
+	```
 
 #### SDK Firebase Admin: Clave privada
 
@@ -47,7 +52,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-pip install firebase-admin djangorestframework
+
 
 Cree la aplicación `restapi`
 
@@ -133,6 +138,24 @@ navegador http://127.0.0.1:8000/restapi/coleccion/ y pruebe con { "email": "corr
 en consola y pruebe
 
 curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"correo@gmail.com\"}" http://127.0.0.1:8000/restapi/api/coleccion/
+
+#### Versionamiento local y remoto
+
+1. En la línea de comandos
+
+	+ Genere el archivo **requirements.txt** con la lista de paquetes utilizados, con:
+
+	```command
+	pip freeze > requirements.txt
+	```
+
+	+ Desactive el ambiente de desarrollo, con:
+
+	```command
+	deactivate
+	```
+
+2. Versione local y remotamente.
 
 ### Documentación
 
