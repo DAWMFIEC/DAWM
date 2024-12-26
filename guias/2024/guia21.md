@@ -260,7 +260,7 @@ theme: jekyll-theme-leap-day
 
 2. Modifique el archivo _templates/base.html_, con:
 
-	+ Use el **tag library** _static_ y utilice la etiqueta _static_ para construir la URLs que apuntan a los archivos estáticos del proyecto.
+	+ Importe el **tag library** _static_ y utilice la etiqueta _static_ para construir la URLs que apuntan a los archivos estáticos del proyecto.
 
 	```html
 	{% raw %}{%{% endraw %} load static {% raw %}%}{% endraw %}
@@ -294,7 +294,7 @@ theme: jekyll-theme-leap-day
 
 #### Plantillas
 
-1. Descargue y descomprima [index_django.zip](recursos/index_django.zip) dentro de _templates_.
+1. Descargue y descomprima [index_django.zip](recursos/index_django.zip) dentro de la carpeta _templates_.
 2. Edite el archivo _templates/index.html_, con:
 
 	+ Extienda de la plantilla _base.html_.
