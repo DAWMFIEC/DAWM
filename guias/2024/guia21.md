@@ -384,10 +384,18 @@ theme: jekyll-theme-leap-day
 
 #### Versionamiento local y remoto
 
-1. En la línea de comandos, genere el archivo **requirements.txt** con la lista de paquetes utilizados.
+1. En la línea de comandos
+
+	+ Genere el archivo **requirements.txt** con la lista de paquetes utilizados, con:
 
 	```command
 	pip freeze > requirements.txt
+	```
+
+	+ Desactive el ambiente de desarrollo, con:
+
+	```command
+	deactivate
 	```
 
 2. Versione local y remotamente.
