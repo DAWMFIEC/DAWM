@@ -17,7 +17,7 @@ theme: jekyll-theme-leap-day
 #### Ambiente de desarrollo
 
 1. Desde la línea de comandos
-	
+
 	+ Cree y habilite el ambiente de desarrollo, con:
 
 	```command
@@ -27,14 +27,12 @@ theme: jekyll-theme-leap-day
 
 #### Instalación de librerías
 
-1. Clone localmente tu repositorio **backend**.
-
-2. Desde la línea de comandos
-
-	+  Acceda a la carpeta del proyecto **backend** e instale las librerías , con:
+1. Desde la línea de comandos
+	
+	+ Clone localmente y acceda tu repositorio _backend_.
+	+ Instale las librerías de _requirements.txt_, con:
 
 	```command
-	cd backend
 	pip install -r requirements.txt
 	```
 
