@@ -43,11 +43,11 @@ theme: jekyll-theme-leap-day
 
 1. Desde la línea de comandos
 	
-	+ Cree y acceda a la carpeta del proyecto **backend**, con:
+	+ Acceda y cree el proyecto **backend**, con:
 
 	```command
-	django-admin startproject backend .
 	cd backend
+	django-admin startproject backend .
 	```
 
 	+ Abra el proyecto con VSCode, con:
