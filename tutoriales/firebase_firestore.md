@@ -41,7 +41,6 @@ Firebase - Firestore
 * Desde la interfaz de Firebase, acceda a **Descripción general** > **Configuración del proyecto** 
 
 <p align="center">
-  <img width="49%" src ="imagenes/firebase_firestore_index.png">
   <img width="49%" src ="imagenes/firebase_firestore_gd.png">
 </p> 
 
