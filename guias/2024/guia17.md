@@ -18,7 +18,7 @@ theme: jekyll-theme-leap-day
 
 1. En Firebase, cree el proyecto **hibrida** 
 2. Agregue el servicio [Firebase - Firestore](https://dawmfiec.github.io/DAWM/tutoriales/firebase_firestore)
-3. Copie el objeto **firebaseConfig**.
+3. Obtenga las [credenciales](https://dawmfiec.github.io/DAWM/tutoriales/firebase_firestore#acceso-mediante-el-sdk) y copie el objeto **firebaseConfig**.
 
 #### Hibrida
 
