@@ -50,46 +50,83 @@ theme: jekyll-theme-leap-day
 
 3. Guarde la clave privada en el directorio raíz del proyecto.
 
+	```text
+	backend/	
+	├──	landing-XXXXX-firebase-adminsdk-YYYYY-ZZZZZZZZZZ.json	
+	├── ....			
+	├── backend/ 
+	├── main/					
+	├── static/				
+	└── templates/
+	```
+
 ### Actividades en clases
+
+#### SDK Firebase Admin: Registro de clave
+
+1. Edite el archivo _backend/settings.py_, con:
+
+	+ Defina la ruta al archivo JSON con las credenciales e inicialice firebase
+
+	```python
+	...
+
+	# Ruta al archivo JSON de credenciales
+	FIREBASE_CRED = credentials.Certificate("landing-XXXXX-firebase-adminsdk-YYYYY-ZZZZZZZZZZ.json")
+
+	# Inicializa Firebase
+	firebase_admin.initialize_app(FIREBASE_CRED, {
+	    'databaseURL': 'https://landing-XXXXX-default-rtdb.firebaseio.com/'
+	})
+	```
 
 #### Aplicación: REST
 
+1. Desde la línea de comandos
+	
+	+ Cree la aplicación **restapi**, con:
 
-Cree la aplicación `restapi`
+	```command
+	python manage.py startapp restapi
+	```
 
-registre la aplicación en _backend/settings.py_
+2. Edite el archivo _backend/settings.py_, con:
 
-INSTALLED_APPS = [
-    ...
-    'main',
-    'rest_framework',
-    'restapi',
-]
+	+ Registre la aplicación _restapi_ y _rest\_framework_
 
-#### Ruta al archivo JSON de credenciales
-FIREBASE_CRED = credentials.Certificate("landing-8e71d-firebase-adminsdk-pehj8-4cdce9020b.json")
+	```python
+	INSTALLED_APPS = [
+	    ...
+		'rest_framework',
+		'restapi',
+	]
+	```
 
-#### Inicializa Firebase
-firebase_admin.initialize_app(FIREBASE_CRED, {
-    'databaseURL': 'https://landing-8e71d-default-rtdb.firebaseio.com/'
-})
+3. Edite el archivo _backend/urls.py_, con:
 
-registre la url de la aplicación 
+	+ Asocie la ruta **restapi** con las rutas de la aplicación _restapi_
 
-... 
-urlpatterns = [
-    ...
-    path('restapi/', include('restapi.urls')),
-]
+	```python
+	...
 
-cree _restapi/urls.py_
+	urlpatterns = [
+	    ...
+	    path('restapi/', include('restapi.urls')),
+	]
+	```
 
-from django.urls import path
-from . import views
+4. Cree y modifique el archivo _restapi/urls.py_, con:
+	
+	+ Asocie la ruta **v1/landing/** con la vista basada en clases (`class-based view`) del Django REST Framework
 
-urlpatterns = [
-	path('coleccion/', views.ColeccionAPI.as_view(), name='firebase_resources' ),
-]
+	```python
+	from django.urls import path
+	from . import views
+
+	urlpatterns = [
+	    path('v1/landing/', views.LandingAPI.as_view(), name='firebase_resources' ),
+	]
+	```
 
 #### GET
 
@@ -170,7 +207,7 @@ curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"correo@gmail.c
 
 ### Términos
 
-rest, models, views
+class-based view,
 
 ### Referencias
 
