@@ -182,13 +182,13 @@ theme: jekyll-theme-leap-day
 1. Descargue y descomprima los archivos [static_django.zip](recursos/static_django.zip) y [templates_django.zip](recursos/templates_django.zip) en la raíz del proyecto.
 
 	```text
-	backend/ (proyecto)
+	backend/                         (proyecto)
 	├── backend/ 
-	├── main/ (aplicación)
-	├── static/ (archivos estáticos)
+	├── main/                        (aplicación)
+	├── static/                      (archivos estáticos)
 	│   	└──css/
 	│   	└──js/
-	└── templates/ (plantillas)
+	└── templates/                   (plantillas)
 	    	└──base.html
 	```
 
@@ -230,7 +230,7 @@ theme: jekyll-theme-leap-day
 
 1. En el archivo _backend/settings.py_:
 
-	+ Verifique la carga de la aplicación _django.contrib.staticfiles_ en la lista _INSTALLED_APPS_.
+	+ Compruebe la carga de la aplicación _django.contrib.staticfiles_ en la lista _INSTALLED_APPS_.
 
 	```python
 	INSTALLED_APPS = [
