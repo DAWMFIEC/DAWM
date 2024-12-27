@@ -78,9 +78,9 @@ theme: jekyll-theme-leap-day
 	...
 
 	# Ruta al archivo JSON de credenciales
-	FIREBASE_CRED = credentials.Certificate("landing-XXXXX-firebase-adminsdk-YYYYY-ZZZZZZZZZZ.json")
+	FIREBASE_CRED = credentials.Certificate("keys/landing-XXXXX-firebase-adminsdk-YYYYY-ZZZZZZZZZZ.json")
 
-	# Inicializa Firebase
+	# Inicializa Firebase con el endpoint de Realtime Database
 	firebase_admin.initialize_app(FIREBASE_CRED, {
 	    'databaseURL': 'https://landing-XXXXX-default-rtdb.firebaseio.com/'
 	})
