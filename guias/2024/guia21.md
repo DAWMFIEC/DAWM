@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
 	environment\Scripts\activate
 	```
 
-#### Repositorio local y remoto
+#### Repositorio local/remoto + librerías
 
 1. Crea un repositorio en GitHub con el nombre **backend**.
 2. Desde la línea de comandos
