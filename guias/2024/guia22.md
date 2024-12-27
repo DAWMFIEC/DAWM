@@ -203,6 +203,7 @@ theme: jekyll-theme-leap-day
 		    
 	        # get: Obtiene todos los elementos de la colección
 	        data = ref.get()
+
 	        return Response(data, status=status.HTTP_200_OK)
 	```
 
@@ -217,14 +218,14 @@ theme: jekyll-theme-leap-day
 
 3. (STOP 2 - II) Desde una nueva línea de comandos
 	
-	+ Realice una petición, con:
+	+ Realice una petición con `cURL`, con:
 
 	```command
 	curl -X GET http://127.0.0.1:8000/restapi/v1/landing/
 	``` 
 
 	<div align="center">
-		<img src="imagenes/django_drf_21.png">
+		<img src="imagenes/django_drf_22.png">
 	</div>
 
 
@@ -258,7 +259,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-class-based view,
+class-based view, cURL
 
 ### Referencias
 
