@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
 	environment\Scripts\activate
 	```
 
-#### Instalación de librerías
+#### Repositorio local/remoto + librerías
 
 1. Desde la línea de comandos
 	
