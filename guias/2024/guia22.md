@@ -303,4 +303,4 @@ class-based view, cURL, SDK
 ### Referencias
 
 * Christie, T. (n.d.). Django REST Framework. Retrieved from https://www.django-rest-framework.org/
-* Django REST Framework (DRF): Crea una REST API (GET, POST, PUT, DELETE) | Tutorial desde Cero ✅ (2024). Retrieved from https://www.youtube.com/watch?v=Xts8NmyAc8c
+* Django REST Framework (DRF): Crea una REST API (GET, POST, PUT, DELETE) Tutorial desde Cero ✅ (2024). Retrieved from https://www.youtube.com/watch?v=Xts8NmyAc8c
