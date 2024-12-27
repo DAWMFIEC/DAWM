@@ -35,7 +35,7 @@ theme: jekyll-theme-leap-day
 	```command
 	pip install -r requirements.txt
 	```
-	+ Instale **firebase-admin** y **djangorestframework**, con:
+	+ Instale **firebase-admin** y **djangorestframework** (DRF), con:
 
 	```command
 	pip install firebase-admin djangorestframework
@@ -66,9 +66,16 @@ theme: jekyll-theme-leap-day
 
 1. Edite el archivo _backend/settings.py_, con:
 
+	+ Importe _firebase_admin_ y _credentials_
 	+ Defina la ruta al archivo JSON con las credenciales e inicialice firebase
 
 	```python
+	...
+	from ... import Path
+
+	import firebase_admin
+	from firebase_admin import credentials
+
 	...
 
 	# Ruta al archivo JSON de credenciales
@@ -117,7 +124,7 @@ theme: jekyll-theme-leap-day
 
 4. Cree y modifique el archivo _restapi/urls.py_, con:
 	
-	+ Asocie la ruta **v1/landing/** con la vista basada en clases (`class-based view`) del Django REST Framework
+	+ Asocie la ruta **'v1/landing/'** con la vista basada en clases (`class-based view`) del Django REST Framework
 
 	```python
 	from django.urls import path
@@ -128,54 +135,98 @@ theme: jekyll-theme-leap-day
 	]
 	```
 
-#### GET
+5. Edite el archivo _restapi/views.py_, con:
 
-edite _restapi/views.py_
+	+ Importe la clase _APIView_, _Response_ y _status_ de DRF; e importe la referencia al Firebase SDK.
+	+ Agregue la clase **LandingAPI** (hereda de la vista _APIView_) y el atributo con el nombre de la colección en Realtime Database.
 
-from rest_framework.views import APIView
-from rest_framework.response import Response
-from rest_framework import status
-from firebase_admin import db
-
-class ColeccionAPI(APIView):
-    
-    collection = 'coleccion'
-    
-    def get(self, request):
-        ref = db.reference(self.collection)
-        data = ref.get()
-        return Response(data, status=status.HTTP_200_OK)
-
-
-python manage.py runserver
-
-navegador http://127.0.0.1:8000/restapi/coleccion/ y pruebe
-en consola y pruebe
-
-curl -X GET http://127.0.0.1:8000/restapi/coleccion/ 
-
-#### POST
-
-edite _restapi/views.py_
-
-...
-
-class ColeccionAPI(APIView):
-
+	```python 
 	...
 
-	def post(self, request):
-        ref = db.reference(self.collection)
-        data = request.data
-        new_resource = ref.push(data)
-        return Response({"id": new_resource.key}, status=status.HTTP_201_CREATED)
+	# Create your views here.
+
+	from rest_framework.views import APIView
+	from rest_framework.response import Response
+	from rest_framework import status
+	
+	from firebase_admin import db
+
+	class LandingAPI(APIView):
+	    
+	    name = 'Landing API'
+		collection_name = 'COLLECTION_NAME_REALTIME_DATABASE'
+
+		def get(self, request):
+	        data = []
+	        
+	        return Response(data, status=status.HTTP_200_OK)
+	    
+	    def post(self, request):
+	        obj = {}
+	        
+	        return Response(obj, status=status.HTTP_201_CREATED)
+	```
+
+6. Desde la línea de comandos
+	
+	+ Levante el servidor, con:
+
+	```command
+	python manage.py runserver
+	```
+
+7. (STOP 1) Revise los cambios en el navegador para las URLs: 
+
+	+ En la ruta raíz [http://127.0.0.1:8000/restapi/v1/landing/](http://127.0.0.1:8000/restapi/v1/landing/), y 
+
+	<div align="center">
+		<img src="imagenes/django_drf_1.png">
+	</div>
+
+#### GET
+
+1. Edite el archivo _restapi/views.py_, con:
+
+	+ Modifique función _get_ para que obtenga un arreglo JSON con todos los elementos de la colección.
+
+	```python 
+	...
+
+	class LandingAPI(APIView):
+    
+    	...
+    
+	    def get(self, request):
+
+	        # Referencia a la colección
+	        ref = db.reference(f'{self.collection_name}')
+		    
+	        # get: Obtiene todos los elementos de la colección
+	        data = ref.get()
+	        return Response(data, status=status.HTTP_200_OK)
+	```
+
+2. (STOP 2 - I) Revise los cambios en el navegador para las URLs: 
+
+	+ En la ruta raíz [http://127.0.0.1:8000/restapi/v1/landing/](http://127.0.0.1:8000/restapi/v1/landing/), y 
+
+	<div align="center">
+		<img src="imagenes/django_drf_21.png">
+	</div>
 
 
-navegador http://127.0.0.1:8000/restapi/coleccion/ y pruebe con { "email": "correo@gmail.com" }
+3. (STOP 2 - II) Desde una nueva línea de comandos
+	
+	+ Realice una petición, con:
 
-en consola y pruebe
+	```command
+	curl -X GET http://127.0.0.1:8000/restapi/v1/landing/
+	``` 
 
-curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"correo@gmail.com\"}" http://127.0.0.1:8000/restapi/api/coleccion/
+	<div align="center">
+		<img src="imagenes/django_drf_21.png">
+	</div>
+
 
 #### Versionamiento local y remoto
 
