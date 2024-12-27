@@ -30,7 +30,8 @@ theme: jekyll-theme-leap-day
 1. Crea un repositorio en GitHub con el nombre **backend**.
 2. Desde la línea de comandos
 	
-	+ Clone localmente y acceda al repositorio _backend_.
+	+ Clone localmente el repositorio _backend_.
+	+ Acceda al repositorio _backend_.
 	+ Instale **`django`**, con:
 
 	```command
