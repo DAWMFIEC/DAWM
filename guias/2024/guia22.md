@@ -153,16 +153,6 @@ theme: jekyll-theme-leap-day
 	    
 	    name = 'Landing API'
 		collection_name = 'COLLECTION_NAME_REALTIME_DATABASE'
-
-		def get(self, request):
-	        data = []
-	        
-	        return Response(data, status=status.HTTP_200_OK)
-	    
-	    def post(self, request):
-	        obj = {}
-	        
-	        return Response(obj, status=status.HTTP_201_CREATED)
 	```
 
 6. Desde la línea de comandos
@@ -185,7 +175,9 @@ theme: jekyll-theme-leap-day
 
 1. Edite el archivo _restapi/views.py_, con:
 
-	+ Modifique función _get_ para que obtenga un arreglo JSON con todos los elementos de la colección.
+	+ Modifique función _get_ con el SDK
+		- Obtenga una referencia a la colección 
+		- Obtenga un arreglo con todos los elementos de la colección en formato JSON.
 
 	```python 
 	...
@@ -257,7 +249,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-class-based view, cURL
+class-based view, cURL, SDK
 
 ### Referencias
 
