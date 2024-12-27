@@ -50,16 +50,17 @@ theme: jekyll-theme-leap-day
 	+ Acceda a la **Configuración de proyecto** > **Cuentas de servicio** > **SDK de Firebase Admin**.
 	+ **Genera una clave privada** JSON y descárguela.
 
-3. Guarde la clave privada en el directorio raíz del proyecto.
+3. Guarde la clave privada la carpeta **keys** del proyecto.
 
 	```text
 	backend/	
-	├──	landing-XXXXX-firebase-adminsdk-YYYYY-ZZZZZZZZZZ.json	
-	├── ....			
 	├── backend/ 
 	├── main/					
 	├── static/				
 	└── templates/
+	├── ....
+	└── keys/			<!-- clave -->
+	    	└──landing-XXXXX-firebase-adminsdk-YYYYY-ZZZZZZZZZZ.json
 	```
 
 4. Edite el archivo _backend/settings.py_, con:
@@ -284,7 +285,16 @@ theme: jekyll-theme-leap-day
 	deactivate
 	```
 
-2. Versione local y remotamente.
+2. Agregue la carpeta **keys/** en el archivo _.gitignore_
+
+	```command
+	...
+
+	# Keys
+	keys/
+	```
+
+3. Versione local y remotamente.
 
 ### Documentación
 
