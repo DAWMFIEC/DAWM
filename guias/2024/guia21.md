@@ -43,7 +43,7 @@ theme: jekyll-theme-leap-day
 
 1. Desde la línea de comandos
 	
-	+ Cree el proyecto **backend**, con:
+	+ Cree el proyecto **backend** en la ubicación actual, con:
 
 	```command
 	django-admin startproject backend .
