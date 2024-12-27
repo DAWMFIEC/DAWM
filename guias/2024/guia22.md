@@ -41,6 +41,8 @@ theme: jekyll-theme-leap-day
 	pip install firebase-admin djangorestframework
 	```
 
+### Actividades en clases
+
 #### SDK Firebase Admin: Clave privada
 
 1. Acceda a la [consola de Firebase](https://console.firebase.google.com/)
@@ -60,11 +62,7 @@ theme: jekyll-theme-leap-day
 	└── templates/
 	```
 
-### Actividades en clases
-
-#### SDK Firebase Admin: Registro de clave
-
-1. Edite el archivo _backend/settings.py_, con:
+4. Edite el archivo _backend/settings.py_, con:
 
 	+ Importe _firebase_admin_ y _credentials_
 	+ Defina la ruta al archivo JSON con las credenciales e inicialice firebase
