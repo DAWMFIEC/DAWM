@@ -175,9 +175,9 @@ theme: jekyll-theme-leap-day
 
 1. Edite el archivo _restapi/views.py_, con:
 
-	+ Modifique función _get_ con el SDK
-		- Obtenga una referencia a la colección 
-		- Obtenga un arreglo con todos los elementos de la colección en formato JSON.
+	+ Modifique función _get_ mediante el uso del SDK
+		- Obtenga una referencia a la colección, con **reference**
+		- Obtenga un arreglo con todos los elementos de la colección en formato JSON, con **get**.
 
 	```python 
 	...
@@ -194,7 +194,8 @@ theme: jekyll-theme-leap-day
 	        # get: Obtiene todos los elementos de la colección
 	        data = ref.get()
 
-	        return Response(data, status=status.HTTP_200_OK)
+	        # Devuelve un arreglo JSON
+       		return Response(data, status=status.HTTP_200_OK)
 	```
 
 2. (STOP 2 - I) Revise los cambios en el navegador para las URLs: 
@@ -216,6 +217,54 @@ theme: jekyll-theme-leap-day
 
 	<div align="center">
 		<img src="imagenes/django_drf_22.png">
+	</div>
+
+#### POST
+
+1. Edite el archivo _restapi/views.py_, con:
+
+	+ Modifique función _post_ mediante el uso del SDK
+		- Obtenga una referencia a la colección, con **reference**
+		- Envíe un objeto JSON a la colección, con **push**.
+
+	```python 
+	...
+
+	class LandingAPI(APIView):
+    
+    	...
+    
+	    def post(self, request):
+	        
+	        # Referencia a la colección
+	        ref = db.reference(f'{self.collection_name}')
+	        
+	        # push: Guarda el objeto en la colección
+	        new_resource = ref.push(request.data)
+	        
+	        # Devuelve el id del objeto guardado
+	        return Response({"id": new_resource.key}, status=status.HTTP_201_CREATED)
+	```
+
+2. (STOP 3 - I) Revise los cambios en el navegador para las URLs: 
+
+	+ En la ruta raíz [http://127.0.0.1:8000/restapi/v1/landing/](http://127.0.0.1:8000/restapi/v1/landing/), y 
+
+	<div align="center">
+		<img src="imagenes/django_drf_31.png">
+	</div>
+
+
+3. (STOP 3 - II) Desde una nueva línea de comandos
+	
+	+ Realice una petición con `cURL`, con:
+
+	```command
+	curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"usuario06@gmail.com\", \"saved\":\"31/12/2024, 12:00:46 a. m.\"}" http://127.0.0.1:8000/restapi/v1/landing/
+	``` 
+
+	<div align="center">
+		<img src="imagenes/django_drf_32.png">
 	</div>
 
 
