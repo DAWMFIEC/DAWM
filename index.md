@@ -83,6 +83,10 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Angular - PWA](tutoriales/angular_pwa.md)
 * [Angular - Cordova](tutoriales/angular_cordova.md)
 
+#### Django
+
+* [Django - Pythonanywhere](tutoriales/django_pythonanywhere.md)
+
 #### Express
 
 * [Express - Bases](tutoriales/express_bases.md)
