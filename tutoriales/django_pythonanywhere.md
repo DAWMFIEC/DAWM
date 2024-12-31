@@ -18,12 +18,11 @@ Python Anywhere
 
 * Obtenga una cuenta **Beginner account** en [Python Anywhere](https://www.pythonanywhere.com/).
 
-
-
 <div align="center">
-    <img src="imagenes/pa_beginner.png" alt="" width="60%">
+    <img src="imagenes/pa_beginner.png" alt="" width="70%">
     <p>Fuente: <a href="https://www.pythonanywhere.com/pricing/">Python Anywhere</a> </p>
 </div>
+
 
 
 
