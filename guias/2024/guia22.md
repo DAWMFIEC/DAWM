@@ -90,38 +90,38 @@ theme: jekyll-theme-leap-day
 
 1. Desde la línea de comandos
 	
-	+ Cree la aplicación **restapi**, con:
+	+ Cree la aplicación **api**, con:
 
 	```command
-	python manage.py startapp restapi
+	python manage.py startapp api
 	```
 
 2. Edite el archivo _backend/settings.py_, con:
 
-	+ Registre la aplicación _restapi_ y _rest\_framework_
+	+ Registre la aplicación _api_ y _rest\_framework_
 
 	```python
 	INSTALLED_APPS = [
 	    ...
 		'rest_framework',
-		'restapi',
+		'api',
 	]
 	```
 
 3. Edite el archivo _backend/urls.py_, con:
 
-	+ Asocie la ruta **restapi** con las rutas de la aplicación _restapi_
+	+ Asocie la ruta **api** con las rutas de la aplicación _api_
 
 	```python
 	...
 
 	urlpatterns = [
 	    ...
-	    path('restapi/', include('restapi.urls')),
+	    path('api/', include('api.urls')),
 	]
 	```
 
-4. Cree y modifique el archivo _restapi/urls.py_, con:
+4. Cree y modifique el archivo _api/urls.py_, con:
 	
 	+ Asocie la ruta **'v1/landing/'** con la vista basada en clases (`class-based view`) del Django REST Framework
 
@@ -134,7 +134,7 @@ theme: jekyll-theme-leap-day
 	]
 	```
 
-5. Edite el archivo _restapi/views.py_, con:
+5. Edite el archivo _api/views.py_, con:
 
 	+ Importe la clase _APIView_, _Response_ y _status_ de DRF; e importe la referencia al Firebase SDK.
 	+ Agregue la clase **LandingAPI** (hereda de la vista _APIView_) y el atributo con el nombre de la colección en Realtime Database.
@@ -166,7 +166,7 @@ theme: jekyll-theme-leap-day
 
 7. (STOP 1) Revise los cambios en el navegador para las URLs: 
 
-	+ En la ruta raíz [http://127.0.0.1:8000/restapi/v1/landing/](http://127.0.0.1:8000/restapi/v1/landing/), y 
+	+ En la ruta raíz [http://127.0.0.1:8000/api/v1/landing/](http://127.0.0.1:8000/api/v1/landing/), y 
 
 	<div align="center">
 		<img src="imagenes/django_drf_1.png">
@@ -174,7 +174,7 @@ theme: jekyll-theme-leap-day
 
 #### GET
 
-1. Edite el archivo _restapi/views.py_, con:
+1. Edite el archivo _api/views.py_, con:
 
 	+ Modifique función _get_ mediante el uso del SDK
 		- Obtenga una referencia a la colección, con **reference**
@@ -201,7 +201,7 @@ theme: jekyll-theme-leap-day
 
 2. (STOP 2 - I) Revise los cambios en el navegador para las URLs: 
 
-	+ En la ruta raíz [http://127.0.0.1:8000/restapi/v1/landing/](http://127.0.0.1:8000/restapi/v1/landing/), y 
+	+ En la ruta raíz [http://127.0.0.1:8000/api/v1/landing/](http://127.0.0.1:8000/api/v1/landing/), y 
 
 	<div align="center">
 		<img src="imagenes/django_drf_21.png">
@@ -213,7 +213,7 @@ theme: jekyll-theme-leap-day
 	+ Realice una petición con `cURL`, con:
 
 	```command
-	curl -X GET http://127.0.0.1:8000/restapi/v1/landing/
+	curl -X GET http://127.0.0.1:8000/api/v1/landing/
 	``` 
 
 	<div align="center">
@@ -222,7 +222,7 @@ theme: jekyll-theme-leap-day
 
 #### POST
 
-1. Edite el archivo _restapi/views.py_, con:
+1. Edite el archivo _api/views.py_, con:
 
 	+ Modifique función _post_ mediante el uso del SDK
 		- Obtenga una referencia a la colección, con **reference**
@@ -249,7 +249,7 @@ theme: jekyll-theme-leap-day
 
 2. (STOP 3 - I) Revise los cambios en el navegador para las URLs: 
 
-	+ En la ruta raíz [http://127.0.0.1:8000/restapi/v1/landing/](http://127.0.0.1:8000/restapi/v1/landing/), y 
+	+ En la ruta raíz [http://127.0.0.1:8000/api/v1/landing/](http://127.0.0.1:8000/api/v1/landing/), y 
 
 	<div align="center">
 		<img src="imagenes/django_drf_31.png">
@@ -261,7 +261,7 @@ theme: jekyll-theme-leap-day
 	+ Realice una petición con `cURL`, con:
 
 	```command
-	curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"usuario06@gmail.com\", \"saved\":\"31/12/2024, 12:00:46 a. m.\"}" http://127.0.0.1:8000/restapi/v1/landing/
+	curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"usuario06@gmail.com\", \"saved\":\"31/12/2024, 12:00:46 a. m.\"}" http://127.0.0.1:8000/api/v1/landing/
 	``` 
 
 	<div align="center">
