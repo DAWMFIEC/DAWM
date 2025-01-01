@@ -180,7 +180,7 @@ Verificación
 
 * * *
 
-Acceda al sitio principal [https://<USUARIO-PYTHONANYWHERE>.pythonanywhere.com/](https://<USUARIO-PYTHONANYWHERE>.pythonanywhere.com/)
+Acceda al sitio principal [https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/](https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/)
 
 <div align="center">
     <img src="imagenes/pa_verificacion.png" alt="" width="70%">
