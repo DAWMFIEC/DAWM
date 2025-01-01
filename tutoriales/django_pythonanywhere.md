@@ -23,7 +23,7 @@ Python Anywhere
     <p>Fuente: <a href="https://www.pythonanywhere.com/pricing/">Python Anywhere</a> </p>
 </div>
 
-* Cree una nueva consola desde la opción **Console** > **Bash**.
+* Desde la interfaz de Python Anywhere, en la opción **Console** > **Bash**, cree una nueva consola.
 
 <div align="center">
     <img src="imagenes/pa_console.png" alt="" width="70%">
@@ -65,7 +65,7 @@ Keys
 
 * * *
 
-* Cree la carpeta `keys` y cargue el archivo con las credenciales desde la opción **Files**
+* Desde la interfaz de Python Anywhere, en la opción **Files**, cree la carpeta `keys` y cargue el archivo con las credenciales de Firebase. 
 
 <div align="center">
     <img src="imagenes/pa_keys.png" alt="" width="70%">
@@ -76,7 +76,7 @@ Web app
 
 * * *
 
-* Cree una aplicación web desde la opción **Web**, en el botón **Add a new web app**
+* Desde la interfaz de Python Anywhere, en la opción **Web**, cee una aplicación web con el botón **Add a new web app**
 
 <div align="center">
     <img src="imagenes/pa_webapp1.png" alt="" width="70%">
@@ -89,7 +89,7 @@ Web app
     <img src="imagenes/pa_webapp2.png" alt="" width="70%">
 </div>
 
-* En el ambiente de configuración de la web app, en la sección **VIRTUALENV** ingrese la ruta al ambiente de Python 
+* Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **VIRTUALENV** ingrese la ruta al ambiente de Python 
 
 ```command
 /home/<USUARIO-PYTHONANYWHERE>/.virtualenvs/environment
@@ -100,7 +100,7 @@ Web app
 </div>
 
 
-* En el ambiente de configuración de la web app, en la sección **CODE** edite el `USUARIO-PYTHONANYWHERE_pythonanywhere_com_wsgi`
+* Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** modifique el ambiente de configuración del servidor `USUARIO-PYTHONANYWHERE_pythonanywhere_com_wsgi`
 
 ```python
 # +++++++++++ DJANGO +++++++++++
@@ -118,7 +118,7 @@ application = get_wsgi_application()
 ```
 
 
-* En el ambiente de configuración de la web app, en la sección **CODE** modifique el `Working directory` 
+* Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** agregue el `Working directory` con la ruta a la carpeta del proyecto
 
 ```command
 /home/<USUARIO-PYTHONANYWHERE>/backend
@@ -128,32 +128,67 @@ application = get_wsgi_application()
     <img src="imagenes/pa_webapp4.png" alt="" width="70%">
 </div>
 
+Seguridad
+==========
 
-* En `backend/backend/settings.py` agregue **ALLOWED_HOSTS** y **STATIC_ROOT**
+* * *
+
+* Desde la interfaz de Python Anywhere, en la opción **Files**, modifique el archivo `backend/backend/settings.py` con el dominio **ALLOWED_HOSTS**
 
 ```python
 ...
 ALLOWED_HOSTS = ['<USUARIO-PYTHONANYWHERE>.pythonanywhere.com']
 ...
+```
 
+Archivos estáticos
+==========
+
+* * *
+
+* Desde la interfaz de Python Anywhere, en la opción **Files**, modifique el archivo `backend/backend/settings.py` con la ruta a los archivos estáticos **STATIC_ROOT**
+
+```python
 ...
+STATIC_URL = ...
+
+STATICFILES_DIRS = [ ... ]
+
 STATIC_ROOT = "assets/"
 ...
 ```
 
-* En el ambiente de configuración de la web app, relacione la URL `/static/` con el directorio `/home/<USUARIO-PYTHONANYWHERE>/backend/assets` 
+* Desde la interfaz de Python Anywhere, en la opción **Console**, acceda a la ruta del proyecto y genere los archivos estáticos
+
+```command
+python manage.py collectstatic
+```
 
 <div align="center">
     <img src="imagenes/pa_webapp5.png" alt="" width="70%">
 </div>
 
 
-`https://aavendan86.pythonanywhere.com/`
+* En el ambiente de configuración de la web app, relacione la URL `/static/` con el directorio `/home/<USUARIO-PYTHONANYWHERE>/backend/assets` 
 
-`https://aavendan86.pythonanywhere.com/restapi/v1/landing/`
+<div align="center">
+    <img src="imagenes/pa_webapp6.png" alt="" width="70%">
+</div>
+
+Verificación
+==========
+
+* * *
+
+Acceda al sitio principal [https://<USUARIO-PYTHONANYWHERE>.pythonanywhere.com/](https://<USUARIO-PYTHONANYWHERE>.pythonanywhere.com/)
+
+<div align="center">
+    <img src="imagenes/pa_verificacion.png" alt="" width="70%">
+</div>
 
 
 Referencias
 =======
 
 * PythonAnywere. (2016). Deploying an existing Django project on PythonAnywhere. Retrieved from https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
+* PythonAnywere. (2015). How to setup static files in Django. Retrieved from https://help.pythonanywhere.com/pages/DjangoStaticFiles
