@@ -117,6 +117,36 @@ from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
 ```
 
+
+* En el ambiente de configuración de la web app, en la sección **CODE** modifique el `Working directory` 
+
+```command
+/home/<USUARIO-PYTHONANYWHERE>/backend
+```
+
+<div align="center">
+    <img src="imagenes/pa_webapp4.png" alt="" width="70%">
+</div>
+
+
+* En `backend/backend/settings.py` agregue **ALLOWED_HOSTS** y **STATIC_ROOT**
+
+```python
+...
+ALLOWED_HOSTS = ['<USUARIO-PYTHONANYWHERE>.pythonanywhere.com']
+...
+
+...
+STATIC_ROOT = "assets/"
+...
+```
+
+<div align="center">
+    <img src="imagenes/pa_webapp5.png" alt="" width="70%">
+</div>
+
+
+
 Referencias
 =======
 
