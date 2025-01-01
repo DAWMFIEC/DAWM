@@ -141,10 +141,16 @@ STATIC_ROOT = "assets/"
 ...
 ```
 
+* En el ambiente de configuración de la web app, relacione la URL `/static/` con el directorio `/home/<USUARIO-PYTHONANYWHERE>/backend/assets` 
+
 <div align="center">
     <img src="imagenes/pa_webapp5.png" alt="" width="70%">
 </div>
 
+
+`https://aavendan86.pythonanywhere.com/`
+
+`https://aavendan86.pythonanywhere.com/restapi/v1/landing/`
 
 
 Referencias
