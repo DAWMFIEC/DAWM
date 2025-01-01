@@ -18,10 +18,10 @@ Python Anywhere
 
 * Obtenga una cuenta **Beginner account** en [Python Anywhere](https://www.pythonanywhere.com/).
 
-<div align="center">
-    <img src="imagenes/pa_beginner.png" alt="" width="70%">
-    <p>Fuente: <a href="https://www.pythonanywhere.com/pricing/">Python Anywhere</a> </p>
-</div>
+    <div align="center">
+        <img src="imagenes/pa_beginner.png" alt="" width="70%">
+        <p>Fuente: <a href="https://www.pythonanywhere.com/pricing/">Python Anywhere</a> </p>
+    </div>
 
 Proyecto
 ==========
@@ -30,40 +30,36 @@ Proyecto
 
 * Desde la interfaz de Python Anywhere, en la opción **Console** > **Bash**, cree una nueva consola.
 
-<div align="center">
-    <img src="imagenes/pa_console.png" alt="" width="70%">
-</div>
+    <div align="center">
+        <img src="imagenes/pa_console.png" alt="" width="70%">
+    </div>
 
 * Clone el repositorio del proyecto, con:
 
-```command
-git clone https://github.com/<USUARIO>/backend.git
-```
+    ```command
+    git clone https://github.com/<USUARIO>/backend.git
+    ```
 
-<div align="center">
-    <img src="imagenes/pa_pwd.png" alt="" width="70%">
-</div>
+    <div align="center">
+        <img src="imagenes/pa_pwd.png" alt="" width="70%">
+    </div>
 
 * En la consola, crea un entorno virtual, nómbralo como **environment** y con la versión de Python 3.10
 
-```command
-mkvirtualenv --python=/usr/bin/python3.10 environment
-```
-
-<div align="center">
-    <img src="imagenes/pa_requirements.png" alt="" width="70%">
-</div>
+    ```command
+    mkvirtualenv --python=/usr/bin/python3.10 environment
+    ```
 
 * Acceda a la carpeta del proyecto e instale las dependencias:
 
-```command
-cd backend/
-pip install -r requirements.txt
-```
+    ```command
+    cd backend/
+    pip install -r requirements.txt
+    ```
 
-<div align="center">
-    <img src="imagenes/pa_requirements.png" alt="" width="70%">
-</div>
+    <div align="center">
+        <img src="imagenes/pa_requirements.png" alt="" width="70%">
+    </div>
 
 Credenciales de Firebase
 ==========
@@ -72,9 +68,9 @@ Credenciales de Firebase
 
 * Desde la interfaz de Python Anywhere, en la opción **Files**, cree la carpeta `keys` y cargue el archivo con las credenciales de Firebase utilizados en desarrollo. 
 
-<div align="center">
-    <img src="imagenes/pa_keys.png" alt="" width="70%">
-</div>
+    <div align="center">
+        <img src="imagenes/pa_keys.png" alt="" width="70%">
+    </div>
 
 Web app
 ==========
@@ -83,54 +79,56 @@ Web app
 
 * Desde la interfaz de Python Anywhere, en la opción **Web**, cee una aplicación web con el botón **Add a new web app**
 
-<div align="center">
-    <img src="imagenes/pa_webapp1.png" alt="" width="70%">
-</div>
+    <div align="center">
+        <img src="imagenes/pa_webapp1.png" alt="" width="70%">
+    </div>
 
 
 * Seleccione la opción **» Manual configuration (including virtualenvs)**, con la versión de Python 3.10
 
-<div align="center">
-    <img src="imagenes/pa_webapp2.png" alt="" width="70%">
-</div>
+    <div align="center">
+        <img src="imagenes/pa_webapp2.png" alt="" width="70%">
+    </div>
 
 * **AMBIENTE VIRTUAL** Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **VIRTUALENV** ingrese la ruta al ambiente de Python 
 
-```command
-/home/<USUARIO-PYTHONANYWHERE>/.virtualenvs/environment
-```
+    ```command
+    /home/<USUARIO-PYTHONANYWHERE>/.virtualenvs/environment
+    ```
 
-<div align="center">
-    <img src="imagenes/pa_webapp3.png" alt="" width="70%">
-</div>
+    <div align="center">
+        <img src="imagenes/pa_webapp3.png" alt="" width="70%">
+    </div>
 
 
-* **SERVIDOR** Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** modifique el ambiente de configuración del servidor `USUARIO-PYTHONANYWHERE_pythonanywhere_com_wsgi`
+* Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** 
 
-```python
-# +++++++++++ DJANGO +++++++++++
-import os
-import sys
+    <div align="center">
+        <img src="imagenes/pa_webapp4.png" alt="" width="70%">
+    </div>
 
-path = '/home/<USUARIO-PYTHONANYWHERE>/backend'
-if path not in sys.path:
-    sys.path.append(path)
+    + **Working directory** Agregue el `Working directory` con la ruta a la carpeta del proyecto
 
-os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
+    ```command
+    /home/<USUARIO-PYTHONANYWHERE>/backend
+    ```
 
-from django.core.wsgi import get_wsgi_application
-application = get_wsgi_application()
-```
+    + **WSGI configuration file** Modifique la configuración del servidor 
 
-* **DIRECTORIO DE TRABAJO** Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** agregue el `Working directory` con la ruta a la carpeta del proyecto
+    ```python
+    # +++++++++++ DJANGO +++++++++++
+    import os
+    import sys
 
-```command
-/home/<USUARIO-PYTHONANYWHERE>/backend
-```
+    path = '/home/<USUARIO-PYTHONANYWHERE>/backend'
+    if path not in sys.path:
+        sys.path.append(path)
 
-<div align="center">
-    <img src="imagenes/pa_webapp4.png" alt="" width="70%">
-</div>
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
+
+    from django.core.wsgi import get_wsgi_application
+    application = get_wsgi_application()
+    ```
 
 
 Seguridad
@@ -140,12 +138,11 @@ Seguridad
 
 * Desde la interfaz de Python Anywhere, en la opción **Files**, modifique el archivo `backend/backend/settings.py` con el dominio **ALLOWED_HOSTS**
 
-```python
-...
-ALLOWED_HOSTS = ['<USUARIO-PYTHONANYWHERE>.pythonanywhere.com']
-...
-```
-
+    ```python
+    ...
+    ALLOWED_HOSTS = ['<USUARIO-PYTHONANYWHERE>.pythonanywhere.com']
+    ...
+    ```
 
 Archivos estáticos
 ==========
@@ -154,30 +151,30 @@ Archivos estáticos
 
 * Desde la interfaz de Python Anywhere, en la opción **Files**, modifique el archivo `backend/backend/settings.py` con la ruta a los archivos estáticos **STATIC_ROOT**
 
-```python
-...
+    ```python
+    ...
 
-STATICFILES_DIRS = [ ... ]
+    STATICFILES_DIRS = [ ... ]
 
-STATIC_ROOT = "assets/"
-...
-```
+    STATIC_ROOT = "assets/"
+    ...
+    ```
 
 * Desde la interfaz de Python Anywhere, en la opción **Console**, acceda a la ruta del proyecto y genere los archivos estáticos
 
-```command
-python manage.py collectstatic
-```
+    ```command
+    python manage.py collectstatic
+    ```
 
-<div align="center">
-    <img src="imagenes/pa_webapp5.png" alt="" width="70%">
-</div>
+    <div align="center">
+        <img src="imagenes/pa_webapp5.png" alt="" width="70%">
+    </div>
 
 * En el ambiente de configuración de la web app, relacione la URL `/static/` con el directorio `/home/<USUARIO-PYTHONANYWHERE>/backend/assets` 
 
-<div align="center">
-    <img src="imagenes/pa_webapp6.png" alt="" width="70%">
-</div>
+    <div align="center">
+        <img src="imagenes/pa_webapp6.png" alt="" width="70%">
+    </div>
 
 Verificación
 ==========
