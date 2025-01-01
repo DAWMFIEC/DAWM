@@ -23,6 +23,11 @@ Python Anywhere
     <p>Fuente: <a href="https://www.pythonanywhere.com/pricing/">Python Anywhere</a> </p>
 </div>
 
+Proyecto
+==========
+
+* * *
+
 * Desde la interfaz de Python Anywhere, en la opción **Console** > **Bash**, cree una nueva consola.
 
 <div align="center">
@@ -60,12 +65,12 @@ pip install -r requirements.txt
     <img src="imagenes/pa_requirements.png" alt="" width="70%">
 </div>
 
-Keys
+Credenciales de Firebase
 ==========
 
 * * *
 
-* Desde la interfaz de Python Anywhere, en la opción **Files**, cree la carpeta `keys` y cargue el archivo con las credenciales de Firebase. 
+* Desde la interfaz de Python Anywhere, en la opción **Files**, cree la carpeta `keys` y cargue el archivo con las credenciales de Firebase utilizados en desarrollo. 
 
 <div align="center">
     <img src="imagenes/pa_keys.png" alt="" width="70%">
@@ -89,7 +94,7 @@ Web app
     <img src="imagenes/pa_webapp2.png" alt="" width="70%">
 </div>
 
-* Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **VIRTUALENV** ingrese la ruta al ambiente de Python 
+* **AMBIENTE VIRTUAL** Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **VIRTUALENV** ingrese la ruta al ambiente de Python 
 
 ```command
 /home/<USUARIO-PYTHONANYWHERE>/.virtualenvs/environment
@@ -100,7 +105,7 @@ Web app
 </div>
 
 
-* Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** modifique el ambiente de configuración del servidor `USUARIO-PYTHONANYWHERE_pythonanywhere_com_wsgi`
+* **SERVIDOR** Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** modifique el ambiente de configuración del servidor `USUARIO-PYTHONANYWHERE_pythonanywhere_com_wsgi`
 
 ```python
 # +++++++++++ DJANGO +++++++++++
@@ -117,8 +122,7 @@ from django.core.wsgi import get_wsgi_application
 application = get_wsgi_application()
 ```
 
-
-* Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** agregue el `Working directory` con la ruta a la carpeta del proyecto
+* **DIRECTORIO DE TRABAJO** Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** agregue el `Working directory` con la ruta a la carpeta del proyecto
 
 ```command
 /home/<USUARIO-PYTHONANYWHERE>/backend
@@ -127,6 +131,7 @@ application = get_wsgi_application()
 <div align="center">
     <img src="imagenes/pa_webapp4.png" alt="" width="70%">
 </div>
+
 
 Seguridad
 ==========
@@ -141,6 +146,7 @@ ALLOWED_HOSTS = ['<USUARIO-PYTHONANYWHERE>.pythonanywhere.com']
 ...
 ```
 
+
 Archivos estáticos
 ==========
 
@@ -150,7 +156,6 @@ Archivos estáticos
 
 ```python
 ...
-STATIC_URL = ...
 
 STATICFILES_DIRS = [ ... ]
 
@@ -167,7 +172,6 @@ python manage.py collectstatic
 <div align="center">
     <img src="imagenes/pa_webapp5.png" alt="" width="70%">
 </div>
-
 
 * En el ambiente de configuración de la web app, relacione la URL `/static/` con el directorio `/home/<USUARIO-PYTHONANYWHERE>/backend/assets` 
 
