@@ -281,8 +281,8 @@ theme: jekyll-theme-leap-day
 
 		...
 		<!-- Local script files -->
-		<script src="{% raw %}{%{% endraw %} static 'js/charts-lines.js' {% raw %}%}{% endraw %}"></script>
-		<script src="{% raw %}{%{% endraw %} static 'js/charts-pie.js' {% raw %}%}{% endraw %}"></script>
+		<script src="{% raw %}{%{% endraw %} static 'js/charts-lines.js' {% raw %}%}{% endraw %}" defer></script>
+		<script src="{% raw %}{%{% endraw %} static 'js/charts-pie.js' {% raw %}%}{% endraw %}" defer></script>
 
 	</head>
 	```
