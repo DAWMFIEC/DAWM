@@ -420,6 +420,7 @@ ambiente de desarrollo, django, WSGI, function-based view
 ### Referencias
 
 * Django documentation: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/
+* Estevanmaito. (n.d.). estevanmaito/windmill-dashboard: 📊 A multi theme, completely accessible, ready for production dashboard. Retrieved from https://github.com/estevanmaito/windmill-dashboard
 * Davidgrzyb. (n.d.). davidgrzyb/tailwind-admin-template: An admin dashboard template built with Tailwind and Alpine.js. Retrieved from https://github.com/davidgrzyb/tailwind-admin-template
 * Built-in template tags and filters: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/ref/templates/builtins/
 * (N.d.). Retrieved from https://djangotherightway.com/django-views-function-based
