@@ -200,7 +200,7 @@ theme: jekyll-theme-leap-day
 	TEMPLATES = [
 		{
 			...
-			'DIRS': ['templates'],
+			'DIRS': [BASE_DIR /'templates'],
 			...
 		}
 	]
@@ -272,16 +272,19 @@ theme: jekyll-theme-leap-day
 		
 		...
 		<!-- Local stylesheets -->
-		<link rel="stylesheet" href="{% raw %}{%{% endraw %} static 'css/base_style.css' {% raw %}%}{% endraw %}">
+		<link rel="stylesheet" href="{% raw %}{%{% endraw %} static 'css/tailwind.output.css' {% raw %}%}{% endraw %}">
 
-	</head>
-	<body>
 		
 		...
 		<!-- Local script files -->
-		<script src="{% raw %}{%{% endraw %} static 'js/base_script.js' {% raw %}%}{% endraw %}"></script>
+		<script src="{% raw %}{%{% endraw %} static 'js/init-alpine.js' {% raw %}%}{% endraw %}"></script>
 
-	</body>
+		...
+		<!-- Local script files -->
+		<script src="{% raw %}{%{% endraw %} static 'js/charts-lines.js' {% raw %}%}{% endraw %}"></script>
+		<script src="{% raw %}{%{% endraw %} static 'js/charts-pie.js' {% raw %}%}{% endraw %}"></script>
+
+	</head>
 	```
 
 3. (STOP 4) Revise los cambios en el navegador para las URLs: 
