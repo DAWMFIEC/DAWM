@@ -27,4 +27,4 @@ La respuesta es:
 
 
 * [Guía 21: Introducción - Django](/DAWM/guias/2024/guia21)
-* [Guía 22: Django Rest Framework I - Django](/DAWM/guias/2024/guia22)
+* [Guía 22: Django Rest Framework - Django](/DAWM/guias/2024/guia22)
