@@ -50,7 +50,7 @@ theme: jekyll-theme-leap-day
 	+ Acceda a la **Configuración de proyecto** > **Cuentas de servicio** > **SDK de Firebase Admin**.
 	+ **Genera una clave privada** JSON y descárguela.
 
-3. Guarde la clave privada la carpeta **keys** del proyecto.
+4. Cree la carpeta **keys** en el proyecto. Renombre y guarde el archivo con la clave privada en la carpeta _keys_.
 
 	```text
 	backend/	
@@ -60,27 +60,35 @@ theme: jekyll-theme-leap-day
 	└── templates/
 	├── ....
 	└── keys/			<!-- clave -->
-	    	└──landing-XXXXX-firebase-adminsdk-YYYYY-ZZZZZZZZZZ.json
+	    	└──landing-key.json
 	```
 
-4. Edite el archivo _backend/settings.py_, con:
+3. En el servicio de **Realtime Database**, copie la URL de referencia.
 
-	+ Importe _firebase_admin_ y _credentials_
-	+ Defina la ruta al archivo JSON con las credenciales e inicialice firebase
+	<div align="center">
+		<img src="imagenes/rd_firebase_url.png">
+	</div>
+
+5. Edite el archivo _backend/settings.py_, con:
+
+	+ Importe los módulos _firebase\_admin_ y _credentials_
+	+ Cargue el archivo con la clave privada
+	+ Inicialice la conexión con el Realtime Database con la clave privada y la URL de referencia.
 
 	```python
 	...
 	from ... import Path
 
+	# Importe los módulos firebase_admin y credentials
 	import firebase_admin
 	from firebase_admin import credentials
 
 	...
 
-	# Ruta al archivo JSON de credenciales
-	FIREBASE_CRED = credentials.Certificate("keys/landing-XXXXX-firebase-adminsdk-YYYYY-ZZZZZZZZZZ.json")
+	# Cargue el archivo con la clave privada
+	FIREBASE_CRED = credentials.Certificate("keys/landing-key.json")
 
-	# Inicializa Firebase con el endpoint de Realtime Database
+	# Inicialice la conexión con el Realtime Database con la clave privada y la URL de referencia
 	firebase_admin.initialize_app(FIREBASE_CRED, {
 	    'databaseURL': 'https://landing-XXXXX-default-rtdb.firebaseio.com/'
 	})
