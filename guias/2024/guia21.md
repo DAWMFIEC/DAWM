@@ -189,7 +189,8 @@ theme: jekyll-theme-leap-day
 	│   	└──css/
 	│   	└──js/
 	└── templates/			<!-- plantillas -->
-	    	└──base.html
+	    	└──main
+	    			└──base.html
 	```
 
 2. Edite el archivo _backend/settings.py_, con:
@@ -215,7 +216,7 @@ theme: jekyll-theme-leap-day
 
 	def index(request):
 		# return HttpResponse("Hello, World!")
-		return render(request, 'base.html')
+		return render(request, 'main/base.html')
 	```
 
 4. (STOP 3) Revise los cambios en el navegador para las URLs: 
@@ -258,7 +259,7 @@ theme: jekyll-theme-leap-day
 	...
 	```
 
-2. Modifique el archivo _templates/base.html_, con:
+2. Modifique el archivo _templates/main/base.html_, con:
 
 	+ Cargue y utilice las etiquetas de plantilla  _static_ para construir las URLs de los archivos estáticos del proyecto.
 
@@ -297,15 +298,15 @@ theme: jekyll-theme-leap-day
 
 #### Plantillas
 
-1. Descargue y descomprima [index_django.zip](recursos/index_django.zip) dentro de la carpeta _templates_.
-2. Edite el archivo _templates/index.html_, con:
+1. Descargue y descomprima [index_django.zip](recursos/index_django.zip) dentro de la carpeta _templates/main_.
+2. Edite el archivo _templates/main/index.html_, con:
 
 	+ Extienda de la plantilla _base.html_.
 	+ Defina los bloques _title_ y _content_
 
 	```html
 	<!-- Extend "base.html" -->
-	{% raw %}{%{% endraw %} extends "base.html" {% raw %}%}{% endraw %}
+	{% raw %}{%{% endraw %} extends "main/base.html" {% raw %}%}{% endraw %}
 
 	<!-- START - Block title -->
 	{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
@@ -324,7 +325,7 @@ theme: jekyll-theme-leap-day
 	<!-- END - Block content -->
 	```
 
-3. Modifique el archivo _templates/base.html_, con:
+3. Modifique el archivo _templates/main/base.html_, con:
 
 	+ Defina los bloques _title_ y _content_
 
@@ -367,8 +368,8 @@ theme: jekyll-theme-leap-day
 
 	def index(request):
 		# return HttpResponse("Hello, World!")
-		# return render(request, 'base.html')
-		return render(request, 'index.html')
+		# return render(request, 'main/base.html')
+		return render(request, 'main/index.html')
 	```
 
 5. (STOP 5) Revise los cambios en el navegador para las URLs: 
