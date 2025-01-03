@@ -336,7 +336,7 @@ theme: jekyll-theme-leap-day
 
 			{% raw %}{%{% endraw %} block title {% raw %}%}{% endraw %} 
 
-			Tailwind Admin Template 
+			Windmill Dashboard
 			
 			{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %} 
 
