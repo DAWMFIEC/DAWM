@@ -190,7 +190,7 @@ theme: jekyll-theme-leap-day
 	│   	└──js/
 	└── templates/			<!-- plantillas -->
 	    	└──main
-	    			└──base.html
+		    	└──base.html
 	```
 
 2. Edite el archivo _backend/settings.py_, con:
