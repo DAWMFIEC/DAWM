@@ -50,7 +50,7 @@ theme: jekyll-theme-leap-day
 	+ Acceda a la **Configuración de proyecto** > **Cuentas de servicio** > **SDK de Firebase Admin**.
 	+ **Genera una clave privada** JSON y descárguela.
 
-4. Cree la carpeta **keys** en el proyecto. Renombre y guarde el archivo con la clave privada en la carpeta _keys_.
+4. Cree la carpeta **keys** en el proyecto.
 
 	```text
 	backend/	
@@ -63,13 +63,15 @@ theme: jekyll-theme-leap-day
 	    	└──landing-key.json
 	```
 
-3. En el servicio de **Realtime Database**, copie la URL de referencia.
+5. Renombre el archivo como `landing-key.json` y guarde el archivo en la carpeta _keys_.
+
+6. En el servicio de **Realtime Database**, copie la URL de referencia.
 
 	<div align="center">
 		<img src="imagenes/rd_firebase_url.png">
 	</div>
 
-5. Edite el archivo _backend/settings.py_, con:
+7. Edite el archivo _backend/settings.py_, con:
 
 	+ Importe los módulos _firebase\_admin_ y _credentials_
 	+ Cargue el archivo con la clave privada
