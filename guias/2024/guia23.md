@@ -49,16 +49,16 @@ theme: jekyll-theme-leap-day
 ### Actividades en clases
 
 
-* Edite el archivo main/views.py con el decorador @login_required
+* Edite el archivo main/views.py con el decorador `@login_required`
 
-```python
-from django.http import ...
-from django.contrib.auth.decorators import login_required
+    ```python
+    from django.http import ...
+    from django.contrib.auth.decorators import login_required
 
-@login_required
-def index(request):
-    ...
-```
+    @login_required
+    def index(request):
+        ...
+    ```
 
 
 * Edite el archivo backend/urls.py con
@@ -66,95 +66,92 @@ def index(request):
     + Importe las vistas predefinidas para el inicio y cierre de sesión.
     + Agregue las rutas para que procesen el inicio y cierre de sesión.
 
-```python
-from django.contrib.auth import views as auth_views
+    ```python
+    from django.contrib.auth import views as auth_views
 
-urlpatterns = [
-    ...
-    path('login/', auth_views.LoginView.as_view(template_name='authentication/login.html'), name='login'),
-    path('logout/', auth_views.LogoutView.as_view(next_page='/login/'), name='logout'),
-]
-```
+    urlpatterns = [
+        ...
+        path('login/', auth_views.LoginView.as_view(template_name='authentication/login.html'), name='login'),
+        path('logout/', auth_views.LogoutView.as_view(next_page='/login/'), name='logout'),
+    ]
+    ```
 
 * Descargue y descomprima [login_django.zip](recursos/login_django.zip) en la carpeta `templates/authentication`
 
-* 
-Dentro del formulario, agregue
+* Dentro del formulario, agregue
 
-```html
-<form ...>
-    {% raw %}{%{% endraw %} csrf_token {% raw %}%}{% endraw %}
-    {% raw %}{{{% endraw %} form.as_p {% raw %}}}{% endraw %}
-    ....
-</form>
+    ```html
+    <form ...>
+        {% raw %}{%{% endraw %} csrf_token {% raw %}%}{% endraw %}
+        {% raw %}{{{% endraw %} form.as_p {% raw %}}}{% endraw %}
+        ....
+    </form>
+    ```
 
-```
+* Modifique `templates/main/index.html` en el bloque **logout**
 
-+ Modifique `templates/main/index.html` en el bloque **logout**
+    ```html
+    <!-- START - Block Logout -->
+    <a></a>
+    <!-- END - Block Logout -->
+    ```
 
-```html
-<!-- START - Block Logout -->
-<a></a>
-<!-- END - Block Logout -->
-```
+    por
 
-por
-
-```html
-<!-- START - Block Logout -->
-<form method="post" action="{% url 'logout' %}" class="w-full">
-    {% raw %}{%{% endraw %} csrf_token {% raw %}%}{% endraw %}
-    <button
-      class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-      href="#"
-    >
-      <svg
-        class="w-4 h-4 mr-3"
-        aria-hidden="true"
-        fill="none"
-        stroke-linecap="round"
-        stroke-linejoin="round"
-        stroke-width="2"
-        viewBox="0 0 24 24"
-        stroke="currentColor"
-      >
-        <path
-          d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-        ></path>
-      </svg>
-      <span>Log out</span>
-    </button>
-</form>
-<!-- END - Block Logout -->
-```
+    ```html
+    <!-- START - Block Logout -->
+    <form method="post" action="{% url 'logout' %}" class="w-full">
+        {% raw %}{%{% endraw %} csrf_token {% raw %}%}{% endraw %}
+        <button
+          class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+          href="#"
+        >
+          <svg
+            class="w-4 h-4 mr-3"
+            aria-hidden="true"
+            fill="none"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path
+              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+            ></path>
+          </svg>
+          <span>Log out</span>
+        </button>
+    </form>
+    <!-- END - Block Logout -->
+    ```
 
 * Edite `backend/settings.py` con la ruta a redirigir cuando los usuarios que no están autenticados.
 
-```python
-...
-LOGIN_URL = '/login/'
-LOGIN_REDIRECT_URL = '/'
-```
+    ```python
+    ...
+    LOGIN_URL = '/login/'
+    LOGIN_REDIRECT_URL = '/'
+    ```
 
 * Aplique las migraciones
 
-```command
-python manage.py makemigrations
-python manage.py migrate
-```
+    ```command
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
 
 * Cree el super usuario
 
-```command
-python manage.py createsuperuser
-```
+    ```command
+    python manage.py createsuperuser
+    ```
 
 * Verifique en el navegador
 
-```command
-python manage.py runserver
-```
-
+    ```command
+    python manage.py runserver
+    ```
 
 ### Documentación
 
