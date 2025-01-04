@@ -307,7 +307,7 @@ theme: jekyll-theme-leap-day
 	+ Defina los bloques _title_ y _content_
 
 	```html
-	<!-- Extend "base.html" -->
+	<!-- Extend "main/base.html" -->
 	{% raw %}{%{% endraw %} extends "main/base.html" {% raw %}%}{% endraw %}
 
 	<!-- START - Block title -->
