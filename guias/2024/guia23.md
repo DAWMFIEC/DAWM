@@ -49,20 +49,24 @@ theme: jekyll-theme-leap-day
 ### Actividades en clases
 
 
-Edite el archivo main/views.py con el decorador @login_required
+* Edite el archivo main/views.py con el decorador @login_required
 
+```python
 from django.http import ...
 from django.contrib.auth.decorators import login_required
 
 @login_required
 def index(request):
+    ...
+```
 
 
-Edite el archivo backend/urls.py con
+* Edite el archivo backend/urls.py con
 
-importe las vistas predefinidas para el inicio y cierre de sesión.
-agregue las rutas para que procesen el inicio y cierre de sesión.
+    + Importe las vistas predefinidas para el inicio y cierre de sesión.
+    + Agregue las rutas para que procesen el inicio y cierre de sesión.
 
+```python
 from django.contrib.auth import views as auth_views
 
 urlpatterns = [
@@ -70,28 +74,36 @@ urlpatterns = [
     path('login/', auth_views.LoginView.as_view(template_name='authentication/login.html'), name='login'),
     path('logout/', auth_views.LogoutView.as_view(next_page='/login/'), name='logout'),
 ]
+```
 
-Descargue y descomprima login_django.zip en templates/authentication
+* Descargue y descomprima [login_django.zip](recursos/login_django.zip) en la carpeta `templates/authentication`
 
+* 
 Dentro del formulario, agregue
 
+```html
 <form ...>
-    {% csrf_token %}
-    {{ form.as_p }}
+    {% raw %}{%{% endraw %} csrf_token {% raw %}%}{% endraw %}
+    {% raw %}{{{% endraw %} form.as_p {% raw %}}}{% endraw %}
     ....
 </form>
 
-modifique templates/main/index.html en el bloque logout
+```
 
++ Modifique `templates/main/index.html` en el bloque **logout**
+
+```html
 <!-- START - Block Logout -->
 <a></a>
 <!-- END - Block Logout -->
+```
 
 por
 
+```html
 <!-- START - Block Logout -->
 <form method="post" action="{% url 'logout' %}" class="w-full">
-    {% csrf_token %}
+    {% raw %}{%{% endraw %} csrf_token {% raw %}%}{% endraw %}
     <button
       class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
       href="#"
@@ -114,33 +126,50 @@ por
     </button>
 </form>
 <!-- END - Block Logout -->
+```
 
+* Edite `backend/settings.py` con la ruta a redirigir cuando los usuarios que no están autenticados.
 
-Edite backend/settings.py con la ruta a redirigir cuando los usuarios que no están autenticados.
-
+```python
 ...
 LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
+```
 
-Aplique las migraciones
+* Aplique las migraciones
 
+```command
 python manage.py makemigrations
 python manage.py migrate
+```
 
-Cree el super usuario
+* Cree el super usuario
 
+```command
 python manage.py createsuperuser
+```
 
-Verifique en el navegador
+* Verifique en el navegador
 
+```command
 python manage.py runserver
-
+```
 
 
 ### Documentación
+
+En [Utilizando el sistema de autenticación de Django](https://docs.djangoproject.com/es/5.1/topics/auth/default/) explica el uso del sistema predeterminado de autenticación y autorización de las aplicaciones
 
 ### Fundamental
 
 ### Términos
 
+Built-in, csrf
+
 ### Referencias
+
+* Using the Django authentication system: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/topics/auth/default/#module-django.contrib.auth.views
+* Nick. (2024). Do not Reinvent the Wheel: Utilize Django’s Built-in Auth App to Create a Robust Authentication System. Retrieved from https://dev.to/odhiambo/do-not-reinvent-the-wheel-utilize-djangos-built-in-auth-app-to-create-a-robust-authentication-system-4840
+* Comment, info, M., prathamsahani0368 Follow Improve, prathamsahani0368 Follow, prathamsahani0368, & Follow. (2024). User Authentication System using Django. Retrieved from https://www.geeksforgeeks.org/user-authentication-system-using-django/
+* Tang, A. (2024). How to secure your Django applications ⎜Escape Blog. Retrieved from https://escape.tech/blog/best-django-security-practices/#authentication
+* Django-Allauth tutorial 2023: Instalación y configuración (N.d.). Retrieved from https://www.youtube.com/watch?v=fsFhti_e5_Q
