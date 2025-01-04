@@ -35,79 +35,107 @@ theme: jekyll-theme-leap-day
     ```command
     pip install -r requirements.txt
     ```
-    + Instale **django-allauth**, con:
-
-    ```command
-    pip install django-allauth
-    ```
 
 #### SDK Firebase Admin: Clave privada
 
 1. Acceda a la [consola de Firebase](https://console.firebase.google.com/)
 2. Ingrese al proyecto **landing**
     + Acceda a la Configuración de proyecto.
-    + Genera una clave privada JSON y descárguela.
+    + Genere y descargue una clave privada JSON.
 
-3. Guarde la clave privada la carpeta keys del proyecto.
-
-4. Edite el archivo _backend/settings.py_, con:
-
-    + Actualice el nombre del archivo con las credenciales de firebase
-
-    ```python
-    ...
-    # Ruta al archivo JSON de credenciales
-    FIREBASE_CRED = credentials.Certificate("keys/landing-XXXXX-firebase-adminsdk-YYYYY-ZZZZZZZZZZ.json")
-    ```
+3. Cree la carpeta keys en el proyecto.
+4. Renombre el archivo como `landing-key.json` y guarde el archivo en la carpeta _keys_.
 
 ### Actividades en clases
 
- python manage.py startapp authentication
 
- backend/settings.py
+Edite el archivo main/views.py con el decorador @login_required
 
- INSTALLED_APPS = [
-   ...
-	'authentication',
-]
+from django.http import ...
+from django.contrib.auth.decorators import login_required
 
-INSTALLED_APPS = [
+@login_required
+def index(request):
+
+
+Edite el archivo backend/urls.py con
+
+importe las vistas predefinidas para el inicio y cierre de sesión.
+agregue las rutas para que procesen el inicio y cierre de sesión.
+
+from django.contrib.auth import views as auth_views
+
+urlpatterns = [
     ...
-    
-    #all auth configurations
-    'allauth',
-    'allauth.account',
-    'allauth.socialaccount',
-    'allauth.socialaccount.providers.google'
-    
+    path('login/', auth_views.LoginView.as_view(template_name='authentication/login.html'), name='login'),
+    path('logout/', auth_views.LogoutView.as_view(next_page='/login/'), name='logout'),
 ]
 
-AUTHENTICATION_BACKENDS = [
-    'django.contrib.auth.backends.ModelBackend',
-    'allauth.account.auth_backends.AuthenticationBackend'
-]
+Descargue y descomprima login_django.zip en templates/authentication
+
+Dentro del formulario, agregue
+
+<form ...>
+    {% csrf_token %}
+    {{ form.as_p }}
+    ....
+</form>
+
+modifique templates/main/index.html en el bloque logout
+
+<!-- START - Block Logout -->
+<a></a>
+<!-- END - Block Logout -->
+
+por
+
+<!-- START - Block Logout -->
+<form method="post" action="{% url 'logout' %}" class="w-full">
+    {% csrf_token %}
+    <button
+      class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
+      href="#"
+    >
+      <svg
+        class="w-4 h-4 mr-3"
+        aria-hidden="true"
+        fill="none"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+      >
+        <path
+          d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
+        ></path>
+      </svg>
+      <span>Log out</span>
+    </button>
+</form>
+<!-- END - Block Logout -->
 
 
-SOCIALACCOUNT_PROVIDERS = {
-    'google': {
-        'SCOPE' : [
-            'profile',
-            'email'
-        ],
-        'APP': {
-            'client_id': os.environ['CLIENT_ID'],
-            'secret': os.environ['CLIENT_SECRET'],
-        },
-        'AUTH_PARAMS': {
-            'access_type':'online',
-        }
-    }
-}
+Edite backend/settings.py con la ruta a redirigir cuando los usuarios que no están autenticados.
 
-SITE_ID = 2
-
+...
+LOGIN_URL = '/login/'
 LOGIN_REDIRECT_URL = '/'
-LOGOUT_REDIRECT_URL = '/'
+
+Aplique las migraciones
+
+python manage.py makemigrations
+python manage.py migrate
+
+Cree el super usuario
+
+python manage.py createsuperuser
+
+Verifique en el navegador
+
+python manage.py runserver
+
+
 
 ### Documentación
 

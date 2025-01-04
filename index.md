@@ -46,7 +46,8 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 20: Angular y Ionic - Generación del apk](guias/2024/guia20)
 * [Proyecto 05: Backend - Django](proyectos/2024/proyecto05)
   * [Guía 21: Introducción - Django](guias/2024/guia21)
-  * [Guía 22: Django Rest Framework - Django](guias/2024/guia22)
+  * [Guía 22: Django Rest Framework (DRF) - Django](guias/2024/guia22)
+  * [Guía 23: Django's Built-in Auth - Django](guias/2024/guia23)
 
   
 ## Scripts
