@@ -181,7 +181,7 @@ theme: jekyll-theme-leap-day
 
 #### Vistas
 
-1. Descargue y descomprima los archivos [static_django.zip](recursos/static_django.zip) y [templates_django.zip](recursos/templates_django.zip) en la raíz del proyecto.
+1. Descargue y descomprima los archivos [base_django.zip](recursos/base_django.zip) y [templates_django.zip](recursos/templates_django.zip) en la raíz del proyecto.
 
 	```text
 	backend/					<!-- proyecto -->
