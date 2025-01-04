@@ -25,7 +25,7 @@ theme: jekyll-theme-leap-day
 	environment\Scripts\activate
 	```
 
-	Instrucciones para [Unix o MacOS](https://docs.python.org/3/tutorial/venv.html#tut-venv)
+	**Nota:** Instrucciones para [Unix o MacOS](https://docs.python.org/3/tutorial/venv.html#tut-venv)
 
 #### Repositorio local/remoto + librerías
 
