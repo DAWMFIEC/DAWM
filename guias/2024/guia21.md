@@ -25,6 +25,8 @@ theme: jekyll-theme-leap-day
 	environment\Scripts\activate
 	```
 
+	Instrucciones para [Unix o MacOS](https://docs.python.org/3/tutorial/venv.html#tut-venv)
+
 #### Repositorio local/remoto + librerías
 
 1. Crea un repositorio en GitHub con el nombre **backend**. Incluya el archivo **.gitignore** para _Python_. 
@@ -425,3 +427,4 @@ ambiente de desarrollo, django, WSGI, function-based view
 * Davidgrzyb. (n.d.). davidgrzyb/tailwind-admin-template: An admin dashboard template built with Tailwind and Alpine.js. Retrieved from https://github.com/davidgrzyb/tailwind-admin-template
 * Built-in template tags and filters: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/ref/templates/builtins/
 * (N.d.). Retrieved from https://djangotherightway.com/django-views-function-based
+* Virtual Environments and Packages. (n.d.). Retrieved from https://docs.python.org/3/tutorial/venv.html#tut-venv
