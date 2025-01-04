@@ -163,12 +163,6 @@ theme: jekyll-theme-leap-day
 		<img src="imagenes/django_index_hello_world.png">
 	</div>
 
-	+ En la ruta del admin [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
-
-	<div align="center">
-		<img src="imagenes/django_admin.png">
-	</div>
-
 #### Estructura de archivos de una aplicación (main) en Django.
 
 * Archivos de la aplicación
