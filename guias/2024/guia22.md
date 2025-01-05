@@ -222,7 +222,7 @@ theme: jekyll-theme-leap-day
 	        data = ref.get()
 
 	        # Devuelve un arreglo JSON
-       		return Response(data, status=status.HTTP_200_OK)
+	        return Response(data, status=status.HTTP_200_OK)
 	```
 
 2. (STOP 3 - I) Revise los cambios en el navegador para las URLs: 
