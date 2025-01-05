@@ -59,8 +59,6 @@ theme: jekyll-theme-leap-day
 
 #### SDK Firebase Admin
 
-##### Clave privada
-
 1. Acceda a la [consola de Firebase](https://console.firebase.google.com/)
 2. Ingrese al proyecto **landing**
 	+ Acceda a la **Configuración de proyecto** > **Cuentas de servicio** > **SDK de Firebase Admin**.
