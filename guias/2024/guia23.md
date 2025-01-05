@@ -198,6 +198,24 @@ theme: jekyll-theme-leap-day
 
 2. (STOP 4) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
+#### Versionamiento local y remoto
+
+1. En la línea de comandos
+
+    + Genere el archivo **requirements.txt** con la lista de paquetes utilizados, con:
+
+    ```command
+    pip freeze > requirements.txt
+    ```
+
+    + Desactive el ambiente de desarrollo, con:
+
+    ```command
+    deactivate
+    ```
+
+2. Versione local y remotamente.
+
 
 ### Documentación
 
