@@ -394,13 +394,12 @@ theme: jekyll-theme-leap-day
 
 1. Descargue y descomprima:
 		
-		+ El archivo [partials_header_django.zip](recursos/partials_header_django.zip) dentro de la carpeta _templates/main/partials_.
-		+ El archivo [includes_data_django.zip](recursos/includes_data_django.zip) dentro de la carpeta _templates/main/includes_.
+	+ El archivo [partials_header_django.zip](recursos/partials_header_django.zip) dentro de la carpeta _templates/main/partials_.
+	+ El archivo [content_data_django.zip](recursos/content_data_django.zip) dentro de la carpeta _templates/main/content_.
 
 2. Modifique el archivo _templates/main/index.html_, con:
 
-	+ Extienda de la plantilla _base.html_.
-	+ Defina los bloques _title_ y _content_
+	+ Incluya el _partials/header.html_ e _content/data.html_
 
 	```html
 	...
@@ -411,7 +410,7 @@ theme: jekyll-theme-leap-day
 	<div class="flex flex-col flex-1 w-full">
 
 		{% raw %}{%{% endraw %} include './partials/header.html' {% raw %}%}{% endraw %}
-		{% raw %}{%{% endraw %} include './includes/data.html' {% raw %}%}{% endraw %}
+		{% raw %}{%{% endraw %} include './content/data.html' {% raw %}%}{% endraw %}
 
 	</div>
 
