@@ -198,6 +198,8 @@ theme: jekyll-theme-leap-day
 		    	└──base.html
 	```
 
+	**Fuente:** [windmill-dashboard.zip](recursos/windmill-dashboard.zip) o [Github:windmill-dashboard](https://github.com/estevanmaito/windmill-dashboard)
+
 2. Edite el archivo _backend/settings.py_, con:
 
 	+ En el arreglo _TEMPLATES_, en la entrada _'DIRS'_, agregue la ruta _'templates'_
