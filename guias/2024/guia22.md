@@ -85,7 +85,7 @@ theme: jekyll-theme-leap-day
 		<img src="imagenes/rd_firebase_url.png">
 	</div>
 
-7. Edite el archivo _backend/settings.py_, con:
+7. (STOP 1) Edite el archivo _backend/settings.py_, con:
 
 	+ Importe los módulos _firebase\_admin_ y _credentials_
 	+ Cargue el archivo con la clave privada
@@ -192,7 +192,7 @@ theme: jekyll-theme-leap-day
 	python manage.py runserver
 	```
 
-7. (STOP 1) Revise los cambios en el navegador para las URLs: 
+7. (STOP 2) Revise los cambios en el navegador para las URLs: 
 
 	+ En la ruta raíz [http://127.0.0.1:8000/api/v1/landing/](http://127.0.0.1:8000/api/v1/landing/), y 
 
@@ -227,7 +227,7 @@ theme: jekyll-theme-leap-day
        		return Response(data, status=status.HTTP_200_OK)
 	```
 
-2. (STOP 2 - I) Revise los cambios en el navegador para las URLs: 
+2. (STOP 3 - I) Revise los cambios en el navegador para las URLs: 
 
 	+ En la ruta raíz [http://127.0.0.1:8000/api/v1/landing/](http://127.0.0.1:8000/api/v1/landing/), y 
 
@@ -236,7 +236,7 @@ theme: jekyll-theme-leap-day
 	</div>
 
 
-3. (STOP 2 - II) Desde una nueva línea de comandos
+3. (STOP 3 - II) Desde una nueva línea de comandos
 	
 	+ Realice una petición con `cURL`, con:
 
@@ -279,7 +279,7 @@ theme: jekyll-theme-leap-day
 	        return Response({"id": new_resource.key}, status=status.HTTP_201_CREATED)
 	```
 
-2. (STOP 3 - I) Revise los cambios en el navegador para las URLs: 
+2. (STOP 4 - I) Revise los cambios en el navegador para las URLs: 
 
 	+ En la ruta raíz [http://127.0.0.1:8000/api/v1/landing/](http://127.0.0.1:8000/api/v1/landing/), y 
 	+ Utilice el objeto 
@@ -295,7 +295,7 @@ theme: jekyll-theme-leap-day
 	</div>
 
 
-3. (STOP 3 - II) Desde una nueva línea de comandos
+3. (STOP 4 - II) Desde una nueva línea de comandos
 	
 	+ Realice una petición con `cURL`, con:
 
