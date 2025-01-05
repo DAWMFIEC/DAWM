@@ -161,7 +161,7 @@ theme: jekyll-theme-leap-day
 5. Edite el archivo _api/views.py_, con:
 
 	+ Importe la clase _APIView_, _Response_ y _status_ de DRF; e importe la referencia al Firebase SDK.
-	+ Agregue la clase **LandingAPI** basada en clases (`class-based view`), que hereda de la vista _APIView_, con los atributos **name** y **collection_name** (colección en Realtime Database).
+	+ Agregue **LandingAPI** que herede de _APIView_ (`class-based view`). Incluya los atributos **name** y **collection_name** (nombre de la colección en Realtime Database).
 
 	```python 
 	...
