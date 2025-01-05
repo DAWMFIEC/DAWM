@@ -384,7 +384,7 @@ theme: jekyll-theme-leap-day
 	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
 
   <div align="center">
-    <img src="imagenes/django_index_extended.png">
+    <img src="imagenes/django_index_full.png">
   </div>
 
 #### Estructura de carpetas adicionales
