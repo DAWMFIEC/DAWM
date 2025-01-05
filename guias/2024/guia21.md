@@ -399,7 +399,7 @@ theme: jekyll-theme-leap-day
 
 2. Modifique el archivo _templates/main/index.html_, con:
 
-	+ Incluya el _partials/header.html_ e _content/data.html_
+	+ Incluya el _partials/header.html_ y _content/data.html_
 
 	```html
 	...
