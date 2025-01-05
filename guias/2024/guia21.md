@@ -29,7 +29,11 @@ theme: jekyll-theme-leap-day
 
 #### Repositorio local/remoto + librerías
 
-1. Crea un repositorio en GitHub con el nombre **backend**. Incluya el archivo **.gitignore** para _Python_. 
+1. Crea un repositorio en GitHub con el nombre **backend**. 
+	
+	+ Integre el _README.md_
+	+ Incluya el archivo **.gitignore** para _Python_. 
+
 2. Desde la línea de comandos
 	
 	+ Clone localmente el repositorio _backend_.
