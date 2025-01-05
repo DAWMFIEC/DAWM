@@ -58,7 +58,7 @@ theme: jekyll-theme-leap-day
     + Genere y descargue una clave privada JSON.
 
 3. Cree la carpeta keys en el proyecto.
-4. Renombre el archivo como `landing-key.json` y guarde el archivo en la carpeta _keys_.
+4. Renombre el archivo como _landing-key.json_ y guarde el archivo en la carpeta _keys_.
 
 ### Actividades en clases
 
