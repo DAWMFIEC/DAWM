@@ -305,8 +305,7 @@ theme: jekyll-theme-leap-day
 
 #### Plantillas
 
-1. Descargue y descomprima [index_django.zip](recursos/index_django.zip) dentro de la carpeta _templates/main_.
-2. Edite el archivo _templates/main/index.html_, con:
+1. Cree el archivo _templates/main/index.html_, con:
 
 	+ Extienda de la plantilla _base.html_.
 	+ Defina los bloques _title_ y _content_
@@ -326,7 +325,11 @@ theme: jekyll-theme-leap-day
 	<!-- START - Block content -->
 	{% raw %}{%{% endraw %} block content {% raw %}%}{% endraw %}
 
-		<div> ... </div>
+		<div class="flex flex-col flex-1 w-full">
+
+			Header & Data
+
+		</div>
 
 	{% raw %}{%{% endraw %} endblock {% raw %}%}{% endraw %}
 	<!-- END - Block content -->
@@ -380,6 +383,43 @@ theme: jekyll-theme-leap-day
 	```
 
 5. (STOP 5) Revise los cambios en el navegador para las URLs: 
+
+	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
+
+  <div align="center">
+    <img src="imagenes/django_index_template.png">
+  </div>
+
+#### Partials & Include
+
+1. Descargue y descomprima:
+		
+		+ El archivo [partials_header_django.zip](recursos/partials_header_django.zip) dentro de la carpeta _templates/main/partials_.
+		+ El archivo [includes_data_django.zip](recursos/includes_data_django.zip) dentro de la carpeta _templates/main/includes_.
+
+2. Modifique el archivo _templates/main/index.html_, con:
+
+	+ Extienda de la plantilla _base.html_.
+	+ Defina los bloques _title_ y _content_
+
+	```html
+	...
+
+	<!-- START - Block content -->
+	...
+
+	<div class="flex flex-col flex-1 w-full">
+
+		{% raw %}{%{% endraw %} include './partials/header.html' {% raw %}%}{% endraw %}
+		{% raw %}{%{% endraw %} include './includes/data.html' {% raw %}%}{% endraw %}
+
+	</div>
+
+	...
+	<!-- END - Block content -->
+	```
+
+3. (STOP 6) Revise los cambios en el navegador para las URLs: 
 
 	+ En la ruta raíz [http://127.0.0.1:8000/](http://127.0.0.1:8000/), y 
 
