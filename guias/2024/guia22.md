@@ -63,7 +63,7 @@ theme: jekyll-theme-leap-day
 	    	└──landing-key.json
 	```
 
-5. Renombre el archivo como `landing-key.json` y guarde el archivo en la carpeta _keys_.
+5. Renombre el archivo como _landing-key.json_ y guarde el archivo en la carpeta _keys_.
 
 6. En el servicio de **Realtime Database**, copie la URL de referencia.
 
@@ -100,7 +100,7 @@ theme: jekyll-theme-leap-day
 
 1. Desde la línea de comandos
 	
-	+ Cree la aplicación **api**, con:
+	+ Cree la aplicación `api`, con:
 
 	```command
 	python manage.py startapp api
@@ -318,7 +318,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-class-based view, cURL, SDK
+api, class-based view, cURL
 
 ### Referencias
 
