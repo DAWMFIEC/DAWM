@@ -177,6 +177,8 @@ theme: jekyll-theme-leap-day
 	class LandingAPI(APIView):
 	    
 	    name = 'Landing API'
+
+	    # Coloque el nombre de su colección en el Realtime Database
 		collection_name = 'COLLECTION_NAME_REALTIME_DATABASE'
 	```
 
