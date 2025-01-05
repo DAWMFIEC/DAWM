@@ -31,7 +31,7 @@ theme: jekyll-theme-leap-day
 
 1. Crea un repositorio en GitHub con el nombre **backend**. 
 	
-	+ Integre el _README.md_
+	+ Agregue el _README.md_
 	+ Incluya el archivo **.gitignore** para _Python_. 
 
 2. Desde la línea de comandos
