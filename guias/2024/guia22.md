@@ -41,6 +41,20 @@ theme: jekyll-theme-leap-day
 	pip install firebase-admin djangorestframework
 	```
 
+#### Editor y WSGI
+
+1. Abra el proyecto con VSCode, con:
+
+	```command
+	code .
+	```
+
+2. Levante el servidor, con:
+
+	```command
+	python manage.py runserver
+	```
+
 ### Actividades en clases
 
 #### SDK Firebase Admin: Clave privada
