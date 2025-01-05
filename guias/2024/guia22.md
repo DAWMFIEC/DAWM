@@ -286,8 +286,7 @@ theme: jekyll-theme-leap-day
 
 	```json
 	{
-        "email": "usuarioYY@gmail.com",
-        "saved": "06/01/2025, 14:25:46 a. m."
+        "email": "usuarioYY@gmail.com"
     }
 	```
 
@@ -301,7 +300,7 @@ theme: jekyll-theme-leap-day
 	+ Realice una petición con `cURL`, con:
 
 	```command
-	curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"usuarioXX@gmail.com\", \"saved\":\"06/01/2025, 10:20:45 a. m.\"}" http://127.0.0.1:8000/api/v1/landing/
+	curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"usuarioXX@gmail.com\"}" http://127.0.0.1:8000/api/v1/landing/
 	``` 
 
 	<div align="center">
