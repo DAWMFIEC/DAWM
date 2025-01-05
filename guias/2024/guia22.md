@@ -160,7 +160,7 @@ theme: jekyll-theme-leap-day
 
 5. Edite el archivo _api/views.py_, con:
 
-	+ Importe la clase _APIView_, _Response_ y _status_ de DRF; e importe la referencia al Firebase SDK.
+	+ Importe la clase _APIView_, _Response_ y _status_ de DRF; el módulo _datetime_ y la referencia al _Firebase SDK_.
 	+ Agregue **LandingAPI** que herede de _APIView_ (`class-based view`). Incluya los atributos **name** y **collection_name** (nombre de la colección en Realtime Database).
 
 	```python 
@@ -171,6 +171,8 @@ theme: jekyll-theme-leap-day
 	from rest_framework.views import APIView
 	from rest_framework.response import Response
 	from rest_framework import status
+
+	from datetime import datetime
 	
 	from firebase_admin import db
 
@@ -265,6 +267,10 @@ theme: jekyll-theme-leap-day
 	        
 	        # Referencia a la colección
 	        ref = db.reference(f'{self.collection_name}')
+
+	        current_time  = datetime.now()
+        	custom_format = hora_actual.strftime("%d/%m/%Y, %I:%M:%S %p").lower().replace('am', 'a. m.').replace('pm', 'p. m.')
+        	request.data.update({"saved": custom_format })
 	        
 	        # push: Guarda el objeto en la colección
 	        new_resource = ref.push(request.data)
