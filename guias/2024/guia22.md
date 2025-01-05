@@ -147,7 +147,7 @@ theme: jekyll-theme-leap-day
 
 4. Cree y modifique el archivo _api/urls.py_, con:
 	
-	+ Asocie la ruta **'v1/landing/'** con la vista basada en clases (`class-based view`) del Django REST Framework
+	+ Asocie la ruta **'v1/landing/'** con la vista LandingAPI
 
 	```python
 	from django.urls import path
@@ -161,7 +161,7 @@ theme: jekyll-theme-leap-day
 5. Edite el archivo _api/views.py_, con:
 
 	+ Importe la clase _APIView_, _Response_ y _status_ de DRF; e importe la referencia al Firebase SDK.
-	+ Agregue la clase **LandingAPI** (hereda de la vista _APIView_) y el atributo con el nombre de la colección en Realtime Database.
+	+ Agregue la clase **LandingAPI** basada en clases (`class-based view`), que hereda de la vista _APIView_, con los atributos **name** y **collection_name** (colección en Realtime Database).
 
 	```python 
 	...
