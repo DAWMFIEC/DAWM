@@ -269,8 +269,8 @@ theme: jekyll-theme-leap-day
 	        ref = db.reference(f'{self.collection_name}')
 
 	        current_time  = datetime.now()
-        	custom_format = hora_actual.strftime("%d/%m/%Y, %I:%M:%S %p").lower().replace('am', 'a. m.').replace('pm', 'p. m.')
-        	request.data.update({"saved": custom_format })
+	        custom_format = hora_actual.strftime("%d/%m/%Y, %I:%M:%S %p").lower().replace('am', 'a. m.').replace('pm', 'p. m.')
+	        request.data.update({"saved": custom_format })
 	        
 	        # push: Guarda el objeto en la colección
 	        new_resource = ref.push(request.data)
