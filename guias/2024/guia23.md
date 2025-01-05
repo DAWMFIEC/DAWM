@@ -181,6 +181,8 @@ theme: jekyll-theme-leap-day
 
 4. (STOP 4) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
+    + Revise la `cookie de sesión`
+
     <div align="center">
         <img src="imagenes/django_index_extended.png">
     </div>
@@ -247,9 +249,13 @@ En [Utilizando el sistema de autenticación de Django](https://docs.djangoprojec
 
 ### Fundamental
 
+* Métodos de autenticación en [X](https://twitter.com/alexxubyte/status/1737151765097951544)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Authentication in REST APIs acts as the crucial gateway, ensuring that solely authorized users or applications gain access to the API&#39;s resources.<br><br>Some popular authentication methods for REST APIs include:<br><br>1. Basic Authentication: <br>Involves sending a username and password with… <a href="https://t.co/Y4CKqZUhBF">pic.twitter.com/Y4CKqZUhBF</a></p>&mdash; Alex Xu (@alexxubyte) <a href="https://twitter.com/alexxubyte/status/1737151765097951544?ref_src=twsrc%5Etfw">December 19, 2023</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Términos
 
-Built-in, CSRF
+Built-in, CSRF, cookies, session, autenticación, autorización
 
 ### Referencias
 
