@@ -36,6 +36,16 @@ theme: jekyll-theme-leap-day
     pip install -r requirements.txt
     ```
 
+#### SDK Firebase Admin: Clave privada
+
+1. Acceda a la [consola de Firebase](https://console.firebase.google.com/)
+2. Ingrese al proyecto **landing**
+    + Acceda a la Configuración de proyecto.
+    + Genere y descargue una clave privada JSON.
+
+3. Cree la carpeta keys en el proyecto.
+4. Renombre el archivo como _landing-key.json_ y guarde el archivo en la carpeta _keys_.
+
 #### Editor y WSGI
 
 1. Abra el proyecto con VSCode, con:
@@ -49,16 +59,6 @@ theme: jekyll-theme-leap-day
     ```command
     python manage.py runserver
     ```
-
-#### SDK Firebase Admin: Clave privada
-
-1. Acceda a la [consola de Firebase](https://console.firebase.google.com/)
-2. Ingrese al proyecto **landing**
-    + Acceda a la Configuración de proyecto.
-    + Genere y descargue una clave privada JSON.
-
-3. Cree la carpeta keys en el proyecto.
-4. Renombre el archivo como _landing-key.json_ y guarde el archivo en la carpeta _keys_.
 
 ### Actividades en clases
 
