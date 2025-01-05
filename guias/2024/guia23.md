@@ -187,7 +187,7 @@ theme: jekyll-theme-leap-day
 
 #### Fin de sesión
 
-* Modifique _templates/main/index.html_ en el bloque **logout**
+1. Modifique _templates/main/index.html_ en el bloque **logout**
 
     + Agregue el método **post** y la URL para el **action**
     + Añada la etiqueta de plantilla `CSRF` con el token de seguridad único.
@@ -209,11 +209,18 @@ theme: jekyll-theme-leap-day
     <!-- END - Block Logout -->
     ```
 
-2. (STOP 5) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+2. Haga clic en el botón **Log out**
 
     <div align="center">
         <img src="imagenes/django_logout.png">
     </div>
+
+3. (STOP 5) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_logout_extended.png">
+    </div>
+
 
 #### Versionamiento local y remoto
 
