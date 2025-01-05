@@ -48,47 +48,117 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+#### Autorización
 
-* Edite el archivo main/views.py con el decorador `@login_required`
+1. Edite el archivo _main/views.py_ 
+
+    + Importe el decorador **login_required**
+    + Restricción de acceso para la vista _index_
 
     ```python
     from django.http import ...
+
+    # Importe el decorador login_required
     from django.contrib.auth.decorators import login_required
 
+    # Restricción de acceso con @login_required
     @login_required
     def index(request):
         ...
     ```
 
+2. (STOP 1) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-* Edite el archivo backend/urls.py con
+    <div align="center">
+        <img src="imagenes/django_login_required.png">
+    </div>
 
-    + Importe las vistas predefinidas para el inicio y cierre de sesión.
-    + Agregue las rutas para que procesen el inicio y cierre de sesión.
+#### Vistas de autenticación
+
+1. Edite el archivo _backend/urls.py_
+
+    + Importe las vistas predefinidas para el inicio y el cierre de sesión.
+    + Agregue las rutas para que procesen el inicio (**LoginView**) y el cierre (**LogoutView**) de sesión con la configuración correspondiente.
 
     ```python
+    ...
+    # Importe las vistas
     from django.contrib.auth import views as auth_views
 
     urlpatterns = [
         ...
-        path('login/', auth_views.LoginView.as_view(template_name='authentication/login.html'), name='login'),
+
+        # Ruta login/ para la vista LoginView para inicio de sesión, uso de plantilla y alias
+        path('login/', auth_views.LoginView.as_view(template_name='security/login.html'), name='login'),
+        
+        # Ruta logout/ para la vista LogoutView para fin de sesión, redirección y alias
         path('logout/', auth_views.LogoutView.as_view(next_page='/login/'), name='logout'),
     ]
     ```
 
-* Descargue y descomprima [login_django.zip](recursos/login_django.zip) en la carpeta `templates/authentication`
+2. Descargue y descomprima la plantilla [login_django.zip](recursos/login_django.zip) en la carpeta _templates/security_.
 
-* Dentro del formulario, agregue
+3. (STOP 2) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_login_view.png">
+    </div>
+
+#### Inicio de sesión
+
+1. Edite el archivo _templates/security/login.html_
+
+    + Agregue el método **post** y la URL para el **action**
+    + Añada la etiqueta de plantilla `CSRF` con el token de seguridad único.
+    + Agregue los atributos **name** a los elementos input.
 
     ```html
-    <form ...>
+    ...
+    <!-- Método post y action para el URL (con el alias 'login') -->
+    <form method="post" action="{% raw %}{%{% endraw %} url 'login' {% raw %}%}{% endraw %}">
+        <!-- CSRF token -->
         {% raw %}{%{% endraw %} csrf_token {% raw %}%}{% endraw %}
-        {% raw %}{{{% endraw %} form.as_p {% raw %}}}{% endraw %}
-        ....
+        ...
+        <input name="username" ... >
+        ...
+        <input name="password" ... >
+        ...
     </form>
     ```
 
-* Modifique `templates/main/index.html` en el bloque **logout**
+2. Edite `backend/settings.py` con la ruta a redirigir cuando los usuarios que no están autenticados.
+
+    ```python
+    ...
+    LOGIN_URL = '/login/'
+    LOGIN_REDIRECT_URL = '/'
+    ```
+
+3. Aplique las migraciones
+
+    ```command
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+4. Cree el super usuario
+
+    ```command
+    python manage.py createsuperuser
+    ```
+
+5. Verifique en el navegador
+
+    ```command
+    python manage.py runserver
+    ```
+
+6. (STOP 3) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+
+#### Fin de sesión
+
+* Modifique _templates/main/index.html_ en el bloque **logout**
 
     ```html
     <!-- START - Block Logout -->
@@ -126,32 +196,8 @@ theme: jekyll-theme-leap-day
     <!-- END - Block Logout -->
     ```
 
-* Edite `backend/settings.py` con la ruta a redirigir cuando los usuarios que no están autenticados.
+2. (STOP 4) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-    ```python
-    ...
-    LOGIN_URL = '/login/'
-    LOGIN_REDIRECT_URL = '/'
-    ```
-
-* Aplique las migraciones
-
-    ```command
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
-
-* Cree el super usuario
-
-    ```command
-    python manage.py createsuperuser
-    ```
-
-* Verifique en el navegador
-
-    ```command
-    python manage.py runserver
-    ```
 
 ### Documentación
 
@@ -161,7 +207,7 @@ En [Utilizando el sistema de autenticación de Django](https://docs.djangoprojec
 
 ### Términos
 
-Built-in, csrf
+Built-in, CSRF
 
 ### Referencias
 
