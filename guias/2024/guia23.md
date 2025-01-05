@@ -29,7 +29,7 @@ theme: jekyll-theme-leap-day
 
 1. Desde la línea de comandos
     
-    + Clone localmente y acceda al repositorio _backend_.
+    + Clone localmente y acceda a la carpeta _backend_.
     + Instale las librerías de _requirements.txt_, con:
 
     ```command
