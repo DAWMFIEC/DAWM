@@ -276,6 +276,14 @@ theme: jekyll-theme-leap-day
 2. (STOP 3 - I) Revise los cambios en el navegador para las URLs: 
 
 	+ En la ruta raíz [http://127.0.0.1:8000/api/v1/landing/](http://127.0.0.1:8000/api/v1/landing/), y 
+	+ Utilice el objeto 
+
+	```json
+	{
+        "email": "usuarioYY@gmail.com",
+        "saved": "06/01/2025, 14:25:46 a. m."
+    }
+	```
 
 	<div align="center">
 		<img src="imagenes/django_drf_31.png">
@@ -287,7 +295,7 @@ theme: jekyll-theme-leap-day
 	+ Realice una petición con `cURL`, con:
 
 	```command
-	curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"usuario06@gmail.com\", \"saved\":\"31/12/2024, 12:00:46 a. m.\"}" http://127.0.0.1:8000/api/v1/landing/
+	curl -X POST -H "Content-Type: application/json" -d "{\"email\":\"usuarioXX@gmail.com\", \"saved\":\"06/01/2025, 10:20:45 a. m.\"}" http://127.0.0.1:8000/api/v1/landing/
 	``` 
 
 	<div align="center">
