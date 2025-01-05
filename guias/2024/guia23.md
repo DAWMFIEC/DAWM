@@ -115,7 +115,7 @@ theme: jekyll-theme-leap-day
 3. (STOP 2) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
-        <img src="imagenes/django_login_view.png">
+        <img src="imagenes/django_login_view1.png">
     </div>
 
 #### Inicio de sesión
@@ -133,8 +133,12 @@ theme: jekyll-theme-leap-day
         <!-- CSRF token -->
         {% raw %}{%{% endraw %} csrf_token {% raw %}%}{% endraw %}
         ...
+
+        <!-- username -->
         <input name="username" ... >
         ...
+
+        <!-- password -->
         <input name="password" ... >
         ...
     </form>
@@ -148,69 +152,68 @@ theme: jekyll-theme-leap-day
     LOGIN_REDIRECT_URL = '/'
     ```
 
-3. Aplique las migraciones
+3. (STOP 3) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_login_view2.png">
+    </div>
+
+#### Superusuario
+
+1. Aplique las migraciones
 
     ```command
     python manage.py makemigrations
     python manage.py migrate
     ```
 
-4. Cree el super usuario
+2. Cree el super usuario. Recuerde el usuario y contraseña.
 
     ```command
     python manage.py createsuperuser
     ```
 
-5. Verifique en el navegador
+3. Verifique en el navegador
 
     ```command
     python manage.py runserver
     ```
 
-6. (STOP 3) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+4. (STOP 4) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
+    <div align="center">
+        <img src="imagenes/django_index_extended.png">
+    </div>
 
 #### Fin de sesión
 
 * Modifique _templates/main/index.html_ en el bloque **logout**
 
-    ```html
-    <!-- START - Block Logout -->
-    <a></a>
-    <!-- END - Block Logout -->
-    ```
-
-    por
+    + Agregue el método **post** y la URL para el **action**
+    + Añada la etiqueta de plantilla `CSRF` con el token de seguridad único.
 
     ```html
     <!-- START - Block Logout -->
+    
+    <!-- Método post y action para el URL (con el alias 'logout') -->
     <form method="post" action="{% raw %}{%{% endraw %} url 'logout' {% raw %}%}{% endraw %}" class="w-full">
+
+        <!-- CSRF token -->
         {% raw %}{%{% endraw %} csrf_token {% raw %}%}{% endraw %}
-        <button
-          class="inline-flex items-center w-full px-2 py-1 text-sm font-semibold transition-colors duration-150 rounded-md hover:bg-gray-100 hover:text-gray-800 dark:hover:bg-gray-800 dark:hover:text-gray-200"
-          href="#"
-        >
-          <svg
-            class="w-4 h-4 mr-3"
-            aria-hidden="true"
-            fill="none"
-            stroke-linecap="round"
-            stroke-linejoin="round"
-            stroke-width="2"
-            viewBox="0 0 24 24"
-            stroke="currentColor"
-          >
-            <path
-              d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-            ></path>
-          </svg>
-          <span>Log out</span>
+
+        <button ...>
+         ...
         </button>
+
     </form>
     <!-- END - Block Logout -->
     ```
 
-2. (STOP 4) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+2. (STOP 5) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_logout.png">
+    </div>
 
 #### Versionamiento local y remoto
 
