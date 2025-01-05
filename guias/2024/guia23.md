@@ -167,7 +167,7 @@ theme: jekyll-theme-leap-day
     python manage.py migrate
     ```
 
-2. Cree el super usuario. Recuerde el usuario y contraseña.
+2. Cree el super usuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
 
     ```command
     python manage.py createsuperuser
