@@ -36,6 +36,20 @@ theme: jekyll-theme-leap-day
     pip install -r requirements.txt
     ```
 
+#### Editor y WSGI
+
+1. Abra el proyecto con VSCode, con:
+
+    ```command
+    code .
+    ```
+
+2. Levante el servidor, con:
+
+    ```command
+    python manage.py runserver
+    ```
+
 #### SDK Firebase Admin: Clave privada
 
 1. Acceda a la [consola de Firebase](https://console.firebase.google.com/)
