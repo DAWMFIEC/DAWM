@@ -189,7 +189,7 @@ theme: jekyll-theme-leap-day
 
 #### Fin de sesión
 
-1. Modifique _templates/main/index.html_ en el bloque **logout**
+1. Modifique _templates/main/partials/header.html_ en el bloque **logout**
 
     + Agregue el método **post** y la URL para el **action**
     + Añada la etiqueta de plantilla `CSRF` con el token de seguridad único.
