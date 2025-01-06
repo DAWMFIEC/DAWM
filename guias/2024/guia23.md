@@ -171,7 +171,8 @@ theme: jekyll-theme-leap-day
 
 2. (STOP 4) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-    + Revise la `cookie de sesión`
+    + Ingrese el usuario y contraseña del super usuario. 
+    + Revise la `cookie` de `sesión`
 
     <div align="center">
         <img src="imagenes/django_index_extended.png">
