@@ -193,6 +193,7 @@ theme: jekyll-theme-leap-day
 	├── static/				<!-- archivos estáticos -->
 	│   	└──css/
 	│   	└──js/
+	│   	└──img/
 	└── templates/			<!-- plantillas -->
 	    	└──main
 		    	└──base.html
