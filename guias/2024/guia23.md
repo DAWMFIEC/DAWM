@@ -110,13 +110,44 @@ theme: jekyll-theme-leap-day
     ]
     ```
 
-2. Descargue y descomprima la plantilla [login_django.zip](recursos/login_django.zip) en la carpeta _templates/security_.
+2. Edite `backend/settings.py` con la ruta a redirigir cuando los usuarios que no están autenticados.
 
-3. (STOP 2) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+    ```python
+    ...
+    LOGIN_URL = '/login/'
+    LOGIN_REDIRECT_URL = '/'
+    ```
+
+3. Descargue y descomprima la plantilla [login_django.zip](recursos/login_django.zip) en la carpeta _templates/security_.
+
+4. (STOP 2) Revise los cambios en el navegador en el URL: 
+
+    + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
         <img src="imagenes/django_login_view1.png">
     </div>
+
+    + [http://127.0.0.1:8000/login](http://127.0.0.1:8000/login)
+
+    <div align="center">
+        <img src="imagenes/django_login_view2.png">
+    </div>
+
+#### Superusuario
+
+1. Aplique las migraciones
+
+    ```command
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+2. (STOP 3) Cree el super usuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
+
+    ```command
+    python manage.py createsuperuser
+    ```
 
 #### Inicio de sesión
 
@@ -142,44 +173,9 @@ theme: jekyll-theme-leap-day
         <input name="password" ... >
         ...
     </form>
-    ```
+    ```    
 
-2. Edite `backend/settings.py` con la ruta a redirigir cuando los usuarios que no están autenticados.
-
-    ```python
-    ...
-    LOGIN_URL = '/login/'
-    LOGIN_REDIRECT_URL = '/'
-    ```
-
-3. (STOP 3) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
-
-    <div align="center">
-        <img src="imagenes/django_login_view2.png">
-    </div>
-
-#### Superusuario
-
-1. Aplique las migraciones
-
-    ```command
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
-
-2. Cree el super usuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
-
-    ```command
-    python manage.py createsuperuser
-    ```
-
-3. Verifique en el navegador
-
-    ```command
-    python manage.py runserver
-    ```
-
-4. (STOP 4) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+2. (STOP 4) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     + Revise la `cookie de sesión`
 
