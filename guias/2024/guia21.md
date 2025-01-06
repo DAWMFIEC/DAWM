@@ -355,7 +355,7 @@ theme: jekyll-theme-leap-day
 	...
 	</head>
 
-	<body class="bg-gray-100 font-family-karla flex">
+	<body>
 	...
 
 		<!-- START - Block content -->
