@@ -89,7 +89,8 @@ theme: jekyll-theme-leap-day
 
 #### Vistas de autenticación
 
-1. Edite el archivo _backend/urls.py_
+1. Descargue y descomprima la plantilla [login_django.zip](recursos/login_django.zip) en la carpeta _templates/security_.
+2. Edite el archivo _backend/urls.py_, con:
 
     + Importe las vistas predefinidas para el inicio y el cierre de sesión.
     + Agregue las rutas para que procesen el inicio (**LoginView**) y el cierre (**LogoutView**) de sesión con la configuración correspondiente.
@@ -110,15 +111,17 @@ theme: jekyll-theme-leap-day
     ]
     ```
 
-2. Edite `backend/settings.py` con la ruta a redirigir cuando los usuarios que no están autenticados.
+3. Modifique el archivo _backend/settings.py_, con:
+    
+    + La ruta a redirigir cuando los usuarios que no están autenticados.
+    + La ruta a la que se redirigirá a un usuario después de un inicio de sesión exitoso.
+
 
     ```python
     ...
     LOGIN_URL = '/login/'
     LOGIN_REDIRECT_URL = '/'
     ```
-
-3. Descargue y descomprima la plantilla [login_django.zip](recursos/login_django.zip) en la carpeta _templates/security_.
 
 4. (STOP 2) Revise los cambios en el navegador en el URL: 
 
