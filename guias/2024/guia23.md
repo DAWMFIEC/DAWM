@@ -125,12 +125,6 @@ theme: jekyll-theme-leap-day
     + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
-        <img src="imagenes/django_login_view1.png">
-    </div>
-
-    + [http://127.0.0.1:8000/login](http://127.0.0.1:8000/login)
-
-    <div align="center">
         <img src="imagenes/django_login_view2.png">
     </div>
 
