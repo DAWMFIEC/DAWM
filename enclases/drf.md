@@ -14,6 +14,11 @@ theme: jekyll-theme-leap-day
 
 #### LandingAPIDetail
 
+
+<div align="center">
+    <img src="imagenes/drf1.png" alt="" width="75%">
+</div>
+
 #### URL
 
 #### Validación y Verificación
