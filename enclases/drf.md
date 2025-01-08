@@ -14,8 +14,9 @@ theme: jekyll-theme-leap-day
 
 #### LandingAPIDetail
 
+#### URL
 
-#### Verificación
+#### Validación y Verificación
 
 
 ### Entregable
