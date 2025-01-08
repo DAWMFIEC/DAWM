@@ -103,6 +103,6 @@ theme: jekyll-theme-leap-day
 
 * Christie, T. (n.d.). Requests. Retrieved from https://www.django-rest-framework.org/api-guide/requests/
 * Christie, T. (n.d.). Tutorial 3: Class-based Views. Retrieved from https://www.django-rest-framework.org/tutorial/3-class-based-views/
-* firebase_admin.db module  |  Firebase. (n.d.). Retrieved from https://firebase.google.com/static/docs/reference/admin/python/firebase_admin.db
-* Introducción a la API de Admin Database  |  Firebase Realtime Database. (n.d.). Retrieved from https://firebase.google.com/docs/database/admin/start?hl=es-419
+* firebase_admin.db module  Firebase. (n.d.). Retrieved from https://firebase.google.com/static/docs/reference/admin/python/firebase_admin.db
+* Introducción a la API de Admin Database  Firebase Realtime Database. (n.d.). Retrieved from https://firebase.google.com/docs/database/admin/start?hl=es-419
 * Khan, A. (2025). DELETE Method of APIView In Django REST Framework. Retrieved from https://medium.com/@altafkhan_24475/delete-method-of-apiview-in-django-rest-framework-c227942776d2
