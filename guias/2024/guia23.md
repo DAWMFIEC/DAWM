@@ -62,8 +62,45 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Paso de variables a la plantilla
+#### Vistas
 
+1. Edite el archivo _main/views.py_, con:
+
+    + Importe **requests** y **json**
+    + Arme el endpoint y realice una petición al REST API la vista _index_
+
+    ```python
+    ...
+
+    # Importe requests y json
+    import requests
+    import json
+
+    def index(request):
+        
+        # Arme el endpoint del REST API
+        current_url = request.build_absolute_uri()
+        url = current_url + '/api/v1/landing'
+
+        # Petición al REST API
+        response_http = requests.get(url)
+        response_dict = json.loads(response_http.content)
+
+        print("Endpoint ", url)
+        print("Response ", response_dict)
+
+        return render(request, 'main/index.html')
+    ```
+
+2. (STOP 1) Revise los cambios en el navegador en el URL: 
+
+    + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_ssr_request.png">
+    </div>
+
+#### Plantillas
 
 #### Versionamiento local y remoto
 
