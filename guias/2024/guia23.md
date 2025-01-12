@@ -62,12 +62,57 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Vistas
+#### Vistas y plantillas: Renderización de variables
+
+1. Edite el archivo _main/views.py_, con:
+
+    + Cree el objeto **data** y renderice en la vista _index_
+
+    ```python
+    ...
+
+    def index(request):
+        
+        # Objeto con los datos a renderizar
+        data = {
+            'title': 'Landing - Dashboard',
+        }
+
+        # Renderización en la plantilla
+        return render(request, 'main/index.html', data)
+    ```
+
+2. Descargue y descomprima el archivo [content_data_django.zip](recursos/content_data_django.zip) y reemplace por _templates/main/content/data.html_.
+
+3. Modifique el archivo _templates/main/content/data.html_, con:
+
+    + Renderice la variable **title**
+
+    ```html
+    ...
+
+    <!-- START - title -->
+        {% raw %}{{{% endraw %} title {% raw %}}{% endraw %}
+    <!-- END - Block content -->
+
+    ...
+    ```
+
+
+4. (STOP 1) Revise los cambios en el navegador en el URL: 
+
+    + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_ssr_request.png">
+    </div>
+
+#### Vistas: Requerimientos a un endpoint
 
 1. Edite el archivo _main/views.py_, con:
 
     + Importe **requests** y **json**
-    + Arme el endpoint y realice una petición al REST API la vista _index_
+    + Arme el `endpoint` y realice una petición al REST API la vista _index_
 
     ```python
     ...
@@ -89,18 +134,32 @@ theme: jekyll-theme-leap-day
         print("Endpoint ", url)
         print("Response ", response_dict)
 
-        return render(request, 'main/index.html')
+        # Respuestas totales
+        total_responses = len(response_dict.keys())
+
+        # Objeto con los datos a renderizar
+        data = {
+            'title': 'Landing - Dashboard',
+            'total_responses': total_responses,
+        }
+
+        # Renderización en la plantilla
+        return render(request, 'main/index.html', data)
     ```
 
-2. (STOP 1) Revise los cambios en el navegador en el URL: 
+2. (STOP 1) Revise los cambios: 
 
-    + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+    + En la terminal
+
+    <div align="center">
+        <img src="imagenes/django_ssr_request_terminal.png">
+    </div>
+
+    + En el navegador en el URL [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
         <img src="imagenes/django_ssr_request.png">
     </div>
-
-#### Plantillas
 
 #### Versionamiento local y remoto
 
@@ -132,7 +191,7 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
-SSR, etiquetas integradas
+SSR, endpoint, etiquetas integradas
 
 ### Referencias
 
