@@ -4,7 +4,7 @@ theme: jekyll-theme-leap-day
 
 ## Guía 23
 
-[DAWM](/DAWM/) / [Proyecto0Y](/DAWM/proyectos/2024/proyecto05)
+[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2024/proyecto05)
 
 <link href="styles/mystyle.css" rel="stylesheet" />
 
