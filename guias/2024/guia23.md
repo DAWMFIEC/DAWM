@@ -62,6 +62,18 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+#### Plantilla content
+
+1. Descargue y descomprima el archivo [main_content_data_django.zip](recursos/main_content_data_django.zip)
+2. Reemplace el archivo descargado por _templates/main/content/data.html_.
+3. (STOP 1) Revise los cambios en el navegador en el URL: 
+
+    + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_ssr.png">
+    </div>
+
 #### Vistas y plantillas: Renderización de variables
 
 1. Edite el archivo _main/views.py_, con:
@@ -82,9 +94,8 @@ theme: jekyll-theme-leap-day
         return render(request, 'main/index.html', data)
     ```
 
-2. Descargue y descomprima el archivo [content_data_django.zip](recursos/content_data_django.zip) y reemplace por _templates/main/content/data.html_.
 
-3. Modifique el archivo _templates/main/content/data.html_, con:
+2. Modifique el archivo _templates/main/content/data.html_, con:
 
     + Renderice la variable **title**
 
@@ -92,19 +103,19 @@ theme: jekyll-theme-leap-day
     ...
 
     <!-- START - title -->
-        {% raw %}{{{% endraw %} title {% raw %}}{% endraw %}
-    <!-- END - Block content -->
+        {% raw %}{{{% endraw %} title {% raw %}}}{% endraw %}
+    <!-- END - title -->
 
     ...
     ```
 
 
-4. (STOP 1) Revise los cambios en el navegador en el URL: 
+3. (STOP 1) Revise los cambios en el navegador en el URL: 
 
     + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
-        <img src="imagenes/django_ssr_request.png">
+        <img src="imagenes/django_ssr_render.png">
     </div>
 
 #### Vistas: Requerimientos a un endpoint
@@ -158,7 +169,7 @@ theme: jekyll-theme-leap-day
     + En el navegador en el URL [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
-        <img src="imagenes/django_ssr_request.png">
+        <img src="imagenes/django_ssr_request_web.png">
     </div>
 
 #### Versionamiento local y remoto
