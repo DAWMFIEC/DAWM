@@ -182,13 +182,13 @@ theme: jekyll-theme-leap-day
     + En la terminal
 
     <div align="center">
-        <img src="imagenes/django_ssr_request_terminal.png">
+        <img src="imagenes/django_ssr_request_tr01.png">
     </div>
 
     + En el navegador en el URL [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
-        <img src="imagenes/django_ssr_request_web.png">
+        <img src="imagenes/django_ssr_request_tr02.png">
     </div>
 
 #### Versionamiento local y remoto
