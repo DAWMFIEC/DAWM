@@ -195,7 +195,7 @@ theme: jekyll-theme-leap-day
 
 1. Edite el archivo _main/views.py_, con:
 
-    + E
+    + Extraiga los valores de la respuesta
 
     ```python
     ...
@@ -211,7 +211,7 @@ theme: jekyll-theme-leap-day
         # Respuestas totales
         ...
 
-        # Respuestas
+        # Valores de la respuesta
         responses = response_dict.values()
 
         # Objeto con los datos a renderizar
