@@ -239,7 +239,7 @@ theme: jekyll-theme-leap-day
 
 ### Documentación
 
-En [Utilizando el sistema de autenticación de Django](https://docs.djangoproject.com/es/5.1/topics/auth/default/) explica el uso del sistema predeterminado de autenticación y autorización de las aplicaciones
+* En [Utilizando el sistema de autenticación de Django](https://docs.djangoproject.com/es/5.1/topics/auth/default/) explica el uso del sistema predeterminado de autenticación y autorización de las aplicaciones
 
 ### Fundamental
 
