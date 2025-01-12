@@ -62,10 +62,42 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
+#### Paso de variables a la plantilla
+
+
+#### Versionamiento local y remoto
+
+1. En la línea de comandos
+
+    + Genere el archivo **requirements.txt** con la lista de paquetes utilizados, con:
+
+    ```command
+    pip freeze > requirements.txt
+    ```
+
+    + Desactive el ambiente de desarrollo, con:
+
+    ```command
+    deactivate
+    ```
+
+2. Versione local y remotamente.
+
 ### Documentación
+
+* [Etiquetas y filtros de plantilla integrados](https://docs.djangoproject.com/en/5.1/ref/templates/builtins/) en Django 
 
 ### Fundamental
 
+* Renderización web en el lado del servidor en [X](https://x.com/aleyda/status/1094593901493714945)
+
+<blockquote class="twitter-tweet" data-media-max-width="560"><p lang="en" dir="ltr">Rendering on the Web – The SEO Version: Pros and Cons from Server Side to Full Client Side Rendering by <a href="https://twitter.com/jbobbink?ref_src=twsrc%5Etfw">@jbobbink</a> <a href="https://t.co/IioPUtth8Y">https://t.co/IioPUtth8Y</a> <a href="https://t.co/VzZrRGVOOo">pic.twitter.com/VzZrRGVOOo</a></p>&mdash; Aleyda Solis 🕊️ (@aleyda) <a href="https://twitter.com/aleyda/status/1094593901493714945?ref_src=twsrc%5Etfw">February 10, 2019</a></blockquote> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
 ### Términos
 
+SSR, etiquetas integradas
+
 ### Referencias
+
+* Built-in template tags and filters: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/ref/templates/builtins/
+* Request and response objects: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/ref/request-response/
