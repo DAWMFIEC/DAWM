@@ -62,7 +62,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Plantilla content
+#### Plantilla para datos
 
 1. Descargue y descomprima el archivo [main_content_data_django.zip](recursos/main_content_data_django.zip)
 2. Reemplace el archivo descargado por _templates/main/content/data.html_.
