@@ -74,7 +74,7 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/django_ssr.png">
     </div>
 
-#### Vistas y plantillas: Renderización de valores estáticos
+#### Vistas y plantillas: Renderización de constantes
 
 1. Edite el archivo _main/views.py_, con:
 
@@ -109,7 +109,6 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-
 3. (STOP 1) Revise los cambios en el navegador en el URL: 
 
     + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
@@ -118,12 +117,13 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/django_ssr_render_title.png">
     </div>
 
-#### Vistas y plantillas: Renderización de valores dinámicos
+#### Vistas y plantillas: Renderización de variables
 
 1. Edite el archivo _main/views.py_, con:
 
-    + Importe **requests** y **json**
-    + Arme el `endpoint` y realice una petición al REST API la vista _index_
+    + Importe **requests** y **json**.
+    + Arme el `endpoint` con la URL del proyecto y la ruta de la aplicación.
+    + Realice una petición al REST API al _endpoint_.
 
     ```python
     ...
@@ -189,6 +189,76 @@ theme: jekyll-theme-leap-day
 
     <div align="center">
         <img src="imagenes/django_ssr_request_tr02.png">
+    </div>
+
+#### Vistas y plantillas: Renderización de arreglos
+
+1. Edite el archivo _main/views.py_, con:
+
+    + E
+
+    ```python
+    ...
+
+    # Importe requests y json
+    import requests
+    import json
+
+    def index(request):
+        
+        ...
+
+        # Respuestas totales
+        ...
+
+        # Respuestas
+        responses = response_dict.values()
+
+        # Objeto con los datos a renderizar
+        data = {
+            'title': 'Landing - Dashboard',
+            'total_responses': total_responses,
+            'responses': responses
+        }
+
+        # Renderización en la plantilla
+        return render(request, 'main/index.html', data)
+    ```
+
+2. Modifique el archivo _templates/main/content/data.html_, con:
+
+    + Itere el arreglo **responses** en la variable **row**.
+    + Renderice los valores _row.email_ y _row.saved_.
+
+    ```html
+    ...
+
+    <!-- START - responses -->
+    {% raw %}{%{% endraw %} for row in responses {% raw %}%}{% endraw %}
+    <tr class="text-gray-700 dark:text-gray-400">
+        <td class="px-4 py-3 text-sm">
+            <!-- START - row.email -->
+            {% raw %}{{{% endraw %} row.email {% raw %}}}{% endraw %}
+            <!-- END - row.email -->
+        </td>
+        <td class="px-4 py-3 text-sm">
+            <!-- START - row.saved -->
+            {% raw %}{{{% endraw %} row.saved {% raw %}}}{% endraw %}
+            <!-- END - row.saved -->
+        </td>
+    </tr>
+    {% endfor %}
+    <!-- END - responses -->
+
+    ...
+    ```
+
+3. (STOP 3) Revise los cambios: 
+
+    + En el navegador en el URL [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_ssr_request_tr03.png">
     </div>
 
 #### Versionamiento local y remoto
