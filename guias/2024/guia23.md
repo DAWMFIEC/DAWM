@@ -247,7 +247,7 @@ theme: jekyll-theme-leap-day
             <!-- END - row.saved -->
         </td>
     </tr>
-    {% endfor %}
+    {% raw %}{%{% endraw %} endfor {% raw %}%}{% endraw %}
     <!-- END - responses -->
 
     ...
