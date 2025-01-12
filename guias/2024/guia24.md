@@ -64,7 +64,7 @@ theme: jekyll-theme-leap-day
 
 #### Autorización
 
-1. Edite el archivo _main/views.py_ 
+1. Edite el archivo _main/views.py_, con:
 
     + Importe el decorador **login_required**
     + Restricción de acceso para la vista _index_
