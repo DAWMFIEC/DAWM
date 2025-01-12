@@ -74,7 +74,7 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/django_ssr.png">
     </div>
 
-#### Vistas y plantillas: Renderización de variables
+#### Vistas y plantillas: Renderización de valores estáticos
 
 1. Edite el archivo _main/views.py_, con:
 
@@ -115,10 +115,10 @@ theme: jekyll-theme-leap-day
     + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
-        <img src="imagenes/django_ssr_render.png">
+        <img src="imagenes/django_ssr_render_title.png">
     </div>
 
-#### Vistas: Requerimientos a un endpoint
+#### Vistas y plantillas: Renderización de valores dinámicos
 
 1. Edite el archivo _main/views.py_, con:
 
@@ -158,7 +158,26 @@ theme: jekyll-theme-leap-day
         return render(request, 'main/index.html', data)
     ```
 
-2. (STOP 1) Revise los cambios: 
+2. Modifique el archivo _templates/main/content/data.html_, con:
+
+    + Renderice la variable **total_responses** en los bloques _total\_responses_ y _total\_responses\_table_
+
+    ```html
+    ...
+
+    <!-- START - total_responses -->
+        {% raw %}{{{% endraw %} total_responses {% raw %}}}{% endraw %}
+    <!-- END - total_responses -->
+
+    ...
+
+    <!-- START - total_responses_table -->
+        {% raw %}{{{% endraw %} total_responses {% raw %}}}{% endraw %}
+    <!-- END - total_responses_table -->
+    respuestas
+    ```
+
+3. (STOP 2) Revise los cambios: 
 
     + En la terminal
 
