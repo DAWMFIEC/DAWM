@@ -267,11 +267,10 @@ theme: jekyll-theme-leap-day
 1. Edite el archivo _static/js/charts-pie.js_, con:
 
     + Agregue la función **countCommentsByHour** que procesa el JSON de respuesta.
-    + Agregue la función **update** con la petición asincrónica al REST API y actualiza el gráfico.
-
+    
     ```javascript
     ...
-    s
+    
     const pieCtx = ...
     window.myPie = ...
 
@@ -308,6 +307,14 @@ theme: jekyll-theme-leap-day
 
       return { labels, counts };
     }
+    ````
+
+    + Agregue la función **update** con la petición asincrónica al REST API y actualiza el gráfico.
+
+    ```javascript
+    ...
+
+    countCommentsByHour = ...
 
     update = () => {
       fetch('/api/v1/landing')
