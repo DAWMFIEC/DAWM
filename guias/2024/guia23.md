@@ -314,7 +314,7 @@ theme: jekyll-theme-leap-day
     ```javascript
     ...
 
-    countCommentsByHour = ...
+    countCommentsByHour = { ... }
 
     update = () => {
       fetch('/api/v1/landing')
