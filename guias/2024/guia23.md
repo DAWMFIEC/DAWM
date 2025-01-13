@@ -74,7 +74,7 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/django_ssr.png">
     </div>
 
-#### SSR Vistas y plantillas: Renderización de constantes
+#### Vistas y plantillas: Renderización de constantes
 
 1. Edite el archivo _main/views.py_, con:
 
@@ -118,7 +118,7 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/django_ssr_render_title.png">
     </div>
 
-#### SSR Vistas y plantillas: Renderización de variables
+#### Vistas y plantillas: Renderización de variables
 
 1. Edite el archivo _main/views.py_, con:
 
@@ -192,7 +192,7 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/django_ssr_request_tr02.png">
     </div>
 
-#### SSR Vistas y plantillas: Renderización de arreglos
+#### Vistas y plantillas: Renderización de arreglos
 
 1. Edite el archivo _main/views.py_, con:
 
@@ -262,7 +262,7 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/django_ssr_request_tr03.png">
     </div>
 
-#### CSR Javascript: Requerimiento asíncrono
+#### Javascript: Requerimiento asíncrono
 
 1. Edite el archivo _static/js/charts-pie.js_, con:
 

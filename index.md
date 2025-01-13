@@ -47,7 +47,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Proyecto 05: Backend - Django](proyectos/2024/proyecto05)
   * [Guía 21: Introducción - Django](guias/2024/guia21)
   * [Guía 22: Django Rest Framework (DRF) - Django](guias/2024/guia22)
-  * [Guía 23: SSR y CSR - Django](guias/2024/guia23)
+  * [Guía 23: SSR - Django](guias/2024/guia23)
   * [Guía 24: Built-in Auth y DjangoAdmin - Django](guias/2024/guia24)
 
   
