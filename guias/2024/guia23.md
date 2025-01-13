@@ -90,6 +90,7 @@ theme: jekyll-theme-leap-day
             'title': 'Landing - Dashboard',
         }
 
+
         # Renderización en la plantilla
         return render(request, 'main/index.html', data)
     ```
@@ -109,7 +110,7 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-3. (STOP 1) Revise los cambios en el navegador en el URL: 
+3. (STOP 2) Revise los cambios en el navegador en el URL: 
 
     + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
@@ -177,7 +178,7 @@ theme: jekyll-theme-leap-day
     respuestas
     ```
 
-3. (STOP 2) Revise los cambios: 
+3. (STOP 3) Revise los cambios: 
 
     + En la terminal
 
@@ -253,12 +254,91 @@ theme: jekyll-theme-leap-day
     ...
     ```
 
-3. (STOP 3) Revise los cambios: 
+3. (STOP 4) Revise los cambios: 
 
     + En el navegador en el URL [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
         <img src="imagenes/django_ssr_request_tr03.png">
+    </div>
+
+#### Javascript: Requerimiento asíncrono
+
+1. Edite el archivo _static/js/charts-pie.js_, con:
+
+    + Agregue la función **countCommentsByHour** que procesa el JSON de respuesta.
+    + Agregue la función **update** con la petición asincrónica al REST API y actualiza el gráfico.
+
+    ```javascript
+    ...
+    s
+    const pieCtx = ...
+    window.myPie = ...
+
+    // Función para procesar el JSON
+    countCommentsByHour = (data) => {
+
+      // Inicializar contadores por rango de horas
+      const labels = ["0 a.m. - 8 a.m.", "8 a.m. - 16 p.m.", "16 p.m. - 0 a.m."];
+      const counts = [0, 0, 0];
+
+      Object.values(data).forEach(record => {
+
+          const savedTime = record.saved;
+          if (!savedTime) {
+              return;
+          }
+
+          // Convertir a formato de hora AM/PM
+          const formattedTime = savedTime.replace('a. m.', 'AM').replace('p. m.', 'PM');
+          
+          // Crear objeto Date con la cadena de tiempo
+          const dt = new Date(Date.parse(formattedTime.replace(/(\d{2}\/\d{2}\/\d{4}), (\d{2}):(\d{2}):(\d{2}) (AM|PM)/, '$1 $2:$3:$4 $5')));
+          const hour = dt.getHours();
+
+          // Clasificar en el rango correspondiente
+          if (hour >= 0 && hour < 8) {
+              counts[0]++;
+          } else if (hour >= 8 && hour < 16) {
+              counts[1]++;
+          } else {
+              counts[2]++;
+          }
+      });
+
+      return { labels, counts };
+    }
+
+    update = () => {
+      fetch('/api/v1/landing')
+        .then(response => response.json())
+        .then(data => {
+
+          let { labels, counts } = countCommentsByHour(data)
+
+          // Reset data
+          window.myPie.data.labels = [];
+          window.myPie.data.datasets[0].data = [];
+
+          // New data
+          window.myPie.data.labels = [...labels]
+          window.myPie.data.datasets[0].data = [...counts]
+
+          window.myPie.update();
+
+        })
+        .catch(error => console.error('Error:', error));
+    }
+
+    update();
+    ```
+
+3. (STOP 5) Revise los cambios: 
+
+    + En el navegador en el URL [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_ssr_request_tr05.png">
     </div>
 
 #### Versionamiento local y remoto
@@ -297,3 +377,5 @@ SSR, endpoint, etiquetas integradas
 
 * Built-in template tags and filters: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/ref/templates/builtins/
 * Request and response objects: Django documentation. (n.d.). Retrieved from https://docs.djangoproject.com/en/5.1/ref/request-response/
+* Bob Belderbos on 14 June 2022, & Belderbos, B. (2022). How To Make A Nice Graph Using Django And Chart.js. Retrieved from https://pybit.es/articles/how-to-make-a-nice-graph-using-django-and-chart-js/
+* Updating Charts. (n.d.). Retrieved from https://www.chartjs.org/docs/latest/developers/updates.html
