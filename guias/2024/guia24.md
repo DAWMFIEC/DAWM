@@ -372,3 +372,4 @@ Built-in, CSRF, cookies, session, autenticación, autorización
 * Comment, info, M., prathamsahani0368 Follow Improve, prathamsahani0368 Follow, prathamsahani0368, & Follow. (2024). User Authentication System using Django. Retrieved from https://www.geeksforgeeks.org/user-authentication-system-using-django/
 * Tang, A. (2024). How to secure your Django applications ⎜Escape Blog. Retrieved from https://escape.tech/blog/best-django-security-practices/#authentication
 * Django-Allauth tutorial 2023: Instalación y configuración (N.d.). Retrieved from https://www.youtube.com/watch?v=fsFhti_e5_Q
+* Majiyagbe, O. (2022). Permissions in Django. Retrieved from https://testdriven.io/blog/django-permissions/
