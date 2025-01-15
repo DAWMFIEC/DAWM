@@ -62,7 +62,34 @@ theme: jekyll-theme-leap-day
 
 ### Actividades en clases
 
-#### Autorización
+#### Django Admin y SuperUsuario
+
+1. Aplique las migraciones
+
+    ```command
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+
+2. Cree el super usuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
+
+    ```command
+    python manage.py createsuperuser
+    ```
+
+3. Levante el servidor, con:
+
+    ```command
+    python manage.py runserver
+    ```
+
+4. (STOP 1) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+
+    <div align="center">
+        <img src="imagenes/django_admin_main.png">
+    </div>
+
+#### Autenticación: decorador en la vista
 
 1. Edite el archivo _main/views.py_, con:
 
@@ -81,19 +108,19 @@ theme: jekyll-theme-leap-day
         ...
     ```
 
-2. (STOP 1) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+2. (STOP 2) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
         <img src="imagenes/django_login_required.png">
     </div>
 
-#### Vistas de autenticación
+#### Autenticación: Vistas predefinidas + plantilla personalizadas
 
 1. Descargue y descomprima la plantilla [login_django.zip](recursos/login_django.zip) en la carpeta _templates/security_.
 2. Edite el archivo _backend/urls.py_, con:
 
-    + Importe las vistas predefinidas para el inicio y el cierre de sesión.
-    + Agregue las rutas para que procesen el inicio (**LoginView**) y el cierre (**LogoutView**) de sesión con la configuración correspondiente.
+    + Importe las vistas predefinidas auth_views.
+    + Agregue las rutas con las vista (basadas en clases) asociadas con el inicio (**LoginView**) y con el cierre (**LogoutView**) de sesión.
 
     ```python
     ...
@@ -113,38 +140,25 @@ theme: jekyll-theme-leap-day
 
 3. Modifique el archivo _backend/settings.py_, con:
     
-    + La ruta a redirigir cuando los usuarios que no están autenticados.
-    + La ruta a la que se redirigirá a un usuario después de un inicio de sesión exitoso.
-
+    + Las rutas de redireccionamiento en los casos de fallo y de éxito.
 
     ```python
     ...
+
+    # Fallo: acceso sin autenticación
     LOGIN_URL = '/login/'
+    
+    # Éxito: luego de autenticación exitosa
     LOGIN_REDIRECT_URL = '/'
     ```
 
-4. (STOP 2) Revise los cambios en el navegador en el URL: 
+4. (STOP 3) Revise los cambios en el navegador en el URL: 
 
     + [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     <div align="center">
         <img src="imagenes/django_login_view2.png">
     </div>
-
-#### Superusuario
-
-1. Aplique las migraciones
-
-    ```command
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
-
-2. (STOP 3) Cree el super usuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
-
-    ```command
-    python manage.py createsuperuser
-    ```
 
 #### Inicio de sesión
 
@@ -174,7 +188,7 @@ theme: jekyll-theme-leap-day
 
 2. (STOP 4) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-    + Ingrese el usuario y contraseña del super usuario. 
+    + Ingrese el usuario y contraseña del SuperUsuario. 
     + Revise la `cookie` de `sesión`
 
     <div align="center">
@@ -230,10 +244,8 @@ theme: jekyll-theme-leap-day
 
     + Acceda a la opción **Users**
     + Haga clic en el botón **ADD USER**
-    + Complete los campos **Username**, **Password** y **Password confirmation**
-    + Guarde los cambios con el botón **SAVE**
-    + Complete los datos personales en **Personal info**.
-    + Guarde los cambios con el botón **SAVE**
+    + Complete los campos **Username**, **Password** y **Password confirmation**. Guarde los cambios con el botón **SAVE**
+    + Complete los datos personales en **Personal info**. Guarde los cambios con el botón **SAVE**
 
     <div align="center">
         <img src="imagenes/django_admin_newuser.png">
@@ -247,12 +259,7 @@ theme: jekyll-theme-leap-day
 
 4. (STOP 6) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
-    + Ingrese el usuario y contraseña recientemente creados. 
-    + Revise la `cookie` de `sesión`
-
-    <div align="center">
-        <img src="imagenes/django_index_extended.png">
-    </div>
+    + Ingrese el usuario y contraseña recientemente creado. 
 
 
 #### Versionamiento local y remoto
