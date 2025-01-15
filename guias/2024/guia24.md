@@ -269,7 +269,7 @@ theme: jekyll-theme-leap-day
 
     # Restricción de acceso con @login_required y permisos con @permission_required
     @login_required
-    @permission_required('main.viewer', raise_exception=True)
+    @permission_required('main.index_viewer', raise_exception=True)
     def index(request):
         ...
     ```
@@ -292,7 +292,7 @@ theme: jekyll-theme-leap-day
         
         class Meta:
             permissions = [
-                ("main.viewer", "Can access to index view"),
+                ("index_viewer", "Can show to index view (function-based)"),
             ]
     ```
 
