@@ -217,6 +217,43 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/django_logout_extended.png">
     </div>
 
+#### Django Admin - Nuevo Usuario
+
+1. Acceda a sitio de Django Admin en [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+    + Utilice las credenciales del usuario **admin**
+
+    <div align="center">
+        <img src="imagenes/django_admin_main.png">
+    </div>
+
+2. Agregue las credenciales y datos generales de un usuario nuevo, con:
+
+    + Acceda a la opción **Users**
+    + Haga clic en el botón **ADD USER**
+    + Complete los campos **Username**, **Password** y **Password confirmation**
+    + Guarde los cambios con el botón **SAVE**
+    + Complete los datos personales en **Personal info**.
+    + Guarde los cambios con el botón **SAVE**
+
+    <div align="center">
+        <img src="imagenes/django_admin_newuser.png">
+    </div>
+
+3. Salga del sitio de Django Admin con el botón **LOG OUT**
+
+    <div align="center">
+        <img src="imagenes/django_admin_logout.png">
+    </div>
+
+4. (STOP 6) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    + Ingrese el usuario y contraseña recientemente creados. 
+    + Revise la `cookie` de `sesión`
+
+    <div align="center">
+        <img src="imagenes/django_index_extended.png">
+    </div>
+
 
 #### Versionamiento local y remoto
 
