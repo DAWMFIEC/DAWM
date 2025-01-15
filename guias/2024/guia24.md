@@ -71,7 +71,7 @@ theme: jekyll-theme-leap-day
     python manage.py migrate
     ```
 
-2. Cree el super usuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
+2. Cree el SuperUsuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
 
     ```command
     python manage.py createsuperuser
@@ -85,11 +85,13 @@ theme: jekyll-theme-leap-day
 
 4. (STOP 1) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
 
+    + Acceda con el usuario y la contraseña del SuperUsuario
+
     <div align="center">
         <img src="imagenes/django_admin_main.png">
     </div>
 
-#### Autenticación: decorador en la vista
+#### Autenticación: Decorador en la vista
 
 1. Edite el archivo _main/views.py_, con:
 
@@ -114,7 +116,7 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/django_login_required.png">
     </div>
 
-#### Autenticación: Vistas predefinidas + plantilla personalizadas
+#### Autenticación: Vistas predefinidas + Plantilla personalizadas
 
 1. Descargue y descomprima la plantilla [login_django.zip](recursos/login_django.zip) en la carpeta _templates/security_.
 2. Edite el archivo _backend/urls.py_, con:
@@ -234,11 +236,7 @@ theme: jekyll-theme-leap-day
 #### Django Admin - Nuevo Usuario
 
 1. Acceda a sitio de Django Admin en [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
-    + Utilice las credenciales del usuario **admin**
-
-    <div align="center">
-        <img src="imagenes/django_admin_main.png">
-    </div>
+    + Utilice las credenciales del SuperUsuario.
 
 2. Agregue las credenciales y datos generales de un usuario nuevo, con:
 
@@ -252,14 +250,82 @@ theme: jekyll-theme-leap-day
     </div>
 
 3. Salga del sitio de Django Admin con el botón **LOG OUT**
-
-    <div align="center">
-        <img src="imagenes/django_admin_logout.png">
-    </div>
-
 4. (STOP 6) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
     + Ingrese el usuario y contraseña recientemente creado. 
+
+#### Autorización: Decorador en la vista
+
+1. Edite el archivo _main/views.py_, con:
+
+    + Importe el decorador **permission_required**
+    + Restricción de permiso para la vista _index_
+
+    ```python
+    ...
+
+    # Importe el decorador login_required
+    from django.contrib.auth.decorators import login_required, permission_required
+
+    # Restricción de acceso con @login_required y permisos con @permission_required
+    @login_required
+    @permission_required('main.viewer', raise_exception=True)
+    def index(request):
+        ...
+    ```
+
+2. (STOP 7) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    <div align="center">
+        <img src="imagenes/django_login_forbidden.png">
+    </div>
+
+#### Autorización: Modelo con permisos
+
+1. Modifique el archivo _main/models.py_, con:
+
+    ```python
+    ...
+
+    # Create your models here.
+    class MainModel(models.Model):
+        
+        class Meta:
+            permissions = [
+                ("main.viewer", "Can access to index view"),
+            ]
+    ```
+
+2. Aplique las migraciones
+
+    ```command
+    python manage.py makemigrations
+    python manage.py migrate
+    ```
+3. Levante el servidor, con:
+
+    ```command
+    python manage.py runserver
+    ```
+
+4. Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
+
+    + Acceda con el usuario y la contraseña del SuperUsuario
+    + Modifique el **usuario nuevo** con el permiso recientemente creado.
+    + Guarde los cambios con el botón **SAVE**
+    + Cierre la sesión en Django Admin. 
+
+    <div align="center">
+        <img src="imagenes/django_admin_permission.png">
+    </div>
+
+5. (STOP 1) Revise los cambios en el navegador en el URL: [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+
+    + Ingrese el usuario y contraseña del **usuario nuevo**. 
+    
+    <div align="center">
+        <img src="imagenes/django_index_extended.png">
+    </div>
 
 
 #### Versionamiento local y remoto
