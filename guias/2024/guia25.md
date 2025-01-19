@@ -69,7 +69,7 @@ theme: jekyll-theme-leap-day
 
 4. Acceda a sitio de Django Admin en [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
     + Utilice las credenciales del SuperUsuario.
-    + Agregue un usuario nuevo con el permiso **Main | main model | Can show to index view (function-based)**.
+    + Agregue un usuario nuevo con el permiso **Main \| main model \| Can show to index view (function-based)**.
 
 #### Editor y WSGI
 
