@@ -49,6 +49,7 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 22: Django Rest Framework (DRF) - Django](guias/2024/guia22)
   * [Guía 23: SSR - Django](guias/2024/guia23)
   * [Guía 24: Built-in Auth y DjangoAdmin - Django](guias/2024/guia24)
+  * [Guía 25: Reportes y Despliegue - Django](guias/2024/guia25)
 
   
 ## Scripts
