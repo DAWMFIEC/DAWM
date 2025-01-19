@@ -153,7 +153,7 @@ theme: jekyll-theme-leap-day
     <div align="center">
         <img src="imagenes/pa_webapp3.png" alt="" width="70%">
     </div>
-s
+
 #### Seguridad
 
 1. Desde la interfaz de PythonAnywhere y acceda a la opción **Files**
