@@ -31,4 +31,3 @@ La respuesta es:
 * [Guía 23: SSR - Django](/DAWM/guias/2024/guia23)
 * [Guía 24: Built-in Auth y DjangoAdmin - Django](/DAWM/guias/2024/guia24)
 * [Guía 25: Despliegue - Django](/DAWM/guias/2024/guia25)
-* [Guía 26: Reportes - Django](/DAWM/guias/2024/guia26)

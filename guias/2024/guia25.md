@@ -14,15 +14,31 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
+* Obtenga una cuenta **Beginner account** en [PythonAnywhere](https://www.pythonanywhere.com/).
+
+    <div align="center">
+        <img src="imagenes/pa_beginner.png" alt="" width="70%">
+        <p>Fuente: <a href="https://www.pythonanywhere.com/pricing/">Python Anywhere</a> </p>
+    </div>
+
+### Actividades en clases
+
+#### Consola de PythonAnywhere
+
+1. Desde la interfaz de PythonAnywhere, en la opción **Console** > **Bash**, cree una nueva consola.
+
+    <div align="center">
+        <img src="imagenes/pa_console.png" alt="" width="70%">
+    </div>
+
 #### Ambiente de desarrollo
 
 1. Desde la línea de comandos
 
-    + Cree y habilite el ambiente de desarrollo, con:
+    + Crea un entorno virtual, nómbralo como **environment** y con la versión de Python 3.10
 
     ```command
-    python -m venv environment
-    environment\Scripts\activate
+    mkvirtualenv --python=/usr/bin/python3.10 environment
     ```
 
 #### Repositorio local/remoto + librerías
@@ -40,13 +56,21 @@ theme: jekyll-theme-leap-day
 
 1. Acceda a la [consola de Firebase](https://console.firebase.google.com/)
 2. Ingrese al proyecto **landing**
+
     + Acceda a la Configuración de proyecto.
     + Genere y descargue una clave privada JSON.
 
-3. Cree la carpeta keys en el proyecto.
-4. Renombre el archivo como _landing-key.json_ y guarde el archivo en la carpeta _keys_.
+3. Desde la interfaz de PythonAnywhere, en la opción **Files**
 
-#### Usuarios
+    + Acceda a la carpeta **backend**
+    + Cree la carpeta **keys** 
+    + Cargue el archivo con las credenciales de Firebase utilizados en desarrollo. 
+
+    <div align="center">
+        <img src="imagenes/pa_keys.png" alt="" width="70%">
+    </div>
+
+#### Migración
 
 1. Aplique las migraciones
 
@@ -55,56 +79,119 @@ theme: jekyll-theme-leap-day
     python manage.py migrate
     ```
 
-2. Cree el SuperUsuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
+#### WebApp
+
+1. Desde la interfaz de Python Anywhere, en la opción **Web**, cee una aplicación web con el botón **Add a new web app**
+
+    <div align="center">
+        <img src="imagenes/pa_webapp1.png" alt="" width="70%">
+    </div>
+
+
+2. Seleccione la opción **» Manual configuration (including virtualenvs)**, con la versión de Python 3.10
+
+    <div align="center">
+        <img src="imagenes/pa_webapp2.png" alt="" width="70%">
+    </div>
+
+* **AMBIENTE VIRTUAL** Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **VIRTUALENV** ingrese la ruta al ambiente de Python 
 
     ```command
-    python manage.py createsuperuser
+    /home/<USUARIO-PYTHONANYWHERE>/.virtualenvs/environment
     ```
 
-3. Levante el servidor, con:
+    <div align="center">
+        <img src="imagenes/pa_webapp3.png" alt="" width="70%">
+    </div>
+
+
+* Desde la interfaz de Python Anywhere, en la opción **Web**, en la sección **CODE** 
+
+    <div align="center">
+        <img src="imagenes/pa_webapp4.png" alt="" width="70%">
+    </div>
+
+    + **Working directory** Agregue el `Working directory` con la ruta a la carpeta del proyecto
 
     ```command
-    python manage.py runserver
+    /home/<USUARIO-PYTHONANYWHERE>/backend
     ```
 
-4. Acceda a sitio de Django Admin en [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
-    + Utilice las credenciales del SuperUsuario.
-    + Agregue un usuario nuevo con el permiso **Main \| main model \| Can show to index view (function-based)**.
+    + **WSGI configuration file** Modifique la configuración del servidor 
 
-#### Editor y WSGI
+    ```python
+    # +++++++++++ DJANGO +++++++++++
+    import os
+    import sys
 
-1. Abra el proyecto con VSCode, con:
+    path = '/home/<USUARIO-PYTHONANYWHERE>/backend'
+    if path not in sys.path:
+        sys.path.append(path)
+
+    os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
+
+    from django.core.wsgi import get_wsgi_application
+    application = get_wsgi_application()
+    ```
+
+
+Seguridad
+==========
+
+* * *
+
+* Desde la interfaz de Python Anywhere, en la opción **Files**, modifique el archivo `backend/backend/settings.py` con el dominio **ALLOWED_HOSTS**
+
+    ```python
+    ...
+    ALLOWED_HOSTS = ['<USUARIO-PYTHONANYWHERE>.pythonanywhere.com']
+    ...
+    ```
+
+Archivos estáticos
+==========
+
+* * *
+
+* Desde la interfaz de Python Anywhere, en la opción **Files**, modifique el archivo `backend/backend/settings.py` con la ruta a los archivos estáticos **STATIC_ROOT**
+
+    ```python
+    ...
+
+    STATICFILES_DIRS = [ ... ]
+
+    STATIC_ROOT = "assets/"
+    ...
+    ```
+
+* Desde la interfaz de Python Anywhere, en la opción **Console**, acceda a la ruta del proyecto y genere los archivos estáticos
 
     ```command
-    code .
+    python manage.py collectstatic
     ```
 
-2. Levante el servidor, con:
+    <div align="center">
+        <img src="imagenes/pa_webapp5.png" alt="" width="70%">
+    </div>
 
-    ```command
-    python manage.py runserver
-    ```
+* En el ambiente de configuración de la web app, relacione la URL `/static/` con el directorio `/home/<USUARIO-PYTHONANYWHERE>/backend/assets` 
 
-### Actividades en clases
+    <div align="center">
+        <img src="imagenes/pa_webapp6.png" alt="" width="70%">
+    </div>
+
+Verificación
+==========
+
+* * *
+
+Acceda al sitio principal [https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/](https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/)
+
+<div align="center">
+    <img src="imagenes/pa_verificacion.png" alt="" width="70%">
+</div>
 
 
-#### Versionamiento local y remoto
-
-1. En la línea de comandos
-
-    + Genere el archivo **requirements.txt** con la lista de paquetes utilizados, con:
-
-    ```command
-    pip freeze > requirements.txt
-    ```
-
-    + Desactive el ambiente de desarrollo, con:
-
-    ```command
-    deactivate
-    ```
-
-2. Versione local y remotamente.
 
 ### Documentación
 
@@ -112,4 +199,9 @@ theme: jekyll-theme-leap-day
 
 ### Términos
 
+PythonAnywhere
+
 ### Referencias
+
+* PythonAnywere. (2016). Deploying an existing Django project on PythonAnywhere. Retrieved from https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/
+* PythonAnywere. (2015). How to setup static files in Django. Retrieved from https://help.pythonanywhere.com/pages/DjangoStaticFiles

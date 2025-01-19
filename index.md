@@ -50,7 +50,6 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
   * [Guía 23: SSR - Django](guias/2024/guia23)
   * [Guía 24: Built-in Auth y DjangoAdmin - Django](guias/2024/guia24)
   * [Guía 25: Despliegue - Django](guias/2024/guia25)
-  * [Guía 26: Reportes - Django](guias/2024/guia26)
 
   
 ## Scripts
@@ -86,10 +85,6 @@ Este curso provee a los estudiantes del conocimiento y de la experiencia prácti
 * [Angular - Rutas](tutoriales/angular_rutas.md)
 * [Angular - PWA](tutoriales/angular_pwa.md)
 * [Angular - Cordova](tutoriales/angular_cordova.md)
-
-#### Django
-
-* [Django - Pythonanywhere](tutoriales/django_pythonanywhere.md)
 
 #### Express
 
