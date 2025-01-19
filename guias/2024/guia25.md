@@ -113,17 +113,6 @@ theme: jekyll-theme-leap-day
 
 3. En la interfaz de la WebApp:
 
-    + En la sección **VIRTUALENV** ingrese la ruta al ambiente de Python 
-
-        ```command
-        /home/<USUARIO-PYTHONANYWHERE>/.virtualenvs/environment
-        ```
-
-    <div align="center">
-        <img src="imagenes/pa_webapp3.png" alt="" width="70%">
-    </div>
-
-
     + En la sección **CODE**, haga clic en la opción **Working directory** para modificar la ruta a la carpeta del proyecto
 
         ```command
@@ -134,10 +123,7 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/pa_webapp4.png" alt="" width="70%">
     </div>
 
-    
-
-    + En la sección **CODE**, haga clic en el **WSGI configuration file** 
-    + Modifique la configuración del servidor SOLO en la sección marcada como **DJANGO** 
+    + En la sección **CODE**, haga clic en el **WSGI configuration file** y modifique la configuración del servidor SOLO en la sección marcada como **DJANGO** 
 
         ```python
         ...
@@ -158,7 +144,16 @@ theme: jekyll-theme-leap-day
         ...
         ```
 
+    + En la sección **VIRTUALENV** ingrese la ruta al ambiente de Python 
 
+        ```command
+        /home/<USUARIO-PYTHONANYWHERE>/.virtualenvs/environment/
+        ```
+
+    <div align="center">
+        <img src="imagenes/pa_webapp3.png" alt="" width="70%">
+    </div>
+s
 #### Seguridad
 
 1. Desde la interfaz de PythonAnywhere y acceda a la opción **Files**
@@ -202,7 +197,9 @@ theme: jekyll-theme-leap-day
             <img src="imagenes/pa_webapp5.png" alt="" width="70%">
         </div>
 
-* En el ambiente de configuración de la web app, relacione la URL `/static/` con el directorio `/home/<USUARIO-PYTHONANYWHERE>/backend/assets` 
+* En el ambiente de configuración de la web app
+
+    + Agregue la URL `/static/` y el directorio `/home/<USUARIO-PYTHONANYWHERE>/backend/assets/` 
 
     <div align="center">
         <img src="imagenes/pa_webapp6.png" alt="" width="70%">
