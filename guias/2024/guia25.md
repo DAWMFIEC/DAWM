@@ -25,9 +25,9 @@ theme: jekyll-theme-leap-day
 
 #### Consola de PythonAnywhere
 
-1. Desde la interfaz de PythonAnywhere
-
-2. Acceda a la opción **Console** > **Bash** y abra una nueva consola.
+1. Desde la interfaz de PythonAnywhere.
+2. Acceda a la opción **Consoles**.
+3. Cree una nueva consola en **Start a new console:** > **Bash**.
 
     <div align="center">
         <img src="imagenes/pa_console.png" alt="" width="70%">
@@ -39,7 +39,7 @@ theme: jekyll-theme-leap-day
 
 1. Desde la línea de comandos
 
-    + Crea un entorno virtual, nómbralo como **environment** y con la versión de Python 3.10
+    + Cree un entorno virtual con el nombre **environment** y con la versión de Python 3.10
 
     ```command
     mkvirtualenv --python=/usr/bin/python3.10 environment
@@ -72,7 +72,7 @@ theme: jekyll-theme-leap-day
         <img src="imagenes/pa_keys.png" alt="" width="70%">
     </div>
 
-#### Migración
+#### Migración y Superusuario
 
 1. Desde la línea de comandos del proyecto
 
@@ -83,10 +83,18 @@ theme: jekyll-theme-leap-day
     python manage.py migrate
     ```
 
-2. (STOP 4) Verifique la migración
-
     <div align="center">
         <img src="imagenes/pa_migrations.png" alt="" width="70%">
+    </div>
+
+2. (STOP 4) Cree el SuperUsuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
+
+    ```command
+    python manage.py createsuperuser
+    ```
+
+    <div align="center">
+        <img src="imagenes/pa_superadmin.png" alt="" width="70%">
     </div>
 
 #### WebApp
@@ -199,28 +207,6 @@ theme: jekyll-theme-leap-day
 
     <div align="center">
         <img src="imagenes/pa_webapp6.png" alt="" width="70%">
-    </div>
-
-#### Usuarios
-
-1. Desde la línea de comandos del proyecto
-    
-    + Aplique las migraciones
-
-    ```command
-    python manage.py makemigrations
-    python manage.py migrate
-    ```
-
-
-    + Cree el SuperUsuario. Recuerde el **usuario** y la **contraseña** para probar el sistema de autenticación.
-
-    ```command
-    python manage.py createsuperuser
-    ```
-
-    <div align="center">
-        <img src="imagenes/pa_superadmin.png" alt="" width="70%">
     </div>
 
 
