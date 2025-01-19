@@ -2,9 +2,9 @@
 theme: jekyll-theme-leap-day
 ---
 
-## Guía 2X
+## Guía 25
 
-[DAWM](/DAWM/) / [Proyecto0Y](/DAWM/proyectos/2024/proyecto0Y)
+[DAWM](/DAWM/) / [Proyecto05](/DAWM/proyectos/2024/proyecto05)
 
 <link href="styles/mystyle.css" rel="stylesheet" />
 
@@ -69,7 +69,7 @@ theme: jekyll-theme-leap-day
 
 4. Acceda a sitio de Django Admin en [http://127.0.0.1:8000/admin](http://127.0.0.1:8000/admin)
     + Utilice las credenciales del SuperUsuario.
-    + Agregue un usuario nuevo con el permiso **Main - viewer**.
+    + Agregue un usuario nuevo con el permiso **Main | main model | Can show to index view (function-based)**.
 
 #### Editor y WSGI
 
