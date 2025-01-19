@@ -127,7 +127,7 @@ theme: jekyll-theme-leap-day
     + En la sección **CODE**, haga clic en la opción **Working directory** para modificar la ruta a la carpeta del proyecto
 
         ```command
-        /home/<USUARIO-PYTHONANYWHERE>/backend
+        /home/<USUARIO-PYTHONANYWHERE>/backend/
         ```
 
     <div align="center">
@@ -136,9 +136,12 @@ theme: jekyll-theme-leap-day
 
     
 
-    + En la sección **CODE**, haga clic en el **WSGI configuration file** para modificar la configuración del servidor 
+    + En la sección **CODE**, haga clic en el **WSGI configuration file** 
+    + Modifique la configuración del servidor SOLO en la sección marcada como **DJANGO** 
 
         ```python
+        ...
+
         # +++++++++++ DJANGO +++++++++++
         import os
         import sys
@@ -151,6 +154,8 @@ theme: jekyll-theme-leap-day
 
         from django.core.wsgi import get_wsgi_application
         application = get_wsgi_application()
+
+        ...
         ```
 
 
@@ -186,12 +191,6 @@ theme: jekyll-theme-leap-day
         ```
 
 3. Desde la interfaz de Python Anywhere y acceda en la opción **Console**
-
-    + Acceda a la ruta del proyecto
-
-        ```command
-        cd backend
-        ```
 
     + Genere los archivos estáticos
 
