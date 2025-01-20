@@ -14,7 +14,7 @@ theme: jekyll-theme-leap-day
 
 ### Actividades previas
 
-* Obtenga una cuenta **Beginner account** en [PythonAnywhere](https://www.pythonanywhere.com/).
+1. Obtenga una cuenta **Beginner account** en [PythonAnywhere](https://www.pythonanywhere.com/).
 
     <div align="center">
         <img src="imagenes/pa_beginner.png" alt="" width="70%">
@@ -45,7 +45,7 @@ theme: jekyll-theme-leap-day
     mkvirtualenv --python=/usr/bin/python3.10 environment
     ```
     
-    + Clone localmente y acceda a la carpeta _backend_.
+    + Clone el repositorio **backend** y acceda a la carpeta _backend_.
     + Instale las librerías de _requirements.txt_, con:
 
     ```command
