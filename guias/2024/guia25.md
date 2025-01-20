@@ -174,7 +174,7 @@ theme: jekyll-theme-leap-day
 
 2. Modifique el archivo `backend/backend/settings.py` 
 
-    + Modifique el archivo `backend/backend/settings.py` con la ruta a los archivos estáticos **STATIC_ROOT**
+    + Agregue la ruta a los archivos estáticos **STATIC_ROOT**
 
         ```python
         ...
