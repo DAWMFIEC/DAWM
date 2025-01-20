@@ -116,32 +116,38 @@ theme: jekyll-theme-leap-day
     + En la sección **CODE**, haga clic en la opción **Working directory** para modificar la ruta a la carpeta del proyecto
 
         ```command
-        /home/<USUARIO-PYTHONANYWHERE>/backend/
+        /home/<USUARIO-PYTHONANYWHERE>/backend
         ```
 
     <div align="center">
         <img src="imagenes/pa_webapp4.png" alt="" width="70%">
     </div>
 
-    + En la sección **CODE**, haga clic en el **WSGI configuration file** y modifique la configuración del servidor SOLO en la sección marcada como **DJANGO** 
+    + En la sección **CODE**, haga clic en el **WSGI configuration file** y reemplace todo el contenido, por: 
 
         ```python
-        ...
+        # This file contains the WSGI configuration required to serve up your
+        # web application at http://<USUARIO-PYTHONANYWHERE>.pythonanywhere.com/
+        # It works by setting the variable 'application' to a WSGI handler of some
+        # description.
+        #
+        # The below has been auto-generated for your Django project
 
-        # +++++++++++ DJANGO +++++++++++
         import os
         import sys
 
-        path = '/home/<USUARIO-PYTHONANYWHERE>/backend'
-        if path not in sys.path:
-            sys.path.append(path)
+        # add your project directory to the sys.path
+        project_home = '/home/<USUARIO-PYTHONANYWHERE>/backend'
+        if project_home not in sys.path:
+            sys.path.insert(0, project_home)
 
+        # set environment variable to tell django where your settings.py is
         os.environ['DJANGO_SETTINGS_MODULE'] = 'backend.settings'
 
+
+        # serve django via WSGI
         from django.core.wsgi import get_wsgi_application
         application = get_wsgi_application()
-
-        ...
         ```
 
     + En la sección **VIRTUALENV** ingrese la ruta al ambiente de Python 
@@ -197,7 +203,7 @@ theme: jekyll-theme-leap-day
             <img src="imagenes/pa_webapp5.png" alt="" width="70%">
         </div>
 
-* En el ambiente de configuración de la web app
+4. En el ambiente de configuración de la web app
 
     + Agregue la URL `/static/` y el directorio `/home/<USUARIO-PYTHONANYWHERE>/backend/assets/` 
 
@@ -208,7 +214,11 @@ theme: jekyll-theme-leap-day
 
 #### Verificación
 
-+  Acceda al sitio principal [https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/](https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/)
+1.  Acceda a los sitios
+
+    + API [https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/api/v1/landing/](https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/api/v1/landing/)
+    + Admin [https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/admin](https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/admin)
+    + Sitio principal [https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/](https://&lt;USUARIO-PYTHONANYWHERE&gt;.pythonanywhere.com/)
 
     <div align="center">
         <img src="imagenes/pa_verificacion.png" alt="" width="70%">
