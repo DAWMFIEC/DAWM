@@ -3,6 +3,9 @@ const chai = require('chai');
 const request = require('supertest');
 const app = require('../app')
 
+// Auto
+let itPassed = true;
+
 describe('Test unitarios para la ruta `/` con títulos', function() {
 
     it('Respuesta del servidor', function() {
@@ -11,6 +14,10 @@ describe('Test unitarios para la ruta `/` con títulos', function() {
         .then((response) => {
             assert.equal(response.status, 200)
         })
+        .end((err, res) => {
+            if (err) itPassed = false;
+            done();
+        });
     });
 
     let h1 = `<h1>El título más importante</h1>`
@@ -26,8 +33,11 @@ describe('Test unitarios para la ruta `/` con títulos', function() {
             let h1clean = h1.replace(/\s/g, '').replace(/(?:\r\n|\r|\n)/g, '')
 
             chai.expect(responseclean).to.contain(h1clean);
-
         })
+        .end((err, res) => {
+            if (err) itPassed = false;
+            done();
+        });
     });
 
     it('En views/index.ejs use la etiqueta: '+h2, function() {
@@ -40,6 +50,10 @@ describe('Test unitarios para la ruta `/` con títulos', function() {
 
             chai.expect(responseclean).to.contain(h2clean);
         })
+        .end((err, res) => {
+            if (err) itPassed = false;
+            done();
+        });
     });
 
     it('En views/index.ejs use la etiqueta: '+h6, function() {
@@ -51,6 +65,19 @@ describe('Test unitarios para la ruta `/` con títulos', function() {
 
             chai.expect(responseclean).to.contain(h6clean);
         })
+        .end((err, res) => {
+            if (err) itPassed = false;
+            done();
+        });
     });
+
+    after(async () => {
+        if (itPassed) {
+              console.log("✅ Todos los tests pasaron. Enviando resultado...");
+              // sendResults
+        } else {
+              console.log("❌ Algunos tests fallaron. No se envía resultado.");
+        }
+      });
 
 });
